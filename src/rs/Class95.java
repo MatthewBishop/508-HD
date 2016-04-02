@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 
 public class Class95 {
 	public int anInt1616 = 0;
@@ -16,7 +16,7 @@ public class Class95 {
 			{ true, false }, { false, true, true }, { true, false, true }, { false, true, false },
 			{ true, false, false } };
 	public int[][][] anIntArrayArrayArray1626;
-	public Class2 aClass2_1627 = new Class2();
+	public Deque aClass2_1627 = new Deque();
 	public boolean aBoolean1628 = false;
 
 	static {
@@ -40,7 +40,7 @@ public class Class95 {
 		if (class14_sub22 == null) {
 			aBoolean1628 = true;
 			if (anInt1621 <= anInt1616) {
-				Class14_Sub22 class14_sub22_1_ = (Class14_Sub22) aClass2_1627.method83();
+				Class14_Sub22 class14_sub22_1_ = (Class14_Sub22) aClass2_1627.getTail();
 				class14_sub22 = new Class14_Sub22(i_0_, class14_sub22_1_.anInt3118);
 				aClass14_Sub22Array1620[class14_sub22_1_.anInt3120] = null;
 				class14_sub22_1_.unlink();
@@ -51,7 +51,7 @@ public class Class95 {
 			aClass14_Sub22Array1620[i_0_] = class14_sub22;
 		} else
 			aBoolean1628 = false;
-		aClass2_1627.method87(class14_sub22);
+		aClass2_1627.pushFront(class14_sub22);
 		int[][] is = anIntArrayArrayArray1626[class14_sub22.anInt3118];
 		return is;
 	}
@@ -83,7 +83,7 @@ public class Class95 {
 		}
 		anIntArrayArrayArray1626 = null;
 		aClass14_Sub22Array1620 = null;
-		aClass2_1627.method81();
+		aClass2_1627.clear();
 		aClass2_1627 = null;
 	}
 

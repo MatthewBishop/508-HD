@@ -1,6 +1,6 @@
 package rs;
 
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.rt4.Class14_Sub1;
 
 import rs.Class108;
@@ -40,24 +40,24 @@ public class Class24 implements Runnable {
 		try {
 			try {
 				while (true) {
-					Class2 var1 = Class14_Sub8_Sub19.aClass2_4404;
-					Class2 var2 = Class14_Sub8_Sub19.aClass2_4404;
+					Deque var1 = Class14_Sub8_Sub19.aClass2_4404;
+					Deque var2 = Class14_Sub8_Sub19.aClass2_4404;
 					Class14_Sub19 var3;
 					synchronized (var2) {
-						var3 = (Class14_Sub19) Class14_Sub8_Sub19.aClass2_4404.method77();
+						var3 = (Class14_Sub19) Class14_Sub8_Sub19.aClass2_4404.getFront();
 					}
 
 					Object var4;
 					Object var12;
 					if (var3 != null) {
-						Class2 var13;
+						Deque var13;
 						if (var3.anInt3067 != 0) {
 							if (var3.anInt3067 == 1) {
 								var3.aByteArray3069 = var3.aClass114_3077.method1582(124, (int) var3.key);
 								var1 = Class14_Sub8_Sub19.aClass2_4404;
 								var13 = Class14_Sub8_Sub19.aClass2_4404;
 								synchronized (var13) {
-									Static.aClass2_99.method80(var3);
+									Static.aClass2_99.pushBack(var3);
 								}
 							}
 						} else {

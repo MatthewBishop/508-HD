@@ -92,9 +92,9 @@ public abstract class Class108 {
 
 	public static void method1559(byte i) {
 		Static2.aClass55_4048.clear();
-		Class14_Sub8.aClass81_2844.method1395();
+		Class14_Sub8.aClass81_2844.clear();
 		if (i == -100)
-			Class14_Sub8_Sub27.aClass81_4546.method1395();
+			Class14_Sub8_Sub27.aClass81_4546.clear();
 	}
 
 	public abstract void method1560(int i, byte i_37_, int i_38_, int i_39_, Graphics graphics, int i_40_);

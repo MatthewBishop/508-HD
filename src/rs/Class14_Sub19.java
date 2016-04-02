@@ -67,7 +67,7 @@ public class Class14_Sub19 extends Linkable {
 		int i_3_ = class14_sub10.method798();
 		for (int i_4_ = 0; i_4_ < i_3_; i_4_++)
 			class14_sub2_sub5.aClass2_3801
-					.method80(
+					.pushBack(
 							new Class14_Sub4(class14_sub10.method784((byte) 118), class14_sub10.method784((byte) 116),
 									class14_sub10.method784((byte) 103), class14_sub10.method784((byte) 113)));
 		int i_5_ = -68 / ((i - 22) / 61);

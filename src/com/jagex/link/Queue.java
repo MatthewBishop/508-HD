@@ -4,37 +4,52 @@
 package com.jagex.link;
 
 public class Queue {
-	public Cacheable aClass14_Sub2_1323 = new Cacheable();
+	public Cacheable current;
 
-	public Cacheable aClass14_Sub2_1325;
+	public Cacheable head = new Cacheable();
 
 	public Queue() {
-		aClass14_Sub2_1323.previousCacheable = aClass14_Sub2_1323;
-		aClass14_Sub2_1323.nextCacheable = aClass14_Sub2_1323;
+		head.previousCacheable = head;
+		head.nextCacheable = head;
 	}
 
-	public void method1394(Cacheable cacheable) {
-		if (cacheable.previousCacheable != null)
-			cacheable.unlinkCacheable();
-		cacheable.previousCacheable = aClass14_Sub2_1323;
-		cacheable.nextCacheable = aClass14_Sub2_1323.nextCacheable;
-		cacheable.previousCacheable.nextCacheable = cacheable;
-		cacheable.nextCacheable.previousCacheable = cacheable;
-	}
-
-	public void method1395() {
+	public void clear() {
 		for (;;) {
-			Cacheable cacheable = aClass14_Sub2_1323.nextCacheable;
-			if (aClass14_Sub2_1323 == cacheable)
+			Cacheable cacheable = head.nextCacheable;
+			if (head == cacheable)
 				break;
 			cacheable.unlinkCacheable();
 		}
-		aClass14_Sub2_1325 = null;
+		current = null;
+	}
+
+	public Cacheable peek() {
+		Cacheable cacheable = head.nextCacheable;
+		if (cacheable == head) {
+			current = null;
+			Cacheable cacheable_149_ = null;
+			return cacheable_149_;
+		}
+		current = cacheable.nextCacheable;
+		Cacheable cacheable_150_ = cacheable;
+		return cacheable_150_;
+	}
+
+	public Cacheable getNext() {
+		Cacheable cacheable = current;
+		if (cacheable == head) {
+			current = null;
+			Cacheable cacheable_151_ = null;
+			return cacheable_151_;
+		}
+		current = cacheable.nextCacheable;
+		Cacheable cacheable_152_ = cacheable;
+		return cacheable_152_;
 	}
 
 	public Cacheable pop() {
-		Cacheable cacheable = aClass14_Sub2_1323.nextCacheable;
-		if (aClass14_Sub2_1323 == cacheable) {
+		Cacheable cacheable = head.nextCacheable;
+		if (head == cacheable) {
 			Cacheable cacheable_3_ = null;
 			return cacheable_3_;
 		}
@@ -43,36 +58,22 @@ public class Queue {
 		return cacheable_4_;
 	}
 
-	public Cacheable method1400() {
-		Cacheable cacheable = aClass14_Sub2_1323.nextCacheable;
-		if (cacheable == aClass14_Sub2_1323) {
-			aClass14_Sub2_1325 = null;
-			Cacheable cacheable_149_ = null;
-			return cacheable_149_;
-		}
-		aClass14_Sub2_1325 = cacheable.nextCacheable;
-		Cacheable cacheable_150_ = cacheable;
-		return cacheable_150_;
-	}
-
 	public void push(Cacheable cacheable) {
 		if (cacheable.previousCacheable != null)
 			cacheable.unlinkCacheable();
-		cacheable.previousCacheable = aClass14_Sub2_1323.previousCacheable;
-		cacheable.nextCacheable = aClass14_Sub2_1323;
+		cacheable.previousCacheable = head.previousCacheable;
+		cacheable.nextCacheable = head;
+		cacheable.previousCacheable.nextCacheable = cacheable;
+		cacheable.nextCacheable.previousCacheable = cacheable;
+	}
+	
+	public void pushFront(Cacheable cacheable) {
+		if (cacheable.previousCacheable != null)
+			cacheable.unlinkCacheable();
+		cacheable.previousCacheable = head;
+		cacheable.nextCacheable = head.nextCacheable;
 		cacheable.previousCacheable.nextCacheable = cacheable;
 		cacheable.nextCacheable.previousCacheable = cacheable;
 	}
 
-	public Cacheable method1402() {
-		Cacheable cacheable = aClass14_Sub2_1325;
-		if (cacheable == aClass14_Sub2_1323) {
-			aClass14_Sub2_1325 = null;
-			Cacheable cacheable_151_ = null;
-			return cacheable_151_;
-		}
-		aClass14_Sub2_1325 = cacheable.nextCacheable;
-		Cacheable cacheable_152_ = cacheable;
-		return cacheable_152_;
-	}
 }

@@ -129,8 +129,6 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 			int i_3_ = 0;
 			return i_3_;
 		}
-		if (i < 38)
-			Cacheable.method301(null, null);
 		if (!Class128.method1755(130068615)) {
 			int i_4_ = 1;
 			return i_4_;

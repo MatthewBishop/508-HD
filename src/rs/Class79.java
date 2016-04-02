@@ -6,7 +6,7 @@ package rs;
 import java.io.IOException;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
 import com.jagex.map.SceneCluster;
@@ -66,7 +66,7 @@ public class Class79 {
 	public boolean aBoolean1264;
 	public static Class124 aClass124_1265 = Class14_Sub2_Sub2.method263(1178, "(Z");
 	public HashTable aClass55_1266;
-	public static Class2 aClass2_1268;
+	public static Deque aClass2_1268;
 	public boolean aBoolean1270;
 	public int anInt1271;
 	public boolean aBoolean1272;
@@ -99,7 +99,7 @@ public class Class79 {
 		anInt1240 = 0;
 		aClass124_1298 = Class14_Sub2_Sub2.method263(1178, "Discard");
 		aClass124_1255 = aClass124_1298;
-		aClass2_1268 = new Class2();
+		aClass2_1268 = new Deque();
 		anIntArray1305 = new int[1000];
 		aClass124_1306 = Class14_Sub2_Sub2.method263(1178, "event_opbase");
 	}
@@ -156,7 +156,7 @@ public class Class79 {
 				l = (long) anIntArray1260[i_12_] + l * 67783L;
 			if (bool)
 				l ^= 0xffffffffffffffffL;
-			modelhd = (ModelHD) Class112.aClass52_1868.method1210(l);
+			modelhd = (ModelHD) Class112.aClass52_1868.get(l);
 			if (modelhd == null) {
 				Class133_Sub2 class133_sub2 = null;
 				for (int i_13_ = 0; i_10_ > i_13_; i_13_++) {
@@ -185,7 +185,7 @@ public class Class79 {
 			int i_16_ = anIntArray1260[i_14_];
 			if (bool)
 				i_16_ += 65536;
-			modelhd = (ModelHD) Class112.aClass52_1868.method1210((long) i_16_);
+			modelhd = (ModelHD) Class112.aClass52_1868.get((long) i_16_);
 			if (modelhd == null) {
 				Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(Static2.aClass9_2923, i_16_ & 0xffff, 0);
 				if (class133_sub2 == null) {
@@ -239,7 +239,7 @@ public class Class79 {
 	}
 
 	public static Class79 method1377(byte i, int i_24_) {
-		Class79 class79 = ((Class79) Class127.aClass52_2112.method1210((long) i_24_));
+		Class79 class79 = ((Class79) Class127.aClass52_2112.get((long) i_24_));
 		if (class79 != null) {
 			Class79 class79_25_ = class79;
 			return class79_25_;
@@ -378,7 +378,7 @@ public class Class79 {
 			l = (long) (i_48_ + (anInt1257 << 42));
 		else
 			l = (long) (i_48_ + (anInt1257 << 10) + (i_46_ << 3));
-		Class86 class86 = (Class86) Class62.aClass52_991.method1210(l);
+		Class86 class86 = (Class86) Class62.aClass52_991.get(l);
 		ModelHD modelhd;
 		Class148_Sub1 class148_sub1_53_;
 		if (class86 != null) {
@@ -422,7 +422,7 @@ public class Class79 {
 			l = (long) ((anInt1257 << 10) + i_61_);
 		else
 			l = (long) (i_61_ + (anInt1257 << 10) + (i_58_ << 35));
-		ModelHD modelhd = (ModelHD) Class49.aClass52_810.method1210(l);
+		ModelHD modelhd = (ModelHD) Class49.aClass52_810.get(l);
 		if (i_64_ != 0) {
 			Class86 class86 = null;
 			return class86;
@@ -519,7 +519,7 @@ public class Class79 {
 				}
 				for (/**/; SceneCluster.anInt1355 < 20 && Class63.anInt998 > 0; Class63.anInt998--) {
 					Class14_Sub2_Sub9 class14_sub2_sub9 = (Class14_Sub2_Sub9) Class14_Sub8_Sub37.aClass81_4716
-							.method1400();
+							.peek();
 					Buffer class14_sub10 = new Buffer(4);
 					class14_sub10.method809(0);
 					class14_sub10.method783(i + 255, (int) class14_sub2_sub9.key);

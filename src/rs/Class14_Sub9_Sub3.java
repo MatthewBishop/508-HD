@@ -6,7 +6,7 @@ package rs;
 import java.io.DataInputStream;
 import java.net.URL;
 
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 
 import rs.tex.Class14_Sub8_Sub32;
 
@@ -18,7 +18,7 @@ public class Class14_Sub9_Sub3 extends Class14_Sub9 {
 	public static int anInt4850 = 0;
 	public static int[] anIntArray4851;
 	public Class14_Sub9_Sub1 aClass14_Sub9_Sub1_4856;
-	public Class2 aClass2_4858 = new Class2();
+	public Deque aClass2_4858 = new Deque();
 	public Class14_Sub9_Sub2 aClass14_Sub9_Sub2_4859 = new Class14_Sub9_Sub2();
 
 	static {
@@ -30,7 +30,7 @@ public class Class14_Sub9_Sub3 extends Class14_Sub9 {
 	public void method687(int[] is, int i, int i_0_) {
 		aClass14_Sub9_Sub2_4859.method687(is, i, i_0_);
 		while_349_: for (Class14_Sub18 class14_sub18 = (Class14_Sub18) aClass2_4858
-				.method77(); class14_sub18 != null; class14_sub18 = (Class14_Sub18) aClass2_4858.method84()) {
+				.getFront(); class14_sub18 != null; class14_sub18 = (Class14_Sub18) aClass2_4858.getNext()) {
 			if (!aClass14_Sub9_Sub1_4856.method726(class14_sub18, 2)) {
 				int i_1_ = i;
 				int i_2_ = i_0_;
@@ -53,7 +53,7 @@ public class Class14_Sub9_Sub3 extends Class14_Sub9 {
 	public Class14_Sub9 method686() {
 		Class14_Sub18 class14_sub18;
 		do {
-			class14_sub18 = (Class14_Sub18) aClass2_4858.method84();
+			class14_sub18 = (Class14_Sub18) aClass2_4858.getNext();
 			if (class14_sub18 == null)
 				return null;
 		} while (class14_sub18.aClass14_Sub9_Sub4_3051 == null);
@@ -62,7 +62,7 @@ public class Class14_Sub9_Sub3 extends Class14_Sub9 {
 	}
 
 	public Class14_Sub9 method688() {
-		Class14_Sub18 class14_sub18 = (Class14_Sub18) aClass2_4858.method77();
+		Class14_Sub18 class14_sub18 = (Class14_Sub18) aClass2_4858.getFront();
 		if (class14_sub18 == null) {
 			Class14_Sub9 class14_sub9 = null;
 			return class14_sub9;
@@ -182,7 +182,7 @@ public class Class14_Sub9_Sub3 extends Class14_Sub9 {
 	public void method692(int i) {
 		aClass14_Sub9_Sub2_4859.method692(i);
 		while_355_: for (Class14_Sub18 class14_sub18 = (Class14_Sub18) aClass2_4858
-				.method77(); class14_sub18 != null; class14_sub18 = (Class14_Sub18) aClass2_4858.method84()) {
+				.getFront(); class14_sub18 != null; class14_sub18 = (Class14_Sub18) aClass2_4858.getNext()) {
 			if (!aClass14_Sub9_Sub1_4856.method726(class14_sub18, 2)) {
 				int i_13_ = i;
 				while_353_: do {

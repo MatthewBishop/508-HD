@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.rt4.Class121;
 import com.jagex.rt4.Class148;
 
@@ -18,7 +18,7 @@ import rs.tex.Static;
 
 public abstract class Class126 {
 	public static int anInt2089 = 0;
-	public static Class2 aClass2_2093 = new Class2();
+	public static Deque aClass2_2093 = new Deque();
 	public static int[] anIntArray2094 = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
 			22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48,
 			49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 73, 74, 76, 78, 83, 84, 85, 86, 91, 92,
@@ -130,7 +130,7 @@ public abstract class Class126 {
 	}
 
 	public static Class12 method1744(int i, int i_6_) {
-		Class12 class12 = ((Class12) Class14_Sub14.aClass52_2982.method1210((long) i));
+		Class12 class12 = ((Class12) Class14_Sub14.aClass52_2982.get((long) i));
 		if (class12 != null) {
 			Class12 class12_7_ = class12;
 			return class12_7_;

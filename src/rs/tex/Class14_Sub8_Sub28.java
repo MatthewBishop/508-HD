@@ -4,7 +4,7 @@
 package rs.tex;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 
 import rs.Class103;
 import rs.Class112;
@@ -234,11 +234,11 @@ public class Class14_Sub8_Sub28 extends Class14_Sub8 {
 					Class14_Sub8_Sub21.method591(86, class133_sub1_sub1, i_19_, i_18_, i_21_);
 				}
 				if (i_20_ == 3) {
-					Class2 class2 = (Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_18_][i_19_]);
-					if (class2 != null) {
-						for (Class14_Sub2_Sub4 class14_sub2_sub4 = (Class14_Sub2_Sub4) class2
-								.method83(); class14_sub2_sub4 != null; class14_sub2_sub4 = (Class14_Sub2_Sub4) class2
-										.method76()) {
+					Deque deque = (Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_18_][i_19_]);
+					if (deque != null) {
+						for (Class14_Sub2_Sub4 class14_sub2_sub4 = (Class14_Sub2_Sub4) deque
+								.getTail(); class14_sub2_sub4 != null; class14_sub2_sub4 = (Class14_Sub2_Sub4) deque
+										.getPrevious()) {
 							int i_30_ = (class14_sub2_sub4.aClass133_Sub3_3789.anInt3557);
 							Class142 class142 = Class14_Sub8_Sub24.method605(119, i_30_);
 							if (Class51.anInt831 == 1)

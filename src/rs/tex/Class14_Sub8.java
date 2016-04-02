@@ -63,11 +63,11 @@ public abstract class Class14_Sub8 extends Linkable {
 		Class109.aClass14_Sub2_Sub19_Sub1Array1835 = class14_sub2_sub19_sub1s;
 		Class14_Sub8_Sub28.aClass9_4570 = class9;
 		Class99_Sub2.aClass148_Sub1Array3358 = class148_sub1s;
-		Class97.aClass2_1647.method81();
+		Class97.aClass2_1647.clear();
 		int i_3_ = Class14_Sub8_Sub28.aClass9_4570.method146(Class99.aClass124_1677, 0);
 		int[] is = Class14_Sub8_Sub28.aClass9_4570.method176((byte) 90, i_3_);
 		for (int i_4_ = 0; is.length > i_4_; i_4_++)
-			Class97.aClass2_1647.method80(
+			Class97.aClass2_1647.pushBack(
 					(Class14_Sub19.method889(
 							new Buffer(Class14_Sub8_Sub28.aClass9_4570.method163(is[i_4_], i_3_, 0)), -60)));
 		int i_5_ = 60 % ((17 - i) / 58);
@@ -108,7 +108,7 @@ public abstract class Class14_Sub8 extends Linkable {
 			Class25.method1009(i_11_, i_13_, i_10_, i_12_, 16711680, 128);
 			Class25.method1003(i_11_, i_13_, i_10_, i_12_, 16711680);
 			if (Static2.anInt365 > 0 && Static2.anInt365 % 10 < 5) {
-				for (Class14_Sub20 class14_sub20 = (Class14_Sub20) Class35.aClass2_589.method77(); class14_sub20 != null; class14_sub20 = (Class14_Sub20) Class35.aClass2_589.method84()) {
+				for (Class14_Sub20 class14_sub20 = (Class14_Sub20) Class35.aClass2_589.getFront(); class14_sub20 != null; class14_sub20 = (Class14_Sub20) Class35.aClass2_589.getNext()) {
 					if (Class97.anInt1656 == class14_sub20.anInt3085) {
 						int i_14_ = ((i * class14_sub20.anInt3083 / Class14_Sub2_Sub9.anInt3856) + i_9_);
 						int i_15_ = ((i_6_ * class14_sub20.anInt3084 / Class14_Sub8_Sub15.anInt4332) + i_8_);

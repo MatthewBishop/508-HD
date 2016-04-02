@@ -37,7 +37,7 @@ public abstract class Class133 {
 	}
 
 	public static Class35 method1780(byte i, int i_0_) {
-		Class35 class35 = ((Class35) Static2.aClass52_2370.method1210((long) i_0_));
+		Class35 class35 = ((Class35) Static2.aClass52_2370.get((long) i_0_));
 		if (i != 111)
 			method1785((byte) 101);
 		if (class35 != null) {
@@ -117,7 +117,7 @@ public abstract class Class133 {
 					.getFirst());
 			if (class14_sub2_sub9 == null)
 				break;
-			Class14_Sub8_Sub37.aClass81_4716.method1394(class14_sub2_sub9);
+			Class14_Sub8_Sub37.aClass81_4716.pushFront(class14_sub2_sub9);
 			Class7_Sub2_Sub1.aClass55_3698.put(class14_sub2_sub9.key, class14_sub2_sub9);
 			Class63.anInt998++;
 			SceneCluster.anInt1355--;

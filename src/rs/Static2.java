@@ -438,9 +438,9 @@ public class Static2 {
 	public static int[] anIntArray1790;
 	public static void method1541(int i, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_, int i_14_, boolean bool,
 			int i_15_, int i_16_) {
-		Class14_Sub14 class14_sub14 = (Class14_Sub14) Class33.aClass2_583.method77();
+		Class14_Sub14 class14_sub14 = (Class14_Sub14) Class33.aClass2_583.getFront();
 		Class14_Sub14 class14_sub14_17_ = null;
-		for (/**/; class14_sub14 != null; class14_sub14 = (Class14_Sub14) Class33.aClass2_583.method84()) {
+		for (/**/; class14_sub14 != null; class14_sub14 = (Class14_Sub14) Class33.aClass2_583.getNext()) {
 			if (class14_sub14.anInt2969 == i_11_ && class14_sub14.anInt2967 == i && i_12_ == class14_sub14.anInt2970
 					&& class14_sub14.anInt2971 == i_15_) {
 				class14_sub14_17_ = class14_sub14;
@@ -454,7 +454,7 @@ public class Static2 {
 			class14_sub14_17_.anInt2967 = i;
 			class14_sub14_17_.anInt2969 = i_11_;
 			Class7_Sub3_Sub1.method141(4, class14_sub14_17_);
-			Class33.aClass2_583.method80(class14_sub14_17_);
+			Class33.aClass2_583.pushBack(class14_sub14_17_);
 		}
 		class14_sub14_17_.anInt2975 = i_13_;
 		class14_sub14_17_.anInt2980 = i_14_;
@@ -491,7 +491,7 @@ public class Static2 {
 	public static void method1540(PacketBuffer class14_sub10_sub1, int i, int i_0_) {
 		if (i_0_ == -15) {
 			for (;;) {
-				Class14_Sub7 class14_sub7 = (Class14_Sub7) Class40.aClass2_664.method77();
+				Class14_Sub7 class14_sub7 = (Class14_Sub7) Class40.aClass2_664.getFront();
 				if (class14_sub7 == null)
 					break;
 				boolean bool = false;
@@ -630,7 +630,7 @@ public class Static2 {
 	public static Class65 method335(int i, int i_19_) {
 		if (i >= -16)
 			Static2.aClass9_3945 = null;
-		Class65 class65 = ((Class65) Class139.aClass52_2229.method1210((long) i_19_));
+		Class65 class65 = ((Class65) Class139.aClass52_2229.get((long) i_19_));
 		if (class65 != null) {
 			Class65 class65_20_ = class65;
 			return class65_20_;

@@ -43,7 +43,7 @@ public class Class14_Sub8_Sub24 extends Class14_Sub8 {
 	public static int anInt4503 = -1;
 	public static short[][] aShortArrayArray4496;
 	public static Class142 method605(int i, int i_0_) {
-		Class142 class142 = (Class142) Class133_Sub1_Sub1.aClass52_4926.method1210((long) i_0_);
+		Class142 class142 = (Class142) Class133_Sub1_Sub1.aClass52_4926.get((long) i_0_);
 		if (class142 != null) {
 			Class142 class142_1_ = class142;
 			return class142_1_;

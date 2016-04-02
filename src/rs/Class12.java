@@ -97,7 +97,7 @@ public class Class12 {
 					return var7;
 				}
 			} else {
-				Class133_Sub7 var6 = (Class133_Sub7) Class37.aClass52_635.method1210((long) this.anInt337);
+				Class133_Sub7 var6 = (Class133_Sub7) Class37.aClass52_635.get((long) this.anInt337);
 				if (var6 == null) {
 					boolean var8 = false;
 
@@ -287,7 +287,7 @@ public class Class12 {
 			if (class14_sub3.anIntArray2746 != null)
 				class14_sub3.anInt2773 = ((int) (Math.random()
 						* (double) (-class14_sub3.anInt2772 + class14_sub3.anInt2769)) + class14_sub3.anInt2772);
-			Class152.aClass2_2438.method80(class14_sub3);
+			Class152.aClass2_2438.pushBack(class14_sub3);
 		} else if (class133_sub1_sub2 != null) {
 			class14_sub3.aClass133_Sub1_Sub2_2762 = class133_sub1_sub2;
 			Class12 class12 = class133_sub1_sub2.aClass12_4949;
@@ -301,7 +301,7 @@ public class Class12 {
 				class14_sub3.anInt2753 = Class99.method1500(class133_sub1_sub2, -1);
 				class14_sub3.anInt2765 = class12.anInt293 * 128;
 			}
-			Static.aClass2_683.method80(class14_sub3);
+			Static.aClass2_683.pushBack(class14_sub3);
 		} else if (class133_sub1_sub1 != null) {
 			class14_sub3.anInt2751 = (class133_sub1_sub1.anInt3493 + i_44_) * 128;
 			class14_sub3.aClass133_Sub1_Sub1_2755 = class133_sub1_sub1;
@@ -699,7 +699,7 @@ public class Class12 {
 					var4 = null;
 					return var4;
 				} else {
-					var4 = (Class133_Sub7) Class14_Sub8_Sub6.aClass52_4186.method1210((long) this.anInt337);
+					var4 = (Class133_Sub7) Class14_Sub8_Sub6.aClass52_4186.get((long) this.anInt337);
 					if (var1 > -93) {
 						this.anInt279 = 41;
 					}

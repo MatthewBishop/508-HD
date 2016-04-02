@@ -62,7 +62,7 @@ public class Class109 {
 		}
 		int i_10_ = i_5_;
 		long l = (long) i_10_ * 3147483667L - -((long) i_9_ * 3849834839L);
-		Class14_Sub2_Sub19 class14_sub2_sub19 = ((Class14_Sub2_Sub19) Class70.aClass52_1077.method1210(l));
+		Class14_Sub2_Sub19 class14_sub2_sub19 = ((Class14_Sub2_Sub19) Class70.aClass52_1077.get(l));
 		if (class14_sub2_sub19 != null) {
 			Class14_Sub2_Sub19 class14_sub2_sub19_11_ = class14_sub2_sub19;
 			return class14_sub2_sub19_11_;

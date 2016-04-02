@@ -196,9 +196,9 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 
 	public static void method314(byte i, int i_28_, int i_29_, int i_30_, int i_31_) {
 		if (i > 61) {
-			for (Class14_Sub3 class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.method77(); class14_sub3 != null; class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.method84())
+			for (Class14_Sub3 class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.getFront(); class14_sub3 != null; class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.getNext())
 				Class58.method1255(i_30_, class14_sub3, i_29_, i_28_, -31083, i_31_);
-			for (Class14_Sub3 class14_sub3 = (Class14_Sub3) Static.aClass2_683.method77(); class14_sub3 != null; class14_sub3 = (Class14_Sub3) Static.aClass2_683.method84()) {
+			for (Class14_Sub3 class14_sub3 = (Class14_Sub3) Static.aClass2_683.getFront(); class14_sub3 != null; class14_sub3 = (Class14_Sub3) Static.aClass2_683.getNext()) {
 				int i_32_ = 1;
 				if (class14_sub3.aClass133_Sub1_Sub2_2762.anInt3433 != class14_sub3.aClass133_Sub1_Sub2_2762.anInt3452) {
 					if (class14_sub3.aClass133_Sub1_Sub2_2762.anInt3456 == class14_sub3.aClass133_Sub1_Sub2_2762.anInt3452)

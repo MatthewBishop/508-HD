@@ -3,7 +3,7 @@
  */
 package rs.tex;
 
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.rt4.Class14_Sub1;
 
 import rs.Class112;
@@ -70,10 +70,10 @@ public class Class14_Sub8_Sub31 extends Class14_Sub8 {
 	public static void method648(byte i) {
 		int i_11_ = 52 % ((-23 - i) / 47);
 		for (;;) {
-			Class2 class2 = Class14_Sub8_Sub19.aClass2_4404;
+			Deque deque = Class14_Sub8_Sub19.aClass2_4404;
 			Class14_Sub19 class14_sub19;
-			synchronized (class2) {
-				class14_sub19 = (Class14_Sub19) Static.aClass2_99.method78();
+			synchronized (deque) {
+				class14_sub19 = (Class14_Sub19) Static.aClass2_99.popFront();
 			}
 			if (class14_sub19 == null)
 				break;

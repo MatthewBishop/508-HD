@@ -57,7 +57,7 @@ public class Class69 {
 		Class14_Sub25.anIntArrayArrayArray3174 = null;
 		Class14_Sub8_Sub10.aByteArrayArrayArray4257 = null;
 		Class7_Sub1.aClass14_Sub2_Sub5_2665 = null;
-		Class35.aClass2_589.method81();
+		Class35.aClass2_589.clear();
 		Class133_Sub1.aClass14_Sub2_Sub19_3505 = null;
 		Class14_Sub8_Sub35.aClass87_4672 = null;
 		Class152.aClass146_2435 = null;

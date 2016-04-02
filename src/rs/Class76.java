@@ -78,7 +78,7 @@ public class Class76 {
 		if (i != -10345)
 			method1364(-75);
 		long l = ((long) ((i_11_ << 56) + ((i_9_ << 16) + i_16_)) + (((long) i_8_ << 32) - -((long) i_12_ << 48)));
-		Class133_Sub7 class133_sub7_17_ = ((Class133_Sub7) Class14_Sub11.aClass52_2946.method1210(l));
+		Class133_Sub7 class133_sub7_17_ = ((Class133_Sub7) Class14_Sub11.aClass52_2946.get(l));
 		if (class133_sub7_17_ == null) {
 			int i_18_;
 			if (i_16_ == 1)

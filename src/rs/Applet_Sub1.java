@@ -98,7 +98,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
 	public static Class21 method27(int var0, int var1) {
 		try {
-			Class21 var2 = (Class21) Class14_Sub6.aClass52_2817.method1210((long) var0);
+			Class21 var2 = (Class21) Class14_Sub6.aClass52_2817.get((long) var0);
 			if (var2 != null) {
 				return var2;
 			} else {

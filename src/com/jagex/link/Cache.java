@@ -23,7 +23,7 @@ public class Cache {
 	}
 
 	public void clear() {
-		history.method1395();
+		history.clear();
 		table.clear();
 		empty = new Cacheable();
 		unused = capacity;

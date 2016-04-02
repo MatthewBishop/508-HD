@@ -10,7 +10,7 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.util.TimeUtil;
 
@@ -24,7 +24,7 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 			112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57 };
 	public static Class124 aClass124_1640;
 	public static byte[][][] underlays;
-	public static Class2 aClass2_1647;
+	public static Deque aClass2_1647;
 	public static Class148_Sub1[] aClass148_Sub1Array1651;
 	public static int anInt1652;
 	public static int anInt1656;
@@ -34,11 +34,11 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 		aClass124_1637 = Class14_Sub2_Sub2.method263(1178, " is already on your friend list)3");
 		anInt1652 = 2;
 		aClass124_1640 = aClass124_1637;
-		aClass2_1647 = new Class2();
+		aClass2_1647 = new Deque();
 	}
 
 	public static Class150 method1489(int i, int i_0_) {
-		Class150 class150 = (Class150) Static2.aClass52_3942.method1210((long) i);
+		Class150 class150 = (Class150) Static2.aClass52_3942.get((long) i);
 		if (class150 != null) {
 			Class150 class150_1_ = class150;
 			return class150_1_;

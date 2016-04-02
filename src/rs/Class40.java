@@ -3,12 +3,12 @@
  */
 package rs;
 
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 
 public class Class40 {
 	public int anInt662;
 	public int anInt663;
-	public static Class2 aClass2_664;
+	public static Deque aClass2_664;
 	public static Class124 aClass124_665;
 	public int anInt666;
 	public int anInt667;
@@ -28,7 +28,7 @@ public class Class40 {
 
 	static {
 		aClass124_665 = aClass124_676;
-		aClass2_664 = new Class2();
+		aClass2_664 = new Deque();
 		aClass124_680 = Class14_Sub2_Sub2.method263(1178, "gelb:");
 	}
 

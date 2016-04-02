@@ -299,7 +299,7 @@ public class Class45 {
 					}
 				}
 			}
-			for (Class14_Sub14 class14_sub14 = (Class14_Sub14) Class33.aClass2_583.method77(); class14_sub14 != null; class14_sub14 = (Class14_Sub14) Class33.aClass2_583.method84()) {
+			for (Class14_Sub14 class14_sub14 = (Class14_Sub14) Class33.aClass2_583.getFront(); class14_sub14 != null; class14_sub14 = (Class14_Sub14) Class33.aClass2_583.getNext()) {
 				class14_sub14.anInt2970 -= i_17_;
 				class14_sub14.anInt2967 -= i_16_;
 				if (class14_sub14.anInt2967 < 0 || class14_sub14.anInt2970 < 0 || class14_sub14.anInt2967 >= 104
@@ -322,8 +322,8 @@ public class Class45 {
 			if (bool && (Math.abs(i_16_) > 104 || Math.abs(i_17_) > 104))
 				Class14_Sub13.method858(-1);
 			Class14_Sub8_Sub7.anInt4207 = -1;
-			Class79.aClass2_1268.method81();
-			Class4.aClass2_127.method81();
+			Class79.aClass2_1268.clear();
+			Class4.aClass2_127.clear();
 		}
 	}
 

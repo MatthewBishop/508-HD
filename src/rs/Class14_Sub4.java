@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.cache.loaders.AnimFrameLoader;
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.link.Linkable;
 import com.jagex.map.Scenegraph;
 import com.jagex.rt4.AthmosphericEffects;
@@ -31,7 +31,7 @@ public class Class14_Sub4 extends Linkable {
 	public static boolean aBoolean2784;
 	public static Class133_Sub1_Sub2[] aClass133_Sub1_Sub2Array2785;
 	public static int[] anIntArray2786 = new int[32];
-	public static Class2 aClass2_2787;
+	public static Deque aClass2_2787;
 	public static int anInt2788;
 	public static int anInt2789;
 	public static volatile int anInt2790;
@@ -42,13 +42,13 @@ public class Class14_Sub4 extends Linkable {
 		aClass133_Sub1_Sub2Array2785 = new Class133_Sub1_Sub2[32768];
 		anInt2790 = 0;
 		anInt2789 = 0;
-		aClass2_2787 = new Class2();
+		aClass2_2787 = new Deque();
 	}
 
 	public static void method454(Class14_Sub29 class14_sub29, boolean bool) {
-		Class14_Sub8_Sub23.aClass2_4477.method80(class14_sub29);
+		Class14_Sub8_Sub23.aClass2_4477.pushBack(class14_sub29);
 		for (;;) {
-			Class14_Sub29 class14_sub29_0_ = ((Class14_Sub29) Class14_Sub8_Sub23.aClass2_4477.method78());
+			Class14_Sub29 class14_sub29_0_ = ((Class14_Sub29) Class14_Sub8_Sub23.aClass2_4477.popFront());
 			if (class14_sub29_0_ == null)
 				break;
 			if (class14_sub29_0_.aBoolean3240) {
@@ -342,22 +342,22 @@ public class Class14_Sub4 extends Linkable {
 						if (i < Class71.cameraTileX && (i_24_ & 0x4) != 0) {
 							Class14_Sub29 class14_sub29_25_ = class14_sub29s[i + 1][i_1_];
 							if (class14_sub29_25_ != null && class14_sub29_25_.aBoolean3240)
-								Class14_Sub8_Sub23.aClass2_4477.method80(class14_sub29_25_);
+								Class14_Sub8_Sub23.aClass2_4477.pushBack(class14_sub29_25_);
 						}
 						if (i_1_ < Class102.cameraTileZ && (i_24_ & 0x2) != 0) {
 							Class14_Sub29 class14_sub29_26_ = class14_sub29s[i][i_1_ + 1];
 							if (class14_sub29_26_ != null && class14_sub29_26_.aBoolean3240)
-								Class14_Sub8_Sub23.aClass2_4477.method80(class14_sub29_26_);
+								Class14_Sub8_Sub23.aClass2_4477.pushBack(class14_sub29_26_);
 						}
 						if (i > Class71.cameraTileX && (i_24_ & 0x1) != 0) {
 							Class14_Sub29 class14_sub29_27_ = class14_sub29s[i - 1][i_1_];
 							if (class14_sub29_27_ != null && class14_sub29_27_.aBoolean3240)
-								Class14_Sub8_Sub23.aClass2_4477.method80(class14_sub29_27_);
+								Class14_Sub8_Sub23.aClass2_4477.pushBack(class14_sub29_27_);
 						}
 						if (i_1_ > Class102.cameraTileZ && (i_24_ & 0x8) != 0) {
 							Class14_Sub29 class14_sub29_28_ = class14_sub29s[i][i_1_ - 1];
 							if (class14_sub29_28_ != null && class14_sub29_28_.aBoolean3240)
-								Class14_Sub8_Sub23.aClass2_4477.method80(class14_sub29_28_);
+								Class14_Sub8_Sub23.aClass2_4477.pushBack(class14_sub29_28_);
 						}
 					}
 				}
@@ -525,9 +525,9 @@ public class Class14_Sub4 extends Linkable {
 								for (int i_56_ = class40.anInt678; i_56_ <= class40.anInt669; i_56_++) {
 									Class14_Sub29 class14_sub29_57_ = class14_sub29s[i_55_][i_56_];
 									if (class14_sub29_57_.anInt3231 != 0)
-										Class14_Sub8_Sub23.aClass2_4477.method80(class14_sub29_57_);
+										Class14_Sub8_Sub23.aClass2_4477.pushBack(class14_sub29_57_);
 									else if ((i_55_ != i || i_56_ != i_1_) && class14_sub29_57_.aBoolean3240)
-										Class14_Sub8_Sub23.aClass2_4477.method80(class14_sub29_57_);
+										Class14_Sub8_Sub23.aClass2_4477.pushBack(class14_sub29_57_);
 								}
 							}
 						}
@@ -648,27 +648,27 @@ public class Class14_Sub4 extends Linkable {
 						Class14_Sub29 class14_sub29_68_ = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_2_
 								+ 1][i][i_1_]);
 						if (class14_sub29_68_ != null && class14_sub29_68_.aBoolean3240)
-							Class14_Sub8_Sub23.aClass2_4477.method80(class14_sub29_68_);
+							Class14_Sub8_Sub23.aClass2_4477.pushBack(class14_sub29_68_);
 					}
 					if (i < Class71.cameraTileX) {
 						Class14_Sub29 class14_sub29_69_ = class14_sub29s[i + 1][i_1_];
 						if (class14_sub29_69_ != null && class14_sub29_69_.aBoolean3240)
-							Class14_Sub8_Sub23.aClass2_4477.method80(class14_sub29_69_);
+							Class14_Sub8_Sub23.aClass2_4477.pushBack(class14_sub29_69_);
 					}
 					if (i_1_ < Class102.cameraTileZ) {
 						Class14_Sub29 class14_sub29_70_ = class14_sub29s[i][i_1_ + 1];
 						if (class14_sub29_70_ != null && class14_sub29_70_.aBoolean3240)
-							Class14_Sub8_Sub23.aClass2_4477.method80(class14_sub29_70_);
+							Class14_Sub8_Sub23.aClass2_4477.pushBack(class14_sub29_70_);
 					}
 					if (i > Class71.cameraTileX) {
 						Class14_Sub29 class14_sub29_71_ = class14_sub29s[i - 1][i_1_];
 						if (class14_sub29_71_ != null && class14_sub29_71_.aBoolean3240)
-							Class14_Sub8_Sub23.aClass2_4477.method80(class14_sub29_71_);
+							Class14_Sub8_Sub23.aClass2_4477.pushBack(class14_sub29_71_);
 					}
 					if (i_1_ > Class102.cameraTileZ) {
 						Class14_Sub29 class14_sub29_72_ = class14_sub29s[i][i_1_ - 1];
 						if (class14_sub29_72_ != null && class14_sub29_72_.aBoolean3240)
-							Class14_Sub8_Sub23.aClass2_4477.method80(class14_sub29_72_);
+							Class14_Sub8_Sub23.aClass2_4477.pushBack(class14_sub29_72_);
 					}
 				}
 			}
@@ -696,7 +696,7 @@ public class Class14_Sub4 extends Linkable {
 
 	public static AnimFrameLoader method457(int i, int i_76_) {
 		AnimFrameLoader class14_sub2_sub15 = ((AnimFrameLoader) Class14_Sub2_Sub12.aClass52_3894
-				.method1210((long) i_76_));
+				.get((long) i_76_));
 		if (class14_sub2_sub15 != null) {
 			AnimFrameLoader class14_sub2_sub15_77_ = class14_sub2_sub15;
 			return class14_sub2_sub15_77_;

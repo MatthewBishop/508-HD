@@ -5,7 +5,7 @@ package com.jagex.rt4;
 
 import javax.media.opengl.GL;
 
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.util.TimeUtil;
 
 public class Class11 {
@@ -14,10 +14,10 @@ public class Class11 {
 	public static long aLong265;
 	public static int textureMemory;
 	public static int anInt267;
-	public static Class2 aClass2_268;
-	public static Class2 aClass2_269;
-	public static Class2 aClass2_270;
-	public static Class2 aClass2_271;
+	public static Deque aClass2_268;
+	public static Deque aClass2_269;
+	public static Deque aClass2_270;
+	public static Deque aClass2_271;
 	public static int[] ids;
 
 	static {
@@ -25,10 +25,10 @@ public class Class11 {
 		textureMemory = 0;
 		aLong265 = 0L;
 		anInt267 = 0;
-		aClass2_268 = new Class2();
-		aClass2_269 = new Class2();
-		aClass2_270 = new Class2();
-		aClass2_271 = new Class2();
+		aClass2_268 = new Deque();
+		aClass2_269 = new Deque();
+		aClass2_270 = new Deque();
+		aClass2_271 = new Deque();
 		ids = new int[1000];
 	}
 
@@ -36,16 +36,16 @@ public class Class11 {
 		if (i_1_ == anInt267) {
 			Class14_Sub1 class14_sub1 = new Class14_Sub1(i_0_);
 			class14_sub1.key = (long) i;
-			aClass2_270.method80(class14_sub1);
+			aClass2_270.pushBack(class14_sub1);
 		}
 	}
 
 	public static synchronized void method203() {
 		anInt267++;
-		aClass2_268.method81();
-		aClass2_269.method81();
-		aClass2_270.method81();
-		aClass2_271.method81();
+		aClass2_268.clear();
+		aClass2_269.clear();
+		aClass2_270.clear();
+		aClass2_271.clear();
 		arbBufferMemory = 0;
 		anInt263 = 0;
 		textureMemory = 0;
@@ -55,7 +55,7 @@ public class Class11 {
 		if (i_3_ == anInt267) {
 			Class14_Sub1 class14_sub1 = new Class14_Sub1(i_2_);
 			class14_sub1.key = (long) i;
-			aClass2_268.method80(class14_sub1);
+			aClass2_268.pushBack(class14_sub1);
 		}
 	}
 
@@ -63,7 +63,7 @@ public class Class11 {
 		GL gl = Class121.aGL2030;
 		int i = 0;
 		for (;;) {
-			Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass2_268.method78();
+			Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass2_268.popFront();
 			if (class14_sub1 == null)
 				break;
 			ids[i++] = (int) class14_sub1.key;
@@ -78,7 +78,7 @@ public class Class11 {
 			i = 0;
 		}
 		for (;;) {
-			Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass2_269.method78();
+			Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass2_269.popFront();
 			if (class14_sub1 == null)
 				break;
 			ids[i++] = (int) class14_sub1.key;
@@ -89,7 +89,7 @@ public class Class11 {
 			}
 		}
 		for (;;) {
-			Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass2_270.method78();
+			Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass2_270.popFront();
 			if (class14_sub1 == null)
 				break;
 			ids[i++] = (int) class14_sub1.key;
@@ -102,7 +102,7 @@ public class Class11 {
 		if (i > 0)
 			gl.glDeleteTextures(i, ids, 0);
 		for (;;) {
-			Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass2_271.method78();
+			Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass2_271.popFront();
 			if (class14_sub1 == null)
 				break;
 			int i_4_ = (int) class14_sub1.key;
@@ -118,7 +118,7 @@ public class Class11 {
 		if (i_5_ == anInt267) {
 			Class14_Sub1 class14_sub1 = new Class14_Sub1();
 			class14_sub1.key = (long) i;
-			aClass2_271.method80(class14_sub1);
+			aClass2_271.pushBack(class14_sub1);
 		}
 	}
 
@@ -134,7 +134,7 @@ public class Class11 {
 		if (i_7_ == anInt267) {
 			Class14_Sub1 class14_sub1 = new Class14_Sub1(i_6_);
 			class14_sub1.key = (long) i;
-			aClass2_269.method80(class14_sub1);
+			aClass2_269.pushBack(class14_sub1);
 		}
 	}
 }

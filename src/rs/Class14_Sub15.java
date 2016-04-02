@@ -3,14 +3,14 @@
  */
 package rs;
 
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.link.Linkable;
 
 import rs.tex.Class14_Sub8_Sub1;
 import rs.tex.Class14_Sub8_Sub17;
 
 public class Class14_Sub15 extends Linkable {
-	public static Class2 aClass2_2988;
+	public static Deque aClass2_2988;
 	public static int anInt2989;
 	public static Class36 aClass36_2990;
 	public int anInt2991;
@@ -21,7 +21,7 @@ public class Class14_Sub15 extends Linkable {
 	public int anInt2999;
 
 	static {
-		aClass2_2988 = new Class2();
+		aClass2_2988 = new Deque();
 	}
 
 	public static void method871(Class9 class9, Class9 class9_0_, int i) {

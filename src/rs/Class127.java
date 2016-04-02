@@ -60,7 +60,7 @@ public class Class127 {
 	}
 
 	public static Class60 method1749(int i, byte i_9_) {
-		Class60 class60 = (Class60) Class9.aClass52_236.method1210((long) i);
+		Class60 class60 = (Class60) Class9.aClass52_236.get((long) i);
 		if (class60 != null) {
 			Class60 class60_10_ = class60;
 			return class60_10_;

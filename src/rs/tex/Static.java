@@ -9,7 +9,7 @@ import java.io.IOException;
 
 import com.jagex.io.Buffer;
 import com.jagex.io.PacketBuffer;
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.link.Cache;
 import com.jagex.link.HashTable;
 import com.jagex.map.MapRegion;
@@ -43,7 +43,7 @@ public class Static {
 	}
 	
 	static {
-		Static.aClass2_683 = new Class2();
+		Static.aClass2_683 = new Deque();
 		Static.aClass124_693 = Class14_Sub2_Sub2.method263(1178, "M");
 		Static.aClass124_694 = Static.aClass124_693;
 		Static.aClass124_695 = Static.aClass124_693;
@@ -123,7 +123,7 @@ public class Static {
 	}
 
 	public static Class46 method1129(int i, int i_0_) {
-		Class46 class46 = (Class46) Class21.aClass52_444.method1210((long) i);
+		Class46 class46 = (Class46) Class21.aClass52_444.get((long) i);
 		if (class46 != null) {
 			Class46 class46_1_ = class46;
 			return class46_1_;
@@ -146,7 +146,7 @@ public class Static {
 	}
 
 	public static int anInt696;
-	public static Class2 aClass2_683;
+	public static Deque aClass2_683;
 	public static Class124 aClass124_697;
 	public static Class124 aClass124_695;
 	public static Class124 aClass124_694;
@@ -173,11 +173,11 @@ public class Static {
 	public static Class124 aClass124_2542 = Class14_Sub2_Sub2.method263(1178, "Untersuchen");
 	public static boolean aBoolean2539;
 	public static void method240(int i) {
-		for (Class14_Sub3 class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.method77(); class14_sub3 != null; class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.method84()) {
+		for (Class14_Sub3 class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.getFront(); class14_sub3 != null; class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.getNext()) {
 			if (class14_sub3.aBoolean2757)
 				class14_sub3.method452(18631);
 		}
-		for (Class14_Sub3 class14_sub3 = (Class14_Sub3) aClass2_683.method77(); class14_sub3 != null; class14_sub3 = (Class14_Sub3) aClass2_683.method84()) {
+		for (Class14_Sub3 class14_sub3 = (Class14_Sub3) aClass2_683.getFront(); class14_sub3 != null; class14_sub3 = (Class14_Sub3) aClass2_683.getNext()) {
 			if (class14_sub3.aBoolean2757)
 				class14_sub3.method452(18631);
 		}
@@ -779,8 +779,8 @@ public class Static {
 			}
 			for (int i_145_ = 0; i_145_ < 104; i_145_++) {
 				for (int i_146_ = 0; i_146_ < 104; i_146_++) {
-					Class2 class2 = (Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_145_][i_146_]);
-					if (class2 != null) {
+					Deque deque = (Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_145_][i_146_]);
+					if (deque != null) {
 						int i_147_ = -(Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495 / 32) + i_145_ * 4 + 2;
 						int i_148_ = -(Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436 / 32) + (i_146_ * 4 + 2);
 						Class100.method1513(i_148_, i_127_, i_147_, class94,
@@ -1881,13 +1881,13 @@ public class Static {
 									0, 0, Class83.anInt1340);
 						Class14_Sub8_Sub23.anInt4478++;
 						for (;;) {
-							Class14_Sub21 class14_sub21 = ((Class14_Sub21) Class126.aClass2_2093.method78());
+							Class14_Sub21 class14_sub21 = ((Class14_Sub21) Class126.aClass2_2093.popFront());
 							if (class14_sub21 == null) {
 								for (;;) {
-									class14_sub21 = (Class14_Sub21) Class14_Sub15.aClass2_2988.method78();
+									class14_sub21 = (Class14_Sub21) Class14_Sub15.aClass2_2988.popFront();
 									if (class14_sub21 == null) {
 										for (;;) {
-											class14_sub21 = ((Class14_Sub21) Class1.aClass2_70.method78());
+											class14_sub21 = ((Class14_Sub21) Class1.aClass2_70.popFront());
 											if (class14_sub21 == null) {
 												if (Static2.aBoolean2736 && (Class97.aClass94_1657 == null))
 													Static2.aBoolean2736 = false;
@@ -2279,7 +2279,7 @@ public class Static {
 										class14_sub20.anInt3083 = i_17_;
 										class14_sub20.anInt3085 = class79.anInt1262;
 										class14_sub20.anInt3084 = i_23_;
-										Class14_Sub4.aClass2_2787.method80(class14_sub20);
+										Class14_Sub4.aClass2_2787.pushBack(class14_sub20);
 									}
 									Class109.aClass14_Sub2_Sub19_Sub1Array1835[class79.anInt1262].method391(i_17_ - 7,
 											i_23_ - 7);
@@ -2290,13 +2290,13 @@ public class Static {
 				}
 			}
 		}
-		for (Class14_Sub20 class14_sub20 = (Class14_Sub20) Class14_Sub4.aClass2_2787.method77(); class14_sub20 != null; class14_sub20 = (Class14_Sub20) Class14_Sub4.aClass2_2787.method84()) {
+		for (Class14_Sub20 class14_sub20 = (Class14_Sub20) Class14_Sub4.aClass2_2787.getFront(); class14_sub20 != null; class14_sub20 = (Class14_Sub20) Class14_Sub4.aClass2_2787.getNext()) {
 			Class109.aClass14_Sub2_Sub19_Sub1Array1835[class14_sub20.anInt3085].method391(class14_sub20.anInt3083 - 7,
 					class14_sub20.anInt3084 - 7);
 			Class92.method1460(class14_sub20.anInt3083, class14_sub20.anInt3084, 15, 16776960, 128);
 			Class92.method1460(class14_sub20.anInt3083, class14_sub20.anInt3084, 7, 16777215, 256);
 		}
-		Class14_Sub4.aClass2_2787.method81();
+		Class14_Sub4.aClass2_2787.clear();
 	}
 
 	public static short[][] aShortArrayArray98;
@@ -2305,7 +2305,7 @@ public class Static {
 	public static Class124 aClass124_100 = Class14_Sub2_Sub2.method263(1178, "Allocating memory");
 	public static Class124 aClass124_93 = Class14_Sub2_Sub2.method263(1178, "welle2:");
 	public static Class124 aClass124_94 = aClass124_100;
-	public static Class2 aClass2_99 = new Class2();
+	public static Deque aClass2_99 = new Deque();
 	public static HashTable aClass55_92 = new HashTable(16);
 	public static long aLong95 = 0L;
 	public static int anInt101;

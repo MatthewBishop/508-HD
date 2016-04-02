@@ -187,8 +187,8 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 	public void method699(int i, int i_19_, int i_20_, int i_21_) {
 		method722(-31396, 64, i_19_, i);
 		if ((anIntArray4817[i_19_] & 0x2) != 0) {
-			for (Class14_Sub18 class14_sub18 = ((Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858.method83()); class14_sub18 != null; class14_sub18 = ((Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858
-							.method76())) {
+			for (Class14_Sub18 class14_sub18 = ((Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858.getTail()); class14_sub18 != null; class14_sub18 = ((Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858
+							.getPrevious())) {
 				if (i_19_ == class14_sub18.anInt3053 && class14_sub18.anInt3041 < 0) {
 					aClass14_Sub18ArrayArray4823[i_19_][(class14_sub18.anInt3037)] = null;
 					aClass14_Sub18ArrayArray4823[i_19_][i] = class14_sub18;
@@ -242,7 +242,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 					}
 					aClass14_Sub18ArrayArray4825[i_19_][(class14_sub18.anInt3039)] = class14_sub18;
 				}
-				aClass14_Sub9_Sub3_4835.aClass2_4858.method80(class14_sub18);
+				aClass14_Sub9_Sub3_4835.aClass2_4858.pushBack(class14_sub18);
 				aClass14_Sub18ArrayArray4823[i_19_][i] = class14_sub18;
 			}
 		}
@@ -485,8 +485,8 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 
 	public void method709(int i, int i_64_) {
 		if ((anIntArray4817[i_64_] & 0x4) != 0) {
-			for (Class14_Sub18 class14_sub18 = ((Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858.method77()); class14_sub18 != null; class14_sub18 = ((Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858
-							.method84())) {
+			for (Class14_Sub18 class14_sub18 = ((Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858.getFront()); class14_sub18 != null; class14_sub18 = ((Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858
+							.getNext())) {
 				if (i_64_ == class14_sub18.anInt3053)
 					class14_sub18.anInt3044 = 0;
 			}
@@ -537,8 +537,8 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 	}
 
 	public void method712(int i, int i_68_) {
-		for (Class14_Sub18 class14_sub18 = ((Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858.method77()); class14_sub18 != null; class14_sub18 = (Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858
-						.method84()) {
+		for (Class14_Sub18 class14_sub18 = ((Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858.getFront()); class14_sub18 != null; class14_sub18 = (Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858
+						.getNext()) {
 			if ((i < 0 || i == class14_sub18.anInt3053) && class14_sub18.anInt3041 < 0) {
 				aClass14_Sub18ArrayArray4823[class14_sub18.anInt3053][class14_sub18.anInt3037] = null;
 				class14_sub18.anInt3041 = 0;
@@ -748,8 +748,8 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 	}
 
 	public void method720(int i, int i_103_) {
-		for (Class14_Sub18 class14_sub18 = ((Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858.method77()); class14_sub18 != null; class14_sub18 = (Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858
-						.method84()) {
+		for (Class14_Sub18 class14_sub18 = ((Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858.getFront()); class14_sub18 != null; class14_sub18 = (Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858
+						.getNext()) {
 			if (i < 0 || class14_sub18.anInt3053 == i) {
 				if (class14_sub18.aClass14_Sub9_Sub4_3051 != null) {
 					class14_sub18.aClass14_Sub9_Sub4_3051.method777(Class115.anInt1909 / 100);
@@ -781,8 +781,8 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 		if (class14_sub18 != null) {
 			aClass14_Sub18ArrayArray4823[i_105_][i_106_] = null;
 			if ((anIntArray4817[i_105_] & 0x2) != 0) {
-				for (Class14_Sub18 class14_sub18_107_ = (Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858.method77(); class14_sub18_107_ != null; class14_sub18_107_ = (Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858
-								.method84()) {
+				for (Class14_Sub18 class14_sub18_107_ = (Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858.getFront(); class14_sub18_107_ != null; class14_sub18_107_ = (Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858
+								.getNext()) {
 					if (class14_sub18_107_.anInt3053 == class14_sub18.anInt3053 && class14_sub18_107_.anInt3041 < 0
 							&& class14_sub18 != class14_sub18_107_) {
 						class14_sub18.anInt3041 = 0;
@@ -945,8 +945,8 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 		if (i < 61)
 			aClass27_4789 = null;
 		if ((anIntArray4817[i_119_] & 0x2) != 0) {
-			for (Class14_Sub18 class14_sub18 = ((Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858.method77()); class14_sub18 != null; class14_sub18 = ((Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858
-							.method84())) {
+			for (Class14_Sub18 class14_sub18 = ((Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858.getFront()); class14_sub18 != null; class14_sub18 = ((Class14_Sub18) aClass14_Sub9_Sub3_4835.aClass2_4858
+							.getNext())) {
 				if (i_119_ == class14_sub18.anInt3053
 						&& (aClass14_Sub18ArrayArray4823[i_119_][class14_sub18.anInt3037]) == null
 						&& class14_sub18.anInt3041 < 0)

@@ -79,7 +79,7 @@ public class Class133_Sub3 extends Class133 {
 			long l = (long) (i + (i_12_ << 48));
 			Class14_Sub2_Sub9 class14_sub2_sub9 = ((Class14_Sub2_Sub9) Class7_Sub2_Sub1.aClass55_3698.get(l));
 			if (class14_sub2_sub9 != null)
-				Class14_Sub8_Sub37.aClass81_4716.method1394(class14_sub2_sub9);
+				Class14_Sub8_Sub37.aClass81_4716.pushFront(class14_sub2_sub9);
 		}
 	}
 

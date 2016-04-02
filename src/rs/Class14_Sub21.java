@@ -96,7 +96,7 @@ public class Class14_Sub21 extends Linkable {
 			Class14_Sub21 class14_sub21 = new Class14_Sub21();
 			class14_sub21.aClass94_3116 = class94;
 			class14_sub21.anObjectArray3115 = class94.anObjectArray1604;
-			Class1.aClass2_70.method80(class14_sub21);
+			Class1.aClass2_70.pushBack(class14_sub21);
 		}
 	}
 

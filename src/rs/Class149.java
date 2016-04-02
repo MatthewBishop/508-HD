@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 
 import rs.tex.Class14_Sub8;
@@ -58,7 +58,7 @@ public class Class149 {
 	public static int[][][] anIntArrayArrayArray2391;
 	public int anInt2392 = 0;
 	public int anInt2393;
-	public Class2 aClass2_2394;
+	public Deque aClass2_2394;
 	public static Class124 aClass124_2395 = Class14_Sub2_Sub2.method263(1178, ":");
 	public int anInt2399 = -1;
 	public Class14_Sub6[] aClass14_Sub6Array2401;
@@ -78,7 +78,7 @@ public class Class149 {
 			if (class14_sub6 == null) {
 				aBoolean2402 = true;
 				if (anInt2385 <= anInt2392) {
-					Class14_Sub6 class14_sub6_1_ = (Class14_Sub6) aClass2_2394.method83();
+					Class14_Sub6 class14_sub6_1_ = (Class14_Sub6) aClass2_2394.getTail();
 					class14_sub6 = new Class14_Sub6(i, class14_sub6_1_.anInt2813);
 					aClass14_Sub6Array2401[class14_sub6_1_.anInt2814] = null;
 					class14_sub6_1_.unlink();
@@ -89,7 +89,7 @@ public class Class149 {
 				aClass14_Sub6Array2401[i] = class14_sub6;
 			} else
 				aBoolean2402 = false;
-			aClass2_2394.method87(class14_sub6);
+			aClass2_2394.pushFront(class14_sub6);
 			int[] is = anIntArrayArray2386[class14_sub6.anInt2813];
 			return is;
 		}
@@ -106,7 +106,7 @@ public class Class149 {
 			anIntArrayArray2386[i_2_] = null;
 		aClass14_Sub6Array2401 = null;
 		anIntArrayArray2386 = null;
-		aClass2_2394.method81();
+		aClass2_2394.clear();
 		aClass2_2394 = null;
 	}
 
@@ -414,9 +414,9 @@ public class Class149 {
 		class14_sub19.aClass114_3077 = class114;
 		class14_sub19.anInt3067 = 1;
 		class14_sub19.aClass9_Sub1_3076 = class9_sub1;
-		Class2 class2 = Class14_Sub8_Sub19.aClass2_4404;
-		synchronized (class2) {
-			Class14_Sub8_Sub19.aClass2_4404.method80(class14_sub19);
+		Deque deque = Class14_Sub8_Sub19.aClass2_4404;
+		synchronized (deque) {
+			Class14_Sub8_Sub19.aClass2_4404.pushBack(class14_sub19);
 		}
 		Class14_Sub9_Sub1.method696((byte) -119);
 	}
@@ -433,7 +433,7 @@ public class Class149 {
 	}
 
 	public Class149(int i, int i_5_, int i_6_) {
-		aClass2_2394 = new Class2();
+		aClass2_2394 = new Deque();
 		aBoolean2402 = false;
 		anInt2385 = i;
 		anIntArrayArray2386 = new int[anInt2385][i_6_];

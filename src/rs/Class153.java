@@ -37,8 +37,8 @@ public class Class153 {
 		if (i > -30)
 			anInt2450 = -106;
 		for (Class14_Sub2_Sub7 class14_sub2_sub7 = (Class14_Sub2_Sub7) Class79.aClass2_1268
-				.method77(); class14_sub2_sub7 != null; class14_sub2_sub7 = (Class14_Sub2_Sub7) Class79.aClass2_1268
-						.method84()) {
+				.getFront(); class14_sub2_sub7 != null; class14_sub2_sub7 = (Class14_Sub2_Sub7) Class79.aClass2_1268
+						.getNext()) {
 			Class133_Sub5 class133_sub5 = class14_sub2_sub7.aClass133_Sub5_3822;
 			if (class133_sub5.anInt3620 == Class14_Sub2_Sub3.anInt3785 && !class133_sub5.aBoolean3621) {
 				if (Class14_Sub2_Sub20.anInt4064 >= class133_sub5.anInt3616) {

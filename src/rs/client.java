@@ -1516,7 +1516,7 @@ public class client extends Applet_Sub1 {
 						Class118.method1608(-13873);
 				}
 				for (;;) {
-					Class14_Sub21 class14_sub21 = (Class14_Sub21) Class126.aClass2_2093.method78();
+					Class14_Sub21 class14_sub21 = (Class14_Sub21) Class126.aClass2_2093.popFront();
 					if (class14_sub21 == null)
 						break;
 					Class94 class94 = class14_sub21.aClass94_3116;
@@ -1530,7 +1530,7 @@ public class client extends Applet_Sub1 {
 					Class133_Sub3.method1830(class14_sub21, -1976917689);
 				}
 				for (;;) {
-					Class14_Sub21 class14_sub21 = ((Class14_Sub21) Class14_Sub15.aClass2_2988.method78());
+					Class14_Sub21 class14_sub21 = ((Class14_Sub21) Class14_Sub15.aClass2_2988.popFront());
 					if (class14_sub21 == null)
 						break;
 					Class94 class94 = class14_sub21.aClass94_3116;
@@ -1544,7 +1544,7 @@ public class client extends Applet_Sub1 {
 					Class133_Sub3.method1830(class14_sub21, -1976917689);
 				}
 				for (;;) {
-					Class14_Sub21 class14_sub21 = (Class14_Sub21) Class1.aClass2_70.method78();
+					Class14_Sub21 class14_sub21 = (Class14_Sub21) Class1.aClass2_70.popFront();
 					if (class14_sub21 == null)
 						break;
 					Class94 class94 = class14_sub21.aClass94_3116;
@@ -1704,8 +1704,8 @@ public class client extends Applet_Sub1 {
 							continue;
 						if (class94.aBoolean1584 && Class14_Sub8_Sub33.anInt4640 >= i_95_ && Class107.anInt1804 >= i_96_
 								&& Class14_Sub8_Sub33.anInt4640 < i_97_ && Class107.anInt1804 < i_98_) {
-							for (Class14_Sub21 class14_sub21 = ((Class14_Sub21) Class1.aClass2_70.method77()); class14_sub21 != null; class14_sub21 = ((Class14_Sub21) Class1.aClass2_70
-											.method84())) {
+							for (Class14_Sub21 class14_sub21 = ((Class14_Sub21) Class1.aClass2_70.getFront()); class14_sub21 != null; class14_sub21 = ((Class14_Sub21) Class1.aClass2_70
+											.getNext())) {
 								if (class14_sub21.aBoolean3109)
 									class14_sub21.unlink();
 							}
@@ -1759,7 +1759,7 @@ public class client extends Applet_Sub1 {
 								class14_sub21.aClass94_3116 = class94;
 								class14_sub21.anInt3106 = Class113.anInt1881;
 								class14_sub21.anObjectArray3115 = class94.anObjectArray1463;
-								Class1.aClass2_70.method80(class14_sub21);
+								Class1.aClass2_70.pushBack(class14_sub21);
 							}
 							if (Class67.aClass94_1060 != null || Class14_Sub8_Sub21.aClass94_4446 != null
 									|| Class133_Sub5.aBoolean3628
@@ -1832,7 +1832,7 @@ public class client extends Applet_Sub1 {
 									class14_sub21.anInt3114 = Class125_Sub1.anInt3367 - i_93_;
 									class14_sub21.anInt3106 = Class139.anInt2230 - i_94_;
 									class14_sub21.anObjectArray3115 = class94.anObjectArray1458;
-									Class1.aClass2_70.method80(class14_sub21);
+									Class1.aClass2_70.pushBack(class14_sub21);
 								}
 							}
 							if (class94.aBoolean1511 && bool_101_ && class94.anObjectArray1591 != null) {
@@ -1842,7 +1842,7 @@ public class client extends Applet_Sub1 {
 								class14_sub21.anInt3114 = Class14_Sub8_Sub33.anInt4640 - i_93_;
 								class14_sub21.anInt3106 = Class107.anInt1804 - i_94_;
 								class14_sub21.anObjectArray3115 = class94.anObjectArray1591;
-								Class1.aClass2_70.method80(class14_sub21);
+								Class1.aClass2_70.pushBack(class14_sub21);
 							}
 							if (class94.aBoolean1511 && !bool_101_) {
 								class94.aBoolean1511 = false;
@@ -1853,7 +1853,7 @@ public class client extends Applet_Sub1 {
 									class14_sub21.anInt3114 = Class14_Sub8_Sub33.anInt4640 - i_93_;
 									class14_sub21.anInt3106 = Class107.anInt1804 - i_94_;
 									class14_sub21.anObjectArray3115 = class94.anObjectArray1592;
-									Class14_Sub15.aClass2_2988.method80(class14_sub21);
+									Class14_Sub15.aClass2_2988.pushBack(class14_sub21);
 								}
 							}
 							if (bool_101_ && class94.anObjectArray1594 != null) {
@@ -1863,7 +1863,7 @@ public class client extends Applet_Sub1 {
 								class14_sub21.anInt3114 = Class14_Sub8_Sub33.anInt4640 - i_93_;
 								class14_sub21.anInt3106 = Class107.anInt1804 - i_94_;
 								class14_sub21.anObjectArray3115 = class94.anObjectArray1594;
-								Class1.aClass2_70.method80(class14_sub21);
+								Class1.aClass2_70.pushBack(class14_sub21);
 							}
 							if (!class94.aBoolean1462 && bool) {
 								class94.aBoolean1462 = true;
@@ -1874,7 +1874,7 @@ public class client extends Applet_Sub1 {
 									class14_sub21.anInt3114 = Class14_Sub8_Sub33.anInt4640 - i_93_;
 									class14_sub21.anInt3106 = Class107.anInt1804 - i_94_;
 									class14_sub21.anObjectArray3115 = class94.anObjectArray1600;
-									Class1.aClass2_70.method80(class14_sub21);
+									Class1.aClass2_70.pushBack(class14_sub21);
 								}
 							}
 							if (class94.aBoolean1462 && bool && class94.anObjectArray1456 != null) {
@@ -1884,7 +1884,7 @@ public class client extends Applet_Sub1 {
 								class14_sub21.anInt3114 = Class14_Sub8_Sub33.anInt4640 - i_93_;
 								class14_sub21.anInt3106 = Class107.anInt1804 - i_94_;
 								class14_sub21.anObjectArray3115 = class94.anObjectArray1456;
-								Class1.aClass2_70.method80(class14_sub21);
+								Class1.aClass2_70.pushBack(class14_sub21);
 							}
 							if (class94.aBoolean1462 && !bool) {
 								class94.aBoolean1462 = false;
@@ -1895,14 +1895,14 @@ public class client extends Applet_Sub1 {
 									class14_sub21.anInt3114 = Class14_Sub8_Sub33.anInt4640 - i_93_;
 									class14_sub21.anInt3106 = Class107.anInt1804 - i_94_;
 									class14_sub21.anObjectArray3115 = class94.anObjectArray1576;
-									Class14_Sub15.aClass2_2988.method80(class14_sub21);
+									Class14_Sub15.aClass2_2988.pushBack(class14_sub21);
 								}
 							}
 							if (class94.anObjectArray1461 != null) {
 								Class14_Sub21 class14_sub21 = new Class14_Sub21();
 								class14_sub21.aClass94_3116 = class94;
 								class14_sub21.anObjectArray3115 = class94.anObjectArray1461;
-								Class126.aClass2_2093.method80(class14_sub21);
+								Class126.aClass2_2093.pushBack(class14_sub21);
 							}
 							if (class94.anObjectArray1596 != null
 									&& (Class14_Sub8_Sub17.anInt4378 > class94.anInt1611)) {
@@ -1911,7 +1911,7 @@ public class client extends Applet_Sub1 {
 									Class14_Sub21 class14_sub21 = new Class14_Sub21();
 									class14_sub21.aClass94_3116 = class94;
 									class14_sub21.anObjectArray3115 = class94.anObjectArray1596;
-									Class1.aClass2_70.method80(class14_sub21);
+									Class1.aClass2_70.pushBack(class14_sub21);
 								} else {
 									while_123_: for (int i_112_ = class94.anInt1611; i_112_ < Class14_Sub8_Sub17.anInt4378; i_112_++) {
 										int i_113_ = (Class141.anIntArray2246[i_112_ & 0x1f]);
@@ -1920,7 +1920,7 @@ public class client extends Applet_Sub1 {
 												Class14_Sub21 class14_sub21 = new Class14_Sub21();
 												class14_sub21.aClass94_3116 = class94;
 												class14_sub21.anObjectArray3115 = (class94.anObjectArray1596);
-												Class1.aClass2_70.method80(class14_sub21);
+												Class1.aClass2_70.pushBack(class14_sub21);
 												break while_123_;
 											}
 										}
@@ -1935,7 +1935,7 @@ public class client extends Applet_Sub1 {
 									Class14_Sub21 class14_sub21 = new Class14_Sub21();
 									class14_sub21.aClass94_3116 = class94;
 									class14_sub21.anObjectArray3115 = class94.anObjectArray1517;
-									Class1.aClass2_70.method80(class14_sub21);
+									Class1.aClass2_70.pushBack(class14_sub21);
 								} else {
 									while_124_: for (int i_115_ = class94.anInt1525; i_115_ < Class14_Sub2_Sub17.anInt4018; i_115_++) {
 										int i_116_ = (Class5.anIntArray147[i_115_ & 0x1f]);
@@ -1944,7 +1944,7 @@ public class client extends Applet_Sub1 {
 												Class14_Sub21 class14_sub21 = new Class14_Sub21();
 												class14_sub21.aClass94_3116 = class94;
 												class14_sub21.anObjectArray3115 = (class94.anObjectArray1517);
-												Class1.aClass2_70.method80(class14_sub21);
+												Class1.aClass2_70.pushBack(class14_sub21);
 												break while_124_;
 											}
 										}
@@ -1957,7 +1957,7 @@ public class client extends Applet_Sub1 {
 									Class14_Sub21 class14_sub21 = new Class14_Sub21();
 									class14_sub21.aClass94_3116 = class94;
 									class14_sub21.anObjectArray3115 = class94.anObjectArray1585;
-									Class1.aClass2_70.method80(class14_sub21);
+									Class1.aClass2_70.pushBack(class14_sub21);
 								} else {
 									while_125_: for (int i_118_ = class94.anInt1593; i_118_ < Class22.anInt461; i_118_++) {
 										int i_119_ = (Class24.anIntArray467[i_118_ & 0x1f]);
@@ -1966,7 +1966,7 @@ public class client extends Applet_Sub1 {
 												Class14_Sub21 class14_sub21 = new Class14_Sub21();
 												class14_sub21.aClass94_3116 = class94;
 												class14_sub21.anObjectArray3115 = (class94.anObjectArray1585);
-												Class1.aClass2_70.method80(class14_sub21);
+												Class1.aClass2_70.pushBack(class14_sub21);
 												break while_125_;
 											}
 										}
@@ -1980,7 +1980,7 @@ public class client extends Applet_Sub1 {
 									Class14_Sub21 class14_sub21 = new Class14_Sub21();
 									class14_sub21.aClass94_3116 = class94;
 									class14_sub21.anObjectArray3115 = class94.anObjectArray1608;
-									Class1.aClass2_70.method80(class14_sub21);
+									Class1.aClass2_70.pushBack(class14_sub21);
 								} else {
 									while_126_: for (int i_121_ = class94.anInt1494; i_121_ < Class133_Sub5.anInt3612; i_121_++) {
 										int i_122_ = (Class14_Sub4.anIntArray2786[i_121_ & 0x1f]);
@@ -1989,7 +1989,7 @@ public class client extends Applet_Sub1 {
 												Class14_Sub21 class14_sub21 = new Class14_Sub21();
 												class14_sub21.aClass94_3116 = class94;
 												class14_sub21.anObjectArray3115 = (class94.anObjectArray1608);
-												Class1.aClass2_70.method80(class14_sub21);
+												Class1.aClass2_70.pushBack(class14_sub21);
 												break while_126_;
 											}
 										}
@@ -2002,7 +2002,7 @@ public class client extends Applet_Sub1 {
 									Class14_Sub21 class14_sub21 = new Class14_Sub21();
 									class14_sub21.aClass94_3116 = class94;
 									class14_sub21.anObjectArray3115 = class94.anObjectArray1504;
-									Class1.aClass2_70.method80(class14_sub21);
+									Class1.aClass2_70.pushBack(class14_sub21);
 								} else {
 									while_127_: for (int i_124_ = class94.anInt1553; i_124_ < Canvas_Sub2.anInt54; i_124_++) {
 										int i_125_ = (Static2.anIntArray2727[i_124_ & 0x1f]);
@@ -2011,7 +2011,7 @@ public class client extends Applet_Sub1 {
 												Class14_Sub21 class14_sub21 = new Class14_Sub21();
 												class14_sub21.aClass94_3116 = class94;
 												class14_sub21.anObjectArray3115 = (class94.anObjectArray1504);
-												Class1.aClass2_70.method80(class14_sub21);
+												Class1.aClass2_70.pushBack(class14_sub21);
 												break while_127_;
 											}
 										}
@@ -2024,31 +2024,31 @@ public class client extends Applet_Sub1 {
 								Class14_Sub21 class14_sub21 = new Class14_Sub21();
 								class14_sub21.aClass94_3116 = class94;
 								class14_sub21.anObjectArray3115 = class94.anObjectArray1524;
-								Class1.aClass2_70.method80(class14_sub21);
+								Class1.aClass2_70.pushBack(class14_sub21);
 							}
 							if (Class38.anInt2616 > class94.anInt1587 && class94.anObjectArray1500 != null) {
 								Class14_Sub21 class14_sub21 = new Class14_Sub21();
 								class14_sub21.aClass94_3116 = class94;
 								class14_sub21.anObjectArray3115 = class94.anObjectArray1500;
-								Class1.aClass2_70.method80(class14_sub21);
+								Class1.aClass2_70.pushBack(class14_sub21);
 							}
 							if (Class7_Sub2_Sub1.anInt3705 > class94.anInt1587 && class94.anObjectArray1457 != null) {
 								Class14_Sub21 class14_sub21 = new Class14_Sub21();
 								class14_sub21.aClass94_3116 = class94;
 								class14_sub21.anObjectArray3115 = class94.anObjectArray1457;
-								Class1.aClass2_70.method80(class14_sub21);
+								Class1.aClass2_70.pushBack(class14_sub21);
 							}
 							if (Static2.anInt660 > class94.anInt1587 && class94.anObjectArray1555 != null) {
 								Class14_Sub21 class14_sub21 = new Class14_Sub21();
 								class14_sub21.aClass94_3116 = class94;
 								class14_sub21.anObjectArray3115 = class94.anObjectArray1555;
-								Class1.aClass2_70.method80(class14_sub21);
+								Class1.aClass2_70.pushBack(class14_sub21);
 							}
 							if (Class129.anInt2131 > class94.anInt1587 && class94.anObjectArray1484 != null) {
 								Class14_Sub21 class14_sub21 = new Class14_Sub21();
 								class14_sub21.aClass94_3116 = class94;
 								class14_sub21.anObjectArray3115 = class94.anObjectArray1484;
-								Class1.aClass2_70.method80(class14_sub21);
+								Class1.aClass2_70.pushBack(class14_sub21);
 							}
 							class94.anInt1587 = Class14_Sub8_Sub23.anInt4478;
 							if (class94.anObjectArray1519 != null) {
@@ -2058,14 +2058,14 @@ public class client extends Applet_Sub1 {
 									class14_sub21.anInt3113 = Class14_Sub11.anIntArray2948[i_127_];
 									class14_sub21.anInt3103 = Class125_Sub3.anIntArray3398[i_127_];
 									class14_sub21.anObjectArray3115 = class94.anObjectArray1519;
-									Class1.aClass2_70.method80(class14_sub21);
+									Class1.aClass2_70.pushBack(class14_sub21);
 								}
 							}
 							if (Class14_Sub8_Sub18.aBoolean4383 && class94.anObjectArray1601 != null) {
 								Class14_Sub21 class14_sub21 = new Class14_Sub21();
 								class14_sub21.aClass94_3116 = class94;
 								class14_sub21.anObjectArray3115 = class94.anObjectArray1601;
-								Class1.aClass2_70.method80(class14_sub21);
+								Class1.aClass2_70.pushBack(class14_sub21);
 							}
 						}
 					}

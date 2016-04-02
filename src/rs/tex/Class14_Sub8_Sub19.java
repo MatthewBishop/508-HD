@@ -4,7 +4,7 @@
 package rs.tex;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 
 import rs.Class112;
 import rs.Class114;
@@ -32,12 +32,12 @@ import rs.Static2;
 public class Class14_Sub8_Sub19 extends Class14_Sub8 {
 	public static Class124 aClass124_4409;
 	public static Class124 aClass124_4412 = Class14_Sub2_Sub2.method263(1178, "Zugewiesener Speicher)3");
-	public static Class2 aClass2_4404;
+	public static Deque aClass2_4404;
 	public static int anInt4408 = 0;
 
 	static {
 		aClass124_4409 = Class14_Sub2_Sub2.method263(1178, ")2");
-		aClass2_4404 = new Class2();
+		aClass2_4404 = new Deque();
 	}
 
 	public static long method578(int i, int i_0_, int i_1_) {

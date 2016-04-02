@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 
 public class Class4 {
 	public int anInt121;
@@ -12,7 +12,7 @@ public class Class4 {
 	public Class133 aClass133_124;
 	public static int anInt125;
 	public static Class124 aClass124_126;
-	public static Class2 aClass2_127;
+	public static Deque aClass2_127;
 	public static int[] anIntArray128 = { 16, 32, 64, 128 };
 	public static Class124 aClass124_129;
 	public static Class124 aClass124_131;
@@ -27,7 +27,7 @@ public class Class4 {
 		aClass124_129 = null;
 		aClass124_126 = Class14_Sub2_Sub2.method263(1178, "Prepared sound engine");
 		aClass124_131 = aClass124_126;
-		aClass2_127 = new Class2();
+		aClass2_127 = new Deque();
 	}
 
 	public static void method108(byte i) {

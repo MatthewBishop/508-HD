@@ -85,10 +85,10 @@ public class Class137 {
 	}
 
 	public static void method1941(boolean bool, byte i) {
-		Class14_Sub3 class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.method77();
+		Class14_Sub3 class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.getFront();
 		if (i != -84)
 			aClass124_2206 = null;
-		for (/**/; class14_sub3 != null; class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.method84()) {
+		for (/**/; class14_sub3 != null; class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.getNext()) {
 			if (class14_sub3.aClass14_Sub9_Sub4_2775 != null) {
 				Class33.aClass14_Sub9_Sub2_585.method730(class14_sub3.aClass14_Sub9_Sub4_2775);
 				class14_sub3.aClass14_Sub9_Sub4_2775 = null;
@@ -100,7 +100,7 @@ public class Class137 {
 			class14_sub3.unlink();
 		}
 		if (bool) {
-			for (class14_sub3 = (Class14_Sub3) Static.aClass2_683.method77(); class14_sub3 != null; class14_sub3 = (Class14_Sub3) Static.aClass2_683.method84()) {
+			for (class14_sub3 = (Class14_Sub3) Static.aClass2_683.getFront(); class14_sub3 != null; class14_sub3 = (Class14_Sub3) Static.aClass2_683.getNext()) {
 				if (class14_sub3.aClass14_Sub9_Sub4_2775 != null) {
 					Class33.aClass14_Sub9_Sub2_585.method730(class14_sub3.aClass14_Sub9_Sub4_2775);
 					class14_sub3.aClass14_Sub9_Sub4_2775 = null;

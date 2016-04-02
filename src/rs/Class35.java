@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.link.Cache;
 import com.jagex.rt4.AthmosphericEffects;
 import com.jagex.rt4.Class14_Sub2_Sub19;
@@ -21,7 +21,7 @@ import rs.tex.Static;
 public class Class35 {
 	public int anInt587 = 0;
 	public static Class124 aClass124_588 = Class14_Sub2_Sub2.method263(1178, " <col=00ff80>");
-	public static Class2 aClass2_589;
+	public static Deque aClass2_589;
 	public static boolean aBoolean593;
 	public static Class14_Sub2_Sub19[] aClass14_Sub2_Sub19Array596;
 	public static Class124 aClass124_597 = Class14_Sub2_Sub2.method263(1178, "zap");
@@ -33,7 +33,7 @@ public class Class35 {
 	public static int anInt603;
 
 	static {
-		aClass2_589 = new Class2();
+		aClass2_589 = new Deque();
 		aClass20_599 = new Cache(64);
 		aClass124_601 = Class14_Sub2_Sub2.method263(1178, "m");
 		anInt602 = -1;

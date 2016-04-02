@@ -4,7 +4,7 @@
 package rs.tex;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.link.HashTable;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub2;
@@ -39,7 +39,7 @@ public class Class14_Sub8_Sub5 extends Class14_Sub8 {
 	public static Class124 aClass124_4165;
 	public static Class124 aClass124_4167;
 	public static Class124 aClass124_4168;
-	public static Class2 aClass2_4163 = new Class2();
+	public static Deque aClass2_4163 = new Deque();
 	public static HashTable aClass55_4155;
 	public static int anInt4166;
 	public static short[][] aShortArrayArray4157 = {

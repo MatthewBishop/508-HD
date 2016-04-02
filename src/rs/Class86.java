@@ -51,18 +51,18 @@ public class Class86 {
 	}
 
 	public static void method1420(int i) {
-		int i_3_ = Class14_Sub8_Sub5.aClass2_4163.method74();
+		int i_3_ = Class14_Sub8_Sub5.aClass2_4163.size();
 		if (i_3_ != 0) {
 			Static.aClass14_Sub10_Sub1_891.writeOpcode(67);
 			Static.aClass14_Sub10_Sub1_891.method809(0);
 			i_3_ = Static.aClass14_Sub10_Sub1_891.position;
-			Class14_Sub1 class14_sub1 = (Class14_Sub1) Class14_Sub8_Sub5.aClass2_4163.method78();
+			Class14_Sub1 class14_sub1 = (Class14_Sub1) Class14_Sub8_Sub5.aClass2_4163.popFront();
 			Static.aClass14_Sub10_Sub1_891.method833((byte) 108, class14_sub1.anInt2714);
 			int i_4_ = class14_sub1.anInt2714;
 			if (i <= 73)
 				method1422(29, null);
 			int i_5_ = 0;
-			while ((class14_sub1 = ((Class14_Sub1) Class14_Sub8_Sub5.aClass2_4163.method78())) != null) {
+			while ((class14_sub1 = ((Class14_Sub1) Class14_Sub8_Sub5.aClass2_4163.popFront())) != null) {
 				if (i_5_ >= 255 || class14_sub1.anInt2714 != i_4_ + 1) {
 					Static.aClass14_Sub10_Sub1_891.method809(i_5_);
 					i_5_ = 0;

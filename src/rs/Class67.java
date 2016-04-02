@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub2;
 
@@ -47,14 +47,14 @@ public class Class67 {
 	}
 
 	public static void method1300(int i, int i_8_, int i_9_) {
-		Class2 class2 = (Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_9_][i]);
-		if (class2 == null)
+		Deque deque = (Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_9_][i]);
+		if (deque == null)
 			Class135.method1928(Class14_Sub2_Sub3.anInt3785, i_9_, i);
 		else {
 			int i_10_ = -99999999;
 			Class14_Sub2_Sub4 class14_sub2_sub4 = null;
-			for (Class14_Sub2_Sub4 class14_sub2_sub4_11_ = (Class14_Sub2_Sub4) class2.method77(); class14_sub2_sub4_11_ != null; class14_sub2_sub4_11_ = (Class14_Sub2_Sub4) class2
-							.method84()) {
+			for (Class14_Sub2_Sub4 class14_sub2_sub4_11_ = (Class14_Sub2_Sub4) deque.getFront(); class14_sub2_sub4_11_ != null; class14_sub2_sub4_11_ = (Class14_Sub2_Sub4) deque
+							.getNext()) {
 				Class142 class142 = Class14_Sub8_Sub24.method605(63,
 						(class14_sub2_sub4_11_.aClass133_Sub3_3789.anInt3557));
 				int i_12_ = class142.anInt2288;
@@ -71,11 +71,11 @@ public class Class67 {
 				Class133_Sub3 class133_sub3 = null;
 				if (i_8_ != 9210)
 					anInt1059 = -106;
-				class2.method87(class14_sub2_sub4);
+				deque.pushFront(class14_sub2_sub4);
 				Class133_Sub3 class133_sub3_13_ = null;
-				for (Class14_Sub2_Sub4 class14_sub2_sub4_14_ = (Class14_Sub2_Sub4) class2
-						.method77(); class14_sub2_sub4_14_ != null; class14_sub2_sub4_14_ = (Class14_Sub2_Sub4) class2
-								.method84()) {
+				for (Class14_Sub2_Sub4 class14_sub2_sub4_14_ = (Class14_Sub2_Sub4) deque
+						.getFront(); class14_sub2_sub4_14_ != null; class14_sub2_sub4_14_ = (Class14_Sub2_Sub4) deque
+								.getNext()) {
 					Class133_Sub3 class133_sub3_15_ = class14_sub2_sub4_14_.aClass133_Sub3_3789;
 					if (class14_sub2_sub4.aClass133_Sub3_3789.anInt3557 != class133_sub3_15_.anInt3557) {
 						if (class133_sub3 == null)

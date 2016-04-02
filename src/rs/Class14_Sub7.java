@@ -129,7 +129,7 @@ public class Class14_Sub7 extends Linkable {
 					if (class133_sub1 instanceof Class133_Sub1_Sub2) {
 						Class133_Sub1_Sub2 class133_sub1_sub2 = (Class133_Sub1_Sub2) class133_sub1;
 						Class14_Sub2_Sub19[] class14_sub2_sub19s = ((Class14_Sub2_Sub19[]) (Class14_Sub8_Sub30.aClass52_4596
-								.method1210((long) (class133_sub1_sub2.aClass12_4949.anInt281))));
+								.get((long) (class133_sub1_sub2.aClass12_4949.anInt281))));
 						if (class14_sub2_sub19s == null) {
 							class14_sub2_sub19s = (Class125_Sub2.method1733((byte) 23, Class14_Sub3.aClass9_Sub1_2750,
 									0, (class133_sub1_sub2.aClass12_4949.anInt281)));

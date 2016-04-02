@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.link.Cacheable;
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.link.Cache;
 
 import rs.tex.Class14_Sub8_Sub14;
@@ -13,7 +13,7 @@ import rs.tex.Class14_Sub8_Sub24;
 
 public class Class14_Sub2_Sub5 extends Cacheable {
 	public int anInt3797 = 12800;
-	public Class2 aClass2_3801;
+	public Deque aClass2_3801;
 	public int anInt3802;
 	public static boolean aBoolean3803;
 	public Class124 aClass124_3804;
@@ -35,7 +35,7 @@ public class Class14_Sub2_Sub5 extends Cacheable {
 		anInt3810 = 0;
 		anInt3805 = 0;
 		anInt3806 = 12800;
-		for (Class14_Sub4 class14_sub4 = (Class14_Sub4) aClass2_3801.method77(); class14_sub4 != null; class14_sub4 = (Class14_Sub4) aClass2_3801.method84()) {
+		for (Class14_Sub4 class14_sub4 = (Class14_Sub4) aClass2_3801.getFront(); class14_sub4 != null; class14_sub4 = (Class14_Sub4) aClass2_3801.getNext()) {
 			if (class14_sub4.anInt2779 < anInt3797)
 				anInt3797 = class14_sub4.anInt2779;
 			if (class14_sub4.anInt2776 < anInt3806)
@@ -101,7 +101,7 @@ public class Class14_Sub2_Sub5 extends Cacheable {
 			return bool;
 		}
 		for (Class14_Sub4 class14_sub4 = (Class14_Sub4) aClass2_3801
-				.method77(); class14_sub4 != null; class14_sub4 = (Class14_Sub4) aClass2_3801.method84()) {
+				.getFront(); class14_sub4 != null; class14_sub4 = (Class14_Sub4) aClass2_3801.getNext()) {
 			if (class14_sub4.method456(i, i_9_, true))
 				return true;
 		}
@@ -117,6 +117,6 @@ public class Class14_Sub2_Sub5 extends Cacheable {
 		anInt3802 = i_13_;
 		aBoolean3809 = bool;
 		aClass124_3807 = class124_11_;
-		aClass2_3801 = new Class2();
+		aClass2_3801 = new Deque();
 	}
 }

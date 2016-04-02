@@ -6,7 +6,7 @@ package com.jagex.cache.loaders;
 import com.jagex.cache.anim.AnimFrame;
 import com.jagex.cache.anim.AnimFrameBase;
 import com.jagex.link.Cacheable;
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 
 import rs.Class9;
 import rs.tex.Class14_Sub8_Sub14;
@@ -15,7 +15,7 @@ public class AnimFrameLoader extends Cacheable {
 	public AnimFrame[] aClass143Array3951;
 
 	public AnimFrameLoader(Class9 class9, Class9 class9_9_, int i, boolean bool) {
-		Class2 class2 = new Class2();
+		Deque deque = new Deque();
 		int i_10_ = class9.method177(i, 13537);
 		aClass143Array3951 = new AnimFrame[i_10_];
 		int[] is = class9.method176((byte) 45, i);
@@ -23,7 +23,7 @@ public class AnimFrameLoader extends Cacheable {
 			AnimFrameBase animframebase = null;
 			byte[] is_12_ = class9.method163(is[i_11_], i, 0);
 			int i_13_ = is_12_[1] & 0xff | is_12_[0] << 8 & 0xff00;
-			for (AnimFrameBase animframebase_14_ = (AnimFrameBase) class2.method77(); animframebase_14_ != null; animframebase_14_ = (AnimFrameBase) class2.method84()) {
+			for (AnimFrameBase animframebase_14_ = (AnimFrameBase) deque.getFront(); animframebase_14_ != null; animframebase_14_ = (AnimFrameBase) deque.getNext()) {
 				if (animframebase_14_.anInt2805 == i_13_) {
 					animframebase = animframebase_14_;
 					break;
@@ -36,7 +36,7 @@ public class AnimFrameLoader extends Cacheable {
 				else
 					is_15_ = class9_9_.method157(i_13_, 0, 20983);
 				animframebase = new AnimFrameBase(i_13_, is_15_);
-				class2.method80(animframebase);
+				deque.pushBack(animframebase);
 			}
 			aClass143Array3951[is[i_11_]] = new AnimFrame(is_12_, animframebase);
 		}

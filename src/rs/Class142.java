@@ -520,7 +520,7 @@ public class Class142 {
 				return class133_sub7;
 			}
 		}
-		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Class125.aClass52_2075.method1210((long) anInt2276));
+		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Class125.aClass52_2075.get((long) anInt2276));
 		if (class133_sub7 == null) {
 			Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(Class14_Sub8_Sub6.aClass9_4193, anInt2311, 0);
 			if (class133_sub2 == null) {

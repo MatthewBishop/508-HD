@@ -47,10 +47,10 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 	}
 
 	public static void method434(int i, int i_3_, Class79 class79, int i_4_, int i_5_) {
-		Class14_Sub3 class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.method77();
+		Class14_Sub3 class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.getFront();
 		if (i_4_ != 128)
 			anIntArray4077 = null;
-		for (/**/; class14_sub3 != null; class14_sub3 = ((Class14_Sub3) Class152.aClass2_2438.method84())) {
+		for (/**/; class14_sub3 != null; class14_sub3 = ((Class14_Sub3) Class152.aClass2_2438.getNext())) {
 			if (class14_sub3.anInt2763 == i_3_ && i * 128 == class14_sub3.anInt2774
 					&& i_5_ * 128 == class14_sub3.anInt2767
 					&& class14_sub3.aClass79_2747.anInt1257 == class79.anInt1257) {

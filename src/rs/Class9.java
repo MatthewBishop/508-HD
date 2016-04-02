@@ -489,7 +489,7 @@ public abstract class Class9 {
 
 	public static void method169(int i) {
 		if (i == -1) {
-			for (Class14_Sub14 class14_sub14 = (Class14_Sub14) Class33.aClass2_583.method77(); class14_sub14 != null; class14_sub14 = (Class14_Sub14) Class33.aClass2_583.method84()) {
+			for (Class14_Sub14 class14_sub14 = (Class14_Sub14) Class33.aClass2_583.getFront(); class14_sub14 != null; class14_sub14 = (Class14_Sub14) Class33.aClass2_583.getNext()) {
 				if (class14_sub14.anInt2975 > 0)
 					class14_sub14.anInt2975--;
 				if (class14_sub14.anInt2975 == 0) {

@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 
 import rs.tex.Class14_Sub8_Sub15;
 import rs.tex.Class14_Sub8_Sub19;
@@ -11,7 +11,7 @@ import rs.tex.Static;
 
 public class Class1 {
 	public static int[] anIntArray69 = new int[32];
-	public static Class2 aClass2_70;
+	public static Deque aClass2_70;
 	public static Class124 aClass124_71;
 	public static Class124 aClass124_72;
 	public static int anInt73;
@@ -27,7 +27,7 @@ public class Class1 {
 		aClass124_71 = (Class14_Sub2_Sub2.method263(1178,
 				"Ihre Freunde)2Liste ist voll(Q Maximale Eintr-=ge: Mitglieder 200)4freie Spieler 100"));
 		aClass124_72 = Class14_Sub2_Sub2.method263(1178, "Mem:");
-		aClass2_70 = new Class2();
+		aClass2_70 = new Deque();
 		anInt73 = 0;
 		aBoolean74 = false;
 	}
@@ -74,9 +74,9 @@ public class Class1 {
 		class14_sub19.anInt3067 = 0;
 		class14_sub19.aClass114_3077 = class114;
 		class14_sub19.aByteArray3069 = is;
-		Class2 class2 = Class14_Sub8_Sub19.aClass2_4404;
-		synchronized (class2) {
-			Class14_Sub8_Sub19.aClass2_4404.method80(class14_sub19);
+		Deque deque = Class14_Sub8_Sub19.aClass2_4404;
+		synchronized (deque) {
+			Class14_Sub8_Sub19.aClass2_4404.pushBack(class14_sub19);
 		}
 		Class14_Sub9_Sub1.method696((byte) -119);
 	}

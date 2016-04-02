@@ -141,8 +141,8 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 
 	public static void method64() {
 		for (Class14_Sub2_Sub10 class14_sub2_sub10 = (Class14_Sub2_Sub10) Class4.aClass2_127
-				.method77(); class14_sub2_sub10 != null; class14_sub2_sub10 = (Class14_Sub2_Sub10) Class4.aClass2_127
-						.method84()) {
+				.getFront(); class14_sub2_sub10 != null; class14_sub2_sub10 = (Class14_Sub2_Sub10) Class4.aClass2_127
+						.getNext()) {
 			Class133_Sub6 class133_sub6 = class14_sub2_sub10.aClass133_Sub6_3870;
 			if (Class14_Sub2_Sub3.anInt3785 != class133_sub6.anInt3655
 					|| class133_sub6.anInt3644 < Class14_Sub2_Sub20.anInt4064)

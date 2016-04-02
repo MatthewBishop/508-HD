@@ -4,7 +4,7 @@
 package rs.tex;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 
 import rs.Class100;
 import rs.Class102;
@@ -145,17 +145,17 @@ public class Class14_Sub8_Sub7 extends Class14_Sub8 {
 			int i_24_ = (i & 0x7) + Class14_Sub4.anInt2788;
 			int i_25_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method784((byte) 116);
 			if (i_23_ >= 0 && i_24_ >= 0 && i_23_ < 104 && i_24_ < 104) {
-				Class2 class2 = (Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_23_][i_24_]);
-				if (class2 != null) {
-					for (Class14_Sub2_Sub4 class14_sub2_sub4 = (Class14_Sub2_Sub4) class2
-							.method77(); class14_sub2_sub4 != null; class14_sub2_sub4 = (Class14_Sub2_Sub4) class2
-									.method84()) {
+				Deque deque = (Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_23_][i_24_]);
+				if (deque != null) {
+					for (Class14_Sub2_Sub4 class14_sub2_sub4 = (Class14_Sub2_Sub4) deque
+							.getFront(); class14_sub2_sub4 != null; class14_sub2_sub4 = (Class14_Sub2_Sub4) deque
+									.getNext()) {
 						if ((i_25_ & 0x7fff) == (class14_sub2_sub4.aClass133_Sub3_3789.anInt3557)) {
 							class14_sub2_sub4.unlink();
 							break;
 						}
 					}
-					if (class2.method77() == null)
+					if (deque.getFront() == null)
 						Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_23_][i_24_] = null;
 					Class67.method1300(i_24_, 9210, i_23_);
 				}
@@ -186,7 +186,7 @@ public class Class14_Sub8_Sub7 extends Class14_Sub8 {
 						i_33_));
 				class133_sub6.method1849(Class14_Sub2_Sub20.anInt4064 + i_34_, (byte) -122, i_28_, i_29_,
 						(Static.method1017(i_28_, (Class14_Sub2_Sub3.anInt3785), (byte) 79, i_29_) - i_33_));
-				Class4.aClass2_127.method80(new Class14_Sub2_Sub10(class133_sub6));
+				Class4.aClass2_127.pushBack(new Class14_Sub2_Sub10(class133_sub6));
 			}
 		} else if (Class133_Sub4.anInt3579 == 232) {
 			int i = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method798();
@@ -222,11 +222,11 @@ public class Class14_Sub8_Sub7 extends Class14_Sub8 {
 			int i_49_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method784((byte) 102);
 			int i_50_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method784((byte) 106);
 			if (i_46_ >= 0 && i_47_ >= 0 && i_46_ < 104 && i_47_ < 104) {
-				Class2 class2 = (Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_46_][i_47_]);
-				if (class2 != null) {
-					for (Class14_Sub2_Sub4 class14_sub2_sub4 = (Class14_Sub2_Sub4) class2
-							.method77(); class14_sub2_sub4 != null; class14_sub2_sub4 = (Class14_Sub2_Sub4) class2
-									.method84()) {
+				Deque deque = (Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_46_][i_47_]);
+				if (deque != null) {
+					for (Class14_Sub2_Sub4 class14_sub2_sub4 = (Class14_Sub2_Sub4) deque
+							.getFront(); class14_sub2_sub4 != null; class14_sub2_sub4 = (Class14_Sub2_Sub4) deque
+									.getNext()) {
 						Class133_Sub3 class133_sub3 = class14_sub2_sub4.aClass133_Sub3_3789;
 						if ((i_48_ & 0x7fff) == class133_sub3.anInt3557 && class133_sub3.anInt3558 == i_49_) {
 							class133_sub3.anInt3558 = i_50_;
@@ -260,7 +260,7 @@ public class Class14_Sub8_Sub7 extends Class14_Sub8 {
 				Class133_Sub5 class133_sub5 = new Class133_Sub5(i_60_, Class14_Sub2_Sub3.anInt3785, i_58_, i_59_,
 						(Static.method1017(i_58_, (Class14_Sub2_Sub3.anInt3785), (byte) 116, i_59_) - i_61_), i_62_,
 						Class14_Sub2_Sub20.anInt4064);
-				Class79.aClass2_1268.method80(new Class14_Sub2_Sub7(class133_sub5));
+				Class79.aClass2_1268.pushBack(new Class14_Sub2_Sub7(class133_sub5));
 			}
 		} else {
 			do {
@@ -317,9 +317,9 @@ public class Class14_Sub8_Sub7 extends Class14_Sub8 {
 						class133_sub3.anInt3557 = i_76_;
 						class133_sub3.anInt3558 = i_77_;
 						if ((Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_79_][i_80_]) == null)
-							Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_79_][i_80_] = new Class2();
+							Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_79_][i_80_] = new Deque();
 						Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_79_][i_80_]
-								.method80(new Class14_Sub2_Sub4(class133_sub3));
+								.pushBack(new Class14_Sub2_Sub4(class133_sub3));
 						Class67.method1300(i_80_, 9210, i_79_);
 					}
 				} else if (Class133_Sub4.anInt3579 == 29) {
@@ -348,7 +348,7 @@ public class Class14_Sub8_Sub7 extends Class14_Sub8 {
 								i_92_, i_85_, i_88_));
 						class133_sub6.method1849(i_89_ + Class14_Sub2_Sub20.anInt4064, (byte) -122, i_83_, i_84_,
 								Static.method1017(i_83_, Class14_Sub2_Sub3.anInt3785, (byte) -105, i_84_) - i_88_);
-						Class4.aClass2_127.method80(new Class14_Sub2_Sub10(class133_sub6));
+						Class4.aClass2_127.pushBack(new Class14_Sub2_Sub10(class133_sub6));
 					}
 				} else if (Class133_Sub4.anInt3579 == 25) {
 					int i = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method781(false);
@@ -361,9 +361,9 @@ public class Class14_Sub8_Sub7 extends Class14_Sub8 {
 						class133_sub3.anInt3557 = i_96_;
 						class133_sub3.anInt3558 = i;
 						if ((Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_94_][i_95_]) == null)
-							Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_94_][i_95_] = new Class2();
+							Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_94_][i_95_] = new Deque();
 						Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_94_][i_95_]
-								.method80(new Class14_Sub2_Sub4(class133_sub3));
+								.pushBack(new Class14_Sub2_Sub4(class133_sub3));
 						Class67.method1300(i_95_, 9210, i_94_);
 					}
 				}

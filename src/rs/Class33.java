@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.link.HashTable;
 
 import rs.tex.Class14_Sub8_Sub19;
@@ -17,13 +17,13 @@ public class Class33 {
 	public static Class124 aClass124_578 = Class14_Sub2_Sub2.method263(1178, "");
 	public static Class9 aClass9_579;
 	public static short[] aShortArray580;
-	public static Class2 aClass2_583;
+	public static Deque aClass2_583;
 	public static boolean aBoolean584 = true;
 	public static Class14_Sub9_Sub2 aClass14_Sub9_Sub2_585;
 	public static int anInt586;
 
 	static {
-		aClass2_583 = new Class2();
+		aClass2_583 = new Deque();
 	}
 
 	public static void method1084(byte i) {

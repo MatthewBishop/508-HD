@@ -138,8 +138,8 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 
 	public static void method274(Class124 class124, int i) {
 		for (Class14_Sub2_Sub5 class14_sub2_sub5 = (Class14_Sub2_Sub5) Class97.aClass2_1647
-				.method77(); class14_sub2_sub5 != null; class14_sub2_sub5 = (Class14_Sub2_Sub5) Class97.aClass2_1647
-						.method84()) {
+				.getFront(); class14_sub2_sub5 != null; class14_sub2_sub5 = (Class14_Sub2_Sub5) Class97.aClass2_1647
+						.getNext()) {
 			if (class14_sub2_sub5.aClass124_3804.method1704(class124, (byte) 116)) {
 				Class7_Sub1.aClass14_Sub2_Sub5_2665 = class14_sub2_sub5;
 				return;

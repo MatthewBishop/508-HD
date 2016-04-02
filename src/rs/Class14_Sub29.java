@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.cache.loaders.AnimFrameLoader;
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.Class148_Sub1;
 
@@ -141,6 +141,6 @@ public class Class14_Sub29 extends Linkable {
 	public static void method936(int i) {
 		if (i != 99)
 			AnimFrameLoader.method933(null, null, 6, (byte) -22, false);
-		Class40.aClass2_664 = new Class2();
+		Class40.aClass2_664 = new Deque();
 	}
 }

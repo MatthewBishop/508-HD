@@ -35,8 +35,8 @@ public class Class150 {
 		if (bool)
 			anIntArray2422 = null;
 		for (Class14_Sub2_Sub5 class14_sub2_sub5 = (Class14_Sub2_Sub5) Class97.aClass2_1647
-				.method77(); class14_sub2_sub5 != null; class14_sub2_sub5 = (Class14_Sub2_Sub5) Class97.aClass2_1647
-						.method84()) {
+				.getFront(); class14_sub2_sub5 != null; class14_sub2_sub5 = (Class14_Sub2_Sub5) Class97.aClass2_1647
+						.getNext()) {
 			if (class14_sub2_sub5.aBoolean3809 && class14_sub2_sub5.method286(i, i_0_, -1347621730))
 				return class14_sub2_sub5;
 		}

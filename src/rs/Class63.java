@@ -5,7 +5,7 @@ package rs;
 
 import java.awt.Component;
 
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.rt4.Class11;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.Class14_Sub27;
@@ -72,15 +72,15 @@ public class Class63 {
 
 	public static void method1277(int i, Class9_Sub1 class9_sub1, int i_1_, Class114 class114) {
 		byte[] is = null;
-		Class2 class2 = Class14_Sub8_Sub19.aClass2_4404;
-		synchronized (class2) {
+		Deque deque = Class14_Sub8_Sub19.aClass2_4404;
+		synchronized (deque) {
 			if (i != -5761)
 				method1284((byte) -35, 50, -93);
-			Class14_Sub19 class14_sub19 = (Class14_Sub19) Class14_Sub8_Sub19.aClass2_4404.method77();
+			Class14_Sub19 class14_sub19 = (Class14_Sub19) Class14_Sub8_Sub19.aClass2_4404.getFront();
 			while (class14_sub19 != null) {
 				if ((long) i_1_ != class14_sub19.key || class14_sub19.aClass114_3077 != class114
 						|| class14_sub19.anInt3067 != 0)
-					class14_sub19 = ((Class14_Sub19) Class14_Sub8_Sub19.aClass2_4404.method84());
+					class14_sub19 = ((Class14_Sub19) Class14_Sub8_Sub19.aClass2_4404.getNext());
 				else {
 					is = class14_sub19.aByteArray3069;
 					break;

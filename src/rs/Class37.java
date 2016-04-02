@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.link.HashTable;
 import com.jagex.link.ref.SoftCache;
 
@@ -127,15 +127,15 @@ public class Class37 {
 			for (int i_3_ = 0; i_3_ < 32768; i_3_++)
 				Class14_Sub4.aClass133_Sub1_Sub2Array2785[i_3_] = null;
 			Class14_Sub3.aClass133_Sub1_Sub1_2748 = Class14_Sub8_Sub23.aClass133_Sub1_Sub1Array4474[2047] = new Class133_Sub1_Sub1();
-			Class4.aClass2_127.method81();
-			Class79.aClass2_1268.method81();
+			Class4.aClass2_127.clear();
+			Class79.aClass2_1268.clear();
 			for (int i_4_ = 0; i_4_ < 4; i_4_++) {
 				for (int i_5_ = 0; i_5_ < 104; i_5_++) {
 					for (int i_6_ = 0; i_6_ < 104; i_6_++)
 						Class128.aClass2ArrayArrayArray2119[i_4_][i_5_][i_6_] = null;
 				}
 			}
-			Class33.aClass2_583 = new Class2();
+			Class33.aClass2_583 = new Deque();
 			Class15.anInt380 = 0;
 			Static2.anInt3728 = 0;
 			Static2.method822(-37);
@@ -186,7 +186,7 @@ public class Class37 {
 			Class33.aShortArray580 = Static.aShortArray2717 = Class14_Sub8_Sub39.aShortArray4747 = Class7_Sub1.aShortArray2663 = new short[256];
 			Class7.aClass124_174 = Class44.aClass124_729;
 			Class47.aBoolean788 = true;
-			Class14_Sub8_Sub5.aClass2_4163.method81();
+			Class14_Sub8_Sub5.aClass2_4163.clear();
 			Class88.method1436((byte) -128);
 		}
 	}
@@ -200,7 +200,7 @@ public class Class37 {
 
 	public static void method1112(Class133_Sub1_Sub2 class133_sub1_sub2, byte i) {
 		for (Class14_Sub3 class14_sub3 = (Class14_Sub3) Static.aClass2_683
-				.method77(); class14_sub3 != null; class14_sub3 = (Class14_Sub3) Static.aClass2_683.method84()) {
+				.getFront(); class14_sub3 != null; class14_sub3 = (Class14_Sub3) Static.aClass2_683.getNext()) {
 			if (class14_sub3.aClass133_Sub1_Sub2_2762 == class133_sub1_sub2) {
 				if (class14_sub3.aClass14_Sub9_Sub4_2775 != null) {
 					Class33.aClass14_Sub9_Sub2_585.method730(class14_sub3.aClass14_Sub9_Sub4_2775);

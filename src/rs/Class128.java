@@ -3,13 +3,13 @@
  */
 package rs;
 
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 
 import rs.tex.Class14_Sub8_Sub19;
 import rs.tex.Class14_Sub8_Sub6;
 
 public class Class128 {
-	public static Class2[][][] aClass2ArrayArrayArray2119 = new Class2[4][104][104];
+	public static Deque[][][] aClass2ArrayArrayArray2119 = new Deque[4][104][104];
 	public static Class124 aClass124_2122;
 	public static Class124 aClass124_2123 = Class14_Sub2_Sub2.method263(1178, "glow3:");
 	public static Class124 aClass124_2126;

@@ -61,7 +61,7 @@ public class Class102 {
 				}
 			}
 		}
-		Class133_Sub7 class133_sub7 = (Class133_Sub7) Class36.aClass52_621.method1210(l);
+		Class133_Sub7 class133_sub7 = (Class133_Sub7) Class36.aClass52_621.get(l);
 		if (class133_sub7 == null) {
 			boolean bool = false;
 			for (int i_4_ = 0; i_4_ < 12; i_4_++) {
@@ -74,7 +74,7 @@ public class Class102 {
 			}
 			if (bool) {
 				if (aLong1706 != -1L)
-					class133_sub7 = ((Class133_Sub7) Class36.aClass52_621.method1210(aLong1706));
+					class133_sub7 = ((Class133_Sub7) Class36.aClass52_621.get(aLong1706));
 				if (class133_sub7 == null) {
 					Class133_Sub7 class133_sub7_6_ = null;
 					return class133_sub7_6_;
@@ -199,7 +199,7 @@ public class Class102 {
 			Class133_Sub7 class133_sub7 = Class126.method1744(anInt1720, 170).method224((byte) -113, class46, i_27_);
 			return class133_sub7;
 		}
-		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Class70.aClass52_1079.method1210(aLong1713));
+		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Class70.aClass52_1079.get(aLong1713));
 		if (class133_sub7 == null) {
 			boolean bool = false;
 			for (int i_28_ = 0; i_28_ < 12; i_28_++) {
@@ -293,7 +293,7 @@ public class Class102 {
 			Class133_Sub7 class133_sub7 = null;
 			return class133_sub7;
 		}
-		Class133_Sub7 class133_sub7 = (Class133_Sub7) Class70.aClass52_1079.method1210(l);
+		Class133_Sub7 class133_sub7 = (Class133_Sub7) Class70.aClass52_1079.get(l);
 		if (class133_sub7 == null) {
 			Class133_Sub2[] class133_sub2s = new Class133_Sub2[2];
 			int i_48_ = 0;

@@ -146,7 +146,7 @@ public class Class60 {
 	}
 
 	public Class133_Sub7 method1267(int i, int i_21_) {
-		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Static2.aClass52_4053.method1210((long) anInt962));
+		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Static2.aClass52_4053.get((long) anInt962));
 		if (class133_sub7 == null) {
 			Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(Static.aClass9_2711, anInt977, 0);
 			if (class133_sub2 == null) {
@@ -204,7 +204,7 @@ public class Class60 {
 	public static void method1270(int i, byte i_27_) {
 		if (i_27_ != 46)
 			method1264(-75);
-		Class14_Sub8_Sub5.aClass2_4163.method80(new Class14_Sub1(i));
+		Class14_Sub8_Sub5.aClass2_4163.pushBack(new Class14_Sub1(i));
 	}
 
 	public Class60() {

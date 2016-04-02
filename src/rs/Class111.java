@@ -79,7 +79,7 @@ public class Class111 {
 		int i_3_ = 68 % ((-21 - i) / 53);
 		for (int i_4_ = 0; i_4_ < 100; i_4_++)
 			Class14_Sub8_Sub36.aBooleanArray4698[i_4_] = true;
-		Class14_Sub8_Sub5.aClass2_4163.method81();
+		Class14_Sub8_Sub5.aClass2_4163.clear();
 		Class88.method1436((byte) -121);
 	}
 }

@@ -307,7 +307,7 @@ public class Class47 {
 			Class51 class51 = null;
 			return class51;
 		}
-		Class51 class51 = (Class51) Class14_Sub8_Sub9.aClass52_4240.method1210((long) i);
+		Class51 class51 = (Class51) Class14_Sub8_Sub9.aClass52_4240.get((long) i);
 		if (class51 != null) {
 			Class51 class51_39_ = class51;
 			return class51_39_;

@@ -64,8 +64,8 @@ public class Class68 {
 	public static void method1307(byte i) {
 		if (i == -58) {
 			for (Class14_Sub14 class14_sub14 = (Class14_Sub14) Class33.aClass2_583
-					.method77(); class14_sub14 != null; class14_sub14 = ((Class14_Sub14) Class33.aClass2_583
-							.method84())) {
+					.getFront(); class14_sub14 != null; class14_sub14 = ((Class14_Sub14) Class33.aClass2_583
+							.getNext())) {
 				if (class14_sub14.anInt2975 == -1) {
 					class14_sub14.anInt2980 = 0;
 					Class7_Sub3_Sub1.method141(4, class14_sub14);

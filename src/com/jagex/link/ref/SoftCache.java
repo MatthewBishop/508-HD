@@ -7,9 +7,6 @@ import com.jagex.link.Cacheable;
 import com.jagex.link.HashTable;
 import com.jagex.link.Queue;
 
-import rs.tex.Class14_Sub8_Sub3;
-import rs.tex.Static;
-
 public class SoftCache {
 
 	private static ReferenceFactory referenceFactory = create();
@@ -26,6 +23,15 @@ public class SoftCache {
 			return null;
 		}
 		return referenceFactory;
+	}
+	
+	private static void insert(Cacheable afterThis, Cacheable toInsert) {
+		if (toInsert.previousCacheable != null)
+			toInsert.unlinkCacheable();
+		toInsert.previousCacheable = afterThis;
+		toInsert.nextCacheable = afterThis.nextCacheable;
+		toInsert.previousCacheable.nextCacheable = toInsert;
+		toInsert.nextCacheable.previousCacheable = toInsert;
 	}
 	
 	public HashTable table;
@@ -48,7 +54,7 @@ public class SoftCache {
 	}
 
 	public void clear() {
-		history.method1395();
+		history.clear();
 		table.clear();
 		unused = capacity;
 	}
@@ -70,28 +76,28 @@ public class SoftCache {
 			class14_sub2_sub18.unlinkCacheable();
 		} else
 			unused--;
-		HardReferenceWrapper class14_sub2_sub18_sub2 = new HardReferenceWrapper(object);
-		table.put(l, class14_sub2_sub18_sub2);
-		history.push(class14_sub2_sub18_sub2);
-		class14_sub2_sub18_sub2.keyCacheable = 0L;
+		HardReferenceWrapper hard = new HardReferenceWrapper(object);
+		table.put(l, hard);
+		history.push(hard);
+		hard.keyCacheable = 0L;
 	}
 
-	public void method1208(int i_8_) {
+	public void method1208(int id) {
 		if (SoftCache.referenceFactory != null) {
-			for (ReferenceWrapper class14_sub2_sub18 = (ReferenceWrapper) history.method1400(); class14_sub2_sub18 != null; class14_sub2_sub18 = ((ReferenceWrapper) history
-							.method1402())) {
-				if (!class14_sub2_sub18.isSoft()) {
-					if ((long) i_8_ < ++class14_sub2_sub18.keyCacheable) {
-						ReferenceWrapper class14_sub2_sub18_9_ = SoftCache.referenceFactory
-								.wrapReference(class14_sub2_sub18);
-						table.put(class14_sub2_sub18.key, class14_sub2_sub18_9_);
-						Cacheable.method301(class14_sub2_sub18, class14_sub2_sub18_9_);
-						class14_sub2_sub18.unlink();
-						class14_sub2_sub18.unlinkCacheable();
+			for (ReferenceWrapper ref = (ReferenceWrapper) history.peek(); ref != null; ref = ((ReferenceWrapper) history
+							.getNext())) {
+				if (!ref.isSoft()) {
+					if ((long) id < ++ref.keyCacheable) {
+						ReferenceWrapper soft = SoftCache.referenceFactory
+								.wrapReference(ref);
+						table.put(ref.key, soft);
+						SoftCache.insert(ref, soft);
+						ref.unlink();
+						ref.unlinkCacheable();
 					}
-				} else if (class14_sub2_sub18.getReference() == null) {
-					class14_sub2_sub18.unlink();
-					class14_sub2_sub18.unlinkCacheable();
+				} else if (ref.getReference() == null) {
+					ref.unlink();
+					ref.unlinkCacheable();
 					unused++;
 				}
 			}
@@ -99,9 +105,9 @@ public class SoftCache {
 	}
 
 	public void method1209() {
-		ReferenceWrapper class14_sub2_sub18 = (ReferenceWrapper) history.method1400();
+		ReferenceWrapper class14_sub2_sub18 = (ReferenceWrapper) history.peek();
 		for (/**/; class14_sub2_sub18 != null; class14_sub2_sub18 = (ReferenceWrapper) history
-				.method1402()) {
+				.getNext()) {
 			if (class14_sub2_sub18.isSoft()) {
 				class14_sub2_sub18.unlink();
 				class14_sub2_sub18.unlinkCacheable();
@@ -110,7 +116,7 @@ public class SoftCache {
 		}
 	}
 
-	public Object method1210(long l) {
+	public Object get(long l) {
 		ReferenceWrapper ref = (ReferenceWrapper) table.get(l);
 		if (ref == null) {
 			return null;
@@ -135,4 +141,5 @@ public class SoftCache {
 		}
 		return object;
 	}
+
 }

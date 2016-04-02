@@ -4,7 +4,7 @@
 package rs.tex;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class2;
+import com.jagex.link.Deque;
 import com.jagex.map.MapRegion;
 import com.jagex.rt4.Class148;
 
@@ -37,13 +37,13 @@ public class Class14_Sub8_Sub23 extends Class14_Sub8 {
 	public static Class124 aClass124_4482;
 	public static Class133_Sub1_Sub1[] aClass133_Sub1_Sub1Array4474;
 	public static Class148[] aClass148Array4473;
-	public static Class2 aClass2_4477;
+	public static Deque aClass2_4477;
 	public static int anInt4478;
 	public static int anInt4480;
 	static {
 		aClass133_Sub1_Sub1Array4474 = new Class133_Sub1_Sub1[2048];
 		anInt4478 = 1;
-		aClass2_4477 = new Class2();
+		aClass2_4477 = new Deque();
 		aClass124_4481 = Class14_Sub2_Sub2.method263(1178, "www)2wtrc");
 		aClass124_4482 = Class14_Sub2_Sub2.method263(1178, "Eingabeprozedur geladen)3");
 	}
@@ -127,7 +127,7 @@ public class Class14_Sub8_Sub23 extends Class14_Sub8 {
 										class14_sub20.anInt3085 = class79.anInt1262;
 										class14_sub20.anInt3083 = i_5_;
 										class14_sub20.anInt3084 = i_4_;
-										Class35.aClass2_589.method80(class14_sub20);
+										Class35.aClass2_589.pushBack(class14_sub20);
 									}
 								}
 							}

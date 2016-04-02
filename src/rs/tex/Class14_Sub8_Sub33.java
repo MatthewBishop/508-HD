@@ -1005,7 +1005,7 @@ public class Class14_Sub8_Sub33 extends Class14_Sub8 {
 					}
 				}
 			}
-			for (Class14_Sub14 class14_sub14 = (Class14_Sub14) Class33.aClass2_583.method77(); class14_sub14 != null; class14_sub14 = (Class14_Sub14) Class33.aClass2_583.method84()) {
+			for (Class14_Sub14 class14_sub14 = (Class14_Sub14) Class33.aClass2_583.getFront(); class14_sub14 != null; class14_sub14 = (Class14_Sub14) Class33.aClass2_583.getNext()) {
 				if (Class49.anInt817 <= class14_sub14.anInt2967 && Class49.anInt817 + 8 > class14_sub14.anInt2967
 						&& class14_sub14.anInt2970 >= Class14_Sub4.anInt2788
 						&& Class14_Sub4.anInt2788 + 8 > class14_sub14.anInt2970
@@ -1685,7 +1685,7 @@ public class Class14_Sub8_Sub33 extends Class14_Sub8 {
 					Class133_Sub5 class133_sub5 = new Class133_Sub5(i_217_, i_222_, i_221_, i_223_,
 							(-i_218_ + Static.method1017(i_221_, i_222_, (byte) -127, i_223_)), i_215_,
 							Class14_Sub2_Sub20.anInt4064);
-					Class79.aClass2_1268.method80(new Class14_Sub2_Sub7(class133_sub5));
+					Class79.aClass2_1268.pushBack(new Class14_Sub2_Sub7(class133_sub5));
 				}
 			}
 			Class133_Sub4.anInt3579 = -1;

@@ -162,7 +162,7 @@ public abstract class Class133_Sub1 extends Class133 {
 		}
 		if (i != 24)
 			aClass45Array3435 = null;
-		Class40.aClass2_664.method80(class14_sub7);
+		Class40.aClass2_664.pushBack(class14_sub7);
 	}
 
 	public static void method1797(int i) {
