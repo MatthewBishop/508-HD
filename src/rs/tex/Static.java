@@ -9,7 +9,6 @@ import java.io.IOException;
 
 import com.jagex.io.Buffer;
 import com.jagex.io.PacketBuffer;
-import com.jagex.link.Class14_Sub2_Sub13;
 import com.jagex.link.Class2;
 import com.jagex.link.Cache;
 import com.jagex.link.HashTable;
@@ -119,12 +118,12 @@ public class Static {
 	public static void method1130(int i, int i_5_) {
 		if (i_5_ != 11300)
 			Static.aClass124_694 = null;
-		Class21.aClass52_444.method1208((byte) -112, i);
-		Class14_Sub2_Sub12.aClass52_3894.method1208((byte) -112, i);
+		Class21.aClass52_444.method1208(i);
+		Class14_Sub2_Sub12.aClass52_3894.method1208(i);
 	}
 
 	public static Class46 method1129(int i, int i_0_) {
-		Class46 class46 = (Class46) Class21.aClass52_444.method1210((byte) 67, (long) i);
+		Class46 class46 = (Class46) Class21.aClass52_444.method1210((long) i);
 		if (class46 != null) {
 			Class46 class46_1_ = class46;
 			return class46_1_;
@@ -135,7 +134,7 @@ public class Static {
 		if (is != null)
 			class46_2_.method1179(new Buffer(is), (byte) 89);
 		class46_2_.method1171(86);
-		Class21.aClass52_444.method1205(class46_2_, (long) i);
+		Class21.aClass52_444.put(class46_2_, (long) i);
 		int i_3_ = 88 % ((-83 - i_0_) / 36);
 		Class46 class46_4_ = class46_2_;
 		return class46_4_;
@@ -902,7 +901,7 @@ public class Static {
 		Class153.anInt2450 = class9.method146(Static2.aClass124_3944, 0);
 		if (i > 35) {
 			Class133_Sub4.anInt3584 = class9.method146(Class9.aClass124_207, 0);
-			Class14_Sub2_Sub18_Sub2.anInt5087 = class9.method146(SceneCluster.aClass124_1365, 0);
+			Static2.anInt5087 = class9.method146(SceneCluster.aClass124_1365, 0);
 			SceneCluster.anInt1369 = class9.method146(Class14_Sub8_Sub22.aClass124_4462, 0);
 			Class38.anInt2618 = class9.method146(Class9.aClass124_227, 0);
 			Class58.anInt937 = class9.method146(Class7_Sub3.aClass124_2684, 0);
@@ -1372,7 +1371,7 @@ public class Static {
 		Static.anInt427 = i_8_;
 		Class14_Sub18.anInt3050 = -1;
 		Class37.anInt644 = Class14_Sub2_Sub9.anInt3856 * i / i_5_;
-		Class39.method1126((byte) -22);
+		Static2.method1126((byte) -22);
 	}
 
 	public static void method1329(int i) {
@@ -1855,7 +1854,7 @@ public class Static {
 								} else if ((Class103.anInt1730 == 1
 										|| (Class127.method1754(128, (Class14_Sub8_Sub38.anInt4729 - 1))))
 										&& Class14_Sub8_Sub38.anInt4729 > 2)
-									Class14_Sub2_Sub18.method382((byte) 124);
+									Static2.method382((byte) 124);
 								else if (Class14_Sub8_Sub38.anInt4729 > 0)
 									Class107.method1551(-23473);
 								Class7_Sub3_Sub1.anInt3714 = 0;
@@ -2148,7 +2147,7 @@ public class Static {
 	}
 
 	public static void method88(boolean bool, int i) {
-		Class14_Sub8_Sub9.aClass52_4240.method1208((byte) -112, i);
+		Class14_Sub8_Sub9.aClass52_4240.method1208(i);
 	}
 
 	public static void method86(int i) {
@@ -2181,7 +2180,7 @@ public class Static {
 				Class14_Sub2_Sub3.anInt3787);
 		Class98.aClass14_Sub2_Sub19Array1669 = Class125_Sub2.method1733((byte) 118, class9, 0, Class153.anInt2450);
 		Class35.aClass14_Sub2_Sub19Array596 = Class125_Sub2.method1733((byte) 43, class9, 0, Class133_Sub4.anInt3584);
-		Class76.aClass14_Sub2_Sub19Array1191 = Class38.method1115(false, class9, 0, Class14_Sub2_Sub18_Sub2.anInt5087);
+		Class76.aClass14_Sub2_Sub19Array1191 = Class38.method1115(false, class9, 0, Static2.anInt5087);
 		Class150.aClass14_Sub2_Sub19Array2417 = Class38.method1115(false, class9, 0, SceneCluster.anInt1369);
 		Class149.aClass14_Sub2_Sub19_2384 = Class58.method1259(-106, class9, 0, Class38.anInt2618);
 		aClass14_Sub2_Sub19Array3958 = Class38.method1115(false, class9, 0, Class58.anInt937);
@@ -2684,7 +2683,7 @@ public class Static {
 					Class150 class150 = Class97.method1489(i_17_ - 1, -9810);
 					if (class150.anInt2411 == -1)
 						continue;
-					Class14_Sub27 class14_sub27 = Class39.method1122(hashTable, -91, class150);
+					Class14_Sub27 class14_sub27 = Static2.method1122(hashTable, -91, class150);
 					byte i_18_ = is_7_[i_14_][i_15_];
 					int[] is_19_ = anIntArrayArray2545[i_18_];
 					class14_sub27.anInt3181 += is_19_.length / 2;
@@ -2875,7 +2874,7 @@ public class Static {
 						boolean[] bools_61_ = (Class95.aBooleanArrayArray1623[i_26_ == i_59_ ? i_23_ : 0]);
 						boolean[] bools_62_ = (Class95.aBooleanArrayArray1623[i_59_ != i_29_ ? 0 : i_27_]);
 						Class150 class150 = Class97.method1489(i_59_ - 1, -9810);
-						Class14_Sub27 class14_sub27 = Class39.method1122(hashTable, i + 123, class150);
+						Class14_Sub27 class14_sub27 = Static2.method1122(hashTable, i + 123, class150);
 						class14_sub27.anInt3181 += 5;
 						class14_sub27.anInt3181 += bools.length - 2;
 						class14_sub27.anInt3181 += bools_61_.length - 2;
@@ -2904,7 +2903,7 @@ public class Static {
 					Class150 class150 = Class97.method1489(i_67_ - 1, -9810);
 					if (class150.anInt2411 == -1)
 						continue;
-					Class14_Sub27 class14_sub27 = Class39.method1122(hashTable, i ^ ~0x2e, class150);
+					Class14_Sub27 class14_sub27 = Static2.method1122(hashTable, i ^ ~0x2e, class150);
 					byte i_68_ = is_5_[i_63_][i_64_];
 					byte i_69_ = is_7_[i_63_][i_64_];
 					int i_70_ = Class141.method1961(is_10_[i_63_][i_64_], (byte) 115, class150.anInt2414,
@@ -3098,7 +3097,7 @@ public class Static {
 						boolean[] bools_115_ = (Class95.aBooleanArrayArray1623[i_113_ != i_85_ ? 0 : i_79_]);
 						boolean[] bools_116_ = (Class95.aBooleanArrayArray1623[i_113_ != i_84_ ? 0 : i_78_]);
 						Class150 class150 = Class97.method1489(i_113_ - 1, -9810);
-						Class14_Sub27 class14_sub27 = Class39.method1122(hashTable, 102, class150);
+						Class14_Sub27 class14_sub27 = Static2.method1122(hashTable, 102, class150);
 						int i_117_ = (Class141.method1961(is_10_[i_63_][i_64_], (byte) 108, class150.anInt2414,
 								class150.anInt2411) << 40 | 0xff);
 						int i_118_ = (Class141.method1961(is_10_[i_63_ + 1][i_64_], (byte) 113, class150.anInt2414,

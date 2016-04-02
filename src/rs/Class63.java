@@ -105,7 +105,7 @@ public class Class63 {
 			Class14_Sub8_Sub6.overlays = null;
 			Class97.underlays = null;
 			Class21.anIntArray442 = null;
-			Class14_Sub2_Sub18.anIntArray4023 = null;
+			Static2.anIntArray4023 = null;
 			Class14_Sub2_Sub3.anIntArray3773 = null;
 			Class14_Sub2_Sub17.anIntArray4020 = null;
 		}

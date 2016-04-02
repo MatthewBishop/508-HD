@@ -80,7 +80,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 	public static void method271(byte i, int i_11_, int i_12_, int i_13_, int i_14_, int i_15_) {
 		if (i > 89) {
 			if (i_14_ == i_15_)
-				Class39.method1120(i_13_, (byte) -121, i_11_, i_12_, i_14_);
+				Static2.method1120(i_13_, (byte) -121, i_11_, i_12_, i_14_);
 			else if (Class118.anInt1982 <= -i_14_ + i_12_ && Class14_Sub8_Sub14.anInt4327 >= i_12_ + i_14_
 					&& i_11_ - i_15_ >= Class14_Sub17.anInt3005 && i_15_ + i_11_ <= Class59.anInt955)
 				Class66.method1293(i_11_, i_12_, i_14_, 121, i_15_, i_13_);

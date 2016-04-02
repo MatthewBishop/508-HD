@@ -29,7 +29,7 @@ public class Class7_Sub2 extends Class7 {
 	}
 
 	public static void method125(int i, int i_0_, int i_1_, int i_2_) {
-		Class124 class124 = (Class14_Sub8_Sub7.method515((new Class124[] { Class14_Sub2_Sub18.aClass124_4026,
+		Class124 class124 = (Class14_Sub8_Sub7.method515((new Class124[] { Static2.aClass124_4026,
 				Class83.method1407(108, i_2_), Class53.aClass124_867, Class83.method1407(i_1_ - 44, i >> 38),
 				Class53.aClass124_867, Class83.method1407(99, i_0_ >> 38), Class53.aClass124_867,
 				Class83.method1407(i_1_ + 32, i & 0x3f), Class53.aClass124_867, Class83.method1407(37, i_1_ & i_0_) }),

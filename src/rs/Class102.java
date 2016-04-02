@@ -61,7 +61,7 @@ public class Class102 {
 				}
 			}
 		}
-		Class133_Sub7 class133_sub7 = (Class133_Sub7) Class36.aClass52_621.method1210((byte) 65, l);
+		Class133_Sub7 class133_sub7 = (Class133_Sub7) Class36.aClass52_621.method1210(l);
 		if (class133_sub7 == null) {
 			boolean bool = false;
 			for (int i_4_ = 0; i_4_ < 12; i_4_++) {
@@ -74,7 +74,7 @@ public class Class102 {
 			}
 			if (bool) {
 				if (aLong1706 != -1L)
-					class133_sub7 = ((Class133_Sub7) Class36.aClass52_621.method1210((byte) 89, aLong1706));
+					class133_sub7 = ((Class133_Sub7) Class36.aClass52_621.method1210(aLong1706));
 				if (class133_sub7 == null) {
 					Class133_Sub7 class133_sub7_6_ = null;
 					return class133_sub7_6_;
@@ -128,7 +128,7 @@ public class Class102 {
 				}
 				class133_sub7 = class133_sub2.method1827(64, 850, -30, -50, -30);
 				((ModelHD) class133_sub7).method1895(false, false, true, true, false, false, true);
-				Class36.aClass52_621.method1205(class133_sub7, l);
+				Class36.aClass52_621.put(class133_sub7, l);
 				aLong1706 = l;
 			}
 		}
@@ -162,7 +162,7 @@ public class Class102 {
 			aLong1713 = aLong1713 >>> 8 ^ ls[(int) ((aLong1713 ^ (long) anIntArray1722[i]) & 0xffL)];
 		aLong1713 = aLong1713 >>> 8 ^ ls[(int) (((long) (aBoolean1711 ? 1 : 0) ^ aLong1713) & 0xffL)];
 		if (l != 0L && l != aLong1713)
-			Class36.aClass52_621.method1204(l);
+			Class36.aClass52_621.remove(l);
 	}
 
 	public void method1518(int i, int i_21_, int i_22_) {
@@ -199,7 +199,7 @@ public class Class102 {
 			Class133_Sub7 class133_sub7 = Class126.method1744(anInt1720, 170).method224((byte) -113, class46, i_27_);
 			return class133_sub7;
 		}
-		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Class70.aClass52_1079.method1210((byte) 79, aLong1713));
+		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Class70.aClass52_1079.method1210(aLong1713));
 		if (class133_sub7 == null) {
 			boolean bool = false;
 			for (int i_28_ = 0; i_28_ < 12; i_28_++) {
@@ -240,7 +240,7 @@ public class Class102 {
 							(Static.aShortArrayArray98[i_34_][anIntArray1722[i_34_]]));
 			}
 			class133_sub7 = class133_sub2.method1827(64, 768, -50, -10, -50);
-			Class70.aClass52_1079.method1205(class133_sub7, aLong1713);
+			Class70.aClass52_1079.put(class133_sub7, aLong1713);
 		}
 		if (class46 != null)
 			class133_sub7 = class46.method1167(i_27_, 65535, class133_sub7);
@@ -293,7 +293,7 @@ public class Class102 {
 			Class133_Sub7 class133_sub7 = null;
 			return class133_sub7;
 		}
-		Class133_Sub7 class133_sub7 = (Class133_Sub7) Class70.aClass52_1079.method1210((byte) 64, l);
+		Class133_Sub7 class133_sub7 = (Class133_Sub7) Class70.aClass52_1079.method1210(l);
 		if (class133_sub7 == null) {
 			Class133_Sub2[] class133_sub2s = new Class133_Sub2[2];
 			int i_48_ = 0;
@@ -314,7 +314,7 @@ public class Class102 {
 								(Static.aShortArrayArray98[i_49_][anIntArray1722[i_49_]]));
 				}
 				class133_sub7 = class133_sub2.method1827(64, 768, -50, -10, -50);
-				Class70.aClass52_1079.method1205(class133_sub7, l);
+				Class70.aClass52_1079.put(class133_sub7, l);
 			} else {
 				Class133_Sub7 class133_sub7_50_ = null;
 				return class133_sub7_50_;

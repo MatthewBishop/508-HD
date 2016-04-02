@@ -28,7 +28,7 @@ public class Class14_Sub25 extends Linkable {
 	public static void method915(int i, int i_0_) {
 		if (i_0_ != 28091)
 			aClass124_3172 = null;
-		Class14_Sub28.aClass52_3217.method1208((byte) -112, i);
+		Class14_Sub28.aClass52_3217.method1208(i);
 	}
 
 	public static void method916(int i) {

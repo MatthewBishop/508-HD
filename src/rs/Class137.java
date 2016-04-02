@@ -707,7 +707,7 @@ public class Class137 {
 														class124 = (Class14_Sub8_Sub7.method515(
 																(new Class124[] { (Class14_Sub8_Sub1.aClass124_4101),
 																		(class142.aClass124_2296),
-																		(Class14_Sub2_Sub18_Sub2.aClass124_5084) }),
+																		(Static2.aClass124_5084) }),
 																(byte) -57));
 													else
 														class124 = (Class14_Sub8_Sub7

@@ -160,7 +160,7 @@ public class Class58 {
 					class14_sub10 = new Buffer(5000);
 					class14_sub10.method807(is_19_.length, is_19_, 0, i ^ ~0x40294fcc);
 					class14_sub10.position = 0;
-					class14_sub10.method816((Class14_Sub2_Sub18_Sub2.aBigInteger5086), Class110.aBigInteger1852, false);
+					class14_sub10.method816((Static2.aBigInteger5086), Class110.aBigInteger1852, false);
 					if (class14_sub10.payload[0] == 1)
 						break;
 					boolean bool_20_ = false;

@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class52;
+import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 
 import rs.tex.Class14_Sub8_Sub4;
@@ -12,7 +12,7 @@ import rs.tex.Static;
 
 public class Class150 {
 	public int anInt2405;
-	public static Class52 aClass52_2406 = new Class52(200);
+	public static SoftCache aClass52_2406 = new SoftCache(200);
 	public boolean aBoolean2407;
 	public boolean aBoolean2409;
 	public boolean aBoolean2410 = true;

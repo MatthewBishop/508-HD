@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class52;
+import com.jagex.link.ref.SoftCache;
 
 import rs.tex.Class14_Sub8_Sub34;
 import rs.tex.Static;
@@ -13,7 +13,7 @@ public class Class21 {
 	public static int[] anIntArray437;
 	public static Class36 aClass36_441;
 	public static int[] anIntArray442;
-	public static Class52 aClass52_444 = new Class52(64);
+	public static SoftCache aClass52_444 = new SoftCache(64);
 	public short[] aShortArray445;
 	public int anInt446 = -1;
 	public int[] anIntArray447 = { -1, -1, -1, -1, -1 };

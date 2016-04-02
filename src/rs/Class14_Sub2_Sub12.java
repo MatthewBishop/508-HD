@@ -4,8 +4,8 @@
 package rs;
 
 import com.jagex.link.Cacheable;
-import com.jagex.link.Class52;
 import com.jagex.link.HashTable;
+import com.jagex.link.ref.SoftCache;
 
 import rs.tex.Class14_Sub8_Sub14;
 import rs.tex.Class14_Sub8_Sub16;
@@ -16,7 +16,7 @@ import rs.tex.Class14_Sub8_Sub7;
 import rs.tex.Static;
 
 public class Class14_Sub2_Sub12 extends Cacheable {
-	public static Class52 aClass52_3894;
+	public static SoftCache aClass52_3894;
 	public static Class124 aClass124_3895 = Class14_Sub2_Sub2.method263(1178, "blinken2:");
 	public int anInt3896;
 	public static Class124 aClass124_3897 = Class14_Sub2_Sub2.method263(1178, "Loading textures )2 ");
@@ -38,7 +38,7 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 	public static int[] anIntArray3918;
 
 	static {
-		aClass52_3894 = new Class52(100);
+		aClass52_3894 = new SoftCache(100);
 		anInt3912 = -1;
 		aLongArray3914 = new long[32];
 		anIntArray3916 = new int[25];

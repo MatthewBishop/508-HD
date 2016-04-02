@@ -6,7 +6,7 @@ package rs.tex;
 import java.util.Random;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class52;
+import com.jagex.link.ref.SoftCache;
 
 import rs.Class100;
 import rs.Class112;
@@ -35,7 +35,7 @@ public class Class14_Sub8_Sub6 extends Class14_Sub8 {
 	public static boolean aBoolean4188;
 	public static Class124 aClass124_4189;
 	public static Class124 aClass124_4192;
-	public static Class52 aClass52_4186 = new Class52(5);
+	public static SoftCache aClass52_4186 = new SoftCache(5);
 	public static Class9 aClass9_4193;
 	public static int anInt4187;
 	public static int anInt4190 = 3;

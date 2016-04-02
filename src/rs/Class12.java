@@ -97,7 +97,7 @@ public class Class12 {
 					return var7;
 				}
 			} else {
-				Class133_Sub7 var6 = (Class133_Sub7) Class37.aClass52_635.method1210((byte) 122, (long) this.anInt337);
+				Class133_Sub7 var6 = (Class133_Sub7) Class37.aClass52_635.method1210((long) this.anInt337);
 				if (var6 == null) {
 					boolean var8 = false;
 
@@ -149,7 +149,7 @@ public class Class12 {
 
 					var6 = var15.method1827(this.anInt275 + 64, this.anInt279 + 850, -30, -50, -30);
 					((ModelHD) var6).method1895(false, false, false, true, false, false, true);
-					Class37.aClass52_635.method1205(var6, (long) this.anInt337);
+					Class37.aClass52_635.put(var6, (long) this.anInt337);
 				}
 
 				if (var3 != null && var4 != null) {
@@ -699,7 +699,7 @@ public class Class12 {
 					var4 = null;
 					return var4;
 				} else {
-					var4 = (Class133_Sub7) Class14_Sub8_Sub6.aClass52_4186.method1210((byte) 90, (long) this.anInt337);
+					var4 = (Class133_Sub7) Class14_Sub8_Sub6.aClass52_4186.method1210((long) this.anInt337);
 					if (var1 > -93) {
 						this.anInt279 = 41;
 					}
@@ -749,7 +749,7 @@ public class Class12 {
 						}
 
 						var4 = var13.method1827(64, 768, -50, -10, -50);
-						Class14_Sub8_Sub6.aClass52_4186.method1205(var4, (long) this.anInt337);
+						Class14_Sub8_Sub6.aClass52_4186.put(var4, (long) this.anInt337);
 					}
 
 					if (var2 != null) {

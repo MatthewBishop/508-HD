@@ -43,7 +43,7 @@ public class Class4 {
 	}
 
 	public static void method109(int i, int i_0_) {
-		Class139.aClass52_2229.method1208((byte) -112, i_0_);
+		Class139.aClass52_2229.method1208(i_0_);
 		if (i != 16)
 			method109(1, 105);
 	}

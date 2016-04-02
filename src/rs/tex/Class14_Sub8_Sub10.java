@@ -14,9 +14,9 @@ import rs.Class133_Sub5;
 import rs.Class138;
 import rs.Class14_Sub25;
 import rs.Class14_Sub2_Sub17;
-import rs.Class14_Sub2_Sub18_Sub2;
 import rs.Class14_Sub2_Sub2;
 import rs.Class72;
+import rs.Static2;
 
 public class Class14_Sub8_Sub10 extends Class14_Sub8 {
 	public static boolean aBoolean4245;
@@ -46,7 +46,7 @@ public class Class14_Sub8_Sub10 extends Class14_Sub8 {
 		return i_5_;
 	}
 	public static byte[] method527(int i, byte i_6_) {
-		Class14_Sub2_Sub17 class14_sub2_sub17 = ((Class14_Sub2_Sub17) Class14_Sub2_Sub18_Sub2.aClass20_5073
+		Class14_Sub2_Sub17 class14_sub2_sub17 = ((Class14_Sub2_Sub17) Static2.aClass20_5073
 				.get((long) i));
 		if (i_6_ > -77)
 			method528(24);
@@ -63,7 +63,7 @@ public class Class14_Sub8_Sub10 extends Class14_Sub8 {
 				is[i_9_] = is[-i_8_ + 511] = i_11_;
 			}
 			class14_sub2_sub17 = new Class14_Sub2_Sub17(is);
-			Class14_Sub2_Sub18_Sub2.aClass20_5073.put(class14_sub2_sub17, (long) i);
+			Static2.aClass20_5073.put(class14_sub2_sub17, (long) i);
 		}
 		byte[] is = class14_sub2_sub17.aByteArray4014;
 		return is;

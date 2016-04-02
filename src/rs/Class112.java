@@ -3,10 +3,10 @@
  */
 package rs;
 
-import com.jagex.link.Class52;
+import com.jagex.link.ref.SoftCache;
 
 public class Class112 {
-	public static Class52 aClass52_1868;
+	public static SoftCache aClass52_1868;
 	public Class124[] aClass124Array1869;
 	public int[] anIntArray1870;
 	public static boolean[] aBooleanArray1872 = new boolean[5];
@@ -16,7 +16,7 @@ public class Class112 {
 	public static int anInt1876;
 
 	static {
-		aClass52_1868 = new Class52(500);
+		aClass52_1868 = new SoftCache(500);
 		aClass124Array1875 = new Class124[500];
 	}
 

@@ -156,7 +156,7 @@ public class Class79 {
 				l = (long) anIntArray1260[i_12_] + l * 67783L;
 			if (bool)
 				l ^= 0xffffffffffffffffL;
-			modelhd = (ModelHD) Class112.aClass52_1868.method1210((byte) 80, l);
+			modelhd = (ModelHD) Class112.aClass52_1868.method1210(l);
 			if (modelhd == null) {
 				Class133_Sub2 class133_sub2 = null;
 				for (int i_13_ = 0; i_10_ > i_13_; i_13_++) {
@@ -170,7 +170,7 @@ public class Class79 {
 				if (i_10_ > 1)
 					class133_sub2 = new Class133_Sub2(Class74.aClass133_Sub2Array1134, i_10_);
 				modelhd = new ModelHD(class133_sub2, i_6_, i_7_, bool);
-				Class112.aClass52_1868.method1205(modelhd, l);
+				Class112.aClass52_1868.put(modelhd, l);
 			}
 		} else {
 			int i_14_ = -1;
@@ -185,7 +185,7 @@ public class Class79 {
 			int i_16_ = anIntArray1260[i_14_];
 			if (bool)
 				i_16_ += 65536;
-			modelhd = (ModelHD) Class112.aClass52_1868.method1210((byte) 73, (long) i_16_);
+			modelhd = (ModelHD) Class112.aClass52_1868.method1210((long) i_16_);
 			if (modelhd == null) {
 				Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(Static2.aClass9_2923, i_16_ & 0xffff, 0);
 				if (class133_sub2 == null) {
@@ -193,7 +193,7 @@ public class Class79 {
 					return modelhd_17_;
 				}
 				modelhd = new ModelHD(class133_sub2, i_6_, i_7_, bool);
-				Class112.aClass52_1868.method1205(modelhd, (long) i_16_);
+				Class112.aClass52_1868.put(modelhd, (long) i_16_);
 			}
 		}
 		boolean bool_18_ = aBoolean1301;
@@ -239,7 +239,7 @@ public class Class79 {
 	}
 
 	public static Class79 method1377(byte i, int i_24_) {
-		Class79 class79 = ((Class79) Class127.aClass52_2112.method1210((byte) 79, (long) i_24_));
+		Class79 class79 = ((Class79) Class127.aClass52_2112.method1210((long) i_24_));
 		if (class79 != null) {
 			Class79 class79_25_ = class79;
 			return class79_25_;
@@ -257,7 +257,7 @@ public class Class79 {
 		}
 		if (!Class125_Sub2.aBoolean3375 && class79_26_.aBoolean1259)
 			class79_26_.aClass124Array1282 = null;
-		Class127.aClass52_2112.method1205(class79_26_, (long) i_24_);
+		Class127.aClass52_2112.put(class79_26_, (long) i_24_);
 		if (i != -106) {
 			class79 = null;
 			return class79;
@@ -378,7 +378,7 @@ public class Class79 {
 			l = (long) (i_48_ + (anInt1257 << 42));
 		else
 			l = (long) (i_48_ + (anInt1257 << 10) + (i_46_ << 3));
-		Class86 class86 = (Class86) Class62.aClass52_991.method1210((byte) 126, l);
+		Class86 class86 = (Class86) Class62.aClass52_991.method1210(l);
 		ModelHD modelhd;
 		Class148_Sub1 class148_sub1_53_;
 		if (class86 != null) {
@@ -401,7 +401,7 @@ public class Class79 {
 			Class86 class86_55_ = new Class86();
 			class86_55_.aClass133_1379 = modelhd;
 			class86_55_.aClass148_Sub1_1386 = class148_sub1_53_;
-			Class62.aClass52_991.method1205(class86_55_, l);
+			Class62.aClass52_991.put(class86_55_, l);
 		}
 		boolean bool_56_ = bool & aBoolean1241;
 		ModelHD modelhd_57_ = modelhd.method1903(aByte1286 != 3, aByte1286 == 0, bool_49_, true, true, true, !bool_56_,
@@ -422,7 +422,7 @@ public class Class79 {
 			l = (long) ((anInt1257 << 10) + i_61_);
 		else
 			l = (long) (i_61_ + (anInt1257 << 10) + (i_58_ << 35));
-		ModelHD modelhd = (ModelHD) Class49.aClass52_810.method1210((byte) 98, l);
+		ModelHD modelhd = (ModelHD) Class49.aClass52_810.method1210(l);
 		if (i_64_ != 0) {
 			Class86 class86 = null;
 			return class86;
@@ -435,7 +435,7 @@ public class Class79 {
 			}
 			modelhd.method1913();
 			modelhd.method1895(false, false, false, true, false, false, true);
-			Class49.aClass52_810.method1205(modelhd, l);
+			Class49.aClass52_810.put(modelhd, l);
 		}
 		ModelHD modelhd_65_ = modelhd;
 		boolean bool_66_ = false;
@@ -519,7 +519,7 @@ public class Class79 {
 				}
 				for (/**/; SceneCluster.anInt1355 < 20 && Class63.anInt998 > 0; Class63.anInt998--) {
 					Class14_Sub2_Sub9 class14_sub2_sub9 = (Class14_Sub2_Sub9) Class14_Sub8_Sub37.aClass81_4716
-							.method1400((byte) 100);
+							.method1400();
 					Buffer class14_sub10 = new Buffer(4);
 					class14_sub10.method809(0);
 					class14_sub10.method783(i + 255, (int) class14_sub2_sub9.key);

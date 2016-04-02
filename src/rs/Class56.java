@@ -117,9 +117,9 @@ public class Class56 {
 					Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_19_][i_20_] = null;
 			}
 		}
-		for (int i = 0; i < Scenegraph.anInt4533; i++)
+		for (int i = 0; i < Scenegraph.clusterCount; i++)
 			Scenegraph.clusters[i] = null;
-		Scenegraph.anInt4533 = 0;
+		Scenegraph.clusterCount = 0;
 		for (int i = 0; i < Class14_Sub8_Sub38.anInt4727; i++)
 			Class14_Sub20.aClass40Array3093[i] = null;
 		Class14_Sub8_Sub38.anInt4727 = 0;

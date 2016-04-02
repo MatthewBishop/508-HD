@@ -16,6 +16,7 @@ import java.util.GregorianCalendar;
 import com.jagex.cache.anim.AnimFrame;
 import com.jagex.io.Buffer;
 import com.jagex.io.PacketBuffer;
+import com.jagex.link.ref.SoftCache;
 import com.jagex.map.SceneCluster;
 import com.jagex.map.Scenegraph;
 import com.jagex.rt4.AthmosphericEffects;
@@ -614,7 +615,7 @@ public class client extends Applet_Sub1 {
 					Class14_Sub8_Sub31.aClass9_Sub1_4603 = method51(true, 11, (byte) 76, true, false);
 					Class14_Sub8_Sub26.aClass9_Sub1_4521 = method51(true, 12, (byte) 9, true, false);
 					Class64.aClass9_Sub1_1015 = method51(true, 13, (byte) 69, true, false);
-					Class14_Sub2_Sub18_Sub2.aClass9_Sub1_5085 = method51(true, 14, (byte) -89, false, false);
+					Static2.aClass9_Sub1_5085 = method51(true, 14, (byte) -89, false, false);
 					Class47.aClass9_Sub1_790 = method51(true, 15, (byte) 58, true, false);
 					Class89.aClass9_Sub1_1407 = method51(true, 16, (byte) -117, true, false);
 					Static2.aClass9_Sub1_369 = method51(true, 17, (byte) -78, true, false);
@@ -648,7 +649,7 @@ public class client extends Applet_Sub1 {
 						var13 += Class14_Sub8_Sub31.aClass9_Sub1_4603.method186((byte) 108) * 2 / 100;
 						var13 += Class14_Sub8_Sub26.aClass9_Sub1_4521.method186((byte) 72) * 2 / 100;
 						var13 += Class64.aClass9_Sub1_1015.method186((byte) 113) * 2 / 100;
-						var13 += Class14_Sub2_Sub18_Sub2.aClass9_Sub1_5085.method186((byte) 85) * 2 / 100;
+						var13 += Static2.aClass9_Sub1_5085.method186((byte) 85) * 2 / 100;
 						var13 += Class47.aClass9_Sub1_790.method186((byte) 111) * 2 / 100;
 						var13 += Class89.aClass9_Sub1_1407.method186((byte) 104) * 1 / 100;
 						var13 += Static2.aClass9_Sub1_369.method186((byte) 104) * 1 / 100;
@@ -686,7 +687,7 @@ public class client extends Applet_Sub1 {
 						Class14_Sub8_Sub35.aClass75_4682 = Static.method235(22050, 68,
 								Class14_Sub8_Sub34.aClass43_4647, Class49.aCanvas819, 0);
 						Class14_Sub8_Sub35.aClass75_4682.method1352(Class125.aClass14_Sub9_Sub1_2071, false);
-						Class88.method1438(Class125.aClass14_Sub9_Sub1_2071, Class14_Sub2_Sub18_Sub2.aClass9_Sub1_5085,
+						Class88.method1438(Class125.aClass14_Sub9_Sub1_2071, Static2.aClass9_Sub1_5085,
 								false, Class47.aClass9_Sub1_790, Static2.aClass9_Sub1_2901);
 						Class134.aClass75_2588 = Static.method235(2048, 97, Class14_Sub8_Sub34.aClass43_4647,
 								Class49.aCanvas819, 1);
@@ -1197,9 +1198,9 @@ public class client extends Applet_Sub1 {
 		Class138.method1948(i + 69);
 		Class89.method1442(127);
 		Class126.method1746(i ^ 0xe0);
-		Class14_Sub2_Sub18.method381(i ^ ~0x5d);
-		Class14_Sub2_Sub18_Sub2.method383(2);
-		Class39.method1119(127);
+		Static2.method381(i ^ ~0x5d);
+		Static2.method383(2);
+		Static2.method1119(127);
 		Class14_Sub17.method880(i ^ 0x1e);
 		Class127.method1753(false);
 		Class75_Sub2.method1355();
@@ -1262,6 +1263,7 @@ public class client extends Applet_Sub1 {
 		Class14_Sub8_Sub28.method629(-123);
 		Class14_Sub8_Sub32.method651(-28268);
 		Class14_Sub8_Sub3.method491(0);
+		SoftCache.dispose();
 		Class14_Sub8_Sub33.method654(i - 1);
 		PacketBuffer.dispose();
 		Class14_Sub8_Sub35.method666(false);
@@ -2036,7 +2038,7 @@ public class client extends Applet_Sub1 {
 								class14_sub21.anObjectArray3115 = class94.anObjectArray1457;
 								Class1.aClass2_70.method80(class14_sub21);
 							}
-							if (Class39.anInt660 > class94.anInt1587 && class94.anObjectArray1555 != null) {
+							if (Static2.anInt660 > class94.anInt1587 && class94.anObjectArray1555 != null) {
 								Class14_Sub21 class14_sub21 = new Class14_Sub21();
 								class14_sub21.aClass94_3116 = class94;
 								class14_sub21.anObjectArray3115 = class94.anObjectArray1555;
@@ -2135,7 +2137,7 @@ public class client extends Applet_Sub1 {
 				} catch (Exception exception) {
 					/* empty */
 				}
-				Class14_Sub9_Sub1.aClass124_4829 = Class14_Sub2_Sub18_Sub2.aClass124_5083.method1703(this, (byte) 127);
+				Class14_Sub9_Sub1.aClass124_4829 = Static2.aClass124_5083.method1703(this, (byte) 127);
 				if (Class14_Sub9_Sub1.aClass124_4829 == null)
 					Class14_Sub9_Sub1.aClass124_4829 = Class14_Sub8_Sub9.aClass124_4244;
 				String string_131_ = getParameter("advert");

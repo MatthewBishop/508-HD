@@ -99,7 +99,7 @@ public class Class7_Sub1 extends Class7 {
 					if (Class14_Sub8_Sub38.anInt4729 > 0)
 						Class107.method1551(-23473);
 				} else
-					Class14_Sub2_Sub18.method382((byte) 127);
+					Static2.method382((byte) 127);
 				Class67.aClass94_1060 = null;
 			}
 		}

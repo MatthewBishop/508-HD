@@ -105,7 +105,7 @@ public class Class24 implements Runnable {
 	}
 
 	public static void method991(byte var0) {
-		Static2.aClass52_2370.method1209((byte) -96);
+		Static2.aClass52_2370.method1209();
 		if (var0 != -2) {
 			aClass124_474 = null;
 		}

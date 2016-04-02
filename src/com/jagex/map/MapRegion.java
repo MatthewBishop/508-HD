@@ -18,7 +18,6 @@ import rs.Class142;
 import rs.Class149;
 import rs.Class14_Sub21;
 import rs.Class14_Sub2_Sub17;
-import rs.Class14_Sub2_Sub18;
 import rs.Class14_Sub2_Sub21;
 import rs.Class14_Sub2_Sub3;
 import rs.Class15;
@@ -180,7 +179,7 @@ public class MapRegion {
 				Class115.anIntArray1917[i_35_] = 0;
 				Class14_Sub2_Sub3.anIntArray3773[i_35_] = 0;
 				Class21.anIntArray442[i_35_] = 0;
-				Class14_Sub2_Sub18.anIntArray4023[i_35_] = 0;
+				Static2.anIntArray4023[i_35_] = 0;
 				Class14_Sub2_Sub17.anIntArray4020[i_35_] = 0;
 			}
 			for (int i_36_ = -5; i_36_ < 104; i_36_++) {
@@ -193,7 +192,7 @@ public class MapRegion {
 							Class115.anIntArray1917[i_37_] += class65.anInt1022;
 							Class14_Sub2_Sub3.anIntArray3773[i_37_] += class65.anInt1028;
 							Class21.anIntArray442[i_37_] += class65.anInt1023;
-							Class14_Sub2_Sub18.anIntArray4023[i_37_] += class65.anInt1027;
+							Static2.anIntArray4023[i_37_] += class65.anInt1027;
 							Class14_Sub2_Sub17.anIntArray4020[i_37_]++;
 						}
 					}
@@ -205,7 +204,7 @@ public class MapRegion {
 							Class115.anIntArray1917[i_37_] -= class65.anInt1022;
 							Class14_Sub2_Sub3.anIntArray3773[i_37_] -= class65.anInt1028;
 							Class21.anIntArray442[i_37_] -= class65.anInt1023;
-							Class14_Sub2_Sub18.anIntArray4023[i_37_] -= class65.anInt1027;
+							Static2.anIntArray4023[i_37_] -= class65.anInt1027;
 							Class14_Sub2_Sub17.anIntArray4020[i_37_]--;
 						}
 					}
@@ -224,14 +223,14 @@ public class MapRegion {
 							i_44_ += Class21.anIntArray442[i_49_];
 							i_42_ += Class115.anIntArray1917[i_49_];
 							i_43_ += Class14_Sub2_Sub3.anIntArray3773[i_49_];
-							i_46_ += Class14_Sub2_Sub18.anIntArray4023[i_49_];
+							i_46_ += Static2.anIntArray4023[i_49_];
 						}
 						if (i_48_ >= 0) {
 							i_42_ -= Class115.anIntArray1917[i_48_];
 							i_44_ -= Class21.anIntArray442[i_48_];
 							i_45_ -= Class14_Sub2_Sub17.anIntArray4020[i_48_];
 							i_43_ -= Class14_Sub2_Sub3.anIntArray3773[i_48_];
-							i_46_ -= Class14_Sub2_Sub18.anIntArray4023[i_48_];
+							i_46_ -= Static2.anIntArray4023[i_48_];
 						}
 						if (i_47_ >= 0 && i_45_ > 0)
 							is[i_36_][i_47_] = Class37.method1113(i_42_ * 256 / i_46_, i_43_ / i_45_, (byte) 69,

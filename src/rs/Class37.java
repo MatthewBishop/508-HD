@@ -4,8 +4,8 @@
 package rs;
 
 import com.jagex.link.Class2;
-import com.jagex.link.Class52;
 import com.jagex.link.HashTable;
+import com.jagex.link.ref.SoftCache;
 
 import rs.tex.Class14_Sub8_Sub11;
 import rs.tex.Class14_Sub8_Sub13;
@@ -30,7 +30,7 @@ import rs.tex.Static;
 public class Class37 {
 	public int anInt633;
 	public long aLong634 = 0L;
-	public static Class52 aClass52_635 = new Class52(50);
+	public static SoftCache aClass52_635 = new SoftCache(50);
 	public Class133 aClass133_638;
 	public int anInt641;
 	public Class133 aClass133_642;
@@ -103,7 +103,7 @@ public class Class37 {
 			Class133_Sub5.aBoolean3628 = false;
 			Static2.method245(0, (byte) -46);
 			for (int i_1_ = 0; i_1_ < 100; i_1_++)
-				Class14_Sub2_Sub18.aClass124Array4024[i_1_] = null;
+				Static2.aClass124Array4024[i_1_] = null;
 			Class142.anInt2307 = (int) (Math.random() * 80.0) - 40;
 			Class14_Sub8_Sub15.anInt4335 = 0;
 			Class53.anInt874 = 0;

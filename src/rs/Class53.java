@@ -77,7 +77,7 @@ public class Class53 {
 	}
 
 	public static void method1215(int i, int i_15_) {
-		Static2.aClass52_2370.method1208((byte) -112, i_15_);
+		Static2.aClass52_2370.method1208(i_15_);
 		if (i != -23980)
 			method1216(49);
 	}

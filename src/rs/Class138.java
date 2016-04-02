@@ -54,7 +54,7 @@ public class Class138 {
 	public static void method1944(boolean bool) {
 		Class14_Sub8_Sub10.anInt4255 = 0;
 		Class64.anInt1012 = 0;
-		Class14_Sub2_Sub18.method378((byte) -51);
+		Static2.method378((byte) -51);
 		Canvas_Sub2.method63((byte) -110);
 		Class14_Sub8_Sub25.method615(300);
 		for (int i = 0; i < Class14_Sub8_Sub10.anInt4255; i++) {

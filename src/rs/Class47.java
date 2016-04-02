@@ -307,7 +307,7 @@ public class Class47 {
 			Class51 class51 = null;
 			return class51;
 		}
-		Class51 class51 = (Class51) Class14_Sub8_Sub9.aClass52_4240.method1210((byte) 71, (long) i);
+		Class51 class51 = (Class51) Class14_Sub8_Sub9.aClass52_4240.method1210((long) i);
 		if (class51 != null) {
 			Class51 class51_39_ = class51;
 			return class51_39_;
@@ -317,7 +317,7 @@ public class Class47 {
 		Class51 class51_40_ = new Class51();
 		if (is != null)
 			class51_40_.method1198(new Buffer(is), 36);
-		Class14_Sub8_Sub9.aClass52_4240.method1205(class51_40_, (long) i);
+		Class14_Sub8_Sub9.aClass52_4240.put(class51_40_, (long) i);
 		Class51 class51_41_ = class51_40_;
 		return class51_41_;
 	}

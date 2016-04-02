@@ -167,11 +167,11 @@ public class Class133_Sub6 extends Class133 {
 	}
 
 	public static void method1853(int i, int i_9_) {
-		Class150.aClass52_2406.method1208((byte) -112, i);
-		Class14_Sub8_Sub30.aClass52_4588.method1208((byte) -112, i);
+		Class150.aClass52_2406.method1208(i);
+		Class14_Sub8_Sub30.aClass52_4588.method1208(i);
 		if (i_9_ != -32768)
 			method1854(-5, -101, 81);
-		Class83.aClass52_1339.method1208((byte) -112, i);
+		Class83.aClass52_1339.method1208(i);
 	}
 
 	public void method1792(int i, int i_10_, int i_11_, int i_12_, int i_13_, int i_14_, int i_15_, int i_16_, long l) {

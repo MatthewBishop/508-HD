@@ -98,7 +98,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
 	public static Class21 method27(int var0, int var1) {
 		try {
-			Class21 var2 = (Class21) Class14_Sub6.aClass52_2817.method1210((byte) 64, (long) var0);
+			Class21 var2 = (Class21) Class14_Sub6.aClass52_2817.method1210((long) var0);
 			if (var2 != null) {
 				return var2;
 			} else {
@@ -112,7 +112,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 					method30(-23, -113);
 				}
 
-				Class14_Sub6.aClass52_2817.method1205(var4, (long) var0);
+				Class14_Sub6.aClass52_2817.put(var4, (long) var0);
 				return var4;
 			}
 		} catch (Throwable var5) {
@@ -465,7 +465,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		Class83.aBoolean1342 = true;
 		Class141.aBoolean2244 = true;
 		Class54.aBoolean877 = false;
-		Class14_Sub2_Sub18.aLong4029 = TimeUtil.getTime();
+		Static2.aLong4029 = TimeUtil.getTime();
 	}
 
 	public void focusLost(FocusEvent focusevent) {

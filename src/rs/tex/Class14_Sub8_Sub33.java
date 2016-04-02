@@ -68,7 +68,6 @@ import rs.Class24;
 import rs.Class32;
 import rs.Class33;
 import rs.Class38;
-import rs.Class39;
 import rs.Class4;
 import rs.Class42;
 import rs.Class44;
@@ -908,7 +907,7 @@ public class Class14_Sub8_Sub33 extends Class14_Sub8 {
 						Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734);
 			} else
 				Class14_Sub8_Sub7.aClass109Array4195[i_106_] = new Class109();
-			Class39.anInt660 = Class14_Sub8_Sub23.anInt4478;
+			Static2.anInt660 = Class14_Sub8_Sub23.anInt4478;
 			Class133_Sub4.anInt3579 = -1;
 			boolean bool = true;
 			return bool;

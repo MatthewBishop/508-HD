@@ -20,7 +20,7 @@ import rs.tex.Static;
 
 public class Scenegraph {
 	public static SceneCluster[] clusters = new SceneCluster[500];
-	public static int anInt4533;
+	public static int clusterCount;
 	public static SceneCluster[] activeOccluders = new SceneCluster[500];
 
 	public static void method120(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_) {
@@ -36,7 +36,7 @@ public class Scenegraph {
 		scenecluster.maxZ = i_3_;
 		scenecluster.minY = i_4_;
 		scenecluster.maxY = i_5_;
-		clusters[anInt4533++] = scenecluster;
+		clusters[clusterCount++] = scenecluster;
 	}
 
 	public static void destroy() {
@@ -46,7 +46,7 @@ public class Scenegraph {
 
 	public static void method1503() {
 		Class133_Sub6.activeOccluderCount = 0;
-		while_175_: for (int i = 0; i < anInt4533; i++) {
+		while_175_: for (int i = 0; i < clusterCount; i++) {
 			SceneCluster scenecluster = clusters[i];
 			if (Class21.anIntArray437 != null) {
 				for (int i_6_ = 0; i_6_ < Class21.anIntArray437.length; i_6_++) {

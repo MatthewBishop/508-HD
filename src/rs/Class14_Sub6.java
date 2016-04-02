@@ -3,8 +3,8 @@
  */
 package rs;
 
-import com.jagex.link.Class52;
 import com.jagex.link.Linkable;
+import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.RT4;
 
 import rs.tex.Class14_Sub8_Sub14;
@@ -22,14 +22,14 @@ public class Class14_Sub6 extends Linkable {
 	public static Class124 aClass124_2811 = Class14_Sub2_Sub2.method263(1178, "Fps:");
 	public int anInt2813;
 	public int anInt2814;
-	public static Class52 aClass52_2817;
+	public static SoftCache aClass52_2817;
 
 	static {
 		aClass124_2809 = null;
 		aClass124_2807 = Class14_Sub2_Sub2.method263(1178, "<br>");
 		aClass124_2806 = Class14_Sub2_Sub2.method263(1178, "Select");
 		aClass124_2810 = aClass124_2806;
-		aClass52_2817 = new Class52(64);
+		aClass52_2817 = new SoftCache(64);
 	}
 
 	public static int method463(byte i) {

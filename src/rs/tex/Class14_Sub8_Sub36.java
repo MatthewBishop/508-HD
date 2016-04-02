@@ -86,7 +86,7 @@ public class Class14_Sub8_Sub36 extends Class14_Sub8 {
 			int var6) {
 		try {
 			long var7 = (long) var2;
-			Class133_Sub7 var9 = (Class133_Sub7) Class14_Sub28.aClass52_3217.method1210((byte) 103, var7);
+			Class133_Sub7 var9 = (Class133_Sub7) Class14_Sub28.aClass52_3217.method1210(var7);
 			if (var9 == null) {
 				Class133_Sub2 var10 = Class133_Sub2.method1824(Class14_Sub8_Sub38.aClass9_Sub1_4739, var2, 0);
 				if (var10 == null) {
@@ -95,7 +95,7 @@ public class Class14_Sub8_Sub36 extends Class14_Sub8 {
 				}
 
 				var9 = var10.method1827(64, 768, -50, -10, -50);
-				Class14_Sub28.aClass52_3217.method1205(var9, var7);
+				Class14_Sub28.aClass52_3217.put(var9, var7);
 			}
 
 			int var18 = var5.method1867();

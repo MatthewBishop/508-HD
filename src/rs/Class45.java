@@ -100,7 +100,7 @@ public class Class45 {
 					Class37.anInt644 = i_3_;
 					Class133_Sub6.anInt3659 = i_4_;
 				}
-				Class39.method1126((byte) -22);
+				Static2.method1126((byte) -22);
 				int i_5_ = Class14_Sub2_Sub9.anInt3856 >> 6;
 				Class56.anIntArray917 = new int[Class131.anInt2159 + 1];
 				int i_6_ = Class14_Sub8_Sub15.anInt4332 >> 6;

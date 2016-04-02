@@ -5,7 +5,6 @@ package rs;
 
 import java.awt.Font;
 
-import com.jagex.link.Class14_Sub2_Sub13;
 import com.jagex.rt4.Class25;
 
 import rs.tex.Class14_Sub8_Sub27;

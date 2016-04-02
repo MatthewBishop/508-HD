@@ -3,8 +3,6 @@
  */
 package rs;
 
-import com.jagex.link.Class14_Sub2_Sub13;
-
 import rs.tex.Class14_Sub8_Sub28;
 import rs.tex.Class14_Sub8_Sub3;
 

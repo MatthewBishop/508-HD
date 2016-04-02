@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class52;
+import com.jagex.link.ref.SoftCache;
 
 import rs.tex.Class14_Sub8_Sub6;
 
@@ -32,7 +32,7 @@ public abstract class Class9 {
 	public static Class124 aClass124_221;
 	public int[] anIntArray223;
 	public static Class124 aClass124_227 = Class14_Sub2_Sub2.method263(1178, "mapflag");
-	public static Class52 aClass52_236;
+	public static SoftCache aClass52_236;
 	public Object[][] anObjectArrayArray237;
 	public int anInt242;
 	public boolean aBoolean244;
@@ -43,7 +43,7 @@ public abstract class Class9 {
 		anIntArray212 = new int[] { 0, -1, 0, 1 };
 		aClass124_221 = Class14_Sub2_Sub2.method263(1178, "Lade Schrifts-=tze )2 ");
 		anIntArray215 = new int[100];
-		aClass52_236 = new Class52(64);
+		aClass52_236 = new SoftCache(64);
 		anInt246 = 0;
 	}
 

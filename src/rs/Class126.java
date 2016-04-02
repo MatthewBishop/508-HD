@@ -86,7 +86,7 @@ public abstract class Class126 {
 			if (Class14_Sub8_Sub16.anInt4356 == 0)
 				Class14_Sub8_Sub30.method639(-1);
 			if (i_4_ == 40)
-				Class14_Sub2_Sub18.method380(Class75.anInt1163, Class14_Sub8_Sub9.aClass124_4242,
+				Static2.method380(Class75.anInt1163, Class14_Sub8_Sub9.aClass124_4242,
 						Class14_Sub8_Sub9.aClass124_4241, true);
 			if (i_4_ != 40 && Class21.aClass36_441 != null) {
 				Class21.aClass36_441.method1101((byte) -10);
@@ -101,7 +101,7 @@ public abstract class Class126 {
 				Class69.method1311((byte) 118);
 			}
 			if (i_4_ == 5)
-				Class14_Sub2_Sub18_Sub2.method385((byte) 67, Class14_Sub3.aClass9_Sub1_2750);
+				Static2.method385((byte) 67, Class14_Sub3.aClass9_Sub1_2750);
 			else
 				Static.method86(-123);
 			boolean bool = i_4_ == 5 || i_4_ == 10 || i_4_ == 28;
@@ -130,7 +130,7 @@ public abstract class Class126 {
 	}
 
 	public static Class12 method1744(int i, int i_6_) {
-		Class12 class12 = ((Class12) Class14_Sub14.aClass52_2982.method1210((byte) 68, (long) i));
+		Class12 class12 = ((Class12) Class14_Sub14.aClass52_2982.method1210((long) i));
 		if (class12 != null) {
 			Class12 class12_7_ = class12;
 			return class12_7_;
@@ -144,7 +144,7 @@ public abstract class Class126 {
 		if (is != null)
 			class12_8_.method220(new Buffer(is), true);
 		class12_8_.method223((byte) 126);
-		Class14_Sub14.aClass52_2982.method1205(class12_8_, (long) i);
+		Class14_Sub14.aClass52_2982.put(class12_8_, (long) i);
 		Class12 class12_9_ = class12_8_;
 		return class12_9_;
 	}

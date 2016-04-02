@@ -1012,7 +1012,7 @@ public class Class116 {
 																						Class124 class124 = null;
 																						int i_102_ = Class79.anIntArray1305[--i_3_];
 																						if (i_102_ < 100)
-																							class124 = Class14_Sub2_Sub18.aClass124Array4024[i_102_];
+																							class124 = Static2.aClass124Array4024[i_102_];
 																						if (class124 == null)
 																							class124 = Class140.aClass124_2234;
 																						Class14_Sub8_Sub39_Sub1.aClass124Array5101[i_4_++] = class124;
@@ -1020,7 +1020,7 @@ public class Class116 {
 																						int i_103_ = Class79.anIntArray1305[--i_3_];
 																						int i_104_ = -1;
 																						if (i_103_ < 100
-																								&& Class14_Sub2_Sub18.aClass124Array4024[i_103_] != null)
+																								&& Static2.aClass124Array4024[i_103_] != null)
 																							i_104_ = Class114.anIntArray1902[i_103_];
 																						Class79.anIntArray1305[i_3_++] = i_104_;
 																					} else if (i_6_ == 5005)
@@ -2070,7 +2070,7 @@ public class Class116 {
 																							if (Class14_Sub8_Sub16.anInt4356 == 10
 																									&& Class142.anInt2315 == 0
 																									&& Class56.anInt918 == 0)
-																								Class14_Sub2_Sub18
+																								Static2
 																										.method380(
 																												i_174_,
 																												class124,
@@ -3821,8 +3821,8 @@ public class Class116 {
 	public static void method1598(int i) {
 		if (i <= 46)
 			anInt1929 = -62;
-		Class21.aClass52_444.method1209((byte) -96);
-		Class14_Sub2_Sub12.aClass52_3894.method1209((byte) -96);
+		Class21.aClass52_444.method1209();
+		Class14_Sub2_Sub12.aClass52_3894.method1209();
 	}
 
 	public static void method1599(int i) {

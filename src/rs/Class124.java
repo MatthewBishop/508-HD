@@ -7,7 +7,6 @@ import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import com.jagex.link.Class14_Sub2_Sub13;
 import com.jagex.link.HashTable;
 
 import rs.Canvas_Sub1;
@@ -1586,11 +1585,11 @@ public class Class124 implements Interface1 {
 	}
 
 	public static void method1718(int var0) {
-		Class127.aClass52_2112.method1209((byte) -96);
+		Class127.aClass52_2112.method1209();
 		if (var0 == 48) {
-			Class112.aClass52_1868.method1209((byte) -96);
-			Class62.aClass52_991.method1209((byte) -96);
-			Class49.aClass52_810.method1209((byte) -96);
+			Class112.aClass52_1868.method1209();
+			Class62.aClass52_991.method1209();
+			Class49.aClass52_810.method1209();
 		}
 
 	}

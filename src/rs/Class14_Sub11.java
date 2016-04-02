@@ -4,8 +4,8 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class52;
 import com.jagex.link.Linkable;
+import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.Class14_Sub27;
 
 import rs.tex.Class14_Sub8_Sub15;
@@ -18,7 +18,7 @@ public class Class14_Sub11 extends Linkable {
 	public static Class124 aClass124_2941;
 	public static Class124 aClass124_2942 = Class14_Sub2_Sub2.method263(1178, "0(U");
 	public static Class124 aClass124_2943;
-	public static Class52 aClass52_2946;
+	public static SoftCache aClass52_2946;
 	public static int[] anIntArray2948 = new int[128];
 	public static Class124 aClass124_2949 = Class14_Sub2_Sub2.method263(1178, "shake:");
 	public static int anInt2952;
@@ -26,13 +26,13 @@ public class Class14_Sub11 extends Linkable {
 	static {
 		aClass124_2943 = aClass124_2949;
 		aClass124_2941 = aClass124_2949;
-		aClass52_2946 = new Class52(32);
+		aClass52_2946 = new SoftCache(32);
 	}
 
 	public static void method851(int i, int i_0_) {
-		Class133_Sub1_Sub1.aClass52_4926.method1208((byte) -112, i_0_);
-		Class125.aClass52_2075.method1208((byte) -112, i_0_);
-		Class70.aClass52_1077.method1208((byte) -112, i_0_);
+		Class133_Sub1_Sub1.aClass52_4926.method1208(i_0_);
+		Class125.aClass52_2075.method1208(i_0_);
+		Class70.aClass52_1077.method1208(i_0_);
 		if (i != 1)
 			method856((byte) 3);
 	}

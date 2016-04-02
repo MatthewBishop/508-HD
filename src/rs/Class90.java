@@ -22,7 +22,7 @@ public class Class90 implements Runnable {
 	public volatile boolean aBoolean1428 = false;
 
 	public static void method1443(int i) {
-		Class14_Sub8_Sub9.aClass52_4240.method1209((byte) -96);
+		Class14_Sub8_Sub9.aClass52_4240.method1209();
 		if (i != 2)
 			method1445(95);
 	}

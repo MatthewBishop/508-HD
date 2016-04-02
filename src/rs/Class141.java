@@ -29,8 +29,8 @@ public class Class141 implements KeyListener, FocusListener {
 	}
 
 	public static void method1960(int i, int i_0_) {
-		Class9.aClass52_236.method1208((byte) -112, i);
-		Static2.aClass52_4053.method1208((byte) -112, i);
+		Class9.aClass52_236.method1208(i);
+		Static2.aClass52_4053.method1208(i);
 		if (i_0_ <= 35)
 			method1963(-128, null, -90, (byte) 3, null);
 	}

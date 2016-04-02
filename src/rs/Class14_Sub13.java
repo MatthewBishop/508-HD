@@ -23,7 +23,7 @@ public class Class14_Sub13 extends Linkable {
 	}
 
 	public static void method859(int i, int i_0_) {
-		Static2.aClass52_3942.method1208((byte) -112, i_0_);
+		Static2.aClass52_3942.method1208(i_0_);
 		if (i != 0)
 			method861(103, -45, (byte) 72, -58, 112, -24, 116);
 	}

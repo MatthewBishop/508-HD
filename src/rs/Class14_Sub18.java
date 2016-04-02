@@ -164,7 +164,7 @@ public class Class14_Sub18 extends Linkable {
 						|| Class127.method1754(128, (Class14_Sub8_Sub38.anInt4729 - 1))))
 					i_4_ = 2;
 				if (i_4_ == 2 && Class14_Sub8_Sub38.anInt4729 > 0 || Class14_Sub8_Sub31.anInt4608 == 1)
-					Class14_Sub2_Sub18.method382((byte) 126);
+					Static2.method382((byte) 126);
 				if (i_4_ == 1 && Class14_Sub8_Sub38.anInt4729 > 0 || Class14_Sub8_Sub31.anInt4608 == 2)
 					Class107.method1551(-23473);
 			}

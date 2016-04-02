@@ -7,7 +7,7 @@ import java.awt.Canvas;
 import java.util.zip.Inflater;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class52;
+import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub2;
@@ -15,7 +15,7 @@ import com.jagex.rt4.Class14_Sub2_Sub19_Sub2;
 import rs.tex.Class14_Sub8_Sub24;
 
 public class Class49 {
-	public static Class52 aClass52_810 = new Class52(50);
+	public static SoftCache aClass52_810 = new SoftCache(50);
 	public Inflater anInflater812;
 	public static boolean aBoolean814 = false;
 	public static int anInt815;

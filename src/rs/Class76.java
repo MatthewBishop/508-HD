@@ -78,7 +78,7 @@ public class Class76 {
 		if (i != -10345)
 			method1364(-75);
 		long l = ((long) ((i_11_ << 56) + ((i_9_ << 16) + i_16_)) + (((long) i_8_ << 32) - -((long) i_12_ << 48)));
-		Class133_Sub7 class133_sub7_17_ = ((Class133_Sub7) Class14_Sub11.aClass52_2946.method1210((byte) 112, l));
+		Class133_Sub7 class133_sub7_17_ = ((Class133_Sub7) Class14_Sub11.aClass52_2946.method1210(l));
 		if (class133_sub7_17_ == null) {
 			int i_18_;
 			if (i_16_ == 1)
@@ -128,7 +128,7 @@ public class Class76 {
 				}
 			}
 			class133_sub7_17_ = class133_sub2.method1827(64, 768, -50, -10, -50);
-			Class14_Sub11.aClass52_2946.method1205(class133_sub7_17_, l);
+			Class14_Sub11.aClass52_2946.put(class133_sub7_17_, l);
 		}
 		int i_35_ = i_16_ * 64 - 1;
 		int i_36_ = -i_35_;

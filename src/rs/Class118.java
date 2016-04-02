@@ -250,9 +250,9 @@ public class Class118 {
 	}
 
 	public static void method1606(int i, int i_29_) {
-		Class14_Sub14.aClass52_2982.method1208((byte) -112, i_29_);
-		Class37.aClass52_635.method1208((byte) -112, i_29_);
-		Class14_Sub8_Sub6.aClass52_4186.method1208((byte) -112, i_29_);
+		Class14_Sub14.aClass52_2982.method1208(i_29_);
+		Class37.aClass52_635.method1208(i_29_);
+		Class14_Sub8_Sub6.aClass52_4186.method1208(i_29_);
 		int i_30_ = -61 / ((56 - i) / 60);
 	}
 
@@ -342,7 +342,7 @@ public class Class118 {
 								0));
 				Class134.anIntArray2590[i_38_] = (Class14_Sub13.aClass9_Sub1_2958
 						.method146((Class14_Sub8_Sub7.method515((new Class124[] {
-								Class14_Sub2_Sub18_Sub2.aClass124_5079, Class83.method1407(115, i_39_),
+								Static2.aClass124_5079, Class83.method1407(115, i_39_),
 								Class111.aClass124_1866, Class83.method1407(i + 13934, i_40_) }), (byte) -59)), 0));
 				Static.anIntArray3955[i_38_] = (Class14_Sub13.aClass9_Sub1_2958
 						.method146(

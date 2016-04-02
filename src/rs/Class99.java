@@ -15,18 +15,6 @@ public abstract class Class99 {
 	public static Class124 aClass124_1679 = Class14_Sub2_Sub2.method263(1178,
 			"Clientscript error )2 check log for details");
 
-	public static Class39 method1497(boolean bool) {
-		if (!bool)
-			return null;
-		Class39 class39;
-		try {
-			class39 = (Class39) Class.forName("rs.Class39_Sub1").newInstance();
-		} catch (Throwable throwable) {
-			return null;
-		}
-		return class39;
-	}
-
 	public static boolean method1498(boolean var1, int var2, Class14_Sub29[][][] var3, int var4, int var5) {
 			byte var6 = var1 ? 1 : (byte) (Class42.anInt699 & 255);
 			boolean var7;

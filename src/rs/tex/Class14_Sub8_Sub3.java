@@ -4,6 +4,7 @@
 package rs.tex;
 
 import com.jagex.io.Buffer;
+import com.jagex.link.ref.ReferenceFactory;
 
 import rs.Class112;
 import rs.Class114;
@@ -11,8 +12,6 @@ import rs.Class115;
 import rs.Class124;
 import rs.Class128;
 import rs.Class133;
-import rs.Class14_Sub2_Sub18;
-import rs.Class39;
 import rs.Class53;
 import rs.Class99;
 import rs.Static2;
@@ -20,7 +19,6 @@ import rs.Static2;
 public class Class14_Sub8_Sub3 extends Class14_Sub8 {
 	public static boolean[][] aBooleanArrayArray4138;
 	public static byte[][][] aByteArrayArrayArray4130;
-	public static Class39 aClass39_4137 = Class99.method1497(true);
 	public static int anInt4124 = 0;
 	public static int anInt4128;
 	public static int anInt4132 = 0;
@@ -28,7 +26,6 @@ public class Class14_Sub8_Sub3 extends Class14_Sub8 {
 	public static int[] anIntArray4139 = new int[128];
 	public static short[] aShortArray4133 = { -4160, -4163, -8256, -8259, 22461 };
 	public static void method491(int i) {
-		aClass39_4137 = null;
 		aByteArrayArrayArray4130 = null;
 		if (i == 0) {
 			anIntArray4139 = null;
@@ -50,7 +47,7 @@ public class Class14_Sub8_Sub3 extends Class14_Sub8 {
 		for (int i_7_ = 99; i_7_ > 0; i_7_--) {
 			Class114.anIntArray1902[i_7_] = Class114.anIntArray1902[i_7_ - 1];
 			Class14_Sub8_Sub32.aClass124Array4626[i_7_] = Class14_Sub8_Sub32.aClass124Array4626[i_7_ - 1];
-			Class14_Sub2_Sub18.aClass124Array4024[i_7_] = Class14_Sub2_Sub18.aClass124Array4024[i_7_ - 1];
+			Static2.aClass124Array4024[i_7_] = Static2.aClass124Array4024[i_7_ - 1];
 			Class124.aClass124Array2508[i_7_] = Class124.aClass124Array2508[i_7_ - 1];
 			Class133.anIntArray2176[i_7_] = Class133.anIntArray2176[i_7_ - 1];
 		}
@@ -60,7 +57,7 @@ public class Class14_Sub8_Sub3 extends Class14_Sub8 {
 		Class114.anIntArray1902[0] = i_4_;
 		Static2.anInt4877 = Class14_Sub8_Sub23.anInt4478;
 		Class53.anInt874++;
-		Class14_Sub2_Sub18.aClass124Array4024[0] = class124_5_;
+		Static2.aClass124Array4024[0] = class124_5_;
 		Class133.anIntArray2176[0] = i_6_;
 		Class124.aClass124Array2508[0] = class124;
 	}

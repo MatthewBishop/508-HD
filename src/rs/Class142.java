@@ -520,7 +520,7 @@ public class Class142 {
 				return class133_sub7;
 			}
 		}
-		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Class125.aClass52_2075.method1210((byte) 121, (long) anInt2276));
+		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Class125.aClass52_2075.method1210((long) anInt2276));
 		if (class133_sub7 == null) {
 			Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(Class14_Sub8_Sub6.aClass9_4193, anInt2311, 0);
 			if (class133_sub2 == null) {
@@ -545,7 +545,7 @@ public class Class142 {
 				class133_sub7.method1869(anInt2328, anInt2291, anInt2327);
 			class133_sub7.aBoolean3687 = true;
 			((ModelHD) class133_sub7).method1895(false, false, false, true, false, false, true);
-			Class125.aClass52_2075.method1205(class133_sub7, (long) anInt2276);
+			Class125.aClass52_2075.put(class133_sub7, (long) anInt2276);
 		}
 		if (class46 != null)
 			class133_sub7 = class46.method1167(i, 65535, class133_sub7);

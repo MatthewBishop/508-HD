@@ -120,7 +120,7 @@ public class Class14_Sub29 extends Linkable {
 		Class7_Sub2.anInt2676 = 99;
 		Class21.anIntArray442 = new int[104];
 		Class115.anIntArray1917 = new int[104];
-		Class14_Sub2_Sub18.anIntArray4023 = new int[104];
+		Static2.anIntArray4023 = new int[104];
 		Class14_Sub2_Sub17.anIntArray4020 = new int[104];
 		Class14_Sub2_Sub3.anIntArray3773 = new int[104];
 		int i_27_;

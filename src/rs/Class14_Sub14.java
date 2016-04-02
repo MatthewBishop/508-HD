@@ -8,8 +8,8 @@ import java.io.IOException;
 import java.util.zip.CRC32;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class52;
 import com.jagex.link.Linkable;
+import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.RT4;
 import com.jagex.util.TimeUtil;
 
@@ -40,7 +40,7 @@ public class Class14_Sub14 extends Linkable {
 	public int anInt2979;
 	public int anInt2980 = 0;
 	public int anInt2981;
-	public static Class52 aClass52_2982 = new Class52(64);
+	public static SoftCache aClass52_2982 = new SoftCache(64);
 	public static CRC32 aCRC32_2983 = new CRC32();
 	public static int anInt2984;
 	public static int[] anIntArray2985 = { 0, 3, 0, 0, 0, 0, 6, 0, 2, 0, 5, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 0,
@@ -185,7 +185,7 @@ public class Class14_Sub14 extends Linkable {
 									(new Class124[] { class124_9_, Class14_Sub8_Sub11.aClass124_4272,
 											(Class14_Sub8_Sub8.method517((byte) 124,
 													(TimeUtil.getTime() + 94608000000L))),
-									Class118.aClass124_1989, Class14_Sub2_Sub18_Sub2.method387(94608000L, true) }),
+									Class118.aClass124_1989, Static2.method387(94608000L, true) }),
 							(byte) -109));
 				Class14_Sub8_Sub7
 						.method515(new Class124[] { Static.aClass124_691, class124_9_, Static2.aClass124_2730 },

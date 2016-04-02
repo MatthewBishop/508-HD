@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.link.Class52;
+import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.RT4;
 
 import rs.tex.Class14_Sub8_Sub38;
@@ -13,7 +13,7 @@ import rs.tex.Static;
 
 public abstract class Class125 {
 	public static Class14_Sub9_Sub1 aClass14_Sub9_Sub1_2071;
-	public static Class52 aClass52_2075;
+	public static SoftCache aClass52_2075;
 	public static short aShort2076 = 1;
 	public static Class124 aClass124_2077;
 	public int anInt2079;
@@ -28,7 +28,7 @@ public abstract class Class125 {
 		aClass124_2082 = null;
 		aClass124_2080 = Class14_Sub2_Sub2.method263(1178, "Unable to find ");
 		aClass124_2077 = aClass124_2080;
-		aClass52_2075 = new Class52(50);
+		aClass52_2075 = new SoftCache(50);
 	}
 
 	public abstract void method1721(boolean bool, int i, int i_0_);

@@ -4,8 +4,8 @@
 package rs.tex;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class52;
 import com.jagex.link.HashTable;
+import com.jagex.link.ref.SoftCache;
 
 import rs.Class112;
 import rs.Class118;
@@ -28,7 +28,7 @@ public class Class14_Sub8_Sub9 extends Class14_Sub8 {
 	public static Class124 aClass124_4242;
 	public static Class124 aClass124_4244 = Class14_Sub2_Sub2.method263(1178, "");
 	public static Class141 aClass141_4239 = new Class141();
-	public static Class52 aClass52_4240 = new Class52(64);
+	public static SoftCache aClass52_4240 = new SoftCache(64);
 	public static HashTable aClass55_4227 = new HashTable(4096);
 	public static long[] aLongArray4233 = new long[32];
 	public static int anInt4243 = 0;

@@ -60,6 +60,6 @@ public class Class125_Sub4 extends Class125 {
 		int i_20_ = i_18_ * anInt3421 >> 44;
 		int i_21_ = i * anInt3418 >> 12;
 		int i_22_ = i * anInt3425 >> 12;
-		Class14_Sub2_Sub18_Sub2.method386(i_22_, i_20_, i_19_, anInt2086, anInt2083, anInt2079, i_21_, -25230);
+		Static2.method386(i_22_, i_20_, i_19_, anInt2086, anInt2083, anInt2079, i_21_, -25230);
 	}
 }

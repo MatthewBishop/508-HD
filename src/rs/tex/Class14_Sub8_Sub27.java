@@ -69,7 +69,7 @@ public class Class14_Sub8_Sub27 extends Class14_Sub8 {
 		Class133_Sub6.method1853(50, -32768);
 		Class14_Sub25.method915(5, 28091);
 		Class14_Sub30.method937(5, false);
-		Class14_Sub8_Sub30.aClass52_4596.method1208((byte) -112, 5);
+		Class14_Sub8_Sub30.aClass52_4596.method1208(5);
 	}
 
 	public static Class148 method622(int i, int i_1_, Class9 class9) {

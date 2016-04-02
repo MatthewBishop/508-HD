@@ -62,7 +62,7 @@ public class Class109 {
 		}
 		int i_10_ = i_5_;
 		long l = (long) i_10_ * 3147483667L - -((long) i_9_ * 3849834839L);
-		Class14_Sub2_Sub19 class14_sub2_sub19 = ((Class14_Sub2_Sub19) Class70.aClass52_1077.method1210((byte) 115, l));
+		Class14_Sub2_Sub19 class14_sub2_sub19 = ((Class14_Sub2_Sub19) Class70.aClass52_1077.method1210(l));
 		if (class14_sub2_sub19 != null) {
 			Class14_Sub2_Sub19 class14_sub2_sub19_11_ = class14_sub2_sub19;
 			return class14_sub2_sub19_11_;
@@ -70,7 +70,7 @@ public class Class109 {
 		Class3.aBoolean103 = false;
 		Class14_Sub2_Sub19 class14_sub2_sub19_12_ = Class49.method1194(false, i, i_6_, false, bool, i_5_, true, i_8_);
 		if (class14_sub2_sub19_12_ != null && !Class3.aBoolean103)
-			Class70.aClass52_1077.method1205(class14_sub2_sub19_12_, l);
+			Class70.aClass52_1077.put(class14_sub2_sub19_12_, l);
 		Class14_Sub2_Sub19 class14_sub2_sub19_13_ = class14_sub2_sub19_12_;
 		return class14_sub2_sub19_13_;
 	}

@@ -19,7 +19,6 @@ import rs.Class141;
 import rs.Class146;
 import rs.Class14_Sub14;
 import rs.Class14_Sub21;
-import rs.Class14_Sub2_Sub18_Sub2;
 import rs.Class14_Sub2_Sub2;
 import rs.Class14_Sub2_Sub3;
 import rs.Class14_Sub2_Sub5;
@@ -268,7 +267,7 @@ public class Class14_Sub8_Sub5 extends Class14_Sub8 {
 			return class124_37_;
 		}
 		Class124 class124_38_ = Class14_Sub8_Sub7.method515(
-				(new Class124[] { Class36.aClass124_628, class124, (Class14_Sub2_Sub18_Sub2.aClass124_5084) }),
+				(new Class124[] { Class36.aClass124_628, class124, (Static2.aClass124_5084) }),
 				(byte) -13);
 		return class124_38_;
 	}

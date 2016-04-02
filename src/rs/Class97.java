@@ -38,7 +38,7 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 	}
 
 	public static Class150 method1489(int i, int i_0_) {
-		Class150 class150 = (Class150) Static2.aClass52_3942.method1210((byte) 90, (long) i);
+		Class150 class150 = (Class150) Static2.aClass52_3942.method1210((long) i);
 		if (class150 != null) {
 			Class150 class150_1_ = class150;
 			return class150_1_;
@@ -51,7 +51,7 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 		Class150 class150_3_ = new Class150();
 		if (is != null)
 			class150_3_.method2024(i, 0, new Buffer(is));
-		Static2.aClass52_3942.method1205(class150_3_, (long) i);
+		Static2.aClass52_3942.put(class150_3_, (long) i);
 		Class150 class150_4_ = class150_3_;
 		return class150_4_;
 	}

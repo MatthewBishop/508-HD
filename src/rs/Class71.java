@@ -37,7 +37,6 @@ import rs.Class14_Sub23;
 import rs.Class14_Sub29;
 import rs.Class14_Sub2_Sub10;
 import rs.Class14_Sub2_Sub11;
-import rs.Class14_Sub2_Sub18_Sub2;
 import rs.Class14_Sub2_Sub2;
 import rs.Class14_Sub2_Sub21;
 import rs.Class14_Sub2_Sub7;
@@ -55,7 +54,6 @@ import rs.Class33;
 import rs.Class35;
 import rs.Class36;
 import rs.Class37;
-import rs.Class39;
 import rs.Class47;
 import rs.Class48;
 import rs.Class64;
@@ -241,7 +239,7 @@ public class Class71 {
 						Class70.aClass14_Sub10_Sub1_1080.method809(Class1.method73((byte) -58));
 						Class70.aClass14_Sub10_Sub1_1080.method833((byte) 89, Class83.anInt1340);
 						Class70.aClass14_Sub10_Sub1_1080.method833((byte) 103, Class14_Sub20.anInt3094);
-						Class39.method1125(Class70.aClass14_Sub10_Sub1_1080, (byte) -108);
+						Static2.method1125(Class70.aClass14_Sub10_Sub1_1080, (byte) -108);
 						Class70.aClass14_Sub10_Sub1_1080.method814(var0 + '\u8000', Class14_Sub9_Sub1.aClass124_4829);
 						Class70.aClass14_Sub10_Sub1_1080.method803(Class14_Sub2_Sub11.anInt3884, 96);
 						Class70.aClass14_Sub10_Sub1_1080.method803(Class14_Sub6.method463((byte) -124), 69);
@@ -261,7 +259,7 @@ public class Class71 {
 								var0 ^ 96);
 						Class70.aClass14_Sub10_Sub1_1080.method803(Class14_Sub8_Sub26.aClass9_Sub1_4521.anInt242, 99);
 						Class70.aClass14_Sub10_Sub1_1080.method803(Class64.aClass9_Sub1_1015.anInt242, var0 ^ 118);
-						Class70.aClass14_Sub10_Sub1_1080.method803(Class14_Sub2_Sub18_Sub2.aClass9_Sub1_5085.anInt242,
+						Class70.aClass14_Sub10_Sub1_1080.method803(Static2.aClass9_Sub1_5085.anInt242,
 								var0 + 109);
 						Class70.aClass14_Sub10_Sub1_1080.method803(Class47.aClass9_Sub1_790.anInt242, var0 ^ 89);
 						Class70.aClass14_Sub10_Sub1_1080.method803(Class89.aClass9_Sub1_1407.anInt242, 118);

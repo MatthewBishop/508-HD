@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 
-import com.jagex.link.Class52;
+import com.jagex.link.ref.SoftCache;
 
 import rs.Class124;
 import rs.Class125_Sub1;
@@ -18,7 +18,6 @@ import rs.Class14_Sub2_Sub2;
 import rs.Class14_Sub9_Sub3;
 import rs.Class31;
 import rs.Class37;
-import rs.Class39;
 import rs.Class40;
 import rs.Class43;
 import rs.Class63;
@@ -39,7 +38,7 @@ public class Class36 implements Runnable {
 	public InputStream anInputStream617;
 	public int anInt619 = 0;
 	public boolean aBoolean620 = false;
-	public static Class52 aClass52_621 = new Class52(260);
+	public static SoftCache aClass52_621 = new SoftCache(260);
 	public byte[] aByteArray622;
 	public static int[] anIntArray626 = new int[1000];
 	public static Class124 aClass124_628 = Class14_Sub2_Sub2.method263(1178, " <col=ffff00>");
@@ -284,14 +283,14 @@ public class Class36 implements Runnable {
 				Class90.aFloat1426 = Class14_Sub8.aFloat2854;
 			}
 
-			Class39.method1126((byte) -22);
+			Static2.method1126((byte) -22);
 		} else if (Class14_Sub8.aFloat2854 < Class90.aFloat1426) {
 			Class90.aFloat1426 = (float) ((double) Class90.aFloat1426 - (double) Class90.aFloat1426 / 30.0D);
 			if (Class90.aFloat1426 < Class14_Sub8.aFloat2854) {
 				Class90.aFloat1426 = Class14_Sub8.aFloat2854;
 			}
 
-			Class39.method1126((byte) -22);
+			Static2.method1126((byte) -22);
 		}
 
 		if (var0 != Static.anInt427 && Class14_Sub18.anInt3050 != -1) {
@@ -312,7 +311,7 @@ public class Class36 implements Runnable {
 			}
 
 			Class133_Sub6.anInt3659 += var2;
-			Class39.method1126((byte) -22);
+			Static2.method1126((byte) -22);
 		}
 
 	}

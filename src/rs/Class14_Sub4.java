@@ -696,7 +696,7 @@ public class Class14_Sub4 extends Linkable {
 
 	public static AnimFrameLoader method457(int i, int i_76_) {
 		AnimFrameLoader class14_sub2_sub15 = ((AnimFrameLoader) Class14_Sub2_Sub12.aClass52_3894
-				.method1210((byte) 65, (long) i_76_));
+				.method1210((long) i_76_));
 		if (class14_sub2_sub15 != null) {
 			AnimFrameLoader class14_sub2_sub15_77_ = class14_sub2_sub15;
 			return class14_sub2_sub15_77_;
@@ -706,7 +706,7 @@ public class Class14_Sub4 extends Linkable {
 		if (i != 3)
 			method459(null, 52);
 		if (class14_sub2_sub15 != null)
-			Class14_Sub2_Sub12.aClass52_3894.method1205(class14_sub2_sub15, (long) i_76_);
+			Class14_Sub2_Sub12.aClass52_3894.put(class14_sub2_sub15, (long) i_76_);
 		AnimFrameLoader class14_sub2_sub15_78_ = class14_sub2_sub15;
 		return class14_sub2_sub15_78_;
 	}

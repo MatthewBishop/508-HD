@@ -31,12 +31,12 @@ public class Class44 {
 		Static.anInt427 = i;
 		Class37.anInt644 = i_0_;
 		Class14_Sub18.anInt3050 = -1;
-		Class39.method1126((byte) -22);
+		Static2.method1126((byte) -22);
 	}
 
 	public static void method1156(byte i) {
 		if (i < -48)
-			Class139.aClass52_2229.method1209((byte) -96);
+			Class139.aClass52_2229.method1209();
 	}
 
 	public static void method1157(byte i) {

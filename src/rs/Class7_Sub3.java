@@ -28,10 +28,10 @@ public class Class7_Sub3 extends Class7 {
 	}
 
 	public static void method131(int i, int i_0_) {
-		Class36.aClass52_621.method1208((byte) -112, i);
+		Class36.aClass52_621.method1208(i);
 		if (i_0_ > -42)
 			method133(true);
-		Class70.aClass52_1079.method1208((byte) -112, i);
+		Class70.aClass52_1079.method1208(i);
 	}
 
 	public static Buffer method132(byte i) {
@@ -72,6 +72,6 @@ public class Class7_Sub3 extends Class7 {
 	}
 
 	public static void method134(int i) {
-		Class14_Sub28.aClass52_3217.method1209((byte) -96);
+		Class14_Sub28.aClass52_3217.method1209();
 	}
 }

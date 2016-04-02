@@ -71,7 +71,7 @@ public abstract class Class129 {
 			Class124 class124 = null;
 			return class124;
 		}
-		Class124 class124 = Class14_Sub2_Sub18_Sub2.method387(l, true);
+		Class124 class124 = Static2.method387(l, true);
 		return class124;
 	}
 }

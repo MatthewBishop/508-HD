@@ -4,13 +4,13 @@
 package rs.tex;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class14_Sub2_Sub13;
 import com.jagex.util.TimeUtil;
 
 import rs.Class107;
 import rs.Class108;
 import rs.Class112;
 import rs.Class142;
+import rs.Class14_Sub2_Sub13;
 
 public class Class14_Sub8_Sub20 extends Class14_Sub8 {
 	public static boolean aBoolean4420;
@@ -41,7 +41,7 @@ public class Class14_Sub8_Sub20 extends Class14_Sub8 {
 		if (i != -11988)
 			anObject4417 = null;
 		Class14_Sub2_Sub13 class14_sub2_sub13 = ((Class14_Sub2_Sub13) Class14_Sub8_Sub27.aClass81_4546
-				.method1400((byte) 79));
+				.method1400());
 		if (class14_sub2_sub13 != null) {
 			class14_sub2_sub13.unlink();
 			class14_sub2_sub13.unlinkCacheable();
@@ -50,7 +50,7 @@ public class Class14_Sub8_Sub20 extends Class14_Sub8 {
 		}
 		Class14_Sub2_Sub13 class14_sub2_sub13_5_;
 		do {
-			class14_sub2_sub13_5_ = ((Class14_Sub2_Sub13) Class14_Sub8.aClass81_2844.method1400((byte) 40));
+			class14_sub2_sub13_5_ = ((Class14_Sub2_Sub13) Class14_Sub8.aClass81_2844.method1400());
 			if (class14_sub2_sub13_5_ == null) {
 				class14_sub2_sub13 = null;
 				return class14_sub2_sub13;

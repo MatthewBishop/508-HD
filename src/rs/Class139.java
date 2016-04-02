@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.link.Class52;
+import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.Class25;
 
 import rs.tex.Class14_Sub8;
@@ -23,12 +23,12 @@ import rs.tex.Class14_Sub8_Sub7;
 import rs.tex.Static;
 
 public class Class139 {
-	public static Class52 aClass52_2229;
+	public static SoftCache aClass52_2229;
 	public static int anInt2230 = 0;
 	public static boolean aBoolean2233;
 
 	static {
-		aClass52_2229 = new Class52(64);
+		aClass52_2229 = new SoftCache(64);
 		aBoolean2233 = true;
 	}
 

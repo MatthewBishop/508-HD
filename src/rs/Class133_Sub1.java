@@ -189,7 +189,7 @@ public abstract class Class133_Sub1 extends Class133 {
 				System.out.println(new StringBuilder("oncard_2d:").append(Class11.anInt263).toString());
 				System.out.println(new StringBuilder("oncard_texture:").append(Class11.textureMemory).toString());
 			}
-			if (class124.method1717(40, Class39.aClass124_661))
+			if (class124.method1717(40, Static2.aClass124_661))
 				Class99_Sub2.method1508((byte) 90);
 			if (class124.method1717(40, Class44.aClass124_728))
 				Class126.method1743(i + 27245, 25);

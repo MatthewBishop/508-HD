@@ -2039,7 +2039,7 @@ public class ModelHD extends Class133_Sub7 {
 		if (bool_485_)
 			modelhd_493_.faceAlphas = faceAlphas;
 		else
-			modelhd_493_.faceAlphas = Class39.method1121(faceAlphas, 24);
+			modelhd_493_.faceAlphas = Static2.method1121(faceAlphas, 24);
 		if (bool_484_ && bool_485_ && bool_486_ && (bool_489_ && bool_487_ || RT4.useLighting))
 			modelhd_493_.aClass41_5030 = aClass41_5030;
 		else

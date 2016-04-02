@@ -18,7 +18,7 @@ public class Class11 {
 	public static Class2 aClass2_269;
 	public static Class2 aClass2_270;
 	public static Class2 aClass2_271;
-	public static int[] anIntArray272;
+	public static int[] ids;
 
 	static {
 		anInt263 = 0;
@@ -29,7 +29,7 @@ public class Class11 {
 		aClass2_269 = new Class2();
 		aClass2_270 = new Class2();
 		aClass2_271 = new Class2();
-		anIntArray272 = new int[1000];
+		ids = new int[1000];
 	}
 
 	public static synchronized void method202(int i, int i_0_, int i_1_) {
@@ -66,25 +66,25 @@ public class Class11 {
 			Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass2_268.method78();
 			if (class14_sub1 == null)
 				break;
-			anIntArray272[i++] = (int) class14_sub1.key;
+			ids[i++] = (int) class14_sub1.key;
 			arbBufferMemory -= class14_sub1.anInt2714;
 			if (i == 1000) {
-				gl.glDeleteBuffersARB(i, anIntArray272, 0);
+				gl.glDeleteBuffersARB(i, ids, 0);
 				i = 0;
 			}
 		}
 		if (i > 0) {
-			gl.glDeleteBuffersARB(i, anIntArray272, 0);
+			gl.glDeleteBuffersARB(i, ids, 0);
 			i = 0;
 		}
 		for (;;) {
 			Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass2_269.method78();
 			if (class14_sub1 == null)
 				break;
-			anIntArray272[i++] = (int) class14_sub1.key;
+			ids[i++] = (int) class14_sub1.key;
 			anInt263 -= class14_sub1.anInt2714;
 			if (i == 1000) {
-				gl.glDeleteTextures(i, anIntArray272, 0);
+				gl.glDeleteTextures(i, ids, 0);
 				i = 0;
 			}
 		}
@@ -92,15 +92,15 @@ public class Class11 {
 			Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass2_270.method78();
 			if (class14_sub1 == null)
 				break;
-			anIntArray272[i++] = (int) class14_sub1.key;
+			ids[i++] = (int) class14_sub1.key;
 			textureMemory -= class14_sub1.anInt2714;
 			if (i == 1000) {
-				gl.glDeleteTextures(i, anIntArray272, 0);
+				gl.glDeleteTextures(i, ids, 0);
 				i = 0;
 			}
 		}
 		if (i > 0)
-			gl.glDeleteTextures(i, anIntArray272, 0);
+			gl.glDeleteTextures(i, ids, 0);
 		for (;;) {
 			Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass2_271.method78();
 			if (class14_sub1 == null)
@@ -127,7 +127,7 @@ public class Class11 {
 		aClass2_269 = null;
 		aClass2_270 = null;
 		aClass2_271 = null;
-		anIntArray272 = null;
+		ids = null;
 	}
 
 	public static synchronized void method208(int i, int i_6_, int i_7_) {

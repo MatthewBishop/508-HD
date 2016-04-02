@@ -44,7 +44,7 @@ public class Canvas_Sub1 extends Canvas {
 	}
 
 	public static void method59(byte i) {
-		Static2.aClass52_3942.method1209((byte) -96);
+		Static2.aClass52_3942.method1209();
 	}
 
 	public void update(Graphics graphics) {

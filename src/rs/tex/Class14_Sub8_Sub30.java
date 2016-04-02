@@ -7,7 +7,7 @@ import java.awt.Container;
 import java.awt.Insets;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class52;
+import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.Class121;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
@@ -49,8 +49,8 @@ import rs.Class88;
 
 public class Class14_Sub8_Sub30 extends Class14_Sub8 {
 	public static Class14_Sub2_Sub19[] aClass14_Sub2_Sub19Array4595;
-	public static Class52 aClass52_4588 = new Class52(50);
-	public static Class52 aClass52_4596 = new Class52(4);
+	public static SoftCache aClass52_4588 = new SoftCache(50);
+	public static SoftCache aClass52_4596 = new SoftCache(4);
 	public static int anInt4594 = -1;
 	public static int anInt4597;
 	public static int anInt4598;

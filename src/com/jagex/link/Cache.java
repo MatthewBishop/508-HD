@@ -23,7 +23,7 @@ public class Cache {
 	}
 
 	public void clear() {
-		history.method1395((byte) 119);
+		history.method1395();
 		table.clear();
 		empty = new Cacheable();
 		unused = capacity;
@@ -32,7 +32,7 @@ public class Cache {
 	public Cacheable get(long l) {
 		Cacheable cacheable = (Cacheable) table.get(l);
 		if (cacheable != null)
-			history.push(false, cacheable);
+			history.push(cacheable);
 		Cacheable cacheable_4_ = cacheable;
 		return cacheable_4_;
 	}
@@ -49,17 +49,17 @@ public class Cache {
 
 	public void put(Cacheable cacheable, long l) {
 		if (unused == 0) {
-			Cacheable cacheable_3_ = history.pop(-1 ^ 0x2);
+			Cacheable cacheable_3_ = history.pop();
 			cacheable_3_.unlink();
 			cacheable_3_.unlinkCacheable();
 			if (cacheable_3_ == empty) {
-				cacheable_3_ = history.pop(-3);
+				cacheable_3_ = history.pop();
 				cacheable_3_.unlink();
 				cacheable_3_.unlinkCacheable();
 			}
 		} else
 			unused--;
 		table.put(l, cacheable);
-		history.push(false, cacheable);
+		history.push(cacheable);
 	}
 }

@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.io.PacketBuffer;
-import com.jagex.link.Class52;
+import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.Class25;
 
 import rs.tex.Class14_Sub8_Sub14;
@@ -14,9 +14,9 @@ import rs.tex.Class14_Sub8_Sub34;
 import rs.tex.Class14_Sub8_Sub36;
 
 public class Class70 {
-	public static Class52 aClass52_1077 = new Class52(100);
+	public static SoftCache aClass52_1077 = new SoftCache(100);
 	public static Class14_Sub2_Sub5 aClass14_Sub2_Sub5_1078;
-	public static Class52 aClass52_1079 = new Class52(5);
+	public static SoftCache aClass52_1079 = new SoftCache(5);
 	public static PacketBuffer aClass14_Sub10_Sub1_1080 = new PacketBuffer(5000);
 	public static int anInt1081;
 	public static int[] anIntArray1082 = { 1, 1, 1, 1, 4, 1, 1, 5, 6, 1, 5, 0, 7, 0, 4, 1, 7, 2, 1, 1, 6, 1, 1, 3, 6, 1,

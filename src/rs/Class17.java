@@ -71,7 +71,7 @@ public class Class17 {
 	}
 
 	public static Class14_Sub2_Sub2 method958(byte i, int i_2_) {
-		Class14_Sub2_Sub2 class14_sub2_sub2 = ((Class14_Sub2_Sub2) Class14_Sub2_Sub18_Sub2.aClass20_5081
+		Class14_Sub2_Sub2 class14_sub2_sub2 = ((Class14_Sub2_Sub2) Static2.aClass20_5081
 				.get((long) i_2_));
 		if (class14_sub2_sub2 != null) {
 			Class14_Sub2_Sub2 class14_sub2_sub2_3_ = class14_sub2_sub2;
@@ -82,7 +82,7 @@ public class Class17 {
 		Class14_Sub2_Sub2 class14_sub2_sub2_5_ = new Class14_Sub2_Sub2();
 		if (is != null)
 			class14_sub2_sub2_5_.method265(0, new Buffer(is));
-		Class14_Sub2_Sub18_Sub2.aClass20_5081.put(class14_sub2_sub2_5_, (long) i_2_);
+		Static2.aClass20_5081.put(class14_sub2_sub2_5_, (long) i_2_);
 		Class14_Sub2_Sub2 class14_sub2_sub2_6_ = class14_sub2_sub2_5_;
 		return class14_sub2_sub2_6_;
 	}

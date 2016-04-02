@@ -146,8 +146,7 @@ public class Class60 {
 	}
 
 	public Class133_Sub7 method1267(int i, int i_21_) {
-		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Static2.aClass52_4053.method1210((byte) 92,
-				(long) anInt962));
+		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Static2.aClass52_4053.method1210((long) anInt962));
 		if (class133_sub7 == null) {
 			Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(Static.aClass9_2711, anInt977, 0);
 			if (class133_sub2 == null) {
@@ -163,7 +162,7 @@ public class Class60 {
 					class133_sub2.method1819(aShortArray968[i_24_], aShortArray971[i_24_]);
 			}
 			class133_sub7 = class133_sub2.method1827(anInt973 + 64, anInt969 + 850, -30, -50, -30);
-			Static2.aClass52_4053.method1205(class133_sub7, (long) anInt962);
+			Static2.aClass52_4053.put(class133_sub7, (long) anInt962);
 		}
 		Class133_Sub7 class133_sub7_25_;
 		if (anInt966 != -1 && i_21_ != -1)

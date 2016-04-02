@@ -43,7 +43,7 @@ public class Class14_Sub8_Sub11 extends Class14_Sub8 {
 	public static void method530(byte i) {
 		if (i != -11)
 			aBooleanArray4271 = null;
-		Class14_Sub6.aClass52_2817.method1209((byte) -96);
+		Class14_Sub6.aClass52_2817.method1209();
 	}
 
 	public static void method531(byte i) {

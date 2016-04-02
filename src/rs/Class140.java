@@ -16,12 +16,12 @@ public class Class140 {
 	}
 
 	public static void method1957(boolean bool, int i) {
-		Class127.aClass52_2112.method1208((byte) -112, i);
-		Class112.aClass52_1868.method1208((byte) -112, i);
+		Class127.aClass52_2112.method1208(i);
+		Class112.aClass52_1868.method1208(i);
 		if (!bool)
 			aClass124_2234 = null;
-		Class62.aClass52_991.method1208((byte) -112, i);
-		Class49.aClass52_810.method1208((byte) -112, i);
+		Class62.aClass52_991.method1208(i);
+		Class49.aClass52_810.method1208(i);
 	}
 
 	public static void method1958(byte i) {

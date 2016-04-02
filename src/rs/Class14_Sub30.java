@@ -31,7 +31,7 @@ public class Class14_Sub30 extends Linkable {
 
 	public static void method937(int i, boolean bool) {
 		if (!bool)
-			Class14_Sub11.aClass52_2946.method1208((byte) -112, i);
+			Class14_Sub11.aClass52_2946.method1208(i);
 	}
 
 	public static boolean method938(int i, int i_0_) {
@@ -128,10 +128,10 @@ public class Class14_Sub30 extends Linkable {
 	}
 
 	public static void method941(byte i) {
-		Class150.aClass52_2406.method1209((byte) -96);
-		Class14_Sub8_Sub30.aClass52_4588.method1209((byte) -96);
+		Class150.aClass52_2406.method1209();
+		Class14_Sub8_Sub30.aClass52_4588.method1209();
 		if (i == 11)
-			Class83.aClass52_1339.method1209((byte) -96);
+			Class83.aClass52_1339.method1209();
 	}
 
 	public static void method942(int i) {

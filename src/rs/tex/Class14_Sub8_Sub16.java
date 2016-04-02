@@ -58,9 +58,9 @@ public class Class14_Sub8_Sub16 extends Class14_Sub8 {
 	}
 
 	public static void method560(int i) {
-		Class9.aClass52_236.method1209((byte) -96);
+		Class9.aClass52_236.method1209();
 		if (i == -12501)
-			Static2.aClass52_4053.method1209((byte) -96);
+			Static2.aClass52_4053.method1209();
 	}
 
 	public static int[] method561(int[] is, int i) {

@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class52;
+import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.AthmosphericEffects;
 
 import rs.tex.Static;
@@ -13,7 +13,7 @@ public class Class62 {
 	public static int anInt988 = 0;
 	public static Buffer aClass14_Sub10_989;
 	public static int anInt990 = 0;
-	public static Class52 aClass52_991 = new Class52(30);
+	public static SoftCache aClass52_991 = new SoftCache(30);
 	public static int[] anIntArray992;
 	public static Class9 aClass9_993;
 	public static Class124 aClass124_994 = Class14_Sub2_Sub2.method263(1178, ":");

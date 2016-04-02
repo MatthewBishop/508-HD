@@ -33,9 +33,9 @@ public class Class14_Sub8_Sub13 extends Class14_Sub8 {
 	public static void method544(byte i) {
 		if (i <= 112)
 			anInt4310 = -111;
-		Class133_Sub1_Sub1.aClass52_4926.method1209((byte) -96);
-		Class125.aClass52_2075.method1209((byte) -96);
-		Class70.aClass52_1077.method1209((byte) -96);
+		Class133_Sub1_Sub1.aClass52_4926.method1209();
+		Class125.aClass52_2075.method1209();
+		Class70.aClass52_1077.method1209();
 	}
 
 	public static int method545(byte i, int i_0_, int i_1_) {
@@ -70,7 +70,7 @@ public class Class14_Sub8_Sub13 extends Class14_Sub8 {
 	}
 
 	public static void method548(int i, int i_7_) {
-		Class14_Sub6.aClass52_2817.method1208((byte) -112, i);
+		Class14_Sub6.aClass52_2817.method1208(i);
 	}
 
 	public static boolean method549(int i, int i_8_, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_, int i_14_) {

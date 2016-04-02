@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class52;
+import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.Class148_Sub1;
 
 import rs.tex.Class14_Sub8_Sub13;
@@ -23,7 +23,7 @@ public class Class127 {
 	public int anInt2108;
 	public byte[] aByteArray2109;
 	public static Class9_Sub1 aClass9_Sub1_2111;
-	public static Class52 aClass52_2112 = new Class52(64);
+	public static SoftCache aClass52_2112 = new SoftCache(64);
 	public static Class124 aClass124_2113;
 	public static Class94 aClass94_2114 = null;
 	public static Class124 aClass124_2116 = Class14_Sub2_Sub2.method263(1178, "flash2:");
@@ -60,7 +60,7 @@ public class Class127 {
 	}
 
 	public static Class60 method1749(int i, byte i_9_) {
-		Class60 class60 = (Class60) Class9.aClass52_236.method1210((byte) 70, (long) i);
+		Class60 class60 = (Class60) Class9.aClass52_236.method1210((long) i);
 		if (class60 != null) {
 			Class60 class60_10_ = class60;
 			return class60_10_;
@@ -71,7 +71,7 @@ public class Class127 {
 		class60_11_.anInt962 = i;
 		if (is != null)
 			class60_11_.method1268(0, new Buffer(is));
-		Class9.aClass52_236.method1205(class60_11_, (long) i);
+		Class9.aClass52_236.put(class60_11_, (long) i);
 		int i_12_ = -57 / ((-65 - i_9_) / 39);
 		Class60 class60_13_ = class60_11_;
 		return class60_13_;

@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.Class52;
+import com.jagex.link.ref.SoftCache;
 import com.jagex.map.SceneCluster;
 import com.jagex.rt4.Class121;
 import com.jagex.rt4.Class148;
@@ -37,7 +37,7 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 	public boolean aBoolean4921 = false;
 	public Class124 aClass124_4922;
 	public int anInt4924;
-	public static Class52 aClass52_4926 = new Class52(64);
+	public static SoftCache aClass52_4926 = new SoftCache(64);
 	public short aShort4927;
 	public int anInt4928;
 	public int anInt4929;
@@ -71,7 +71,7 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 			i_0_++;
 		if (class9.method171(29499, Class133_Sub4.anInt3584))
 			i_0_++;
-		if (class9.method171(29499, Class14_Sub2_Sub18_Sub2.anInt5087))
+		if (class9.method171(29499, Static2.anInt5087))
 			i_0_++;
 		if (class9.method171(29499, SceneCluster.anInt1369))
 			i_0_++;
