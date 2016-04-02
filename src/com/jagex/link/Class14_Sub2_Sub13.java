@@ -1,0 +1,44 @@
+/* Class14_Sub2_Sub13 - Decompiled by JODE
+ * Visit http://jode.sourceforge.net/
+ */
+package com.jagex.link;
+
+import com.jagex.util.TimeUtil;
+
+import rs.Class124;
+import rs.tex.Class14_Sub8;
+import rs.tex.Class14_Sub8_Sub27;
+
+public class Class14_Sub2_Sub13 extends Cacheable {
+
+	public Class124 aClass124_3925;
+
+	public int anInt3920;
+
+	public Class14_Sub2_Sub13(int i, int i_20_) {
+		key = (long) i << 32 | (long) i_20_;
+	}
+
+	public void method326() {
+		keyCacheable |= ~0x7fffffffffffffffL;
+		if (0L == method330())
+			Class14_Sub8_Sub27.aClass81_4546.push(false, this);
+	}
+
+	public void method327() {
+		keyCacheable = (TimeUtil.getTime() - -500L | keyCacheable & ~0x7fffffffffffffffL);
+		Class14_Sub8.aClass81_2844.push(false, this);
+	}
+
+	public int method328() {
+		return (int) (key >>> 32 & 0xffL);
+	}
+
+	public long method330() {
+		return keyCacheable & 0x7fffffffffffffffL;
+	}
+
+	public int method331() {
+		return (int) key;
+	}
+}
