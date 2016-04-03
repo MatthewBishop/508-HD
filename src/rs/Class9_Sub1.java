@@ -90,7 +90,7 @@ public class Class9_Sub1 extends Class9 {
 						else {
 							int i_11_ = 0;
 							if (i_10_ >= 6)
-								i_11_ = class14_sub10.method812((byte) -107);
+								i_11_ = class14_sub10.getInt((byte) -107);
 							if (i_11_ != anInt2700)
 								Class14_Sub8_Sub29.method633((byte) 0, 101, this, 255, true, anInt2692, anInt2687);
 							else {

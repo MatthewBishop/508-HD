@@ -15,7 +15,7 @@ import javax.media.opengl.GLDrawable;
 import javax.media.opengl.GLDrawableFactory;
 import javax.media.opengl.glu.GLU;
 
-import com.jagex.rt4.lights.Class10;
+import com.jagex.rt4.lights.LightManager;
 import com.jagex.util.Util;
 
 import rs.Class124;
@@ -31,9 +31,9 @@ public class RT4GL {
 	public static int anInt2016;
 	public static boolean aBoolean2017 = true;
 	public static int anInt2018;
-	public static int anInt2019;
+	public static int maxTextureUnits;
 	public static float[] aFloatArray2020;
-	public static boolean aBoolean2021;
+	public static boolean vertexBufferAsObject;
 	public static int anInt2022;
 	public static boolean aBoolean2023;
 	public static Class124 aClass124_2024;
@@ -58,7 +58,7 @@ public class RT4GL {
 	public static int anInt2043;
 	public static float aFloat2044;
 	public static int anInt2045;
-	public static boolean aBoolean2046;
+	public static boolean usingBigEndian;
 	public static int anInt2047;
 	public static boolean aBoolean2048;
 	public static GLDrawable aGLDrawable2049;
@@ -312,17 +312,17 @@ public class RT4GL {
 			i |= 0x20;
 		int[] is = new int[1];
 		gl.glGetIntegerv(34018, is, 0);
-		anInt2019 = is[0];
+		maxTextureUnits = is[0];
 		gl.glGetIntegerv(34929, is, 0);
 		anInt2043 = is[0];
 		gl.glGetIntegerv(34930, is, 0);
 		anInt2047 = is[0];
-		if (anInt2019 < 2 || anInt2043 < 2 || anInt2047 < 2)
+		if (maxTextureUnits < 2 || anInt2043 < 2 || anInt2047 < 2)
 			i |= 0x10;
 		if (i != 0)
 			return i;
-		aBoolean2046 = ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN;
-		aBoolean2021 = gl.isExtensionAvailable("GL_ARB_vertex_buffer_object");
+		usingBigEndian = ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN;
+		vertexBufferAsObject = gl.isExtensionAvailable("GL_ARB_vertex_buffer_object");
 		aBoolean2050 = gl.isExtensionAvailable("GL_ARB_multisample");
 		aBoolean2026 = gl.isExtensionAvailable("GL_ARB_texture_cube_map");
 		aBoolean2048 = gl.isExtensionAvailable("GL_ARB_vertex_program");
@@ -339,10 +339,10 @@ public class RT4GL {
 				}
 			}
 			if (i_11_ >= 7000 && i_11_ <= 7999)
-				aBoolean2021 = false;
+				vertexBufferAsObject = false;
 			if (i_11_ >= 7000 && i_11_ <= 9250)
 				aBoolean2042 = false;
-			aBoolean2051 = aBoolean2021;
+			aBoolean2051 = vertexBufferAsObject;
 		}
 		return 0;
 	}
@@ -461,8 +461,8 @@ public class RT4GL {
 		gl.glEnableClientState(32888);
 		gl.glMatrixMode(5888);
 		gl.glLoadIdentity();
-		AthmosphericEffects.setupLighting();
-		Class10.method194();
+		AtmosphericEffects.setupLighting();
+		LightManager.method194();
 	}
 
 	public static void method1644(int i, int i_27_, int i_28_, int i_29_) {

@@ -3,6 +3,8 @@
  */
 package rs;
 
+import com.jagex.rt4.ShadowManager;
+
 public class Class68 {
 	public static Class124 aClass124_1064 = Class14_Sub2_Sub2.method263(1178, " )2> <col=ffffff>");
 
@@ -52,7 +54,7 @@ public class Class68 {
 		if (i_8_ < 3)
 			is_22_ = Class114.tileHeights[i_8_ + 1];
 		Class86 class86 = class79.method1383(i_20_, i_5_, is, is_22_, false, i_3_, true, true, null, i_17_, i_18_);
-		Class151.method2030(class86.aClass148_Sub1_1386, i_17_ - i_6_, i_19_, i_18_ - i_4_);
+		ShadowManager.method2030(class86.aClass148_Sub1_1386, i_17_ - i_6_, i_19_, i_18_ - i_4_);
 	}
 
 	public static void method1306(int i) {

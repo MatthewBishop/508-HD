@@ -17,7 +17,6 @@ import rs.Class14_Sub2_Sub9;
 import rs.Class35;
 import rs.Class38;
 import rs.Class63;
-import rs.Class71;
 import rs.Class7_Sub2_Sub1;
 import rs.Class9;
 import rs.Class9_Sub1;
@@ -31,7 +30,7 @@ public class Class14_Sub8_Sub29 extends Class14_Sub8 {
 			int i_3_) {
 		long l = (long) (i_3_ + (i_1_ << 16));
 		if (i_0_ >= 98) {
-			Class14_Sub2_Sub9 class14_sub2_sub9 = ((Class14_Sub2_Sub9) Class71.aClass55_1092.get(l));
+			Class14_Sub2_Sub9 class14_sub2_sub9 = ((Class14_Sub2_Sub9) Static2.aClass55_1092.get(l));
 			if (class14_sub2_sub9 == null) {
 				class14_sub2_sub9 = (Class14_Sub2_Sub9) Class14_Sub8_Sub2.aClass55_4112.get(l);
 				if (class14_sub2_sub9 == null) {
@@ -39,7 +38,7 @@ public class Class14_Sub8_Sub29 extends Class14_Sub8 {
 					if (class14_sub2_sub9 != null) {
 						if (bool) {
 							class14_sub2_sub9.unlinkCacheable();
-							Class71.aClass55_1092.put(l, class14_sub2_sub9);
+							Static2.aClass55_1092.put(l, class14_sub2_sub9);
 							Class63.anInt998--;
 							Class14_Sub8_Sub32.anInt4612++;
 						}
@@ -58,7 +57,7 @@ public class Class14_Sub8_Sub29 extends Class14_Sub8 {
 							Class7_Sub2_Sub1.aClass55_3698.put(l, class14_sub2_sub9);
 							Class63.anInt998++;
 						} else {
-							Class71.aClass55_1092.put(l, class14_sub2_sub9);
+							Static2.aClass55_1092.put(l, class14_sub2_sub9);
 							Class14_Sub8_Sub32.anInt4612++;
 						}
 					}

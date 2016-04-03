@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.rt4.Class148_Sub1;
-import com.jagex.rt4.lights.Class130;
+import com.jagex.rt4.lights.LightRenderer;
 import com.jagex.rt4.lights.Light;
 
 import rs.tex.Class14_Sub8_Sub26;
@@ -218,7 +218,7 @@ public class Class32 {
 			Light light = class73s[i_43_];
 			if (light.anInt1125 == i_38_) {
 				int i_44_ = 0;
-				Class130 class130 = new Class130();
+				LightRenderer lightRenderer = new LightRenderer();
 				int i_45_ = (light.param3 >> 7) - light.anInt1120;
 				int i_46_ = (light.param3 >> 39) + light.anInt1120;
 				if (i_45_ < 0) {
@@ -247,8 +247,8 @@ public class Class32 {
 									byte i_55_ = is_35_[i_52_][i_48_];
 									if (i_55_ != 0) {
 										int[] is_56_ = (Class21.anIntArrayArray452[i_55_]);
-										class130.anInt2144 += ((is_56_.length >> 1) - 2) * 3;
-										class130.anInt2151 += is_56_.length >> 33;
+										lightRenderer.anInt2144 += ((is_56_.length >> 1) - 2) * 3;
+										lightRenderer.anInt2151 += is_56_.length >> 33;
 									}
 									continue;
 								}
@@ -264,8 +264,8 @@ public class Class32 {
 								continue;
 							if (is_35_[i_52_][i_48_] != 0) {
 								int[] is_58_ = (Static.anIntArrayArray2545[is_35_[i_52_][i_48_]]);
-								class130.anInt2144 += ((is_58_.length >> 33) - 2) * 3;
-								class130.anInt2151 += is_58_.length >> 1;
+								lightRenderer.anInt2144 += ((is_58_.length >> 33) - 2) * 3;
+								lightRenderer.anInt2151 += is_58_.length >> 1;
 								continue;
 							}
 						}
@@ -322,28 +322,28 @@ public class Class32 {
 										is_60_ = Static.anIntArrayArray2545[0];
 								}
 								if (is_60_ != null) {
-									class130.anInt2144 += ((is_60_.length >> 33) - 2) * 3;
-									class130.anInt2151 += is_60_.length >> 33;
+									lightRenderer.anInt2144 += ((is_60_.length >> 33) - 2) * 3;
+									lightRenderer.anInt2151 += is_60_.length >> 33;
 								}
 								continue;
 							}
 						}
 						if (!bool) {
 							int[] is_78_ = Static.anIntArrayArray2545[0];
-							class130.anInt2144 += ((is_78_.length >> 1) - 2) * 3;
-							class130.anInt2151 += is_78_.length >> 33;
+							lightRenderer.anInt2144 += ((is_78_.length >> 1) - 2) * 3;
+							lightRenderer.anInt2151 += is_78_.length >> 33;
 						} else {
 							int[] is_79_ = (Static.anIntArrayArray2545[is_35_[i_52_][i_48_]]);
 							int[] is_80_ = (Class21.anIntArrayArray452[is_35_[i_52_][i_48_]]);
-							class130.anInt2144 += ((is_79_.length >> 1) - 2) * 3;
-							class130.anInt2144 += ((is_80_.length >> 1) - 2) * 3;
-							class130.anInt2151 += is_79_.length >> 1;
-							class130.anInt2151 += is_80_.length >> 33;
+							lightRenderer.anInt2144 += ((is_79_.length >> 1) - 2) * 3;
+							lightRenderer.anInt2144 += ((is_80_.length >> 1) - 2) * 3;
+							lightRenderer.anInt2151 += is_79_.length >> 1;
+							lightRenderer.anInt2151 += is_80_.length >> 33;
 						}
 					}
 					i_44_++;
 				}
-				class130.method1771();
+				lightRenderer.method1771();
 				i_44_ = 0;
 				if ((light.param3 >> 39) - light.anInt1120 < 0)
 					i_44_ -= (light.param3 >> 7) - light.anInt1120;
@@ -368,7 +368,7 @@ public class Class32 {
 								continue;
 							if (is_35_[i_85_][i_81_] != 0) {
 								Class133.method1787((Static.anIntArrayArray2545[is_35_[i_85_][i_81_]]),
-										is[i_85_][i_81_], fs_42_, i_81_, class130, fs, is_39_, i_85_, fs_37_, true,
+										is[i_85_][i_81_], fs_42_, i_81_, lightRenderer, fs, is_39_, i_85_, fs_37_, true,
 										light);
 								continue;
 							}
@@ -380,7 +380,7 @@ public class Class32 {
 									bool = true;
 							} else {
 								Class133.method1787((Class21.anIntArrayArray452[is_35_[i_85_][i_81_]]),
-										is[i_85_][i_81_], fs_42_, i_81_, class130, fs, is_39_, i_85_, fs_37_, true,
+										is[i_85_][i_81_], fs_42_, i_81_, lightRenderer, fs, is_39_, i_85_, fs_37_, true,
 										light);
 								continue;
 							}
@@ -444,25 +444,25 @@ public class Class32 {
 									}
 								}
 								if (is_91_ != null)
-									Class133.method1787(is_91_, i_86_, fs_42_, i_81_, class130, fs, is_39_, i_85_,
+									Class133.method1787(is_91_, i_86_, fs_42_, i_81_, lightRenderer, fs, is_39_, i_85_,
 											fs_37_, true, light);
 								continue;
 							}
 						}
 						if (bool) {
 							Class133.method1787((Class21.anIntArrayArray452[is_35_[i_85_][i_81_]]), is[i_85_][i_81_],
-									fs_42_, i_81_, class130, fs, is_39_, i_85_, fs_37_, true, light);
+									fs_42_, i_81_, lightRenderer, fs, is_39_, i_85_, fs_37_, true, light);
 							Class133.method1787((Static.anIntArrayArray2545[is_35_[i_85_][i_81_]]), is[i_85_][i_81_],
-									fs_42_, i_81_, class130, fs, is_39_, i_85_, fs_37_, true, light);
+									fs_42_, i_81_, lightRenderer, fs, is_39_, i_85_, fs_37_, true, light);
 						} else
-							Class133.method1787(Static.anIntArrayArray2545[0], i_86_, fs_42_, i_81_, class130, fs,
+							Class133.method1787(Static.anIntArrayArray2545[0], i_86_, fs_42_, i_81_, lightRenderer, fs,
 									is_39_, i_85_, fs_37_, true, light);
 					}
 					i_44_++;
 				}
-				if (class130.anInt2140 > 0 && class130.anInt2152 > 0) {
-					class130.method1767();
-					light.aClass130_1103 = class130;
+				if (lightRenderer.anInt2140 > 0 && lightRenderer.anInt2152 > 0) {
+					lightRenderer.init();
+					light.aClass130_1103 = lightRenderer;
 				}
 			}
 		}
@@ -1444,14 +1444,14 @@ public class Class32 {
 		int i_188_ = 1;
 		is_187_[0] = i_184_;
 		for (int i_189_ = 0; i_189_ < 4; i_189_++) {
-			if (Class71.anIntArray1086[i_189_] != i) {
-				is[i_188_] = Class71.anIntArray1086[i_189_];
+			if (Static2.anIntArray1086[i_189_] != i) {
+				is[i_188_] = Static2.anIntArray1086[i_189_];
 				is_187_[i_188_] = Class45.anIntArray737[i_189_];
 				i_188_++;
 			}
 		}
 		Class45.anIntArray737 = is_187_;
-		Class71.anIntArray1086 = is;
+		Static2.anIntArray1086 = is;
 		Class14_Sub2_Sub11.method309(Class133_Sub1.aClass45Array3435, (Class133_Sub1.aClass45Array3435.length - 1),
 				(byte) 99, 0);
 	}

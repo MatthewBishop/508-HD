@@ -6,7 +6,7 @@ package rs;
 import com.jagex.io.Buffer;
 import com.jagex.link.Deque;
 import com.jagex.link.Cache;
-import com.jagex.rt4.AthmosphericEffects;
+import com.jagex.rt4.AtmosphericEffects;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 import com.jagex.rt4.Class25;
 
@@ -95,8 +95,8 @@ public class Class35 {
 
 	public static void method1093(int i) {
 		int i_12_ = -42 / ((i + 28) / 33);
-		AthmosphericEffects.loadDefaults();
-		AthmosphericEffects.loadLightPositions();
+		AtmosphericEffects.loadDefaults();
+		AtmosphericEffects.loadLightPositions();
 	}
 
 	public void method1094(byte i, Buffer class14_sub10) {

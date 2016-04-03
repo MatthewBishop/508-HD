@@ -508,7 +508,7 @@ public class Class79 {
 				while (Class14_Sub2_Sub8.anInt3833 < 20) {
 					if (Class14_Sub8_Sub32.anInt4612 <= 0)
 						break;
-					Class14_Sub2_Sub9 class14_sub2_sub9 = ((Class14_Sub2_Sub9) Class71.aClass55_1092
+					Class14_Sub2_Sub9 class14_sub2_sub9 = ((Class14_Sub2_Sub9) Static2.aClass55_1092
 							.getFirst());
 					Buffer class14_sub10 = new Buffer(4);
 					class14_sub10.method809(1);
@@ -612,8 +612,8 @@ public class Class79 {
 								Class9_Sub1 class9_sub1 = Class141.aClass9_Sub1Array2253[i_75_];
 								if (class9_sub1 != null) {
 									Class14_Sub2_Sub4.aClass14_Sub10_3796.position = i_75_ * 8 + 5;
-									int i_76_ = Class14_Sub2_Sub4.aClass14_Sub10_3796.method812((byte) -110);
-									int i_77_ = Class14_Sub2_Sub4.aClass14_Sub10_3796.method812((byte) -96);
+									int i_76_ = Class14_Sub2_Sub4.aClass14_Sub10_3796.getInt((byte) -110);
+									int i_77_ = Class14_Sub2_Sub4.aClass14_Sub10_3796.getInt((byte) -96);
 									class9_sub1.method180(-6, i_77_, i_76_);
 								}
 							}
@@ -654,7 +654,7 @@ public class Class79 {
 						int i_80_ = Class14_Sub18.aClass14_Sub10_3036.readUShort((byte) 104);
 						int i_81_ = Class14_Sub18.aClass14_Sub10_3036.readUByte();
 						long l_82_ = (long) ((i_79_ << 16) + i_80_);
-						int i_83_ = Class14_Sub18.aClass14_Sub10_3036.method812((byte) -96);
+						int i_83_ = Class14_Sub18.aClass14_Sub10_3036.getInt((byte) -96);
 						Class14_Sub2_Sub9 class14_sub2_sub9 = ((Class14_Sub2_Sub9) Class14_Sub8_Sub2.aClass55_4112
 								.get(l_82_));
 						Class102.aBoolean1707 = true;
@@ -865,7 +865,7 @@ public class Class79 {
 																																			if (!bool)
 																																				linkable = new Class14_Sub1(
 																																						class14_sub10
-																																								.method812(
+																																								.getInt(
 																																										(byte) -108));
 																																			else
 																																				linkable = new Class14_Sub30(

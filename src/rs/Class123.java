@@ -59,7 +59,7 @@ public class Class123 {
 			Class133_Sub3.aClass14_Sub2_Sub16_3567.method364(Static2.method1170((byte) -99, i_8_), i_1_ + 3, i_9_,
 					i_10_, 0);
 		}
-		Class71.method1317(Class14_Sub2_Sub8.anInt3832, Class14_Sub8_Sub27.anInt4550, Class14_Sub14.anInt2984, 127,
+		Static2.method1317(Class14_Sub2_Sub8.anInt3832, Class14_Sub8_Sub27.anInt4550, Class14_Sub14.anInt2984, 127,
 				Static.anInt500);
 	}
 

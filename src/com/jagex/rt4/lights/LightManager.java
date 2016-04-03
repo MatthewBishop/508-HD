@@ -5,7 +5,7 @@ package com.jagex.rt4.lights;
 
 import javax.media.opengl.GL;
 
-import com.jagex.rt4.AthmosphericEffects;
+import com.jagex.rt4.AtmosphericEffects;
 import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.RT4;
 
@@ -15,7 +15,7 @@ import rs.Class7_Sub1;
 import rs.tex.Class14_Sub8_Sub26;
 import rs.tex.Class14_Sub8_Sub37;
 
-public class Class10 {
+public class LightManager {
 	public static Light[] lights = new Light[255];
 	public static int lightCount = 0;
 	
@@ -241,7 +241,7 @@ public class Class10 {
 							if (class14_sub29 != null && class14_sub29.aBoolean3235) {
 								RT4GL.method1640(201.5F - ((float) (light.anInt1125) * 50.0F) - 1.5F);
 								gl.glTexEnvfv(8960, 8705, (new float[] { 0.0F, 0.0F, 0.0F, light.aFloat1107 }), 0);
-								light.aClass130_1103.method1768();
+								light.aClass130_1103.render();
 								break while_77_;
 							}
 						}
@@ -252,7 +252,7 @@ public class Class10 {
 			gl.glTexEnvi(8960, 34192, 768);
 			gl.glBlendFunc(770, 771);
 			gl.glDepthMask(true);
-			gl.glFogfv(2918, AthmosphericEffects.fogColourComponents, 0);
+			gl.glFogfv(2918, AtmosphericEffects.fogColourComponents, 0);
 			gl.glEnableClientState(32888);
 			RT4GL.method1645();
 		}

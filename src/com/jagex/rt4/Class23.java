@@ -7,7 +7,7 @@ import java.nio.ByteBuffer;
 
 import javax.media.opengl.GL;
 
-public class Class23 implements Interface2 {
+public class Class23 implements ShaderInterface {
 	public static int anInt2554;
 	public static int anInt2556 = 96;
 	public static int anInt2559;
@@ -23,7 +23,7 @@ public class Class23 implements Interface2 {
 	public Class23() {
 		aBoolean2555 = false;
 		anInt2558 = -1;
-		if (RT4GL.aBoolean2026 && RT4GL.anInt2019 >= 2) {
+		if (RT4GL.aBoolean2026 && RT4GL.maxTextureUnits >= 2) {
 			method989();
 			GL gl = RT4GL.gl;
 			gl.glBindTexture(34067, anIntArray2557[0]);
@@ -44,7 +44,7 @@ public class Class23 implements Interface2 {
 			gl.glTexParameteri(34067, 32882, 33071);
 			gl.glTexParameteri(34067, 10242, 33071);
 			gl.glTexParameteri(34067, 10243, 33071);
-			aBoolean2555 = RT4GL.anInt2019 < 3;
+			aBoolean2555 = RT4GL.maxTextureUnits < 3;
 		}
 		method990();
 	}
@@ -111,7 +111,7 @@ public class Class23 implements Interface2 {
 						i_11_ = (int) (Math.pow((double) f_8_, (double) anInt2554) * 255.0);
 					} else
 						i_9_ = i_10_ = i_11_ = 0;
-					if (RT4GL.anInt2019 < 3) {
+					if (RT4GL.maxTextureUnits < 3) {
 						i_9_ /= 5;
 						i_10_ /= 5;
 						i_11_ /= 5;

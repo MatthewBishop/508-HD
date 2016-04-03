@@ -118,7 +118,7 @@ public class Class37 {
 			Class14_Sub8_Sub7.anInt4207 = -1;
 			Static.anInt696 = (int) (Math.random() * 120.0) - 60;
 			Class14_Sub8_Sub33.anInt4633 = 0;
-			Class71.anInt1085 = 0;
+			Static2.anInt1085 = 0;
 			Class14_Sub8_Sub13.anInt4306 = 0;
 			for (int i_2_ = 0; i_2_ < 2048; i_2_++) {
 				Class14_Sub8_Sub23.aClass133_Sub1_Sub1Array4474[i_2_] = null;

@@ -5,9 +5,9 @@ package rs.tex;
 
 import com.jagex.io.Buffer;
 import com.jagex.map.Scenegraph;
-import com.jagex.rt4.AthmosphericEffects;
+import com.jagex.rt4.AtmosphericEffects;
 import com.jagex.rt4.RT4;
-import com.jagex.rt4.lights.Class10;
+import com.jagex.rt4.lights.LightManager;
 
 import rs.Class102;
 import rs.Class104;
@@ -42,7 +42,6 @@ import rs.Class51;
 import rs.Class53;
 import rs.Class56;
 import rs.Class68;
-import rs.Class71;
 import rs.Class7_Sub1;
 import rs.Class7_Sub3_Sub1;
 import rs.Class83;
@@ -114,15 +113,15 @@ public class Class14_Sub8_Sub21 extends Class14_Sub8 {
 		Class4.anInt125 = i;
 		Static2.anInt2741 = i_7_;
 		Class14_Sub2_Sub8.anInt3853 = i_8_;
-		Class71.cameraTileX = i / 128;
+		Static2.cameraTileX = i / 128;
 		Class102.cameraTileZ = i_8_ / 128;
-		Class7_Sub1.anInt2659 = Class71.cameraTileX - Static.anInt1108;
+		Class7_Sub1.anInt2659 = Static2.cameraTileX - Static.anInt1108;
 		if (Class7_Sub1.anInt2659 < 0)
 			Class7_Sub1.anInt2659 = 0;
 		Class14_Sub9_Sub3.anInt4849 = Class102.cameraTileZ - Static.anInt1108;
 		if (Class14_Sub9_Sub3.anInt4849 < 0)
 			Class14_Sub9_Sub3.anInt4849 = 0;
-		Class14_Sub8_Sub37.anInt4722 = Class71.cameraTileX + Static.anInt1108;
+		Class14_Sub8_Sub37.anInt4722 = Static2.cameraTileX + Static.anInt1108;
 		if (Class14_Sub8_Sub37.anInt4722 > Static2.anInt3338)
 			Class14_Sub8_Sub37.anInt4722 = Static2.anInt3338;
 		Class14_Sub8_Sub26.anInt4526 = Class102.cameraTileZ + Static.anInt1108;
@@ -133,7 +132,7 @@ public class Class14_Sub8_Sub21 extends Class14_Sub8 {
 			for (int i_22_ = 0; i_22_ < Static.anInt1108 + Static.anInt1108 + 2; i_22_++) {
 				int i_23_ = ((i_21_ - Static.anInt1108 << 7) - (Class4.anInt125 & 0x7f));
 				int i_24_ = ((i_22_ - Static.anInt1108 << 7) - (Class14_Sub2_Sub8.anInt3853 & 0x7f));
-				int i_25_ = Class71.cameraTileX - Static.anInt1108 + i_21_;
+				int i_25_ = Static2.cameraTileX - Static.anInt1108 + i_21_;
 				int i_26_ = Class102.cameraTileZ - Static.anInt1108 + i_22_;
 				if (i_25_ >= 0 && i_26_ >= 0 && i_25_ < Static2.anInt3338
 						&& i_26_ < Class14_Sub8_Sub15.anInt4337) {
@@ -167,8 +166,8 @@ public class Class14_Sub8_Sub21 extends Class14_Sub8 {
 			StaticGL.method67(i, i_7_, i_8_, null, 0, (byte) 0, i_18_, i_19_);
 			Class14_Sub30.aBoolean3269 = false;
 			RT4.method1778(0, 0);
-			AthmosphericEffects.setFogColour(null);
-			Class10.method188();
+			AtmosphericEffects.setFogColour(null);
+			LightManager.method188();
 			Class14_Sub8_Sub28.method627(false);
 		}
 		StaticGL.method67(i, i_7_, i_8_, is, i_16_, i_17_, i_18_, i_19_);

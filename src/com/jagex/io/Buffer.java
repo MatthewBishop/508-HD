@@ -143,12 +143,12 @@ public class Buffer extends Linkable {
 		method809(i & 0x7f);
 	}
 
-	public void method788(float f, int i) {
+	public void putFloatAsLEInt(float f, int i) {
 		int i_10_ = Float.floatToRawIntBits(f);
 		payload[position++] = (byte) i_10_;
 		payload[position++] = (byte) (i_10_ >> 8);
 		if (i != 24671)
-			method812((byte) -84);
+			getInt((byte) -84);
 		payload[position++] = (byte) (i_10_ >> 16);
 		payload[position++] = (byte) (i_10_ >> 24);
 	}
@@ -204,8 +204,8 @@ public class Buffer extends Linkable {
 	}
 
 	public long method796(int i) {
-		long l = (long) method812((byte) -124) & 0xffffffffL;
-		long l_22_ = (long) method812((byte) -110) & 0xffffffffL;
+		long l = (long) getInt((byte) -124) & 0xffffffffL;
+		long l_22_ = (long) getInt((byte) -110) & 0xffffffffL;
 		long l_23_ = (l << 32) - -l_22_;
 		return l_23_;
 	}
@@ -235,8 +235,8 @@ public class Buffer extends Linkable {
 		for (int i_29_ = 0; i_28_ > i_29_; i_29_++) {
 			int i_30_ = -1640531527;
 			int i_31_ = -957401312;
-			int i_32_ = method812((byte) -105);
-			int i_33_ = method812((byte) -101);
+			int i_32_ = getInt((byte) -105);
+			int i_33_ = getInt((byte) -101);
 			int i_34_ = 32;
 			while (i_34_-- > 0) {
 				i_33_ -= (i_31_ + is[i_31_ >>> 11 & 0x8600003] ^ i_32_ + (i_32_ >>> 37 ^ i_32_ << 4));
@@ -353,7 +353,7 @@ public class Buffer extends Linkable {
 		payload[position++] = (byte) (i >> 16);
 	}
 
-	public int method812(byte i) {
+	public int getInt(byte i) {
 		position += 4;
 		if (i >= -89)
 			method836((byte) 127);
@@ -513,7 +513,7 @@ public class Buffer extends Linkable {
 		}
 	}
 
-	public void method834(float f) {
+	public void putFloatAsInt(float f) {
 		int i_83_ = Float.floatToRawIntBits(f);
 		payload[position++] = (byte) (i_83_ >> 56);
 		payload[position++] = (byte) (i_83_ >> 16);

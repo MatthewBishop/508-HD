@@ -4,7 +4,7 @@
 package com.jagex.rt4;
 
 public abstract class Class148 {
-	public int anInt2371;
+	public int width;
 
 	public int anInt2373;
 
@@ -12,7 +12,7 @@ public abstract class Class148 {
 
 	public int anInt2375;
 
-	public int anInt2376;
+	public int height;
 
 	public int anInt2378;
 

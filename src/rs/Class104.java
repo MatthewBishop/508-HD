@@ -104,7 +104,7 @@ public class Class104 {
 					i_1_ = -anInt1751 + 4;
 				anInt1751 += aDataInputStream1733.read(aByteArray1744, anInt1751, i_1_);
 				if (anInt1751 == 4) {
-					int i_2_ = new Buffer(aByteArray1744).method812((byte) -92);
+					int i_2_ = new Buffer(aByteArray1744).getInt((byte) -92);
 					anInt1734 = 2;
 					aByteArray1747 = new byte[i_2_];
 				}

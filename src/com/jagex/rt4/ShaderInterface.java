@@ -3,7 +3,7 @@
  */
 package com.jagex.rt4;
 
-public interface Interface2 {
+public interface ShaderInterface {
 	public void setup(int i);
 
 	public void disable();

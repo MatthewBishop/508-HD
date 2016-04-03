@@ -130,7 +130,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 				if (bool)
 					linkable = new Class14_Sub30(class14_sub10.method797(9467));
 				else
-					linkable = new Class14_Sub1(class14_sub10.method812((byte) -112));
+					linkable = new Class14_Sub1(class14_sub10.getInt((byte) -112));
 				aClass55_3783.put((long) i_23_, linkable);
 			}
 		}

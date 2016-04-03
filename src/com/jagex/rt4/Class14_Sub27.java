@@ -123,7 +123,7 @@ public class Class14_Sub27 extends Linkable {
 			aClass14_Sub10_3189 = new Buffer(anInt3210 * 4);
 		else
 			aClass14_Sub10_3189.position = 0;
-		if (RT4GL.aBoolean2046) {
+		if (RT4GL.usingBigEndian) {
 			for (int i = 0; i < anInt3187; i++) {
 				Class14_Sub29 class14_sub29 = (class14_sub29s[anIntArray3196[i]][anIntArray3199[i]][anIntArray3205[i]]);
 				if (class14_sub29 != null && class14_sub29.aBoolean3235) {
@@ -189,7 +189,7 @@ public class Class14_Sub27 extends Linkable {
 					gl.glClientActiveTexture(33984);
 				}
 			} else {
-				if (RT4GL.aBoolean2021)
+				if (RT4GL.vertexBufferAsObject)
 					gl.glBindBufferARB(34962, 0);
 				aByteBuffer3206.position(0);
 				gl.glVertexPointer(3, 5126, i, aByteBuffer3206);
@@ -208,7 +208,7 @@ public class Class14_Sub27 extends Linkable {
 					gl.glClientActiveTexture(33984);
 				}
 			}
-			if (RT4GL.aBoolean2021)
+			if (RT4GL.vertexBufferAsObject)
 				gl.glBindBufferARB(34963, 0);
 			if (aClass14_Sub10_3186.position != 0) {
 				if (aByteBuffer3200 == null || (aByteBuffer3200.capacity() < aClass14_Sub10_3186.position))
@@ -261,33 +261,33 @@ public class Class14_Sub27 extends Linkable {
 	public void method925() {
 		Buffer class14_sub10 = new Buffer((aBoolean3209 ? 40 : 36) * anInt3202);
 		for (int i = 0; i < anInt3202; i++) {
-			if (RT4GL.aBoolean2046) {
-				class14_sub10.method834((float) anIntArray3197[i]);
-				class14_sub10.method834((float) anIntArray3183[i]);
-				class14_sub10.method834((float) anIntArray3191[i]);
+			if (RT4GL.usingBigEndian) {
+				class14_sub10.putFloatAsInt((float) anIntArray3197[i]);
+				class14_sub10.putFloatAsInt((float) anIntArray3183[i]);
+				class14_sub10.putFloatAsInt((float) anIntArray3191[i]);
 				class14_sub10.method803(anIntArray3207[i], 103);
-				class14_sub10.method834(aFloatArray3198[i]);
-				class14_sub10.method834(aFloatArray3193[i]);
-				class14_sub10.method834(aFloatArray3185[i]);
-				class14_sub10.method834((float) anIntArray3197[i] / aFloat3211);
-				class14_sub10.method834((float) anIntArray3191[i] / aFloat3211);
+				class14_sub10.putFloatAsInt(aFloatArray3198[i]);
+				class14_sub10.putFloatAsInt(aFloatArray3193[i]);
+				class14_sub10.putFloatAsInt(aFloatArray3185[i]);
+				class14_sub10.putFloatAsInt((float) anIntArray3197[i] / aFloat3211);
+				class14_sub10.putFloatAsInt((float) anIntArray3191[i] / aFloat3211);
 				if (aBoolean3209)
-					class14_sub10.method834(aFloatArray3188[i]);
+					class14_sub10.putFloatAsInt(aFloatArray3188[i]);
 			} else {
-				class14_sub10.method788((float) anIntArray3197[i], 24671);
-				class14_sub10.method788((float) anIntArray3183[i], 24671);
-				class14_sub10.method788((float) anIntArray3191[i], 24671);
+				class14_sub10.putFloatAsLEInt((float) anIntArray3197[i], 24671);
+				class14_sub10.putFloatAsLEInt((float) anIntArray3183[i], 24671);
+				class14_sub10.putFloatAsLEInt((float) anIntArray3191[i], 24671);
 				class14_sub10.method803(anIntArray3207[i], 119);
-				class14_sub10.method788(aFloatArray3198[i], 24671);
-				class14_sub10.method788(aFloatArray3193[i], 24671);
-				class14_sub10.method788(aFloatArray3185[i], 24671);
-				class14_sub10.method788((float) anIntArray3197[i] / aFloat3211, 24671);
-				class14_sub10.method788((float) anIntArray3191[i] / aFloat3211, 24671);
+				class14_sub10.putFloatAsLEInt(aFloatArray3198[i], 24671);
+				class14_sub10.putFloatAsLEInt(aFloatArray3193[i], 24671);
+				class14_sub10.putFloatAsLEInt(aFloatArray3185[i], 24671);
+				class14_sub10.putFloatAsLEInt((float) anIntArray3197[i] / aFloat3211, 24671);
+				class14_sub10.putFloatAsLEInt((float) anIntArray3191[i] / aFloat3211, 24671);
 				if (aBoolean3209)
-					class14_sub10.method788(aFloatArray3188[i], 24671);
+					class14_sub10.putFloatAsLEInt(aFloatArray3188[i], 24671);
 			}
 		}
-		if (RT4GL.aBoolean2021) {
+		if (RT4GL.vertexBufferAsObject) {
 			ByteBuffer bytebuffer = ByteBuffer.wrap(class14_sub10.payload, 0, class14_sub10.position);
 			aClass29_3182 = new VertexBuffer();
 			aClass29_3182._setArrayData(bytebuffer);

@@ -44,8 +44,8 @@ public class Class148_Sub2 extends Class148 {
 	}
 
 	public void method2011() {
-		float f = (float) anInt2371 / (float) anInt3696;
-		float f_3_ = (float) anInt2376 / (float) anInt3693;
+		float f = (float) width / (float) anInt3696;
+		float f_3_ = (float) height / (float) anInt3693;
 		GL gl = RT4GL.gl;
 		if (anInt3694 == -1) {
 			anInt3694 = gl.glGenLists(1);
@@ -54,13 +54,13 @@ public class Class148_Sub2 extends Class148 {
 		gl.glNewList(anInt3694, 4864);
 		gl.glBegin(6);
 		gl.glTexCoord2f(f, 0.0F);
-		gl.glVertex2f((float) anInt2371, 0.0F);
+		gl.glVertex2f((float) width, 0.0F);
 		gl.glTexCoord2f(0.0F, 0.0F);
 		gl.glVertex2f(0.0F, 0.0F);
 		gl.glTexCoord2f(0.0F, f_3_);
-		gl.glVertex2f(0.0F, (float) -anInt2376);
+		gl.glVertex2f(0.0F, (float) -height);
 		gl.glTexCoord2f(f, f_3_);
-		gl.glVertex2f((float) anInt2371, (float) -anInt2376);
+		gl.glVertex2f((float) width, (float) -height);
 		gl.glEnd();
 		gl.glEndList();
 	}
@@ -93,13 +93,13 @@ public class Class148_Sub2 extends Class148 {
 	}
 
 	public void method2013(byte[] is, int[] is_4_) {
-		anInt3696 = Class14_Sub8_Sub33.method653(anInt2371);
-		anInt3693 = Class14_Sub8_Sub33.method653(anInt2376);
+		anInt3696 = Class14_Sub8_Sub33.method653(width);
+		anInt3693 = Class14_Sub8_Sub33.method653(height);
 		byte[] is_5_ = new byte[anInt3696 * anInt3693 * 4];
 		int i = 0;
 		int i_6_ = 0;
-		for (int i_7_ = 0; i_7_ < anInt2376; i_7_++) {
-			for (int i_8_ = 0; i_8_ < anInt2371; i_8_++) {
+		for (int i_7_ = 0; i_7_ < height; i_7_++) {
+			for (int i_8_ = 0; i_8_ < width; i_8_++) {
 				byte i_9_ = is[i_6_++];
 				if (i_9_ != 0) {
 					int i_10_ = is_4_[i_9_];
@@ -110,7 +110,7 @@ public class Class148_Sub2 extends Class148 {
 				} else
 					i += 4;
 			}
-			i += (anInt3696 - anInt2371) * 4;
+			i += (anInt3696 - width) * 4;
 		}
 		ByteBuffer bytebuffer = ByteBuffer.wrap(is_5_);
 		GL gl = RT4GL.gl;
@@ -134,8 +134,8 @@ public class Class148_Sub2 extends Class148 {
 		anInt2373 = i_12_;
 		anInt2375 = i_13_;
 		anInt2374 = i_14_;
-		anInt2371 = i_15_;
-		anInt2376 = i_16_;
+		width = i_15_;
+		height = i_16_;
 		method2013(is, is_17_);
 		method2011();
 	}

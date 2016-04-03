@@ -15,7 +15,7 @@ import com.jagex.rt4.VertexBuffer;
 
 import rs.tex.Class14_Sub8_Sub33;
 
-public class Class130 {
+public class LightRenderer {
 	public byte[] aByteArray2141;
 	public byte[] aByteArray2145;
 	public byte[] aByteArray2146;
@@ -33,18 +33,18 @@ public class Class130 {
 	public int[] anIntArray2149;
 	public int[] anIntArray2150;
 
-	public void method1767() {
+	public void init() {
 		Buffer class14_sub10 = new Buffer(anInt2152 * 4);
 		Buffer class14_sub10_0_ = new Buffer(anInt2140 * 16);
-		if (RT4GL.aBoolean2046) {
+		if (RT4GL.usingBigEndian) {
 			for (int i = 0; i < anInt2140; i++) {
 				class14_sub10_0_.method809(aByteArray2145[i]);
 				class14_sub10_0_.method809(aByteArray2141[i]);
 				class14_sub10_0_.method809(aByteArray2146[i]);
 				class14_sub10_0_.method809(255);
-				class14_sub10_0_.method834((float) anIntArray2143[i]);
-				class14_sub10_0_.method834((float) anIntArray2148[i]);
-				class14_sub10_0_.method834((float) anIntArray2150[i]);
+				class14_sub10_0_.putFloatAsInt((float) anIntArray2143[i]);
+				class14_sub10_0_.putFloatAsInt((float) anIntArray2148[i]);
+				class14_sub10_0_.putFloatAsInt((float) anIntArray2150[i]);
 			}
 			for (int i = 0; i < anInt2152; i++)
 				class14_sub10.method803(anIntArray2149[i], 107);
@@ -54,14 +54,14 @@ public class Class130 {
 				class14_sub10_0_.method809(aByteArray2141[i]);
 				class14_sub10_0_.method809(aByteArray2146[i]);
 				class14_sub10_0_.method809(255);
-				class14_sub10_0_.method788((float) anIntArray2143[i], 24671);
-				class14_sub10_0_.method788((float) anIntArray2148[i], 24671);
-				class14_sub10_0_.method788((float) anIntArray2150[i], 24671);
+				class14_sub10_0_.putFloatAsLEInt((float) anIntArray2143[i], 24671);
+				class14_sub10_0_.putFloatAsLEInt((float) anIntArray2148[i], 24671);
+				class14_sub10_0_.putFloatAsLEInt((float) anIntArray2150[i], 24671);
 			}
 			for (int i = 0; i < anInt2152; i++)
 				class14_sub10.method825(-99, anIntArray2149[i]);
 		}
-		if (RT4GL.aBoolean2021) {
+		if (RT4GL.vertexBufferAsObject) {
 			aClass29_2137 = new VertexBuffer();
 			ByteBuffer bytebuffer = ByteBuffer.wrap(class14_sub10_0_.payload);
 			aClass29_2137._setArrayData(bytebuffer);
@@ -86,16 +86,16 @@ public class Class130 {
 		aClass55_2138 = null;
 	}
 
-	public void method1768() {
+	public void render() {
 		GL gl = RT4GL.gl;
-		if (RT4GL.aBoolean2021) {
+		if (RT4GL.vertexBufferAsObject) {
 			aClass29_2137.bindArray();
 			gl.glInterleavedArrays(10787, 16, 0L);
 			RT4GL.aBoolean2027 = false;
 			aClass29_2142.method1055();
 			gl.glDrawElements(4, anInt2152, 5125, 0L);
 		} else {
-			if (RT4GL.aBoolean2021) {
+			if (RT4GL.vertexBufferAsObject) {
 				gl.glBindBufferARB(34962, 0);
 				gl.glBindBufferARB(34963, 0);
 			}

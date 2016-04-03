@@ -38,7 +38,7 @@ public class Class132 {
 
 	public static void method1777(byte i, Class9 class9) {
 		if (i == -57)
-			Class71.aClass9_1084 = class9;
+			Static2.aClass9_1084 = class9;
 	}
 
 	public static void method1779(int i) {

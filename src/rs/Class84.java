@@ -35,7 +35,7 @@ public class Class84 {
 		aClass14_Sub2_Sub16_1344.method359(class124, i_1_, i_2_, i_3_, i_4_, 16777215, -1, 1, 1, 0);
 		Class14_Sub13.method862(125, i + (i_3_ + i), i_4_ + (i + i), -i + i_2_, -i + i_1_);
 		if (!bool)
-			Class71.method1317(i_2_, i_4_, i_3_, -91, i_1_);
+			Static2.method1317(i_2_, i_4_, i_3_, -91, i_1_);
 		else
 			RT4GL.method1657();
 	}

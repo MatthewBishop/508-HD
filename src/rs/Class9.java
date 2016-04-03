@@ -69,7 +69,7 @@ public abstract class Class9 {
 		if (i_3_ != 5 && i_3_ != 6)
 			throw new RuntimeException(new StringBuilder("Incorrect JS5 protocol number: ").append(i_3_).toString());
 		if (i_3_ >= 6)
-			class14_sub10.method812((byte) -102);
+			class14_sub10.getInt((byte) -102);
 		int i_4_ = class14_sub10.readUByte();
 		anInt211 = class14_sub10.readUShort((byte) 111);
 		int i_5_ = 0;
@@ -92,13 +92,13 @@ public abstract class Class9 {
 			for (int i_8_ = 0; i_8_ < i_6_ + 1; i_8_++)
 				anIntArray197[i_8_] = -1;
 			for (int i_9_ = 0; i_9_ < anInt211; i_9_++)
-				anIntArray197[anIntArray223[i_9_]] = class14_sub10.method812((byte) -121);
+				anIntArray197[anIntArray223[i_9_]] = class14_sub10.getInt((byte) -121);
 			aClass63_219 = new Class63(anIntArray197);
 		}
 		for (int i_10_ = 0; i_10_ < anInt211; i_10_++)
-			anIntArray202[anIntArray223[i_10_]] = class14_sub10.method812((byte) -108);
+			anIntArray202[anIntArray223[i_10_]] = class14_sub10.getInt((byte) -108);
 		for (int i_11_ = 0; anInt211 > i_11_; i_11_++)
-			anIntArray194[anIntArray223[i_11_]] = class14_sub10.method812((byte) -102);
+			anIntArray194[anIntArray223[i_11_]] = class14_sub10.getInt((byte) -102);
 		for (int i_12_ = 0; anInt211 > i_12_; i_12_++)
 			anIntArray203[anIntArray223[i_12_]] = class14_sub10.readUShort((byte) 122);
 		for (int i_13_ = 0; i_13_ < anInt211; i_13_++) {
@@ -131,7 +131,7 @@ public abstract class Class9 {
 						i_24_ = anIntArrayArray218[i_20_][i_23_];
 					else
 						i_24_ = i_23_;
-					anIntArrayArray198[i_20_][i_24_] = class14_sub10.method812((byte) -116);
+					anIntArrayArray198[i_20_][i_24_] = class14_sub10.getInt((byte) -116);
 				}
 				aClass63Array213[i_20_] = new Class63(anIntArrayArray198[i_20_]);
 			}
@@ -279,7 +279,7 @@ public abstract class Class9 {
 			for (int i_51_ = 0; i_51_ < i_50_; i_51_++) {
 				int i_52_ = 0;
 				for (int i_53_ = 0; i_41_ > i_53_; i_53_++) {
-					i_52_ += class14_sub10.method812((byte) -122);
+					i_52_ += class14_sub10.getInt((byte) -122);
 					is_49_[i_53_] += i_52_;
 				}
 			}
@@ -293,7 +293,7 @@ public abstract class Class9 {
 			for (int i_57_ = 0; i_50_ > i_57_; i_57_++) {
 				int i_58_ = 0;
 				for (int i_59_ = 0; i_59_ < i_41_; i_59_++) {
-					i_58_ += class14_sub10.method812((byte) -115);
+					i_58_ += class14_sub10.getInt((byte) -115);
 					Class72.method1322(is_47_, i_56_, is_54_[i_59_], is_49_[i_59_], i_58_);
 					i_56_ += i_58_;
 					is_49_[i_59_] += i_58_;

@@ -52,8 +52,8 @@ public class Envelope {
 
 	public void decode(Buffer class14_sub10) {
 		form = class14_sub10.readUByte();
-		start = class14_sub10.method812((byte) -98);
-		end = class14_sub10.method812((byte) -90);
+		start = class14_sub10.getInt((byte) -98);
+		end = class14_sub10.getInt((byte) -90);
 		decodeSegments(class14_sub10);
 	}
 

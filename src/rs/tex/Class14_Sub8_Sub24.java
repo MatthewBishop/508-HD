@@ -6,8 +6,9 @@ package rs.tex;
 import com.jagex.cache.anim.Animation;
 import com.jagex.io.Buffer;
 import com.jagex.map.MapRegion;
+import com.jagex.rt4.AtmosphericChunk;
 import com.jagex.rt4.RT4;
-import com.jagex.rt4.lights.Class10;
+import com.jagex.rt4.lights.LightManager;
 import com.jagex.rt4.lights.Light;
 
 import rs.Class112;
@@ -31,7 +32,6 @@ import rs.Class33;
 import rs.Class51;
 import rs.Class54;
 import rs.Class7;
-import rs.Class71;
 import rs.Class89;
 import rs.Class9;
 import rs.Static2;
@@ -202,7 +202,7 @@ public class Class14_Sub8_Sub24 extends Class14_Sub8 {
 			}
 		}
 		if (!bool) {
-			Class71 class71 = null;
+			AtmosphericChunk atmosphericChunk = null;
 			while (class14_sub10.position < class14_sub10.payload.length) {
 				int i_51_ = class14_sub10.readUByte();
 				if (i_51_ != 0) {
@@ -219,21 +219,21 @@ public class Class14_Sub8_Sub24 extends Class14_Sub8 {
 							if (i_55_ >= 0 && i_54_ >= 0 && i_55_ < 104 && i_54_ < 104) {
 								light.param2 = (-light.param2
 										+ (Class114.tileHeights[light.anInt1125][i_55_][i_54_]));
-								Class10.method200(light);
+								LightManager.method200(light);
 							}
 						}
 					}
 				} else
-					class71 = new Class71(class14_sub10);
+					atmosphericChunk = new AtmosphericChunk(class14_sub10);
 			}
-			if (class71 == null)
-				class71 = new Class71();
+			if (atmosphericChunk == null)
+				atmosphericChunk = new AtmosphericChunk();
 			for (int i_56_ = 0; i_56_ < 8; i_56_++) {
 				for (int i_57_ = 0; i_57_ < 8; i_57_++) {
 					int i_58_ = i_57_ + (i_41_ >> 3);
 					int i_59_ = (i_42_ >> 35) + i_56_;
 					if (i_59_ >= 0 && i_59_ < 13 && i_58_ >= 0 && i_58_ < 13)
-						Class150.aClass71ArrayArray2421[i_59_][i_58_] = class71;
+						Class150.aClass71ArrayArray2421[i_59_][i_58_] = atmosphericChunk;
 				}
 			}
 		}

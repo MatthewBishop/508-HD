@@ -20,7 +20,6 @@ import rs.Class14_Sub18;
 import rs.Class14_Sub2_Sub2;
 import rs.Class14_Sub2_Sub9;
 import rs.Class17;
-import rs.Class71;
 import rs.Class72;
 import rs.Class86;
 import rs.Class9;
@@ -131,9 +130,9 @@ public class Class14_Sub8_Sub16 extends Class14_Sub8 {
 			for (int i_20_ = 0; i_20_ < Class112.anInt1876; i_20_++) {
 				method564(-123, i_20_, i);
 				int[][] is_21_ = method480(0, 0, Class14_Sub8_Sub20.anInt4429);
-				is_17_[i_20_] = is_21_[0][Class71.anInt1083];
-				is_18_[i_20_] = is_21_[1][Class71.anInt1083];
-				is_19_[i_20_] = is_21_[2][Class71.anInt1083];
+				is_17_[i_20_] = is_21_[0][Static2.anInt1083];
+				is_18_[i_20_] = is_21_[1][Static2.anInt1083];
+				is_19_[i_20_] = is_21_[2][Static2.anInt1083];
 			}
 		}
 		int[][] is_22_ = is;
@@ -155,7 +154,7 @@ public class Class14_Sub8_Sub16 extends Class14_Sub8 {
 			for (int i_25_ = 0; i_25_ < Class112.anInt1876; i_25_++) {
 				method564(-101, i_25_, i);
 				int[] is_26_ = method483(0, (byte) -59, Class14_Sub8_Sub20.anInt4429);
-				is[i_25_] = is_26_[Class71.anInt1083];
+				is[i_25_] = is_26_[Static2.anInt1083];
 			}
 		}
 		int[] is_27_ = is;
@@ -171,38 +170,38 @@ public class Class14_Sub8_Sub16 extends Class14_Sub8 {
 			if (!(-1.5707963267948966 >= (double) f) || !(-2.356194490192345 <= (double) f)) {
 				if (!((double) f <= -0.7853981633974483) || !(-1.5707963267948966 <= (double) f)) {
 					if (f <= 0.0F && (double) f >= -0.7853981633974483) {
-						Class71.anInt1083 = i_28_;
+						Static2.anInt1083 = i_28_;
 						Class14_Sub8_Sub20.anInt4429 = Class17.anInt407 - i_29_;
 					} else if (0.0F <= f && (double) f <= 0.7853981633974483) {
 						Class14_Sub8_Sub20.anInt4429 = Class17.anInt407 - i_29_;
-						Class71.anInt1083 = -i_28_ + Class112.anInt1876;
+						Static2.anInt1083 = -i_28_ + Class112.anInt1876;
 					} else if (!(0.7853981633974483 <= (double) f) || !(1.5707963267948966 >= (double) f)) {
 						if (!((double) f >= 1.5707963267948966) || !((double) f <= 2.356194490192345)) {
 							if (2.356194490192345 <= (double) f && (double) f <= 3.141592653589793) {
-								Class71.anInt1083 = Class112.anInt1876 - i_28_;
+								Static2.anInt1083 = Class112.anInt1876 - i_28_;
 								Class14_Sub8_Sub20.anInt4429 = i_29_;
 							}
 						} else {
-							Class71.anInt1083 = i_29_;
+							Static2.anInt1083 = i_29_;
 							Class14_Sub8_Sub20.anInt4429 = Class17.anInt407 - i_28_;
 						}
 					} else {
-						Class71.anInt1083 = -i_29_ + Class112.anInt1876;
+						Static2.anInt1083 = -i_29_ + Class112.anInt1876;
 						Class14_Sub8_Sub20.anInt4429 = -i_28_ + Class17.anInt407;
 					}
 				} else {
 					Class14_Sub8_Sub20.anInt4429 = i_28_;
-					Class71.anInt1083 = -i_29_ + Class112.anInt1876;
+					Static2.anInt1083 = -i_29_ + Class112.anInt1876;
 				}
 			} else {
 				Class14_Sub8_Sub20.anInt4429 = i_28_;
-				Class71.anInt1083 = i_29_;
+				Static2.anInt1083 = i_29_;
 			}
 		} else {
-			Class71.anInt1083 = i_28_;
+			Static2.anInt1083 = i_28_;
 			Class14_Sub8_Sub20.anInt4429 = i_29_;
 		}
-		Class71.anInt1083 &= Static2.anInt4882;
+		Static2.anInt1083 &= Static2.anInt4882;
 		Class14_Sub8_Sub20.anInt4429 &= Class115.anInt1927;
 	}
 }

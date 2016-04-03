@@ -23,8 +23,9 @@ import com.jagex.rt4.Class14_Sub2_Sub19;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1_Sub2;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub2;
+import com.jagex.rt4.ShadowManager;
 import com.jagex.rt4.Class25;
-import com.jagex.rt4.lights.Class10;
+import com.jagex.rt4.lights.LightManager;
 
 import rs.*;
 
@@ -869,8 +870,8 @@ public class Static {
 					}
 				}
 			}
-			if (Class71.anInt1085 != 0) {
-				int i_164_ = (-(Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495 / 32) + Class71.anInt1085 * 4 + 2);
+			if (Static2.anInt1085 != 0) {
+				int i_164_ = (-(Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495 / 32) + Static2.anInt1085 * 4 + 2);
 				int i_165_ = (-(Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436 / 32) + Class14_Sub8_Sub15.anInt4335 * 4
 						+ 2);
 				Static2.method1513(i_165_, i_127_, i_164_, class94, Class149.aClass14_Sub2_Sub19_2384, 256, i);
@@ -1022,7 +1023,7 @@ public class Static {
 							Class86 class86 = class79.method1383(i_42_, 22, is, is_47_, bool_28_, i, true, bool_48_,
 									null, i_44_, i_43_);
 							if (bool_48_)
-								Class151.method2026((class86.aClass148_Sub1_1386), i_44_, i_45_, i_43_);
+								ShadowManager.method2026((class86.aClass148_Sub1_1386), i_44_, i_45_, i_43_);
 							class133 = class86.aClass133_1379;
 						}
 						Class14_Sub8_Sub30.method642(i_35_, i_33_, i_31_, i_42_, class133, l, class79.aBoolean1299);
@@ -1035,7 +1036,7 @@ public class Static {
 						Class86 class86 = class79.method1383(i_42_, 10, is, is_47_, bool_28_, i_32_ != 11 ? i : i + 4,
 								true, bool_48_, null, i_44_, i_43_);
 						if (bool_48_)
-							Class151.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
+							ShadowManager.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
 						class133 = class86.aClass133_1379;
 					} else
 						class133 = new Class133_Sub4(i_34_, 10, i_32_ == 11 ? i + 4 : i, i_30_, i_33_, i_31_,
@@ -1071,7 +1072,7 @@ public class Static {
 						Class86 class86 = class79.method1383(i_42_, i_32_, is, is_47_, bool_28_, i, true, bool_48_,
 								null, i_44_, i_43_);
 						if (bool_48_)
-							Class151.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
+							ShadowManager.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
 						class133 = class86.aClass133_1379;
 					}
 					Class109.method1570(i_35_, i_33_, i_31_, i_42_, 1, 1, class133, 0, l);
@@ -1089,7 +1090,7 @@ public class Static {
 						Class86 class86 = class79.method1383(i_42_, 0, is, is_47_, bool_28_, i, true, bool_48_, null,
 								i_44_, i_43_);
 						if (bool_48_)
-							Class151.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
+							ShadowManager.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
 						class133 = class86.aClass133_1379;
 					}
 					Class90.method1444(i_35_, i_33_, i_31_, i_42_, class133, null, Class14_Sub28.anIntArray3225[i], 0,
@@ -1146,7 +1147,7 @@ public class Static {
 						Class86 class86 = class79.method1383(i_42_, 1, is, is_47_, bool_28_, i, true, bool_48_, null,
 								i_44_, i_43_);
 						if (bool_48_)
-							Class151.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
+							ShadowManager.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
 						class133 = class86.aClass133_1379;
 					}
 					Class90.method1444(i_35_, i_33_, i_31_, i_42_, class133, null, Class4.anIntArray128[i], 0, l);
@@ -1172,12 +1173,12 @@ public class Static {
 						Class86 class86 = class79.method1383(i_42_, 2, is, is_47_, bool_28_, i + 4, true, bool_48_,
 								null, i_44_, i_43_);
 						if (bool_48_)
-							Class151.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
+							ShadowManager.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
 						class133 = class86.aClass133_1379;
 						class86 = class79.method1383(i_42_, 2, is, is_47_, bool_28_, i_38_, true, bool_48_, null, i_44_,
 								i_43_);
 						if (bool_48_)
-							Class151.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
+							ShadowManager.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
 						class133_51_ = class86.aClass133_1379;
 					} else {
 						class133 = new Class133_Sub4(i_34_, 2, i + 4, i_30_, i_33_, i_31_, class79.anInt1278,
@@ -1227,7 +1228,7 @@ public class Static {
 						Class86 class86 = class79.method1383(i_42_, 3, is, is_47_, bool_28_, i, true, bool_48_, null,
 								i_44_, i_43_);
 						if (bool_48_)
-							Class151.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
+							ShadowManager.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
 						class133 = class86.aClass133_1379;
 					}
 					Class90.method1444(i_35_, i_33_, i_31_, i_42_, class133, null, Class4.anIntArray128[i], 0, l);
@@ -1252,7 +1253,7 @@ public class Static {
 						Class86 class86 = class79.method1383(i_42_, i_32_, is, is_47_, bool_28_, i, true, bool_48_,
 								null, i_44_, i_43_);
 						if (bool_48_)
-							Class151.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
+							ShadowManager.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
 						class133 = class86.aClass133_1379;
 					}
 					Class109.method1570(i_35_, i_33_, i_31_, i_42_, 1, 1, class133, 0, l);
@@ -1269,7 +1270,7 @@ public class Static {
 						Class86 class86 = class79.method1383(i_42_, 4, is, is_47_, bool_28_, i, true, bool_48_, null,
 								i_44_, i_43_);
 						if (bool_48_)
-							Class151.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
+							ShadowManager.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
 						class133 = class86.aClass133_1379;
 					}
 					Class127.method1748(i_35_, i_33_, i_31_, i_42_, class133, null, Class14_Sub28.anIntArray3225[i], 0,
@@ -1287,7 +1288,7 @@ public class Static {
 						Class86 class86 = class79.method1383(i_42_, 4, is, is_47_, bool_28_, i, true, bool_48_, null,
 								i_44_, i_43_);
 						if (bool_48_)
-							Class151.method2026(class86.aClass148_Sub1_1386,
+							ShadowManager.method2026(class86.aClass148_Sub1_1386,
 									-((Class14_Sub19.anIntArray3074[i]) * 8) + i_44_, i_45_,
 									(-(Class9.anIntArray212[i] * 8) + i_43_));
 						class133 = class86.aClass133_1379;
@@ -1304,7 +1305,7 @@ public class Static {
 						Class86 class86 = class79.method1383(i_42_, 4, is, is_47_, bool_28_, i + 4, true, bool_48_,
 								null, i_44_, i_43_);
 						if (bool_48_)
-							Class151.method2026(class86.aClass148_Sub1_1386, i_44_ - Class114.anIntArray1893[i] * 8,
+							ShadowManager.method2026(class86.aClass148_Sub1_1386, i_44_ - Class114.anIntArray1893[i] * 8,
 									i_45_, (-(Class14_Sub2_Sub9.anIntArray3859[i] * 8) + i_43_));
 						class133 = class86.aClass133_1379;
 					} else
@@ -1322,7 +1323,7 @@ public class Static {
 						Class86 class86 = class79.method1383(i_42_, 4, is, is_47_, bool_28_, i_38_ + 4, true, bool_48_,
 								null, i_44_, i_43_);
 						if (bool_48_)
-							Class151.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
+							ShadowManager.method2026(class86.aClass148_Sub1_1386, i_44_, i_45_, i_43_);
 						class133 = class86.aClass133_1379;
 					}
 					Class127.method1748(i_35_, i_33_, i_31_, i_42_, class133, null, 256, i_38_, 0, 0, l);
@@ -1340,12 +1341,12 @@ public class Static {
 						Class86 class86 = class79.method1383(i_42_, 4, is, is_47_, bool_28_, i + 4, true, bool_48_,
 								null, i_44_, i_43_);
 						if (bool_48_)
-							Class151.method2026(class86.aClass148_Sub1_1386, i_44_ - i_56_, i_45_, i_43_ - i_57_);
+							ShadowManager.method2026(class86.aClass148_Sub1_1386, i_44_ - i_56_, i_45_, i_43_ - i_57_);
 						class133 = class86.aClass133_1379;
 						class86 = class79.method1383(i_42_, 4, is, is_47_, bool_28_, i_41_ + 4, true, bool_48_, null,
 								i_44_, i_43_);
 						if (bool_48_)
-							Class151.method2026(class86.aClass148_Sub1_1386, -i_56_ + i_44_, i_45_, i_43_ - i_57_);
+							ShadowManager.method2026(class86.aClass148_Sub1_1386, -i_56_ + i_44_, i_45_, i_43_ - i_57_);
 						class133_55_ = class86.aClass133_1379;
 					} else {
 						class133 = new Class133_Sub4(i_34_, 4, i + 4, i_30_, i_33_, i_31_, class79.anInt1278,
@@ -1437,8 +1438,8 @@ public class Static {
 				} else
 					class148_sub1 = Class32.aClass148_Sub1Array540[class79.anInt1281];
 				if (class148_sub1 != null) {
-					int i_46_ = ((-class148_sub1.anInt2376 + class79.anInt1245 * 4) / 2);
-					int i_47_ = ((-class148_sub1.anInt2371 + class79.anInt1227 * 4) / 2);
+					int i_46_ = ((-class148_sub1.height + class79.anInt1245 * 4) / 2);
+					int i_47_ = ((-class148_sub1.width + class79.anInt1227 * 4) / 2);
 					class148_sub1.method2001(i * 4 + 48 + i_47_, i_46_ + ((-class79.anInt1245 - i_37_ + 104) * 4 + 48));
 				}
 			} else {
@@ -1551,8 +1552,8 @@ public class Static {
 				} else
 					class148_sub1 = Class32.aClass148_Sub1Array540[class79.anInt1281];
 				if (class148_sub1 != null) {
-					int i_53_ = ((class79.anInt1227 * 4 - class148_sub1.anInt2371) / 2);
-					int i_54_ = ((-class148_sub1.anInt2376 + class79.anInt1245 * 4) / 2);
+					int i_53_ = ((class79.anInt1227 * 4 - class148_sub1.width) / 2);
+					int i_54_ = ((-class148_sub1.height + class79.anInt1245 * 4) / 2);
 					class148_sub1.method2001(i_53_ + (i * 4 + 48),
 							(-class79.anInt1245 - i_37_ + 104) * 4 + (i_54_ + 48));
 				}
@@ -1579,8 +1580,8 @@ public class Static {
 				} else
 					class148_sub1 = Class97.aClass148_Sub1Array1651[class79.anInt1281];
 				if (class148_sub1 != null) {
-					int i_57_ = ((-class148_sub1.anInt2371 + class79.anInt1227 * 4) / 2);
-					int i_58_ = ((-class148_sub1.anInt2376 + class79.anInt1245 * 4) / 2);
+					int i_57_ = ((-class148_sub1.width + class79.anInt1227 * 4) / 2);
+					int i_58_ = ((-class148_sub1.height + class79.anInt1245 * 4) / 2);
 					class148_sub1.method2001(48 - (-(i * 4) - i_57_),
 							((-i_37_ + 104 - class79.anInt1245) * 4 + 48 + i_58_));
 				}
@@ -1754,7 +1755,7 @@ public class Static {
 				Class14_Sub2_Sub12.method317((byte) -127);
 				if (Class14_Sub8_Sub16.anInt4356 == 30) {
 					Class9.method169(-1);
-					Class71.method1318((byte) 112);
+					Static2.method1318((byte) 112);
 					Class96.anInt1636++;
 					if (Class96.anInt1636 > 750)
 						Static2.method1508((byte) 123);
@@ -2190,9 +2191,9 @@ public class Static {
 		Class56_Sub1.aClass14_Sub2_Sub16_3320.method352(Static2.aClass148Array1777, null);
 		Class84.aClass14_Sub2_Sub16_1344.method352(Static2.aClass148Array1777, null);
 		Class133_Sub3.aClass14_Sub2_Sub16_3567.method352(Static2.aClass148Array1777, null);
-		Class151.aClass148_Sub1Array2431 = Class125_Sub1.method1729(class9, Class9_Sub1.anInt2688, 0, (byte) 48);
-		for (int i = 0; i < Class151.aClass148_Sub1Array2431.length; i++)
-			Class151.aClass148_Sub1Array2431[i].method2009();
+		ShadowManager.aClass148_Sub1Array2431 = Class125_Sub1.method1729(class9, Class9_Sub1.anInt2688, 0, (byte) 48);
+		for (int i = 0; i < ShadowManager.aClass148_Sub1Array2431.length; i++)
+			ShadowManager.aClass148_Sub1Array2431[i].method2009();
 		Class14_Sub2_Sub19_Sub1 class14_sub2_sub19_sub1 = Class14_Sub8_Sub1.method485(-99, class9,
 				anInt2720, 0);
 		class14_sub2_sub19_sub1.method404();
@@ -2441,12 +2442,12 @@ public class Static {
 					}
 				}
 				Class137.method1941(false, (byte) -84);
-				Class151.aClass148_Sub1_2428.method2010();
+				ShadowManager.shadowMapImage.method2010();
 				for (int i = 0; i < 13; i++) {
 					for (int i_7_ = 0; i_7_ < 13; i_7_++)
-						Class151.aClass13ArrayArray2427[i][i_7_].aBoolean346 = true;
+						ShadowManager.shadows[i][i_7_].outputToSprite = true;
 				}
-				Class10.method201();
+				LightManager.method201();
 				Class142.method1976((byte) 61);
 				Class138.method1946(139);
 				System.gc();
@@ -2473,7 +2474,7 @@ public class Static {
 				Class14_Sub3.method451(0);
 				Static2.method259(true, 11988);
 				MapRegion.method488(Class14_Sub21.aClass32Array3100, false);
-				Class10.method199();
+				LightManager.method199();
 				Static2.method259(true, 11988);
 				int i = Class7_Sub2.anInt2676;
 				if (Class14_Sub2_Sub3.anInt3785 < i)
@@ -2507,7 +2508,7 @@ public class Static {
 				}
 				for (int i_10_ = 0; i_10_ < 13; i_10_++) {
 					for (int i_11_ = 0; i_11_ < 13; i_11_++)
-						Class151.aClass13ArrayArray2427[i_10_][i_11_].method227(Class114.tileHeights[0], i_10_ * 8,
+						ShadowManager.shadows[i_10_][i_11_].method227(Class114.tileHeights[0], i_10_ * 8,
 								i_11_ * 8);
 				}
 				for (int i_12_ = 0; i_12_ < 104; i_12_++) {
@@ -2577,8 +2578,8 @@ public class Static {
 	public static void method969(int i, Class9_Sub1 class9_sub1, byte i_0_) {
 		if (Class14_Sub2_Sub4.aClass14_Sub10_3796 != null) {
 			Class14_Sub2_Sub4.aClass14_Sub10_3796.position = i * 8 + 5;
-			int i_1_ = Class14_Sub2_Sub4.aClass14_Sub10_3796.method812((byte) -126);
-			int i_2_ = Class14_Sub2_Sub4.aClass14_Sub10_3796.method812((byte) -98);
+			int i_1_ = Class14_Sub2_Sub4.aClass14_Sub10_3796.getInt((byte) -126);
+			int i_2_ = Class14_Sub2_Sub4.aClass14_Sub10_3796.getInt((byte) -98);
 			class9_sub1.method180(-6, i_2_, i_1_);
 		} else {
 			Class14_Sub8_Sub29.method633((byte) 0, 115, null, 255, true, 0, 255);

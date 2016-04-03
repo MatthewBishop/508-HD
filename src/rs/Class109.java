@@ -171,9 +171,9 @@ public class Class109 {
 	public Class109(Buffer class14_sub10) {
 		aByte1838 = class14_sub10.method780((byte) -77);
 		anInt1830 = class14_sub10.readUShort((byte) 125);
-		anInt1833 = class14_sub10.method812((byte) -99);
-		anInt1841 = class14_sub10.method812((byte) -102);
-		anInt1845 = class14_sub10.method812((byte) -117);
-		anInt1829 = class14_sub10.method812((byte) -97);
+		anInt1833 = class14_sub10.getInt((byte) -99);
+		anInt1841 = class14_sub10.getInt((byte) -102);
+		anInt1845 = class14_sub10.getInt((byte) -117);
+		anInt1829 = class14_sub10.getInt((byte) -97);
 	}
 }

@@ -6,7 +6,8 @@ package rs;
 import com.jagex.io.Buffer;
 import com.jagex.map.MapRegion;
 import com.jagex.map.Scenegraph;
-import com.jagex.rt4.lights.Class10;
+import com.jagex.rt4.AtmosphericChunk;
+import com.jagex.rt4.lights.LightManager;
 import com.jagex.rt4.lights.Light;
 
 import rs.tex.Class14_Sub8_Sub16;
@@ -114,7 +115,7 @@ public class Class133_Sub3 extends Class133 {
 			}
 		}
 		if (!bool) {
-			Class71 class71 = null;
+			AtmosphericChunk atmosphericChunk = null;
 			while (class14_sub10.payload.length > class14_sub10.position) {
 				int i_27_ = class14_sub10.readUByte();
 				if (i_27_ != 0) {
@@ -138,7 +139,7 @@ public class Class133_Sub3 extends Class133 {
 									if (i_30_ >= 0 && i_31_ >= 0 && i_30_ < 104 && i_31_ < 104) {
 										light.param2 = (Class114.tileHeights[light.anInt1125][i_30_][i_31_])
 												- light.param2;
-										Class10.method200(light);
+										LightManager.method200(light);
 									}
 								}
 							}
@@ -146,11 +147,11 @@ public class Class133_Sub3 extends Class133 {
 					} else
 						throw new IllegalStateException();
 				} else
-					class71 = new Class71(class14_sub10);
+					atmosphericChunk = new AtmosphericChunk(class14_sub10);
 			}
-			if (class71 == null)
-				class71 = new Class71();
-			Class150.aClass71ArrayArray2421[i >> 3][i_15_ >> 35] = class71;
+			if (atmosphericChunk == null)
+				atmosphericChunk = new AtmosphericChunk();
+			Class150.aClass71ArrayArray2421[i >> 3][i_15_ >> 35] = atmosphericChunk;
 		}
 	}
 }

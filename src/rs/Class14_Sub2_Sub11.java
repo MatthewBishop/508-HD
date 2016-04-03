@@ -53,9 +53,9 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 					for (int i_9_ = 0; i_9_ < 4; i_9_++) {
 						int i_10_;
 						int i_11_;
-						if (Class71.anIntArray1086[i_9_] != 2) {
-							if (Class71.anIntArray1086[i_9_] != 1) {
-								if (Class71.anIntArray1086[i_9_] != 3) {
+						if (Static2.anIntArray1086[i_9_] != 2) {
+							if (Static2.anIntArray1086[i_9_] != 1) {
+								if (Static2.anIntArray1086[i_9_] != 3) {
 									i_11_ = class45.anInt744;
 									i_10_ = class45s[i_7_].anInt744;
 								} else {
@@ -90,17 +90,17 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 					for (int i_12_ = 0; i_12_ < 4; i_12_++) {
 						int i_13_;
 						int i_14_;
-						if (Class71.anIntArray1086[i_12_] == 2) {
+						if (Static2.anIntArray1086[i_12_] == 2) {
 							i_13_ = class45.anInt742;
 							i_14_ = class45s[i_6_].anInt742;
-						} else if (Class71.anIntArray1086[i_12_] == 1) {
+						} else if (Static2.anIntArray1086[i_12_] == 1) {
 							i_13_ = class45.anInt752;
 							if (i_13_ == -1 && Class45.anIntArray737[i_12_] == 1)
 								i_13_ = 2001;
 							i_14_ = class45s[i_6_].anInt752;
 							if (i_14_ == -1 && Class45.anIntArray737[i_12_] == 1)
 								i_14_ = 2001;
-						} else if (Class71.anIntArray1086[i_12_] == 3) {
+						} else if (Static2.anIntArray1086[i_12_] == 3) {
 							i_14_ = !class45s[i_6_].aBoolean749 ? 0 : 1;
 							i_13_ = class45.aBoolean749 ? 1 : 0;
 						} else {

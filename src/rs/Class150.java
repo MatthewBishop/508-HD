@@ -6,6 +6,7 @@ package rs;
 import com.jagex.io.Buffer;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.Class14_Sub2_Sub19;
+import com.jagex.rt4.AtmosphericChunk;
 
 import rs.tex.Class14_Sub8_Sub4;
 import rs.tex.Static;
@@ -24,7 +25,7 @@ public class Class150 {
 	public static Class124 aClass124_2418 = Class14_Sub2_Sub2.method263(1178, "<col=ffffff>");
 	public static int[][][] anIntArrayArrayArray2419;
 	public static int anInt2420;
-	public static Class71[][] aClass71ArrayArray2421 = new Class71[13][13];
+	public static AtmosphericChunk[][] aClass71ArrayArray2421 = new AtmosphericChunk[13][13];
 	public static int[] anIntArray2422;
 	public static int anInt2423;
 	public int anInt2424;

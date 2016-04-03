@@ -13,7 +13,6 @@ import rs.Class21;
 import rs.Class4;
 import rs.Class53;
 import rs.Class67;
-import rs.Class71;
 import rs.Class98;
 import rs.Static2;
 import rs.tex.Static;
@@ -65,7 +64,7 @@ public class Scenegraph {
 				}
 			}
 			if (scenecluster.type == 1) {
-				int i_7_ = (scenecluster.minTileX - Class71.cameraTileX + Static.anInt1108);
+				int i_7_ = (scenecluster.minTileX - Static2.cameraTileX + Static.anInt1108);
 				if (i_7_ >= 0 && i_7_ <= Static.anInt1108 + Static.anInt1108) {
 					int i_8_ = (scenecluster.minTileZ - Class102.cameraTileZ + Static.anInt1108);
 					if (i_8_ < 0)
@@ -101,10 +100,10 @@ public class Scenegraph {
 			} else if (scenecluster.type == 2) {
 				int i_11_ = (scenecluster.minTileZ - Class102.cameraTileZ + Static.anInt1108);
 				if (i_11_ >= 0 && i_11_ <= Static.anInt1108 + Static.anInt1108) {
-					int i_12_ = (scenecluster.minTileX - Class71.cameraTileX + Static.anInt1108);
+					int i_12_ = (scenecluster.minTileX - Static2.cameraTileX + Static.anInt1108);
 					if (i_12_ < 0)
 						i_12_ = 0;
-					int i_13_ = (scenecluster.maxTileX - Class71.cameraTileX + Static.anInt1108);
+					int i_13_ = (scenecluster.maxTileX - Static2.cameraTileX + Static.anInt1108);
 					if (i_13_ > Static.anInt1108 + Static.anInt1108)
 						i_13_ = Static.anInt1108 + Static.anInt1108;
 					boolean bool = false;
@@ -142,10 +141,10 @@ public class Scenegraph {
 					if (i_17_ > Static.anInt1108 + Static.anInt1108)
 						i_17_ = Static.anInt1108 + Static.anInt1108;
 					if (i_16_ <= i_17_) {
-						int i_18_ = (scenecluster.minTileX - Class71.cameraTileX + Static.anInt1108);
+						int i_18_ = (scenecluster.minTileX - Static2.cameraTileX + Static.anInt1108);
 						if (i_18_ < 0)
 							i_18_ = 0;
-						int i_19_ = (scenecluster.maxTileX - Class71.cameraTileX + Static.anInt1108);
+						int i_19_ = (scenecluster.maxTileX - Static2.cameraTileX + Static.anInt1108);
 						if (i_19_ > Static.anInt1108 + Static.anInt1108)
 							i_19_ = Static.anInt1108 + Static.anInt1108;
 						boolean bool = false;

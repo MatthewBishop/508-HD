@@ -272,9 +272,9 @@ public class Class38 implements Interface5 {
 	}
 
 	public static void method1116(int i, boolean bool) {
-		if ((Class71.anInt1085 == Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495 >> 7)
+		if ((Static2.anInt1085 == Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495 >> 7)
 				&& (Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436 >> 39 == Class14_Sub8_Sub15.anInt4335))
-			Class71.anInt1085 = 0;
+			Static2.anInt1085 = 0;
 		int i_40_ = Static2.anInt2878;
 		if (i != 1)
 			anInt2624 = -52;

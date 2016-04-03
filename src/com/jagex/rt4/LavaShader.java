@@ -11,7 +11,7 @@ import javax.media.opengl.GL;
 
 import com.jagex.io.Buffer;
 
-public class Class61 implements Interface2 {
+public class LavaShader implements ShaderInterface {
 	public int anInt2565 = -1;
 	public int anInt2566;
 	public static float[] aFloatArray2567 = new float[4];
@@ -45,7 +45,7 @@ public class Class61 implements Interface2 {
 			gl.glRotatef(-((float) RT4.rotateX * 360.0F) / 2048.0F, 1.0F, 0.0F, 0.0F);
 			gl.glRotatef(-180.0F, 1.0F, 0.0F, 0.0F);
 			gl.glMatrixMode(5888);
-			if (!Class119.use3DTexture)
+			if (!Class119.allows3DTextureMapping)
 				gl.glBindTexture(3553,
 						(Class119.textureIds2[(int) ((float) (RT4GL.anInt2045 * 64) * 0.005F) % 64]));
 			gl.glActiveTexture(33984);
@@ -56,7 +56,7 @@ public class Class61 implements Interface2 {
 					gl.glProgramLocalParameter4fvARB(34336, i_0_, aFloatBuffer2569);
 					i += 4;
 				}
-				if (Class119.use3DTexture)
+				if (Class119.allows3DTextureMapping)
 					gl.glProgramLocalParameter4fARB(34336, 65, ((float) RT4GL.anInt2045 * 0.005F), 0.0F, 0.0F, 1.0F);
 				else
 					gl.glProgramLocalParameter4fARB(34336, 65, 0.0F, 0.0F, 0.0F, 1.0F);
@@ -70,7 +70,7 @@ public class Class61 implements Interface2 {
 		anInt2565 = gl.glGenLists(2);
 		gl.glNewList(anInt2565, 4864);
 		gl.glActiveTexture(33985);
-		if (Class119.use3DTexture)
+		if (Class119.allows3DTextureMapping)
 			gl.glBindTexture(32879, Class119.texture3DPointer2);
 		gl.glTexEnvi(8960, 34161, 260);
 		gl.glTexEnvi(8960, 34162, 7681);
@@ -87,7 +87,7 @@ public class Class61 implements Interface2 {
 		gl.glTexEnvi(8960, 34161, 8448);
 		gl.glTexEnvi(8960, 34162, 8448);
 		gl.glTexEnvi(8960, 34184, 5890);
-		gl.glDisable(Class119.use3DTexture ? 32879 : 3553);
+		gl.glDisable(Class119.allows3DTextureMapping ? 32879 : 3553);
 		gl.glActiveTexture(33984);
 		gl.glBindProgramARB(34336, 0);
 		gl.glDisable(34336);
@@ -117,9 +117,9 @@ public class Class61 implements Interface2 {
 			GL gl = RT4GL.gl;
 			gl.glActiveTexture(33985);
 			if ((i & 0x80) == 0)
-				gl.glEnable(Class119.use3DTexture ? 32879 : 3553);
+				gl.glEnable(Class119.allows3DTextureMapping ? 32879 : 3553);
 			else
-				gl.glDisable(Class119.use3DTexture ? 32879 : 3553);
+				gl.glDisable(Class119.allows3DTextureMapping ? 32879 : 3553);
 			gl.glActiveTexture(33984);
 			if ((i & 0x40) == 0) {
 				gl.glGetFloatv(2899, aFloatArray2567, 0);
@@ -136,8 +136,8 @@ public class Class61 implements Interface2 {
 		}
 	}
 
-	public Class61() {
-		if (anInt2565 < 0 && RT4GL.aBoolean2048 && RT4GL.anInt2019 >= 2) {
+	public LavaShader() {
+		if (anInt2565 < 0 && RT4GL.aBoolean2048 && RT4GL.maxTextureUnits >= 2) {
 			int[] is = new int[1];
 			GL gl = RT4GL.gl;
 			gl.glGenProgramsARB(1, is, 0);
@@ -149,16 +149,16 @@ public class Class61 implements Interface2 {
 				int[] is_4_ = is_2_[i];
 				int[] is_5_ = is_3_[i];
 				for (int i_6_ = 0; i_6_ < 64; i_6_++) {
-					if (RT4GL.aBoolean2046) {
-						class14_sub10.method834((float) is_4_[i_6_] / 4096.0F);
-						class14_sub10.method834((float) is_5_[i_6_] / 4096.0F);
-						class14_sub10.method834(1.0F);
-						class14_sub10.method834(1.0F);
+					if (RT4GL.usingBigEndian) {
+						class14_sub10.putFloatAsInt((float) is_4_[i_6_] / 4096.0F);
+						class14_sub10.putFloatAsInt((float) is_5_[i_6_] / 4096.0F);
+						class14_sub10.putFloatAsInt(1.0F);
+						class14_sub10.putFloatAsInt(1.0F);
 					} else {
-						class14_sub10.method788((float) is_4_[i_6_] / 4096.0F, 24671);
-						class14_sub10.method788((float) is_5_[i_6_] / 4096.0F, 24671);
-						class14_sub10.method788(1.0F, 24671);
-						class14_sub10.method788(1.0F, 24671);
+						class14_sub10.putFloatAsLEInt((float) is_4_[i_6_] / 4096.0F, 24671);
+						class14_sub10.putFloatAsLEInt((float) is_5_[i_6_] / 4096.0F, 24671);
+						class14_sub10.putFloatAsLEInt(1.0F, 24671);
+						class14_sub10.putFloatAsLEInt(1.0F, 24671);
 					}
 				}
 			}

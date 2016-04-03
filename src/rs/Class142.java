@@ -8,6 +8,7 @@ import com.jagex.io.Buffer;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.Class14_Sub1;
+import com.jagex.rt4.AtmosphericChunk;
 
 import rs.tex.Class14_Sub8_Sub17;
 import rs.tex.Class14_Sub8_Sub2;
@@ -274,7 +275,7 @@ public class Class142 {
 					if (i == 11)
 						anInt2309 = 1;
 					else if (i == 12)
-						anInt2288 = class14_sub10.method812((byte) -112);
+						anInt2288 = class14_sub10.getInt((byte) -112);
 					else if (i != 16) {
 						if (i == 23)
 							anInt2274 = class14_sub10.readUShort((byte) 116);
@@ -383,7 +384,7 @@ public class Class142 {
 																										else
 																											linkable = new Class14_Sub1(
 																													class14_sub10
-																															.method812(
+																															.getInt(
 																																	(byte) -110));
 																										aClass55_2260
 																												.put(
@@ -574,12 +575,12 @@ public class Class142 {
 	}
 
 	public static void method1976(byte i) {
-		Class71 class71 = new Class71();
+		AtmosphericChunk atmosphericChunk = new AtmosphericChunk();
 		int i_55_ = 0;
 		int i_56_ = 60 % ((-46 - i) / 63);
 		for (/**/; i_55_ < 13; i_55_++) {
 			for (int i_57_ = 0; i_57_ < 13; i_57_++)
-				Class150.aClass71ArrayArray2421[i_55_][i_57_] = class71;
+				Class150.aClass71ArrayArray2421[i_55_][i_57_] = atmosphericChunk;
 		}
 	}
 

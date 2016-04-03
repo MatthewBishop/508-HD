@@ -217,15 +217,15 @@ public class Class14_Sub24 extends Linkable {
 
 	public void method912(byte[] is) {
 		Buffer class14_sub10 = new Buffer(is);
-		anInt3139 = class14_sub10.method812((byte) -99);
-		anInt3145 = class14_sub10.method812((byte) -119);
-		anInt3166 = class14_sub10.method812((byte) -117);
-		anInt3165 = class14_sub10.method812((byte) -109);
+		anInt3139 = class14_sub10.getInt((byte) -99);
+		anInt3145 = class14_sub10.getInt((byte) -119);
+		anInt3166 = class14_sub10.getInt((byte) -117);
+		anInt3165 = class14_sub10.getInt((byte) -109);
 		if (anInt3165 < 0) {
 			anInt3165 ^= 0xffffffff;
 			aBoolean3156 = true;
 		}
-		int i = class14_sub10.method812((byte) -128);
+		int i = class14_sub10.getInt((byte) -128);
 		aByteArrayArray3160 = new byte[i][];
 		for (int i_34_ = 0; i_34_ < i; i_34_++) {
 			int i_35_ = 0;

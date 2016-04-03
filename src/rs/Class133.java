@@ -8,7 +8,7 @@ import java.io.IOException;
 import com.jagex.io.Buffer;
 import com.jagex.map.SceneCluster;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
-import com.jagex.rt4.lights.Class130;
+import com.jagex.rt4.lights.LightRenderer;
 import com.jagex.rt4.lights.Light;
 import com.jagex.util.TimeUtil;
 
@@ -76,7 +76,7 @@ public abstract class Class133 {
 		Static.aClass14_Sub10_Sub1_891.method792(i_8_ + Class58.anInt947, (byte) -98);
 		Static.aClass14_Sub10_Sub1_891.method795((!(Class14_Sub8_Sub29.aBooleanArray4581[82]) ? 0 : 1),
 				i - 1503987590);
-		Class71.anInt1085 = Class14_Sub8_Sub36.anIntArray4691[0];
+		Static2.anInt1085 = Class14_Sub8_Sub36.anIntArray4691[0];
 		Class14_Sub8_Sub15.anInt4335 = Class14_Sub2_Sub21.anIntArray4078[0];
 		int i_9_ = 1;
 		if (i != -20179)
@@ -108,7 +108,7 @@ public abstract class Class133 {
 					.getFirst());
 			if (class14_sub2_sub9 == null)
 				break;
-			Class71.aClass55_1092.put(class14_sub2_sub9.key, class14_sub2_sub9);
+			Static2.aClass55_1092.put(class14_sub2_sub9.key, class14_sub2_sub9);
 			Class14_Sub2_Sub8.anInt3833--;
 			Class14_Sub8_Sub32.anInt4612++;
 		}
@@ -153,7 +153,7 @@ public abstract class Class133 {
 		aClass14_Sub2_Sub19_Sub1Array2186 = null;
 	}
 
-	public static void method1787(int[] is, int i, float[][] fs, int i_20_, Class130 class130, float[][] fs_21_,
+	public static void method1787(int[] is, int i, float[][] fs, int i_20_, LightRenderer lightRenderer, float[][] fs_21_,
 			int[][] is_22_, int i_23_, float[][] fs_24_, boolean bool, Light light) {
 		int[] is_25_ = new int[is.length / 2];
 		for (int i_26_ = 0; is_25_.length > i_26_; i_26_++) {
@@ -218,9 +218,9 @@ public abstract class Class133 {
 			int i_38_ = i_27_ + (i_23_ << 39);
 			int i_39_ = Class14_Sub8_Sub31.method647(i_20_, -501955161, i_27_, i_28_, is_22_, i_23_);
 			int i_40_ = i_28_ + (i_20_ << 7);
-			is_25_[i_26_] = class130.method1769(light, i_38_, i_39_, i_40_, f, f_31_, f_32_);
+			is_25_[i_26_] = lightRenderer.method1769(light, i_38_, i_39_, i_40_, f, f_31_, f_32_);
 		}
-		class130.method1770(is_25_);
+		lightRenderer.method1770(is_25_);
 		if (!bool)
 			anIntArray2176 = null;
 	}

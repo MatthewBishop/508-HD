@@ -63,7 +63,7 @@ public class Class14_Sub19 extends Linkable {
 	public static Class14_Sub2_Sub5 method889(Buffer class14_sub10, int i) {
 		Class14_Sub2_Sub5 class14_sub2_sub5 = new Class14_Sub2_Sub5(class14_sub10.method797(9467),
 				class14_sub10.method797(9467), class14_sub10.readUShort((byte) 127), class14_sub10.readUShort((byte) 120),
-				class14_sub10.method812((byte) -96), class14_sub10.readUByte() == 1);
+				class14_sub10.getInt((byte) -96), class14_sub10.readUByte() == 1);
 		int i_3_ = class14_sub10.readUByte();
 		for (int i_4_ = 0; i_4_ < i_3_; i_4_++)
 			class14_sub2_sub5.aClass2_3801

@@ -10,7 +10,7 @@ import rs.tex.Class14_Sub8_Sub26;
 public class Light {
 	public boolean aBoolean1112;
 	public boolean aBoolean1123;
-	public Class130 aClass130_1103;
+	public LightRenderer aClass130_1103;
 	public float aFloat1107;
 	public float aFloat1111;
 	public float[] params;
@@ -18,7 +18,7 @@ public class Light {
 	public int param2;
 	public int anInt1109;
 	public int anInt1113;
-	public int anInt1115;
+	public int flickeringType;
 	public int anInt1120;
 	public int anInt1121;
 	public int anInt1122;
@@ -63,9 +63,9 @@ public class Light {
 		method1332((byte) 101);
 	}
 
-	public void method1326(int i, boolean bool) {
+	public void method1326(int i, boolean flickeringEffectsDisabled) {
 		int i_1_ = anInt1121 * i / 50 + anInt1109 & 0x7ff;
-		int i_2_ = anInt1115;
+		int i_2_ = flickeringType;
 		int i_3_;
 	/*	while_272_: do {
 			while_271_: do {
@@ -115,7 +115,7 @@ public class Light {
 		} else {
 			i_3_ = 2048;
 		}
-		if (bool)
+		if (flickeringEffectsDisabled)
 			i_3_ = 2048;
 		aFloat1107 = (float) (anInt1113 + (i_3_ * anInt1102 >> 11)) / 2048.0F;
 		float f = aFloat1107 / 255.0F;
@@ -190,19 +190,19 @@ public class Light {
 																				break while_273_;
 																			}
 																		} else {
-																			anInt1115 = 1;
+																			flickeringType = 1;
 																			anInt1121 = 2048;
 																			anInt1102 = 2048;
 																			anInt1113 = 0;
 																			break while_286_;
 																		}
-																		anInt1115 = 1;
+																		flickeringType = 1;
 																		anInt1113 = 0;
 																		anInt1102 = 2048;
 																		anInt1121 = 4096;
 																		break while_286_;
 																	} while (false);
-																	anInt1115 = 4;
+																	flickeringType = 4;
 																	anInt1102 = 2048;
 																	anInt1113 = 0;
 																	anInt1121 = 2048;
@@ -211,22 +211,22 @@ public class Light {
 																anInt1102 = 2048;
 																anInt1121 = 8192;
 																anInt1113 = 0;
-																anInt1115 = 4;
+																flickeringType = 4;
 																break while_286_;
 															} while (false);
-															anInt1115 = 2;
+															flickeringType = 2;
 															anInt1121 = 2048;
 															anInt1113 = 0;
 															anInt1102 = 2048;
 															break while_286_;
 														} while (false);
-														anInt1115 = 2;
+														flickeringType = 2;
 														anInt1121 = 8192;
 														anInt1102 = 2048;
 														anInt1113 = 0;
 														break while_286_;
 													} while (false);
-													anInt1115 = 3;
+													flickeringType = 3;
 													anInt1121 = 2048;
 													anInt1102 = 512;
 													anInt1113 = 1536;
@@ -235,41 +235,41 @@ public class Light {
 												anInt1113 = 1536;
 												anInt1121 = 4096;
 												anInt1102 = 512;
-												anInt1115 = 3;
+												flickeringType = 3;
 												break while_286_;
 											} while (false);
-											anInt1115 = 3;
+											flickeringType = 3;
 											anInt1113 = 1280;
 											anInt1102 = 768;
 											anInt1121 = 2048;
 											break while_286_;
 										} while (false);
 										anInt1102 = 768;
-										anInt1115 = 3;
+										flickeringType = 3;
 										anInt1113 = 1280;
 										anInt1121 = 4096;
 										break while_286_;
 									} while (false);
-									anInt1115 = 3;
+									flickeringType = 3;
 									anInt1121 = 2048;
 									anInt1102 = 1024;
 									anInt1113 = 1024;
 									break while_286_;
 								} while (false);
-								anInt1115 = 3;
+								flickeringType = 3;
 								anInt1102 = 1024;
 								anInt1121 = 4096;
 								anInt1113 = 1024;
 								break while_286_;
 							} while (false);
 							anInt1113 = 1280;
-							anInt1115 = 1;
+							flickeringType = 1;
 							anInt1121 = 2048;
 							anInt1102 = 768;
 							break while_286_;
 						} while (false);
 						anInt1113 = 1536;
-						anInt1115 = 1;
+						flickeringType = 1;
 						anInt1102 = 512;
 						anInt1121 = 4096;
 						break while_286_;
@@ -277,39 +277,39 @@ public class Light {
 					anInt1113 = 1792;
 					anInt1121 = 8192;
 					anInt1102 = 256;
-					anInt1115 = 1;
+					flickeringType = 1;
 					break while_286_;
 				} while (false);
 				anInt1113 = 0;
 				anInt1102 = 2048;
 				anInt1121 = 2048;
-				anInt1115 = 0;
+				flickeringType = 0;
 			}
 		} while (false);*/
 		
 		int i = anInt1130;
 		if (i == 2) {
-			anInt1115 = 1;
+			flickeringType = 1;
 			anInt1113 = 0;
 			anInt1121 = 2048;
 			anInt1102 = 2048;
 		} else if (i == 3) {
-			anInt1115 = 1;
+			flickeringType = 1;
 			anInt1121 = 4096;
 			anInt1113 = 0;
 			anInt1102 = 2048;
 		} else if (i == 4) {
 			anInt1102 = 2048;
 			anInt1113 = 0;
-			anInt1115 = 4;
+			flickeringType = 4;
 			anInt1121 = 2048;
 		} else if (i == 5) {
 			anInt1102 = 2048;
-			anInt1115 = 4;
+			flickeringType = 4;
 			anInt1121 = 8192;
 			anInt1113 = 0;
 		} else if (i == 6) {
-			anInt1115 = 3;
+			flickeringType = 3;
 			anInt1121 = 2048;
 			anInt1113 = 1280;
 			anInt1102 = 768;
@@ -317,54 +317,54 @@ public class Light {
 			anInt1121 = 4096;
 			anInt1102 = 768;
 			anInt1113 = 1280;
-			anInt1115 = 3;
+			flickeringType = 3;
 		} else if (i == 8) {
-			anInt1115 = 3;
+			flickeringType = 3;
 			anInt1121 = 2048;
 			anInt1102 = 1024;
 			anInt1113 = 1024;
 		} else if (i == 9) {
 			anInt1102 = 1024;
 			anInt1113 = 1024;
-			anInt1115 = 3;
+			flickeringType = 3;
 			anInt1121 = 4096;
 		} else if (i == 10) {
 			anInt1102 = 512;
-			anInt1115 = 3;
+			flickeringType = 3;
 			anInt1113 = 1536;
 			anInt1121 = 2048;
 		} else if (i == 11) {
 			anInt1102 = 512;
 			anInt1121 = 4096;
-			anInt1115 = 3;
+			flickeringType = 3;
 			anInt1113 = 1536;
 		} else if (i == 12) {
 			anInt1121 = 2048;
-			anInt1115 = 2;
+			flickeringType = 2;
 			anInt1102 = 2048;
 			anInt1113 = 0;
 		} else if (i == 13) {
-			anInt1115 = 2;
+			flickeringType = 2;
 			anInt1113 = 0;
 			anInt1121 = 8192;
 			anInt1102 = 2048;
 		} else if (i == 14) {
 			anInt1102 = 768;
 			anInt1121 = 2048;
-			anInt1115 = 1;
+			flickeringType = 1;
 			anInt1113 = 1280;
 		} else if (i == 15) {
 			anInt1113 = 1536;
-			anInt1115 = 1;
+			flickeringType = 1;
 			anInt1102 = 512;
 			anInt1121 = 4096;
 		} else if (i == 16) {
 			anInt1113 = 1792;
-			anInt1115 = 1;
+			flickeringType = 1;
 			anInt1102 = 256;
 			anInt1121 = 8192;
 		} else {
-			anInt1115 = 0;
+			flickeringType = 0;
 			anInt1121 = 2048;
 			anInt1102 = 2048;
 			anInt1113 = 0;

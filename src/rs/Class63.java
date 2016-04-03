@@ -9,8 +9,9 @@ import com.jagex.link.Deque;
 import com.jagex.rt4.Class11;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.Class14_Sub27;
+import com.jagex.rt4.ShadowManager;
 import com.jagex.rt4.RT4;
-import com.jagex.rt4.lights.Class10;
+import com.jagex.rt4.lights.LightManager;
 import com.jagex.rt4.lights.Light;
 
 import rs.tex.Class14_Sub8_Sub16;
@@ -52,10 +53,10 @@ public class Class63 {
 		Class14_Sub2_Sub6.aClass20_3819.clear();
 		Class14_Sub8_Sub16.aClass86_4351 = new Class86();
 		((Class134) Class3.anInterface3_117).method1927(0);
-		Class10.lights = new Light[255];
-		Class10.lightCount = 0;
+		LightManager.lights = new Light[255];
+		LightManager.lightCount = 0;
 		ModelHD.method1908();
-		Class151.aClass13ArrayArray2427 = null;
+		ShadowManager.shadows = null;
 		if (i > -85)
 			anInt998 = -5;
 		Class133_Sub4.method1840((byte) 85);

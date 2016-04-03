@@ -3,7 +3,7 @@
  */
 package com.jagex.rt4;
 
-public class Class101 implements Interface2 {
+public class Class101 implements ShaderInterface {
 	public void disable() {
 		if (RT4.useLighting)
 			RT4GL.method1639(true);

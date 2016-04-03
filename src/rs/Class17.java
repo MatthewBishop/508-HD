@@ -107,7 +107,7 @@ public class Class17 {
 		}
 		if (i != 24205)
 			aClass124_399 = null;
-		byte[] is = Class71.aClass9_1084.method163(i_7_, 5, i - 24205);
+		byte[] is = Static2.aClass9_1084.method163(i_7_, 5, i - 24205);
 		Class14_Sub2_Sub20 class14_sub2_sub20_9_ = new Class14_Sub2_Sub20();
 		if (is != null)
 			class14_sub2_sub20_9_.method429(96, new Buffer(is));

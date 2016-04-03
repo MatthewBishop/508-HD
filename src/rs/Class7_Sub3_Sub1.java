@@ -87,7 +87,7 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 		if (i != -28009)
 			anInt3714 = 116;
 		int i_12_ = class14_sub10.readUByte();
-		int i_13_ = class14_sub10.method812((byte) -107);
+		int i_13_ = class14_sub10.getInt((byte) -107);
 		if (i_13_ < 0 || Static.anInt2797 != 0 && i_13_ > Static.anInt2797)
 			throw new RuntimeException();
 		if (i_12_ == 0) {
@@ -96,7 +96,7 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 			byte[] is_15_ = is_14_;
 			return is_15_;
 		}
-		int i_16_ = class14_sub10.method812((byte) -120);
+		int i_16_ = class14_sub10.getInt((byte) -120);
 		if (i_16_ < 0 || Static.anInt2797 != 0 && i_16_ > Static.anInt2797)
 			throw new RuntimeException();
 		byte[] is_17_ = new byte[i_16_];

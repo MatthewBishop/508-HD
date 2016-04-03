@@ -56,7 +56,7 @@ public class Class111 {
 		Class146.anInt2357 = -1;
 		Class14_Sub8_Sub12.anInt4280 = 0;
 		Class96.anInt1636 = 0;
-		Class71.anInt1085 = 0;
+		Static2.anInt1085 = 0;
 		Class14_Sub8_Sub38.anInt4729 = 0;
 		Class7_Sub2.anInt2675 = 0;
 		Class133_Sub4.anInt3579 = -1;

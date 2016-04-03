@@ -32,8 +32,8 @@ public class Class27 {
 		anIntArray509 = new int[i];
 		int i_0_ = 0;
 		while (i_0_ < i) {
-			int i_1_ = aClass14_Sub10_502.method812((byte) -97);
-			int i_2_ = aClass14_Sub10_502.method812((byte) -115);
+			int i_1_ = aClass14_Sub10_502.getInt((byte) -97);
+			int i_2_ = aClass14_Sub10_502.getInt((byte) -115);
 			if (i_1_ == 1297379947) {
 				anIntArray509[i_0_] = aClass14_Sub10_502.position;
 				i_0_++;

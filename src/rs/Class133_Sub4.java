@@ -5,6 +5,7 @@ package rs;
 
 import com.jagex.cache.anim.Animation;
 import com.jagex.rt4.Class148_Sub1;
+import com.jagex.rt4.ShadowManager;
 
 import rs.tex.Class14_Sub8_Sub17;
 import rs.tex.Class14_Sub8_Sub18;
@@ -57,7 +58,7 @@ public class Class133_Sub4 extends Class133 {
 
 	public void method1836(boolean bool) {
 		if (aClass148_Sub1_3580 != null)
-			Class151.method2030(aClass148_Sub1_3580, anInt3593, anInt3574, anInt3592);
+			ShadowManager.method2030(aClass148_Sub1_3580, anInt3593, anInt3574, anInt3592);
 		aClass148_Sub1_3580 = null;
 		anInt3586 = -1;
 		if (!bool)
@@ -192,7 +193,7 @@ public class Class133_Sub4 extends Class133 {
 		else if (anInt3601 < 3)
 			is_33_ = Class114.tileHeights[anInt3601 + 1];
 		if (bool_31_)
-			Class151.method2030(aClass148_Sub1_3580, anInt3593, anInt3574, anInt3592);
+			ShadowManager.method2030(aClass148_Sub1_3580, anInt3593, anInt3574, anInt3592);
 		boolean bool_35_ = aClass148_Sub1_3580 == null;
 		Class86 class86;
 		if (aClass46_3597 == null)
@@ -215,10 +216,10 @@ public class Class133_Sub4 extends Class133 {
 						+ (is_33_[i_28_][i_30_] + (is_33_[i_27_][i_30_] + is_33_[i_28_][i_29_])) >> 34));
 			}
 			Class148_Sub1 class148_sub1 = class86.aClass148_Sub1_1386;
-			if (aBoolean3591 && Class151.method2032(class148_sub1, i_32_, i_36_, i_24_))
+			if (aBoolean3591 && ShadowManager.method2032(class148_sub1, i_32_, i_36_, i_24_))
 				aBoolean3591 = false;
 			if (!aBoolean3591) {
-				Class151.method2026(class148_sub1, i_32_, i_36_, i_24_);
+				ShadowManager.method2026(class148_sub1, i_32_, i_36_, i_24_);
 				anInt3592 = i_24_;
 				anInt3593 = i_32_;
 				anInt3574 = i_36_;

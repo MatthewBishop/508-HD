@@ -14,7 +14,7 @@ public class Class119 {
 	public static int texture3DPointer2 = -1;
 	public static int[] textureIds2;
 	public static ByteBuffer textureData2l;
-	public static boolean use3DTexture;
+	public static boolean allows3DTextureMapping;
 
 	static {
 		texture3DPointer2l = -1;
@@ -52,7 +52,7 @@ public class Class119 {
 
 	public static void method1610() {
 		GL gl = RT4GL.gl;
-		if (use3DTexture) {
+		if (allows3DTextureMapping) {
 			int[] is = new int[1];
 			gl.glGenTextures(1, is, 0);
 			gl.glBindTexture(32879, is[0]);
@@ -78,7 +78,7 @@ public class Class119 {
 
 	public static void method1611() {
 		GL gl = RT4GL.gl;
-		if (use3DTexture) {
+		if (allows3DTextureMapping) {
 			int[] is = new int[1];
 			gl.glGenTextures(1, is, 0);
 			gl.glBindTexture(32879, is[0]);
@@ -103,11 +103,11 @@ public class Class119 {
 	}
 
 	public static void method1612() {
-		use3DTexture = RT4GL.aBoolean2042;
+		allows3DTextureMapping = RT4GL.aBoolean2042;
 		if (textureData2 == null) {
 			Class26_Sub2_Sub1 class26_sub2_sub1 = new Class26_Sub2_Sub1();
 			byte[] is;
-			if (use3DTexture)
+			if (allows3DTextureMapping)
 				is = class26_sub2_sub1.method1033(128, 128, 32);
 			else
 				is = class26_sub2_sub1.method1033(64, 64, 64);
@@ -119,7 +119,7 @@ public class Class119 {
 		if (textureData2l == null) {
 			Class26_Sub1_Sub1 class26_sub1_sub1 = new Class26_Sub1_Sub1();
 			byte[] is;
-			if (use3DTexture)
+			if (allows3DTextureMapping)
 				is = class26_sub1_sub1.method1029(128, 128, 32);
 			else
 				is = class26_sub1_sub1.method1029(64, 64, 64);

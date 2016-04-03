@@ -5,7 +5,7 @@ package com.jagex.rt4;
 
 import javax.media.opengl.GL;
 
-public class Class19 implements Interface2 {
+public class Class19 implements ShaderInterface {
 
 	public float[] aFloatArray2547 = new float[4];
 
@@ -35,7 +35,7 @@ public class Class19 implements Interface2 {
 		anInt2548 = gl.glGenLists(2);
 		gl.glNewList(anInt2548, 4864);
 		gl.glActiveTexture(33985);
-		if (!Class119.use3DTexture)
+		if (!Class119.allows3DTextureMapping)
 			gl.glEnable(3553);
 		else {
 			gl.glBindTexture(32879, Class119.texture3DPointer2l);
@@ -51,7 +51,7 @@ public class Class19 implements Interface2 {
 		gl.glEndList();
 		gl.glNewList(anInt2548 + 1, 4864);
 		gl.glActiveTexture(33985);
-		if (Class119.use3DTexture) {
+		if (Class119.allows3DTextureMapping) {
 			gl.glDisable(32879);
 			gl.glDisable(3170);
 		} else
@@ -96,7 +96,7 @@ public class Class19 implements Interface2 {
 		aFloatArray2547[2] = 0.0F;
 		gl.glTexGenfv(8193, 9474, aFloatArray2547, 0);
 		gl.glPopMatrix();
-		if (!Class119.use3DTexture) {
+		if (!Class119.allows3DTextureMapping) {
 			int i_7_ = (int) ((float) RT4GL.anInt2045 * f_5_ * 64.0F);
 			gl.glBindTexture(3553, Class119.anIntArray1991[i_7_ % 64]);
 		} else {

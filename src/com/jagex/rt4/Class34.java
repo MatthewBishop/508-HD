@@ -7,7 +7,7 @@ import java.nio.ByteBuffer;
 
 import javax.media.opengl.GL;
 
-public class Class34 implements Interface2 {
+public class Class34 implements ShaderInterface {
 	public static float[] aFloatArray2560 = { 0.1F, 0.1F, 0.15F, 0.1F };
 	public int anInt2561;
 	public int anInt2562 = -1;
@@ -28,7 +28,7 @@ public class Class34 implements Interface2 {
 		gl.glTexGenfv(8193, 9473, new float[] { 0.0F, 0.0F, 9.765625E-4F, 0.0F }, 0);
 		gl.glEnable(3168);
 		gl.glEnable(3169);
-		if (Class119.use3DTexture) {
+		if (Class119.allows3DTextureMapping) {
 			gl.glBindTexture(32879, Class119.texture3DPointer2);
 			gl.glTexGeni(8194, 9472, 9217);
 			gl.glTexGeni(8195, 9472, 9217);
@@ -68,7 +68,7 @@ public class Class34 implements Interface2 {
 		gl.glTexEnvi(8960, 34185, 34168);
 		gl.glDisable(3168);
 		gl.glDisable(3169);
-		if (Class119.use3DTexture) {
+		if (Class119.allows3DTextureMapping) {
 			gl.glDisable(3170);
 			gl.glDisable(3171);
 			gl.glDisable(32879);
@@ -113,7 +113,7 @@ public class Class34 implements Interface2 {
 		gl.glPopMatrix();
 		gl.glActiveTexture(33984);
 		gl.glTexEnvfv(8960, 8705, aFloatArray2560, 0);
-		if (Class119.use3DTexture) {
+		if (Class119.allows3DTextureMapping) {
 			if (anInt2563 != RT4GL.anInt2045) {
 				aFloatArray2564[0] = 0.0F;
 				aFloatArray2564[1] = 0.0F;

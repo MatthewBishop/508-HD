@@ -22,7 +22,7 @@ public class Class14_Sub2_Sub2 extends Cacheable {
 				if (i == 5)
 					aClass124_3760 = class14_sub10.method797(9467);
 			} else
-				anInt3766 = class14_sub10.method812((byte) -91);
+				anInt3766 = class14_sub10.getInt((byte) -91);
 		} else
 			anInt3764 = class14_sub10.readUByte();
 		if (i_0_ >= -11)

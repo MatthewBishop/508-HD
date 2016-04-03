@@ -478,7 +478,7 @@ public class Class12 {
 																						class14_sub10.method797(9467));
 																			else
 																				linkable = new Class14_Sub1(
-																						class14_sub10.method812(
+																						class14_sub10.getInt(
 																								(byte) -127));
 																			aClass55_304.put((long) i_84_, linkable);
 																		}

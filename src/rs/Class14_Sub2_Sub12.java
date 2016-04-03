@@ -6,6 +6,7 @@ package rs;
 import com.jagex.link.Cacheable;
 import com.jagex.link.HashTable;
 import com.jagex.link.ref.SoftCache;
+import com.jagex.rt4.ShadowManager;
 
 import rs.tex.Class14_Sub8_Sub14;
 import rs.tex.Class14_Sub8_Sub16;
@@ -78,7 +79,7 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 	}
 
 	public static void method319(int i) {
-		Class151.method2029(104, 104);
+		ShadowManager.method2029(104, 104);
 		Class14_Sub15.method871(Class14_Sub3.aClass9_Sub1_2750, Class64.aClass9_Sub1_1015, -125);
 		Static.method85(Class14_Sub3.aClass9_Sub1_2750, true);
 		if (Class14_Sub8_Sub16.anInt4356 == 10)

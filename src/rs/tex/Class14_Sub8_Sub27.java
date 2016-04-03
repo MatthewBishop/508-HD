@@ -92,7 +92,7 @@ public class Class14_Sub8_Sub27 extends Class14_Sub8 {
 		int i_2_ = i * 956 / 503;
 		Class14_Sub2_Sub7.aClass14_Sub2_Sub19_3826.method389((Class83.anInt1340 - i_2_) / 2, 0, i_2_, i);
 		Class133_Sub1_Sub1.aClass148_4915
-				.method2001((Class83.anInt1340 / 2 - (Class133_Sub1_Sub1.aClass148_4915.anInt2371) / 2), 18);
+				.method2001((Class83.anInt1340 / 2 - (Class133_Sub1_Sub1.aClass148_4915.width) / 2), 18);
 		class14_sub2_sub16.method345(Class53.aClass124_869, Class83.anInt1340 / 2, Class14_Sub20.anInt3094 / 2 - 26,
 				16777215, -1);
 		i = Class14_Sub20.anInt3094 / 2 - 18;

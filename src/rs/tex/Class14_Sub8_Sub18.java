@@ -4,8 +4,9 @@
 package rs.tex;
 
 import com.jagex.io.Buffer;
-import com.jagex.rt4.AthmosphericEffects;
+import com.jagex.rt4.AtmosphericEffects;
 import com.jagex.rt4.Class14_Sub2_Sub19;
+import com.jagex.rt4.AtmosphericChunk;
 
 import rs.Canvas_Sub1;
 import rs.Class103;
@@ -37,7 +38,6 @@ import rs.Class60;
 import rs.Class63;
 import rs.Class69;
 import rs.Class70;
-import rs.Class71;
 import rs.Class75;
 import rs.Class76;
 import rs.Class82;
@@ -155,15 +155,15 @@ public class Class14_Sub8_Sub18 extends Class14_Sub8 {
 			i = 1000000;
 			Class60.aBoolean983 = false;
 		}
-		Class71 class71 = Class150.aClass71ArrayArray2421[i_3_][i_4_];
-		int i_7_ = class71.anInt1100;
-		float f = class71.aFloat1095;
+		AtmosphericChunk atmosphericChunk = Class150.aClass71ArrayArray2421[i_3_][i_4_];
+		int i_7_ = atmosphericChunk.fogDepth;
+		float f = atmosphericChunk.light1Diffuse;
 		if (!Class14_Sub8_Sub20.aBoolean4420)
 			i_7_ = 0;
-		float f_8_ = ((float) i_6_ * 0.1F + 0.7F) * class71.aFloat1089;
-		int i_9_ = class71.anInt1088;
-		float f_10_ = class71.aFloat1096;
-		int i_11_ = class71.anInt1093;
+		float f_8_ = ((float) i_6_ * 0.1F + 0.7F) * atmosphericChunk.lightModelAmbient;
+		int i_9_ = atmosphericChunk.screenColorRgb;
+		float f_10_ = atmosphericChunk.light0Diffuse;
+		int i_11_ = atmosphericChunk.fogColorRgb;
 		if (i_9_ != Class14_Sub8_Sub16.anInt4355 || f_8_ != Class138.aFloat2220 || f_10_ != Canvas_Sub1.aFloat41
 				|| Class69.aFloat1066 != f || Class103.anInt1728 != i_11_ || i_7_ != Static2.anInt3947) {
 			Class14_Sub3.aFloat2745 = Class35.aFloat600;
@@ -202,10 +202,10 @@ public class Class14_Sub8_Sub18 extends Class14_Sub8 {
 							& ~0xff00ff)) >> 40;
 			Class63.aFloat1007 = f_14_ * Class123.aFloat2067 + Canvas_Sub1.aFloat41 * f_15_;
 		}
-		AthmosphericEffects.setLightModel(Class15.anInt376, Static.aFloat2709, Class63.aFloat1007, Class35.aFloat600);
-		AthmosphericEffects.setFogProperties(Class133_Sub6.anInt3673, Class133_Sub1.anInt3490);
-		AthmosphericEffects.setSunPosition((float) Class82.anInt1330, (float) Class49.anInt815, (float) Static.anInt847);
-		AthmosphericEffects.loadLightPositions();
+		AtmosphericEffects.setLightModel(Class15.anInt376, Static.aFloat2709, Class63.aFloat1007, Class35.aFloat600);
+		AtmosphericEffects.setFogProperties(Class133_Sub6.anInt3673, Class133_Sub1.anInt3490);
+		AtmosphericEffects.setSunPosition((float) Class82.anInt1330, (float) Class49.anInt815, (float) Static.anInt847);
+		AtmosphericEffects.loadLightPositions();
 		if (i_5_ != -3217) {
 			int i_16_ = 2;
 			return i_16_;

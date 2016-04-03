@@ -147,15 +147,15 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 			if (i_7_ != 2) {
 				if (i_7_ != 3) {
 					if (i_7_ == 4)
-						anInt3855 = class14_sub10.method812((byte) -107);
+						anInt3855 = class14_sub10.getInt((byte) -107);
 					else if (i_7_ == 5 || i_7_ == 6) {
 						int i_8_ = class14_sub10.readUShort((byte) 104);
 						aClass55_3829 = new HashTable(Class14_Sub8_Sub33.method653(i_8_));
 						for (int i_9_ = 0; i_9_ < i_8_; i_9_++) {
-							int i_10_ = class14_sub10.method812((byte) -115);
+							int i_10_ = class14_sub10.getInt((byte) -115);
 							Linkable linkable;
 							if (i_7_ != 5)
-								linkable = (new Class14_Sub1(class14_sub10.method812((byte) -104)));
+								linkable = (new Class14_Sub1(class14_sub10.getInt((byte) -104)));
 							else
 								linkable = new Class14_Sub30(class14_sub10.method797(9467));
 							aClass55_3829.put((long) i_10_, linkable);

@@ -11,7 +11,7 @@ import com.jagex.cache.anim.AnimFrame;
 import com.jagex.cache.anim.AnimFrameBase;
 import com.jagex.cache.loaders.AnimFrameLoader;
 import com.jagex.io.Buffer;
-import com.jagex.rt4.AthmosphericEffects;
+import com.jagex.rt4.AtmosphericEffects;
 import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.RT4;
@@ -1491,7 +1491,7 @@ public class ModelHD extends Class133_Sub7 {
 			if (aClass41_5028.aClass29_692 == null || aClass41_5030.aClass29_692 == null
 					|| (RT4.useLighting && aClass41_5018.aClass29_692 == null)
 					|| aClass41_5029.aClass29_692 == null) {
-				if (RT4GL.aBoolean2021)
+				if (RT4GL.vertexBufferAsObject)
 					gl.glBindBufferARB(34962, 0);
 				if (aClass41_5028.aClass29_692 == null) {
 					aClass41_5028.aByteBuffer684.position(aClass41_5028.anInt686);
@@ -1510,7 +1510,7 @@ public class ModelHD extends Class133_Sub7 {
 					gl.glTexCoordPointer(2, 5126, aClass41_5029.anInt687, aClass41_5029.aByteBuffer684);
 				}
 			}
-			if (aClass41_5046.aClass29_692 == null && RT4GL.aBoolean2021)
+			if (aClass41_5046.aClass29_692 == null && RT4GL.vertexBufferAsObject)
 				gl.glBindBufferARB(34963, 0);
 			int i = anIntArray5035.length - 1;
 			for (int i_348_ = 0; i_348_ < i; i_348_++) {
@@ -1539,29 +1539,29 @@ public class ModelHD extends Class133_Sub7 {
 			method1891();
 		int i;
 		int i_352_;
-		if (AthmosphericEffects.anInt934 > 0) {
-			i = (aClass50_5013.aShort827 - (aClass50_5013.aShort826 * AthmosphericEffects.anInt934 >> 8)) >> 3;
-			i_352_ = (aClass50_5013.aShort824 - (aClass50_5013.aShort825 * AthmosphericEffects.anInt934 >> 8)) >> 3;
+		if (AtmosphericEffects.anInt934 > 0) {
+			i = (aClass50_5013.aShort827 - (aClass50_5013.aShort826 * AtmosphericEffects.anInt934 >> 8)) >> 3;
+			i_352_ = (aClass50_5013.aShort824 - (aClass50_5013.aShort825 * AtmosphericEffects.anInt934 >> 8)) >> 3;
 		} else {
-			i = (aClass50_5013.aShort827 - (aClass50_5013.aShort825 * AthmosphericEffects.anInt934 >> 8)) >> 3;
-			i_352_ = (aClass50_5013.aShort824 - (aClass50_5013.aShort826 * AthmosphericEffects.anInt934 >> 8)) >> 3;
+			i = (aClass50_5013.aShort827 - (aClass50_5013.aShort825 * AtmosphericEffects.anInt934 >> 8)) >> 3;
+			i_352_ = (aClass50_5013.aShort824 - (aClass50_5013.aShort826 * AtmosphericEffects.anInt934 >> 8)) >> 3;
 		}
 		int i_353_;
 		int i_354_;
-		if (AthmosphericEffects.anInt928 > 0) {
-			i_353_ = (aClass50_5013.aShort822 - (aClass50_5013.aShort826 * AthmosphericEffects.anInt928 >> 8)) >> 3;
-			i_354_ = (aClass50_5013.aShort821 - (aClass50_5013.aShort825 * AthmosphericEffects.anInt928 >> 8)) >> 3;
+		if (AtmosphericEffects.anInt928 > 0) {
+			i_353_ = (aClass50_5013.aShort822 - (aClass50_5013.aShort826 * AtmosphericEffects.anInt928 >> 8)) >> 3;
+			i_354_ = (aClass50_5013.aShort821 - (aClass50_5013.aShort825 * AtmosphericEffects.anInt928 >> 8)) >> 3;
 		} else {
-			i_353_ = (aClass50_5013.aShort822 - (aClass50_5013.aShort825 * AthmosphericEffects.anInt928 >> 8)) >> 3;
-			i_354_ = (aClass50_5013.aShort821 - (aClass50_5013.aShort826 * AthmosphericEffects.anInt928 >> 8)) >> 3;
+			i_353_ = (aClass50_5013.aShort822 - (aClass50_5013.aShort825 * AtmosphericEffects.anInt928 >> 8)) >> 3;
+			i_354_ = (aClass50_5013.aShort821 - (aClass50_5013.aShort826 * AtmosphericEffects.anInt928 >> 8)) >> 3;
 		}
 		int i_355_ = i_352_ - i + 1;
 		int i_356_ = i_354_ - i_353_ + 1;
 		Class148_Sub1 class148_sub1_357_;
-		if (class148_sub1 != null && class148_sub1.aByteArray3689.length >= i_355_ * i_356_) {
+		if (class148_sub1 != null && class148_sub1.paletteIndicators.length >= i_355_ * i_356_) {
 			class148_sub1_357_ = class148_sub1;
-			class148_sub1_357_.anInt2378 = class148_sub1_357_.anInt2371 = i_355_;
-			class148_sub1_357_.anInt2373 = class148_sub1_357_.anInt2376 = i_356_;
+			class148_sub1_357_.anInt2378 = class148_sub1_357_.width = i_355_;
+			class148_sub1_357_.anInt2373 = class148_sub1_357_.height = i_356_;
 			class148_sub1_357_.method2010();
 		} else
 			class148_sub1_357_ = new Class148_Sub1(i_355_, i_356_, 0);
@@ -1572,8 +1572,8 @@ public class ModelHD extends Class133_Sub7 {
 			anIntArray5057 = new int[anInt5040];
 		}
 		for (int i_358_ = 0; i_358_ < anInt5033; i_358_++) {
-			int i_359_ = ((vertexX[i_358_] - (vertexY[i_358_] * AthmosphericEffects.anInt934 >> 8) >> 3) - i);
-			int i_360_ = ((vertexZ[i_358_] - (vertexY[i_358_] * AthmosphericEffects.anInt928 >> 8) >> 3) - i_353_);
+			int i_359_ = ((vertexX[i_358_] - (vertexY[i_358_] * AtmosphericEffects.anInt934 >> 8) >> 3) - i);
+			int i_360_ = ((vertexZ[i_358_] - (vertexY[i_358_] * AtmosphericEffects.anInt928 >> 8) >> 3) - i_353_);
 			int i_361_ = anIntArray5031[i_358_];
 			int i_362_ = anIntArray5031[i_358_ + 1];
 			for (int i_363_ = i_361_; i_363_ < i_362_; i_363_++) {
@@ -1596,7 +1596,7 @@ public class ModelHD extends Class133_Sub7 {
 				int i_373_ = anIntArray5057[i_367_];
 				int i_374_ = anIntArray5057[i_368_];
 				if (((i_369_ - i_370_) * (i_373_ - i_374_) - (i_373_ - i_372_) * (i_371_ - i_370_)) > 0)
-					Class3.method91(class148_sub1_357_.aByteArray3689, i_372_, i_373_, i_374_, i_369_, i_370_, i_371_,
+					Class3.method91(class148_sub1_357_.paletteIndicators, i_372_, i_373_, i_374_, i_369_, i_370_, i_371_,
 							i_355_);
 			}
 		}
@@ -1976,7 +1976,7 @@ public class ModelHD extends Class133_Sub7 {
 			aClass14_Sub10_5011 = new Buffer((anInt5040 + 100) * 12);
 		else
 			aClass14_Sub10_5011.position = 0;
-		if (RT4GL.aBoolean2046) {
+		if (RT4GL.usingBigEndian) {
 			for (int i = 0; i < anInt5014; i++) {
 				aClass14_Sub10_5011.method803(aShortArray5021[i], 116);
 				aClass14_Sub10_5011.method803(aShortArray5025[i], 74);
@@ -1989,7 +1989,7 @@ public class ModelHD extends Class133_Sub7 {
 				aClass14_Sub10_5011.method825(-65, aShortArray5038[i]);
 			}
 		}
-		if (RT4GL.aBoolean2021) {
+		if (RT4GL.vertexBufferAsObject) {
 			VertexBuffer vertexBuffer = new VertexBuffer();
 			ByteBuffer bytebuffer = ByteBuffer.wrap(aClass14_Sub10_5011.payload, 0,
 					aClass14_Sub10_5011.position);
@@ -2122,7 +2122,7 @@ public class ModelHD extends Class133_Sub7 {
 			else
 				aClass14_Sub10_5011.position = 0;
 			if (bool_494_) {
-				if (RT4GL.aBoolean2046) {
+				if (RT4GL.usingBigEndian) {
 					for (int i_498_ = 0; i_498_ < anInt5033; i_498_++) {
 						int i_499_ = Float.floatToRawIntBits((float) vertexX[i_498_]);
 						int i_500_ = Float.floatToRawIntBits((float) vertexY[i_498_]);
@@ -2160,9 +2160,9 @@ public class ModelHD extends Class133_Sub7 {
 			}
 			if (bool_495_) {
 				if (!RT4.useLighting) {
-					int i_514_ = (int) AthmosphericEffects.light0Position[0];
-					int i_515_ = (int) AthmosphericEffects.light0Position[1];
-					int i_516_ = (int) AthmosphericEffects.light0Position[2];
+					int i_514_ = (int) AtmosphericEffects.light0Position[0];
+					int i_515_ = (int) AtmosphericEffects.light0Position[1];
+					int i_516_ = (int) AtmosphericEffects.light0Position[2];
 					int i_517_ = (int) Math.sqrt((double) (i_514_ * i_514_ + i_515_ * i_515_ + i_516_ * i_516_));
 					int i_518_ = (int) ((float) aShort5032 * 1.3F);
 					int i_519_ = aShort5024 * i_517_ >> 8;
@@ -2254,18 +2254,18 @@ public class ModelHD extends Class133_Sub7 {
 				float f = 3.0F / (float) aShort5024;
 				float f_535_ = 3.0F / (float) (aShort5024 + aShort5024 / 2);
 				aClass14_Sub10_5011.position = aClass41_5018.anInt686;
-				if (RT4GL.aBoolean2046) {
+				if (RT4GL.usingBigEndian) {
 					for (int i_536_ = 0; i_536_ < anInt5040; i_536_++) {
 						short i_537_ = aShortArray5017[i_536_];
 						if (i_537_ == 0) {
-							aClass14_Sub10_5011.method834((float) aShortArray5041[i_536_] * f_535_);
-							aClass14_Sub10_5011.method834((float) aShortArray5019[i_536_] * f_535_);
-							aClass14_Sub10_5011.method834((float) aShortArray5042[i_536_] * f_535_);
+							aClass14_Sub10_5011.putFloatAsInt((float) aShortArray5041[i_536_] * f_535_);
+							aClass14_Sub10_5011.putFloatAsInt((float) aShortArray5019[i_536_] * f_535_);
+							aClass14_Sub10_5011.putFloatAsInt((float) aShortArray5042[i_536_] * f_535_);
 						} else {
 							float f_538_ = f / (float) i_537_;
-							aClass14_Sub10_5011.method834((float) aShortArray5041[i_536_] * f_538_);
-							aClass14_Sub10_5011.method834((float) aShortArray5019[i_536_] * f_538_);
-							aClass14_Sub10_5011.method834((float) aShortArray5042[i_536_] * f_538_);
+							aClass14_Sub10_5011.putFloatAsInt((float) aShortArray5041[i_536_] * f_538_);
+							aClass14_Sub10_5011.putFloatAsInt((float) aShortArray5019[i_536_] * f_538_);
+							aClass14_Sub10_5011.putFloatAsInt((float) aShortArray5042[i_536_] * f_538_);
 						}
 						aClass14_Sub10_5011.position += i - 12;
 					}
@@ -2273,14 +2273,14 @@ public class ModelHD extends Class133_Sub7 {
 					for (int i_539_ = 0; i_539_ < anInt5040; i_539_++) {
 						short i_540_ = aShortArray5017[i_539_];
 						if (i_540_ == 0) {
-							aClass14_Sub10_5011.method788((float) aShortArray5041[i_539_] * f_535_, 24671);
-							aClass14_Sub10_5011.method788((float) aShortArray5019[i_539_] * f_535_, 24671);
-							aClass14_Sub10_5011.method788((float) aShortArray5042[i_539_] * f_535_, 24671);
+							aClass14_Sub10_5011.putFloatAsLEInt((float) aShortArray5041[i_539_] * f_535_, 24671);
+							aClass14_Sub10_5011.putFloatAsLEInt((float) aShortArray5019[i_539_] * f_535_, 24671);
+							aClass14_Sub10_5011.putFloatAsLEInt((float) aShortArray5042[i_539_] * f_535_, 24671);
 						} else {
 							float f_541_ = f / (float) i_540_;
-							aClass14_Sub10_5011.method788((float) aShortArray5041[i_539_] * f_541_, 24671);
-							aClass14_Sub10_5011.method788((float) aShortArray5019[i_539_] * f_541_, 24671);
-							aClass14_Sub10_5011.method788((float) aShortArray5042[i_539_] * f_541_, 24671);
+							aClass14_Sub10_5011.putFloatAsLEInt((float) aShortArray5041[i_539_] * f_541_, 24671);
+							aClass14_Sub10_5011.putFloatAsLEInt((float) aShortArray5019[i_539_] * f_541_, 24671);
+							aClass14_Sub10_5011.putFloatAsLEInt((float) aShortArray5042[i_539_] * f_541_, 24671);
 						}
 						aClass14_Sub10_5011.position += i - 12;
 					}
@@ -2288,16 +2288,16 @@ public class ModelHD extends Class133_Sub7 {
 			}
 			if (bool_497_) {
 				aClass14_Sub10_5011.position = aClass41_5029.anInt686;
-				if (RT4GL.aBoolean2046) {
+				if (RT4GL.usingBigEndian) {
 					for (int i_542_ = 0; i_542_ < anInt5040; i_542_++) {
-						aClass14_Sub10_5011.method834(aFloatArray5047[i_542_]);
-						aClass14_Sub10_5011.method834(aFloatArray5012[i_542_]);
+						aClass14_Sub10_5011.putFloatAsInt(aFloatArray5047[i_542_]);
+						aClass14_Sub10_5011.putFloatAsInt(aFloatArray5012[i_542_]);
 						aClass14_Sub10_5011.position += i - 8;
 					}
 				} else {
 					for (int i_543_ = 0; i_543_ < anInt5040; i_543_++) {
-						aClass14_Sub10_5011.method788(aFloatArray5047[i_543_], 24671);
-						aClass14_Sub10_5011.method788(aFloatArray5012[i_543_], 24671);
+						aClass14_Sub10_5011.putFloatAsLEInt(aFloatArray5047[i_543_], 24671);
+						aClass14_Sub10_5011.putFloatAsLEInt(aFloatArray5012[i_543_], 24671);
 						aClass14_Sub10_5011.position += i - 8;
 					}
 				}
@@ -2368,7 +2368,7 @@ public class ModelHD extends Class133_Sub7 {
 						aClass41_5029.anInt687 = i;
 					}
 				}
-			} else if (RT4GL.aBoolean2021) {
+			} else if (RT4GL.vertexBufferAsObject) {
 				VertexBuffer vertexBuffer = new VertexBuffer();
 				ByteBuffer bytebuffer = ByteBuffer.wrap(aClass14_Sub10_5011.payload, 0,
 						aClass14_Sub10_5011.position);

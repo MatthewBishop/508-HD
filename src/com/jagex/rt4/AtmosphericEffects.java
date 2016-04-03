@@ -5,7 +5,7 @@ package com.jagex.rt4;
 
 import javax.media.opengl.GL;
 
-public class AthmosphericEffects {
+public class AtmosphericEffects {
 	public static int fogDistanceModifier = -1;
 	public static float[] light1Position = new float[4];
 	public static float ambientModelModifier;

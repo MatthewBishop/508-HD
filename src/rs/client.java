@@ -19,18 +19,19 @@ import com.jagex.io.PacketBuffer;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.map.SceneCluster;
 import com.jagex.map.Scenegraph;
-import com.jagex.rt4.AthmosphericEffects;
+import com.jagex.rt4.AtmosphericEffects;
 import com.jagex.rt4.Class11;
 import com.jagex.rt4.Class119;
 import com.jagex.rt4.RT4GL;
-import com.jagex.rt4.Class13;
+import com.jagex.rt4.Shadow;
 import com.jagex.rt4.Class14_Sub1;
 import com.jagex.rt4.Class14_Sub27;
+import com.jagex.rt4.ShadowManager;
 import com.jagex.rt4.Class25;
 import com.jagex.rt4.Class34;
-import com.jagex.rt4.Class61;
+import com.jagex.rt4.LavaShader;
 import com.jagex.rt4.RT4;
-import com.jagex.rt4.lights.Class10;
+import com.jagex.rt4.lights.LightManager;
 import com.jagex.sound.Synthesizer;
 import com.jagex.sound.Filter;
 import com.jagex.util.MouseCapturer;
@@ -595,7 +596,7 @@ public class client extends Applet_Sub1 {
 				int var13;
 				if (Class62.anInt988 == 10) {
 					Class66.method1296(4, 104, 104, 28);
-					Class10.method189(4, 104, 104);
+					LightManager.method189(4, 104, 104);
 
 					for (var13 = 0; var13 < 4; ++var13) {
 						Class14_Sub21.aClass32Array3100[var13] = new Class32(104, 104);
@@ -784,7 +785,7 @@ public class client extends Applet_Sub1 {
 										(byte) 52);
 								Class14_Sub8_Sub16.anInt4356 = 1000;
 							} else {
-								Class151.method2029(104, 104);
+								ShadowManager.method2029(104, 104);
 								Class14_Sub15.method871(Class14_Sub3.aClass9_Sub1_2750, Class64.aClass9_Sub1_1015,
 										-102);
 								Class51.anInt828 = 45;
@@ -1089,7 +1090,7 @@ public class client extends Applet_Sub1 {
 		Class42.method1134(0);
 		Class79.method1380(true);
 		Class53.method1212(-1);
-		AthmosphericEffects.dispose();
+		AtmosphericEffects.dispose();
 		Class22.method988((byte) -108);
 		Class9.method150(3);
 		Class133_Sub2.method1828();
@@ -1127,12 +1128,12 @@ public class client extends Applet_Sub1 {
 		Class92.method1463();
 		Static2.method258(1869706832);
 		Static2.method334(-121);
-		Class10.dispose();
+		LightManager.dispose();
 		Static.method1327((byte) -100);
 		Static.method339(15121);
 		Static.method1132(118);
-		Class151.method2040();
-		Class13.method225();
+		ShadowManager.method2040();
+		Shadow.dispose();
 		Class83.method1410(-28990);
 		Class25.method1001();
 		Class104.method1535((byte) -122);
@@ -1171,7 +1172,7 @@ public class client extends Applet_Sub1 {
 		Class112.method1579((byte) -128);
 		Class98.method1495(115);
 		Class14_Sub21.method893((byte) 113);
-		Class71.method1316(true);
+		Static2.method1316(true);
 		Class139.method1953((byte) -98);
 		Class59.method1261((byte) 16);
 		Class54.method1219(123);
@@ -1224,7 +1225,7 @@ public class client extends Applet_Sub1 {
 		Class95.method1484(i ^ 0x1d);
 		Class149.method2017((byte) -115);
 		Class119.method1613();
-		Class61.method1271();
+		LavaShader.method1271();
 		Class34.method1090();
 		Static.method967(-20514);
 		Class14_Sub11.method856((byte) 8);
@@ -1366,10 +1367,10 @@ public class client extends Applet_Sub1 {
 					if (Class14_Sub8_Sub16.anInt4356 == 10) {
 						method53((byte) 102);
 						Class115.method1593(-2);
-						Class71.method1315(0);
+						Static2.method1315(0);
 					} else if (Class14_Sub8_Sub16.anInt4356 != 30) {
 						if (Class14_Sub8_Sub16.anInt4356 == 40) {
-							Class71.method1315(0);
+							Static2.method1315(0);
 							if (Class14_Sub8_Sub26.anInt4525 != -3) {
 								if (Class14_Sub8_Sub26.anInt4525 != 15) {
 									if (Class14_Sub8_Sub26.anInt4525 != 2)
@@ -2176,8 +2177,8 @@ public class client extends Applet_Sub1 {
 			Class14_Sub8_Sub24.aShortArrayArray4496 = Class14_Sub8_Sub5.aShortArrayArray4157;
 			Class24.aShortArray471 = Class14_Sub8_Sub3.aShortArray4133;
 			Static.aShortArrayArray98 = Class14_Sub2_Sub10.aShortArrayArray3871;
-			AthmosphericEffects.defaultSunColour = 16777215;
-			AthmosphericEffects.defaultFogColour = 0;
+			AtmosphericEffects.defaultSunColour = 16777215;
+			AtmosphericEffects.defaultFogColour = 0;
 			Class53.aShortArray866 = Class14_Sub8_Sub18.aShortArray4392;
 		} else {
 			Class14_Sub8_Sub24.aShortArrayArray4496 = Class63.aShortArrayArray1001;

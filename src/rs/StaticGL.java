@@ -5,12 +5,13 @@ package rs;
 
 import javax.media.opengl.GL;
 
-import com.jagex.rt4.AthmosphericEffects;
+import com.jagex.rt4.AtmosphericEffects;
 import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class14_Sub27;
+import com.jagex.rt4.ShadowManager;
 import com.jagex.rt4.GLEffect3;
 import com.jagex.rt4.RT4;
-import com.jagex.rt4.lights.Class10;
+import com.jagex.rt4.lights.LightManager;
 
 import rs.tex.Class14_Sub8_Sub26;
 import rs.tex.Class14_Sub8_Sub35;
@@ -56,7 +57,7 @@ public class StaticGL {
 				for (int i_31_ = Class14_Sub9_Sub3.anInt4849; i_31_ < Class14_Sub8_Sub26.anInt4526; i_31_++) {
 					Class14_Sub29 class14_sub29 = class14_sub29s[i_30_][i_31_];
 					if (class14_sub29 != null) {
-						if (!(Class53.visibilityMap[i_30_ - Class71.cameraTileX + Static.anInt1108][(i_31_
+						if (!(Class53.visibilityMap[i_30_ - Static2.cameraTileX + Static.anInt1108][(i_31_
 								- Class102.cameraTileZ + Static.anInt1108)])
 								|| (is != null && i_29_ >= i_21_ && is[i_29_][i_30_][i_31_] == i_22_)) {
 							class14_sub29.aBoolean3235 = false;
@@ -122,7 +123,7 @@ public class StaticGL {
 				if (class14_sub27.anInt3190 != Class7_Sub1.anInt2653) {
 					Class7_Sub1.anInt2653 = class14_sub27.anInt3190;
 					RT4.method1304(class14_sub27.anInt3190);
-					AthmosphericEffects.setFogColour(RT4.method1590(false));
+					AtmosphericEffects.setFogColour(RT4.method1590(false));
 				}
 				class14_sub27.method922((Class125_Sub1.aClass14_Sub29ArrayArrayArray3368), f, false);
 			}
@@ -140,19 +141,19 @@ public class StaticGL {
 				}
 				if (i_34_ == 0 && Class89.anInt1413 > 0) {
 					RT4GL.method1640(101.5F);
-					Class151.method2038(Class71.cameraTileX, Class102.cameraTileZ, Static.anInt1108, i_19_,
+					ShadowManager.method2038(Static2.cameraTileX, Class102.cameraTileZ, Static.anInt1108, i_19_,
 							Class53.visibilityMap, Class114.tileHeights[0]);
 				}
 			}
-			Class10.method195(Class71.cameraTileX, Class102.cameraTileZ,
+			LightManager.method195(Static2.cameraTileX, Class102.cameraTileZ,
 					Class125_Sub1.aClass14_Sub29ArrayArrayArray3368);
 		}
 		gl.glPopMatrix();
 		for (int i_36_ = Class14_Sub23.anInt3134; i_36_ < Class83.anInt1338; i_36_++) {
 			Class14_Sub29[][] class14_sub29s = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_36_];
 			for (int i_37_ = -Static.anInt1108; i_37_ <= 0; i_37_++) {
-				int i_38_ = Class71.cameraTileX + i_37_;
-				int i_39_ = Class71.cameraTileX - i_37_;
+				int i_38_ = Static2.cameraTileX + i_37_;
+				int i_39_ = Static2.cameraTileX - i_37_;
 				if (i_38_ >= Class7_Sub1.anInt2659 || i_39_ < Class14_Sub8_Sub37.anInt4722) {
 					for (int i_40_ = -Static.anInt1108; i_40_ <= 0; i_40_++) {
 						int i_41_ = Class102.cameraTileZ + i_40_;
@@ -193,8 +194,8 @@ public class StaticGL {
 		for (int i_43_ = Class14_Sub23.anInt3134; i_43_ < Class83.anInt1338; i_43_++) {
 			Class14_Sub29[][] class14_sub29s = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_43_];
 			for (int i_44_ = -Static.anInt1108; i_44_ <= 0; i_44_++) {
-				int i_45_ = Class71.cameraTileX + i_44_;
-				int i_46_ = Class71.cameraTileX - i_44_;
+				int i_45_ = Static2.cameraTileX + i_44_;
+				int i_46_ = Static2.cameraTileX - i_44_;
 				if (i_45_ >= Class7_Sub1.anInt2659 || i_46_ < Class14_Sub8_Sub37.anInt4722) {
 					for (int i_47_ = -Static.anInt1108; i_47_ <= 0; i_47_++) {
 						int i_48_ = Class102.cameraTileZ + i_47_;

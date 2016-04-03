@@ -43,7 +43,7 @@ public class Class139 {
 			for (int i_4_ = 0; i_3_ > i_4_; i_4_++) {
 				for (int i_5_ = 0; i_5_ < 4; i_5_++)
 					Class125_Sub3.anIntArrayArray3391[i_4_][i_5_] = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734
-							.method812((byte) -108);
+							.getInt((byte) -108);
 			}
 			int i_6_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method806((byte) -16);
 			int i_7_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUShort((byte) 114);
@@ -256,44 +256,44 @@ public class Class139 {
 			}
 			if (Class75.aClass148Array1184 != null) {
 				int i_45_ = Class14_Sub8_Sub11.anInt4266 + 140 + i_43_;
-				if (Class71.anIntArray1086[0] == 0 && Class45.anIntArray737[0] == 0)
+				if (Static2.anIntArray1086[0] == 0 && Class45.anIntArray737[0] == 0)
 					Class75.aClass148Array1184[2].method2001(i_45_, Class134.anInt2573 + 4);
 				else
 					Class75.aClass148Array1184[0].method2001(i_45_, Class134.anInt2573 + 4);
-				if (Class71.anIntArray1086[0] == 0 && Class45.anIntArray737[0] == 1)
+				if (Static2.anIntArray1086[0] == 0 && Class45.anIntArray737[0] == 1)
 					Class75.aClass148Array1184[3].method2001(i_45_ + 15, Class134.anInt2573 + 4);
 				else
 					Class75.aClass148Array1184[1].method2001(i_45_ + 15, Class134.anInt2573 + 4);
 				class14_sub2_sub16.method364(Class14_Sub8.aClass124_2852, i_45_ + 32, Class134.anInt2573 + 17, 16777215,
 						-1);
 				int i_46_ = i_43_ + Class14_Sub8_Sub11.anInt4266 + 250;
-				if (Class71.anIntArray1086[0] != 1 || Class45.anIntArray737[0] != 0)
+				if (Static2.anIntArray1086[0] != 1 || Class45.anIntArray737[0] != 0)
 					Class75.aClass148Array1184[0].method2001(i_46_, Class134.anInt2573 + 4);
 				else
 					Class75.aClass148Array1184[2].method2001(i_46_, Class134.anInt2573 + 4);
-				if (Class71.anIntArray1086[0] == 1 && Class45.anIntArray737[0] == 1)
+				if (Static2.anIntArray1086[0] == 1 && Class45.anIntArray737[0] == 1)
 					Class75.aClass148Array1184[3].method2001(i_46_ + 15, Class134.anInt2573 + 4);
 				else
 					Class75.aClass148Array1184[1].method2001(i_46_ + 15, Class134.anInt2573 + 4);
 				class14_sub2_sub16.method364(Class133.aClass124_2183, i_46_ + 32, Class134.anInt2573 + 17, 16777215,
 						-1);
 				int i_47_ = i_43_ + 360 + Class14_Sub8_Sub11.anInt4266;
-				if (Class71.anIntArray1086[0] != 2 || Class45.anIntArray737[0] != 0)
+				if (Static2.anIntArray1086[0] != 2 || Class45.anIntArray737[0] != 0)
 					Class75.aClass148Array1184[0].method2001(i_47_, Class134.anInt2573 + 4);
 				else
 					Class75.aClass148Array1184[2].method2001(i_47_, Class134.anInt2573 + 4);
-				if (Class71.anIntArray1086[0] != 2 || Class45.anIntArray737[0] != 1)
+				if (Static2.anIntArray1086[0] != 2 || Class45.anIntArray737[0] != 1)
 					Class75.aClass148Array1184[1].method2001(i_47_ + 15, Class134.anInt2573 + 4);
 				else
 					Class75.aClass148Array1184[3].method2001(i_47_ + 15, Class134.anInt2573 + 4);
 				class14_sub2_sub16.method364(Class14_Sub8_Sub5.aClass124_4167, i_47_ + 32, Class134.anInt2573 + 17,
 						16777215, -1);
 				int i_48_ = i_43_ + Class14_Sub8_Sub11.anInt4266 + 470;
-				if (Class71.anIntArray1086[0] != 3 || Class45.anIntArray737[0] != 0)
+				if (Static2.anIntArray1086[0] != 3 || Class45.anIntArray737[0] != 0)
 					Class75.aClass148Array1184[0].method2001(i_48_, Class134.anInt2573 + 4);
 				else
 					Class75.aClass148Array1184[2].method2001(i_48_, Class134.anInt2573 + 4);
-				if (Class71.anIntArray1086[0] != 3 || Class45.anIntArray737[0] != 1)
+				if (Static2.anIntArray1086[0] != 3 || Class45.anIntArray737[0] != 1)
 					Class75.aClass148Array1184[1].method2001(i_48_ + 15, Class134.anInt2573 + 4);
 				else
 					Class75.aClass148Array1184[3].method2001(i_48_ + 15, Class134.anInt2573 + 4);

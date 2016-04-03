@@ -82,7 +82,6 @@ import rs.Class62;
 import rs.Class66;
 import rs.Class67;
 import rs.Class7;
-import rs.Class71;
 import rs.Class72;
 import rs.Class74;
 import rs.Class75;
@@ -213,7 +212,7 @@ public class Class14_Sub8_Sub33 extends Class14_Sub8 {
 			return bool;
 		}
 		if (Class133_Sub4.anInt3579 == 246) {
-			int i_10_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method812((byte) -112);
+			int i_10_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.getInt((byte) -112);
 			Class14_Sub15 class14_sub15 = ((Class14_Sub15) Class14_Sub30.aClass55_3275.get((long) i_10_));
 			if (class14_sub15 != null)
 				Static.method236(true, class14_sub15, (byte) -127);
@@ -237,7 +236,7 @@ public class Class14_Sub8_Sub33 extends Class14_Sub8 {
 			return bool;
 		}
 		if (Class133_Sub4.anInt3579 == 172) {
-			int i_16_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method812((byte) -107);
+			int i_16_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.getInt((byte) -107);
 			RuntimeException_Sub1.aClass31_2458 = Class14_Sub8_Sub34.aClass43_4647.method1141((byte) 48, i_16_);
 			Class133_Sub4.anInt3579 = -1;
 			boolean bool = true;
@@ -265,7 +264,7 @@ public class Class14_Sub8_Sub33 extends Class14_Sub8 {
 					Class14_Sub8_Sub36.aBooleanArray4698[i_20_] = true;
 			}
 			while (i_19_-- > 0) {
-				int i_21_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method812((byte) -90);
+				int i_21_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.getInt((byte) -90);
 				int i_22_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUShort((byte) 126);
 				int i_23_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUByte();
 				Class14_Sub15 class14_sub15 = ((Class14_Sub15) Class14_Sub30.aClass55_3275.get((long) i_21_));
@@ -286,10 +285,10 @@ public class Class14_Sub8_Sub33 extends Class14_Sub8 {
 			}
 			Class14_Sub8_Sub5.aClass55_4155.clear();
 			while (Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.position < i_17_) {
-				int i_24_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method812((byte) -107);
+				int i_24_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.getInt((byte) -107);
 				int i_25_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUShort((byte) 103);
 				int i_26_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUShort((byte) 109);
-				int i_27_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method812((byte) -115);
+				int i_27_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.getInt((byte) -115);
 				for (int i_28_ = i_25_; i_26_ >= i_28_; i_28_++) {
 					long l = ((long) i_24_ << 32) - -(long) i_28_;
 					Class14_Sub8_Sub5.aClass55_4155.put(l, new Class14_Sub1(i_27_));
@@ -485,8 +484,8 @@ public class Class14_Sub8_Sub33 extends Class14_Sub8 {
 			return bool;
 		}
 		if (Class133_Sub4.anInt3579 == 118) {
-			int i_49_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method812((byte) -109);
-			int i_50_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method812((byte) -113);
+			int i_49_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.getInt((byte) -109);
+			int i_50_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.getInt((byte) -113);
 			Class14_Sub15 class14_sub15 = ((Class14_Sub15) Class14_Sub30.aClass55_3275.get((long) i_49_));
 			Class14_Sub15 class14_sub15_51_ = ((Class14_Sub15) Class14_Sub30.aClass55_3275.get((long) i_50_));
 			if (class14_sub15_51_ != null)
@@ -692,7 +691,7 @@ public class Class14_Sub8_Sub33 extends Class14_Sub8 {
 			return bool;
 		}
 		if (Class133_Sub4.anInt3579 == 101) {
-			int i_75_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method812((byte) -114);
+			int i_75_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.getInt((byte) -114);
 			Class94 class94 = Static.method1233(i_75_, i ^ ~0x552b);
 			class94.anInt1543 = 3;
 			class94.anInt1550 = Class14_Sub3.aClass133_Sub1_Sub1_2748.aClass102_4941.method1520(1073741824);
@@ -721,7 +720,7 @@ public class Class14_Sub8_Sub33 extends Class14_Sub8 {
 			return bool;
 		}
 		if (Class133_Sub4.anInt3579 == 255) {
-			int i_79_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method812((byte) -92);
+			int i_79_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.getInt((byte) -92);
 			int i_80_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUShort((byte) 111);
 			Class94 class94;
 			if (i_79_ < 0)
@@ -759,7 +758,7 @@ public class Class14_Sub8_Sub33 extends Class14_Sub8 {
 			return bool;
 		}
 		if (Class133_Sub4.anInt3579 == 184) {
-			int i_86_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method812((byte) -97);
+			int i_86_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.getInt((byte) -97);
 			int i_87_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method781(false);
 			int i_88_ = i_87_ >> 42 & 0x1f;
 			int i_89_ = i_87_ & 0x1f;
@@ -775,7 +774,7 @@ public class Class14_Sub8_Sub33 extends Class14_Sub8 {
 			return bool;
 		}
 		if (Class133_Sub4.anInt3579 == 109) {
-			int i_92_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method812((byte) -114);
+			int i_92_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.getInt((byte) -114);
 			int i_93_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method791(-3977);
 			Class14_Sub2_Sub12.method318(i_93_, i_92_, false);
 			Class133_Sub4.anInt3579 = -1;
@@ -811,7 +810,7 @@ public class Class14_Sub8_Sub33 extends Class14_Sub8 {
 			return bool;
 		}
 		if (Class133_Sub4.anInt3579 == 135) {
-			int i_99_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method812((byte) -127);
+			int i_99_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.getInt((byte) -127);
 			int i_100_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUShort((byte) 115);
 			Class94 class94;
 			if (i_99_ < 0)
@@ -827,7 +826,7 @@ public class Class14_Sub8_Sub33 extends Class14_Sub8 {
 				if (i_102_ != 0) {
 					i_103_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUByte();
 					if (i_103_ == 255)
-						i_103_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method812((byte) -93);
+						i_103_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.getInt((byte) -93);
 				}
 				if (class94 != null && i_101_ >= 0 && i_101_ < class94.anIntArray1452.length) {
 					class94.anIntArray1452[i_101_] = i_102_;
@@ -939,7 +938,7 @@ public class Class14_Sub8_Sub33 extends Class14_Sub8 {
 		if (Class133_Sub4.anInt3579 == 93) {
 			int i_112_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUShort((byte) 123);
 			int i_113_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method819(3);
-			int i_114_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method812((byte) -95);
+			int i_114_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.getInt((byte) -95);
 			Class14_Sub15 class14_sub15 = ((Class14_Sub15) Class14_Sub30.aClass55_3275.get((long) i_114_));
 			if (class14_sub15 != null)
 				Static.method236(i_112_ != class14_sub15.anInt2999, class14_sub15, (byte) -122);
@@ -958,7 +957,7 @@ public class Class14_Sub8_Sub33 extends Class14_Sub8 {
 		}
 		if (Class133_Sub4.anInt3579 == 3) {
 			Class133_Sub4.anInt3579 = -1;
-			Class71.anInt1085 = 0;
+			Static2.anInt1085 = 0;
 			boolean bool = true;
 			return bool;
 		}
@@ -1634,7 +1633,7 @@ public class Class14_Sub8_Sub33 extends Class14_Sub8 {
 		}
 		if (Class133_Sub4.anInt3579 == 140) {
 			int i_215_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUShort((byte) 119);
-			int i_216_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method812((byte) -120);
+			int i_216_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.getInt((byte) -120);
 			int i_217_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method791(i ^ 0xf88);
 			int i_218_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUShort((byte) 118);
 			if (i_216_ >> 30 == 0) {
@@ -1754,12 +1753,12 @@ public class Class14_Sub8_Sub33 extends Class14_Sub8 {
 			for (int i_237_ = class124.method1693(0) - 1; i_237_ >= 0; i_237_--) {
 				if (class124.method1710(i + 1, i_237_) != 115)
 					objects[i_237_ + 1] = new Integer(
-							Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method812((byte) -110));
+							Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.getInt((byte) -110));
 				else
 					objects[i_237_ + 1] = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734
 							.method797(Canvas_Sub2.method69(i, -9468));
 			}
-			objects[0] = new Integer(Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method812((byte) -108));
+			objects[0] = new Integer(Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.getInt((byte) -108));
 			Class14_Sub21 class14_sub21 = new Class14_Sub21();
 			class14_sub21.anObjectArray3115 = objects;
 			Class133_Sub3.method1830(class14_sub21, i - 1976917688);

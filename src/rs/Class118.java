@@ -209,7 +209,7 @@ public class Class118 {
 		int i_19_ = class14_sub10.readUShort((byte) 105);
 		int i_20_ = class14_sub10.payload.length - 2 - i_19_ - 12;
 		class14_sub10.position = i_20_;
-		int i_21_ = class14_sub10.method812((byte) -123);
+		int i_21_ = class14_sub10.getInt((byte) -123);
 		class14_sub2_sub12_18_.anInt3901 = class14_sub10.readUShort((byte) 104);
 		class14_sub2_sub12_18_.anInt3904 = class14_sub10.readUShort((byte) 121);
 		class14_sub2_sub12_18_.anInt3896 = class14_sub10.readUShort((byte) 122);
@@ -222,8 +222,8 @@ public class Class118 {
 				HashTable hashTable = new HashTable(Class14_Sub8_Sub33.method653(i_24_));
 				class14_sub2_sub12_18_.aClass55Array3903[i_23_] = hashTable;
 				while (i_24_-- > 0) {
-					int i_25_ = class14_sub10.method812((byte) -102);
-					int i_26_ = class14_sub10.method812((byte) -123);
+					int i_25_ = class14_sub10.getInt((byte) -102);
+					int i_26_ = class14_sub10.getInt((byte) -123);
 					hashTable.put((long) i_25_, new Class14_Sub1(i_26_));
 				}
 			}
@@ -241,7 +241,7 @@ public class Class118 {
 			else if (i_28_ >= 100 || i_28_ == 21 || i_28_ == 38 || i_28_ == 39)
 				class14_sub2_sub12_18_.anIntArray3900[i_27_] = class14_sub10.readUByte();
 			else
-				class14_sub2_sub12_18_.anIntArray3900[i_27_] = class14_sub10.method812((byte) -92);
+				class14_sub2_sub12_18_.anIntArray3900[i_27_] = class14_sub10.getInt((byte) -92);
 			class14_sub2_sub12_18_.anIntArray3907[i_27_++] = i_28_;
 		}
 		Class14_Sub2_Sub5.aClass20_3815.put(class14_sub2_sub12_18_, (long) i);

@@ -82,15 +82,15 @@ public class Class148_Sub1 extends Class148 {
 		}
 	}
 
-	public byte[] aByteArray3689;
+	public byte[] paletteIndicators;
 
 	public int[] anIntArray3688;
 
 	public Class148_Sub1(int i, int i_99_, int i_100_) {
-		anInt2378 = anInt2371 = i;
-		anInt2373 = anInt2376 = i_99_;
+		anInt2378 = width = i;
+		anInt2373 = height = i_99_;
 		anInt2375 = anInt2374 = 0;
-		aByteArray3689 = new byte[i * i_99_];
+		paletteIndicators = new byte[i * i_99_];
 		anIntArray3688 = new int[i_100_];
 	}
 
@@ -99,9 +99,9 @@ public class Class148_Sub1 extends Class148 {
 		anInt2373 = i_92_;
 		anInt2375 = i_93_;
 		anInt2374 = i_94_;
-		anInt2371 = i_95_;
-		anInt2376 = i_96_;
-		aByteArray3689 = is;
+		width = i_95_;
+		height = i_96_;
+		paletteIndicators = is;
 		anIntArray3688 = is_97_;
 	}
 
@@ -110,8 +110,8 @@ public class Class148_Sub1 extends Class148 {
 		i_24_ += anInt2374;
 		int i_26_ = i + i_24_ * Class92.anInt1432;
 		int i_27_ = 0;
-		int i_28_ = anInt2376;
-		int i_29_ = anInt2371;
+		int i_28_ = height;
+		int i_29_ = width;
 		int i_30_ = Class92.anInt1432 - i_29_;
 		int i_31_ = 0;
 		if (i_24_ < Class92.anInt1438) {
@@ -139,7 +139,7 @@ public class Class148_Sub1 extends Class148 {
 			i_30_ += i_34_;
 		}
 		if (i_29_ > 0 && i_28_ > 0)
-			method2008(Class92.anIntArray1437, aByteArray3689, anIntArray3688, i_27_, i_26_, i_29_, i_28_, i_30_, i_31_,
+			method2008(Class92.anIntArray1437, paletteIndicators, anIntArray3688, i_27_, i_26_, i_29_, i_28_, i_30_, i_31_,
 					i_25_);
 	}
 
@@ -148,8 +148,8 @@ public class Class148_Sub1 extends Class148 {
 		i_80_ += anInt2374;
 		int i_81_ = i + i_80_ * Class92.anInt1432;
 		int i_82_ = 0;
-		int i_83_ = anInt2376;
-		int i_84_ = anInt2371;
+		int i_83_ = height;
+		int i_84_ = width;
 		int i_85_ = Class92.anInt1432 - i_84_;
 		int i_86_ = 0;
 		if (i_80_ < Class92.anInt1438) {
@@ -177,7 +177,7 @@ public class Class148_Sub1 extends Class148 {
 			i_85_ += i_89_;
 		}
 		if (i_84_ > 0 && i_83_ > 0)
-			method2005(Class92.anIntArray1437, aByteArray3689, anIntArray3688, 0, i_82_, i_81_, i_84_, i_83_, i_85_,
+			method2005(Class92.anIntArray1437, paletteIndicators, anIntArray3688, 0, i_82_, i_81_, i_84_, i_83_, i_85_,
 					i_86_);
 	}
 
@@ -206,27 +206,27 @@ public class Class148_Sub1 extends Class148 {
 	}
 
 	public void method2004() {
-		byte[] is = new byte[anInt2371 * anInt2376];
+		byte[] is = new byte[width * height];
 		int i = 0;
-		for (int i_21_ = 0; i_21_ < anInt2371; i_21_++) {
-			for (int i_22_ = anInt2376 - 1; i_22_ >= 0; i_22_--)
-				is[i++] = aByteArray3689[i_21_ + i_22_ * anInt2371];
+		for (int i_21_ = 0; i_21_ < width; i_21_++) {
+			for (int i_22_ = height - 1; i_22_ >= 0; i_22_--)
+				is[i++] = paletteIndicators[i_21_ + i_22_ * width];
 		}
-		aByteArray3689 = is;
+		paletteIndicators = is;
 		int i_23_ = anInt2374;
 		anInt2374 = anInt2375;
-		anInt2375 = anInt2373 - anInt2376 - i_23_;
-		i_23_ = anInt2376;
-		anInt2376 = anInt2371;
-		anInt2371 = i_23_;
+		anInt2375 = anInt2373 - height - i_23_;
+		i_23_ = height;
+		height = width;
+		width = i_23_;
 		i_23_ = anInt2373;
 		anInt2373 = anInt2378;
 		anInt2378 = i_23_;
 	}
 
 	public void method2006(int i, int i_47_, int i_48_, int i_49_) {
-		int i_50_ = anInt2371;
-		int i_51_ = anInt2376;
+		int i_50_ = width;
+		int i_51_ = height;
 		int i_52_ = 0;
 		int i_53_ = 0;
 		int i_54_ = anInt2378;
@@ -269,34 +269,34 @@ public class Class148_Sub1 extends Class148 {
 			i_52_ += i_56_ * i_64_;
 			i_61_ += i_64_;
 		}
-		method2002(Class92.anIntArray1437, aByteArray3689, anIntArray3688, i_52_, i_53_, i_60_, i_61_, i_48_, i_49_,
+		method2002(Class92.anIntArray1437, paletteIndicators, anIntArray3688, i_52_, i_53_, i_60_, i_61_, i_48_, i_49_,
 				i_56_, i_57_, i_50_);
 	}
 
 	public Class148_Sub1 method2007() {
-		Class148_Sub1 class148_sub1_65_ = new Class148_Sub1(anInt2371, anInt2376, anIntArray3688.length);
+		Class148_Sub1 class148_sub1_65_ = new Class148_Sub1(width, height, anIntArray3688.length);
 		class148_sub1_65_.anInt2378 = anInt2378;
 		class148_sub1_65_.anInt2373 = anInt2373;
 		class148_sub1_65_.anInt2375 = anInt2375;
 		class148_sub1_65_.anInt2374 = anInt2374;
-		int i = aByteArray3689.length;
+		int i = paletteIndicators.length;
 		for (int i_66_ = 0; i_66_ < i; i_66_++)
-			class148_sub1_65_.aByteArray3689[i_66_] = aByteArray3689[i_66_];
+			class148_sub1_65_.paletteIndicators[i_66_] = paletteIndicators[i_66_];
 		class148_sub1_65_.anIntArray3688 = anIntArray3688;
 		return class148_sub1_65_;
 	}
 
 	public void method2009() {
-		if (anInt2371 != anInt2378 || anInt2376 != anInt2373) {
+		if (width != anInt2378 || height != anInt2373) {
 			byte[] is = new byte[anInt2378 * anInt2373];
 			int i = 0;
-			for (int i_90_ = 0; i_90_ < anInt2376; i_90_++) {
-				for (int i_91_ = 0; i_91_ < anInt2371; i_91_++)
-					is[i_91_ + anInt2375 + (i_90_ + anInt2374) * anInt2378] = aByteArray3689[i++];
+			for (int i_90_ = 0; i_90_ < height; i_90_++) {
+				for (int i_91_ = 0; i_91_ < width; i_91_++)
+					is[i_91_ + anInt2375 + (i_90_ + anInt2374) * anInt2378] = paletteIndicators[i++];
 			}
-			aByteArray3689 = is;
-			anInt2371 = anInt2378;
-			anInt2376 = anInt2373;
+			paletteIndicators = is;
+			width = anInt2378;
+			height = anInt2373;
 			anInt2375 = 0;
 			anInt2374 = 0;
 		}
@@ -304,19 +304,19 @@ public class Class148_Sub1 extends Class148 {
 
 	public void method2010() {
 		int i = 0;
-		int i_98_ = aByteArray3689.length - 7;
+		int i_98_ = paletteIndicators.length - 7;
 		while (i < i_98_) {
-			aByteArray3689[i++] = (byte) 0;
-			aByteArray3689[i++] = (byte) 0;
-			aByteArray3689[i++] = (byte) 0;
-			aByteArray3689[i++] = (byte) 0;
-			aByteArray3689[i++] = (byte) 0;
-			aByteArray3689[i++] = (byte) 0;
-			aByteArray3689[i++] = (byte) 0;
-			aByteArray3689[i++] = (byte) 0;
+			paletteIndicators[i++] = (byte) 0;
+			paletteIndicators[i++] = (byte) 0;
+			paletteIndicators[i++] = (byte) 0;
+			paletteIndicators[i++] = (byte) 0;
+			paletteIndicators[i++] = (byte) 0;
+			paletteIndicators[i++] = (byte) 0;
+			paletteIndicators[i++] = (byte) 0;
+			paletteIndicators[i++] = (byte) 0;
 		}
 		i_98_ += 7;
 		while (i < i_98_)
-			aByteArray3689[i++] = (byte) 0;
+			paletteIndicators[i++] = (byte) 0;
 	}
 }

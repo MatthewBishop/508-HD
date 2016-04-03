@@ -7,7 +7,7 @@ import java.nio.ByteBuffer;
 
 import javax.media.opengl.GL;
 
-public class GLEffect3 implements Interface2 {
+public class GLEffect3 implements ShaderInterface {
 	public int gradientAlpha = -1;
 	public static boolean texture1or2 = false;
 	public int listPointer;
@@ -154,7 +154,7 @@ public class GLEffect3 implements Interface2 {
 
 	public GLEffect3() {
 		listPointer = -1;
-		if (RT4GL.anInt2019 >= 2) {
+		if (RT4GL.maxTextureUnits >= 2) {
 			int[] is = new int[1];
 			byte[] is_0_ = new byte[8];
 			int i = 0;
@@ -168,7 +168,7 @@ public class GLEffect3 implements Interface2 {
 			gl.glTexParameteri(3552, 10240, 9729);
 			gl.glTexParameteri(3552, 10242, 33071);
 			gradientAlpha = is[0];
-			texture1or2 = RT4GL.anInt2019 > 2 && RT4GL.aBoolean2042;
+			texture1or2 = RT4GL.maxTextureUnits > 2 && RT4GL.aBoolean2042;
 			createLists();
 		}
 	}

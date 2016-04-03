@@ -86,7 +86,7 @@ public class Class14_Sub8_Sub6 extends Class14_Sub8 {
 			class146.aByteArray2355[i_5_] = class14_sub10.method780((byte) -77);
 			class146.aShortArray2354[i_5_] = (short) class14_sub10.readUShort((byte) 126);
 			class146.aShortArray2361[i_5_] = (short) class14_sub10.readUShort((byte) 122);
-			class146.anIntArray2350[i_5_] = class14_sub10.method812((byte) -108);
+			class146.anIntArray2350[i_5_] = class14_sub10.getInt((byte) -108);
 		}
 		Class146 class146_6_ = class146;
 		return class146_6_;

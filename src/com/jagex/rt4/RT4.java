@@ -16,7 +16,7 @@ public class RT4 {
 	private static int anInt1871 = 0;
 	static int anInt3578 = 128;
 	private static int anInt3957 = 0;
-	private static Interface2[] anInterface2Array2245;
+	private static ShaderInterface[] anInterface2Array2245;
 	public static int rotateX;
 	public static int rotateY;
 	
@@ -35,9 +35,9 @@ public class RT4 {
 
 	public static void method1022(int i) {
 		Class119.method1612();
-		RT4.anInterface2Array2245 = new Interface2[7];
+		RT4.anInterface2Array2245 = new ShaderInterface[7];
 		RT4.anInterface2Array2245[1] = new Class23();
-		RT4.anInterface2Array2245[2] = new Class61();
+		RT4.anInterface2Array2245[2] = new LavaShader();
 		RT4.anInterface2Array2245[3] = new GLEffect3();
 		RT4.anInterface2Array2245[4] = new Class34();
 		RT4.anInterface2Array2245[5] = new Class19();
@@ -63,8 +63,8 @@ public class RT4 {
 
 	private static void method1494(int i) {
 		if (i == RT4.anInt3957 && i != 0) {
-			Interface2 interface2 = RT4.anInterface2Array2245[i];
-			interface2.setup(RT4.anInt1871);
+			ShaderInterface shaderInterface = RT4.anInterface2Array2245[i];
+			shaderInterface.setup(RT4.anInt1871);
 		}
 	}
 
@@ -75,8 +75,8 @@ public class RT4 {
 	}
 
 	 public static float[] method1590(boolean var0) {
-		float var1 = AthmosphericEffects.getAmbientModelModifier() + AthmosphericEffects.getLight1Modifier();
-		int var2 = AthmosphericEffects.getLightModelColour();
+		float var1 = AtmosphericEffects.getAmbientModelModifier() + AtmosphericEffects.getLight1Modifier();
+		int var2 = AtmosphericEffects.getLightModelColour();
 		RT4.aFloatArray3964[3] = 1.0F;
 		float var3 = (float) (var2 >> 16 & 255) / 255.0F;
 		float var4 = 0.58823526F;
@@ -104,9 +104,9 @@ public class RT4 {
 				if (RT4.anInt3957 != 0)
 					anInterface2Array2245[RT4.anInt3957].disable();
 				if (i != 0) {
-					Interface2 interface2 = anInterface2Array2245[i];
-					interface2.enable();
-					interface2.setup(i_1_);
+					ShaderInterface shaderInterface = anInterface2Array2245[i];
+					shaderInterface.enable();
+					shaderInterface.setup(i_1_);
 				}
 				RT4.anInt1871 = i_1_;
 				RT4.anInt3957 = i;
@@ -130,8 +130,8 @@ public class RT4 {
 		RT4.translateY = i_28_;
 	}
 	public static float[] method657(int i, int i_0_) {
-		float f = AthmosphericEffects.getAmbientModelModifier() + AthmosphericEffects.getLight1Modifier();
-		int i_1_ = AthmosphericEffects.getLightModelColour();
+		float f = AtmosphericEffects.getAmbientModelModifier() + AtmosphericEffects.getLight1Modifier();
+		int i_1_ = AtmosphericEffects.getLightModelColour();
 		RT4.aFloatArray3964[3] = 1.0F;
 		if (i != 81) {
 			float[] fs = null;

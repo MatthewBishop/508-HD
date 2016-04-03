@@ -105,7 +105,7 @@ public abstract class Class133_Sub1 extends Class133 {
 	public static void method1796(byte i, Class43 class43, int i_2_, Buffer class14_sub10) {
 		Class14_Sub7 class14_sub7 = new Class14_Sub7();
 		class14_sub7.anInt2821 = class14_sub10.readUByte();
-		class14_sub7.anInt2830 = class14_sub10.method812((byte) -112);
+		class14_sub7.anInt2830 = class14_sub10.getInt((byte) -112);
 		class14_sub7.aClass31Array2824 = new Class31[class14_sub7.anInt2821];
 		class14_sub7.aClass31Array2828 = new Class31[class14_sub7.anInt2821];
 		class14_sub7.anIntArray2820 = new int[class14_sub7.anInt2821];
@@ -120,7 +120,7 @@ public abstract class Class133_Sub1 extends Class133 {
 					int i_5_ = 0;
 					String string_6_ = new String(class14_sub10.method797(9467).method1681(-126));
 					if (i_4_ == 1)
-						i_5_ = class14_sub10.method812((byte) -107);
+						i_5_ = class14_sub10.getInt((byte) -107);
 					class14_sub7.anIntArray2825[i_3_] = i_4_;
 					class14_sub7.anIntArray2819[i_3_] = i_5_;
 					class14_sub7.aClass31Array2828[i_3_] = class43.method1140(123,
@@ -135,7 +135,7 @@ public abstract class Class133_Sub1 extends Class133 {
 					byte[][] is = new byte[i_8_][];
 					if (i_4_ == 3) {
 						for (int i_10_ = 0; i_8_ > i_10_; i_10_++) {
-							int i_11_ = class14_sub10.method812((byte) -111);
+							int i_11_ = class14_sub10.getInt((byte) -111);
 							is[i_10_] = new byte[i_11_];
 							class14_sub10.method824(i_11_, (byte) 97, 0, is[i_10_]);
 						}
