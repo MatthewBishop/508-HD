@@ -333,13 +333,13 @@ public class Class14_Sub8_Sub5 extends Class14_Sub8 {
 						break while_214_;
 					}
 				} else {
-					anInt4161 = class14_sub10.method784((byte) 104);
+					anInt4161 = class14_sub10.readUShort((byte) 104);
 					break while_214_;
 				}
-				anInt4154 = class14_sub10.method784((byte) 103);
+				anInt4154 = class14_sub10.readUShort((byte) 103);
 				break while_214_;
 			} while (false);
-			aBoolean2862 = class14_sub10.method798() == 1;
+			aBoolean2862 = class14_sub10.readUByte() == 1;
 		} while (false);
 		if (i_52_ != 24777)
 			anInt4166 = 48;

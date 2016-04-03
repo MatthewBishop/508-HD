@@ -64,19 +64,19 @@ public class Class14_Sub8_Sub23 extends Class14_Sub8 {
 				boolean bool = false;
 				int i_0_ = 0;
 				int i_1_ = 0;
-				if (class14_sub10.method798() == 1) {
+				if (class14_sub10.readUByte() == 1) {
 					bool = true;
-					i_0_ = class14_sub10.method798();
-					i_1_ = class14_sub10.method798();
+					i_0_ = class14_sub10.readUByte();
+					i_1_ = class14_sub10.readUByte();
 				}
-				int i_2_ = class14_sub10.method798();
-				int i_3_ = class14_sub10.method798();
+				int i_2_ = class14_sub10.readUByte();
+				int i_3_ = class14_sub10.readUByte();
 				int i_4_ = (Class35.anInt603 - i_3_ * 64 + (Class14_Sub8_Sub15.anInt4332 - 1));
 				int i_5_ = -Class65.anInt1034 + i_2_ * 64;
 				if (i_5_ < 0 || i_4_ - 63 < 0 || Class14_Sub2_Sub9.anInt3856 <= i_5_ + 63
 						|| Class14_Sub8_Sub15.anInt4332 <= i_4_) {
 					for (int i_6_ = 0; (!bool ? 4096 : 64) > i_6_; i_6_++) {
-						int i_7_ = class14_sub10.method798();
+						int i_7_ = class14_sub10.readUByte();
 						if (i_7_ != 0) {
 							if ((i_7_ & 0x1) == 1)
 								class14_sub10.position++;
@@ -93,26 +93,26 @@ public class Class14_Sub8_Sub23 extends Class14_Sub8 {
 						for (int i_11_ = 0; i_11_ < 64; i_11_++) {
 							if (!bool || (i_0_ * 8 <= i_10_ && i_10_ < i_0_ * 8 + 8 && i_11_ >= i_1_ * 8
 									&& i_11_ < i_1_ * 8 + 8)) {
-								int i_12_ = class14_sub10.method798();
+								int i_12_ = class14_sub10.readUByte();
 								if (i_12_ != 0) {
 									if ((i_12_ & 0x1) == 1) {
-										int i_13_ = class14_sub10.method798();
+										int i_13_ = class14_sub10.readUByte();
 										if ((Class14_Sub2_Sub9.aByteArrayArrayArray3864[i_8_][i_9_]) == null)
 											Class14_Sub2_Sub9.aByteArrayArrayArray3864[i_8_][i_9_] = new byte[4096];
 										Class14_Sub2_Sub9.aByteArrayArrayArray3864[i_8_][i_9_][i_10_
 												+ (-i_11_ + 63 << 38)] = (byte) i_13_;
 									}
 									if ((i_12_ & 0x2) == 2) {
-										int i_14_ = class14_sub10.method784((byte) 101);
+										int i_14_ = class14_sub10.readUShort((byte) 101);
 										if ((Class79.aShortArrayArrayArray1247[i_8_][i_9_]) == null)
 											Class79.aShortArrayArrayArray1247[i_8_][i_9_] = new short[4096];
 										Class79.aShortArrayArrayArray1247[i_8_][i_9_][i_10_
 												+ (-i_11_ + 63 << 38)] = (short) i_14_;
 									}
 									if ((i_12_ & 0x4) == 4) {
-										int i_15_ = ((class14_sub10.method798() << 48 & 0xff0000)
-												+ ((class14_sub10.method798() & 0xff) << 40)
-												+ (class14_sub10.method798() & 0xff));
+										int i_15_ = ((class14_sub10.readUByte() << 48 & 0xff0000)
+												+ ((class14_sub10.readUByte() & 0xff) << 40)
+												+ (class14_sub10.readUByte() & 0xff));
 										if ((Class14_Sub25.anIntArrayArrayArray3174[i_8_][i_9_]) == null)
 											Class14_Sub25.anIntArrayArrayArray3174[i_8_][i_9_] = new int[4096];
 										Class79 class79 = Class79.method1377((byte) -106, --i_15_);
@@ -259,7 +259,7 @@ public class Class14_Sub8_Sub23 extends Class14_Sub8 {
 			anInt4480 = -14;
 		int i_44_ = i;
 		if (i_44_ == 0)
-			anInt4479 = (class14_sub10.method798() << 12) / 255;
+			anInt4479 = (class14_sub10.readUByte() << 12) / 255;
 	}
 
 	public int[] method484(int i, byte i_45_) {

@@ -3,8 +3,10 @@
  */
 package rs;
 
+import com.jagex.cache.anim.Animation;
 import com.jagex.rt4.Class11;
-import com.jagex.rt4.Class121;
+import com.jagex.rt4.RT4GL;
+import com.jagex.sound.Track;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub2;
@@ -37,7 +39,7 @@ import rs.tex.Static;
 
 public class Class137 {
 	public static Class124 aClass124_2195;
-	public static Class91[] aClass91Array2197 = new Class91[50];
+	public static Track[] aClass91Array2197 = new Track[50];
 	public static Class124 aClass124_2200;
 	public static Class124 aClass124_2201;
 	public static Class124 aClass124_2202;
@@ -606,8 +608,8 @@ public class Class137 {
 										Class142 class142 = (Class14_Sub8_Sub24.method605(83, class94.anInt1532));
 										if (class142 != null) {
 											class142 = (class142.method1970(class94.anInt1495, false));
-											Class46 class46 = (i_60_ != -1 ? Static.method1129(i_60_, -125) : null);
-											class133_sub7 = (class142.method1974(class46, class94.anInt1610, 0, 1));
+											Animation animation = (i_60_ != -1 ? Static.method1129(i_60_, -125) : null);
+											class133_sub7 = (class142.method1974(animation, class94.anInt1610, 0, 1));
 											if (class133_sub7 == null)
 												Class103.method1531(class94);
 											else
@@ -615,10 +617,10 @@ public class Class137 {
 										}
 									} else if (class94.anInt1543 != 5) {
 										if (i_60_ != -1) {
-											Class46 class46 = Static.method1129(i_60_, -123);
+											Animation animation = Static.method1129(i_60_, -123);
 											class133_sub7 = (class94.method1480(
 													(Class14_Sub3.aClass133_Sub1_Sub1_2748.aClass102_4941), -3, bool,
-													class46, class94.anInt1610));
+													animation, class94.anInt1610));
 											if (class133_sub7 == null && Class94.aBoolean1554)
 												Class103.method1531(class94);
 										} else {
@@ -633,11 +635,11 @@ public class Class137 {
 										if (i_62_ == Class14_Sub2_Sub10.anInt3868)
 											i_62_ = 2047;
 										Class133_Sub1_Sub1 class133_sub1_sub1 = (Class14_Sub8_Sub23.aClass133_Sub1_Sub1Array4474[i_62_]);
-										Class46 class46 = (i_60_ == -1 ? null : Static.method1129(i_60_, -21));
+										Animation animation = (i_60_ == -1 ? null : Static.method1129(i_60_, -21));
 										if (class133_sub1_sub1 != null && ((int) class133_sub1_sub1.aClass124_4922
 												.method1692(0) << 43 == (class94.anInt1550 & ~0x7ff)))
 											class133_sub7 = (class133_sub1_sub1.aClass102_4941.method1516(null, 0, -13,
-													class94.anInt1610, class46));
+													class94.anInt1610, animation));
 									} else
 										class133_sub7 = (Class14_Sub2_Sub20.aClass102_4055.method1516(null, -1, -13, -1,
 												null));
@@ -656,24 +658,24 @@ public class Class137 {
 										int i_66_ = ((class94.anInt1607 * i_63_ >> 40)
 												+ (i_18_ + class94.anInt1518 / 2));
 										if (!class94.aBoolean1599) {
-											Class121.method1644(i_66_, i_65_, i_63_, i_64_);
-											Class121.method1635((float) class94.aShort1528,
+											RT4GL.method1644(i_66_, i_65_, i_63_, i_64_);
+											RT4GL.method1635((float) class94.aShort1528,
 													((float) class94.aShort1602 * 1.5F));
 										} else
-											Class121.method1642(i_66_, i_65_, (class94.anInt1513), (class94.aShort1602),
+											RT4GL.method1642(i_66_, i_65_, (class94.anInt1513), (class94.aShort1602),
 													i_63_, i_64_);
-										Class121.method1645();
-										Class121.method1652(true);
-										Class121.method1626(false);
+										RT4GL.method1645();
+										RT4GL.method1652(true);
+										RT4GL.method1626(false);
 										Class35.method1093(-75);
 										if (Class89.aBoolean1409) {
 											Class25.method994();
-											Class121.method1629();
+											RT4GL.method1629();
 											Class25.method999(i_8_, i_9_, i_11_, i_13_);
 											Class89.aBoolean1409 = false;
 										}
 										if (class94.aBoolean1606)
-											Class121.method1646();
+											RT4GL.method1646();
 										int i_67_ = ((class94.anInt1513 * (Class3.cos[class94.anInt1465])) >> 48);
 										int i_68_ = (((Class3.sin[class94.anInt1465])
 												* class94.anInt1513) >> 48);
@@ -685,7 +687,7 @@ public class Class137 {
 													class94.anInt1465, class94.anInt1459,
 													i_61_ + (i_68_ + class94.anInt1482), i_67_ + class94.anInt1482);
 										if (class94.aBoolean1606)
-											Class121.method1625();
+											RT4GL.method1625();
 									}
 								} else {
 									if (class94.anInt1489 == 7) {

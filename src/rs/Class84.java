@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.rt4.Class121;
+import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class25;
 
 public class Class84 {
@@ -37,7 +37,7 @@ public class Class84 {
 		if (!bool)
 			Class71.method1317(i_2_, i_4_, i_3_, -91, i_1_);
 		else
-			Class121.method1657();
+			RT4GL.method1657();
 	}
 
 	public static int method1412(byte i) {

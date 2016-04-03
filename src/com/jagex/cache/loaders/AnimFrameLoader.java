@@ -43,7 +43,7 @@ public class AnimFrameLoader extends Cacheable {
 	}
 
 	public boolean method338(int i_0_) {
-		return aClass143Array3951[i_0_].aBoolean2332;
+		return aClass143Array3951[i_0_].opaque;
 	}
 
 	public static AnimFrameLoader method933(Class9 class9, Class9 class9_19_, int i, byte i_20_, boolean bool) {

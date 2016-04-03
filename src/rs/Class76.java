@@ -8,6 +8,7 @@ import java.io.EOFException;
 import java.io.File;
 import java.io.IOException;
 
+import com.jagex.cache.anim.Animation;
 import com.jagex.cache.loaders.AnimFrameLoader;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 
@@ -73,7 +74,7 @@ public class Class76 {
 		}
 	}
 
-	public static Class133_Sub7 method1359(int i, int i_7_, Class46 class46, Class133_Sub7 class133_sub7, int i_8_,
+	public static Class133_Sub7 method1359(int i, int i_7_, Animation animation, Class133_Sub7 class133_sub7, int i_8_,
 			int i_9_, int i_10_, int i_11_, int i_12_, int i_13_, int i_14_, int i_15_, int i_16_, boolean bool) {
 		if (i != -10345)
 			method1364(-75);
@@ -158,8 +159,8 @@ public class Class76 {
 		if (i_43_ > i_38_)
 			i_43_ = i_38_;
 		AnimFrameLoader class14_sub2_sub15 = null;
-		if (class46 != null) {
-			i_15_ = class46.anIntArray768[i_15_];
+		if (animation != null) {
+			i_15_ = animation.anIntArray768[i_15_];
 			class14_sub2_sub15 = Class14_Sub4.method457(3, i_15_ >> 16);
 			i_15_ &= 0xffff;
 		}

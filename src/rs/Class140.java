@@ -44,23 +44,23 @@ public class Class140 {
 		if (i != -29163)
 			method1959(null, -38);
 		if (i_0_ == 324) {
-			if (Class100.anInt1681 == -1) {
+			if (Static2.anInt1681 == -1) {
 				Static.anInt3929 = class94.anInt1568;
-				Class100.anInt1681 = class94.anInt1487;
+				Static2.anInt1681 = class94.anInt1487;
 			}
 			if (Class14_Sub2_Sub20.aClass102_4055.aBoolean1711)
-				class94.anInt1487 = Class100.anInt1681;
+				class94.anInt1487 = Static2.anInt1681;
 			else
 				class94.anInt1487 = Static.anInt3929;
 		} else if (i_0_ == 325) {
-			if (Class100.anInt1681 == -1) {
+			if (Static2.anInt1681 == -1) {
 				Static.anInt3929 = class94.anInt1568;
-				Class100.anInt1681 = class94.anInt1487;
+				Static2.anInt1681 = class94.anInt1487;
 			}
 			if (Class14_Sub2_Sub20.aClass102_4055.aBoolean1711)
 				class94.anInt1487 = Static.anInt3929;
 			else
-				class94.anInt1487 = Class100.anInt1681;
+				class94.anInt1487 = Static2.anInt1681;
 		} else if (i_0_ == 327) {
 			class94.anInt1465 = 150;
 			class94.anInt1578 = (int) (Math.sin((double) Class14_Sub2_Sub20.anInt4064 / 40.0) * 256.0) & 0x7ff;

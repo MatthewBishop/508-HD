@@ -46,11 +46,11 @@ public class Class118 {
 			class133_sub1_sub1.anInt3472 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method832((byte) -94);
 			class133_sub1_sub1.anInt3478 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method832((byte) -76);
 			class133_sub1_sub1.anInt3489 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method832((byte) -91);
-			class133_sub1_sub1.anInt3494 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method784((byte) 110)
+			class133_sub1_sub1.anInt3494 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUShort((byte) 110)
 					+ Class14_Sub2_Sub20.anInt4064;
 			class133_sub1_sub1.anInt3455 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method836((byte) 122)
 					+ Class14_Sub2_Sub20.anInt4064;
-			class133_sub1_sub1.anInt3444 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method798();
+			class133_sub1_sub1.anInt3444 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUByte();
 			class133_sub1_sub1.anInt3498 = 1;
 			class133_sub1_sub1.anInt3477 = 0;
 		}
@@ -60,7 +60,7 @@ public class Class118 {
 			class133_sub1_sub1.method1801(0, i_3_, Class14_Sub2_Sub20.anInt4064, i_2_);
 		}
 		if ((i_0_ & 0x20) != 0) {
-			class133_sub1_sub1.anInt3453 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method784((byte) 101);
+			class133_sub1_sub1.anInt3453 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUShort((byte) 101);
 			if (class133_sub1_sub1.anInt3453 == 65535)
 				class133_sub1_sub1.anInt3453 = -1;
 		}
@@ -76,7 +76,7 @@ public class Class118 {
 			class133_sub1_sub1.anInt3473 = 150;
 		}
 		if ((i_0_ & 0x400) != 0) {
-			class133_sub1_sub1.anInt3487 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method784((byte) 113);
+			class133_sub1_sub1.anInt3487 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUShort((byte) 113);
 			int i_4_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method790(8);
 			if (class133_sub1_sub1.anInt3487 == 65535)
 				class133_sub1_sub1.anInt3487 = -1;
@@ -151,14 +151,14 @@ public class Class118 {
 			Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.position = i_7_ + i_8_;
 		}
 		if ((i_0_ & i) != 0) {
-			int i_12_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method784((byte) 110);
+			int i_12_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUShort((byte) 110);
 			if (i_12_ == 65535)
 				i_12_ = -1;
 			int i_13_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method832((byte) -104);
 			Class83.method1408(class133_sub1_sub1, i_13_, false, i_12_);
 		}
 		if ((i_0_ & 0x80) != 0) {
-			int i_14_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method798();
+			int i_14_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUByte();
 			byte[] is = new byte[i_14_];
 			Buffer class14_sub10 = new Buffer(is);
 			Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method824(i_14_, (byte) 82, 0, is);
@@ -206,19 +206,19 @@ public class Class118 {
 		Class14_Sub2_Sub12 class14_sub2_sub12_18_ = new Class14_Sub2_Sub12();
 		Buffer class14_sub10 = new Buffer(is);
 		class14_sub10.position = class14_sub10.payload.length - 2;
-		int i_19_ = class14_sub10.method784((byte) 105);
+		int i_19_ = class14_sub10.readUShort((byte) 105);
 		int i_20_ = class14_sub10.payload.length - 2 - i_19_ - 12;
 		class14_sub10.position = i_20_;
 		int i_21_ = class14_sub10.method812((byte) -123);
-		class14_sub2_sub12_18_.anInt3901 = class14_sub10.method784((byte) 104);
-		class14_sub2_sub12_18_.anInt3904 = class14_sub10.method784((byte) 121);
-		class14_sub2_sub12_18_.anInt3896 = class14_sub10.method784((byte) 122);
-		class14_sub2_sub12_18_.anInt3911 = class14_sub10.method784((byte) 118);
-		int i_22_ = class14_sub10.method798();
+		class14_sub2_sub12_18_.anInt3901 = class14_sub10.readUShort((byte) 104);
+		class14_sub2_sub12_18_.anInt3904 = class14_sub10.readUShort((byte) 121);
+		class14_sub2_sub12_18_.anInt3896 = class14_sub10.readUShort((byte) 122);
+		class14_sub2_sub12_18_.anInt3911 = class14_sub10.readUShort((byte) 118);
+		int i_22_ = class14_sub10.readUByte();
 		if (i_22_ > 0) {
 			class14_sub2_sub12_18_.aClass55Array3903 = new HashTable[i_22_];
 			for (int i_23_ = 0; i_23_ < i_22_; i_23_++) {
-				int i_24_ = class14_sub10.method784((byte) 122);
+				int i_24_ = class14_sub10.readUShort((byte) 122);
 				HashTable hashTable = new HashTable(Class14_Sub8_Sub33.method653(i_24_));
 				class14_sub2_sub12_18_.aClass55Array3903[i_23_] = hashTable;
 				while (i_24_-- > 0) {
@@ -235,11 +235,11 @@ public class Class118 {
 		class14_sub2_sub12_18_.anIntArray3907 = new int[i_21_];
 		class14_sub2_sub12_18_.aClass124Array3899 = new Class124[i_21_];
 		while (class14_sub10.position < i_20_) {
-			int i_28_ = class14_sub10.method784((byte) 109);
+			int i_28_ = class14_sub10.readUShort((byte) 109);
 			if (i_28_ == 3)
 				class14_sub2_sub12_18_.aClass124Array3899[i_27_] = class14_sub10.method797(9467);
 			else if (i_28_ >= 100 || i_28_ == 21 || i_28_ == 38 || i_28_ == 39)
-				class14_sub2_sub12_18_.anIntArray3900[i_27_] = class14_sub10.method798();
+				class14_sub2_sub12_18_.anIntArray3900[i_27_] = class14_sub10.readUByte();
 			else
 				class14_sub2_sub12_18_.anIntArray3900[i_27_] = class14_sub10.method812((byte) -92);
 			class14_sub2_sub12_18_.anIntArray3907[i_27_++] = i_28_;

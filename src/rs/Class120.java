@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.link.HashTable;
+import com.jagex.sound.Track;
 
 import rs.tex.Class14_Sub8_Sub27;
 
@@ -73,12 +74,12 @@ public class Class120 {
 			Class14_Sub12_Sub1 class14_sub12_sub1_10_ = null;
 			return class14_sub12_sub1_10_;
 		}
-		Class91 class91 = Class91.method1451(aClass9_2010, i, i_7_);
-		if (class91 == null) {
+		Track track = Track.method1451(aClass9_2010, i, i_7_);
+		if (track == null) {
 			class14_sub12_sub1 = null;
 			return class14_sub12_sub1;
 		}
-		Class14_Sub12_Sub1 class14_sub12_sub1_11_ = class91.method1449();
+		Class14_Sub12_Sub1 class14_sub12_sub1_11_ = track.method1449();
 		aClass55_2015.put(l, class14_sub12_sub1_11_);
 		if (is != null)
 			is[0] -= class14_sub12_sub1_11_.aByteArray4899.length;

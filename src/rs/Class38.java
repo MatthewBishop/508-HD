@@ -23,7 +23,7 @@ public class Class38 implements Interface5 {
 
 	public Class124 method24(long l, int i, int[] is, boolean bool) {
 		if (i == 0) {
-			Class14_Sub2_Sub8 class14_sub2_sub8 = Class99_Sub2.method1507(-8475, is[0]);
+			Class14_Sub2_Sub8 class14_sub2_sub8 = Static2.method1507(-8475, is[0]);
 			Class124 class124 = class14_sub2_sub8.method295(-68, (int) l);
 			return class124;
 		}
@@ -35,7 +35,7 @@ public class Class38 implements Interface5 {
 		if (!bool)
 			anInt2618 = 100;
 		if (i == 6 || i == 7) {
-			Class124 class124 = Class99_Sub2.method1507(-8475, is[0]).method295(-76, (int) l);
+			Class124 class124 = Static2.method1507(-8475, is[0]).method295(-76, (int) l);
 			return class124;
 		}
 		Class124 class124 = null;

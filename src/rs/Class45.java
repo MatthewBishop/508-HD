@@ -24,18 +24,11 @@ import rs.tex.Class14_Sub8_Sub7;
 import rs.tex.Static;
 
 public class Class45 {
-	public static int[] anIntArray737 = { 1, 1, 1, 1 };
 	public static Class124 aClass124_738 = Class14_Sub2_Sub2.method263(1178, "AUS");
-	public Class124 aClass124_741;
-	public int anInt742;
-	public static int[] anIntArray743 = new int[200];
-	public int anInt744;
-	public int anInt745;
-	public boolean aBoolean749;
 	public static Class124 aClass124_750 = Class14_Sub2_Sub2.method263(1178, "::rect_debug");
 	public static int anInt751 = -1;
-	public int anInt752;
-
+	public static int[] anIntArray737 = { 1, 1, 1, 1 };
+	public static int[] anIntArray743 = new int[200];
 	public static void method1160(int i) {
 		Class14_Sub15 class14_sub15 = ((Class14_Sub15) Class14_Sub30.aClass55_3275.getFirst());
 		if (i != 0)
@@ -61,7 +54,6 @@ public class Class45 {
 			}
 		}
 	}
-
 	public static void method1161(int i) {
 		if (Class7_Sub1.aClass14_Sub2_Sub5_2665 != null) {
 			if (Class14_Sub8_Sub32.anInt4616 < 10) {
@@ -117,7 +109,7 @@ public class Class45 {
 				Class54.method1221(i_7_, true, i_8_);
 				Class14_Sub8_Sub32.anInt4616 = 20;
 			} else if (Class14_Sub8_Sub32.anInt4616 == 20) {
-				Class46.method1176(false,
+				Static2.method1176(false,
 						new Buffer(Class14_Sub8_Sub28.aClass9_4570.method167(
 								(Class7_Sub1.aClass14_Sub2_Sub5_2665.aClass124_3804),
 								(Static.aClass124_3956), -128)));
@@ -200,7 +192,6 @@ public class Class45 {
 			}
 		}
 	}
-
 	public static void method1162(int i, int i_9_, int i_10_, int i_11_, byte i_12_, int i_13_, boolean bool) {
 		if (i_9_ != Class129.anInt2133 || Class49.anInt818 != i
 				|| (i_10_ != Class142.anInt2295 && !Class128.method1755(130068615))) {
@@ -326,7 +317,6 @@ public class Class45 {
 			Class4.aClass2_127.clear();
 		}
 	}
-
 	public static void method1163(boolean bool, int i) {
 		byte[][] is;
 		int i_35_;
@@ -366,13 +356,11 @@ public class Class45 {
 			}
 		}
 	}
-
 	public static void method1164(Class9 class9, int i) {
 		Class14_Sub2_Sub5.aClass9_3817 = class9;
 		if (i <= 31)
 			aClass124_738 = null;
 	}
-
 	public static void method1165(byte i) {
 		anIntArray737 = null;
 		anIntArray743 = null;
@@ -401,4 +389,16 @@ public class Class45 {
 			}
 		}
 	}
+
+	public boolean aBoolean749;
+
+	public Class124 aClass124_741;
+
+	public int anInt742;
+
+	public int anInt744;
+
+	public int anInt745;
+
+	public int anInt752;
 }

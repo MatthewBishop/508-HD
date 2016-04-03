@@ -77,7 +77,7 @@ public class Class109 {
 
 	public static void method1566(int i) {
 		Class14_Sub23.anInt3134 = i;
-		for (int i_14_ = 0; i_14_ < Class99_Sub2.anInt3338; i_14_++) {
+		for (int i_14_ = 0; i_14_ < Static2.anInt3338; i_14_++) {
 			for (int i_15_ = 0; i_15_ < Class14_Sub8_Sub15.anInt4337; i_15_++) {
 				if ((Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_14_][i_15_]) == null)
 					Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_14_][i_15_] = new Class14_Sub29(i, i_14_,
@@ -170,7 +170,7 @@ public class Class109 {
 
 	public Class109(Buffer class14_sub10) {
 		aByte1838 = class14_sub10.method780((byte) -77);
-		anInt1830 = class14_sub10.method784((byte) 125);
+		anInt1830 = class14_sub10.readUShort((byte) 125);
 		anInt1833 = class14_sub10.method812((byte) -99);
 		anInt1841 = class14_sub10.method812((byte) -102);
 		anInt1845 = class14_sub10.method812((byte) -117);

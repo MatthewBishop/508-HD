@@ -14,7 +14,7 @@ public class VertexBuffer {
 	public int bufferID = -1;
 
 	public void _setArrayData(ByteBuffer bytebuffer) {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		gl.glBindBufferARB(34962, bufferID);
 		gl.glBufferDataARB(34962, bytebuffer.limit(), bytebuffer, isStream ? 35040 : 35044);
 		Class11.arbBufferMemory += bytebuffer.limit() - bufferSize;
@@ -23,7 +23,7 @@ public class VertexBuffer {
 
 	public void setArrayData(ByteBuffer bytebuffer) {
 		if (bytebuffer.limit() <= bufferSize) {
-			GL gl = Class121.aGL2030;
+			GL gl = RT4GL.gl;
 			gl.glBindBufferARB(34962, bufferID);
 			gl.glBufferSubDataARB(34962, 0, bytebuffer.limit(), bytebuffer);
 		} else
@@ -31,7 +31,7 @@ public class VertexBuffer {
 	}
 
 	public void bindArray() {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		gl.glBindBufferARB(34962, bufferID);
 	}
 
@@ -49,7 +49,7 @@ public class VertexBuffer {
 	}
 
 	public void setElementData(ByteBuffer bytebuffer) {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		gl.glBindBufferARB(34963, bufferID);
 		gl.glBufferDataARB(34963, bytebuffer.limit(), bytebuffer, isStream ? 35040 : 35044);
 		Class11.arbBufferMemory += bytebuffer.limit() - bufferSize;
@@ -57,12 +57,12 @@ public class VertexBuffer {
 	}
 
 	public void method1055() {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		gl.glBindBufferARB(34963, bufferID);
 	}
 
 	public VertexBuffer(boolean bool) {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		int[] is = new int[1];
 		gl.glGenBuffersARB(1, is, 0);
 		isStream = bool;

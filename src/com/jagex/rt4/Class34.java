@@ -15,7 +15,7 @@ public class Class34 implements Interface2 {
 	public float[] aFloatArray2564;
 
 	public void method1089() {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		anInt2562 = gl.glGenLists(2);
 		gl.glNewList(anInt2562, 4864);
 		gl.glTexEnvi(8960, 34192, 768);
@@ -85,21 +85,21 @@ public class Class34 implements Interface2 {
 	}
 
 	public void setup(int i) {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		gl.glActiveTexture(33985);
 		gl.glTexEnvfv(8960, 8705, RT4.aFloatArray3171, 0);
 		gl.glActiveTexture(33984);
 	}
 
 	public void disable() {
-		Class121.aGL2030.glCallList(anInt2562 + 1);
+		RT4GL.gl.glCallList(anInt2562 + 1);
 	}
 
 	public void enable() {
-		GL gl = Class121.aGL2030;
-		Class121.method1638(2);
-		Class121.method1656(2);
-		Class121.method1651();
+		GL gl = RT4GL.gl;
+		RT4GL.method1638(2);
+		RT4GL.method1656(2);
+		RT4GL.method1651();
 		gl.glCallList(anInt2562);
 		float f = 2662.4001F;
 		f += (float) (RT4.rotateX - 128) * 0.5F;
@@ -114,23 +114,23 @@ public class Class34 implements Interface2 {
 		gl.glActiveTexture(33984);
 		gl.glTexEnvfv(8960, 8705, aFloatArray2560, 0);
 		if (Class119.use3DTexture) {
-			if (anInt2563 != Class121.anInt2045) {
+			if (anInt2563 != RT4GL.anInt2045) {
 				aFloatArray2564[0] = 0.0F;
 				aFloatArray2564[1] = 0.0F;
 				aFloatArray2564[2] = 0.0F;
-				aFloatArray2564[3] = (float) Class121.anInt2045 * 0.005F;
+				aFloatArray2564[3] = (float) RT4GL.anInt2045 * 0.005F;
 				gl.glTexGenfv(8194, 9473, aFloatArray2564, 0);
-				anInt2563 = Class121.anInt2045;
+				anInt2563 = RT4GL.anInt2045;
 			}
 		} else
-			Class121.method1632(Class119.textureIds2[Class121.anInt2045 * 64 / 100 % 64]);
+			RT4GL.method1632(Class119.textureIds2[RT4GL.anInt2045 * 64 / 100 % 64]);
 	}
 
 	public void method1091() {
 		byte[] is = new byte[2];
 		is[0] = (byte) 0;
 		is[1] = (byte) -1;
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		int[] is_0_ = new int[1];
 		gl.glGenTextures(1, is_0_, 0);
 		gl.glBindTexture(3552, is_0_[0]);

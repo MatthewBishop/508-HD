@@ -8,6 +8,7 @@ import java.security.MessageDigest;
 import com.jagex.io.Buffer;
 import com.jagex.map.SceneCluster;
 import com.jagex.rt4.Class14_Sub2_Sub19;
+import com.jagex.sound.Track;
 
 public class Class58 {
 	public static int anInt937;
@@ -40,7 +41,7 @@ public class Class58 {
 				i_4_ += -class14_sub3.anInt2751 + i_1_;
 			else if (class14_sub3.anInt2767 > i_1_)
 				i_4_ += class14_sub3.anInt2767 - i_1_;
-			if (class14_sub3.anInt2765 == 0 || class14_sub3.anInt2765 < i_4_ - 64 || Class100.anInt1691 == 0
+			if (class14_sub3.anInt2765 == 0 || class14_sub3.anInt2765 < i_4_ - 64 || Static2.anInt1691 == 0
 					|| class14_sub3.anInt2763 != i_0_) {
 				if (class14_sub3.aClass14_Sub9_Sub4_2775 != null) {
 					Class33.aClass14_Sub9_Sub2_585.method730(class14_sub3.aClass14_Sub9_Sub4_2775);
@@ -54,13 +55,13 @@ public class Class58 {
 				i_4_ -= 64;
 				if (i_4_ < 0)
 					i_4_ = 0;
-				int i_5_ = (Class100.anInt1691 * (-i_4_ + class14_sub3.anInt2765) / class14_sub3.anInt2765);
+				int i_5_ = (Static2.anInt1691 * (-i_4_ + class14_sub3.anInt2765) / class14_sub3.anInt2765);
 				if (class14_sub3.aClass14_Sub9_Sub4_2775 == null) {
 					if (class14_sub3.anInt2753 >= 0) {
-						Class91 class91 = Class91.method1451((Static2.aClass9_Sub1_2901), class14_sub3.anInt2753,
+						Track track = Track.method1451((Static2.aClass9_Sub1_2901), class14_sub3.anInt2753,
 								0);
-						if (class91 != null) {
-							Class14_Sub12_Sub1 class14_sub12_sub1 = class91.method1449()
+						if (track != null) {
+							Class14_Sub12_Sub1 class14_sub12_sub1 = track.method1449()
 									.method857(SceneCluster.aClass18_1362);
 							Class14_Sub9_Sub4 class14_sub9_sub4 = (Class14_Sub9_Sub4.method775(class14_sub12_sub1, 100,
 									i_5_));
@@ -77,10 +78,10 @@ public class Class58 {
 						class14_sub3.aClass14_Sub9_Sub4_2760 = null;
 				} else if (class14_sub3.anIntArray2746 != null && (class14_sub3.anInt2773 -= i) <= 0) {
 					int i_6_ = (int) ((double) class14_sub3.anIntArray2746.length * Math.random());
-					Class91 class91 = Class91.method1451(Static2.aClass9_Sub1_2901,
+					Track track = Track.method1451(Static2.aClass9_Sub1_2901,
 							class14_sub3.anIntArray2746[i_6_], 0);
-					if (class91 != null) {
-						Class14_Sub12_Sub1 class14_sub12_sub1 = class91.method1449()
+					if (track != null) {
+						Class14_Sub12_Sub1 class14_sub12_sub1 = track.method1449()
 								.method857(SceneCluster.aClass18_1362);
 						Class14_Sub9_Sub4 class14_sub9_sub4 = Class14_Sub9_Sub4.method775(class14_sub12_sub1, 100,
 								i_5_);

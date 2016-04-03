@@ -70,14 +70,14 @@ public class Class60 {
 					int i_8_ = class14_sub10.method818((byte) 80);
 					if (i_8_ == 0)
 						break;
-					class14_sub10.method798();
+					class14_sub10.readUByte();
 				} else {
 					int i_9_ = class14_sub10.method818((byte) -103);
 					if (i_9_ == 0)
 						break;
 					i_6_ += i_9_ - 1;
 					int i_10_ = i_6_ >> 38 & 0x3f;
-					int i_11_ = class14_sub10.method798() >> 2;
+					int i_11_ = class14_sub10.readUByte() >> 2;
 					int i_12_ = i_6_ & 0x3f;
 					int i_13_ = i_3_ + i_10_;
 					int i_14_ = i_2_ + i_12_;
@@ -104,43 +104,43 @@ public class Class60 {
 		if (i != 1) {
 			if (i != 2) {
 				if (i == 4)
-					anInt963 = class14_sub10.method784((byte) 108);
+					anInt963 = class14_sub10.readUShort((byte) 108);
 				else if (i != 5) {
 					if (i != 6) {
 						if (i == 7)
-							anInt973 = class14_sub10.method798();
+							anInt973 = class14_sub10.readUByte();
 						else if (i == 8)
-							anInt969 = class14_sub10.method798();
+							anInt969 = class14_sub10.readUByte();
 						else if (i != 9) {
 							if (i != 40) {
 								if (i == 41) {
-									int i_17_ = class14_sub10.method798();
+									int i_17_ = class14_sub10.readUByte();
 									aShortArray968 = new short[i_17_];
 									aShortArray971 = new short[i_17_];
 									for (int i_18_ = 0; i_17_ > i_18_; i_18_++) {
-										aShortArray968[i_18_] = (short) (class14_sub10.method784((byte) 115));
-										aShortArray971[i_18_] = (short) (class14_sub10.method784((byte) 111));
+										aShortArray968[i_18_] = (short) (class14_sub10.readUShort((byte) 115));
+										aShortArray971[i_18_] = (short) (class14_sub10.readUShort((byte) 111));
 									}
 								}
 							} else {
-								int i_19_ = class14_sub10.method798();
+								int i_19_ = class14_sub10.readUByte();
 								aShortArray961 = new short[i_19_];
 								aShortArray981 = new short[i_19_];
 								for (int i_20_ = 0; i_19_ > i_20_; i_20_++) {
-									aShortArray981[i_20_] = (short) class14_sub10.method784((byte) 104);
-									aShortArray961[i_20_] = (short) class14_sub10.method784((byte) 121);
+									aShortArray981[i_20_] = (short) class14_sub10.readUShort((byte) 104);
+									aShortArray961[i_20_] = (short) class14_sub10.readUShort((byte) 121);
 								}
 							}
 						} else
 							aBoolean978 = true;
 					} else
-						anInt964 = class14_sub10.method784((byte) 101);
+						anInt964 = class14_sub10.readUShort((byte) 101);
 				} else
-					anInt965 = class14_sub10.method784((byte) 118);
+					anInt965 = class14_sub10.readUShort((byte) 118);
 			} else
-				anInt966 = class14_sub10.method784((byte) 124);
+				anInt966 = class14_sub10.readUShort((byte) 124);
 		} else
-			anInt977 = class14_sub10.method784((byte) 105);
+			anInt977 = class14_sub10.readUShort((byte) 105);
 		if (bool)
 			method1269((byte) 23);
 	}
@@ -185,7 +185,7 @@ public class Class60 {
 	public void method1268(int i, Buffer class14_sub10) {
 		if (i == 0) {
 			for (;;) {
-				int i_26_ = class14_sub10.method798();
+				int i_26_ = class14_sub10.readUByte();
 				if (i_26_ == 0)
 					break;
 				method1266(class14_sub10, i_26_, false);

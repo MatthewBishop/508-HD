@@ -60,7 +60,7 @@ public class Class11 {
 	}
 
 	public static synchronized void method205() {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		int i = 0;
 		for (;;) {
 			Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass2_268.popFront();

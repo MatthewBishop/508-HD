@@ -53,7 +53,7 @@ public abstract class Class108 {
 	public static void method1557(byte i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_,
 			int i_7_, int i_8_) {
 		if (i_2_ == i_5_ && i_0_ == i_3_ && i_7_ == i_6_ && i_4_ == i_8_)
-			Class99_Sub2.method1510(i_8_, i_1_, (byte) -46, i_7_, i_5_, i_0_);
+			Static2.method1510(i_8_, i_1_, (byte) -46, i_7_, i_5_, i_0_);
 		else {
 			int i_9_ = i_5_;
 			int i_10_ = i_0_;
@@ -80,7 +80,7 @@ public abstract class Class108 {
 				int i_31_ = i_20_ * i_23_;
 				int i_32_ = i_5_ + (i_28_ + i_26_ + i_31_ >> 12);
 				int i_33_ = i_0_ + (i_27_ - (-i_30_ - i_29_) >> 12);
-				Class99_Sub2.method1510(i_33_, i_1_, (byte) 65, i_32_, i_9_, i_10_);
+				Static2.method1510(i_33_, i_1_, (byte) 65, i_32_, i_9_, i_10_);
 				i_9_ = i_32_;
 				i_10_ = i_33_;
 			}

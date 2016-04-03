@@ -128,7 +128,7 @@ public class Class14_Sub29 extends Linkable {
 			i_27_ = 4;
 		else
 			i_27_ = 1;
-		Class99_Sub2.aByteArrayArrayArray3354 = new byte[i_27_][105][105];
+		Static2.aByteArrayArrayArray3354 = new byte[i_27_][105][105];
 		Class97.underlays = new byte[i_27_][104][104];
 		Static.overlayTypes = new byte[i_27_][104][104];
 		Class15.overlayOrientations = new byte[i_27_][104][104];

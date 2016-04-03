@@ -19,26 +19,26 @@ public class Class148_Sub2 extends Class148 {
 	public int anInt3696;
 
 	public void method2001(int i, int i_0_) {
-		Class121.method1622();
+		RT4GL.method1622();
 		i += anInt2375;
 		i_0_ += anInt2374;
-		GL gl = Class121.aGL2030;
-		Class121.method1632(anInt3691);
+		GL gl = RT4GL.gl;
+		RT4GL.method1632(anInt3691);
 		method2012(1);
-		gl.glTranslatef((float) i, (float) (Class121.anInt2034 - i_0_), 0.0F);
+		gl.glTranslatef((float) i, (float) (RT4GL.anInt2034 - i_0_), 0.0F);
 		gl.glCallList(anInt3694);
 		gl.glLoadIdentity();
 	}
 
 	public void method1999(int i, int i_1_, int i_2_) {
-		Class121.method1655();
+		RT4GL.method1655();
 		i += anInt2375;
 		i_1_ += anInt2374;
-		GL gl = Class121.aGL2030;
-		Class121.method1632(anInt3691);
+		GL gl = RT4GL.gl;
+		RT4GL.method1632(anInt3691);
 		method2012(1);
 		gl.glColor4f(1.0F, 1.0F, 1.0F, (float) i_2_ / 256.0F);
-		gl.glTranslatef((float) i, (float) (Class121.anInt2034 - i_1_), 0.0F);
+		gl.glTranslatef((float) i, (float) (RT4GL.anInt2034 - i_1_), 0.0F);
 		gl.glCallList(anInt3694);
 		gl.glLoadIdentity();
 	}
@@ -46,7 +46,7 @@ public class Class148_Sub2 extends Class148 {
 	public void method2011() {
 		float f = (float) anInt2371 / (float) anInt3696;
 		float f_3_ = (float) anInt2376 / (float) anInt3693;
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		if (anInt3694 == -1) {
 			anInt3694 = gl.glGenLists(1);
 			anInt3690 = Class11.anInt267;
@@ -68,7 +68,7 @@ public class Class148_Sub2 extends Class148 {
 	public void method2012(int i) {
 		if (anInt3692 != i) {
 			anInt3692 = i;
-			GL gl = Class121.aGL2030;
+			GL gl = RT4GL.gl;
 			if (i == 2) {
 				gl.glTexParameteri(3553, 10241, 9729);
 				gl.glTexParameteri(3553, 10240, 9729);
@@ -113,14 +113,14 @@ public class Class148_Sub2 extends Class148 {
 			i += (anInt3696 - anInt2371) * 4;
 		}
 		ByteBuffer bytebuffer = ByteBuffer.wrap(is_5_);
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		if (anInt3691 == -1) {
 			int[] is_11_ = new int[1];
 			gl.glGenTextures(1, is_11_, 0);
 			anInt3691 = is_11_[0];
 			anInt3690 = Class11.anInt267;
 		}
-		Class121.method1632(anInt3691);
+		RT4GL.method1632(anInt3691);
 		gl.glTexImage2D(3553, 0, 6408, anInt3696, anInt3693, 0, 6408, 5121, bytebuffer);
 		Class11.anInt263 += bytebuffer.limit() - anInt3695;
 		anInt3695 = bytebuffer.limit();

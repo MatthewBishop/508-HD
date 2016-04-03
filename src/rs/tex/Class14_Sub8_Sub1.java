@@ -27,7 +27,6 @@ import rs.Class76;
 import rs.Class7_Sub2;
 import rs.Class9;
 import rs.Class94;
-import rs.Class99_Sub2;
 import rs.Static2;
 
 public class Class14_Sub8_Sub1 extends Class14_Sub8 {
@@ -139,19 +138,19 @@ public class Class14_Sub8_Sub1 extends Class14_Sub8 {
 								break while_198_;
 							}
 						} else {
-							anInt4106 = class14_sub10.method798();
+							anInt4106 = class14_sub10.readUByte();
 							break while_200_;
 						}
-						anInt4095 = class14_sub10.method784((byte) 118);
+						anInt4095 = class14_sub10.readUShort((byte) 118);
 						break while_200_;
 					} while (false);
-					anInt4097 = class14_sub10.method798();
+					anInt4097 = class14_sub10.readUByte();
 					break while_200_;
 				} while (false);
-				anInt4103 = class14_sub10.method784((byte) 121);
+				anInt4103 = class14_sub10.readUShort((byte) 121);
 				break while_200_;
 			} while (false);
-			anInt4092 = class14_sub10.method784((byte) 109);
+			anInt4092 = class14_sub10.readUShort((byte) 109);
 		} while (false);
 		if (i_12_ != 24777)
 			anIntArray4104 = null;
@@ -171,7 +170,7 @@ public class Class14_Sub8_Sub1 extends Class14_Sub8 {
 				int i_19_ = Class138.method1949(random, Class112.anInt1876);
 				i_18_ = i_18_ >> 4 & 0xff;
 				int i_20_ = Class138.method1949(random, Class17.anInt407);
-				int i_21_ = i_19_ + (anInt4097 * Class99_Sub2.anIntArray3357[i_18_] >> 12);
+				int i_21_ = i_19_ + (anInt4097 * Static2.anIntArray3357[i_18_] >> 12);
 				int i_22_ = ((Class14_Sub8_Sub21.anIntArray4435[i_18_] * anInt4097 >> 12) + i_20_);
 				int i_23_ = -i_20_ + i_22_;
 				int i_24_ = i_21_ - i_19_;

@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.link.Linkable;
-import com.jagex.rt4.Class121;
+import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class14_Sub27;
 
 import nativeadvert.browsercontrol;
@@ -114,7 +114,7 @@ public class Class14_Sub21 extends Linkable {
 	}
 
 	public static void method897(int i) {
-		Class121.method1630();
+		RT4GL.method1630();
 		if (i <= 108)
 			method893((byte) 29);
 		if (browsercontrol.iscreated())
@@ -129,7 +129,7 @@ public class Class14_Sub21 extends Linkable {
 		if (Class44.aClass129_726 != null)
 			Class44.aClass129_726.method1760(-14827, Class49.aCanvas819);
 		Class63.method1276(-105);
-		Class121.method1621(Class49.aCanvas819, Class135.anInt2189 * 2);
+		RT4GL.method1621(Class49.aCanvas819, Class135.anInt2189 * 2);
 		Class14_Sub2_Sub12.method319(-31);
 		Class132.method1779(0);
 		Class132.aLong2169 = 0L;

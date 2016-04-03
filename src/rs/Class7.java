@@ -10,23 +10,23 @@ import com.jagex.rt4.Class14_Sub2_Sub19;
 import rs.tex.Static;
 
 public class Class7 {
-	public static int[][][] anIntArrayArrayArray169 = new int[4][13][13];
-	public static CRC32 aCRC32_171 = new CRC32();
 	public static Class124 aClass124_174;
 	public static Class124 aClass124_176 = Class14_Sub2_Sub2.method263(1178, "Sat");
-	public static int anInt177;
-	public static Class124[] aClass124Array178;
-	public static int anInt179;
 	public static Class124 aClass124_180;
 	public static Class124 aClass124_181;
-	public static int anInt182;
-	public static short[] aShortArray183;
 	public static Class124 aClass124_184;
 	public static Class124 aClass124_185 = Class14_Sub2_Sub2.method263(1178, "Wed");
 	public static Class124 aClass124_186;
 	public static Class124 aClass124_187;
 	public static Class124 aClass124_188;
 	public static Class124 aClass124_189;
+	public static Class124[] aClass124Array178;
+	public static CRC32 aCRC32_171 = new CRC32();
+	public static int anInt177;
+	public static int anInt179;
+	public static int anInt182;
+	public static int[][][] anIntArrayArrayArray169 = new int[4][13][13];
+	public static short[] aShortArray183;
 
 	static {
 		anInt179 = 0;

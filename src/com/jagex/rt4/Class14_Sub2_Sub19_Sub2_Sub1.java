@@ -18,36 +18,37 @@ public class Class14_Sub2_Sub19_Sub2_Sub1 extends Class14_Sub2_Sub19_Sub2 {
 		super(i, i_0_, i_1_, i_2_, i_3_, i_4_, is);
 	}
 
-	public void method426(int[] is) {
-		anInt5092 = Class14_Sub8_Sub33.method653(anInt4035);
-		anInt5093 = Class14_Sub8_Sub33.method653(anInt4042);
-		byte[] is_5_ = new byte[anInt5092 * anInt5093 * 4];
-		int i = 0;
-		int i_6_ = 0;
-		int i_7_ = (anInt5092 - anInt4035) * 4;
-		for (int i_8_ = 0; i_8_ < anInt4042; i_8_++) {
-			for (int i_9_ = 0; i_9_ < anInt4035; i_9_++) {
-				int i_10_ = is[i_6_++];
-				if (i_10_ != 0) {
-					is_5_[i++] = (byte) (i_10_ >> 16);
-					is_5_[i++] = (byte) (i_10_ >> 8);
-					is_5_[i++] = (byte) i_10_;
-					is_5_[i++] = (byte) (i_10_ >> 24);
+	@Override
+	public void draw(int[] texels) {
+		width = Class14_Sub8_Sub33.method653(anInt4035);
+		height = Class14_Sub8_Sub33.method653(anInt4042);
+		byte[] pix = new byte[width * height * 4];
+		int pntr = 0;
+		int cntr = 0;
+		int x_factor = (width - anInt4035) * 4;
+		for (int y = 0; y < anInt4042; y++) {
+			for (int x = 0; x < anInt4035; x++) {
+				int pixel = texels[cntr++];
+				if (pixel != 0) {
+					pix[pntr++] = (byte) (pixel >> 16);//r
+					pix[pntr++] = (byte) (pixel >> 8);//g
+					pix[pntr++] = (byte) pixel;//b
+					pix[pntr++] = (byte) (pixel >> 24);//alpha
 				} else
-					i += 4;
+					pntr += 4;
 			}
-			i += i_7_;
+			pntr += x_factor;
 		}
-		ByteBuffer bytebuffer = ByteBuffer.wrap(is_5_);
-		GL gl = Class121.aGL2030;
-		if (anInt5089 == -1) {
-			int[] is_11_ = new int[1];
-			gl.glGenTextures(1, is_11_, 0);
-			anInt5089 = is_11_[0];
+		ByteBuffer pixels = ByteBuffer.wrap(pix);
+		GL gl = RT4GL.gl;
+		if (texture == -1) {
+			int[] textures = new int[1];
+			gl.glGenTextures(1, textures, 0);
+			texture = textures[0];
 		}
-		Class121.method1632(anInt5089);
-		gl.glTexImage2D(3553, 0, 6408, anInt5092, anInt5093, 0, 6408, 5121, bytebuffer);
-		Class11.anInt263 += bytebuffer.limit() - anInt5091;
-		anInt5091 = bytebuffer.limit();
+		RT4GL.method1632(texture);
+		gl.glTexImage2D(3553, 0, 6408, width, height, 0, 6408, 5121, pixels);
+		Class11.anInt263 += pixels.limit() - anInt5091;
+		anInt5091 = pixels.limit();
 	}
 }

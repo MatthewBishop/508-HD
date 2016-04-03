@@ -159,16 +159,16 @@ public class Class14_Sub8_Sub20 extends Class14_Sub8 {
 								break while_98_;
 							}
 						} else {
-							anInt4428 = class14_sub10.method784((byte) 123);
+							anInt4428 = class14_sub10.readUShort((byte) 123);
 							break while_100_;
 						}
-						anInt4421 = class14_sub10.method784((byte) 107);
+						anInt4421 = class14_sub10.readUShort((byte) 107);
 						break while_100_;
 					} while (false);
-					anInt4426 = class14_sub10.method784((byte) 107);
+					anInt4426 = class14_sub10.readUShort((byte) 107);
 					break while_100_;
 				} while (false);
-				anInt4423 = class14_sub10.method784((byte) 109);
+				anInt4423 = class14_sub10.readUShort((byte) 109);
 				break while_100_;
 			} while (false);
 			int i_23_ = class14_sub10.method829(i_21_ ^ 0x609d);

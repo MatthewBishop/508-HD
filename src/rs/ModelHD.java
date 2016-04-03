@@ -12,7 +12,7 @@ import com.jagex.cache.anim.AnimFrameBase;
 import com.jagex.cache.loaders.AnimFrameLoader;
 import com.jagex.io.Buffer;
 import com.jagex.rt4.AthmosphericEffects;
-import com.jagex.rt4.Class121;
+import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.RT4;
 import com.jagex.rt4.VertexBuffer;
@@ -1151,7 +1151,7 @@ public class ModelHD extends Class133_Sub7 {
 											}
 										}
 									} while (false);
-									GL gl = Class121.aGL2030;
+									GL gl = RT4GL.gl;
 									gl.glPushMatrix();
 									gl.glTranslatef((float) i_251_, (float) i_252_, (float) i_253_);
 									gl.glRotatef((float) i * 0.17578125F, 0.0F, 1.0F, 0.0F);
@@ -1185,7 +1185,7 @@ public class ModelHD extends Class133_Sub7 {
 	public void method1857(AnimFrameLoader class14_sub2_sub15, int i, boolean bool) {
 		if (vertexGroups != null && i != -1) {
 			AnimFrame animframe = class14_sub2_sub15.aClass143Array3951[i];
-			AnimFrameBase animframebase = animframe.aClass14_Sub5_2329;
+			AnimFrameBase animframebase = animframe.base;
 			for (int i_306_ = 0; i_306_ < anInt5033; i_306_++) {
 				vertexX[i_306_] <<= 4;
 				vertexY[i_306_] <<= 4;
@@ -1194,13 +1194,13 @@ public class ModelHD extends Class133_Sub7 {
 			centroidX = 0;
 			centroidY = 0;
 			centroidZ = 0;
-			for (int i_307_ = 0; i_307_ < animframe.anInt2336; i_307_++) {
-				short i_308_ = animframe.aShortArray2335[i_307_];
+			for (int i_307_ = 0; i_307_ < animframe.transformationCount; i_307_++) {
+				short i_308_ = animframe.transformationIndices[i_307_];
 				if (animframe.aShortArray2338[i_307_] != -1)
 					transform(0, (animframebase.labels[animframe.aShortArray2338[i_307_]]), 0, 0, 0, bool);
 				transform(animframebase.transformationType[i_308_], animframebase.labels[i_308_],
-						animframe.aShortArray2331[i_307_], animframe.aShortArray2340[i_307_],
-						animframe.aShortArray2333[i_307_], bool);
+						animframe.transformX[i_307_], animframe.transformY[i_307_],
+						animframe.transformZ[i_307_], bool);
 			}
 			for (int i_309_ = 0; i_309_ < anInt5033; i_309_++) {
 				vertexX[i_309_] >>= 4;
@@ -1227,17 +1227,17 @@ public class ModelHD extends Class133_Sub7 {
 	public void method1859(AnimFrameLoader class14_sub2_sub15, int i) {
 		if (vertexGroups != null && i != -1) {
 			AnimFrame animframe = class14_sub2_sub15.aClass143Array3951[i];
-			AnimFrameBase animframebase = animframe.aClass14_Sub5_2329;
+			AnimFrameBase animframebase = animframe.base;
 			centroidX = 0;
 			centroidY = 0;
 			centroidZ = 0;
-			for (int i_314_ = 0; i_314_ < animframe.anInt2336; i_314_++) {
-				short i_315_ = animframe.aShortArray2335[i_314_];
+			for (int i_314_ = 0; i_314_ < animframe.transformationCount; i_314_++) {
+				short i_315_ = animframe.transformationIndices[i_314_];
 				if (animframebase.aBooleanArray2791[i_315_]) {
 					if (animframe.aShortArray2338[i_314_] != -1)
 						method1893(0, 0, 0, 0);
-					method1893(animframebase.transformationType[i_315_], animframe.aShortArray2331[i_314_],
-							animframe.aShortArray2340[i_314_], animframe.aShortArray2333[i_314_]);
+					method1893(animframebase.transformationType[i_315_], animframe.transformX[i_314_],
+							animframe.transformY[i_314_], animframe.transformZ[i_314_]);
 				}
 			}
 			aClass41_5028.upToDate = false;
@@ -1263,7 +1263,7 @@ public class ModelHD extends Class133_Sub7 {
 
 	public void method1862(int i, int i_321_, int i_322_, int i_323_, int i_324_, int i_325_, int i_326_) {
 		if (anInt5040 != 0) {
-			GL gl = Class121.aGL2030;
+			GL gl = RT4GL.gl;
 			gl.glPushMatrix();
 			if (i_323_ != 0)
 				gl.glRotatef((float) i_323_ * 0.17578125F, 1.0F, 0.0F, 0.0F);
@@ -1344,7 +1344,7 @@ public class ModelHD extends Class133_Sub7 {
 			else {
 				AnimFrame animframe = class14_sub2_sub15.aClass143Array3951[i];
 				AnimFrame animframe_334_ = class14_sub2_sub15_332_.aClass143Array3951[i_333_];
-				AnimFrameBase animframebase = animframe.aClass14_Sub5_2329;
+				AnimFrameBase animframebase = animframe.base;
 				for (int i_335_ = 0; i_335_ < anInt5033; i_335_++) {
 					vertexX[i_335_] <<= 4;
 					vertexY[i_335_] <<= 4;
@@ -1355,17 +1355,17 @@ public class ModelHD extends Class133_Sub7 {
 				centroidZ = 0;
 				int i_336_ = 0;
 				int i_337_ = is[i_336_++];
-				for (int i_338_ = 0; i_338_ < animframe.anInt2336; i_338_++) {
+				for (int i_338_ = 0; i_338_ < animframe.transformationCount; i_338_++) {
 					int i_339_;
-					for (i_339_ = animframe.aShortArray2335[i_338_]; i_339_ > i_337_; i_337_ = is[i_336_++]) {
+					for (i_339_ = animframe.transformationIndices[i_338_]; i_339_ > i_337_; i_337_ = is[i_336_++]) {
 						/* empty */
 					}
 					if (i_339_ != i_337_ || animframebase.transformationType[i_339_] == 0) {
 						if (animframe.aShortArray2338[i_338_] != -1)
 							transform(0, (animframebase.labels[animframe.aShortArray2338[i_338_]]), 0, 0, 0, bool);
 						transform(animframebase.transformationType[i_339_], animframebase.labels[i_339_],
-								animframe.aShortArray2331[i_338_], animframe.aShortArray2340[i_338_],
-								animframe.aShortArray2333[i_338_], bool);
+								animframe.transformX[i_338_], animframe.transformY[i_338_],
+								animframe.transformZ[i_338_], bool);
 					}
 				}
 				centroidX = 0;
@@ -1373,17 +1373,17 @@ public class ModelHD extends Class133_Sub7 {
 				centroidZ = 0;
 				i_336_ = 0;
 				i_337_ = is[i_336_++];
-				for (int i_340_ = 0; i_340_ < animframe_334_.anInt2336; i_340_++) {
+				for (int i_340_ = 0; i_340_ < animframe_334_.transformationCount; i_340_++) {
 					int i_341_;
-					for (i_341_ = animframe_334_.aShortArray2335[i_340_]; i_341_ > i_337_; i_337_ = is[i_336_++]) {
+					for (i_341_ = animframe_334_.transformationIndices[i_340_]; i_341_ > i_337_; i_337_ = is[i_336_++]) {
 						/* empty */
 					}
 					if (i_341_ == i_337_ || animframebase.transformationType[i_341_] == 0) {
 						if (animframe_334_.aShortArray2338[i_340_] != -1)
 							transform(0, animframebase.labels[(animframe_334_.aShortArray2338[i_340_])], 0, 0, 0, bool);
 						transform(animframebase.transformationType[i_341_], animframebase.labels[i_341_],
-								animframe_334_.aShortArray2331[i_340_], animframe_334_.aShortArray2340[i_340_],
-								animframe_334_.aShortArray2333[i_340_], bool);
+								animframe_334_.transformX[i_340_], animframe_334_.transformY[i_340_],
+								animframe_334_.transformZ[i_340_], bool);
 					}
 				}
 				for (int i_342_ = 0; i_342_ < anInt5033; i_342_++) {
@@ -1420,7 +1420,7 @@ public class ModelHD extends Class133_Sub7 {
 	}
 
 	public void method1887() {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		if (anInt5014 != 0) {
 			if (aByte5026 != 0)
 				method1905(true, (!aClass41_5028.upToDate && (aByte5026 & 0x1) != 0),
@@ -1491,7 +1491,7 @@ public class ModelHD extends Class133_Sub7 {
 			if (aClass41_5028.aClass29_692 == null || aClass41_5030.aClass29_692 == null
 					|| (RT4.useLighting && aClass41_5018.aClass29_692 == null)
 					|| aClass41_5029.aClass29_692 == null) {
-				if (Class121.aBoolean2021)
+				if (RT4GL.aBoolean2021)
 					gl.glBindBufferARB(34962, 0);
 				if (aClass41_5028.aClass29_692 == null) {
 					aClass41_5028.aByteBuffer684.position(aClass41_5028.anInt686);
@@ -1510,7 +1510,7 @@ public class ModelHD extends Class133_Sub7 {
 					gl.glTexCoordPointer(2, 5126, aClass41_5029.anInt687, aClass41_5029.aByteBuffer684);
 				}
 			}
-			if (aClass41_5046.aClass29_692 == null && Class121.aBoolean2021)
+			if (aClass41_5046.aClass29_692 == null && RT4GL.aBoolean2021)
 				gl.glBindBufferARB(34963, 0);
 			int i = anIntArray5035.length - 1;
 			for (int i_348_ = 0; i_348_ < i; i_348_++) {
@@ -1518,7 +1518,7 @@ public class ModelHD extends Class133_Sub7 {
 				int i_350_ = anIntArray5035[i_348_ + 1];
 				int i_351_ = aShortArray5037[i_349_];
 				if (i_351_ == -1) {
-					Class121.method1632(-1);
+					RT4GL.method1632(-1);
 					RT4.method1778(0, 0);
 				} else
 					Class3.anInterface3_117.method16(i_351_ & 0xffff, (byte) 97);
@@ -1976,7 +1976,7 @@ public class ModelHD extends Class133_Sub7 {
 			aClass14_Sub10_5011 = new Buffer((anInt5040 + 100) * 12);
 		else
 			aClass14_Sub10_5011.position = 0;
-		if (Class121.aBoolean2046) {
+		if (RT4GL.aBoolean2046) {
 			for (int i = 0; i < anInt5014; i++) {
 				aClass14_Sub10_5011.method803(aShortArray5021[i], 116);
 				aClass14_Sub10_5011.method803(aShortArray5025[i], 74);
@@ -1989,7 +1989,7 @@ public class ModelHD extends Class133_Sub7 {
 				aClass14_Sub10_5011.method825(-65, aShortArray5038[i]);
 			}
 		}
-		if (Class121.aBoolean2021) {
+		if (RT4GL.aBoolean2021) {
 			VertexBuffer vertexBuffer = new VertexBuffer();
 			ByteBuffer bytebuffer = ByteBuffer.wrap(aClass14_Sub10_5011.payload, 0,
 					aClass14_Sub10_5011.position);
@@ -2122,7 +2122,7 @@ public class ModelHD extends Class133_Sub7 {
 			else
 				aClass14_Sub10_5011.position = 0;
 			if (bool_494_) {
-				if (Class121.aBoolean2046) {
+				if (RT4GL.aBoolean2046) {
 					for (int i_498_ = 0; i_498_ < anInt5033; i_498_++) {
 						int i_499_ = Float.floatToRawIntBits((float) vertexX[i_498_]);
 						int i_500_ = Float.floatToRawIntBits((float) vertexY[i_498_]);
@@ -2254,7 +2254,7 @@ public class ModelHD extends Class133_Sub7 {
 				float f = 3.0F / (float) aShort5024;
 				float f_535_ = 3.0F / (float) (aShort5024 + aShort5024 / 2);
 				aClass14_Sub10_5011.position = aClass41_5018.anInt686;
-				if (Class121.aBoolean2046) {
+				if (RT4GL.aBoolean2046) {
 					for (int i_536_ = 0; i_536_ < anInt5040; i_536_++) {
 						short i_537_ = aShortArray5017[i_536_];
 						if (i_537_ == 0) {
@@ -2288,7 +2288,7 @@ public class ModelHD extends Class133_Sub7 {
 			}
 			if (bool_497_) {
 				aClass14_Sub10_5011.position = aClass41_5029.anInt686;
-				if (Class121.aBoolean2046) {
+				if (RT4GL.aBoolean2046) {
 					for (int i_542_ = 0; i_542_ < anInt5040; i_542_++) {
 						aClass14_Sub10_5011.method834(aFloatArray5047[i_542_]);
 						aClass14_Sub10_5011.method834(aFloatArray5012[i_542_]);
@@ -2304,7 +2304,7 @@ public class ModelHD extends Class133_Sub7 {
 			}
 			aClass14_Sub10_5011.position = i * anInt5040;
 			if (bool) {
-				if (Class121.aBoolean2051) {
+				if (RT4GL.aBoolean2051) {
 					ByteBuffer bytebuffer = ByteBuffer.wrap(aClass14_Sub10_5011.payload, 0,
 							aClass14_Sub10_5011.position);
 					if (aClass29_5020 == null) {
@@ -2368,7 +2368,7 @@ public class ModelHD extends Class133_Sub7 {
 						aClass41_5029.anInt687 = i;
 					}
 				}
-			} else if (Class121.aBoolean2021) {
+			} else if (RT4GL.aBoolean2021) {
 				VertexBuffer vertexBuffer = new VertexBuffer();
 				ByteBuffer bytebuffer = ByteBuffer.wrap(aClass14_Sub10_5011.payload, 0,
 						aClass14_Sub10_5011.position);

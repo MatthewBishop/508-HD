@@ -16,12 +16,12 @@ public class Class19 implements Interface2 {
 	}
 
 	public void disable() {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		gl.glCallList(anInt2548 + 1);
 	}
 
 	public void enable() {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		gl.glCallList(anInt2548);
 	}
 
@@ -31,7 +31,7 @@ public class Class19 implements Interface2 {
 	}
 
 	public void method965(int i) {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		anInt2548 = gl.glGenLists(2);
 		gl.glNewList(anInt2548, 4864);
 		gl.glActiveTexture(33985);
@@ -65,7 +65,7 @@ public class Class19 implements Interface2 {
 	}
 
 	public void setup(int i) {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		float f = (float) ((i & 0x3) + 1) * -0.01F;
 		float f_5_ = (float) ((i >> 3 & 0x3) + 1) * 0.01F;
 		float f_6_ = (i & 0x40) == 0 ? 4.8828125E-4F : 9.765625E-4F;
@@ -91,16 +91,16 @@ public class Class19 implements Interface2 {
 		gl.glTranslatef((float) -RT4.translateX, (float) -RT4.translateY, (float) -RT4.translateZ);
 		gl.glTexGenfv(8192, 9474, aFloatArray2547, 0);
 		aFloatArray2547[0] = 0.0F;
-		aFloatArray2547[3] = (float) Class121.anInt2045 * f;
+		aFloatArray2547[3] = (float) RT4GL.anInt2045 * f;
 		aFloatArray2547[1] = f_6_;
 		aFloatArray2547[2] = 0.0F;
 		gl.glTexGenfv(8193, 9474, aFloatArray2547, 0);
 		gl.glPopMatrix();
 		if (!Class119.use3DTexture) {
-			int i_7_ = (int) ((float) Class121.anInt2045 * f_5_ * 64.0F);
+			int i_7_ = (int) ((float) RT4GL.anInt2045 * f_5_ * 64.0F);
 			gl.glBindTexture(3553, Class119.anIntArray1991[i_7_ % 64]);
 		} else {
-			aFloatArray2547[3] = (float) Class121.anInt2045 * f_5_;
+			aFloatArray2547[3] = (float) RT4GL.anInt2045 * f_5_;
 			aFloatArray2547[1] = 0.0F;
 			aFloatArray2547[2] = 0.0F;
 			aFloatArray2547[0] = 0.0F;

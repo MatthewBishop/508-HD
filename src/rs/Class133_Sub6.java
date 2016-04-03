@@ -3,7 +3,8 @@
  */
 package rs;
 
-import com.jagex.rt4.Class121;
+import com.jagex.rt4.RT4GL;
+import com.jagex.cache.anim.Animation;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 
 import nativeadvert.browsercontrol;
@@ -19,7 +20,7 @@ public class Class133_Sub6 extends Class133 {
 	public static Class124 aClass124_3635;
 	public static Class124 aClass124_3636;
 	public static Class124 aClass124_3637;
-	public Class46 aClass46_3638;
+	public Animation aClass46_3638;
 	public static Class124 aClass124_3639;
 	public static Class14_Sub2_Sub19 aClass14_Sub2_Sub19_3640;
 	public int anInt3641;
@@ -136,7 +137,7 @@ public class Class133_Sub6 extends Class133 {
 				anInt3656 -= aClass46_3638.anIntArray763[anInt3641];
 				anInt3641++;
 				if (aClass46_3638.anIntArray768.length <= anInt3641) {
-					anInt3641 -= aClass46_3638.anInt760;
+					anInt3641 -= aClass46_3638.loopOffset;
 					if (anInt3641 < 0 || aClass46_3638.anIntArray768.length <= anInt3641)
 						anInt3641 = 0;
 				}
@@ -183,7 +184,7 @@ public class Class133_Sub6 extends Class133 {
 	}
 
 	public static void method1854(int i, int i_17_, int i_18_) {
-		Class121.method1630();
+		RT4GL.method1630();
 		if (browsercontrol.iscreated())
 			browsercontrol.hide();
 		if (i_18_ >= 32) {

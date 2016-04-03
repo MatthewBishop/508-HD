@@ -186,25 +186,25 @@ public class Class14_Sub8_Sub36 extends Class14_Sub8 {
 										break while_39_;
 									}
 								} else {
-									anInt4701 = anInt4712 = class14_sub10.method798();
+									anInt4701 = anInt4712 = class14_sub10.readUByte();
 									break while_43_;
 								}
-								anInt4705 = class14_sub10.method798();
+								anInt4705 = class14_sub10.readUByte();
 								break while_43_;
 							} while (false);
-							anInt4710 = class14_sub10.method784((byte) 125);
+							anInt4710 = class14_sub10.readUShort((byte) 125);
 							break while_43_;
 						} while (false);
-						anInt4714 = class14_sub10.method798();
+						anInt4714 = class14_sub10.readUByte();
 						break while_43_;
 					} while (false);
-					anInt4692 = class14_sub10.method798();
+					anInt4692 = class14_sub10.readUByte();
 					break while_43_;
 				} while (false);
-				anInt4701 = class14_sub10.method798();
+				anInt4701 = class14_sub10.readUByte();
 				break while_43_;
 			} while (false);
-			anInt4712 = class14_sub10.method798();
+			anInt4712 = class14_sub10.readUByte();
 		} while (false);
 		if (i_24_ != 24777)
 			method472();

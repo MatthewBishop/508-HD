@@ -4,11 +4,11 @@ import com.jagex.io.Buffer;
 import com.jagex.link.HashTable;
 import com.jagex.map.SceneCluster;
 import com.jagex.rt4.AthmosphericEffects;
+import com.jagex.sound.Track;
 
 import java.io.IOException;
 import java.net.Socket;
 import rs.Class1;
-import rs.Class100;
 import rs.Class102;
 import rs.Class107;
 import rs.Class109;
@@ -68,9 +68,7 @@ import rs.Class83;
 import rs.Class84;
 import rs.Class89;
 import rs.Class9;
-import rs.Class91;
 import rs.Class98;
-import rs.Class99_Sub2;
 import rs.Class9_Sub1;
 import rs.tex.Class14_Sub8;
 import rs.tex.Class14_Sub8_Sub10;
@@ -125,7 +123,7 @@ public class Class71 {
 				if (Class131.anInt2164 != Class84.anInt1346) {
 					Class131.anInt2164 = Class84.anInt1346;
 				} else {
-					Class131.anInt2164 = Class99_Sub2.anInt3348;
+					Class131.anInt2164 = Static2.anInt3348;
 				}
 
 				++Class7.anInt179;
@@ -267,7 +265,7 @@ public class Class71 {
 						Class70.aClass14_Sub10_Sub1_1080.method803(Class102.aClass9_Sub1_1712.anInt242, 90);
 						Class70.aClass14_Sub10_Sub1_1080.method803(Class127.aClass9_Sub1_2111.anInt242, 101);
 						Class70.aClass14_Sub10_Sub1_1080.method803(Class22.aClass9_Sub1_459.anInt242, 65);
-						Class70.aClass14_Sub10_Sub1_1080.method803(Class100.aClass9_Sub1_1690.anInt242, 112);
+						Class70.aClass14_Sub10_Sub1_1080.method803(Static2.aClass9_Sub1_1690.anInt242, 112);
 						Class70.aClass14_Sub10_Sub1_1080.method803(Class14_Sub8.aClass9_Sub1_2848.anInt242, 106);
 						Class70.aClass14_Sub10_Sub1_1080.method803(Class7_Sub1.aClass9_Sub1_2657.anInt242, 97);
 						Class70.aClass14_Sub10_Sub1_1080.method803(Class14_Sub21.aClass9_Sub1_3111.anInt242, 85);
@@ -395,9 +393,9 @@ public class Class71 {
 									Class14_Sub15.aClass36_2990.method1099(11,
 											Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.payload, -1, 0);
 									Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.position = 0;
-									Class152.anInt2439 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method798();
-									Static2.anInt2889 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method798();
-									Class146.anInt2365 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method798();
+									Class152.anInt2439 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUByte();
+									Static2.anInt2889 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUByte();
+									Class146.anInt2365 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUByte();
 									if (Class146.anInt2365 == 1) {
 										try {
 											Class35.aClass124_597
@@ -415,16 +413,16 @@ public class Class71 {
 									}
 
 									Class14_Sub2_Sub21.anInt4081 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734
-											.method798();
+											.readUByte();
 									Class14_Sub8_Sub10.aBoolean4249 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734
-											.method798() == 1;
+											.readUByte() == 1;
 									Class14_Sub2_Sub10.anInt3868 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734
-											.method784((byte) 117);
-									Class14_Sub20.anInt3090 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method798();
+											.readUShort((byte) 117);
+									Class14_Sub20.anInt3090 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUByte();
 									Class133_Sub4.anInt3579 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734
 											.readOpcode();
 									Class14_Sub8_Sub12.anInt4280 = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734
-											.method784((byte) 121);
+											.readUShort((byte) 121);
 									Class142.anInt2315 = 9;
 								} catch (IOException var12) {
 									break label217;
@@ -489,7 +487,7 @@ public class Class71 {
 				if (Class131.anInt2164 != Class84.anInt1346) {
 					Class131.anInt2164 = Class84.anInt1346;
 				} else {
-					Class131.anInt2164 = Class99_Sub2.anInt3348;
+					Class131.anInt2164 = Static2.anInt3348;
 				}
 			}
 		}
@@ -537,9 +535,9 @@ public class Class71 {
 
 				--var1;
 			} else {
-				Class91 var10 = Class137.aClass91Array2197[var1];
+				Track var10 = Class137.aClass91Array2197[var1];
 				if (var10 == null) {
-					var10 = Class91.method1451(Static2.aClass9_Sub1_2901, Class153.anIntArray2454[var1], 0);
+					var10 = Track.method1451(Static2.aClass9_Sub1_2901, Class153.anIntArray2454[var1], 0);
 					if (var10 == null) {
 						continue;
 					}
@@ -576,7 +574,7 @@ public class Class71 {
 							var9 = 0;
 						}
 
-						var3 = Class100.anInt1691 * (var4 - var9) / var4;
+						var3 = Static2.anInt1691 * (var4 - var9) / var4;
 					}
 
 					if (var3 > 0) {
@@ -624,7 +622,7 @@ public class Class71 {
 	}
 
 	public Class71(Buffer var1) {
-		int var2 = var1.method798();
+		int var2 = var1.readUByte();
 		if ((var2 & 1) == 0) {
 			this.anInt1088 = AthmosphericEffects.defaultSunColour;
 		} else {
@@ -634,11 +632,11 @@ public class Class71 {
 		if ((var2 & 2) == 0) {
 			this.aFloat1089 = 1.1523438F;
 		} else {
-			this.aFloat1089 = (float) var1.method784((byte) 110) / 256.0F;
+			this.aFloat1089 = (float) var1.readUShort((byte) 110) / 256.0F;
 		}
 
 		if ((var2 & 4) != 0) {
-			this.aFloat1096 = (float) var1.method784((byte) 122) / 256.0F;
+			this.aFloat1096 = (float) var1.readUShort((byte) 122) / 256.0F;
 		} else {
 			this.aFloat1096 = 0.69921875F;
 		}
@@ -646,7 +644,7 @@ public class Class71 {
 		if ((var2 & 8) == 0) {
 			this.aFloat1095 = 1.2F;
 		} else {
-			this.aFloat1095 = (float) var1.method784((byte) 120) / 256.0F;
+			this.aFloat1095 = (float) var1.readUShort((byte) 120) / 256.0F;
 		}
 
 		if ((var2 & 16) != 0) {
@@ -668,7 +666,7 @@ public class Class71 {
 		if ((var2 & 64) == 0) {
 			this.anInt1100 = 0;
 		} else {
-			this.anInt1100 = var1.method784((byte) 111);
+			this.anInt1100 = var1.readUShort((byte) 111);
 		}
 
 	}

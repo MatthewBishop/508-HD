@@ -6,7 +6,7 @@ package com.jagex.rt4;
 public class Class101 implements Interface2 {
 	public void disable() {
 		if (RT4.useLighting)
-			Class121.method1639(true);
+			RT4GL.method1639(true);
 	}
 
 	public void setup(int i) {
@@ -19,6 +19,6 @@ public class Class101 implements Interface2 {
 
 	public void enable() {
 		if (RT4.useLighting)
-			Class121.method1639(false);
+			RT4GL.method1639(false);
 	}
 }

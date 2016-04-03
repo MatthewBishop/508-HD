@@ -17,7 +17,9 @@ import java.lang.reflect.Method;
 import java.net.URL;
 
 import com.jagex.io.Buffer;
+import com.jagex.util.Timer;
 import com.jagex.util.TimeUtil;
+import com.jagex.util.Util;
 
 import rs.tex.Class14_Sub8_Sub14;
 import rs.tex.Class14_Sub8_Sub18;
@@ -396,11 +398,11 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
 			this.method37(5);
 			this.method25(-1);
-			Class48.aClass99_804 = Class125_Sub3.method1736(123);
+			Class48.timer = Timer.create();
 
 			while (Class14_Sub8_Sub36.aLong4704 == 0L
 					|| Class14_Sub8_Sub36.aLong4704 > TimeUtil.getTime()) {
-				Class102.anInt1702 = Class48.aClass99_804.method1501(Class59.anInt959, -1, Class65.anInt1025);
+				Class102.anInt1702 = Class48.timer.method1501(Class59.anInt959, Class65.anInt1025);
 
 				for (int var9 = 0; var9 < Class102.anInt1702; ++var9) {
 					this.method42((byte) 113);
@@ -477,7 +479,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	public void destroy() {
 		if (this == Class96.anApplet_Sub1_1632 && !Class14_Sub2_Sub5.aBoolean3818) {
 			Class14_Sub8_Sub36.aLong4704 = TimeUtil.getTime();
-			Class14_Sub13.method864(5000L, (byte) 64);
+			Util.sleep(5000L);
 			Static2.aClass43_358 = null;
 			method36(false, (byte) -67);
 		}

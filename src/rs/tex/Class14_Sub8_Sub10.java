@@ -104,13 +104,13 @@ public class Class14_Sub8_Sub10 extends Class14_Sub8 {
 						break while_88_;
 					}
 				} else {
-					anInt4258 = class14_sub10.method798();
+					anInt4258 = class14_sub10.readUByte();
 					break while_88_;
 				}
-				anInt4254 = class14_sub10.method784((byte) 124);
+				anInt4254 = class14_sub10.readUShort((byte) 124);
 				break while_88_;
 			} while (false);
-			anInt4263 = class14_sub10.method798();
+			anInt4263 = class14_sub10.readUByte();
 		} while (false);
 		if (i_12_ != 24777)
 			aBoolean4249 = false;

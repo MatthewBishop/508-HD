@@ -65,18 +65,18 @@ public abstract class Class9 {
 			anIntArray212 = null;
 		anInt242 = Buffer.method1303(is, is.length);
 		Buffer class14_sub10 = new Buffer(Class7_Sub3_Sub1.method139(-28009, is));
-		int i_3_ = class14_sub10.method798();
+		int i_3_ = class14_sub10.readUByte();
 		if (i_3_ != 5 && i_3_ != 6)
 			throw new RuntimeException(new StringBuilder("Incorrect JS5 protocol number: ").append(i_3_).toString());
 		if (i_3_ >= 6)
 			class14_sub10.method812((byte) -102);
-		int i_4_ = class14_sub10.method798();
-		anInt211 = class14_sub10.method784((byte) 111);
+		int i_4_ = class14_sub10.readUByte();
+		anInt211 = class14_sub10.readUShort((byte) 111);
 		int i_5_ = 0;
 		int i_6_ = -1;
 		anIntArray223 = new int[anInt211];
 		for (int i_7_ = 0; i_7_ < anInt211; i_7_++) {
-			anIntArray223[i_7_] = i_5_ += class14_sub10.method784((byte) 104);
+			anIntArray223[i_7_] = i_5_ += class14_sub10.readUShort((byte) 104);
 			if (i_6_ < anIntArray223[i_7_])
 				i_6_ = anIntArray223[i_7_];
 		}
@@ -100,7 +100,7 @@ public abstract class Class9 {
 		for (int i_11_ = 0; anInt211 > i_11_; i_11_++)
 			anIntArray194[anIntArray223[i_11_]] = class14_sub10.method812((byte) -102);
 		for (int i_12_ = 0; anInt211 > i_12_; i_12_++)
-			anIntArray203[anIntArray223[i_12_]] = class14_sub10.method784((byte) 122);
+			anIntArray203[anIntArray223[i_12_]] = class14_sub10.readUShort((byte) 122);
 		for (int i_13_ = 0; i_13_ < anInt211; i_13_++) {
 			i_5_ = 0;
 			int i_14_ = anIntArray223[i_13_];
@@ -108,7 +108,7 @@ public abstract class Class9 {
 			int i_16_ = -1;
 			anIntArrayArray218[i_14_] = new int[i_15_];
 			for (int i_17_ = 0; i_15_ > i_17_; i_17_++) {
-				int i_18_ = (anIntArrayArray218[i_14_][i_17_] = i_5_ += class14_sub10.method784((byte) 112));
+				int i_18_ = (anIntArrayArray218[i_14_][i_17_] = i_5_ += class14_sub10.readUShort((byte) 112));
 				if (i_18_ > i_16_)
 					i_16_ = i_18_;
 			}

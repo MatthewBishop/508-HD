@@ -8,7 +8,7 @@ import java.util.Date;
 
 import com.jagex.link.HashTable;
 import com.jagex.map.SceneCluster;
-import com.jagex.rt4.Class121;
+import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class14_Sub1;
 import com.jagex.rt4.RT4;
 import com.jagex.util.TimeUtil;
@@ -691,7 +691,7 @@ public class Class116 {
 																	i_3_ -= 2;
 																	int i_74_ = (Class79.anIntArray1305[i_3_]);
 																	int i_75_ = (Class79.anIntArray1305[(i_3_ + 1)]);
-																	Class14_Sub2_Sub8 class14_sub2_sub8 = (Class99_Sub2
+																	Class14_Sub2_Sub8 class14_sub2_sub8 = (Static2
 																			.method1507(-8475, i_74_));
 																	if ((class14_sub2_sub8.anInt3845) != 0) {
 																		/* empty */
@@ -704,7 +704,7 @@ public class Class116 {
 																	int i_77_ = (Class79.anIntArray1305[(i_3_ + 1)]);
 																	int i_78_ = (Class79.anIntArray1305[(i_3_ + 2)]);
 																	int i_79_ = (Class79.anIntArray1305[(i_3_ + 3)]);
-																	Class14_Sub2_Sub8 class14_sub2_sub8 = (Class99_Sub2
+																	Class14_Sub2_Sub8 class14_sub2_sub8 = (Static2
 																			.method1507(-8475, i_78_));
 																	if ((i_76_ != class14_sub2_sub8.anInt3851)
 																			|| (class14_sub2_sub8.anInt3845 != i_77_))
@@ -724,7 +724,7 @@ public class Class116 {
 																	int i_80_ = (Class79.anIntArray1305[(i_3_ + 1)]);
 																	int i_81_ = (Class79.anIntArray1305[i_3_]);
 																	int i_82_ = (Class79.anIntArray1305[(i_3_ + 2)]);
-																	Class14_Sub2_Sub8 class14_sub2_sub8 = (Class99_Sub2
+																	Class14_Sub2_Sub8 class14_sub2_sub8 = (Static2
 																			.method1507(-8475, i_80_));
 																	if (i_81_ != (class14_sub2_sub8.anInt3845))
 																		throw new RuntimeException("C3409-1");
@@ -735,7 +735,7 @@ public class Class116 {
 																		break;
 																	Class124 class124 = (Class14_Sub8_Sub39_Sub1.aClass124Array5101[--i_4_]);
 																	int i_83_ = (Class79.anIntArray1305[--i_3_]);
-																	Class14_Sub2_Sub8 class14_sub2_sub8 = (Class99_Sub2
+																	Class14_Sub2_Sub8 class14_sub2_sub8 = (Static2
 																			.method1507(-8475, i_83_));
 																	if ((class14_sub2_sub8.anInt3845) != 115)
 																		throw new RuntimeException("C3410-1");
@@ -862,7 +862,7 @@ public class Class116 {
 																	int i_92_ = (Class79.anIntArray1305[--i_3_]);
 																	if (((Class15.anInt380) != 0)
 																			&& (i_92_ < Class42.anInt698))
-																		Class14_Sub8_Sub39_Sub1.aClass124Array5101[i_4_++] = Class46
+																		Class14_Sub8_Sub39_Sub1.aClass124Array5101[i_4_++] = Static2
 																				.method1174(
 																						Class126.aLongArray2095[i_92_],
 																						(byte) 76)
@@ -1365,7 +1365,7 @@ public class Class116 {
 																												15);
 																							} else if (!class124_105_
 																									.method1690(
-																											Class100.aClass124_1682,
+																											Static2.aClass124_1682,
 																											33)) {
 																								if (class124_105_
 																										.method1690(
@@ -1400,7 +1400,7 @@ public class Class116 {
 																														33)) {
 																											if (!class124_105_
 																													.method1690(
-																															Class100.aClass124_1683,
+																															Static2.aClass124_1683,
 																															33)) {
 																												if (class124_105_
 																														.method1690(
@@ -1418,7 +1418,7 @@ public class Class116 {
 																												i_107_ = 4;
 																												class124 = class124
 																														.method1696(
-																																Class100.aClass124_1683
+																																Static2.aClass124_1683
 																																		.method1693(
 																																				i_1_ ^ 0x4f),
 																																i_1_ - 64);
@@ -1445,7 +1445,7 @@ public class Class116 {
 																							} else {
 																								class124 = class124
 																										.method1696(
-																												Class100.aClass124_1682
+																												Static2.aClass124_1682
 																														.method1693(
 																																i_1_ ^ 0x4f),
 																												15);
@@ -1918,7 +1918,7 @@ public class Class116 {
 																										Class79.anIntArray1305[i_3_
 																												+ 1],
 																										(byte) 48);
-																						Class99_Sub2.method1505(true);
+																						Static2.method1505(true);
 																						Class14_Sub23
 																								.method903((byte) 54);
 																						Static2.method839(8);
@@ -2264,7 +2264,7 @@ public class Class116 {
 																								else if (i_6_ == 6404)
 																									Class14_Sub8_Sub39_Sub1.aClass124Array5101[i_4_++] = Class42.aClass124_700;
 																								else if (i_6_ == 6405)
-																									Class79.anIntArray1305[i_3_++] = Class99
+																									Class79.anIntArray1305[i_3_++] = Static2
 																											.method1499(0) ? 1 : 0;
 																								else {
 																									if (i_6_ != 6406)
@@ -2389,9 +2389,9 @@ public class Class116 {
 																						else if (i_6_ == 6119)
 																							Class79.anIntArray1305[i_3_++] = Class14_Sub23.anInt3135;
 																						else if (i_6_ == 6120)
-																							Class79.anIntArray1305[i_3_++] = Class100.anInt1691;
+																							Class79.anIntArray1305[i_3_++] = Static2.anInt1691;
 																						else if (i_6_ == 6121)
-																							Class79.anIntArray1305[i_3_++] = Class121.aBoolean2050
+																							Class79.anIntArray1305[i_3_++] = RT4GL.aBoolean2050
 																									? 1 : 0;
 																						else {
 																							if (i_6_ != 6122)
@@ -2596,7 +2596,7 @@ public class Class116 {
 																							i_187_ = 0;
 																						if (i_187_ > 127)
 																							i_187_ = 127;
-																						Class100.anInt1691 = i_187_;
+																						Static2.anInt1691 = i_187_;
 																						Class14_Sub8_Sub22.method595(
 																								i_1_ ^ 0xf57c801,
 																								Class14_Sub8_Sub34.aClass43_4647);
@@ -3799,7 +3799,7 @@ public class Class116 {
 						throwable, 95);
 			} else {
 				if (Class7.anInt182 != 0)
-					Class15.method943(Class99.aClass124_1679, false, Class140.aClass124_2234, 0);
+					Class15.method943(Static2.aClass124_1679, false, Class140.aClass124_2234, 0);
 				Class14_Sub9_Sub3.method738(new StringBuilder("CS2 - scr:").append(class14_sub2_sub12.key)
 						.append(" op:").append(i_6_).toString(), throwable, 95);
 			}

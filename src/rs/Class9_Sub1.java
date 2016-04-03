@@ -84,7 +84,7 @@ public class Class9_Sub1 extends Class9 {
 						Class14_Sub8_Sub29.method633((byte) 0, 120, this, 255, true, anInt2692, anInt2687);
 					else {
 						Buffer class14_sub10 = new Buffer(Class7_Sub3_Sub1.method139(-28009, is));
-						int i_10_ = class14_sub10.method798();
+						int i_10_ = class14_sub10.readUByte();
 						if (i_10_ != 5 && i_10_ != 6)
 							Class14_Sub8_Sub29.method633((byte) 0, 114, this, 255, true, anInt2692, anInt2687);
 						else {

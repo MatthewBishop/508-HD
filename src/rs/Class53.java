@@ -72,7 +72,7 @@ public class Class53 {
 			method1212(40);
 		Class125_Sub1 class125_sub1 = new Class125_Sub1(class14_sub10.method805(0), class14_sub10.method805(0),
 				class14_sub10.method805(0), class14_sub10.method805(0), class14_sub10.method829(115),
-				class14_sub10.method829(100), class14_sub10.method798());
+				class14_sub10.method829(100), class14_sub10.readUByte());
 		return class125_sub1;
 	}
 

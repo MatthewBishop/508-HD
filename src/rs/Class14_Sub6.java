@@ -37,7 +37,7 @@ public class Class14_Sub6 extends Linkable {
 			int i_0_ = 40;
 			return i_0_;
 		}
-		int i_1_ = (((Class100.anInt1691 != 0 ? 1 : 0) << 22) + (((!Class14_Sub8_Sub26.aBoolean4528 ? 0 : 1) << 19)
+		int i_1_ = (((Static2.anInt1691 != 0 ? 1 : 0) << 22) + (((!Class14_Sub8_Sub26.aBoolean4528 ? 0 : 1) << 19)
 				+ ((!Class14_Sub8_Sub20.aBoolean4420 ? 0
 						: 1) << 16)
 				+ (((!Class15.aBoolean374 ? 0 : 1) << 15)

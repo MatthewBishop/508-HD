@@ -30,8 +30,6 @@ import rs.Class92;
 import rs.Class95;
 import rs.Class97;
 import rs.Class98;
-import rs.Class99;
-import rs.Class99_Sub2;
 import rs.Class9_Sub1;
 import rs.Static2;
 
@@ -62,9 +60,9 @@ public abstract class Class14_Sub8 extends Linkable {
 		Class14_Sub2_Sub2.aClass148_Sub1Array3762 = class148_sub1s_2_;
 		Class109.aClass14_Sub2_Sub19_Sub1Array1835 = class14_sub2_sub19_sub1s;
 		Class14_Sub8_Sub28.aClass9_4570 = class9;
-		Class99_Sub2.aClass148_Sub1Array3358 = class148_sub1s;
+		Static2.aClass148_Sub1Array3358 = class148_sub1s;
 		Class97.aClass2_1647.clear();
-		int i_3_ = Class14_Sub8_Sub28.aClass9_4570.method146(Class99.aClass124_1677, 0);
+		int i_3_ = Class14_Sub8_Sub28.aClass9_4570.method146(Static2.aClass124_1677, 0);
 		int[] is = Class14_Sub8_Sub28.aClass9_4570.method176((byte) 90, i_3_);
 		for (int i_4_ = 0; is.length > i_4_; i_4_++)
 			Class97.aClass2_1647.pushBack(

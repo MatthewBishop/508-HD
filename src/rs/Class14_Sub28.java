@@ -168,7 +168,7 @@ public class Class14_Sub28 extends Linkable {
 			is_19_[1] = (byte) 1;
 			int i_21_ = 1;
 			for (int i_22_ = 2; i_16_ > i_22_; i_22_++) {
-				int i_23_ = class14_sub10.method798();
+				int i_23_ = class14_sub10.readUByte();
 				if (i_23_ == 0)
 					i_21_ = i_20_++;
 				else {
@@ -183,19 +183,19 @@ public class Class14_Sub28 extends Linkable {
 		Class127[] class127s = new Class127[i_20_];
 		for (int i_24_ = 0; class127s.length > i_24_; i_24_++) {
 			Class127 class127 = class127s[i_24_] = new Class127();
-			int i_25_ = class14_sub10.method798();
+			int i_25_ = class14_sub10.readUByte();
 			if (i_25_ > 0)
 				class127.aByteArray2109 = new byte[i_25_ * 2];
-			i_25_ = class14_sub10.method798();
+			i_25_ = class14_sub10.readUByte();
 			if (i_25_ > 0) {
 				class127.aByteArray2098 = new byte[i_25_ * 2 + 2];
 				class127.aByteArray2098[1] = (byte) 64;
 			}
 		}
-		int i_26_ = class14_sub10.method798();
+		int i_26_ = class14_sub10.readUByte();
 		int i_27_ = 0;
 		byte[] is_28_ = i_26_ <= 0 ? null : new byte[i_26_ * 2];
-		i_26_ = class14_sub10.method798();
+		i_26_ = class14_sub10.readUByte();
 		for (/**/; (class14_sub10.payload[class14_sub10.position + i_27_] != 0); i_27_++) {
 			/* empty */
 		}
@@ -207,12 +207,12 @@ public class Class14_Sub28 extends Linkable {
 		i_27_++;
 		int i_32_ = 0;
 		for (int i_33_ = 0; i_33_ < 128; i_33_++) {
-			i_32_ += class14_sub10.method798();
+			i_32_ += class14_sub10.readUByte();
 			aShortArray3223[i_33_] = (short) i_32_;
 		}
 		i_32_ = 0;
 		for (int i_34_ = 0; i_34_ < 128; i_34_++) {
-			i_32_ += class14_sub10.method798();
+			i_32_ += class14_sub10.readUByte();
 			aShortArray3223[i_34_] += i_32_ << 8;
 		}
 		int i_35_ = 0;
@@ -288,12 +288,12 @@ public class Class14_Sub28 extends Linkable {
 				else
 					i_36_ = is_29_[i_35_++];
 				if (anIntArray3218[i_45_] > 0)
-					i_44_ = class14_sub10.method798() + 1;
+					i_44_ = class14_sub10.readUByte() + 1;
 			}
 			i_36_--;
 			aByteArray3213[i_45_] = (byte) i_44_;
 		}
-		anInt3224 = class14_sub10.method798() + 1;
+		anInt3224 = class14_sub10.readUByte() + 1;
 		for (int i_46_ = 0; i_46_ < i_20_; i_46_++) {
 			Class127 class127_47_ = class127s[i_46_];
 			if (class127_47_.aByteArray2109 != null) {
@@ -318,7 +318,7 @@ public class Class14_Sub28 extends Linkable {
 			if (class127_53_.aByteArray2098 != null) {
 				i_32_ = 0;
 				for (int i_54_ = 2; i_54_ < class127_53_.aByteArray2098.length; i_54_ += 2) {
-					i_32_ = class14_sub10.method798() + (i_32_ + 1);
+					i_32_ = class14_sub10.readUByte() + (i_32_ + 1);
 					class127_53_.aByteArray2098[i_54_] = (byte) i_32_;
 				}
 			}
@@ -328,16 +328,16 @@ public class Class14_Sub28 extends Linkable {
 			if (class127_56_.aByteArray2109 != null) {
 				i_32_ = 0;
 				for (int i_57_ = 2; class127_56_.aByteArray2109.length > i_57_; i_57_ += 2) {
-					i_32_ = class14_sub10.method798() + (i_32_ + 1);
+					i_32_ = class14_sub10.readUByte() + (i_32_ + 1);
 					class127_56_.aByteArray2109[i_57_] = (byte) i_32_;
 				}
 			}
 		}
 		if (is_28_ != null) {
-			i_32_ = class14_sub10.method798();
+			i_32_ = class14_sub10.readUByte();
 			is_28_[0] = (byte) i_32_;
 			for (int i_58_ = 2; i_58_ < is_28_.length; i_58_ += 2) {
-				i_32_ = i_32_ + class14_sub10.method798() + 1;
+				i_32_ = i_32_ + class14_sub10.readUByte() + 1;
 				is_28_[i_58_] = (byte) i_32_;
 			}
 			int i_59_ = is_28_[0];
@@ -363,10 +363,10 @@ public class Class14_Sub28 extends Linkable {
 				aByteArray3213[i_68_] = (byte) (aByteArray3213[i_68_] * i_60_ + 32 >> 6);
 		}
 		if (is_30_ != null) {
-			i_32_ = class14_sub10.method798();
+			i_32_ = class14_sub10.readUByte();
 			is_30_[0] = (byte) i_32_;
 			for (int i_69_ = 2; is_30_.length > i_69_; i_69_ += 2) {
-				i_32_ = class14_sub10.method798() + (i_32_ + 1);
+				i_32_ = class14_sub10.readUByte() + (i_32_ + 1);
 				is_30_[i_69_] = (byte) i_32_;
 			}
 			int i_70_ = is_30_[0];
@@ -409,27 +409,27 @@ public class Class14_Sub28 extends Linkable {
 			Object object = null;
 		}
 		for (int i_83_ = 0; i_83_ < i_20_; i_83_++)
-			class127s[i_83_].anInt2097 = class14_sub10.method798();
+			class127s[i_83_].anInt2097 = class14_sub10.readUByte();
 		for (int i_84_ = 0; i_84_ < i_20_; i_84_++) {
 			Class127 class127_85_ = class127s[i_84_];
 			if (class127_85_.aByteArray2109 != null)
-				class127_85_.anInt2096 = class14_sub10.method798();
+				class127_85_.anInt2096 = class14_sub10.readUByte();
 			if (class127_85_.aByteArray2098 != null)
-				class127_85_.anInt2099 = class14_sub10.method798();
+				class127_85_.anInt2099 = class14_sub10.readUByte();
 			if (class127_85_.anInt2097 > 0)
-				class127_85_.anInt2106 = class14_sub10.method798();
+				class127_85_.anInt2106 = class14_sub10.readUByte();
 		}
 		for (int i_86_ = 0; i_86_ < i_20_; i_86_++)
-			class127s[i_86_].anInt2103 = class14_sub10.method798();
+			class127s[i_86_].anInt2103 = class14_sub10.readUByte();
 		for (int i_87_ = 0; i_87_ < i_20_; i_87_++) {
 			Class127 class127_88_ = class127s[i_87_];
 			if (class127_88_.anInt2103 > 0)
-				class127_88_.anInt2108 = class14_sub10.method798();
+				class127_88_.anInt2108 = class14_sub10.readUByte();
 		}
 		for (int i_89_ = 0; i_89_ < i_20_; i_89_++) {
 			Class127 class127_90_ = class127s[i_89_];
 			if (class127_90_.anInt2108 > 0)
-				class127_90_.anInt2100 = class14_sub10.method798();
+				class127_90_.anInt2100 = class14_sub10.readUByte();
 		}
 	}
 }

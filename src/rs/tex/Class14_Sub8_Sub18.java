@@ -253,12 +253,12 @@ public class Class14_Sub8_Sub18 extends Class14_Sub8 {
 	public void method475(int i, int i_33_, Buffer class14_sub10) {
 		if (i != 0) {
 			if (i == 1)
-				aBoolean2862 = class14_sub10.method798() == 1;
+				aBoolean2862 = class14_sub10.readUByte() == 1;
 		} else {
-			aClass125Array4398 = new Class125[class14_sub10.method798()];
+			aClass125Array4398 = new Class125[class14_sub10.readUByte()];
 			int i_34_ = 0;
 			while_87_: for (/**/; aClass125Array4398.length > i_34_; i_34_++) {
-				int i_35_ = class14_sub10.method798();
+				int i_35_ = class14_sub10.readUByte();
 				int i_36_ = i_35_;
 				while_85_: do {
 					do {

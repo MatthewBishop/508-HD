@@ -51,31 +51,31 @@ public class Class21 {
 		if (i_2_ != -71)
 			method980(78, null);
 		if (i == 1)
-			anInt446 = class14_sub10.method798();
+			anInt446 = class14_sub10.readUByte();
 		else if (i == 2) {
-			int i_3_ = class14_sub10.method798();
+			int i_3_ = class14_sub10.readUByte();
 			anIntArray457 = new int[i_3_];
 			for (int i_4_ = 0; i_4_ < i_3_; i_4_++)
-				anIntArray457[i_4_] = class14_sub10.method784((byte) 118);
+				anIntArray457[i_4_] = class14_sub10.readUShort((byte) 118);
 		} else if (i != 3) {
 			if (i == 40) {
-				int i_5_ = class14_sub10.method798();
+				int i_5_ = class14_sub10.readUByte();
 				aShortArray445 = new short[i_5_];
 				aShortArray450 = new short[i_5_];
 				for (int i_6_ = 0; i_6_ < i_5_; i_6_++) {
-					aShortArray445[i_6_] = (short) class14_sub10.method784((byte) 116);
-					aShortArray450[i_6_] = (short) class14_sub10.method784((byte) 103);
+					aShortArray445[i_6_] = (short) class14_sub10.readUShort((byte) 116);
+					aShortArray450[i_6_] = (short) class14_sub10.readUShort((byte) 103);
 				}
 			} else if (i == 41) {
-				int i_7_ = class14_sub10.method798();
+				int i_7_ = class14_sub10.readUByte();
 				aShortArray453 = new short[i_7_];
 				aShortArray455 = new short[i_7_];
 				for (int i_8_ = 0; i_7_ > i_8_; i_8_++) {
-					aShortArray453[i_8_] = (short) class14_sub10.method784((byte) 113);
-					aShortArray455[i_8_] = (short) class14_sub10.method784((byte) 122);
+					aShortArray453[i_8_] = (short) class14_sub10.readUShort((byte) 113);
+					aShortArray455[i_8_] = (short) class14_sub10.readUShort((byte) 122);
 				}
 			} else if (i >= 60 && i < 70)
-				anIntArray447[i - 60] = class14_sub10.method784((byte) 107);
+				anIntArray447[i - 60] = class14_sub10.readUShort((byte) 107);
 		} else
 			aBoolean449 = true;
 	}
@@ -149,7 +149,7 @@ public class Class21 {
 
 	public void method980(int i, Buffer class14_sub10) {
 		for (;;) {
-			int i_22_ = class14_sub10.method798();
+			int i_22_ = class14_sub10.readUByte();
 			if (i_22_ == 0)
 				break;
 			method976(class14_sub10, i_22_, i + 29431);

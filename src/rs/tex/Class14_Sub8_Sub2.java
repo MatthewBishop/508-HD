@@ -271,10 +271,10 @@ public class Class14_Sub8_Sub2 extends Class14_Sub8 {
 				if (i_55_ != 1)
 					break;
 			} else {
-				anInt4108 = class14_sub10.method798();
+				anInt4108 = class14_sub10.readUByte();
 				break;
 			}
-			aBoolean2862 = class14_sub10.method798() == 1;
+			aBoolean2862 = class14_sub10.readUByte() == 1;
 		} while (false);
 		if (i_54_ != 24777)
 			method474(-96, -78);

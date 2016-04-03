@@ -11,10 +11,8 @@ import rs.Class14_Sub15;
 import rs.Class14_Sub28;
 import rs.Class14_Sub2_Sub2;
 import rs.Class36;
-import rs.Class46;
 import rs.Class56;
 import rs.Class84;
-import rs.Class99_Sub2;
 import rs.tex.Class14_Sub8_Sub22;
 import rs.tex.Class14_Sub8_Sub27;
 import rs.tex.Class14_Sub8_Sub31;
@@ -92,7 +90,7 @@ public class Class115 {
 
 				Class56.anInt918 = 1;
 				if (Class84.anInt1346 == Class131.anInt2164) {
-					Class131.anInt2164 = Class99_Sub2.anInt3348;
+					Class131.anInt2164 = Static2.anInt3348;
 				} else {
 					Class131.anInt2164 = Class84.anInt1346;
 				}
@@ -201,7 +199,7 @@ public class Class115 {
 								Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.payload, var0 + 1, 0);
 
 						for (var2 = 0; Class14_Sub8_Sub27.aClass124Array4549.length > var2; ++var2) {
-							Class14_Sub8_Sub27.aClass124Array4549[var2] = Class46.method1174(
+							Class14_Sub8_Sub27.aClass124Array4549[var2] = Static2.method1174(
 									Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method796(-128), (byte) 123);
 						}
 
@@ -230,7 +228,7 @@ public class Class115 {
 			} else {
 				++Class129.anInt2136;
 				if (Class84.anInt1346 == Class131.anInt2164) {
-					Class131.anInt2164 = Class99_Sub2.anInt3348;
+					Class131.anInt2164 = Static2.anInt3348;
 				} else {
 					Class131.anInt2164 = Class84.anInt1346;
 				}

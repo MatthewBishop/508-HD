@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.cache.anim.Animation;
 import com.jagex.io.Buffer;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
@@ -251,7 +252,7 @@ public class Class142 {
 		if (!bool)
 			method1969(true);
 		for (;;) {
-			int i = class14_sub10.method798();
+			int i = class14_sub10.readUByte();
 			if (i == 0)
 				break;
 			method1972(i, -19943, class14_sub10);
@@ -260,14 +261,14 @@ public class Class142 {
 
 	public void method1972(int i, int i_24_, Buffer class14_sub10) {
 		if (i == 1)
-			anInt2311 = class14_sub10.method784((byte) 104);
+			anInt2311 = class14_sub10.readUShort((byte) 104);
 		else if (i == 2)
 			aClass124_2296 = class14_sub10.method797(9467);
 		else if (i != 4) {
 			if (i == 5)
-				anInt2317 = class14_sub10.method784((byte) 102);
+				anInt2317 = class14_sub10.readUShort((byte) 102);
 			else if (i == 6)
-				anInt2286 = class14_sub10.method784((byte) 111);
+				anInt2286 = class14_sub10.readUShort((byte) 111);
 			else if (i != 7) {
 				if (i != 8) {
 					if (i == 11)
@@ -276,10 +277,10 @@ public class Class142 {
 						anInt2288 = class14_sub10.method812((byte) -112);
 					else if (i != 16) {
 						if (i == 23)
-							anInt2274 = class14_sub10.method784((byte) 116);
+							anInt2274 = class14_sub10.readUShort((byte) 116);
 						else if (i != 24) {
 							if (i == 25)
-								anInt2264 = class14_sub10.method784((byte) 118);
+								anInt2264 = class14_sub10.readUShort((byte) 118);
 							else if (i != 26) {
 								if (i >= 30 && i < 35) {
 									aClass124Array2263[i - 30] = class14_sub10.method797(9467);
@@ -289,27 +290,27 @@ public class Class142 {
 								} else if (i < 35 || i >= 40) {
 									if (i != 40) {
 										if (i == 41) {
-											int i_25_ = class14_sub10.method798();
+											int i_25_ = class14_sub10.readUByte();
 											aShortArray2283 = new short[i_25_];
 											aShortArray2279 = new short[i_25_];
 											for (int i_26_ = 0; i_26_ < i_25_; i_26_++) {
-												aShortArray2283[i_26_] = (short) (class14_sub10.method784((byte) 109));
-												aShortArray2279[i_26_] = (short) (class14_sub10.method784((byte) 124));
+												aShortArray2283[i_26_] = (short) (class14_sub10.readUShort((byte) 109));
+												aShortArray2279[i_26_] = (short) (class14_sub10.readUShort((byte) 124));
 											}
 										} else if (i != 42) {
 											if (i == 65)
 												aBoolean2275 = true;
 											else if (i != 78) {
 												if (i == 79)
-													anInt2303 = (class14_sub10.method784((byte) 114));
+													anInt2303 = (class14_sub10.readUShort((byte) 114));
 												else if (i != 90) {
 													if (i != 91) {
 														if (i != 92) {
 															if (i == 93)
-																anInt2277 = (class14_sub10.method784((byte) 121));
+																anInt2277 = (class14_sub10.readUShort((byte) 121));
 															else if (i != 95) {
 																if (i == 96)
-																	anInt2265 = (class14_sub10.method798());
+																	anInt2265 = (class14_sub10.readUByte());
 																else if (i != 97) {
 																	if (i != 98) {
 																		if (i >= 100 && i < 110) {
@@ -318,9 +319,9 @@ public class Class142 {
 																				anIntArray2320 = new int[10];
 																			}
 																			anIntArray2325[i - 100] = class14_sub10
-																					.method784((byte) 112);
+																					.readUShort((byte) 112);
 																			anIntArray2320[i - 100] = class14_sub10
-																					.method784((byte) 118);
+																					.readUShort((byte) 118);
 																		} else if (i != 110) {
 																			if (i != 111) {
 																				if (i != 112) {
@@ -330,17 +331,17 @@ public class Class142 {
 																					else if (i != 114) {
 																						if (i == 115)
 																							anInt2310 = class14_sub10
-																									.method798();
+																									.readUByte();
 																						else if (i != 121) {
 																							if (i == 122)
 																								anInt2305 = class14_sub10
-																										.method784(
+																										.readUShort(
 																												(byte) 123);
 																							else if (i == 124) {
 																								if (anIntArrayArray2289 == null)
 																									anIntArrayArray2289 = new int[11][];
 																								int i_27_ = class14_sub10
-																										.method798();
+																										.readUByte();
 																								anIntArrayArray2289[i_27_] = new int[6];
 																								for (int i_28_ = 0; i_28_ < 6; i_28_++)
 																									anIntArrayArray2289[i_27_][i_28_] = class14_sub10
@@ -359,7 +360,7 @@ public class Class142 {
 																							} else if (i != 126) {
 																								if (i == 249) {
 																									int i_29_ = class14_sub10
-																											.method798();
+																											.readUByte();
 																									if (aClass55_2260 == null) {
 																										int i_30_ = Class14_Sub8_Sub33
 																												.method653(
@@ -369,7 +370,7 @@ public class Class142 {
 																									}
 																									for (int i_31_ = 0; i_29_ > i_31_; i_31_++) {
 																										boolean bool = class14_sub10
-																												.method798() == 1;
+																												.readUByte() == 1;
 																										int i_32_ = class14_sub10
 																												.method829(
 																														71);
@@ -403,7 +404,7 @@ public class Class142 {
 																							}
 																						} else
 																							anInt2257 = class14_sub10
-																									.method784(
+																									.readUShort(
 																											(byte) 118);
 																					} else
 																						anInt2261 = class14_sub10
@@ -411,62 +412,62 @@ public class Class142 {
 																								* 5;
 																				} else
 																					anInt2327 = class14_sub10
-																							.method784((byte) 119);
+																							.readUShort((byte) 119);
 																			} else
 																				anInt2291 = class14_sub10
-																						.method784((byte) 103);
+																						.readUShort((byte) 103);
 																		} else
 																			anInt2328 = class14_sub10
-																					.method784((byte) 117);
+																					.readUShort((byte) 117);
 																	} else
-																		anInt2316 = class14_sub10.method784((byte) 121);
+																		anInt2316 = class14_sub10.readUShort((byte) 121);
 																} else
-																	anInt2268 = (class14_sub10.method784((byte) 120));
+																	anInt2268 = (class14_sub10.readUShort((byte) 120));
 															} else
-																anInt2326 = (class14_sub10.method784((byte) 117));
+																anInt2326 = (class14_sub10.readUShort((byte) 117));
 														} else
-															anInt2298 = (class14_sub10.method784((byte) 114));
+															anInt2298 = (class14_sub10.readUShort((byte) 114));
 													} else
-														anInt2301 = (class14_sub10.method784((byte) 115));
+														anInt2301 = (class14_sub10.readUShort((byte) 115));
 												} else
-													anInt2313 = (class14_sub10.method784((byte) 102));
+													anInt2313 = (class14_sub10.readUShort((byte) 102));
 											} else
-												anInt2292 = (class14_sub10.method784((byte) 125));
+												anInt2292 = (class14_sub10.readUShort((byte) 125));
 										} else {
-											int i_33_ = class14_sub10.method798();
+											int i_33_ = class14_sub10.readUByte();
 											aByteArray2318 = new byte[i_33_];
 											for (int i_34_ = 0; i_34_ < i_33_; i_34_++)
 												aByteArray2318[i_34_] = (class14_sub10.method780((byte) -77));
 										}
 									} else {
-										int i_35_ = class14_sub10.method798();
+										int i_35_ = class14_sub10.readUByte();
 										aShortArray2278 = new short[i_35_];
 										aShortArray2269 = new short[i_35_];
 										for (int i_36_ = 0; i_35_ > i_36_; i_36_++) {
-											aShortArray2278[i_36_] = (short) (class14_sub10.method784((byte) 114));
-											aShortArray2269[i_36_] = (short) (class14_sub10.method784((byte) 113));
+											aShortArray2278[i_36_] = (short) (class14_sub10.readUShort((byte) 114));
+											aShortArray2269[i_36_] = (short) (class14_sub10.readUShort((byte) 113));
 										}
 									}
 								} else
 									aClass124Array2304[i - 35] = class14_sub10.method797(i_24_ + 29410);
 							} else
-								anInt2322 = class14_sub10.method784((byte) 123);
+								anInt2322 = class14_sub10.readUShort((byte) 123);
 						} else
-							anInt2255 = class14_sub10.method784((byte) 123);
+							anInt2255 = class14_sub10.readUShort((byte) 123);
 					} else
 						aBoolean2306 = true;
 				} else {
-					anInt2285 = class14_sub10.method784((byte) 127);
+					anInt2285 = class14_sub10.readUShort((byte) 127);
 					if (anInt2285 > 32767)
 						anInt2285 -= 65536;
 				}
 			} else {
-				anInt2293 = class14_sub10.method784((byte) 127);
+				anInt2293 = class14_sub10.readUShort((byte) 127);
 				if (anInt2293 > 32767)
 					anInt2293 -= 65536;
 			}
 		} else
-			anInt2273 = class14_sub10.method784((byte) 121);
+			anInt2273 = class14_sub10.readUShort((byte) 121);
 		if (i_24_ != -19943)
 			anInt2293 = -62;
 	}
@@ -504,7 +505,7 @@ public class Class142 {
 		return class133_sub2_42_;
 	}
 
-	public Class133_Sub7 method1974(Class46 class46, int i, int i_43_, int i_44_) {
+	public Class133_Sub7 method1974(Animation animation, int i, int i_43_, int i_44_) {
 		if (i_43_ != 0) {
 			Class133_Sub7 class133_sub7 = null;
 			return class133_sub7;
@@ -516,7 +517,7 @@ public class Class142 {
 					i_45_ = anIntArray2325[i_46_];
 			}
 			if (i_45_ != -1) {
-				Class133_Sub7 class133_sub7 = Class14_Sub8_Sub24.method605(96, i_45_).method1974(class46, i, 0, 1);
+				Class133_Sub7 class133_sub7 = Class14_Sub8_Sub24.method605(96, i_45_).method1974(animation, i, 0, 1);
 				return class133_sub7;
 			}
 		}
@@ -547,8 +548,8 @@ public class Class142 {
 			((ModelHD) class133_sub7).method1895(false, false, false, true, false, false, true);
 			Class125.aClass52_2075.put(class133_sub7, (long) anInt2276);
 		}
-		if (class46 != null)
-			class133_sub7 = class46.method1167(i, 65535, class133_sub7);
+		if (animation != null)
+			class133_sub7 = animation.method1167(i, 65535, class133_sub7);
 		return class133_sub7;
 	}
 

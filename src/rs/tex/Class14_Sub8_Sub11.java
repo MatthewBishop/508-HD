@@ -47,7 +47,7 @@ public class Class14_Sub8_Sub11 extends Class14_Sub8 {
 	}
 
 	public static void method531(byte i) {
-		Class48.aClass99_804.method1504((byte) -111);
+		Class48.timer.reset();
 		if (i != -112)
 			method535(true);
 		for (int i_0_ = 0; i_0_ < 32; i_0_++)

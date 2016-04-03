@@ -123,7 +123,7 @@ public class Class14_Sub27 extends Linkable {
 			aClass14_Sub10_3189 = new Buffer(anInt3210 * 4);
 		else
 			aClass14_Sub10_3189.position = 0;
-		if (Class121.aBoolean2046) {
+		if (RT4GL.aBoolean2046) {
 			for (int i = 0; i < anInt3187; i++) {
 				Class14_Sub29 class14_sub29 = (class14_sub29s[anIntArray3196[i]][anIntArray3199[i]][anIntArray3205[i]]);
 				if (class14_sub29 != null && class14_sub29.aBoolean3235) {
@@ -169,9 +169,9 @@ public class Class14_Sub27 extends Linkable {
 			}
 		}
 		if (aClass14_Sub10_3186.position != 0 || aClass14_Sub10_3189.position != 0) {
-			GL gl = Class121.aGL2030;
+			GL gl = RT4GL.gl;
 			if (anInt3204 == -1 || bool) {
-				Class121.method1632(-1);
+				RT4GL.method1632(-1);
 				RT4.method1778(0, 0);
 			} else
 				Class3.anInterface3_117.method16(anInt3204, (byte) 97);
@@ -189,7 +189,7 @@ public class Class14_Sub27 extends Linkable {
 					gl.glClientActiveTexture(33984);
 				}
 			} else {
-				if (Class121.aBoolean2021)
+				if (RT4GL.aBoolean2021)
 					gl.glBindBufferARB(34962, 0);
 				aByteBuffer3206.position(0);
 				gl.glVertexPointer(3, 5126, i, aByteBuffer3206);
@@ -208,7 +208,7 @@ public class Class14_Sub27 extends Linkable {
 					gl.glClientActiveTexture(33984);
 				}
 			}
-			if (Class121.aBoolean2021)
+			if (RT4GL.aBoolean2021)
 				gl.glBindBufferARB(34963, 0);
 			if (aClass14_Sub10_3186.position != 0) {
 				if (aByteBuffer3200 == null || (aByteBuffer3200.capacity() < aClass14_Sub10_3186.position))
@@ -218,7 +218,7 @@ public class Class14_Sub27 extends Linkable {
 					aByteBuffer3200.clear();
 				aByteBuffer3200.put(aClass14_Sub10_3186.payload, 0, aClass14_Sub10_3186.position);
 				aByteBuffer3200.flip();
-				Class121.method1640(f);
+				RT4GL.method1640(f);
 				gl.glDrawElements(4, aClass14_Sub10_3186.position / 4, 5125, aByteBuffer3200);
 			}
 			if (aClass14_Sub10_3189.position != 0) {
@@ -229,10 +229,10 @@ public class Class14_Sub27 extends Linkable {
 					aByteBuffer3192.clear();
 				aByteBuffer3192.put(aClass14_Sub10_3189.payload, 0, aClass14_Sub10_3189.position);
 				aByteBuffer3192.flip();
-				Class121.method1640(f - 100.0F);
-				Class121.method1646();
+				RT4GL.method1640(f - 100.0F);
+				RT4GL.method1646();
 				gl.glDrawElements(4, aClass14_Sub10_3189.position / 4, 5125, aByteBuffer3192);
-				Class121.method1625();
+				RT4GL.method1625();
 			}
 		}
 	}
@@ -261,7 +261,7 @@ public class Class14_Sub27 extends Linkable {
 	public void method925() {
 		Buffer class14_sub10 = new Buffer((aBoolean3209 ? 40 : 36) * anInt3202);
 		for (int i = 0; i < anInt3202; i++) {
-			if (Class121.aBoolean2046) {
+			if (RT4GL.aBoolean2046) {
 				class14_sub10.method834((float) anIntArray3197[i]);
 				class14_sub10.method834((float) anIntArray3183[i]);
 				class14_sub10.method834((float) anIntArray3191[i]);
@@ -287,7 +287,7 @@ public class Class14_Sub27 extends Linkable {
 					class14_sub10.method788(aFloatArray3188[i], 24671);
 			}
 		}
-		if (Class121.aBoolean2021) {
+		if (RT4GL.aBoolean2021) {
 			ByteBuffer bytebuffer = ByteBuffer.wrap(class14_sub10.payload, 0, class14_sub10.position);
 			aClass29_3182 = new VertexBuffer();
 			aClass29_3182._setArrayData(bytebuffer);

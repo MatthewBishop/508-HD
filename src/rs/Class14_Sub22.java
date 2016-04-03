@@ -40,7 +40,7 @@ public class Class14_Sub22 extends Linkable {
 			if (Class42.anInt698 >= 100)
 				Class15.method943(Static2.aClass124_4045, false, Class14_Sub8_Sub9.aClass124_4244, 0);
 			else {
-				Class124 class124 = Class46.method1174(l, (byte) 64).method1685(0);
+				Class124 class124 = Static2.method1174(l, (byte) 64).method1685(0);
 				int i_2_ = -33 / ((79 - i) / 38);
 				for (int i_3_ = 0; Class42.anInt698 > i_3_; i_3_++) {
 					if (Class126.aLongArray2095[i_3_] == l) {
@@ -63,7 +63,7 @@ public class Class14_Sub22 extends Linkable {
 					Class15.method943(Static.aClass124_3291, false, Class14_Sub8_Sub9.aClass124_4244, 0);
 				else {
 					Class126.aLongArray2095[Class42.anInt698] = l;
-					client.aClass124Array2645[Class42.anInt698++] = Class46.method1174(l, (byte) 109);
+					client.aClass124Array2645[Class42.anInt698++] = Static2.method1174(l, (byte) 109);
 					Class38.anInt2616 = Class14_Sub8_Sub23.anInt4478;
 					Static.aClass14_Sub10_Sub1_891.writeOpcode(61);
 					Static.aClass14_Sub10_Sub1_891.method817(l, 117);
@@ -104,12 +104,12 @@ public class Class14_Sub22 extends Linkable {
 				Buffer class14_sub10 = new Buffer(Class14_Sub8_Sub28.aByteArrayArray4556[i_8_]);
 				while ((Class14_Sub8_Sub28.aByteArrayArray4556[i_8_].length > class14_sub10.position) && i_11_ < 511) {
 					int i_12_ = i_9_ | i_11_++ << 6;
-					int i_13_ = class14_sub10.method784((byte) 108);
+					int i_13_ = class14_sub10.readUShort((byte) 108);
 					int i_14_ = i_13_ >> 7 & 0x3f;
 					int i_15_ = (i_14_ + (Class14_Sub8.anIntArray2858[i_8_] >> 8) * 64 - Class133_Sub6.anInt3676);
 					int i_16_ = i_13_ & 0x3f;
 					int i_17_ = ((Class14_Sub8.anIntArray2858[i_8_] & 0xff) * 64 + (-Class58.anInt947 + i_16_));
-					Class12 class12 = Class126.method1744(class14_sub10.method784((byte) 115), 170);
+					Class12 class12 = Class126.method1744(class14_sub10.readUShort((byte) 115), 170);
 					int i_18_ = i_13_ >> 46;
 					if ((Class14_Sub4.aClass133_Sub1_Sub2Array2785[i_12_] == null) && (class12.aByte290 & 0x1) > 0
 							&& i_18_ == Class142.anInt2295 && i_15_ >= 0 && i_15_ + class12.anInt334 < 104 && i_17_ >= 0

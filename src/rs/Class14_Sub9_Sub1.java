@@ -395,7 +395,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 	public static void method708(byte[] is, int i) {
 		Buffer class14_sub10 = new Buffer(is);
 		class14_sub10.position = is.length - 2;
-		Class32.anInt547 = class14_sub10.method784((byte) 123);
+		Class32.anInt547 = class14_sub10.readUShort((byte) 123);
 		Class98.aByteArrayArray1667 = new byte[Class32.anInt547][];
 		Class12.aByteArrayArray310 = new byte[Class32.anInt547][];
 		Class14_Sub2_Sub12.anIntArray3918 = new int[Class32.anInt547];
@@ -404,20 +404,20 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 		Class125_Sub4.aBooleanArray3416 = new boolean[Class32.anInt547];
 		Class17.anIntArray402 = new int[Class32.anInt547];
 		class14_sub10.position = is.length - (Class32.anInt547 * 8 + 7);
-		Class14_Sub11.anInt2952 = class14_sub10.method784((byte) 105);
-		Class14_Sub30.anInt3279 = class14_sub10.method784((byte) 116);
-		int i_43_ = (class14_sub10.method798() & 0xff) + 1;
+		Class14_Sub11.anInt2952 = class14_sub10.readUShort((byte) 105);
+		Class14_Sub30.anInt3279 = class14_sub10.readUShort((byte) 116);
+		int i_43_ = (class14_sub10.readUByte() & 0xff) + 1;
 		for (int i_44_ = 0; i_44_ < Class32.anInt547; i_44_++)
-			Class40.anIntArray675[i_44_] = class14_sub10.method784((byte) 123);
+			Class40.anIntArray675[i_44_] = class14_sub10.readUShort((byte) 123);
 		for (int i_45_ = 0; Class32.anInt547 > i_45_; i_45_++)
-			Class14_Sub2_Sub12.anIntArray3918[i_45_] = class14_sub10.method784((byte) 112);
+			Class14_Sub2_Sub12.anIntArray3918[i_45_] = class14_sub10.readUShort((byte) 112);
 		int i_46_ = 0;
 		if (i != 144)
 			method703(true);
 		for (/**/; i_46_ < Class32.anInt547; i_46_++)
-			Class17.anIntArray402[i_46_] = class14_sub10.method784((byte) 126);
+			Class17.anIntArray402[i_46_] = class14_sub10.readUShort((byte) 126);
 		for (i_46_ = 0; i_46_ < Class32.anInt547; i_46_++)
-			Class76.anIntArray1204[i_46_] = class14_sub10.method784((byte) 114);
+			Class76.anIntArray1204[i_46_] = class14_sub10.readUShort((byte) 114);
 		class14_sub10.position = -(Class32.anInt547 * 8) + is.length - (7 + (i_43_ - 1) * 3);
 		Static.anIntArray1114 = new int[i_43_];
 		for (i_46_ = 1; i_46_ < i_43_; i_46_++) {
@@ -435,7 +435,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 			byte[] is_51_ = new byte[i_49_];
 			Class12.aByteArrayArray310[i_46_] = is_51_;
 			Class98.aByteArrayArray1667[i_46_] = is_50_;
-			int i_52_ = class14_sub10.method798();
+			int i_52_ = class14_sub10.readUByte();
 			if ((i_52_ & 0x1) == 0) {
 				for (int i_53_ = 0; i_53_ < i_49_; i_53_++)
 					is_51_[i_53_] = class14_sub10.method780((byte) -77);

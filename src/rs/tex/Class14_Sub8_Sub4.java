@@ -125,13 +125,13 @@ public class Class14_Sub8_Sub4 extends Class14_Sub8 {
 						break while_201_;
 					}
 				} else {
-					anInt4140 = class14_sub10.method784((byte) 111);
+					anInt4140 = class14_sub10.readUShort((byte) 111);
 					break while_201_;
 				}
-				anInt4144 = class14_sub10.method784((byte) 115);
+				anInt4144 = class14_sub10.readUShort((byte) 115);
 				break while_201_;
 			} while (false);
-			anInt4147 = class14_sub10.method784((byte) 105);
+			anInt4147 = class14_sub10.readUShort((byte) 105);
 		} while (false);
 	}
 }

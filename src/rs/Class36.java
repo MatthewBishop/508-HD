@@ -7,11 +7,11 @@ import java.io.OutputStream;
 import java.net.Socket;
 
 import com.jagex.link.ref.SoftCache;
+import com.jagex.util.Util;
 
 import rs.Class124;
 import rs.Class125_Sub1;
 import rs.Class133_Sub6;
-import rs.Class14_Sub13;
 import rs.Class14_Sub18;
 import rs.Class14_Sub29;
 import rs.Class14_Sub2_Sub2;
@@ -129,7 +129,7 @@ public class Class36 implements Runnable {
 
 			if (this.aClass31_606 != null) {
 				while (this.aClass31_606.anInt529 == 0) {
-					Class14_Sub13.method864(1L, (byte) 64);
+					Util.sleep(1L);
 				}
 
 				if (this.aClass31_606.anInt529 == 1) {

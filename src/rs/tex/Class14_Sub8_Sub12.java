@@ -198,10 +198,10 @@ public class Class14_Sub8_Sub12 extends Class14_Sub8 {
 										break while_90_;
 									}
 								} else {
-									aBoolean4277 = class14_sub10.method798() == 1;
+									aBoolean4277 = class14_sub10.readUByte() == 1;
 									break while_94_;
 								}
-								anInt4289 = class14_sub10.method798();
+								anInt4289 = class14_sub10.readUByte();
 								break while_94_;
 							} while (false);
 							anInt4297 = class14_sub10.method805(0);
@@ -212,16 +212,16 @@ public class Class14_Sub8_Sub12 extends Class14_Sub8 {
 							}
 							break while_94_;
 						} while (false);
-						anInt4282 = anInt4291 = class14_sub10.method798();
+						anInt4282 = anInt4291 = class14_sub10.readUByte();
 						break while_94_;
 					} while (false);
-					anInt4300 = class14_sub10.method798();
+					anInt4300 = class14_sub10.readUByte();
 					break while_94_;
 				} while (false);
-				anInt4282 = class14_sub10.method798();
+				anInt4282 = class14_sub10.readUByte();
 				break while_94_;
 			} while (false);
-			anInt4291 = class14_sub10.method798();
+			anInt4291 = class14_sub10.readUByte();
 		} while (false);
 		if (i_24_ != 24777)
 			anInt4291 = 41;

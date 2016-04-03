@@ -79,7 +79,7 @@ public class Class150 {
 
 	public void method2024(int i, int i_14_, Buffer class14_sub10) {
 		for (;;) {
-			int i_15_ = class14_sub10.method798();
+			int i_15_ = class14_sub10.readUByte();
 			if (i_15_ == 0)
 				break;
 			method2025(i, class14_sub10, i_15_, false);
@@ -93,7 +93,7 @@ public class Class150 {
 			if (i_16_ != 1) {
 				if (i_16_ != 2) {
 					if (i_16_ == 3) {
-						anInt2414 = class14_sub10.method784((byte) 112);
+						anInt2414 = class14_sub10.readUShort((byte) 112);
 						if (anInt2414 == 65535)
 							anInt2414 = -1;
 					} else if (i_16_ == 5)
@@ -104,22 +104,22 @@ public class Class150 {
 						else if (i_16_ != 9) {
 							if (i_16_ != 10) {
 								if (i_16_ == 11)
-									anInt2416 = class14_sub10.method798();
+									anInt2416 = class14_sub10.readUByte();
 								else if (i_16_ != 12) {
 									if (i_16_ == 13)
 										anInt2426 = class14_sub10.method829(-127);
 									else if (i_16_ == 14)
-										anInt2413 = class14_sub10.method798();
+										anInt2413 = class14_sub10.readUByte();
 								} else
 									aBoolean2409 = true;
 							} else
 								aBoolean2407 = false;
 						} else
-							anInt2424 = class14_sub10.method784((byte) 112);
+							anInt2424 = class14_sub10.readUShort((byte) 112);
 					} else
 						anInt2405 = Static.method82(class14_sub10.method829(39), -108);
 				} else
-					anInt2414 = class14_sub10.method798();
+					anInt2414 = class14_sub10.readUByte();
 			} else
 				anInt2411 = Static.method82(class14_sub10.method829(-126), -116);
 		}

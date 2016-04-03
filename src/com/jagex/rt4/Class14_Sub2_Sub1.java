@@ -47,15 +47,15 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 		anInt3744 = -1;
 		anInt3753 = 0;
 		aClass107_3742 = new Class107(class14_sub10);
-		aBoolean3730 = class14_sub10.method798() == 1;
-		aBoolean3738 = class14_sub10.method798() == 1;
-		aBoolean3743 = class14_sub10.method798() == 1;
-		aBoolean3726 = class14_sub10.method798() == 1;
-		int i = class14_sub10.method798() & 0x3;
+		aBoolean3730 = class14_sub10.readUByte() == 1;
+		aBoolean3738 = class14_sub10.readUByte() == 1;
+		aBoolean3743 = class14_sub10.readUByte() == 1;
+		aBoolean3726 = class14_sub10.readUByte() == 1;
+		int i = class14_sub10.readUByte() & 0x3;
 		anInt3735 = class14_sub10.method780((byte) -77);
 		anInt3751 = class14_sub10.method780((byte) -77);
-		int i_53_ = class14_sub10.method798();
-		class14_sub10.method798();
+		int i_53_ = class14_sub10.readUByte();
+		class14_sub10.readUByte();
 		if (i == 1)
 			anInt3725 = 2;
 		else if (i != 2) {
@@ -82,18 +82,18 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 			boolean bool_5_ = false;
 			return bool_5_;
 		}
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		int i_6_ = bool ? 64 : 128;
 		int i_7_ = RT4.method1111(0);
 		if ((i_7_ & 0x1) == 0) {
 			if (anInt3744 != -1)
-				Class121.method1632(anInt3744);
+				RT4GL.method1632(anInt3744);
 			else {
 				int[] is = new int[1];
 				gl.glGenTextures(1, is, 0);
 				anInt3731 = Class11.anInt267;
 				anInt3744 = is[0];
-				Class121.method1632(anInt3744);
+				RT4GL.method1632(anInt3744);
 				ByteBuffer bytebuffer = ByteBuffer
 						.wrap(aClass107_3742.method1555(i_6_, interface3, 0.7, aBoolean3738, i_6_, (byte) -94, class9));
 				if (anInt3752 != 2) {
@@ -131,18 +131,18 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 			}
 		}
 		if ((i_7_ & 0x2) == 0)
-			Class121.method1638(anInt3725);
+			RT4GL.method1638(anInt3725);
 		if (i <= 99)
 			Static2.method258(12);
 		if ((i_7_ & 0x4) == 0)
-			Class121.method1656(0);
+			RT4GL.method1656(0);
 		if ((i_7_ & 0x8) == 0) {
 			if (anInt3751 == 0 && anInt3735 == 0)
-				Class121.method1651();
+				RT4GL.method1651();
 			else {
-				float f = (float) (anInt3751 * Class121.anInt2045) / (float) i_6_;
-				float f_9_ = (float) (anInt3735 * Class121.anInt2045) / (float) i_6_;
-				Class121.method1641(f_9_, f, 0.0F);
+				float f = (float) (anInt3751 * RT4GL.anInt2045) / (float) i_6_;
+				float f_9_ = (float) (anInt3735 * RT4GL.anInt2045) / (float) i_6_;
+				RT4GL.method1641(f_9_, f, 0.0F);
 			}
 		}
 		boolean bool_10_ = true;

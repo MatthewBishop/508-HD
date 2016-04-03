@@ -47,7 +47,6 @@ import rs.Class38;
 import rs.Class40;
 import rs.Class42;
 import rs.Class45;
-import rs.Class46;
 import rs.Class49;
 import rs.Class51;
 import rs.Class58;
@@ -61,7 +60,6 @@ import rs.Class83;
 import rs.Class9;
 import rs.Class94;
 import rs.Class97;
-import rs.Class99_Sub2;
 import rs.RuntimeException_Sub1;
 import rs.Static2;
 
@@ -75,7 +73,7 @@ public class Class14_Sub8_Sub28 extends Class14_Sub8 {
 	public static boolean method625(int i) {
 		int i_0_ = 32 % ((-69 - i) / 42);
 		do {
-			if (Class99_Sub2.anInt3352 != 0) {
+			if (Static2.anInt3352 != 0) {
 				boolean bool;
 				try {
 					bool = !((Boolean) (Static.aClass124_844.method1666(Class14_Sub8_Sub34.aClass43_4647.anApplet712,
@@ -312,7 +310,7 @@ public class Class14_Sub8_Sub28 extends Class14_Sub8 {
 					|| Static2.anInt3728 >= 200)
 				Class15.method943(Class117.aClass124_1941, false, Class14_Sub8_Sub9.aClass124_4244, 0);
 			else {
-				Class124 class124 = Class46.method1174(l, (byte) 95).method1685(0);
+				Class124 class124 = Static2.method1174(l, (byte) 95).method1685(0);
 				for (int i_33_ = 0; i_33_ < Static2.anInt3728; i_33_++) {
 					if (Class133_Sub1_Sub2.aLongArray4951[i_33_] == l) {
 						Class15.method943((Class14_Sub8_Sub7
@@ -402,16 +400,16 @@ public class Class14_Sub8_Sub28 extends Class14_Sub8 {
 								break while_95_;
 							}
 						} else {
-							anInt4566 = class14_sub10.method784((byte) 109);
+							anInt4566 = class14_sub10.readUShort((byte) 109);
 							break while_96_;
 						}
-						anInt4553 = class14_sub10.method784((byte) 103);
+						anInt4553 = class14_sub10.readUShort((byte) 103);
 						break while_96_;
 					} while (false);
-					anInt4564 = class14_sub10.method784((byte) 125);
+					anInt4564 = class14_sub10.readUShort((byte) 125);
 					break while_96_;
 				} while (false);
-				anInt4554 = class14_sub10.method784((byte) 112);
+				anInt4554 = class14_sub10.readUShort((byte) 112);
 			}
 		} while (false);
 	}

@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.cache.anim.Animation;
 import com.jagex.rt4.Class148_Sub1;
 
 import rs.tex.Class14_Sub8_Sub17;
@@ -31,7 +32,7 @@ public class Class133_Sub4 extends Class133 {
 	public int anInt3593;
 	public int anInt3594;
 	public int anInt3595;
-	public Class46 aClass46_3597;
+	public Animation aClass46_3597;
 	public int anInt3598;
 	public int anInt3601;
 
@@ -270,7 +271,7 @@ public class Class133_Sub4 extends Class133 {
 					return;
 				}
 			}
-			if (bool && aClass46_3597.anInt760 != -1) {
+			if (bool && aClass46_3597.loopOffset != -1) {
 				anInt3577 = (int) (Math.random() * (double) aClass46_3597.anIntArray768.length);
 				anInt3575 -= (int) ((double) aClass46_3597.anIntArray763[anInt3577] * Math.random());
 			}
@@ -284,9 +285,9 @@ public class Class133_Sub4 extends Class133 {
 			method1839(null, (byte) -124);
 		if (aClass46_3597 != null) {
 			int i_46_ = Class14_Sub2_Sub20.anInt4064 - anInt3575;
-			if (i_46_ > 100 && aClass46_3597.anInt760 > 0) {
+			if (i_46_ > 100 && aClass46_3597.loopOffset > 0) {
 				int i_47_;
-				for (i_47_ = (-aClass46_3597.anInt760 + aClass46_3597.anIntArray768.length); (anInt3577 < i_47_
+				for (i_47_ = (-aClass46_3597.loopOffset + aClass46_3597.anIntArray768.length); (anInt3577 < i_47_
 						&& i_46_ > aClass46_3597.anIntArray763[anInt3577]); anInt3577++)
 					i_46_ -= aClass46_3597.anIntArray763[anInt3577];
 				if (i_47_ <= anInt3577) {
@@ -304,7 +305,7 @@ public class Class133_Sub4 extends Class133 {
 					i_46_ -= aClass46_3597.anIntArray763[anInt3577];
 					anInt3577++;
 					if (anInt3577 >= aClass46_3597.anIntArray768.length) {
-						anInt3577 -= aClass46_3597.anInt760;
+						anInt3577 -= aClass46_3597.loopOffset;
 						if (anInt3577 < 0 || anInt3577 >= aClass46_3597.anIntArray768.length)
 							break;
 					}

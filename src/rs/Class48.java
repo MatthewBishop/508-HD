@@ -3,6 +3,8 @@
  */
 package rs;
 
+import com.jagex.util.Timer;
+
 import rs.tex.Class14_Sub8_Sub35;
 
 public class Class48 {
@@ -12,7 +14,7 @@ public class Class48 {
 	public static Class124 aClass124_801;
 	public static long aLong802;
 	public static Class87 aClass87_803;
-	public static Class99 aClass99_804;
+	public static Timer timer;
 	public static Class87 aClass87_805;
 	static {
 		aClass124_797 = aClass124_799;
@@ -64,7 +66,7 @@ public class Class48 {
 		aClass124_801 = null;
 		aClass124_797 = null;
 		aClass124_799 = null;
-		aClass99_804 = null;
+		timer = null;
 		if (i != 50)
 			aClass124_797 = null;
 	}

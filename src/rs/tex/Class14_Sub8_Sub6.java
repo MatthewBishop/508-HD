@@ -5,10 +5,10 @@ package rs.tex;
 
 import java.util.Random;
 
+import com.jagex.cache.anim.Animation;
 import com.jagex.io.Buffer;
 import com.jagex.link.ref.SoftCache;
 
-import rs.Class100;
 import rs.Class112;
 import rs.Class116;
 import rs.Class124;
@@ -22,7 +22,6 @@ import rs.Class152;
 import rs.Class153;
 import rs.Class17;
 import rs.Class35;
-import rs.Class46;
 import rs.Class47;
 import rs.Class65;
 import rs.Class72;
@@ -85,8 +84,8 @@ public class Class14_Sub8_Sub6 extends Class14_Sub8 {
 			Buffer class14_sub10 = new Buffer(class9.method163(is[i_5_], i, 0));
 			class146.aClass124Array2362[i_5_] = class14_sub10.method797(9467);
 			class146.aByteArray2355[i_5_] = class14_sub10.method780((byte) -77);
-			class146.aShortArray2354[i_5_] = (short) class14_sub10.method784((byte) 126);
-			class146.aShortArray2361[i_5_] = (short) class14_sub10.method784((byte) 122);
+			class146.aShortArray2354[i_5_] = (short) class14_sub10.readUShort((byte) 126);
+			class146.aShortArray2361[i_5_] = (short) class14_sub10.readUShort((byte) 122);
 			class146.anIntArray2350[i_5_] = class14_sub10.method812((byte) -108);
 		}
 		Class146 class146_6_ = class146;
@@ -102,23 +101,23 @@ public class Class14_Sub8_Sub6 extends Class14_Sub8 {
 			aClass9_4193 = null;
 		}
 	}
-	public static void method509(int i, int i_7_, int i_8_, boolean bool, Class46 class46, int i_9_) {
-		if (Static.anInt96 < 50 && class46.anIntArrayArray776 != null && class46.anIntArrayArray776.length > i_7_
-				&& class46.anIntArrayArray776[i_7_] != null) {
-			int i_10_ = class46.anIntArrayArray776[i_7_][0];
+	public static void method509(int i, int i_7_, int i_8_, boolean bool, Animation animation, int i_9_) {
+		if (Static.anInt96 < 50 && animation.anIntArrayArray776 != null && animation.anIntArrayArray776.length > i_7_
+				&& animation.anIntArrayArray776[i_7_] != null) {
+			int i_10_ = animation.anIntArrayArray776[i_7_][0];
 			int i_11_ = i_10_ >> 8;
 			int i_12_ = i_10_ & 0xf;
 			int i_13_ = 31 / ((-39 - i_8_) / 61);
 			int i_14_ = i_10_ >> 36 & 0x7;
-			if (class46.anIntArrayArray776[i_7_].length > 1) {
-				int i_15_ = (int) ((double) class46.anIntArrayArray776[i_7_].length * Math.random());
+			if (animation.anIntArrayArray776[i_7_].length > 1) {
+				int i_15_ = (int) ((double) animation.anIntArrayArray776[i_7_].length * Math.random());
 				if (i_15_ > 0)
-					i_11_ = class46.anIntArrayArray776[i_7_][i_15_];
+					i_11_ = animation.anIntArrayArray776[i_7_][i_15_];
 			}
 			if (i_12_ == 0) {
 				if (bool)
 					Class47.method1181(i_14_, i_11_, 0, (byte) -125);
-			} else if (Class100.anInt1691 != 0) {
+			} else if (Static2.anInt1691 != 0) {
 				Class153.anIntArray2454[Static.anInt96] = i_11_;
 				Static2.anIntArray4052[Static.anInt96] = i_14_;
 				i_10_ = (i - 64) / 128;
@@ -196,31 +195,31 @@ public class Class14_Sub8_Sub6 extends Class14_Sub8 {
 												break while_202_;
 											}
 										} else {
-											anInt4185 = class14_sub10.method798();
+											anInt4185 = class14_sub10.readUByte();
 											break while_208_;
 										}
-										anInt4173 = class14_sub10.method784((byte) 103);
+										anInt4173 = class14_sub10.readUShort((byte) 103);
 										break while_208_;
 									} while (false);
-									anInt4174 = class14_sub10.method784((byte) 104);
+									anInt4174 = class14_sub10.readUShort((byte) 104);
 									break while_208_;
 								} while (false);
-								anInt4169 = class14_sub10.method784((byte) 112);
+								anInt4169 = class14_sub10.readUShort((byte) 112);
 								break while_208_;
 							} while (false);
-							anInt4180 = class14_sub10.method784((byte) 106);
+							anInt4180 = class14_sub10.readUShort((byte) 106);
 							break while_208_;
 						} while (false);
-						anInt4176 = class14_sub10.method784((byte) 123);
+						anInt4176 = class14_sub10.readUShort((byte) 123);
 						break while_208_;
 					} while (false);
-					anInt4170 = class14_sub10.method798();
+					anInt4170 = class14_sub10.readUByte();
 					break while_208_;
 				} while (false);
-				anInt4177 = class14_sub10.method784((byte) 106);
+				anInt4177 = class14_sub10.readUShort((byte) 106);
 				break while_208_;
 			} while (false);
-			anInt4178 = class14_sub10.method784((byte) 117);
+			anInt4178 = class14_sub10.readUShort((byte) 117);
 		} while (false);
 		if (i_16_ != 24777)
 			method475(-107, 94, null);

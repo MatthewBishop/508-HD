@@ -86,8 +86,8 @@ public class Class14_Sub16 extends Linkable {
 
 	public Class14_Sub16(Buffer class14_sub10) {
 		class14_sub10.position = class14_sub10.payload.length - 3;
-		int i = class14_sub10.method798();
-		int i_16_ = class14_sub10.method784((byte) 108);
+		int i = class14_sub10.readUByte();
+		int i_16_ = class14_sub10.readUShort((byte) 108);
 		int i_17_ = i * 10 + 14;
 		class14_sub10.position = 0;
 		int i_18_ = 0;
@@ -101,7 +101,7 @@ public class Class14_Sub16 extends Linkable {
 		while_167_: for (int i_26_ = 0; i_26_ < i; i_26_++) {
 			int i_27_ = -1;
 			for (;;) {
-				int i_28_ = class14_sub10.method798();
+				int i_28_ = class14_sub10.readUByte();
 				if (i_28_ != i_27_)
 					i_17_++;
 				i_27_ = i_28_ & 0xf;
@@ -152,7 +152,7 @@ public class Class14_Sub16 extends Linkable {
 		int i_44_ = 0;
 		int i_45_ = 0;
 		for (int i_46_ = 0; i_46_ < i_19_; i_46_++) {
-			i_45_ = i_45_ + class14_sub10.method798() & 0x7f;
+			i_45_ = i_45_ + class14_sub10.readUByte() & 0x7f;
 			if (i_45_ == 0 || i_45_ == 32)
 				i_25_++;
 			else if (i_45_ == 1)

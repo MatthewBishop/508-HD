@@ -134,28 +134,28 @@ public class Class14_Sub8_Sub34 extends Class14_Sub8 {
 											break while_29_;
 										}
 									} else {
-										anInt4649 = class14_sub10.method798();
+										anInt4649 = class14_sub10.readUByte();
 										break while_34_;
 									}
-									anInt4665 = class14_sub10.method798();
+									anInt4665 = class14_sub10.readUByte();
 									break while_34_;
 								} while (false);
-								anInt4657 = class14_sub10.method784((byte) 127);
+								anInt4657 = class14_sub10.readUShort((byte) 127);
 								break while_34_;
 							} while (false);
-							anInt4651 = class14_sub10.method784((byte) 115);
+							anInt4651 = class14_sub10.readUShort((byte) 115);
 							break while_34_;
 						} while (false);
-						anInt4664 = class14_sub10.method784((byte) 119);
+						anInt4664 = class14_sub10.readUShort((byte) 119);
 						break while_34_;
 					} while (false);
-					anInt4652 = class14_sub10.method784((byte) 101);
+					anInt4652 = class14_sub10.readUShort((byte) 101);
 					break while_34_;
 				} while (false);
-				anInt4646 = class14_sub10.method784((byte) 112);
+				anInt4646 = class14_sub10.readUShort((byte) 112);
 				break while_34_;
 			} while (false);
-			anInt4655 = class14_sub10.method784((byte) 107);
+			anInt4655 = class14_sub10.readUShort((byte) 107);
 		} while (false);
 		if (i_15_ != 24777)
 			anInt4646 = 7;

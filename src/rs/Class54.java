@@ -43,7 +43,7 @@ public class Class54 {
 			Class124 class124;
 			if (Class51.anInt831 != 1 || Class14_Sub8_Sub38.anInt4729 >= 2) {
 				if (!Class14_Sub4.aBoolean2784 || Class14_Sub8_Sub38.anInt4729 >= 2)
-					class124 = Class46.method1170((byte) -99, Class14_Sub8_Sub38.anInt4729 - 1);
+					class124 = Static2.method1170((byte) -99, Class14_Sub8_Sub38.anInt4729 - 1);
 				else
 					class124 = (Class14_Sub8_Sub7.method515((new Class124[] { Class125.aClass124_2082,
 							Class104.aClass124_1736, Class17.aClass124_408, Class14_Sub8_Sub5.aClass124_4165 }),

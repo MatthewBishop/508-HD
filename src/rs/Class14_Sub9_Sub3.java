@@ -7,6 +7,7 @@ import java.io.DataInputStream;
 import java.net.URL;
 
 import com.jagex.link.Deque;
+import com.jagex.util.Util;
 
 import rs.tex.Class14_Sub8_Sub32;
 
@@ -164,7 +165,7 @@ public class Class14_Sub9_Sub3 extends Class14_Sub9 {
 									.append(Class48.aLong802).append("&v1=").append(Class43.aString721).append("&v2=")
 									.append(Class43.aString723).append("&e=").append(string_11_).toString())));
 					while (class31.anInt529 == 0)
-						Class14_Sub13.method864(1L, (byte) 64);
+						Util.sleep(1L);
 					if (class31.anInt529 == 1) {
 						DataInputStream datainputstream = (DataInputStream) class31.anObject530;
 						datainputstream.read();

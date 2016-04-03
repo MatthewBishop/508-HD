@@ -90,9 +90,9 @@ public class Class14_Sub8_Sub17 extends Class14_Sub8 {
 		for (int i = 0; Class64.anInt1012 > i; i++) {
 			int i_4_ = Class14_Sub2_Sub7.anIntArray3825[i];
 			Class133_Sub1_Sub1 class133_sub1_sub1 = Class14_Sub8_Sub23.aClass133_Sub1_Sub1Array4474[i_4_];
-			int i_5_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method798();
+			int i_5_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUByte();
 			if ((i_5_ & 0x10) != 0)
-				i_5_ += (Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method798() << 40);
+				i_5_ += (Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUByte() << 40);
 			Class118.method1603(1, class133_sub1_sub1, i_5_, i_4_);
 		}
 	}
@@ -155,14 +155,14 @@ public class Class14_Sub8_Sub17 extends Class14_Sub8 {
 
 	public void method475(int i, int i_14_, Buffer class14_sub10) {
 		if (i_14_ == 24777 && i == 0) {
-			int i_15_ = class14_sub10.method798();
+			int i_15_ = class14_sub10.readUByte();
 			if (i_15_ == 0) {
-				anIntArrayArray4376 = new int[class14_sub10.method798()][4];
+				anIntArrayArray4376 = new int[class14_sub10.readUByte()][4];
 				for (int i_16_ = 0; anIntArrayArray4376.length > i_16_; i_16_++) {
-					anIntArrayArray4376[i_16_][0] = class14_sub10.method784((byte) 115);
-					anIntArrayArray4376[i_16_][1] = class14_sub10.method798() << 36;
-					anIntArrayArray4376[i_16_][2] = class14_sub10.method798() << 36;
-					anIntArrayArray4376[i_16_][3] = class14_sub10.method798() << 4;
+					anIntArrayArray4376[i_16_][0] = class14_sub10.readUShort((byte) 115);
+					anIntArrayArray4376[i_16_][1] = class14_sub10.readUByte() << 36;
+					anIntArrayArray4376[i_16_][2] = class14_sub10.readUByte() << 36;
+					anIntArrayArray4376[i_16_][3] = class14_sub10.readUByte() << 4;
 				}
 			} else
 				method567(true, i_15_);

@@ -62,14 +62,14 @@ public class Class14_Sub19 extends Linkable {
 
 	public static Class14_Sub2_Sub5 method889(Buffer class14_sub10, int i) {
 		Class14_Sub2_Sub5 class14_sub2_sub5 = new Class14_Sub2_Sub5(class14_sub10.method797(9467),
-				class14_sub10.method797(9467), class14_sub10.method784((byte) 127), class14_sub10.method784((byte) 120),
-				class14_sub10.method812((byte) -96), class14_sub10.method798() == 1);
-		int i_3_ = class14_sub10.method798();
+				class14_sub10.method797(9467), class14_sub10.readUShort((byte) 127), class14_sub10.readUShort((byte) 120),
+				class14_sub10.method812((byte) -96), class14_sub10.readUByte() == 1);
+		int i_3_ = class14_sub10.readUByte();
 		for (int i_4_ = 0; i_4_ < i_3_; i_4_++)
 			class14_sub2_sub5.aClass2_3801
 					.pushBack(
-							new Class14_Sub4(class14_sub10.method784((byte) 118), class14_sub10.method784((byte) 116),
-									class14_sub10.method784((byte) 103), class14_sub10.method784((byte) 113)));
+							new Class14_Sub4(class14_sub10.readUShort((byte) 118), class14_sub10.readUShort((byte) 116),
+									class14_sub10.readUShort((byte) 103), class14_sub10.readUShort((byte) 113)));
 		int i_5_ = -68 / ((i - 22) / 61);
 		class14_sub2_sub5.method281(12800);
 		Class14_Sub2_Sub5 class14_sub2_sub5_6_ = class14_sub2_sub5;

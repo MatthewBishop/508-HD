@@ -36,7 +36,6 @@ import rs.Class66;
 import rs.Class7_Sub2;
 import rs.Class7_Sub3_Sub1;
 import rs.Class97;
-import rs.Class99_Sub2;
 import rs.Static2;
 import rs.tex.Class14_Sub8_Sub26;
 import rs.tex.Class14_Sub8_Sub4;
@@ -50,7 +49,7 @@ public class MapRegion {
 			if (!bool)
 				Class14_Sub8_Sub4.tileFlags[i][i_3_][i_4_] = (byte) 0;
 			for (;;) {
-				int i_5_ = class14_sub10.method798();
+				int i_5_ = class14_sub10.readUByte();
 				if (i_5_ == 0) {
 					if (!bool) {
 						if (i != 0)
@@ -63,7 +62,7 @@ public class MapRegion {
 					break;
 				}
 				if (i_5_ == 1) {
-					int i_6_ = class14_sub10.method798();
+					int i_6_ = class14_sub10.readUByte();
 					if (!bool) {
 						if (i_6_ == 1)
 							i_6_ = 0;
@@ -90,15 +89,15 @@ public class MapRegion {
 			}
 		} else {
 			for (;;) {
-				int i_7_ = class14_sub10.method798();
+				int i_7_ = class14_sub10.readUByte();
 				if (i_7_ == 0)
 					break;
 				if (i_7_ == 1) {
-					class14_sub10.method798();
+					class14_sub10.readUByte();
 					break;
 				}
 				if (i_7_ <= 49)
-					class14_sub10.method798();
+					class14_sub10.readUByte();
 			}
 		}
 	}
@@ -139,7 +138,7 @@ public class MapRegion {
 		int[][] is_12_ = new int[104][104];
 		int i_13_ = Class51.anInt830 >> 2 << 10;
 		for (int i_14_ = 0; i_14_ < i_11_; i_14_++) {
-			byte[][] is_15_ = Class99_Sub2.aByteArrayArrayArray3354[i_14_];
+			byte[][] is_15_ = Static2.aByteArrayArrayArray3354[i_14_];
 			if (!RT4.useLighting) {
 				int i_16_ = (int) AthmosphericEffects.light0Position[0];
 				int i_17_ = (int) AthmosphericEffects.light0Position[1];
@@ -446,7 +445,7 @@ public class MapRegion {
 			Class14_Sub8_Sub6.overlays[i_14_] = null;
 			Static.overlayTypes[i_14_] = null;
 			Class15.overlayOrientations[i_14_] = null;
-			Class99_Sub2.aByteArrayArrayArray3354[i_14_] = null;
+			Static2.aByteArrayArrayArray3354[i_14_] = null;
 		}
 		Class1.method70(-50, -10, -50);
 		if (!bool) {

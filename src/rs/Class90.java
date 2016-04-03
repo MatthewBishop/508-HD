@@ -5,6 +5,7 @@ package rs;
 
 import com.jagex.io.Buffer;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
+import com.jagex.util.Util;
 
 import rs.tex.Class14_Sub8_Sub14;
 import rs.tex.Class14_Sub8_Sub4;
@@ -67,7 +68,7 @@ public class Class90 implements Runnable {
 								if (class75 != null)
 									class75.method1341(-82);
 							}
-							Class14_Sub13.method864(10L, (byte) 64);
+							Util.sleep(10L);
 							Class14_Sub8_Sub14.method555(45, aClass43_1421, null);
 						}
 					} catch (Exception exception) {
@@ -131,7 +132,7 @@ public class Class90 implements Runnable {
 						int i_20_ = i_18_ & 0x3f;
 						int i_21_ = i_18_ >> 12;
 						int i_22_ = (i_18_ & 0xfe8) >> 6;
-						int i_23_ = class14_sub10.method798();
+						int i_23_ = class14_sub10.readUByte();
 						int i_24_ = i_14_ + i_22_;
 						int i_25_ = i_23_ & 0x3;
 						int i_26_ = i + i_20_;

@@ -78,7 +78,7 @@ public class Class14_Sub8_Sub39 extends Class14_Sub8 {
 
 	public void method475(int i, int i_14_, Buffer class14_sub10) {
 		if (i_14_ == 24777 && i == 0)
-			anInt4752 = class14_sub10.method784((byte) 119);
+			anInt4752 = class14_sub10.readUShort((byte) 119);
 	}
 
 	public int method477() {

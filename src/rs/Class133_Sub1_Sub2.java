@@ -3,7 +3,8 @@
  */
 package rs;
 
-import com.jagex.rt4.Class121;
+import com.jagex.cache.anim.Animation;
+import com.jagex.rt4.RT4GL;
 
 import rs.tex.Class14_Sub8_Sub25;
 import rs.tex.Static;
@@ -44,10 +45,10 @@ public class Class133_Sub1_Sub2 extends Class133_Sub1 {
 
 	public void method1792(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, long l) {
 		if (aClass12_4949 != null) {
-			Class46 class46 = (anInt3445 == -1 || anInt3467 != 0 ? null : Static.method1129(anInt3445, 32));
-			Class46 class46_7_ = (anInt3452 == -1 || anInt3452 == anInt3433 && class46 != null ? null
+			Animation animation = (anInt3445 == -1 || anInt3467 != 0 ? null : Static.method1129(anInt3445, 32));
+			Animation class46_7_ = (anInt3452 == -1 || anInt3452 == anInt3433 && animation != null ? null
 					: Static.method1129(anInt3452, -39));
-			Class133_Sub7 class133_sub7 = aClass12_4949.method209(anInt3483, anInt3501, class46, class46_7_, -55);
+			Class133_Sub7 class133_sub7 = aClass12_4949.method209(anInt3483, anInt3501, animation, class46_7_, -55);
 			if (class133_sub7 != null) {
 				anInt3449 = class133_sub7.method1781();
 				Class12 class12 = aClass12_4949;
@@ -55,17 +56,17 @@ public class Class133_Sub1_Sub2 extends Class133_Sub1 {
 					class12 = class12.method217((byte) -18);
 				if (Class14_Sub8_Sub25.aBoolean4518 && class12.aBoolean330) {
 					Class133_Sub7 class133_sub7_8_ = (Class76.method1359(-10345, anInt3495,
-							class46_7_ == null ? class46 : class46_7_, class133_sub7, aClass12_4949.aShort313,
+							class46_7_ == null ? animation : class46_7_, class133_sub7, aClass12_4949.aShort313,
 							aClass12_4949.aByte321, anInt3500, aClass12_4949.aByte331, aClass12_4949.aShort285, i,
 							anInt3436, class46_7_ != null ? anInt3483 : anInt3501, aClass12_4949.anInt334,
 							aBoolean3488));
-					float f = Class121.method1653();
-					float f_9_ = Class121.method1624();
-					Class121.method1646();
-					Class121.method1635(f, f_9_ - 150.0F);
+					float f = RT4GL.method1653();
+					float f_9_ = RT4GL.method1624();
+					RT4GL.method1646();
+					RT4GL.method1635(f, f_9_ - 150.0F);
 					class133_sub7_8_.method1792(0, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, -1L);
-					Class121.method1625();
-					Class121.method1635(f, f_9_);
+					RT4GL.method1625();
+					RT4GL.method1635(f, f_9_);
 				}
 				int i_10_ = 0;
 				int i_11_ = 0;

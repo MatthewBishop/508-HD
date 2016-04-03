@@ -12,6 +12,7 @@ import java.io.StringWriter;
 import java.util.Random;
 
 import com.jagex.io.Buffer;
+import com.jagex.util.Util;
 
 import rs.tex.Class14_Sub8_Sub10;
 import rs.tex.Class14_Sub8_Sub12;
@@ -85,13 +86,13 @@ public class Class138 {
 				boolean bool = false;
 				int i_1_ = 0;
 				int i_2_ = 0;
-				if (class14_sub10.method798() == 1) {
+				if (class14_sub10.readUByte() == 1) {
 					bool = true;
-					i_1_ = class14_sub10.method798();
-					i_2_ = class14_sub10.method798();
+					i_1_ = class14_sub10.readUByte();
+					i_2_ = class14_sub10.readUByte();
 				}
-				int i_3_ = class14_sub10.method798();
-				int i_4_ = class14_sub10.method798();
+				int i_3_ = class14_sub10.readUByte();
+				int i_4_ = class14_sub10.readUByte();
 				int i_5_ = -Class65.anInt1034 + i_3_ * 64;
 				int i_6_ = (-(i_4_ * 64) + Class35.anInt603 + (Class14_Sub8_Sub15.anInt4332 - 1));
 				if (i_5_ >= 0 && i_6_ - 63 >= 0 && i_5_ + 63 < Class14_Sub2_Sub9.anInt3856
@@ -238,7 +239,7 @@ public class Class138 {
 		}
 		Class31 class31 = class43.method1137(i, (byte) 112, i_31_, i_29_, i_30_);
 		while (class31.anInt529 == 0)
-			Class14_Sub13.method864(10L, (byte) 64);
+			Util.sleep(10L);
 		Frame frame = (Frame) class31.anObject530;
 		if (frame == null) {
 			Frame frame_33_ = null;

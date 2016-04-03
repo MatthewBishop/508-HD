@@ -191,10 +191,10 @@ public class Class14_Sub8_Sub8 extends Class14_Sub8 {
 				if (i_19_ != 1)
 					break;
 			} else {
-				anInt4220 = class14_sub10.method784((byte) 111);
+				anInt4220 = class14_sub10.readUShort((byte) 111);
 				break;
 			}
-			anInt4216 = class14_sub10.method784((byte) 107);
+			anInt4216 = class14_sub10.readUShort((byte) 107);
 		} while (false);
 	}
 

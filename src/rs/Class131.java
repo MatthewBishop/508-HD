@@ -31,7 +31,7 @@ public class Class131 {
 			throw new IllegalArgumentException();
 		Class115.anInt1909 = i_1_;
 		Class14_Sub2_Sub2.aBoolean3763 = bool;
-		Class99.anInt1674 = i;
+		Static2.anInt1674 = i;
 	}
 
 	public static int method1773(int i, byte i_3_) {

@@ -153,23 +153,23 @@ public class ModelSD extends Class133_Sub7 {
 			else {
 				AnimFrame animframe = class14_sub2_sub15.aClass143Array3951[i];
 				AnimFrame animframe_15_ = class14_sub2_sub15_13_.aClass143Array3951[i_14_];
-				AnimFrameBase animframebase = animframe.aClass14_Sub5_2329;
+				AnimFrameBase animframebase = animframe.base;
 				anInt5003 = 0;
 				anInt4998 = 0;
 				anInt4995 = 0;
 				int i_16_ = 0;
 				int i_17_ = is[i_16_++];
-				for (int i_18_ = 0; i_18_ < animframe.anInt2336; i_18_++) {
+				for (int i_18_ = 0; i_18_ < animframe.transformationCount; i_18_++) {
 					int i_19_;
-					for (i_19_ = animframe.aShortArray2335[i_18_]; i_19_ > i_17_; i_17_ = is[i_16_++]) {
+					for (i_19_ = animframe.transformationIndices[i_18_]; i_19_ > i_17_; i_17_ = is[i_16_++]) {
 						/* empty */
 					}
 					if (i_19_ != i_17_ || animframebase.transformationType[i_19_] == 0) {
 						if (animframe.aShortArray2338[i_18_] != -1)
 							method1885(0, (animframebase.labels[animframe.aShortArray2338[i_18_]]), 0, 0, 0);
 						method1885(animframebase.transformationType[i_19_], animframebase.labels[i_19_],
-								animframe.aShortArray2331[i_18_], animframe.aShortArray2340[i_18_],
-								animframe.aShortArray2333[i_18_]);
+								animframe.transformX[i_18_], animframe.transformY[i_18_],
+								animframe.transformZ[i_18_]);
 					}
 				}
 				anInt5003 = 0;
@@ -177,17 +177,17 @@ public class ModelSD extends Class133_Sub7 {
 				anInt4995 = 0;
 				i_16_ = 0;
 				i_17_ = is[i_16_++];
-				for (int i_20_ = 0; i_20_ < animframe_15_.anInt2336; i_20_++) {
+				for (int i_20_ = 0; i_20_ < animframe_15_.transformationCount; i_20_++) {
 					int i_21_;
-					for (i_21_ = animframe_15_.aShortArray2335[i_20_]; i_21_ > i_17_; i_17_ = is[i_16_++]) {
+					for (i_21_ = animframe_15_.transformationIndices[i_20_]; i_21_ > i_17_; i_17_ = is[i_16_++]) {
 						/* empty */
 					}
 					if (i_21_ == i_17_ || animframebase.transformationType[i_21_] == 0) {
 						if (animframe_15_.aShortArray2338[i_20_] != -1)
 							method1885(0, animframebase.labels[(animframe_15_.aShortArray2338[i_20_])], 0, 0, 0);
 						method1885(animframebase.transformationType[i_21_], animframebase.labels[i_21_],
-								animframe_15_.aShortArray2331[i_20_], animframe_15_.aShortArray2340[i_20_],
-								animframe_15_.aShortArray2333[i_20_]);
+								animframe_15_.transformX[i_20_], animframe_15_.transformY[i_20_],
+								animframe_15_.transformZ[i_20_]);
 					}
 				}
 				aBoolean4974 = false;
@@ -598,17 +598,17 @@ public class ModelSD extends Class133_Sub7 {
 	public void method1857(AnimFrameLoader class14_sub2_sub15, int i, boolean bool) {
 		if (anIntArrayArray4959 != null && i != -1) {
 			AnimFrame animframe = class14_sub2_sub15.aClass143Array3951[i];
-			AnimFrameBase animframebase = animframe.aClass14_Sub5_2329;
+			AnimFrameBase animframebase = animframe.base;
 			anInt5003 = 0;
 			anInt4998 = 0;
 			anInt4995 = 0;
-			for (int i_134_ = 0; i_134_ < animframe.anInt2336; i_134_++) {
-				short i_135_ = animframe.aShortArray2335[i_134_];
+			for (int i_134_ = 0; i_134_ < animframe.transformationCount; i_134_++) {
+				short i_135_ = animframe.transformationIndices[i_134_];
 				if (animframe.aShortArray2338[i_134_] != -1)
 					method1885(0, (animframebase.labels[animframe.aShortArray2338[i_134_]]), 0, 0, 0);
 				method1885(animframebase.transformationType[i_135_], animframebase.labels[i_135_],
-						animframe.aShortArray2331[i_134_], animframe.aShortArray2340[i_134_],
-						animframe.aShortArray2333[i_134_]);
+						animframe.transformX[i_134_], animframe.transformY[i_134_],
+						animframe.transformZ[i_134_]);
 			}
 			aBoolean4974 = false;
 		}
@@ -668,17 +668,17 @@ public class ModelSD extends Class133_Sub7 {
 	public void method1859(AnimFrameLoader class14_sub2_sub15, int i) {
 		if (anIntArrayArray4959 != null && i != -1) {
 			AnimFrame animframe = class14_sub2_sub15.aClass143Array3951[i];
-			AnimFrameBase animframebase = animframe.aClass14_Sub5_2329;
+			AnimFrameBase animframebase = animframe.base;
 			anInt5003 = 0;
 			anInt4998 = 0;
 			anInt4995 = 0;
-			for (int i_145_ = 0; i_145_ < animframe.anInt2336; i_145_++) {
-				short i_146_ = animframe.aShortArray2335[i_145_];
+			for (int i_145_ = 0; i_145_ < animframe.transformationCount; i_145_++) {
+				short i_146_ = animframe.transformationIndices[i_145_];
 				if (animframebase.aBooleanArray2791[i_146_]) {
 					if (animframe.aShortArray2338[i_145_] != -1)
 						method1884(0, 0, 0, 0);
-					method1884(animframebase.transformationType[i_146_], animframe.aShortArray2331[i_145_],
-							animframe.aShortArray2340[i_145_], animframe.aShortArray2333[i_145_]);
+					method1884(animframebase.transformationType[i_146_], animframe.transformX[i_145_],
+							animframe.transformY[i_145_], animframe.transformZ[i_145_]);
 				}
 			}
 			aBoolean4974 = false;

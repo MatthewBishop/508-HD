@@ -24,7 +24,7 @@ public class Class65 {
 
 	public void method1288(int i, byte i_0_, Buffer class14_sub10) {
 		for (;;) {
-			int i_1_ = class14_sub10.method798();
+			int i_1_ = class14_sub10.readUByte();
 			if (i_1_ == 0)
 				break;
 			method1290(class14_sub10, i, (byte) 70, i_1_);
@@ -44,11 +44,11 @@ public class Class65 {
 				anInt1024 = class14_sub10.method829(-109);
 				method1292(anInt1024, (byte) 87);
 			} else if (i_4_ == 2) {
-				anInt1030 = class14_sub10.method784((byte) 109);
+				anInt1030 = class14_sub10.readUShort((byte) 109);
 				if (anInt1030 == 65535)
 					anInt1030 = -1;
 			} else if (i_4_ == 3)
-				anInt1019 = class14_sub10.method784((byte) 103);
+				anInt1019 = class14_sub10.readUShort((byte) 103);
 			else if (i_4_ == 4)
 				aBoolean1020 = false;
 		}

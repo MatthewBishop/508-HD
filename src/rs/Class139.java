@@ -46,7 +46,7 @@ public class Class139 {
 							.method812((byte) -108);
 			}
 			int i_6_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method806((byte) -16);
-			int i_7_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method784((byte) 114);
+			int i_7_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUShort((byte) 114);
 			boolean bool_8_ = false;
 			if ((i_0_ / 8 == 48 || i_0_ / 8 == 49) && i_7_ / 8 == 48)
 				bool_8_ = true;
@@ -105,7 +105,7 @@ public class Class139 {
 			Class45.method1162(i_7_, i_0_, i_6_, i_1_, (byte) -118, i_2_, false);
 		} else {
 			int i_12_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method832((byte) -72);
-			int i_13_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method784((byte) 115);
+			int i_13_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUShort((byte) 115);
 			int i_14_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method836((byte) -57);
 			Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.enableBitAccess();
 			for (int i_15_ = 0; i_15_ < 4; i_15_++) {

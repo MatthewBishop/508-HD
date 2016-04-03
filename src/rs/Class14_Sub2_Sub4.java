@@ -7,6 +7,7 @@ import java.awt.Frame;
 
 import com.jagex.io.Buffer;
 import com.jagex.link.Cacheable;
+import com.jagex.util.Util;
 
 public class Class14_Sub2_Sub4 extends Cacheable {
 	public Class133_Sub3 aClass133_Sub3_3789;
@@ -36,10 +37,10 @@ public class Class14_Sub2_Sub4 extends Cacheable {
 		for (;;) {
 			Class31 class31 = class43.method1135(frame, -30170);
 			while (class31.anInt529 == 0)
-				Class14_Sub13.method864(10L, (byte) 64);
+				Util.sleep(10L);
 			if (class31.anInt529 == 1)
 				break;
-			Class14_Sub13.method864(100L, (byte) 64);
+			Util.sleep(100L);
 		}
 		frame.setVisible(false);
 		frame.dispose();

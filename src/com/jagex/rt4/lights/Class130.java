@@ -9,7 +9,7 @@ import javax.media.opengl.GL;
 
 import com.jagex.io.Buffer;
 import com.jagex.link.HashTable;
-import com.jagex.rt4.Class121;
+import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class14_Sub1;
 import com.jagex.rt4.VertexBuffer;
 
@@ -36,7 +36,7 @@ public class Class130 {
 	public void method1767() {
 		Buffer class14_sub10 = new Buffer(anInt2152 * 4);
 		Buffer class14_sub10_0_ = new Buffer(anInt2140 * 16);
-		if (Class121.aBoolean2046) {
+		if (RT4GL.aBoolean2046) {
 			for (int i = 0; i < anInt2140; i++) {
 				class14_sub10_0_.method809(aByteArray2145[i]);
 				class14_sub10_0_.method809(aByteArray2141[i]);
@@ -61,7 +61,7 @@ public class Class130 {
 			for (int i = 0; i < anInt2152; i++)
 				class14_sub10.method825(-99, anIntArray2149[i]);
 		}
-		if (Class121.aBoolean2021) {
+		if (RT4GL.aBoolean2021) {
 			aClass29_2137 = new VertexBuffer();
 			ByteBuffer bytebuffer = ByteBuffer.wrap(class14_sub10_0_.payload);
 			aClass29_2137._setArrayData(bytebuffer);
@@ -87,20 +87,20 @@ public class Class130 {
 	}
 
 	public void method1768() {
-		GL gl = Class121.aGL2030;
-		if (Class121.aBoolean2021) {
+		GL gl = RT4GL.gl;
+		if (RT4GL.aBoolean2021) {
 			aClass29_2137.bindArray();
 			gl.glInterleavedArrays(10787, 16, 0L);
-			Class121.aBoolean2027 = false;
+			RT4GL.aBoolean2027 = false;
 			aClass29_2142.method1055();
 			gl.glDrawElements(4, anInt2152, 5125, 0L);
 		} else {
-			if (Class121.aBoolean2021) {
+			if (RT4GL.aBoolean2021) {
 				gl.glBindBufferARB(34962, 0);
 				gl.glBindBufferARB(34963, 0);
 			}
 			gl.glInterleavedArrays(10787, 16, aByteBuffer2147);
-			Class121.aBoolean2027 = false;
+			RT4GL.aBoolean2027 = false;
 			gl.glDrawElements(4, anInt2152, 5125, aByteBuffer2139);
 		}
 	}

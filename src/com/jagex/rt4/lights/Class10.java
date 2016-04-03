@@ -6,7 +6,7 @@ package com.jagex.rt4.lights;
 import javax.media.opengl.GL;
 
 import com.jagex.rt4.AthmosphericEffects;
-import com.jagex.rt4.Class121;
+import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.RT4;
 
 import rs.Class14_Sub29;
@@ -194,7 +194,7 @@ public class Class10 {
 	}
 
 	public static void method194() {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		for (int i = 0; i < 4; i++) {
 			int i_41_ = i + 16388;
 			gl.glLightfv(i_41_, 4608, new float[] { 0.0F, 0.0F, 0.0F, 1.0F }, 0);
@@ -205,13 +205,13 @@ public class Class10 {
 
 	public static void method195(int i, int i_42_, Class14_Sub29[][][] class14_sub29s) {
 		if (RT4.useLighting) {
-			GL gl = Class121.aGL2030;
+			GL gl = RT4GL.gl;
 			RT4.method1778(0, 0);
-			Class121.method1638(0);
-			Class121.method1651();
-			Class121.method1632(Class121.anInt2038);
+			RT4GL.method1638(0);
+			RT4GL.method1651();
+			RT4GL.method1632(RT4GL.anInt2038);
 			gl.glDepthMask(false);
-			Class121.method1639(false);
+			RT4GL.method1639(false);
 			gl.glBlendFunc(774, 1);
 			gl.glFogfv(2918, new float[] { 0.0F, 0.0F, 0.0F, 0.0F }, 0);
 			gl.glTexEnvi(8960, 34176, 34166);
@@ -239,7 +239,7 @@ public class Class10 {
 						for (int i_51_ = i_49_; i_51_ <= i_50_; i_51_++) {
 							Class14_Sub29 class14_sub29 = (class14_sub29s[light.anInt1125][i_51_][i_47_]);
 							if (class14_sub29 != null && class14_sub29.aBoolean3235) {
-								Class121.method1640(201.5F - ((float) (light.anInt1125) * 50.0F) - 1.5F);
+								RT4GL.method1640(201.5F - ((float) (light.anInt1125) * 50.0F) - 1.5F);
 								gl.glTexEnvfv(8960, 8705, (new float[] { 0.0F, 0.0F, 0.0F, light.aFloat1107 }), 0);
 								light.aClass130_1103.method1768();
 								break while_77_;
@@ -254,7 +254,7 @@ public class Class10 {
 			gl.glDepthMask(true);
 			gl.glFogfv(2918, AthmosphericEffects.fogColourComponents, 0);
 			gl.glEnableClientState(32888);
-			Class121.method1645();
+			RT4GL.method1645();
 		}
 	}
 
@@ -286,7 +286,7 @@ public class Class10 {
 
 	private static void method197(int i, Light light, int param1, int param2, int param3) {
 		int i_63_ = i + 16384 + 4;
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		if (!aBooleanArray255[i]) {
 			gl.glEnable(i_63_);
 			aBooleanArray255[i] = true;
@@ -303,7 +303,7 @@ public class Class10 {
 		if (aBooleanArray255[i]) {
 			aBooleanArray255[i] = false;
 			int i_64_ = i + 16384 + 4;
-			GL gl = Class121.aGL2030;
+			GL gl = RT4GL.gl;
 			gl.glDisable(i_64_);
 		}
 	}

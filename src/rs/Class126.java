@@ -5,7 +5,7 @@ package rs;
 
 import com.jagex.io.Buffer;
 import com.jagex.link.Deque;
-import com.jagex.rt4.Class121;
+import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class148;
 
 import rs.tex.Class14_Sub8;
@@ -71,16 +71,6 @@ public abstract class Class126 {
 		return bool;
 	}
 
-	public static void method1742(byte i, long l) {
-		try {
-			Thread.sleep(l);
-			if (i >= -59)
-				aClass2_2093 = null;
-		} catch (InterruptedException interruptedexception) {
-			/* empty */
-		}
-	}
-
 	public static void method1743(int i, int i_4_) {
 		if (Class14_Sub8_Sub16.anInt4356 != i_4_) {
 			if (Class14_Sub8_Sub16.anInt4356 == 0)
@@ -124,7 +114,7 @@ public abstract class Class126 {
 				}
 			}
 			if (i_4_ == 25 || i_4_ == 28 || i_4_ == 40)
-				Class121.method1627();
+				RT4GL.method1627();
 			Class14_Sub8_Sub16.anInt4356 = i_4_;
 		}
 	}

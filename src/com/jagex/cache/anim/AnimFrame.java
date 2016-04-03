@@ -6,98 +6,98 @@ package com.jagex.cache.anim;
 import com.jagex.io.Buffer;
 
 public class AnimFrame {
-	private static short[] aShortArray2330 = new short[500];
-	private static short[] aShortArray2334 = new short[500];
-	private static short[] aShortArray2337 = new short[500];
-	private static short[] aShortArray2339 = new short[500];
+	private static short[] translationIndices_ = new short[500];
+	private static short[] transformX_ = new short[500];
+	private static short[] transformZ_ = new short[500];
+	private static short[] transformY_ = new short[500];
 	private static short[] aShortArray2341 = new short[500];
 
-	public static void method1981() {
-		aShortArray2330 = null;
-		aShortArray2334 = null;
-		aShortArray2339 = null;
-		aShortArray2337 = null;
+	public static void dispose() {
+		translationIndices_ = null;
+		transformX_ = null;
+		transformY_ = null;
+		transformZ_ = null;
 		aShortArray2341 = null;
 	}
 	
-	public boolean aBoolean2332 = false;
-	public AnimFrameBase aClass14_Sub5_2329;
-	public int anInt2336;
-	public short[] aShortArray2331;
-	public short[] aShortArray2333;
-	public short[] aShortArray2335;
+	public boolean opaque = false;
+	public AnimFrameBase base;
+	public int transformationCount;
+	public short[] transformX;
+	public short[] transformZ;
+	public short[] transformationIndices;
 
 	public short[] aShortArray2338;
 
-	public short[] aShortArray2340;
+	public short[] transformY;
 
 	public AnimFrame(byte[] is, AnimFrameBase animframebase) {
-		aClass14_Sub5_2329 = null;
-		anInt2336 = -1;
-		aClass14_Sub5_2329 = animframebase;
+		base = null;
+		transformationCount = -1;
+		base = animframebase;
 		Buffer class14_sub10 = new Buffer(is);
 		Buffer class14_sub10_0_ = new Buffer(is);
 		class14_sub10.position = 2;
-		int i = class14_sub10.method798();
+		int i = class14_sub10.readUByte();
 		int i_1_ = 0;
 		int i_2_ = -1;
 		int i_3_ = -1;
 		class14_sub10_0_.position = class14_sub10.position + i;
 		for (int i_4_ = 0; i_4_ < i; i_4_++) {
-			if (aClass14_Sub5_2329.transformationType[i_4_] == 0)
+			if (base.transformationType[i_4_] == 0)
 				i_2_ = i_4_;
-			int i_5_ = class14_sub10.method798();
+			int i_5_ = class14_sub10.readUByte();
 			if (i_5_ > 0) {
-				if (aClass14_Sub5_2329.transformationType[i_4_] == 0)
+				if (base.transformationType[i_4_] == 0)
 					i_3_ = i_4_;
-				aShortArray2330[i_1_] = (short) i_4_;
+				translationIndices_[i_1_] = (short) i_4_;
 				short i_6_ = 0;
-				if (aClass14_Sub5_2329.transformationType[i_4_] == 3)
+				if (base.transformationType[i_4_] == 3)
 					i_6_ = (short) 128;
 				if ((i_5_ & 0x1) != 0)
-					aShortArray2334[i_1_] = (short) class14_sub10_0_.method793();
+					transformX_[i_1_] = (short) class14_sub10_0_.readSmart();
 				else
-					aShortArray2334[i_1_] = i_6_;
+					transformX_[i_1_] = i_6_;
 				if ((i_5_ & 0x2) != 0)
-					aShortArray2339[i_1_] = (short) class14_sub10_0_.method793();
+					transformY_[i_1_] = (short) class14_sub10_0_.readSmart();
 				else
-					aShortArray2339[i_1_] = i_6_;
+					transformY_[i_1_] = i_6_;
 				if ((i_5_ & 0x4) != 0)
-					aShortArray2337[i_1_] = (short) class14_sub10_0_.method793();
+					transformZ_[i_1_] = (short) class14_sub10_0_.readSmart();
 				else
-					aShortArray2337[i_1_] = i_6_;
-				if (aClass14_Sub5_2329.transformationType[i_4_] == 2) {
-					aShortArray2334[i_1_] = (short) (((aShortArray2334[i_1_] & 0xff) << 3)
-							+ (aShortArray2334[i_1_] >> 8 & 0x7));
-					aShortArray2339[i_1_] = (short) (((aShortArray2339[i_1_] & 0xff) << 3)
-							+ (aShortArray2339[i_1_] >> 8 & 0x7));
-					aShortArray2337[i_1_] = (short) (((aShortArray2337[i_1_] & 0xff) << 3)
-							+ (aShortArray2337[i_1_] >> 8 & 0x7));
+					transformZ_[i_1_] = i_6_;
+				if (base.transformationType[i_4_] == 2) {
+					transformX_[i_1_] = (short) (((transformX_[i_1_] & 0xff) << 3)
+							+ (transformX_[i_1_] >> 8 & 0x7));
+					transformY_[i_1_] = (short) (((transformY_[i_1_] & 0xff) << 3)
+							+ (transformY_[i_1_] >> 8 & 0x7));
+					transformZ_[i_1_] = (short) (((transformZ_[i_1_] & 0xff) << 3)
+							+ (transformZ_[i_1_] >> 8 & 0x7));
 				}
 				aShortArray2341[i_1_] = (short) -1;
-				if (aClass14_Sub5_2329.transformationType[i_4_] >= 1 && aClass14_Sub5_2329.transformationType[i_4_] <= 3
+				if (base.transformationType[i_4_] >= 1 && base.transformationType[i_4_] <= 3
 						&& i_2_ > i_3_) {
 					aShortArray2341[i_1_] = (short) i_2_;
 					i_3_ = i_2_;
 				}
 				i_1_++;
-				if (aClass14_Sub5_2329.transformationType[i_4_] == 5)
-					aBoolean2332 = true;
+				if (base.transformationType[i_4_] == 5)
+					opaque = true;
 			}
 		}
 		if (class14_sub10_0_.position != is.length)
 			throw new RuntimeException();
-		anInt2336 = i_1_;
-		aShortArray2335 = new short[i_1_];
-		aShortArray2331 = new short[i_1_];
-		aShortArray2340 = new short[i_1_];
-		aShortArray2333 = new short[i_1_];
+		transformationCount = i_1_;
+		transformationIndices = new short[i_1_];
+		transformX = new short[i_1_];
+		transformY = new short[i_1_];
+		transformZ = new short[i_1_];
 		aShortArray2338 = new short[i_1_];
 		for (int i_7_ = 0; i_7_ < i_1_; i_7_++) {
-			aShortArray2335[i_7_] = aShortArray2330[i_7_];
-			aShortArray2331[i_7_] = aShortArray2334[i_7_];
-			aShortArray2340[i_7_] = aShortArray2339[i_7_];
-			aShortArray2333[i_7_] = aShortArray2337[i_7_];
+			transformationIndices[i_7_] = translationIndices_[i_7_];
+			transformX[i_7_] = transformX_[i_7_];
+			transformY[i_7_] = transformY_[i_7_];
+			transformZ[i_7_] = transformZ_[i_7_];
 			aShortArray2338[i_7_] = aShortArray2341[i_7_];
 		}
 	}

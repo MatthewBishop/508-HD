@@ -191,6 +191,6 @@ public class Class125_Sub2 extends Class125 {
 		int i_48_ = i * anInt3384 >> 44;
 		int i_49_ = anInt3376 * i_46_ >> 12;
 		int i_50_ = anInt3381 * i_46_ >> 44;
-		Class99_Sub2.method1510(i_50_, anInt2083, (byte) 117, i_48_, i_47_, i_49_);
+		Static2.method1510(i_50_, anInt2083, (byte) 117, i_48_, i_47_, i_49_);
 	}
 }

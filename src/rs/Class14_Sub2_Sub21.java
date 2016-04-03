@@ -95,7 +95,7 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 		if (i <= 87)
 			aClass124_4083 = null;
 		for (;;) {
-			int i_12_ = class14_sub10.method798();
+			int i_12_ = class14_sub10.readUByte();
 			if (i_12_ == 0)
 				break;
 			method447(0, class14_sub10, i_12_);
@@ -224,20 +224,20 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 			anInt4088 = -124;
 		if (i_32_ != 1) {
 			if (i_32_ == 2) {
-				int i_33_ = class14_sub10.method798();
+				int i_33_ = class14_sub10.readUByte();
 				anIntArray4082 = new int[i_33_];
 				for (int i_34_ = 0; i_33_ > i_34_; i_34_++)
-					anIntArray4082[i_34_] = class14_sub10.method784((byte) 123);
+					anIntArray4082[i_34_] = class14_sub10.readUShort((byte) 123);
 			} else if (i_32_ == 3) {
-				int i_35_ = class14_sub10.method798();
+				int i_35_ = class14_sub10.readUByte();
 				anIntArrayArray4075 = new int[i_35_][];
 				anIntArray4073 = new int[i_35_];
 				for (int i_36_ = 0; i_35_ > i_36_; i_36_++) {
-					int i_37_ = class14_sub10.method784((byte) 123);
+					int i_37_ = class14_sub10.readUShort((byte) 123);
 					anIntArray4073[i_36_] = i_37_;
 					anIntArrayArray4075[i_36_] = new int[Class14_Sub9_Sub1.anIntArray4804[i_37_]];
 					for (int i_38_ = 0; Class14_Sub9_Sub1.anIntArray4804[i_37_] > i_38_; i_38_++)
-						anIntArrayArray4075[i_36_][i_38_] = class14_sub10.method784((byte) 121);
+						anIntArrayArray4075[i_36_][i_38_] = class14_sub10.readUShort((byte) 121);
 				}
 			}
 		} else

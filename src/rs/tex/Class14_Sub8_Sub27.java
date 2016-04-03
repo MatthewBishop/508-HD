@@ -166,13 +166,13 @@ public class Class14_Sub8_Sub27 extends Class14_Sub8 {
 						break while_97_;
 					}
 				} else {
-					aBoolean4543 = class14_sub10.method798() == 1;
+					aBoolean4543 = class14_sub10.readUByte() == 1;
 					break while_97_;
 				}
-				aBoolean4540 = class14_sub10.method798() == 1;
+				aBoolean4540 = class14_sub10.readUByte() == 1;
 				break while_97_;
 			} while (false);
-			aBoolean2862 = class14_sub10.method798() == 1;
+			aBoolean2862 = class14_sub10.readUByte() == 1;
 		} while (false);
 		if (i_14_ != 24777)
 			aClass124_4552 = null;

@@ -86,7 +86,7 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 		Buffer class14_sub10 = new Buffer(is);
 		if (i != -28009)
 			anInt3714 = 116;
-		int i_12_ = class14_sub10.method798();
+		int i_12_ = class14_sub10.readUByte();
 		int i_13_ = class14_sub10.method812((byte) -107);
 		if (i_13_ < 0 || Static.anInt2797 != 0 && i_13_ > Static.anInt2797)
 			throw new RuntimeException();
@@ -166,7 +166,7 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 									Class120.anInt2005 = class45.anInt744;
 									if (Class7.anInt182 != 0) {
 										Class84.anInt1346 = Class120.anInt2005 + 40000;
-										Class99_Sub2.anInt3348 = Class120.anInt2005 + 50000;
+										Static2.anInt3348 = Class120.anInt2005 + 50000;
 										Class131.anInt2164 = Class84.anInt1346;
 									}
 									if (Class14_Sub28.aClass94_3230 != null) {
@@ -183,13 +183,13 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 									Class124 class124_24_ = (Class14_Sub8_Sub7.method515((new Class124[] {
 											Class125_Sub3.aClass124_3408, class45.aClass124_741, Class54.aClass124_883,
 											class124, Class14_Sub19.aClass124_3065,
-											(Class83.method1407(20, Class125_Sub2.language)), Class46.aClass124_755,
+											(Class83.method1407(20, Class125_Sub2.language)), Static2.aClass124_755,
 											(Class83.method1407(28, (Class14_Sub2_Sub11.anInt3884))),
 											Class14_Sub17.aClass124_3014, Class83.method1407(71, 1),
 											(Static2.aClass124_4044),
 											(Class83.method1407(i + 29452, Class14_Sub2_Sub3.anInt3771)),
 											(Class14_Sub2_Sub9.aClass124_3861),
-											(Class83.method1407(9, Class99_Sub2.anInt3352)) }), (byte) -4));
+											(Class83.method1407(9, Static2.anInt3352)) }), (byte) -4));
 									try {
 										applet_sub1.getAppletContext().showDocument(class124_24_.method1676((byte) -52),
 												"_self");

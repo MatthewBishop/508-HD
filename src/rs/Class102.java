@@ -3,6 +3,8 @@
  */
 package rs;
 
+import com.jagex.cache.anim.Animation;
+
 import rs.tex.Class14_Sub8_Sub24;
 import rs.tex.Static;
 
@@ -26,19 +28,19 @@ public class Class102 {
 		anInt1717 = 0;
 	}
 
-	public Class133_Sub7 method1516(Class46 class46, int i, int i_0_, int i_1_, Class46 class46_2_) {
+	public Class133_Sub7 method1516(Animation animation, int i, int i_0_, int i_1_, Animation class46_2_) {
 		if (i_0_ != -13) {
 			Class133_Sub7 class133_sub7 = null;
 			return class133_sub7;
 		}
 		if (anInt1720 != -1) {
-			Class133_Sub7 class133_sub7 = Class126.method1744(anInt1720, 170).method209(i, i_1_, class46_2_, class46,
+			Class133_Sub7 class133_sub7 = Class126.method1744(anInt1720, 170).method209(i, i_1_, class46_2_, animation,
 					-110);
 			return class133_sub7;
 		}
 		long l = aLong1713;
 		int[] is = anIntArray1715;
-		if (class46_2_ != null && (class46_2_.anInt771 >= 0 || class46_2_.anInt781 >= 0)) {
+		if (class46_2_ != null && (class46_2_.anInt771 >= 0 || class46_2_.playerMainhand >= 0)) {
 			is = new int[12];
 			for (int i_3_ = 0; i_3_ < 12; i_3_++)
 				is[i_3_] = anIntArray1715[i_3_];
@@ -51,12 +53,12 @@ public class Class102 {
 					l ^= (long) is[5] << 32;
 				}
 			}
-			if (class46_2_.anInt781 >= 0) {
-				if (class46_2_.anInt781 == 65535) {
+			if (class46_2_.playerMainhand >= 0) {
+				if (class46_2_.playerMainhand == 65535) {
 					is[3] = 0;
 					l ^= 0xffffffffL;
 				} else {
-					is[3] = Class66.method1294(1073741824, class46_2_.anInt781);
+					is[3] = Class66.method1294(1073741824, class46_2_.playerMainhand);
 					l ^= (long) is[3];
 				}
 			}
@@ -133,11 +135,11 @@ public class Class102 {
 			}
 		}
 		Class133_Sub7 class133_sub7_19_;
-		if (class46_2_ != null || class46 != null) {
-			if (class46_2_ != null && class46 != null)
-				class133_sub7_19_ = class46_2_.method1178(i, (byte) 46, i_1_, class133_sub7, class46);
+		if (class46_2_ != null || animation != null) {
+			if (class46_2_ != null && animation != null)
+				class133_sub7_19_ = class46_2_.method1178(i, (byte) 46, i_1_, class133_sub7, animation);
 			else if (class46_2_ == null)
-				class133_sub7_19_ = class46.method1168((byte) 123, i, class133_sub7);
+				class133_sub7_19_ = animation.method1168((byte) 123, i, class133_sub7);
 			else
 				class133_sub7_19_ = class46_2_.method1168((byte) 120, i_1_, class133_sub7);
 		} else
@@ -192,11 +194,11 @@ public class Class102 {
 		return i_26_;
 	}
 
-	public Class133_Sub7 method1521(Class46 class46, int i, int i_27_) {
+	public Class133_Sub7 method1521(Animation animation, int i, int i_27_) {
 		if (i != 1073741823)
 			method1516(null, 5, -39, 66, null);
 		if (anInt1720 != -1) {
-			Class133_Sub7 class133_sub7 = Class126.method1744(anInt1720, 170).method224((byte) -113, class46, i_27_);
+			Class133_Sub7 class133_sub7 = Class126.method1744(anInt1720, 170).method224((byte) -113, animation, i_27_);
 			return class133_sub7;
 		}
 		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Class70.aClass52_1079.get(aLong1713));
@@ -242,8 +244,8 @@ public class Class102 {
 			class133_sub7 = class133_sub2.method1827(64, 768, -50, -10, -50);
 			Class70.aClass52_1079.put(class133_sub7, aLong1713);
 		}
-		if (class46 != null)
-			class133_sub7 = class46.method1167(i_27_, 65535, class133_sub7);
+		if (animation != null)
+			class133_sub7 = animation.method1167(i_27_, 65535, class133_sub7);
 		return class133_sub7;
 	}
 
@@ -261,7 +263,6 @@ public class Class102 {
 			}
 		}
 		anIntArray1715 = is;
-		int i_39_ = -94 / ((i_36_ + 18) / 61);
 		anInt1720 = i;
 		aBoolean1711 = bool;
 		anIntArray1722 = is_35_;
@@ -287,7 +288,7 @@ public class Class102 {
 		return i_44_;
 	}
 
-	public Class133_Sub7 method1524(int i, int i_45_, int i_46_, Class46 class46, int i_47_) {
+	public Class133_Sub7 method1524(int i, int i_45_, int i_46_, Animation animation, int i_47_) {
 		long l = (long) i << 32 | (long) (i_46_ << 16) | (long) i;
 		if (i_47_ < 46) {
 			Class133_Sub7 class133_sub7 = null;
@@ -320,8 +321,8 @@ public class Class102 {
 				return class133_sub7_50_;
 			}
 		}
-		if (class46 != null)
-			class133_sub7 = class46.method1167(i_45_, 65535, class133_sub7);
+		if (animation != null)
+			class133_sub7 = animation.method1167(i_45_, 65535, class133_sub7);
 		Class133_Sub7 class133_sub7_51_ = class133_sub7;
 		return class133_sub7_51_;
 	}

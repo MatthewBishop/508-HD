@@ -90,7 +90,7 @@ public class Class14_Sub8_Sub9 extends Class14_Sub8 {
 			aClass52_4240 = null;
 		Class125_Sub4 class125_sub4 = new Class125_Sub4(class14_sub10.method805(0), class14_sub10.method805(0),
 				class14_sub10.method805(0), class14_sub10.method805(0), class14_sub10.method829(46),
-				class14_sub10.method829(-119), class14_sub10.method798());
+				class14_sub10.method829(-119), class14_sub10.readUByte());
 		return class125_sub4;
 	}
 
@@ -185,13 +185,13 @@ public class Class14_Sub8_Sub9 extends Class14_Sub8 {
 						break while_215_;
 					}
 				} else {
-					anInt4230 = class14_sub10.method784((byte) 119);
+					anInt4230 = class14_sub10.readUShort((byte) 119);
 					break while_215_;
 				}
-				anInt4226 = class14_sub10.method784((byte) 123);
+				anInt4226 = class14_sub10.readUShort((byte) 123);
 				break while_215_;
 			} while (false);
-			aBoolean2862 = class14_sub10.method798() == 1;
+			aBoolean2862 = class14_sub10.readUByte() == 1;
 		} while (false);
 		if (i_39_ != 24777)
 			aClass141_4239 = null;

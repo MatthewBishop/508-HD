@@ -86,7 +86,7 @@ public class Class86 {
 	public static Class98 method1422(int i, Buffer class14_sub10) {
 		int i_6_ = 52 % ((3 - i) / 36);
 		Class98 class98 = new Class98();
-		class98.anInt1663 = class14_sub10.method784((byte) 102);
+		class98.anInt1663 = class14_sub10.readUShort((byte) 102);
 		class98.aClass14_Sub2_Sub21_1662 = Class14_Sub2_Sub3.method272(class98.anInt1663, (byte) 46);
 		Class98 class98_7_ = class98;
 		return class98_7_;

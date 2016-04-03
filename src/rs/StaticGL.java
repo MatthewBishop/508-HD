@@ -6,7 +6,7 @@ package rs;
 import javax.media.opengl.GL;
 
 import com.jagex.rt4.AthmosphericEffects;
-import com.jagex.rt4.Class121;
+import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class14_Sub27;
 import com.jagex.rt4.GLEffect3;
 import com.jagex.rt4.RT4;
@@ -19,13 +19,13 @@ import rs.tex.Static;
 
 public class StaticGL {
 	public static void method1409() {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		gl.glDisableClientState(32886);
-		Class121.method1639(false);
+		RT4GL.method1639(false);
 		gl.glDisable(2929);
 		gl.glPushAttrib(128);
 		gl.glFogf(2915, 3072.0F);
-		Class121.method1646();
+		RT4GL.method1646();
 		for (int i = 0; i < Class14_Sub30.aClass14_Sub27ArrayArray3273[0].length; i++) {
 			Class14_Sub27 class14_sub27 = Class14_Sub30.aClass14_Sub27ArrayArray3273[0][i];
 			if (class14_sub27.anInt3204 >= 0
@@ -36,10 +36,10 @@ public class StaticGL {
 			}
 		}
 		gl.glEnableClientState(32886);
-		Class121.method1645();
+		RT4GL.method1645();
 		gl.glEnable(2929);
 		gl.glPopAttrib();
-		Class121.method1625();
+		RT4GL.method1625();
 	}
 
 	public static void method67(int i, int i_19_, int i_20_, byte[][][] is, int i_21_, byte i_22_, int i_23_,
@@ -106,7 +106,7 @@ public class StaticGL {
 			}
 		}
 		boolean bool = Class114.tileHeights == Class150.anIntArrayArrayArray2419;
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		gl.glPushMatrix();
 		gl.glTranslatef((float) -i, (float) -i_19_, (float) -i_20_);
 		if (bool) {
@@ -139,7 +139,7 @@ public class StaticGL {
 					class14_sub27.method922(Class125_Sub1.aClass14_Sub29ArrayArrayArray3368, f, false);
 				}
 				if (i_34_ == 0 && Class89.anInt1413 > 0) {
-					Class121.method1640(101.5F);
+					RT4GL.method1640(101.5F);
 					Class151.method2038(Class71.cameraTileX, Class102.cameraTileZ, Static.anInt1108, i_19_,
 							Class53.visibilityMap, Class114.tileHeights[0]);
 				}

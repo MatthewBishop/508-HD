@@ -139,7 +139,7 @@ public class Class14_Sub8_Sub15 extends Class14_Sub8 {
 	public void method475(int i, int i_11_, Buffer class14_sub10) {
 		int i_12_ = i;
 		if (i_12_ == 0)
-			anInt4339 = class14_sub10.method784((byte) 115);
+			anInt4339 = class14_sub10.readUShort((byte) 115);
 		if (i_11_ != 24777)
 			anInt4339 = 19;
 	}

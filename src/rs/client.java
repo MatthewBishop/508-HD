@@ -22,7 +22,7 @@ import com.jagex.map.Scenegraph;
 import com.jagex.rt4.AthmosphericEffects;
 import com.jagex.rt4.Class11;
 import com.jagex.rt4.Class119;
-import com.jagex.rt4.Class121;
+import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class13;
 import com.jagex.rt4.Class14_Sub1;
 import com.jagex.rt4.Class14_Sub27;
@@ -31,7 +31,11 @@ import com.jagex.rt4.Class34;
 import com.jagex.rt4.Class61;
 import com.jagex.rt4.RT4;
 import com.jagex.rt4.lights.Class10;
+import com.jagex.sound.Synthesizer;
+import com.jagex.sound.Filter;
+import com.jagex.util.MouseCapturer;
 import com.jagex.util.TimeUtil;
+import com.jagex.util.Util;
 
 import nativeadvert.browsercontrol;
 import rs.tex.Class14_Sub8;
@@ -277,7 +281,7 @@ public class client extends Applet_Sub1 {
 				} else
 					Class22.method984(Class51.anInt828, -1644, bool_11_, null, Class14_Sub9_Sub1.aClass124_4761);
 				if (Class14_Sub8_Sub16.anInt4356 != 0) {
-					Class121.method1657();
+					RT4GL.method1657();
 					for (int i_15_ = 0; Class14_Sub17.anInt3012 > i_15_; i_15_++)
 						Class7_Sub2_Sub1.aBooleanArray3703[i_15_] = false;
 				} else if ((Class14_Sub8_Sub16.anInt4356 == 30 || Class14_Sub8_Sub16.anInt4356 == 10)
@@ -622,7 +626,7 @@ public class client extends Applet_Sub1 {
 					Class102.aClass9_Sub1_1712 = method51(true, 18, (byte) -76, true, false);
 					Class127.aClass9_Sub1_2111 = method51(true, 19, (byte) -83, true, false);
 					Class22.aClass9_Sub1_459 = method51(true, 20, (byte) 126, true, false);
-					Class100.aClass9_Sub1_1690 = method51(true, 21, (byte) -99, true, false);
+					Static2.aClass9_Sub1_1690 = method51(true, 21, (byte) -99, true, false);
 					Class14_Sub8.aClass9_Sub1_2848 = method51(true, 22, (byte) 22, true, false);
 					Class7_Sub1.aClass9_Sub1_2657 = method51(true, 23, (byte) -127, true, true);
 					Class14_Sub21.aClass9_Sub1_3111 = method51(true, 24, (byte) -128, true, false);
@@ -630,7 +634,7 @@ public class client extends Applet_Sub1 {
 					Class14_Sub2_Sub7.aClass9_Sub1_3824 = method51(true, 26, (byte) -85, true, true);
 					Class51.anInt828 = 15;
 					Class62.anInt988 = 40;
-					Class14_Sub9_Sub1.aClass124_4761 = Class100.aClass124_1693;
+					Class14_Sub9_Sub1.aClass124_4761 = Static2.aClass124_1693;
 				} else {
 					byte var6;
 					if (Class62.anInt988 == 40) {
@@ -656,7 +660,7 @@ public class client extends Applet_Sub1 {
 						var13 += Class102.aClass9_Sub1_1712.method186((byte) 68) * 1 / 100;
 						var13 += Class127.aClass9_Sub1_2111.method186((byte) 109) * 1 / 100;
 						var13 += Class22.aClass9_Sub1_459.method186((byte) 96) * 1 / 100;
-						var13 += Class100.aClass9_Sub1_1690.method186((byte) 97) * 1 / 100;
+						var13 += Static2.aClass9_Sub1_1690.method186((byte) 97) * 1 / 100;
 						var13 += Class14_Sub8.aClass9_Sub1_2848.method186((byte) 90) * 1 / 100;
 						var13 += Class7_Sub1.aClass9_Sub1_2657.method186((byte) 95) * 1 / 100;
 						var13 += Class14_Sub21.aClass9_Sub1_3111.method186((byte) 120) * 1 / 100;
@@ -733,7 +737,7 @@ public class client extends Applet_Sub1 {
 								Class31 var14 = Class14_Sub8_Sub34.aClass43_4647.method1142(this.getClass(), 10);
 
 								while (var14.anInt529 == 0) {
-									Class14_Sub13.method864(100L, (byte) 64);
+									Util.sleep(100L);
 								}
 
 								if (var14.anInt529 == 1) {
@@ -746,14 +750,14 @@ public class client extends Applet_Sub1 {
 									return;
 								}
 
-								Class14_Sub13.method864(1000L, (byte) 64);
+								Util.sleep(1000L);
 							}
 
-							var3 = Class121.method1621(Class49.aCanvas819, Class135.anInt2189 * 2);
+							var3 = RT4GL.method1621(Class49.aCanvas819, Class135.anInt2189 * 2);
 							if (var3 != 0) {
-								String var15 = Class121.aString2031;
+								String var15 = RT4GL.aString2031;
 								String var7 = "unknown";
-								String var8 = Class121.aString2037;
+								String var8 = RT4GL.aString2037;
 								String var9 = var15.toLowerCase();
 								if (var9.indexOf("microsoft") != -1) {
 									var7 = "vesa";
@@ -802,8 +806,8 @@ public class client extends Applet_Sub1 {
 							var3 += Class127.aClass9_Sub1_2111.method173(100);
 							Class22.aClass9_Sub1_459.method170(false);
 							var3 += Class22.aClass9_Sub1_459.method173(100);
-							Class100.aClass9_Sub1_1690.method170(false);
-							var3 += Class100.aClass9_Sub1_1690.method173(100);
+							Static2.aClass9_Sub1_1690.method170(false);
+							var3 += Static2.aClass9_Sub1_1690.method173(100);
 							Class14_Sub8.aClass9_Sub1_2848.method170(false);
 							var3 += Class14_Sub8.aClass9_Sub1_2848.method173(100);
 							Class14_Sub21.aClass9_Sub1_3111.method170(false);
@@ -832,7 +836,7 @@ public class client extends Applet_Sub1 {
 								Class14_Sub29.method934(Class138.aClass9_Sub1_2222, 54);
 								Static2.method2000(Class75.aClass9_Sub1_1167, Class22.aClass9_Sub1_459, (byte) -86,
 										Class109.aClass9_Sub1_1834);
-								Class108.method1561(Class100.aClass9_Sub1_1690, (byte) 127,
+								Class108.method1561(Static2.aClass9_Sub1_1690, (byte) 127,
 										Class14_Sub8_Sub38.aClass9_Sub1_4739);
 								Static.method234(Class14_Sub8.aClass9_Sub1_2848, (byte) -77);
 								Static.method1018((byte) -68, Class138.aClass9_Sub1_2222);
@@ -903,7 +907,7 @@ public class client extends Applet_Sub1 {
 						} else if (Class62.anInt988 == 100) {
 							Class62.anInt988 = 110;
 						} else if (Class62.anInt988 == 110) {
-							Class14_Sub2_Sub11.aClass100_3878 = new Class100();
+							Class14_Sub2_Sub11.aClass100_3878 = new MouseCapturer();
 							Class14_Sub8_Sub34.aClass43_4647.method1143(10, Class14_Sub2_Sub11.aClass100_3878, 0);
 							Class14_Sub9_Sub1.aClass124_4761 = Class14_Sub9_Sub1.aClass124_4773;
 							Class51.anInt828 = 75;
@@ -1040,10 +1044,10 @@ public class client extends Applet_Sub1 {
 		Class14_Sub2_Sub5.method284(12800);
 		Class146.method1995(-103);
 		Applet_Sub1.method39(true);
-		Class121.method1654();
-		Class99.method1502(-17808);
+		RT4GL.method1654();
+		Static2.method1502(-17808);
 		Class108.method1556(false);
-		Class100.method1515(-25576);
+		Static2.method1515(-25576);
 		Class66.method1295(-597398239);
 		Static2.method815(0);
 		Class36.method1102((byte) -40);
@@ -1067,7 +1071,7 @@ public class client extends Applet_Sub1 {
 		Class75.method1346((byte) 78);
 		Class18.method962((byte) -118);
 		Class102.method1525(123);
-		Class46.method1175(i - 153);
+		Static2.method1175(i - 153);
 		Class133_Sub1.method1797(79);
 		Class14_Sub29.method930((byte) -34);
 		Class14_Sub14.method869((byte) 92);
@@ -1179,7 +1183,7 @@ public class client extends Applet_Sub1 {
 		Class70.method1312(0);
 		Class14_Sub2_Sub12.method320((byte) -48);
 		Class74.method1334((byte) -127);
-		Class105.method1537();
+		Synthesizer.dispose();
 		Class62.method1274(124);
 		Class96.method1487(false);
 		Class123.method1661(-19);
@@ -1194,7 +1198,7 @@ public class client extends Applet_Sub1 {
 		Class14_Sub4.method455(i ^ ~0x6a);
 		Canvas_Sub1.method60(5027);
 		Class17.method959(-1);
-		Class99_Sub2.method1509(0);
+		Static2.method1509(0);
 		Class138.method1948(i + 69);
 		Class89.method1442(127);
 		Class126.method1746(i ^ 0xe0);
@@ -1204,8 +1208,8 @@ public class client extends Applet_Sub1 {
 		Class14_Sub17.method880(i ^ 0x1e);
 		Class127.method1753(false);
 		Class75_Sub2.method1355();
-		Class145.method1987();
-		AnimFrame.method1981();
+		Filter.dispose();
+		AnimFrame.dispose();
 		Class1.method72(false);
 		Class136.method1929();
 		Class117.method1600((byte) 113);
@@ -1398,7 +1402,7 @@ public class client extends Applet_Sub1 {
 	}
 
 	public void method38(boolean bool) {
-		Class121.method1630();
+		RT4GL.method1630();
 		if (browsercontrol.iscreated())
 			browsercontrol.destroy();
 		if (Static.aFrame3962 != null) {
@@ -1408,7 +1412,7 @@ public class client extends Applet_Sub1 {
 		if (Class14_Sub8_Sub34.aClass43_4647 != null)
 			Class14_Sub8_Sub34.aClass43_4647.method1151(this.getClass(), false);
 		if (Class14_Sub2_Sub11.aClass100_3878 != null)
-			Class14_Sub2_Sub11.aClass100_3878.aBoolean1686 = false;
+			Class14_Sub2_Sub11.aClass100_3878.running = false;
 		Class14_Sub2_Sub11.aClass100_3878 = null;
 		if (Class14_Sub15.aClass36_2990 != null) {
 			Class14_Sub15.aClass36_2990.method1101((byte) -115);
@@ -1572,7 +1576,7 @@ public class client extends Applet_Sub1 {
 		if (Class84.anInt1346 != Class131.anInt2164)
 			Class131.anInt2164 = Class84.anInt1346;
 		else
-			Class131.anInt2164 = Class99_Sub2.anInt3348;
+			Class131.anInt2164 = Static2.anInt3348;
 		Class133_Sub1_Sub1.aClass36_4939 = null;
 		Class125_Sub1.anInt3363++;
 		if (Class125_Sub1.anInt3363 < 2 || i != 7 && i != 9) {
@@ -2131,7 +2135,7 @@ public class client extends Applet_Sub1 {
 				else
 					Static2.anInt3749 = 1;
 				try {
-					Class99_Sub2.anInt3352 = Integer.parseInt(getParameter("js"));
+					Static2.anInt3352 = Integer.parseInt(getParameter("js"));
 					Class14_Sub2_Sub3.anInt3771 = Integer.parseInt(getParameter("plug"));
 					Class14_Sub2_Sub11.anInt3884 = Integer.parseInt(getParameter("affid"));
 				} catch (Exception exception) {
@@ -2166,7 +2170,7 @@ public class client extends Applet_Sub1 {
 			/* empty */
 		}
 		Class14_Sub14.method865(Class14_Sub8_Sub34.aClass43_4647, Class14_Sub8_Sub37.aBoolean4721, -2);
-		Class99_Sub2.anInt3348 = Class7.anInt182 != 0 ? Class120.anInt2005 + 50000 : 443;
+		Static2.anInt3348 = Class7.anInt182 != 0 ? Class120.anInt2005 + 50000 : 443;
 		Class33.aShortArray580 = Static.aShortArray2717 = Class14_Sub8_Sub39.aShortArray4747 = Class7_Sub1.aShortArray2663 = new short[256];
 		if (Static2.anInt3749 == 1) {
 			Class14_Sub8_Sub24.aShortArrayArray4496 = Class14_Sub8_Sub5.aShortArrayArray4157;

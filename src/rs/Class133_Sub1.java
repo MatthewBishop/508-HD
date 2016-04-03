@@ -104,7 +104,7 @@ public abstract class Class133_Sub1 extends Class133 {
 
 	public static void method1796(byte i, Class43 class43, int i_2_, Buffer class14_sub10) {
 		Class14_Sub7 class14_sub7 = new Class14_Sub7();
-		class14_sub7.anInt2821 = class14_sub10.method798();
+		class14_sub7.anInt2821 = class14_sub10.readUByte();
 		class14_sub7.anInt2830 = class14_sub10.method812((byte) -112);
 		class14_sub7.aClass31Array2824 = new Class31[class14_sub7.anInt2821];
 		class14_sub7.aClass31Array2828 = new Class31[class14_sub7.anInt2821];
@@ -114,7 +114,7 @@ public abstract class Class133_Sub1 extends Class133 {
 		class14_sub7.anIntArray2825 = new int[class14_sub7.anInt2821];
 		for (int i_3_ = 0; i_3_ < class14_sub7.anInt2821; i_3_++) {
 			try {
-				int i_4_ = class14_sub10.method798();
+				int i_4_ = class14_sub10.readUByte();
 				if (i_4_ == 0 || i_4_ == 1 || i_4_ == 2) {
 					String string = new String(class14_sub10.method797(i ^ 0x24e3).method1681(86));
 					int i_5_ = 0;
@@ -128,7 +128,7 @@ public abstract class Class133_Sub1 extends Class133 {
 				} else if (i_4_ == 3 || i_4_ == 4) {
 					String string = new String(class14_sub10.method797(9467).method1681(-114));
 					String string_7_ = new String(class14_sub10.method797(9467).method1681(i + 91));
-					int i_8_ = class14_sub10.method798();
+					int i_8_ = class14_sub10.readUByte();
 					String[] strings = new String[i_8_];
 					for (int i_9_ = 0; i_8_ > i_9_; i_9_++)
 						strings[i_9_] = new String(class14_sub10.method797(i + 9443).method1681(33));
@@ -190,7 +190,7 @@ public abstract class Class133_Sub1 extends Class133 {
 				System.out.println(new StringBuilder("oncard_texture:").append(Class11.textureMemory).toString());
 			}
 			if (class124.method1717(40, Static2.aClass124_661))
-				Class99_Sub2.method1508((byte) 90);
+				Static2.method1508((byte) 90);
 			if (class124.method1717(40, Class44.aClass124_728))
 				Class126.method1743(i + 27245, 25);
 			if (class124.method1717(i + 33, Class142.aClass124_2321))
@@ -238,7 +238,7 @@ public abstract class Class133_Sub1 extends Class133 {
 			i_19_++;
 			i_20_--;
 		}
-		if (anInt3445 != -1 && Static.method1129(anInt3445, 105).anInt756 == 1)
+		if (anInt3445 != -1 && Static.method1129(anInt3445, 105).walkingPrecedence == 1)
 			anInt3445 = -1;
 		int i_21_ = -122 % ((i - 18) / 56);
 		if (anInt3498 < 9)
@@ -274,7 +274,7 @@ public abstract class Class133_Sub1 extends Class133 {
 	}
 
 	public void method1800(byte i, int i_23_, boolean bool, int i_24_) {
-		if (anInt3445 != -1 && Static.method1129(anInt3445, -128).anInt756 == 1)
+		if (anInt3445 != -1 && Static.method1129(anInt3445, -128).walkingPrecedence == 1)
 			anInt3445 = -1;
 		if (!bool) {
 			int i_25_ = i_24_ - anIntArray3476[0];
@@ -336,7 +336,7 @@ public abstract class Class133_Sub1 extends Class133 {
 		for (int i_46_ = i; i_46_ <= i + 1; i_46_++) {
 			if (i_46_ != Class83.anInt1338) {
 				for (int i_47_ = i_42_; i_47_ <= i_43_; i_47_++) {
-					if (i_47_ >= 0 && i_47_ < Class99_Sub2.anInt3338) {
+					if (i_47_ >= 0 && i_47_ < Static2.anInt3338) {
 						for (int i_48_ = i_44_; i_48_ <= i_45_; i_48_++) {
 							if (i_48_ >= 0 && i_48_ < Class14_Sub8_Sub15.anInt4337
 									&& (!bool || i_47_ >= i_43_ || i_48_ >= i_45_ || i_48_ < i_39_ && i_47_ != i_38_)) {

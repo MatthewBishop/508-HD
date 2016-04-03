@@ -12,6 +12,7 @@ import com.jagex.link.Linkable;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.RT4;
 import com.jagex.util.TimeUtil;
+import com.jagex.util.Util;
 
 import rs.tex.Class14_Sub8_Sub11;
 import rs.tex.Class14_Sub8_Sub20;
@@ -64,7 +65,7 @@ public class Class14_Sub14 extends Linkable {
 			Class33.aBoolean584 = false;
 			RT4.useLighting = false;
 			Class139.aBoolean2233 = false;
-			Class100.anInt1691 = 127;
+			Static2.anInt1691 = 127;
 			Static.aBoolean845 = false;
 			Class14_Sub8_Sub20.aBoolean4420 = false;
 			Static2.anInt2725 = 0;
@@ -83,7 +84,7 @@ public class Class14_Sub14 extends Linkable {
 			Class30 class30 = null;
 			Class14_Sub8_Sub3.method495((byte) -47, true);
 			Class15.aBoolean374 = true;
-			Class100.anInt1691 = 127;
+			Static2.anInt1691 = 127;
 			Class14_Sub8_Sub26.aBoolean4528 = true;
 			Class33.aBoolean584 = true;
 			Class14_Sub29.anInt3266 = 127;
@@ -104,7 +105,7 @@ public class Class14_Sub14 extends Linkable {
 			try {
 				Class31 class31 = class43.method1152("runescape", 0);
 				while (class31.anInt529 == 0)
-					Class14_Sub13.method864(1L, (byte) 64);
+					Util.sleep(1L);
 				if (class31.anInt529 == 1) {
 					class30 = (Class30) class31.anObject530;
 					int i_0_ = 0;

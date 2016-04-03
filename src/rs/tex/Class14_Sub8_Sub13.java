@@ -137,7 +137,7 @@ public class Class14_Sub8_Sub13 extends Class14_Sub8 {
 
 	public void method475(int i, int i_35_, Buffer class14_sub10) {
 		if (i_35_ == 24777 && i == 0)
-			aBoolean2862 = class14_sub10.method798() == 1;
+			aBoolean2862 = class14_sub10.readUByte() == 1;
 	}
 
 	public int[] method484(int i, byte i_36_) {

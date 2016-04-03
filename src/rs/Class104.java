@@ -14,23 +14,14 @@ import com.jagex.util.TimeUtil;
 import rs.tex.Class14_Sub8_Sub11;
 
 public class Class104 {
-	public static Random aRandom1732 = new Random();
-	public DataInputStream aDataInputStream1733;
-	public int anInt1734;
-	public Class31 aClass31_1735;
 	public static Class124 aClass124_1736;
-	public static int[] anIntArray1737;
 	public static Class124 aClass124_1739 = Class14_Sub2_Sub2.method263(1178, " ");
-	public long aLong1740;
 	public static Class124 aClass124_1743;
-	public byte[] aByteArray1744 = new byte[4];
-	public int anInt1746;
-	public byte[] aByteArray1747;
 	public static Class124 aClass124_1748;
 	public static Class124 aClass124_1749;
 	public static Class124 aClass124_1750;
-	public int anInt1751;
-
+	public static int[] anIntArray1737;
+	public static Random aRandom1732 = new Random();
 	static {
 		aClass124_1736 = aClass124_1739;
 		aClass124_1749 = Class14_Sub2_Sub2.method263(1178, "yellow:");
@@ -38,7 +29,6 @@ public class Class104 {
 		aClass124_1743 = aClass124_1749;
 		aClass124_1750 = Class14_Sub2_Sub2.method263(1178, "<col=80ff00>");
 	}
-
 	public static Class124 method1532(int i, int i_0_) {
 		if (i != 4)
 			aClass124_1739 = null;
@@ -48,6 +38,48 @@ public class Class104 {
 		}
 		Class124 class124 = Class79.aClass124_1265;
 		return class124;
+	}
+	public static int method1534(int i, int i_4_) {
+		Class51 class51 = Class47.method1187(i, true);
+		int i_5_ = class51.anInt842;
+		if (i_4_ < 77) {
+			int i_6_ = 63;
+			return i_6_;
+		}
+		int i_7_ = class51.anInt832;
+		int i_8_ = class51.anInt834;
+		int i_9_ = Class1.anIntArray69[i_8_ - i_7_];
+		int i_10_ = i_9_ & Class14_Sub8_Sub11.anIntArray4275[i_5_] >> i_7_;
+		return i_10_;
+	}
+	public static void method1535(byte i) {
+		aClass124_1739 = null;
+		aClass124_1736 = null;
+		aRandom1732 = null;
+		aClass124_1743 = null;
+		int i_11_ = -58 % ((i + 43) / 41);
+		aClass124_1749 = null;
+		aClass124_1748 = null;
+		aClass124_1750 = null;
+		anIntArray1737 = null;
+	}
+	public byte[] aByteArray1744 = new byte[4];
+	public byte[] aByteArray1747;
+	public Class31 aClass31_1735;
+	public DataInputStream aDataInputStream1733;
+
+	public long aLong1740;
+
+	public int anInt1734;
+
+	public int anInt1746;
+
+	public int anInt1751;
+
+	public Class104(Class43 class43, URL url) {
+		aClass31_1735 = class43.method1147((byte) -109, url);
+		anInt1734 = 0;
+		aLong1740 = TimeUtil.getTime() - -30000L;
 	}
 
 	public byte[] method1533(byte i) throws IOException {
@@ -92,37 +124,5 @@ public class Class104 {
 		}
 		byte[] is = null;
 		return is;
-	}
-
-	public static int method1534(int i, int i_4_) {
-		Class51 class51 = Class47.method1187(i, true);
-		int i_5_ = class51.anInt842;
-		if (i_4_ < 77) {
-			int i_6_ = 63;
-			return i_6_;
-		}
-		int i_7_ = class51.anInt832;
-		int i_8_ = class51.anInt834;
-		int i_9_ = Class1.anIntArray69[i_8_ - i_7_];
-		int i_10_ = i_9_ & Class14_Sub8_Sub11.anIntArray4275[i_5_] >> i_7_;
-		return i_10_;
-	}
-
-	public static void method1535(byte i) {
-		aClass124_1739 = null;
-		aClass124_1736 = null;
-		aRandom1732 = null;
-		aClass124_1743 = null;
-		int i_11_ = -58 % ((i + 43) / 41);
-		aClass124_1749 = null;
-		aClass124_1748 = null;
-		aClass124_1750 = null;
-		anIntArray1737 = null;
-	}
-
-	public Class104(Class43 class43, URL url) {
-		aClass31_1735 = class43.method1147((byte) -109, url);
-		anInt1734 = 0;
-		aLong1740 = TimeUtil.getTime() - -30000L;
 	}
 }

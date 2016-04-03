@@ -12,7 +12,7 @@ public class Class14_Sub2_Sub19_Sub1_Sub2 extends Class14_Sub2_Sub19_Sub1 {
 	public ByteBuffer aByteBuffer5105;
 
 	public void method390(int i, int i_0_) {
-		Class121.method1637();
+		RT4GL.method1637();
 		if (aByteArray5104 == null) {
 			aByteArray5104 = new byte[anInt4035 * anInt4042 * 4];
 			aByteBuffer5105 = ByteBuffer.wrap(aByteArray5104);
@@ -35,8 +35,8 @@ public class Class14_Sub2_Sub19_Sub1_Sub2 extends Class14_Sub2_Sub19_Sub1 {
 				}
 			}
 		}
-		GL gl = Class121.aGL2030;
-		gl.glRasterPos2i(i + anInt4033, Class121.anInt2034 - (i_0_ + anInt4050) - anInt4042);
+		GL gl = RT4GL.gl;
+		gl.glRasterPos2i(i + anInt4033, RT4GL.anInt2034 - (i_0_ + anInt4050) - anInt4042);
 		gl.glDrawPixels(anInt4035, anInt4042, 6408, 5121, aByteBuffer5105);
 	}
 

@@ -37,7 +37,7 @@ public class AthmosphericEffects {
 	}
 
 	public static void loadLightPositions() {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		gl.glLightfv(16384, 4611, light0Position, 0);
 		gl.glLightfv(16385, 4611, light1Position, 0);
 	}
@@ -45,7 +45,7 @@ public class AthmosphericEffects {
 	public static void setFogColour(float[] fs) {
 		if (fs == null)
 			fs = fogColourComponents;
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		gl.glFogfv(2918, fs, 0);
 	}
 
@@ -59,7 +59,7 @@ public class AthmosphericEffects {
 			ambientModelModifier = f;
 			light1Modifier = f_0_;
 			light2Modifier = f_1_;
-			GL gl = Class121.aGL2030;
+			GL gl = RT4GL.gl;
 			float f_2_ = (float) (i >> 16 & 0xff) / 255.0F;
 			float f_3_ = (float) (i >> 8 & 0xff) / 255.0F;
 			float f_4_ = (float) (i & 0xff) / 255.0F;
@@ -80,7 +80,7 @@ public class AthmosphericEffects {
 		if (fogColour != i || fogDistanceModifier != i_7_) {
 			fogColour = i;
 			fogDistanceModifier = i_7_;
-			GL gl = Class121.aGL2030;
+			GL gl = RT4GL.gl;
 			int i_8_ = 50;
 			int i_9_ = 3584;
 			fogColourComponents[0] = (float) (i >> 16 & 0xff) / 255.0F;
@@ -116,7 +116,7 @@ public class AthmosphericEffects {
 	}
 
 	public static void setupLighting() {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		gl.glColorMaterial(1028, 5634);
 		gl.glEnable(2903);
 		float[] fs = { 0.0F, 0.0F, 0.0F, 1.0F };

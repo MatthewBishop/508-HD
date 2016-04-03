@@ -98,7 +98,7 @@ public class Buffer extends Linkable {
 		payload[position++] = (byte) i_2_;
 	}
 
-	public int method784(byte i) {
+	public int readUShort(byte i) {
 		if (i <= 100)
 			method802(-109);
 		position += 2;
@@ -183,13 +183,13 @@ public class Buffer extends Linkable {
 		}
 	}
 
-	public int method793() {
+	public int readSmart() {
 		int i_15_ = payload[position] & 0xff;
 		if (i_15_ >= 128) {
-			int i_17_ = method784((byte) 121) - 49152;
+			int i_17_ = readUShort((byte) 121) - 49152;
 			return i_17_;
 		}
-		int i_18_ = method798() - 64;
+		int i_18_ = readUByte() - 64;
 		return i_18_;
 	}
 
@@ -221,7 +221,7 @@ public class Buffer extends Linkable {
 		return class124;
 	}
 
-	public int method798() {
+	public int readUByte() {
 		int i = payload[position++] & 0xff;
 		return i;
 	}
@@ -399,10 +399,10 @@ public class Buffer extends Linkable {
 		int i_60_ = 1 % ((i + 28) / 54);
 		int i_61_ = payload[position] & 0xff;
 		if (i_61_ < 128) {
-			int i_62_ = method798();
+			int i_62_ = readUByte();
 			return i_62_;
 		}
-		int i_63_ = method784((byte) 114) - 32768;
+		int i_63_ = readUShort((byte) 114) - 32768;
 		return i_63_;
 	}
 

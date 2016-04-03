@@ -24,7 +24,7 @@ public class Class14_Sub2_Sub2 extends Cacheable {
 			} else
 				anInt3766 = class14_sub10.method812((byte) -91);
 		} else
-			anInt3764 = class14_sub10.method798();
+			anInt3764 = class14_sub10.readUByte();
 		if (i_0_ >= -11)
 			anInt3758 = -76;
 	}
@@ -84,7 +84,7 @@ public class Class14_Sub2_Sub2 extends Cacheable {
 
 	public void method265(int i, Buffer class14_sub10) {
 		for (;;) {
-			int i_6_ = class14_sub10.method798();
+			int i_6_ = class14_sub10.readUByte();
 			if (i_6_ == 0)
 				break;
 			method260(i_6_, -16, class14_sub10);

@@ -55,7 +55,7 @@ public class Class37 {
 	public static void method1109(int i) {
 		Static.aLong95 = 0L;
 		Class54.aBoolean879 = true;
-		Class14_Sub2_Sub11.aClass100_3878.anInt1696 = 0;
+		Class14_Sub2_Sub11.aClass100_3878.capturedCoordinateCount = 0;
 		Class83.aBoolean1342 = true;
 		Class14_Sub8_Sub5.anInt4166 = 0;
 		Static.anInt3928 = 0;

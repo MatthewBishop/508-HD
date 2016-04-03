@@ -103,13 +103,13 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 	}
 
 	public static void method321(int i) {
-		if (Class14_Sub8_Sub21.anIntArray4435 == null || Class99_Sub2.anIntArray3357 == null) {
-			Class99_Sub2.anIntArray3357 = new int[256];
+		if (Class14_Sub8_Sub21.anIntArray4435 == null || Static2.anIntArray3357 == null) {
+			Static2.anIntArray3357 = new int[256];
 			Class14_Sub8_Sub21.anIntArray4435 = new int[256];
 			for (int i_5_ = 0; i_5_ < 256; i_5_++) {
 				double d = (double) i_5_ / 255.0 * 6.283185307179586;
 				Class14_Sub8_Sub21.anIntArray4435[i_5_] = (int) (Math.sin(d) * 4096.0);
-				Class99_Sub2.anIntArray3357[i_5_] = (int) (Math.cos(d) * 4096.0);
+				Static2.anIntArray3357[i_5_] = (int) (Math.cos(d) * 4096.0);
 			}
 		}
 		if (i != 256)

@@ -13,8 +13,8 @@ import rs.Class125_Sub1;
 import rs.Class14_Sub2_Sub2;
 import rs.Class67;
 import rs.Class72;
-import rs.Class99;
 import rs.Class9_Sub1;
+import rs.Static2;
 
 public class Class14_Sub8_Sub26 extends Class14_Sub8 {
 	public static boolean aBoolean4528;
@@ -56,7 +56,7 @@ public class Class14_Sub8_Sub26 extends Class14_Sub8 {
 		int i_6_ = 0;
 		for (int i_7_ = 0; i_7_ < 104; i_7_++) {
 			for (int i_8_ = 0; i_8_ < 104; i_8_++) {
-				if (Class99.method1498(true, i_8_, (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368), i_7_, i_6_))
+				if (Static2.method1498(true, i_8_, (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368), i_7_, i_6_))
 					i_6_++;
 				if (i_6_ >= 512)
 					return;
@@ -139,7 +139,7 @@ public class Class14_Sub8_Sub26 extends Class14_Sub8 {
 		if (i_33_ != 24777)
 			aClass124_4529 = null;
 		if (i == 0)
-			aBoolean2862 = class14_sub10.method798() == 1;
+			aBoolean2862 = class14_sub10.readUByte() == 1;
 	}
 
 	public int[] method484(int i, byte i_34_) {

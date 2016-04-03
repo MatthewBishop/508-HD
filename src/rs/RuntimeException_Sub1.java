@@ -83,12 +83,12 @@ public class RuntimeException_Sub1 extends RuntimeException {
 					int i_16_ = (i_14_ & 0xfde) >> 6;
 					int i_17_ = i_14_ & 0x3f;
 					int i_18_ = i_14_ >> 12;
-					int i_19_ = class14_sub10.method798();
+					int i_19_ = class14_sub10.readUByte();
 					int i_20_ = i_19_ >> 2;
 					int i_21_ = i_19_ & 0x3;
 					if (i_5_ == i_18_ && i_9_ <= i_16_ && i_16_ < i_9_ + 8 && i_17_ >= i_11_ && i_17_ < i_11_ + 8) {
 						Class79 class79 = Class79.method1377((byte) -106, i_12_);
-						int i_22_ = (Class99_Sub2.method1511(class79.anInt1227, -675459956, class79.anInt1245,
+						int i_22_ = (Static2.method1511(class79.anInt1227, -675459956, class79.anInt1245,
 								i_16_ & 0x7, i_17_ & 0x7, i_21_, i) + i_7_);
 						int i_23_ = (Class14_Sub2_Sub2.method266(i_16_ & 0x7, class79.anInt1245, class79.anInt1227,
 								i_21_, i_17_ & 0x7, 7, i) + i_8_);

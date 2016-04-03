@@ -39,7 +39,7 @@ public class Class107 {
 		for (int i_4_ = i_0_; i_2_ + i_0_ >= i_4_; i_4_++) {
 			for (int i_5_ = i_1_; i_5_ <= i_1_ + i_3_; i_5_++) {
 				if (i_5_ >= 0 && i_5_ < 104 && i_4_ >= 0 && i_4_ < 104)
-					Class99_Sub2.aByteArrayArrayArray3354[i][i_5_][i_4_] = (byte) 127;
+					Static2.aByteArrayArrayArray3354[i][i_5_][i_4_] = (byte) 127;
 			}
 		}
 		if (bool)
@@ -307,7 +307,7 @@ public class Class107 {
 	}
 
 	public Class107(Buffer class14_sub10) {
-		int i = class14_sub10.method798();
+		int i = class14_sub10.readUByte();
 		aClass14_Sub8Array1798 = new Class14_Sub8[i];
 		int i_55_ = 0;
 		int[][] is = new int[i][];
@@ -321,7 +321,7 @@ public class Class107 {
 			int i_58_ = class14_sub8.aClass14_Sub8Array2831.length;
 			is[i_57_] = new int[i_58_];
 			for (int i_59_ = 0; i_59_ < i_58_; i_59_++)
-				is[i_57_][i_59_] = class14_sub10.method798();
+				is[i_57_][i_59_] = class14_sub10.readUByte();
 			aClass14_Sub8Array1798[i_57_] = class14_sub8;
 		}
 		anIntArray1805 = new int[i_56_];
@@ -341,7 +341,7 @@ public class Class107 {
 				anIntArray1805[i_56_++] = i_64_;
 			is[i_60_] = null;
 		}
-		aClass14_Sub8_1797 = aClass14_Sub8Array1798[class14_sub10.method798()];
-		aClass14_Sub8_1813 = aClass14_Sub8Array1798[class14_sub10.method798()];
+		aClass14_Sub8_1797 = aClass14_Sub8Array1798[class14_sub10.readUByte()];
+		aClass14_Sub8_1813 = aClass14_Sub8Array1798[class14_sub10.readUByte()];
 	}
 }

@@ -44,20 +44,20 @@ public class Light {
 		params = new float[4];
 		if (Light.anIntArray5082 == null)
 			Light.method830();
-		anInt1125 = class14_sub10.method798();
+		anInt1125 = class14_sub10.readUByte();
 		aBoolean1112 = (anInt1125 & 0x10) != 0;
 		aBoolean1123 = (anInt1125 & 0x8) != 0;
 		anInt1125 &= 0x7;
-		param1 = class14_sub10.method784((byte) 113);
-		param3 = class14_sub10.method784((byte) 113);
-		param2 = class14_sub10.method784((byte) 107);
-		anInt1120 = class14_sub10.method798();
+		param1 = class14_sub10.readUShort((byte) 113);
+		param3 = class14_sub10.readUShort((byte) 113);
+		param2 = class14_sub10.readUShort((byte) 107);
+		anInt1120 = class14_sub10.readUByte();
 		method1331(64);
 		aShortArray1106 = new short[anInt1120 * 2 + 1];
 		for (int i = 0; i < aShortArray1106.length; i++)
-			aShortArray1106[i] = (short) class14_sub10.method784((byte) 124);
-		anInt1122 = Class3.anIntArray119[class14_sub10.method784((byte) 116)];
-		int i = class14_sub10.method798();
+			aShortArray1106[i] = (short) class14_sub10.readUShort((byte) 124);
+		anInt1122 = Class3.anIntArray119[class14_sub10.readUShort((byte) 116)];
+		int i = class14_sub10.readUByte();
 		anInt1130 = i & 0x1f;
 		anInt1109 = (i & 0xe0) << 35;
 		method1332((byte) 101);

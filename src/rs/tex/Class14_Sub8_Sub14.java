@@ -5,6 +5,8 @@ package rs.tex;
 
 import java.awt.event.ActionEvent;
 
+import com.jagex.util.Util;
+
 import rs.Canvas_Sub1;
 import rs.Class103;
 import rs.Class112;
@@ -22,7 +24,6 @@ import rs.Class133_Sub5;
 import rs.Class133_Sub6;
 import rs.Class139;
 import rs.Class140;
-import rs.Class14_Sub13;
 import rs.Class14_Sub15;
 import rs.Class14_Sub29;
 import rs.Class14_Sub2_Sub11;
@@ -828,7 +829,7 @@ public class Class14_Sub8_Sub14 extends Class14_Sub8 {
 			int i_11_ = 0;
 			if (i > 37) {
 				for (/**/; i_11_ < 50 && class43.anEventQueue713.peekEvent() != null; i_11_++)
-					Class14_Sub13.method864(1L, (byte) 64);
+					Util.sleep(1L);
 				if (object != null)
 					class43.anEventQueue713.postEvent(new ActionEvent(object, 1001, "dummy"));
 			}

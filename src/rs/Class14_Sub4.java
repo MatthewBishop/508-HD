@@ -8,7 +8,7 @@ import com.jagex.link.Deque;
 import com.jagex.link.Linkable;
 import com.jagex.map.Scenegraph;
 import com.jagex.rt4.AthmosphericEffects;
-import com.jagex.rt4.Class121;
+import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.RT4;
 import com.jagex.rt4.lights.Class10;
 
@@ -77,10 +77,10 @@ public class Class14_Sub4 extends Linkable {
 							+ (Class149.anIntArrayArrayArray2391[0][i + 1][i_1_ + 1])) >> 2);
 					RT4.method1778(3, -i_7_);
 					f = 201.5F;
-					Class121.method1640(f);
+					RT4GL.method1640(f);
 				} else {
 					f = 201.5F - (float) (i_3_ + 1) * 50.0F;
-					Class121.method1640(f);
+					RT4GL.method1640(f);
 				}
 				if (class14_sub29_0_.aBoolean3235) {
 					if (bool) {
@@ -119,7 +119,7 @@ public class Class14_Sub4 extends Linkable {
 					class14_sub29_0_.aBoolean3235 = false;
 					if (class14_sub29_0_.aClass14_Sub29_3260 != null) {
 						Class14_Sub29 class14_sub29_13_ = class14_sub29_0_.aClass14_Sub29_3260;
-						Class121.method1640(201.5F - (float) ((class14_sub29_13_.anInt3261) + 1) * 50.0F);
+						RT4GL.method1640(201.5F - (float) ((class14_sub29_13_.anInt3261) + 1) * 50.0F);
 						if (class14_sub29_13_.aClass153_3248 != null) {
 							if (!Scenegraph.method1529(0, i, i_1_))
 								Class14_Sub30.method940((class14_sub29_13_.aClass153_3248), 0, Class150.anInt2420,
@@ -163,7 +163,7 @@ public class Class14_Sub4 extends Linkable {
 										(class40.anInt666 - Class14_Sub2_Sub8.anInt3853), class40.aLong677);
 							}
 						}
-						Class121.method1640(f);
+						RT4GL.method1640(f);
 					}
 					boolean bool_15_ = false;
 					if (class14_sub29_0_.aClass153_3248 != null) {
@@ -193,7 +193,7 @@ public class Class14_Sub4 extends Linkable {
 						Class4 class4 = class14_sub29_0_.aClass4_3237;
 						if (class4 != null && (class4.aLong132 & 0x80000000L) != 0L) {
 							if (class4.aBoolean133)
-								Class121.method1640(f + 50.0F - 1.5F);
+								RT4GL.method1640(f + 50.0F - 1.5F);
 							Class10.method187(Class4.anInt125, Static2.anInt2741, Class14_Sub2_Sub8.anInt3853, i_2_, i,
 									i_1_);
 							class4.aClass133_124.method1792(0, Class150.anInt2420, Class7_Sub3_Sub1.anInt3718,
@@ -201,7 +201,7 @@ public class Class14_Sub4 extends Linkable {
 									class4.anInt121 - Static2.anInt2741, class4.anInt122 - Class14_Sub2_Sub8.anInt3853,
 									class4.aLong132);
 							if (class4.aBoolean133)
-								Class121.method1640(f);
+								RT4GL.method1640(f);
 						}
 					}
 					int i_16_ = 0;
@@ -261,7 +261,7 @@ public class Class14_Sub4 extends Linkable {
 						}
 					}
 					if (class37 != null && !Scenegraph.method1478(i_3_, i, i_1_, class37.aClass133_642.method1781())) {
-						Class121.method1640(f - 0.5F);
+						RT4GL.method1640(f - 0.5F);
 						if ((class37.anInt649 & i_17_) != 0) {
 							Class10.method187(Class4.anInt125, Static2.anInt2741, Class14_Sub2_Sub8.anInt3853, i_2_, i,
 									i_1_);
@@ -300,13 +300,13 @@ public class Class14_Sub4 extends Linkable {
 										class37.aLong634);
 							}
 						}
-						Class121.method1640(f);
+						RT4GL.method1640(f);
 					}
 					if (bool_15_) {
 						Class4 class4 = class14_sub29_0_.aClass4_3237;
 						if (class4 != null && (class4.aLong132 & 0x80000000L) == 0L) {
 							if (class4.aBoolean133)
-								Class121.method1640(f + 50.0F - 1.5F);
+								RT4GL.method1640(f + 50.0F - 1.5F);
 							Class10.method187(Class4.anInt125, Static2.anInt2741, Class14_Sub2_Sub8.anInt3853, i_2_, i,
 									i_1_);
 							class4.aClass133_124.method1792(0, Class150.anInt2420, Class7_Sub3_Sub1.anInt3718,
@@ -314,7 +314,7 @@ public class Class14_Sub4 extends Linkable {
 									class4.anInt121 - Static2.anInt2741, class4.anInt122 - Class14_Sub2_Sub8.anInt3853,
 									class4.aLong132);
 							if (class4.aBoolean133)
-								Class121.method1640(f);
+								RT4GL.method1640(f);
 						}
 						Class115 class115 = class14_sub29_0_.aClass115_3256;
 						if (class115 != null && class115.anInt1914 == 0) {
@@ -390,7 +390,7 @@ public class Class14_Sub4 extends Linkable {
 									} else if (i_33_ == 1) {
 										i_31_ += 64;
 										i_32_ += 64;
-										if (i_32_ < -i_31_ && i < Class99_Sub2.anInt3338 - 1
+										if (i_32_ < -i_31_ && i < Static2.anInt3338 - 1
 												&& i_1_ < (Class14_Sub8_Sub15.anInt4337) - 1) {
 											Class10.method187(Class4.anInt125, Static2.anInt2741,
 													Class14_Sub2_Sub8.anInt3853, i_2_, i + 1, i_1_ + 1);
@@ -399,7 +399,7 @@ public class Class14_Sub4 extends Linkable {
 									} else if (i_33_ == 2) {
 										i_31_ += 64;
 										i_32_ -= 64;
-										if (i_32_ > i_31_ && i < Class99_Sub2.anInt3338 - 1 && i_1_ > 0) {
+										if (i_32_ > i_31_ && i < Static2.anInt3338 - 1 && i_1_ > 0) {
 											Class10.method187(Class4.anInt125, Static2.anInt2741,
 													Class14_Sub2_Sub8.anInt3853, i_2_, i + 1, i_1_ - 1);
 											break;

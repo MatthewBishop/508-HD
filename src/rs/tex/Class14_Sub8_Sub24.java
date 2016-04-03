@@ -3,13 +3,13 @@
  */
 package rs.tex;
 
+import com.jagex.cache.anim.Animation;
 import com.jagex.io.Buffer;
 import com.jagex.map.MapRegion;
 import com.jagex.rt4.RT4;
 import com.jagex.rt4.lights.Class10;
 import com.jagex.rt4.lights.Light;
 
-import rs.Class100;
 import rs.Class112;
 import rs.Class114;
 import rs.Class124;
@@ -28,7 +28,6 @@ import rs.Class150;
 import rs.Class28;
 import rs.Class32;
 import rs.Class33;
-import rs.Class46;
 import rs.Class51;
 import rs.Class54;
 import rs.Class7;
@@ -205,11 +204,11 @@ public class Class14_Sub8_Sub24 extends Class14_Sub8 {
 		if (!bool) {
 			Class71 class71 = null;
 			while (class14_sub10.position < class14_sub10.payload.length) {
-				int i_51_ = class14_sub10.method798();
+				int i_51_ = class14_sub10.readUByte();
 				if (i_51_ != 0) {
 					if (i_51_ != 1)
 						throw new IllegalStateException();
-					int i_52_ = class14_sub10.method798();
+					int i_52_ = class14_sub10.readUByte();
 					if (i_52_ > 0) {
 						for (int i_53_ = 0; i_53_ < i_52_; i_53_++) {
 							Light light = new Light(class14_sub10);
@@ -241,15 +240,15 @@ public class Class14_Sub8_Sub24 extends Class14_Sub8 {
 	}
 	public static void method610(int i, int i_60_, Class133_Sub1_Sub2 class133_sub1_sub2, int i_61_) {
 		if (i == class133_sub1_sub2.anInt3445 && i != -1) {
-			Class46 class46 = Static.method1129(i, i_61_ ^ 0x302b);
-			int i_62_ = class46.anInt753;
+			Animation animation = Static.method1129(i, i_61_ ^ 0x302b);
+			int i_62_ = animation.anInt753;
 			if (i_62_ == 1) {
 				class133_sub1_sub2.anInt3482 = 0;
 				class133_sub1_sub2.anInt3458 = 0;
 				class133_sub1_sub2.anInt3501 = 0;
 				class133_sub1_sub2.anInt3467 = i_60_;
 				Class14_Sub8_Sub6.method509(class133_sub1_sub2.anInt3495, class133_sub1_sub2.anInt3501, 25, false,
-						class46, class133_sub1_sub2.anInt3436);
+						animation, class133_sub1_sub2.anInt3436);
 			}
 			if (i_62_ == 2)
 				class133_sub1_sub2.anInt3482 = 0;
@@ -268,7 +267,7 @@ public class Class14_Sub8_Sub24 extends Class14_Sub8 {
 	}
 	public static void method611(int i, Buffer class14_sub10) {
 		if (class14_sub10.payload.length - class14_sub10.position >= 1) {
-			int i_63_ = class14_sub10.method798();
+			int i_63_ = class14_sub10.readUByte();
 			if (i_63_ >= 0 && i_63_ <= 3) {
 				int i_64_;
 				if (i_63_ != 3) {
@@ -282,47 +281,47 @@ public class Class14_Sub8_Sub24 extends Class14_Sub8 {
 				} else
 					i_64_ = 23;
 				if ((class14_sub10.payload.length - class14_sub10.position) >= i_64_) {
-					Class14_Sub8_Sub6.anInt4190 = class14_sub10.method798();
+					Class14_Sub8_Sub6.anInt4190 = class14_sub10.readUByte();
 					if (Class14_Sub8_Sub6.anInt4190 >= 1) {
 						if (Class14_Sub8_Sub6.anInt4190 > 4)
 							Class14_Sub8_Sub6.anInt4190 = 4;
 					} else
 						Class14_Sub8_Sub6.anInt4190 = 1;
-					Class14_Sub8_Sub3.method495((byte) -47, class14_sub10.method798() == 1);
-					Class139.aBoolean2233 = class14_sub10.method798() == 1;
-					Static2.aBoolean2372 = class14_sub10.method798() == 1;
-					Class125_Sub3.aBoolean3397 = class14_sub10.method798() == 1;
-					Class135.aBoolean2190 = class14_sub10.method798() == i;
-					Class33.aBoolean584 = class14_sub10.method798() == 1;
-					Class28.aBoolean516 = class14_sub10.method798() == 1;
-					Class14_Sub8_Sub25.aBoolean4518 = class14_sub10.method798() == 1;
-					Class89.anInt1413 = class14_sub10.method798();
+					Class14_Sub8_Sub3.method495((byte) -47, class14_sub10.readUByte() == 1);
+					Class139.aBoolean2233 = class14_sub10.readUByte() == 1;
+					Static2.aBoolean2372 = class14_sub10.readUByte() == 1;
+					Class125_Sub3.aBoolean3397 = class14_sub10.readUByte() == 1;
+					Class135.aBoolean2190 = class14_sub10.readUByte() == i;
+					Class33.aBoolean584 = class14_sub10.readUByte() == 1;
+					Class28.aBoolean516 = class14_sub10.readUByte() == 1;
+					Class14_Sub8_Sub25.aBoolean4518 = class14_sub10.readUByte() == 1;
+					Class89.anInt1413 = class14_sub10.readUByte();
 					if (Class89.anInt1413 > 2)
 						Class89.anInt1413 = 2;
 					if (i_63_ < 2) {
-						RT4.useLighting = class14_sub10.method798() == 1;
-						class14_sub10.method798();
+						RT4.useLighting = class14_sub10.readUByte() == 1;
+						class14_sub10.readUByte();
 					} else
-						RT4.useLighting = class14_sub10.method798() == 1;
-					Class15.aBoolean374 = class14_sub10.method798() == 1;
-					Class14_Sub8_Sub20.aBoolean4420 = class14_sub10.method798() == 1;
-					Class135.anInt2189 = class14_sub10.method798();
+						RT4.useLighting = class14_sub10.readUByte() == 1;
+					Class15.aBoolean374 = class14_sub10.readUByte() == 1;
+					Class14_Sub8_Sub20.aBoolean4420 = class14_sub10.readUByte() == 1;
+					Class135.anInt2189 = class14_sub10.readUByte();
 					if (Class135.anInt2189 > 2)
 						Class135.anInt2189 = 2;
-					Class14_Sub8_Sub26.aBoolean4528 = class14_sub10.method798() == 1;
-					Class14_Sub29.anInt3266 = class14_sub10.method798();
+					Class14_Sub8_Sub26.aBoolean4528 = class14_sub10.readUByte() == 1;
+					Class14_Sub29.anInt3266 = class14_sub10.readUByte();
 					if (Class14_Sub29.anInt3266 > 127)
 						Class14_Sub29.anInt3266 = 127;
-					Class14_Sub23.anInt3135 = class14_sub10.method798();
-					Class100.anInt1691 = class14_sub10.method798();
-					if (Class100.anInt1691 > 127)
-						Class100.anInt1691 = 127;
+					Class14_Sub23.anInt3135 = class14_sub10.readUByte();
+					Static2.anInt1691 = class14_sub10.readUByte();
+					if (Static2.anInt1691 > 127)
+						Static2.anInt1691 = 127;
 					if (i_63_ >= 1) {
-						Class54.anInt887 = class14_sub10.method784((byte) 121);
-						Static2.anInt2725 = class14_sub10.method784((byte) 108);
+						Class54.anInt887 = class14_sub10.readUShort((byte) 121);
+						Static2.anInt2725 = class14_sub10.readUShort((byte) 108);
 					}
 					if (i_63_ >= 3)
-						Static.aBoolean845 = class14_sub10.method798() == 1;
+						Static.aBoolean845 = class14_sub10.readUByte() == 1;
 				}
 			}
 		}

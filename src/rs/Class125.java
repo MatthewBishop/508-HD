@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.cache.anim.Animation;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.RT4;
 
@@ -36,22 +37,22 @@ public abstract class Class125 {
 	public static void method1722(Class133_Sub1 class133_sub1, byte i) {
 		class133_sub1.aBoolean3488 = false;
 		if (class133_sub1.anInt3452 != -1) {
-			Class46 class46 = Static.method1129(class133_sub1.anInt3452, 68);
-			if (class46 != null && class46.anIntArray768 != null) {
+			Animation animation = Static.method1129(class133_sub1.anInt3452, 68);
+			if (animation != null && animation.anIntArray768 != null) {
 				class133_sub1.anInt3431++;
-				if (class46.anIntArray768.length > class133_sub1.anInt3483
-						&& (class133_sub1.anInt3431 > class46.anIntArray763[class133_sub1.anInt3483])) {
+				if (animation.anIntArray768.length > class133_sub1.anInt3483
+						&& (class133_sub1.anInt3431 > animation.anIntArray763[class133_sub1.anInt3483])) {
 					class133_sub1.anInt3431 = 1;
 					class133_sub1.anInt3483++;
 					Class14_Sub8_Sub6.method509(class133_sub1.anInt3495, class133_sub1.anInt3483, -123,
-							((Class14_Sub3.aClass133_Sub1_Sub1_2748) == class133_sub1), class46,
+							((Class14_Sub3.aClass133_Sub1_Sub1_2748) == class133_sub1), animation,
 							class133_sub1.anInt3436);
 				}
-				if (class46.anIntArray768.length <= class133_sub1.anInt3483) {
+				if (animation.anIntArray768.length <= class133_sub1.anInt3483) {
 					class133_sub1.anInt3483 = 0;
 					class133_sub1.anInt3431 = 0;
 					Class14_Sub8_Sub6.method509(class133_sub1.anInt3495, class133_sub1.anInt3483, -102,
-							((Class14_Sub3.aClass133_Sub1_Sub1_2748) == class133_sub1), class46,
+							((Class14_Sub3.aClass133_Sub1_Sub1_2748) == class133_sub1), animation,
 							class133_sub1.anInt3436);
 				}
 			} else
@@ -66,26 +67,26 @@ public abstract class Class125 {
 			if (i_1_ == -1)
 				class133_sub1.anInt3487 = -1;
 			else {
-				Class46 class46 = Static.method1129(i_1_, -119);
-				if (class46 != null && class46.anIntArray768 != null) {
+				Animation animation = Static.method1129(i_1_, -119);
+				if (animation != null && animation.anIntArray768 != null) {
 					class133_sub1.anInt3459++;
-					if (class133_sub1.anInt3470 < class46.anIntArray768.length
-							&& (class133_sub1.anInt3459 > (class46.anIntArray763[class133_sub1.anInt3470]))) {
+					if (class133_sub1.anInt3470 < animation.anIntArray768.length
+							&& (class133_sub1.anInt3459 > (animation.anIntArray763[class133_sub1.anInt3470]))) {
 						class133_sub1.anInt3470++;
 						class133_sub1.anInt3459 = 1;
 						Class14_Sub8_Sub6.method509(class133_sub1.anInt3495, class133_sub1.anInt3470, -102,
-								(class133_sub1 == Class14_Sub3.aClass133_Sub1_Sub1_2748), class46,
+								(class133_sub1 == Class14_Sub3.aClass133_Sub1_Sub1_2748), animation,
 								class133_sub1.anInt3436);
 					}
-					if (class46.anIntArray768.length <= class133_sub1.anInt3470)
+					if (animation.anIntArray768.length <= class133_sub1.anInt3470)
 						class133_sub1.anInt3487 = -1;
 				} else
 					class133_sub1.anInt3487 = -1;
 			}
 		}
 		if (class133_sub1.anInt3445 != -1 && class133_sub1.anInt3467 <= 1) {
-			Class46 class46 = Static.method1129(class133_sub1.anInt3445, -12);
-			if (class46.anInt758 == 1 && class133_sub1.anInt3477 > 0
+			Animation animation = Static.method1129(class133_sub1.anInt3445, -12);
+			if (animation.animatingPrecedence == 1 && class133_sub1.anInt3477 > 0
 					&& Class14_Sub2_Sub20.anInt4064 >= class133_sub1.anInt3494
 					&& Class14_Sub2_Sub20.anInt4064 > class133_sub1.anInt3455) {
 				class133_sub1.anInt3467 = 1;
@@ -93,30 +94,30 @@ public abstract class Class125 {
 			}
 		}
 		if (class133_sub1.anInt3445 != -1 && class133_sub1.anInt3467 == 0) {
-			Class46 class46 = Static.method1129(class133_sub1.anInt3445, 32);
-			if (class46 != null && class46.anIntArray768 != null) {
+			Animation animation = Static.method1129(class133_sub1.anInt3445, 32);
+			if (animation != null && animation.anIntArray768 != null) {
 				class133_sub1.anInt3458++;
-				if (class133_sub1.anInt3501 < class46.anIntArray768.length
-						&& (class46.anIntArray763[class133_sub1.anInt3501] < class133_sub1.anInt3458)) {
+				if (class133_sub1.anInt3501 < animation.anIntArray768.length
+						&& (animation.anIntArray763[class133_sub1.anInt3501] < class133_sub1.anInt3458)) {
 					class133_sub1.anInt3501++;
 					class133_sub1.anInt3458 = 1;
 					Class14_Sub8_Sub6.method509(class133_sub1.anInt3495, class133_sub1.anInt3501, -111,
-							((Class14_Sub3.aClass133_Sub1_Sub1_2748) == class133_sub1), class46,
+							((Class14_Sub3.aClass133_Sub1_Sub1_2748) == class133_sub1), animation,
 							class133_sub1.anInt3436);
 				}
-				if (class133_sub1.anInt3501 >= class46.anIntArray768.length) {
-					class133_sub1.anInt3501 -= class46.anInt760;
+				if (class133_sub1.anInt3501 >= animation.anIntArray768.length) {
+					class133_sub1.anInt3501 -= animation.loopOffset;
 					class133_sub1.anInt3482++;
-					if (class133_sub1.anInt3482 >= class46.anInt770)
+					if (class133_sub1.anInt3482 >= animation.maximumLoops)
 						class133_sub1.anInt3445 = -1;
-					else if (class133_sub1.anInt3501 < 0 || (class133_sub1.anInt3501 >= class46.anIntArray768.length))
+					else if (class133_sub1.anInt3501 < 0 || (class133_sub1.anInt3501 >= animation.anIntArray768.length))
 						class133_sub1.anInt3445 = -1;
 					else
 						Class14_Sub8_Sub6.method509(class133_sub1.anInt3495, class133_sub1.anInt3501, -125,
-								(class133_sub1 == Class14_Sub3.aClass133_Sub1_Sub1_2748), class46,
+								(class133_sub1 == Class14_Sub3.aClass133_Sub1_Sub1_2748), animation,
 								class133_sub1.anInt3436);
 				}
-				class133_sub1.aBoolean3488 = class46.aBoolean757;
+				class133_sub1.aBoolean3488 = animation.stretches;
 			} else
 				class133_sub1.anInt3445 = -1;
 		}

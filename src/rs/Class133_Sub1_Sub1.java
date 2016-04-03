@@ -3,10 +3,11 @@
  */
 package rs;
 
+import com.jagex.cache.anim.Animation;
 import com.jagex.io.Buffer;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.map.SceneCluster;
-import com.jagex.rt4.Class121;
+import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class148;
 import com.jagex.rt4.Class148_Sub1;
 
@@ -120,24 +121,24 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 
 	public void method1792(int i, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, long l) {
 		if (aClass102_4941 != null) {
-			Class46 class46 = (anInt3445 != -1 && anInt3467 == 0 ? Static.method1129(anInt3445, 25) : null);
-			Class46 class46_9_ = (anInt3452 != -1 && !aBoolean4921 && (anInt3452 != anInt3433 || class46 == null)
+			Animation animation = (anInt3445 != -1 && anInt3467 == 0 ? Static.method1129(anInt3445, 25) : null);
+			Animation class46_9_ = (anInt3452 != -1 && !aBoolean4921 && (anInt3452 != anInt3433 || animation == null)
 					? Static.method1129(anInt3452, -126) : null);
-			Class133_Sub7 class133_sub7 = aClass102_4941.method1516(class46_9_, anInt3483, -13, anInt3501, class46);
+			Class133_Sub7 class133_sub7 = aClass102_4941.method1516(class46_9_, anInt3483, -13, anInt3501, animation);
 			if (class133_sub7 != null) {
 				anInt3449 = class133_sub7.method1781();
 				if (Class14_Sub8_Sub25.aBoolean4518 && (aClass102_4941.anInt1720 == -1
 						|| (Class126.method1744(aClass102_4941.anInt1720, 170).aBoolean330))) {
 					Class133_Sub7 class133_sub7_10_ = Class76.method1359(-10345, anInt3495,
-							(class46_9_ == null ? class46 : class46_9_), class133_sub7, 0, 160, anInt3500, 240, 0, i,
+							(class46_9_ == null ? animation : class46_9_), class133_sub7, 0, 160, anInt3500, 240, 0, i,
 							anInt3436, (class46_9_ != null ? anInt3483 : anInt3501), 1, aBoolean3488);
-					float f = Class121.method1653();
-					float f_11_ = Class121.method1624();
-					Class121.method1646();
-					Class121.method1635(f, f_11_ - 150.0F);
+					float f = RT4GL.method1653();
+					float f_11_ = RT4GL.method1624();
+					RT4GL.method1646();
+					RT4GL.method1635(f, f_11_ - 150.0F);
 					class133_sub7_10_.method1792(0, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, i_8_, -1L);
-					Class121.method1625();
-					Class121.method1635(f, f_11_);
+					RT4GL.method1625();
+					RT4GL.method1635(f, f_11_);
 				}
 				if (Class14_Sub3.aClass133_Sub1_Sub1_2748 == this) {
 					for (int i_12_ = Static2.aClass66Array3721.length - 1; i_12_ >= 0; i_12_--) {
@@ -286,13 +287,13 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 
 	public void method1807(byte i, Buffer class14_sub10) {
 		class14_sub10.position = 0;
-		int i_53_ = class14_sub10.method798();
+		int i_53_ = class14_sub10.readUByte();
 		if ((i_53_ & 0x2) != 2) {
 			aShort4927 = (short) 0;
 			aShort4913 = (short) 0;
 		} else {
-			aShort4927 = (short) (class14_sub10.method798() << 34);
-			aShort4913 = (short) (class14_sub10.method798() << 34);
+			aShort4927 = (short) (class14_sub10.readUByte() << 34);
+			aShort4913 = (short) (class14_sub10.readUByte() << 34);
 		}
 		anInt4905 = (i_53_ & 0xc3) >> 6;
 		int i_54_ = i_53_ & 0x1;
@@ -307,14 +308,14 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 		anInt4904 = class14_sub10.method780((byte) -77);
 		anInt4916 = 0;
 		for (int i_57_ = 0; i_57_ < 12; i_57_++) {
-			int i_58_ = class14_sub10.method798();
+			int i_58_ = class14_sub10.readUByte();
 			if (i_58_ == 0)
 				is[i_57_] = 0;
 			else {
-				int i_59_ = class14_sub10.method798();
+				int i_59_ = class14_sub10.readUByte();
 				int i_60_ = i_59_ + (i_58_ << 8);
 				if (i_57_ == 0 && i_60_ == 65535) {
-					i_55_ = class14_sub10.method784((byte) 105);
+					i_55_ = class14_sub10.readUShort((byte) 105);
 					break;
 				}
 				if (i_60_ >= 32768) {
@@ -329,52 +330,52 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 		}
 		int[] is_62_ = new int[5];
 		for (int i_63_ = 0; i_63_ < 5; i_63_++) {
-			int i_64_ = class14_sub10.method798();
+			int i_64_ = class14_sub10.readUByte();
 			if (i_64_ < 0 || i_64_ >= (Class14_Sub8_Sub24.aShortArrayArray4496[i_63_]).length)
 				i_64_ = 0;
 			is_62_[i_63_] = i_64_;
 		}
-		anInt3433 = class14_sub10.method784((byte) 104);
+		anInt3433 = class14_sub10.readUShort((byte) 104);
 		if (anInt3433 == 65535)
 			anInt3433 = -1;
 		if (i >= -115)
 			method1804((byte) -20);
-		anInt3471 = class14_sub10.method784((byte) 110);
+		anInt3471 = class14_sub10.readUShort((byte) 110);
 		if (anInt3471 == 65535)
 			anInt3471 = -1;
 		anInt3454 = anInt3471;
-		anInt3457 = class14_sub10.method784((byte) 123);
+		anInt3457 = class14_sub10.readUShort((byte) 123);
 		if (anInt3457 == 65535)
 			anInt3457 = -1;
-		anInt3484 = class14_sub10.method784((byte) 122);
+		anInt3484 = class14_sub10.readUShort((byte) 122);
 		if (anInt3484 == 65535)
 			anInt3484 = -1;
-		anInt3463 = class14_sub10.method784((byte) 116);
+		anInt3463 = class14_sub10.readUShort((byte) 116);
 		if (anInt3463 == 65535)
 			anInt3463 = -1;
-		anInt3432 = class14_sub10.method784((byte) 105);
+		anInt3432 = class14_sub10.readUShort((byte) 105);
 		if (anInt3432 == 65535)
 			anInt3432 = -1;
-		anInt3456 = class14_sub10.method784((byte) 107);
+		anInt3456 = class14_sub10.readUShort((byte) 107);
 		if (anInt3456 == 65535)
 			anInt3456 = -1;
-		aClass124_4922 = Class46.method1174(class14_sub10.method796(31), (byte) 94).method1685(0);
-		anInt4937 = class14_sub10.method798();
+		aClass124_4922 = Static2.method1174(class14_sub10.method796(31), (byte) 94).method1685(0);
+		anInt4937 = class14_sub10.readUByte();
 		if (!bool)
 			anInt4928 = 0;
 		else
-			anInt4928 = class14_sub10.method784((byte) 113);
+			anInt4928 = class14_sub10.readUShort((byte) 113);
 		int i_65_ = anInt4917;
-		anInt4917 = class14_sub10.method798();
+		anInt4917 = class14_sub10.readUByte();
 		if (anInt4917 == 0)
 			Class14_Sub8_Sub14.method551(this, -574);
 		else {
 			int i_66_ = anInt4909;
 			int i_67_ = anInt4940;
 			int i_68_ = anInt4932;
-			anInt4909 = class14_sub10.method784((byte) 110);
-			anInt4940 = class14_sub10.method784((byte) 116);
-			anInt4932 = class14_sub10.method784((byte) 114);
+			anInt4909 = class14_sub10.readUShort((byte) 110);
+			anInt4940 = class14_sub10.readUShort((byte) 116);
+			anInt4932 = class14_sub10.readUShort((byte) 114);
 			if (i_65_ != anInt4917 || anInt4909 != i_66_ || i_67_ != anInt4940 || anInt4932 != i_68_)
 				Class133_Sub4.method1839(this, (byte) 7);
 		}
@@ -408,13 +409,13 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 				Class133_Sub7 class133_sub7_82_ = Class14_Sub8_Sub36.method672(anInt3436, anInt3500, i_71_, 4435, i_81_,
 						class133_sub7, anInt3495);
 				if (class133_sub7_82_ != null) {
-					float f = Class121.method1653();
-					float f_83_ = Class121.method1624();
-					Class121.method1646();
-					Class121.method1635(f, f_83_ - 150.0F);
+					float f = RT4GL.method1653();
+					float f_83_ = RT4GL.method1624();
+					RT4GL.method1646();
+					RT4GL.method1635(f, f_83_ - 150.0F);
 					class133_sub7_82_.method1792(0, i_70_, i_73_, i, i_77_, i_75_, i_80_, i_74_, -1L);
-					Class121.method1625();
-					Class121.method1635(f, f_83_);
+					RT4GL.method1625();
+					RT4GL.method1635(f, f_83_);
 				}
 			}
 		}

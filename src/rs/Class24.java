@@ -2,13 +2,13 @@ package rs;
 
 import com.jagex.link.Deque;
 import com.jagex.rt4.Class14_Sub1;
+import com.jagex.util.Util;
 
 import rs.Class108;
 import rs.Class124;
 import rs.Class132;
 import rs.Class138;
 import rs.Class142;
-import rs.Class14_Sub13;
 import rs.Class14_Sub19;
 import rs.Class14_Sub25;
 import rs.Class14_Sub2_Sub2;
@@ -82,7 +82,7 @@ public class Class24 implements Runnable {
 							Class138.anInt2223 = 600;
 						}
 					} else {
-						Class14_Sub13.method864(100L, (byte) 64);
+						Util.sleep(100L);
 						var12 = Class14_Sub8_Sub20.anObject4417;
 						var4 = Class14_Sub8_Sub20.anObject4417;
 						synchronized (var4) {

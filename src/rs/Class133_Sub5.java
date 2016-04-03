@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.cache.anim.Animation;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 
 import rs.tex.Class14_Sub8_Sub3;
@@ -15,7 +16,7 @@ public class Class133_Sub5 extends Class133 {
 	public int anInt3608 = 0;
 	public static Class14_Sub2_Sub19[] aClass14_Sub2_Sub19Array3609;
 	public static Class124 aClass124_3610;
-	public Class46 aClass46_3611;
+	public Animation aClass46_3611;
 	public static int anInt3612 = 0;
 	public int anInt3613 = 0;
 	public int anInt3616;

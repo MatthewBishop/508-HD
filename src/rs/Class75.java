@@ -9,6 +9,7 @@ import com.jagex.io.Buffer;
 import com.jagex.link.Cache;
 import com.jagex.rt4.Class148;
 import com.jagex.util.TimeUtil;
+import com.jagex.util.Util;
 
 import rs.tex.Class14_Sub8_Sub15;
 import rs.tex.Class14_Sub8_Sub25;
@@ -80,25 +81,25 @@ public class Class75 {
 	}
 
 	public static void method1339(Class133 class133, int i, int i_3_, int i_4_) {
-		if (i_3_ < Class99_Sub2.anInt3338) {
+		if (i_3_ < Static2.anInt3338) {
 			Class14_Sub29 class14_sub29 = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_3_ + 1][i_4_]);
 			if (class14_sub29 != null && class14_sub29.aClass4_3237 != null
 					&& class14_sub29.aClass4_3237.aClass133_124.method1784())
 				class133.method1788(class14_sub29.aClass4_3237.aClass133_124, 128, 0, 0, true);
 		}
-		if (i_4_ < Class99_Sub2.anInt3338) {
+		if (i_4_ < Static2.anInt3338) {
 			Class14_Sub29 class14_sub29 = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_3_][i_4_ + 1]);
 			if (class14_sub29 != null && class14_sub29.aClass4_3237 != null
 					&& class14_sub29.aClass4_3237.aClass133_124.method1784())
 				class133.method1788(class14_sub29.aClass4_3237.aClass133_124, 0, 0, 128, true);
 		}
-		if (i_3_ < Class99_Sub2.anInt3338 && i_4_ < Class14_Sub8_Sub15.anInt4337) {
+		if (i_3_ < Static2.anInt3338 && i_4_ < Class14_Sub8_Sub15.anInt4337) {
 			Class14_Sub29 class14_sub29 = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_3_ + 1][i_4_ + 1]);
 			if (class14_sub29 != null && class14_sub29.aClass4_3237 != null
 					&& class14_sub29.aClass4_3237.aClass133_124.method1784())
 				class133.method1788(class14_sub29.aClass4_3237.aClass133_124, 128, 0, 128, true);
 		}
-		if (i_3_ < Class99_Sub2.anInt3338 && i_4_ > 0) {
+		if (i_3_ < Static2.anInt3338 && i_4_ > 0) {
 			Class14_Sub29 class14_sub29 = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_3_ + 1][i_4_ - 1]);
 			if (class14_sub29 != null && class14_sub29.aClass4_3237 != null
 					&& class14_sub29.aClass4_3237.aClass133_124.method1784())
@@ -112,17 +113,17 @@ public class Class75 {
 				byte[] is = Static2.aClass104_4037.method1533((byte) 81);
 				if (is != null) {
 					Buffer class14_sub10 = new Buffer(is);
-					Static.anInt1129 = class14_sub10.method784((byte) 111);
+					Static.anInt1129 = class14_sub10.readUShort((byte) 111);
 					Class133_Sub1.aClass45Array3435 = new Class45[Static.anInt1129];
 					for (int i_5_ = 0; Static.anInt1129 > i_5_; i_5_++) {
 						Class45 class45 = (Class133_Sub1.aClass45Array3435[i_5_] = new Class45());
-						int i_6_ = class14_sub10.method784((byte) 127);
+						int i_6_ = class14_sub10.readUShort((byte) 127);
 						class45.aBoolean749 = (i_6_ & 0x8000) != 0;
 						class45.anInt744 = i_6_ & 0x7fff;
 						class45.aClass124_741 = class14_sub10.method797(9467);
 						class45.anInt752 = class14_sub10.method805(0);
 						class45.anInt742 = i_5_;
-						int i_7_ = class14_sub10.method784((byte) 121);
+						int i_7_ = class14_sub10.readUShort((byte) 121);
 						class45.anInt745 = Class47.method1182(i_7_, -1);
 					}
 					Class14_Sub2_Sub11.method309(Class133_Sub1.aClass45Array3435,
@@ -312,7 +313,7 @@ public class Class75 {
 			if (bool) {
 				Class69.aClass90_1070.aBoolean1428 = true;
 				while (Class69.aClass90_1070.aBoolean1419)
-					Class14_Sub13.method864(50L, (byte) 64);
+					Util.sleep(50L);
 				Class69.aClass90_1070 = null;
 			}
 		}
@@ -349,7 +350,7 @@ public class Class75 {
 		int i_20_ = i;
 		if (Class14_Sub2_Sub2.aBoolean3763)
 			i_20_ <<= 1;
-		Class72.method1321(is, 0, i_20_);
+		Class72.fillArray(is, 0, i_20_);
 		anInt1176 -= i;
 		if (aClass14_Sub9_1154 != null && anInt1176 <= 0) {
 			anInt1176 += Class115.anInt1909 >> 4;

@@ -47,13 +47,13 @@ public class Class14_Sub8_Sub37 extends Class14_Sub8 {
 						break while_35_;
 					}
 				} else {
-					anInt4723 = class14_sub10.method798();
+					anInt4723 = class14_sub10.readUByte();
 					break while_35_;
 				}
-				anInt4717 = class14_sub10.method798();
+				anInt4717 = class14_sub10.readUByte();
 				break while_35_;
 			} while (false);
-			anInt4715 = class14_sub10.method798();
+			anInt4715 = class14_sub10.readUByte();
 		} while (false);
 		if (i_0_ != 24777)
 			method472();

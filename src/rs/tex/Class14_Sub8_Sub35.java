@@ -24,7 +24,7 @@ import rs.Class58;
 import rs.Class59;
 import rs.Class75;
 import rs.Class87;
-import rs.Class99_Sub2;
+import rs.Static2;
 
 public class Class14_Sub8_Sub35 extends Class14_Sub8 {
 	public static Class124 aClass124_4676 = Class14_Sub2_Sub2.method263(1178, "::fullscreen");
@@ -59,7 +59,7 @@ public class Class14_Sub8_Sub35 extends Class14_Sub8 {
 			bool_13_ = Class14_Sub8_Sub33.method656(-1);
 		} catch (IOException ioexception) {
 			Throwable throwable = new Throwable();
-			Class99_Sub2.method1508((byte) 100);
+			Static2.method1508((byte) 100);
 			return true;
 		} catch (Exception exception) {
 			Throwable throwable = new Throwable();
@@ -156,25 +156,25 @@ public class Class14_Sub8_Sub35 extends Class14_Sub8 {
 											break while_24_;
 										}
 									} else {
-										anInt4673 = class14_sub10.method784((byte) 114);
+										anInt4673 = class14_sub10.readUShort((byte) 114);
 										break while_28_;
 									}
-									anInt4680 = class14_sub10.method784((byte) 120);
+									anInt4680 = class14_sub10.readUShort((byte) 120);
 									break while_28_;
 								} while (false);
-								anInt4689 = class14_sub10.method784((byte) 104);
+								anInt4689 = class14_sub10.readUShort((byte) 104);
 								break while_28_;
 							} while (false);
-							anInt4690 = class14_sub10.method784((byte) 111);
+							anInt4690 = class14_sub10.readUShort((byte) 111);
 							break while_28_;
 						} while (false);
-						anInt4685 = class14_sub10.method784((byte) 111);
+						anInt4685 = class14_sub10.readUShort((byte) 111);
 						break while_28_;
 					} while (false);
-					anInt4688 = class14_sub10.method784((byte) 113);
+					anInt4688 = class14_sub10.readUShort((byte) 113);
 					break while_28_;
 				} while (false);
-				anInt4674 = class14_sub10.method784((byte) 122);
+				anInt4674 = class14_sub10.readUShort((byte) 122);
 			}
 		} while (false);
 	}
@@ -210,7 +210,7 @@ public class Class14_Sub8_Sub35 extends Class14_Sub8 {
 		if (i_52_ <= 111)
 			anInt4674 = 38;
 		int i_53_ = anInt4685 * (i + i_51_) >> 44;
-		int i_54_ = Class99_Sub2.anIntArray3357[i_53_ * 255 >> 44 & 0xff];
+		int i_54_ = Static2.anIntArray3357[i_53_ * 255 >> 44 & 0xff];
 		i_54_ = (i_54_ << 12) / anInt4685;
 		i_54_ = (i_54_ << 44) / anInt4674;
 		i_54_ = i_54_ * anInt4688 >> 44;
@@ -222,7 +222,7 @@ public class Class14_Sub8_Sub35 extends Class14_Sub8 {
 		if (i_55_ != 13508)
 			method664(true);
 		int i_57_ = (-i_56_ + i) * anInt4685 >> 44;
-		int i_58_ = Class99_Sub2.anIntArray3357[(i_57_ * 255 & 0xff9a9) >> 12];
+		int i_58_ = Static2.anIntArray3357[(i_57_ * 255 & 0xff9a9) >> 12];
 		i_58_ = (i_58_ << 12) / anInt4685;
 		i_58_ = (i_58_ << 12) / anInt4674;
 		i_58_ = anInt4688 * i_58_ >> 12;

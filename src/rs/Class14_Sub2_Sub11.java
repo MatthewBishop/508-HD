@@ -5,6 +5,7 @@ package rs;
 
 import com.jagex.io.Buffer;
 import com.jagex.link.Cacheable;
+import com.jagex.util.MouseCapturer;
 
 import rs.tex.Class14_Sub8_Sub35;
 import rs.tex.Static;
@@ -13,7 +14,7 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 	public static int[] anIntArray3872 = new int[2];
 	public static int anInt3874;
 	public Class124 aClass124_3876;
-	public static Class100 aClass100_3878;
+	public static MouseCapturer aClass100_3878;
 	public static int anInt3881 = 0;
 	public int[] anIntArray3882;
 	public static int anInt3884 = 0;
@@ -161,24 +162,24 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 		if (i_21_ == 1)
 			aClass124_3876 = class14_sub10.method797(9467);
 		else if (i_21_ == 2) {
-			int i_22_ = class14_sub10.method798();
+			int i_22_ = class14_sub10.readUByte();
 			anIntArray3885 = new int[i_22_];
 			anIntArray3888 = new int[i_22_];
 			for (int i_23_ = 0; i_23_ < i_22_; i_23_++) {
-				anIntArray3885[i_23_] = class14_sub10.method784((byte) 105);
-				int i_24_ = class14_sub10.method798();
+				anIntArray3885[i_23_] = class14_sub10.readUShort((byte) 105);
+				int i_24_ = class14_sub10.readUByte();
 				if (i_24_ == 0)
 					anIntArray3888[i_23_] = -1;
 				else
 					anIntArray3888[i_23_] = i_24_;
 			}
 		} else if (i_21_ == 3) {
-			int i_25_ = class14_sub10.method798();
+			int i_25_ = class14_sub10.readUByte();
 			anIntArray3886 = new int[i_25_];
 			anIntArray3882 = new int[i_25_];
 			for (int i_26_ = 0; i_26_ < i_25_; i_26_++) {
-				anIntArray3882[i_26_] = class14_sub10.method784((byte) 114);
-				int i_27_ = class14_sub10.method798();
+				anIntArray3882[i_26_] = class14_sub10.readUShort((byte) 114);
+				int i_27_ = class14_sub10.readUByte();
 				if (i_27_ != 0)
 					anIntArray3886[i_26_] = i_27_;
 				else
@@ -206,7 +207,7 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 				} else
 					i_32_ = 0;
 				if (i_32_ != class14_sub3.anInt2756) {
-					int i_33_ = Class99.method1500((class14_sub3.aClass133_Sub1_Sub2_2762), -1);
+					int i_33_ = Static2.method1500((class14_sub3.aClass133_Sub1_Sub2_2762), -1);
 					if (class14_sub3.anInt2753 != i_33_) {
 						if (class14_sub3.aClass14_Sub9_Sub4_2775 != null) {
 							Class33.aClass14_Sub9_Sub2_585.method730(class14_sub3.aClass14_Sub9_Sub4_2775);
@@ -256,7 +257,7 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 
 	public void method315(byte i, Buffer class14_sub10) {
 		for (;;) {
-			int i_36_ = class14_sub10.method798();
+			int i_36_ = class14_sub10.readUByte();
 			if (i_36_ == 0)
 				break;
 			method312(class14_sub10, (byte) 30, i_36_);

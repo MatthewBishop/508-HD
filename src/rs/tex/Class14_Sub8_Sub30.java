@@ -8,7 +8,7 @@ import java.awt.Insets;
 
 import com.jagex.io.Buffer;
 import com.jagex.link.ref.SoftCache;
-import com.jagex.rt4.Class121;
+import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
 import com.jagex.util.TimeUtil;
@@ -164,7 +164,7 @@ public class Class14_Sub8_Sub30 extends Class14_Sub8 {
 			Class76.anInt1197 = Class14_Sub13.anInt2964;
 			Static.anInt895 = (Class14_Sub8_Sub32.anInt4622 - 765) / 2;
 		}
-		Class121.method1628(Class83.anInt1340, Class14_Sub20.anInt3094);
+		RT4GL.method1628(Class83.anInt1340, Class14_Sub20.anInt3094);
 		Class49.aCanvas819.setSize(Class83.anInt1340, Class14_Sub20.anInt3094);
 		if (container == Class14_Sub14.aFrame2986) {
 			Insets insets = Class14_Sub14.aFrame2986.getInsets();
@@ -240,10 +240,10 @@ public class Class14_Sub8_Sub30 extends Class14_Sub8 {
 				if (i_26_ != 1)
 					break;
 			} else {
-				anInt4591 = class14_sub10.method798();
+				anInt4591 = class14_sub10.readUByte();
 				break;
 			}
-			anInt4593 = class14_sub10.method798();
+			anInt4593 = class14_sub10.readUByte();
 		} while (false);
 	}
 

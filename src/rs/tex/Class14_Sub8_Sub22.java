@@ -4,6 +4,7 @@
 package rs.tex;
 
 import com.jagex.io.Buffer;
+import com.jagex.util.Util;
 
 import rs.Class1;
 import rs.Class118;
@@ -12,7 +13,6 @@ import rs.Class125_Sub1;
 import rs.Class126;
 import rs.Class137;
 import rs.Class139;
-import rs.Class14_Sub13;
 import rs.Class14_Sub17;
 import rs.Class14_Sub2_Sub11;
 import rs.Class14_Sub2_Sub17;
@@ -196,7 +196,7 @@ public class Class14_Sub8_Sub22 extends Class14_Sub8 {
 		try {
 			Class31 class31 = class43.method1152("runescape", i - 257411150);
 			while (class31.anInt529 == 0)
-				Class14_Sub13.method864(1L, (byte) 64);
+				Util.sleep(1L);
 			if (class31.anInt529 == 1) {
 				class30 = (Class30) class31.anObject530;
 				Buffer class14_sub10 = Class7_Sub3.method132((byte) 63);

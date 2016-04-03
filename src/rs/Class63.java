@@ -101,7 +101,7 @@ public class Class63 {
 		Class66.anIntArrayArrayArray135 = null;
 		if (i <= -45) {
 			Class15.overlayOrientations = null;
-			Class99_Sub2.aByteArrayArrayArray3354 = null;
+			Static2.aByteArrayArrayArray3354 = null;
 			Class14_Sub8_Sub6.overlays = null;
 			Class97.underlays = null;
 			Class21.anIntArray442 = null;

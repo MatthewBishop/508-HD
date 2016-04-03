@@ -515,7 +515,7 @@ public class Class47 {
 		long[] ls = new long[i_97_];
 		for (int i_98_ = 0; i_98_ < i_97_; i_98_++)
 			ls[i_98_] = class14_sub27s[i_98_].key;
-		Class99_Sub2.method1506(class14_sub27s, ls, true);
+		Static2.method1506(class14_sub27s, ls, true);
 		Class14_Sub27[] class14_sub27s_99_ = class14_sub27s;
 		return class14_sub27s_99_;
 	}

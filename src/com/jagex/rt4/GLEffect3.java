@@ -14,7 +14,7 @@ public class GLEffect3 implements Interface2 {
 	public float[] texGenParameters = new float[4];
 
 	public void setup(int i) {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		gl.glActiveTexture(33985);
 		if (texture1or2 || i >= 0) {
 			gl.glPushMatrix();
@@ -38,7 +38,7 @@ public class GLEffect3 implements Interface2 {
 				texGenParameters[0] = 0.0F;
 				texGenParameters[1] = 0.0F;
 				texGenParameters[2] = 0.0F;
-				texGenParameters[3] = (float) Class121.anInt2045 * 0.01F;
+				texGenParameters[3] = (float) RT4GL.anInt2045 * 0.01F;
 				gl.glTexGenfv(8194, 9474, texGenParameters, 0);
 				gl.glActiveTexture(33986);
 			}
@@ -59,26 +59,26 @@ public class GLEffect3 implements Interface2 {
 	}
 
 	public void disable() {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		gl.glCallList(listPointer + 1);
 	}
 
 	public static void enableTexCoordArray() {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		gl.glClientActiveTexture(getActiveTexture());
 		gl.glEnableClientState(32888);
 		gl.glClientActiveTexture(33984);
 	}
 
 	public static void disableTexCoordArray() {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		gl.glClientActiveTexture(getActiveTexture());
 		gl.glDisableClientState(32888);
 		gl.glClientActiveTexture(33984);
 	}
 
 	public void enable() {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		gl.glCallList(listPointer);
 	}
 
@@ -91,7 +91,7 @@ public class GLEffect3 implements Interface2 {
 	}
 
 	public void createLists() {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		listPointer = gl.glGenLists(2);
 		gl.glNewList(listPointer, 4864);
 		gl.glActiveTexture(33985);
@@ -154,13 +154,13 @@ public class GLEffect3 implements Interface2 {
 
 	public GLEffect3() {
 		listPointer = -1;
-		if (Class121.anInt2019 >= 2) {
+		if (RT4GL.anInt2019 >= 2) {
 			int[] is = new int[1];
 			byte[] is_0_ = new byte[8];
 			int i = 0;
 			while (i < 8)
 				is_0_[i++] = (byte) (i * 159 / 8 + 96);
-			GL gl = Class121.aGL2030;
+			GL gl = RT4GL.gl;
 			gl.glGenTextures(1, is, 0);
 			gl.glBindTexture(3552, is[0]);
 			gl.glTexImage1D(3552, 0, 6406, 8, 0, 6406, 5121, ByteBuffer.wrap(is_0_));
@@ -168,7 +168,7 @@ public class GLEffect3 implements Interface2 {
 			gl.glTexParameteri(3552, 10240, 9729);
 			gl.glTexParameteri(3552, 10242, 33071);
 			gradientAlpha = is[0];
-			texture1or2 = Class121.anInt2019 > 2 && Class121.aBoolean2042;
+			texture1or2 = RT4GL.anInt2019 > 2 && RT4GL.aBoolean2042;
 			createLists();
 		}
 	}

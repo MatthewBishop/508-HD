@@ -26,7 +26,6 @@ import rs.Class40;
 import rs.Class83;
 import rs.Class9;
 import rs.Class94;
-import rs.Class99_Sub2;
 import rs.Static2;
 
 public class Class14_Sub8_Sub19 extends Class14_Sub8 {
@@ -59,7 +58,7 @@ public class Class14_Sub8_Sub19 extends Class14_Sub8 {
 		int i_12_ = 0;
 		for (int i_13_ = i_3_; i_13_ < i_3_ + i_5_; i_13_++) {
 			for (int i_14_ = i_4_; i_14_ < i_4_ + i_6_; i_14_++) {
-				if (i_13_ < 0 || i_14_ < 0 || i_13_ >= Class99_Sub2.anInt3338 || i_14_ >= Class14_Sub8_Sub15.anInt4337)
+				if (i_13_ < 0 || i_14_ < 0 || i_13_ >= Static2.anInt3338 || i_14_ >= Class14_Sub8_Sub15.anInt4337)
 					return false;
 				Class14_Sub29 class14_sub29 = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_13_][i_14_]);
 				if (class14_sub29 != null && class14_sub29.anInt3242 >= 5)
@@ -185,7 +184,7 @@ public class Class14_Sub8_Sub19 extends Class14_Sub8 {
 
 	public void method475(int i, int i_36_, Buffer class14_sub10) {
 		if (i == 0)
-			anInt4413 = class14_sub10.method784((byte) 110);
+			anInt4413 = class14_sub10.readUShort((byte) 110);
 		if (i_36_ != 24777)
 			method582((byte) 116, null);
 	}

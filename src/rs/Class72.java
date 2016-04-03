@@ -90,7 +90,7 @@ public class Class72 {
 			objects_3_[i_4_++] = objects[i++];
 	}
 
-	public static void method1321(int[] is, int i, int i_6_) {
+	public static void fillArray(int[] is, int i, int i_6_) {
 		i_6_ = i + i_6_ - 7;
 		while (i < i_6_) {
 			is[i++] = 0;

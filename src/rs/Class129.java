@@ -41,7 +41,7 @@ public abstract class Class129 {
 		}
 		Class125_Sub2 class125_sub2 = new Class125_Sub2(class14_sub10.method805(0), class14_sub10.method805(0),
 				class14_sub10.method805(0), class14_sub10.method805(0), class14_sub10.method829(47),
-				class14_sub10.method798());
+				class14_sub10.readUByte());
 		return class125_sub2;
 	}
 
@@ -64,7 +64,7 @@ public abstract class Class129 {
 			}
 		}
 		if (i == 5) {
-			Class124 class124 = Class46.method1174(l, (byte) 88).method1685(0);
+			Class124 class124 = Static2.method1174(l, (byte) 88).method1685(0);
 			return class124;
 		}
 		if (i_1_ < 123) {

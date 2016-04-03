@@ -48,7 +48,6 @@ import rs.Class7_Sub3_Sub1;
 import rs.Class83;
 import rs.Class94;
 import rs.Class98;
-import rs.Class99_Sub2;
 import rs.RuntimeException_Sub1;
 import rs.Static2;
 import rs.StaticGL;
@@ -102,8 +101,8 @@ public class Class14_Sub8_Sub21 extends Class14_Sub8 {
 			int[] is_12_, int[] is_13_, int[] is_14_, int[] is_15_, int i_16_, byte i_17_, int i_18_, int i_19_) {
 		if (i < 0)
 			i = 0;
-		else if (i >= Class99_Sub2.anInt3338 * 128)
-			i = Class99_Sub2.anInt3338 * 128 - 1;
+		else if (i >= Static2.anInt3338 * 128)
+			i = Static2.anInt3338 * 128 - 1;
 		if (i_8_ < 0)
 			i_8_ = 0;
 		else if (i_8_ >= Class14_Sub8_Sub15.anInt4337 * 128)
@@ -124,8 +123,8 @@ public class Class14_Sub8_Sub21 extends Class14_Sub8 {
 		if (Class14_Sub9_Sub3.anInt4849 < 0)
 			Class14_Sub9_Sub3.anInt4849 = 0;
 		Class14_Sub8_Sub37.anInt4722 = Class71.cameraTileX + Static.anInt1108;
-		if (Class14_Sub8_Sub37.anInt4722 > Class99_Sub2.anInt3338)
-			Class14_Sub8_Sub37.anInt4722 = Class99_Sub2.anInt3338;
+		if (Class14_Sub8_Sub37.anInt4722 > Static2.anInt3338)
+			Class14_Sub8_Sub37.anInt4722 = Static2.anInt3338;
 		Class14_Sub8_Sub26.anInt4526 = Class102.cameraTileZ + Static.anInt1108;
 		if (Class14_Sub8_Sub26.anInt4526 > Class14_Sub8_Sub15.anInt4337)
 			Class14_Sub8_Sub26.anInt4526 = Class14_Sub8_Sub15.anInt4337;
@@ -136,7 +135,7 @@ public class Class14_Sub8_Sub21 extends Class14_Sub8 {
 				int i_24_ = ((i_22_ - Static.anInt1108 << 7) - (Class14_Sub2_Sub8.anInt3853 & 0x7f));
 				int i_25_ = Class71.cameraTileX - Static.anInt1108 + i_21_;
 				int i_26_ = Class102.cameraTileZ - Static.anInt1108 + i_22_;
-				if (i_25_ >= 0 && i_26_ >= 0 && i_25_ < Class99_Sub2.anInt3338
+				if (i_25_ >= 0 && i_26_ >= 0 && i_25_ < Static2.anInt3338
 						&& i_26_ < Class14_Sub8_Sub15.anInt4337) {
 					int i_27_;
 					if (Class150.anIntArrayArrayArray2419 != null)
@@ -278,11 +277,11 @@ public class Class14_Sub8_Sub21 extends Class14_Sub8 {
 
 	public void method475(int i, int i_38_, Buffer class14_sub10) {
 		if (i_38_ == 24777 && i == 0) {
-			anInt4438 = class14_sub10.method798();
-			anIntArrayArray4441 = new int[class14_sub10.method798()][2];
+			anInt4438 = class14_sub10.readUByte();
+			anIntArrayArray4441 = new int[class14_sub10.readUByte()][2];
 			for (int i_39_ = 0; anIntArrayArray4441.length > i_39_; i_39_++) {
-				anIntArrayArray4441[i_39_][0] = class14_sub10.method784((byte) 113);
-				anIntArrayArray4441[i_39_][1] = class14_sub10.method784((byte) 126);
+				anIntArrayArray4441[i_39_][0] = class14_sub10.readUShort((byte) 113);
+				anIntArrayArray4441[i_39_][1] = class14_sub10.readUShort((byte) 126);
 			}
 		}
 	}
@@ -381,7 +380,7 @@ public class Class14_Sub8_Sub21 extends Class14_Sub8 {
 					int[] is = anIntArrayArray4441[i_68_ - 1];
 					int[] is_69_ = anIntArrayArray4441[i_68_];
 					int i_70_ = (i_67_ - is[0] << 44) / (-is[0] + is_69_[0]);
-					int i_71_ = (-Class99_Sub2.anIntArray3357[(i_70_ & 0x1fe4) >> 37] + 4096) >> 1;
+					int i_71_ = (-Static2.anIntArray3357[(i_70_ & 0x1fe4) >> 37] + 4096) >> 1;
 					int i_72_ = -i_71_ + 4096;
 					int i_73_ = is[1] * i_72_ + i_71_ * is_69_[1] >> 44;
 					if (i_73_ <= -32768)

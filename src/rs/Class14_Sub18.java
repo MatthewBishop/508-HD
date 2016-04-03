@@ -5,6 +5,7 @@ package rs;
 
 import com.jagex.io.Buffer;
 import com.jagex.link.Linkable;
+import com.jagex.util.Util;
 
 import rs.tex.Class14_Sub8_Sub14;
 import rs.tex.Class14_Sub8_Sub21;
@@ -71,7 +72,7 @@ public class Class14_Sub18 extends Linkable {
 		}
 		Class31 class31 = class43.method1136(-12444);
 		while (class31.anInt529 == 0)
-			Class14_Sub13.method864(10L, (byte) 64);
+			Util.sleep(10L);
 		if (class31.anInt529 == 2) {
 			Class88[] class88s = new Class88[0];
 			return class88s;

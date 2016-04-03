@@ -119,7 +119,7 @@ public class Class14_Sub3 extends Linkable {
 		int i_10_ = anInt2753;
 		if (aClass79_2747 == null) {
 			if (aClass133_Sub1_Sub2_2762 != null) {
-				int i_11_ = Class99.method1500(aClass133_Sub1_Sub2_2762, -1);
+				int i_11_ = Static2.method1500(aClass133_Sub1_Sub2_2762, -1);
 				if (i_11_ != i_10_) {
 					Class12 class12 = aClass133_Sub1_Sub2_2762.aClass12_4949;
 					anInt2753 = i_11_;

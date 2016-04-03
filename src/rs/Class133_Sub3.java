@@ -116,10 +116,10 @@ public class Class133_Sub3 extends Class133 {
 		if (!bool) {
 			Class71 class71 = null;
 			while (class14_sub10.payload.length > class14_sub10.position) {
-				int i_27_ = class14_sub10.method798();
+				int i_27_ = class14_sub10.readUByte();
 				if (i_27_ != 0) {
 					if (i_27_ == 1) {
-						int i_28_ = class14_sub10.method798();
+						int i_28_ = class14_sub10.readUByte();
 						if (i_28_ > 0) {
 							for (int i_29_ = 0; i_28_ > i_29_; i_29_++) {
 								Light light = new Light(class14_sub10);

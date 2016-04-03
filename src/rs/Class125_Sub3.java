@@ -3,6 +3,8 @@
  */
 package rs;
 
+import com.jagex.cache.anim.Animation;
+
 import rs.tex.Static;
 
 public class Class125_Sub3 extends Class125 {
@@ -60,16 +62,16 @@ public class Class125_Sub3 extends Class125 {
 							else
 								i_2_ = class94.anInt1533;
 							if (i_2_ != -1) {
-								Class46 class46 = Static.method1129(i_2_, -16);
-								if (class46 != null) {
+								Animation animation = Static.method1129(i_2_, -16);
+								if (animation != null) {
 									class94.anInt1603 += Class51.anInt839;
-									while (class94.anInt1603 > (class46.anIntArray763[class94.anInt1610])) {
-										class94.anInt1603 -= (class46.anIntArray763[class94.anInt1610]);
+									while (class94.anInt1603 > (animation.anIntArray763[class94.anInt1610])) {
+										class94.anInt1603 -= (animation.anIntArray763[class94.anInt1610]);
 										class94.anInt1610++;
-										if (class94.anInt1610 >= class46.anIntArray768.length) {
-											class94.anInt1610 -= class46.anInt760;
+										if (class94.anInt1610 >= animation.anIntArray768.length) {
+											class94.anInt1610 -= animation.loopOffset;
 											if (class94.anInt1610 < 0
-													|| ((class46.anIntArray768).length <= class94.anInt1610))
+													|| ((animation.anIntArray768).length <= class94.anInt1610))
 												class94.anInt1610 = 0;
 										}
 										Class103.method1531(class94);
@@ -102,20 +104,6 @@ public class Class125_Sub3 extends Class125 {
 		int i_12_ = anInt3390 * i >> 44;
 		int i_13_ = i_5_ * anInt3407 >> 12;
 		Class137.method1939(i_8_, bool, anInt2083, i_13_, i_6_, i_11_, i_9_, i_7_, i_12_, i_10_);
-	}
-
-	public static Class99 method1736(int i) {
-		do {
-			Class99 class99;
-			try {
-				int i_14_ = -73 % ((59 - i) / 62);
-				class99 = (Class99) Class.forName("rs.Class99_Sub1").newInstance();
-			} catch (Throwable throwable) {
-				break;
-			}
-			return class99;
-		} while (false);
-		return null;
 	}
 
 	public void method1726(int i, int i_15_, int i_16_) {

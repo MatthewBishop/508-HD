@@ -26,8 +26,8 @@ public class Class27 {
 	public void method1035(byte[] is) {
 		aClass14_Sub10_502.payload = is;
 		aClass14_Sub10_502.position = 10;
-		int i = aClass14_Sub10_502.method784((byte) 102);
-		anInt506 = aClass14_Sub10_502.method784((byte) 124);
+		int i = aClass14_Sub10_502.readUShort((byte) 102);
+		anInt506 = aClass14_Sub10_502.readUShort((byte) 124);
 		anInt504 = 500000;
 		anIntArray509 = new int[i];
 		int i_0_ = 0;
@@ -75,7 +75,7 @@ public class Class27 {
 
 	public int method1040(int i, int i_5_) {
 		if (i_5_ == 255) {
-			int i_6_ = aClass14_Sub10_502.method798();
+			int i_6_ = aClass14_Sub10_502.readUByte();
 			int i_7_ = aClass14_Sub10_502.method800(127);
 			if (i_6_ == 47) {
 				aClass14_Sub10_502.position += i_7_;
@@ -96,9 +96,9 @@ public class Class27 {
 		byte i_10_ = aByteArray501[i_5_ - 128];
 		int i_11_ = i_5_;
 		if (i_10_ >= 1)
-			i_11_ |= aClass14_Sub10_502.method798() << 8;
+			i_11_ |= aClass14_Sub10_502.readUByte() << 8;
 		if (i_10_ >= 2)
-			i_11_ |= aClass14_Sub10_502.method798() << 16;
+			i_11_ |= aClass14_Sub10_502.readUByte() << 16;
 		return i_11_;
 	}
 

@@ -34,7 +34,7 @@ public class Class1 {
 
 	public static void method70(int i, int i_1_, int i_2_) {
 		for (int i_3_ = 0; i_3_ < Class83.anInt1338; i_3_++) {
-			for (int i_4_ = 0; i_4_ < Class99_Sub2.anInt3338; i_4_++) {
+			for (int i_4_ = 0; i_4_ < Static2.anInt3338; i_4_++) {
 				for (int i_5_ = 0; i_5_ < Class14_Sub8_Sub15.anInt4337; i_5_++) {
 					Class14_Sub29 class14_sub29 = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_3_][i_4_][i_5_]);
 					if (class14_sub29 != null) {

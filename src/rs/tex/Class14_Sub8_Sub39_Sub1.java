@@ -11,15 +11,11 @@ import rs.Class72;
 import rs.Static2;
 
 public class Class14_Sub8_Sub39_Sub1 extends Class14_Sub8_Sub39 {
-	public static byte[] aByteArray5102;
+	public static byte[] aByteArray5102 = new byte[520];
 	public static Class124 aClass124_5099 = null;
 	public static Class124[] aClass124Array5101 = new Class124[1000];
 	public static int anInt5097 = 0;
 	public static int anInt5098 = -1;
-
-	static {
-		aByteArray5102 = new byte[520];
-	}
 
 	public static Class124 method683(boolean bool, int i, int i_0_, Class124[] class124s) {
 		int i_1_ = 0;

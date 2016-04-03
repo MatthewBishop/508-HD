@@ -55,7 +55,7 @@ public class Class7_Sub3 extends Class7 {
 		class14_sub10.method809(!Class14_Sub8_Sub26.aBoolean4528 ? 0 : 1);
 		class14_sub10.method809(Class14_Sub29.anInt3266);
 		class14_sub10.method809(Class14_Sub23.anInt3135);
-		class14_sub10.method809(Class100.anInt1691);
+		class14_sub10.method809(Static2.anInt1691);
 		class14_sub10.method833((byte) 123, Class54.anInt887);
 		class14_sub10.method833((byte) 103, Static2.anInt2725);
 		class14_sub10.method809(Static.aBoolean845 ? 1 : 0);

@@ -16,9 +16,9 @@ import javax.media.opengl.GLDrawableFactory;
 import javax.media.opengl.glu.GLU;
 
 import com.jagex.rt4.lights.Class10;
+import com.jagex.util.Util;
 
 import rs.Class124;
-import rs.Class14_Sub13;
 import rs.Class14_Sub2_Sub2;
 import rs.Class58;
 import rs.Class70;
@@ -27,7 +27,7 @@ import rs.tex.Class14_Sub8_Sub27;
 import rs.tex.Class14_Sub8_Sub39_Sub1;
 import rs.tex.Static;
 
-public class Class121 {
+public class RT4GL {
 	public static int anInt2016;
 	public static boolean aBoolean2017 = true;
 	public static int anInt2018;
@@ -42,7 +42,7 @@ public class Class121 {
 	public static boolean aBoolean2027;
 	public static float aFloat2028;
 	public static boolean aBoolean2029 = false;
-	public static GL aGL2030;
+	public static GL gl;
 	public static String aString2031;
 	public static boolean aBoolean2032;
 	public static int anInt2033;
@@ -113,9 +113,9 @@ public class Class121 {
 			} catch (Exception exception) {
 				/* empty */
 			}
-			Class14_Sub13.method864(1000L, (byte) 64);
+			Util.sleep(1000L);
 		}
-		aGL2030 = aGLContext2040.getGL();
+		gl = aGLContext2040.getGL();
 		new GLU();
 		anInt2033 = canvas.getSize().width;
 		anInt2034 = canvas.getSize().height;
@@ -127,19 +127,19 @@ public class Class121 {
 		}
 		method1650();
 		method1643();
-		aGL2030.glClear(16384);
+		gl.glClear(16384);
 		int i_2_ = 0;
 		while (i_2_ < 10) {
 			try {
 				aGLDrawable2049.swapBuffers();
 			} catch (Exception exception) {
-				Class14_Sub13.method864(100L, (byte) 64);
+				Util.sleep(100L);
 				i_2_++;
 				continue;
 			}
 			break;
 		}
-		aGL2030.glClear(16384);
+		gl.glClear(16384);
 		return 0;
 	}
 
@@ -170,36 +170,36 @@ public class Class121 {
 	}
 
 	public static void method1625() {
-		aGL2030.glDepthMask(true);
+		gl.glDepthMask(true);
 	}
 
 	public static void method1626(boolean bool) {
 		if (bool != aBoolean2017) {
 			if (bool)
-				aGL2030.glEnable(2912);
+				gl.glEnable(2912);
 			else
-				aGL2030.glDisable(2912);
+				gl.glDisable(2912);
 			aBoolean2017 = bool;
 		}
 	}
 
 	public static void method1627() {
 		int[] is = new int[2];
-		aGL2030.glGetIntegerv(3073, is, 0);
-		aGL2030.glGetIntegerv(3074, is, 1);
-		aGL2030.glDrawBuffer(1026);
-		aGL2030.glReadBuffer(1024);
+		gl.glGetIntegerv(3073, is, 0);
+		gl.glGetIntegerv(3074, is, 1);
+		gl.glDrawBuffer(1026);
+		gl.glReadBuffer(1024);
 		method1632(-1);
-		aGL2030.glPushAttrib(8192);
-		aGL2030.glDisable(2912);
-		aGL2030.glDisable(3042);
-		aGL2030.glDisable(2929);
-		aGL2030.glDisable(3008);
-		aGL2030.glRasterPos2i(0, 0);
-		aGL2030.glCopyPixels(0, 0, anInt2033, anInt2034, 6144);
-		aGL2030.glPopAttrib();
-		aGL2030.glDrawBuffer(is[0]);
-		aGL2030.glReadBuffer(is[1]);
+		gl.glPushAttrib(8192);
+		gl.glDisable(2912);
+		gl.glDisable(3042);
+		gl.glDisable(2929);
+		gl.glDisable(3008);
+		gl.glRasterPos2i(0, 0);
+		gl.glCopyPixels(0, 0, anInt2033, anInt2034, 6144);
+		gl.glPopAttrib();
+		gl.glDrawBuffer(is[0]);
+		gl.glReadBuffer(is[1]);
 	}
 
 	public static void method1628(int i, int i_3_) {
@@ -209,7 +209,7 @@ public class Class121 {
 	}
 
 	public static void method1629() {
-		aGL2030.glClear(256);
+		gl.glClear(256);
 	}
 
 	public static void method1630() {
@@ -226,19 +226,19 @@ public class Class121 {
 	}
 
 	public static void method1631(int i) {
-		aGL2030.glClearColor((float) (i >> 16 & 0xff) / 255.0F, (float) (i >> 8 & 0xff) / 255.0F,
+		gl.glClearColor((float) (i >> 16 & 0xff) / 255.0F, (float) (i >> 8 & 0xff) / 255.0F,
 				(float) (i & 0xff) / 255.0F, 0.0F);
-		aGL2030.glClear(16640);
+		gl.glClear(16640);
 	}
 
 	public static void method1632(int i) {
 		if (i != anInt2036) {
 			if (i != -1) {
 				if (anInt2036 == -1)
-					aGL2030.glEnable(3553);
-				aGL2030.glBindTexture(3553, i);
+					gl.glEnable(3553);
+				gl.glBindTexture(3553, i);
 			} else
-				aGL2030.glDisable(3553);
+				gl.glDisable(3553);
 			anInt2036 = i;
 		}
 	}
@@ -256,9 +256,9 @@ public class Class121 {
 	public static void method1634(boolean bool) {
 		if (bool != aBoolean2027) {
 			if (bool)
-				aGL2030.glEnableClientState(32885);
+				gl.glEnableClientState(32885);
 			else
-				aGL2030.glDisableClientState(32885);
+				gl.glDisableClientState(32885);
 			aBoolean2027 = bool;
 		}
 	}
@@ -277,22 +277,22 @@ public class Class121 {
 				aFloatArray2020[10] = aFloat2028;
 				aFloatArray2020[14] = aFloat2035;
 			}
-			aGL2030.glMatrixMode(5889);
-			aGL2030.glLoadMatrixf(aFloatArray2020, 0);
-			aGL2030.glMatrixMode(5888);
+			gl.glMatrixMode(5889);
+			gl.glLoadMatrixf(aFloatArray2020, 0);
+			gl.glMatrixMode(5888);
 		}
 	}
 
 	public static int method1636() {
 		int i = 0;
-		aString2031 = aGL2030.glGetString(7936);
-		aString2037 = aGL2030.glGetString(7937);
+		aString2031 = gl.glGetString(7936);
+		aString2037 = gl.glGetString(7937);
 		String string = aString2031.toLowerCase();
 		if (string.indexOf("microsoft") != -1)
 			i |= 0x1;
 		if (string.indexOf("brian paul") != -1 || string.indexOf("mesa") != -1)
 			i |= 0x1;
-		String string_8_ = aGL2030.glGetString(7938);
+		String string_8_ = gl.glGetString(7938);
 		String[] strings = string_8_.split("[. ]");
 		if (strings.length >= 2) {
 			try {
@@ -306,27 +306,27 @@ public class Class121 {
 			i |= 0x4;
 		if (anInt2018 < 12)
 			i |= 0x2;
-		if (!aGL2030.isExtensionAvailable("GL_ARB_multitexture"))
+		if (!gl.isExtensionAvailable("GL_ARB_multitexture"))
 			i |= 0x8;
-		if (!aGL2030.isExtensionAvailable("GL_ARB_texture_env_combine"))
+		if (!gl.isExtensionAvailable("GL_ARB_texture_env_combine"))
 			i |= 0x20;
 		int[] is = new int[1];
-		aGL2030.glGetIntegerv(34018, is, 0);
+		gl.glGetIntegerv(34018, is, 0);
 		anInt2019 = is[0];
-		aGL2030.glGetIntegerv(34929, is, 0);
+		gl.glGetIntegerv(34929, is, 0);
 		anInt2043 = is[0];
-		aGL2030.glGetIntegerv(34930, is, 0);
+		gl.glGetIntegerv(34930, is, 0);
 		anInt2047 = is[0];
 		if (anInt2019 < 2 || anInt2043 < 2 || anInt2047 < 2)
 			i |= 0x10;
 		if (i != 0)
 			return i;
 		aBoolean2046 = ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN;
-		aBoolean2021 = aGL2030.isExtensionAvailable("GL_ARB_vertex_buffer_object");
-		aBoolean2050 = aGL2030.isExtensionAvailable("GL_ARB_multisample");
-		aBoolean2026 = aGL2030.isExtensionAvailable("GL_ARB_texture_cube_map");
-		aBoolean2048 = aGL2030.isExtensionAvailable("GL_ARB_vertex_program");
-		aBoolean2042 = aGL2030.isExtensionAvailable("GL_EXT_texture3D");
+		aBoolean2021 = gl.isExtensionAvailable("GL_ARB_vertex_buffer_object");
+		aBoolean2050 = gl.isExtensionAvailable("GL_ARB_multisample");
+		aBoolean2026 = gl.isExtensionAvailable("GL_ARB_texture_cube_map");
+		aBoolean2048 = gl.isExtensionAvailable("GL_ARB_vertex_program");
+		aBoolean2042 = gl.isExtensionAvailable("GL_EXT_texture3D");
 		Class124 class124 = method1633(aString2037).method1716((byte) 63);
 		if (class124.method1700(-19928, aClass124_2024) != -1) {
 			int i_11_ = 0;
@@ -360,17 +360,17 @@ public class Class121 {
 	public static void method1638(int i) {
 		if (i != anInt2016) {
 			if (i == 0)
-				aGL2030.glTexEnvi(8960, 34161, 8448);
+				gl.glTexEnvi(8960, 34161, 8448);
 			if (i == 1)
-				aGL2030.glTexEnvi(8960, 34161, 7681);
+				gl.glTexEnvi(8960, 34161, 7681);
 			if (i == 2)
-				aGL2030.glTexEnvi(8960, 34161, 260);
+				gl.glTexEnvi(8960, 34161, 260);
 			if (i == 3)
-				aGL2030.glTexEnvi(8960, 34161, 34023);
+				gl.glTexEnvi(8960, 34161, 34023);
 			if (i == 4)
-				aGL2030.glTexEnvi(8960, 34161, 34164);
+				gl.glTexEnvi(8960, 34161, 34164);
 			if (i == 5)
-				aGL2030.glTexEnvi(8960, 34161, 34165);
+				gl.glTexEnvi(8960, 34161, 34165);
 			anInt2016 = i;
 		}
 	}
@@ -378,9 +378,9 @@ public class Class121 {
 	public static void method1639(boolean bool) {
 		if (bool != aBoolean2023) {
 			if (bool)
-				aGL2030.glEnable(2896);
+				gl.glEnable(2896);
 			else
-				aGL2030.glDisable(2896);
+				gl.glDisable(2896);
 			aBoolean2023 = bool;
 		}
 	}
@@ -390,11 +390,11 @@ public class Class121 {
 	}
 
 	public static void method1641(float f, float f_14_, float f_15_) {
-		aGL2030.glMatrixMode(5890);
+		gl.glMatrixMode(5890);
 		if (aBoolean2039)
-			aGL2030.glLoadIdentity();
-		aGL2030.glTranslatef(f, f_14_, f_15_);
-		aGL2030.glMatrixMode(5888);
+			gl.glLoadIdentity();
+		gl.glTranslatef(f, f_14_, f_15_);
+		gl.glMatrixMode(5888);
 		aBoolean2039 = true;
 	}
 
@@ -403,64 +403,64 @@ public class Class121 {
 		int i_22_ = anInt2033 - i;
 		int i_23_ = -i_16_;
 		int i_24_ = anInt2034 - i_16_;
-		aGL2030.glMatrixMode(5889);
-		aGL2030.glLoadIdentity();
+		gl.glMatrixMode(5889);
+		gl.glLoadIdentity();
 		float f = (float) i_17_ / 512.0F;
 		float f_25_ = f * (256.0F / (float) i_19_);
 		float f_26_ = f * (256.0F / (float) i_20_);
-		aGL2030.glOrtho((double) ((float) i_21_ * f_25_), (double) ((float) i_22_ * f_25_),
+		gl.glOrtho((double) ((float) i_21_ * f_25_), (double) ((float) i_22_ * f_25_),
 				(double) ((float) -i_24_ * f_26_), (double) ((float) -i_23_ * f_26_), (double) (50 - i_18_),
 				(double) (3584 - i_18_));
-		aGL2030.glViewport(0, 0, anInt2033, anInt2034);
-		aGL2030.glMatrixMode(5888);
-		aGL2030.glLoadIdentity();
-		aGL2030.glRotatef(180.0F, 1.0F, 0.0F, 0.0F);
+		gl.glViewport(0, 0, anInt2033, anInt2034);
+		gl.glMatrixMode(5888);
+		gl.glLoadIdentity();
+		gl.glRotatef(180.0F, 1.0F, 0.0F, 0.0F);
 		aBoolean2029 = false;
 	}
 
 	public static void method1643() {
 		aBoolean2029 = false;
-		aGL2030.glDisable(3553);
+		gl.glDisable(3553);
 		anInt2036 = -1;
-		aGL2030.glTexEnvi(8960, 8704, 34160);
-		aGL2030.glTexEnvi(8960, 34161, 8448);
+		gl.glTexEnvi(8960, 8704, 34160);
+		gl.glTexEnvi(8960, 34161, 8448);
 		anInt2016 = 0;
-		aGL2030.glTexEnvi(8960, 34162, 8448);
+		gl.glTexEnvi(8960, 34162, 8448);
 		anInt2022 = 0;
-		aGL2030.glEnable(2896);
-		aGL2030.glEnable(2912);
-		aGL2030.glEnable(2929);
+		gl.glEnable(2896);
+		gl.glEnable(2912);
+		gl.glEnable(2929);
 		aBoolean2023 = true;
 		aBoolean2032 = true;
 		aBoolean2017 = true;
 		Class14_Sub8_Sub39_Sub1.method685(-53);
-		aGL2030.glActiveTexture(33985);
-		aGL2030.glTexEnvi(8960, 8704, 34160);
-		aGL2030.glTexEnvi(8960, 34161, 8448);
-		aGL2030.glTexEnvi(8960, 34162, 8448);
-		aGL2030.glActiveTexture(33984);
-		aGL2030.setSwapInterval(0);
-		aGL2030.glClearColor(0.0F, 0.0F, 0.0F, 0.0F);
-		aGL2030.glShadeModel(7425);
-		aGL2030.glClearDepth(1.0);
-		aGL2030.glDepthFunc(515);
+		gl.glActiveTexture(33985);
+		gl.glTexEnvi(8960, 8704, 34160);
+		gl.glTexEnvi(8960, 34161, 8448);
+		gl.glTexEnvi(8960, 34162, 8448);
+		gl.glActiveTexture(33984);
+		gl.setSwapInterval(0);
+		gl.glClearColor(0.0F, 0.0F, 0.0F, 0.0F);
+		gl.glShadeModel(7425);
+		gl.glClearDepth(1.0);
+		gl.glDepthFunc(515);
 		method1625();
-		aGL2030.glMatrixMode(5890);
-		aGL2030.glLoadIdentity();
-		aGL2030.glPolygonMode(1028, 6914);
-		aGL2030.glEnable(2884);
-		aGL2030.glCullFace(1029);
-		aGL2030.glEnable(3042);
-		aGL2030.glBlendFunc(770, 771);
-		aGL2030.glEnable(3008);
-		aGL2030.glAlphaFunc(516, 0.0F);
-		aGL2030.glEnableClientState(32884);
-		aGL2030.glEnableClientState(32885);
+		gl.glMatrixMode(5890);
+		gl.glLoadIdentity();
+		gl.glPolygonMode(1028, 6914);
+		gl.glEnable(2884);
+		gl.glCullFace(1029);
+		gl.glEnable(3042);
+		gl.glBlendFunc(770, 771);
+		gl.glEnable(3008);
+		gl.glAlphaFunc(516, 0.0F);
+		gl.glEnableClientState(32884);
+		gl.glEnableClientState(32885);
 		aBoolean2027 = true;
-		aGL2030.glEnableClientState(32886);
-		aGL2030.glEnableClientState(32888);
-		aGL2030.glMatrixMode(5888);
-		aGL2030.glLoadIdentity();
+		gl.glEnableClientState(32886);
+		gl.glEnableClientState(32888);
+		gl.glMatrixMode(5888);
+		gl.glLoadIdentity();
 		AthmosphericEffects.setupLighting();
 		Class10.method194();
 	}
@@ -480,7 +480,7 @@ public class Class121 {
 	}
 
 	public static void method1646() {
-		aGL2030.glDepthMask(false);
+		gl.glDepthMask(false);
 	}
 
 	public static void method1647(int i, int i_30_, int i_31_, int i_32_, int i_33_, int i_34_, float f, float f_35_,
@@ -489,18 +489,18 @@ public class Class121 {
 		int i_39_ = (i + i_31_ - i_33_ << 8) / i_36_;
 		int i_40_ = (i_30_ - i_34_ << 8) / i_37_;
 		int i_41_ = (i_30_ + i_32_ - i_34_ << 8) / i_37_;
-		aGL2030.glMatrixMode(5889);
-		aGL2030.glLoadIdentity();
+		gl.glMatrixMode(5889);
+		gl.glLoadIdentity();
 		method1649((float) i_38_ * aFloat2025, (float) i_39_ * aFloat2025, (float) -i_41_ * aFloat2025,
 				(float) -i_40_ * aFloat2025, 50.0F, 3584.0F);
-		aGL2030.glViewport(i, anInt2034 - i_30_ - i_32_, i_31_, i_32_);
-		aGL2030.glMatrixMode(5888);
-		aGL2030.glLoadIdentity();
-		aGL2030.glRotatef(180.0F, 1.0F, 0.0F, 0.0F);
+		gl.glViewport(i, anInt2034 - i_30_ - i_32_, i_31_, i_32_);
+		gl.glMatrixMode(5888);
+		gl.glLoadIdentity();
+		gl.glRotatef(180.0F, 1.0F, 0.0F, 0.0F);
 		if (f != 0.0F)
-			aGL2030.glRotatef(f, 1.0F, 0.0F, 0.0F);
+			gl.glRotatef(f, 1.0F, 0.0F, 0.0F);
 		if (f_35_ != 0.0F)
-			aGL2030.glRotatef(f_35_, 0.0F, 1.0F, 0.0F);
+			gl.glRotatef(f_35_, 0.0F, 1.0F, 0.0F);
 		aBoolean2029 = false;
 		Static.anInt425 = i_38_;
 		Class14_Sub8_Sub27.anInt4547 = i_39_;
@@ -510,12 +510,12 @@ public class Class121 {
 
 	public static void method1648() {
 		if (!aBoolean2029) {
-			aGL2030.glMatrixMode(5889);
-			aGL2030.glLoadIdentity();
-			aGL2030.glOrtho(0.0, (double) anInt2033, 0.0, (double) anInt2034, -1.0, 1.0);
-			aGL2030.glViewport(0, 0, anInt2033, anInt2034);
-			aGL2030.glMatrixMode(5888);
-			aGL2030.glLoadIdentity();
+			gl.glMatrixMode(5889);
+			gl.glLoadIdentity();
+			gl.glOrtho(0.0, (double) anInt2033, 0.0, (double) anInt2034, -1.0, 1.0);
+			gl.glViewport(0, 0, anInt2033, anInt2034);
+			gl.glMatrixMode(5888);
+			gl.glLoadIdentity();
 			aBoolean2029 = true;
 		}
 	}
@@ -538,25 +538,25 @@ public class Class121 {
 		aFloatArray2020[13] = 0.0F;
 		aFloatArray2020[14] = aFloat2035 = -(f_47_ * f_46_) / (f_46_ - f_45_);
 		aFloatArray2020[15] = 0.0F;
-		aGL2030.glLoadMatrixf(aFloatArray2020, 0);
+		gl.glLoadMatrixf(aFloatArray2020, 0);
 		aFloat2052 = 0.0F;
 		aFloat2044 = 0.0F;
 	}
 
 	public static void method1650() {
 		int[] is = new int[1];
-		aGL2030.glGenTextures(1, is, 0);
+		gl.glGenTextures(1, is, 0);
 		anInt2038 = is[0];
-		aGL2030.glBindTexture(3553, anInt2038);
-		aGL2030.glTexImage2D(3553, 0, 4, 1, 1, 0, 6408, 5121, IntBuffer.wrap(new int[] { -1 }));
+		gl.glBindTexture(3553, anInt2038);
+		gl.glTexImage2D(3553, 0, 4, 1, 1, 0, 6408, 5121, IntBuffer.wrap(new int[] { -1 }));
 		RT4.method1022(-124);
 	}
 
 	public static void method1651() {
 		if (aBoolean2039) {
-			aGL2030.glMatrixMode(5890);
-			aGL2030.glLoadIdentity();
-			aGL2030.glMatrixMode(5888);
+			gl.glMatrixMode(5890);
+			gl.glLoadIdentity();
+			gl.glMatrixMode(5888);
 			aBoolean2039 = false;
 		}
 	}
@@ -564,9 +564,9 @@ public class Class121 {
 	public static void method1652(boolean bool) {
 		if (bool != aBoolean2032) {
 			if (bool)
-				aGL2030.glEnable(2929);
+				gl.glEnable(2929);
 			else
-				aGL2030.glDisable(2929);
+				gl.glDisable(2929);
 			aBoolean2032 = bool;
 		}
 	}
@@ -579,7 +579,7 @@ public class Class121 {
 		aClass124_2024 = null;
 		aString2037 = null;
 		aString2031 = null;
-		aGL2030 = null;
+		gl = null;
 		aGLDrawable2049 = null;
 		aGLContext2040 = null;
 		aFloatArray2020 = null;
@@ -599,11 +599,11 @@ public class Class121 {
 	public static void method1656(int i) {
 		if (i != anInt2022) {
 			if (i == 0)
-				aGL2030.glTexEnvi(8960, 34162, 8448);
+				gl.glTexEnvi(8960, 34162, 8448);
 			if (i == 1)
-				aGL2030.glTexEnvi(8960, 34162, 7681);
+				gl.glTexEnvi(8960, 34162, 7681);
 			if (i == 2)
-				aGL2030.glTexEnvi(8960, 34162, 260);
+				gl.glTexEnvi(8960, 34162, 260);
 			anInt2022 = i;
 		}
 	}

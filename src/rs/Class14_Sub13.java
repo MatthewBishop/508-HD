@@ -5,6 +5,7 @@ package rs;
 
 import com.jagex.io.Buffer;
 import com.jagex.link.Linkable;
+import com.jagex.util.Util;
 
 import rs.tex.Class14_Sub8_Sub36;
 import rs.tex.Class14_Sub8_Sub6;
@@ -34,7 +35,7 @@ public class Class14_Sub13 extends Linkable {
 		Class125_Sub3 class125_sub3 = new Class125_Sub3(class14_sub10.method805(0), class14_sub10.method805(0),
 				class14_sub10.method805(0), class14_sub10.method805(0), class14_sub10.method805(0),
 				class14_sub10.method805(0), class14_sub10.method805(0), class14_sub10.method805(0),
-				class14_sub10.method829(-119), class14_sub10.method798());
+				class14_sub10.method829(-119), class14_sub10.readUByte());
 		return class125_sub3;
 	}
 
@@ -50,7 +51,7 @@ public class Class14_Sub13 extends Linkable {
 		int i_12_ = -1;
 		int i_13_ = -i_8_;
 		if (i_2_ != -100)
-			method864(-32L, (byte) -39);
+			Util.sleep(-32L);
 		int i_14_ = -1;
 		int[] is = Static2.anIntArrayArray4038[i_4_];
 		int i_15_ = i - i_8_;
@@ -134,19 +135,6 @@ public class Class14_Sub13 extends Linkable {
 		aClass124_2955 = null;
 		if (i < 66)
 			anInterface3_2960 = null;
-	}
-
-	public static void method864(long l, byte i) {
-		if (i != 64)
-			method858(13);
-		if (l > 0L) {
-			if (0L != l % 10L)
-				Class126.method1742((byte) -74, l);
-			else {
-				Class126.method1742((byte) -94, l - 1L);
-				Class126.method1742((byte) -83, 1L);
-			}
-		}
 	}
 
 	public Class14_Sub13() {

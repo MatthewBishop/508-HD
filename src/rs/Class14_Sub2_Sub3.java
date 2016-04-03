@@ -49,7 +49,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 
 	public void method268(Buffer class14_sub10, int i) {
 		for (;;) {
-			int i_5_ = class14_sub10.method798();
+			int i_5_ = class14_sub10.readUByte();
 			if (i_5_ == 0)
 				break;
 			method273((byte) 127, i_5_, class14_sub10);
@@ -118,13 +118,13 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 		if (i <= 31)
 			method267((byte) -101, 92, -126);
 		if (i_19_ == 249) {
-			int i_20_ = class14_sub10.method798();
+			int i_20_ = class14_sub10.readUByte();
 			if (aClass55_3783 == null) {
 				int i_21_ = Class14_Sub8_Sub33.method653(i_20_);
 				aClass55_3783 = new HashTable(i_21_);
 			}
 			for (int i_22_ = 0; i_20_ > i_22_; i_22_++) {
-				boolean bool = class14_sub10.method798() == 1;
+				boolean bool = class14_sub10.readUByte() == 1;
 				int i_23_ = class14_sub10.method829(-119);
 				Linkable linkable;
 				if (bool)

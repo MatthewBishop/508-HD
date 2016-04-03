@@ -5,7 +5,7 @@ package rs;
 
 import com.jagex.io.Buffer;
 import com.jagex.link.Cacheable;
-import com.jagex.rt4.Class121;
+import com.jagex.rt4.RT4GL;
 
 import nativeadvert.browsercontrol;
 import rs.tex.Class14_Sub8_Sub30;
@@ -23,7 +23,7 @@ public class Class14_Sub2_Sub20 extends Cacheable {
 	}
 
 	public static void method428(int i) {
-		Class121.method1630();
+		RT4GL.method1630();
 		int i_6_ = 38 / ((69 - i) / 51);
 		if (browsercontrol.iscreated())
 			browsercontrol.hide();
@@ -37,7 +37,7 @@ public class Class14_Sub2_Sub20 extends Cacheable {
 	public void method429(int i, Buffer class14_sub10) {
 		int i_7_ = -3 % ((i + 30) / 62);
 		for (;;) {
-			int i_8_ = class14_sub10.method798();
+			int i_8_ = class14_sub10.readUByte();
 			if (i_8_ == 0)
 				break;
 			method431(class14_sub10, i_8_);
@@ -50,7 +50,7 @@ public class Class14_Sub2_Sub20 extends Cacheable {
 
 	public void method431(Buffer class14_sub10, int i_9_) {
 		if (i_9_ == 2)
-			anInt4062 = class14_sub10.method784((byte) 119);
+			anInt4062 = class14_sub10.readUShort((byte) 119);
 	}
 
 	public static Class14_Sub2_Sub5 method432(int i, Class124 class124) {

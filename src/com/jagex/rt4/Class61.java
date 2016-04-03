@@ -28,14 +28,14 @@ public class Class61 implements Interface2 {
 
 	public void disable() {
 		if (anInt2565 >= 0) {
-			GL gl = Class121.aGL2030;
+			GL gl = RT4GL.gl;
 			gl.glCallList(anInt2565 + 1);
 		}
 	}
 
 	public void enable() {
 		if (anInt2565 >= 0) {
-			GL gl = Class121.aGL2030;
+			GL gl = RT4GL.gl;
 			gl.glCallList(anInt2565);
 			gl.glActiveTexture(33985);
 			gl.glMatrixMode(5890);
@@ -47,26 +47,26 @@ public class Class61 implements Interface2 {
 			gl.glMatrixMode(5888);
 			if (!Class119.use3DTexture)
 				gl.glBindTexture(3553,
-						(Class119.textureIds2[(int) ((float) (Class121.anInt2045 * 64) * 0.005F) % 64]));
+						(Class119.textureIds2[(int) ((float) (RT4GL.anInt2045 * 64) * 0.005F) % 64]));
 			gl.glActiveTexture(33984);
-			if (anInt2568 != Class121.anInt2045) {
-				int i = (Class121.anInt2045 & 0xff) * 256;
+			if (anInt2568 != RT4GL.anInt2045) {
+				int i = (RT4GL.anInt2045 & 0xff) * 256;
 				for (int i_0_ = 0; i_0_ < 64; i_0_++) {
 					aFloatBuffer2569.position(i);
 					gl.glProgramLocalParameter4fvARB(34336, i_0_, aFloatBuffer2569);
 					i += 4;
 				}
 				if (Class119.use3DTexture)
-					gl.glProgramLocalParameter4fARB(34336, 65, ((float) Class121.anInt2045 * 0.005F), 0.0F, 0.0F, 1.0F);
+					gl.glProgramLocalParameter4fARB(34336, 65, ((float) RT4GL.anInt2045 * 0.005F), 0.0F, 0.0F, 1.0F);
 				else
 					gl.glProgramLocalParameter4fARB(34336, 65, 0.0F, 0.0F, 0.0F, 1.0F);
-				anInt2568 = Class121.anInt2045;
+				anInt2568 = RT4GL.anInt2045;
 			}
 		}
 	}
 
 	public void method1272() {
-		GL gl = Class121.aGL2030;
+		GL gl = RT4GL.gl;
 		anInt2565 = gl.glGenLists(2);
 		gl.glNewList(anInt2565, 4864);
 		gl.glActiveTexture(33985);
@@ -98,7 +98,7 @@ public class Class61 implements Interface2 {
 	public void method1273() {
 		do {
 			if (anInt2565 >= 0) {
-				GL gl = Class121.aGL2030;
+				GL gl = RT4GL.gl;
 				int[] is = new int[1];
 				gl.glBindProgramARB(34336, anInt2566);
 				gl.glProgramStringARB(34336, 34933,
@@ -114,7 +114,7 @@ public class Class61 implements Interface2 {
 
 	public void setup(int i) {
 		if (anInt2565 >= 0) {
-			GL gl = Class121.aGL2030;
+			GL gl = RT4GL.gl;
 			gl.glActiveTexture(33985);
 			if ((i & 0x80) == 0)
 				gl.glEnable(Class119.use3DTexture ? 32879 : 3553);
@@ -137,9 +137,9 @@ public class Class61 implements Interface2 {
 	}
 
 	public Class61() {
-		if (anInt2565 < 0 && Class121.aBoolean2048 && Class121.anInt2019 >= 2) {
+		if (anInt2565 < 0 && RT4GL.aBoolean2048 && RT4GL.anInt2019 >= 2) {
 			int[] is = new int[1];
-			GL gl = Class121.aGL2030;
+			GL gl = RT4GL.gl;
 			gl.glGenProgramsARB(1, is, 0);
 			anInt2566 = is[0];
 			int[][] is_2_ = RT4.method279(256, 256, 4, 0, 8, 3, 64, 0.4F, false);
@@ -149,7 +149,7 @@ public class Class61 implements Interface2 {
 				int[] is_4_ = is_2_[i];
 				int[] is_5_ = is_3_[i];
 				for (int i_6_ = 0; i_6_ < 64; i_6_++) {
-					if (Class121.aBoolean2046) {
+					if (RT4GL.aBoolean2046) {
 						class14_sub10.method834((float) is_4_[i_6_] / 4096.0F);
 						class14_sub10.method834((float) is_5_[i_6_] / 4096.0F);
 						class14_sub10.method834(1.0F);

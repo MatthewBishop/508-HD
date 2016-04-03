@@ -98,7 +98,7 @@ public class Class66 {
 		Class149.anIntArrayArrayArray2391 = new int[i][i_27_ + 1][i_28_ + 1];
 		Class14_Sub30.aClass14_Sub27ArrayArray3273 = new Class14_Sub27[4][];
 		Class14_Sub8_Sub28.method627(false);
-		Class99_Sub2.anInt3338 = i_27_;
+		Static2.anInt3338 = i_27_;
 		Class14_Sub8_Sub15.anInt4337 = i_28_;
 		Static.anIntArrayArrayArray2724 = new int[i][i_27_ + 1][i_28_ + 1];
 		Class56.method1240();

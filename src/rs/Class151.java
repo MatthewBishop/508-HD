@@ -6,7 +6,7 @@ package rs;
 import javax.media.opengl.GL;
 
 import com.jagex.rt4.AthmosphericEffects;
-import com.jagex.rt4.Class121;
+import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class13;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.RT4;
@@ -273,11 +273,11 @@ public class Class151 {
 	}
 
 	public static void method2038(int i, int i_91_, int i_92_, int i_93_, boolean[][] bools, int[][] is) {
-		GL gl = Class121.aGL2030;
-		Class121.method1638(1);
-		Class121.method1656(1);
-		Class121.method1651();
-		Class121.method1639(false);
+		GL gl = RT4GL.gl;
+		RT4GL.method1638(1);
+		RT4GL.method1656(1);
+		RT4GL.method1651();
+		RT4GL.method1639(false);
 		RT4.method1778(0, 0);
 		gl.glDepthMask(false);
 		for (int i_94_ = 0; i_94_ < anInt2429; i_94_++) {
@@ -305,7 +305,7 @@ public class Class151 {
 		}
 		gl.glEnableClientState(32886);
 		gl.glDepthMask(true);
-		Class121.method1645();
+		RT4GL.method1645();
 	}
 
 	public static boolean method2039(byte[] is, int i, int i_98_, int i_99_, int i_100_, int i_101_) {

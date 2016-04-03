@@ -31,7 +31,7 @@ public class StaticStrings {
 		Class7.aClass124_180 = Static.aClass124_1326;
 		Class137.aClass124_2201 = Class14_Sub20.aClass124_3089;
 		Class7_Sub2.aClass124_2669 = Class45.aClass124_738;
-		Class28.aClass124_514 = Class99_Sub2.aClass124_3347;
+		Class28.aClass124_514 = Static2.aClass124_3347;
 		Static2.aClass124_4045 = Class131.aClass124_2156;
 		Class108.aClass124_1821 = Static.aClass124_93;
 		Class14_Sub9_Sub1.aClass124_4773 = Class14_Sub8_Sub23.aClass124_4482;
@@ -39,7 +39,7 @@ public class StaticStrings {
 		Class4.aClass124_131 = Class122.aClass124_2058;
 		RuntimeException_Sub1.aClass124_2462 = Class86.aClass124_1384;
 		Class14_Sub8.aClass124_2852 = Class7_Sub3_Sub1.aClass124_3715;
-		Class14_Sub2_Sub17.aClass124_4019 = Class99_Sub2.aClass124_3337;
+		Class14_Sub2_Sub17.aClass124_4019 = Static2.aClass124_3337;
 		Class123.aClass124_2068 = Class98.aClass124_1673;
 		Class84.aClass124_1352 = Class133_Sub6.aClass124_3635;
 		Class125.aClass124_2077 = Class14_Sub8_Sub17.aClass124_4365;
@@ -57,7 +57,7 @@ public class StaticStrings {
 		Class133_Sub3.aClass124_3568 = Class115.aClass124_1924;
 		Class125_Sub3.aClass124_3409 = Class14_Sub2_Sub4.aClass124_3793;
 		Static.aClass124_2802 = Static.aClass124_2542;
-		Class64.aClass124_1011 = Class99_Sub2.aClass124_3353;
+		Class64.aClass124_1011 = Static2.aClass124_3353;
 		Class127.aClass124_2117 = Class14_Sub2_Sub12.aClass124_3895;
 		Class14_Sub8_Sub2.aClass124_4113 = Class60.aClass124_982;
 		Class133_Sub5.aClass124_3610 = Class14_Sub22.aClass124_3124;
@@ -87,7 +87,7 @@ public class StaticStrings {
 		Class14_Sub9_Sub1.aClass124_4762 = Class14_Sub8_Sub33.aClass124_4635;
 		Class14_Sub8_Sub22.aClass124_4453 = Class74.aClass124_1137;
 		Class17.aClass124_405 = Class14_Sub8_Sub33.aClass124_4644;
-		Class100.aClass124_1693 = Class74.aClass124_1141;
+		Static2.aClass124_1693 = Class74.aClass124_1141;
 		Class104.aClass124_1736 = Class14_Sub8_Sub2.aClass124_4121;
 		client.aClass124_2639 = Class14_Sub8.aClass124_2857;
 		Class129.aClass124_2129 = Class74.aClass124_1139;
@@ -100,7 +100,7 @@ public class StaticStrings {
 		Class14_Sub8_Sub13.aClass124_4315 = Class14_Sub2_Sub10.aClass124_3867;
 		Class14_Sub8_Sub2.aClass124_4118 = Class14_Sub13.aClass124_2955;
 		Static2.aClass124_3948 = Class14_Sub8_Sub36.aClass124_4696;
-		Class100.aClass124_1683 = Class133_Sub1_Sub2.aClass124_4948;
+		Static2.aClass124_1683 = Class133_Sub1_Sub2.aClass124_4948;
 		Class75.aClass124_1182 = Class56_Sub1.aClass124_3321;
 		Class104.aClass124_1743 = Class40.aClass124_680;
 		Class15.aClass124_373 = Class133_Sub1_Sub1.aClass124_4942;
@@ -108,7 +108,7 @@ public class StaticStrings {
 		Static.aClass124_695 = Class59.aClass124_956;
 		Class118.aClass124_1981 = Class14_Sub30.aClass124_3281;
 		Class14_Sub6.aClass124_2810 = Class138.aClass124_2227;
-		Class14_Sub8.aClass124_2855 = Class100.aClass124_1689;
+		Class14_Sub8.aClass124_2855 = Static2.aClass124_1689;
 		Class14_Sub2_Sub12.aClass124_3910 = Class14_Sub25.aClass124_3175;
 		Class14_Sub9_Sub1.aClass124_4770 = Class82.aClass124_1329;
 		Class40.aClass124_665 = Class35.aClass124_598;

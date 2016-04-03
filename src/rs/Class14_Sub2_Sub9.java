@@ -27,13 +27,13 @@ public class Class14_Sub2_Sub9 extends Cacheable {
 	}
 
 	public static Class14_Sub8 method303(Buffer class14_sub10) {
-		class14_sub10.method798();
-		int i_0_ = class14_sub10.method798();
+		class14_sub10.readUByte();
+		int i_0_ = class14_sub10.readUByte();
 		Class14_Sub8 class14_sub8 = Class149.method2016(i_0_, 0 ^ 0x7d);
-		class14_sub8.anInt2837 = class14_sub10.method798();
-		int i_1_ = class14_sub10.method798();
+		class14_sub8.anInt2837 = class14_sub10.readUByte();
+		int i_1_ = class14_sub10.readUByte();
 		for (int i_2_ = 0; i_1_ > i_2_; i_2_++) {
-			int i_3_ = class14_sub10.method798();
+			int i_3_ = class14_sub10.readUByte();
 			class14_sub8.method475(i_3_, 0 ^ 0x60c9, class14_sub10);
 		}
 		class14_sub8.method472();

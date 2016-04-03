@@ -112,7 +112,7 @@ public class Class56 {
 
 	public static void method1240() {
 		for (int i = 0; i < Class83.anInt1338; i++) {
-			for (int i_19_ = 0; i_19_ < Class99_Sub2.anInt3338; i_19_++) {
+			for (int i_19_ = 0; i_19_ < Static2.anInt3338; i_19_++) {
 				for (int i_20_ = 0; i_20_ < Class14_Sub8_Sub15.anInt4337; i_20_++)
 					Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_19_][i_20_] = null;
 			}

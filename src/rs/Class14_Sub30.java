@@ -108,7 +108,7 @@ public class Class14_Sub30 extends Linkable {
 						if (((i_25_ - i_27_) * (i_24_ - i_28_) - (i_26_ - i_28_) * (i_23_ - i_27_)) > 0
 								&& Class142.aBoolean2299
 								&& (Class14_Sub8_Sub13.method549(Class14_Sub19.anInt3073 + Class3.anInt118,
-										Class99_Sub2.anInt3334 + Class3.anInt110, i_26_, i_28_, i_24_, i_25_, i_27_,
+										Static2.anInt3334 + Class3.anInt110, i_26_, i_28_, i_24_, i_25_, i_27_,
 										i_23_))) {
 							Class66.anInt1039 = i_6_;
 							Class14_Sub8_Sub33.anInt4636 = i_7_;
@@ -116,7 +116,7 @@ public class Class14_Sub30 extends Linkable {
 						if (((i_21_ - i_23_) * (i_28_ - i_24_) - (i_22_ - i_24_) * (i_27_ - i_23_)) > 0
 								&& Class142.aBoolean2299
 								&& (Class14_Sub8_Sub13.method549(Class14_Sub19.anInt3073 + Class3.anInt118,
-										Class99_Sub2.anInt3334 + Class3.anInt110, i_22_, i_24_, i_28_, i_21_, i_23_,
+										Static2.anInt3334 + Class3.anInt110, i_22_, i_24_, i_28_, i_21_, i_23_,
 										i_27_))) {
 							Class66.anInt1039 = i_6_;
 							Class14_Sub8_Sub33.anInt4636 = i_7_;

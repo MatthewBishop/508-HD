@@ -69,7 +69,7 @@ public class Class98 {
 		Class142.aBoolean2299 = true;
 		Class86.anInt1389 = i;
 		Class14_Sub19.anInt3073 = i_3_;
-		Class99_Sub2.anInt3334 = i_4_;
+		Static2.anInt3334 = i_4_;
 		Class66.anInt1039 = -1;
 		Class14_Sub8_Sub33.anInt4636 = -1;
 	}

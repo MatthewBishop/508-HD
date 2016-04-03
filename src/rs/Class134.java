@@ -248,7 +248,7 @@ public class Class134 implements Interface3 {
 		aClass20_2595 = new Cache(anInt2582);
 		aClass20_2585 = new Cache(anInt2582);
 		Buffer class14_sub10 = new Buffer(class9_24_.method163(0, 0, 0));
-		int i_26_ = class14_sub10.method784((byte) 126);
+		int i_26_ = class14_sub10.readUShort((byte) 126);
 		aByteArray2602 = new byte[i_26_];
 		aBooleanArray2600 = new boolean[i_26_];
 		aShortArray2603 = new short[i_26_];
@@ -260,22 +260,22 @@ public class Class134 implements Interface3 {
 		aBooleanArray2583 = new boolean[i_26_];
 		aByteArray2608 = new byte[i_26_];
 		for (int i_27_ = 0; i_27_ < i_26_; i_27_++)
-			aBooleanArray2583[i_27_] = class14_sub10.method798() == 1;
+			aBooleanArray2583[i_27_] = class14_sub10.readUByte() == 1;
 		for (int i_28_ = 0; i_26_ > i_28_; i_28_++) {
 			if (aBooleanArray2583[i_28_])
-				aBooleanArray2594[i_28_] = class14_sub10.method798() == 1;
+				aBooleanArray2594[i_28_] = class14_sub10.readUByte() == 1;
 		}
 		for (int i_29_ = 0; i_26_ > i_29_; i_29_++) {
 			if (aBooleanArray2583[i_29_])
-				aBooleanArray2600[i_29_] = class14_sub10.method798() == 1;
+				aBooleanArray2600[i_29_] = class14_sub10.readUByte() == 1;
 		}
 		for (int i_30_ = 0; i_26_ > i_30_; i_30_++) {
 			if (aBooleanArray2583[i_30_])
-				aBooleanArray2604[i_30_] = class14_sub10.method798() == 1;
+				aBooleanArray2604[i_30_] = class14_sub10.readUByte() == 1;
 		}
 		for (int i_31_ = 0; i_31_ < i_26_; i_31_++) {
 			if (aBooleanArray2583[i_31_])
-				aBooleanArray2609[i_31_] = class14_sub10.method798() == 1;
+				aBooleanArray2609[i_31_] = class14_sub10.readUByte() == 1;
 		}
 		for (int i_32_ = 0; i_26_ > i_32_; i_32_++) {
 			if (aBooleanArray2583[i_32_])
@@ -295,7 +295,7 @@ public class Class134 implements Interface3 {
 		}
 		for (int i_36_ = 0; i_36_ < i_26_; i_36_++) {
 			if (aBooleanArray2583[i_36_])
-				aShortArray2603[i_36_] = (short) class14_sub10.method784((byte) 115);
+				aShortArray2603[i_36_] = (short) class14_sub10.readUShort((byte) 115);
 		}
 	}
 }

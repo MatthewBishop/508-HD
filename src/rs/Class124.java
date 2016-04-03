@@ -26,7 +26,6 @@ import rs.Class14_Sub30;
 import rs.Class150;
 import rs.Class37;
 import rs.Class4;
-import rs.Class46;
 import rs.Class49;
 import rs.Class56;
 import rs.Class58;
@@ -40,7 +39,6 @@ import rs.Class7_Sub2;
 import rs.Class7_Sub3_Sub1;
 import rs.Class86;
 import rs.Class92;
-import rs.Class99_Sub2;
 import rs.Interface1;
 import rs.tex.Class14_Sub8_Sub10;
 import rs.tex.Class14_Sub8_Sub14;
@@ -372,7 +370,7 @@ public class Class124 implements Interface1 {
 													Class14_Sub2_Sub2.aClass148_Sub1Array3762[var25 - 1]
 															.method2006(var14, var41, var16 * 2, var43 * 2);
 												} else if (var26 == 3) {
-													Class99_Sub2.aClass148_Sub1Array3358[var25 - 1].method2006(var14,
+													Static2.aClass148_Sub1Array3358[var25 - 1].method2006(var14,
 															var41, var16 * 2, var43 * 2);
 												}
 											} else {
@@ -937,7 +935,7 @@ public class Class124 implements Interface1 {
 	}
 
 	public Class124 method1688(int var1) {
-		Class124 var2 = Class46.method1174(this.method1692(0), (byte) 78);
+		Class124 var2 = Static2.method1174(this.method1692(0), (byte) 78);
 		if (var1 != 15) {
 			this.aBoolean2532 = false;
 		}

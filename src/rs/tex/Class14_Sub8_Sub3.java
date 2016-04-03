@@ -5,6 +5,7 @@ package rs.tex;
 
 import com.jagex.io.Buffer;
 import com.jagex.link.ref.ReferenceFactory;
+import com.jagex.util.Timer;
 
 import rs.Class112;
 import rs.Class114;
@@ -13,7 +14,6 @@ import rs.Class124;
 import rs.Class128;
 import rs.Class133;
 import rs.Class53;
-import rs.Class99;
 import rs.Static2;
 
 public class Class14_Sub8_Sub3 extends Class14_Sub8 {
@@ -144,10 +144,10 @@ public class Class14_Sub8_Sub3 extends Class14_Sub8 {
 				if (i_28_ != 1)
 					break;
 			} else {
-				anInt4127 = class14_sub10.method784((byte) 112);
+				anInt4127 = class14_sub10.readUShort((byte) 112);
 				break;
 			}
-			aBoolean4126 = class14_sub10.method798() == 1;
+			aBoolean4126 = class14_sub10.readUByte() == 1;
 		} while (false);
 		if (i_27_ != 24777)
 			method475(-114, 26, null);

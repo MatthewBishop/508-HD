@@ -75,9 +75,9 @@ public class Class14_Sub11 extends Linkable {
 	}
 
 	public static void method855(int i) {
-		Class40.aClass14_Sub29ArrayArrayArray674 = (new Class14_Sub29[i][Class99_Sub2.anInt3338][Class14_Sub8_Sub15.anInt4337]);
-		Static.anIntArrayArray2799 = new int[Class99_Sub2.anInt3338][Class14_Sub8_Sub15.anInt4337];
-		Class150.anIntArrayArrayArray2419 = (new int[i][Class99_Sub2.anInt3338 + 1][Class14_Sub8_Sub15.anInt4337 + 1]);
+		Class40.aClass14_Sub29ArrayArrayArray674 = (new Class14_Sub29[i][Static2.anInt3338][Class14_Sub8_Sub15.anInt4337]);
+		Static.anIntArrayArray2799 = new int[Static2.anInt3338][Class14_Sub8_Sub15.anInt4337];
+		Class150.anIntArrayArrayArray2419 = (new int[i][Static2.anInt3338 + 1][Class14_Sub8_Sub15.anInt4337 + 1]);
 		Class131.aClass14_Sub27ArrayArray2162 = new Class14_Sub27[i][];
 	}
 

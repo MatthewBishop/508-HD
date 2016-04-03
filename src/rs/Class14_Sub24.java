@@ -107,7 +107,7 @@ public class Class14_Sub24 extends Linkable {
 			int[] is_13_ = new int[i_7_];
 			int i_14_ = Class48.method1192(i_7_ - 1, 25039);
 			for (int i_15_ = 0; i_15_ < i_7_; i_15_++)
-				is_13_[i_15_] = Class100.method1514(i_14_, -66, i_15_);
+				is_13_[i_15_] = Static2.method1514(i_14_, -66, i_15_);
 			if (i != 0) {
 				aFloatArray3149 = fs;
 				aFloatArray3152 = fs_9_;
@@ -231,7 +231,7 @@ public class Class14_Sub24 extends Linkable {
 			int i_35_ = 0;
 			int i_36_;
 			do {
-				i_36_ = class14_sub10.method798();
+				i_36_ = class14_sub10.readUByte();
 				i_35_ += i_36_;
 			} while (i_36_ >= 255);
 			byte[] is_37_ = new byte[i_35_];

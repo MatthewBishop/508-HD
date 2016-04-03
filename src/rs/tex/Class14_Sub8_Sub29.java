@@ -20,7 +20,6 @@ import rs.Class63;
 import rs.Class71;
 import rs.Class7_Sub2_Sub1;
 import rs.Class9;
-import rs.Class99_Sub2;
 import rs.Class9_Sub1;
 import rs.Static2;
 
@@ -133,7 +132,7 @@ public class Class14_Sub8_Sub29 extends Class14_Sub8 {
 			for (int i_22_ = 0; Class112.anInt1876 > i_22_; i_22_++) {
 				int i_23_ = (is_17_[i_22_] * 255 & 0xffcd7) >> 12;
 				int i_24_ = is_18_[i_22_] * anInt4578 >> 44;
-				int i_25_ = Class99_Sub2.anIntArray3357[i_23_] * i_24_ >> 44;
+				int i_25_ = Static2.anIntArray3357[i_23_] * i_24_ >> 44;
 				int i_26_ = Class14_Sub8_Sub21.anIntArray4435[i_23_] * i_24_ >> 12;
 				int i_27_ = (i_25_ >> 12) + i_22_ & Static2.anInt4882;
 				int i_28_ = i + (i_26_ >> 12) & Class115.anInt1927;
@@ -154,10 +153,10 @@ public class Class14_Sub8_Sub29 extends Class14_Sub8 {
 				if (i_32_ != 1)
 					break;
 			} else {
-				anInt4578 = class14_sub10.method784((byte) 109) << 4;
+				anInt4578 = class14_sub10.readUShort((byte) 109) << 4;
 				break;
 			}
-			aBoolean2862 = class14_sub10.method798() == 1;
+			aBoolean2862 = class14_sub10.readUByte() == 1;
 		} while (false);
 		if (i_31_ != 24777)
 			method484(-80, (byte) 11);
@@ -171,7 +170,7 @@ public class Class14_Sub8_Sub29 extends Class14_Sub8 {
 			for (int i_36_ = 0; Class112.anInt1876 > i_36_; i_36_++) {
 				int i_37_ = anInt4578 * is_35_[i_36_] >> 12;
 				int i_38_ = (is_34_[i_36_] & 0xffb) >> 4;
-				int i_39_ = i_37_ * Class99_Sub2.anIntArray3357[i_38_] >> 12;
+				int i_39_ = i_37_ * Static2.anIntArray3357[i_38_] >> 12;
 				int i_40_ = i_37_ * Class14_Sub8_Sub21.anIntArray4435[i_38_] >> 12;
 				int i_41_ = Static2.anInt4882 & (i_39_ >> 44) + i_36_;
 				int i_42_ = Class115.anInt1927 & (i_40_ >> 12) + i;

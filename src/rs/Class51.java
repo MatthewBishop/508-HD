@@ -29,7 +29,7 @@ public class Class51 {
 	public void method1198(Buffer class14_sub10, int i) {
 		int i_0_ = 121 % ((i + 61) / 53);
 		for (;;) {
-			int i_1_ = class14_sub10.method798();
+			int i_1_ = class14_sub10.readUByte();
 			if (i_1_ == 0)
 				break;
 			method1199(i_1_, class14_sub10, (byte) -61);
@@ -38,9 +38,9 @@ public class Class51 {
 
 	public void method1199(int i, Buffer class14_sub10, byte i_2_) {
 		if (i == 1) {
-			anInt842 = class14_sub10.method784((byte) 126);
-			anInt832 = class14_sub10.method798();
-			anInt834 = class14_sub10.method798();
+			anInt842 = class14_sub10.readUShort((byte) 126);
+			anInt832 = class14_sub10.readUByte();
+			anInt834 = class14_sub10.readUByte();
 		}
 		int i_3_ = -46 / ((9 - i_2_) / 44);
 	}
