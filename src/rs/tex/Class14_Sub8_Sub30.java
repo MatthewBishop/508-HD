@@ -143,7 +143,7 @@ public class Class14_Sub8_Sub30 extends Class14_Sub8 {
 		if (Static.aFrame3962 != null)
 			container = Static.aFrame3962;
 		else if (Class14_Sub14.aFrame2986 == null)
-			container = Class14_Sub8_Sub34.aClass43_4647.anApplet712;
+			container = Class14_Sub8_Sub34.aClass43_4647.applet;
 		else
 			container = Class14_Sub14.aFrame2986;
 		Class14_Sub8_Sub32.anInt4622 = container.getSize().width;
@@ -174,7 +174,7 @@ public class Class14_Sub8_Sub30 extends Class14_Sub8 {
 		if (Class14_Sub2_Sub12.anInt3912 != -1)
 			Static.method1032(true, -1291652884);
 		Class132.method1779(0);
-		if (Class43.aString705.startsWith("mac"))
+		if (Class43.os_name_lc.startsWith("mac"))
 			Class132.aLong2169 = TimeUtil.getTime() - -(long) i;
 		if (i_9_ > -77)
 			method643(-67, (byte) 80);

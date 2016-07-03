@@ -76,7 +76,7 @@ public class Class14_Sub8_Sub28 extends Class14_Sub8 {
 			if (Static2.anInt3352 != 0) {
 				boolean bool;
 				try {
-					bool = !((Boolean) (Static.aClass124_844.method1666(Class14_Sub8_Sub34.aClass43_4647.anApplet712,
+					bool = !((Boolean) (Static.aClass124_844.method1666(Class14_Sub8_Sub34.aClass43_4647.applet,
 							false))).booleanValue();
 				} catch (Throwable throwable) {
 					Throwable throwable_1_ = new Throwable();

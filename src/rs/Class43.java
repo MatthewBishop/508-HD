@@ -20,30 +20,137 @@ import rs.Interface4;
 
 public class Class43 implements Runnable {
 
-	public Interface4 anInterface4_701;
 	public static Method aMethod702;
-	public boolean aBoolean703 = false;
-	public static String aString704;
-	public static String aString705;
-	public static String aString706;
 	public static Method aMethod707;
-	public static int anInt708 = 1;
-	public static String aString709;
-	public Display aDisplay;
+	public static String os_arch;
+	public static String os_name_lc;
+	public static String aString706;
+	public static String os_name;
+	public static String aString717;
+	public static String java_vendor;
+	public static String java_version;
+	public boolean aBoolean703 = false;
+	public Class30 aClass30_716 = null;
+	public Class30 aClass30_720 = null;
+	public Class30 aClass30_722 = null;
 	public Class30[] aClass30Array711;
-	public Applet anApplet712 = null;
-	public EventQueue anEventQueue713;
 	public Class31 aClass31_714 = null;
 	public Class31 aClass31_715 = null;
-	public Class30 aClass30_716 = null;
-	public static String aString717;
-	public Thread aThread718;
+	public Display aDisplay;
 	public File aFile719 = null;
-	public Class30 aClass30_720 = null;
-	public static String aString721;
-	public Class30 aClass30_722 = null;
-	public static String aString723;
 	public File aFile724 = null;
+	public Applet applet = null;
+	public EventQueue eventQueue;
+	public Interface4 anInterface4_701;
+	public Thread aThread718;
+
+	public Class43(boolean var1, Applet var2, int var3, String var4, int var5) {
+		java_vendor = "Unknown";
+		this.applet = var2;
+		java_version = "1.1";
+
+		try {
+			java_vendor = System.getProperty("java.vendor");
+			java_version = System.getProperty("java.version");
+		} catch (Exception var18) {
+			;
+		}
+
+		try {
+			os_name = System.getProperty("os.name");
+		} catch (Exception var17) {
+			os_name = "Unknown";
+		}
+
+		os_name_lc = os_name.toLowerCase();
+
+		try {
+			os_arch = System.getProperty("os.arch").toLowerCase();
+		} catch (Exception var16) {
+			os_arch = "";
+		}
+
+		try {
+			aString717 = System.getProperty("os.version").toLowerCase();
+		} catch (Exception var15) {
+			aString717 = "";
+		}
+
+		try {
+			aString706 = System.getProperty("user.home");
+			if (aString706 != null) {
+				aString706 = aString706 + "/";
+			}
+		} catch (Exception var14) {
+			;
+		}
+
+		if (aString706 == null) {
+			aString706 = "~/";
+		}
+
+		try {
+			this.eventQueue = Toolkit.getDefaultToolkit().getSystemEventQueue();
+		} catch (Throwable var13) {
+			;
+		}
+
+		try {
+			if (var2 == null) {
+				aMethod707 = Class.forName("java.awt.Component").getDeclaredMethod("setFocusTraversalKeysEnabled",
+						new Class[] { Boolean.TYPE });
+			} else {
+				aMethod707 = var2.getClass().getMethod("setFocusTraversalKeysEnabled", new Class[] { Boolean.TYPE });
+			}
+		} catch (Exception var12) {
+			;
+		}
+
+		try {
+			if (var2 != null) {
+				aMethod702 = var2.getClass().getMethod("setFocusCycleRoot", new Class[] { Boolean.TYPE });
+			} else {
+				aMethod702 = Class.forName("java.awt.Container").getDeclaredMethod("setFocusCycleRoot",
+						new Class[] { Boolean.TYPE });
+			}
+		} catch (Exception var11) {
+			;
+		}
+
+		if (var1) {
+			this.method1144(var3, -101, var5, var4);
+
+			try {
+				this.aDisplay = new Display();
+			} catch (Throwable var10) {
+				;
+			}
+		}
+
+		if (var1) {
+			ThreadGroup var6 = Thread.currentThread().getThreadGroup();
+			ThreadGroup var7 = var6.getParent();
+
+			Thread[] var8;
+			for (var8 = new Thread[1000]; var7 != null; var7 = var7.getParent()) {
+				var6 = var7;
+			}
+
+			var6.enumerate(var8);
+
+			for (int var9 = 0; var8.length > var9; ++var9) {
+				if (var8[var9] != null && var8[var9].getName().startsWith("AWT")) {
+					var8[var9].setPriority(1);
+				}
+			}
+		}
+
+		this.aBoolean703 = false;
+		this.aThread718 = new Thread(this);
+		this.aThread718.setPriority(10);
+		this.aThread718.setDaemon(true);
+		this.aThread718.start();
+	}
 
 	public Class31 method1135(Frame var1, int var2) {
 		Class31 var3;
@@ -58,7 +165,7 @@ public class Class43 implements Runnable {
 
 	public Class31 method1136(int var1) {
 		if (var1 != -12444) {
-			aString709 = null;
+			os_name = null;
 		}
 
 		Class31 var2 = this.method1138(5, (Object) null, 0, 0, -126);
@@ -101,13 +208,11 @@ public class Class43 implements Runnable {
 	}
 
 	public Interface4 method1139(byte var1) {
-		int var2 = -75 / ((-51 - var1) / 49);
 		Interface4 var3 = this.anInterface4_701;
 		return var3;
 	}
 
 	public Class31 method1140(int var1, Class var2, String var3) {
-		int var4 = -27 / ((var1 - 38) / 55);
 		Class31 var5 = this.method1138(9, new Object[] { var2, var3 }, 0, 0, -126);
 		return var5;
 	}
@@ -452,7 +557,7 @@ public class Class43 implements Runnable {
 													var4 = new Class[] { Class.forName("java.lang.Class"),
 															Class.forName("java.lang.String") };
 													var5 = Runtime.getRuntime();
-													if (!aString705.startsWith("mac")) {
+													if (!os_name_lc.startsWith("mac")) {
 														var6 = Class.forName("java.lang.Runtime")
 																.getDeclaredMethod("loadLibrary0", var4);
 														var6.setAccessible(true);
@@ -463,9 +568,9 @@ public class Class43 implements Runnable {
 													var6 = Class.forName("java.lang.Runtime").getDeclaredMethod("load0",
 															var4);
 													var6.setAccessible(true);
-													if (!aString705.startsWith("linux")
-															&& !aString705.startsWith("sunos")) {
-														if (aString705.startsWith("mac")) {
+													if (!os_name_lc.startsWith("linux")
+															&& !os_name_lc.startsWith("sunos")) {
+														if (os_name_lc.startsWith("mac")) {
 															var6.invoke(var5,
 																	new Object[] { var1.anObject528,
 																			(new File(this.aFile719, "libjogl.jnilib"))
@@ -477,7 +582,7 @@ public class Class43 implements Runnable {
 																							.getAbsoluteFile()
 																							.toString() });
 														} else {
-															if (!aString705.startsWith("win")) {
+															if (!os_name_lc.startsWith("win")) {
 																throw new Exception();
 															}
 
@@ -593,113 +698,5 @@ public class Class43 implements Runnable {
 			}
 		}
 
-	}
-
-	public Class43(boolean var1, Applet var2, int var3, String var4, int var5) {
-		aString721 = "Unknown";
-		this.anApplet712 = var2;
-		aString723 = "1.1";
-
-		try {
-			aString721 = System.getProperty("java.vendor");
-			aString723 = System.getProperty("java.version");
-		} catch (Exception var18) {
-			;
-		}
-
-		try {
-			aString709 = System.getProperty("os.name");
-		} catch (Exception var17) {
-			aString709 = "Unknown";
-		}
-
-		aString705 = aString709.toLowerCase();
-
-		try {
-			aString704 = System.getProperty("os.arch").toLowerCase();
-		} catch (Exception var16) {
-			aString704 = "";
-		}
-
-		try {
-			aString717 = System.getProperty("os.version").toLowerCase();
-		} catch (Exception var15) {
-			aString717 = "";
-		}
-
-		try {
-			aString706 = System.getProperty("user.home");
-			if (aString706 != null) {
-				aString706 = aString706 + "/";
-			}
-		} catch (Exception var14) {
-			;
-		}
-
-		if (aString706 == null) {
-			aString706 = "~/";
-		}
-
-		try {
-			this.anEventQueue713 = Toolkit.getDefaultToolkit().getSystemEventQueue();
-		} catch (Throwable var13) {
-			;
-		}
-
-		try {
-			if (var2 == null) {
-				aMethod707 = Class.forName("java.awt.Component").getDeclaredMethod("setFocusTraversalKeysEnabled",
-						new Class[] { Boolean.TYPE });
-			} else {
-				aMethod707 = var2.getClass().getMethod("setFocusTraversalKeysEnabled", new Class[] { Boolean.TYPE });
-			}
-		} catch (Exception var12) {
-			;
-		}
-
-		try {
-			if (var2 != null) {
-				aMethod702 = var2.getClass().getMethod("setFocusCycleRoot", new Class[] { Boolean.TYPE });
-			} else {
-				aMethod702 = Class.forName("java.awt.Container").getDeclaredMethod("setFocusCycleRoot",
-						new Class[] { Boolean.TYPE });
-			}
-		} catch (Exception var11) {
-			;
-		}
-
-		if (var1) {
-			this.method1144(var3, -101, var5, var4);
-
-			try {
-				this.aDisplay = new Display();
-			} catch (Throwable var10) {
-				;
-			}
-		}
-
-		if (var1) {
-			ThreadGroup var6 = Thread.currentThread().getThreadGroup();
-			ThreadGroup var7 = var6.getParent();
-
-			Thread[] var8;
-			for (var8 = new Thread[1000]; var7 != null; var7 = var7.getParent()) {
-				var6 = var7;
-			}
-
-			var6.enumerate(var8);
-
-			for (int var9 = 0; var8.length > var9; ++var9) {
-				if (var8[var9] != null && var8[var9].getName().startsWith("AWT")) {
-					var8[var9].setPriority(1);
-				}
-			}
-		}
-
-		this.aBoolean703 = false;
-		this.aThread718 = new Thread(this);
-		this.aThread718.setPriority(10);
-		this.aThread718.setDaemon(true);
-		this.aThread718.start();
 	}
 }

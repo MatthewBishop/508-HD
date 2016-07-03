@@ -5,9 +5,9 @@ package rs;
 
 import com.jagex.link.Linkable;
 import com.jagex.rt4.RT4GL;
+import com.jagex.util.BrowserControlUtil;
 import com.jagex.rt4.Class14_Sub27;
 
-import nativeadvert.browsercontrol;
 import rs.tex.Class14_Sub8_Sub17;
 import rs.tex.Static;
 
@@ -117,8 +117,7 @@ public class Class14_Sub21 extends Linkable {
 		RT4GL.method1630();
 		if (i <= 108)
 			method893((byte) 29);
-		if (browsercontrol.iscreated())
-			browsercontrol.hide();
+		BrowserControlUtil.hide();
 		Class63.method1280(Class49.aCanvas819, (byte) 123);
 		Class76.method1356(false, Class49.aCanvas819);
 		if (Class44.aClass129_726 != null)

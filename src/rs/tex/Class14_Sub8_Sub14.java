@@ -825,13 +825,13 @@ public class Class14_Sub8_Sub14 extends Class14_Sub8 {
 	}
 
 	public static void method555(int i, Class43 class43, Object object) {
-		if (class43.anEventQueue713 != null) {
+		if (class43.eventQueue != null) {
 			int i_11_ = 0;
 			if (i > 37) {
-				for (/**/; i_11_ < 50 && class43.anEventQueue713.peekEvent() != null; i_11_++)
+				for (/**/; i_11_ < 50 && class43.eventQueue.peekEvent() != null; i_11_++)
 					Util.sleep(1L);
 				if (object != null)
-					class43.anEventQueue713.postEvent(new ActionEvent(object, 1001, "dummy"));
+					class43.eventQueue.postEvent(new ActionEvent(object, 1001, "dummy"));
 			}
 		}
 	}

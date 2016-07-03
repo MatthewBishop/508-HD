@@ -11,9 +11,9 @@ import com.jagex.map.SceneCluster;
 import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class14_Sub1;
 import com.jagex.rt4.RT4;
+import com.jagex.util.BrowserControlUtil;
 import com.jagex.util.TimeUtil;
 
-import nativeadvert.browsercontrol;
 import rs.tex.Class14_Sub8;
 import rs.tex.Class14_Sub8_Sub10;
 import rs.tex.Class14_Sub8_Sub11;
@@ -2229,35 +2229,15 @@ public class Class116 {
 																														i_1_ - 193));
 																									}
 																									if (Static2.aBoolean2870) {
-																										if (!browsercontrol
-																												.iscreated())
-																											browsercontrol
-																													.create("about:blank");
-																										if (browsercontrol
-																												.iscreated()) {
-																											browsercontrol
-																													.navigate(
-																															string);
+																										if (BrowserControlUtil.cs6401(string)) {
 																											Class14_Sub13.anInt2964 = i_176_;
-																											Class14_Sub8_Sub30
-																													.method643(
-																															0,
-																															(byte) -116);
+																											Class14_Sub8_Sub30.method643(0,(byte) -116);
 																										}
 																									}
 																								} else if (i_6_ == 6402) {
-																									if (browsercontrol
-																											.iscreated()) {
-																										browsercontrol
-																												.navigate(
-																														"about:blank");
-																										browsercontrol
-																												.hide();
+																									if (BrowserControlUtil.cs6402()) {
 																										Class14_Sub13.anInt2964 = 0;
-																										Class14_Sub8_Sub30
-																												.method643(
-																														0,
-																														(byte) -123);
+																										Class14_Sub8_Sub30.method643(0,(byte) -123);
 																									}
 																								} else if (i_6_ == 6403)
 																									Class14_Sub8_Sub39_Sub1.aClass124Array5101[i_4_++] = Class5.aClass124_138;

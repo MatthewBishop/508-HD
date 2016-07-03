@@ -53,7 +53,7 @@ public class Class132 {
 					if (Static.aFrame3962 != null)
 						container = Static.aFrame3962;
 					else if (Class14_Sub14.aFrame2986 == null)
-						container = Class14_Sub8_Sub34.aClass43_4647.anApplet712;
+						container = Class14_Sub8_Sub34.aClass43_4647.applet;
 					else
 						container = Class14_Sub14.aFrame2986;
 					int i_7_ = 0;

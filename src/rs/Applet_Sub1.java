@@ -86,8 +86,8 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			URL url = null;
 			return url;
 		}
-		if (Class14_Sub8_Sub34.aClass43_4647 != null && this != Class14_Sub8_Sub34.aClass43_4647.anApplet712) {
-			URL url = Class14_Sub8_Sub34.aClass43_4647.anApplet712.getCodeBase();
+		if (Class14_Sub8_Sub34.aClass43_4647 != null && this != Class14_Sub8_Sub34.aClass43_4647.applet) {
+			URL url = Class14_Sub8_Sub34.aClass43_4647.applet.getCodeBase();
 			return url;
 		}
 		URL url = super.getCodeBase();
@@ -163,8 +163,8 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				var2 = null;
 				return var2;
 			} else if (Class14_Sub8_Sub34.aClass43_4647 != null
-					&& this != Class14_Sub8_Sub34.aClass43_4647.anApplet712) {
-				var2 = Class14_Sub8_Sub34.aClass43_4647.anApplet712.getParameter(var1);
+					&& this != Class14_Sub8_Sub34.aClass43_4647.applet) {
+				var2 = Class14_Sub8_Sub34.aClass43_4647.applet.getParameter(var1);
 				return var2;
 			} else {
 				var2 = super.getParameter(var1);
@@ -234,8 +234,8 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		try {
 			if (Class96.anApplet_Sub1_1632 == this && !Class14_Sub2_Sub5.aBoolean3818) {
 				Class141.aBoolean2244 = true;
-				if (Class43.aString723 != null)
-					Class43.aString723.startsWith("1.5");
+				if (Class43.java_version != null)
+					Class43.java_version.startsWith("1.5");
 			}
 		} catch (Throwable throwable) {
 			throw Class14_Sub8_Sub14.method554(throwable,
@@ -290,8 +290,8 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			}
 		}
 
-		if (Class14_Sub8_Sub34.aClass43_4647.anApplet712 != null) {
-			Class14_Sub8_Sub34.aClass43_4647.anApplet712.destroy();
+		if (Class14_Sub8_Sub34.aClass43_4647.applet != null) {
+			Class14_Sub8_Sub34.aClass43_4647.applet.destroy();
 		}
 
 		try {
@@ -343,14 +343,14 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				label91: {
 					String var1;
 					try {
-						if (Class43.aString721 == null) {
+						if (Class43.java_vendor == null) {
 							break label87;
 						}
 
-						var1 = Class43.aString721.toLowerCase();
+						var1 = Class43.java_vendor.toLowerCase();
 						if (var1.indexOf("sun") == -1 && var1.indexOf("apple") == -1) {
 							if (var1.indexOf("ibm") != -1
-									&& (Class43.aString723 == null || Class43.aString723.equals("1.4.2"))) {
+									&& (Class43.java_version == null || Class43.java_version.equals("1.4.2"))) {
 								this.method28("wrongjava", -1);
 								return;
 							}
@@ -361,7 +361,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 					}
 
 					try {
-						var1 = Class43.aString723;
+						var1 = Class43.java_version;
 						if (var1.equals("1.1") || var1.startsWith("1.1.") || var1.equals("1.2")
 								|| var1.startsWith("1.2.")) {
 							this.method28("wrongjava", -1);
@@ -385,11 +385,11 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				break label90;
 			}
 
-			if (Class14_Sub8_Sub34.aClass43_4647.anApplet712 != null) {
+			if (Class14_Sub8_Sub34.aClass43_4647.applet != null) {
 				Method var8 = Class43.aMethod702;
 				if (var8 != null) {
 					try {
-						var8.invoke(Class14_Sub8_Sub34.aClass43_4647.anApplet712, new Object[] { Boolean.TRUE });
+						var8.invoke(Class14_Sub8_Sub34.aClass43_4647.applet, new Object[] { Boolean.TRUE });
 					} catch (Throwable var3) {
 						;
 					}
@@ -423,8 +423,8 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				var1 = null;
 				return var1;
 			} else if (Class14_Sub8_Sub34.aClass43_4647 != null
-					&& this != Class14_Sub8_Sub34.aClass43_4647.anApplet712) {
-				var1 = Class14_Sub8_Sub34.aClass43_4647.anApplet712.getAppletContext();
+					&& this != Class14_Sub8_Sub34.aClass43_4647.applet) {
+				var1 = Class14_Sub8_Sub34.aClass43_4647.applet.getAppletContext();
 				return var1;
 			} else {
 				var1 = super.getAppletContext();
@@ -443,7 +443,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		Container container;
 		if (Static.aFrame3962 == null) {
 			if (Class14_Sub14.aFrame2986 == null)
-				container = Class14_Sub8_Sub34.aClass43_4647.anApplet712;
+				container = Class14_Sub8_Sub34.aClass43_4647.applet;
 			else
 				container = Class14_Sub14.aFrame2986;
 		} else
@@ -492,8 +492,8 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				var1 = null;
 				return var1;
 			} else if (Class14_Sub8_Sub34.aClass43_4647 != null
-					&& this != Class14_Sub8_Sub34.aClass43_4647.anApplet712) {
-				var1 = Class14_Sub8_Sub34.aClass43_4647.anApplet712.getDocumentBase();
+					&& this != Class14_Sub8_Sub34.aClass43_4647.applet) {
+				var1 = Class14_Sub8_Sub34.aClass43_4647.applet.getDocumentBase();
 				return var1;
 			} else {
 				var1 = super.getDocumentBase();

@@ -176,7 +176,7 @@ public class ModelHD extends Class133_Sub7 {
 							+ (((i_27_ & 0xff00) * i_28_ + (i_25_ & 0xff00) * i_29_) & 0xff0000)) >> 8;
 				}
 			}
-			int i_30_ = Class3.anInterface3_117.method9(i_22_ & 0xffff, -62);
+			int i_30_ = Class3.anInterface3_117.method9(i_22_ & 0xffff);
 			if (i_30_ != 0) {
 				i_30_ += 256;
 				int i_31_ = ((i_25_ & 0xff0000) >> 16) * i_30_;
@@ -353,8 +353,7 @@ public class ModelHD extends Class133_Sub7 {
 		for (int i_77_ = 0; i_77_ < class133_sub2.anInt3547; i_77_++) {
 			if ((class133_sub2.aByteArray3534 == null || class133_sub2.aByteArray3534[i_77_] != 2)
 					&& (class133_sub2.aShortArray3528 == null || class133_sub2.aShortArray3528[i_77_] == -1
-							|| !Class3.anInterface3_117.method7((class133_sub2.aShortArray3528[i_77_]) & 0xffff,
-									false))) {
+							|| !Class3.anInterface3_117.method7((class133_sub2.aShortArray3528[i_77_]) & 0xffff))) {
 				is[anInt5014++] = i_77_;
 				anIntArray5031[class133_sub2.anIntArray3549[i_77_]]++;
 				anIntArray5031[class133_sub2.anIntArray3507[i_77_]]++;
@@ -373,7 +372,7 @@ public class ModelHD extends Class133_Sub7 {
 				i_84_ = class133_sub2.aShortArray3528[i_79_];
 				if (i_84_ != -1) {
 					i_82_ = Class3.anInterface3_117.method12(true, i_84_ & 0xffff);
-					i_83_ = Class3.anInterface3_117.method8((byte) 123, i_84_ & 0xffff);
+					i_83_ = Class3.anInterface3_117.method8(i_84_ & 0xffff);
 				}
 			}
 			boolean bool_85_ = ((class133_sub2.aByteArray3541 != null && class133_sub2.aByteArray3541[i_79_] != 0)
@@ -2438,13 +2437,13 @@ public class ModelHD extends Class133_Sub7 {
 		int i_547_ = 0;
 		if (i != -1) {
 			i_546_ = Class3.anInterface3_117.method14(i & 0xffff, 82);
-			i_547_ = Class3.anInterface3_117.method9(i & 0xffff, -32);
+			i_547_ = Class3.anInterface3_117.method9(i & 0xffff);
 		}
 		int i_548_ = 0;
 		int i_549_ = 0;
 		if (i_544_ != -1) {
 			i_548_ = Class3.anInterface3_117.method14(i_544_ & 0xffff, 70);
-			i_549_ = Class3.anInterface3_117.method9(i_544_ & 0xffff, -36);
+			i_549_ = Class3.anInterface3_117.method9(i_544_ & 0xffff);
 		}
 		if (i_546_ != i_548_ || i_547_ != i_549_)
 			aClass41_5030.upToDate = false;

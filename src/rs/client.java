@@ -4,10 +4,8 @@
 package rs;
 
 import java.awt.Container;
-import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Insets;
-import java.awt.Point;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.Socket;
@@ -34,11 +32,11 @@ import com.jagex.rt4.RT4;
 import com.jagex.rt4.lights.LightManager;
 import com.jagex.sound.Synthesizer;
 import com.jagex.sound.Filter;
+import com.jagex.util.BrowserControlUtil;
 import com.jagex.util.MouseCapturer;
 import com.jagex.util.TimeUtil;
 import com.jagex.util.Util;
 
-import nativeadvert.browsercontrol;
 import rs.tex.Class14_Sub8;
 import rs.tex.Class14_Sub8_Sub1;
 import rs.tex.Class14_Sub8_Sub10;
@@ -211,7 +209,7 @@ public class client extends Applet_Sub1 {
 					Container container;
 					if (Static.aFrame3962 == null) {
 						if (Class14_Sub14.aFrame2986 == null)
-							container = Class14_Sub8_Sub34.aClass43_4647.anApplet712;
+							container = Class14_Sub8_Sub34.aClass43_4647.applet;
 						else
 							container = Class14_Sub14.aFrame2986;
 					} else
@@ -312,16 +310,7 @@ public class client extends Applet_Sub1 {
 				}
 				if (Class65.aBoolean1026)
 					Class14_Sub8_Sub27.method621((byte) -55);
-				if (browsercontrol.iscreated() && Class14_Sub13.anInt2964 != 0) {
-					try {
-						Point point = Class49.aCanvas819.getLocationOnScreen();
-						Dimension dimension = Class49.aCanvas819.getSize();
-						browsercontrol.set_position(point.x, (-Class14_Sub13.anInt2964 + point.y), dimension.width,
-								Class14_Sub13.anInt2964);
-					} catch (Exception exception) {
-						/* empty */
-					}
-				}
+				BrowserControlUtil.update(Class49.aCanvas819, Class14_Sub13.anInt2964);
 			}
 		} catch (Throwable throwable) {
 			throw Class14_Sub8_Sub14.method554(throwable,
@@ -779,7 +768,7 @@ public class client extends Applet_Sub1 {
 								}
 
 								String var10 = this.method50(true,
-										Class43.aString709 + " " + Class43.aString704 + " " + Class43.aString717);
+										Class43.os_name + " " + Class43.os_arch + " " + Class43.aString717);
 								String var11 = this.method50(true, var15 + " " + var8);
 								this.method35("os=" + var10 + "&gcard=" + var11 + "&error_code=" + var3, "caps_" + var7,
 										(byte) 52);
@@ -1404,8 +1393,7 @@ public class client extends Applet_Sub1 {
 
 	public void method38(boolean bool) {
 		RT4GL.method1630();
-		if (browsercontrol.iscreated())
-			browsercontrol.destroy();
+		BrowserControlUtil.destroy();
 		if (Static.aFrame3962 != null) {
 			Class14_Sub2_Sub4.method278(Class14_Sub8_Sub34.aClass43_4647, Static.aFrame3962, -119);
 			Static.aFrame3962 = null;
@@ -2194,7 +2182,7 @@ public class client extends Applet_Sub1 {
 		Class44.aClass129_726 = Class12.method222(-18108);
 		if (Class44.aClass129_726 != null)
 			Class44.aClass129_726.method1760(-14827, Class49.aCanvas819);
-		Class14_Sub8_Sub3.anInt4128 = Class43.anInt708;
+		Class14_Sub8_Sub3.anInt4128 = Static2.anInt708;
 		try {
 			if (Class14_Sub8_Sub34.aClass43_4647.aClass30_720 != null) {
 				Class14_Sub8_Sub1.aClass76_4098 = new Class76((Class14_Sub8_Sub34.aClass43_4647.aClass30_720), 5200, 0);

@@ -56,7 +56,7 @@ public class Class141 implements KeyListener, FocusListener {
 							+ (i_7_ * (i_6_ & 0xff00ff) + i_8_ * (i_4_ & 0xff00ff) & ~0xff00ff)) >> 40;
 				}
 			}
-			int i_9_ = Class3.anInterface3_117.method9(i_2_ & 0xffff, -90);
+			int i_9_ = Class3.anInterface3_117.method9(i_2_ & 0xffff);
 			if (i_9_ != 0) {
 				i_9_ += 256;
 				int i_10_ = ((i_4_ & 0xff0000) >> 48) * i_9_;

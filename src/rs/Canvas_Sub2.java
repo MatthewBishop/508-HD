@@ -191,7 +191,7 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 
 	public static void method66(boolean bool) {
 		if (!bool) {
-			if (Class43.aString721.toLowerCase().indexOf("microsoft") != -1) {
+			if (Class43.java_vendor.toLowerCase().indexOf("microsoft") != -1) {
 				anIntArray62[223] = 28;
 				anIntArray62[190] = 72;
 				anIntArray62[220] = 74;

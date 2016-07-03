@@ -8,11 +8,11 @@ public interface Interface3 {
 
 	public boolean method6(int i, int i_1_);
 
-	public boolean method7(int i, boolean bool);
+	public boolean method7(int i);
 
-	public int method8(byte i, int i_2_);
+	public int method8(int i_2_);
 
-	public int method9(int i, int i_3_);
+	public int method9(int i);
 
 	public boolean method10(byte i, int i_4_);
 

@@ -2630,7 +2630,7 @@ public class Static {
 				do {
 					if (Static2.aBoolean1783) {
 						try {
-							Class144.method1982((byte) 122, "openjs", (Class14_Sub8_Sub34.aClass43_4647.anApplet712),
+							Class144.method1982((byte) 122, "openjs", (Class14_Sub8_Sub34.aClass43_4647.applet),
 									(new Object[] { class124.method1691(0, Class96.anApplet_Sub1_1632.getCodeBase())
 											.toString() }));
 						} catch (Throwable throwable) {

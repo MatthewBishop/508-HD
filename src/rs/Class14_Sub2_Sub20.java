@@ -6,8 +6,8 @@ package rs;
 import com.jagex.io.Buffer;
 import com.jagex.link.Cacheable;
 import com.jagex.rt4.RT4GL;
+import com.jagex.util.BrowserControlUtil;
 
-import nativeadvert.browsercontrol;
 import rs.tex.Class14_Sub8_Sub30;
 import rs.tex.Class14_Sub8_Sub34;
 import rs.tex.Static;
@@ -24,9 +24,7 @@ public class Class14_Sub2_Sub20 extends Cacheable {
 
 	public static void method428(int i) {
 		RT4GL.method1630();
-		int i_6_ = 38 / ((69 - i) / 51);
-		if (browsercontrol.iscreated())
-			browsercontrol.hide();
+		BrowserControlUtil.hide();
 		if (Static.aFrame3962 != null)
 			Class14_Sub2_Sub4.method278(Class14_Sub8_Sub34.aClass43_4647, Static.aFrame3962, 120);
 		Static.aFrame3962 = null;

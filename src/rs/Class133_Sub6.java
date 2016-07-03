@@ -4,10 +4,10 @@
 package rs;
 
 import com.jagex.rt4.RT4GL;
+import com.jagex.util.BrowserControlUtil;
 import com.jagex.cache.anim.Animation;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 
-import nativeadvert.browsercontrol;
 import rs.tex.Class14_Sub8_Sub22;
 import rs.tex.Class14_Sub8_Sub30;
 import rs.tex.Class14_Sub8_Sub34;
@@ -185,8 +185,7 @@ public class Class133_Sub6 extends Class133 {
 
 	public static void method1854(int i, int i_17_, int i_18_) {
 		RT4GL.method1630();
-		if (browsercontrol.iscreated())
-			browsercontrol.hide();
+		BrowserControlUtil.hide();
 		if (i_18_ >= 32) {
 			Static.aFrame3962 = Class138.method1950(i_17_, 95, 0, i, Class14_Sub8_Sub34.aClass43_4647, 0);
 			if (Static.aFrame3962 != null) {

@@ -1418,7 +1418,7 @@ public class Static2 {
 			if (var0 != Static2.anInt3352) {
 				boolean var1;
 				try {
-					Class90.aClass124_1424.method1666(Class14_Sub8_Sub34.aClass43_4647.anApplet712, false);
+					Class90.aClass124_1424.method1666(Class14_Sub8_Sub34.aClass43_4647.applet, false);
 					var1 = true;
 				} catch (Throwable var3) {
 					return false;
@@ -2387,14 +2387,14 @@ public class Static2 {
 									if (Class146.anInt2365 == 1) {
 										try {
 											Class35.aClass124_597
-													.method1666(Class14_Sub8_Sub34.aClass43_4647.anApplet712, false);
+													.method1666(Class14_Sub8_Sub34.aClass43_4647.applet, false);
 										} catch (Throwable var8) {
 											;
 										}
 									} else {
 										try {
 											Class18.aClass124_415
-													.method1666(Class14_Sub8_Sub34.aClass43_4647.anApplet712, false);
+													.method1666(Class14_Sub8_Sub34.aClass43_4647.applet, false);
 										} catch (Throwable var7) {
 											;
 										}
@@ -2604,4 +2604,5 @@ public class Static2 {
 	public static int anInt1083 = 0;
 	public static int anInt1085 = 0;
 	public static int[] anIntArray1086 = new int[] { 0, 1, 2, 3 };
+	public static int anInt708 = 1;
 }

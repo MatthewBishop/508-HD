@@ -149,7 +149,7 @@ public class Class14_Sub9_Sub3 extends Class14_Sub9 {
 							string_11_ = string_11_.replace('@', '_');
 							string_11_ = string_11_.replace('&', '_');
 							string_11_ = string_11_.replace('#', (char) i);
-							if (Static2.aClass43_358.anApplet712 == null)
+							if (Static2.aClass43_358.applet == null)
 								break;
 						} catch (Exception exception) {
 							break while_351_;
@@ -160,10 +160,10 @@ public class Class14_Sub9_Sub3 extends Class14_Sub9 {
 				} while (false);
 				try {
 					Class31 class31 = (Static2.aClass43_358.method1147((byte) -119, new URL(
-							Static2.aClass43_358.anApplet712.getCodeBase(),
+							Static2.aClass43_358.applet.getCodeBase(),
 							new StringBuilder("clienterror.ws?c=").append(Class14_Sub8_Sub32.anInt4614).append("&u=")
-									.append(Class48.aLong802).append("&v1=").append(Class43.aString721).append("&v2=")
-									.append(Class43.aString723).append("&e=").append(string_11_).toString())));
+									.append(Class48.aLong802).append("&v1=").append(Class43.java_vendor).append("&v2=")
+									.append(Class43.java_version).append("&e=").append(string_11_).toString())));
 					while (class31.anInt529 == 0)
 						Util.sleep(1L);
 					if (class31.anInt529 == 1) {
