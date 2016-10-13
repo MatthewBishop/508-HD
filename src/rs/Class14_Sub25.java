@@ -7,8 +7,6 @@ import com.jagex.link.Linkable;
 import com.jagex.map.SceneCluster;
 import com.jagex.rt4.RT4;
 
-import rs.tex.Class14_Sub8_Sub32;
-
 public class Class14_Sub25 extends Linkable {
 	public static boolean[][] aBooleanArrayArray3170;
 	public static Class124 aClass124_3172 = Class14_Sub2_Sub2.method263(1178, " )2> <col=ff9040>");
@@ -45,7 +43,7 @@ public class Class14_Sub25 extends Linkable {
 			return i_3_;
 		}
 		if (bool_1_)
-			i_2_ += Class14_Sub8_Sub32.anInt4612 + Class14_Sub2_Sub8.anInt3833;
+			i_2_ += JunkTex.anInt4612 + Class14_Sub2_Sub8.anInt3833;
 		if (bool)
 			i_2_ += Class63.anInt998 + SceneCluster.anInt1355;
 		int i_4_ = i_2_;

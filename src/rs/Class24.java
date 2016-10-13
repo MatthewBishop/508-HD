@@ -13,11 +13,6 @@ import rs.Class14_Sub19;
 import rs.Class14_Sub25;
 import rs.Class14_Sub2_Sub2;
 import rs.Class14_Sub9_Sub3;
-import rs.tex.Class14_Sub8_Sub14;
-import rs.tex.Class14_Sub8_Sub19;
-import rs.tex.Class14_Sub8_Sub20;
-import rs.tex.Class14_Sub8_Sub24;
-import rs.tex.Static;
 
 public class Class24 implements Runnable {
 
@@ -30,7 +25,7 @@ public class Class24 implements Runnable {
 
 	static {
 		for (int var0 = 0; var0 < 4096; ++var0) {
-			anIntArray468[var0] = Static.method1207((byte) -124, var0);
+			anIntArray468[var0] = JunkTex.method1207((byte) -124, var0);
 		}
 
 		aClass124_474 = Class14_Sub2_Sub2.method263(1178, "rect_debug=");
@@ -40,11 +35,11 @@ public class Class24 implements Runnable {
 		try {
 			try {
 				while (true) {
-					Deque var1 = Class14_Sub8_Sub19.aClass2_4404;
-					Deque var2 = Class14_Sub8_Sub19.aClass2_4404;
+					Deque var1 = JunkTex.aClass2_4404;
+					Deque var2 = JunkTex.aClass2_4404;
 					Class14_Sub19 var3;
 					synchronized (var2) {
-						var3 = (Class14_Sub19) Class14_Sub8_Sub19.aClass2_4404.getFront();
+						var3 = (Class14_Sub19) JunkTex.aClass2_4404.getFront();
 					}
 
 					Object var4;
@@ -54,28 +49,28 @@ public class Class24 implements Runnable {
 						if (var3.anInt3067 != 0) {
 							if (var3.anInt3067 == 1) {
 								var3.aByteArray3069 = var3.aClass114_3077.method1582(124, (int) var3.key);
-								var1 = Class14_Sub8_Sub19.aClass2_4404;
-								var13 = Class14_Sub8_Sub19.aClass2_4404;
+								var1 = JunkTex.aClass2_4404;
+								var13 = JunkTex.aClass2_4404;
 								synchronized (var13) {
-									Static.aClass2_99.pushBack(var3);
+									JunkTex.aClass2_99.pushBack(var3);
 								}
 							}
 						} else {
 							var3.aClass114_3077.method1583((int) var3.key, var3.aByteArray3069, -1,
 									var3.aByteArray3069.length);
-							var1 = Class14_Sub8_Sub19.aClass2_4404;
-							var13 = Class14_Sub8_Sub19.aClass2_4404;
+							var1 = JunkTex.aClass2_4404;
+							var13 = JunkTex.aClass2_4404;
 							synchronized (var13) {
 								var3.unlink();
 							}
 						}
 
-						var12 = Class14_Sub8_Sub20.anObject4417;
-						var4 = Class14_Sub8_Sub20.anObject4417;
+						var12 = JunkTex.anObject4417;
+						var4 = JunkTex.anObject4417;
 						synchronized (var4) {
 							if (Class138.anInt2223 <= 1) {
 								Class138.anInt2223 = 0;
-								Class14_Sub8_Sub20.anObject4417.notifyAll();
+								JunkTex.anObject4417.notifyAll();
 								return;
 							}
 
@@ -83,12 +78,12 @@ public class Class24 implements Runnable {
 						}
 					} else {
 						Util.sleep(100L);
-						var12 = Class14_Sub8_Sub20.anObject4417;
-						var4 = Class14_Sub8_Sub20.anObject4417;
+						var12 = JunkTex.anObject4417;
+						var4 = JunkTex.anObject4417;
 						synchronized (var4) {
 							if (Class138.anInt2223 <= 1) {
 								Class138.anInt2223 = 0;
-								Class14_Sub8_Sub20.anObject4417.notifyAll();
+								JunkTex.anObject4417.notifyAll();
 								return;
 							}
 
@@ -100,7 +95,7 @@ public class Class24 implements Runnable {
 				Class14_Sub9_Sub3.method738((String) null, var10, 95);
 			}
 		} catch (RuntimeException var11) {
-			throw Class14_Sub8_Sub14.method554(var11, "ck.run()");
+			throw JunkTex.method554(var11, "ck.run()");
 		}
 	}
 
@@ -140,7 +135,7 @@ public class Class24 implements Runnable {
 				} else {
 					for (; var7 < var5.anIntArray3178.length; ++var7) {
 						if (var5.anIntArray3178[var7] >= 0 && Class108.anInt1816 > var5.anIntArray3178[var7]) {
-							Class142 var8 = Class14_Sub8_Sub24.method605(96, var5.anIntArray3178[var7]);
+							Class142 var8 = JunkTex.method605(96, var5.anIntArray3178[var7]);
 							if (var8.aClass55_2260 != null) {
 								Class14_Sub1 var9 = (Class14_Sub1) var8.aClass55_2260.get((long) var2);
 								if (var9 != null) {
@@ -158,7 +153,7 @@ public class Class24 implements Runnable {
 				}
 			}
 		} catch (Throwable var10) {
-			throw Class14_Sub8_Sub14.method554(var10, "ck.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+			throw JunkTex.method554(var10, "ck.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
 		}
 	}
 }

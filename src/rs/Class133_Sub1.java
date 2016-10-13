@@ -7,14 +7,6 @@ import com.jagex.io.Buffer;
 import com.jagex.rt4.Class11;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 
-import rs.tex.Class14_Sub8_Sub14;
-import rs.tex.Class14_Sub8_Sub15;
-import rs.tex.Class14_Sub8_Sub17;
-import rs.tex.Class14_Sub8_Sub28;
-import rs.tex.Class14_Sub8_Sub35;
-import rs.tex.Class14_Sub8_Sub7;
-import rs.tex.Static;
-
 public abstract class Class133_Sub1 extends Class133 {
 	public int anInt3431;
 	public int anInt3432;
@@ -181,7 +173,7 @@ public abstract class Class133_Sub1 extends Class133 {
 					System.gc();
 				Runtime runtime = Runtime.getRuntime();
 				int i_14_ = (int) ((runtime.totalMemory() - runtime.freeMemory()) / 1024L);
-				Class15.method943((Class14_Sub8_Sub7.method515((new Class124[] { Class14_Sub8_Sub17.aClass124_4362,
+				Class15.method943((JunkTex.method515((new Class124[] { JunkTex.aClass124_4362,
 						Class83.method1407(120, i_14_), Class59.aClass124_953 }), (byte) -82)), false, null, 0);
 			}
 			if (class124.method1717(i + 33, Class134.aClass124_2575)) {
@@ -205,20 +197,20 @@ public abstract class Class133_Sub1 extends Class133 {
 					}
 				}
 			}
-			if (class124.method1690(Class14_Sub8_Sub28.aClass124_4561, 33) && Class7.anInt182 != 0)
+			if (class124.method1690(JunkTex.aClass124_4561, 33) && Class7.anInt182 != 0)
 				Applet_Sub1.method30(-104, class124.method1696(6, i ^ 0x8).method1702(82));
 			if (class124.method1717(40, Class58.aClass124_941) && Class7.anInt182 == 2)
 				throw new RuntimeException();
 			if (class124.method1690(Class45.aClass124_750, 33)) {
 				Class124.anInt2494 = class124.method1696(12, 15).method1684((byte) 9).method1702(124);
-				Class15.method943((Class14_Sub8_Sub7.method515(
+				Class15.method943((JunkTex.method515(
 						(new Class124[] { Class24.aClass124_474, Class83.method1407(108, (Class124.anInt2494)) }),
 						(byte) -53)), false, null, 0);
 			}
 			if (class124.method1717(40, Class120.aClass124_2012))
 				Class125_Sub3.aBoolean3392 = true;
-			if (class124.method1704(Class14_Sub8_Sub35.aClass124_4676, (byte) 58)) {
-				if (Static.aFrame3962 != null)
+			if (class124.method1704(JunkTex.aClass124_4676, (byte) 58)) {
+				if (JunkTex.aFrame3962 != null)
 					Class14_Sub2_Sub20.method428(124);
 				else
 					Class133_Sub6.method1854(1024, 768, 39);
@@ -226,9 +218,9 @@ public abstract class Class133_Sub1 extends Class133 {
 		}
 		if (i != 7)
 			aClass45Array3435 = null;
-		Static.aClass14_Sub10_Sub1_891.writeOpcode(107);
-		Static.aClass14_Sub10_Sub1_891.method809(class124.method1693(0) - 1);
-		Static.aClass14_Sub10_Sub1_891.method814(32768, class124.method1696(2, 15));
+		JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(107);
+		JunkTex.aClass14_Sub10_Sub1_891.method809(class124.method1693(0) - 1);
+		JunkTex.aClass14_Sub10_Sub1_891.method814(32768, class124.method1696(2, 15));
 	}
 
 	public void method1799(boolean bool, byte i, int i_18_) {
@@ -238,7 +230,7 @@ public abstract class Class133_Sub1 extends Class133 {
 			i_19_++;
 			i_20_--;
 		}
-		if (anInt3445 != -1 && Static.method1129(anInt3445, 105).walkingPrecedence == 1)
+		if (anInt3445 != -1 && JunkTex.method1129(anInt3445, 105).walkingPrecedence == 1)
 			anInt3445 = -1;
 		int i_21_ = -122 % ((i - 18) / 56);
 		if (anInt3498 < 9)
@@ -274,7 +266,7 @@ public abstract class Class133_Sub1 extends Class133 {
 	}
 
 	public void method1800(byte i, int i_23_, boolean bool, int i_24_) {
-		if (anInt3445 != -1 && Static.method1129(anInt3445, -128).walkingPrecedence == 1)
+		if (anInt3445 != -1 && JunkTex.method1129(anInt3445, -128).walkingPrecedence == 1)
 			anInt3445 = -1;
 		if (!bool) {
 			int i_25_ = i_24_ - anIntArray3476[0];
@@ -320,7 +312,7 @@ public abstract class Class133_Sub1 extends Class133 {
 	public static void method1802(int i, int i_32_, int i_33_, int i_34_, int i_35_, int i_36_, int i_37_) {
 		if (i_34_ != 128)
 			method1798(null, (byte) -76);
-		if (Class118.anInt1982 > -i_37_ + i || i_37_ + i > Class14_Sub8_Sub14.anInt4327
+		if (Class118.anInt1982 > -i_37_ + i || i_37_ + i > JunkTex.anInt4327
 				|| i_32_ - i_37_ < Class14_Sub17.anInt3005 || i_37_ + i_32_ > Class59.anInt955)
 			Class125_Sub2.method1734(i_35_, i_37_, i_33_, i_36_, 52, i_32_, i);
 		else
@@ -338,7 +330,7 @@ public abstract class Class133_Sub1 extends Class133 {
 				for (int i_47_ = i_42_; i_47_ <= i_43_; i_47_++) {
 					if (i_47_ >= 0 && i_47_ < Static2.anInt3338) {
 						for (int i_48_ = i_44_; i_48_ <= i_45_; i_48_++) {
-							if (i_48_ >= 0 && i_48_ < Class14_Sub8_Sub15.anInt4337
+							if (i_48_ >= 0 && i_48_ < JunkTex.anInt4337
 									&& (!bool || i_47_ >= i_43_ || i_48_ >= i_45_ || i_48_ < i_39_ && i_47_ != i_38_)) {
 								Class14_Sub29 class14_sub29 = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_46_][i_47_][i_48_]);
 								if (class14_sub29 != null) {

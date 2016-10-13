@@ -8,15 +8,6 @@ import java.io.IOException;
 import com.jagex.io.Buffer;
 import com.jagex.link.Linkable;
 
-import rs.tex.Class14_Sub8_Sub12;
-import rs.tex.Class14_Sub8_Sub14;
-import rs.tex.Class14_Sub8_Sub26;
-import rs.tex.Class14_Sub8_Sub30;
-import rs.tex.Class14_Sub8_Sub31;
-import rs.tex.Class14_Sub8_Sub38;
-import rs.tex.Class14_Sub8_Sub5;
-import rs.tex.Static;
-
 public class Class14_Sub3 extends Linkable {
 	public static float aFloat2745;
 	public int[] anIntArray2746;
@@ -86,16 +77,16 @@ public class Class14_Sub3 extends Linkable {
 	public static void method451(int i) {
 		Class133_Sub5.method1844(-32768);
 		Class116.method1595(i);
-		Static.method1128((byte) -83);
+		JunkTex.method1128((byte) -83);
 		Class60.method1264(i + 115);
-		Class14_Sub8_Sub5.method501((byte) 61);
+		JunkTex.method501((byte) 61);
 		Class15.method946((byte) -2);
-		Static.method1133((byte) -30);
-		Static.method1025(25192);
+		JunkTex.method1133((byte) -30);
+		JunkTex.method1025(25192);
 		Class7_Sub2_Sub1.method130((byte) 110);
 		Class65.method1289(true);
 		Class125_Sub2.method1732(-25300);
-		Class14_Sub8_Sub12.method538((byte) -121);
+		JunkTex.method538((byte) -121);
 		Class115.method1592((byte) 23);
 		Class7_Sub2.method127(i);
 		Class14_Sub2_Sub5.aClass20_3815.clear();
@@ -105,12 +96,12 @@ public class Class14_Sub3 extends Linkable {
 		Static2.aClass9_Sub1_2901.method152(-107);
 		Class14_Sub13.aClass9_Sub1_2958.method152(-112);
 		Class125_Sub2.aClass9_Sub1_3374.method152(-124);
-		Class14_Sub8_Sub38.aClass9_Sub1_4739.method152(-116);
+		JunkTex.aClass9_Sub1_4739.method152(-116);
 		aClass9_Sub1_2750.method152(-105);
-		Class14_Sub8_Sub14.aClass9_Sub1_4323.method152(-106);
-		Class14_Sub8_Sub31.aClass9_Sub1_4603.method152(-125);
-		Class14_Sub8_Sub26.aClass9_Sub1_4521.method152(-122);
-		Class14_Sub8_Sub30.aClass52_4596.clear();
+		JunkTex.aClass9_Sub1_4323.method152(-106);
+		JunkTex.aClass9_Sub1_4603.method152(-125);
+		JunkTex.aClass9_Sub1_4521.method152(-122);
+		JunkTex.aClass52_4596.clear();
 	}
 
 	public void method452(int i) {

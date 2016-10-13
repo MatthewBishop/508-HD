@@ -4,8 +4,8 @@ import com.jagex.rt4.lights.Light;
 
 import rs.Class14_Sub30;
 import rs.Class15;
-import rs.Static2;
 import rs.tex.Class14_Sub8_Sub12;
+import rs.tex.TexStatic;
 
 public class RT4 {
 
@@ -165,7 +165,7 @@ public class RT4 {
 		class14_sub8_sub12.anInt4289 = i_7_;
 		class14_sub8_sub12.anInt4282 = i_6_;
 		class14_sub8_sub12.method472();
-		Static2.method1117(0, i_3_, i_8_);
+		TexStatic.method1117(0, i_3_, i_8_);
 		for (int i_10_ = 0; i_10_ < i_3_; i_10_++)
 			class14_sub8_sub12.method542(-2, i_10_, is[i_10_]);
 		int[][] is_11_ = is;

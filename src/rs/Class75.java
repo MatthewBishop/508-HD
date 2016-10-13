@@ -11,11 +11,6 @@ import com.jagex.rt4.Class148;
 import com.jagex.util.TimeUtil;
 import com.jagex.util.Util;
 
-import rs.tex.Class14_Sub8_Sub15;
-import rs.tex.Class14_Sub8_Sub25;
-import rs.tex.Class14_Sub8_Sub9;
-import rs.tex.Static;
-
 public class Class75 {
 	public static Cache aClass20_1147;
 	public int[] anIntArray1150;
@@ -93,7 +88,7 @@ public class Class75 {
 					&& class14_sub29.aClass4_3237.aClass133_124.method1784())
 				class133.method1788(class14_sub29.aClass4_3237.aClass133_124, 0, 0, 128, true);
 		}
-		if (i_3_ < Static2.anInt3338 && i_4_ < Class14_Sub8_Sub15.anInt4337) {
+		if (i_3_ < Static2.anInt3338 && i_4_ < JunkTex.anInt4337) {
 			Class14_Sub29 class14_sub29 = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_3_ + 1][i_4_ + 1]);
 			if (class14_sub29 != null && class14_sub29.aClass4_3237 != null
 					&& class14_sub29.aClass4_3237.aClass133_124.method1784())
@@ -113,9 +108,9 @@ public class Class75 {
 				byte[] is = Static2.aClass104_4037.method1533((byte) 81);
 				if (is != null) {
 					Buffer class14_sub10 = new Buffer(is);
-					Static.anInt1129 = class14_sub10.readUShort((byte) 111);
-					Class133_Sub1.aClass45Array3435 = new Class45[Static.anInt1129];
-					for (int i_5_ = 0; Static.anInt1129 > i_5_; i_5_++) {
+					JunkTex.anInt1129 = class14_sub10.readUShort((byte) 111);
+					Class133_Sub1.aClass45Array3435 = new Class45[JunkTex.anInt1129];
+					for (int i_5_ = 0; JunkTex.anInt1129 > i_5_; i_5_++) {
 						Class45 class45 = (Class133_Sub1.aClass45Array3435[i_5_] = new Class45());
 						int i_6_ = class14_sub10.readUShort((byte) 127);
 						class45.aBoolean749 = (i_6_ & 0x8000) != 0;
@@ -282,12 +277,12 @@ public class Class75 {
 
 	public static void method1343(int i, int i_13_, int i_14_, int i_15_, int i_16_) {
 		if (Class14_Sub2_Sub11.anInt3881 == 1)
-			Static.aClass14_Sub2_Sub19Array3958[Class14_Sub2_Sub17.anInt4017 / 100]
-					.method391(Class14_Sub8_Sub9.anInt4243 - 8, Class14_Sub8_Sub25.anInt4515 - 8);
+			JunkTex.aClass14_Sub2_Sub19Array3958[Class14_Sub2_Sub17.anInt4017 / 100]
+					.method391(JunkTex.anInt4243 - 8, JunkTex.anInt4515 - 8);
 		int i_17_ = 100 % ((i_13_ - 62) / 41);
 		if (Class14_Sub2_Sub11.anInt3881 == 2)
-			Static.aClass14_Sub2_Sub19Array3958[4 + Class14_Sub2_Sub17.anInt4017 / 100]
-					.method391(Class14_Sub8_Sub9.anInt4243 - 8, Class14_Sub8_Sub25.anInt4515 - 8);
+			JunkTex.aClass14_Sub2_Sub19Array3958[4 + Class14_Sub2_Sub17.anInt4017 / 100]
+					.method391(JunkTex.anInt4243 - 8, JunkTex.anInt4515 - 8);
 		Class14_Sub14.method868(67);
 	}
 

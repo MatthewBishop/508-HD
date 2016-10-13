@@ -8,10 +8,6 @@ import com.jagex.link.Linkable;
 import com.jagex.rt4.Class14_Sub27;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
 
-import rs.tex.Class14_Sub8_Sub26;
-import rs.tex.Class14_Sub8_Sub31;
-import rs.tex.Static;
-
 public class Class14_Sub17 extends Linkable {
 	public static Class87 aClass87_3004;
 	public static int anInt3005;
@@ -78,7 +74,7 @@ public class Class14_Sub17 extends Linkable {
 			int i_1_ = Class76.anIntArray1204[i_0_] * Class17.anIntArray402[i_0_];
 			int[] is_2_ = new int[i_1_];
 			for (int i_3_ = 0; i_3_ < i_1_; i_3_++)
-				is_2_[i_3_] = (Static.anIntArray1114[Class14_Sub8_Sub26.method617(255, is[i_3_])]);
+				is_2_[i_3_] = (JunkTex.anIntArray1114[JunkTex.method617(255, is[i_3_])]);
 			class14_sub2_sub19_sub1s[i_0_] = new Class14_Sub2_Sub19_Sub1(Class14_Sub11.anInt2952,
 					Class14_Sub30.anInt3279, Class40.anIntArray675[i_0_], (Class14_Sub2_Sub12.anIntArray3918[i_0_]),
 					Class17.anIntArray402[i_0_], Class76.anIntArray1204[i_0_], is_2_);
@@ -202,13 +198,13 @@ public class Class14_Sub17 extends Linkable {
 			int i_43_ = -22;
 			return i_43_;
 		}
-		int i_44_ = Class14_Sub8_Sub31.method647(i_25_, -501955161, i_29_, i_24_, is_27_, i_28_);
+		int i_44_ = JunkTex.method647(i_25_, -501955161, i_29_, i_24_, is_27_, i_28_);
 		int i_45_ = (i_25_ << 7) + i_24_;
 		int i_46_ = (i_28_ << 39) + i_29_;
 		int i_47_ = (class14_sub27.method921(i_46_, i_44_, i_45_, f_33_, f_34_, f_35_, bool ? i_32_ & ~0xff : i_32_,
 				(is == null ? 0.0F
 						: (float) (i_44_
-								- Class14_Sub8_Sub31.method647(i_25_, i_19_ ^ ~0x1deb3a54, i_29_, i_24_, is, i_28_))
+								- JunkTex.method647(i_25_, i_19_ ^ ~0x1deb3a54, i_29_, i_24_, is, i_28_))
 								/ f)));
 		return i_47_;
 	}

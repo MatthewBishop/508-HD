@@ -3,9 +3,6 @@
  */
 package rs;
 
-import rs.tex.Class14_Sub8_Sub28;
-import rs.tex.Class14_Sub8_Sub3;
-
 public class Class15 {
 	public static Class124 aClass124_373;
 	public static boolean aBoolean374 = true;
@@ -25,7 +22,7 @@ public class Class15 {
 	public static void method943(Class124 class124, boolean bool, Class124 class124_0_, int i) {
 		if (bool)
 			method943(null, true, null, 25);
-		Class14_Sub8_Sub3.method493((byte) -57, null, class124_0_, i, class124, -1);
+		JunkTex.method493((byte) -57, null, class124_0_, i, class124, -1);
 	}
 
 	public static boolean method944(boolean bool, int i) {
@@ -58,7 +55,7 @@ public class Class15 {
 
 	public static void method947(int i, int i_3_) {
 		if (i_3_ == -14158) {
-			Class14_Sub2_Sub13 class14_sub2_sub13 = Class14_Sub8_Sub28.method626(i_3_ + 14051, i, 2);
+			Class14_Sub2_Sub13 class14_sub2_sub13 = JunkTex.method626(i_3_ + 14051, i, 2);
 			class14_sub2_sub13.method327();
 		}
 	}

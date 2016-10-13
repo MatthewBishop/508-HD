@@ -5,10 +5,6 @@ package rs;
 
 import com.jagex.link.Deque;
 
-import rs.tex.Class14_Sub8_Sub15;
-import rs.tex.Class14_Sub8_Sub19;
-import rs.tex.Static;
-
 public class Class1 {
 	public static int[] anIntArray69 = new int[32];
 	public static Deque aClass2_70;
@@ -35,7 +31,7 @@ public class Class1 {
 	public static void method70(int i, int i_1_, int i_2_) {
 		for (int i_3_ = 0; i_3_ < Class83.anInt1338; i_3_++) {
 			for (int i_4_ = 0; i_4_ < Static2.anInt3338; i_4_++) {
-				for (int i_5_ = 0; i_5_ < Class14_Sub8_Sub15.anInt4337; i_5_++) {
+				for (int i_5_ = 0; i_5_ < JunkTex.anInt4337; i_5_++) {
 					Class14_Sub29 class14_sub29 = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_3_][i_4_][i_5_]);
 					if (class14_sub29 != null) {
 						Class113 class113 = class14_sub29.aClass113_3250;
@@ -74,9 +70,9 @@ public class Class1 {
 		class14_sub19.anInt3067 = 0;
 		class14_sub19.aClass114_3077 = class114;
 		class14_sub19.aByteArray3069 = is;
-		Deque deque = Class14_Sub8_Sub19.aClass2_4404;
+		Deque deque = JunkTex.aClass2_4404;
 		synchronized (deque) {
-			Class14_Sub8_Sub19.aClass2_4404.pushBack(class14_sub19);
+			JunkTex.aClass2_4404.pushBack(class14_sub19);
 		}
 		Class14_Sub9_Sub1.method696((byte) -119);
 	}
@@ -92,13 +88,13 @@ public class Class1 {
 	}
 
 	public static int method73(byte i) {
-		if (Static.aFrame3962 != null) {
+		if (JunkTex.aFrame3962 != null) {
 			int i_8_ = 2;
 			return i_8_;
 		}
 		if (i != -58)
 			aClass124_72 = null;
-		if (Static.aBoolean845) {
+		if (JunkTex.aBoolean845) {
 			int i_9_ = 1;
 			return i_9_;
 		}

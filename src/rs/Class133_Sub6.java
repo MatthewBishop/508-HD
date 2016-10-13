@@ -8,11 +8,6 @@ import com.jagex.util.BrowserControlUtil;
 import com.jagex.cache.anim.Animation;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 
-import rs.tex.Class14_Sub8_Sub22;
-import rs.tex.Class14_Sub8_Sub30;
-import rs.tex.Class14_Sub8_Sub34;
-import rs.tex.Static;
-
 public class Class133_Sub6 extends Class133 {
 	public static Class124 aClass124_3632;
 	public double aDouble3633;
@@ -169,7 +164,7 @@ public class Class133_Sub6 extends Class133 {
 
 	public static void method1853(int i, int i_9_) {
 		Class150.aClass52_2406.method1208(i);
-		Class14_Sub8_Sub30.aClass52_4588.method1208(i);
+		JunkTex.aClass52_4588.method1208(i);
 		if (i_9_ != -32768)
 			method1854(-5, -101, 81);
 		Class83.aClass52_1339.method1208(i);
@@ -187,12 +182,12 @@ public class Class133_Sub6 extends Class133 {
 		RT4GL.method1630();
 		BrowserControlUtil.hide();
 		if (i_18_ >= 32) {
-			Static.aFrame3962 = Class138.method1950(i_17_, 95, 0, i, Class14_Sub8_Sub34.aClass43_4647, 0);
-			if (Static.aFrame3962 != null) {
+			JunkTex.aFrame3962 = Class138.method1950(i_17_, 95, 0, i, JunkTex.aClass43_4647, 0);
+			if (JunkTex.aFrame3962 != null) {
 				Static2.anInt2725 = i_17_;
 				Class54.anInt887 = i;
-				Class14_Sub8_Sub22.method595(257411150, Class14_Sub8_Sub34.aClass43_4647);
-				Class14_Sub8_Sub30.method643(0, (byte) -82);
+				JunkTex.method595(257411150, JunkTex.aClass43_4647);
+				JunkTex.method643(0, (byte) -82);
 				Class14_Sub21.method897(110);
 			} else
 				Class14_Sub2_Sub20.method428(121);
@@ -217,7 +212,7 @@ public class Class133_Sub6 extends Class133 {
 		anInt3667 = i_28_;
 		int i_29_ = Class127.method1749(anInt3652, (byte) 66).anInt966;
 		if (i_29_ != -1)
-			aClass46_3638 = Static.method1129(i_29_, -124);
+			aClass46_3638 = JunkTex.method1129(i_29_, -124);
 		else
 			aClass46_3638 = null;
 	}

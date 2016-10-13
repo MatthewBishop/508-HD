@@ -5,16 +5,6 @@ package rs;
 
 import java.util.Calendar;
 
-import rs.tex.Class14_Sub8_Sub11;
-import rs.tex.Class14_Sub8_Sub2;
-import rs.tex.Class14_Sub8_Sub22;
-import rs.tex.Class14_Sub8_Sub31;
-import rs.tex.Class14_Sub8_Sub33;
-import rs.tex.Class14_Sub8_Sub34;
-import rs.tex.Class14_Sub8_Sub36;
-import rs.tex.Class14_Sub8_Sub8;
-import rs.tex.Static;
-
 public class Class153 {
 	public int anInt2441;
 	public static byte aByte2442;
@@ -46,7 +36,7 @@ public class Class153 {
 					if (class133_sub5.aBoolean3621)
 						class14_sub2_sub7.unlink();
 					else
-						Class14_Sub8_Sub8.method519(class133_sub5.anInt3620, class133_sub5.anInt3622,
+						JunkTex.method519(class133_sub5.anInt3620, class133_sub5.anInt3622,
 								class133_sub5.anInt3631, class133_sub5.anInt3629, 60, class133_sub5, 0, -1L, false);
 				}
 			} else
@@ -57,15 +47,15 @@ public class Class153 {
 	public static Class124 method2047(int i, int i_3_, int i_4_) {
 		int i_5_ = i_3_ - i_4_;
 		if (i_5_ < -9) {
-			Class124 class124 = Class14_Sub8_Sub33.aClass124_4634;
+			Class124 class124 = JunkTex.aClass124_4634;
 			return class124;
 		}
 		if (i_5_ < -6) {
-			Class124 class124 = Class14_Sub8_Sub34.aClass124_4653;
+			Class124 class124 = JunkTex.aClass124_4653;
 			return class124;
 		}
 		if (i_5_ < -3) {
-			Class124 class124 = Static.aClass124_857;
+			Class124 class124 = JunkTex.aClass124_857;
 			return class124;
 		}
 		if (i_5_ < 0) {
@@ -77,11 +67,11 @@ public class Class153 {
 			return class124;
 		}
 		if (i_5_ > 9) {
-			Class124 class124 = Class14_Sub8_Sub2.aClass124_4116;
+			Class124 class124 = JunkTex.aClass124_4116;
 			return class124;
 		}
 		if (i_5_ > 6) {
-			Class124 class124 = Class14_Sub8_Sub22.aClass124_4452;
+			Class124 class124 = JunkTex.aClass124_4452;
 			return class124;
 		}
 		if (i_5_ > 3) {
@@ -89,10 +79,10 @@ public class Class153 {
 			return class124;
 		}
 		if (i_5_ > 0) {
-			Class124 class124 = Class14_Sub8_Sub11.aClass124_4265;
+			Class124 class124 = JunkTex.aClass124_4265;
 			return class124;
 		}
-		Class124 class124 = Class14_Sub8_Sub36.aClass124_4694;
+		Class124 class124 = JunkTex.aClass124_4694;
 		return class124;
 	}
 
@@ -106,7 +96,7 @@ public class Class153 {
 
 	public static void method2049(int i, int i_6_, int i_7_) {
 		if (i_7_ != (Class14_Sub23.anInt3135 ^ 0xffffffff) && i != -1) {
-			Class33.method1087(1936, 0, false, i, Class14_Sub8_Sub31.aClass9_Sub1_4603, Class14_Sub23.anInt3135);
+			Class33.method1087(1936, 0, false, i, JunkTex.aClass9_Sub1_4603, Class14_Sub23.anInt3135);
 			Class14_Sub7.aBoolean2827 = true;
 		}
 	}
@@ -119,7 +109,7 @@ public class Class153 {
 			method2048(98);
 		int i_18_ = (-i_12_ + i_9_ << 16) / i_16_;
 		int i_19_ = (-i_14_ + i_11_ << 16) / i_17_;
-		Static.method75(0, i, i_8_, i_19_, i_15_, i_14_, i_12_, i_18_, 83, i_13_, 0);
+		JunkTex.method75(0, i, i_8_, i_19_, i_15_, i_14_, i_12_, i_18_, 83, i_13_, 0);
 	}
 
 	public Class153(int i, int i_20_, int i_21_, int i_22_, int i_23_, int i_24_, boolean bool) {

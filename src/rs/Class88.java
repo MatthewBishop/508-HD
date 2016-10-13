@@ -5,12 +5,6 @@ package rs;
 
 import com.jagex.link.HashTable;
 
-import rs.tex.Class14_Sub8_Sub11;
-import rs.tex.Class14_Sub8_Sub13;
-import rs.tex.Class14_Sub8_Sub16;
-import rs.tex.Class14_Sub8_Sub30;
-import rs.tex.Static;
-
 public class Class88 {
 	public int anInt1396;
 	public int anInt1397;
@@ -21,12 +15,12 @@ public class Class88 {
 	public static void method1435(byte i) {
 		Canvas_Sub1.method59((byte) -115);
 		Class44.method1156((byte) -54);
-		Class14_Sub8_Sub11.method530((byte) -11);
+		JunkTex.method530((byte) -11);
 		Class124.method1718(48);
 		Class96.method1488(2);
-		Class14_Sub8_Sub13.method544((byte) 124);
+		JunkTex.method544((byte) 124);
 		Class116.method1598(58);
-		Class14_Sub8_Sub16.method560(-12501);
+		JunkTex.method560(-12501);
 		Class90.method1443(2);
 		int i_0_ = -49 / ((90 - i) / 36);
 		Class24.method991((byte) -2);
@@ -34,16 +28,16 @@ public class Class88 {
 		Class14_Sub30.method941((byte) 11);
 		Class7_Sub3.method134(0);
 		Class133.method1789((byte) -115);
-		Class14_Sub8_Sub30.aClass52_4596.method1209();
+		JunkTex.aClass52_4596.method1209();
 	}
 
 	public static void method1436(byte i) {
-		Static.aClass14_Sub10_Sub1_891.writeOpcode(129);
+		JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(129);
 		if (i >= -50)
 			method1439(11, -123, -108, 106);
-		Static.aClass14_Sub10_Sub1_891.method809(Class1.method73((byte) -58));
-		Static.aClass14_Sub10_Sub1_891.method833((byte) 109, Class83.anInt1340);
-		Static.aClass14_Sub10_Sub1_891.method833((byte) 94, Class14_Sub20.anInt3094);
+		JunkTex.aClass14_Sub10_Sub1_891.method809(Class1.method73((byte) -58));
+		JunkTex.aClass14_Sub10_Sub1_891.method833((byte) 109, Class83.anInt1340);
+		JunkTex.aClass14_Sub10_Sub1_891.method833((byte) 94, Class14_Sub20.anInt3094);
 		Class56_Sub1.aLong3317 = 0L;
 	}
 

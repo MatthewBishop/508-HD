@@ -14,16 +14,6 @@ import com.jagex.rt4.RT4;
 import com.jagex.rt4.lights.LightManager;
 import com.jagex.rt4.lights.Light;
 
-import rs.tex.Class14_Sub8_Sub16;
-import rs.tex.Class14_Sub8_Sub19;
-import rs.tex.Class14_Sub8_Sub23;
-import rs.tex.Class14_Sub8_Sub26;
-import rs.tex.Class14_Sub8_Sub28;
-import rs.tex.Class14_Sub8_Sub6;
-import rs.tex.Class14_Sub8_Sub7;
-import rs.tex.Class14_Sub8_Sub9;
-import rs.tex.Static;
-
 public class Class63 {
 	public static int anInt998;
 	public static Class148_Sub1 aClass148_Sub1_999 = null;
@@ -43,15 +33,15 @@ public class Class63 {
 	}
 
 	public static void method1276(int i) {
-		Class14_Sub8_Sub28.method627(false);
+		JunkTex.method627(false);
 		Class56.method1240();
 		Class47.method1184();
 		RuntimeException_Sub1.aClass14_Sub27ArrayArray2464 = Class14_Sub30.aClass14_Sub27ArrayArray3273 = new Class14_Sub27[4][];
 		Class133_Sub6.aClass14_Sub2_Sub19_3640 = null;
-		Class14_Sub8_Sub7.anInt4207 = -1;
+		JunkTex.anInt4207 = -1;
 		Class14_Sub3.method451(0);
 		Class14_Sub2_Sub6.aClass20_3819.clear();
-		Class14_Sub8_Sub16.aClass86_4351 = new Class86();
+		JunkTex.aClass86_4351 = new Class86();
 		((Class134) Class3.anInterface3_117).method1927(0);
 		LightManager.lights = new Light[255];
 		LightManager.lightCount = 0;
@@ -63,7 +53,7 @@ public class Class63 {
 		Class37.method1108((byte) 103);
 		Class69.method1311((byte) 120);
 		for (int i_0_ = 0; i_0_ < 2048; i_0_++) {
-			Class133_Sub1_Sub1 class133_sub1_sub1 = Class14_Sub8_Sub23.aClass133_Sub1_Sub1Array4474[i_0_];
+			Class133_Sub1_Sub1 class133_sub1_sub1 = JunkTex.aClass133_Sub1_Sub1Array4474[i_0_];
 			if (class133_sub1_sub1 != null)
 				class133_sub1_sub1.aClass133_Sub7_4933 = null;
 		}
@@ -73,15 +63,15 @@ public class Class63 {
 
 	public static void method1277(int i, Class9_Sub1 class9_sub1, int i_1_, Class114 class114) {
 		byte[] is = null;
-		Deque deque = Class14_Sub8_Sub19.aClass2_4404;
+		Deque deque = JunkTex.aClass2_4404;
 		synchronized (deque) {
 			if (i != -5761)
 				method1284((byte) -35, 50, -93);
-			Class14_Sub19 class14_sub19 = (Class14_Sub19) Class14_Sub8_Sub19.aClass2_4404.getFront();
+			Class14_Sub19 class14_sub19 = (Class14_Sub19) JunkTex.aClass2_4404.getFront();
 			while (class14_sub19 != null) {
 				if ((long) i_1_ != class14_sub19.key || class14_sub19.aClass114_3077 != class114
 						|| class14_sub19.anInt3067 != 0)
-					class14_sub19 = ((Class14_Sub19) Class14_Sub8_Sub19.aClass2_4404.getNext());
+					class14_sub19 = ((Class14_Sub19) JunkTex.aClass2_4404.getNext());
 				else {
 					is = class14_sub19.aByteArray3069;
 					break;
@@ -97,13 +87,13 @@ public class Class63 {
 	}
 
 	public static void method1278(int i) {
-		Static.overlayTypes = null;
+		JunkTex.overlayTypes = null;
 		Class115.anIntArray1917 = null;
 		Class66.anIntArrayArrayArray135 = null;
 		if (i <= -45) {
 			Class15.overlayOrientations = null;
 			Static2.aByteArrayArrayArray3354 = null;
-			Class14_Sub8_Sub6.overlays = null;
+			JunkTex.overlays = null;
 			Class97.underlays = null;
 			Class21.anIntArray442 = null;
 			Static2.anIntArray4023 = null;
@@ -137,9 +127,9 @@ public class Class63 {
 	}
 
 	public static void method1280(Component component, byte i) {
-		component.removeKeyListener(Class14_Sub8_Sub9.aClass141_4239);
+		component.removeKeyListener(JunkTex.aClass141_4239);
 		int i_6_ = -25 / ((60 - i) / 62);
-		component.removeFocusListener(Class14_Sub8_Sub9.aClass141_4239);
+		component.removeFocusListener(JunkTex.aClass141_4239);
 		Class120.anInt2014 = -1;
 	}
 
@@ -165,7 +155,7 @@ public class Class63 {
 				byte[] is_7_ = is;
 				return is_7_;
 			}
-			byte[] is_8_ = Class14_Sub8_Sub26.method616(is, 84);
+			byte[] is_8_ = JunkTex.method616(is, 84);
 			return is_8_;
 		}
 		if (object instanceof Class126) {

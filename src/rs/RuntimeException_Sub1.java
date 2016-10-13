@@ -6,9 +6,6 @@ package rs;
 import com.jagex.io.Buffer;
 import com.jagex.rt4.Class14_Sub27;
 
-import rs.tex.Class14_Sub8_Sub4;
-import rs.tex.Static;
-
 public class RuntimeException_Sub1 extends RuntimeException {
 	public static Class124 aClass124_2455 = Class14_Sub2_Sub2.method263(1178, "Loading wordpack )2 ");
 	public static Class124 aClass124_2456;
@@ -96,12 +93,12 @@ public class RuntimeException_Sub1 extends RuntimeException {
 							Class32 class32 = null;
 							if (!bool) {
 								int i_24_ = i_10_;
-								if (((Class14_Sub8_Sub4.tileFlags[1][i_22_][i_23_]) & 0x2) == 2)
+								if (((JunkTex.tileFlags[1][i_22_][i_23_]) & 0x2) == 2)
 									i_24_--;
 								if (i_24_ >= 0)
 									class32 = class32s[i_24_];
 							}
-							Static.method1235(bool, i_21_ + i & 0x3, !bool, (byte) 50, class32, i_10_, i_23_, i_20_,
+							JunkTex.method1235(bool, i_21_ + i & 0x3, !bool, (byte) 50, class32, i_10_, i_23_, i_20_,
 									i_22_, i_12_, i_10_);
 						}
 					}

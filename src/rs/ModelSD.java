@@ -7,9 +7,6 @@ import com.jagex.cache.anim.AnimFrame;
 import com.jagex.cache.anim.AnimFrameBase;
 import com.jagex.cache.loaders.AnimFrameLoader;
 
-import rs.tex.Class14_Sub8_Sub27;
-import rs.tex.Static;
-
 public class ModelSD extends Class133_Sub7 {
 	public short aShort4954;
 	public int anInt4955 = 0;
@@ -291,9 +288,9 @@ public class ModelSD extends Class133_Sub7 {
 			if (i_60_ < 3500) {
 				int i_61_ = i_56_ * i_52_ + i_54_ * i_53_ >> 16;
 				int i_62_ = i_61_ + aShort4963 << 9;
-				if (i_62_ / i_59_ > Static.anInt425) {
+				if (i_62_ / i_59_ > JunkTex.anInt425) {
 					int i_63_ = i_61_ - aShort4963 << 9;
-					if (i_63_ / i_59_ < Class14_Sub8_Sub27.anInt4547) {
+					if (i_63_ / i_59_ < JunkTex.anInt4547) {
 						int i_64_ = i_55_ * i_51_ - i_57_ * i_50_ >> 16;
 						int i_65_ = (i_64_ + (aShort4963 * i_50_ + aShort4979 * i_51_ >> 16) << 9);
 						if (i_65_ / i_59_ > Class58.anInt948) {

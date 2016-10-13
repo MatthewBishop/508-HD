@@ -9,8 +9,6 @@ import java.net.URL;
 import com.jagex.link.Deque;
 import com.jagex.util.Util;
 
-import rs.tex.Class14_Sub8_Sub32;
-
 public class Class14_Sub9_Sub3 extends Class14_Sub9 {
 	public static int anInt4843;
 	public static Class124 aClass124_4844;
@@ -161,7 +159,7 @@ public class Class14_Sub9_Sub3 extends Class14_Sub9 {
 				try {
 					Class31 class31 = (Static2.aClass43_358.method1147((byte) -119, new URL(
 							Static2.aClass43_358.applet.getCodeBase(),
-							new StringBuilder("clienterror.ws?c=").append(Class14_Sub8_Sub32.anInt4614).append("&u=")
+							new StringBuilder("clienterror.ws?c=").append(JunkTex.anInt4614).append("&u=")
 									.append(Class48.aLong802).append("&v1=").append(Class43.java_vendor).append("&v2=")
 									.append(Class43.java_version).append("&e=").append(string_11_).toString())));
 					while (class31.anInt529 == 0)

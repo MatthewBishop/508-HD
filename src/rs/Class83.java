@@ -6,9 +6,6 @@ package rs;
 import com.jagex.cache.anim.Animation;
 import com.jagex.link.ref.SoftCache;
 
-import rs.tex.Class14_Sub8_Sub6;
-import rs.tex.Static;
-
 public class Class83 {
 	public static Class9 aClass9_1335;
 	public static int anInt1338;
@@ -26,21 +23,21 @@ public class Class83 {
 
 	public static void method1408(Class133_Sub1_Sub1 class133_sub1_sub1, int i, boolean bool, int i_1_) {
 		if (i_1_ == class133_sub1_sub1.anInt3445 && i_1_ != -1) {
-			Animation animation = Static.method1129(i_1_, -128);
+			Animation animation = JunkTex.method1129(i_1_, -128);
 			int i_2_ = animation.anInt753;
 			if (i_2_ == 1) {
 				class133_sub1_sub1.anInt3458 = 0;
 				class133_sub1_sub1.anInt3467 = i;
 				class133_sub1_sub1.anInt3501 = 0;
 				class133_sub1_sub1.anInt3482 = 0;
-				Class14_Sub8_Sub6.method509(class133_sub1_sub1.anInt3495, class133_sub1_sub1.anInt3501, 59,
+				JunkTex.method509(class133_sub1_sub1.anInt3495, class133_sub1_sub1.anInt3501, 59,
 						((Class14_Sub3.aClass133_Sub1_Sub1_2748) == class133_sub1_sub1), animation,
 						class133_sub1_sub1.anInt3436);
 			}
 			if (i_2_ == 2)
 				class133_sub1_sub1.anInt3482 = 0;
-		} else if (i_1_ == -1 || class133_sub1_sub1.anInt3445 == -1 || (Static.method1129(i_1_,
-				-119).anInt777 >= (Static.method1129(class133_sub1_sub1.anInt3445, 92).anInt777))) {
+		} else if (i_1_ == -1 || class133_sub1_sub1.anInt3445 == -1 || (JunkTex.method1129(i_1_,
+				-119).anInt777 >= (JunkTex.method1129(class133_sub1_sub1.anInt3445, 92).anInt777))) {
 			class133_sub1_sub1.anInt3467 = i;
 			class133_sub1_sub1.anInt3458 = 0;
 			class133_sub1_sub1.anInt3501 = 0;
@@ -48,9 +45,9 @@ public class Class83 {
 			class133_sub1_sub1.anInt3482 = 0;
 			class133_sub1_sub1.anInt3445 = i_1_;
 			if (class133_sub1_sub1.anInt3445 != -1)
-				Class14_Sub8_Sub6.method509(class133_sub1_sub1.anInt3495, class133_sub1_sub1.anInt3501, -115,
+				JunkTex.method509(class133_sub1_sub1.anInt3495, class133_sub1_sub1.anInt3501, -115,
 						(class133_sub1_sub1 == Class14_Sub3.aClass133_Sub1_Sub1_2748),
-						Static.method1129(class133_sub1_sub1.anInt3445, 87), class133_sub1_sub1.anInt3436);
+						JunkTex.method1129(class133_sub1_sub1.anInt3445, 87), class133_sub1_sub1.anInt3436);
 		}
 	}
 

@@ -3,8 +3,6 @@
  */
 package rs;
 
-import rs.tex.Class14_Sub8_Sub6;
-
 public class Class96 {
 	public static int[] anIntArray1630 = new int[2];
 	public static Class124 aClass124_1631 = Class14_Sub2_Sub2.method263(1178, "name_icons");
@@ -30,7 +28,7 @@ public class Class96 {
 		Class14_Sub14.aClass52_2982.method1209();
 		if (i == 2) {
 			Class37.aClass52_635.method1209();
-			Class14_Sub8_Sub6.aClass52_4186.method1209();
+			JunkTex.aClass52_4186.method1209();
 		}
 	}
 }

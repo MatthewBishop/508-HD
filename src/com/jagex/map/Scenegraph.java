@@ -14,8 +14,8 @@ import rs.Class4;
 import rs.Class53;
 import rs.Class67;
 import rs.Class98;
+import rs.JunkTex;
 import rs.Static2;
-import rs.tex.Static;
 
 public class Scenegraph {
 	public static SceneCluster[] clusters = new SceneCluster[500];
@@ -64,14 +64,14 @@ public class Scenegraph {
 				}
 			}
 			if (scenecluster.type == 1) {
-				int i_7_ = (scenecluster.minTileX - Static2.cameraTileX + Static.anInt1108);
-				if (i_7_ >= 0 && i_7_ <= Static.anInt1108 + Static.anInt1108) {
-					int i_8_ = (scenecluster.minTileZ - Class102.cameraTileZ + Static.anInt1108);
+				int i_7_ = (scenecluster.minTileX - Static2.cameraTileX + JunkTex.anInt1108);
+				if (i_7_ >= 0 && i_7_ <= JunkTex.anInt1108 + JunkTex.anInt1108) {
+					int i_8_ = (scenecluster.minTileZ - Class102.cameraTileZ + JunkTex.anInt1108);
 					if (i_8_ < 0)
 						i_8_ = 0;
-					int i_9_ = (scenecluster.maxTileZ - Class102.cameraTileZ + Static.anInt1108);
-					if (i_9_ > Static.anInt1108 + Static.anInt1108)
-						i_9_ = Static.anInt1108 + Static.anInt1108;
+					int i_9_ = (scenecluster.maxTileZ - Class102.cameraTileZ + JunkTex.anInt1108);
+					if (i_9_ > JunkTex.anInt1108 + JunkTex.anInt1108)
+						i_9_ = JunkTex.anInt1108 + JunkTex.anInt1108;
 					boolean bool = false;
 					while_171_: do {
 						do {
@@ -98,14 +98,14 @@ public class Scenegraph {
 					}
 				}
 			} else if (scenecluster.type == 2) {
-				int i_11_ = (scenecluster.minTileZ - Class102.cameraTileZ + Static.anInt1108);
-				if (i_11_ >= 0 && i_11_ <= Static.anInt1108 + Static.anInt1108) {
-					int i_12_ = (scenecluster.minTileX - Static2.cameraTileX + Static.anInt1108);
+				int i_11_ = (scenecluster.minTileZ - Class102.cameraTileZ + JunkTex.anInt1108);
+				if (i_11_ >= 0 && i_11_ <= JunkTex.anInt1108 + JunkTex.anInt1108) {
+					int i_12_ = (scenecluster.minTileX - Static2.cameraTileX + JunkTex.anInt1108);
 					if (i_12_ < 0)
 						i_12_ = 0;
-					int i_13_ = (scenecluster.maxTileX - Static2.cameraTileX + Static.anInt1108);
-					if (i_13_ > Static.anInt1108 + Static.anInt1108)
-						i_13_ = Static.anInt1108 + Static.anInt1108;
+					int i_13_ = (scenecluster.maxTileX - Static2.cameraTileX + JunkTex.anInt1108);
+					if (i_13_ > JunkTex.anInt1108 + JunkTex.anInt1108)
+						i_13_ = JunkTex.anInt1108 + JunkTex.anInt1108;
 					boolean bool = false;
 					while_172_: do {
 						do {
@@ -134,19 +134,19 @@ public class Scenegraph {
 			} else if (scenecluster.type == 4) {
 				int i_15_ = scenecluster.minY - Static2.anInt2741;
 				if (i_15_ > 128) {
-					int i_16_ = (scenecluster.minTileZ - Class102.cameraTileZ + Static.anInt1108);
+					int i_16_ = (scenecluster.minTileZ - Class102.cameraTileZ + JunkTex.anInt1108);
 					if (i_16_ < 0)
 						i_16_ = 0;
-					int i_17_ = (scenecluster.maxTileZ - Class102.cameraTileZ + Static.anInt1108);
-					if (i_17_ > Static.anInt1108 + Static.anInt1108)
-						i_17_ = Static.anInt1108 + Static.anInt1108;
+					int i_17_ = (scenecluster.maxTileZ - Class102.cameraTileZ + JunkTex.anInt1108);
+					if (i_17_ > JunkTex.anInt1108 + JunkTex.anInt1108)
+						i_17_ = JunkTex.anInt1108 + JunkTex.anInt1108;
 					if (i_16_ <= i_17_) {
-						int i_18_ = (scenecluster.minTileX - Static2.cameraTileX + Static.anInt1108);
+						int i_18_ = (scenecluster.minTileX - Static2.cameraTileX + JunkTex.anInt1108);
 						if (i_18_ < 0)
 							i_18_ = 0;
-						int i_19_ = (scenecluster.maxTileX - Static2.cameraTileX + Static.anInt1108);
-						if (i_19_ > Static.anInt1108 + Static.anInt1108)
-							i_19_ = Static.anInt1108 + Static.anInt1108;
+						int i_19_ = (scenecluster.maxTileX - Static2.cameraTileX + JunkTex.anInt1108);
+						if (i_19_ > JunkTex.anInt1108 + JunkTex.anInt1108)
+							i_19_ = JunkTex.anInt1108 + JunkTex.anInt1108;
 						boolean bool = false;
 						while_173_: for (int i_20_ = i_18_; i_20_ <= i_19_; i_20_++) {
 							for (int i_21_ = i_16_; i_21_ <= i_17_; i_21_++) {
@@ -245,7 +245,7 @@ public class Scenegraph {
 	}
 
 	public static boolean method1529(int i, int i_7_, int i_8_) {
-		int i_9_ = Static.anIntArrayArrayArray2724[i][i_7_][i_8_];
+		int i_9_ = JunkTex.anIntArrayArrayArray2724[i][i_7_][i_8_];
 		if (i_9_ == -Class67.anInt1059)
 			return false;
 		if (i_9_ == Class67.anInt1059)
@@ -257,10 +257,10 @@ public class Scenegraph {
 				&& method1310(i_10_ + 128 - 1, (Class114.tileHeights[i][i_7_ + 1][i_8_ + 1]),
 						i_11_ + 128 - 1)
 				&& method1310(i_10_ + 1, Class114.tileHeights[i][i_7_][i_8_ + 1], i_11_ + 128 - 1)) {
-			Static.anIntArrayArrayArray2724[i][i_7_][i_8_] = Class67.anInt1059;
+			JunkTex.anIntArrayArrayArray2724[i][i_7_][i_8_] = Class67.anInt1059;
 			return true;
 		}
-		Static.anIntArrayArrayArray2724[i][i_7_][i_8_] = -Class67.anInt1059;
+		JunkTex.anIntArrayArrayArray2724[i][i_7_][i_8_] = -Class67.anInt1059;
 		return false;
 	}
 

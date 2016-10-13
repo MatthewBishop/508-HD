@@ -5,8 +5,6 @@ package rs;
 
 import com.jagex.util.Timer;
 
-import rs.tex.Class14_Sub8_Sub35;
-
 public class Class48 {
 	public static Class124 aClass124_797;
 	public static int anInt798 = -1;
@@ -27,7 +25,7 @@ public class Class48 {
 			method1192(-124, 3);
 		for (/**/; i_0_ < 5; i_0_++)
 			Class112.aBooleanArray1872[i_0_] = false;
-		Class14_Sub8_Sub35.anInt4687 = -1;
+		JunkTex.anInt4687 = -1;
 		Class45.anInt751 = -1;
 		Class89.anInt1415 = 1;
 	}

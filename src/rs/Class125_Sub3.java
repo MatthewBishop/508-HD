@@ -5,8 +5,6 @@ package rs;
 
 import com.jagex.cache.anim.Animation;
 
-import rs.tex.Static;
-
 public class Class125_Sub3 extends Class125 {
 	public int anInt3390;
 	public static int[][] anIntArrayArray3391;
@@ -62,7 +60,7 @@ public class Class125_Sub3 extends Class125 {
 							else
 								i_2_ = class94.anInt1533;
 							if (i_2_ != -1) {
-								Animation animation = Static.method1129(i_2_, -16);
+								Animation animation = JunkTex.method1129(i_2_, -16);
 								if (animation != null) {
 									class94.anInt1603 += Class51.anInt839;
 									while (class94.anInt1603 > (animation.anIntArray763[class94.anInt1610])) {

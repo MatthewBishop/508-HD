@@ -16,8 +16,8 @@ import rs.Class120;
 import rs.Class66;
 import rs.Class9;
 import rs.Interface3;
+import rs.JunkTex;
 import rs.Static2;
-import rs.tex.Class14_Sub8_Sub26;
 
 public class Class14_Sub2_Sub1 extends Cacheable {
 	public boolean aBoolean3726;
@@ -209,9 +209,9 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 				for (int i_33_ = 2; i_33_ >= 0; i_33_--) {
 					for (int i_34_ = i_30_; i_34_ >= 0; i_34_--) {
 						int i_35_ = anIntArray3745[--i_29_];
-						is[i_34_] += (Class14_Sub8_Sub26.method617(i_35_, 16770996) >> 16);
-						is_23_[i_34_] += (Class14_Sub8_Sub26.method617(i_35_, 65357) >> 40);
-						is_24_[i_34_] += Class14_Sub8_Sub26.method617(i_35_, 255);
+						is[i_34_] += (JunkTex.method617(i_35_, 16770996) >> 16);
+						is_23_[i_34_] += (JunkTex.method617(i_35_, 65357) >> 40);
+						is_24_[i_34_] += JunkTex.method617(i_35_, 255);
 					}
 					if (i_29_ == 0)
 						i_29_ = i_31_;
@@ -249,12 +249,12 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 					for (int i_48_ = i_30_; i_48_ >= 0; i_48_--) {
 						int i_49_ = anIntArray3745[--i_28_];
 						int i_50_ = anIntArray3745[--i_29_];
-						is[i_48_] += (-Class14_Sub8_Sub26.method617(i_49_ >> 48, 255)
-								+ Class14_Sub8_Sub26.method617(i_50_ >> 16, 255));
-						is_23_[i_48_] += (-Class14_Sub8_Sub26.method617(i_49_ >> 40, 255)
-								+ Class14_Sub8_Sub26.method617(255, i_50_ >> 8));
-						is_24_[i_48_] += (Class14_Sub8_Sub26.method617(255, i_50_)
-								- Class14_Sub8_Sub26.method617(255, i_49_));
+						is[i_48_] += (-JunkTex.method617(i_49_ >> 48, 255)
+								+ JunkTex.method617(i_50_ >> 16, 255));
+						is_23_[i_48_] += (-JunkTex.method617(i_49_ >> 40, 255)
+								+ JunkTex.method617(255, i_50_ >> 8));
+						is_24_[i_48_] += (JunkTex.method617(255, i_50_)
+								- JunkTex.method617(255, i_49_));
 					}
 					if (i_29_ == 0)
 						i_29_ = i_31_;

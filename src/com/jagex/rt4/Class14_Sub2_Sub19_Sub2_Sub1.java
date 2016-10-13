@@ -7,7 +7,7 @@ import java.nio.ByteBuffer;
 
 import javax.media.opengl.GL;
 
-import rs.tex.Class14_Sub8_Sub33;
+import rs.JunkTex;
 
 public class Class14_Sub2_Sub19_Sub2_Sub1 extends Class14_Sub2_Sub19_Sub2 {
 	public Class14_Sub2_Sub19_Sub2_Sub1(Class14_Sub2_Sub19_Sub1 class14_sub2_sub19_sub1) {
@@ -20,8 +20,8 @@ public class Class14_Sub2_Sub19_Sub2_Sub1 extends Class14_Sub2_Sub19_Sub2 {
 
 	@Override
 	public void draw(int[] texels) {
-		width = Class14_Sub8_Sub33.method653(anInt4035);
-		height = Class14_Sub8_Sub33.method653(anInt4042);
+		width = JunkTex.method653(anInt4035);
+		height = JunkTex.method653(anInt4042);
 		byte[] pix = new byte[width * height * 4];
 		int pntr = 0;
 		int cntr = 0;

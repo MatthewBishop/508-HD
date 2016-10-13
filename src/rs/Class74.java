@@ -3,8 +3,6 @@
  */
 package rs;
 
-import rs.tex.Class14_Sub8_Sub12;
-
 public class Class74 {
 	public static Class133_Sub2[] aClass133_Sub2Array1134 = new Class133_Sub2[4];
 	public static int[] anIntArray1135;
@@ -26,7 +24,7 @@ public class Class74 {
 
 	public static void method1333(int i, byte i_0_, int i_1_) {
 		if (i_0_ == 46 && Class126.method1741((byte) 90, i))
-			Class14_Sub8_Sub12.method539(i_0_ - 2081454114, Class1.aClass94ArrayArray75[i], i_1_);
+			JunkTex.method539(i_0_ - 2081454114, Class1.aClass94ArrayArray75[i], i_1_);
 	}
 
 	public static void method1334(byte i) {

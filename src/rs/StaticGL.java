@@ -13,11 +13,6 @@ import com.jagex.rt4.GLEffect3;
 import com.jagex.rt4.RT4;
 import com.jagex.rt4.lights.LightManager;
 
-import rs.tex.Class14_Sub8_Sub26;
-import rs.tex.Class14_Sub8_Sub35;
-import rs.tex.Class14_Sub8_Sub37;
-import rs.tex.Static;
-
 public class StaticGL {
 	public static void method1409() {
 		GL gl = RT4GL.gl;
@@ -53,12 +48,12 @@ public class StaticGL {
 		int i_28_ = i_24_ + 16;
 		for (int i_29_ = Class14_Sub23.anInt3134; i_29_ < Class83.anInt1338; i_29_++) {
 			Class14_Sub29[][] class14_sub29s = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_29_];
-			for (int i_30_ = Class7_Sub1.anInt2659; i_30_ < Class14_Sub8_Sub37.anInt4722; i_30_++) {
-				for (int i_31_ = Class14_Sub9_Sub3.anInt4849; i_31_ < Class14_Sub8_Sub26.anInt4526; i_31_++) {
+			for (int i_30_ = Class7_Sub1.anInt2659; i_30_ < JunkTex.anInt4722; i_30_++) {
+				for (int i_31_ = Class14_Sub9_Sub3.anInt4849; i_31_ < JunkTex.anInt4526; i_31_++) {
 					Class14_Sub29 class14_sub29 = class14_sub29s[i_30_][i_31_];
 					if (class14_sub29 != null) {
-						if (!(Class53.visibilityMap[i_30_ - Static2.cameraTileX + Static.anInt1108][(i_31_
-								- Class102.cameraTileZ + Static.anInt1108)])
+						if (!(Class53.visibilityMap[i_30_ - Static2.cameraTileX + JunkTex.anInt1108][(i_31_
+								- Class102.cameraTileZ + JunkTex.anInt1108)])
 								|| (is != null && i_29_ >= i_21_ && is[i_29_][i_30_][i_31_] == i_22_)) {
 							class14_sub29.aBoolean3235 = false;
 							class14_sub29.aBoolean3240 = false;
@@ -116,7 +111,7 @@ public class StaticGL {
 			Class14_Sub30.aBoolean3269 = true;
 			GLEffect3.enableTexCoordArray();
 			Class7_Sub1.anInt2653 = -1;
-			Class14_Sub8_Sub35.anInt4675 = -1;
+			JunkTex.anInt4675 = -1;
 			for (int i_33_ = 0; i_33_ < (RuntimeException_Sub1.aClass14_Sub27ArrayArray2464[0]).length; i_33_++) {
 				Class14_Sub27 class14_sub27 = (RuntimeException_Sub1.aClass14_Sub27ArrayArray2464[0][i_33_]);
 				float f = 251.5F - (class14_sub27.aBoolean3201 ? 1.0F : 0.5F);
@@ -141,7 +136,7 @@ public class StaticGL {
 				}
 				if (i_34_ == 0 && Class89.anInt1413 > 0) {
 					RT4GL.method1640(101.5F);
-					ShadowManager.method2038(Static2.cameraTileX, Class102.cameraTileZ, Static.anInt1108, i_19_,
+					ShadowManager.method2038(Static2.cameraTileX, Class102.cameraTileZ, JunkTex.anInt1108, i_19_,
 							Class53.visibilityMap, Class114.tileHeights[0]);
 				}
 			}
@@ -151,11 +146,11 @@ public class StaticGL {
 		gl.glPopMatrix();
 		for (int i_36_ = Class14_Sub23.anInt3134; i_36_ < Class83.anInt1338; i_36_++) {
 			Class14_Sub29[][] class14_sub29s = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_36_];
-			for (int i_37_ = -Static.anInt1108; i_37_ <= 0; i_37_++) {
+			for (int i_37_ = -JunkTex.anInt1108; i_37_ <= 0; i_37_++) {
 				int i_38_ = Static2.cameraTileX + i_37_;
 				int i_39_ = Static2.cameraTileX - i_37_;
-				if (i_38_ >= Class7_Sub1.anInt2659 || i_39_ < Class14_Sub8_Sub37.anInt4722) {
-					for (int i_40_ = -Static.anInt1108; i_40_ <= 0; i_40_++) {
+				if (i_38_ >= Class7_Sub1.anInt2659 || i_39_ < JunkTex.anInt4722) {
+					for (int i_40_ = -JunkTex.anInt1108; i_40_ <= 0; i_40_++) {
 						int i_41_ = Class102.cameraTileZ + i_40_;
 						int i_42_ = Class102.cameraTileZ - i_40_;
 						if (i_38_ >= Class7_Sub1.anInt2659) {
@@ -164,19 +159,19 @@ public class StaticGL {
 								if (class14_sub29 != null && class14_sub29.aBoolean3235)
 									Class14_Sub4.method454(class14_sub29, true);
 							}
-							if (i_42_ < Class14_Sub8_Sub26.anInt4526) {
+							if (i_42_ < JunkTex.anInt4526) {
 								Class14_Sub29 class14_sub29 = class14_sub29s[i_38_][i_42_];
 								if (class14_sub29 != null && class14_sub29.aBoolean3235)
 									Class14_Sub4.method454(class14_sub29, true);
 							}
 						}
-						if (i_39_ < Class14_Sub8_Sub37.anInt4722) {
+						if (i_39_ < JunkTex.anInt4722) {
 							if (i_41_ >= Class14_Sub9_Sub3.anInt4849) {
 								Class14_Sub29 class14_sub29 = class14_sub29s[i_39_][i_41_];
 								if (class14_sub29 != null && class14_sub29.aBoolean3235)
 									Class14_Sub4.method454(class14_sub29, true);
 							}
-							if (i_42_ < Class14_Sub8_Sub26.anInt4526) {
+							if (i_42_ < JunkTex.anInt4526) {
 								Class14_Sub29 class14_sub29 = class14_sub29s[i_39_][i_42_];
 								if (class14_sub29 != null && class14_sub29.aBoolean3235)
 									Class14_Sub4.method454(class14_sub29, true);
@@ -193,11 +188,11 @@ public class StaticGL {
 		}
 		for (int i_43_ = Class14_Sub23.anInt3134; i_43_ < Class83.anInt1338; i_43_++) {
 			Class14_Sub29[][] class14_sub29s = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_43_];
-			for (int i_44_ = -Static.anInt1108; i_44_ <= 0; i_44_++) {
+			for (int i_44_ = -JunkTex.anInt1108; i_44_ <= 0; i_44_++) {
 				int i_45_ = Static2.cameraTileX + i_44_;
 				int i_46_ = Static2.cameraTileX - i_44_;
-				if (i_45_ >= Class7_Sub1.anInt2659 || i_46_ < Class14_Sub8_Sub37.anInt4722) {
-					for (int i_47_ = -Static.anInt1108; i_47_ <= 0; i_47_++) {
+				if (i_45_ >= Class7_Sub1.anInt2659 || i_46_ < JunkTex.anInt4722) {
+					for (int i_47_ = -JunkTex.anInt1108; i_47_ <= 0; i_47_++) {
 						int i_48_ = Class102.cameraTileZ + i_47_;
 						int i_49_ = Class102.cameraTileZ - i_47_;
 						if (i_45_ >= Class7_Sub1.anInt2659) {
@@ -206,19 +201,19 @@ public class StaticGL {
 								if (class14_sub29 != null && class14_sub29.aBoolean3235)
 									Class14_Sub4.method454(class14_sub29, false);
 							}
-							if (i_49_ < Class14_Sub8_Sub26.anInt4526) {
+							if (i_49_ < JunkTex.anInt4526) {
 								Class14_Sub29 class14_sub29 = class14_sub29s[i_45_][i_49_];
 								if (class14_sub29 != null && class14_sub29.aBoolean3235)
 									Class14_Sub4.method454(class14_sub29, false);
 							}
 						}
-						if (i_46_ < Class14_Sub8_Sub37.anInt4722) {
+						if (i_46_ < JunkTex.anInt4722) {
 							if (i_48_ >= Class14_Sub9_Sub3.anInt4849) {
 								Class14_Sub29 class14_sub29 = class14_sub29s[i_46_][i_48_];
 								if (class14_sub29 != null && class14_sub29.aBoolean3235)
 									Class14_Sub4.method454(class14_sub29, false);
 							}
-							if (i_49_ < Class14_Sub8_Sub26.anInt4526) {
+							if (i_49_ < JunkTex.anInt4526) {
 								Class14_Sub29 class14_sub29 = class14_sub29s[i_46_][i_49_];
 								if (class14_sub29 != null && class14_sub29.aBoolean3235)
 									Class14_Sub4.method454(class14_sub29, false);

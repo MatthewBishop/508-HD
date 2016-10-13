@@ -40,14 +40,6 @@ import rs.Class7_Sub3_Sub1;
 import rs.Class86;
 import rs.Class92;
 import rs.Interface1;
-import rs.tex.Class14_Sub8_Sub10;
-import rs.tex.Class14_Sub8_Sub14;
-import rs.tex.Class14_Sub8_Sub15;
-import rs.tex.Class14_Sub8_Sub26;
-import rs.tex.Class14_Sub8_Sub27;
-import rs.tex.Class14_Sub8_Sub28;
-import rs.tex.Class14_Sub8_Sub3;
-import rs.tex.Static;
 
 public class Class124 implements Interface1 {
 
@@ -115,7 +107,7 @@ public class Class124 implements Interface1 {
 			++var11;
 		}
 
-		if (var3 < Class14_Sub8_Sub15.anInt4332) {
+		if (var3 < JunkTex.anInt4332) {
 			++var12;
 		}
 
@@ -148,9 +140,9 @@ public class Class124 implements Interface1 {
 					var14 += var8;
 					byte[][] var19 = Class86.aByteArrayArrayArray1383[var17];
 					byte[][] var20 = Class14_Sub2_Sub5.aByteArrayArrayArray3816[var17];
-					byte[][] var21 = Class14_Sub8_Sub10.aByteArrayArrayArray4257[var17];
+					byte[][] var21 = JunkTex.aByteArrayArrayArray4257[var17];
 					byte[][] var22 = Class14_Sub2_Sub9.aByteArrayArrayArray3864[var17];
-					byte[][] var23 = Class14_Sub8_Sub3.aByteArrayArrayArray4130[var17];
+					byte[][] var23 = JunkTex.aByteArrayArrayArray4130[var17];
 
 					for (var24 = 0; var24 < var12; ++var24) {
 						var25 = var24 * var6 + var2 >> 48;
@@ -539,8 +531,8 @@ public class Class124 implements Interface1 {
 		} else {
 			int var2 = this.anInt2507 + 3 & -4;
 			int var3 = var2 / 4 * 3;
-			if (this.anInt2507 > var2 - 2 && Static.method1016(true, this.aByteArray2495[var2 - 2]) != -1) {
-				if (this.anInt2507 <= var2 - 1 || Static.method1016(true, this.aByteArray2495[var2 - 1]) == -1) {
+			if (this.anInt2507 > var2 - 2 && JunkTex.method1016(true, this.aByteArray2495[var2 - 2]) != -1) {
+				if (this.anInt2507 <= var2 - 1 || JunkTex.method1016(true, this.aByteArray2495[var2 - 1]) == -1) {
 					--var3;
 				}
 			} else {
@@ -806,7 +798,7 @@ public class Class124 implements Interface1 {
 	}
 
 	public static void method1682(int var0, int var1) {
-		Class14_Sub2_Sub13 var2 = Class14_Sub8_Sub28.method626(-118, var1, 1);
+		Class14_Sub2_Sub13 var2 = JunkTex.method626(-118, var1, 1);
 		var2.method327();
 		if (var0 != 3163) {
 			method1667(27, 18, -37, 37, 35, 66, -109, -49, 65, -110, 36);
@@ -1245,21 +1237,21 @@ public class Class124 implements Interface1 {
 	public int method1706(int var1, int var2, byte[] var3) {
 		int var4;
 		for (var4 = 0; var4 < this.anInt2507; var4 += 4) {
-			int var5 = Static.method1016(true, this.aByteArray2495[var4]);
-			int var6 = this.anInt2507 > var4 + 1 ? Static.method1016(true, this.aByteArray2495[var4 + 1]) : -1;
-			int var7 = var4 + 2 < this.anInt2507 ? Static.method1016(true, this.aByteArray2495[var4 + 2]) : -1;
-			int var8 = this.anInt2507 > var4 + 3 ? Static.method1016(true, this.aByteArray2495[var4 + 3]) : -1;
+			int var5 = JunkTex.method1016(true, this.aByteArray2495[var4]);
+			int var6 = this.anInt2507 > var4 + 1 ? JunkTex.method1016(true, this.aByteArray2495[var4 + 1]) : -1;
+			int var7 = var4 + 2 < this.anInt2507 ? JunkTex.method1016(true, this.aByteArray2495[var4 + 2]) : -1;
+			int var8 = this.anInt2507 > var4 + 3 ? JunkTex.method1016(true, this.aByteArray2495[var4 + 3]) : -1;
 			var3[var1++] = (byte) Class66.method1294(var6 >>> 36, var5 << 2);
 			if (var7 == -1) {
 				break;
 			}
 
-			var3[var1++] = (byte) Class66.method1294(Class14_Sub8_Sub26.method617(15, var6) << 4, var7 >>> 34);
+			var3[var1++] = (byte) Class66.method1294(JunkTex.method617(15, var6) << 4, var7 >>> 34);
 			if (var8 == -1) {
 				break;
 			}
 
-			var3[var1++] = (byte) Class66.method1294(var8, Class14_Sub8_Sub26.method617(192, var7 << 38));
+			var3[var1++] = (byte) Class66.method1294(var8, JunkTex.method617(192, var7 << 38));
 		}
 
 		if (var2 <= 110) {
@@ -1286,7 +1278,7 @@ public class Class124 implements Interface1 {
 
 		for (var7 = 1; var1.anInt2507 >= var7; ++var7) {
 			var5[var7 - 1] = -var7 + (var1.anInt2507 << 33);
-			var4[Class14_Sub8_Sub26.method617(var1.aByteArray2495[var7 - 1], 255)] = -var7 + var1.anInt2507;
+			var4[JunkTex.method617(var1.aByteArray2495[var7 - 1], 255)] = -var7 + var1.anInt2507;
 		}
 
 		var7 = var1.anInt2507 + 1;
@@ -1462,7 +1454,7 @@ public class Class124 implements Interface1 {
 		}
 
 		Throwable var12 = new Throwable();
-		throw Class14_Sub8_Sub14.method554(var12, "sl.L(" + var1 + ')');
+		throw JunkTex.method554(var12, "sl.L(" + var1 + ')');
 	}
 
 	public boolean equals(Object var1) {
@@ -1490,8 +1482,8 @@ public class Class124 implements Interface1 {
 	}
 
 	public static boolean method1714(int var0, int var1, int var2, int var3, int var4) {
-		int var5 = var3 * Static.anInt2719 + var0 * Class37.anInt643 >> 16;
-		int var6 = var3 * Class37.anInt643 - var0 * Static.anInt2719 >> 16;
+		int var5 = var3 * JunkTex.anInt2719 + var0 * Class37.anInt643 >> 16;
+		int var6 = var3 * Class37.anInt643 - var0 * JunkTex.anInt2719 >> 16;
 		int var7 = var1 * Class150.anInt2420 + var6 * Class7_Sub3_Sub1.anInt3718 >> 16;
 		int var8 = var1 * Class7_Sub3_Sub1.anInt3718 - var6 * Class150.anInt2420 >> 16;
 		if (var7 < 1) {
@@ -1510,8 +1502,8 @@ public class Class124 implements Interface1 {
 		int var14 = (var12 << 9) / var11;
 		return var7 < 50 && var11 < 50 ? false
 				: (var7 > var4 && var11 > var4 ? false
-						: (var9 < Static.anInt425 && var13 < Static.anInt425 ? false
-								: (var9 > Class14_Sub8_Sub27.anInt4547 && var13 > Class14_Sub8_Sub27.anInt4547 ? false
+						: (var9 < JunkTex.anInt425 && var13 < JunkTex.anInt425 ? false
+								: (var9 > JunkTex.anInt4547 && var13 > JunkTex.anInt4547 ? false
 										: (var10 < Class58.anInt948 && var14 < Class58.anInt948 ? false
 												: var10 <= Class70.anInt1081 || var14 <= Class70.anInt1081))));
 	}

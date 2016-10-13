@@ -6,14 +6,6 @@ package rs;
 import com.jagex.rt4.Class14_Sub27;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 
-import rs.tex.Class14_Sub8;
-import rs.tex.Class14_Sub8_Sub11;
-import rs.tex.Class14_Sub8_Sub15;
-import rs.tex.Class14_Sub8_Sub23;
-import rs.tex.Class14_Sub8_Sub24;
-import rs.tex.Class14_Sub8_Sub8;
-import rs.tex.Static;
-
 public class Class38 implements Interface5 {
 	public static int anInt2616 = 0;
 	public static int anInt2617;
@@ -28,7 +20,7 @@ public class Class38 implements Interface5 {
 			return class124;
 		}
 		if (i == 1 || i == 10) {
-			Class142 class142 = Class14_Sub8_Sub24.method605(102, (int) l);
+			Class142 class142 = JunkTex.method605(102, (int) l);
 			Class124 class124 = class142.aClass124_2296;
 			return class124;
 		}
@@ -52,7 +44,7 @@ public class Class38 implements Interface5 {
 		if (i_3_ < 12)
 			anInt2622 = -101;
 		int[] is_15_ = null;
-		int[] is_16_ = Static.anIntArrayArray2545[i_9_];
+		int[] is_16_ = JunkTex.anIntArrayArray2545[i_9_];
 		int[] is_17_ = new int[is_16_.length >> 33];
 		for (int i_18_ = 0; is_17_.length > i_18_; i_18_++)
 			is_17_[i_18_] = Class14_Sub17.method881(i_14_, i_13_, class14_sub27, (byte) 12, i_11_, i_12_, i_6_, false,
@@ -267,13 +259,13 @@ public class Class38 implements Interface5 {
 		}
 		if (bool)
 			method1116(-87, true);
-		Class14_Sub2_Sub19[] class14_sub2_sub19s = Class14_Sub8_Sub11.method535(!bool);
+		Class14_Sub2_Sub19[] class14_sub2_sub19s = JunkTex.method535(!bool);
 		return class14_sub2_sub19s;
 	}
 
 	public static void method1116(int i, boolean bool) {
 		if ((Static2.anInt1085 == Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495 >> 7)
-				&& (Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436 >> 39 == Class14_Sub8_Sub15.anInt4335))
+				&& (Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436 >> 39 == JunkTex.anInt4335))
 			Static2.anInt1085 = 0;
 		int i_40_ = Static2.anInt2878;
 		if (i != 1)
@@ -288,7 +280,7 @@ public class Class38 implements Interface5 {
 				l = 8791798054912L;
 			} else {
 				l = (long) Static2.anIntArray351[i_41_] << 32;
-				class133_sub1_sub1 = (Class14_Sub8_Sub23.aClass133_Sub1_Sub1Array4474[Static2.anIntArray351[i_41_]]);
+				class133_sub1_sub1 = (JunkTex.aClass133_Sub1_Sub1Array4474[Static2.anIntArray351[i_41_]]);
 			}
 			if (class133_sub1_sub1 != null && class133_sub1_sub1.method1804((byte) 115)) {
 				class133_sub1_sub1.aBoolean4921 = false;
@@ -307,15 +299,15 @@ public class Class38 implements Interface5 {
 								continue;
 							Class14_Sub2_Sub8.anIntArrayArray3846[i_42_][i_43_] = Class42.anInt699;
 						}
-						class133_sub1_sub1.anInt3500 = Static.method1017(class133_sub1_sub1.anInt3495,
+						class133_sub1_sub1.anInt3500 = JunkTex.method1017(class133_sub1_sub1.anInt3495,
 								Class14_Sub2_Sub3.anInt3785, (byte) 85, class133_sub1_sub1.anInt3436);
-						Class14_Sub8_Sub8.method519(Class14_Sub2_Sub3.anInt3785, class133_sub1_sub1.anInt3495,
+						JunkTex.method519(Class14_Sub2_Sub3.anInt3785, class133_sub1_sub1.anInt3495,
 								class133_sub1_sub1.anInt3436, class133_sub1_sub1.anInt3500,
 								class133_sub1_sub1.anInt3493 * 64 + 60 - 64, class133_sub1_sub1,
 								class133_sub1_sub1.anInt3461, l, class133_sub1_sub1.aBoolean3488);
 					} else {
 						class133_sub1_sub1.aBoolean4921 = false;
-						class133_sub1_sub1.anInt3500 = Static.method1017(class133_sub1_sub1.anInt3495,
+						class133_sub1_sub1.anInt3500 = JunkTex.method1017(class133_sub1_sub1.anInt3495,
 								Class14_Sub2_Sub3.anInt3785, (byte) -112, class133_sub1_sub1.anInt3436);
 						Class128.method1757(Class14_Sub2_Sub3.anInt3785, class133_sub1_sub1.anInt3495,
 								class133_sub1_sub1.anInt3436, class133_sub1_sub1.anInt3500, class133_sub1_sub1,
@@ -330,14 +322,14 @@ public class Class38 implements Interface5 {
 
 	public static void method1118(int i, int i_48_) {
 		if (i == 37)
-			Class14_Sub8.aFloat2854 = 3.0F;
+			JunkTex.aFloat2854 = 3.0F;
 		else if (i != 50) {
 			if (i == 75)
-				Class14_Sub8.aFloat2854 = 6.0F;
+				JunkTex.aFloat2854 = 6.0F;
 			else
-				Class14_Sub8.aFloat2854 = 8.0F;
+				JunkTex.aFloat2854 = 8.0F;
 		} else
-			Class14_Sub8.aFloat2854 = 4.0F;
+			JunkTex.aFloat2854 = 4.0F;
 		Class14_Sub18.anInt3050 = -1;
 		Class14_Sub18.anInt3050 = i_48_;
 	}

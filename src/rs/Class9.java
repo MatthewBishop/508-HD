@@ -6,8 +6,6 @@ package rs;
 import com.jagex.io.Buffer;
 import com.jagex.link.ref.SoftCache;
 
-import rs.tex.Class14_Sub8_Sub6;
-
 public abstract class Class9 {
 	public static int[][] anIntArrayArray190 = { { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 },
 			{ 12, 8, 4, 0, 13, 9, 5, 1, 14, 10, 6, 2, 15, 11, 7, 3 },
@@ -560,7 +558,7 @@ public abstract class Class9 {
 
 	public static void method172(byte i) {
 		if (i >= 96)
-			Class14_Sub8_Sub6.aClass52_4186.clear();
+			JunkTex.aClass52_4186.clear();
 	}
 
 	public int method173(int i) {

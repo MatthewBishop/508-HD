@@ -6,9 +6,6 @@ package rs;
 import com.jagex.link.Cacheable;
 import com.jagex.util.TimeUtil;
 
-import rs.tex.Class14_Sub8;
-import rs.tex.Class14_Sub8_Sub27;
-
 public class Class14_Sub2_Sub13 extends Cacheable {
 
 	public Class124 aClass124_3925;
@@ -22,12 +19,12 @@ public class Class14_Sub2_Sub13 extends Cacheable {
 	public void method326() {
 		keyCacheable |= ~0x7fffffffffffffffL;
 		if (0L == method330())
-			Class14_Sub8_Sub27.aClass81_4546.push(this);
+			JunkTex.aClass81_4546.push(this);
 	}
 
 	public void method327() {
 		keyCacheable = (TimeUtil.getTime() - -500L | keyCacheable & ~0x7fffffffffffffffL);
-		Class14_Sub8.aClass81_2844.push(this);
+		JunkTex.aClass81_2844.push(this);
 	}
 
 	public int method328() {

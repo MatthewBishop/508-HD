@@ -5,10 +5,6 @@ package rs;
 
 import com.jagex.rt4.Class148_Sub1;
 
-import rs.tex.Class14_Sub8_Sub12;
-import rs.tex.Class14_Sub8_Sub23;
-import rs.tex.Class14_Sub8_Sub38;
-
 public class Class125_Sub1 extends Class125 {
 	public int anInt3362;
 	public static int anInt3363;
@@ -49,38 +45,38 @@ public class Class125_Sub1 extends Class125 {
 	}
 
 	public static void method1728(byte i) {
-		while (Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method840(Class14_Sub8_Sub12.anInt4280) >= 11) {
-			int i_13_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readBits(0, 11);
+		while (JunkTex.aClass14_Sub10_Sub1_4734.method840(JunkTex.anInt4280) >= 11) {
+			int i_13_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 11);
 			if (i_13_ == 2047)
 				break;
 			boolean bool = false;
-			if (Class14_Sub8_Sub23.aClass133_Sub1_Sub1Array4474[i_13_] == null) {
+			if (JunkTex.aClass133_Sub1_Sub1Array4474[i_13_] == null) {
 				bool = true;
-				Class14_Sub8_Sub23.aClass133_Sub1_Sub1Array4474[i_13_] = new Class133_Sub1_Sub1();
+				JunkTex.aClass133_Sub1_Sub1Array4474[i_13_] = new Class133_Sub1_Sub1();
 				if (Static2.aClass14_Sub10Array2742[i_13_] != null)
-					Class14_Sub8_Sub23.aClass133_Sub1_Sub1Array4474[i_13_].method1807((byte) -123,
+					JunkTex.aClass133_Sub1_Sub1Array4474[i_13_].method1807((byte) -123,
 							Static2.aClass14_Sub10Array2742[i_13_]);
 			}
 			Static2.anIntArray351[Static2.anInt2878++] = i_13_;
-			Class133_Sub1_Sub1 class133_sub1_sub1 = Class14_Sub8_Sub23.aClass133_Sub1_Sub1Array4474[i_13_];
+			Class133_Sub1_Sub1 class133_sub1_sub1 = JunkTex.aClass133_Sub1_Sub1Array4474[i_13_];
 			class133_sub1_sub1.anInt3447 = Class14_Sub2_Sub20.anInt4064;
-			int i_14_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readBits(0, 5);
-			int i_15_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readBits(0, 1);
+			int i_14_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 5);
+			int i_15_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 1);
 			if (i_14_ > 15)
 				i_14_ -= 32;
 			if (i_15_ == 1)
 				Class14_Sub2_Sub7.anIntArray3825[Class64.anInt1012++] = i_13_;
-			int i_16_ = (Class133.anIntArray2179[Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readBits(i - 22, 3)]);
+			int i_16_ = (Class133.anIntArray2179[JunkTex.aClass14_Sub10_Sub1_4734.readBits(i - 22, 3)]);
 			if (bool)
 				class133_sub1_sub1.anInt3469 = class133_sub1_sub1.anInt3461 = i_16_;
-			int i_17_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readBits(0, 1);
-			int i_18_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readBits(i ^ 0x16, 5);
+			int i_17_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 1);
+			int i_18_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(i ^ 0x16, 5);
 			if (i_18_ > 15)
 				i_18_ -= 32;
 			class133_sub1_sub1.method1800((byte) -76, (Class14_Sub3.aClass133_Sub1_Sub1_2748.anIntArray3443[0]) + i_18_,
 					i_17_ == 1, (Class14_Sub3.aClass133_Sub1_Sub1_2748.anIntArray3476[0]) + i_14_);
 		}
-		Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.disableBitAccess();
+		JunkTex.aClass14_Sub10_Sub1_4734.disableBitAccess();
 		if (i != 22)
 			method1730(30);
 	}

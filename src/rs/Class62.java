@@ -7,8 +7,6 @@ import com.jagex.io.Buffer;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.AtmosphericEffects;
 
-import rs.tex.Static;
-
 public class Class62 {
 	public static int anInt988 = 0;
 	public static Buffer aClass14_Sub10_989;
@@ -34,8 +32,8 @@ public class Class62 {
 		Class82.anInt1330 = Class150.aClass71ArrayArray2421[i][i_0_].lightX;
 		Class49.anInt815 = Class150.aClass71ArrayArray2421[i][i_0_].lightY;
 		if (i_1_ == 1) {
-			Static.anInt847 = Class150.aClass71ArrayArray2421[i][i_0_].lightZ;
-			AtmosphericEffects.setSunPosition((float) Class82.anInt1330, (float) Class49.anInt815, (float) Static.anInt847);
+			JunkTex.anInt847 = Class150.aClass71ArrayArray2421[i][i_0_].lightZ;
+			AtmosphericEffects.setSunPosition((float) Class82.anInt1330, (float) Class49.anInt815, (float) JunkTex.anInt847);
 		}
 	}
 }

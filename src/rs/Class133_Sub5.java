@@ -6,10 +6,6 @@ package rs;
 import com.jagex.cache.anim.Animation;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 
-import rs.tex.Class14_Sub8_Sub3;
-import rs.tex.Class14_Sub8_Sub6;
-import rs.tex.Static;
-
 public class Class133_Sub5 extends Class133 {
 	public int anInt3605;
 	public static Class124 aClass124_3607;
@@ -24,7 +20,6 @@ public class Class133_Sub5 extends Class133 {
 	public int anInt3620;
 	public boolean aBoolean3621 = false;
 	public int anInt3622;
-	public static int[] anIntArray3623;
 	public static Class14_Sub9_Sub1 aClass14_Sub9_Sub1_3625;
 	public static boolean aBoolean3628 = false;
 	public int anInt3629;
@@ -37,13 +32,13 @@ public class Class133_Sub5 extends Class133 {
 
 	public static void method1843(int i, int i_0_, Class94 class94, int i_1_) {
 		if (Class67.aClass94_1060 == null && !aBoolean3628 && class94 != null
-				&& Static.method341(0, class94) != null) {
+				&& JunkTex.method341(0, class94) != null) {
 			Class67.aClass94_1060 = class94;
-			Static.aClass94_420 = Static.method341(0, class94);
-			Class14_Sub8_Sub3.anInt4132 = i_1_;
+			JunkTex.aClass94_420 = JunkTex.method341(0, class94);
+			JunkTex.anInt4132 = i_1_;
 			Class125_Sub4.anInt3419 = 0;
 			int i_2_ = 106 % ((i - 9) / 39);
-			Class14_Sub8_Sub6.aBoolean4188 = false;
+			JunkTex.aBoolean4188 = false;
 			Canvas_Sub2.anInt63 = i_0_;
 		}
 	}
@@ -74,7 +69,7 @@ public class Class133_Sub5 extends Class133 {
 			aClass14_Sub2_Sub19Array3609 = null;
 		aClass14_Sub2_Sub19Array3609 = null;
 		aClass124_3610 = null;
-		anIntArray3623 = null;
+		
 		aClass124_3607 = null;
 		aClass14_Sub9_Sub1_3625 = null;
 	}
@@ -120,7 +115,7 @@ public class Class133_Sub5 extends Class133 {
 		int i_19_ = Class127.method1749(anInt3605, (byte) 45).anInt966;
 		if (i_19_ != -1) {
 			aBoolean3621 = false;
-			aClass46_3611 = Static.method1129(i_19_, -120);
+			aClass46_3611 = JunkTex.method1129(i_19_, -120);
 		} else
 			aBoolean3621 = true;
 	}

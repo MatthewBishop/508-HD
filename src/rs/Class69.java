@@ -3,12 +3,6 @@
  */
 package rs;
 
-import rs.tex.Class14_Sub8_Sub10;
-import rs.tex.Class14_Sub8_Sub3;
-import rs.tex.Class14_Sub8_Sub32;
-import rs.tex.Class14_Sub8_Sub35;
-import rs.tex.Static;
-
 public class Class69 {
 	public static float aFloat1066;
 	public static Class124 aClass124_1067;
@@ -25,10 +19,10 @@ public class Class69 {
 	}
 
 	public static void method1308(int i, byte i_0_) {
-		Static.anInt1132 = 0;
+		JunkTex.anInt1132 = 0;
 		Class14_Sub2_Sub11.anInt3889 = 1;
 		Class38.anInt2624 = -1;
-		Static.anInt3930 = -1;
+		JunkTex.anInt3930 = -1;
 		Class35.aBoolean593 = false;
 		if (i_0_ > -7)
 			method1311((byte) -37);
@@ -46,24 +40,24 @@ public class Class69 {
 
 	public static void method1311(byte i) {
 		Class79.aShortArrayArrayArray1247 = null;
-		Class14_Sub8_Sub32.anInt4616 = 0;
+		JunkTex.anInt4616 = 0;
 		Class97.aClass94_1657 = null;
 		Class56.anIntArray917 = null;
-		Class14_Sub8_Sub3.aByteArrayArrayArray4130 = null;
+		JunkTex.aByteArrayArrayArray4130 = null;
 		Class14_Sub2_Sub5.aByteArrayArrayArray3816 = null;
 		Class14_Sub22.anIntArrayArrayArray3125 = null;
 		Class14_Sub2_Sub9.aByteArrayArrayArray3864 = null;
 		Class86.aByteArrayArrayArray1383 = null;
 		Class14_Sub25.anIntArrayArrayArray3174 = null;
-		Class14_Sub8_Sub10.aByteArrayArrayArray4257 = null;
+		JunkTex.aByteArrayArrayArray4257 = null;
 		Class7_Sub1.aClass14_Sub2_Sub5_2665 = null;
 		Class35.aClass2_589.clear();
 		Class133_Sub1.aClass14_Sub2_Sub19_3505 = null;
-		Class14_Sub8_Sub35.aClass87_4672 = null;
+		JunkTex.aClass87_4672 = null;
 		Class152.aClass146_2435 = null;
 		Class14_Sub2_Sub8.aClass14_Sub2_Sub19_Sub1_Sub2_3836 = null;
 		Class48.aClass87_803 = null;
-		Static.aClass87_858 = null;
+		JunkTex.aClass87_858 = null;
 		Class132.aClass87_2171 = null;
 		Class14_Sub17.aClass87_3004 = null;
 		Class48.aClass87_805 = null;

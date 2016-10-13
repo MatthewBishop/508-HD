@@ -12,9 +12,6 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.Mixer;
 import javax.sound.sampled.SourceDataLine;
 
-import rs.tex.Class14_Sub8_Sub33;
-import rs.tex.Static;
-
 public class Class75_Sub1 extends Class75 {
 	public byte[] aByteArray3325;
 	public AudioFormat anAudioFormat3326;
@@ -47,8 +44,8 @@ public class Class75_Sub1 extends Class75 {
 			aSourceDataLine3329.start();
 			anInt3327 = i;
 		} catch (LineUnavailableException lineunavailableexception) {
-			if (Static.method1202(252645135, i) != 1)
-				method1347(Class14_Sub8_Sub33.method653(i));
+			if (JunkTex.method1202(252645135, i) != 1)
+				method1347(JunkTex.method653(i));
 			else {
 				aSourceDataLine3329 = null;
 				throw lineunavailableexception;

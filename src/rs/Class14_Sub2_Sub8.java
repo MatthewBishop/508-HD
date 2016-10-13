@@ -12,9 +12,6 @@ import com.jagex.link.Linkable;
 import com.jagex.rt4.Class14_Sub1;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1_Sub2;
 
-import rs.tex.Class14_Sub8_Sub33;
-import rs.tex.Class14_Sub8_Sub36;
-
 public class Class14_Sub2_Sub8 extends Cacheable {
 	public HashTable aClass55_3829;
 	public static Image anImage3830;
@@ -139,7 +136,7 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 
 	public static void method297(byte i) {
 		for (int i_6_ = 0; i_6_ < 100; i_6_++)
-			Class14_Sub8_Sub36.aBooleanArray4698[i_6_] = true;
+			JunkTex.aBooleanArray4698[i_6_] = true;
 	}
 
 	public void method298(Buffer class14_sub10, int i, int i_7_) {
@@ -150,7 +147,7 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 						anInt3855 = class14_sub10.getInt((byte) -107);
 					else if (i_7_ == 5 || i_7_ == 6) {
 						int i_8_ = class14_sub10.readUShort((byte) 104);
-						aClass55_3829 = new HashTable(Class14_Sub8_Sub33.method653(i_8_));
+						aClass55_3829 = new HashTable(JunkTex.method653(i_8_));
 						for (int i_9_ = 0; i_9_ < i_8_; i_9_++) {
 							int i_10_ = class14_sub10.getInt((byte) -115);
 							Linkable linkable;

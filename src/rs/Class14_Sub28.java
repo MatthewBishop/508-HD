@@ -7,11 +7,6 @@ import com.jagex.io.Buffer;
 import com.jagex.link.Linkable;
 import com.jagex.link.ref.SoftCache;
 
-import rs.tex.Class14_Sub8_Sub26;
-import rs.tex.Class14_Sub8_Sub27;
-import rs.tex.Class14_Sub8_Sub38;
-import rs.tex.Static;
-
 public class Class14_Sub28 extends Linkable {
 	public Class14_Sub12_Sub1[] aClass14_Sub12_Sub1Array3212;
 	public byte[] aByteArray3213;
@@ -84,7 +79,7 @@ public class Class14_Sub28 extends Linkable {
 		boolean bool = false;
 		while (!bool) {
 			bool = true;
-			for (int i_5_ = 0; Class14_Sub8_Sub38.anInt4729 - 1 > i_5_; i_5_++) {
+			for (int i_5_ = 0; JunkTex.anInt4729 - 1 > i_5_; i_5_++) {
 				if (Class14_Sub29.aShortArray3262[i_5_] < 1000 && Class14_Sub29.aShortArray3262[i_5_ + 1] > 1000) {
 					bool = false;
 					Class124 class124 = RuntimeException_Sub1.aClass124Array2459[i_5_];
@@ -93,18 +88,18 @@ public class Class14_Sub28 extends Linkable {
 					Class124 class124_6_ = Class112.aClass124Array1875[i_5_];
 					Class112.aClass124Array1875[i_5_] = Class112.aClass124Array1875[i_5_ + 1];
 					Class112.aClass124Array1875[i_5_ + 1] = class124_6_;
-					int i_7_ = Class14_Sub8_Sub27.anIntArray4544[i_5_];
-					Class14_Sub8_Sub27.anIntArray4544[i_5_] = Class14_Sub8_Sub27.anIntArray4544[i_5_ + 1];
-					Class14_Sub8_Sub27.anIntArray4544[i_5_ + 1] = i_7_;
-					i_7_ = Static.anIntArray3288[i_5_];
-					Static.anIntArray3288[i_5_] = Static.anIntArray3288[i_5_ + 1];
-					Static.anIntArray3288[i_5_ + 1] = i_7_;
+					int i_7_ = JunkTex.anIntArray4544[i_5_];
+					JunkTex.anIntArray4544[i_5_] = JunkTex.anIntArray4544[i_5_ + 1];
+					JunkTex.anIntArray4544[i_5_ + 1] = i_7_;
+					i_7_ = JunkTex.anIntArray3288[i_5_];
+					JunkTex.anIntArray3288[i_5_] = JunkTex.anIntArray3288[i_5_ + 1];
+					JunkTex.anIntArray3288[i_5_ + 1] = i_7_;
 					short i_8_ = Class14_Sub29.aShortArray3262[i_5_];
 					Class14_Sub29.aShortArray3262[i_5_] = Class14_Sub29.aShortArray3262[i_5_ + 1];
 					Class14_Sub29.aShortArray3262[i_5_ + 1] = i_8_;
-					long l = Static.aLongArray3924[i_5_];
-					Static.aLongArray3924[i_5_] = Static.aLongArray3924[i_5_ + 1];
-					Static.aLongArray3924[i_5_ + 1] = l;
+					long l = JunkTex.aLongArray3924[i_5_];
+					JunkTex.aLongArray3924[i_5_] = JunkTex.aLongArray3924[i_5_ + 1];
+					JunkTex.aLongArray3924[i_5_ + 1] = l;
 				}
 			}
 		}
@@ -227,7 +222,7 @@ public class Class14_Sub28 extends Linkable {
 				i_37_ = class14_sub10.method800(127);
 			}
 			i_36_--;
-			aShortArray3223[i_38_] += Class14_Sub8_Sub26.method617(i_37_ - 1, 2) << 46;
+			aShortArray3223[i_38_] += JunkTex.method617(i_37_ - 1, 2) << 46;
 			anIntArray3218[i_38_] = i_37_;
 		}
 		i_35_ = 0;

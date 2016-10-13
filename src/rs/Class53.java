@@ -5,11 +5,6 @@ package rs;
 
 import com.jagex.io.Buffer;
 
-import rs.tex.Class14_Sub8_Sub23;
-import rs.tex.Class14_Sub8_Sub27;
-import rs.tex.Class14_Sub8_Sub38;
-import rs.tex.Static;
-
 public class Class53 {
 	public static boolean aBoolean865 = true;
 	public static short[] aShortArray866;
@@ -39,10 +34,10 @@ public class Class53 {
 			aClass124_867 = null;
 		if (i_1_ < 128 || i_6_ < 128 || i_1_ > 13056 || i_6_ > 13056) {
 			Class120.anInt2007 = -1;
-			Class14_Sub8_Sub27.anInt4548 = -1;
+			JunkTex.anInt4548 = -1;
 		} else {
-			int i_7_ = -i_4_ + Static.method1017(i_1_, Class14_Sub2_Sub3.anInt3785, (byte) -8, i_6_);
-			i_1_ -= Class14_Sub8_Sub38.anInt4741;
+			int i_7_ = -i_4_ + JunkTex.method1017(i_1_, Class14_Sub2_Sub3.anInt3785, (byte) -8, i_6_);
+			i_1_ -= JunkTex.anInt4741;
 			i_6_ -= Class14_Sub30.anInt3271;
 			int i_8_ = Class3.sin[Class7_Sub3_Sub1.anInt3719];
 			int i_9_ = Class3.cos[Class7_Sub3_Sub1.anInt3719];
@@ -59,10 +54,10 @@ public class Class53 {
 				int i_13_ = i_0_ * 512 >> 40;
 				int i_14_ = i * 512 >> 8;
 				Class120.anInt2007 = i_13_ * i_1_ / i_6_ + i_3_;
-				Class14_Sub8_Sub27.anInt4548 = i_7_ * i_14_ / i_6_ + i_2_;
+				JunkTex.anInt4548 = i_7_ * i_14_ / i_6_ + i_2_;
 			} else {
 				Class120.anInt2007 = -1;
-				Class14_Sub8_Sub27.anInt4548 = -1;
+				JunkTex.anInt4548 = -1;
 			}
 		}
 	}
@@ -84,9 +79,9 @@ public class Class53 {
 
 	public static void method1216(int i) {
 		int i_16_ = Class123.anInt2062 * i + 64;
-		int i_17_ = Class14_Sub8_Sub38.anInt4731 * 128 + 64;
-		int i_18_ = (Static.method1017(i_16_, Class14_Sub2_Sub3.anInt3785, (byte) -121, i_17_)
-				- Class14_Sub8_Sub23.anInt4480);
+		int i_17_ = JunkTex.anInt4731 * 128 + 64;
+		int i_18_ = (JunkTex.method1017(i_16_, Class14_Sub2_Sub3.anInt3785, (byte) -121, i_17_)
+				- JunkTex.anInt4480);
 		if (Class69.anInt1071 < 100) {
 			if (i_18_ > Static2.anInt2926) {
 				Static2.anInt2926 += (Class69.anInt1071 * (-Static2.anInt2926 + i_18_) / 1000)
@@ -94,11 +89,11 @@ public class Class53 {
 				if (Static2.anInt2926 > i_18_)
 					Static2.anInt2926 = i_18_;
 			}
-			if (i_16_ > Class14_Sub8_Sub38.anInt4741) {
-				Class14_Sub8_Sub38.anInt4741 += ((Class69.anInt1071 * (-Class14_Sub8_Sub38.anInt4741 + i_16_) / 1000)
+			if (i_16_ > JunkTex.anInt4741) {
+				JunkTex.anInt4741 += ((Class69.anInt1071 * (-JunkTex.anInt4741 + i_16_) / 1000)
 						+ Class14_Sub20.anInt3095);
-				if (Class14_Sub8_Sub38.anInt4741 > i_16_)
-					Class14_Sub8_Sub38.anInt4741 = i_16_;
+				if (JunkTex.anInt4741 > i_16_)
+					JunkTex.anInt4741 = i_16_;
 			}
 			if (Static2.anInt2926 > i_18_) {
 				Static2.anInt2926 -= Class14_Sub20.anInt3095
@@ -118,24 +113,24 @@ public class Class53 {
 				if (i_17_ > Class14_Sub30.anInt3271)
 					Class14_Sub30.anInt3271 = i_17_;
 			}
-			if (i_16_ < Class14_Sub8_Sub38.anInt4741) {
-				Class14_Sub8_Sub38.anInt4741 -= (Class14_Sub20.anInt3095
-						+ (Class69.anInt1071 * (-i_16_ + Class14_Sub8_Sub38.anInt4741) / 1000));
-				if (Class14_Sub8_Sub38.anInt4741 < i_16_)
-					Class14_Sub8_Sub38.anInt4741 = i_16_;
+			if (i_16_ < JunkTex.anInt4741) {
+				JunkTex.anInt4741 -= (Class14_Sub20.anInt3095
+						+ (Class69.anInt1071 * (-i_16_ + JunkTex.anInt4741) / 1000));
+				if (JunkTex.anInt4741 < i_16_)
+					JunkTex.anInt4741 = i_16_;
 			}
 		} else {
-			Class14_Sub30.anInt3271 = Class14_Sub8_Sub38.anInt4731 * 128 + 64;
-			Class14_Sub8_Sub38.anInt4741 = Class123.anInt2062 * 128 + 64;
-			Static2.anInt2926 = (Static.method1017(Class14_Sub8_Sub38.anInt4741, Class14_Sub2_Sub3.anInt3785,
-					(byte) -123, Class14_Sub30.anInt3271) - Class14_Sub8_Sub23.anInt4480);
+			Class14_Sub30.anInt3271 = JunkTex.anInt4731 * 128 + 64;
+			JunkTex.anInt4741 = Class123.anInt2062 * 128 + 64;
+			Static2.anInt2926 = (JunkTex.method1017(JunkTex.anInt4741, Class14_Sub2_Sub3.anInt3785,
+					(byte) -123, Class14_Sub30.anInt3271) - JunkTex.anInt4480);
 		}
 		i_17_ = Class33.anInt577 * 128 + 64;
 		i_16_ = Class117.anInt1948 * 128 + 64;
-		i_18_ = (Static.method1017(i_16_, Class14_Sub2_Sub3.anInt3785, (byte) -117, i_17_)
+		i_18_ = (JunkTex.method1017(i_16_, Class14_Sub2_Sub3.anInt3785, (byte) -117, i_17_)
 				- Class14_Sub2_Sub9.anInt3866);
 		int i_19_ = -Class14_Sub30.anInt3271 + i_17_;
-		int i_20_ = i_16_ - Class14_Sub8_Sub38.anInt4741;
+		int i_20_ = i_16_ - JunkTex.anInt4741;
 		int i_21_ = i_18_ - Static2.anInt2926;
 		int i_22_ = (int) Math.sqrt((double) (i_19_ * i_19_ + i_20_ * i_20_));
 		int i_23_ = ((int) (Math.atan2((double) i_21_, (double) i_22_) * 325.949) & 0x7ff);

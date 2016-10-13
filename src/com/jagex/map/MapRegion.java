@@ -36,18 +36,15 @@ import rs.Class66;
 import rs.Class7_Sub2;
 import rs.Class7_Sub3_Sub1;
 import rs.Class97;
+import rs.JunkTex;
 import rs.Static2;
-import rs.tex.Class14_Sub8_Sub26;
-import rs.tex.Class14_Sub8_Sub4;
-import rs.tex.Class14_Sub8_Sub6;
-import rs.tex.Static;
 
 public class MapRegion {
 	public static void decodeMapData(boolean bool, int i, Buffer class14_sub10, int i_0_, int i_1_, int i_2_,
 			int i_3_, int i_4_) {
 		if (i_3_ >= 0 && i_3_ < 104 && i_4_ >= 0 && i_4_ < 104) {
 			if (!bool)
-				Class14_Sub8_Sub4.tileFlags[i][i_3_][i_4_] = (byte) 0;
+				JunkTex.tileFlags[i][i_3_][i_4_] = (byte) 0;
 			for (;;) {
 				int i_5_ = class14_sub10.readUByte();
 				if (i_5_ == 0) {
@@ -77,13 +74,13 @@ public class MapRegion {
 					break;
 				}
 				if (i_5_ <= 49) {
-					Class14_Sub8_Sub6.overlays[i][i_3_][i_4_] = class14_sub10.method780((byte) -77);
-					Static.overlayTypes[i][i_3_][i_4_] = (byte) ((i_5_ - 2) / 4);
-					Class15.overlayOrientations[i][i_3_][i_4_] = (byte) Class14_Sub8_Sub26.method617(i_0_ + (i_5_ - 2),
+					JunkTex.overlays[i][i_3_][i_4_] = class14_sub10.method780((byte) -77);
+					JunkTex.overlayTypes[i][i_3_][i_4_] = (byte) ((i_5_ - 2) / 4);
+					Class15.overlayOrientations[i][i_3_][i_4_] = (byte) JunkTex.method617(i_0_ + (i_5_ - 2),
 							3);
 				} else if (i_5_ <= 81) {
 					if (!bool)
-						Class14_Sub8_Sub4.tileFlags[i][i_3_][i_4_] = (byte) (i_5_ - 49);
+						JunkTex.tileFlags[i][i_3_][i_4_] = (byte) (i_5_ - 49);
 				} else
 					Class97.underlays[i][i_3_][i_4_] = (byte) (i_5_ - 81);
 			}
@@ -107,9 +104,9 @@ public class MapRegion {
 			for (int i = 0; i < 4; i++) {
 				for (int i_8_ = 0; i_8_ < 104; i_8_++) {
 					for (int i_9_ = 0; i_9_ < 104; i_9_++) {
-						if ((Class14_Sub8_Sub4.tileFlags[i][i_8_][i_9_] & 0x1) == 1) {
+						if ((JunkTex.tileFlags[i][i_8_][i_9_] & 0x1) == 1) {
 							int i_10_ = i;
-							if ((Class14_Sub8_Sub4.tileFlags[1][i_8_][i_9_] & 0x2) == 2)
+							if ((JunkTex.tileFlags[1][i_8_][i_9_] & 0x2) == 2)
 								i_10_--;
 							if (i_10_ >= 0)
 								class32s[i_10_].method1080(i_8_, -115, i_9_);
@@ -120,15 +117,15 @@ public class MapRegion {
 			Class51.anInt830 += (int) (Math.random() * 5.0) - 2;
 			if (Class51.anInt830 < -8)
 				Class51.anInt830 = -8;
-			Class14_Sub8_Sub26.anInt4527 += (int) (Math.random() * 5.0) - 2;
+			JunkTex.anInt4527 += (int) (Math.random() * 5.0) - 2;
 			if (Class51.anInt830 > 8)
 				Class51.anInt830 = 8;
-			if (Class14_Sub8_Sub26.anInt4527 < -16)
-				Class14_Sub8_Sub26.anInt4527 = -16;
-			if (Class14_Sub8_Sub26.anInt4527 > 16)
-				Class14_Sub8_Sub26.anInt4527 = 16;
+			if (JunkTex.anInt4527 < -16)
+				JunkTex.anInt4527 = -16;
+			if (JunkTex.anInt4527 > 16)
+				JunkTex.anInt4527 = 16;
 		}
-		int i = Class14_Sub8_Sub26.anInt4527 >> 33;
+		int i = JunkTex.anInt4527 >> 33;
 		int i_11_;
 		if (!bool)
 			i_11_ = 4;
@@ -240,13 +237,13 @@ public class MapRegion {
 			for (int i_50_ = 1; i_50_ < 103; i_50_++) {
 				for (int i_51_ = 1; i_51_ < 103; i_51_++) {
 					if (bool || Class128.method1755(130068615)
-							|| (Class14_Sub8_Sub4.tileFlags[0][i_50_][i_51_] & 0x2) != 0
-							|| ((Class14_Sub8_Sub4.tileFlags[i_14_][i_50_][i_51_] & 0x10) == 0
+							|| (JunkTex.tileFlags[0][i_50_][i_51_] & 0x2) != 0
+							|| ((JunkTex.tileFlags[i_14_][i_50_][i_51_] & 0x10) == 0
 									&& (Class150.method2023(i_51_, i_14_, i_50_, -10403) == Class142.anInt2295))) {
 						if (i_14_ < Class7_Sub2.anInt2676)
 							Class7_Sub2.anInt2676 = i_14_;
 						int i_52_ = Class97.underlays[i_14_][i_50_][i_51_] & 0xff;
-						int i_53_ = (Class14_Sub8_Sub6.overlays[i_14_][i_50_][i_51_] & 0xff);
+						int i_53_ = (JunkTex.overlays[i_14_][i_50_][i_51_] & 0xff);
 						if (i_52_ > 0 || i_53_ > 0) {
 							int i_54_ = Class114.tileHeights[i_14_][i_50_][i_51_];
 							int i_55_ = (Class114.tileHeights[i_14_][i_50_ + 1][i_51_ + 1]);
@@ -254,7 +251,7 @@ public class MapRegion {
 							int i_57_ = (Class114.tileHeights[i_14_][i_50_][i_51_ + 1]);
 							if (i_14_ > 0) {
 								boolean bool_58_ = true;
-								if (i_52_ == 0 && (Static.overlayTypes[i_14_][i_50_][i_51_]) != 0)
+								if (i_52_ == 0 && (JunkTex.overlayTypes[i_14_][i_50_][i_51_]) != 0)
 									bool_58_ = false;
 								if (i_53_ > 0 && !(Class97.method1489(i_53_ - 1, -9810).aBoolean2410))
 									bool_58_ = false;
@@ -295,17 +292,17 @@ public class MapRegion {
 											i_56_ - (Class114.tileHeights[0][i_50_ + 1][i_51_]),
 											-(Class114.tileHeights[0][i_50_ + 1][i_51_ + 1]) + i_55_,
 											-(Class114.tileHeights[0][i_50_][i_51_ + 1]) + i_57_);
-								if (!bool && (Static.anIntArrayArray2799 != null) && i_14_ == 0) {
+								if (!bool && (JunkTex.anIntArrayArray2799 != null) && i_14_ == 0) {
 									while_313_: for (int i_67_ = i_50_ - 1; i_50_ + 1 >= i_67_; i_67_++) {
 										for (int i_68_ = i_51_ - 1; i_68_ <= i_51_ + 1; i_68_++) {
 											if ((i_50_ != i_67_ || i_51_ != i_68_) && i_67_ >= 0 && i_67_ < 104
 													&& i_68_ >= 0 && i_68_ < 104) {
-												int i_69_ = ((Class14_Sub8_Sub6.overlays[i_14_][i_67_][i_68_]) & 0xff);
+												int i_69_ = ((JunkTex.overlays[i_14_][i_67_][i_68_]) & 0xff);
 												if (i_69_ != 0) {
 													Class150 class150 = (Class97.method1489(i_69_ - 1, -9810));
 													if ((class150.anInt2414 != -1) && ((Class3.anInterface3_117
 															.method12(true, (class150.anInt2414))) == 4)) {
-														Static.anIntArrayArray2799[i_50_][i_51_] = ((class150.anInt2426)
+														JunkTex.anIntArrayArray2799[i_50_][i_51_] = ((class150.anInt2426)
 																+ ((class150.anInt2413) << 56));
 														break while_313_;
 													}
@@ -315,23 +312,23 @@ public class MapRegion {
 									}
 								}
 							} else {
-								int i_70_ = ((Static.overlayTypes[i_14_][i_50_][i_51_]) + 1);
+								int i_70_ = ((JunkTex.overlayTypes[i_14_][i_50_][i_51_]) + 1);
 								byte i_71_ = (Class15.overlayOrientations[i_14_][i_50_][i_51_]);
 								Class150 class150 = Class97.method1489(i_53_ - 1, -9810);
-								if (!bool && (Static.anIntArrayArray2799 != null) && i_14_ == 0) {
+								if (!bool && (JunkTex.anIntArrayArray2799 != null) && i_14_ == 0) {
 									if (class150.anInt2414 == -1
 											|| (Class3.anInterface3_117.method12(true, class150.anInt2414)) != 4) {
 										while_312_: for (int i_72_ = i_50_ - 1; i_72_ <= i_50_ + 1; i_72_++) {
 											for (int i_73_ = i_51_ - 1; i_51_ + 1 >= i_73_; i_73_++) {
 												if ((i_72_ != i_50_ || i_73_ != i_51_) && i_72_ >= 0 && i_72_ < 104
 														&& i_73_ >= 0 && i_73_ < 104) {
-													int i_74_ = ((Class14_Sub8_Sub6.overlays[i_14_][i_72_][i_73_])
+													int i_74_ = ((JunkTex.overlays[i_14_][i_72_][i_73_])
 															& 0xff);
 													if (i_74_ != 0) {
 														Class150 class150_75_ = (Class97.method1489(i_74_ - 1, -9810));
 														if ((class150_75_.anInt2414) != -1 && ((Class3.anInterface3_117
 																.method12(true, (class150_75_.anInt2414))) == 4)) {
-															Static.anIntArrayArray2799[i_50_][i_51_] = (((class150_75_.anInt2413) << 56)
+															JunkTex.anIntArrayArray2799[i_50_][i_51_] = (((class150_75_.anInt2413) << 56)
 																	+ (class150_75_.anInt2426));
 															break while_312_;
 														}
@@ -340,7 +337,7 @@ public class MapRegion {
 											}
 										}
 									} else
-										Static.anIntArrayArray2799[i_50_][i_51_] = (class150.anInt2426
+										JunkTex.anIntArrayArray2799[i_50_][i_51_] = (class150.anInt2426
 												+ (class150.anInt2413 << 24));
 								}
 								int i_76_ = class150.anInt2414;
@@ -416,19 +413,19 @@ public class MapRegion {
 			}
 			if (bool) {
 				Class14_Sub27[] class14_sub27s = Class47.method1189(fs_84_, is_12_,
-						Class149.anIntArrayArrayArray2391[0], fs, (byte) -125, Class14_Sub8_Sub4.tileFlags, i_14_, is,
-						Class15.overlayOrientations[i_14_], Class97.underlays[i_14_], Class14_Sub8_Sub6.overlays[i_14_],
-						Static.anIntArrayArray2799, Static.overlayTypes[i_14_], fs_86_,
+						Class149.anIntArrayArrayArray2391[0], fs, (byte) -125, JunkTex.tileFlags, i_14_, is,
+						Class15.overlayOrientations[i_14_], Class97.underlays[i_14_], JunkTex.overlays[i_14_],
+						JunkTex.anIntArrayArray2799, JunkTex.overlayTypes[i_14_], fs_86_,
 						Class114.tileHeights[i_14_]);
 				Class14_Sub21.method895(i_14_, class14_sub27s);
 			} else {
 				Class14_Sub27[] class14_sub27s = Class47.method1189(fs_84_, is_12_, null, fs, (byte) -109,
-						Class14_Sub8_Sub4.tileFlags, i_14_, is, Class15.overlayOrientations[i_14_],
-						Class97.underlays[i_14_], Class14_Sub8_Sub6.overlays[i_14_], null, Static.overlayTypes[i_14_],
+						JunkTex.tileFlags, i_14_, is, Class15.overlayOrientations[i_14_],
+						Class97.underlays[i_14_], JunkTex.overlays[i_14_], null, JunkTex.overlayTypes[i_14_],
 						fs_86_, Class114.tileHeights[i_14_]);
-				Class14_Sub27[] class14_sub27s_91_ = Static.method1398(Class114.tileHeights[i_14_],
-						Class15.overlayOrientations[i_14_], 4, Class14_Sub8_Sub6.overlays[i_14_],
-						Static.overlayTypes[i_14_], i_14_, fs, fs_84_, is_12_, Class14_Sub8_Sub4.tileFlags, fs_86_,
+				Class14_Sub27[] class14_sub27s_91_ = JunkTex.method1398(Class114.tileHeights[i_14_],
+						Class15.overlayOrientations[i_14_], 4, JunkTex.overlays[i_14_],
+						JunkTex.overlayTypes[i_14_], i_14_, fs, fs_84_, is_12_, JunkTex.tileFlags, fs_86_,
 						Class97.underlays[i_14_]);
 				Class14_Sub27[] class14_sub27s_92_ = (new Class14_Sub27[class14_sub27s.length
 						+ class14_sub27s_91_.length]);
@@ -437,13 +434,13 @@ public class MapRegion {
 				for (int i_94_ = 0; class14_sub27s_91_.length > i_94_; i_94_++)
 					class14_sub27s_92_[class14_sub27s.length + i_94_] = class14_sub27s_91_[i_94_];
 				Class14_Sub21.method895(i_14_, class14_sub27s_92_);
-				Class32.method1064(Class15.overlayOrientations[i_14_], Static.overlayTypes[i_14_], fs_84_,
+				Class32.method1064(Class15.overlayOrientations[i_14_], JunkTex.overlayTypes[i_14_], fs_84_,
 						Class97.underlays[i_14_], fs_86_, LightManager.lights, -46, i_14_,
-						Class114.tileHeights[i_14_], Class14_Sub8_Sub6.overlays[i_14_], LightManager.lightCount, fs);
+						Class114.tileHeights[i_14_], JunkTex.overlays[i_14_], LightManager.lightCount, fs);
 			}
 			Class97.underlays[i_14_] = null;
-			Class14_Sub8_Sub6.overlays[i_14_] = null;
-			Static.overlayTypes[i_14_] = null;
+			JunkTex.overlays[i_14_] = null;
+			JunkTex.overlayTypes[i_14_] = null;
 			Class15.overlayOrientations[i_14_] = null;
 			Static2.aByteArrayArrayArray3354[i_14_] = null;
 		}
@@ -451,7 +448,7 @@ public class MapRegion {
 		if (!bool) {
 			for (int i_95_ = 0; i_95_ < 104; i_95_++) {
 				for (int i_96_ = 0; i_96_ < 104; i_96_++) {
-					if ((Class14_Sub8_Sub4.tileFlags[1][i_95_][i_96_] & 0x2) == 2)
+					if ((JunkTex.tileFlags[1][i_95_][i_96_] & 0x2) == 2)
 						Class109.method1569(i_95_, i_96_);
 				}
 			}
@@ -494,7 +491,7 @@ public class MapRegion {
 										i_108_, i_109_);
 								for (int i_110_ = i_102_; i_104_ >= i_110_; i_110_++) {
 									for (int i_111_ = i_100_; i_111_ <= i_101_; i_111_++)
-										Class66.anIntArrayArrayArray135[i_110_][i_99_][i_111_] = (Class14_Sub8_Sub26
+										Class66.anIntArrayArrayArray135[i_110_][i_99_][i_111_] = (JunkTex
 												.method617((Class66.anIntArrayArrayArray135[i_110_][i_99_][i_111_]),
 														-2));
 								}
@@ -536,7 +533,7 @@ public class MapRegion {
 										i_121_, i_120_);
 								for (int i_122_ = i_114_; i_122_ <= i_115_; i_122_++) {
 									for (int i_123_ = i_112_; i_113_ >= i_123_; i_123_++)
-										Class66.anIntArrayArrayArray135[i_122_][i_123_][i_98_] = (Class14_Sub8_Sub26
+										Class66.anIntArrayArrayArray135[i_122_][i_123_][i_98_] = (JunkTex
 												.method617((Class66.anIntArrayArrayArray135[i_122_][i_123_][i_98_]),
 														-3));
 								}
@@ -573,7 +570,7 @@ public class MapRegion {
 										i_125_ * 128 + 128, i_130_, i_130_);
 								for (int i_131_ = i_124_; i_131_ <= i_127_; i_131_++) {
 									for (int i_132_ = i_126_; i_132_ <= i_125_; i_132_++)
-										Class66.anIntArrayArrayArray135[i_97_][i_131_][i_132_] = (Class14_Sub8_Sub26
+										Class66.anIntArrayArrayArray135[i_97_][i_131_][i_132_] = (JunkTex
 												.method617((Class66.anIntArrayArrayArray135[i_97_][i_131_][i_132_]),
 														-5));
 								}

@@ -3,8 +3,6 @@
  */
 package rs;
 
-import rs.tex.Class14_Sub8_Sub21;
-
 public class Class117 {
 	public int[] anIntArray1935;
 	public byte[] aByteArray1936;
@@ -72,7 +70,7 @@ public class Class117 {
 
 	public static void method1602(int[] is, byte i, long[] ls) {
 		int i_2_ = 27 / ((-66 - i) / 47);
-		Class14_Sub8_Sub21.method587(ls, ls.length - 1, is, false, 0);
+		JunkTex.method587(ls, ls.length - 1, is, false, 0);
 	}
 
 	public Class117() {

@@ -5,12 +5,6 @@ package rs;
 
 import java.awt.Graphics;
 
-import rs.tex.Class14_Sub8;
-import rs.tex.Class14_Sub8_Sub15;
-import rs.tex.Class14_Sub8_Sub18;
-import rs.tex.Class14_Sub8_Sub27;
-import rs.tex.Static;
-
 public abstract class Class108 {
 	public static Class124 aClass124_1814;
 	public static Class124 aClass124_1815;
@@ -92,17 +86,17 @@ public abstract class Class108 {
 
 	public static void method1559(byte i) {
 		Static2.aClass55_4048.clear();
-		Class14_Sub8.aClass81_2844.clear();
+		JunkTex.aClass81_2844.clear();
 		if (i == -100)
-			Class14_Sub8_Sub27.aClass81_4546.clear();
+			JunkTex.aClass81_4546.clear();
 	}
 
 	public abstract void method1560(int i, byte i_37_, int i_38_, int i_39_, Graphics graphics, int i_40_);
 
 	public static void method1561(Class9 class9, byte i, Class9 class9_41_) {
 		if (i >= 22) {
-			Class14_Sub8_Sub15.aClass9_4338 = class9;
-			Static.aClass9_2711 = class9_41_;
+			JunkTex.aClass9_4338 = class9;
+			JunkTex.aClass9_2711 = class9_41_;
 		}
 	}
 
@@ -128,7 +122,7 @@ public abstract class Class108 {
 					int i_49_ = class6.anInt151;
 					int i_50_ = class6.anInt154;
 					int i_51_ = class6.anInt156;
-					int[] is_52_ = Class14_Sub8_Sub18.anIntArrayArray4388[i_48_];
+					int[] is_52_ = JunkTex.anIntArrayArray4388[i_48_];
 					int[] is_53_ = Class9.anIntArrayArray190[i_49_];
 					int i_54_ = 0;
 					if (i_50_ != 0) {

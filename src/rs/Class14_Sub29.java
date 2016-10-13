@@ -8,11 +8,6 @@ import com.jagex.link.Deque;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.Class148_Sub1;
 
-import rs.tex.Class14_Sub8_Sub14;
-import rs.tex.Class14_Sub8_Sub17;
-import rs.tex.Class14_Sub8_Sub6;
-import rs.tex.Static;
-
 public class Class14_Sub29 extends Linkable {
 	public int anInt3231;
 	public Class6 aClass6_3233;
@@ -77,7 +72,7 @@ public class Class14_Sub29 extends Linkable {
 				aClass148_Sub1Array3265 = null;
 			}
 		} catch (Throwable throwable) {
-			throw Class14_Sub8_Sub14.method554(throwable, new StringBuilder("ve.D(").append(i).append(')').toString());
+			throw JunkTex.method554(throwable, new StringBuilder("ve.D(").append(i).append(')').toString());
 		}
 	}
 
@@ -101,7 +96,7 @@ public class Class14_Sub29 extends Linkable {
 				}
 			}
 		} catch (Throwable var6) {
-			throw Class14_Sub8_Sub14.method554(var6, "ve.G(" + var0 + ',' + var1 + ',' + var2 + ')');
+			throw JunkTex.method554(var6, "ve.G(" + var0 + ',' + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -113,7 +108,7 @@ public class Class14_Sub29 extends Linkable {
 	}
 
 	public static void method934(Class9 class9, int i) {
-		Class14_Sub8_Sub17.aClass9_4371 = class9;
+		JunkTex.aClass9_4371 = class9;
 	}
 
 	public static void method935(int i, boolean bool) {
@@ -130,12 +125,12 @@ public class Class14_Sub29 extends Linkable {
 			i_27_ = 1;
 		Static2.aByteArrayArrayArray3354 = new byte[i_27_][105][105];
 		Class97.underlays = new byte[i_27_][104][104];
-		Static.overlayTypes = new byte[i_27_][104][104];
+		JunkTex.overlayTypes = new byte[i_27_][104][104];
 		Class15.overlayOrientations = new byte[i_27_][104][104];
 		if (i != 5)
 			method932(-78, -17);
 		Class66.anIntArrayArrayArray135 = new int[i_27_][105][105];
-		Class14_Sub8_Sub6.overlays = new byte[i_27_][104][104];
+		JunkTex.overlays = new byte[i_27_][104][104];
 	}
 
 	public static void method936(int i) {

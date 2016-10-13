@@ -3,9 +3,9 @@ package com.jagex.rt4.lights;
 import com.jagex.io.Buffer;
 
 import rs.Class3;
-import rs.Static2;
+import rs.JunkTex;
 import rs.tex.Class14_Sub8_Sub12;
-import rs.tex.Class14_Sub8_Sub26;
+import rs.tex.TexStatic;
 
 public class Light {
 	public boolean aBoolean1112;
@@ -119,9 +119,9 @@ public class Light {
 			i_3_ = 2048;
 		aFloat1107 = (float) (anInt1113 + (i_3_ * anInt1102 >> 11)) / 2048.0F;
 		float f = aFloat1107 / 255.0F;
-		params[2] = (float) Class14_Sub8_Sub26.method617(255, anInt1122) * f;
-		params[0] = (float) Class14_Sub8_Sub26.method617(anInt1122 >> 48, 255) * f;
-		params[1] = f * (float) Class14_Sub8_Sub26.method617(anInt1122 >> 40, 255);
+		params[2] = (float) JunkTex.method617(255, anInt1122) * f;
+		params[0] = (float) JunkTex.method617(anInt1122 >> 48, 255) * f;
+		params[1] = f * (float) JunkTex.method617(anInt1122 >> 40, 255);
 	}
 
 	public void method1331(int i) {
@@ -382,7 +382,7 @@ public class Light {
 		class14_sub8_sub12.anInt4291 = i;
 		class14_sub8_sub12.anInt4297 = (int) (f * 4096.0F);
 		class14_sub8_sub12.method472();
-		Static2.method1117(0, 1, i_18_);
+		TexStatic.method1117(0, 1, i_18_);
 		class14_sub8_sub12.method542(-2, 0, is);
 		int[] is_22_ = is;
 		return is_22_;

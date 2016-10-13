@@ -5,9 +5,6 @@ package rs;
 
 import com.jagex.link.HashTable;
 
-import rs.tex.Class14_Sub8;
-import rs.tex.Class14_Sub8_Sub9;
-
 public class Class7_Sub2_Sub1 extends Class7_Sub2 {
 	public static HashTable aClass55_3698;
 	public static boolean aBoolean3699;
@@ -25,15 +22,15 @@ public class Class7_Sub2_Sub1 extends Class7_Sub2 {
 			int i_0_ = -71;
 			return i_0_;
 		}
-		if ((double) Class14_Sub8.aFloat2854 == 3.0) {
+		if ((double) JunkTex.aFloat2854 == 3.0) {
 			int i_1_ = 37;
 			return i_1_;
 		}
-		if ((double) Class14_Sub8.aFloat2854 == 4.0) {
+		if ((double) JunkTex.aFloat2854 == 4.0) {
 			int i_2_ = 50;
 			return i_2_;
 		}
-		if (6.0 == (double) Class14_Sub8.aFloat2854) {
+		if (6.0 == (double) JunkTex.aFloat2854) {
 			int i_3_ = 75;
 			return i_3_;
 		}
@@ -51,6 +48,6 @@ public class Class7_Sub2_Sub1 extends Class7_Sub2 {
 	public static void method130(byte i) {
 		if (i != 110)
 			aClass55_3698 = null;
-		Class14_Sub8_Sub9.aClass52_4240.clear();
+		JunkTex.aClass52_4240.clear();
 	}
 }

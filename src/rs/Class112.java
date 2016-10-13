@@ -13,8 +13,6 @@ public class Class112 {
 	public Class14_Sub2_Sub12 aClass14_Sub2_Sub12_1873;
 	public int anInt1874 = -1;
 	public static Class124[] aClass124Array1875;
-	public static int anInt1876;
-
 	static {
 		aClass52_1868 = new SoftCache(500);
 		aClass124Array1875 = new Class124[500];

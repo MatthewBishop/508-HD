@@ -3,11 +3,6 @@
  */
 package rs;
 
-import rs.tex.Class14_Sub8_Sub13;
-import rs.tex.Class14_Sub8_Sub14;
-import rs.tex.Class14_Sub8_Sub23;
-import rs.tex.Static;
-
 public class Class64 {
 	public static Class124 aClass124_1009;
 	public static Class124 aClass124_1010 = Class14_Sub2_Sub2.method263(1178, "<col=ffff00>");
@@ -31,9 +26,9 @@ public class Class64 {
 		if (i_3_ != -115)
 			method1287(-75);
 		if (Class14_Sub17.anInt3005 <= i && i <= Class59.anInt955) {
-			i_1_ = Class67.method1301((byte) -83, i_1_, Class118.anInt1982, Class14_Sub8_Sub14.anInt4327);
-			i_0_ = Class67.method1301((byte) -93, i_0_, Class118.anInt1982, Class14_Sub8_Sub14.anInt4327);
-			Static.method1226(4, i_1_, i, i_0_, i_2_);
+			i_1_ = Class67.method1301((byte) -83, i_1_, Class118.anInt1982, JunkTex.anInt4327);
+			i_0_ = Class67.method1301((byte) -93, i_0_, Class118.anInt1982, JunkTex.anInt4327);
+			JunkTex.method1226(4, i_1_, i, i_0_, i_2_);
 		}
 	}
 
@@ -44,7 +39,7 @@ public class Class64 {
 				i_5_ = Static2.anIntArray351[i_4_];
 			else
 				i_5_ = 2047;
-			Class133_Sub1_Sub1 class133_sub1_sub1 = Class14_Sub8_Sub23.aClass133_Sub1_Sub1Array4474[i_5_];
+			Class133_Sub1_Sub1 class133_sub1_sub1 = JunkTex.aClass133_Sub1_Sub1Array4474[i_5_];
 			if (class133_sub1_sub1 != null && class133_sub1_sub1.anInt3473 > 0) {
 				Class133_Sub1_Sub1 class133_sub1_sub1_6_ = class133_sub1_sub1;
 				class133_sub1_sub1_6_.anInt3473 = class133_sub1_sub1_6_.anInt3473 - 1;
@@ -52,8 +47,8 @@ public class Class64 {
 					class133_sub1_sub1.aClass124_3462 = null;
 			}
 		}
-		for (int i_7_ = 0; i_7_ < Class14_Sub8_Sub13.anInt4306; i_7_++) {
-			int i_8_ = Static.anIntArray3965[i_7_];
+		for (int i_7_ = 0; i_7_ < JunkTex.anInt4306; i_7_++) {
+			int i_8_ = JunkTex.anIntArray3965[i_7_];
 			Class133_Sub1_Sub2 class133_sub1_sub2 = Class14_Sub4.aClass133_Sub1_Sub2Array2785[i_8_];
 			if (class133_sub1_sub2 != null && class133_sub1_sub2.anInt3473 > 0) {
 				Class133_Sub1_Sub2 class133_sub1_sub2_9_ = class133_sub1_sub2;

@@ -12,14 +12,6 @@ import rs.Class14_Sub3;
 import rs.Class15;
 import rs.Class54;
 import rs.Class76;
-import rs.tex.Class14_Sub8_Sub14;
-import rs.tex.Class14_Sub8_Sub16;
-import rs.tex.Class14_Sub8_Sub23;
-import rs.tex.Class14_Sub8_Sub35;
-import rs.tex.Class14_Sub8_Sub39_Sub1;
-import rs.tex.Class14_Sub8_Sub7;
-import rs.tex.Class14_Sub8_Sub9;
-import rs.tex.Static;
 
 public class Class114 {
 
@@ -67,13 +59,13 @@ public class Class114 {
 						try {
 							try {
 								this.aClass76_1905.method1361(0, (long) (var2 * 6));
-								this.aClass76_1905.method1368(false, Class14_Sub8_Sub39_Sub1.aByteArray5102, 0, 6);
-								var6 = (Class14_Sub8_Sub39_Sub1.aByteArray5102[1] << 8 & '\uff00')
-										+ (Class14_Sub8_Sub39_Sub1.aByteArray5102[0] << 48 & 16711680)
-										+ (Class14_Sub8_Sub39_Sub1.aByteArray5102[2] & 255);
-								var7 = (Class14_Sub8_Sub39_Sub1.aByteArray5102[5] & 255)
-										+ ((Class14_Sub8_Sub39_Sub1.aByteArray5102[4] & 255) << 40)
-										+ ((Class14_Sub8_Sub39_Sub1.aByteArray5102[3] & 255) << 16);
+								this.aClass76_1905.method1368(false, JunkTex.aByteArray5102, 0, 6);
+								var6 = (JunkTex.aByteArray5102[1] << 8 & '\uff00')
+										+ (JunkTex.aByteArray5102[0] << 48 & 16711680)
+										+ (JunkTex.aByteArray5102[2] & 255);
+								var7 = (JunkTex.aByteArray5102[5] & 255)
+										+ ((JunkTex.aByteArray5102[4] & 255) << 40)
+										+ ((JunkTex.aByteArray5102[3] & 255) << 16);
 								if (var6 >= 0 && var6 <= this.anInt1897) {
 									break label192;
 								}
@@ -131,16 +123,16 @@ public class Class114 {
 									var11 = 512;
 								}
 
-								this.aClass76_1901.method1368(false, Class14_Sub8_Sub39_Sub1.aByteArray5102, 0,
+								this.aClass76_1901.method1368(false, JunkTex.aByteArray5102, 0,
 										var11 + 8);
-								var12 = (Class14_Sub8_Sub39_Sub1.aByteArray5102[2] << 40 & '\uff00')
-										+ (Class14_Sub8_Sub39_Sub1.aByteArray5102[3] & 255);
-								int var13 = (Class14_Sub8_Sub39_Sub1.aByteArray5102[0] << 40 & '\uff00')
-										+ (Class14_Sub8_Sub39_Sub1.aByteArray5102[1] & 255);
-								var14 = ((Class14_Sub8_Sub39_Sub1.aByteArray5102[5] & 255) << 40)
-										+ ((Class14_Sub8_Sub39_Sub1.aByteArray5102[4] & 255) << 48)
-										+ (Class14_Sub8_Sub39_Sub1.aByteArray5102[6] & 255);
-								int var15 = Class14_Sub8_Sub39_Sub1.aByteArray5102[7] & 255;
+								var12 = (JunkTex.aByteArray5102[2] << 40 & '\uff00')
+										+ (JunkTex.aByteArray5102[3] & 255);
+								int var13 = (JunkTex.aByteArray5102[0] << 40 & '\uff00')
+										+ (JunkTex.aByteArray5102[1] & 255);
+								var14 = ((JunkTex.aByteArray5102[5] & 255) << 40)
+										+ ((JunkTex.aByteArray5102[4] & 255) << 48)
+										+ (JunkTex.aByteArray5102[6] & 255);
+								int var15 = JunkTex.aByteArray5102[7] & 255;
 								if (var2 != var13 || var10 != var12 || this.anInt1898 != var15) {
 									var3 = null;
 									var10000 = (byte[]) var3;
@@ -165,7 +157,7 @@ public class Class114 {
 
 						try {
 							for (var12 = 0; var12 < var11; ++var12) {
-								var9[var8++] = Class14_Sub8_Sub39_Sub1.aByteArray5102[var12 + 8];
+								var9[var8++] = JunkTex.aByteArray5102[var12 + 8];
 							}
 
 							var7 = var14;
@@ -187,7 +179,7 @@ public class Class114 {
 				return (byte[]) var3;
 			}
 		} catch (Throwable var28) {
-			throw Class14_Sub8_Sub14.method554(var28, "rl.D(" + var1 + ',' + var2 + ')');
+			throw JunkTex.method554(var28, "rl.D(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -218,7 +210,7 @@ public class Class114 {
 							;
 						}
 					} catch (Throwable var11) {
-						throw Class14_Sub8_Sub14.method554(var11, "rl.C(" + var1 + ','
+						throw JunkTex.method554(var11, "rl.C(" + var1 + ','
 								+ (var2 != null ? "{...}" : "null") + ',' + var3 + ',' + var4 + ')');
 					}
 				}
@@ -276,10 +268,10 @@ public class Class114 {
 						try {
 							try {
 								this.aClass76_1905.method1361(0, (long) (var3 * 6));
-								this.aClass76_1905.method1368(false, Class14_Sub8_Sub39_Sub1.aByteArray5102, 0, 6);
-								var9 = (Class14_Sub8_Sub39_Sub1.aByteArray5102[5] & 255)
-										+ ((Class14_Sub8_Sub39_Sub1.aByteArray5102[3] & 255) << 16)
-										+ ((Class14_Sub8_Sub39_Sub1.aByteArray5102[4] & 255) << 8);
+								this.aClass76_1905.method1368(false, JunkTex.aByteArray5102, 0, 6);
+								var9 = (JunkTex.aByteArray5102[5] & 255)
+										+ ((JunkTex.aByteArray5102[3] & 255) << 16)
+										+ ((JunkTex.aByteArray5102[4] & 255) << 8);
 								if (var9 > 0 && (long) var9 <= this.aClass76_1901.method1360((byte) -116) / 520L) {
 									break label225;
 								}
@@ -299,14 +291,14 @@ public class Class114 {
 					int var11;
 					try {
 						try {
-							Class14_Sub8_Sub39_Sub1.aByteArray5102[3] = (byte) (var9 >> 48);
-							Class14_Sub8_Sub39_Sub1.aByteArray5102[1] = (byte) (var1 >> 40);
-							Class14_Sub8_Sub39_Sub1.aByteArray5102[4] = (byte) (var9 >> 40);
-							Class14_Sub8_Sub39_Sub1.aByteArray5102[2] = (byte) var1;
-							Class14_Sub8_Sub39_Sub1.aByteArray5102[0] = (byte) (var1 >> 16);
-							Class14_Sub8_Sub39_Sub1.aByteArray5102[5] = (byte) var9;
+							JunkTex.aByteArray5102[3] = (byte) (var9 >> 48);
+							JunkTex.aByteArray5102[1] = (byte) (var1 >> 40);
+							JunkTex.aByteArray5102[4] = (byte) (var9 >> 40);
+							JunkTex.aByteArray5102[2] = (byte) var1;
+							JunkTex.aByteArray5102[0] = (byte) (var1 >> 16);
+							JunkTex.aByteArray5102[5] = (byte) var9;
 							this.aClass76_1905.method1361(0, (long) (var3 * 6));
-							this.aClass76_1905.method1362(0, 6, (byte) 94, Class14_Sub8_Sub39_Sub1.aByteArray5102);
+							this.aClass76_1905.method1362(0, 6, (byte) 94, JunkTex.aByteArray5102);
 							var10 = 0;
 							var11 = 0;
 						} catch (IOException var22) {
@@ -326,20 +318,20 @@ public class Class114 {
 										this.aClass76_1901.method1361(0, (long) (var9 * 520));
 
 										try {
-											this.aClass76_1901.method1368(false, Class14_Sub8_Sub39_Sub1.aByteArray5102,
+											this.aClass76_1901.method1368(false, JunkTex.aByteArray5102,
 													0, 8);
 										} catch (EOFException var21) {
 											break label171;
 										}
 
-										var14 = (Class14_Sub8_Sub39_Sub1.aByteArray5102[1] & 255)
-												+ (Class14_Sub8_Sub39_Sub1.aByteArray5102[0] << 40 & '\uff00');
-										var12 = (Class14_Sub8_Sub39_Sub1.aByteArray5102[4] << 16 & 16711680)
-												+ (Class14_Sub8_Sub39_Sub1.aByteArray5102[5] << 40 & '\uff00')
-												+ (Class14_Sub8_Sub39_Sub1.aByteArray5102[6] & 255);
-										int var13 = (Class14_Sub8_Sub39_Sub1.aByteArray5102[3] & 255)
-												+ ((Class14_Sub8_Sub39_Sub1.aByteArray5102[2] & 255) << 40);
-										int var15 = Class14_Sub8_Sub39_Sub1.aByteArray5102[7] & 255;
+										var14 = (JunkTex.aByteArray5102[1] & 255)
+												+ (JunkTex.aByteArray5102[0] << 40 & '\uff00');
+										var12 = (JunkTex.aByteArray5102[4] << 16 & 16711680)
+												+ (JunkTex.aByteArray5102[5] << 40 & '\uff00')
+												+ (JunkTex.aByteArray5102[6] & 255);
+										int var13 = (JunkTex.aByteArray5102[3] & 255)
+												+ ((JunkTex.aByteArray5102[2] & 255) << 40);
+										int var15 = JunkTex.aByteArray5102[7] & 255;
 										if (var3 == var14 && var11 == var13 && var15 == this.anInt1898) {
 											try {
 												if (var12 >= 0 && this.aClass76_1901.method1360((byte) -74)
@@ -374,10 +366,10 @@ public class Class114 {
 											}
 										}
 
-										Class14_Sub8_Sub39_Sub1.aByteArray5102[3] = (byte) var11;
-										Class14_Sub8_Sub39_Sub1.aByteArray5102[1] = (byte) var3;
-										Class14_Sub8_Sub39_Sub1.aByteArray5102[0] = (byte) (var3 >> 40);
-										Class14_Sub8_Sub39_Sub1.aByteArray5102[7] = (byte) this.anInt1898;
+										JunkTex.aByteArray5102[3] = (byte) var11;
+										JunkTex.aByteArray5102[1] = (byte) var3;
+										JunkTex.aByteArray5102[0] = (byte) (var3 >> 40);
+										JunkTex.aByteArray5102[7] = (byte) this.anInt1898;
 										var14 = var1 - var10;
 										if (var14 > 512) {
 											var14 = 512;
@@ -387,14 +379,14 @@ public class Class114 {
 											var12 = 0;
 										}
 
-										Class14_Sub8_Sub39_Sub1.aByteArray5102[5] = (byte) (var12 >> 8);
-										Class14_Sub8_Sub39_Sub1.aByteArray5102[2] = (byte) (var11 >> 8);
-										Class14_Sub8_Sub39_Sub1.aByteArray5102[4] = (byte) (var12 >> 16);
+										JunkTex.aByteArray5102[5] = (byte) (var12 >> 8);
+										JunkTex.aByteArray5102[2] = (byte) (var11 >> 8);
+										JunkTex.aByteArray5102[4] = (byte) (var12 >> 16);
 										++var11;
-										Class14_Sub8_Sub39_Sub1.aByteArray5102[6] = (byte) var12;
+										JunkTex.aByteArray5102[6] = (byte) var12;
 										this.aClass76_1901.method1361(0, (long) (var9 * 520));
 										this.aClass76_1901.method1362(0, 8, (byte) 45,
-												Class14_Sub8_Sub39_Sub1.aByteArray5102);
+												JunkTex.aByteArray5102);
 										var9 = var12;
 										this.aClass76_1901.method1362(var10, var14, (byte) 92, var4);
 										var10 += var14;
@@ -422,7 +414,7 @@ public class Class114 {
 				return var6;
 			}
 		} catch (Throwable var29) {
-			throw Class14_Sub8_Sub14.method554(var29, "rl.B(" + var1 + ',' + var2 + ',' + var3 + ','
+			throw JunkTex.method554(var29, "rl.B(" + var1 + ',' + var2 + ',' + var3 + ','
 					+ (var4 != null ? "{...}" : "null") + ',' + var5 + ')');
 		}
 	}
@@ -447,7 +439,7 @@ public class Class114 {
 			}
 
 		} catch (Throwable var4) {
-			throw Class14_Sub8_Sub14.method554(var4, "rl.E(" + var0 + ')');
+			throw JunkTex.method554(var4, "rl.E(" + var0 + ')');
 		}
 	}
 
@@ -456,7 +448,7 @@ public class Class114 {
 			Class14_Sub2_Sub7.method289((byte) 124, var0.length - 1, var0, var1, 0);
 			int var3 = -12 % ((-5 - var2) / 58);
 		} catch (RuntimeException var4) {
-			throw Class14_Sub8_Sub14.method554(var4, "rl.A(" + (var0 != null ? "{...}" : "null") + ','
+			throw JunkTex.method554(var4, "rl.A(" + (var0 != null ? "{...}" : "null") + ','
 					+ (var1 != null ? "{...}" : "null") + ',' + var2 + ')');
 		}
 	}
@@ -467,31 +459,31 @@ public class Class114 {
 			boolean var4 = false;
 
 			for (int var5 = var1; var5 < Static2.anInt2878; ++var5) {
-				Class133_Sub1_Sub1 var6 = Class14_Sub8_Sub23.aClass133_Sub1_Sub1Array4474[Static2.anIntArray351[var5]];
+				Class133_Sub1_Sub1 var6 = JunkTex.aClass133_Sub1_Sub1Array4474[Static2.anIntArray351[var5]];
 				if (var6 != null && var6.aClass124_4922 != null && var6.aClass124_4922.method1717(40, var3)) {
-					Class14_Sub8_Sub35.method663(Class14_Sub3.aClass133_Sub1_Sub1_2748.anIntArray3476[0], 1, 0, 0,
+					JunkTex.method663(Class14_Sub3.aClass133_Sub1_Sub1_2748.anIntArray3476[0], 1, 0, 0,
 							(byte) 109, Class14_Sub3.aClass133_Sub1_Sub1_2748.anIntArray3443[0], false, 0,
 							var6.anIntArray3476[0], 2, 1, var6.anIntArray3443[0]);
 					if (var2 != 1) {
 						if (var2 == 4) {
 							++Class124.anInt2483;
-							Static.aClass14_Sub10_Sub1_891.writeOpcode(253);
-							Static.aClass14_Sub10_Sub1_891.method801((byte) -56, Static2.anIntArray351[var5]);
+							JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(253);
+							JunkTex.aClass14_Sub10_Sub1_891.method801((byte) -56, Static2.anIntArray351[var5]);
 						} else if (var2 != 6) {
 							if (var2 == 7) {
 								++Class54.anInt880;
-								Static.aClass14_Sub10_Sub1_891.writeOpcode(93);
-								Static.aClass14_Sub10_Sub1_891.method801((byte) -119, Static2.anIntArray351[var5]);
+								JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(93);
+								JunkTex.aClass14_Sub10_Sub1_891.method801((byte) -119, Static2.anIntArray351[var5]);
 							}
 						} else {
-							Static.aClass14_Sub10_Sub1_891.writeOpcode(35);
+							JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(35);
 							++Class115.anInt1912;
-							Static.aClass14_Sub10_Sub1_891.method801((byte) -122, Static2.anIntArray351[var5]);
+							JunkTex.aClass14_Sub10_Sub1_891.method801((byte) -122, Static2.anIntArray351[var5]);
 						}
 					} else {
-						Static.aClass14_Sub10_Sub1_891.writeOpcode(160);
-						Static.aClass14_Sub10_Sub1_891.method838(-1676904088, Static2.anIntArray351[var5]);
-						++Class14_Sub8_Sub16.anInt4350;
+						JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(160);
+						JunkTex.aClass14_Sub10_Sub1_891.method838(-1676904088, Static2.anIntArray351[var5]);
+						++JunkTex.anInt4350;
 					}
 
 					var4 = true;
@@ -501,12 +493,12 @@ public class Class114 {
 
 			if (!var4) {
 				Class15.method943(
-						Class14_Sub8_Sub7.method515(new Class124[] { Class125.aClass124_2077, var3 }, (byte) -120),
-						false, Class14_Sub8_Sub9.aClass124_4244, 0);
+						JunkTex.method515(new Class124[] { Class125.aClass124_2077, var3 }, (byte) -120),
+						false, JunkTex.aClass124_4244, 0);
 			}
 
 		} catch (RuntimeException var7) {
-			throw Class14_Sub8_Sub14.method554(var7,
+			throw JunkTex.method554(var7,
 					"rl.F(" + (var0 != null ? "{...}" : "null") + ',' + var1 + ',' + var2 + ')');
 		}
 	}
@@ -516,7 +508,7 @@ public class Class114 {
 			String var1 = "Cache:" + this.anInt1898;
 			return var1;
 		} catch (RuntimeException var2) {
-			throw Class14_Sub8_Sub14.method554(var2, "rl.toString()");
+			throw JunkTex.method554(var2, "rl.toString()");
 		}
 	}
 
@@ -527,7 +519,7 @@ public class Class114 {
 			this.aClass76_1905 = var3;
 			this.aClass76_1901 = var2;
 		} catch (RuntimeException var6) {
-			throw Class14_Sub8_Sub14.method554(var6, "rl.<init>(" + var1 + ',' + (var2 != null ? "{...}" : "null") + ','
+			throw JunkTex.method554(var6, "rl.<init>(" + var1 + ',' + (var2 != null ? "{...}" : "null") + ','
 					+ (var3 != null ? "{...}" : "null") + ',' + var4 + ')');
 		}
 	}

@@ -3,9 +3,6 @@
  */
 package rs;
 
-import rs.tex.Class14_Sub8_Sub11;
-import rs.tex.Static;
-
 public class Class122 {
 	public static Class124 aClass124_2053;
 	public static int anInt2054;
@@ -38,10 +35,10 @@ public class Class122 {
 
 	public static void method1660(int i, int i_1_) {
 		Class45.method1160(0);
-		Static.method240(256);
+		JunkTex.method240(256);
 		int i_2_ = Class133.method1780((byte) 111, i_1_).anInt587;
 		if (i_2_ != 0) {
-			int i_3_ = Class14_Sub8_Sub11.anIntArray4275[i_1_];
+			int i_3_ = JunkTex.anIntArray4275[i_1_];
 			if (i_2_ == 6)
 				Class14_Sub28.anInt3222 = i_3_;
 			if (i_2_ == 9)

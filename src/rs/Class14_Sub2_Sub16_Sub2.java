@@ -12,8 +12,6 @@ import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub2;
 import com.jagex.rt4.Class25;
 
-import rs.tex.Class14_Sub8_Sub33;
-
 public class Class14_Sub2_Sub16_Sub2 extends Class14_Sub2_Sub16 {
 	public int anInt5066;
 	public int anInt5067;
@@ -31,7 +29,7 @@ public class Class14_Sub2_Sub16_Sub2 extends Class14_Sub2_Sub16 {
 					anInt5067 = anIntArray3989[i];
 			}
 			anInt5067 *= 16;
-			anInt5067 = Class14_Sub8_Sub33.method653(anInt5067);
+			anInt5067 = JunkTex.method653(anInt5067);
 			int i = anInt5067 / 16;
 			byte[] is_0_ = new byte[anInt5067 * anInt5067 * 2];
 			for (int i_1_ = 0; i_1_ < 256; i_1_++) {

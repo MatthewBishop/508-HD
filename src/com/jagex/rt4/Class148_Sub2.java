@@ -7,7 +7,7 @@ import java.nio.ByteBuffer;
 
 import javax.media.opengl.GL;
 
-import rs.tex.Class14_Sub8_Sub33;
+import rs.JunkTex;
 
 public class Class148_Sub2 extends Class148 {
 	public int anInt3690;
@@ -93,8 +93,8 @@ public class Class148_Sub2 extends Class148 {
 	}
 
 	public void method2013(byte[] is, int[] is_4_) {
-		anInt3696 = Class14_Sub8_Sub33.method653(width);
-		anInt3693 = Class14_Sub8_Sub33.method653(height);
+		anInt3696 = JunkTex.method653(width);
+		anInt3693 = JunkTex.method653(height);
 		byte[] is_5_ = new byte[anInt3696 * anInt3693 * 4];
 		int i = 0;
 		int i_6_ = 0;

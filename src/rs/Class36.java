@@ -22,9 +22,6 @@ import rs.Class40;
 import rs.Class43;
 import rs.Class63;
 import rs.Class90;
-import rs.tex.Class14_Sub8;
-import rs.tex.Class14_Sub8_Sub14;
-import rs.tex.Static;
 
 public class Class36 implements Runnable {
 
@@ -267,7 +264,7 @@ public class Class36 implements Runnable {
 				Class14_Sub9_Sub3.method738((String) null, var12, 95);
 			}
 		} catch (RuntimeException var13) {
-			throw Class14_Sub8_Sub14.method554(var13, "ee.run()");
+			throw JunkTex.method554(var13, "ee.run()");
 		}
 	}
 
@@ -277,24 +274,24 @@ public class Class36 implements Runnable {
 	}
 
 	public static void method1106(int var0) {
-		if (Class14_Sub8.aFloat2854 > Class90.aFloat1426) {
+		if (JunkTex.aFloat2854 > Class90.aFloat1426) {
 			Class90.aFloat1426 = (float) ((double) Class90.aFloat1426 + (double) Class90.aFloat1426 / 30.0D);
-			if (Class14_Sub8.aFloat2854 < Class90.aFloat1426) {
-				Class90.aFloat1426 = Class14_Sub8.aFloat2854;
+			if (JunkTex.aFloat2854 < Class90.aFloat1426) {
+				Class90.aFloat1426 = JunkTex.aFloat2854;
 			}
 
 			Static2.method1126((byte) -22);
-		} else if (Class14_Sub8.aFloat2854 < Class90.aFloat1426) {
+		} else if (JunkTex.aFloat2854 < Class90.aFloat1426) {
 			Class90.aFloat1426 = (float) ((double) Class90.aFloat1426 - (double) Class90.aFloat1426 / 30.0D);
-			if (Class90.aFloat1426 < Class14_Sub8.aFloat2854) {
-				Class90.aFloat1426 = Class14_Sub8.aFloat2854;
+			if (Class90.aFloat1426 < JunkTex.aFloat2854) {
+				Class90.aFloat1426 = JunkTex.aFloat2854;
 			}
 
 			Static2.method1126((byte) -22);
 		}
 
-		if (var0 != Static.anInt427 && Class14_Sub18.anInt3050 != -1) {
-			int var1 = Static.anInt427 - Class37.anInt644;
+		if (var0 != JunkTex.anInt427 && Class14_Sub18.anInt3050 != -1) {
+			int var1 = JunkTex.anInt427 - Class37.anInt644;
 			if (var1 < 2 || var1 > 2) {
 				var1 >>= 4;
 			}
@@ -307,7 +304,7 @@ public class Class36 implements Runnable {
 
 			if (var1 == 0 && var2 == 0) {
 				Class14_Sub18.anInt3050 = -1;
-				Static.anInt427 = -1;
+				JunkTex.anInt427 = -1;
 			}
 
 			Class133_Sub6.anInt3659 += var2;

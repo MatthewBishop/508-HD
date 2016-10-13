@@ -9,8 +9,6 @@ import java.awt.Graphics;
 
 import com.jagex.util.TimeUtil;
 
-import rs.tex.Static;
-
 public class Canvas_Sub1 extends Canvas {
 	public static float aFloat41;
 	public static Class124 aClass124_42 = Class14_Sub2_Sub2.method263(1178, "");
@@ -35,10 +33,10 @@ public class Canvas_Sub1 extends Canvas {
 		Class14_Sub9_Sub3.anIntArray4851[i_1_] = i;
 		if (i_0_ != -1)
 			method58(63, (byte) 85, -90);
-		Class14_Sub13 class14_sub13 = ((Class14_Sub13) Static.aClass55_92.get((long) i_1_));
+		Class14_Sub13 class14_sub13 = ((Class14_Sub13) JunkTex.aClass55_92.get((long) i_1_));
 		if (class14_sub13 == null) {
 			class14_sub13 = new Class14_Sub13(4611686018427387905L);
-			Static.aClass55_92.put((long) i_1_, class14_sub13);
+			JunkTex.aClass55_92.put((long) i_1_, class14_sub13);
 		} else if (class14_sub13.aLong2963 != 4611686018427387905L)
 			class14_sub13.aLong2963 = TimeUtil.getTime() + 500L | 0x4000000000000000L;
 	}

@@ -14,20 +14,6 @@ import com.jagex.rt4.RT4;
 import com.jagex.util.TimeUtil;
 import com.jagex.util.Util;
 
-import rs.tex.Class14_Sub8_Sub11;
-import rs.tex.Class14_Sub8_Sub20;
-import rs.tex.Class14_Sub8_Sub22;
-import rs.tex.Class14_Sub8_Sub24;
-import rs.tex.Class14_Sub8_Sub25;
-import rs.tex.Class14_Sub8_Sub26;
-import rs.tex.Class14_Sub8_Sub3;
-import rs.tex.Class14_Sub8_Sub34;
-import rs.tex.Class14_Sub8_Sub39;
-import rs.tex.Class14_Sub8_Sub6;
-import rs.tex.Class14_Sub8_Sub7;
-import rs.tex.Class14_Sub8_Sub8;
-import rs.tex.Static;
-
 public class Class14_Sub14 extends Linkable {
 	public int anInt2965;
 	public int anInt2966;
@@ -57,8 +43,8 @@ public class Class14_Sub14 extends Linkable {
 
 	public static void method865(Class43 class43, boolean bool, int i) {
 		if (bool) {
-			Class14_Sub8_Sub6.anInt4190 = 3;
-			Class14_Sub8_Sub3.method495((byte) -47, false);
+			JunkTex.anInt4190 = 3;
+			JunkTex.method495((byte) -47, false);
 			Class15.aBoolean374 = false;
 			Class14_Sub29.anInt3266 = 127;
 			Static2.aBoolean2372 = false;
@@ -66,39 +52,39 @@ public class Class14_Sub14 extends Linkable {
 			RT4.useLighting = false;
 			Class139.aBoolean2233 = false;
 			Static2.anInt1691 = 127;
-			Static.aBoolean845 = false;
-			Class14_Sub8_Sub20.aBoolean4420 = false;
+			JunkTex.aBoolean845 = false;
+			JunkTex.aBoolean4420 = false;
 			Static2.anInt2725 = 0;
 			Class135.aBoolean2190 = false;
 			Class54.anInt887 = 0;
-			Class14_Sub8_Sub26.aBoolean4528 = false;
-			Class14_Sub8_Sub25.aBoolean4518 = false;
+			JunkTex.aBoolean4528 = false;
+			JunkTex.aBoolean4518 = false;
 			Class89.anInt1413 = 0;
 			Class28.aBoolean516 = false;
 			Class135.anInt2189 = 0;
 			Class125_Sub3.aBoolean3397 = false;
 			Class14_Sub23.anInt3135 = 255;
-			Class14_Sub8_Sub22.method595(257411150, class43);
+			JunkTex.method595(257411150, class43);
 		} else {
-			Class14_Sub8_Sub6.anInt4190 = 3;
+			JunkTex.anInt4190 = 3;
 			Class30 class30 = null;
-			Class14_Sub8_Sub3.method495((byte) -47, true);
+			JunkTex.method495((byte) -47, true);
 			Class15.aBoolean374 = true;
 			Static2.anInt1691 = 127;
-			Class14_Sub8_Sub26.aBoolean4528 = true;
+			JunkTex.aBoolean4528 = true;
 			Class33.aBoolean584 = true;
 			Class14_Sub29.anInt3266 = 127;
 			Class14_Sub23.anInt3135 = 255;
 			Class28.aBoolean516 = true;
 			Class139.aBoolean2233 = true;
-			Class14_Sub8_Sub20.aBoolean4420 = true;
+			JunkTex.aBoolean4420 = true;
 			Class135.anInt2189 = 0;
-			Static.aBoolean845 = true;
+			JunkTex.aBoolean845 = true;
 			Class54.anInt887 = 0;
 			Class135.aBoolean2190 = true;
 			Class125_Sub3.aBoolean3397 = true;
 			RT4.useLighting = true;
-			Class14_Sub8_Sub25.aBoolean4518 = true;
+			JunkTex.aBoolean4518 = true;
 			Class89.anInt1413 = 2;
 			Static2.anInt2725 = 0;
 			Static2.aBoolean2372 = true;
@@ -116,7 +102,7 @@ public class Class14_Sub14 extends Linkable {
 						if (i_1_ == -1)
 							throw new IOException("EOF");
 					}
-					Class14_Sub8_Sub24.method611(i ^ 0xffffffff, new Buffer(is));
+					JunkTex.method611(i ^ 0xffffffff, new Buffer(is));
 				}
 			} catch (Exception exception) {
 				/* empty */
@@ -138,23 +124,23 @@ public class Class14_Sub14 extends Linkable {
 	}
 
 	public static void method867(byte i, Class124 class124, int i_2_) {
-		Static.aClass14_Sub10_Sub1_891.writeOpcode(111);
-		Static.aClass14_Sub10_Sub1_891.method809(i_2_);
+		JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(111);
+		JunkTex.aClass14_Sub10_Sub1_891.method809(i_2_);
 		if (i >= 81)
-			Static.aClass14_Sub10_Sub1_891.method835(class124.method1692(0), true);
+			JunkTex.aClass14_Sub10_Sub1_891.method835(class124.method1692(0), true);
 	}
 
 	public static void method868(int i) {
 		int i_3_ = (Class133_Sub6.anInt3676 + (Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495 >> 7));
-		Class14_Sub8_Sub39.anInt4754 = 0;
+		JunkTex.anInt4754 = 0;
 		int i_4_ = -6 % ((-28 - i) / 50);
 		int i_5_ = (Class58.anInt947 + (Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436 >> 7));
 		if (i_3_ >= 3053 && i_3_ <= 3156 && i_5_ >= 3056 && i_5_ <= 3136)
-			Class14_Sub8_Sub39.anInt4754 = 1;
+			JunkTex.anInt4754 = 1;
 		if (i_3_ >= 3072 && i_3_ <= 3118 && i_5_ >= 9492 && i_5_ <= 9535)
-			Class14_Sub8_Sub39.anInt4754 = 1;
-		if (Class14_Sub8_Sub39.anInt4754 == 1 && i_3_ >= 3139 && i_3_ <= 3199 && i_5_ >= 3008 && i_5_ <= 3062)
-			Class14_Sub8_Sub39.anInt4754 = 0;
+			JunkTex.anInt4754 = 1;
+		if (JunkTex.anInt4754 == 1 && i_3_ >= 3139 && i_3_ <= 3199 && i_5_ >= 3008 && i_5_ <= 3062)
+			JunkTex.anInt4754 = 0;
 	}
 
 	public static void method869(byte i) {
@@ -168,30 +154,30 @@ public class Class14_Sub14 extends Linkable {
 
 	public static void method870(int i, Class124 class124) {
 		Class14_Sub9_Sub1.aClass124_4829 = class124;
-		if (Class14_Sub8_Sub34.aClass43_4647.applet != null) {
+		if (JunkTex.aClass43_4647.applet != null) {
 			try {
 				Class124 class124_7_ = (Class14_Sub2_Sub11.aClass124_3892
-						.method1703(Class14_Sub8_Sub34.aClass43_4647.applet, (byte) -106));
+						.method1703(JunkTex.aClass43_4647.applet, (byte) -106));
 				Class124 class124_8_ = (Class14_Sub15.aClass124_2995
-						.method1703(Class14_Sub8_Sub34.aClass43_4647.applet, (byte) -33));
-				Class124 class124_9_ = (Class14_Sub8_Sub7.method515((new Class124[] { class124_7_,
+						.method1703(JunkTex.aClass43_4647.applet, (byte) -33));
+				Class124 class124_9_ = (JunkTex.method515((new Class124[] { class124_7_,
 						Class14_Sub9_Sub1.aClass124_4814, class124, Class133_Sub1.aClass124_3502, class124_8_ }),
 						(byte) -120));
 				if (class124.method1693(i - 6346) == 0)
-					class124_9_ = Class14_Sub8_Sub7
+					class124_9_ = JunkTex
 							.method515((new Class124[] { class124_9_, (Class98.aClass124_1661) }), (byte) -122);
 				else
-					class124_9_ = (Class14_Sub8_Sub7
+					class124_9_ = (JunkTex
 							.method515(
-									(new Class124[] { class124_9_, Class14_Sub8_Sub11.aClass124_4272,
-											(Class14_Sub8_Sub8.method517((byte) 124,
+									(new Class124[] { class124_9_, JunkTex.aClass124_4272,
+											(JunkTex.method517((byte) 124,
 													(TimeUtil.getTime() + 94608000000L))),
 									Class118.aClass124_1989, Static2.method387(94608000L, true) }),
 							(byte) -109));
-				Class14_Sub8_Sub7
-						.method515(new Class124[] { Static.aClass124_691, class124_9_, Static2.aClass124_2730 },
+				JunkTex
+						.method515(new Class124[] { JunkTex.aClass124_691, class124_9_, Static2.aClass124_2730 },
 								(byte) -34)
-						.method1669(27664, Class14_Sub8_Sub34.aClass43_4647.applet);
+						.method1669(27664, JunkTex.aClass43_4647.applet);
 			} catch (Throwable throwable) {
 				/* empty */
 			}

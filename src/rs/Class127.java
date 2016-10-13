@@ -7,10 +7,6 @@ import com.jagex.io.Buffer;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.Class148_Sub1;
 
-import rs.tex.Class14_Sub8_Sub13;
-import rs.tex.Class14_Sub8_Sub14;
-import rs.tex.Class14_Sub8_Sub15;
-
 public class Class127 {
 	public int anInt2096;
 	public int anInt2097;
@@ -65,7 +61,7 @@ public class Class127 {
 			Class60 class60_10_ = class60;
 			return class60_10_;
 		}
-		byte[] is = (Class14_Sub8_Sub15.aClass9_4338.method163(Class79.method1378(i, 5823),
+		byte[] is = (JunkTex.aClass9_4338.method163(Class79.method1378(i, 5823),
 				Class131.method1773(i, (byte) -124), 0));
 		Class60 class60_11_ = new Class60();
 		class60_11_.anInt962 = i;
@@ -79,7 +75,7 @@ public class Class127 {
 
 	public static Class124 method1750(Class124 class124, byte i) {
 		int i_14_ = -36 % ((i + 25) / 60);
-		int i_15_ = Class14_Sub8_Sub13.method546(class124, -23861);
+		int i_15_ = JunkTex.method546(class124, -23861);
 		if (i_15_ == -1) {
 			Class124 class124_16_ = Static2.aClass124_364;
 			return class124_16_;
@@ -91,9 +87,9 @@ public class Class127 {
 	public static void method1751(int i, byte i_18_, int i_19_, int i_20_, int i_21_) {
 		int i_22_ = i_21_;
 		int i_23_ = -i_21_;
-		int i_24_ = Class67.method1301((byte) -118, i_19_ + i_21_, Class118.anInt1982, Class14_Sub8_Sub14.anInt4327);
+		int i_24_ = Class67.method1301((byte) -118, i_19_ + i_21_, Class118.anInt1982, JunkTex.anInt4327);
 		int i_25_ = 0;
-		int i_26_ = Class67.method1301((byte) 65, i_19_ - i_21_, Class118.anInt1982, Class14_Sub8_Sub14.anInt4327);
+		int i_26_ = Class67.method1301((byte) 65, i_19_ - i_21_, Class118.anInt1982, JunkTex.anInt4327);
 		Class51.method1201(Static2.anIntArrayArray4038[i_20_], i_26_, i_24_, -5973, i);
 		int i_27_ = -1;
 		if (i_18_ <= -64) {
@@ -107,9 +103,9 @@ public class Class127 {
 					i_26_ = i_20_ - i_22_;
 					if (Class14_Sub17.anInt3005 <= i_24_ && Class59.anInt955 >= i_26_) {
 						int i_28_ = Class67.method1301((byte) -101, i_19_ + i_25_, Class118.anInt1982,
-								Class14_Sub8_Sub14.anInt4327);
+								JunkTex.anInt4327);
 						int i_29_ = Class67.method1301((byte) -93, -i_25_ + i_19_, Class118.anInt1982,
-								Class14_Sub8_Sub14.anInt4327);
+								JunkTex.anInt4327);
 						if (Class59.anInt955 >= i_24_)
 							Class51.method1201((Static2.anIntArrayArray4038[i_24_]), i_29_, i_28_, -5973, i);
 						if (Class14_Sub17.anInt3005 <= i_26_)
@@ -120,9 +116,9 @@ public class Class127 {
 				i_26_ = i_20_ + i_25_;
 				if (i_26_ >= Class14_Sub17.anInt3005 && i_24_ <= Class59.anInt955) {
 					int i_30_ = Class67.method1301((byte) 57, i_22_ + i_19_, Class118.anInt1982,
-							Class14_Sub8_Sub14.anInt4327);
+							JunkTex.anInt4327);
 					int i_31_ = Class67.method1301((byte) -127, -i_22_ + i_19_, Class118.anInt1982,
-							Class14_Sub8_Sub14.anInt4327);
+							JunkTex.anInt4327);
 					if (Class59.anInt955 >= i_26_)
 						Class51.method1201((Static2.anIntArrayArray4038[i_26_]), i_31_, i_30_, -5973, i);
 					if (i_24_ >= Class14_Sub17.anInt3005)

@@ -7,14 +7,6 @@ import com.jagex.cache.anim.Animation;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.ShadowManager;
 
-import rs.tex.Class14_Sub8_Sub17;
-import rs.tex.Class14_Sub8_Sub18;
-import rs.tex.Class14_Sub8_Sub20;
-import rs.tex.Class14_Sub8_Sub25;
-import rs.tex.Class14_Sub8_Sub4;
-import rs.tex.Class14_Sub8_Sub6;
-import rs.tex.Static;
-
 public class Class133_Sub4 extends Class133 {
 	public int anInt3572;
 	public int anInt3573;
@@ -49,10 +41,10 @@ public class Class133_Sub4 extends Class133 {
 	}
 
 	public static void method1835(int i) {
-		Class14_Sub8_Sub20.anInt4427++;
+		JunkTex.anInt4427++;
 		if (i < -72) {
-			Static.aClass14_Sub10_Sub1_891.writeOpcode(42);
-			Static.aClass14_Sub10_Sub1_891.method817(0L, 99);
+			JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(42);
+			JunkTex.aClass14_Sub10_Sub1_891.method817(0L, 99);
 		}
 	}
 
@@ -82,21 +74,21 @@ public class Class133_Sub4 extends Class133 {
 
 	public static void method1838(int i, int i_13_, int i_14_, int i_15_, int i_16_, byte i_17_, int i_18_, int i_19_) {
 		if (i_13_ >= 1 && i_14_ >= 1 && i_13_ <= 102 && i_14_ <= 102) {
-			if (!Class128.method1755(i_17_ + 130068541) && (Class14_Sub8_Sub4.tileFlags[0][i_13_][i_14_] & 0x2) == 0) {
+			if (!Class128.method1755(i_17_ + 130068541) && (JunkTex.tileFlags[0][i_13_][i_14_] & 0x2) == 0) {
 				int i_20_ = i_15_;
-				if ((Class14_Sub8_Sub4.tileFlags[i_15_][i_13_][i_14_] & 0x8) != 0)
+				if ((JunkTex.tileFlags[i_15_][i_13_][i_14_] & 0x8) != 0)
 					i_20_ = 0;
 				if (i_20_ != Class142.anInt2295)
 					return;
 			}
 			int i_21_ = i_15_;
-			if (i_21_ < 3 && (Class14_Sub8_Sub4.tileFlags[1][i_13_][i_14_] & 0x2) == 2)
+			if (i_21_ < 3 && (JunkTex.tileFlags[1][i_13_][i_14_] & 0x2) == 2)
 				i_21_++;
 			Class146.method1993(i_21_, i_18_, i_14_, i_15_, 4, i_13_, Class14_Sub21.aClass32Array3100[i_15_]);
 			if (i_16_ >= 0) {
 				boolean bool = Static2.aBoolean2372;
 				Static2.aBoolean2372 = true;
-				Static.method1235(false, i_19_, false, (byte) 50, Class14_Sub21.aClass32Array3100[i_15_], i_21_, i_14_,
+				JunkTex.method1235(false, i_19_, false, (byte) 50, Class14_Sub21.aClass32Array3100[i_15_], i_21_, i_14_,
 						i, i_13_, i_16_, i_15_);
 				Static2.aBoolean2372 = bool;
 			}
@@ -120,12 +112,12 @@ public class Class133_Sub4 extends Class133 {
 	public static void method1840(byte i) {
 		Class14_Sub29.aClass148_Sub1Array3265 = null;
 		Class150.aClass14_Sub2_Sub19Array2417 = null;
-		Class14_Sub8_Sub18.aClass14_Sub2_Sub19Array4385 = null;
+		JunkTex.aClass14_Sub2_Sub19Array4385 = null;
 		Class76.aClass14_Sub2_Sub19Array1191 = null;
 		Static2.aClass148Array1777 = null;
 		Class133_Sub3.aClass14_Sub2_Sub16_3567 = null;
-		Class14_Sub8_Sub17.aClass14_Sub2_Sub19Array4366 = null;
-		Static.aClass14_Sub2_Sub19Array3958 = null;
+		JunkTex.aClass14_Sub2_Sub19Array4366 = null;
+		JunkTex.aClass14_Sub2_Sub19Array3958 = null;
 		Class133_Sub1_Sub1.aClass148_Sub1Array4938 = null;
 		Class35.aClass14_Sub2_Sub19Array596 = null;
 		Class149.aClass14_Sub2_Sub19_2384 = null;
@@ -134,7 +126,7 @@ public class Class133_Sub4 extends Class133 {
 		Class56_Sub1.aClass14_Sub2_Sub16_3320 = null;
 		int i_22_ = -41 / ((-14 - i) / 62);
 		Class131.aClass14_Sub2_Sub16_Sub1_2160 = null;
-		Class14_Sub8_Sub25.aClass14_Sub2_Sub19_4508 = null;
+		JunkTex.aClass14_Sub2_Sub19_4508 = null;
 		Class14_Sub2_Sub17.aClass14_Sub2_Sub19Array4013 = null;
 		Class84.aClass14_Sub2_Sub16_1344 = null;
 		Class98.aClass14_Sub2_Sub19Array1669 = null;
@@ -261,7 +253,7 @@ public class Class133_Sub4 extends Class133 {
 			}
 		}
 		if (i_42_ != -1) {
-			aClass46_3597 = Static.method1129(i_42_, -123);
+			aClass46_3597 = JunkTex.method1129(i_42_, -123);
 			anInt3577 = 0;
 			anInt3575 = Class14_Sub2_Sub20.anInt4064 - 1;
 			if (aClass46_3597.anInt753 == 0 && class133 != null && class133 instanceof Class133_Sub4) {
@@ -302,7 +294,7 @@ public class Class133_Sub4 extends Class133 {
 				for (;;) {
 					if (i_46_ <= aClass46_3597.anIntArray763[anInt3577])
 						break while_267_;
-					Class14_Sub8_Sub6.method509(i_44_, anInt3577, 86, false, aClass46_3597, i);
+					JunkTex.method509(i_44_, anInt3577, 86, false, aClass46_3597, i);
 					i_46_ -= aClass46_3597.anIntArray763[anInt3577];
 					anInt3577++;
 					if (anInt3577 >= aClass46_3597.anIntArray768.length) {

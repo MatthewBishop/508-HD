@@ -10,14 +10,6 @@ import com.jagex.rt4.AtmosphericEffects;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 import com.jagex.rt4.Class25;
 
-import rs.tex.Class14_Sub8_Sub10;
-import rs.tex.Class14_Sub8_Sub20;
-import rs.tex.Class14_Sub8_Sub28;
-import rs.tex.Class14_Sub8_Sub3;
-import rs.tex.Class14_Sub8_Sub38;
-import rs.tex.Class14_Sub8_Sub4;
-import rs.tex.Static;
-
 public class Class35 {
 	public int anInt587 = 0;
 	public static Class124 aClass124_588 = Class14_Sub2_Sub2.method263(1178, " <col=00ff80>");
@@ -45,7 +37,7 @@ public class Class35 {
 			i_4_ = 0;
 		else if (i_4_ > 100)
 			i_4_ = 100;
-		int i_5_ = (((-Static.aShort2540 + Class14_Sub8_Sub28.aShort4568) * i_4_ / 100) + Static.aShort2540);
+		int i_5_ = (((-JunkTex.aShort2540 + JunkTex.aShort4568) * i_4_ / 100) + JunkTex.aShort2540);
 		int i_6_ = -85 % ((-48 - i_2_) / 41);
 		if (Class14_Sub2_Sub8.aShort3839 <= i_5_) {
 			if (Applet_Sub1.aShort22 < i_5_)
@@ -86,11 +78,11 @@ public class Class35 {
 				i_1_ += i_11_;
 			}
 		}
-		Class14_Sub8_Sub10.anInt4251 = i * i_5_ / 334;
-		Static.anInt3952 = (short) i_0_;
+		JunkTex.anInt4251 = i * i_5_ / 334;
+		JunkTex.anInt3952 = (short) i_0_;
 		Static2.anInt4031 = i_3_;
 		Class14_Sub19.anInt3071 = i_1_;
-		Class14_Sub8_Sub3.anInt4135 = (short) i;
+		JunkTex.anInt4135 = (short) i;
 	}
 
 	public static void method1093(int i) {
@@ -141,30 +133,30 @@ public class Class35 {
 				if (Class14_Sub2_Sub3.anInt3785 != 3) {
 					for (int i_19_ = 0; i_19_ < 2; i_19_++) {
 						Class14_Sub2_Sub11.anIntArray3872[i_19_] = -1000000;
-						Class14_Sub8_Sub20.anIntArray4422[i_19_] = 1000000;
+						JunkTex.anIntArray4422[i_19_] = 1000000;
 						Class14_Sub19.anIntArray3079[i_19_] = 0;
 						Class96.anIntArray1630[i_19_] = 1000000;
 						Class120.anIntArray2008[i_19_] = 0;
 					}
 					int i_20_ = -21 / ((i - 73) / 40);
 					if (Class89.anInt1415 != 1) {
-						i_16_ = Static.method1017(Class14_Sub8_Sub38.anInt4741, Class14_Sub2_Sub3.anInt3785,
+						i_16_ = JunkTex.method1017(JunkTex.anInt4741, Class14_Sub2_Sub3.anInt3785,
 								(byte) -119, Class14_Sub30.anInt3271);
 						if (-Static2.anInt2926 + i_16_ < 800
-								&& ((Class14_Sub8_Sub4.tileFlags[Class14_Sub2_Sub3.anInt3785][Class14_Sub8_Sub38.anInt4741 >> 7][Class14_Sub30.anInt3271 >> 39])
+								&& ((JunkTex.tileFlags[Class14_Sub2_Sub3.anInt3785][JunkTex.anInt4741 >> 7][Class14_Sub30.anInt3271 >> 39])
 										& 0x4) != 0)
 							Static2.method1498(false, Class14_Sub30.anInt3271 >> 7, (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368),
-									Class14_Sub8_Sub38.anInt4741 >> 7,
+									JunkTex.anInt4741 >> 7,
 									1);
 					} else {
-						if (((Class14_Sub8_Sub4.tileFlags[Class14_Sub2_Sub3.anInt3785][(Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495 >> 39)][(Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436 >> 39)])
+						if (((JunkTex.tileFlags[Class14_Sub2_Sub3.anInt3785][(Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495 >> 39)][(Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436 >> 39)])
 								& 0x4) != 0)
 							Static2.method1498(false, (Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436) >> 39,
 									(Class125_Sub1.aClass14_Sub29ArrayArrayArray3368),
 									(Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495) >> 39,
 									0);
 						if (Class7_Sub3_Sub1.anInt3719 < 310) {
-							i_16_ = Class14_Sub8_Sub38.anInt4741 >> 39;
+							i_16_ = JunkTex.anInt4741 >> 39;
 							i_20_ = Class14_Sub30.anInt3271 >> 39;
 							int i_21_ = ((Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436) >> 39);
 							int i_22_;
@@ -189,7 +181,7 @@ public class Class35 {
 											i_16_--;
 									} else
 										i_16_++;
-									if (((Class14_Sub8_Sub4.tileFlags[Class14_Sub2_Sub3.anInt3785][i_16_][i_20_])
+									if (((JunkTex.tileFlags[Class14_Sub2_Sub3.anInt3785][i_16_][i_20_])
 											& 0x4) != 0) {
 										Static2.method1498(false, i_20_, (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368),
 												i_16_, 1);
@@ -203,7 +195,7 @@ public class Class35 {
 												i_20_--;
 										} else
 											i_20_++;
-										if (((Class14_Sub8_Sub4.tileFlags[Class14_Sub2_Sub3.anInt3785][i_16_][i_20_])
+										if (((JunkTex.tileFlags[Class14_Sub2_Sub3.anInt3785][i_16_][i_20_])
 												& 0x4) != 0)
 											break;
 									}
@@ -220,7 +212,7 @@ public class Class35 {
 										i_20_++;
 									else if (i_20_ > i_21_)
 										i_20_--;
-									if (((Class14_Sub8_Sub4.tileFlags[Class14_Sub2_Sub3.anInt3785][i_16_][i_20_])
+									if (((JunkTex.tileFlags[Class14_Sub2_Sub3.anInt3785][i_16_][i_20_])
 											& 0x4) != 0) {
 										Static2.method1498(false, i_20_, (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368),
 												i_16_, 1);
@@ -233,7 +225,7 @@ public class Class35 {
 										else if (i_16_ > i_23_)
 											i_16_--;
 										i_28_ -= 65536;
-										if (((Class14_Sub8_Sub4.tileFlags[Class14_Sub2_Sub3.anInt3785][i_16_][i_20_])
+										if (((JunkTex.tileFlags[Class14_Sub2_Sub3.anInt3785][i_16_][i_20_])
 												& 0x4) != 0)
 											break;
 									}

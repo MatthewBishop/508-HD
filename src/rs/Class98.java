@@ -5,11 +5,6 @@ package rs;
 
 import com.jagex.rt4.Class14_Sub2_Sub19;
 
-import rs.tex.Class14_Sub8;
-import rs.tex.Class14_Sub8_Sub17;
-import rs.tex.Class14_Sub8_Sub29;
-import rs.tex.Class14_Sub8_Sub33;
-
 public class Class98 {
 	public int[] anIntArray1658;
 	public static Class5 aClass5_1659;
@@ -29,12 +24,12 @@ public class Class98 {
 		if (i_0_ >= -43)
 			method1492(38, (byte) 76);
 		if (i == -1 && !Class14_Sub7.aBoolean2827)
-			Class14_Sub8_Sub17.method569(-80);
-		else if (i != -1 && (Class14_Sub8.anInt2856 != i || !Class14_Sub11.method852(14326))
+			JunkTex.method569(-80);
+		else if (i != -1 && (JunkTex.anInt2856 != i || !Class14_Sub11.method852(14326))
 				&& Class14_Sub23.anInt3135 != 0 && !Class14_Sub7.aBoolean2827)
-			Class14_Sub8_Sub29.method636(i, 2, 25506, Class14_Sub23.anInt3135, false, Class125_Sub2.aClass9_Sub1_3374,
+			JunkTex.method636(i, 2, 25506, Class14_Sub23.anInt3135, false, Class125_Sub2.aClass9_Sub1_3374,
 					0);
-		Class14_Sub8.anInt2856 = i;
+		JunkTex.anInt2856 = i;
 	}
 
 	public static boolean method1493(int i, Class124 class124) {
@@ -71,6 +66,6 @@ public class Class98 {
 		Class14_Sub19.anInt3073 = i_3_;
 		Static2.anInt3334 = i_4_;
 		Class66.anInt1039 = -1;
-		Class14_Sub8_Sub33.anInt4636 = -1;
+		JunkTex.anInt4636 = -1;
 	}
 }

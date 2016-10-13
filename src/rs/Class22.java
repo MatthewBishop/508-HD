@@ -9,9 +9,6 @@ import java.awt.Graphics;
 
 import com.jagex.rt4.Class148_Sub1;
 
-import rs.tex.Class14_Sub8_Sub39_Sub1;
-import rs.tex.Static;
-
 public class Class22 {
 	public static Class9_Sub1 aClass9_Sub1_459;
 	public static int anInt460;
@@ -65,11 +62,11 @@ public class Class22 {
 						i_2_ + (304 - class124.method1695((Class14_Sub19.aFontMetrics3081), (byte) -91)) / 2, i_3_ + 22,
 						graphics);
 			}
-			if (Class14_Sub8_Sub39_Sub1.aClass124_5099 != null) {
+			if (JunkTex.aClass124_5099 != null) {
 				graphics.setFont(Class123.aFont2063);
 				graphics.setColor(Color.white);
-				Class14_Sub8_Sub39_Sub1.aClass124_5099.method1713(false,
-						(Class83.anInt1340 / 2 - (Class14_Sub8_Sub39_Sub1.aClass124_5099
+				JunkTex.aClass124_5099.method1713(false,
+						(Class83.anInt1340 / 2 - (JunkTex.aClass124_5099
 								.method1695(Class14_Sub19.aFontMetrics3081, (byte) -106)) / 2),
 						Class14_Sub20.anInt3094 / 2 - 26, graphics);
 			}
@@ -85,7 +82,7 @@ public class Class22 {
 		}
 		Class148_Sub1 class148_sub1 = new Class148_Sub1(Class14_Sub11.anInt2952, Class14_Sub30.anInt3279,
 				Class40.anIntArray675[0], Class14_Sub2_Sub12.anIntArray3918[0], Class17.anIntArray402[0],
-				Class76.anIntArray1204[0], Class12.aByteArrayArray310[0], Static.anIntArray1114);
+				Class76.anIntArray1204[0], Class12.aByteArrayArray310[0], JunkTex.anIntArray1114);
 		Class129.method1761((byte) 123);
 		Class148_Sub1 class148_sub1_4_ = class148_sub1;
 		return class148_sub1_4_;

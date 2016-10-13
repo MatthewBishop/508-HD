@@ -5,14 +5,6 @@ package rs;
 
 import com.jagex.io.Buffer;
 
-import rs.tex.Class14_Sub8_Sub21;
-import rs.tex.Class14_Sub8_Sub23;
-import rs.tex.Class14_Sub8_Sub29;
-import rs.tex.Class14_Sub8_Sub3;
-import rs.tex.Class14_Sub8_Sub30;
-import rs.tex.Class14_Sub8_Sub4;
-import rs.tex.Class14_Sub8_Sub9;
-
 public class Class17 {
 	public static Class124 aClass124_398;
 	public static Class124 aClass124_399 = Class14_Sub2_Sub2.method263(1178, "Checking for updates )2 ");
@@ -20,7 +12,6 @@ public class Class17 {
 	public static int[] anIntArray402;
 	public static Class124 aClass124_403 = Class14_Sub2_Sub2.method263(1178, "compass");
 	public static Class124 aClass124_405;
-	public static int anInt407;
 	public static Class124 aClass124_408;
 	public static long aLong410;
 
@@ -33,25 +24,25 @@ public class Class17 {
 	}
 
 	public static void method956(boolean bool) {
-		Class141 class141 = Class14_Sub8_Sub9.aClass141_4239;
+		Class141 class141 = JunkTex.aClass141_4239;
 		synchronized (class141) {
 			Class86.anInt1385++;
-			Class14_Sub9_Sub3.anInt4850 = Class14_Sub8_Sub21.anInt4436;
+			Class14_Sub9_Sub3.anInt4850 = JunkTex.anInt4436;
 			if (Class120.anInt2014 >= 0) {
-				while (Class120.anInt2014 != Class14_Sub8_Sub4.anInt4146) {
-					int i = (Class14_Sub8_Sub3.anIntArray4139[Class14_Sub8_Sub4.anInt4146]);
-					Class14_Sub8_Sub4.anInt4146 = Class14_Sub8_Sub4.anInt4146 + 1 & 0x7f;
+				while (Class120.anInt2014 != JunkTex.anInt4146) {
+					int i = (JunkTex.anIntArray4139[JunkTex.anInt4146]);
+					JunkTex.anInt4146 = JunkTex.anInt4146 + 1 & 0x7f;
 					if (i < 0)
-						Class14_Sub8_Sub29.aBooleanArray4581[i ^ 0xffffffff] = false;
+						JunkTex.aBooleanArray4581[i ^ 0xffffffff] = false;
 					else
-						Class14_Sub8_Sub29.aBooleanArray4581[i] = true;
+						JunkTex.aBooleanArray4581[i] = true;
 				}
 			} else {
 				for (int i = 0; i < 112; i++)
-					Class14_Sub8_Sub29.aBooleanArray4581[i] = false;
-				Class120.anInt2014 = Class14_Sub8_Sub4.anInt4146;
+					JunkTex.aBooleanArray4581[i] = false;
+				Class120.anInt2014 = JunkTex.anInt4146;
 			}
-			Class14_Sub8_Sub21.anInt4436 = Class7_Sub3.anInt2682;
+			JunkTex.anInt4436 = Class7_Sub3.anInt2682;
 		}
 	}
 
@@ -62,9 +53,9 @@ public class Class17 {
 				i_1_ = 2047;
 			else
 				i_1_ = Static2.anIntArray351[i_0_];
-			Class133_Sub1_Sub1 class133_sub1_sub1 = Class14_Sub8_Sub23.aClass133_Sub1_Sub1Array4474[i_1_];
+			Class133_Sub1_Sub1 class133_sub1_sub1 = JunkTex.aClass133_Sub1_Sub1Array4474[i_1_];
 			if (class133_sub1_sub1 != null)
-				Class14_Sub8_Sub30.method637(class133_sub1_sub1, class133_sub1_sub1.anInt3493, -116);
+				JunkTex.method637(class133_sub1_sub1, class133_sub1_sub1.anInt3493, -116);
 		}
 		if (i >= -41)
 			method958((byte) -58, -94);

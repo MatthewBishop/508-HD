@@ -8,9 +8,6 @@ import com.jagex.rt4.RT4GL;
 import com.jagex.util.BrowserControlUtil;
 import com.jagex.rt4.Class14_Sub27;
 
-import rs.tex.Class14_Sub8_Sub17;
-import rs.tex.Static;
-
 public class Class14_Sub21 extends Linkable {
 	public static Class124 aClass124_3099;
 	public static Class32[] aClass32Array3100;
@@ -122,8 +119,8 @@ public class Class14_Sub21 extends Linkable {
 		Class76.method1356(false, Class49.aCanvas819);
 		if (Class44.aClass129_726 != null)
 			Class44.aClass129_726.method1765(true, Class49.aCanvas819);
-		Static.method1329(0);
-		Class14_Sub8_Sub17.method572(Class49.aCanvas819, false);
+		JunkTex.method1329(0);
+		JunkTex.method572(Class49.aCanvas819, false);
 		Class56_Sub1.method1242(Class49.aCanvas819, 0);
 		if (Class44.aClass129_726 != null)
 			Class44.aClass129_726.method1760(-14827, Class49.aCanvas819);

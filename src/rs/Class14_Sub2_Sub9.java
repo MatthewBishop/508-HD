@@ -7,8 +7,6 @@ import com.jagex.io.Buffer;
 import com.jagex.link.Cacheable;
 
 import rs.tex.Class14_Sub8;
-import rs.tex.Class14_Sub8_Sub24;
-import rs.tex.Class14_Sub8_Sub38;
 
 public class Class14_Sub2_Sub9 extends Cacheable {
 	public static byte[][][] aByteArrayArrayArray3864;
@@ -42,19 +40,19 @@ public class Class14_Sub2_Sub9 extends Cacheable {
 	}
 
 	public static void method304() {
-		for (int i = 0; i < Class14_Sub8_Sub38.anInt4727; i++) {
+		for (int i = 0; i < JunkTex.anInt4727; i++) {
 			Class40 class40 = Class14_Sub20.aClass40Array3093[i];
 			Class63.method1279(class40);
 			Class14_Sub20.aClass40Array3093[i] = null;
 		}
-		Class14_Sub8_Sub38.anInt4727 = 0;
+		JunkTex.anInt4727 = 0;
 	}
 
 	public static void method305(Class9 class9, Class9 class9_5_, Class9 class9_6_, Class9 class9_7_, byte i) {
 		Class134.aClass9_2598 = class9_6_;
 		Class83.aClass9_1335 = class9_7_;
 		if (i <= -48) {
-			Class14_Sub8_Sub24.aClass9_4486 = class9_5_;
+			JunkTex.aClass9_4486 = class9_5_;
 			Class51.aClass9_833 = class9;
 			Class1.aClass94ArrayArray75 = new Class94[Class83.aClass9_1335.method155(6756)][];
 			Class108.aBooleanArray1819 = new boolean[Class83.aClass9_1335.method155(6756)];

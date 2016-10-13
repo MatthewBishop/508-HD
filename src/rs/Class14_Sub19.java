@@ -8,8 +8,6 @@ import java.awt.FontMetrics;
 import com.jagex.io.Buffer;
 import com.jagex.link.Linkable;
 
-import rs.tex.Static;
-
 public class Class14_Sub19 extends Linkable {
 	public static Class124 aClass124_3065 = Class14_Sub2_Sub2.method263(1178, ")4l=");
 	public int anInt3067;
@@ -85,7 +83,7 @@ public class Class14_Sub19 extends Linkable {
 
 	public static void method891(Class9 class9, int i, Class9 class9_9_) {
 		Class108.aClass9_1817 = class9;
-		Static.aClass9_429 = class9_9_;
+		JunkTex.aClass9_429 = class9_9_;
 		int i_10_ = -9 / ((i + 52) / 63);
 	}
 }

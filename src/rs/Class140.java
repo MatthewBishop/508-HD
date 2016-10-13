@@ -3,8 +3,6 @@
  */
 package rs;
 
-import rs.tex.Static;
-
 public class Class140 {
 	public static Class124 aClass124_2234 = Class14_Sub2_Sub2.method263(1178, "");
 	public static int anInt2238;
@@ -25,11 +23,11 @@ public class Class140 {
 	}
 
 	public static void method1958(byte i) {
-		Static.aClass14_Sub10_Sub1_891.writeOpcode(108);
+		JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(108);
 		for (Class14_Sub15 class14_sub15 = ((Class14_Sub15) Class14_Sub30.aClass55_3275.getFirst()); class14_sub15 != null; class14_sub15 = (Class14_Sub15) Class14_Sub30.aClass55_3275
 						.getNext()) {
 			if (class14_sub15.anInt2991 == 0)
-				Static.method236(true, class14_sub15, (byte) -117);
+				JunkTex.method236(true, class14_sub15, (byte) -117);
 		}
 		if (i <= 67)
 			method1959(null, -107);
@@ -45,20 +43,20 @@ public class Class140 {
 			method1959(null, -38);
 		if (i_0_ == 324) {
 			if (Static2.anInt1681 == -1) {
-				Static.anInt3929 = class94.anInt1568;
+				JunkTex.anInt3929 = class94.anInt1568;
 				Static2.anInt1681 = class94.anInt1487;
 			}
 			if (Class14_Sub2_Sub20.aClass102_4055.aBoolean1711)
 				class94.anInt1487 = Static2.anInt1681;
 			else
-				class94.anInt1487 = Static.anInt3929;
+				class94.anInt1487 = JunkTex.anInt3929;
 		} else if (i_0_ == 325) {
 			if (Static2.anInt1681 == -1) {
-				Static.anInt3929 = class94.anInt1568;
+				JunkTex.anInt3929 = class94.anInt1568;
 				Static2.anInt1681 = class94.anInt1487;
 			}
 			if (Class14_Sub2_Sub20.aClass102_4055.aBoolean1711)
-				class94.anInt1487 = Static.anInt3929;
+				class94.anInt1487 = JunkTex.anInt3929;
 			else
 				class94.anInt1487 = Static2.anInt1681;
 		} else if (i_0_ == 327) {

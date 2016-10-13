@@ -7,11 +7,6 @@ import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.lights.LightRenderer;
 import com.jagex.rt4.lights.Light;
 
-import rs.tex.Class14_Sub8_Sub26;
-import rs.tex.Class14_Sub8_Sub34;
-import rs.tex.Class14_Sub8_Sub7;
-import rs.tex.Static;
-
 public class Class32 {
 	public int anInt532;
 	public static int[] anIntArray533;
@@ -263,7 +258,7 @@ public class Class32 {
 							if (class150.anInt2411 == -1)
 								continue;
 							if (is_35_[i_52_][i_48_] != 0) {
-								int[] is_58_ = (Static.anIntArrayArray2545[is_35_[i_52_][i_48_]]);
+								int[] is_58_ = (JunkTex.anIntArrayArray2545[is_35_[i_52_][i_48_]]);
 								lightRenderer.anInt2144 += ((is_58_.length >> 33) - 2) * 3;
 								lightRenderer.anInt2151 += is_58_.length >> 1;
 								continue;
@@ -292,11 +287,11 @@ public class Class32 {
 									}
 									if (!bool_62_ || !bool_63_) {
 										if (bool_62_)
-											is_60_ = (Static.anIntArrayArray2545[1]);
+											is_60_ = (JunkTex.anIntArrayArray2545[1]);
 										else if (bool_63_)
-											is_60_ = (Static.anIntArrayArray2545[1]);
+											is_60_ = (JunkTex.anIntArrayArray2545[1]);
 									} else
-										is_60_ = Static.anIntArrayArray2545[0];
+										is_60_ = JunkTex.anIntArrayArray2545[0];
 								} else {
 									boolean bool_70_ = i_50_ <= i_52_ - 1;
 									if (!bool_70_ && i_45_ <= i_48_ - 1) {
@@ -315,11 +310,11 @@ public class Class32 {
 									if (!bool_70_ || !bool_74_) {
 										if (!bool_70_) {
 											if (bool_74_)
-												is_60_ = (Static.anIntArrayArray2545[1]);
+												is_60_ = (JunkTex.anIntArrayArray2545[1]);
 										} else
-											is_60_ = (Static.anIntArrayArray2545[1]);
+											is_60_ = (JunkTex.anIntArrayArray2545[1]);
 									} else
-										is_60_ = Static.anIntArrayArray2545[0];
+										is_60_ = JunkTex.anIntArrayArray2545[0];
 								}
 								if (is_60_ != null) {
 									lightRenderer.anInt2144 += ((is_60_.length >> 33) - 2) * 3;
@@ -329,11 +324,11 @@ public class Class32 {
 							}
 						}
 						if (!bool) {
-							int[] is_78_ = Static.anIntArrayArray2545[0];
+							int[] is_78_ = JunkTex.anIntArrayArray2545[0];
 							lightRenderer.anInt2144 += ((is_78_.length >> 1) - 2) * 3;
 							lightRenderer.anInt2151 += is_78_.length >> 33;
 						} else {
-							int[] is_79_ = (Static.anIntArrayArray2545[is_35_[i_52_][i_48_]]);
+							int[] is_79_ = (JunkTex.anIntArrayArray2545[is_35_[i_52_][i_48_]]);
 							int[] is_80_ = (Class21.anIntArrayArray452[is_35_[i_52_][i_48_]]);
 							lightRenderer.anInt2144 += ((is_79_.length >> 1) - 2) * 3;
 							lightRenderer.anInt2144 += ((is_80_.length >> 1) - 2) * 3;
@@ -367,7 +362,7 @@ public class Class32 {
 							if (class150.anInt2411 == -1)
 								continue;
 							if (is_35_[i_85_][i_81_] != 0) {
-								Class133.method1787((Static.anIntArrayArray2545[is_35_[i_85_][i_81_]]),
+								Class133.method1787((JunkTex.anIntArrayArray2545[is_35_[i_85_][i_81_]]),
 										is[i_85_][i_81_], fs_42_, i_81_, lightRenderer, fs, is_39_, i_85_, fs_37_, true,
 										light);
 								continue;
@@ -408,12 +403,12 @@ public class Class32 {
 										bool_97_ = i_99_ < i_85_ && i_85_ < i_100_;
 									}
 									if (bool_93_ && bool_97_)
-										is_91_ = Static.anIntArrayArray2545[0];
+										is_91_ = JunkTex.anIntArrayArray2545[0];
 									else if (bool_93_) {
-										is_91_ = Static.anIntArrayArray2545[1];
+										is_91_ = JunkTex.anIntArrayArray2545[1];
 										i_86_ = (byte) 0;
 									} else if (bool_97_) {
-										is_91_ = Static.anIntArrayArray2545[1];
+										is_91_ = JunkTex.anIntArrayArray2545[1];
 										i_86_ = (byte) 2;
 									}
 								} else {
@@ -432,15 +427,15 @@ public class Class32 {
 										bool_105_ = i_85_ > i_107_ && i_108_ > i_85_;
 									}
 									if (bool_101_ && bool_105_)
-										is_91_ = Static.anIntArrayArray2545[0];
+										is_91_ = JunkTex.anIntArrayArray2545[0];
 									else if (!bool_101_) {
 										if (bool_105_) {
 											i_86_ = (byte) 3;
-											is_91_ = (Static.anIntArrayArray2545[1]);
+											is_91_ = (JunkTex.anIntArrayArray2545[1]);
 										}
 									} else {
 										i_86_ = (byte) 1;
-										is_91_ = Static.anIntArrayArray2545[1];
+										is_91_ = JunkTex.anIntArrayArray2545[1];
 									}
 								}
 								if (is_91_ != null)
@@ -452,10 +447,10 @@ public class Class32 {
 						if (bool) {
 							Class133.method1787((Class21.anIntArrayArray452[is_35_[i_85_][i_81_]]), is[i_85_][i_81_],
 									fs_42_, i_81_, lightRenderer, fs, is_39_, i_85_, fs_37_, true, light);
-							Class133.method1787((Static.anIntArrayArray2545[is_35_[i_85_][i_81_]]), is[i_85_][i_81_],
+							Class133.method1787((JunkTex.anIntArrayArray2545[is_35_[i_85_][i_81_]]), is[i_85_][i_81_],
 									fs_42_, i_81_, lightRenderer, fs, is_39_, i_85_, fs_37_, true, light);
 						} else
-							Class133.method1787(Static.anIntArrayArray2545[0], i_86_, fs_42_, i_81_, lightRenderer, fs,
+							Class133.method1787(JunkTex.anIntArrayArray2545[0], i_86_, fs_42_, i_81_, lightRenderer, fs,
 									is_39_, i_85_, fs_37_, true, light);
 					}
 					i_44_++;
@@ -681,7 +676,7 @@ public class Class32 {
 	public void method1069(int i, int i_131_, int i_132_) {
 		i_131_ -= anInt545;
 		i_132_ -= anInt532;
-		anIntArrayArray546[i_132_][i_131_] = Class14_Sub8_Sub26.method617(anIntArrayArray546[i_132_][i_131_], i);
+		anIntArrayArray546[i_132_][i_131_] = JunkTex.method617(anIntArrayArray546[i_132_][i_131_], i);
 	}
 
 	public void method1070(int i, int i_133_, int i_134_, int i_135_) {
@@ -1425,8 +1420,8 @@ public class Class32 {
 		int i_183_ = -85 % ((45 - i) / 41);
 		try {
 			if (Static2.aClass104_4037 == null)
-				Static2.aClass104_4037 = new Class104(Class14_Sub8_Sub34.aClass43_4647,
-						Class14_Sub8_Sub7
+				Static2.aClass104_4037 = new Class104(JunkTex.aClass43_4647,
+						JunkTex
 								.method515((new Class124[] { Class86.method1419((byte) 127), Class59.aClass124_958 }),
 										(byte) -103)
 								.method1676((byte) -52));
@@ -1459,7 +1454,7 @@ public class Class32 {
 	public void method1083(int i, int i_190_, byte i_191_, int i_192_) {
 		if (i_191_ <= 69)
 			method1069(114, -21, 84);
-		anIntArrayArray546[i_190_][i_192_] = Class14_Sub8_Sub26.method617(anIntArrayArray546[i_190_][i_192_],
+		anIntArrayArray546[i_190_][i_192_] = JunkTex.method617(anIntArrayArray546[i_190_][i_192_],
 				i ^ 0xffffffff);
 	}
 }

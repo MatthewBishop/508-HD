@@ -8,14 +8,6 @@ import com.jagex.link.HashTable;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.ShadowManager;
 
-import rs.tex.Class14_Sub8_Sub14;
-import rs.tex.Class14_Sub8_Sub16;
-import rs.tex.Class14_Sub8_Sub21;
-import rs.tex.Class14_Sub8_Sub23;
-import rs.tex.Class14_Sub8_Sub5;
-import rs.tex.Class14_Sub8_Sub7;
-import rs.tex.Static;
-
 public class Class14_Sub2_Sub12 extends Cacheable {
 	public static SoftCache aClass52_3894;
 	public static Class124 aClass124_3895 = Class14_Sub2_Sub2.method263(1178, "blinken2:");
@@ -55,10 +47,10 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 		else {
 			if (i > -116)
 				anIntArray3917 = null;
-			if (Class14_Sub8_Sub7.anInt4207 != Class14_Sub2_Sub3.anInt3785) {
-				Class14_Sub8_Sub7.anInt4207 = Class14_Sub2_Sub3.anInt3785;
-				Class14_Sub8_Sub5.method502(false, Class14_Sub2_Sub3.anInt3785);
-				Class14_Sub8_Sub23.method602(-1);
+			if (JunkTex.anInt4207 != Class14_Sub2_Sub3.anInt3785) {
+				JunkTex.anInt4207 = Class14_Sub2_Sub3.anInt3785;
+				JunkTex.method502(false, Class14_Sub2_Sub3.anInt3785);
+				JunkTex.method602(-1);
 			}
 		}
 	}
@@ -81,10 +73,10 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 	public static void method319(int i) {
 		ShadowManager.method2029(104, 104);
 		Class14_Sub15.method871(Class14_Sub3.aClass9_Sub1_2750, Class64.aClass9_Sub1_1015, -125);
-		Static.method85(Class14_Sub3.aClass9_Sub1_2750, true);
-		if (Class14_Sub8_Sub16.anInt4356 == 10)
+		JunkTex.method85(Class14_Sub3.aClass9_Sub1_2750, true);
+		if (JunkTex.anInt4356 == 10)
 			Class126.method1743(27252, 28);
-		if ((Class14_Sub8_Sub16.anInt4356 ^ 0xffffffff) == i)
+		if ((JunkTex.anInt4356 ^ 0xffffffff) == i)
 			Class126.method1743(27252, 25);
 	}
 
@@ -101,20 +93,6 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 		aClass52_3894 = null;
 		aLongArray3914 = null;
 		anIntArray3918 = null;
-	}
-
-	public static void method321(int i) {
-		if (Class14_Sub8_Sub21.anIntArray4435 == null || Static2.anIntArray3357 == null) {
-			Static2.anIntArray3357 = new int[256];
-			Class14_Sub8_Sub21.anIntArray4435 = new int[256];
-			for (int i_5_ = 0; i_5_ < 256; i_5_++) {
-				double d = (double) i_5_ / 255.0 * 6.283185307179586;
-				Class14_Sub8_Sub21.anIntArray4435[i_5_] = (int) (Math.sin(d) * 4096.0);
-				Static2.anIntArray3357[i_5_] = (int) (Math.cos(d) * 4096.0);
-			}
-		}
-		if (i != 256)
-			method323(-23, 57, 56);
 	}
 
 	public static int method322(int i, byte i_6_, int i_7_) {
@@ -146,11 +124,10 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 	}
 
 	public static void method324(int i, int i_15_, int i_16_, int i_17_, byte i_18_, int i_19_) {
-		int i_20_ = 71 % ((i_18_ + 91) / 32);
 		int i_21_ = Class67.method1301((byte) -84, i_19_, Class14_Sub17.anInt3005, Class59.anInt955);
 		int i_22_ = Class67.method1301((byte) -112, i_16_, Class14_Sub17.anInt3005, Class59.anInt955);
-		int i_23_ = Class67.method1301((byte) -103, i, Class118.anInt1982, Class14_Sub8_Sub14.anInt4327);
-		int i_24_ = Class67.method1301((byte) -60, i_17_, Class118.anInt1982, Class14_Sub8_Sub14.anInt4327);
+		int i_23_ = Class67.method1301((byte) -103, i, Class118.anInt1982, JunkTex.anInt4327);
+		int i_24_ = Class67.method1301((byte) -60, i_17_, Class118.anInt1982, JunkTex.anInt4327);
 		for (int i_25_ = i_21_; i_22_ >= i_25_; i_25_++)
 			Class51.method1201(Static2.anIntArrayArray4038[i_25_], i_23_, i_24_, -5973, i_15_);
 	}

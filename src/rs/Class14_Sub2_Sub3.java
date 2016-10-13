@@ -10,13 +10,6 @@ import com.jagex.link.Linkable;
 import com.jagex.rt4.Class14_Sub1;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
 
-import rs.tex.Class14_Sub8_Sub14;
-import rs.tex.Class14_Sub8_Sub18;
-import rs.tex.Class14_Sub8_Sub30;
-import rs.tex.Class14_Sub8_Sub33;
-import rs.tex.Class14_Sub8_Sub36;
-import rs.tex.Static;
-
 public class Class14_Sub2_Sub3 extends Cacheable {
 	public static int anInt3769;
 	public static int anInt3771 = 0;
@@ -61,11 +54,11 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 	public static Class14_Sub2_Sub19_Sub1 method269(Class9 class9, int i, int i_6_) {
 		if (i != 0)
 			method277(-70, -68, 19, (byte) 93, 89, true, 70, -47, -10, 118, -36, -116);
-		if (!Static.method1027(class9, i_6_, (byte) 67)) {
+		if (!JunkTex.method1027(class9, i_6_, (byte) 67)) {
 			Class14_Sub2_Sub19_Sub1 class14_sub2_sub19_sub1 = null;
 			return class14_sub2_sub19_sub1;
 		}
-		Class14_Sub2_Sub19_Sub1 class14_sub2_sub19_sub1 = Class14_Sub8_Sub30.method641((byte) -123);
+		Class14_Sub2_Sub19_Sub1 class14_sub2_sub19_sub1 = JunkTex.method641((byte) -123);
 		return class14_sub2_sub19_sub1;
 	}
 
@@ -81,7 +74,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 		if (i > 89) {
 			if (i_14_ == i_15_)
 				Static2.method1120(i_13_, (byte) -121, i_11_, i_12_, i_14_);
-			else if (Class118.anInt1982 <= -i_14_ + i_12_ && Class14_Sub8_Sub14.anInt4327 >= i_12_ + i_14_
+			else if (Class118.anInt1982 <= -i_14_ + i_12_ && JunkTex.anInt4327 >= i_12_ + i_14_
 					&& i_11_ - i_15_ >= Class14_Sub17.anInt3005 && i_15_ + i_11_ <= Class59.anInt955)
 				Class66.method1293(i_11_, i_12_, i_14_, 121, i_15_, i_13_);
 			else
@@ -97,7 +90,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 		}
 		byte[] is;
 		if (i >= 32768)
-			is = Class14_Sub8_Sub18.aClass9_4384.method163(i & 0x7fff, 1, 0);
+			is = JunkTex.aClass9_4384.method163(i & 0x7fff, 1, 0);
 		else
 			is = Class14_Sub2_Sub8.aClass9_3850.method163(i, 1, 0);
 		Class14_Sub2_Sub21 class14_sub2_sub21_18_ = new Class14_Sub2_Sub21();
@@ -120,7 +113,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 		if (i_19_ == 249) {
 			int i_20_ = class14_sub10.readUByte();
 			if (aClass55_3783 == null) {
-				int i_21_ = Class14_Sub8_Sub33.method653(i_20_);
+				int i_21_ = JunkTex.method653(i_20_);
 				aClass55_3783 = new HashTable(i_21_);
 			}
 			for (int i_22_ = 0; i_20_ > i_22_; i_22_++) {
@@ -188,13 +181,13 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 		int i_40_ = i_28_;
 		int i_41_ = i_33_;
 		int i_42_ = 0;
-		Class14_Sub8_Sub36.anIntArray4691[i_42_] = i_28_;
+		JunkTex.anIntArray4691[i_42_] = i_28_;
 		int i_43_ = 0;
 		boolean bool_44_ = false;
 		Class14_Sub2_Sub21.anIntArray4078[i_42_++] = i_33_;
 		int[][] is = Class14_Sub21.aClass32Array3100[anInt3785].anIntArrayArray546;
 		while (i_42_ != i_43_) {
-			i_40_ = Class14_Sub8_Sub36.anIntArray4691[i_43_];
+			i_40_ = JunkTex.anIntArray4691[i_43_];
 			i_41_ = Class14_Sub2_Sub21.anIntArray4078[i_43_];
 			i_43_ = i_43_ + 1 & 0xfff;
 			if (i_31_ == i_40_ && i_41_ == i_34_) {
@@ -222,7 +215,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 			int i_45_ = Class137.anIntArrayArray2203[i_40_][i_41_] + 1;
 			if (i_40_ > 0 && Class33.anIntArrayArray575[i_40_ - 1][i_41_] == 0
 					&& (is[i_40_ - 1][i_41_] & 0x12c010e) == 0 && (is[i_40_ - 1][i_41_ + 1] & 0x12c0138) == 0) {
-				Class14_Sub8_Sub36.anIntArray4691[i_42_] = i_40_ - 1;
+				JunkTex.anIntArray4691[i_42_] = i_40_ - 1;
 				Class14_Sub2_Sub21.anIntArray4078[i_42_] = i_41_;
 				i_42_ = i_42_ + 1 & 0xfff;
 				Class33.anIntArrayArray575[i_40_ - 1][i_41_] = 2;
@@ -230,7 +223,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 			}
 			if (i_40_ < 102 && Class33.anIntArrayArray575[i_40_ + 1][i_41_] == 0
 					&& (is[i_40_ + 2][i_41_] & 0x12c0183) == 0 && (is[i_40_ + 2][i_41_ + 1] & 0x12c01e0) == 0) {
-				Class14_Sub8_Sub36.anIntArray4691[i_42_] = i_40_ + 1;
+				JunkTex.anIntArray4691[i_42_] = i_40_ + 1;
 				Class14_Sub2_Sub21.anIntArray4078[i_42_] = i_41_;
 				Class33.anIntArrayArray575[i_40_ + 1][i_41_] = 8;
 				i_42_ = i_42_ + 1 & 0xfff;
@@ -238,7 +231,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 			}
 			if (i_41_ > 0 && Class33.anIntArrayArray575[i_40_][i_41_ - 1] == 0
 					&& (is[i_40_][i_41_ - 1] & 0x12c010e) == 0 && (is[i_40_ + 1][i_41_ - 1] & 0x12c0183) == 0) {
-				Class14_Sub8_Sub36.anIntArray4691[i_42_] = i_40_;
+				JunkTex.anIntArray4691[i_42_] = i_40_;
 				Class14_Sub2_Sub21.anIntArray4078[i_42_] = i_41_ - 1;
 				Class33.anIntArrayArray575[i_40_][i_41_ - 1] = 1;
 				i_42_ = i_42_ + 1 & 0xfff;
@@ -246,7 +239,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 			}
 			if (i_41_ < 102 && Class33.anIntArrayArray575[i_40_][i_41_ + 1] == 0
 					&& (is[i_40_][i_41_ + 2] & 0x12c0138) == 0 && (is[i_40_ + 1][i_41_ + 2] & 0x12c01e0) == 0) {
-				Class14_Sub8_Sub36.anIntArray4691[i_42_] = i_40_;
+				JunkTex.anIntArray4691[i_42_] = i_40_;
 				Class14_Sub2_Sub21.anIntArray4078[i_42_] = i_41_ + 1;
 				Class33.anIntArrayArray575[i_40_][i_41_ + 1] = 4;
 				i_42_ = i_42_ + 1 & 0xfff;
@@ -255,7 +248,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 			if (i_40_ > 0 && i_41_ > 0 && Class33.anIntArrayArray575[i_40_ - 1][i_41_ - 1] == 0
 					&& (is[i_40_ - 1][i_41_] & 0x12c0138) == 0 && (is[i_40_ - 1][i_41_ - 1] & 0x12c010e) == 0
 					&& (is[i_40_][i_41_ - 1] & 0x12c0183) == 0) {
-				Class14_Sub8_Sub36.anIntArray4691[i_42_] = i_40_ - 1;
+				JunkTex.anIntArray4691[i_42_] = i_40_ - 1;
 				Class14_Sub2_Sub21.anIntArray4078[i_42_] = i_41_ - 1;
 				Class33.anIntArrayArray575[i_40_ - 1][i_41_ - 1] = 3;
 				i_42_ = i_42_ + 1 & 0xfff;
@@ -264,7 +257,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 			if (i_40_ < 102 && i_41_ > 0 && Class33.anIntArrayArray575[i_40_ + 1][i_41_ - 1] == 0
 					&& (is[i_40_ + 1][i_41_ - 1] & 0x12c010e) == 0 && (is[i_40_ + 2][i_41_ - 1] & 0x12c0183) == 0
 					&& (is[i_40_ + 2][i_41_] & 0x12c01e0) == 0) {
-				Class14_Sub8_Sub36.anIntArray4691[i_42_] = i_40_ + 1;
+				JunkTex.anIntArray4691[i_42_] = i_40_ + 1;
 				Class14_Sub2_Sub21.anIntArray4078[i_42_] = i_41_ - 1;
 				Class33.anIntArrayArray575[i_40_ + 1][i_41_ - 1] = 9;
 				i_42_ = i_42_ + 1 & 0xfff;
@@ -273,7 +266,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 			if (i_40_ > 0 && i_41_ < 102 && Class33.anIntArrayArray575[i_40_ - 1][i_41_ + 1] == 0
 					&& (is[i_40_ - 1][i_41_ + 1] & 0x12c010e) == 0 && (is[i_40_ - 1][i_41_ + 2] & 0x12c0138) == 0
 					&& (is[i_40_][i_41_ + 2] & 0x12c01e0) == 0) {
-				Class14_Sub8_Sub36.anIntArray4691[i_42_] = i_40_ - 1;
+				JunkTex.anIntArray4691[i_42_] = i_40_ - 1;
 				Class14_Sub2_Sub21.anIntArray4078[i_42_] = i_41_ + 1;
 				i_42_ = i_42_ + 1 & 0xfff;
 				Class33.anIntArrayArray575[i_40_ - 1][i_41_ + 1] = 6;
@@ -282,7 +275,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 			if (i_40_ < 102 && i_41_ < 102 && Class33.anIntArrayArray575[i_40_ + 1][i_41_ + 1] == 0
 					&& (is[i_40_ + 1][i_41_ + 2] & 0x12c0138) == 0 && (is[i_40_ + 2][i_41_ + 2] & 0x12c01e0) == 0
 					&& (is[i_40_ + 2][i_41_ + 1] & 0x12c0183) == 0) {
-				Class14_Sub8_Sub36.anIntArray4691[i_42_] = i_40_ + 1;
+				JunkTex.anIntArray4691[i_42_] = i_40_ + 1;
 				Class14_Sub2_Sub21.anIntArray4078[i_42_] = i_41_ + 1;
 				i_42_ = i_42_ + 1 & 0xfff;
 				Class33.anIntArrayArray575[i_40_ + 1][i_41_ + 1] = 12;
@@ -335,13 +328,13 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 			Static2.anInt2911 = 1;
 		}
 		int i_55_ = 0;
-		Class14_Sub8_Sub36.anIntArray4691[i_55_] = i_40_;
+		JunkTex.anIntArray4691[i_55_] = i_40_;
 		Class14_Sub2_Sub21.anIntArray4078[i_55_++] = i_41_;
 		i_43_ = i_42_ = Class33.anIntArrayArray575[i_40_][i_41_];
 		while (i_28_ != i_40_ || i_41_ != i_33_) {
 			if (i_43_ != i_42_) {
 				i_42_ = i_43_;
-				Class14_Sub8_Sub36.anIntArray4691[i_55_] = i_40_;
+				JunkTex.anIntArray4691[i_55_] = i_40_;
 				Class14_Sub2_Sub21.anIntArray4078[i_55_++] = i_41_;
 			}
 			if ((i_43_ & 0x2) == 0) {

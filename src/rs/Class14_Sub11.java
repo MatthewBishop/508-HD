@@ -8,11 +8,6 @@ import com.jagex.link.Linkable;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.Class14_Sub27;
 
-import rs.tex.Class14_Sub8_Sub15;
-import rs.tex.Class14_Sub8_Sub27;
-import rs.tex.Class14_Sub8_Sub38;
-import rs.tex.Static;
-
 public class Class14_Sub11 extends Linkable {
 	public Class124 aClass124_2940;
 	public static Class124 aClass124_2941;
@@ -54,14 +49,14 @@ public class Class14_Sub11 extends Linkable {
 			int i_4_) {
 		if (i != 32)
 			aClass124_2949 = null;
-		if (!Class133_Sub5.aBoolean3628 && Class14_Sub8_Sub38.anInt4729 < 500) {
-			Class112.aClass124Array1875[Class14_Sub8_Sub38.anInt4729] = class124;
-			RuntimeException_Sub1.aClass124Array2459[(Class14_Sub8_Sub38.anInt4729)] = class124_2_;
-			Class14_Sub29.aShortArray3262[Class14_Sub8_Sub38.anInt4729] = i_3_;
-			Static.aLongArray3924[Class14_Sub8_Sub38.anInt4729] = l;
-			Class14_Sub8_Sub27.anIntArray4544[Class14_Sub8_Sub38.anInt4729] = i_4_;
-			Static.anIntArray3288[Class14_Sub8_Sub38.anInt4729] = i_1_;
-			Class14_Sub8_Sub38.anInt4729++;
+		if (!Class133_Sub5.aBoolean3628 && JunkTex.anInt4729 < 500) {
+			Class112.aClass124Array1875[JunkTex.anInt4729] = class124;
+			RuntimeException_Sub1.aClass124Array2459[(JunkTex.anInt4729)] = class124_2_;
+			Class14_Sub29.aShortArray3262[JunkTex.anInt4729] = i_3_;
+			JunkTex.aLongArray3924[JunkTex.anInt4729] = l;
+			JunkTex.anIntArray4544[JunkTex.anInt4729] = i_4_;
+			JunkTex.anIntArray3288[JunkTex.anInt4729] = i_1_;
+			JunkTex.anInt4729++;
 		}
 	}
 
@@ -75,9 +70,9 @@ public class Class14_Sub11 extends Linkable {
 	}
 
 	public static void method855(int i) {
-		Class40.aClass14_Sub29ArrayArrayArray674 = (new Class14_Sub29[i][Static2.anInt3338][Class14_Sub8_Sub15.anInt4337]);
-		Static.anIntArrayArray2799 = new int[Static2.anInt3338][Class14_Sub8_Sub15.anInt4337];
-		Class150.anIntArrayArrayArray2419 = (new int[i][Static2.anInt3338 + 1][Class14_Sub8_Sub15.anInt4337 + 1]);
+		Class40.aClass14_Sub29ArrayArrayArray674 = (new Class14_Sub29[i][Static2.anInt3338][JunkTex.anInt4337]);
+		JunkTex.anIntArrayArray2799 = new int[Static2.anInt3338][JunkTex.anInt4337];
+		Class150.anIntArrayArrayArray2419 = (new int[i][Static2.anInt3338 + 1][JunkTex.anInt4337 + 1]);
 		Class131.aClass14_Sub27ArrayArray2162 = new Class14_Sub27[i][];
 	}
 

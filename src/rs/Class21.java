@@ -6,9 +6,6 @@ package rs;
 import com.jagex.io.Buffer;
 import com.jagex.link.ref.SoftCache;
 
-import rs.tex.Class14_Sub8_Sub34;
-import rs.tex.Static;
-
 public class Class21 {
 	public static int[] anIntArray437;
 	public static Class36 aClass36_441;
@@ -31,7 +28,7 @@ public class Class21 {
 
 	public static Class94 method975(Class94 class94, boolean bool) {
 		if (class94.anInt1540 != -1) {
-			Class94 class94_0_ = Static.method1233(class94.anInt1540, 21803);
+			Class94 class94_0_ = JunkTex.method1233(class94.anInt1540, 21803);
 			return class94_0_;
 		}
 		int i = class94.anInt1548 >>> 48;
@@ -42,7 +39,7 @@ public class Class21 {
 		for (Class14_Sub15 class14_sub15 = ((Class14_Sub15) Class14_Sub30.aClass55_3275.getFirst()); class14_sub15 != null; class14_sub15 = (Class14_Sub15) Class14_Sub30.aClass55_3275
 						.getNext()) {
 			if (class14_sub15.anInt2999 == i)
-				return Static.method1233((int) class14_sub15.key, 21803);
+				return JunkTex.method1233((int) class14_sub15.key, 21803);
 		}
 		return null;
 	}
@@ -106,7 +103,7 @@ public class Class21 {
 	public static Class88[] method978(int i) {
 		int i_14_ = 63 / ((0 - i) / 39);
 		if (Class76.aClass88Array1211 == null) {
-			Class88[] class88s = Class14_Sub18.method884(-3189, Class14_Sub8_Sub34.aClass43_4647);
+			Class88[] class88s = Class14_Sub18.method884(-3189, JunkTex.aClass43_4647);
 			Class88[] class88s_15_ = new Class88[class88s.length];
 			int i_16_ = 0;
 			while_56_: for (int i_17_ = 0; i_17_ < class88s.length; i_17_++) {

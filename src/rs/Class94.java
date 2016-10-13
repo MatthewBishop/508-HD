@@ -13,11 +13,6 @@ import com.jagex.rt4.Class14_Sub2_Sub19_Sub1_Sub1;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub2;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub2_Sub1;
 
-import rs.tex.Class14_Sub8_Sub1;
-import rs.tex.Class14_Sub8_Sub11;
-import rs.tex.Class14_Sub8_Sub24;
-import rs.tex.Class14_Sub8_Sub30;
-
 public class Class94 {
 	public int[] anIntArray1452;
 	public int anInt1454;
@@ -567,7 +562,7 @@ public class Class94 {
 			aClass124_1556 = class14_sub10.method797(9467);
 			if (aClass124_1556.method1693(0) == 0) {
 				if (anInt1572 == 1)
-					aClass124_1556 = Class14_Sub8_Sub11.aClass124_4264;
+					aClass124_1556 = JunkTex.aClass124_4264;
 				if (anInt1572 == 4)
 					aClass124_1556 = Class14_Sub6.aClass124_2810;
 				if (anInt1572 == 5)
@@ -625,7 +620,7 @@ public class Class94 {
 		if (aBoolean1577)
 			class14_sub2_sub19_sub1 = Class137.method1943(0, Class134.aClass9_2598, i_41_, (byte) 99);
 		else
-			class14_sub2_sub19_sub1 = Class14_Sub8_Sub1.method485(i + 29, Class134.aClass9_2598, i_41_, 0);
+			class14_sub2_sub19_sub1 = JunkTex.method485(i + 29, Class134.aClass9_2598, i_41_, 0);
 		if (class14_sub2_sub19_sub1 == null) {
 			aBoolean1554 = true;
 			class14_sub2_sub19 = null;
@@ -716,16 +711,16 @@ public class Class94 {
 			return class133_sub7;
 		}
 		if (i_57_ == 1) {
-			Class133_Sub7 class133_sub7 = ((Class133_Sub7) (Class14_Sub8_Sub30.aClass52_4588.get((long) (i_58_ + (i_57_ << 48)))));
+			Class133_Sub7 class133_sub7 = ((Class133_Sub7) (JunkTex.aClass52_4588.get((long) (i_58_ + (i_57_ << 48)))));
 			if (class133_sub7 == null) {
-				Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(Class14_Sub8_Sub24.aClass9_4486, i_58_, 0);
+				Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(JunkTex.aClass9_4486, i_58_, 0);
 				if (class133_sub2 == null) {
 					aBoolean1554 = true;
 					Class133_Sub7 class133_sub7_59_ = null;
 					return class133_sub7_59_;
 				}
 				class133_sub7 = class133_sub2.method1827(64, 768, -50, -10, -50);
-				Class14_Sub8_Sub30.aClass52_4588.put(class133_sub7, (long) ((i_57_ << 48) + i_58_));
+				JunkTex.aClass52_4588.put(class133_sub7, (long) ((i_57_ << 48) + i_58_));
 			}
 			if (animation != null)
 				class133_sub7 = animation.method1167(i_56_, 65535, class133_sub7);
@@ -756,7 +751,7 @@ public class Class94 {
 			return class133_sub7_63_;
 		}
 		if (i_57_ == 4) {
-			Class142 class142 = Class14_Sub8_Sub24.method605(98, i_58_);
+			Class142 class142 = JunkTex.method605(98, i_58_);
 			Class133_Sub7 class133_sub7 = class142.method1974(animation, i_56_, 0, 10);
 			if (class133_sub7 == null) {
 				aBoolean1554 = true;
@@ -874,7 +869,7 @@ public class Class94 {
 		aBoolean1462 = false;
 		anInt1588 = -1;
 		anInt1505 = 0;
-		aClass124_1556 = Class14_Sub8_Sub11.aClass124_4264;
+		aClass124_1556 = JunkTex.aClass124_4264;
 		aBoolean1606 = false;
 		anInt1603 = 0;
 		anInt1611 = 0;

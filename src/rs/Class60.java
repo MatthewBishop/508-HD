@@ -6,9 +6,6 @@ package rs;
 import com.jagex.io.Buffer;
 import com.jagex.rt4.Class14_Sub1;
 
-import rs.tex.Class14_Sub8_Sub5;
-import rs.tex.Static;
-
 public class Class60 {
 	public short[] aShortArray961;
 	public int anInt962;
@@ -148,7 +145,7 @@ public class Class60 {
 	public Class133_Sub7 method1267(int i, int i_21_) {
 		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Static2.aClass52_4053.get((long) anInt962));
 		if (class133_sub7 == null) {
-			Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(Static.aClass9_2711, anInt977, 0);
+			Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(JunkTex.aClass9_2711, anInt977, 0);
 			if (class133_sub2 == null) {
 				Class133_Sub7 class133_sub7_22_ = null;
 				return class133_sub7_22_;
@@ -166,7 +163,7 @@ public class Class60 {
 		}
 		Class133_Sub7 class133_sub7_25_;
 		if (anInt966 != -1 && i_21_ != -1)
-			class133_sub7_25_ = Static.method1129(anInt966, -125).method1173(i_21_, 65535, class133_sub7);
+			class133_sub7_25_ = JunkTex.method1129(anInt966, -125).method1173(i_21_, 65535, class133_sub7);
 		else
 			class133_sub7_25_ = class133_sub7.method1870(true, true);
 		if (anInt963 != 128 || anInt965 != 128)
@@ -204,7 +201,7 @@ public class Class60 {
 	public static void method1270(int i, byte i_27_) {
 		if (i_27_ != 46)
 			method1264(-75);
-		Class14_Sub8_Sub5.aClass2_4163.pushBack(new Class14_Sub1(i));
+		JunkTex.aClass2_4163.pushBack(new Class14_Sub1(i));
 	}
 
 	public Class60() {

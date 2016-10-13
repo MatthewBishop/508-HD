@@ -10,11 +10,6 @@ import java.awt.event.KeyListener;
 
 import com.jagex.rt4.RT4;
 
-import rs.tex.Class14_Sub8_Sub3;
-import rs.tex.Class14_Sub8_Sub36;
-import rs.tex.Class14_Sub8_Sub4;
-import rs.tex.Class14_Sub8_Sub9;
-
 public class Class141 implements KeyListener, FocusListener {
 	public static Class94 aClass94_2239;
 	public static Class87 aClass87_2242;
@@ -78,8 +73,8 @@ public class Class141 implements KeyListener, FocusListener {
 	}
 
 	public void keyTyped(KeyEvent keyevent) {
-		if (Class14_Sub8_Sub9.aClass141_4239 != null) {
-			int i = Class14_Sub8_Sub36.method671(keyevent, 0);
+		if (JunkTex.aClass141_4239 != null) {
+			int i = JunkTex.method671(keyevent, 0);
 			if (i >= 0) {
 				int i_14_ = Class7_Sub3.anInt2682 + 1 & 0x7f;
 				if (Class14_Sub9_Sub3.anInt4850 != i_14_) {
@@ -93,7 +88,7 @@ public class Class141 implements KeyListener, FocusListener {
 	}
 
 	public synchronized void focusLost(FocusEvent focusevent) {
-		if (Class14_Sub8_Sub9.aClass141_4239 != null)
+		if (JunkTex.aClass141_4239 != null)
 			Class120.anInt2014 = -1;
 	}
 
@@ -107,7 +102,7 @@ public class Class141 implements KeyListener, FocusListener {
 	}
 
 	public synchronized void keyPressed(KeyEvent keyevent) {
-		if (Class14_Sub8_Sub9.aClass141_4239 != null) {
+		if (JunkTex.aClass141_4239 != null) {
 			Class86.anInt1385 = 0;
 			int i = keyevent.getKeyCode();
 			if (i >= 0 && i < Canvas_Sub2.anIntArray62.length) {
@@ -117,9 +112,9 @@ public class Class141 implements KeyListener, FocusListener {
 			} else
 				i = -1;
 			if (Class120.anInt2014 >= 0 && i >= 0) {
-				Class14_Sub8_Sub3.anIntArray4139[Class120.anInt2014] = i;
+				JunkTex.anIntArray4139[Class120.anInt2014] = i;
 				Class120.anInt2014 = Class120.anInt2014 + 1 & 0x7f;
-				if (Class120.anInt2014 == Class14_Sub8_Sub4.anInt4146)
+				if (Class120.anInt2014 == JunkTex.anInt4146)
 					Class120.anInt2014 = -1;
 			}
 			if (i >= 0) {
@@ -172,7 +167,7 @@ public class Class141 implements KeyListener, FocusListener {
 	}
 
 	public synchronized void keyReleased(KeyEvent keyevent) {
-		if (Class14_Sub8_Sub9.aClass141_4239 != null) {
+		if (JunkTex.aClass141_4239 != null) {
 			Class86.anInt1385 = 0;
 			int i = keyevent.getKeyCode();
 			if (i < 0 || i >= Canvas_Sub2.anIntArray62.length)
@@ -180,9 +175,9 @@ public class Class141 implements KeyListener, FocusListener {
 			else
 				i = Canvas_Sub2.anIntArray62[i] & ~0x80;
 			if (Class120.anInt2014 >= 0 && i >= 0) {
-				Class14_Sub8_Sub3.anIntArray4139[Class120.anInt2014] = i ^ 0xffffffff;
+				JunkTex.anIntArray4139[Class120.anInt2014] = i ^ 0xffffffff;
 				Class120.anInt2014 = Class120.anInt2014 + 1 & 0x7f;
-				if (Class14_Sub8_Sub4.anInt4146 == Class120.anInt2014)
+				if (JunkTex.anInt4146 == Class120.anInt2014)
 					Class120.anInt2014 = -1;
 			}
 		}

@@ -7,8 +7,6 @@ import java.math.BigInteger;
 
 import com.jagex.rt4.Class148;
 
-import rs.tex.Class14_Sub8_Sub11;
-
 public class Class110 {
 	public static Class148[] aClass148Array1848;
 	public static Class124 aClass124_1849;
@@ -39,7 +37,7 @@ public class Class110 {
 			i_0_ = 0;
 		i_5_ <<= i_3_;
 		Class14_Sub9_Sub1.method700(i_2_, -127,
-				(i_0_ << i_3_ & i_5_ | ((i_5_ ^ 0xffffffff) & (Class14_Sub8_Sub11.anIntArray4275[i_2_]))));
+				(i_0_ << i_3_ & i_5_ | ((i_5_ ^ 0xffffffff) & (JunkTex.anIntArray4275[i_2_]))));
 	}
 
 	public static void method1575(boolean bool) {

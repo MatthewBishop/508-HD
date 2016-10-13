@@ -14,7 +14,7 @@ import com.jagex.link.Linkable;
 
 import rs.Class14_Sub29;
 import rs.Class3;
-import rs.tex.Class14_Sub8_Sub33;
+import rs.JunkTex;
 
 public class Class14_Sub27 extends Linkable {
 	public static ByteBuffer aByteBuffer3192;
@@ -251,7 +251,7 @@ public class Class14_Sub27 extends Linkable {
 		anIntArray3205 = new int[anInt3180];
 		anIntArray3196 = new int[anInt3180];
 		anIntArrayArray3184 = new int[anInt3180][];
-		aClass55_3195 = new HashTable(Class14_Sub8_Sub33.method653(anInt3181));
+		aClass55_3195 = new HashTable(JunkTex.method653(anInt3181));
 		if (aBoolean3201) {
 			anIntArrayArray3203 = new int[anInt3180][];
 			aBooleanArray3194 = new boolean[anInt3180];

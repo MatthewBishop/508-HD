@@ -7,8 +7,6 @@ import java.util.zip.CRC32;
 
 import com.jagex.rt4.Class14_Sub2_Sub19;
 
-import rs.tex.Static;
-
 public class Class7 {
 	public static Class124 aClass124_174;
 	public static Class124 aClass124_176 = Class14_Sub2_Sub2.method263(1178, "Sat");
@@ -59,7 +57,7 @@ public class Class7 {
 
 	public static Class14_Sub2_Sub19 method117(Class9 class9, int i, byte i_4_) {
 		int i_5_ = -86 / ((17 - i_4_) / 57);
-		if (!Static.method1027(class9, i, (byte) 126)) {
+		if (!JunkTex.method1027(class9, i, (byte) 126)) {
 			Class14_Sub2_Sub19 class14_sub2_sub19 = null;
 			return class14_sub2_sub19;
 		}

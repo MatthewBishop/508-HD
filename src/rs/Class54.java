@@ -3,11 +3,6 @@
  */
 package rs;
 
-import rs.tex.Class14_Sub8_Sub31;
-import rs.tex.Class14_Sub8_Sub38;
-import rs.tex.Class14_Sub8_Sub5;
-import rs.tex.Class14_Sub8_Sub7;
-
 public class Class54 {
 	public static volatile boolean aBoolean877 = false;
 	public static boolean aBoolean879 = true;
@@ -28,7 +23,7 @@ public class Class54 {
 		}
 		if (class94.aClass124_1589 == null || (class94.aClass124_1589.method1684((byte) 9).method1693(0) == 0)) {
 			if (Class125_Sub3.aBoolean3392) {
-				Class124 class124 = Class14_Sub8_Sub31.aClass124_4607;
+				Class124 class124 = JunkTex.aClass124_4607;
 				return class124;
 			}
 			Class124 class124 = null;
@@ -39,24 +34,24 @@ public class Class54 {
 	}
 
 	public static void method1218(int i, int i_0_, int i_1_) {
-		if (Class14_Sub8_Sub38.anInt4729 >= 2 || Class51.anInt831 != 0 || Class14_Sub4.aBoolean2784) {
+		if (JunkTex.anInt4729 >= 2 || Class51.anInt831 != 0 || Class14_Sub4.aBoolean2784) {
 			Class124 class124;
-			if (Class51.anInt831 != 1 || Class14_Sub8_Sub38.anInt4729 >= 2) {
-				if (!Class14_Sub4.aBoolean2784 || Class14_Sub8_Sub38.anInt4729 >= 2)
-					class124 = Static2.method1170((byte) -99, Class14_Sub8_Sub38.anInt4729 - 1);
+			if (Class51.anInt831 != 1 || JunkTex.anInt4729 >= 2) {
+				if (!Class14_Sub4.aBoolean2784 || JunkTex.anInt4729 >= 2)
+					class124 = Static2.method1170((byte) -99, JunkTex.anInt4729 - 1);
 				else
-					class124 = (Class14_Sub8_Sub7.method515((new Class124[] { Class125.aClass124_2082,
-							Class104.aClass124_1736, Class17.aClass124_408, Class14_Sub8_Sub5.aClass124_4165 }),
+					class124 = (JunkTex.method515((new Class124[] { Class125.aClass124_2082,
+							Class104.aClass124_1736, Class17.aClass124_408, JunkTex.aClass124_4165 }),
 							(byte) -42));
 			} else
-				class124 = Class14_Sub8_Sub7
+				class124 = JunkTex
 						.method515(
 								(new Class124[] { Class40.aClass124_665, Class104.aClass124_1736,
-										(Class14_Sub6.aClass124_2809), (Class14_Sub8_Sub5.aClass124_4165) }),
+										(Class14_Sub6.aClass124_2809), (JunkTex.aClass124_4165) }),
 								(byte) -41);
-			if (Class14_Sub8_Sub38.anInt4729 > 2)
-				class124 = (Class14_Sub8_Sub7.method515((new Class124[] { class124, Class115.aClass124_1906,
-						Class83.method1407(81, (Class14_Sub8_Sub38.anInt4729 - 2)),
+			if (JunkTex.anInt4729 > 2)
+				class124 = (JunkTex.method515((new Class124[] { class124, Class115.aClass124_1906,
+						Class83.method1407(81, (JunkTex.anInt4729 - 2)),
 						Static2.aClass124_3948 }), (byte) -83));
 			int i_2_ = (Class133_Sub3.aClass14_Sub2_Sub16_3567.method350(class124, i + 4, i_1_ + 15, 16777215, 0,
 					Class104.aRandom1732, Class32.anInt563));

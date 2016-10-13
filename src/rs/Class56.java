@@ -7,13 +7,6 @@ import com.jagex.map.Scenegraph;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1_Sub1;
 
-import rs.tex.Class14_Sub8;
-import rs.tex.Class14_Sub8_Sub15;
-import rs.tex.Class14_Sub8_Sub26;
-import rs.tex.Class14_Sub8_Sub38;
-import rs.tex.Class14_Sub8_Sub4;
-import rs.tex.Static;
-
 public class Class56 {
 	public static int[] anIntArray913;
 	public static Class124 aClass124_914 = Class14_Sub2_Sub2.method263(1178,
@@ -66,8 +59,8 @@ public class Class56 {
 							int i_8_ = (i_4_ & 0xffc245) >> 46;
 							int i_9_ = (i_4_ & 0x3ffd) >> 35;
 							int i_10_ = (i_8_ / 8 << 40) + i_9_ / 8;
-							for (int i_11_ = 0; Class14_Sub8.anIntArray2858.length > i_11_; i_11_++) {
-								if (Class14_Sub8.anIntArray2858[i_11_] == i_10_ && is[i_11_] != null) {
+							for (int i_11_ = 0; JunkTex.anIntArray2858.length > i_11_; i_11_++) {
+								if (JunkTex.anIntArray2858[i_11_] == i_10_ && is[i_11_] != null) {
 									bool_5_ = true;
 									Class133_Sub3.method1833(bool, i_2_ * 8, i_7_, is[i_11_], i_1_, i_3_ * 8,
 											(byte) -123, i_6_, (i_8_ & 0x7) * 8, (i_9_ & 0x7) * 8,
@@ -92,15 +85,15 @@ public class Class56 {
 			int[] is_13_ = new int[i_12_];
 			byte[] is_14_ = Class98.aByteArrayArray1667[0];
 			for (int i_15_ = 0; i_15_ < i_12_; i_15_++)
-				is_13_[i_15_] = (Class66.method1294(Class14_Sub8_Sub26.method617(-16777216, is_14_[i_15_] << 56),
-						(Static.anIntArray1114[Class14_Sub8_Sub26.method617(is[i_15_], 255)])));
+				is_13_[i_15_] = (Class66.method1294(JunkTex.method617(-16777216, is_14_[i_15_] << 56),
+						(JunkTex.anIntArray1114[JunkTex.method617(is[i_15_], 255)])));
 			class14_sub2_sub19_sub1 = new Class14_Sub2_Sub19_Sub1_Sub1(Class14_Sub11.anInt2952, Class14_Sub30.anInt3279,
 					Class40.anIntArray675[0], (Class14_Sub2_Sub12.anIntArray3918[0]), Class17.anIntArray402[0],
 					Class76.anIntArray1204[0], is_13_);
 		} else {
 			int[] is_16_ = new int[i_12_];
 			for (int i_17_ = 0; i_17_ < i_12_; i_17_++)
-				is_16_[i_17_] = (Static.anIntArray1114[Class14_Sub8_Sub26.method617(is[i_17_], 255)]);
+				is_16_[i_17_] = (JunkTex.anIntArray1114[JunkTex.method617(is[i_17_], 255)]);
 			class14_sub2_sub19_sub1 = new Class14_Sub2_Sub19_Sub1(Class14_Sub11.anInt2952, Class14_Sub30.anInt3279,
 					Class40.anIntArray675[0], (Class14_Sub2_Sub12.anIntArray3918[0]), Class17.anIntArray402[0],
 					Class76.anIntArray1204[0], is_16_);
@@ -113,17 +106,17 @@ public class Class56 {
 	public static void method1240() {
 		for (int i = 0; i < Class83.anInt1338; i++) {
 			for (int i_19_ = 0; i_19_ < Static2.anInt3338; i_19_++) {
-				for (int i_20_ = 0; i_20_ < Class14_Sub8_Sub15.anInt4337; i_20_++)
+				for (int i_20_ = 0; i_20_ < JunkTex.anInt4337; i_20_++)
 					Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_19_][i_20_] = null;
 			}
 		}
 		for (int i = 0; i < Scenegraph.clusterCount; i++)
 			Scenegraph.clusters[i] = null;
 		Scenegraph.clusterCount = 0;
-		for (int i = 0; i < Class14_Sub8_Sub38.anInt4727; i++)
+		for (int i = 0; i < JunkTex.anInt4727; i++)
 			Class14_Sub20.aClass40Array3093[i] = null;
-		Class14_Sub8_Sub38.anInt4727 = 0;
-		for (int i = 0; i < Class14_Sub8_Sub4.aClass40Array4143.length; i++)
-			Class14_Sub8_Sub4.aClass40Array4143[i] = null;
+		JunkTex.anInt4727 = 0;
+		for (int i = 0; i < JunkTex.aClass40Array4143.length; i++)
+			JunkTex.aClass40Array4143[i] = null;
 	}
 }

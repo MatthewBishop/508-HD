@@ -7,8 +7,6 @@ import java.awt.Component;
 
 import com.jagex.io.Buffer;
 
-import rs.tex.Static;
-
 public abstract class Class129 {
 	public static Class124 aClass124_2129;
 	public static int anInt2131 = 0;
@@ -30,7 +28,7 @@ public abstract class Class129 {
 			Class76.anIntArray1204 = null;
 			Class17.anIntArray402 = null;
 			Class40.anIntArray675 = null;
-			Static.anIntArray1114 = null;
+			JunkTex.anIntArray1114 = null;
 		}
 	}
 

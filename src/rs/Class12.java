@@ -9,14 +9,6 @@ import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.Class14_Sub1;
 
-import rs.tex.Class14_Sub8_Sub11;
-import rs.tex.Class14_Sub8_Sub13;
-import rs.tex.Class14_Sub8_Sub14;
-import rs.tex.Class14_Sub8_Sub33;
-import rs.tex.Class14_Sub8_Sub39;
-import rs.tex.Class14_Sub8_Sub6;
-import rs.tex.Static;
-
 public class Class12 {
 	public int anInt275;
 	public int anInt276;
@@ -103,7 +95,7 @@ public class Class12 {
 					boolean var8 = false;
 
 					for (int var9 = 0; var9 < this.anIntArray309.length; ++var9) {
-						if (!Static.aClass9_429.method158(0, this.anIntArray309[var9], (byte) 109)) {
+						if (!JunkTex.aClass9_429.method158(0, this.anIntArray309[var9], (byte) 109)) {
 							var8 = true;
 						}
 					}
@@ -115,7 +107,7 @@ public class Class12 {
 					Class133_Sub2[] var14 = new Class133_Sub2[this.anIntArray309.length];
 
 					for (int var10 = 0; var10 < this.anIntArray309.length; ++var10) {
-						var14[var10] = Class133_Sub2.method1824(Static.aClass9_429, this.anIntArray309[var10], 0);
+						var14[var10] = Class133_Sub2.method1824(JunkTex.aClass9_429, this.anIntArray309[var10], 0);
 						if (this.anIntArrayArray316 != null && this.anIntArrayArray316[var10] != null
 								&& var14[var10] != null) {
 							var14[var10].method1825(this.anIntArrayArray316[var10][0],
@@ -135,7 +127,7 @@ public class Class12 {
 						for (var11 = 0; var11 < this.aShortArray319.length; ++var11) {
 							if (this.aByteArray333 != null && var11 < this.aByteArray333.length) {
 								var15.method1813(this.aShortArray319[var11],
-										Class14_Sub8_Sub39.aShortArray4747[this.aByteArray333[var11] & 255]);
+										JunkTex.aShortArray4747[this.aByteArray333[var11] & 255]);
 							} else {
 								var15.method1813(this.aShortArray319[var11], this.aShortArray317[var11]);
 							}
@@ -172,7 +164,7 @@ public class Class12 {
 				return var7;
 			}
 		} catch (Throwable var12) {
-			throw Class14_Sub8_Sub14.method554(var12, "bi.D(" + var1 + ',' + var2 + ','
+			throw JunkTex.method554(var12, "bi.D(" + var1 + ',' + var2 + ','
 					+ (var3 != null ? "{...}" : "null") + ',' + (var4 != null ? "{...}" : "null") + ',' + var5 + ')');
 		}
 	}
@@ -213,10 +205,10 @@ public class Class12 {
 			int i_35_ = Class6.anIntArray148[i_29_];
 			int i_36_ = Class6.anIntArray148[i_30_];
 			if (((i_31_ - i_32_) * (i_36_ - i_35_) - (i_34_ - i_35_) * (i_33_ - i_32_)) > 0 && Class142.aBoolean2299
-					&& Class14_Sub8_Sub13.method549((Class14_Sub19.anInt3073 + Class3.anInt118),
+					&& JunkTex.method549((Class14_Sub19.anInt3073 + Class3.anInt118),
 							(Static2.anInt3334 + Class3.anInt110), i_34_, i_35_, i_36_, i_31_, i_32_, i_33_)) {
 				Class66.anInt1039 = i_19_;
-				Class14_Sub8_Sub33.anInt4636 = i_20_;
+				JunkTex.anInt4636 = i_20_;
 			}
 		}
 	}
@@ -254,7 +246,7 @@ public class Class12 {
 				return false;
 			}
 		} catch (Throwable var4) {
-			throw Class14_Sub8_Sub14.method554(var4, "bi.G(" + var1 + ')');
+			throw JunkTex.method554(var4, "bi.G(" + var1 + ')');
 		}
 	}
 
@@ -302,7 +294,7 @@ public class Class12 {
 				class14_sub3.anInt2753 = Static2.method1500(class133_sub1_sub2, -1);
 				class14_sub3.anInt2765 = class12.anInt293 * 128;
 			}
-			Static.aClass2_683.pushBack(class14_sub3);
+			JunkTex.aClass2_683.pushBack(class14_sub3);
 		} else if (class133_sub1_sub1 != null) {
 			class14_sub3.anInt2751 = (class133_sub1_sub1.anInt3493 + i_44_) * 128;
 			class14_sub3.aClass133_Sub1_Sub1_2755 = class133_sub1_sub1;
@@ -331,7 +323,7 @@ public class Class12 {
 				}
 			}
 		} catch (Throwable var6) {
-			throw Class14_Sub8_Sub14.method554(var6, "bi.H(" + var1 + ',' + var2 + ',' + var3 + ')');
+			throw JunkTex.method554(var6, "bi.H(" + var1 + ',' + var2 + ',' + var3 + ')');
 		}
 	}
 
@@ -351,7 +343,7 @@ public class Class12 {
 				}
 			}
 		} catch (Throwable var6) {
-			throw Class14_Sub8_Sub14.method554(var6,
+			throw JunkTex.method554(var6,
 					"bi.M(" + var1 + ',' + (var2 != null ? "{...}" : "null") + ',' + var3 + ')');
 		}
 	}
@@ -464,7 +456,7 @@ public class Class12 {
 																	else if (i_70_ == 249) {
 																		int i_81_ = class14_sub10.readUByte();
 																		if (aClass55_304 == null) {
-																			int i_82_ = Class14_Sub8_Sub33
+																			int i_82_ = JunkTex
 																					.method653(i_81_);
 																			aClass55_304 = new HashTable(i_82_);
 																		}
@@ -532,7 +524,7 @@ public class Class12 {
 				}
 			}
 		} catch (Throwable throwable) {
-			throw Class14_Sub8_Sub14.method554(throwable, new StringBuilder("bi.N(").append(i).append(',')
+			throw JunkTex.method554(throwable, new StringBuilder("bi.N(").append(i).append(',')
 					.append(class14_sub10 != null ? "{...}" : "null").append(',').append(i_70_).append(')').toString());
 		}
 	}
@@ -547,7 +539,7 @@ public class Class12 {
 				if (this.anInt326 != -1) {
 					var2 = Class104.method1534(this.anInt326, var1 + 143);
 				} else if (this.anInt277 != -1) {
-					var2 = Class14_Sub8_Sub11.anIntArray4275[this.anInt277];
+					var2 = JunkTex.anIntArray4275[this.anInt277];
 				}
 
 				if (var2 >= 0 && this.anIntArray329.length - 1 > var2 && this.anIntArray329[var2] != -1) {
@@ -566,7 +558,7 @@ public class Class12 {
 				}
 			}
 		} catch (Throwable var5) {
-			throw Class14_Sub8_Sub14.method554(var5, "bi.A(" + var1 + ')');
+			throw JunkTex.method554(var5, "bi.A(" + var1 + ')');
 		}
 	}
 
@@ -580,7 +572,7 @@ public class Class12 {
 						i_109_);
 			}
 		} catch (Throwable throwable) {
-			throw Class14_Sub8_Sub14.method554(throwable,
+			throw JunkTex.method554(throwable,
 					new StringBuilder("bi.K(").append(i).append(',').append(i_105_).append(',').append(i_106_)
 							.append(',').append(i_107_).append(',').append(i_108_).append(',').append(i_109_)
 							.append(',').append(i_110_).append(',').append(i_111_).append(')').toString());
@@ -596,7 +588,7 @@ public class Class12 {
 				int var2 = var1;
 				if (this.anInt326 == -1) {
 					if (this.anInt277 != -1) {
-						var2 = Class14_Sub8_Sub11.anIntArray4275[this.anInt277];
+						var2 = JunkTex.anIntArray4275[this.anInt277];
 					}
 				} else {
 					var2 = Class104.method1534(this.anInt326, 118);
@@ -618,7 +610,7 @@ public class Class12 {
 				}
 			}
 		} catch (Throwable var5) {
-			throw Class14_Sub8_Sub14.method554(var5, "bi.I(" + var1 + ')');
+			throw JunkTex.method554(var5, "bi.I(" + var1 + ')');
 		}
 	}
 
@@ -660,7 +652,7 @@ public class Class12 {
 				return var3;
 			}
 		} catch (Throwable var5) {
-			throw Class14_Sub8_Sub14.method554(var5, "bi.P(" + var0 + ',' + var1 + ',' + var2 + ')');
+			throw JunkTex.method554(var5, "bi.P(" + var0 + ',' + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -700,7 +692,7 @@ public class Class12 {
 					var4 = null;
 					return var4;
 				} else {
-					var4 = (Class133_Sub7) Class14_Sub8_Sub6.aClass52_4186.get((long) this.anInt337);
+					var4 = (Class133_Sub7) JunkTex.aClass52_4186.get((long) this.anInt337);
 					if (var1 > -93) {
 						this.anInt279 = 41;
 					}
@@ -709,7 +701,7 @@ public class Class12 {
 						boolean var5 = false;
 
 						for (int var6 = 0; this.anIntArray338.length > var6; ++var6) {
-							if (!Static.aClass9_429.method158(0, this.anIntArray338[var6], (byte) -121)) {
+							if (!JunkTex.aClass9_429.method158(0, this.anIntArray338[var6], (byte) -121)) {
 								var5 = true;
 							}
 						}
@@ -721,7 +713,7 @@ public class Class12 {
 						Class133_Sub2[] var12 = new Class133_Sub2[this.anIntArray338.length];
 
 						for (int var7 = 0; this.anIntArray338.length > var7; ++var7) {
-							var12[var7] = Class133_Sub2.method1824(Static.aClass9_429, this.anIntArray338[var7], 0);
+							var12[var7] = Class133_Sub2.method1824(JunkTex.aClass9_429, this.anIntArray338[var7], 0);
 						}
 
 						Class133_Sub2 var13;
@@ -736,7 +728,7 @@ public class Class12 {
 							for (var8 = 0; this.aShortArray319.length > var8; ++var8) {
 								if (this.aByteArray333 != null && var8 < this.aByteArray333.length) {
 									var13.method1813(this.aShortArray319[var8],
-											Class14_Sub8_Sub39.aShortArray4747[this.aByteArray333[var8] & 255]);
+											JunkTex.aShortArray4747[this.aByteArray333[var8] & 255]);
 								} else {
 									var13.method1813(this.aShortArray319[var8], this.aShortArray317[var8]);
 								}
@@ -750,7 +742,7 @@ public class Class12 {
 						}
 
 						var4 = var13.method1827(64, 768, -50, -10, -50);
-						Class14_Sub8_Sub6.aClass52_4186.put(var4, (long) this.anInt337);
+						JunkTex.aClass52_4186.put(var4, (long) this.anInt337);
 					}
 
 					if (var2 != null) {
@@ -761,7 +753,7 @@ public class Class12 {
 				}
 			}
 		} catch (Throwable var9) {
-			throw Class14_Sub8_Sub14.method554(var9,
+			throw JunkTex.method554(var9,
 					"bi.E(" + var1 + ',' + (var2 != null ? "{...}" : "null") + ',' + var3 + ')');
 		}
 	}

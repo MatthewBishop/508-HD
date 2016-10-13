@@ -8,9 +8,6 @@ import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 import com.jagex.rt4.AtmosphericChunk;
 
-import rs.tex.Class14_Sub8_Sub4;
-import rs.tex.Static;
-
 public class Class150 {
 	public int anInt2405;
 	public static SoftCache aClass52_2406 = new SoftCache(200);
@@ -66,11 +63,11 @@ public class Class150 {
 			int i_10_ = -10;
 			return i_10_;
 		}
-		if ((Class14_Sub8_Sub4.tileFlags[i_7_][i_8_][i] & 0x8) != 0) {
+		if ((JunkTex.tileFlags[i_7_][i_8_][i] & 0x8) != 0) {
 			int i_11_ = 0;
 			return i_11_;
 		}
-		if (i_7_ > 0 && (Class14_Sub8_Sub4.tileFlags[1][i_8_][i] & 0x2) != 0) {
+		if (i_7_ > 0 && (JunkTex.tileFlags[1][i_8_][i] & 0x2) != 0) {
 			int i_12_ = i_7_ - 1;
 			return i_12_;
 		}
@@ -118,11 +115,11 @@ public class Class150 {
 						} else
 							anInt2424 = class14_sub10.readUShort((byte) 112);
 					} else
-						anInt2405 = Static.method82(class14_sub10.method829(39), -108);
+						anInt2405 = JunkTex.method82(class14_sub10.method829(39), -108);
 				} else
 					anInt2414 = class14_sub10.readUByte();
 			} else
-				anInt2411 = Static.method82(class14_sub10.method829(-126), -116);
+				anInt2411 = JunkTex.method82(class14_sub10.method829(-126), -116);
 		}
 	}
 

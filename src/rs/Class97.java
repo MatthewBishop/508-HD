@@ -14,10 +14,6 @@ import com.jagex.link.Deque;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.util.TimeUtil;
 
-import rs.tex.Class14_Sub8_Sub30;
-import rs.tex.Class14_Sub8_Sub31;
-import rs.tex.Class14_Sub8_Sub37;
-
 public class Class97 implements MouseListener, MouseMotionListener, FocusListener {
 	public static Class124 aClass124_1637;
 	public static byte[] aByteArray1638 = { 95, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111,
@@ -64,7 +60,7 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 	public synchronized void mouseReleased(MouseEvent mouseevent) {
 		do {
 			if (Class67.aClass97_1055 != null) {
-				Class14_Sub8_Sub31.anInt4602 = 0;
+				JunkTex.anInt4602 = 0;
 				Class14_Sub4.anInt2790 = 0;
 				int i = mouseevent.getModifiers();
 				if ((i & 0x10) == 0)
@@ -77,16 +73,16 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 
 	public synchronized void mouseMoved(MouseEvent mouseevent) {
 		if (Class67.aClass97_1055 != null) {
-			Class14_Sub8_Sub31.anInt4602 = 0;
-			Class14_Sub8_Sub37.anInt4724 = mouseevent.getX();
+			JunkTex.anInt4602 = 0;
+			JunkTex.anInt4724 = mouseevent.getX();
 			Class14_Sub9_Sub3.anInt4848 = mouseevent.getY();
 		}
 	}
 
 	public synchronized void mouseEntered(MouseEvent mouseevent) {
 		if (Class67.aClass97_1055 != null) {
-			Class14_Sub8_Sub31.anInt4602 = 0;
-			Class14_Sub8_Sub37.anInt4724 = mouseevent.getX();
+			JunkTex.anInt4602 = 0;
+			JunkTex.anInt4724 = mouseevent.getX();
 			Class14_Sub9_Sub3.anInt4848 = mouseevent.getY();
 		}
 	}
@@ -107,8 +103,8 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 
 	public synchronized void mouseExited(MouseEvent mouseevent) {
 		if (Class67.aClass97_1055 != null) {
-			Class14_Sub8_Sub31.anInt4602 = 0;
-			Class14_Sub8_Sub37.anInt4724 = -1;
+			JunkTex.anInt4602 = 0;
+			JunkTex.anInt4724 = -1;
 			Class14_Sub9_Sub3.anInt4848 = -1;
 		}
 	}
@@ -120,7 +116,7 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 		else
 			Static2.anInt3739 = 0;
 		Class54.aBoolean881 = false;
-		if (Class14_Sub8_Sub30.anInt4599 != 0) {
+		if (JunkTex.anInt4599 != 0) {
 			if (i > i_8_ || i_8_ >= i + 16 || i_6_ < i_5_ || i_5_ + 16 <= i_6_) {
 				if (i > i_8_ || i_8_ >= i + 16 || i_5_ + i_9_ - 16 > i_6_ || i_5_ + i_9_ <= i_6_) {
 					if (i_8_ >= -Static2.anInt3739 + i && i + (16 + Static2.anInt3739) > i_8_
@@ -162,7 +158,7 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 	public synchronized void mousePressed(MouseEvent mouseevent) {
 		do {
 			if (Class67.aClass97_1055 != null) {
-				Class14_Sub8_Sub31.anInt4602 = 0;
+				JunkTex.anInt4602 = 0;
 				Class111.anInt1860 = mouseevent.getX();
 				Class118.anInt1976 = mouseevent.getY();
 				Applet_Sub1.aLong6 = TimeUtil.getTime();
@@ -184,8 +180,8 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 
 	public synchronized void mouseDragged(MouseEvent mouseevent) {
 		if (Class67.aClass97_1055 != null) {
-			Class14_Sub8_Sub31.anInt4602 = 0;
-			Class14_Sub8_Sub37.anInt4724 = mouseevent.getX();
+			JunkTex.anInt4602 = 0;
+			JunkTex.anInt4724 = mouseevent.getX();
 			Class14_Sub9_Sub3.anInt4848 = mouseevent.getY();
 		}
 	}

@@ -7,11 +7,6 @@ import com.jagex.io.Buffer;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
 import com.jagex.util.Util;
 
-import rs.tex.Class14_Sub8_Sub14;
-import rs.tex.Class14_Sub8_Sub4;
-import rs.tex.Class14_Sub8_Sub9;
-import rs.tex.Static;
-
 public class Class90 implements Runnable {
 	public static boolean aBoolean1417 = false;
 	public volatile boolean aBoolean1419 = false;
@@ -23,7 +18,7 @@ public class Class90 implements Runnable {
 	public volatile boolean aBoolean1428 = false;
 
 	public static void method1443(int i) {
-		Class14_Sub8_Sub9.aClass52_4240.method1209();
+		JunkTex.aClass52_4240.method1209();
 		if (i != 2)
 			method1445(95);
 	}
@@ -69,7 +64,7 @@ public class Class90 implements Runnable {
 									class75.method1341(-82);
 							}
 							Util.sleep(10L);
-							Class14_Sub8_Sub14.method555(45, aClass43_1421, null);
+							JunkTex.method555(45, aClass43_1421, null);
 						}
 					} catch (Exception exception) {
 						try {
@@ -108,7 +103,7 @@ public class Class90 implements Runnable {
 				return var4;
 			}
 		} catch (Throwable var5) {
-			throw Class14_Sub8_Sub14.method554(var5,
+			throw JunkTex.method554(var5,
 					"ob.C(" + var0 + ',' + (var1 != null ? "{...}" : "null") + ',' + var2 + ',' + var3 + ')');
 		}
 	}
@@ -141,19 +136,19 @@ public class Class90 implements Runnable {
 							Class32 class32 = null;
 							if (!bool) {
 								int i_28_ = i_21_;
-								if (((Class14_Sub8_Sub4.tileFlags[1][i_24_][i_26_]) & 0x2) == 2)
+								if (((JunkTex.tileFlags[1][i_24_][i_26_]) & 0x2) == 2)
 									i_28_ = i_21_ - 1;
 								if (i_28_ >= 0)
 									class32 = class32s[i_28_];
 							}
-							Static.method1235(bool, i_25_, !bool, (byte) 50, class32, i_21_, i_26_, i_27_, i_24_,
+							JunkTex.method1235(bool, i_25_, !bool, (byte) 50, class32, i_21_, i_26_, i_27_, i_24_,
 									i_16_, i_21_);
 						}
 					}
 				}
 			}
 		} catch (Throwable throwable) {
-			throw Class14_Sub8_Sub14.method554(throwable,
+			throw JunkTex.method554(throwable,
 					new StringBuilder("ob.E(").append(i).append(',').append(class32s != null ? "{...}" : "null")
 							.append(',').append(bool).append(',').append(is != null ? "{...}" : "null").append(',')
 							.append(i_14_).append(',').append(i_15_).append(')').toString());

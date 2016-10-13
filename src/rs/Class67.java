@@ -7,10 +7,6 @@ import com.jagex.link.Deque;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub2;
 
-import rs.tex.Class14_Sub8_Sub24;
-import rs.tex.Class14_Sub8_Sub26;
-import rs.tex.Static;
-
 public class Class67 {
 	public static Class97 aClass97_1055 = new Class97();
 	public static int anInt1058 = 0;
@@ -55,7 +51,7 @@ public class Class67 {
 			Class14_Sub2_Sub4 class14_sub2_sub4 = null;
 			for (Class14_Sub2_Sub4 class14_sub2_sub4_11_ = (Class14_Sub2_Sub4) deque.getFront(); class14_sub2_sub4_11_ != null; class14_sub2_sub4_11_ = (Class14_Sub2_Sub4) deque
 							.getNext()) {
-				Class142 class142 = Class14_Sub8_Sub24.method605(63,
+				Class142 class142 = JunkTex.method605(63,
 						(class14_sub2_sub4_11_.aClass133_Sub3_3789.anInt3557));
 				int i_12_ = class142.anInt2288;
 				if (class142.anInt2309 == 1)
@@ -86,7 +82,7 @@ public class Class67 {
 				}
 				long l = (long) ((i << 39) + (i_9_ + 1610612736));
 				Canvas_Sub2.method61(Class14_Sub2_Sub3.anInt3785, i_9_, i,
-						Static.method1017(i_9_ * 128 + 64, (Class14_Sub2_Sub3.anInt3785), (byte) -119, i * 128 + 64),
+						JunkTex.method1017(i_9_ * 128 + 64, (Class14_Sub2_Sub3.anInt3785), (byte) -119, i * 128 + 64),
 						class14_sub2_sub4.aClass133_Sub3_3789, l, class133_sub3, class133_sub3_13_);
 			}
 		}
@@ -107,7 +103,7 @@ public class Class67 {
 			return class14_sub2_sub19;
 		}
 		for (int i_22_ = 0; i_22_ < i; i_22_++)
-			is_21_[i_22_] = (Static.anIntArray1114[Class14_Sub8_Sub26.method617(is[i_22_], 255)]);
+			is_21_[i_22_] = (JunkTex.anIntArray1114[JunkTex.method617(is[i_22_], 255)]);
 		Class14_Sub2_Sub19_Sub2 class14_sub2_sub19_sub2 = new Class14_Sub2_Sub19_Sub2(Class14_Sub11.anInt2952,
 				Class14_Sub30.anInt3279, Class40.anIntArray675[0], Class14_Sub2_Sub12.anIntArray3918[0],
 				Class17.anIntArray402[0], Class76.anIntArray1204[0], is_21_);

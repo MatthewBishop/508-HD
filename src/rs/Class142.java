@@ -10,12 +10,6 @@ import com.jagex.link.Linkable;
 import com.jagex.rt4.Class14_Sub1;
 import com.jagex.rt4.AtmosphericChunk;
 
-import rs.tex.Class14_Sub8_Sub17;
-import rs.tex.Class14_Sub8_Sub2;
-import rs.tex.Class14_Sub8_Sub24;
-import rs.tex.Class14_Sub8_Sub33;
-import rs.tex.Class14_Sub8_Sub6;
-
 public class Class142 {
 	public int anInt2255;
 	public int anInt2256;
@@ -100,11 +94,11 @@ public class Class142 {
 		if (i >= -54)
 			method1979(114, null, (byte) -25);
 		boolean bool_4_ = true;
-		if (!Class14_Sub8_Sub6.aClass9_4193.method158(0, i_0_, (byte) 46))
+		if (!JunkTex.aClass9_4193.method158(0, i_0_, (byte) 46))
 			bool_4_ = false;
-		if (i_1_ != -1 && !Class14_Sub8_Sub6.aClass9_4193.method158(0, i_1_, (byte) -112))
+		if (i_1_ != -1 && !JunkTex.aClass9_4193.method158(0, i_1_, (byte) -112))
 			bool_4_ = false;
-		if (i_2_ != -1 && !Class14_Sub8_Sub6.aClass9_4193.method158(0, i_2_, (byte) 88))
+		if (i_2_ != -1 && !JunkTex.aClass9_4193.method158(0, i_2_, (byte) 88))
 			bool_4_ = false;
 		boolean bool_5_ = bool_4_;
 		return bool_5_;
@@ -123,14 +117,14 @@ public class Class142 {
 			Class133_Sub2 class133_sub2 = null;
 			return class133_sub2;
 		}
-		Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(Class14_Sub8_Sub6.aClass9_4193, i_7_, 0);
+		Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(JunkTex.aClass9_4193, i_7_, 0);
 		if (i_6_ != -1) {
-			Class133_Sub2 class133_sub2_9_ = Class133_Sub2.method1824(Class14_Sub8_Sub6.aClass9_4193, i_6_, 0);
+			Class133_Sub2 class133_sub2_9_ = Class133_Sub2.method1824(JunkTex.aClass9_4193, i_6_, 0);
 			if (i_8_ == -1) {
 				Class133_Sub2[] class133_sub2s = { class133_sub2, class133_sub2_9_ };
 				class133_sub2 = new Class133_Sub2(class133_sub2s, 2);
 			} else {
-				Class133_Sub2 class133_sub2_10_ = Class133_Sub2.method1824(Class14_Sub8_Sub6.aClass9_4193, i_8_, 0);
+				Class133_Sub2 class133_sub2_10_ = Class133_Sub2.method1824(JunkTex.aClass9_4193, i_8_, 0);
 				Class133_Sub2[] class133_sub2s = { class133_sub2, class133_sub2_9_, class133_sub2_10_ };
 				class133_sub2 = new Class133_Sub2(class133_sub2s, 3);
 			}
@@ -239,7 +233,7 @@ public class Class142 {
 					i_20_ = anIntArray2325[i_21_];
 			}
 			if (i_20_ != -1) {
-				Class142 class142_22_ = Class14_Sub8_Sub24.method605(95, i_20_);
+				Class142 class142_22_ = JunkTex.method605(95, i_20_);
 				return class142_22_;
 			}
 		}
@@ -363,7 +357,7 @@ public class Class142 {
 																									int i_29_ = class14_sub10
 																											.readUByte();
 																									if (aClass55_2260 == null) {
-																										int i_30_ = Class14_Sub8_Sub33
+																										int i_30_ = JunkTex
 																												.method653(
 																														i_29_);
 																										aClass55_2260 = new HashTable(
@@ -488,9 +482,9 @@ public class Class142 {
 			Class133_Sub2 class133_sub2 = null;
 			return class133_sub2;
 		}
-		Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(Class14_Sub8_Sub6.aClass9_4193, i_38_, 0);
+		Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(JunkTex.aClass9_4193, i_38_, 0);
 		if (i_37_ != -1) {
-			Class133_Sub2 class133_sub2_39_ = Class133_Sub2.method1824(Class14_Sub8_Sub6.aClass9_4193, i_37_, 0);
+			Class133_Sub2 class133_sub2_39_ = Class133_Sub2.method1824(JunkTex.aClass9_4193, i_37_, 0);
 			Class133_Sub2[] class133_sub2s = { class133_sub2, class133_sub2_39_ };
 			class133_sub2 = new Class133_Sub2(class133_sub2s, 2);
 		}
@@ -518,13 +512,13 @@ public class Class142 {
 					i_45_ = anIntArray2325[i_46_];
 			}
 			if (i_45_ != -1) {
-				Class133_Sub7 class133_sub7 = Class14_Sub8_Sub24.method605(96, i_45_).method1974(animation, i, 0, 1);
+				Class133_Sub7 class133_sub7 = JunkTex.method605(96, i_45_).method1974(animation, i, 0, 1);
 				return class133_sub7;
 			}
 		}
 		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Class125.aClass52_2075.get((long) anInt2276));
 		if (class133_sub7 == null) {
-			Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(Class14_Sub8_Sub6.aClass9_4193, anInt2311, 0);
+			Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(JunkTex.aClass9_4193, anInt2311, 0);
 			if (class133_sub2 == null) {
 				Class133_Sub7 class133_sub7_47_ = null;
 				return class133_sub7_47_;
@@ -566,9 +560,9 @@ public class Class142 {
 			return bool_52_;
 		}
 		boolean bool_53_ = true;
-		if (!Class14_Sub8_Sub6.aClass9_4193.method158(0, i_50_, (byte) 76))
+		if (!JunkTex.aClass9_4193.method158(0, i_50_, (byte) 76))
 			bool_53_ = false;
-		if (i_51_ != -1 && !Class14_Sub8_Sub6.aClass9_4193.method158(0, i_51_, (byte) -90))
+		if (i_51_ != -1 && !JunkTex.aClass9_4193.method158(0, i_51_, (byte) -90))
 			bool_53_ = false;
 		boolean bool_54_ = bool_53_;
 		return bool_54_;
@@ -601,7 +595,7 @@ public class Class142 {
 	}
 
 	public ModelSD method1978(int i) {
-		Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(Class14_Sub8_Sub6.aClass9_4193, anInt2311, i);
+		Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(JunkTex.aClass9_4193, anInt2311, i);
 		if (class133_sub2 == null) {
 			ModelSD modelsd = null;
 			return modelsd;
@@ -680,7 +674,7 @@ public class Class142 {
 		anInt2297 = 0;
 		anInt2298 = -1;
 		aBoolean2306 = false;
-		aClass124Array2304 = new Class124[] { null, null, null, null, Class14_Sub8_Sub2.aClass124_4118 };
+		aClass124Array2304 = new Class124[] { null, null, null, null, JunkTex.aClass124_4118 };
 		anInt2264 = -1;
 		anInt2261 = 0;
 		aClass124_2296 = Class137.aClass124_2200;
@@ -689,7 +683,7 @@ public class Class142 {
 		anInt2310 = 0;
 		anInt2319 = 0;
 		anInt2317 = 0;
-		aClass124Array2263 = new Class124[] { null, null, Class14_Sub8_Sub17.aClass124_4368, null, null };
+		aClass124Array2263 = new Class124[] { null, null, JunkTex.aClass124_4368, null, null };
 		anInt2258 = 0;
 		anInt2257 = -1;
 		anInt2277 = -1;

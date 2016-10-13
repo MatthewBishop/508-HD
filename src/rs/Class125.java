@@ -7,11 +7,6 @@ import com.jagex.cache.anim.Animation;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.RT4;
 
-import rs.tex.Class14_Sub8_Sub38;
-import rs.tex.Class14_Sub8_Sub4;
-import rs.tex.Class14_Sub8_Sub6;
-import rs.tex.Static;
-
 public abstract class Class125 {
 	public static Class14_Sub9_Sub1 aClass14_Sub9_Sub1_2071;
 	public static SoftCache aClass52_2075;
@@ -37,21 +32,21 @@ public abstract class Class125 {
 	public static void method1722(Class133_Sub1 class133_sub1, byte i) {
 		class133_sub1.aBoolean3488 = false;
 		if (class133_sub1.anInt3452 != -1) {
-			Animation animation = Static.method1129(class133_sub1.anInt3452, 68);
+			Animation animation = JunkTex.method1129(class133_sub1.anInt3452, 68);
 			if (animation != null && animation.anIntArray768 != null) {
 				class133_sub1.anInt3431++;
 				if (animation.anIntArray768.length > class133_sub1.anInt3483
 						&& (class133_sub1.anInt3431 > animation.anIntArray763[class133_sub1.anInt3483])) {
 					class133_sub1.anInt3431 = 1;
 					class133_sub1.anInt3483++;
-					Class14_Sub8_Sub6.method509(class133_sub1.anInt3495, class133_sub1.anInt3483, -123,
+					JunkTex.method509(class133_sub1.anInt3495, class133_sub1.anInt3483, -123,
 							((Class14_Sub3.aClass133_Sub1_Sub1_2748) == class133_sub1), animation,
 							class133_sub1.anInt3436);
 				}
 				if (animation.anIntArray768.length <= class133_sub1.anInt3483) {
 					class133_sub1.anInt3483 = 0;
 					class133_sub1.anInt3431 = 0;
-					Class14_Sub8_Sub6.method509(class133_sub1.anInt3495, class133_sub1.anInt3483, -102,
+					JunkTex.method509(class133_sub1.anInt3495, class133_sub1.anInt3483, -102,
 							((Class14_Sub3.aClass133_Sub1_Sub1_2748) == class133_sub1), animation,
 							class133_sub1.anInt3436);
 				}
@@ -67,14 +62,14 @@ public abstract class Class125 {
 			if (i_1_ == -1)
 				class133_sub1.anInt3487 = -1;
 			else {
-				Animation animation = Static.method1129(i_1_, -119);
+				Animation animation = JunkTex.method1129(i_1_, -119);
 				if (animation != null && animation.anIntArray768 != null) {
 					class133_sub1.anInt3459++;
 					if (class133_sub1.anInt3470 < animation.anIntArray768.length
 							&& (class133_sub1.anInt3459 > (animation.anIntArray763[class133_sub1.anInt3470]))) {
 						class133_sub1.anInt3470++;
 						class133_sub1.anInt3459 = 1;
-						Class14_Sub8_Sub6.method509(class133_sub1.anInt3495, class133_sub1.anInt3470, -102,
+						JunkTex.method509(class133_sub1.anInt3495, class133_sub1.anInt3470, -102,
 								(class133_sub1 == Class14_Sub3.aClass133_Sub1_Sub1_2748), animation,
 								class133_sub1.anInt3436);
 					}
@@ -85,7 +80,7 @@ public abstract class Class125 {
 			}
 		}
 		if (class133_sub1.anInt3445 != -1 && class133_sub1.anInt3467 <= 1) {
-			Animation animation = Static.method1129(class133_sub1.anInt3445, -12);
+			Animation animation = JunkTex.method1129(class133_sub1.anInt3445, -12);
 			if (animation.animatingPrecedence == 1 && class133_sub1.anInt3477 > 0
 					&& Class14_Sub2_Sub20.anInt4064 >= class133_sub1.anInt3494
 					&& Class14_Sub2_Sub20.anInt4064 > class133_sub1.anInt3455) {
@@ -94,14 +89,14 @@ public abstract class Class125 {
 			}
 		}
 		if (class133_sub1.anInt3445 != -1 && class133_sub1.anInt3467 == 0) {
-			Animation animation = Static.method1129(class133_sub1.anInt3445, 32);
+			Animation animation = JunkTex.method1129(class133_sub1.anInt3445, 32);
 			if (animation != null && animation.anIntArray768 != null) {
 				class133_sub1.anInt3458++;
 				if (class133_sub1.anInt3501 < animation.anIntArray768.length
 						&& (animation.anIntArray763[class133_sub1.anInt3501] < class133_sub1.anInt3458)) {
 					class133_sub1.anInt3501++;
 					class133_sub1.anInt3458 = 1;
-					Class14_Sub8_Sub6.method509(class133_sub1.anInt3495, class133_sub1.anInt3501, -111,
+					JunkTex.method509(class133_sub1.anInt3495, class133_sub1.anInt3501, -111,
 							((Class14_Sub3.aClass133_Sub1_Sub1_2748) == class133_sub1), animation,
 							class133_sub1.anInt3436);
 				}
@@ -113,7 +108,7 @@ public abstract class Class125 {
 					else if (class133_sub1.anInt3501 < 0 || (class133_sub1.anInt3501 >= animation.anIntArray768.length))
 						class133_sub1.anInt3445 = -1;
 					else
-						Class14_Sub8_Sub6.method509(class133_sub1.anInt3495, class133_sub1.anInt3501, -125,
+						JunkTex.method509(class133_sub1.anInt3495, class133_sub1.anInt3501, -125,
 								(class133_sub1 == Class14_Sub3.aClass133_Sub1_Sub1_2748), animation,
 								class133_sub1.anInt3436);
 				}
@@ -143,7 +138,7 @@ public abstract class Class125 {
 				}
 			}
 			if (i_2_ == 1) {
-				Class37 class37 = Class14_Sub8_Sub4.method497(i_3_, i, i_4_);
+				Class37 class37 = JunkTex.method497(i_3_, i, i_4_);
 				if (class37 != null) {
 					int i_10_ = (int) (class37.aLong634 >>> 32) & 0x7fffffff;
 					if (i_8_ != 4 && i_8_ != 5) {
@@ -197,10 +192,10 @@ public abstract class Class125 {
 		if (Class7.anInt177 >= 100) {
 			int i_19_ = Class117.anInt1948 * 128 + 64;
 			int i_20_ = Class33.anInt577 * 128 + 64;
-			int i_21_ = (Static.method1017(i_19_, Class14_Sub2_Sub3.anInt3785, (byte) -18, i_20_)
+			int i_21_ = (JunkTex.method1017(i_19_, Class14_Sub2_Sub3.anInt3785, (byte) -18, i_20_)
 					- Class14_Sub2_Sub9.anInt3866);
 			int i_22_ = -Static2.anInt2926 + i_21_;
-			int i_23_ = i_19_ - Class14_Sub8_Sub38.anInt4741;
+			int i_23_ = i_19_ - JunkTex.anInt4741;
 			int i_24_ = i_20_ - Class14_Sub30.anInt3271;
 			int i_25_ = (int) Math.sqrt((double) (i_24_ * i_24_ + i_23_ * i_23_));
 			Class7_Sub3_Sub1.anInt3719 = ((int) (Math.atan2((double) i_22_, (double) i_25_) * 325.949) & 0x7ff);

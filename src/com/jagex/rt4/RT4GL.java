@@ -22,10 +22,8 @@ import rs.Class124;
 import rs.Class14_Sub2_Sub2;
 import rs.Class58;
 import rs.Class70;
+import rs.JunkTex;
 import rs.Static2;
-import rs.tex.Class14_Sub8_Sub27;
-import rs.tex.Class14_Sub8_Sub39_Sub1;
-import rs.tex.Static;
 
 public class RT4GL {
 	public static int anInt2016;
@@ -433,7 +431,7 @@ public class RT4GL {
 		aBoolean2023 = true;
 		aBoolean2032 = true;
 		aBoolean2017 = true;
-		Class14_Sub8_Sub39_Sub1.method685(-53);
+		JunkTex.method685(-53);
 		gl.glActiveTexture(33985);
 		gl.glTexEnvi(8960, 8704, 34160);
 		gl.glTexEnvi(8960, 34161, 8448);
@@ -502,8 +500,8 @@ public class RT4GL {
 		if (f_35_ != 0.0F)
 			gl.glRotatef(f_35_, 0.0F, 1.0F, 0.0F);
 		aBoolean2029 = false;
-		Static.anInt425 = i_38_;
-		Class14_Sub8_Sub27.anInt4547 = i_39_;
+		JunkTex.anInt425 = i_38_;
+		JunkTex.anInt4547 = i_39_;
 		Class58.anInt948 = i_40_;
 		Class70.anInt1081 = i_41_;
 	}

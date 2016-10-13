@@ -6,8 +6,6 @@ package rs;
 import com.jagex.link.HashTable;
 import com.jagex.sound.Track;
 
-import rs.tex.Class14_Sub8_Sub27;
-
 public class Class120 {
 	public static Class124 aClass124_2001 = Class14_Sub2_Sub2.method263(1178, "welle:");
 	public static int[] anIntArray2002;
@@ -52,7 +50,7 @@ public class Class120 {
 						(class66.anInt1051 + (-Class58.anInt947 + class66.anInt1044 << 7)));
 				if (anInt2007 > -1 && Class14_Sub2_Sub20.anInt4064 % 20 < 10)
 					Class76.aClass14_Sub2_Sub19Array1191[class66.anInt1035].method391(i_1_ + anInt2007 - 12,
-							Class14_Sub8_Sub27.anInt4548 + i_5_ - 28);
+							JunkTex.anInt4548 + i_5_ - 28);
 			}
 		}
 	}

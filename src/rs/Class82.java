@@ -3,8 +3,6 @@
  */
 package rs;
 
-import rs.tex.Class14_Sub8_Sub7;
-
 public class Class82 {
 	public static Class124 aClass124_1329;
 	public static int anInt1330;
@@ -32,7 +30,7 @@ public class Class82 {
 				|| class94.aClass124Array1573[i_0_] == null
 				|| class94.aClass124Array1573[i_0_].method1684((byte) 9).method1693(0) == 0) {
 			if (Class125_Sub3.aBoolean3392) {
-				Class124 class124 = (Class14_Sub8_Sub7.method515(
+				Class124 class124 = (JunkTex.method515(
 						new Class124[] { Class7_Sub3_Sub1.aClass124_3706, Class83.method1407(61, i_0_) }, (byte) -102));
 				return class124;
 			}

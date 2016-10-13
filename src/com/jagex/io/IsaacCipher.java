@@ -3,7 +3,7 @@
  */
 package com.jagex.io;
 
-import rs.tex.Class14_Sub8_Sub26;
+import rs.JunkTex;
 
 public class IsaacCipher {
 	
@@ -58,8 +58,8 @@ public class IsaacCipher {
 			anInt1794 += memory[i_19_ + 128 & 0xff];
 			int i_21_;
 			memory[i_19_] = i_21_ = anInt1788
-					+ (anInt1794 + (memory[Class14_Sub8_Sub26.method617(i_20_ >> 34, 255)]));
-			results[i_19_] = anInt1788 = memory[Class14_Sub8_Sub26.method617(i_21_ >> 8 >> 34, 255)]
+					+ (anInt1794 + (memory[JunkTex.method617(i_20_ >> 34, 255)]));
+			results[i_19_] = anInt1788 = memory[JunkTex.method617(i_21_ >> 8 >> 34, 255)]
 					+ i_20_;
 		}
 	}

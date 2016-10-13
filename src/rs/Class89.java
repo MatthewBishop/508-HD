@@ -3,9 +3,6 @@
  */
 package rs;
 
-import rs.tex.Class14_Sub8_Sub20;
-import rs.tex.Static;
-
 public class Class89 {
 	public int anInt1404;
 	public static int[][][] anIntArrayArrayArray1405 = new int[2][][];
@@ -34,7 +31,7 @@ public class Class89 {
 			return bool;
 		}
 		for (int i_0_ = 0; i_0_ < class94.anIntArray1531.length; i_0_++) {
-			int i_1_ = Static.method1010(i_0_, class94, (byte) 75);
+			int i_1_ = JunkTex.method1010(i_0_, class94, (byte) 75);
 			int i_2_ = class94.anIntArray1527[i_0_];
 			if (class94.anIntArray1531[i_0_] != 2) {
 				if (class94.anIntArray1531[i_0_] != 3) {
@@ -59,11 +56,11 @@ public class Class89 {
 
 	public static void method1441(long l, boolean bool) {
 		if (l != 0L) {
-			Class14_Sub8_Sub20.anInt4427++;
+			JunkTex.anInt4427++;
 			if (!bool)
 				method1441(-111L, false);
-			Static.aClass14_Sub10_Sub1_891.writeOpcode(42);
-			Static.aClass14_Sub10_Sub1_891.method817(l, 110);
+			JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(42);
+			JunkTex.aClass14_Sub10_Sub1_891.method817(l, 110);
 		}
 	}
 

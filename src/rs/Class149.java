@@ -414,9 +414,9 @@ public class Class149 {
 		class14_sub19.aClass114_3077 = class114;
 		class14_sub19.anInt3067 = 1;
 		class14_sub19.aClass9_Sub1_3076 = class9_sub1;
-		Deque deque = Class14_Sub8_Sub19.aClass2_4404;
+		Deque deque = JunkTex.aClass2_4404;
 		synchronized (deque) {
-			Class14_Sub8_Sub19.aClass2_4404.pushBack(class14_sub19);
+			JunkTex.aClass2_4404.pushBack(class14_sub19);
 		}
 		Class14_Sub9_Sub1.method696((byte) -119);
 	}

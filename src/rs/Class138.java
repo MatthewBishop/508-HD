@@ -14,16 +14,6 @@ import java.util.Random;
 import com.jagex.io.Buffer;
 import com.jagex.util.Util;
 
-import rs.tex.Class14_Sub8_Sub10;
-import rs.tex.Class14_Sub8_Sub12;
-import rs.tex.Class14_Sub8_Sub13;
-import rs.tex.Class14_Sub8_Sub15;
-import rs.tex.Class14_Sub8_Sub25;
-import rs.tex.Class14_Sub8_Sub3;
-import rs.tex.Class14_Sub8_Sub35;
-import rs.tex.Class14_Sub8_Sub38;
-import rs.tex.Static;
-
 public class Class138 {
 	public static Class124 aClass124_2207 = Class14_Sub2_Sub2.method263(1178, "(U3");
 	public int anInt2208;
@@ -53,12 +43,12 @@ public class Class138 {
 	}
 
 	public static void method1944(boolean bool) {
-		Class14_Sub8_Sub10.anInt4255 = 0;
+		JunkTex.anInt4255 = 0;
 		Class64.anInt1012 = 0;
 		Static2.method378((byte) -51);
 		Canvas_Sub2.method63((byte) -110);
-		Class14_Sub8_Sub25.method615(300);
-		for (int i = 0; i < Class14_Sub8_Sub10.anInt4255; i++) {
+		JunkTex.method615(300);
+		for (int i = 0; i < JunkTex.anInt4255; i++) {
 			int i_0_ = Class36.anIntArray626[i];
 			if (Class14_Sub2_Sub20.anInt4064 != Class14_Sub4.aClass133_Sub1_Sub2Array2785[i_0_].anInt3447) {
 				if (Class14_Sub4.aClass133_Sub1_Sub2Array2785[i_0_].aClass12_4949.method212((byte) -128))
@@ -67,14 +57,14 @@ public class Class138 {
 				Class14_Sub4.aClass133_Sub1_Sub2Array2785[i_0_] = null;
 			}
 		}
-		if (Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.position != Class14_Sub8_Sub12.anInt4280)
+		if (JunkTex.aClass14_Sub10_Sub1_4734.position != JunkTex.anInt4280)
 			throw new RuntimeException(
-					new StringBuilder("gnp1 pos:").append(Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.position)
-							.append(" psize:").append(Class14_Sub8_Sub12.anInt4280).toString());
-		for (int i = 0; Class14_Sub8_Sub13.anInt4306 > i; i++) {
-			if ((Class14_Sub4.aClass133_Sub1_Sub2Array2785[Static.anIntArray3965[i]]) == null)
+					new StringBuilder("gnp1 pos:").append(JunkTex.aClass14_Sub10_Sub1_4734.position)
+							.append(" psize:").append(JunkTex.anInt4280).toString());
+		for (int i = 0; JunkTex.anInt4306 > i; i++) {
+			if ((Class14_Sub4.aClass133_Sub1_Sub2Array2785[JunkTex.anIntArray3965[i]]) == null)
 				throw new RuntimeException(new StringBuilder("gnp2 pos:").append(i).append(" size:")
-						.append(Class14_Sub8_Sub13.anInt4306).toString());
+						.append(JunkTex.anInt4306).toString());
 		}
 		if (bool)
 			aClass124_2207 = null;
@@ -94,9 +84,9 @@ public class Class138 {
 				int i_3_ = class14_sub10.readUByte();
 				int i_4_ = class14_sub10.readUByte();
 				int i_5_ = -Class65.anInt1034 + i_3_ * 64;
-				int i_6_ = (-(i_4_ * 64) + Class35.anInt603 + (Class14_Sub8_Sub15.anInt4332 - 1));
+				int i_6_ = (-(i_4_ * 64) + Class35.anInt603 + (JunkTex.anInt4332 - 1));
 				if (i_5_ >= 0 && i_6_ - 63 >= 0 && i_5_ + 63 < Class14_Sub2_Sub9.anInt3856
-						&& i_6_ < Class14_Sub8_Sub15.anInt4332) {
+						&& i_6_ < JunkTex.anInt4332) {
 					int i_7_ = i_5_ >> 38;
 					int i_8_ = i_6_ >> 6;
 					for (int i_9_ = 0; i_9_ < 64; i_9_++) {
@@ -105,14 +95,14 @@ public class Class138 {
 									&& i_2_ * 8 + 8 > i_10_)) {
 								byte i_11_ = class14_sub10.method780((byte) -77);
 								if (i_11_ != 0) {
-									if ((Class14_Sub8_Sub10.aByteArrayArrayArray4257[i_7_][i_8_]) == null)
-										Class14_Sub8_Sub10.aByteArrayArrayArray4257[i_7_][i_8_] = new byte[4096];
-									Class14_Sub8_Sub10.aByteArrayArrayArray4257[i_7_][i_8_][i_9_
+									if ((JunkTex.aByteArrayArrayArray4257[i_7_][i_8_]) == null)
+										JunkTex.aByteArrayArrayArray4257[i_7_][i_8_] = new byte[4096];
+									JunkTex.aByteArrayArrayArray4257[i_7_][i_8_][i_9_
 											+ (-i_10_ + 63 << 38)] = i_11_;
 									byte i_12_ = class14_sub10.method780((byte) -77);
-									if ((Class14_Sub8_Sub3.aByteArrayArrayArray4130[i_7_][i_8_]) == null)
-										Class14_Sub8_Sub3.aByteArrayArrayArray4130[i_7_][i_8_] = new byte[4096];
-									Class14_Sub8_Sub3.aByteArrayArrayArray4130[i_7_][i_8_][i_9_
+									if ((JunkTex.aByteArrayArrayArray4130[i_7_][i_8_]) == null)
+										JunkTex.aByteArrayArrayArray4130[i_7_][i_8_] = new byte[4096];
+									JunkTex.aByteArrayArrayArray4130[i_7_][i_8_][i_9_
 											+ (63 - i_10_ << 38)] = i_12_;
 								}
 							}
@@ -134,8 +124,8 @@ public class Class138 {
 			aClass124_2227 = null;
 		if (Class134.aClass75_2588 != null)
 			Class134.aClass75_2588.method1341(i ^ ~0xfb);
-		if (Class14_Sub8_Sub35.aClass75_4682 != null)
-			Class14_Sub8_Sub35.aClass75_4682.method1341(-50);
+		if (JunkTex.aClass75_4682 != null)
+			JunkTex.aClass75_4682.method1341(-50);
 	}
 
 	public static String method1947(int i, Throwable throwable) throws IOException {
@@ -208,7 +198,7 @@ public class Class138 {
 		do
 			i_26_ = random.nextInt();
 		while (i_25_ <= i_26_);
-		int i_27_ = Class14_Sub8_Sub13.method545((byte) -107, i, i_26_);
+		int i_27_ = JunkTex.method545((byte) -107, i, i_26_);
 		return i_27_;
 	}
 

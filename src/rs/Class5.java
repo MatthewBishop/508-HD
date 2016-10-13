@@ -5,9 +5,6 @@ package rs;
 
 import com.jagex.io.Buffer;
 
-import rs.tex.Class14_Sub8_Sub35;
-import rs.tex.Static;
-
 public class Class5 {
 	public static Class124 aClass124_138;
 	public static byte[][] aByteArrayArray139;
@@ -149,13 +146,13 @@ public class Class5 {
 			class14_sub10.method833((byte) 90, i_10_);
 			class14_sub10.method803((int) (Math.random() * 9.9999999E7), 92);
 			class14_sub10.method794(Class9_Sub1.aBigInteger2704, Class152.aBigInteger2433, 0);
-			Static.aClass14_Sub10_Sub1_891.position = 0;
-			Static.aClass14_Sub10_Sub1_891.method809(48);
-			Static.aClass14_Sub10_Sub1_891.method809(class14_sub10.position);
-			Static.aClass14_Sub10_Sub1_891.method807(class14_sub10.position, (class14_sub10.payload), 0,
+			JunkTex.aClass14_Sub10_Sub1_891.position = 0;
+			JunkTex.aClass14_Sub10_Sub1_891.method809(48);
+			JunkTex.aClass14_Sub10_Sub1_891.method809(class14_sub10.position);
+			JunkTex.aClass14_Sub10_Sub1_891.method807(class14_sub10.position, (class14_sub10.payload), 0,
 					-1076444960);
 			Class56.anInt918 = 1;
-			Class14_Sub8_Sub35.anInt4686 = 0;
+			JunkTex.anInt4686 = 0;
 			Static2.anInt2734 = -3;
 			Class129.anInt2136 = 0;
 		}

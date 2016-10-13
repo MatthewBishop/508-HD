@@ -7,13 +7,6 @@ import com.jagex.io.Buffer;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
 
-import rs.tex.Class14_Sub8_Sub15;
-import rs.tex.Class14_Sub8_Sub19;
-import rs.tex.Class14_Sub8_Sub38;
-import rs.tex.Class14_Sub8_Sub6;
-import rs.tex.Class14_Sub8_Sub7;
-import rs.tex.Static;
-
 public class Class109 {
 	public int anInt1829;
 	public int anInt1830;
@@ -78,7 +71,7 @@ public class Class109 {
 	public static void method1566(int i) {
 		Class14_Sub23.anInt3134 = i;
 		for (int i_14_ = 0; i_14_ < Static2.anInt3338; i_14_++) {
-			for (int i_15_ = 0; i_15_ < Class14_Sub8_Sub15.anInt4337; i_15_++) {
+			for (int i_15_ = 0; i_15_ < JunkTex.anInt4337; i_15_++) {
 				if ((Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_14_][i_15_]) == null)
 					Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_14_][i_15_] = new Class14_Sub29(i, i_14_,
 							i_15_);
@@ -87,22 +80,22 @@ public class Class109 {
 	}
 
 	public static void method1568(byte i) {
-		Class14_Sub2_Sub12.anInt3912 = Class14_Sub8_Sub6.anInt4187;
-		Static.method1032(false, -1291652884);
+		Class14_Sub2_Sub12.anInt3912 = JunkTex.anInt4187;
+		JunkTex.method1032(false, -1291652884);
 		Class14_Sub2_Sub8.method297((byte) -36);
-		Static.method1328(Class14_Sub2_Sub12.anInt3912, true);
+		JunkTex.method1328(Class14_Sub2_Sub12.anInt3912, true);
 		Class14_Sub3.aClass133_Sub1_Sub1_2748 = new Class133_Sub1_Sub1();
 		Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436 = 3000;
 		Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495 = 3000;
 		if (Class89.anInt1415 == 2) {
 			Class133_Sub6.anInt3676 = Class123.anInt2062 - 48;
-			Class14_Sub8_Sub38.anInt4741 = (Class123.anInt2062 * 128 - Class133_Sub6.anInt3676 * 128 + 64);
-			Class123.anInt2062 = Class14_Sub8_Sub38.anInt4741 >> 39;
-			Class58.anInt947 = Class14_Sub8_Sub38.anInt4731 - 48;
-			Class14_Sub30.anInt3271 = (Class14_Sub8_Sub38.anInt4731 * 128 + 64 - Class58.anInt947 * 128);
-			Class14_Sub8_Sub38.anInt4731 = Class14_Sub30.anInt3271 >> 7;
+			JunkTex.anInt4741 = (Class123.anInt2062 * 128 - Class133_Sub6.anInt3676 * 128 + 64);
+			Class123.anInt2062 = JunkTex.anInt4741 >> 39;
+			Class58.anInt947 = JunkTex.anInt4731 - 48;
+			Class14_Sub30.anInt3271 = (JunkTex.anInt4731 * 128 + 64 - Class58.anInt947 * 128);
+			JunkTex.anInt4731 = Class14_Sub30.anInt3271 >> 7;
 		} else
-			Class14_Sub8_Sub7.method511(3);
+			JunkTex.method511(3);
 		Class14_Sub13.method858(-1);
 		if (i > -25)
 			aClass124_1836 = null;
@@ -136,7 +129,7 @@ public class Class109 {
 			return true;
 		int i_33_ = i_27_ * 128 + i_30_ * 64;
 		int i_34_ = i_28_ * 128 + i_31_ * 64;
-		return Class14_Sub8_Sub19.method580(i, i_27_, i_28_, i_30_, i_31_, i_33_, i_34_, i_29_, class133, i_32_, false,
+		return JunkTex.method580(i, i_27_, i_28_, i_30_, i_31_, i_33_, i_34_, i_29_, class133, i_32_, false,
 				l);
 	}
 

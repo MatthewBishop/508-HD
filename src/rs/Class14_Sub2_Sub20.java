@@ -8,10 +8,6 @@ import com.jagex.link.Cacheable;
 import com.jagex.rt4.RT4GL;
 import com.jagex.util.BrowserControlUtil;
 
-import rs.tex.Class14_Sub8_Sub30;
-import rs.tex.Class14_Sub8_Sub34;
-import rs.tex.Static;
-
 public class Class14_Sub2_Sub20 extends Cacheable {
 	public static Class102 aClass102_4055;
 	public int anInt4062 = 0;
@@ -25,10 +21,10 @@ public class Class14_Sub2_Sub20 extends Cacheable {
 	public static void method428(int i) {
 		RT4GL.method1630();
 		BrowserControlUtil.hide();
-		if (Static.aFrame3962 != null)
-			Class14_Sub2_Sub4.method278(Class14_Sub8_Sub34.aClass43_4647, Static.aFrame3962, 120);
-		Static.aFrame3962 = null;
-		Class14_Sub8_Sub30.method643(0, (byte) -92);
+		if (JunkTex.aFrame3962 != null)
+			Class14_Sub2_Sub4.method278(JunkTex.aClass43_4647, JunkTex.aFrame3962, 120);
+		JunkTex.aFrame3962 = null;
+		JunkTex.method643(0, (byte) -92);
 		Class14_Sub21.method897(121);
 	}
 

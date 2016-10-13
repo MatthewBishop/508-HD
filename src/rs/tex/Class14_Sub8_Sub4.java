@@ -5,69 +5,7 @@ package rs.tex;
 
 import com.jagex.io.Buffer;
 
-import rs.Class112;
-import rs.Class120;
-import rs.Class124;
-import rs.Class125_Sub1;
-import rs.Class133_Sub1;
-import rs.Class14_Sub19;
-import rs.Class14_Sub29;
-import rs.Class14_Sub2_Sub11;
-import rs.Class14_Sub2_Sub2;
-import rs.Class14_Sub2_Sub20;
-import rs.Class37;
-import rs.Class40;
-import rs.Class96;
-
 public class Class14_Sub8_Sub4 extends Class14_Sub8 {
-	public static Class124 aClass124_4149 = Class14_Sub2_Sub2.method263(1178, " x ");
-	public static Class40[] aClass40Array4143 = new Class40[100];
-	public static int anInt4146 = 0;
-	public static int[] anIntArray4145;
-	public static byte[][][] tileFlags = new byte[4][104][104];
-	public static void method496(byte i) {
-		anIntArray4145 = null;
-		aClass40Array4143 = null;
-		if (i > 45) {
-			tileFlags = null;
-			aClass124_4149 = null;
-		}
-	}
-	public static Class37 method497(int i, int i_0_, int i_1_) {
-		Class14_Sub29 class14_sub29 = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_0_][i_1_];
-		if (class14_sub29 == null)
-			return null;
-		return class14_sub29.aClass37_3255;
-	}
-	public static void method498(Class133_Sub1 class133_sub1, byte i) {
-		int i_2_ = -Class14_Sub2_Sub20.anInt4064 + class133_sub1.anInt3494;
-		class133_sub1.anInt3437 = 0;
-		int i_3_ = class133_sub1.anInt3451 * 128 + class133_sub1.anInt3493 * 64;
-		int i_4_ = class133_sub1.anInt3493 * 64 + class133_sub1.anInt3472 * 128;
-		if (class133_sub1.anInt3444 == 0)
-			class133_sub1.anInt3469 = 1024;
-		class133_sub1.anInt3495 += (-class133_sub1.anInt3495 + i_3_) / i_2_;
-		if (class133_sub1.anInt3444 == 1)
-			class133_sub1.anInt3469 = 1536;
-		if (i != -82)
-			method498(null, (byte) -105);
-		if (class133_sub1.anInt3444 == 2)
-			class133_sub1.anInt3469 = 0;
-		if (class133_sub1.anInt3444 == 3)
-			class133_sub1.anInt3469 = 512;
-		class133_sub1.anInt3436 += (-class133_sub1.anInt3436 + i_4_) / i_2_;
-	}
-
-	public static void method499(boolean bool, int i) {
-		Class96.anIntArray1630 = new int[i];
-		Class120.anIntArray2008 = new int[i];
-		Class14_Sub19.anIntArray3079 = new int[i];
-		Class14_Sub2_Sub11.anIntArray3872 = new int[i];
-		if (bool)
-			method496((byte) 56);
-		Class14_Sub8_Sub20.anIntArray4422 = new int[i];
-	}
-
 	public int anInt4140;
 
 	public int anInt4144 = 4096;
@@ -79,6 +17,7 @@ public class Class14_Sub8_Sub4 extends Class14_Sub8 {
 		anInt4140 = 4096;
 	}
 
+	@Override
 	public int[][] method474(int i, int i_5_) {
 		if (i_5_ >= -4) {
 			int[][] is = null;
@@ -93,7 +32,7 @@ public class Class14_Sub8_Sub4 extends Class14_Sub8 {
 			int[] is_10_ = is[1];
 			int[] is_11_ = is_6_[2];
 			int[] is_12_ = is[2];
-			for (int i_13_ = 0; Class112.anInt1876 > i_13_; i_13_++) {
+			for (int i_13_ = 0; TexStatic.anInt1876 > i_13_; i_13_++) {
 				int i_14_ = is_8_[i_13_];
 				int i_15_ = is_7_[i_13_];
 				int i_16_ = is_11_[i_13_];
@@ -112,6 +51,7 @@ public class Class14_Sub8_Sub4 extends Class14_Sub8 {
 		return is_17_;
 	}
 
+	@Override
 	public void method475(int i, int i_18_, Buffer class14_sub10) {
 		if (i_18_ != 24777)
 			anInt4147 = 90;

@@ -13,7 +13,7 @@ import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class14_Sub1;
 import com.jagex.rt4.VertexBuffer;
 
-import rs.tex.Class14_Sub8_Sub33;
+import rs.JunkTex;
 
 public class LightRenderer {
 	public byte[] aByteArray2141;
@@ -167,6 +167,6 @@ public class LightRenderer {
 		aByteArray2145 = new byte[anInt2151];
 		aByteArray2141 = new byte[anInt2151];
 		aByteArray2146 = new byte[anInt2151];
-		aClass55_2138 = new HashTable(Class14_Sub8_Sub33.method653(anInt2151));
+		aClass55_2138 = new HashTable(JunkTex.method653(anInt2151));
 	}
 }

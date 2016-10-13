@@ -5,15 +5,6 @@ package rs;
 
 import com.jagex.io.Buffer;
 
-import rs.tex.Class14_Sub8_Sub11;
-import rs.tex.Class14_Sub8_Sub16;
-import rs.tex.Class14_Sub8_Sub19;
-import rs.tex.Class14_Sub8_Sub23;
-import rs.tex.Class14_Sub8_Sub31;
-import rs.tex.Class14_Sub8_Sub38;
-import rs.tex.Class14_Sub8_Sub7;
-import rs.tex.Static;
-
 public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 	public static Class124 aClass124_3706 = Class14_Sub2_Sub2.method263(1178, "Hidden)2");
 	public static Class124 aClass124_3710 = null;
@@ -51,16 +42,16 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 
 	public static void method136(boolean bool, int i, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_) {
 		Class123.anInt2062 = i_7_;
-		Class14_Sub8_Sub23.anInt4480 = i;
+		JunkTex.anInt4480 = i;
 		int i_9_ = 118 % ((i_6_ - 4) / 37);
-		Class14_Sub8_Sub38.anInt4731 = i_5_;
+		JunkTex.anInt4731 = i_5_;
 		Class69.anInt1071 = i_4_;
 		Class14_Sub20.anInt3095 = i_8_;
 		if (bool && Class69.anInt1071 >= 100) {
-			Class14_Sub8_Sub38.anInt4741 = Class123.anInt2062 * 128 + 64;
-			Class14_Sub30.anInt3271 = Class14_Sub8_Sub38.anInt4731 * 128 + 64;
-			Static2.anInt2926 = (Static.method1017(Class14_Sub8_Sub38.anInt4741, Class14_Sub2_Sub3.anInt3785,
-					(byte) 80, Class14_Sub30.anInt3271) - Class14_Sub8_Sub23.anInt4480);
+			JunkTex.anInt4741 = Class123.anInt2062 * 128 + 64;
+			Class14_Sub30.anInt3271 = JunkTex.anInt4731 * 128 + 64;
+			Static2.anInt2926 = (JunkTex.method1017(JunkTex.anInt4741, Class14_Sub2_Sub3.anInt3785,
+					(byte) 80, Class14_Sub30.anInt3271) - JunkTex.anInt4480);
 		}
 		Class89.anInt1415 = 2;
 	}
@@ -88,7 +79,7 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 			anInt3714 = 116;
 		int i_12_ = class14_sub10.readUByte();
 		int i_13_ = class14_sub10.getInt((byte) -107);
-		if (i_13_ < 0 || Static.anInt2797 != 0 && i_13_ > Static.anInt2797)
+		if (i_13_ < 0 || JunkTex.anInt2797 != 0 && i_13_ > JunkTex.anInt2797)
 			throw new RuntimeException();
 		if (i_12_ == 0) {
 			byte[] is_14_ = new byte[i_13_];
@@ -97,7 +88,7 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 			return is_15_;
 		}
 		int i_16_ = class14_sub10.getInt((byte) -120);
-		if (i_16_ < 0 || Static.anInt2797 != 0 && i_16_ > Static.anInt2797)
+		if (i_16_ < 0 || JunkTex.anInt2797 != 0 && i_16_ > JunkTex.anInt2797)
 			throw new RuntimeException();
 		byte[] is_17_ = new byte[i_16_];
 		if (i_12_ != 1)
@@ -113,11 +104,11 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 			method135(false, -38, 10);
 		Class75.method1340((byte) 78);
 		if (Static2.aClass104_4037 == null) {
-			if (!Class14_Sub8_Sub16.aBoolean4357)
+			if (!JunkTex.aBoolean4357)
 				Class37.method1108((byte) 96);
 			else if (anInt3714 == 1) {
 				int i_19_ = Class150.anInt2423 / 5;
-				int i_20_ = i_19_ + (Class14_Sub8_Sub11.anInt4266 + 140);
+				int i_20_ = i_19_ + (JunkTex.anInt4266 + 140);
 				if (i_20_ <= Class125_Sub1.anInt3367 && Class125_Sub1.anInt3367 <= i_20_ + 14
 						&& Class134.anInt2573 + 4 <= Class139.anInt2230
 						&& Class134.anInt2573 + 18 >= Class139.anInt2230)
@@ -127,7 +118,7 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 						&& Class139.anInt2230 <= Class134.anInt2573 + 18)
 					Class32.method1082(0, 1, i + 29310);
 				else {
-					int i_21_ = i_19_ + (Class14_Sub8_Sub11.anInt4266 + 250);
+					int i_21_ = i_19_ + (JunkTex.anInt4266 + 250);
 					if (i_21_ <= Class125_Sub1.anInt3367 && i_21_ + 14 >= Class125_Sub1.anInt3367
 							&& Class139.anInt2230 >= Class134.anInt2573 + 4
 							&& Class134.anInt2573 + 18 >= Class139.anInt2230)
@@ -137,7 +128,7 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 							&& Class134.anInt2573 + 18 >= Class139.anInt2230)
 						Class32.method1082(1, 1, -111);
 					else {
-						int i_22_ = Class14_Sub8_Sub11.anInt4266 - (-i_19_ - 360);
+						int i_22_ = JunkTex.anInt4266 - (-i_19_ - 360);
 						if (Class125_Sub1.anInt3367 >= i_22_ && Class125_Sub1.anInt3367 <= i_22_ + 14
 								&& Class134.anInt2573 + 4 <= Class139.anInt2230
 								&& Class134.anInt2573 + 18 >= Class139.anInt2230)
@@ -147,7 +138,7 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 								&& (Class134.anInt2573 + 18 >= Class139.anInt2230))
 							Class32.method1082(2, 1, -112);
 						else {
-							int i_23_ = Class14_Sub8_Sub11.anInt4266 + i_19_ + 470;
+							int i_23_ = JunkTex.anInt4266 + i_19_ + 470;
 							if (i_23_ <= Class125_Sub1.anInt3367 && i_23_ + 14 >= Class125_Sub1.anInt3367
 									&& Class134.anInt2573 + 4 <= Class139.anInt2230
 									&& (Class134.anInt2573 + 18 >= Class139.anInt2230))
@@ -156,13 +147,13 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 									&& (Class139.anInt2230 >= Class134.anInt2573 + 4)
 									&& (Class134.anInt2573 + 18 >= Class139.anInt2230))
 								Class32.method1082(3, 1, i + 29514);
-							else if (Static.anInt2801 != -1) {
-								Class45 class45 = (Class133_Sub1.aClass45Array3435[Static.anInt2801]);
+							else if (JunkTex.anInt2801 != -1) {
+								Class45 class45 = (Class133_Sub1.aClass45Array3435[JunkTex.anInt2801]);
 								if (!class45.aBoolean749 != Class132.aBoolean2170) {
-									byte[] is = Class14_Sub8_Sub7.method515(
+									byte[] is = JunkTex.method515(
 											(new Class124[] { class45.aClass124_741, Class54.aClass124_883 }),
 											(byte) -78).method1681(-113);
-									Class14_Sub8_Sub31.aString4605 = new String(is, 0, is.length);
+									JunkTex.aString4605 = new String(is, 0, is.length);
 									Class120.anInt2005 = class45.anInt744;
 									if (Class7.anInt182 != 0) {
 										Class84.anInt1346 = Class120.anInt2005 + 40000;
@@ -176,11 +167,11 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 								} else {
 									Class124 class124 = Static2.aClass124_4039;
 									if (Class7.anInt182 != 0)
-										class124 = (Class14_Sub8_Sub7.method515(
+										class124 = (JunkTex.method515(
 												(new Class124[] { Class149.aClass124_2395,
 														(Class83.method1407(104, (class45.anInt744 + 7000))) }),
 												(byte) -19));
-									Class124 class124_24_ = (Class14_Sub8_Sub7.method515((new Class124[] {
+									Class124 class124_24_ = (JunkTex.method515((new Class124[] {
 											Class125_Sub3.aClass124_3408, class45.aClass124_741, Class54.aClass124_883,
 											class124, Class14_Sub19.aClass124_3065,
 											(Class83.method1407(20, Class125_Sub2.language)), Static2.aClass124_755,
@@ -209,15 +200,15 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 		long l = 0L;
 		int i_25_ = 0;
 		if (class14_sub14.anInt2971 == 0)
-			l = Static.method79(class14_sub14.anInt2969, class14_sub14.anInt2967, class14_sub14.anInt2970);
+			l = JunkTex.method79(class14_sub14.anInt2969, class14_sub14.anInt2967, class14_sub14.anInt2970);
 		if (class14_sub14.anInt2971 == 1)
 			l = Class14_Sub2_Sub12.method323(class14_sub14.anInt2969, class14_sub14.anInt2967, class14_sub14.anInt2970);
 		int i_26_ = -1;
 		int i_27_ = 0;
 		if (class14_sub14.anInt2971 == 2)
-			l = Class14_Sub8_Sub38.method675(class14_sub14.anInt2969, class14_sub14.anInt2967, class14_sub14.anInt2970);
+			l = JunkTex.method675(class14_sub14.anInt2969, class14_sub14.anInt2967, class14_sub14.anInt2970);
 		if (class14_sub14.anInt2971 == 3)
-			l = Class14_Sub8_Sub19.method578(class14_sub14.anInt2969, class14_sub14.anInt2967, class14_sub14.anInt2970);
+			l = JunkTex.method578(class14_sub14.anInt2969, class14_sub14.anInt2967, class14_sub14.anInt2970);
 		if (l != 0L) {
 			i_26_ = (int) (l >>> 32) & 0x7fffffff;
 			i_25_ = (int) l >> 14 & 0x1f;

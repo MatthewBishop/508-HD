@@ -7,9 +7,6 @@ import com.jagex.io.Buffer;
 import com.jagex.link.Cacheable;
 import com.jagex.util.MouseCapturer;
 
-import rs.tex.Class14_Sub8_Sub35;
-import rs.tex.Static;
-
 public class Class14_Sub2_Sub11 extends Cacheable {
 	public static int[] anIntArray3872 = new int[2];
 	public static int anInt3874;
@@ -199,7 +196,7 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 		if (i > 61) {
 			for (Class14_Sub3 class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.getFront(); class14_sub3 != null; class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.getNext())
 				Class58.method1255(i_30_, class14_sub3, i_29_, i_28_, -31083, i_31_);
-			for (Class14_Sub3 class14_sub3 = (Class14_Sub3) Static.aClass2_683.getFront(); class14_sub3 != null; class14_sub3 = (Class14_Sub3) Static.aClass2_683.getNext()) {
+			for (Class14_Sub3 class14_sub3 = (Class14_Sub3) JunkTex.aClass2_683.getFront(); class14_sub3 != null; class14_sub3 = (Class14_Sub3) JunkTex.aClass2_683.getNext()) {
 				int i_32_ = 1;
 				if (class14_sub3.aClass133_Sub1_Sub2_2762.anInt3433 != class14_sub3.aClass133_Sub1_Sub2_2762.anInt3452) {
 					if (class14_sub3.aClass133_Sub1_Sub2_2762.anInt3456 == class14_sub3.aClass133_Sub1_Sub2_2762.anInt3452)
@@ -267,14 +264,14 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 	}
 
 	public static void method316(long l, int i) {
-		Static.aClass14_Sub10_Sub1_891.position = 0;
-		Static.aClass14_Sub10_Sub1_891.method809(118);
-		Static.aClass14_Sub10_Sub1_891.method817(l, 114);
+		JunkTex.aClass14_Sub10_Sub1_891.position = 0;
+		JunkTex.aClass14_Sub10_Sub1_891.method809(118);
+		JunkTex.aClass14_Sub10_Sub1_891.method817(l, 114);
 		Static2.anInt2734 = -3;
 		Class129.anInt2136 = 0;
 		if (i != 24967)
 			method314((byte) 35, 43, -40, -1, 83);
-		Class14_Sub8_Sub35.anInt4686 = 0;
+		JunkTex.anInt4686 = 0;
 		Class56.anInt918 = 1;
 	}
 }

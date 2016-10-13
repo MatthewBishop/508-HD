@@ -3,10 +3,6 @@
  */
 package rs;
 
-import rs.tex.Class14_Sub8_Sub27;
-import rs.tex.Class14_Sub8_Sub33;
-import rs.tex.Static;
-
 public class Class3 {
 	public static boolean aBoolean103 = false;
 	public static boolean aBoolean104;
@@ -55,8 +51,8 @@ public class Class3 {
 		int i_3_ = i_1_ - i_2_ * Class92.anInt1432;
 		anInt118 = i - i_3_;
 		anInt110 = i_0_ - i_2_;
-		Static.anInt425 = -anInt118;
-		Class14_Sub8_Sub27.anInt4547 = anInt109 - anInt118;
+		JunkTex.anInt425 = -anInt118;
+		JunkTex.anInt4547 = anInt109 - anInt118;
 		Class58.anInt948 = -anInt110;
 		Class70.anInt1081 = anInt106 - anInt110;
 	}
@@ -1362,7 +1358,7 @@ public class Class3 {
 		anInt106 = i_121_ - i_119_;
 		method102();
 		if (anIntArray113.length < anInt106)
-			anIntArray113 = new int[Class14_Sub8_Sub33.method653(anInt106)];
+			anIntArray113 = new int[JunkTex.method653(anInt106)];
 		int i_122_ = i_119_ * Class92.anInt1432 + i;
 		for (int i_123_ = 0; i_123_ < anInt106; i_123_++) {
 			anIntArray113[i_123_] = i_122_;
@@ -1373,8 +1369,8 @@ public class Class3 {
 	public static void method102() {
 		anInt118 = anInt109 / 2;
 		anInt110 = anInt106 / 2;
-		Static.anInt425 = -anInt118;
-		Class14_Sub8_Sub27.anInt4547 = anInt109 - anInt118;
+		JunkTex.anInt425 = -anInt118;
+		JunkTex.anInt4547 = anInt109 - anInt118;
 		Class58.anInt948 = -anInt110;
 		Class70.anInt1081 = anInt106 - anInt110;
 	}

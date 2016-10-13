@@ -3,114 +3,12 @@
  */
 package rs.tex;
 
-import java.awt.Component;
-import java.lang.reflect.Method;
-
 import com.jagex.io.Buffer;
-import com.jagex.rt4.Class14_Sub2_Sub19;
 
-import rs.Class1;
-import rs.Class112;
-import rs.Class118;
-import rs.Class124;
-import rs.Class126;
-import rs.Class133_Sub1_Sub1;
-import rs.Class133_Sub5;
-import rs.Class14_Sub21;
-import rs.Class14_Sub2_Sub11;
-import rs.Class14_Sub2_Sub2;
-import rs.Class14_Sub2_Sub7;
-import rs.Class43;
-import rs.Class56;
-import rs.Class64;
 import rs.Class66;
-import rs.Class9;
-import rs.Class9_Sub1;
+import rs.JunkTex;
 
 public class Class14_Sub8_Sub17 extends Class14_Sub8 {
-	public static Class124 aClass124_4359;
-	public static Class124 aClass124_4360;
-	public static Class124 aClass124_4362;
-	public static Class124 aClass124_4363 = Class14_Sub2_Sub2.method263(1178, "Take");
-	public static Class124 aClass124_4365;
-	public static Class124 aClass124_4368;
-	public static Class14_Sub2_Sub19[] aClass14_Sub2_Sub19Array4366;
-	public static Class9 aClass9_4371;
-	public static int anInt4367;
-	public static int anInt4377;
-	public static int anInt4378;
-	public static int anInt4379;
-	static {
-		aClass124_4362 = Class14_Sub2_Sub2.method263(1178, "mem=");
-		aClass124_4360 = Class14_Sub2_Sub2.method263(1178, " (X");
-		aClass124_4359 = Class14_Sub2_Sub2.method263(1178, "<col=00ffff>");
-		anInt4378 = 0;
-		aClass124_4365 = Class14_Sub2_Sub2.method263(1178, "Spieler kann nicht gefunden werden: ");
-		aClass124_4368 = aClass124_4363;
-	}
-	public static void method566(int i, int i_0_, int i_1_, int i_2_, boolean bool) {
-		if (Class126.method1741((byte) -101, i_0_))
-			Static.method340(Class1.aClass94ArrayArray75[i_0_], bool, i_1_, i, (byte) 125, i_2_);
-	}
-
-	public static void method568(int i) {
-		Class56.method1240();
-		int i_3_ = 0;
-		if (i != 4)
-			anInt4378 = 6;
-		for (/**/; i_3_ < 4; i_3_++)
-			Class14_Sub21.aClass32Array3100[i_3_].method1071(true);
-		System.gc();
-	}
-
-	public static void method569(int i) {
-		if (i > -79)
-			method568(-112);
-		Class133_Sub5.aClass14_Sub9_Sub1_3625.method697(11);
-		Class14_Sub2_Sub11.anInt3889 = 1;
-		Class9_Sub1.aClass9_2696 = null;
-	}
-
-	public static void method570(int i) {
-		aClass9_4371 = null;
-		if (i != 4)
-			method572(null, true);
-		aClass124_4359 = null;
-		aClass124_4363 = null;
-		aClass124_4365 = null;
-		aClass124_4362 = null;
-		aClass124_4360 = null;
-		aClass124_4368 = null;
-		aClass14_Sub2_Sub19Array4366 = null;
-	}
-
-	public static void method571(boolean bool) {
-		if (bool)
-			method572(null, true);
-		for (int i = 0; Class64.anInt1012 > i; i++) {
-			int i_4_ = Class14_Sub2_Sub7.anIntArray3825[i];
-			Class133_Sub1_Sub1 class133_sub1_sub1 = Class14_Sub8_Sub23.aClass133_Sub1_Sub1Array4474[i_4_];
-			int i_5_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUByte();
-			if ((i_5_ & 0x10) != 0)
-				i_5_ += (Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readUByte() << 40);
-			Class118.method1603(1, class133_sub1_sub1, i_5_, i_4_);
-		}
-	}
-
-	public static void method572(Component component, boolean bool) {
-		Method method = Class43.aMethod707;
-		if (bool)
-			method566(-35, 74, -4, -122, true);
-		if (method != null) {
-			try {
-				method.invoke(component, new Object[] { Boolean.FALSE });
-			} catch (Throwable throwable) {
-				/* empty */
-			}
-		}
-		component.addKeyListener(Class14_Sub8_Sub9.aClass141_4239);
-		component.addFocusListener(Class14_Sub8_Sub9.aClass141_4239);
-	}
 
 	public int[] anIntArray4372 = new int[257];
 
@@ -120,12 +18,14 @@ public class Class14_Sub8_Sub17 extends Class14_Sub8 {
 		super(1, false);
 	}
 
+	@Override
 	public void method472() {
 		if (anIntArrayArray4376 == null)
 			method567(true, 1);
 		method565(-27458);
 	}
 
+	@Override
 	public int[][] method474(int i, int i_6_) {
 		if (i_6_ >= -4) {
 			int[][] is = null;
@@ -137,22 +37,23 @@ public class Class14_Sub8_Sub17 extends Class14_Sub8 {
 			int[] is_8_ = is[0];
 			int[] is_9_ = is[1];
 			int[] is_10_ = is[2];
-			for (int i_11_ = 0; i_11_ < Class112.anInt1876; i_11_++) {
+			for (int i_11_ = 0; i_11_ < TexStatic.anInt1876; i_11_++) {
 				int i_12_ = is_7_[i_11_] >> 4;
 				if (i_12_ < 0)
 					i_12_ = 0;
 				if (i_12_ > 256)
 					i_12_ = 256;
 				i_12_ = anIntArray4372[i_12_];
-				is_8_[i_11_] = Class14_Sub8_Sub26.method617(4080, i_12_ >> 44);
-				is_9_[i_11_] = Class14_Sub8_Sub26.method617(i_12_ >> 4, 4080);
-				is_10_[i_11_] = Class14_Sub8_Sub26.method617(i_12_ << 36, 4080);
+				is_8_[i_11_] = JunkTex.method617(4080, i_12_ >> 44);
+				is_9_[i_11_] = JunkTex.method617(i_12_ >> 4, 4080);
+				is_10_[i_11_] = JunkTex.method617(i_12_ << 36, 4080);
 			}
 		}
 		int[][] is_13_ = is;
 		return is_13_;
 	}
 
+	@Override
 	public void method475(int i, int i_14_, Buffer class14_sub10) {
 		if (i_14_ == 24777 && i == 0) {
 			int i_15_ = class14_sub10.readUByte();
@@ -443,6 +344,6 @@ public class Class14_Sub8_Sub17 extends Class14_Sub8 {
 			}
 		} while (false);
 		if (!bool)
-			aClass124_4360 = null;
+			JunkTex.aClass124_4360 = null;
 	}
 }

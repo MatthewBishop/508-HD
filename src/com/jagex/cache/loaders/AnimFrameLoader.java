@@ -9,7 +9,7 @@ import com.jagex.link.Cacheable;
 import com.jagex.link.Deque;
 
 import rs.Class9;
-import rs.tex.Class14_Sub8_Sub14;
+import rs.JunkTex;
 
 public class AnimFrameLoader extends Cacheable {
 	public AnimFrame[] aClass143Array3951;
@@ -81,7 +81,7 @@ public class AnimFrameLoader extends Cacheable {
 			class14_sub2_sub15 = null;
 			return class14_sub2_sub15;
 		} catch (Throwable throwable) {
-			throw Class14_Sub8_Sub14.method554(throwable,
+			throw JunkTex.method554(throwable,
 					new StringBuilder("ve.C(").append(class9 != null ? "{...}" : "null").append(',')
 							.append(class9_19_ != null ? "{...}" : "null").append(',').append(i).append(',')
 							.append(i_20_).append(',').append(bool).append(')').toString());

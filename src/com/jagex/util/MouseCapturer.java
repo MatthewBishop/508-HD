@@ -4,7 +4,7 @@
 package com.jagex.util;
 
 import rs.Class107;
-import rs.tex.Class14_Sub8_Sub33;
+import rs.JunkTex;
 
 public class MouseCapturer implements Runnable {
 	public boolean running = true;
@@ -26,7 +26,7 @@ public class MouseCapturer implements Runnable {
 			Object object = synchronizedObject;
 			synchronized (object) {
 				if (capturedCoordinateCount < 500) {
-					coordinatesX[capturedCoordinateCount] = Class14_Sub8_Sub33.anInt4640;
+					coordinatesX[capturedCoordinateCount] = JunkTex.anInt4640;
 					coordinatesY[capturedCoordinateCount] = Class107.anInt1804;
 					capturedCoordinateCount++;
 				}

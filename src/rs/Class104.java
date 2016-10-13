@@ -11,8 +11,6 @@ import java.util.Random;
 import com.jagex.io.Buffer;
 import com.jagex.util.TimeUtil;
 
-import rs.tex.Class14_Sub8_Sub11;
-
 public class Class104 {
 	public static Class124 aClass124_1736;
 	public static Class124 aClass124_1739 = Class14_Sub2_Sub2.method263(1178, " ");
@@ -49,7 +47,7 @@ public class Class104 {
 		int i_7_ = class51.anInt832;
 		int i_8_ = class51.anInt834;
 		int i_9_ = Class1.anIntArray69[i_8_ - i_7_];
-		int i_10_ = i_9_ & Class14_Sub8_Sub11.anIntArray4275[i_5_] >> i_7_;
+		int i_10_ = i_9_ & JunkTex.anIntArray4275[i_5_] >> i_7_;
 		return i_10_;
 	}
 	public static void method1535(byte i) {

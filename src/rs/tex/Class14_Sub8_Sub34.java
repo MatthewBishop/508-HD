@@ -7,68 +7,11 @@ import java.util.Random;
 
 import com.jagex.io.Buffer;
 
-import rs.Class112;
-import rs.Class124;
-import rs.Class132;
-import rs.Class133_Sub5;
 import rs.Class138;
-import rs.Class14_Sub25;
-import rs.Class14_Sub2_Sub2;
-import rs.Class14_Sub2_Sub3;
-import rs.Class17;
-import rs.Class43;
 import rs.Class72;
-import rs.Class75;
+import rs.JunkTex;
 
 public class Class14_Sub8_Sub34 extends Class14_Sub8 {
-	public static Class124 aClass124_4653 = Class14_Sub2_Sub2.method263(1178, "<col=ff3000>");
-	public static Class43 aClass43_4647;
-	public static int anInt4666 = -2;
-	public static int method658(byte i, int i_6_) {
-		if (i_6_ < 0) {
-			int i_7_ = 0;
-			return i_7_;
-		}
-		Class14_Sub25 class14_sub25 = ((Class14_Sub25) Class132.aClass55_2167.get((long) i_6_));
-		if (class14_sub25 == null) {
-			int i_8_ = Class17.method960(i ^ ~0x5ee3, i_6_).anInt4062;
-			return i_8_;
-		}
-		int i_9_ = 0;
-		if (i != -111)
-			aClass124_4653 = null;
-		for (int i_10_ = 0; class14_sub25.anIntArray3178.length > i_10_; i_10_++) {
-			if (class14_sub25.anIntArray3178[i_10_] == -1)
-				i_9_++;
-		}
-		i_9_ += (Class17.method960(24205, i_6_).anInt4062 - class14_sub25.anIntArray3178.length);
-		int i_11_ = i_9_;
-		return i_11_;
-	}
-	public static void method660(boolean bool) {
-		aClass43_4647 = null;
-		aClass124_4653 = null;
-		if (bool)
-			method661(false, 105);
-	}
-	public static Class14_Sub2_Sub3 method661(boolean bool, int i) {
-		if (!bool) {
-			Class14_Sub2_Sub3 class14_sub2_sub3 = null;
-			return class14_sub2_sub3;
-		}
-		Class14_Sub2_Sub3 class14_sub2_sub3 = (Class14_Sub2_Sub3) Class75.aClass20_1147.get((long) i);
-		if (class14_sub2_sub3 != null) {
-			Class14_Sub2_Sub3 class14_sub2_sub3_12_ = class14_sub2_sub3;
-			return class14_sub2_sub3_12_;
-		}
-		byte[] is = Class14_Sub8_Sub17.aClass9_4371.method163(i, 26, 0);
-		Class14_Sub2_Sub3 class14_sub2_sub3_13_ = new Class14_Sub2_Sub3();
-		if (is != null)
-			class14_sub2_sub3_13_.method268(new Buffer(is), -1);
-		Class75.aClass20_1147.put(class14_sub2_sub3_13_, (long) i);
-		Class14_Sub2_Sub3 class14_sub2_sub3_14_ = class14_sub2_sub3_13_;
-		return class14_sub2_sub3_14_;
-	}
 	public int anInt4646;
 	public int anInt4649;
 	public int anInt4651 = 204;
@@ -99,10 +42,12 @@ public class Class14_Sub8_Sub34 extends Class14_Sub8 {
 		anInt4664 = 1024;
 	}
 
+	@Override
 	public void method472() {
 		method659(88);
 	}
 
+	@Override
 	public void method475(int i, int i_15_, Buffer class14_sub10) {
 		int i_16_ = i;
 		while_34_: do {
@@ -161,14 +106,15 @@ public class Class14_Sub8_Sub34 extends Class14_Sub8 {
 			anInt4646 = 7;
 	}
 
+	@Override
 	public int[] method484(int i, byte i_17_) {
 		int[] is = aClass149_2851.method2014(i, (byte) 103);
 		if (i_17_ >= -58)
-			method660(false);
+			JunkTex.method660(false);
 		if (aClass149_2851.aBoolean2402) {
 			int i_18_ = 0;
 			int i_19_;
-			for (i_19_ = anInt4652 + Class133_Sub5.anIntArray3623[i]; i_19_ < 0; i_19_ += 4096) {
+			for (i_19_ = anInt4652 + TexStatic.anIntArray3623[i]; i_19_ < 0; i_19_ += 4096) {
 				/* empty */
 			}
 			for (/**/; i_19_ > 4096; i_19_ -= 4096) {
@@ -182,11 +128,11 @@ public class Class14_Sub8_Sub34 extends Class14_Sub8 {
 			int i_21_ = anIntArray4663[i_18_];
 			int i_22_ = anIntArray4663[i_18_ - 1];
 			if (anInt4662 + i_22_ >= i_19_ || i_19_ >= i_21_ - anInt4662)
-				Class72.method1324(is, 0, Class112.anInt1876, 0);
+				Class72.method1324(is, 0, TexStatic.anInt1876, 0);
 			else {
-				for (int i_23_ = 0; i_23_ < Class112.anInt1876; i_23_++) {
+				for (int i_23_ = 0; i_23_ < TexStatic.anInt1876; i_23_++) {
 					int i_24_ = bool ? anInt4664 : -anInt4664;
-					int i_25_ = ((anInt4654 * i_24_ >> 44) + Class14_Sub8_Sub4.anIntArray4145[i_23_]);
+					int i_25_ = ((anInt4654 * i_24_ >> 44) + TexStatic.anIntArray4145[i_23_]);
 					int i_26_ = 0;
 					for (/**/; i_25_ < 0; i_25_ += 4096) {
 						/* empty */
@@ -212,7 +158,7 @@ public class Class14_Sub8_Sub34 extends Class14_Sub8 {
 	}
 
 	public void method659(int i) {
-		Random random = new Random((long) anInt4665);
+		Random random = new Random(anInt4665);
 		anIntArray4663 = new int[anInt4665 + 1];
 		anIntArray4663[0] = 0;
 		anIntArrayArray4658 = new int[anInt4665][anInt4649 + 1];

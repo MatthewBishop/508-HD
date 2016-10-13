@@ -12,9 +12,6 @@ import com.jagex.cache.anim.Animation;
 import com.jagex.cache.loaders.AnimFrameLoader;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 
-import rs.tex.Class14_Sub8_Sub14;
-import rs.tex.Static;
-
 public class Class76 {
 	public byte[] aByteArray1186;
 	public long aLong1187;
@@ -59,7 +56,7 @@ public class Class76 {
 				return var1;
 			}
 		} catch (Throwable var2) {
-			throw Class14_Sub8_Sub14.method554(var2, "la.H(" + var0 + ')');
+			throw JunkTex.method554(var2, "la.H(" + var0 + ')');
 		}
 	}
 
@@ -70,7 +67,7 @@ public class Class76 {
 				aClass30_1202.method1057(25861);
 			}
 		} catch (Throwable throwable) {
-			throw Class14_Sub8_Sub14.method554(throwable, new StringBuilder("la.L(").append(i).append(')').toString());
+			throw JunkTex.method554(throwable, new StringBuilder("la.L(").append(i).append(')').toString());
 		}
 	}
 
@@ -177,10 +174,10 @@ public class Class76 {
 		if (i_13_ != 0)
 			class133_sub7_17_.method1874(i_13_);
 		ModelHD modelhd = (ModelHD) class133_sub7_17_;
-		if (i_10_ != Static.method1017(i_7_ + i_40_, Class14_Sub2_Sub3.anInt3785, (byte) 117, i_14_ + i_42_)
-				|| i_10_ != Static.method1017(i_7_ + i_41_, Class14_Sub2_Sub3.anInt3785, (byte) 77, i_43_ + i_14_)) {
+		if (i_10_ != JunkTex.method1017(i_7_ + i_40_, Class14_Sub2_Sub3.anInt3785, (byte) 117, i_14_ + i_42_)
+				|| i_10_ != JunkTex.method1017(i_7_ + i_41_, Class14_Sub2_Sub3.anInt3785, (byte) 77, i_43_ + i_14_)) {
 			for (int i_44_ = 0; modelhd.anInt5033 > i_44_; i_44_++)
-				modelhd.vertexY[i_44_] += (Static.method1017(modelhd.vertexX[i_44_] + i_7_,
+				modelhd.vertexY[i_44_] += (JunkTex.method1017(modelhd.vertexX[i_44_] + i_7_,
 						Class14_Sub2_Sub3.anInt3785, (byte) -109, i_14_ + modelhd.vertexZ[i_44_]) - i_10_);
 			modelhd.aClass50_5013.aBoolean820 = false;
 			modelhd.aClass41_5028.upToDate = false;
@@ -284,7 +281,7 @@ public class Class76 {
 			}
 
 		} catch (Throwable var13) {
-			throw Class14_Sub8_Sub14.method554(var13,
+			throw JunkTex.method554(var13,
 					"la.J(" + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null ? "{...}" : "null") + ')');
 		}
 	}
@@ -294,7 +291,7 @@ public class Class76 {
 			if (i == 0)
 				Static2.anIntArrayArray4038 = is;
 		} catch (Throwable throwable) {
-			throw Class14_Sub8_Sub14.method554(throwable, new StringBuilder("la.B(")
+			throw JunkTex.method554(throwable, new StringBuilder("la.B(")
 					.append(is != null ? "{...}" : "null").append(',').append(i).append(')').toString());
 		}
 	}
@@ -347,7 +344,7 @@ public class Class76 {
 				return var2;
 			}
 		} catch (Throwable var3) {
-			throw Class14_Sub8_Sub14.method554(var3, "la.M(" + var1 + ')');
+			throw JunkTex.method554(var3, "la.M(" + var1 + ')');
 		}
 	}
 

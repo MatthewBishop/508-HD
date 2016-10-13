@@ -12,8 +12,7 @@ import com.jagex.rt4.RT4;
 import rs.Class14_Sub29;
 import rs.Class14_Sub9_Sub3;
 import rs.Class7_Sub1;
-import rs.tex.Class14_Sub8_Sub26;
-import rs.tex.Class14_Sub8_Sub37;
+import rs.JunkTex;
 
 public class LightManager {
 	public static Light[] lights = new Light[255];
@@ -222,8 +221,8 @@ public class LightManager {
 					int i_44_ = 0;
 					int i_45_ = (light.param3 >> 7) - light.anInt1120;
 					int i_46_ = (light.param3 >> 7) + light.anInt1120;
-					if (i_46_ >= Class14_Sub8_Sub26.anInt4526)
-						i_46_ = Class14_Sub8_Sub26.anInt4526 - 1;
+					if (i_46_ >= JunkTex.anInt4526)
+						i_46_ = JunkTex.anInt4526 - 1;
 					if (i_45_ < Class14_Sub9_Sub3.anInt4849) {
 						i_44_ += Class14_Sub9_Sub3.anInt4849 - i_45_;
 						i_45_ = Class14_Sub9_Sub3.anInt4849;
@@ -234,8 +233,8 @@ public class LightManager {
 						int i_50_ = i_49_ + (i_48_ & 0xff) - 1;
 						if (i_49_ < Class7_Sub1.anInt2659)
 							i_49_ = Class7_Sub1.anInt2659;
-						if (i_50_ >= Class14_Sub8_Sub37.anInt4722)
-							i_50_ = Class14_Sub8_Sub37.anInt4722 - 1;
+						if (i_50_ >= JunkTex.anInt4722)
+							i_50_ = JunkTex.anInt4722 - 1;
 						for (int i_51_ = i_49_; i_51_ <= i_50_; i_51_++) {
 							Class14_Sub29 class14_sub29 = (class14_sub29s[light.anInt1125][i_51_][i_47_]);
 							if (class14_sub29 != null && class14_sub29.aBoolean3235) {

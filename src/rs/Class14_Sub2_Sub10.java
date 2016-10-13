@@ -6,8 +6,6 @@ package rs;
 import com.jagex.cache.anim.Animation;
 import com.jagex.link.Cacheable;
 
-import rs.tex.Static;
-
 public class Class14_Sub2_Sub10 extends Cacheable {
 	public static Class124 aClass124_3867 = Class14_Sub2_Sub2.method263(1178, " zuerst von Ihrer Ignorieren)2Liste(Q");
 	public static int anInt3868 = -1;
@@ -78,7 +76,7 @@ public class Class14_Sub2_Sub10 extends Cacheable {
 			class133_sub1.anInt3437 = 0;
 		else {
 			if (class133_sub1.anInt3445 != -1 && class133_sub1.anInt3467 == 0) {
-				Animation animation = Static.method1129(class133_sub1.anInt3445, 125);
+				Animation animation = JunkTex.method1129(class133_sub1.anInt3445, 125);
 				if (class133_sub1.anInt3477 > 0 && animation.animatingPrecedence == 0) {
 					class133_sub1.anInt3437++;
 					return;

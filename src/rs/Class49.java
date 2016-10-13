@@ -12,8 +12,6 @@ import com.jagex.rt4.Class14_Sub2_Sub19;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub2;
 
-import rs.tex.Class14_Sub8_Sub24;
-
 public class Class49 {
 	public static SoftCache aClass52_810 = new SoftCache(50);
 	public Inflater anInflater812;
@@ -32,7 +30,7 @@ public class Class49 {
 			int i_3_, boolean bool_4_, int i_5_) {
 		if (!bool_4_)
 			anInt815 = 114;
-		Class142 class142 = Class14_Sub8_Sub24.method605(73, i_0_);
+		Class142 class142 = JunkTex.method605(73, i_0_);
 		if (i_3_ > 1 && class142.anIntArray2325 != null) {
 			int i_6_ = -1;
 			for (int i_7_ = 0; i_7_ < 10; i_7_++) {
@@ -40,7 +38,7 @@ public class Class49 {
 					i_6_ = class142.anIntArray2325[i_7_];
 			}
 			if (i_6_ != -1)
-				class142 = Class14_Sub8_Sub24.method605(63, i_6_);
+				class142 = JunkTex.method605(63, i_6_);
 		}
 		ModelSD modelsd = class142.method1978(0);
 		if (modelsd == null) {

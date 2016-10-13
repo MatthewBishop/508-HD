@@ -6,14 +6,6 @@ package rs;
 import com.jagex.io.Buffer;
 import com.jagex.link.Cacheable;
 
-import rs.tex.Class14_Sub8_Sub17;
-import rs.tex.Class14_Sub8_Sub25;
-import rs.tex.Class14_Sub8_Sub30;
-import rs.tex.Class14_Sub8_Sub31;
-import rs.tex.Class14_Sub8_Sub33;
-import rs.tex.Class14_Sub8_Sub37;
-import rs.tex.Static;
-
 public class Class14_Sub2_Sub21 extends Cacheable {
 	public static Class124 aClass124_4070;
 	public int[] anIntArray4073;
@@ -133,15 +125,15 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 	public static void method440(byte i) {
 		Class97 class97 = Class67.aClass97_1055;
 		synchronized (class97) {
-			Class14_Sub8_Sub31.anInt4602++;
-			Class14_Sub8_Sub30.anInt4599 = Class14_Sub4.anInt2790;
-			Class14_Sub8_Sub33.anInt4640 = Class14_Sub8_Sub37.anInt4724;
+			JunkTex.anInt4602++;
+			JunkTex.anInt4599 = Class14_Sub4.anInt2790;
+			JunkTex.anInt4640 = JunkTex.anInt4724;
 			Class107.anInt1804 = Class14_Sub9_Sub3.anInt4848;
 			Class7_Sub3_Sub1.anInt3714 = Class127.anInt2105;
 			Class125_Sub1.anInt3367 = Class111.anInt1860;
 			Class139.anInt2230 = Class118.anInt1976;
 			int i_17_ = -59 / ((-55 - i) / 58);
-			Static.aLong2800 = Applet_Sub1.aLong6;
+			JunkTex.aLong2800 = Applet_Sub1.aLong6;
 			Class127.anInt2105 = 0;
 		}
 	}
@@ -189,10 +181,10 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 	}
 
 	public static void method444(int i, Class9 class9) {
-		Class14_Sub8_Sub25.anInt4509 = class9.method146(Static.aClass124_1105, i + 30451);
+		JunkTex.anInt4509 = class9.method146(JunkTex.aClass124_1105, i + 30451);
 		if (i != -30451)
 			method444(69, null);
-		Class14_Sub8_Sub30.anInt4594 = class9.method146(Static.aClass124_422, 0);
+		JunkTex.anInt4594 = class9.method146(JunkTex.aClass124_422, 0);
 	}
 
 	public static void method445(Class94 class94, int i, boolean bool) {
@@ -200,13 +192,13 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 		int i_28_ = class94.anInt1605 != 0 ? class94.anInt1605 : class94.anInt1545;
 		if (i != 18559)
 			anInt4086 = -91;
-		Static.method340((Class1.aClass94ArrayArray75[class94.anInt1548 >> 16]), bool, class94.anInt1548,
+		JunkTex.method340((Class1.aClass94ArrayArray75[class94.anInt1548 >> 16]), bool, class94.anInt1548,
 				i_27_, (byte) -73, i_28_);
 		if (class94.aClass94Array1486 != null)
-			Static.method340(class94.aClass94Array1486, bool, class94.anInt1548, i_27_, (byte) -56, i_28_);
+			JunkTex.method340(class94.aClass94Array1486, bool, class94.anInt1548, i_27_, (byte) -56, i_28_);
 		Class14_Sub15 class14_sub15 = ((Class14_Sub15) Class14_Sub30.aClass55_3275.get((long) class94.anInt1548));
 		if (class14_sub15 != null)
-			Class14_Sub8_Sub17.method566(i_27_, class14_sub15.anInt2999, -1, i_28_, bool);
+			JunkTex.method566(i_27_, class14_sub15.anInt2999, -1, i_28_, bool);
 	}
 
 	public int method446(byte i) {

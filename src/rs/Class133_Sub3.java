@@ -10,13 +10,6 @@ import com.jagex.rt4.AtmosphericChunk;
 import com.jagex.rt4.lights.LightManager;
 import com.jagex.rt4.lights.Light;
 
-import rs.tex.Class14_Sub8_Sub16;
-import rs.tex.Class14_Sub8_Sub24;
-import rs.tex.Class14_Sub8_Sub26;
-import rs.tex.Class14_Sub8_Sub29;
-import rs.tex.Class14_Sub8_Sub37;
-import rs.tex.Static;
-
 public class Class133_Sub3 extends Class133 {
 	public int anInt3557;
 	public int anInt3558;
@@ -34,19 +27,19 @@ public class Class133_Sub3 extends Class133 {
 
 	public static int method1829(int i, int i_0_, int i_1_) {
 		long l = (long) (i_1_ + (i << 16));
-		if (Class14_Sub8_Sub16.aClass14_Sub2_Sub9_4354 == null || l != Class14_Sub8_Sub16.aClass14_Sub2_Sub9_4354.key) {
+		if (JunkTex.aClass14_Sub2_Sub9_4354 == null || l != JunkTex.aClass14_Sub2_Sub9_4354.key) {
 			int i_2_ = 0;
 			return i_2_;
 		}
 		if (i_0_ >= -120)
 			method1833(true, 72, 126, null, 105, -23, (byte) 94, 45, -82, 0, null);
-		int i_3_ = ((Class62.aClass14_Sub10_989.position * 99 / (-Class14_Sub8_Sub16.aClass14_Sub2_Sub9_4354.aByte3862
+		int i_3_ = ((Class62.aClass14_Sub10_989.position * 99 / (-JunkTex.aClass14_Sub2_Sub9_4354.aByte3862
 				+ Class62.aClass14_Sub10_989.payload.length)) + 1);
 		return i_3_;
 	}
 
 	public void method1792(int i, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, long l) {
-		Class133_Sub7 class133_sub7 = Class14_Sub8_Sub24.method605(114, anInt3557).method1974(null, 0, 0, anInt3558);
+		Class133_Sub7 class133_sub7 = JunkTex.method605(114, anInt3557).method1974(null, 0, 0, anInt3558);
 		if (class133_sub7 != null) {
 			class133_sub7.method1792(i, i_4_, i_5_, i_6_, i_7_, i_8_, i_9_, i_10_, l);
 			anInt3564 = class133_sub7.method1781();
@@ -80,7 +73,7 @@ public class Class133_Sub3 extends Class133 {
 			long l = (long) (i + (i_12_ << 48));
 			Class14_Sub2_Sub9 class14_sub2_sub9 = ((Class14_Sub2_Sub9) Class7_Sub2_Sub1.aClass55_3698.get(l));
 			if (class14_sub2_sub9 != null)
-				Class14_Sub8_Sub37.aClass81_4716.pushFront(class14_sub2_sub9);
+				JunkTex.aClass81_4716.pushFront(class14_sub2_sub9);
 		}
 	}
 
@@ -90,7 +83,7 @@ public class Class133_Sub3 extends Class133 {
 			for (int i_20_ = 0; i_20_ < 8; i_20_++) {
 				for (int i_21_ = 0; i_21_ < 8; i_21_++) {
 					if (i + i_20_ > 0 && i_20_ + i < 103 && i_15_ + i_21_ > 0 && i_15_ + i_21_ < 103)
-						class32s[i_14_].anIntArrayArray546[i + i_20_][i_21_ + i_15_] = Class14_Sub8_Sub26
+						class32s[i_14_].anIntArrayArray546[i + i_20_][i_21_ + i_15_] = JunkTex
 								.method617((class32s[i_14_].anIntArrayArray546[i + i_20_][i_21_ + i_15_]), -16777217);
 				}
 			}
@@ -128,9 +121,9 @@ public class Class133_Sub3 extends Class133 {
 								int i_31_ = light.param3 >> 7;
 								if (light.anInt1125 == i_17_ && i_18_ <= i_30_ && i_30_ < i_18_ + 8 && i_19_ <= i_31_
 										&& i_19_ + 8 > i_31_) {
-									int i_32_ = ((i << 7) + (Class14_Sub8_Sub29.method634(light.param3 & 0x3ff,
+									int i_32_ = ((i << 7) + (JunkTex.method634(light.param3 & 0x3ff,
 											-207592252, i_13_, light.param1 & 0x3ff)));
-									int i_33_ = ((Static.method1028(i_13_, light.param1 & 0x3ff, -1,
+									int i_33_ = ((JunkTex.method1028(i_13_, light.param1 & 0x3ff, -1,
 											light.param3 & 0x3ff)) + (i_15_ << 7));
 									light.param3 = i_33_;
 									light.param1 = i_32_;

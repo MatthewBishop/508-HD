@@ -7,10 +7,6 @@ import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.Class14_Sub27;
 
-import rs.tex.Class14_Sub8_Sub13;
-import rs.tex.Class14_Sub8_Sub30;
-import rs.tex.Class14_Sub8_Sub33;
-
 public class Class14_Sub30 extends Linkable {
 	public static boolean aBoolean3269 = false;
 	public Class124 aClass124_3270;
@@ -107,19 +103,19 @@ public class Class14_Sub30 extends Linkable {
 						Class3.anInt116 = 0;
 						if (((i_25_ - i_27_) * (i_24_ - i_28_) - (i_26_ - i_28_) * (i_23_ - i_27_)) > 0
 								&& Class142.aBoolean2299
-								&& (Class14_Sub8_Sub13.method549(Class14_Sub19.anInt3073 + Class3.anInt118,
+								&& (JunkTex.method549(Class14_Sub19.anInt3073 + Class3.anInt118,
 										Static2.anInt3334 + Class3.anInt110, i_26_, i_28_, i_24_, i_25_, i_27_,
 										i_23_))) {
 							Class66.anInt1039 = i_6_;
-							Class14_Sub8_Sub33.anInt4636 = i_7_;
+							JunkTex.anInt4636 = i_7_;
 						}
 						if (((i_21_ - i_23_) * (i_28_ - i_24_) - (i_22_ - i_24_) * (i_27_ - i_23_)) > 0
 								&& Class142.aBoolean2299
-								&& (Class14_Sub8_Sub13.method549(Class14_Sub19.anInt3073 + Class3.anInt118,
+								&& (JunkTex.method549(Class14_Sub19.anInt3073 + Class3.anInt118,
 										Static2.anInt3334 + Class3.anInt110, i_22_, i_24_, i_28_, i_21_, i_23_,
 										i_27_))) {
 							Class66.anInt1039 = i_6_;
-							Class14_Sub8_Sub33.anInt4636 = i_7_;
+							JunkTex.anInt4636 = i_7_;
 						}
 					}
 				}
@@ -129,7 +125,7 @@ public class Class14_Sub30 extends Linkable {
 
 	public static void method941(byte i) {
 		Class150.aClass52_2406.method1209();
-		Class14_Sub8_Sub30.aClass52_4588.method1209();
+		JunkTex.aClass52_4588.method1209();
 		if (i == 11)
 			Class83.aClass52_1339.method1209();
 	}

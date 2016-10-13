@@ -7,10 +7,6 @@ import com.jagex.link.Cacheable;
 import com.jagex.link.Deque;
 import com.jagex.link.Cache;
 
-import rs.tex.Class14_Sub8_Sub14;
-import rs.tex.Class14_Sub8_Sub22;
-import rs.tex.Class14_Sub8_Sub24;
-
 public class Class14_Sub2_Sub5 extends Cacheable {
 	public int anInt3797 = 12800;
 	public Deque aClass2_3801;
@@ -58,11 +54,11 @@ public class Class14_Sub2_Sub5 extends Cacheable {
 		if (i_7_ == i)
 			Class133_Sub1.method1802(i_4_, i_5_, i_3_, 128, i_6_, i_1_, i);
 		else {
-			if (i_4_ - i >= Class118.anInt1982 && Class14_Sub8_Sub14.anInt4327 >= i + i_4_
+			if (i_4_ - i >= Class118.anInt1982 && JunkTex.anInt4327 >= i + i_4_
 					&& Class14_Sub17.anInt3005 <= i_5_ - i_7_ && i_7_ + i_5_ <= Class59.anInt955)
-				Class14_Sub8_Sub24.method606(i_6_, i_3_, i_7_, i_5_, -15882, i_1_, i, i_4_);
+				JunkTex.method606(i_6_, i_3_, i_7_, i_5_, -15882, i_1_, i, i_4_);
 			else
-				Class14_Sub8_Sub22.method593(i_4_, i, i_1_, i_7_, i_2_ ^ ~0x77, i_3_, i_5_, i_6_);
+				JunkTex.method593(i_4_, i, i_1_, i_7_, i_2_ ^ ~0x77, i_3_, i_5_, i_6_);
 			if (i_2_ != 0)
 				aClass20_3815 = null;
 		}

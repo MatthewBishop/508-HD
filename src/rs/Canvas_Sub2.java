@@ -6,13 +6,6 @@ package rs;
 import java.awt.Canvas;
 import java.awt.event.FocusListener;
 
-import rs.tex.Class14_Sub8_Sub12;
-import rs.tex.Class14_Sub8_Sub13;
-import rs.tex.Class14_Sub8_Sub23;
-import rs.tex.Class14_Sub8_Sub38;
-import rs.tex.Class14_Sub8_Sub8;
-import rs.tex.Static;
-
 public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 	public static int anInt54 = 0;
 	public static int anInt55;
@@ -90,8 +83,8 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 	}
 
 	public static void method63(byte i) {
-		while (Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.method840(Class14_Sub8_Sub12.anInt4280) >= 27) {
-			int i_12_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readBits(0, 15);
+		while (JunkTex.aClass14_Sub10_Sub1_4734.method840(JunkTex.anInt4280) >= 27) {
+			int i_12_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 15);
 			if (i_12_ == 32767)
 				break;
 			boolean bool = false;
@@ -100,23 +93,23 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 				bool = true;
 			}
 			Class133_Sub1_Sub2 class133_sub1_sub2 = Class14_Sub4.aClass133_Sub1_Sub2Array2785[i_12_];
-			Static.anIntArray3965[Class14_Sub8_Sub13.anInt4306++] = i_12_;
+			JunkTex.anIntArray3965[JunkTex.anInt4306++] = i_12_;
 			class133_sub1_sub2.anInt3447 = Class14_Sub2_Sub20.anInt4064;
 			class133_sub1_sub2.aClass12_4949 = Class126
-					.method1744(Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readBits(0, 14), 170);
-			int i_13_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readBits(0, 1);
+					.method1744(JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 14), 170);
+			int i_13_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 1);
 			if (i_13_ == 1)
 				Class14_Sub2_Sub7.anIntArray3825[Class64.anInt1012++] = i_12_;
-			int i_14_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readBits(0, 5);
+			int i_14_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 5);
 			if (i_14_ > 15)
 				i_14_ -= 32;
-			int i_15_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readBits(0, 5);
+			int i_15_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 5);
 			if (i_15_ > 15)
 				i_15_ -= 32;
-			int i_16_ = (Class133.anIntArray2179[Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readBits(0, 3)]);
+			int i_16_ = (Class133.anIntArray2179[JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 3)]);
 			if (bool)
 				class133_sub1_sub2.anInt3469 = class133_sub1_sub2.anInt3461 = i_16_;
-			int i_17_ = Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.readBits(0, 1);
+			int i_17_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 1);
 			class133_sub1_sub2.anInt3457 = class133_sub1_sub2.aClass12_4949.anInt296;
 			class133_sub1_sub2.anInt3433 = class133_sub1_sub2.aClass12_4949.anInt323;
 			class133_sub1_sub2.anInt3463 = class133_sub1_sub2.aClass12_4949.anInt276;
@@ -134,7 +127,7 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 				Class12.method213(class133_sub1_sub2.anIntArray3476[0], class133_sub1_sub2.anIntArray3443[0], null,
 						(byte) -35, Class14_Sub2_Sub3.anInt3785, null, class133_sub1_sub2, 0);
 		}
-		Class14_Sub8_Sub38.aClass14_Sub10_Sub1_4734.disableBitAccess();
+		JunkTex.aClass14_Sub10_Sub1_4734.disableBitAccess();
 		if (i > -95)
 			method63((byte) 49);
 	}
@@ -156,7 +149,7 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 							&& class133_sub1_sub2.anInt3436 < 13312)
 						class133_sub6.method1849(Class14_Sub2_Sub20.anInt4064, (byte) -122,
 								class133_sub1_sub2.anInt3495, class133_sub1_sub2.anInt3436,
-								(Static.method1017(class133_sub1_sub2.anInt3495, class133_sub6.anInt3655, (byte) 6,
+								(JunkTex.method1017(class133_sub1_sub2.anInt3495, class133_sub6.anInt3655, (byte) 6,
 										class133_sub1_sub2.anInt3436) - class133_sub6.anInt3667));
 				}
 				if (class133_sub6.anInt3669 < 0) {
@@ -165,17 +158,17 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 					if (i_18_ == Class14_Sub2_Sub10.anInt3868)
 						class133_sub1_sub1 = Class14_Sub3.aClass133_Sub1_Sub1_2748;
 					else
-						class133_sub1_sub1 = (Class14_Sub8_Sub23.aClass133_Sub1_Sub1Array4474[i_18_]);
+						class133_sub1_sub1 = (JunkTex.aClass133_Sub1_Sub1Array4474[i_18_]);
 					if (class133_sub1_sub1 != null && class133_sub1_sub1.anInt3495 >= 0
 							&& class133_sub1_sub1.anInt3495 < 13312 && class133_sub1_sub1.anInt3436 >= 0
 							&& class133_sub1_sub1.anInt3436 < 13312)
 						class133_sub6.method1849(Class14_Sub2_Sub20.anInt4064, (byte) -122,
 								class133_sub1_sub1.anInt3495, class133_sub1_sub1.anInt3436,
-								(Static.method1017(class133_sub1_sub1.anInt3495, class133_sub6.anInt3655, (byte) 21,
+								(JunkTex.method1017(class133_sub1_sub1.anInt3495, class133_sub6.anInt3655, (byte) 21,
 										class133_sub1_sub1.anInt3436) - class133_sub6.anInt3667));
 				}
 				class133_sub6.method1851(-95, Class51.anInt839);
-				Class14_Sub8_Sub8.method519(Class14_Sub2_Sub3.anInt3785, (int) class133_sub6.aDouble3678,
+				JunkTex.method519(Class14_Sub2_Sub3.anInt3785, (int) class133_sub6.aDouble3678,
 						(int) class133_sub6.aDouble3646, (int) class133_sub6.aDouble3633, 60, class133_sub6,
 						class133_sub6.anInt3665, -1L, false);
 			}

@@ -18,11 +18,6 @@ import com.jagex.rt4.RT4;
 import com.jagex.rt4.VertexBuffer;
 import com.jagex.rt4.VertexBufferPointer;
 
-import rs.tex.Class14_Sub8_Sub16;
-import rs.tex.Class14_Sub8_Sub27;
-import rs.tex.Class14_Sub8_Sub33;
-import rs.tex.Static;
-
 public class ModelHD extends Class133_Sub7 {
 	public static ByteBuffer aByteBuffer5050;
 	public static ModelHD aClass133_Sub7_Sub2_5049 = new ModelHD();
@@ -913,24 +908,24 @@ public class ModelHD extends Class133_Sub7 {
 										if (i_235_ != -1) {
 											if (is_210_ == null) {
 												aClass77_5039 = new Class77();
-												is_210_ = aClass77_5039.aShortArray1219 = (Class14_Sub8_Sub33
+												is_210_ = aClass77_5039.aShortArray1219 = (JunkTex
 														.method655(8111, aShortArray5041));
-												is_211_ = aClass77_5039.aShortArray1216 = (Class14_Sub8_Sub33
+												is_211_ = aClass77_5039.aShortArray1216 = (JunkTex
 														.method655(8111, aShortArray5019));
-												is_212_ = aClass77_5039.aShortArray1218 = (Class14_Sub8_Sub33
+												is_212_ = aClass77_5039.aShortArray1218 = (JunkTex
 														.method655(8111, aShortArray5042));
-												is_213_ = aClass77_5039.aShortArray1217 = (Class14_Sub8_Sub33
+												is_213_ = aClass77_5039.aShortArray1217 = (JunkTex
 														.method655(8111, aShortArray5017));
 											}
 											if (is_214_ == null) {
 												Class77 class77 = (modelhd_202_.aClass77_5039 = new Class77());
-												is_214_ = class77.aShortArray1219 = (Class14_Sub8_Sub33.method655(8111,
+												is_214_ = class77.aShortArray1219 = (JunkTex.method655(8111,
 														is_206_));
-												is_215_ = class77.aShortArray1216 = (Class14_Sub8_Sub33.method655(8111,
+												is_215_ = class77.aShortArray1216 = (JunkTex.method655(8111,
 														is_207_));
-												is_216_ = class77.aShortArray1218 = (Class14_Sub8_Sub33.method655(8111,
+												is_216_ = class77.aShortArray1218 = (JunkTex.method655(8111,
 														is_208_));
-												is_217_ = class77.aShortArray1217 = (Class14_Sub8_Sub33.method655(8111,
+												is_217_ = class77.aShortArray1217 = (JunkTex.method655(8111,
 														is_209_));
 											}
 											short i_237_ = aShortArray5041[i_230_];
@@ -1006,9 +1001,9 @@ public class ModelHD extends Class133_Sub7 {
 				if (i_260_ < 3584) {
 					int i_261_ = i_253_ * i_249_ + i_251_ * i_250_ >> 16;
 					int i_262_ = i_261_ + i_254_ << 9;
-					if (i_262_ / i_259_ > Static.anInt425) {
+					if (i_262_ / i_259_ > JunkTex.anInt425) {
 						int i_263_ = i_261_ - i_254_ << 9;
-						if (i_263_ / i_259_ < Class14_Sub8_Sub27.anInt4547) {
+						if (i_263_ / i_259_ < JunkTex.anInt4547) {
 							int i_264_ = i_252_ * i_248_ - i_257_ * i_247_ >> 16;
 							int i_265_ = (i_264_ + (i_254_ * i_247_ + i_256_ * i_248_ >> 16) << 9);
 							if (i_265_ / i_259_ > Class58.anInt948) {
@@ -2017,13 +2012,13 @@ public class ModelHD extends Class133_Sub7 {
 			modelhd_493_.vertexX = vertexX;
 			modelhd_493_.vertexZ = vertexZ;
 		} else {
-			modelhd_493_.vertexX = Class14_Sub8_Sub16.method561(vertexX, 0);
-			modelhd_493_.vertexZ = Class14_Sub8_Sub16.method561(vertexZ, 0);
+			modelhd_493_.vertexX = JunkTex.method561(vertexX, 0);
+			modelhd_493_.vertexZ = JunkTex.method561(vertexZ, 0);
 		}
 		if (bool_483_)
 			modelhd_493_.vertexY = vertexY;
 		else
-			modelhd_493_.vertexY = Class14_Sub8_Sub16.method561(vertexY, 0);
+			modelhd_493_.vertexY = JunkTex.method561(vertexY, 0);
 		if (bool && bool_483_) {
 			modelhd_493_.aClass41_5028 = aClass41_5028;
 			modelhd_493_.aClass50_5013 = aClass50_5013;
@@ -2034,7 +2029,7 @@ public class ModelHD extends Class133_Sub7 {
 		if (bool_484_)
 			modelhd_493_.aShortArray5045 = aShortArray5045;
 		else
-			modelhd_493_.aShortArray5045 = Class14_Sub8_Sub33.method655(8111, aShortArray5045);
+			modelhd_493_.aShortArray5045 = JunkTex.method655(8111, aShortArray5045);
 		if (bool_485_)
 			modelhd_493_.faceAlphas = faceAlphas;
 		else
@@ -2049,10 +2044,10 @@ public class ModelHD extends Class133_Sub7 {
 			modelhd_493_.aShortArray5042 = aShortArray5042;
 			modelhd_493_.aShortArray5017 = aShortArray5017;
 		} else {
-			modelhd_493_.aShortArray5041 = Class14_Sub8_Sub33.method655(8111, aShortArray5041);
-			modelhd_493_.aShortArray5019 = Class14_Sub8_Sub33.method655(8111, aShortArray5019);
-			modelhd_493_.aShortArray5042 = Class14_Sub8_Sub33.method655(8111, aShortArray5042);
-			modelhd_493_.aShortArray5017 = Class14_Sub8_Sub33.method655(8111, aShortArray5017);
+			modelhd_493_.aShortArray5041 = JunkTex.method655(8111, aShortArray5041);
+			modelhd_493_.aShortArray5019 = JunkTex.method655(8111, aShortArray5019);
+			modelhd_493_.aShortArray5042 = JunkTex.method655(8111, aShortArray5042);
+			modelhd_493_.aShortArray5017 = JunkTex.method655(8111, aShortArray5017);
 		}
 		if (RT4.useLighting) {
 			if (bool_487_ && bool_488_ && bool_489_)
@@ -2076,15 +2071,15 @@ public class ModelHD extends Class133_Sub7 {
 			modelhd_493_.aShortArray5038 = aShortArray5038;
 			modelhd_493_.aClass41_5046 = aClass41_5046;
 		} else {
-			modelhd_493_.aShortArray5021 = Class14_Sub8_Sub33.method655(8111, aShortArray5021);
-			modelhd_493_.aShortArray5025 = Class14_Sub8_Sub33.method655(8111, aShortArray5025);
-			modelhd_493_.aShortArray5038 = Class14_Sub8_Sub33.method655(8111, aShortArray5038);
+			modelhd_493_.aShortArray5021 = JunkTex.method655(8111, aShortArray5021);
+			modelhd_493_.aShortArray5025 = JunkTex.method655(8111, aShortArray5025);
+			modelhd_493_.aShortArray5038 = JunkTex.method655(8111, aShortArray5038);
 			modelhd_493_.aClass41_5046 = new VertexBufferPointer();
 		}
 		if (bool_492_)
 			modelhd_493_.aShortArray5037 = aShortArray5037;
 		else
-			modelhd_493_.aShortArray5037 = Class14_Sub8_Sub33.method655(8111, aShortArray5037);
+			modelhd_493_.aShortArray5037 = JunkTex.method655(8111, aShortArray5037);
 		modelhd_493_.anIntArray5034 = anIntArray5034;
 		modelhd_493_.vertexGroups = vertexGroups;
 		modelhd_493_.aByteArray5016 = aByteArray5016;

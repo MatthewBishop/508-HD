@@ -6,11 +6,6 @@ package rs;
 import com.jagex.link.Deque;
 import com.jagex.link.HashTable;
 
-import rs.tex.Class14_Sub8_Sub19;
-import rs.tex.Class14_Sub8_Sub38;
-import rs.tex.Class14_Sub8_Sub4;
-import rs.tex.Static;
-
 public class Class33 {
 	public static int[][] anIntArrayArray575 = new int[104][104];
 	public static int anInt577;
@@ -27,20 +22,20 @@ public class Class33 {
 	}
 
 	public static void method1084(byte i) {
-		if (Static.anInt102 < 128)
-			Static.anInt102 = 128;
-		Class14_Sub8_Sub19.anInt4408 &= 0x7ff;
-		if (Static.anInt102 > 383)
-			Static.anInt102 = 383;
-		int i_0_ = Static.anInt905 >> 7;
+		if (JunkTex.anInt102 < 128)
+			JunkTex.anInt102 = 128;
+		JunkTex.anInt4408 &= 0x7ff;
+		if (JunkTex.anInt102 > 383)
+			JunkTex.anInt102 = 383;
+		int i_0_ = JunkTex.anInt905 >> 7;
 		int i_1_ = Class140.anInt2238 >> 39;
-		int i_2_ = Static.method1017(Class140.anInt2238, Class14_Sub2_Sub3.anInt3785, (byte) 90, Static.anInt905);
+		int i_2_ = JunkTex.method1017(Class140.anInt2238, Class14_Sub2_Sub3.anInt3785, (byte) 90, JunkTex.anInt905);
 		int i_3_ = 0;
 		if (i_1_ > 3 && i_0_ > 3 && i_1_ < 100 && i_0_ < 100) {
 			for (int i_4_ = i_1_ - 4; i_1_ + 4 >= i_4_; i_4_++) {
 				for (int i_5_ = i_0_ - 4; i_0_ + 4 >= i_5_; i_5_++) {
 					int i_6_ = Class14_Sub2_Sub3.anInt3785;
-					if (i_6_ < 3 && (Class14_Sub8_Sub4.tileFlags[1][i_4_][i_5_] & 0x2) == 2)
+					if (i_6_ < 3 && (JunkTex.tileFlags[1][i_4_][i_5_] & 0x2) == 2)
 						i_6_++;
 					int i_7_ = -Class114.tileHeights[i_6_][i_4_][i_5_] + i_2_;
 					if (i_7_ > i_3_)
@@ -53,11 +48,11 @@ public class Class33 {
 			i_8_ = 98048;
 		if (i_8_ < 32768)
 			i_8_ = 32768;
-		if (Class14_Sub8_Sub38.anInt4740 >= i_8_) {
-			if (i_8_ < Class14_Sub8_Sub38.anInt4740)
-				Class14_Sub8_Sub38.anInt4740 += (i_8_ - Class14_Sub8_Sub38.anInt4740) / 80;
+		if (JunkTex.anInt4740 >= i_8_) {
+			if (i_8_ < JunkTex.anInt4740)
+				JunkTex.anInt4740 += (i_8_ - JunkTex.anInt4740) / 80;
 		} else
-			Class14_Sub8_Sub38.anInt4740 += (-Class14_Sub8_Sub38.anInt4740 + i_8_) / 24;
+			JunkTex.anInt4740 += (-JunkTex.anInt4740 + i_8_) / 24;
 	}
 
 	public static void method1085(int i) {
@@ -87,11 +82,11 @@ public class Class33 {
 	}
 
 	public static void method1087(int i, int i_10_, boolean bool, int i_11_, Class9 class9, int i_12_) {
-		Static.anInt3930 = i_10_;
+		JunkTex.anInt3930 = i_10_;
 		if (i != 1936)
 			anIntArrayArray575 = null;
 		Class14_Sub2_Sub11.anInt3889 = 1;
-		Static.anInt1132 = i_12_;
+		JunkTex.anInt1132 = i_12_;
 		Class35.aBoolean593 = bool;
 		Class14_Sub15.anInt2989 = 10000;
 		Class9_Sub1.aClass9_2696 = class9;

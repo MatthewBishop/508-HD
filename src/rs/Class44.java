@@ -3,9 +3,6 @@
  */
 package rs;
 
-import rs.tex.Class14_Sub8_Sub32;
-import rs.tex.Static;
-
 public class Class44 {
 	public static Class9 aClass9_725;
 	public static Class129 aClass129_726;
@@ -28,7 +25,7 @@ public class Class44 {
 	}
 
 	public static void method1155(int i, int i_0_) {
-		Static.anInt427 = i;
+		JunkTex.anInt427 = i;
 		Class37.anInt644 = i_0_;
 		Class14_Sub18.anInt3050 = -1;
 		Static2.method1126((byte) -22);
@@ -62,7 +59,7 @@ public class Class44 {
 		if (i_5_ != -13755)
 			aClass124_728 = null;
 		if (i_7_ == i_4_ && i_9_ == i_6_ && i_3_ == i_8_ && i == i_10_)
-			Class14_Sub8_Sub32.method652(i, i_5_ + 13858, i_3_, i_2_, i_7_, i_6_);
+			JunkTex.method652(i, i_5_ + 13858, i_3_, i_2_, i_7_, i_6_);
 		else {
 			int i_11_ = i_7_;
 			int i_12_ = i_7_ * 3;
@@ -89,7 +86,7 @@ public class Class44 {
 				int i_33_ = i_25_ * i_23_;
 				int i_34_ = i_6_ + (i_31_ + (i_28_ + i_32_) >> 44);
 				int i_35_ = (i_30_ + i_29_ + i_33_ >> 44) + i_7_;
-				Class14_Sub8_Sub32.method652(i_34_, 101, i_35_, i_2_, i_11_, i_14_);
+				JunkTex.method652(i_34_, 101, i_35_, i_2_, i_11_, i_14_);
 				i_11_ = i_35_;
 				i_14_ = i_34_;
 			}

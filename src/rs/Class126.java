@@ -8,14 +8,6 @@ import com.jagex.link.Deque;
 import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class148;
 
-import rs.tex.Class14_Sub8;
-import rs.tex.Class14_Sub8_Sub16;
-import rs.tex.Class14_Sub8_Sub28;
-import rs.tex.Class14_Sub8_Sub29;
-import rs.tex.Class14_Sub8_Sub30;
-import rs.tex.Class14_Sub8_Sub9;
-import rs.tex.Static;
-
 public abstract class Class126 {
 	public static int anInt2089 = 0;
 	public static Deque aClass2_2093 = new Deque();
@@ -72,19 +64,19 @@ public abstract class Class126 {
 	}
 
 	public static void method1743(int i, int i_4_) {
-		if (Class14_Sub8_Sub16.anInt4356 != i_4_) {
-			if (Class14_Sub8_Sub16.anInt4356 == 0)
-				Class14_Sub8_Sub30.method639(-1);
+		if (JunkTex.anInt4356 != i_4_) {
+			if (JunkTex.anInt4356 == 0)
+				JunkTex.method639(-1);
 			if (i_4_ == 40)
-				Static2.method380(Class75.anInt1163, Class14_Sub8_Sub9.aClass124_4242,
-						Class14_Sub8_Sub9.aClass124_4241, true);
+				Static2.method380(Class75.anInt1163, JunkTex.aClass124_4242,
+						JunkTex.aClass124_4241, true);
 			if (i_4_ != 40 && Class21.aClass36_441 != null) {
 				Class21.aClass36_441.method1101((byte) -10);
 				Class21.aClass36_441 = null;
 			}
 			if (i_4_ == 25 || i_4_ == 28) {
 				Class14_Sub18.anInt3064 = 0;
-				Class14_Sub8_Sub28.anInt4560 = 1;
+				JunkTex.anInt4560 = 1;
 				Static2.anInt3732 = 1;
 				Class149.anInt2383 = 0;
 				client.anInt2648 = 0;
@@ -93,20 +85,20 @@ public abstract class Class126 {
 			if (i_4_ == 5)
 				Static2.method385((byte) 67, Class14_Sub3.aClass9_Sub1_2750);
 			else
-				Static.method86(-123);
+				JunkTex.method86(-123);
 			boolean bool = i_4_ == 5 || i_4_ == 10 || i_4_ == 28;
 			if (i != 27252)
 				method1746(58);
-			boolean bool_5_ = (Class14_Sub8_Sub16.anInt4356 == 5 || Class14_Sub8_Sub16.anInt4356 == 10
-					|| Class14_Sub8_Sub16.anInt4356 == 28);
+			boolean bool_5_ = (JunkTex.anInt4356 == 5 || JunkTex.anInt4356 == 10
+					|| JunkTex.anInt4356 == 28);
 			if (!bool_5_ == bool) {
 				if (!bool) {
 					Class69.method1308(2, (byte) -114);
 					Class14_Sub3.method449(true, 4);
 				} else {
-					Class14_Sub8.anInt2856 = Static.anInt97;
+					JunkTex.anInt2856 = JunkTex.anInt97;
 					if (Class14_Sub23.anInt3135 != 0)
-						Class14_Sub8_Sub29.method636(Static.anInt97, 2, i - 1746, 255, false,
+						JunkTex.method636(JunkTex.anInt97, 2, i - 1746, 255, false,
 								(Class125_Sub2.aClass9_Sub1_3374), 0);
 					else
 						Class69.method1308(2, (byte) -115);
@@ -115,7 +107,7 @@ public abstract class Class126 {
 			}
 			if (i_4_ == 25 || i_4_ == 28 || i_4_ == 40)
 				RT4GL.method1627();
-			Class14_Sub8_Sub16.anInt4356 = i_4_;
+			JunkTex.anInt4356 = i_4_;
 		}
 	}
 
@@ -127,7 +119,7 @@ public abstract class Class126 {
 		}
 		if (i_6_ != 170)
 			anIntArray2094 = null;
-		byte[] is = (Class108.aClass9_1817.method163(Static.method1229(i, 122),
+		byte[] is = (Class108.aClass9_1817.method163(JunkTex.method1229(i, 122),
 				Class153.method2045(i, i_6_ ^ ~0x63e7ad2), 0));
 		Class12 class12_8_ = new Class12();
 		class12_8_.anInt337 = i;

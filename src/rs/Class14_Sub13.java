@@ -7,9 +7,6 @@ import com.jagex.io.Buffer;
 import com.jagex.link.Linkable;
 import com.jagex.util.Util;
 
-import rs.tex.Class14_Sub8_Sub36;
-import rs.tex.Class14_Sub8_Sub6;
-
 public class Class14_Sub13 extends Linkable {
 	public static Class124 aClass124_2955 = Class14_Sub2_Sub2.method263(1178, "Fallen lassen");
 	public static Class9_Sub1 aClass9_Sub1_2958;
@@ -65,7 +62,7 @@ public class Class14_Sub13 extends Linkable {
 			i_14_ += 2;
 			i_13_ += i_14_;
 			if (i_13_ >= 0 && i_11_ >= 1) {
-				Class14_Sub8_Sub6.anIntArray4191[i_11_] = i_7_;
+				JunkTex.anIntArray4191[i_11_] = i_7_;
 				i_11_--;
 				i_13_ -= i_11_ << 1;
 			}
@@ -84,7 +81,7 @@ public class Class14_Sub13 extends Linkable {
 					int[] is_21_ = Static2.anIntArrayArray4038[i_4_ - i_10_];
 					int i_22_ = i + i_7_;
 					int[] is_23_ = Static2.anIntArrayArray4038[i_10_ + i_4_];
-					int i_24_ = Class14_Sub8_Sub6.anIntArray4191[i_10_];
+					int i_24_ = JunkTex.anIntArray4191[i_10_];
 					int i_25_ = i - i_24_;
 					int i_26_ = -i_7_ + i;
 					int i_27_ = i_24_ + i;
@@ -101,7 +98,7 @@ public class Class14_Sub13 extends Linkable {
 			int i_30_ = i_10_ + i;
 			int i_31_ = i - i_10_;
 			if (i_8_ > i_7_) {
-				int i_32_ = (i_11_ >= i_7_ ? i_11_ : Class14_Sub8_Sub6.anIntArray4191[i_7_]);
+				int i_32_ = (i_11_ >= i_7_ ? i_11_ : JunkTex.anIntArray4191[i_7_]);
 				int i_33_ = i + i_32_;
 				int i_34_ = -i_32_ + i;
 				Class51.method1201(is_28_, i_31_, i_34_, -5973, i_5_);
@@ -125,7 +122,7 @@ public class Class14_Sub13 extends Linkable {
 					&& Class9.anIntArray215[i_39_] < i_38_ + i_35_
 					&& i_37_ < (Class74.anIntArray1135[i_39_] + Class137.anIntArray2205[i_39_])
 					&& Class74.anIntArray1135[i_39_] < i_37_ + i_36_)
-				Class14_Sub8_Sub36.aBooleanArray4698[i_39_] = true;
+				JunkTex.aBooleanArray4698[i_39_] = true;
 		}
 	}
 

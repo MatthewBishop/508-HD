@@ -8,12 +8,6 @@ import java.util.TimeZone;
 
 import com.jagex.rt4.Class148_Sub1;
 
-import rs.tex.Class14_Sub8_Sub19;
-import rs.tex.Class14_Sub8_Sub31;
-import rs.tex.Class14_Sub8_Sub38;
-import rs.tex.Class14_Sub8_Sub39;
-import rs.tex.Static;
-
 public class Class146 {
 	public int[] anIntArray2350;
 	public static Calendar aCalendar2351;
@@ -56,7 +50,7 @@ public class Class146 {
 		for (int i_4_ = 0; i_4_ < Class32.anInt547; i_4_++)
 			class148_sub1s[i_4_] = new Class148_Sub1(Class14_Sub11.anInt2952, Class14_Sub30.anInt3279,
 					Class40.anIntArray675[i_4_], Class14_Sub2_Sub12.anIntArray3918[i_4_], Class17.anIntArray402[i_4_],
-					Class76.anIntArray1204[i_4_], Class12.aByteArrayArray310[i_4_], Static.anIntArray1114);
+					Class76.anIntArray1204[i_4_], Class12.aByteArrayArray310[i_4_], JunkTex.anIntArray1114);
 		Class129.method1761((byte) 103);
 		if (i != -111)
 			method1995(71);
@@ -70,11 +64,11 @@ public class Class146 {
 			if (i_6_ == 1)
 				l = Class14_Sub2_Sub12.method323(i_8_, i_10_, i_7_);
 			else if (i_6_ == 2)
-				l = Class14_Sub8_Sub38.method675(i_8_, i_10_, i_7_);
+				l = JunkTex.method675(i_8_, i_10_, i_7_);
 			else if (i_6_ == 3)
-				l = Class14_Sub8_Sub19.method578(i_8_, i_10_, i_7_);
+				l = JunkTex.method578(i_8_, i_10_, i_7_);
 		} else
-			l = Static.method79(i_8_, i_10_, i_7_);
+			l = JunkTex.method79(i_8_, i_10_, i_7_);
 		int i_11_ = -1;
 		i_11_ = (int) (l >>> 32) & 0x7fffffff;
 		boolean bool = false;
@@ -90,7 +84,7 @@ public class Class146 {
 			Class133 class133 = null;
 			Class133 class133_15_ = null;
 			if (i_6_ == 0) {
-				Class113 class113 = Class14_Sub8_Sub39.method681(i_8_, i_10_, i_7_);
+				Class113 class113 = JunkTex.method681(i_8_, i_10_, i_7_);
 				if (class113 != null) {
 					class133_15_ = class113.aClass133_1884;
 					class133 = class113.aClass133_1877;
@@ -105,7 +99,7 @@ public class Class146 {
 				}
 			} else if (i_6_ != 2) {
 				if (i_6_ == 3) {
-					Class4 class4 = Class14_Sub8_Sub31.method649(i_8_, i_10_, i_7_);
+					Class4 class4 = JunkTex.method649(i_8_, i_10_, i_7_);
 					if (class4 != null)
 						class133 = class4.aClass133_124;
 					if (class79.anInt1229 == 1)

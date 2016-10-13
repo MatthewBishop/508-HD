@@ -7,9 +7,6 @@ import java.math.BigInteger;
 
 import com.jagex.io.Buffer;
 
-import rs.tex.Class14_Sub8_Sub29;
-import rs.tex.Static;
-
 public class Class9_Sub1 extends Class9 {
 	public int anInt2687;
 	public static int anInt2688;
@@ -29,7 +26,7 @@ public class Class9_Sub1 extends Class9 {
 		if (method153(i_0_, -1)) {
 			int i_1_ = 79 % ((i + 86) / 36);
 			if (aClass114_2689 == null || aBooleanArray2698 == null || !aBooleanArray2698[i_0_])
-				Class14_Sub8_Sub29.method633((byte) 2, 100, this, anInt2687, true, anIntArray202[i_0_], i_0_);
+				JunkTex.method633((byte) 2, 100, this, anInt2687, true, anIntArray202[i_0_], i_0_);
 			else
 				Class63.method1277(-5761, this, i_0_, aClass114_2689);
 		}
@@ -48,7 +45,7 @@ public class Class9_Sub1 extends Class9 {
 		aBoolean2691 = bool_5_;
 		anInt2687 = i;
 		aClass114_2689 = class114;
-		Static.method969(anInt2687, this, (byte) -71);
+		JunkTex.method969(anInt2687, this, (byte) -71);
 	}
 
 	public void method180(int i, int i_6_, int i_7_) {
@@ -57,7 +54,7 @@ public class Class9_Sub1 extends Class9 {
 			aClass114_2693 = null;
 		anInt2700 = i_6_;
 		if (aClass114_2693 == null)
-			Class14_Sub8_Sub29.method633((byte) 0, 126, this, 255, true, anInt2692, anInt2687);
+			JunkTex.method633((byte) 0, 126, this, 255, true, anInt2692, anInt2687);
 		else
 			Class63.method1277(-5761, this, anInt2687, aClass114_2693);
 	}
@@ -75,24 +72,24 @@ public class Class9_Sub1 extends Class9 {
 				if (aBoolean2697)
 					throw new RuntimeException();
 				if (is == null)
-					Class14_Sub8_Sub29.method633((byte) 0, 120, this, 255, true, anInt2692, anInt2687);
+					JunkTex.method633((byte) 0, 120, this, 255, true, anInt2692, anInt2687);
 				else {
 					Class7.aCRC32_171.reset();
 					Class7.aCRC32_171.update(is, 0, is.length);
 					int i_9_ = (int) Class7.aCRC32_171.getValue();
 					if (anInt2692 != i_9_)
-						Class14_Sub8_Sub29.method633((byte) 0, 120, this, 255, true, anInt2692, anInt2687);
+						JunkTex.method633((byte) 0, 120, this, 255, true, anInt2692, anInt2687);
 					else {
 						Buffer class14_sub10 = new Buffer(Class7_Sub3_Sub1.method139(-28009, is));
 						int i_10_ = class14_sub10.readUByte();
 						if (i_10_ != 5 && i_10_ != 6)
-							Class14_Sub8_Sub29.method633((byte) 0, 114, this, 255, true, anInt2692, anInt2687);
+							JunkTex.method633((byte) 0, 114, this, 255, true, anInt2692, anInt2687);
 						else {
 							int i_11_ = 0;
 							if (i_10_ >= 6)
 								i_11_ = class14_sub10.getInt((byte) -107);
 							if (i_11_ != anInt2700)
-								Class14_Sub8_Sub29.method633((byte) 0, 101, this, 255, true, anInt2692, anInt2687);
+								JunkTex.method633((byte) 0, 101, this, 255, true, anInt2692, anInt2687);
 							else {
 								method147(is, i_8_ ^ 0x38);
 								method185(-24792);
@@ -106,7 +103,7 @@ public class Class9_Sub1 extends Class9 {
 				if (is == null || is.length <= 2) {
 					aBooleanArray2698[i] = false;
 					if (aBoolean2691 || bool)
-						Class14_Sub8_Sub29.method633((byte) 2, i_8_ ^ 0x45, this, anInt2687, bool, anIntArray202[i], i);
+						JunkTex.method633((byte) 2, i_8_ ^ 0x45, this, anInt2687, bool, anIntArray202[i], i);
 				} else {
 					Class7.aCRC32_171.reset();
 					Class7.aCRC32_171.update(is, 0, is.length - 2);
@@ -115,7 +112,7 @@ public class Class9_Sub1 extends Class9 {
 					if (anIntArray202[i] != i_12_ || i_13_ != anIntArray194[i]) {
 						aBooleanArray2698[i] = false;
 						if (aBoolean2691 || bool)
-							Class14_Sub8_Sub29.method633((byte) 2, 108, this, anInt2687, bool, anIntArray202[i], i);
+							JunkTex.method633((byte) 2, 108, this, anInt2687, bool, anIntArray202[i], i);
 					} else {
 						aBooleanArray2698[i] = true;
 						if (bool)

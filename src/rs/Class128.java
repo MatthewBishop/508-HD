@@ -5,9 +5,6 @@ package rs;
 
 import com.jagex.link.Deque;
 
-import rs.tex.Class14_Sub8_Sub19;
-import rs.tex.Class14_Sub8_Sub6;
-
 public class Class128 {
 	public static Deque[][][] aClass2ArrayArrayArray2119 = new Deque[4][104][104];
 	public static Class124 aClass124_2122;
@@ -41,13 +38,13 @@ public class Class128 {
 			int i_5_, int i_6_, int i_7_) {
 		if (class133 == null)
 			return true;
-		return Class14_Sub8_Sub19.method580(i, i_4_, i_5_, i_6_ - i_4_ + 1, i_7_ - i_5_ + 1, i_0_, i_1_, i_2_, class133,
+		return JunkTex.method580(i, i_4_, i_5_, i_6_ - i_4_ + 1, i_7_ - i_5_ + 1, i_0_, i_1_, i_2_, class133,
 				i_3_, true, l);
 	}
 
 	public static void method1758(int i, byte i_8_) {
-		if (Class14_Sub8_Sub6.anIntArray4191 == null || i > Class14_Sub8_Sub6.anIntArray4191.length)
-			Class14_Sub8_Sub6.anIntArray4191 = new int[i];
+		if (JunkTex.anIntArray4191 == null || i > JunkTex.anIntArray4191.length)
+			JunkTex.anIntArray4191 = new int[i];
 		int i_9_ = -29 % ((35 - i_8_) / 50);
 	}
 
