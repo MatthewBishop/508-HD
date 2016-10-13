@@ -47,7 +47,7 @@ public class Class15 {
 
 	public static void method946(byte i) {
 		Class133_Sub1_Sub1.aClass52_4926.clear();
-		Class125.aClass52_2075.clear();
+		JunkTex.aClass52_2075.clear();
 		Class70.aClass52_1077.clear();
 		if (i != -2)
 			method945(-17);

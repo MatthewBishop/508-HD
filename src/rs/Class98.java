@@ -27,7 +27,7 @@ public class Class98 {
 			JunkTex.method569(-80);
 		else if (i != -1 && (JunkTex.anInt2856 != i || !Class14_Sub11.method852(14326))
 				&& Class14_Sub23.anInt3135 != 0 && !Class14_Sub7.aBoolean2827)
-			JunkTex.method636(i, 2, 25506, Class14_Sub23.anInt3135, false, Class125_Sub2.aClass9_Sub1_3374,
+			JunkTex.method636(i, 2, 25506, Class14_Sub23.anInt3135, false, JunkTex.aClass9_Sub1_3374,
 					0);
 		JunkTex.anInt2856 = i;
 	}

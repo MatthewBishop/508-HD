@@ -5,7 +5,6 @@ package rs;
 
 import com.jagex.link.Linkable;
 import com.jagex.map.SceneCluster;
-import com.jagex.rt4.RT4;
 
 public class Class14_Sub25 extends Linkable {
 	public static boolean[][] aBooleanArrayArray3170;

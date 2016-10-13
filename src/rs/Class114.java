@@ -2,16 +2,8 @@ package rs;
 
 import java.io.EOFException;
 import java.io.IOException;
-import rs.Class115;
-import rs.Class124;
-import rs.Class125;
-import rs.Class133_Sub1_Sub1;
-import rs.Class14_Sub2_Sub2;
-import rs.Class14_Sub2_Sub7;
-import rs.Class14_Sub3;
-import rs.Class15;
-import rs.Class54;
-import rs.Class76;
+
+import com.jagex.util.Util;
 
 public class Class114 {
 
@@ -179,7 +171,7 @@ public class Class114 {
 				return (byte[]) var3;
 			}
 		} catch (Throwable var28) {
-			throw JunkTex.method554(var28, "rl.D(" + var1 + ',' + var2 + ')');
+			throw Util.error(var28, "rl.D(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -210,7 +202,7 @@ public class Class114 {
 							;
 						}
 					} catch (Throwable var11) {
-						throw JunkTex.method554(var11, "rl.C(" + var1 + ','
+						throw Util.error(var11, "rl.C(" + var1 + ','
 								+ (var2 != null ? "{...}" : "null") + ',' + var3 + ',' + var4 + ')');
 					}
 				}
@@ -414,7 +406,7 @@ public class Class114 {
 				return var6;
 			}
 		} catch (Throwable var29) {
-			throw JunkTex.method554(var29, "rl.B(" + var1 + ',' + var2 + ',' + var3 + ','
+			throw Util.error(var29, "rl.B(" + var1 + ',' + var2 + ',' + var3 + ','
 					+ (var4 != null ? "{...}" : "null") + ',' + var5 + ')');
 		}
 	}
@@ -439,7 +431,7 @@ public class Class114 {
 			}
 
 		} catch (Throwable var4) {
-			throw JunkTex.method554(var4, "rl.E(" + var0 + ')');
+			throw Util.error(var4, "rl.E(" + var0 + ')');
 		}
 	}
 
@@ -448,7 +440,7 @@ public class Class114 {
 			Class14_Sub2_Sub7.method289((byte) 124, var0.length - 1, var0, var1, 0);
 			int var3 = -12 % ((-5 - var2) / 58);
 		} catch (RuntimeException var4) {
-			throw JunkTex.method554(var4, "rl.A(" + (var0 != null ? "{...}" : "null") + ','
+			throw Util.error(var4, "rl.A(" + (var0 != null ? "{...}" : "null") + ','
 					+ (var1 != null ? "{...}" : "null") + ',' + var2 + ')');
 		}
 	}
@@ -493,12 +485,12 @@ public class Class114 {
 
 			if (!var4) {
 				Class15.method943(
-						JunkTex.method515(new Class124[] { Class125.aClass124_2077, var3 }, (byte) -120),
+						JunkTex.method515(new Class124[] { JunkTex.aClass124_2077, var3 }, (byte) -120),
 						false, JunkTex.aClass124_4244, 0);
 			}
 
 		} catch (RuntimeException var7) {
-			throw JunkTex.method554(var7,
+			throw Util.error(var7,
 					"rl.F(" + (var0 != null ? "{...}" : "null") + ',' + var1 + ',' + var2 + ')');
 		}
 	}
@@ -508,7 +500,7 @@ public class Class114 {
 			String var1 = "Cache:" + this.anInt1898;
 			return var1;
 		} catch (RuntimeException var2) {
-			throw JunkTex.method554(var2, "rl.toString()");
+			throw Util.error(var2, "rl.toString()");
 		}
 	}
 
@@ -519,7 +511,7 @@ public class Class114 {
 			this.aClass76_1905 = var3;
 			this.aClass76_1901 = var2;
 		} catch (RuntimeException var6) {
-			throw JunkTex.method554(var6, "rl.<init>(" + var1 + ',' + (var2 != null ? "{...}" : "null") + ','
+			throw Util.error(var6, "rl.<init>(" + var1 + ',' + (var2 != null ? "{...}" : "null") + ','
 					+ (var3 != null ? "{...}" : "null") + ',' + var4 + ')');
 		}
 	}

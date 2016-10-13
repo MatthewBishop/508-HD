@@ -5,8 +5,8 @@ package rs;
 
 import com.jagex.io.Buffer;
 import com.jagex.link.ref.SoftCache;
-import com.jagex.rt4.Class14_Sub2_Sub19;
 import com.jagex.rt4.AtmosphericChunk;
+import com.jagex.rt4.Class14_Sub2_Sub19;
 
 public class Class150 {
 	public int anInt2405;

@@ -84,7 +84,7 @@ public class Class60 {
 								|| class79.aBoolean1228) {
 							if (!class79.method1379(120)) {
 								bool = false;
-								Class149.anInt2383++;
+								JunkTex.anInt2383++;
 							}
 							bool_7_ = true;
 						}

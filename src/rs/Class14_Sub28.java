@@ -82,9 +82,9 @@ public class Class14_Sub28 extends Linkable {
 			for (int i_5_ = 0; JunkTex.anInt4729 - 1 > i_5_; i_5_++) {
 				if (Class14_Sub29.aShortArray3262[i_5_] < 1000 && Class14_Sub29.aShortArray3262[i_5_ + 1] > 1000) {
 					bool = false;
-					Class124 class124 = RuntimeException_Sub1.aClass124Array2459[i_5_];
-					RuntimeException_Sub1.aClass124Array2459[i_5_] = RuntimeException_Sub1.aClass124Array2459[i_5_ + 1];
-					RuntimeException_Sub1.aClass124Array2459[i_5_ + 1] = class124;
+					Class124 class124 = JunkTex.aClass124Array2459[i_5_];
+					JunkTex.aClass124Array2459[i_5_] = JunkTex.aClass124Array2459[i_5_ + 1];
+					JunkTex.aClass124Array2459[i_5_ + 1] = class124;
 					Class124 class124_6_ = Class112.aClass124Array1875[i_5_];
 					Class112.aClass124Array1875[i_5_] = Class112.aClass124Array1875[i_5_ + 1];
 					Class112.aClass124Array1875[i_5_ + 1] = class124_6_;

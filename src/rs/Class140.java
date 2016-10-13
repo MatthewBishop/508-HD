@@ -31,9 +31,9 @@ public class Class140 {
 		}
 		if (i <= 67)
 			method1959(null, -107);
-		if (Class125_Sub2.aClass94_3388 != null) {
-			Class103.method1531(Class125_Sub2.aClass94_3388);
-			Class125_Sub2.aClass94_3388 = null;
+		if (JunkTex.aClass94_3388 != null) {
+			Class103.method1531(JunkTex.aClass94_3388);
+			JunkTex.aClass94_3388 = null;
 		}
 	}
 

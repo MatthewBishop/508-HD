@@ -45,7 +45,7 @@ public class Class69 {
 		Class56.anIntArray917 = null;
 		JunkTex.aByteArrayArrayArray4130 = null;
 		Class14_Sub2_Sub5.aByteArrayArrayArray3816 = null;
-		Class14_Sub22.anIntArrayArrayArray3125 = null;
+		JunkTex.anIntArrayArrayArray3125 = null;
 		Class14_Sub2_Sub9.aByteArrayArrayArray3864 = null;
 		Class86.aByteArrayArrayArray1383 = null;
 		Class14_Sub25.anIntArrayArrayArray3174 = null;

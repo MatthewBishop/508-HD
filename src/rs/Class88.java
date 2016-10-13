@@ -60,7 +60,7 @@ public class Class88 {
 	}
 
 	public static void method1439(int i, int i_4_, int i_5_, int i_6_) {
-		Class14_Sub29 class14_sub29 = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_4_][i_5_];
+		Class14_Sub29 class14_sub29 = JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_4_][i_5_];
 		if (class14_sub29 != null) {
 			Class37 class37 = class14_sub29.aClass37_3255;
 			if (class37 != null) {

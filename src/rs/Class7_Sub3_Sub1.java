@@ -66,7 +66,7 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 	}
 
 	public static void method138(boolean bool, Class9 class9, Class9 class9_10_, boolean bool_11_) {
-		Class125_Sub2.aBoolean3375 = bool_11_;
+		JunkTex.aBoolean3375 = bool_11_;
 		if (!bool) {
 			Class15.aClass9_382 = class9;
 			Static2.aClass9_2923 = class9_10_;
@@ -109,41 +109,41 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 			else if (anInt3714 == 1) {
 				int i_19_ = Class150.anInt2423 / 5;
 				int i_20_ = i_19_ + (JunkTex.anInt4266 + 140);
-				if (i_20_ <= Class125_Sub1.anInt3367 && Class125_Sub1.anInt3367 <= i_20_ + 14
+				if (i_20_ <= JunkTex.anInt3367 && JunkTex.anInt3367 <= i_20_ + 14
 						&& Class134.anInt2573 + 4 <= Class139.anInt2230
 						&& Class134.anInt2573 + 18 >= Class139.anInt2230)
 					Class32.method1082(0, 0, 54);
-				else if (Class125_Sub1.anInt3367 >= i_20_ + 15 && i_20_ + 80 >= Class125_Sub1.anInt3367
+				else if (JunkTex.anInt3367 >= i_20_ + 15 && i_20_ + 80 >= JunkTex.anInt3367
 						&& Class139.anInt2230 >= Class134.anInt2573 + 4
 						&& Class139.anInt2230 <= Class134.anInt2573 + 18)
 					Class32.method1082(0, 1, i + 29310);
 				else {
 					int i_21_ = i_19_ + (JunkTex.anInt4266 + 250);
-					if (i_21_ <= Class125_Sub1.anInt3367 && i_21_ + 14 >= Class125_Sub1.anInt3367
+					if (i_21_ <= JunkTex.anInt3367 && i_21_ + 14 >= JunkTex.anInt3367
 							&& Class139.anInt2230 >= Class134.anInt2573 + 4
 							&& Class134.anInt2573 + 18 >= Class139.anInt2230)
 						Class32.method1082(1, 0, -118);
-					else if (i_21_ + 15 <= Class125_Sub1.anInt3367 && i_21_ + 80 >= Class125_Sub1.anInt3367
+					else if (i_21_ + 15 <= JunkTex.anInt3367 && i_21_ + 80 >= JunkTex.anInt3367
 							&& Class139.anInt2230 >= Class134.anInt2573 + 4
 							&& Class134.anInt2573 + 18 >= Class139.anInt2230)
 						Class32.method1082(1, 1, -111);
 					else {
 						int i_22_ = JunkTex.anInt4266 - (-i_19_ - 360);
-						if (Class125_Sub1.anInt3367 >= i_22_ && Class125_Sub1.anInt3367 <= i_22_ + 14
+						if (JunkTex.anInt3367 >= i_22_ && JunkTex.anInt3367 <= i_22_ + 14
 								&& Class134.anInt2573 + 4 <= Class139.anInt2230
 								&& Class134.anInt2573 + 18 >= Class139.anInt2230)
 							Class32.method1082(2, 0, i + 29476);
-						else if (i_22_ + 15 <= Class125_Sub1.anInt3367 && Class125_Sub1.anInt3367 <= i_22_ + 80
+						else if (i_22_ + 15 <= JunkTex.anInt3367 && JunkTex.anInt3367 <= i_22_ + 80
 								&& (Class134.anInt2573 + 4 <= Class139.anInt2230)
 								&& (Class134.anInt2573 + 18 >= Class139.anInt2230))
 							Class32.method1082(2, 1, -112);
 						else {
 							int i_23_ = JunkTex.anInt4266 + i_19_ + 470;
-							if (i_23_ <= Class125_Sub1.anInt3367 && i_23_ + 14 >= Class125_Sub1.anInt3367
+							if (i_23_ <= JunkTex.anInt3367 && i_23_ + 14 >= JunkTex.anInt3367
 									&& Class134.anInt2573 + 4 <= Class139.anInt2230
 									&& (Class134.anInt2573 + 18 >= Class139.anInt2230))
 								Class32.method1082(3, 0, 51);
-							else if (Class125_Sub1.anInt3367 >= i_23_ + 15 && Class125_Sub1.anInt3367 <= i_23_ + 80
+							else if (JunkTex.anInt3367 >= i_23_ + 15 && JunkTex.anInt3367 <= i_23_ + 80
 									&& (Class139.anInt2230 >= Class134.anInt2573 + 4)
 									&& (Class134.anInt2573 + 18 >= Class139.anInt2230))
 								Class32.method1082(3, 1, i + 29514);
@@ -168,13 +168,13 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 									Class124 class124 = Static2.aClass124_4039;
 									if (Class7.anInt182 != 0)
 										class124 = (JunkTex.method515(
-												(new Class124[] { Class149.aClass124_2395,
+												(new Class124[] { JunkTex.aClass124_2395,
 														(Class83.method1407(104, (class45.anInt744 + 7000))) }),
 												(byte) -19));
 									Class124 class124_24_ = (JunkTex.method515((new Class124[] {
-											Class125_Sub3.aClass124_3408, class45.aClass124_741, Class54.aClass124_883,
+											JunkTex.aClass124_3408, class45.aClass124_741, Class54.aClass124_883,
 											class124, Class14_Sub19.aClass124_3065,
-											(Class83.method1407(20, Class125_Sub2.language)), Static2.aClass124_755,
+											(Class83.method1407(20, JunkTex.language)), Static2.aClass124_755,
 											(Class83.method1407(28, (Class14_Sub2_Sub11.anInt3884))),
 											Class14_Sub17.aClass124_3014, Class83.method1407(71, 1),
 											(Static2.aClass124_4044),

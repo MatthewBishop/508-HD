@@ -56,7 +56,6 @@ public class Class7 {
 	}
 
 	public static Class14_Sub2_Sub19 method117(Class9 class9, int i, byte i_4_) {
-		int i_5_ = -86 / ((17 - i_4_) / 57);
 		if (!JunkTex.method1027(class9, i, (byte) 126)) {
 			Class14_Sub2_Sub19 class14_sub2_sub19 = null;
 			return class14_sub2_sub19;

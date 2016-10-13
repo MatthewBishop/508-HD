@@ -5,8 +5,8 @@ package rs;
 
 import com.jagex.io.Buffer;
 import com.jagex.link.Deque;
-import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class148;
+import com.jagex.rt4.RT4GL;
 
 public abstract class Class126 {
 	public static int anInt2089 = 0;
@@ -78,7 +78,7 @@ public abstract class Class126 {
 				Class14_Sub18.anInt3064 = 0;
 				JunkTex.anInt4560 = 1;
 				Static2.anInt3732 = 1;
-				Class149.anInt2383 = 0;
+				JunkTex.anInt2383 = 0;
 				client.anInt2648 = 0;
 				Class69.method1311((byte) 118);
 			}
@@ -99,7 +99,7 @@ public abstract class Class126 {
 					JunkTex.anInt2856 = JunkTex.anInt97;
 					if (Class14_Sub23.anInt3135 != 0)
 						JunkTex.method636(JunkTex.anInt97, 2, i - 1746, 255, false,
-								(Class125_Sub2.aClass9_Sub1_3374), 0);
+								(JunkTex.aClass9_Sub1_3374), 0);
 					else
 						Class69.method1308(2, (byte) -115);
 					Class14_Sub3.method449(false, i ^ 0x6a70);

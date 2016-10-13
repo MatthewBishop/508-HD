@@ -29,7 +29,7 @@ public class Class82 {
 		if (class94.aClass124Array1573 == null || class94.aClass124Array1573.length <= i_0_
 				|| class94.aClass124Array1573[i_0_] == null
 				|| class94.aClass124Array1573[i_0_].method1684((byte) 9).method1693(0) == 0) {
-			if (Class125_Sub3.aBoolean3392) {
+			if (JunkTex.aBoolean3392) {
 				Class124 class124 = (JunkTex.method515(
 						new Class124[] { Class7_Sub3_Sub1.aClass124_3706, Class83.method1407(61, i_0_) }, (byte) -102));
 				return class124;

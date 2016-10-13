@@ -193,23 +193,6 @@ public class Class72 {
 			fs_10_[i_11_++] = fs[i++];
 	}
 
-	public static void method1324(int[] is, int i, int i_13_, int i_14_) {
-		i_13_ = i + i_13_ - 7;
-		while (i < i_13_) {
-			is[i++] = i_14_;
-			is[i++] = i_14_;
-			is[i++] = i_14_;
-			is[i++] = i_14_;
-			is[i++] = i_14_;
-			is[i++] = i_14_;
-			is[i++] = i_14_;
-			is[i++] = i_14_;
-		}
-		i_13_ += 7;
-		while (i < i_13_)
-			is[i++] = i_14_;
-	}
-
 	public static void method1325(int[] is, int i, int[] is_15_, int i_16_, int i_17_) {
 		if (is == is_15_) {
 			if (i == i_16_)

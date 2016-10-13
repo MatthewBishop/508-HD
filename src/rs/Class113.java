@@ -14,7 +14,7 @@ public class Class113 {
 		JunkTex.anInt4255 = 0;
 		Class59.method1262();
 		JunkTex.method1131(-128);
-		Class125_Sub1.method1728((byte) 22);
+		JunkTex.method1728((byte) 22);
 		JunkTex.method571(false);
 		for (int i = 0; JunkTex.anInt4255 > i; i++) {
 			int i_0_ = Class36.anIntArray626[i];

@@ -1,11 +1,11 @@
 package com.jagex.rt4.lights;
 
+import com.jagex.image.transform.Class14_Sub8_Sub12;
+import com.jagex.image.transform.TexStatic;
 import com.jagex.io.Buffer;
 
 import rs.Class3;
 import rs.JunkTex;
-import rs.tex.Class14_Sub8_Sub12;
-import rs.tex.TexStatic;
 
 public class Light {
 	public boolean aBoolean1112;

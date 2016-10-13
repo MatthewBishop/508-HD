@@ -100,29 +100,29 @@ public class Class22 {
 		if (i_8_ == 0) {
 			Class153 class153 = new Class153(i_15_, i_16_, i_17_, i_18_, -1, i_23_, false);
 			for (int i_25_ = i; i_25_ >= 0; i_25_--) {
-				if ((Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_25_][i_6_][i_7_]) == null)
-					Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_25_][i_6_][i_7_] = new Class14_Sub29(i_25_, i_6_,
+				if ((JunkTex.aClass14_Sub29ArrayArrayArray3368[i_25_][i_6_][i_7_]) == null)
+					JunkTex.aClass14_Sub29ArrayArrayArray3368[i_25_][i_6_][i_7_] = new Class14_Sub29(i_25_, i_6_,
 							i_7_);
 			}
-			Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_6_][i_7_].aClass153_3248 = class153;
+			JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_6_][i_7_].aClass153_3248 = class153;
 		} else if (i_8_ == 1) {
 			Class153 class153 = new Class153(i_19_, i_20_, i_21_, i_22_, i_10_, i_24_,
 					(i_11_ == i_12_ && i_11_ == i_13_ && i_11_ == i_14_));
 			for (int i_26_ = i; i_26_ >= 0; i_26_--) {
-				if ((Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_26_][i_6_][i_7_]) == null)
-					Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_26_][i_6_][i_7_] = new Class14_Sub29(i_26_, i_6_,
+				if ((JunkTex.aClass14_Sub29ArrayArrayArray3368[i_26_][i_6_][i_7_]) == null)
+					JunkTex.aClass14_Sub29ArrayArrayArray3368[i_26_][i_6_][i_7_] = new Class14_Sub29(i_26_, i_6_,
 							i_7_);
 			}
-			Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_6_][i_7_].aClass153_3248 = class153;
+			JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_6_][i_7_].aClass153_3248 = class153;
 		} else {
 			Class6 class6 = new Class6(i_8_, i_9_, i_10_, i_6_, i_7_, i_11_, i_12_, i_13_, i_14_, i_15_, i_16_, i_17_,
 					i_18_, i_19_, i_20_, i_21_, i_22_, i_23_, i_24_);
 			for (int i_27_ = i; i_27_ >= 0; i_27_--) {
-				if ((Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_27_][i_6_][i_7_]) == null)
-					Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_27_][i_6_][i_7_] = new Class14_Sub29(i_27_, i_6_,
+				if ((JunkTex.aClass14_Sub29ArrayArrayArray3368[i_27_][i_6_][i_7_]) == null)
+					JunkTex.aClass14_Sub29ArrayArrayArray3368[i_27_][i_6_][i_7_] = new Class14_Sub29(i_27_, i_6_,
 							i_7_);
 			}
-			Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_6_][i_7_].aClass6_3233 = class6;
+			JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_6_][i_7_].aClass6_3233 = class6;
 		}
 	}
 

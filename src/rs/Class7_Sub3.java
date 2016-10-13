@@ -35,7 +35,7 @@ public class Class7_Sub3 extends Class7 {
 		class14_sub10.method809(Class53.aBoolean865 ? 1 : 0);
 		class14_sub10.method809(Class139.aBoolean2233 ? 1 : 0);
 		class14_sub10.method809(!Static2.aBoolean2372 ? 0 : 1);
-		class14_sub10.method809(!Class125_Sub3.aBoolean3397 ? 0 : 1);
+		class14_sub10.method809(!JunkTex.aBoolean3397 ? 0 : 1);
 		class14_sub10.method809(Class135.aBoolean2190 ? 1 : 0);
 		class14_sub10.method809(Class33.aBoolean584 ? 1 : 0);
 		class14_sub10.method809(Class28.aBoolean516 ? 1 : 0);

@@ -20,7 +20,6 @@ public class Class37 {
 	public int anInt647;
 	public int anInt649;
 	public int anInt650;
-	public static Class14_Sub22 aClass14_Sub22_652 = new Class14_Sub22(0, 0);
 	public int anInt653;
 
 	public static void method1108(byte i) {
@@ -65,7 +64,7 @@ public class Class37 {
 			JunkTex.anInt3919 = 0;
 			Static2.anInt4892 = 0;
 			Canvas_Sub2.anInt60 = 0;
-			Class125_Sub3.anInt3411 = 0;
+			JunkTex.anInt3411 = 0;
 			Static2.anInt2890 = 0;
 			Class14_Sub29.method936(i - 12728);
 			Class62.anInt990 = 0;
@@ -141,7 +140,7 @@ public class Class37 {
 			Class14_Sub30.aClass55_3275 = new HashTable(8);
 			Class133_Sub5.aBoolean3628 = false;
 			JunkTex.anInt4729 = 0;
-			Class125_Sub2.aClass94_3388 = null;
+			JunkTex.aClass94_3388 = null;
 			Class14_Sub2_Sub20.aClass102_4055.method1522(null, -1, false, new int[5], -113);
 			for (int i_8_ = 0; i_8_ < 8; i_8_++) {
 				Class56.aClass124Array919[i_8_] = null;
@@ -172,7 +171,6 @@ public class Class37 {
 	}
 
 	public static void method1110(int i) {
-		aClass14_Sub22_652 = null;
 		if (i != 0)
 			anInt643 = 69;
 		aClass52_635 = null;

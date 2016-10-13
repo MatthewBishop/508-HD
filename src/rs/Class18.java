@@ -83,7 +83,7 @@ public class Class18 {
 
 	public Class18(int i, int i_18_) {
 		if (i_18_ != i) {
-			int i_19_ = Class95.method1482(i, i_18_, 90);
+			int i_19_ = JunkTex.method1482(i, i_18_, 90);
 			i /= i_19_;
 			i_18_ /= i_19_;
 			anInt414 = i_18_;

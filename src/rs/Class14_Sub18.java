@@ -114,7 +114,7 @@ public class Class14_Sub18 extends Linkable {
 					int i_7_ = Class14_Sub2_Sub8.anInt3832;
 					int i_8_ = JunkTex.anInt500;
 					int i_9_ = Class14_Sub14.anInt2984;
-					int i_10_ = Class125_Sub1.anInt3367;
+					int i_10_ = JunkTex.anInt3367;
 					int i_11_ = Class139.anInt2230;
 					int i_12_ = -1;
 					for (int i_13_ = 0; JunkTex.anInt4729 > i_13_; i_13_++) {
@@ -138,14 +138,14 @@ public class Class14_Sub18 extends Linkable {
 						int i_17_ = (JunkTex.anIntArray4544[JunkTex.anInt4729 - 1]);
 						Class94 class94 = JunkTex.method1233(i_16_, i + 21905);
 						if (Class111.method1577((byte) -49, client.method46(class94))
-								|| Class14_Sub6.method468(65, client.method46(class94))) {
+								|| JunkTex.method468(65, client.method46(class94))) {
 							Class113.anInt1879 = 0;
 							JunkTex.aBoolean4221 = false;
 							if (JunkTex.aClass94_4446 != null)
 								Class103.method1531((JunkTex.aClass94_4446));
 							JunkTex.aClass94_4446 = JunkTex.method1233(i_16_, 21803);
 							Class111.anInt1865 = Class139.anInt2230;
-							Class133_Sub1_Sub1.anInt4936 = Class125_Sub1.anInt3367;
+							Class133_Sub1_Sub1.anInt4936 = JunkTex.anInt3367;
 							Class122.anInt2054 = i_17_;
 							Class103.method1531((JunkTex.aClass94_4446));
 							return;

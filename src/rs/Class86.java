@@ -20,7 +20,7 @@ public class Class86 {
 	}
 
 	public static Class37 method1418(int i, int i_0_, int i_1_) {
-		Class14_Sub29 class14_sub29 = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_0_][i_1_];
+		Class14_Sub29 class14_sub29 = JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_0_][i_1_];
 		if (class14_sub29 == null)
 			return null;
 		Class37 class37 = class14_sub29.aClass37_3255;
@@ -37,7 +37,7 @@ public class Class86 {
 		Class124 class124_2_ = (JunkTex
 				.method515(
 						(new Class124[] { Class142.aClass124_2271, class124, Class107.aClass124_1800,
-								Class83.method1407(102, Class125_Sub2.language), JunkTex.aClass124_4341,
+								Class83.method1407(102, JunkTex.language), JunkTex.aClass124_4341,
 								Class83.method1407(111, Class14_Sub2_Sub11.anInt3884), Class137.aClass124_2195 }),
 						(byte) -24));
 		return class124_2_;
@@ -94,7 +94,7 @@ public class Class86 {
 			else
 				Class56_Sub1.method1241(i_8_, i_10_, (byte) -119, i_11_, i_9_, i_12_);
 		} else if (i != 1)
-			Class14_Sub6.method466(i_10_, i_12_, -32718, i_11_, i, i_8_, i_9_);
+			JunkTex.method466(i_10_, i_12_, -32718, i_11_, i, i_8_, i_9_);
 		else
 			Static2.method849(i_8_, i_9_, 0, i_11_, i_12_, i_10_);
 	}

@@ -564,9 +564,9 @@ public class Class94 {
 				if (anInt1572 == 1)
 					aClass124_1556 = JunkTex.aClass124_4264;
 				if (anInt1572 == 4)
-					aClass124_1556 = Class14_Sub6.aClass124_2810;
+					aClass124_1556 = JunkTex.aClass124_2810;
 				if (anInt1572 == 5)
-					aClass124_1556 = Class14_Sub6.aClass124_2810;
+					aClass124_1556 = JunkTex.aClass124_2810;
 				if (anInt1572 == 6)
 					aClass124_1556 = Static2.aClass124_1781;
 			}

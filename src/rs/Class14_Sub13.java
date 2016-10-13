@@ -26,16 +26,6 @@ public class Class14_Sub13 extends Linkable {
 			method861(103, -45, (byte) 72, -58, 112, -24, 116);
 	}
 
-	public static Class125_Sub3 method860(Buffer class14_sub10, boolean bool) {
-		if (!bool)
-			method861(-50, 110, (byte) 88, 69, 33, 3, 63);
-		Class125_Sub3 class125_sub3 = new Class125_Sub3(class14_sub10.method805(0), class14_sub10.method805(0),
-				class14_sub10.method805(0), class14_sub10.method805(0), class14_sub10.method805(0),
-				class14_sub10.method805(0), class14_sub10.method805(0), class14_sub10.method805(0),
-				class14_sub10.method829(-119), class14_sub10.readUByte());
-		return class125_sub3;
-	}
-
 	public static void method861(int i, int i_1_, byte i_2_, int i_3_, int i_4_, int i_5_, int i_6_) {
 		Class128.method1758(i_3_, (byte) 98);
 		int i_7_ = 0;

@@ -9,9 +9,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringReader;
 import java.io.StringWriter;
-import java.util.Random;
 
 import com.jagex.io.Buffer;
+import com.jagex.util.RuntimeException_Sub1;
 import com.jagex.util.Util;
 
 public class Class138 {
@@ -184,22 +184,6 @@ public class Class138 {
 		aClass124_2226 = null;
 		anIntArray2224 = null;
 		aClass9_Sub1_2222 = null;
-	}
-
-	public static int method1949(Random random, int i) {
-		if (i <= 0)
-			throw new IllegalArgumentException();
-		if (Class116.method1594(i, 474)) {
-			int i_24_ = (int) (((long) random.nextInt() & 0xffffffffL) * (long) i >> 32);
-			return i_24_;
-		}
-		int i_25_ = -(int) (4294967296L % (long) i) - -2147483648;
-		int i_26_;
-		do
-			i_26_ = random.nextInt();
-		while (i_25_ <= i_26_);
-		int i_27_ = JunkTex.method545((byte) -107, i, i_26_);
-		return i_27_;
 	}
 
 	public static Frame method1950(int i, int i_28_, int i_29_, int i_30_, Class43 class43, int i_31_) {

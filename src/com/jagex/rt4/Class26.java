@@ -5,8 +5,8 @@ package com.jagex.rt4;
 
 import java.util.Random;
 
-import rs.Class138;
-import rs.Class24;
+import com.jagex.image.transform.TexStatic;
+import com.jagex.util.RandomUtil;
 
 public abstract class Class26 {
 	public int anInt483;
@@ -50,7 +50,7 @@ public abstract class Class26 {
 			aShortArray487[i_31_] = (short) i_31_;
 		for (int i_32_ = 0; i_32_ < 255; i_32_++) {
 			int i_33_ = -i_32_ + 255;
-			int i_34_ = Class138.method1949(random, i_33_);
+			int i_34_ = RandomUtil.method1949(random, i_33_);
 			short i_35_ = aShortArray487[i_34_];
 			aShortArray487[i_34_] = aShortArray487[i_33_];
 			aShortArray487[i_33_] = aShortArray487[i_33_ + 256] = i_35_;
@@ -95,7 +95,7 @@ public abstract class Class26 {
 							i_102_ = 0;
 						else
 							i_102_ &= 0xff;
-						int i_104_ = Class24.anIntArray468[i_97_];
+						int i_104_ = TexStatic.anIntArray468[i_97_];
 						i_96_ &= 0xfff;
 						i_101_ &= 0xff;
 						int i_105_ = i_100_ >> 44;
@@ -103,10 +103,10 @@ public abstract class Class26 {
 						int i_106_ = aShortArray487[i_102_];
 						int i_107_ = i_96_ - 4096;
 						int i_108_ = i_103_ + 1;
-						int i_109_ = Class24.anIntArray468[i_96_];
+						int i_109_ = TexStatic.anIntArray468[i_96_];
 						int i_110_ = aShortArray487[i_101_];
 						int i_111_ = i_100_ - 4096;
-						int i_112_ = Class24.anIntArray468[i_100_];
+						int i_112_ = TexStatic.anIntArray468[i_100_];
 						i_103_ &= 0xff;
 						int i_113_ = i_97_ - 4096;
 						int i_114_ = i_105_ + 1;

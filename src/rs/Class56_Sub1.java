@@ -7,15 +7,10 @@ import java.awt.Component;
 
 public class Class56_Sub1 extends Class56 {
 	public static long aLong3317 = 0L;
-	public static Class14_Sub6 aClass14_Sub6_3319;
 	public static Class14_Sub2_Sub16 aClass14_Sub2_Sub16_3320;
 	public static Class124 aClass124_3321 = Class14_Sub2_Sub2.method263(1178, "Lade Sprites )2 ");
 	public static int anInt3322;
 	public static float aFloat3323;
-
-	static {
-		aClass14_Sub6_3319 = new Class14_Sub6(0, 0);
-	}
 
 	public static void method1241(int i, int i_0_, byte i_1_, int i_2_, int i_3_, int i_4_) {
 		Class51.method1201(Static2.anIntArrayArray4038[i_4_++], i_0_, i, -5973, i_2_);
@@ -40,6 +35,6 @@ public class Class56_Sub1 extends Class56 {
 		if (i != -115)
 			method1243((byte) -64);
 		aClass14_Sub2_Sub16_3320 = null;
-		aClass14_Sub6_3319 = null;
+		
 	}
 }

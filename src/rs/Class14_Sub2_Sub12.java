@@ -117,7 +117,7 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 	}
 
 	public static long method323(int i, int i_13_, int i_14_) {
-		Class14_Sub29 class14_sub29 = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_13_][i_14_];
+		Class14_Sub29 class14_sub29 = JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_13_][i_14_];
 		if (class14_sub29 == null || class14_sub29.aClass37_3255 == null)
 			return 0L;
 		return class14_sub29.aClass37_3255.aLong634;

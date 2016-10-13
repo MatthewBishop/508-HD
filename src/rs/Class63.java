@@ -9,10 +9,10 @@ import com.jagex.link.Deque;
 import com.jagex.rt4.Class11;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.Class14_Sub27;
-import com.jagex.rt4.ShadowManager;
 import com.jagex.rt4.RT4;
-import com.jagex.rt4.lights.LightManager;
+import com.jagex.rt4.ShadowManager;
 import com.jagex.rt4.lights.Light;
+import com.jagex.rt4.lights.LightManager;
 
 public class Class63 {
 	public static int anInt998;
@@ -36,7 +36,7 @@ public class Class63 {
 		JunkTex.method627(false);
 		Class56.method1240();
 		Class47.method1184();
-		RuntimeException_Sub1.aClass14_Sub27ArrayArray2464 = Class14_Sub30.aClass14_Sub27ArrayArray3273 = new Class14_Sub27[4][];
+		JunkTex.aClass14_Sub27ArrayArray2464 = Class14_Sub30.aClass14_Sub27ArrayArray3273 = new Class14_Sub27[4][];
 		Class133_Sub6.aClass14_Sub2_Sub19_3640 = null;
 		JunkTex.anInt4207 = -1;
 		Class14_Sub3.method451(0);
@@ -98,14 +98,14 @@ public class Class63 {
 			Class21.anIntArray442 = null;
 			Static2.anIntArray4023 = null;
 			Class14_Sub2_Sub3.anIntArray3773 = null;
-			Class14_Sub2_Sub17.anIntArray4020 = null;
+			JunkTex.anIntArray4020 = null;
 		}
 	}
 
 	public static void method1279(Class40 class40) {
 		for (int i = class40.anInt668; i <= class40.anInt670; i++) {
 			for (int i_2_ = class40.anInt678; i_2_ <= class40.anInt669; i_2_++) {
-				Class14_Sub29 class14_sub29 = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[class40.anInt672][i][i_2_]);
+				Class14_Sub29 class14_sub29 = (JunkTex.aClass14_Sub29ArrayArrayArray3368[class40.anInt672][i][i_2_]);
 				if (class14_sub29 != null) {
 					for (int i_3_ = 0; i_3_ < class14_sub29.anInt3242; i_3_++) {
 						if (class14_sub29.aClass40Array3257[i_3_] == class40) {

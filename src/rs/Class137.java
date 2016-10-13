@@ -5,13 +5,14 @@ package rs;
 
 import com.jagex.cache.anim.Animation;
 import com.jagex.rt4.Class11;
-import com.jagex.rt4.RT4GL;
-import com.jagex.sound.Track;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub2;
 import com.jagex.rt4.Class25;
 import com.jagex.rt4.RT4;
+import com.jagex.rt4.RT4GL;
+import com.jagex.sound.Track;
+import com.jagex.util.RandomUtil;
 
 public class Class137 {
 	public static Class124 aClass124_2195;
@@ -37,8 +38,6 @@ public class Class137 {
 
 	public static void method1939(int i, boolean bool, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_,
 			int i_6_, int i_7_) {
-		if (!bool)
-			method1941(false, (byte) -82);
 		if (Class118.anInt1982 > i_5_ || i_5_ > JunkTex.anInt4327 || Class118.anInt1982 > i
 				|| JunkTex.anInt4327 < i || i_7_ < Class118.anInt1982 || i_7_ > JunkTex.anInt4327
 				|| i_6_ < Class118.anInt1982 || i_6_ > JunkTex.anInt4327 || i_2_ < Class14_Sub17.anInt3005
@@ -123,7 +122,7 @@ public class Class137 {
 					int i_18_ = i_12_ + class94.anInt1523;
 					int i_19_ = i_15_ + class94.anInt1583;
 					int i_20_ = class94.anInt1590;
-					if (Class125_Sub3.aBoolean3392 && (client.method46(class94) != 0 || class94.anInt1489 == 0)
+					if (JunkTex.aBoolean3392 && (client.method46(class94) != 0 || class94.anInt1489 == 0)
 							&& i_20_ > 127)
 						i_20_ = 127;
 					if (class94 == Class67.aClass94_1060) {
@@ -229,7 +228,7 @@ public class Class137 {
 									Class84.aClass14_Sub2_Sub16_1344
 											.method348(
 													(JunkTex.method515(
-															(new Class124[] { Class14_Sub6.aClass124_2811,
+															(new Class124[] { JunkTex.aClass124_2811,
 																	(Class83.method1407(75,
 																			(Class14_Sub9_Sub3.anInt4843))) }),
 													(byte) -93)), i_30_, i_29_, 16776960, -1);
@@ -263,11 +262,11 @@ public class Class137 {
 						if (!Class133_Sub5.aBoolean3628) {
 							if (class94.anInt1489 == 0 && class94.aBoolean1584 && JunkTex.anInt4629 >= i_23_
 									&& i_24_ <= JunkTex.anInt4613 && i_25_ > JunkTex.anInt4629
-									&& i_26_ > JunkTex.anInt4613 && !Class125_Sub3.aBoolean3392) {
+									&& i_26_ > JunkTex.anInt4613 && !JunkTex.aBoolean3392) {
 								JunkTex.anInt4729 = 1;
 								Class14_Sub29.aShortArray3262[0] = (short) 1005;
 								Class112.aClass124Array1875[0] = Class7.aClass124_180;
-								RuntimeException_Sub1.aClass124Array2459[0] = JunkTex.aClass124_4244;
+								JunkTex.aClass124Array2459[0] = JunkTex.aClass124_4244;
 							}
 							if (i_23_ <= JunkTex.anInt4629 && i_24_ <= JunkTex.anInt4613
 									&& i_25_ > JunkTex.anInt4629 && JunkTex.anInt4613 < i_26_)
@@ -276,7 +275,7 @@ public class Class137 {
 						}
 						if (class94.anInt1489 == 0) {
 							if (!class94.aBoolean1455 && client.method49(class94)
-									&& class94 != Class125_Sub3.aClass94_3410)
+									&& class94 != JunkTex.aClass94_3410)
 								continue;
 							if (!class94.aBoolean1455) {
 								if (-class94.anInt1545 + class94.anInt1605 < class94.anInt1547)
@@ -295,11 +294,11 @@ public class Class137 {
 								if (class14_sub15.anInt2991 == 0 && !Class133_Sub5.aBoolean3628
 										&& JunkTex.anInt4629 >= i_23_
 										&& JunkTex.anInt4613 >= i_24_ && JunkTex.anInt4629 < i_25_
-										&& JunkTex.anInt4613 < i_26_ && !Class125_Sub3.aBoolean3392) {
+										&& JunkTex.anInt4613 < i_26_ && !JunkTex.aBoolean3392) {
 									JunkTex.anInt4729 = 1;
 									Class14_Sub29.aShortArray3262[0] = (short) 1005;
 									Class112.aClass124Array1875[0] = Class7.aClass124_180;
-									RuntimeException_Sub1.aClass124Array2459[0] = JunkTex.aClass124_4244;
+									JunkTex.aClass124Array2459[0] = JunkTex.aClass124_4244;
 								}
 								JunkTex.method594(i_26_, true, i_18_, (class14_sub15.anInt2999), i_17_,
 										i_24_, i_19_, i_25_, i_23_);
@@ -415,11 +414,11 @@ public class Class137 {
 									int i_48_;
 									if (!Class89.method1440(class94, 10151)) {
 										i_48_ = class94.anInt1567;
-										if ((Class125_Sub3.aClass94_3410 == class94) && class94.anInt1493 != 0)
+										if ((JunkTex.aClass94_3410 == class94) && class94.anInt1493 != 0)
 											i_48_ = class94.anInt1493;
 									} else {
 										i_48_ = class94.anInt1521;
-										if ((Class125_Sub3.aClass94_3410 == class94) && class94.anInt1579 != 0)
+										if ((JunkTex.aClass94_3410 == class94) && class94.anInt1579 != 0)
 											i_48_ = class94.anInt1579;
 									}
 									if (i_20_ == 0) {
@@ -446,11 +445,11 @@ public class Class137 {
 										int i_49_;
 										if (!Class89.method1440(class94, 10151)) {
 											i_49_ = class94.anInt1567;
-											if ((Class125_Sub3.aClass94_3410 == class94) && class94.anInt1493 != 0)
+											if ((JunkTex.aClass94_3410 == class94) && class94.anInt1493 != 0)
 												i_49_ = class94.anInt1493;
 										} else {
 											i_49_ = class94.anInt1521;
-											if ((Class125_Sub3.aClass94_3410 == class94) && class94.anInt1579 != 0)
+											if ((JunkTex.aClass94_3410 == class94) && class94.anInt1579 != 0)
 												i_49_ = class94.anInt1579;
 											if (class94.aClass124_1552.method1693(0) > 0)
 												class124 = class94.aClass124_1552;
@@ -468,7 +467,7 @@ public class Class137 {
 																		.method504(class94.anInt1495, 126)) }),
 														(byte) -38));
 										}
-										if (Class125_Sub2.aClass94_3388 == class94) {
+										if (JunkTex.aClass94_3388 == class94) {
 											i_49_ = class94.anInt1567;
 											class124 = Class14_Sub28.aClass124_3229;
 										}
@@ -510,10 +509,8 @@ public class Class137 {
 												int i_54_ = ((-1 - (-i_50_ - (class94.anInt1545))) / i_50_);
 												Class25.method1002(i_18_, i_19_, class94.anInt1518 + i_18_,
 														(i_19_ + class94.anInt1545));
-												boolean bool = (Class116.method1594((class14_sub2_sub19.anInt4035),
-														i_14_ + 381));
-												boolean bool_55_ = (Class116.method1594((class14_sub2_sub19.anInt4042),
-														474));
+												boolean bool = RandomUtil.method1594(class14_sub2_sub19.anInt4035);
+												boolean bool_55_ = RandomUtil.method1594(class14_sub2_sub19.anInt4042);
 												Class14_Sub2_Sub19_Sub2 class14_sub2_sub19_sub2 = ((Class14_Sub2_Sub19_Sub2) class14_sub2_sub19);
 												if (!bool || !bool_55_) {
 													if (!bool) {
@@ -722,7 +719,7 @@ public class Class137 {
 										Class14_Sub2_Sub16 class14_sub2_sub16 = Class84.aClass14_Sub2_Sub16_1344;
 										class124 = (JunkTex.method557(i_14_ - 218, class124, class94));
 										while (class124.method1693(i_14_ ^ 0x5d) > 0) {
-											int i_76_ = (class124.method1700(-19928, (Class14_Sub6.aClass124_2807)));
+											int i_76_ = (class124.method1700(-19928, (JunkTex.aClass124_2807)));
 											Class124 class124_77_;
 											if (i_76_ != -1) {
 												class124_77_ = (class124.method1697(0, i_76_, (byte) -104));
@@ -752,7 +749,7 @@ public class Class137 {
 										class124 = class94.aClass124_1499;
 										class124 = (JunkTex.method557(112, class124, class94));
 										while (class124.method1693(0) > 0) {
-											int i_82_ = (class124.method1700(-19928, (Class14_Sub6.aClass124_2807)));
+											int i_82_ = (class124.method1700(-19928, (JunkTex.aClass124_2807)));
 											Class124 class124_83_;
 											if (i_82_ == -1) {
 												class124_83_ = class124;

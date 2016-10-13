@@ -184,7 +184,7 @@ public class Class9_Sub1 extends Class9 {
 			if (i == -24792) {
 				for (/**/; i_24_ < aBooleanArray2698.length; i_24_++) {
 					if (anIntArray203[i_24_] > 0) {
-						Class149.method2018(this, i_24_, aClass114_2689, true);
+						JunkTex.method2018(this, i_24_, aClass114_2689, true);
 						anInt2703 = i_24_;
 					}
 				}

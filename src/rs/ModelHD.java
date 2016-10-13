@@ -12,9 +12,9 @@ import com.jagex.cache.anim.AnimFrameBase;
 import com.jagex.cache.loaders.AnimFrameLoader;
 import com.jagex.io.Buffer;
 import com.jagex.rt4.AtmosphericEffects;
-import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.RT4;
+import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.VertexBuffer;
 import com.jagex.rt4.VertexBufferPointer;
 

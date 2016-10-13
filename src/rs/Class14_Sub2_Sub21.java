@@ -130,7 +130,7 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 			JunkTex.anInt4640 = JunkTex.anInt4724;
 			Class107.anInt1804 = Class14_Sub9_Sub3.anInt4848;
 			Class7_Sub3_Sub1.anInt3714 = Class127.anInt2105;
-			Class125_Sub1.anInt3367 = Class111.anInt1860;
+			JunkTex.anInt3367 = Class111.anInt1860;
 			Class139.anInt2230 = Class118.anInt1976;
 			int i_17_ = -59 / ((-55 - i) / 58);
 			JunkTex.aLong2800 = Applet_Sub1.aLong6;

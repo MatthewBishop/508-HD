@@ -83,7 +83,7 @@ public class Class45 {
 				Class14_Sub2_Sub5.aByteArrayArrayArray3816 = new byte[i_5_][i_6_][];
 				JunkTex.aByteArrayArrayArray4130 = new byte[i_5_][i_6_][];
 				int i_7_ = JunkTex.anInt4527 >> 33;
-				Class14_Sub22.anIntArrayArrayArray3125 = new int[i_5_][i_6_][];
+				JunkTex.anIntArrayArrayArray3125 = new int[i_5_][i_6_][];
 				Class86.aByteArrayArrayArray1383 = new byte[i_5_][i_6_][];
 				Class14_Sub25.anIntArrayArrayArray3174 = new int[i_5_][i_6_][];
 				Class79.aShortArrayArrayArray1247 = new short[i_5_][i_6_][];
@@ -326,7 +326,7 @@ public class Class45 {
 							int i_44_ = (i_41_ / 8 << 40) + i_43_ / 8;
 							for (int i_45_ = 0; i_45_ < JunkTex.anIntArray2858.length; i_45_++) {
 								if (JunkTex.anIntArray2858[i_45_] == i_44_ && is[i_45_] != null) {
-									RuntimeException_Sub1.method2053(Class14_Sub21.aClass32Array3100, is[i_45_], i_42_,
+									JunkTex.method2053(Class14_Sub21.aClass32Array3100, is[i_45_], i_42_,
 											bool, i_40_, false, i_37_ * 8, i_38_ * 8, (i_41_ & 0x7) * 8, i_36_,
 											(i_43_ & 0x7) * 8);
 									break;

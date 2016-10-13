@@ -3,10 +3,10 @@
  */
 package rs;
 
-import com.jagex.rt4.RT4GL;
-import com.jagex.util.BrowserControlUtil;
 import com.jagex.cache.anim.Animation;
 import com.jagex.rt4.Class14_Sub2_Sub19;
+import com.jagex.rt4.RT4GL;
+import com.jagex.util.BrowserControlUtil;
 
 public class Class133_Sub6 extends Class133 {
 	public static Class124 aClass124_3632;

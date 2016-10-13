@@ -8,38 +8,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import com.jagex.link.HashTable;
-
-import rs.Canvas_Sub1;
-import rs.Class112;
-import rs.Class126;
-import rs.Class127;
-import rs.Class131;
-import rs.Class132;
-import rs.Class133_Sub4;
-import rs.Class144;
-import rs.Class14_Sub22;
-import rs.Class14_Sub25;
-import rs.Class14_Sub2_Sub2;
-import rs.Class14_Sub2_Sub5;
-import rs.Class14_Sub2_Sub9;
-import rs.Class14_Sub30;
-import rs.Class150;
-import rs.Class37;
-import rs.Class4;
-import rs.Class49;
-import rs.Class56;
-import rs.Class58;
-import rs.Class62;
-import rs.Class66;
-import rs.Class70;
-import rs.Class72;
-import rs.Class79;
-import rs.Class7_Sub1;
-import rs.Class7_Sub2;
-import rs.Class7_Sub3_Sub1;
-import rs.Class86;
-import rs.Class92;
-import rs.Interface1;
+import com.jagex.util.Util;
 
 public class Class124 implements Interface1 {
 
@@ -134,9 +103,9 @@ public class Class124 implements Interface1 {
 			var16 = -var14 + var15;
 			if (var16 > 0) {
 				var17 = var13 + var9 >> 6;
-				if (var17 >= 0 && var17 <= Class14_Sub22.anIntArrayArrayArray3125.length - 1) {
+				if (var17 >= 0 && var17 <= JunkTex.anIntArrayArrayArray3125.length - 1) {
 					var15 += var8;
-					int[][] var45 = Class14_Sub22.anIntArrayArrayArray3125[var17];
+					int[][] var45 = JunkTex.anIntArrayArrayArray3125[var17];
 					var14 += var8;
 					byte[][] var19 = Class86.aByteArrayArrayArray1383[var17];
 					byte[][] var20 = Class14_Sub2_Sub5.aByteArrayArrayArray3816[var17];
@@ -1454,7 +1423,7 @@ public class Class124 implements Interface1 {
 		}
 
 		Throwable var12 = new Throwable();
-		throw JunkTex.method554(var12, "sl.L(" + var1 + ')');
+		throw Util.error(var12, "sl.L(" + var1 + ')');
 	}
 
 	public boolean equals(Object var1) {

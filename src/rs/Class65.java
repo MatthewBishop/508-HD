@@ -55,7 +55,7 @@ public class Class65 {
 	}
 
 	public static Class40 method1291(int i, int i_5_, int i_6_) {
-		Class14_Sub29 class14_sub29 = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_5_][i_6_];
+		Class14_Sub29 class14_sub29 = JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_5_][i_6_];
 		if (class14_sub29 == null)
 			return null;
 		for (int i_7_ = 0; i_7_ < class14_sub29.anInt3242; i_7_++) {

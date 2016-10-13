@@ -208,7 +208,7 @@ public abstract class Class133_Sub1 extends Class133 {
 						(byte) -53)), false, null, 0);
 			}
 			if (class124.method1717(40, Class120.aClass124_2012))
-				Class125_Sub3.aBoolean3392 = true;
+				JunkTex.aBoolean3392 = true;
 			if (class124.method1704(JunkTex.aClass124_4676, (byte) 58)) {
 				if (JunkTex.aFrame3962 != null)
 					Class14_Sub2_Sub20.method428(124);
@@ -314,7 +314,7 @@ public abstract class Class133_Sub1 extends Class133 {
 			method1798(null, (byte) -76);
 		if (Class118.anInt1982 > -i_37_ + i || i_37_ + i > JunkTex.anInt4327
 				|| i_32_ - i_37_ < Class14_Sub17.anInt3005 || i_37_ + i_32_ > Class59.anInt955)
-			Class125_Sub2.method1734(i_35_, i_37_, i_33_, i_36_, 52, i_32_, i);
+			JunkTex.method1734(i_35_, i_37_, i_33_, i_36_, 52, i_32_, i);
 		else
 			Class14_Sub13.method861(i, i_35_, (byte) -100, i_37_, i_32_, i_36_, i_33_);
 	}
@@ -332,7 +332,7 @@ public abstract class Class133_Sub1 extends Class133 {
 						for (int i_48_ = i_44_; i_48_ <= i_45_; i_48_++) {
 							if (i_48_ >= 0 && i_48_ < JunkTex.anInt4337
 									&& (!bool || i_47_ >= i_43_ || i_48_ >= i_45_ || i_48_ < i_39_ && i_47_ != i_38_)) {
-								Class14_Sub29 class14_sub29 = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_46_][i_47_][i_48_]);
+								Class14_Sub29 class14_sub29 = (JunkTex.aClass14_Sub29ArrayArrayArray3368[i_46_][i_47_][i_48_]);
 								if (class14_sub29 != null) {
 									int i_49_ = (((Class114.tileHeights[i_46_][i_47_][i_48_])
 											+ (Class114.tileHeights[i_46_][i_47_ + 1][i_48_])

@@ -36,11 +36,11 @@ public class Class90 implements Runnable {
 			class113.anInt1880 = i_4_;
 			class113.anInt1888 = i_5_;
 			for (int i_6_ = i; i_6_ >= 0; i_6_--) {
-				if ((Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_6_][i_0_][i_1_]) == null)
-					Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_6_][i_0_][i_1_] = new Class14_Sub29(i_6_, i_0_,
+				if ((JunkTex.aClass14_Sub29ArrayArrayArray3368[i_6_][i_0_][i_1_]) == null)
+					JunkTex.aClass14_Sub29ArrayArrayArray3368[i_6_][i_0_][i_1_] = new Class14_Sub29(i_6_, i_0_,
 							i_1_);
 			}
-			Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_0_][i_1_].aClass113_3250 = class113;
+			JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_0_][i_1_].aClass113_3250 = class113;
 		}
 	}
 
@@ -103,7 +103,7 @@ public class Class90 implements Runnable {
 				return var4;
 			}
 		} catch (Throwable var5) {
-			throw JunkTex.method554(var5,
+			throw Util.error(var5,
 					"ob.C(" + var0 + ',' + (var1 != null ? "{...}" : "null") + ',' + var2 + ',' + var3 + ')');
 		}
 	}
@@ -148,7 +148,7 @@ public class Class90 implements Runnable {
 				}
 			}
 		} catch (Throwable throwable) {
-			throw JunkTex.method554(throwable,
+			throw Util.error(throwable,
 					new StringBuilder("ob.E(").append(i).append(',').append(class32s != null ? "{...}" : "null")
 							.append(',').append(bool).append(',').append(is != null ? "{...}" : "null").append(',')
 							.append(i_14_).append(',').append(i_15_).append(')').toString());

@@ -395,7 +395,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 		Class14_Sub2_Sub12.anIntArray3918 = new int[Class32.anInt547];
 		Class40.anIntArray675 = new int[Class32.anInt547];
 		Class76.anIntArray1204 = new int[Class32.anInt547];
-		Class125_Sub4.aBooleanArray3416 = new boolean[Class32.anInt547];
+		JunkTex.aBooleanArray3416 = new boolean[Class32.anInt547];
 		Class17.anIntArray402 = new int[Class32.anInt547];
 		class14_sub10.position = is.length - (Class32.anInt547 * 8 + 7);
 		Class14_Sub11.anInt2952 = class14_sub10.readUShort((byte) 105);
@@ -453,7 +453,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 					}
 				}
 			}
-			Class125_Sub4.aBooleanArray3416[i_46_] = bool;
+			JunkTex.aBooleanArray3416[i_46_] = bool;
 		}
 	}
 

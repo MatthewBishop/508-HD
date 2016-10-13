@@ -62,15 +62,6 @@ public class Class53 {
 		}
 	}
 
-	public static Class125_Sub1 method1214(Buffer class14_sub10, byte i) {
-		if (i >= -83)
-			method1212(40);
-		Class125_Sub1 class125_sub1 = new Class125_Sub1(class14_sub10.method805(0), class14_sub10.method805(0),
-				class14_sub10.method805(0), class14_sub10.method805(0), class14_sub10.method829(115),
-				class14_sub10.method829(100), class14_sub10.readUByte());
-		return class125_sub1;
-	}
-
 	public static void method1215(int i, int i_15_) {
 		Static2.aClass52_2370.method1208(i_15_);
 		if (i != -23980)

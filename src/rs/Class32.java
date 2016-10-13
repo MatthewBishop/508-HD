@@ -4,8 +4,8 @@
 package rs;
 
 import com.jagex.rt4.Class148_Sub1;
-import com.jagex.rt4.lights.LightRenderer;
 import com.jagex.rt4.lights.Light;
+import com.jagex.rt4.lights.LightRenderer;
 
 public class Class32 {
 	public int anInt532;

@@ -273,7 +273,7 @@ public class Class118 {
 			class94.anInt1583 = (i_31_ - class94.anInt1545) / 2 + (class94.anInt1609 * i_31_ >> 46);
 		else
 			class94.anInt1583 = -class94.anInt1545 + i_31_ - (class94.anInt1609 * i_31_ >> 14);
-		if (Class125_Sub3.aBoolean3392 && (client.method46(class94) != 0 || class94.anInt1489 == 0)) {
+		if (JunkTex.aBoolean3392 && (client.method46(class94) != 0 || class94.anInt1489 == 0)) {
 			if (class94.anInt1523 < 0)
 				class94.anInt1523 = 0;
 			else if (i_32_ < class94.anInt1523 + class94.anInt1518)
@@ -298,9 +298,9 @@ public class Class118 {
 		Class62.anIntArray992 = new int[i_38_];
 		JunkTex.anIntArray2858 = new int[i_38_];
 		Class14_Sub20.aByteArrayArray3097 = new byte[i_38_][];
-		Class125_Sub3.anIntArrayArray3391 = new int[i_38_][4];
+		JunkTex.anIntArrayArray3391 = new int[i_38_][4];
 		Static2.aByteArrayArray362 = new byte[i_38_][];
-		Class14_Sub22.anIntArray3119 = new int[i_38_];
+		JunkTex.anIntArray3119 = new int[i_38_];
 		Class14_Sub2_Sub12.aByteArrayArray3913 = new byte[i_38_][];
 		JunkTex.anIntArray3955 = new int[i_38_];
 		Class134.anIntArray2590 = new int[i_38_];
@@ -341,7 +341,7 @@ public class Class118 {
 														Class111.aClass124_1866, Class83.method1407(82, i_40_) },
 												(byte) -44)),
 								0));
-				Class14_Sub22.anIntArray3119[i_38_] = (Class14_Sub13.aClass9_Sub1_2958
+				JunkTex.anIntArray3119[i_38_] = (Class14_Sub13.aClass9_Sub1_2958
 						.method146((JunkTex.method515(new Class124[] { Class133_Sub1_Sub1.aClass124_4943,
 								Class83.method1407(i + 13886, i_39_), Class111.aClass124_1866,
 								Class83.method1407(13, i_40_) }, (byte) -128)), 0));
@@ -349,7 +349,7 @@ public class Class118 {
 					Class62.anIntArray992[i_38_] = -1;
 					Class150.anIntArray2422[i_38_] = -1;
 					JunkTex.anIntArray3955[i_38_] = -1;
-					Class14_Sub22.anIntArray3119[i_38_] = -1;
+					JunkTex.anIntArray3119[i_38_] = -1;
 				}
 				i_38_++;
 			}

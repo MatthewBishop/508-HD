@@ -8,9 +8,9 @@ import java.nio.ByteBuffer;
 import javax.media.opengl.GL;
 
 import com.jagex.rt4.Class11;
-import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub2;
 import com.jagex.rt4.Class25;
+import com.jagex.rt4.RT4GL;
 
 public class Class14_Sub2_Sub16_Sub2 extends Class14_Sub2_Sub16 {
 	public int anInt5066;

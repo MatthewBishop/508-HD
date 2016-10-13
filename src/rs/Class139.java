@@ -23,10 +23,10 @@ public class Class139 {
 			int i_1_ = JunkTex.aClass14_Sub10_Sub1_4734.method781(false);
 			int i_2_ = JunkTex.aClass14_Sub10_Sub1_4734.method836((byte) -113);
 			int i_3_ = ((JunkTex.anInt4280 - JunkTex.aClass14_Sub10_Sub1_4734.position) / 16);
-			Class125_Sub3.anIntArrayArray3391 = new int[i_3_][4];
+			JunkTex.anIntArrayArray3391 = new int[i_3_][4];
 			for (int i_4_ = 0; i_3_ > i_4_; i_4_++) {
 				for (int i_5_ = 0; i_5_ < 4; i_5_++)
-					Class125_Sub3.anIntArrayArray3391[i_4_][i_5_] = JunkTex.aClass14_Sub10_Sub1_4734
+					JunkTex.anIntArrayArray3391[i_4_][i_5_] = JunkTex.aClass14_Sub10_Sub1_4734
 							.getInt((byte) -108);
 			}
 			int i_6_ = JunkTex.aClass14_Sub10_Sub1_4734.method806((byte) -16);
@@ -44,7 +44,7 @@ public class Class139 {
 				bool_8_ = true;
 			Class5.aByteArrayArray139 = new byte[i_3_][];
 			Class14_Sub2_Sub12.aByteArrayArray3913 = new byte[i_3_][];
-			Class14_Sub22.anIntArray3119 = new int[i_3_];
+			JunkTex.anIntArray3119 = new int[i_3_];
 			JunkTex.anIntArray3955 = new int[i_3_];
 			Static2.aByteArrayArray362 = new byte[i_3_][];
 			i_3_ = 0;
@@ -57,7 +57,7 @@ public class Class139 {
 						Class62.anIntArray992[i_3_] = -1;
 						Class150.anIntArray2422[i_3_] = -1;
 						JunkTex.anIntArray3955[i_3_] = -1;
-						Class14_Sub22.anIntArray3119[i_3_] = -1;
+						JunkTex.anIntArray3119[i_3_] = -1;
 					} else {
 						JunkTex.anIntArray2858[i_3_] = i_11_;
 						Class62.anIntArray992[i_3_] = (Class14_Sub13.aClass9_Sub1_2958
@@ -76,7 +76,7 @@ public class Class139 {
 										(new Class124[] { Class82.aClass124_1333, Class83.method1407(41, i_9_),
 												Class111.aClass124_1866, Class83.method1407(87, i_10_) }),
 										(byte) -123)), 0));
-						Class14_Sub22.anIntArray3119[i_3_] = (Class14_Sub13.aClass9_Sub1_2958
+						JunkTex.anIntArray3119[i_3_] = (Class14_Sub13.aClass9_Sub1_2958
 								.method146(
 										(JunkTex.method515((new Class124[] {
 												Class133_Sub1_Sub1.aClass124_4943, Class83.method1407(94, i_9_),
@@ -106,10 +106,10 @@ public class Class139 {
 			}
 			JunkTex.aClass14_Sub10_Sub1_4734.disableBitAccess();
 			int i_19_ = ((JunkTex.anInt4280 - JunkTex.aClass14_Sub10_Sub1_4734.position) / 16);
-			Class125_Sub3.anIntArrayArray3391 = new int[i_19_][4];
+			JunkTex.anIntArrayArray3391 = new int[i_19_][4];
 			for (int i_20_ = 0; i_20_ < i_19_; i_20_++) {
 				for (int i_21_ = 0; i_21_ < 4; i_21_++)
-					Class125_Sub3.anIntArrayArray3391[i_20_][i_21_] = JunkTex.aClass14_Sub10_Sub1_4734
+					JunkTex.anIntArrayArray3391[i_20_][i_21_] = JunkTex.aClass14_Sub10_Sub1_4734
 							.method831(128);
 			}
 			int i_22_ = JunkTex.aClass14_Sub10_Sub1_4734.method836((byte) -19);
@@ -118,7 +118,7 @@ public class Class139 {
 			Class14_Sub2_Sub12.aByteArrayArray3913 = new byte[i_19_][];
 			JunkTex.anIntArray3955 = new int[i_19_];
 			Static2.aByteArrayArray362 = new byte[i_19_][];
-			Class14_Sub22.anIntArray3119 = new int[i_19_];
+			JunkTex.anIntArray3119 = new int[i_19_];
 			JunkTex.anIntArray2858 = new int[i_19_];
 			Class150.anIntArray2422 = new int[i_19_];
 			JunkTex.aByteArrayArray4556 = null;
@@ -159,7 +159,7 @@ public class Class139 {
 												(new Class124[] { Class82.aClass124_1333, Class83.method1407(29, i_32_),
 														Class111.aClass124_1866, Class83.method1407(14, i_33_) }),
 												(byte) -88)), 0));
-								Class14_Sub22.anIntArray3119[i_19_] = (Class14_Sub13.aClass9_Sub1_2958.method146(
+								JunkTex.anIntArray3119[i_19_] = (Class14_Sub13.aClass9_Sub1_2958.method146(
 										(JunkTex.method515((new Class124[] {
 												Class133_Sub1_Sub1.aClass124_4943, Class83.method1407(13, i_32_),
 												Class111.aClass124_1866, Class83.method1407(55, i_33_) }), (byte) -6)),
@@ -176,7 +176,7 @@ public class Class139 {
 	}
 
 	public static boolean method1952(int i, int i_35_, int i_36_, long l) {
-		Class14_Sub29 class14_sub29 = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_35_][i_36_];
+		Class14_Sub29 class14_sub29 = JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_35_][i_36_];
 		if (class14_sub29 == null)
 			return false;
 		if (class14_sub29.aClass113_3250 != null && class14_sub29.aClass113_3250.aLong1887 == l)

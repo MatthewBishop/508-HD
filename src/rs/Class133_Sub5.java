@@ -36,7 +36,7 @@ public class Class133_Sub5 extends Class133 {
 			Class67.aClass94_1060 = class94;
 			JunkTex.aClass94_420 = JunkTex.method341(0, class94);
 			JunkTex.anInt4132 = i_1_;
-			Class125_Sub4.anInt3419 = 0;
+			JunkTex.anInt3419 = 0;
 			int i_2_ = 106 % ((i - 9) / 39);
 			JunkTex.aBoolean4188 = false;
 			Canvas_Sub2.anInt63 = i_0_;

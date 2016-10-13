@@ -6,8 +6,8 @@ package com.jagex.rt4.lights;
 import javax.media.opengl.GL;
 
 import com.jagex.rt4.AtmosphericEffects;
-import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.RT4;
+import com.jagex.rt4.RT4GL;
 
 import rs.Class14_Sub29;
 import rs.Class14_Sub9_Sub3;

@@ -3,11 +3,10 @@
  */
 package rs;
 
+import com.jagex.image.transform.Class14_Sub8;
+import com.jagex.image.transform.Class14_Sub8_Sub23;
+import com.jagex.image.transform.TexStatic;
 import com.jagex.io.Buffer;
-
-import rs.tex.Class14_Sub8;
-import rs.tex.Class14_Sub8_Sub23;
-import rs.tex.TexStatic;
 
 public class Class107 {
 	public static Class124 aClass124_1795;
@@ -104,17 +103,17 @@ public class Class107 {
 
 	public static void method1551(int i) {
 		if (JunkTex.anInt4608 != 2) {
-			if (Class125_Sub1.anInt3367 == JunkTex.anInt4629
+			if (JunkTex.anInt3367 == JunkTex.anInt4629
 					&& Class139.anInt2230 == JunkTex.anInt4613) {
 				JunkTex.anInt4608 = 0;
 				JunkTex.method552(0, JunkTex.anInt4729 - 1);
 			} else {
-				Class95.anInt1622 = Class139.anInt2230;
-				JunkTex.anInt3299 = Class125_Sub1.anInt3367;
+				JunkTex.anInt1622 = Class139.anInt2230;
+				JunkTex.anInt3299 = JunkTex.anInt3367;
 				JunkTex.anInt4608 = 2;
 			}
 		} else if (JunkTex.anInt4629 == JunkTex.anInt3299
-				&& JunkTex.anInt4613 == Class95.anInt1622) {
+				&& JunkTex.anInt4613 == JunkTex.anInt1622) {
 			JunkTex.anInt4608 = 0;
 			JunkTex.method552(0, JunkTex.anInt4729 - 1);
 		}
@@ -135,12 +134,12 @@ public class Class107 {
 
 	public int[] method1553(int i, boolean bool, int i_16_, boolean bool_17_, Class9 class9, double d, int i_18_,
 			Interface3 interface3) {
-		Class14_Sub22.method898(i_16_ + 100, d);
+		JunkTex.method898(i_16_ + 100, d);
 		Class14_Sub13.anInterface3_2960 = interface3;
 		Class7_Sub2.aClass9_2671 = class9;
 		TexStatic.method1117(0, i_18_, i);
 		for (int i_19_ = 0; i_19_ < aClass14_Sub8Array1798.length; i_19_++)
-			aClass14_Sub8Array1798[i_19_].method473(i_18_, i, -120);
+			aClass14_Sub8Array1798[i_19_].method473(i_18_, i);
 		int[] is = new int[i * i_18_];
 		int i_20_ = 0;
 		int i_21_;
@@ -162,12 +161,12 @@ public class Class107 {
 			int[] is_26_;
 			int[] is_27_;
 			if (!aClass14_Sub8_1797.aBoolean2862) {
-				int[][] is_28_ = aClass14_Sub8_1797.method474(i_24_, -100);
+				int[][] is_28_ = aClass14_Sub8_1797.method474(i_24_);
 				is_26_ = is_28_[1];
 				is_27_ = is_28_[0];
 				is_25_ = is_28_[2];
 			} else {
-				int[] is_29_ = aClass14_Sub8_1797.method484(i_24_, (byte) -100);
+				int[] is_29_ = aClass14_Sub8_1797.method484(i_24_);
 				is_25_ = is_29_;
 				is_26_ = is_29_;
 				is_27_ = is_29_;
@@ -197,7 +196,7 @@ public class Class107 {
 			}
 		}
 		for (int i_34_ = 0; i_34_ < aClass14_Sub8Array1798.length; i_34_++)
-			aClass14_Sub8Array1798[i_34_].method478(i_16_);
+			aClass14_Sub8Array1798[i_34_].method478();
 		int[] is_35_ = is;
 		return is_35_;
 	}
@@ -223,7 +222,7 @@ public class Class107 {
 
 	public byte[] method1555(int i, Interface3 interface3, double d, boolean bool, int i_36_, byte i_37_,
 			Class9 class9) {
-		Class14_Sub22.method898(93, d);
+		JunkTex.method898(93, d);
 		byte[] is = new byte[i_36_ * (i * 4)];
 		Class14_Sub13.anInterface3_2960 = interface3;
 		Class7_Sub2.aClass9_2671 = class9;
@@ -233,7 +232,7 @@ public class Class107 {
 		}
 		TexStatic.method1117(0, i_36_, i);
 		for (int i_39_ = 0; aClass14_Sub8Array1798.length > i_39_; i_39_++)
-			aClass14_Sub8Array1798[i_39_].method473(i_36_, i, -73);
+			aClass14_Sub8Array1798[i_39_].method473(i_36_, i);
 		int i_40_ = 0;
 		for (int i_41_ = 0; i_41_ < i_36_; i_41_++) {
 			if (bool)
@@ -242,21 +241,21 @@ public class Class107 {
 			int[] is_43_;
 			int[] is_44_;
 			if (aClass14_Sub8_1797.aBoolean2862) {
-				int[] is_45_ = aClass14_Sub8_1797.method484(i_41_, (byte) -110);
+				int[] is_45_ = aClass14_Sub8_1797.method484(i_41_);
 				is_44_ = is_45_;
 				is_42_ = is_45_;
 				is_43_ = is_45_;
 			} else {
-				int[][] is_46_ = aClass14_Sub8_1797.method474(i_41_, -45);
+				int[][] is_46_ = aClass14_Sub8_1797.method474(i_41_);
 				is_42_ = is_46_[2];
 				is_43_ = is_46_[0];
 				is_44_ = is_46_[1];
 			}
 			int[] is_47_;
 			if (aClass14_Sub8_1813.aBoolean2862)
-				is_47_ = aClass14_Sub8_1813.method484(i_41_, (byte) -97);
+				is_47_ = aClass14_Sub8_1813.method484(i_41_);
 			else
-				is_47_ = aClass14_Sub8_1813.method474(i_41_, -26)[0];
+				is_47_ = aClass14_Sub8_1813.method474(i_41_)[0];
 			for (int i_48_ = i - 1; i_48_ >= 0; i_48_--) {
 				int i_49_ = is_44_[i_48_] >> 4;
 				if (i_49_ > 255)
@@ -295,7 +294,7 @@ public class Class107 {
 			}
 		}
 		for (int i_53_ = 0; aClass14_Sub8Array1798.length > i_53_; i_53_++)
-			aClass14_Sub8Array1798[i_53_].method478(0);
+			aClass14_Sub8Array1798[i_53_].method478();
 		byte[] is_54_ = is;
 		return is_54_;
 	}
@@ -307,7 +306,7 @@ public class Class107 {
 		int[][] is = new int[i][];
 		int i_56_ = 0;
 		for (int i_57_ = 0; i_57_ < i; i_57_++) {
-			Class14_Sub8 class14_sub8 = Class14_Sub2_Sub9.method303(class14_sub10);
+			Class14_Sub8 class14_sub8 = TexStatic.method303(class14_sub10);
 			if (class14_sub8.method477() >= 0)
 				i_55_++;
 			if (class14_sub8.method479() >= 0)

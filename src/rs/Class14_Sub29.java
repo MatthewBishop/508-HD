@@ -7,6 +7,7 @@ import com.jagex.cache.loaders.AnimFrameLoader;
 import com.jagex.link.Deque;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.Class148_Sub1;
+import com.jagex.util.Util;
 
 public class Class14_Sub29 extends Linkable {
 	public int anInt3231;
@@ -72,7 +73,7 @@ public class Class14_Sub29 extends Linkable {
 				aClass148_Sub1Array3265 = null;
 			}
 		} catch (Throwable throwable) {
-			throw JunkTex.method554(throwable, new StringBuilder("ve.D(").append(i).append(')').toString());
+			throw Util.error(throwable, new StringBuilder("ve.D(").append(i).append(')').toString());
 		}
 	}
 
@@ -96,7 +97,7 @@ public class Class14_Sub29 extends Linkable {
 				}
 			}
 		} catch (Throwable var6) {
-			throw JunkTex.method554(var6, "ve.G(" + var0 + ',' + var1 + ',' + var2 + ')');
+			throw Util.error(var6, "ve.G(" + var0 + ',' + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -116,7 +117,7 @@ public class Class14_Sub29 extends Linkable {
 		Class21.anIntArray442 = new int[104];
 		Class115.anIntArray1917 = new int[104];
 		Static2.anIntArray4023 = new int[104];
-		Class14_Sub2_Sub17.anIntArray4020 = new int[104];
+		JunkTex.anIntArray4020 = new int[104];
 		Class14_Sub2_Sub3.anIntArray3773 = new int[104];
 		int i_27_;
 		if (!bool)

@@ -3,8 +3,6 @@
  */
 package rs;
 
-import com.jagex.map.Scenegraph;
-
 public class Class103 {
 	public static boolean[] aBooleanArray1727 = new boolean[100];
 	public static int anInt1728;

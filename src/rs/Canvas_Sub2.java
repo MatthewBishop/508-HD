@@ -50,7 +50,7 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 		class115.aClass133_1926 = class133_3_;
 		class115.aClass133_1921 = class133_4_;
 		int i_5_ = 0;
-		Class14_Sub29 class14_sub29 = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_0_][i_1_];
+		Class14_Sub29 class14_sub29 = JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_0_][i_1_];
 		if (class14_sub29 != null) {
 			for (int i_6_ = 0; i_6_ < class14_sub29.anInt3242; i_6_++) {
 				Class40 class40 = class14_sub29.aClass40Array3257[i_6_];
@@ -62,9 +62,9 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 			}
 		}
 		class115.anInt1914 = -i_5_;
-		if (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_0_][i_1_] == null)
-			Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_0_][i_1_] = new Class14_Sub29(i, i_0_, i_1_);
-		Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_0_][i_1_].aClass115_3256 = class115;
+		if (JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_0_][i_1_] == null)
+			JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_0_][i_1_] = new Class14_Sub29(i, i_0_, i_1_);
+		JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_0_][i_1_].aClass115_3256 = class115;
 	}
 
 	public static float[] method62(float[] fs, boolean bool) {

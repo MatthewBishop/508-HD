@@ -6,11 +6,11 @@ package rs;
 import javax.media.opengl.GL;
 
 import com.jagex.rt4.AtmosphericEffects;
-import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class14_Sub27;
-import com.jagex.rt4.ShadowManager;
 import com.jagex.rt4.GLEffect3;
 import com.jagex.rt4.RT4;
+import com.jagex.rt4.RT4GL;
+import com.jagex.rt4.ShadowManager;
 import com.jagex.rt4.lights.LightManager;
 
 public class StaticGL {
@@ -28,7 +28,7 @@ public class StaticGL {
 					&& (Class3.anInterface3_117.method12(true, class14_sub27.anInt3204) == 4)) {
 				gl.glColor4fv(RT4.method657(81, class14_sub27.anInt3190), 0);
 				float f = 201.5F - (class14_sub27.aBoolean3201 ? 1.0F : 0.5F);
-				class14_sub27.method922((Class125_Sub1.aClass14_Sub29ArrayArrayArray3368), f, true);
+				class14_sub27.method922((JunkTex.aClass14_Sub29ArrayArrayArray3368), f, true);
 			}
 		}
 		gl.glEnableClientState(32886);
@@ -47,7 +47,7 @@ public class StaticGL {
 		int i_27_ = i_24_ - 16;
 		int i_28_ = i_24_ + 16;
 		for (int i_29_ = Class14_Sub23.anInt3134; i_29_ < Class83.anInt1338; i_29_++) {
-			Class14_Sub29[][] class14_sub29s = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_29_];
+			Class14_Sub29[][] class14_sub29s = JunkTex.aClass14_Sub29ArrayArrayArray3368[i_29_];
 			for (int i_30_ = Class7_Sub1.anInt2659; i_30_ < JunkTex.anInt4722; i_30_++) {
 				for (int i_31_ = Class14_Sub9_Sub3.anInt4849; i_31_ < JunkTex.anInt4526; i_31_++) {
 					Class14_Sub29 class14_sub29 = class14_sub29s[i_30_][i_31_];
@@ -112,27 +112,27 @@ public class StaticGL {
 			GLEffect3.enableTexCoordArray();
 			Class7_Sub1.anInt2653 = -1;
 			JunkTex.anInt4675 = -1;
-			for (int i_33_ = 0; i_33_ < (RuntimeException_Sub1.aClass14_Sub27ArrayArray2464[0]).length; i_33_++) {
-				Class14_Sub27 class14_sub27 = (RuntimeException_Sub1.aClass14_Sub27ArrayArray2464[0][i_33_]);
+			for (int i_33_ = 0; i_33_ < (JunkTex.aClass14_Sub27ArrayArray2464[0]).length; i_33_++) {
+				Class14_Sub27 class14_sub27 = (JunkTex.aClass14_Sub27ArrayArray2464[0][i_33_]);
 				float f = 251.5F - (class14_sub27.aBoolean3201 ? 1.0F : 0.5F);
 				if (class14_sub27.anInt3190 != Class7_Sub1.anInt2653) {
 					Class7_Sub1.anInt2653 = class14_sub27.anInt3190;
 					RT4.method1304(class14_sub27.anInt3190);
 					AtmosphericEffects.setFogColour(RT4.method1590(false));
 				}
-				class14_sub27.method922((Class125_Sub1.aClass14_Sub29ArrayArrayArray3368), f, false);
+				class14_sub27.method922((JunkTex.aClass14_Sub29ArrayArrayArray3368), f, false);
 			}
 			GLEffect3.disableTexCoordArray();
 		} else {
 			for (int i_34_ = Class14_Sub23.anInt3134; i_34_ < Class83.anInt1338; i_34_++) {
-				for (int i_35_ = 0; i_35_ < (RuntimeException_Sub1.aClass14_Sub27ArrayArray2464[i_34_]).length; i_35_++) {
-					Class14_Sub27 class14_sub27 = (RuntimeException_Sub1.aClass14_Sub27ArrayArray2464[i_34_][i_35_]);
+				for (int i_35_ = 0; i_35_ < (JunkTex.aClass14_Sub27ArrayArray2464[i_34_]).length; i_35_++) {
+					Class14_Sub27 class14_sub27 = (JunkTex.aClass14_Sub27ArrayArray2464[i_34_][i_35_]);
 					float f = (201.5F - (float) i_34_ * 50.0F - (class14_sub27.aBoolean3201 ? 1.0F : 0.5F));
 					if (class14_sub27.anInt3204 != -1
 							&& Class3.anInterface3_117.method12(true, class14_sub27.anInt3204) == 4
 							&& Class15.aBoolean374)
 						RT4.method1304(class14_sub27.anInt3190);
-					class14_sub27.method922(Class125_Sub1.aClass14_Sub29ArrayArrayArray3368, f, false);
+					class14_sub27.method922(JunkTex.aClass14_Sub29ArrayArrayArray3368, f, false);
 				}
 				if (i_34_ == 0 && Class89.anInt1413 > 0) {
 					RT4GL.method1640(101.5F);
@@ -141,11 +141,11 @@ public class StaticGL {
 				}
 			}
 			LightManager.method195(Static2.cameraTileX, Class102.cameraTileZ,
-					Class125_Sub1.aClass14_Sub29ArrayArrayArray3368);
+					JunkTex.aClass14_Sub29ArrayArrayArray3368);
 		}
 		gl.glPopMatrix();
 		for (int i_36_ = Class14_Sub23.anInt3134; i_36_ < Class83.anInt1338; i_36_++) {
-			Class14_Sub29[][] class14_sub29s = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_36_];
+			Class14_Sub29[][] class14_sub29s = JunkTex.aClass14_Sub29ArrayArrayArray3368[i_36_];
 			for (int i_37_ = -JunkTex.anInt1108; i_37_ <= 0; i_37_++) {
 				int i_38_ = Static2.cameraTileX + i_37_;
 				int i_39_ = Static2.cameraTileX - i_37_;
@@ -187,7 +187,7 @@ public class StaticGL {
 			}
 		}
 		for (int i_43_ = Class14_Sub23.anInt3134; i_43_ < Class83.anInt1338; i_43_++) {
-			Class14_Sub29[][] class14_sub29s = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_43_];
+			Class14_Sub29[][] class14_sub29s = JunkTex.aClass14_Sub29ArrayArrayArray3368[i_43_];
 			for (int i_44_ = -JunkTex.anInt1108; i_44_ <= 0; i_44_++) {
 				int i_45_ = Static2.cameraTileX + i_44_;
 				int i_46_ = Static2.cameraTileX - i_44_;

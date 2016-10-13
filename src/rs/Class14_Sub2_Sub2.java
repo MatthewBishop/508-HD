@@ -68,10 +68,10 @@ public class Class14_Sub2_Sub2 extends Cacheable {
 	}
 
 	public static void method264(Buffer class14_sub10, boolean bool) {
-		if (Class14_Sub2_Sub17.aClass76_4022 != null) {
+		if (JunkTex.aClass76_4022 != null) {
 			try {
-				Class14_Sub2_Sub17.aClass76_4022.method1361(0, 0L);
-				Class14_Sub2_Sub17.aClass76_4022.method1362((class14_sub10.position), 24, (byte) 105,
+				JunkTex.aClass76_4022.method1361(0, 0L);
+				JunkTex.aClass76_4022.method1362((class14_sub10.position), 24, (byte) 105,
 						(class14_sub10.payload));
 			} catch (Exception exception) {
 				/* empty */

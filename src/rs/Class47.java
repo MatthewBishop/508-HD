@@ -22,7 +22,7 @@ public class Class47 {
 	}
 
 	public static Class4 method1180(int i, int i_0_, int i_1_) {
-		Class14_Sub29 class14_sub29 = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_0_][i_1_];
+		Class14_Sub29 class14_sub29 = JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_0_][i_1_];
 		if (class14_sub29 == null || class14_sub29.aClass4_3237 == null)
 			return null;
 		return class14_sub29.aClass4_3237;
@@ -40,11 +40,11 @@ public class Class47 {
 	}
 
 	public static int method1182(int i, int i_5_) {
-		if (Class125_Sub2.language == 1) {
+		if (JunkTex.language == 1) {
 			int i_6_ = 7;
 			return i_6_;
 		}
-		if (Class125_Sub2.language == 2) {
+		if (JunkTex.language == 2) {
 			int i_7_ = 20;
 			return i_7_;
 		}

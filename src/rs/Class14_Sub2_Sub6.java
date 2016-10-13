@@ -3,8 +3,8 @@
  */
 package rs;
 
-import com.jagex.link.Cacheable;
 import com.jagex.link.Cache;
+import com.jagex.link.Cacheable;
 
 public class Class14_Sub2_Sub6 extends Cacheable {
 	public static Cache aClass20_3819 = new Cache(4);

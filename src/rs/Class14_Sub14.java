@@ -62,7 +62,7 @@ public class Class14_Sub14 extends Linkable {
 			Class89.anInt1413 = 0;
 			Class28.aBoolean516 = false;
 			Class135.anInt2189 = 0;
-			Class125_Sub3.aBoolean3397 = false;
+			JunkTex.aBoolean3397 = false;
 			Class14_Sub23.anInt3135 = 255;
 			JunkTex.method595(257411150, class43);
 		} else {
@@ -82,7 +82,7 @@ public class Class14_Sub14 extends Linkable {
 			JunkTex.aBoolean845 = true;
 			Class54.anInt887 = 0;
 			Class135.aBoolean2190 = true;
-			Class125_Sub3.aBoolean3397 = true;
+			JunkTex.aBoolean3397 = true;
 			RT4.useLighting = true;
 			JunkTex.aBoolean4518 = true;
 			Class89.anInt1413 = 2;

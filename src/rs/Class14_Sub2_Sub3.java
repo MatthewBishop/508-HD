@@ -52,8 +52,6 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 	}
 
 	public static Class14_Sub2_Sub19_Sub1 method269(Class9 class9, int i, int i_6_) {
-		if (i != 0)
-			method277(-70, -68, 19, (byte) 93, 89, true, 70, -47, -10, 118, -36, -116);
 		if (!JunkTex.method1027(class9, i_6_, (byte) 67)) {
 			Class14_Sub2_Sub19_Sub1 class14_sub2_sub19_sub1 = null;
 			return class14_sub2_sub19_sub1;

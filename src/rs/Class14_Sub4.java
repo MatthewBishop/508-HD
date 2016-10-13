@@ -8,8 +8,8 @@ import com.jagex.link.Deque;
 import com.jagex.link.Linkable;
 import com.jagex.map.Scenegraph;
 import com.jagex.rt4.AtmosphericEffects;
-import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.RT4;
+import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.lights.LightManager;
 
 public class Class14_Sub4 extends Linkable {
@@ -46,7 +46,7 @@ public class Class14_Sub4 extends Linkable {
 				int i_1_ = class14_sub29_0_.anInt3239;
 				int i_2_ = class14_sub29_0_.anInt3243;
 				int i_3_ = class14_sub29_0_.anInt3261;
-				Class14_Sub29[][] class14_sub29s = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_2_];
+				Class14_Sub29[][] class14_sub29s = JunkTex.aClass14_Sub29ArrayArrayArray3368[i_2_];
 				float f = 0.0F;
 				if (Class150.anIntArrayArrayArray2419 == Class114.tileHeights) {
 					int i_4_ = JunkTex.anIntArrayArray2799[i][i_1_];
@@ -61,10 +61,10 @@ public class Class14_Sub4 extends Linkable {
 						JunkTex.anInt4675 = i_6_;
 						RT4.method1549(i_6_, 3);
 					}
-					int i_7_ = ((Class149.anIntArrayArrayArray2391[0][i][i_1_]
-							+ Class149.anIntArrayArrayArray2391[0][i + 1][i_1_]
-							+ Class149.anIntArrayArrayArray2391[0][i][i_1_ + 1]
-							+ (Class149.anIntArrayArrayArray2391[0][i + 1][i_1_ + 1])) >> 2);
+					int i_7_ = ((JunkTex.anIntArrayArrayArray2391[0][i][i_1_]
+							+ JunkTex.anIntArrayArrayArray2391[0][i + 1][i_1_]
+							+ JunkTex.anIntArrayArrayArray2391[0][i][i_1_ + 1]
+							+ (JunkTex.anIntArrayArrayArray2391[0][i + 1][i_1_ + 1])) >> 2);
 					RT4.method1778(3, -i_7_);
 					f = 201.5F;
 					RT4GL.method1640(f);
@@ -75,7 +75,7 @@ public class Class14_Sub4 extends Linkable {
 				if (class14_sub29_0_.aBoolean3235) {
 					if (bool) {
 						if (i_2_ > 0) {
-							Class14_Sub29 class14_sub29_8_ = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_2_
+							Class14_Sub29 class14_sub29_8_ = (JunkTex.aClass14_Sub29ArrayArrayArray3368[i_2_
 									- 1][i][i_1_]);
 							if (class14_sub29_8_ != null && class14_sub29_8_.aBoolean3240)
 								continue;
@@ -207,14 +207,14 @@ public class Class14_Sub4 extends Linkable {
 							i_16_ += 3;
 						else if (Class102.cameraTileZ > i_1_)
 							i_16_ += 6;
-						i_17_ = Class14_Sub22.anIntArray3117[i_16_];
+						i_17_ = JunkTex.anIntArray3117[i_16_];
 						class14_sub29_0_.anInt3236 = JunkTex.anIntArray4618[i_16_];
 					}
 					if (class113 != null) {
 						if ((class113.anInt1880 & Class14_Sub2_Sub8.anIntArray3834[i_16_]) != 0) {
 							if (class113.anInt1880 == 16) {
 								class14_sub29_0_.anInt3231 = 3;
-								class14_sub29_0_.anInt3252 = Class125.anIntArray2081[i_16_];
+								class14_sub29_0_.anInt3252 = JunkTex.anIntArray2081[i_16_];
 								class14_sub29_0_.anInt3234 = 3 - class14_sub29_0_.anInt3252;
 							} else if (class113.anInt1880 == 32) {
 								class14_sub29_0_.anInt3231 = 6;
@@ -635,7 +635,7 @@ public class Class14_Sub4 extends Linkable {
 						}
 					}
 					if (i_2_ < Class83.anInt1338 - 1) {
-						Class14_Sub29 class14_sub29_68_ = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_2_
+						Class14_Sub29 class14_sub29_68_ = (JunkTex.aClass14_Sub29ArrayArrayArray3368[i_2_
 								+ 1][i][i_1_]);
 						if (class14_sub29_68_ != null && class14_sub29_68_.aBoolean3240)
 							JunkTex.aClass2_4477.pushBack(class14_sub29_68_);
@@ -691,7 +691,7 @@ public class Class14_Sub4 extends Linkable {
 			AnimFrameLoader class14_sub2_sub15_77_ = class14_sub2_sub15;
 			return class14_sub2_sub15_77_;
 		}
-		class14_sub2_sub15 = AnimFrameLoader.method933(Class133_Sub1_Sub1.aClass9_4935, Class125_Sub4.aClass9_3427, i_76_,
+		class14_sub2_sub15 = AnimFrameLoader.method933(Class133_Sub1_Sub1.aClass9_4935, JunkTex.aClass9_3427, i_76_,
 				(byte) -101, false);
 		if (i != 3)
 			method459(null, 52);
@@ -702,7 +702,7 @@ public class Class14_Sub4 extends Linkable {
 	}
 
 	public static Class113 method458(int i, int i_79_, int i_80_) {
-		Class14_Sub29 class14_sub29 = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_79_][i_80_];
+		Class14_Sub29 class14_sub29 = JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_79_][i_80_];
 		if (class14_sub29 == null)
 			return null;
 		return class14_sub29.aClass113_3250;

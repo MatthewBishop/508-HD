@@ -32,17 +32,6 @@ public abstract class Class129 {
 		}
 	}
 
-	public static Class125_Sub2 method1762(byte i, Buffer class14_sub10) {
-		if (i <= 93) {
-			Class125_Sub2 class125_sub2 = null;
-			return class125_sub2;
-		}
-		Class125_Sub2 class125_sub2 = new Class125_Sub2(class14_sub10.method805(0), class14_sub10.method805(0),
-				class14_sub10.method805(0), class14_sub10.method805(0), class14_sub10.method829(47),
-				class14_sub10.readUByte());
-		return class125_sub2;
-	}
-
 	public abstract int method1763(int i);
 
 	public static void method1764(int i) {

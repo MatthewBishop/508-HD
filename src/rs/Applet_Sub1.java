@@ -17,8 +17,8 @@ import java.lang.reflect.Method;
 import java.net.URL;
 
 import com.jagex.io.Buffer;
-import com.jagex.util.Timer;
 import com.jagex.util.TimeUtil;
+import com.jagex.util.Timer;
 import com.jagex.util.Util;
 
 public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListener, WindowListener {
@@ -91,7 +91,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
 	public static Class21 method27(int var0, int var1) {
 		try {
-			Class21 var2 = (Class21) Class14_Sub6.aClass52_2817.get((long) var0);
+			Class21 var2 = (Class21) JunkTex.aClass52_2817.get((long) var0);
 			if (var2 != null) {
 				return var2;
 			} else {
@@ -105,11 +105,11 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 					method30(-23, -113);
 				}
 
-				Class14_Sub6.aClass52_2817.put(var4, (long) var0);
+				JunkTex.aClass52_2817.put(var4, (long) var0);
 				return var4;
 			}
 		} catch (Throwable var5) {
-			throw JunkTex.method554(var5, "pb.JA(" + var0 + ',' + var1 + ')');
+			throw Util.error(var5, "pb.JA(" + var0 + ',' + var1 + ')');
 		}
 	}
 
@@ -118,7 +118,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			if (Class96.anApplet_Sub1_1632 == this && !Class14_Sub2_Sub5.aBoolean3818)
 				JunkTex.aLong4704 = 0L;
 		} catch (Throwable throwable) {
-			throw JunkTex.method554(throwable, "pb.start()");
+			throw Util.error(throwable, "pb.start()");
 		}
 	}
 
@@ -141,7 +141,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				}
 				break;
 			} catch (Throwable throwable) {
-				throw JunkTex.method554(throwable, new StringBuilder("pb.BA(")
+				throw Util.error(throwable, new StringBuilder("pb.BA(")
 						.append(string != null ? "{...}" : "null").append(',').append(i).append(')').toString());
 			}
 		} while (false);
@@ -162,7 +162,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				return var2;
 			}
 		} catch (Throwable var3) {
-			throw JunkTex.method554(var3, "pb.getParameter(" + (var1 != null ? "{...}" : "null") + ')');
+			throw Util.error(var3, "pb.getParameter(" + (var1 != null ? "{...}" : "null") + ')');
 		}
 	}
 
@@ -213,7 +213,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				if (i_24_ > 43)
 					break;
 			} catch (Throwable throwable) {
-				throw JunkTex.method554(throwable,
+				throw Util.error(throwable,
 						new StringBuilder("pb.W(").append(i).append(',').append(i_20_).append(',').append(i_21_)
 								.append(',').append(i_22_).append(',').append(string != null ? "{...}" : "null")
 								.append(',').append(i_23_).append(',').append(i_24_).append(')').toString());
@@ -229,7 +229,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 					Class43.java_version.startsWith("1.5");
 			}
 		} catch (Throwable throwable) {
-			throw JunkTex.method554(throwable,
+			throw Util.error(throwable,
 					new StringBuilder("pb.paint(").append(graphics != null ? "{...}" : "null").append(')').toString());
 		}
 	}
@@ -245,7 +245,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			if (Class96.anApplet_Sub1_1632 == this && !Class14_Sub2_Sub5.aBoolean3818)
 				JunkTex.aLong4704 = TimeUtil.getTime() + 4000L;
 		} catch (Throwable throwable) {
-			throw JunkTex.method554(throwable, "pb.stop()");
+			throw Util.error(throwable, "pb.stop()");
 		}
 	}
 
@@ -422,7 +422,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				return var1;
 			}
 		} catch (Throwable var2) {
-			throw JunkTex.method554(var2, "pb.getAppletContext()");
+			throw Util.error(var2, "pb.getAppletContext()");
 		}
 	}
 
@@ -491,7 +491,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				return var1;
 			}
 		} catch (Throwable var2) {
-			throw JunkTex.method554(var2, "pb.getDocumentBase()");
+			throw Util.error(var2, "pb.getDocumentBase()");
 		}
 	}
 
@@ -573,7 +573,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				return var3;
 			}
 		} catch (Throwable var4) {
-			throw JunkTex.method554(var4, "pb.DA(" + var1 + ')');
+			throw Util.error(var4, "pb.DA(" + var1 + ')');
 		}
 	}
 

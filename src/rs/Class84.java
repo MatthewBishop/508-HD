@@ -3,8 +3,8 @@
  */
 package rs;
 
-import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class25;
+import com.jagex.rt4.RT4GL;
 
 public class Class84 {
 	public static Class14_Sub2_Sub16 aClass14_Sub2_Sub16_1344;

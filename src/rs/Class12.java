@@ -8,6 +8,7 @@ import com.jagex.io.Buffer;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.Class14_Sub1;
+import com.jagex.util.Util;
 
 public class Class12 {
 	public int anInt275;
@@ -164,7 +165,7 @@ public class Class12 {
 				return var7;
 			}
 		} catch (Throwable var12) {
-			throw JunkTex.method554(var12, "bi.D(" + var1 + ',' + var2 + ','
+			throw Util.error(var12, "bi.D(" + var1 + ',' + var2 + ','
 					+ (var3 != null ? "{...}" : "null") + ',' + (var4 != null ? "{...}" : "null") + ',' + var5 + ')');
 		}
 	}
@@ -246,7 +247,7 @@ public class Class12 {
 				return false;
 			}
 		} catch (Throwable var4) {
-			throw JunkTex.method554(var4, "bi.G(" + var1 + ')');
+			throw Util.error(var4, "bi.G(" + var1 + ')');
 		}
 	}
 
@@ -323,7 +324,7 @@ public class Class12 {
 				}
 			}
 		} catch (Throwable var6) {
-			throw JunkTex.method554(var6, "bi.H(" + var1 + ',' + var2 + ',' + var3 + ')');
+			throw Util.error(var6, "bi.H(" + var1 + ',' + var2 + ',' + var3 + ')');
 		}
 	}
 
@@ -343,7 +344,7 @@ public class Class12 {
 				}
 			}
 		} catch (Throwable var6) {
-			throw JunkTex.method554(var6,
+			throw Util.error(var6,
 					"bi.M(" + var1 + ',' + (var2 != null ? "{...}" : "null") + ',' + var3 + ')');
 		}
 	}
@@ -524,7 +525,7 @@ public class Class12 {
 				}
 			}
 		} catch (Throwable throwable) {
-			throw JunkTex.method554(throwable, new StringBuilder("bi.N(").append(i).append(',')
+			throw Util.error(throwable, new StringBuilder("bi.N(").append(i).append(',')
 					.append(class14_sub10 != null ? "{...}" : "null").append(',').append(i_70_).append(')').toString());
 		}
 	}
@@ -558,7 +559,7 @@ public class Class12 {
 				}
 			}
 		} catch (Throwable var5) {
-			throw JunkTex.method554(var5, "bi.A(" + var1 + ')');
+			throw Util.error(var5, "bi.A(" + var1 + ')');
 		}
 	}
 
@@ -572,7 +573,7 @@ public class Class12 {
 						i_109_);
 			}
 		} catch (Throwable throwable) {
-			throw JunkTex.method554(throwable,
+			throw Util.error(throwable,
 					new StringBuilder("bi.K(").append(i).append(',').append(i_105_).append(',').append(i_106_)
 							.append(',').append(i_107_).append(',').append(i_108_).append(',').append(i_109_)
 							.append(',').append(i_110_).append(',').append(i_111_).append(')').toString());
@@ -610,7 +611,7 @@ public class Class12 {
 				}
 			}
 		} catch (Throwable var5) {
-			throw JunkTex.method554(var5, "bi.I(" + var1 + ')');
+			throw Util.error(var5, "bi.I(" + var1 + ')');
 		}
 	}
 
@@ -652,7 +653,7 @@ public class Class12 {
 				return var3;
 			}
 		} catch (Throwable var5) {
-			throw JunkTex.method554(var5, "bi.P(" + var0 + ',' + var1 + ',' + var2 + ')');
+			throw Util.error(var5, "bi.P(" + var0 + ',' + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -753,7 +754,7 @@ public class Class12 {
 				}
 			}
 		} catch (Throwable var9) {
-			throw JunkTex.method554(var9,
+			throw Util.error(var9,
 					"bi.E(" + var1 + ',' + (var2 != null ? "{...}" : "null") + ',' + var3 + ')');
 		}
 	}
@@ -773,7 +774,7 @@ public class Class12 {
 		aBoolean308 = true;
 		anInt281 = -1;
 		anInt286 = -1;
-		aClass124_302 = Class125_Sub3.aClass124_3412;
+		aClass124_302 = JunkTex.aClass124_3412;
 		aShort285 = (short) 0;
 		aByte321 = (byte) -96;
 		anInt284 = -1;

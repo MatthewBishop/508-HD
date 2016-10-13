@@ -3,9 +3,9 @@
  */
 package rs;
 
+import com.jagex.link.Cache;
 import com.jagex.link.Cacheable;
 import com.jagex.link.Deque;
-import com.jagex.link.Cache;
 
 public class Class14_Sub2_Sub5 extends Cacheable {
 	public int anInt3797 = 12800;
@@ -58,9 +58,7 @@ public class Class14_Sub2_Sub5 extends Cacheable {
 					&& Class14_Sub17.anInt3005 <= i_5_ - i_7_ && i_7_ + i_5_ <= Class59.anInt955)
 				JunkTex.method606(i_6_, i_3_, i_7_, i_5_, -15882, i_1_, i, i_4_);
 			else
-				JunkTex.method593(i_4_, i, i_1_, i_7_, i_2_ ^ ~0x77, i_3_, i_5_, i_6_);
-			if (i_2_ != 0)
-				aClass20_3815 = null;
+				JunkTex.method593(i_4_, i, i_1_, i_7_, 0 ^ ~0x77, i_3_, i_5_, i_6_);
 		}
 	}
 

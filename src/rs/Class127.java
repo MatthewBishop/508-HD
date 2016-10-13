@@ -47,11 +47,11 @@ public class Class127 {
 			class37.anInt641 = i_6_;
 			class37.anInt646 = i_7_;
 			for (int i_8_ = i; i_8_ >= 0; i_8_--) {
-				if ((Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_8_][i_0_][i_1_]) == null)
-					Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_8_][i_0_][i_1_] = new Class14_Sub29(i_8_, i_0_,
+				if ((JunkTex.aClass14_Sub29ArrayArrayArray3368[i_8_][i_0_][i_1_]) == null)
+					JunkTex.aClass14_Sub29ArrayArrayArray3368[i_8_][i_0_][i_1_] = new Class14_Sub29(i_8_, i_0_,
 							i_1_);
 			}
-			Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_0_][i_1_].aClass37_3255 = class37;
+			JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_0_][i_1_].aClass37_3255 = class37;
 		}
 	}
 

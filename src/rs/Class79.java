@@ -242,7 +242,7 @@ public class Class79 {
 			class79_26_.aBoolean1248 = false;
 			class79_26_.anInt1229 = 0;
 		}
-		if (!Class125_Sub2.aBoolean3375 && class79_26_.aBoolean1259)
+		if (!JunkTex.aBoolean3375 && class79_26_.aBoolean1259)
 			class79_26_.aClass124Array1282 = null;
 		Class127.aClass52_2112.put(class79_26_, (long) i_24_);
 		if (i != -106) {
@@ -1067,7 +1067,7 @@ public class Class79 {
 		aBoolean1283 = false;
 		anInt1243 = -1;
 		aByte1286 = (byte) 0;
-		aClass124_1290 = Class125_Sub4.aClass124_3420;
+		aClass124_1290 = JunkTex.aClass124_3420;
 		aBoolean1270 = false;
 		aBoolean1253 = true;
 		aClass124Array1282 = new Class124[5];

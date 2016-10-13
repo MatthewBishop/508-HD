@@ -26,7 +26,7 @@ public class Class14_Sub11 extends Linkable {
 
 	public static void method851(int i, int i_0_) {
 		Class133_Sub1_Sub1.aClass52_4926.method1208(i_0_);
-		Class125.aClass52_2075.method1208(i_0_);
+		JunkTex.aClass52_2075.method1208(i_0_);
 		Class70.aClass52_1077.method1208(i_0_);
 		if (i != 1)
 			method856((byte) 3);
@@ -51,7 +51,7 @@ public class Class14_Sub11 extends Linkable {
 			aClass124_2949 = null;
 		if (!Class133_Sub5.aBoolean3628 && JunkTex.anInt4729 < 500) {
 			Class112.aClass124Array1875[JunkTex.anInt4729] = class124;
-			RuntimeException_Sub1.aClass124Array2459[(JunkTex.anInt4729)] = class124_2_;
+			JunkTex.aClass124Array2459[(JunkTex.anInt4729)] = class124_2_;
 			Class14_Sub29.aShortArray3262[JunkTex.anInt4729] = i_3_;
 			JunkTex.aLongArray3924[JunkTex.anInt4729] = l;
 			JunkTex.anIntArray4544[JunkTex.anInt4729] = i_4_;

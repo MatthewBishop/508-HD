@@ -4,30 +4,15 @@ import com.jagex.link.Deque;
 import com.jagex.rt4.Class14_Sub1;
 import com.jagex.util.Util;
 
-import rs.Class108;
-import rs.Class124;
-import rs.Class132;
-import rs.Class138;
-import rs.Class142;
-import rs.Class14_Sub19;
-import rs.Class14_Sub25;
-import rs.Class14_Sub2_Sub2;
-import rs.Class14_Sub9_Sub3;
-
 public class Class24 implements Runnable {
 
 	public static int anInt465 = 0;
 	public static int[] anIntArray467 = new int[32];
-	public static int[] anIntArray468 = new int[4096];
 	public static Class124 aClass124_470 = Class14_Sub2_Sub2.method263(1178, "mapfunction");
 	public static short[] aShortArray471;
 	public static Class124 aClass124_474;
 
 	static {
-		for (int var0 = 0; var0 < 4096; ++var0) {
-			anIntArray468[var0] = JunkTex.method1207((byte) -124, var0);
-		}
-
 		aClass124_474 = Class14_Sub2_Sub2.method263(1178, "rect_debug=");
 	}
 
@@ -95,7 +80,7 @@ public class Class24 implements Runnable {
 				Class14_Sub9_Sub3.method738((String) null, var10, 95);
 			}
 		} catch (RuntimeException var11) {
-			throw JunkTex.method554(var11, "ck.run()");
+			throw Util.error(var11, "ck.run()");
 		}
 	}
 
@@ -110,7 +95,6 @@ public class Class24 implements Runnable {
 	public static void method992(byte var0) {
 		aShortArray471 = null;
 		anIntArray467 = null;
-		anIntArray468 = null;
 		aClass124_474 = null;
 		aClass124_470 = null;
 		if (var0 != 64) {
@@ -153,7 +137,7 @@ public class Class24 implements Runnable {
 				}
 			}
 		} catch (Throwable var10) {
-			throw JunkTex.method554(var10, "ck.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+			throw Util.error(var10, "ck.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
 		}
 	}
 }

@@ -8,14 +8,12 @@ import java.awt.event.FocusListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-import com.jagex.rt4.RT4;
-
 public class Class141 implements KeyListener, FocusListener {
 	public static Class94 aClass94_2239;
 	public static Class87 aClass87_2242;
 	public static volatile boolean aBoolean2244;
 	public static int[] anIntArray2246 = new int[32];
-	public static int anInt2252;
+
 	public static Class9_Sub1[] aClass9_Sub1Array2253;
 
 	static {
@@ -94,8 +92,6 @@ public class Class141 implements KeyListener, FocusListener {
 
 	public static void method1962(boolean bool) {
 		aClass9_Sub1Array2253 = null;
-		if (bool)
-			anInt2252 = -116;
 		aClass94_2239 = null;
 		anIntArray2246 = null;
 		aClass87_2242 = null;

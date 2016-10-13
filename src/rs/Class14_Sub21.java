@@ -4,9 +4,9 @@
 package rs;
 
 import com.jagex.link.Linkable;
+import com.jagex.rt4.Class14_Sub27;
 import com.jagex.rt4.RT4GL;
 import com.jagex.util.BrowserControlUtil;
-import com.jagex.rt4.Class14_Sub27;
 
 public class Class14_Sub21 extends Linkable {
 	public static Class124 aClass124_3099;
@@ -76,7 +76,7 @@ public class Class14_Sub21 extends Linkable {
 			class94.anInt1518 = class94.anInt1467 * class94.anInt1545 / class94.anInt1464;
 		if (class94.aByte1536 == 4)
 			class94.anInt1545 = class94.anInt1464 * class94.anInt1518 / class94.anInt1467;
-		if (Class125_Sub3.aBoolean3392 && (client.method46(class94) != 0 || class94.anInt1489 == 0)) {
+		if (JunkTex.aBoolean3392 && (client.method46(class94) != 0 || class94.anInt1489 == 0)) {
 			if (class94.anInt1545 < 5 && class94.anInt1518 < 5) {
 				class94.anInt1545 = 5;
 				class94.anInt1518 = 5;
@@ -98,7 +98,7 @@ public class Class14_Sub21 extends Linkable {
 	}
 
 	public static void method895(int i, Class14_Sub27[] class14_sub27s) {
-		RuntimeException_Sub1.aClass14_Sub27ArrayArray2464[i] = class14_sub27s;
+		JunkTex.aClass14_Sub27ArrayArray2464[i] = class14_sub27s;
 	}
 
 	public static int method896(int i, int i_5_) {

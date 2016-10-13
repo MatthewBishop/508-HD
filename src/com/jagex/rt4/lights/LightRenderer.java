@@ -9,8 +9,8 @@ import javax.media.opengl.GL;
 
 import com.jagex.io.Buffer;
 import com.jagex.link.HashTable;
-import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class14_Sub1;
+import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.VertexBuffer;
 
 import rs.JunkTex;

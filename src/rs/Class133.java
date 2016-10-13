@@ -8,8 +8,8 @@ import java.io.IOException;
 import com.jagex.io.Buffer;
 import com.jagex.map.SceneCluster;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
-import com.jagex.rt4.lights.LightRenderer;
 import com.jagex.rt4.lights.Light;
+import com.jagex.rt4.lights.LightRenderer;
 import com.jagex.util.TimeUtil;
 
 public abstract class Class133 {

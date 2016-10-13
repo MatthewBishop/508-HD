@@ -7,9 +7,9 @@ import com.jagex.cache.anim.Animation;
 import com.jagex.io.Buffer;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.map.SceneCluster;
-import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Class148;
 import com.jagex.rt4.Class148_Sub1;
+import com.jagex.rt4.RT4GL;
 
 public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 	public int anInt4902;
@@ -52,7 +52,7 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 			method1805(-105, null);
 		if (class9.method171(i ^ 0x882, Class7_Sub3.anInt2681))
 			i_0_++;
-		if (class9.method171(i ^ 0x882, Class149.anInt2389))
+		if (class9.method171(i ^ 0x882, JunkTex.anInt2389))
 			i_0_++;
 		if (class9.method171(29499, Class36.anInt629))
 			i_0_++;

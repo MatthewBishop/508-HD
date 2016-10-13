@@ -77,25 +77,25 @@ public class Class75 {
 
 	public static void method1339(Class133 class133, int i, int i_3_, int i_4_) {
 		if (i_3_ < Static2.anInt3338) {
-			Class14_Sub29 class14_sub29 = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_3_ + 1][i_4_]);
+			Class14_Sub29 class14_sub29 = (JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_3_ + 1][i_4_]);
 			if (class14_sub29 != null && class14_sub29.aClass4_3237 != null
 					&& class14_sub29.aClass4_3237.aClass133_124.method1784())
 				class133.method1788(class14_sub29.aClass4_3237.aClass133_124, 128, 0, 0, true);
 		}
 		if (i_4_ < Static2.anInt3338) {
-			Class14_Sub29 class14_sub29 = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_3_][i_4_ + 1]);
+			Class14_Sub29 class14_sub29 = (JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_3_][i_4_ + 1]);
 			if (class14_sub29 != null && class14_sub29.aClass4_3237 != null
 					&& class14_sub29.aClass4_3237.aClass133_124.method1784())
 				class133.method1788(class14_sub29.aClass4_3237.aClass133_124, 0, 0, 128, true);
 		}
 		if (i_3_ < Static2.anInt3338 && i_4_ < JunkTex.anInt4337) {
-			Class14_Sub29 class14_sub29 = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_3_ + 1][i_4_ + 1]);
+			Class14_Sub29 class14_sub29 = (JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_3_ + 1][i_4_ + 1]);
 			if (class14_sub29 != null && class14_sub29.aClass4_3237 != null
 					&& class14_sub29.aClass4_3237.aClass133_124.method1784())
 				class133.method1788(class14_sub29.aClass4_3237.aClass133_124, 128, 0, 128, true);
 		}
 		if (i_3_ < Static2.anInt3338 && i_4_ > 0) {
-			Class14_Sub29 class14_sub29 = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_3_ + 1][i_4_ - 1]);
+			Class14_Sub29 class14_sub29 = (JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_3_ + 1][i_4_ - 1]);
 			if (class14_sub29 != null && class14_sub29.aClass4_3237 != null
 					&& class14_sub29.aClass4_3237.aClass133_124.method1784())
 				class133.method1788(class14_sub29.aClass4_3237.aClass133_124, 128, 0, -128, true);
@@ -277,11 +277,11 @@ public class Class75 {
 
 	public static void method1343(int i, int i_13_, int i_14_, int i_15_, int i_16_) {
 		if (Class14_Sub2_Sub11.anInt3881 == 1)
-			JunkTex.aClass14_Sub2_Sub19Array3958[Class14_Sub2_Sub17.anInt4017 / 100]
+			JunkTex.aClass14_Sub2_Sub19Array3958[JunkTex.anInt4017 / 100]
 					.method391(JunkTex.anInt4243 - 8, JunkTex.anInt4515 - 8);
 		int i_17_ = 100 % ((i_13_ - 62) / 41);
 		if (Class14_Sub2_Sub11.anInt3881 == 2)
-			JunkTex.aClass14_Sub2_Sub19Array3958[4 + Class14_Sub2_Sub17.anInt4017 / 100]
+			JunkTex.aClass14_Sub2_Sub19Array3958[4 + JunkTex.anInt4017 / 100]
 					.method391(JunkTex.anInt4243 - 8, JunkTex.anInt4515 - 8);
 		Class14_Sub14.method868(67);
 	}

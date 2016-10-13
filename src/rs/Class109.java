@@ -72,8 +72,8 @@ public class Class109 {
 		Class14_Sub23.anInt3134 = i;
 		for (int i_14_ = 0; i_14_ < Static2.anInt3338; i_14_++) {
 			for (int i_15_ = 0; i_15_ < JunkTex.anInt4337; i_15_++) {
-				if ((Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_14_][i_15_]) == null)
-					Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_14_][i_15_] = new Class14_Sub29(i, i_14_,
+				if ((JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_14_][i_15_]) == null)
+					JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_14_][i_15_] = new Class14_Sub29(i, i_14_,
 							i_15_);
 			}
 		}
@@ -104,9 +104,9 @@ public class Class109 {
 	}
 
 	public static void method1569(int i, int i_23_) {
-		Class14_Sub29 class14_sub29 = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[0][i][i_23_];
+		Class14_Sub29 class14_sub29 = JunkTex.aClass14_Sub29ArrayArrayArray3368[0][i][i_23_];
 		for (int i_24_ = 0; i_24_ < 3; i_24_++) {
-			Class14_Sub29 class14_sub29_25_ = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_24_][i][i_23_] = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_24_
+			Class14_Sub29 class14_sub29_25_ = (JunkTex.aClass14_Sub29ArrayArrayArray3368[i_24_][i][i_23_] = (JunkTex.aClass14_Sub29ArrayArrayArray3368[i_24_
 					+ 1][i][i_23_]));
 			if (class14_sub29_25_ != null) {
 				class14_sub29_25_.anInt3243--;
@@ -117,10 +117,10 @@ public class Class109 {
 				}
 			}
 		}
-		if (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[0][i][i_23_] == null)
-			Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[0][i][i_23_] = new Class14_Sub29(0, i, i_23_);
-		Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[0][i][i_23_].aClass14_Sub29_3260 = class14_sub29;
-		Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[3][i][i_23_] = null;
+		if (JunkTex.aClass14_Sub29ArrayArrayArray3368[0][i][i_23_] == null)
+			JunkTex.aClass14_Sub29ArrayArrayArray3368[0][i][i_23_] = new Class14_Sub29(0, i, i_23_);
+		JunkTex.aClass14_Sub29ArrayArrayArray3368[0][i][i_23_].aClass14_Sub29_3260 = class14_sub29;
+		JunkTex.aClass14_Sub29ArrayArrayArray3368[3][i][i_23_] = null;
 	}
 
 	public static boolean method1570(int i, int i_27_, int i_28_, int i_29_, int i_30_, int i_31_, Class133 class133,

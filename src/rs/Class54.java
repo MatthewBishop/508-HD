@@ -22,7 +22,7 @@ public class Class54 {
 			return class124;
 		}
 		if (class94.aClass124_1589 == null || (class94.aClass124_1589.method1684((byte) 9).method1693(0) == 0)) {
-			if (Class125_Sub3.aBoolean3392) {
+			if (JunkTex.aBoolean3392) {
 				Class124 class124 = JunkTex.aClass124_4607;
 				return class124;
 			}
@@ -40,14 +40,14 @@ public class Class54 {
 				if (!Class14_Sub4.aBoolean2784 || JunkTex.anInt4729 >= 2)
 					class124 = Static2.method1170((byte) -99, JunkTex.anInt4729 - 1);
 				else
-					class124 = (JunkTex.method515((new Class124[] { Class125.aClass124_2082,
+					class124 = (JunkTex.method515((new Class124[] { JunkTex.aClass124_2082,
 							Class104.aClass124_1736, Class17.aClass124_408, JunkTex.aClass124_4165 }),
 							(byte) -42));
 			} else
 				class124 = JunkTex
 						.method515(
 								(new Class124[] { Class40.aClass124_665, Class104.aClass124_1736,
-										(Class14_Sub6.aClass124_2809), (JunkTex.aClass124_4165) }),
+										(JunkTex.aClass124_2809), (JunkTex.aClass124_4165) }),
 								(byte) -41);
 			if (JunkTex.anInt4729 > 2)
 				class124 = (JunkTex.method515((new Class124[] { class124, Class115.aClass124_1906,

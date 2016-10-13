@@ -11,9 +11,8 @@ public class Class7_Sub1 extends Class7 {
 	public static Class9_Sub1 aClass9_Sub1_2657;
 	public static int anInt2659;
 	public static Class124 aClass124_2660;
-	public static int anInt2662;
+
 	public static short[] aShortArray2663;
-	public static int anInt2664;
 	public static Class14_Sub2_Sub5 aClass14_Sub2_Sub5_2665;
 
 	static {
@@ -35,9 +34,9 @@ public class Class7_Sub1 extends Class7 {
 		if (bool)
 			method123((byte) -102);
 		Class103.method1531(Class67.aClass94_1060);
-		Class125_Sub4.anInt3419++;
+		JunkTex.anInt3419++;
 		if (!Class122.aBoolean2056 || !Class59.aBoolean954) {
-			if (Class125_Sub4.anInt3419 > 1)
+			if (JunkTex.anInt3419 > 1)
 				Class67.aClass94_1060 = null;
 		} else {
 			int i = Class107.anInt1804;
@@ -55,7 +54,7 @@ public class Class7_Sub1 extends Class7 {
 				i_3_ = (-Class67.aClass94_1060.anInt1518 + (JunkTex.aClass94_420.anInt1518 + Class108.anInt1824));
 			int i_5_ = -Class35.anInt602 + i_3_;
 			int i_6_ = Class67.aClass94_1060.anInt1580;
-			if (Class67.aClass94_1060.anInt1549 < Class125_Sub4.anInt3419
+			if (Class67.aClass94_1060.anInt1549 < JunkTex.anInt3419
 					&& (i_6_ < i_5_ || i_5_ < -i_6_ || i_4_ > i_6_ || i_4_ < -i_6_))
 				JunkTex.aBoolean4188 = true;
 			int i_7_ = JunkTex.aClass94_420.anInt1547 - Class48.anInt798 + i;
@@ -98,8 +97,6 @@ public class Class7_Sub1 extends Class7 {
 	}
 
 	public static void method123(byte i) {
-		if (i != -18)
-			anInt2662 = 16;
 		aClass14_Sub2_Sub5_2665 = null;
 		aClass9_2652 = null;
 		aClass9_Sub1_2657 = null;

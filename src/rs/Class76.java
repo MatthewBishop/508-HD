@@ -11,6 +11,7 @@ import java.io.IOException;
 import com.jagex.cache.anim.Animation;
 import com.jagex.cache.loaders.AnimFrameLoader;
 import com.jagex.rt4.Class14_Sub2_Sub19;
+import com.jagex.util.Util;
 
 public class Class76 {
 	public byte[] aByteArray1186;
@@ -56,7 +57,7 @@ public class Class76 {
 				return var1;
 			}
 		} catch (Throwable var2) {
-			throw JunkTex.method554(var2, "la.H(" + var0 + ')');
+			throw Util.error(var2, "la.H(" + var0 + ')');
 		}
 	}
 
@@ -67,14 +68,12 @@ public class Class76 {
 				aClass30_1202.method1057(25861);
 			}
 		} catch (Throwable throwable) {
-			throw JunkTex.method554(throwable, new StringBuilder("la.L(").append(i).append(')').toString());
+			throw Util.error(throwable, new StringBuilder("la.L(").append(i).append(')').toString());
 		}
 	}
 
 	public static Class133_Sub7 method1359(int i, int i_7_, Animation animation, Class133_Sub7 class133_sub7, int i_8_,
 			int i_9_, int i_10_, int i_11_, int i_12_, int i_13_, int i_14_, int i_15_, int i_16_, boolean bool) {
-		if (i != -10345)
-			method1364(-75);
 		long l = ((long) ((i_11_ << 56) + ((i_9_ << 16) + i_16_)) + (((long) i_8_ << 32) - -((long) i_12_ << 48)));
 		Class133_Sub7 class133_sub7_17_ = ((Class133_Sub7) Class14_Sub11.aClass52_2946.get(l));
 		if (class133_sub7_17_ == null) {
@@ -281,25 +280,22 @@ public class Class76 {
 			}
 
 		} catch (Throwable var13) {
-			throw JunkTex.method554(var13,
+			throw Util.error(var13,
 					"la.J(" + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null ? "{...}" : "null") + ')');
 		}
 	}
 
-	public static void method1363(int[][] is, int i) {
+	public static void method1363(int[][] is) {
 		try {
-			if (i == 0)
 				Static2.anIntArrayArray4038 = is;
 		} catch (Throwable throwable) {
-			throw JunkTex.method554(throwable, new StringBuilder("la.B(")
-					.append(is != null ? "{...}" : "null").append(',').append(i).append(')').toString());
+			throw Util.error(throwable, new StringBuilder("la.B(")
+					.append(is != null ? "{...}" : "null").append(',').append(')').toString());
 		}
 	}
 
 	public static void method1364(int i) {
 		aClass14_Sub2_Sub19Array1191 = null;
-		if (i <= 2)
-			method1363(null, 116);
 		aClass88Array1211 = null;
 		anIntArray1204 = null;
 		aClass124_1203 = null;
@@ -344,7 +340,7 @@ public class Class76 {
 				return var2;
 			}
 		} catch (Throwable var3) {
-			throw JunkTex.method554(var3, "la.M(" + var1 + ')');
+			throw Util.error(var3, "la.M(" + var1 + ')');
 		}
 	}
 

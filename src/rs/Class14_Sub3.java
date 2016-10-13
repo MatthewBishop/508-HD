@@ -85,7 +85,7 @@ public class Class14_Sub3 extends Linkable {
 		JunkTex.method1025(25192);
 		Class7_Sub2_Sub1.method130((byte) 110);
 		Class65.method1289(true);
-		Class125_Sub2.method1732(-25300);
+		JunkTex.method1732(-25300);
 		JunkTex.method538((byte) -121);
 		Class115.method1592((byte) 23);
 		Class7_Sub2.method127(i);
@@ -95,7 +95,7 @@ public class Class14_Sub3 extends Linkable {
 		Class14_Sub17.aClass9_Sub1_3021.method152(i ^ ~0x6b);
 		Static2.aClass9_Sub1_2901.method152(-107);
 		Class14_Sub13.aClass9_Sub1_2958.method152(-112);
-		Class125_Sub2.aClass9_Sub1_3374.method152(-124);
+		JunkTex.aClass9_Sub1_3374.method152(-124);
 		JunkTex.aClass9_Sub1_4739.method152(-116);
 		aClass9_Sub1_2750.method152(-105);
 		JunkTex.aClass9_Sub1_4323.method152(-106);

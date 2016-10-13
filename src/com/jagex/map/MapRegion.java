@@ -6,8 +6,8 @@ package com.jagex.map;
 import com.jagex.io.Buffer;
 import com.jagex.rt4.AtmosphericEffects;
 import com.jagex.rt4.Class14_Sub27;
-import com.jagex.rt4.ShadowManager;
 import com.jagex.rt4.RT4;
+import com.jagex.rt4.ShadowManager;
 import com.jagex.rt4.lights.LightManager;
 
 import rs.Class1;
@@ -16,9 +16,7 @@ import rs.Class114;
 import rs.Class115;
 import rs.Class128;
 import rs.Class142;
-import rs.Class149;
 import rs.Class14_Sub21;
-import rs.Class14_Sub2_Sub17;
 import rs.Class14_Sub2_Sub21;
 import rs.Class14_Sub2_Sub3;
 import rs.Class15;
@@ -55,7 +53,7 @@ public class MapRegion {
 							Class114.tileHeights[0][i_3_][i_4_] = -MapSmoothing.calculateHeight((i_4_ + 556238 + i_1_),
 									(i_3_ + 932731 + i_2_)) * 8;
 					} else
-						Class114.tileHeights[0][i_3_][i_4_] = Class149.anIntArrayArrayArray2391[0][i_3_][i_4_];
+						Class114.tileHeights[0][i_3_][i_4_] = JunkTex.anIntArrayArrayArray2391[0][i_3_][i_4_];
 					break;
 				}
 				if (i_5_ == 1) {
@@ -69,7 +67,7 @@ public class MapRegion {
 							Class114.tileHeights[i][i_3_][i_4_] = (-(i_6_ * 8)
 									+ Class114.tileHeights[i - 1][i_3_][i_4_]);
 					} else
-						Class114.tileHeights[0][i_3_][i_4_] = (Class149.anIntArrayArrayArray2391[0][i_3_][i_4_]
+						Class114.tileHeights[0][i_3_][i_4_] = (JunkTex.anIntArrayArrayArray2391[0][i_3_][i_4_]
 								+ i_6_ * 8);
 					break;
 				}
@@ -176,7 +174,7 @@ public class MapRegion {
 				Class14_Sub2_Sub3.anIntArray3773[i_35_] = 0;
 				Class21.anIntArray442[i_35_] = 0;
 				Static2.anIntArray4023[i_35_] = 0;
-				Class14_Sub2_Sub17.anIntArray4020[i_35_] = 0;
+				JunkTex.anIntArray4020[i_35_] = 0;
 			}
 			for (int i_36_ = -5; i_36_ < 104; i_36_++) {
 				for (int i_37_ = 0; i_37_ < 104; i_37_++) {
@@ -189,7 +187,7 @@ public class MapRegion {
 							Class14_Sub2_Sub3.anIntArray3773[i_37_] += class65.anInt1028;
 							Class21.anIntArray442[i_37_] += class65.anInt1023;
 							Static2.anIntArray4023[i_37_] += class65.anInt1027;
-							Class14_Sub2_Sub17.anIntArray4020[i_37_]++;
+							JunkTex.anIntArray4020[i_37_]++;
 						}
 					}
 					int i_40_ = i_36_ - 5;
@@ -201,7 +199,7 @@ public class MapRegion {
 							Class14_Sub2_Sub3.anIntArray3773[i_37_] -= class65.anInt1028;
 							Class21.anIntArray442[i_37_] -= class65.anInt1023;
 							Static2.anIntArray4023[i_37_] -= class65.anInt1027;
-							Class14_Sub2_Sub17.anIntArray4020[i_37_]--;
+							JunkTex.anIntArray4020[i_37_]--;
 						}
 					}
 				}
@@ -215,7 +213,7 @@ public class MapRegion {
 						int i_48_ = i_47_ - 5;
 						int i_49_ = i_47_ + 5;
 						if (i_49_ < 104) {
-							i_45_ += Class14_Sub2_Sub17.anIntArray4020[i_49_];
+							i_45_ += JunkTex.anIntArray4020[i_49_];
 							i_44_ += Class21.anIntArray442[i_49_];
 							i_42_ += Class115.anIntArray1917[i_49_];
 							i_43_ += Class14_Sub2_Sub3.anIntArray3773[i_49_];
@@ -224,7 +222,7 @@ public class MapRegion {
 						if (i_48_ >= 0) {
 							i_42_ -= Class115.anIntArray1917[i_48_];
 							i_44_ -= Class21.anIntArray442[i_48_];
-							i_45_ -= Class14_Sub2_Sub17.anIntArray4020[i_48_];
+							i_45_ -= JunkTex.anIntArray4020[i_48_];
 							i_43_ -= Class14_Sub2_Sub3.anIntArray3773[i_48_];
 							i_46_ -= Static2.anIntArray4023[i_48_];
 						}
@@ -413,7 +411,7 @@ public class MapRegion {
 			}
 			if (bool) {
 				Class14_Sub27[] class14_sub27s = Class47.method1189(fs_84_, is_12_,
-						Class149.anIntArrayArrayArray2391[0], fs, (byte) -125, JunkTex.tileFlags, i_14_, is,
+						JunkTex.anIntArrayArrayArray2391[0], fs, (byte) -125, JunkTex.tileFlags, i_14_, is,
 						Class15.overlayOrientations[i_14_], Class97.underlays[i_14_], JunkTex.overlays[i_14_],
 						JunkTex.anIntArrayArray2799, JunkTex.overlayTypes[i_14_], fs_86_,
 						Class114.tileHeights[i_14_]);

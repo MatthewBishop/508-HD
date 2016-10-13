@@ -101,7 +101,7 @@ public abstract class Class108 {
 	}
 
 	public static void method1562(int[] is, int i, int i_42_, int i_43_, int i_44_, int i_45_) {
-		Class14_Sub29 class14_sub29 = (Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i_43_][i_44_][i_45_]);
+		Class14_Sub29 class14_sub29 = (JunkTex.aClass14_Sub29ArrayArrayArray3368[i_43_][i_44_][i_45_]);
 		if (class14_sub29 != null) {
 			Class153 class153 = class14_sub29.aClass153_3248;
 			if (class153 != null) {

@@ -120,14 +120,14 @@ public class Class133_Sub4 extends Class133 {
 		JunkTex.aClass14_Sub2_Sub19Array3958 = null;
 		Class133_Sub1_Sub1.aClass148_Sub1Array4938 = null;
 		Class35.aClass14_Sub2_Sub19Array596 = null;
-		Class149.aClass14_Sub2_Sub19_2384 = null;
+		JunkTex.aClass14_Sub2_Sub19_2384 = null;
 		Class133_Sub5.aClass14_Sub2_Sub19Array3609 = null;
 		Class32.aClass148_Sub1Array540 = null;
 		Class56_Sub1.aClass14_Sub2_Sub16_3320 = null;
 		int i_22_ = -41 / ((-14 - i) / 62);
 		Class131.aClass14_Sub2_Sub16_Sub1_2160 = null;
 		JunkTex.aClass14_Sub2_Sub19_4508 = null;
-		Class14_Sub2_Sub17.aClass14_Sub2_Sub19Array4013 = null;
+		JunkTex.aClass14_Sub2_Sub19Array4013 = null;
 		Class84.aClass14_Sub2_Sub16_1344 = null;
 		Class98.aClass14_Sub2_Sub19Array1669 = null;
 		Class110.aClass148Array1848 = null;
@@ -142,7 +142,7 @@ public class Class133_Sub4 extends Class133 {
 	}
 
 	public Class133 method1841(boolean bool, int i) {
-		boolean bool_23_ = Class114.tileHeights != Class149.anIntArrayArrayArray2391;
+		boolean bool_23_ = Class114.tileHeights != JunkTex.anIntArrayArrayArray2391;
 		Class79 class79 = Class79.method1377((byte) -106, anInt3587);
 		if (class79.anIntArray1276 != null)
 			class79 = class79.method1391(1);
@@ -181,7 +181,7 @@ public class Class133_Sub4 extends Class133 {
 		int[][] is_33_ = null;
 		int i_34_ = (is[i_28_][i_29_] + (is[i_27_][i_29_] + is[i_27_][i_30_] + is[i_28_][i_30_]) >> 2);
 		if (bool_23_)
-			is_33_ = Class149.anIntArrayArrayArray2391[0];
+			is_33_ = JunkTex.anIntArrayArrayArray2391[0];
 		else if (anInt3601 < 3)
 			is_33_ = Class114.tileHeights[anInt3601 + 1];
 		if (bool_31_)

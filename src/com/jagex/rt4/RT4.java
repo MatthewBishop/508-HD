@@ -1,11 +1,11 @@
 package com.jagex.rt4;
 
+import com.jagex.image.transform.Class14_Sub8_Sub12;
+import com.jagex.image.transform.TexStatic;
 import com.jagex.rt4.lights.Light;
 
 import rs.Class14_Sub30;
 import rs.Class15;
-import rs.tex.Class14_Sub8_Sub12;
-import rs.tex.TexStatic;
 
 public class RT4 {
 

@@ -7,8 +7,8 @@ import com.jagex.io.Buffer;
 import com.jagex.map.MapRegion;
 import com.jagex.map.Scenegraph;
 import com.jagex.rt4.AtmosphericChunk;
-import com.jagex.rt4.lights.LightManager;
 import com.jagex.rt4.lights.Light;
+import com.jagex.rt4.lights.LightManager;
 
 public class Class133_Sub3 extends Class133 {
 	public int anInt3557;

@@ -123,7 +123,7 @@ public class Class14_Sub7 extends Linkable {
 						Class14_Sub2_Sub19[] class14_sub2_sub19s = ((Class14_Sub2_Sub19[]) (JunkTex.aClass52_4596
 								.get((long) (class133_sub1_sub2.aClass12_4949.anInt281))));
 						if (class14_sub2_sub19s == null) {
-							class14_sub2_sub19s = (Class125_Sub2.method1733((byte) 23, Class14_Sub3.aClass9_Sub1_2750,
+							class14_sub2_sub19s = (JunkTex.method1733((byte) 23, Class14_Sub3.aClass9_Sub1_2750,
 									0, (class133_sub1_sub2.aClass12_4949.anInt281)));
 							if (class14_sub2_sub19s != null)
 								JunkTex.aClass52_4596.put(class14_sub2_sub19s, (long) (class133_sub1_sub2.aClass12_4949.anInt281));

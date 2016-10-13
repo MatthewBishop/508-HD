@@ -9,20 +9,6 @@ import java.net.Socket;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.util.Util;
 
-import rs.Class124;
-import rs.Class125_Sub1;
-import rs.Class133_Sub6;
-import rs.Class14_Sub18;
-import rs.Class14_Sub29;
-import rs.Class14_Sub2_Sub2;
-import rs.Class14_Sub9_Sub3;
-import rs.Class31;
-import rs.Class37;
-import rs.Class40;
-import rs.Class43;
-import rs.Class63;
-import rs.Class90;
-
 public class Class36 implements Runnable {
 
 	public OutputStream anOutputStream604;
@@ -45,7 +31,7 @@ public class Class36 implements Runnable {
 	public static int[] anIntArray632 = new int[128];
 
 	public static Class40 method1098(int var0, int var1, int var2) {
-		Class14_Sub29 var3 = Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[var0][var1][var2];
+		Class14_Sub29 var3 = JunkTex.aClass14_Sub29ArrayArrayArray3368[var0][var1][var2];
 		if (var3 == null) {
 			return null;
 		} else {
@@ -264,7 +250,7 @@ public class Class36 implements Runnable {
 				Class14_Sub9_Sub3.method738((String) null, var12, 95);
 			}
 		} catch (RuntimeException var13) {
-			throw JunkTex.method554(var13, "ee.run()");
+			throw Util.error(var13, "ee.run()");
 		}
 	}
 

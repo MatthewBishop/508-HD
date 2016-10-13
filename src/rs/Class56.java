@@ -81,7 +81,7 @@ public class Class56 {
 		byte[] is = Class12.aByteArrayArray310[0];
 		int i_12_ = Class76.anIntArray1204[i] * Class17.anIntArray402[0];
 		Class14_Sub2_Sub19_Sub1 class14_sub2_sub19_sub1;
-		if (Class125_Sub4.aBooleanArray3416[0]) {
+		if (JunkTex.aBooleanArray3416[0]) {
 			int[] is_13_ = new int[i_12_];
 			byte[] is_14_ = Class98.aByteArrayArray1667[0];
 			for (int i_15_ = 0; i_15_ < i_12_; i_15_++)
@@ -107,7 +107,7 @@ public class Class56 {
 		for (int i = 0; i < Class83.anInt1338; i++) {
 			for (int i_19_ = 0; i_19_ < Static2.anInt3338; i_19_++) {
 				for (int i_20_ = 0; i_20_ < JunkTex.anInt4337; i_20_++)
-					Class125_Sub1.aClass14_Sub29ArrayArrayArray3368[i][i_19_][i_20_] = null;
+					JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_19_][i_20_] = null;
 			}
 		}
 		for (int i = 0; i < Scenegraph.clusterCount; i++)

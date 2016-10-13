@@ -85,7 +85,7 @@ public class Class66 {
 
 	public static void method1296(int i, int i_27_, int i_28_, int i_29_) {
 		Class14_Sub14.aClass14_Sub29ArrayArrayArray2987 = new Class14_Sub29[i][i_27_][i_28_];
-		Class149.anIntArrayArrayArray2391 = new int[i][i_27_ + 1][i_28_ + 1];
+		JunkTex.anIntArrayArrayArray2391 = new int[i][i_27_ + 1][i_28_ + 1];
 		Class14_Sub30.aClass14_Sub27ArrayArray3273 = new Class14_Sub27[4][];
 		JunkTex.method627(false);
 		Static2.anInt3338 = i_27_;
@@ -174,13 +174,13 @@ public class Class66 {
 										(new Class124[] { (JunkTex.aClass124_4694), class124 }), (byte) -96),
 								(short) 1002, (long) i_31_, i_30_);
 					} else if ((JunkTex.anInt101 & 0x2) == 2)
-						Class14_Sub11.method853(32, Class125.aClass124_2082, i,
+						Class14_Sub11.method853(32, JunkTex.aClass124_2082, i,
 								JunkTex.method515((new Class124[] { (Class17.aClass124_408),
 										(Static2.aClass124_3724), class124 }), (byte) -83),
 								(short) 34, (long) i_31_, i_30_);
 				} else
 					Class14_Sub11.method853(32, Class40.aClass124_665, i,
-							(JunkTex.method515((new Class124[] { Class14_Sub6.aClass124_2809,
+							(JunkTex.method515((new Class124[] { JunkTex.aClass124_2809,
 									(Static2.aClass124_3724), class124 }), (byte) -123)),
 							(short) 30, (long) i_31_, i_30_);
 			}
