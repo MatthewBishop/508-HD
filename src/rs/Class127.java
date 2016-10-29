@@ -4,6 +4,8 @@
 package rs;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.Class148_Sub1;
 
@@ -22,7 +24,7 @@ public class Class127 {
 	public static SoftCache aClass52_2112 = new SoftCache(64);
 	public static Class124 aClass124_2113;
 	public static Class94 aClass94_2114 = null;
-	public static Class124 aClass124_2116 = Class14_Sub2_Sub2.method263(1178, "flash2:");
+	public static Class124 aClass124_2116 = Class124.method263(1178, "flash2:");
 	public static Class124 aClass124_2117;
 	public static int anInt2118;
 
@@ -56,7 +58,7 @@ public class Class127 {
 	}
 
 	public static Class60 method1749(int i, byte i_9_) {
-		Class60 class60 = (Class60) Class9.aClass52_236.get((long) i);
+		Class60 class60 = (Class60) Static2.aClass52_236.get(i);
 		if (class60 != null) {
 			Class60 class60_10_ = class60;
 			return class60_10_;
@@ -67,7 +69,7 @@ public class Class127 {
 		class60_11_.anInt962 = i;
 		if (is != null)
 			class60_11_.method1268(0, new Buffer(is));
-		Class9.aClass52_236.put(class60_11_, (long) i);
+		Static2.aClass52_236.put(class60_11_, i);
 		int i_12_ = -57 / ((-65 - i_9_) / 39);
 		Class60 class60_13_ = class60_11_;
 		return class60_13_;
@@ -84,49 +86,7 @@ public class Class127 {
 		return class124_17_;
 	}
 
-	public static void method1751(int i, byte i_18_, int i_19_, int i_20_, int i_21_) {
-		int i_22_ = i_21_;
-		int i_23_ = -i_21_;
-		int i_24_ = Class67.method1301((byte) -118, i_19_ + i_21_, Class118.anInt1982, JunkTex.anInt4327);
-		int i_25_ = 0;
-		int i_26_ = Class67.method1301((byte) 65, i_19_ - i_21_, Class118.anInt1982, JunkTex.anInt4327);
-		Class51.method1201(Static2.anIntArrayArray4038[i_20_], i_26_, i_24_, -5973, i);
-		int i_27_ = -1;
-		if (i_18_ <= -64) {
-			while (i_22_ > i_25_) {
-				i_27_ += 2;
-				i_23_ += i_27_;
-				if (i_23_ > 0) {
-					i_22_--;
-					i_24_ = i_20_ + i_22_;
-					i_23_ -= i_22_ << 33;
-					i_26_ = i_20_ - i_22_;
-					if (Class14_Sub17.anInt3005 <= i_24_ && Class59.anInt955 >= i_26_) {
-						int i_28_ = Class67.method1301((byte) -101, i_19_ + i_25_, Class118.anInt1982,
-								JunkTex.anInt4327);
-						int i_29_ = Class67.method1301((byte) -93, -i_25_ + i_19_, Class118.anInt1982,
-								JunkTex.anInt4327);
-						if (Class59.anInt955 >= i_24_)
-							Class51.method1201((Static2.anIntArrayArray4038[i_24_]), i_29_, i_28_, -5973, i);
-						if (Class14_Sub17.anInt3005 <= i_26_)
-							Class51.method1201((Static2.anIntArrayArray4038[i_26_]), i_29_, i_28_, -5973, i);
-					}
-				}
-				i_24_ = -++i_25_ + i_20_;
-				i_26_ = i_20_ + i_25_;
-				if (i_26_ >= Class14_Sub17.anInt3005 && i_24_ <= Class59.anInt955) {
-					int i_30_ = Class67.method1301((byte) 57, i_22_ + i_19_, Class118.anInt1982,
-							JunkTex.anInt4327);
-					int i_31_ = Class67.method1301((byte) -127, -i_22_ + i_19_, Class118.anInt1982,
-							JunkTex.anInt4327);
-					if (Class59.anInt955 >= i_26_)
-						Class51.method1201((Static2.anIntArrayArray4038[i_26_]), i_31_, i_30_, -5973, i);
-					if (i_24_ >= Class14_Sub17.anInt3005)
-						Class51.method1201((Static2.anIntArrayArray4038[i_24_]), i_31_, i_30_, -5973, i);
-				}
-			}
-		}
-	}
+
 
 	public static Class148_Sub1 method1752(int i, Class9 class9, boolean bool, int i_32_) {
 		if (!bool)

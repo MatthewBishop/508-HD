@@ -30,7 +30,7 @@ public class Shadow {
 		gl.glGenTextures(1, is, 0);
 		anInt348 = is[0];
 		Class11.textureMemory += 16384;
-		RT4GL.method1632(anInt348);
+		RT4GL.bindTexture2D(anInt348);
 		gl.glTexParameteri(3553, 10241, 9729);
 		gl.glTexParameteri(3553, 10240, 9729);
 		gl.glTexParameteri(3553, 10242, 33071);
@@ -39,7 +39,7 @@ public class Shadow {
 
 	public void draw() {
 		GL gl = RT4GL.gl;
-		RT4GL.method1632(anInt348);
+		RT4GL.bindTexture2D(anInt348);
 		if (aClass29_345 != null) {
 			aClass29_345.bindArray();
 			gl.glInterleavedArrays(10791, 20, 0L);
@@ -101,7 +101,7 @@ public class Shadow {
 		GL gl = RT4GL.gl;
 		ByteBuffer bytebuffer = ByteBuffer.wrap(pixels);
 		bytebuffer.limit(16384);
-		RT4GL.method1632(anInt348);
+		RT4GL.bindTexture2D(anInt348);
 		gl.glTexImage2D(3553, 0, 6406, 128, 128, 0, 6406, 5121, bytebuffer);
 		return true;
 	}

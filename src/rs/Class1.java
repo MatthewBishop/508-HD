@@ -20,9 +20,9 @@ public class Class1 {
 			anIntArray69[i_0_] = i - 1;
 			i += i;
 		}
-		aClass124_71 = (Class14_Sub2_Sub2.method263(1178,
+		aClass124_71 = (Class124.method263(1178,
 				"Ihre Freunde)2Liste ist voll(Q Maximale Eintr-=ge: Mitglieder 200)4freie Spieler 100"));
-		aClass124_72 = Class14_Sub2_Sub2.method263(1178, "Mem:");
+		aClass124_72 = Class124.method263(1178, "Mem:");
 		aClass2_70 = new Deque();
 		anInt73 = 0;
 		aBoolean74 = false;
@@ -66,7 +66,7 @@ public class Class1 {
 
 	public static void method71(Class114 class114, int i, byte i_7_, byte[] is) {
 		Class14_Sub19 class14_sub19 = new Class14_Sub19();
-		class14_sub19.key = (long) i;
+		class14_sub19.key = i;
 		class14_sub19.anInt3067 = 0;
 		class14_sub19.aClass114_3077 = class114;
 		class14_sub19.aByteArray3069 = is;

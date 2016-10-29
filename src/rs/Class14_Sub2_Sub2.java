@@ -44,29 +44,6 @@ public class Class14_Sub2_Sub2 extends Cacheable {
 			aBoolean3763 = true;
 	}
 
-	public static Class124 method263(int i, String string) {
-		byte[] is = string.getBytes();
-		int i_1_ = is.length;
-		Class124 class124 = new Class124();
-		if (i != 1178)
-			anInt3758 = -71;
-		int i_2_ = 0;
-		class124.aByteArray2495 = new byte[i_1_];
-		while (i_2_ < i_1_) {
-			int i_3_ = is[i_2_++] & 0xff;
-			if (i_3_ <= 45 && i_3_ >= 40) {
-				if (i_2_ >= i_1_)
-					break;
-				int i_4_ = is[i_2_++] & 0xff;
-				class124.aByteArray2495[class124.anInt2507++] = (byte) ((i_3_ - 40) * 43 - 48 + i_4_);
-			} else if (i_3_ != 0)
-				class124.aByteArray2495[class124.anInt2507++] = (byte) i_3_;
-		}
-		class124.method1683(115);
-		Class124 class124_5_ = class124.method1712((byte) 99);
-		return class124_5_;
-	}
-
 	public static void method264(Buffer class14_sub10, boolean bool) {
 		if (JunkTex.aClass76_4022 != null) {
 			try {

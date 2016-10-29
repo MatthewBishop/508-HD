@@ -5,10 +5,10 @@ import java.net.Socket;
 
 public class Class115 {
 
-	public static Class124 aClass124_1906 = Class14_Sub2_Sub2.method263(1178, "<col=ffffff> )4 ");
-	public static Class124 aClass124_1908 = Class14_Sub2_Sub2.method263(1178, "hint_mapedge");
+	public static Class124 aClass124_1906 = Class124.method263(1178, "<col=ffffff> )4 ");
+	public static Class124 aClass124_1908 = Class124.method263(1178, "hint_mapedge");
 	public static int anInt1909;
-	public static Class124 aClass124_1910 = Class14_Sub2_Sub2.method263(1178, "leuchten2:");
+	public static Class124 aClass124_1910 = Class124.method263(1178, "leuchten2:");
 	public int anInt1911;
 	public static int anInt1912;
 	public int anInt1913;
@@ -18,7 +18,7 @@ public class Class115 {
 	public static int[] anIntArray1917;
 	public Class133 aClass133_1919;
 	public Class133 aClass133_1921;
-	public static Class124 aClass124_1924 = Class14_Sub2_Sub2.method263(1178, "Gegenstand f-Ur Mitglieder");
+	public static Class124 aClass124_1924 = Class124.method263(1178, "Gegenstand f-Ur Mitglieder");
 	public int anInt1925;
 	public Class133 aClass133_1926;
 	public static void method1588(byte var0) {

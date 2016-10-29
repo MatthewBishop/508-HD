@@ -14,18 +14,21 @@ public class Class129_Sub1 extends Class129 implements MouseWheelListener {
 		anInt3430 += mousewheelevent.getWheelRotation();
 	}
 
+	@Override
 	public void method1760(int i, Component component) {
 		component.addMouseWheelListener(this);
 		if (i != -14827)
 			anInt3430 = -10;
 	}
 
+	@Override
 	public void method1765(boolean bool, Component component) {
 		if (!bool)
 			anInt3430 = 123;
 		component.removeMouseWheelListener(this);
 	}
 
+	@Override
 	public synchronized int method1763(int i) {
 		if (i > -122)
 			method1763(-57);

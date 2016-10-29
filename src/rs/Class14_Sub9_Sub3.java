@@ -23,9 +23,10 @@ public class Class14_Sub9_Sub3 extends Class14_Sub9 {
 	static {
 		anInt4843 = 0;
 		anIntArray4851 = new int[2000];
-		aClass124_4844 = Class14_Sub2_Sub2.method263(1178, "details");
+		aClass124_4844 = Class124.method263(1178, "details");
 	}
 
+	@Override
 	public void method687(int[] is, int i, int i_0_) {
 		aClass14_Sub9_Sub2_4859.method687(is, i, i_0_);
 		while_349_: for (Class14_Sub18 class14_sub18 = (Class14_Sub18) aClass2_4858
@@ -49,6 +50,7 @@ public class Class14_Sub9_Sub3 extends Class14_Sub9 {
 		}
 	}
 
+	@Override
 	public Class14_Sub9 method686() {
 		Class14_Sub18 class14_sub18;
 		do {
@@ -60,6 +62,7 @@ public class Class14_Sub9_Sub3 extends Class14_Sub9 {
 		return class14_sub9_sub4;
 	}
 
+	@Override
 	public Class14_Sub9 method688() {
 		Class14_Sub18 class14_sub18 = (Class14_Sub18) aClass2_4858.getFront();
 		if (class14_sub18 == null) {
@@ -80,6 +83,7 @@ public class Class14_Sub9_Sub3 extends Class14_Sub9 {
 			aClass124_4844 = null;
 	}
 
+	@Override
 	public int method690() {
 		int i = 0;
 		return i;
@@ -178,6 +182,7 @@ public class Class14_Sub9_Sub3 extends Class14_Sub9 {
 		} while (false);
 	}
 
+	@Override
 	public void method692(int i) {
 		aClass14_Sub9_Sub2_4859.method692(i);
 		while_355_: for (Class14_Sub18 class14_sub18 = (Class14_Sub18) aClass2_4858

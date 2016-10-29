@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.Class14_Sub1;
 
@@ -16,7 +17,7 @@ public class Class86 {
 	public static int anInt1389 = 0;
 
 	static {
-		aClass124_1384 = Class14_Sub2_Sub2.method263(1178, "Verbindung abgebrochen)3");
+		aClass124_1384 = Class124.method263(1178, "Verbindung abgebrochen)3");
 	}
 
 	public static Class37 method1418(int i, int i_0_, int i_1_) {
@@ -36,7 +37,7 @@ public class Class86 {
 			class124 = JunkTex.aClass124_4481;
 		Class124 class124_2_ = (JunkTex
 				.method515(
-						(new Class124[] { Class142.aClass124_2271, class124, Class107.aClass124_1800,
+						(new Class124[] { Class142.aClass124_2271, class124, ProceduralTexture.aClass124_1800,
 								Class83.method1407(102, JunkTex.language), JunkTex.aClass124_4341,
 								Class83.method1407(111, Class14_Sub2_Sub11.anInt3884), Class137.aClass124_2195 }),
 						(byte) -24));
@@ -83,20 +84,6 @@ public class Class86 {
 		class98.aClass14_Sub2_Sub21_1662 = Class14_Sub2_Sub3.method272(class98.anInt1663, (byte) 46);
 		Class98 class98_7_ = class98;
 		return class98_7_;
-	}
-
-	public static void method1423(int i, int i_8_, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_) {
-		int i_14_ = 23 % ((28 - i_13_) / 44);
-		if (Class118.anInt1982 <= i_10_ && JunkTex.anInt4327 >= i_8_ && i_12_ >= Class14_Sub17.anInt3005
-				&& Class59.anInt955 >= i_9_) {
-			if (i != 1)
-				Class14_Sub17.method879(i_12_, i_11_, 255, i_9_, i, i_8_, i_10_);
-			else
-				Class56_Sub1.method1241(i_8_, i_10_, (byte) -119, i_11_, i_9_, i_12_);
-		} else if (i != 1)
-			JunkTex.method466(i_10_, i_12_, -32718, i_11_, i, i_8_, i_9_);
-		else
-			Static2.method849(i_8_, i_9_, 0, i_11_, i_12_, i_10_);
 	}
 
 	public static void method1424(int i, Class9 class9) {

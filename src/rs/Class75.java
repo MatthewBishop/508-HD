@@ -6,6 +6,7 @@ package rs;
 import java.awt.Component;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.link.Cache;
 import com.jagex.rt4.Class148;
 import com.jagex.util.TimeUtil;
@@ -15,13 +16,13 @@ public class Class75 {
 	public static Cache aClass20_1147;
 	public int[] anIntArray1150;
 	public static int anInt1151;
-	public static Class124 aClass124_1152 = Class14_Sub2_Sub2.method263(1178, "leuchten1:");
+	public static Class124 aClass124_1152 = Class124.method263(1178, "leuchten1:");
 	public Class14_Sub9 aClass14_Sub9_1154;
 	public int anInt1158 = 32;
 	public long aLong1160 = TimeUtil.getTime();
 	public static int anInt1163;
-	public static Class124 aClass124_1165 = Class14_Sub2_Sub2.method263(1178, "Bitte warten Sie)3)3)3");
-	public static Class9_Sub1 aClass9_Sub1_1167;
+	public static Class124 aClass124_1165 = Class124.method263(1178, "Bitte warten Sie)3)3)3");
+	public static Class9_Sub1 idx0;
 	public boolean aBoolean1169 = true;
 	public int anInt1170;
 	public int anInt1171;
@@ -41,7 +42,7 @@ public class Class75 {
 	static {
 		anInt1163 = -1;
 		aClass20_1147 = new Cache(64);
-		aClass124_1183 = Class14_Sub2_Sub2.method263(1178, "Loading sprites )2 ");
+		aClass124_1183 = Class124.method263(1178, "Loading sprites )2 ");
 		aClass124_1182 = aClass124_1183;
 	}
 
@@ -51,7 +52,7 @@ public class Class75 {
 
 	public void method1336(Class14_Sub9 class14_sub9, int i, int i_0_) {
 		if (i_0_ != 15621)
-			aClass9_Sub1_1167 = null;
+			idx0 = null;
 		int i_1_ = i >> 37;
 		Class14_Sub9 class14_sub9_2_ = aClass14_Sub9Array1180[i_1_];
 		if (class14_sub9_2_ == null)
@@ -261,7 +262,7 @@ public class Class75 {
 
 				while (this.aLong1160 + 5000L < var2) {
 					this.method1348(0, 256);
-					this.aLong1160 += (long) (256000 / Class115.anInt1909);
+					this.aLong1160 += 256000 / Class115.anInt1909;
 				}
 			} catch (Exception var8) {
 				this.aLong1160 = var2;
@@ -278,11 +279,11 @@ public class Class75 {
 	public static void method1343(int i, int i_13_, int i_14_, int i_15_, int i_16_) {
 		if (Class14_Sub2_Sub11.anInt3881 == 1)
 			JunkTex.aClass14_Sub2_Sub19Array3958[JunkTex.anInt4017 / 100]
-					.method391(JunkTex.anInt4243 - 8, JunkTex.anInt4515 - 8);
+					.drawReg(JunkTex.anInt4243 - 8, JunkTex.anInt4515 - 8);
 		int i_17_ = 100 % ((i_13_ - 62) / 41);
 		if (Class14_Sub2_Sub11.anInt3881 == 2)
 			JunkTex.aClass14_Sub2_Sub19Array3958[4 + JunkTex.anInt4017 / 100]
-					.method391(JunkTex.anInt4243 - 8, JunkTex.anInt4515 - 8);
+					.drawReg(JunkTex.anInt4243 - 8, JunkTex.anInt4515 - 8);
 		Class14_Sub14.method868(67);
 	}
 
@@ -321,7 +322,7 @@ public class Class75 {
 		aClass148Array1184 = null;
 		aClass20_1147 = null;
 		aClass124_1165 = null;
-		aClass9_Sub1_1167 = null;
+		idx0 = null;
 		aClass124_1152 = null;
 		aClass124_1183 = null;
 		aClass124_1182 = null;

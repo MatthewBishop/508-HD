@@ -8,6 +8,8 @@ import java.awt.event.FocusListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+import com.jagex.io.js5.Class9_Sub1;
+
 public class Class141 implements KeyListener, FocusListener {
 	public static Class94 aClass94_2239;
 	public static Class87 aClass87_2242;
@@ -22,7 +24,7 @@ public class Class141 implements KeyListener, FocusListener {
 	}
 
 	public static void method1960(int i, int i_0_) {
-		Class9.aClass52_236.method1208(i);
+		Static2.aClass52_236.method1208(i);
 		Static2.aClass52_4053.method1208(i);
 		if (i_0_ <= 35)
 			method1963(-128, null, -90, (byte) 3, null);
@@ -144,7 +146,7 @@ public class Class141 implements KeyListener, FocusListener {
 			objects[i_20_] = objects[i_17_];
 			objects[i_17_] = object;
 			for (int i_21_ = i; i_21_ < i_17_; i_21_++) {
-				if ((long) (i_21_ & 0x1) + l > ls[i_21_]) {
+				if ((i_21_ & 0x1) + l > ls[i_21_]) {
 					long l_22_ = ls[i_21_];
 					ls[i_21_] = ls[i_19_];
 					ls[i_19_] = l_22_;

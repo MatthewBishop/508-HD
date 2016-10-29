@@ -3,19 +3,17 @@
  */
 package rs;
 
-import com.jagex.io.Buffer;
-
 public class Class53 {
 	public static boolean aBoolean865 = true;
 	public static short[] aShortArray866;
-	public static Class124 aClass124_867 = Class14_Sub2_Sub2.method263(1178, ")1");
+	public static Class124 aClass124_867 = Class124.method263(1178, ")1");
 	public static Class124 aClass124_868;
 	public static Class124 aClass124_869;
 	public static boolean[][] visibilityMap;
 	public static int anInt874 = 0;
 
 	static {
-		aClass124_868 = (Class14_Sub2_Sub2.method263(1178, "RuneScape is loading )2 please wait)3)3)3"));
+		aClass124_868 = (Class124.method263(1178, "RuneScape is loading )2 please wait)3)3)3"));
 		aClass124_869 = aClass124_868;
 	}
 
@@ -123,9 +121,9 @@ public class Class53 {
 		int i_19_ = -Class14_Sub30.anInt3271 + i_17_;
 		int i_20_ = i_16_ - JunkTex.anInt4741;
 		int i_21_ = i_18_ - Static2.anInt2926;
-		int i_22_ = (int) Math.sqrt((double) (i_19_ * i_19_ + i_20_ * i_20_));
-		int i_23_ = ((int) (Math.atan2((double) i_21_, (double) i_22_) * 325.949) & 0x7ff);
-		int i_24_ = ((int) (Math.atan2((double) i_20_, (double) i_19_) * -325.949) & 0x7ff);
+		int i_22_ = (int) Math.sqrt(i_19_ * i_19_ + i_20_ * i_20_);
+		int i_23_ = ((int) (Math.atan2(i_21_, i_22_) * 325.949) & 0x7ff);
+		int i_24_ = ((int) (Math.atan2(i_20_, i_19_) * -325.949) & 0x7ff);
 		int i_25_ = i_24_ - Class69.anInt1072;
 		if (i_25_ > 1024)
 			i_25_ -= 2048;

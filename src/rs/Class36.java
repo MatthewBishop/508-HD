@@ -24,7 +24,7 @@ public class Class36 implements Runnable {
 	public static SoftCache aClass52_621 = new SoftCache(260);
 	public byte[] aByteArray622;
 	public static int[] anIntArray626 = new int[1000];
-	public static Class124 aClass124_628 = Class14_Sub2_Sub2.method263(1178, " <col=ffff00>");
+	public static Class124 aClass124_628 = Class124.method263(1178, " <col=ffff00>");
 	public static int anInt629;
 	public static int anInt630;
 	public static int anInt631;
@@ -38,7 +38,7 @@ public class Class36 implements Runnable {
 			for (int var4 = 0; var4 < var3.anInt3242; ++var4) {
 				Class40 var5 = var3.aClass40Array3257[var4];
 				if ((var5.aLong677 >> 29 & 3L) == 2L && var5.anInt668 == var1 && var5.anInt678 == var2) {
-					Class63.method1279(var5);
+					Static2.method1279(var5);
 					return var5;
 				}
 			}
@@ -261,14 +261,14 @@ public class Class36 implements Runnable {
 
 	public static void method1106(int var0) {
 		if (JunkTex.aFloat2854 > Class90.aFloat1426) {
-			Class90.aFloat1426 = (float) ((double) Class90.aFloat1426 + (double) Class90.aFloat1426 / 30.0D);
+			Class90.aFloat1426 = (float) (Class90.aFloat1426 + Class90.aFloat1426 / 30.0D);
 			if (JunkTex.aFloat2854 < Class90.aFloat1426) {
 				Class90.aFloat1426 = JunkTex.aFloat2854;
 			}
 
 			Static2.method1126((byte) -22);
 		} else if (JunkTex.aFloat2854 < Class90.aFloat1426) {
-			Class90.aFloat1426 = (float) ((double) Class90.aFloat1426 - (double) Class90.aFloat1426 / 30.0D);
+			Class90.aFloat1426 = (float) (Class90.aFloat1426 - Class90.aFloat1426 / 30.0D);
 			if (Class90.aFloat1426 < JunkTex.aFloat2854) {
 				Class90.aFloat1426 = JunkTex.aFloat2854;
 			}
@@ -313,6 +313,7 @@ public class Class36 implements Runnable {
 		}
 	}
 
+	@Override
 	public void finalize() {
 		this.method1101((byte) 121);
 	}

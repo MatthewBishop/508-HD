@@ -16,9 +16,9 @@ public class Class14_Sub8_Sub3 extends Class14_Sub8 {
 	}
 
 	@Override
-	public int[][] method474(int i) {
-		int[][] is = aClass95_2838.method1481(1, i);
-		if (aClass95_2838.aBoolean1628) {
+	public int[][] outputColour(int i) {
+		int[][] is = triChromaticImageCache.method1481(1, i);
+		if (triChromaticImageCache.aBoolean1628) {
 			int[] is_9_ = method483(0, TexStatic.anInt1927 & i - 1);
 			int[] is_10_ = method483(0, i);
 			int[] is_11_ = method483(0, i + 1 & TexStatic.anInt1927);
@@ -61,7 +61,7 @@ public class Class14_Sub8_Sub3 extends Class14_Sub8 {
 	}
 
 	@Override
-	public void method475(int i, Buffer class14_sub10) {
+	public void decode(int i, Buffer class14_sub10) {
 		int i_28_ = i;
 		do {
 			if (i_28_ != 0) {

@@ -3,11 +3,12 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9;
 import com.jagex.rt4.Class148_Sub1;
 
 public class Class7_Sub2 extends Class7 {
 	public static Class124 aClass124_2667;
-	public static Class124 aClass124_2668 = Class14_Sub2_Sub2.method263(1178, "flash3:");
+	public static Class124 aClass124_2668 = Class124.method263(1178, "flash3:");
 	public static Class124 aClass124_2669;
 	public static Class124 aClass124_2670;
 	public static Class9 aClass9_2671;
@@ -18,7 +19,7 @@ public class Class7_Sub2 extends Class7 {
 	public static Class148_Sub1[] aClass148_Sub1Array2677;
 
 	static {
-		aClass124_2667 = Class14_Sub2_Sub2.method263(1178, "OFF");
+		aClass124_2667 = Class124.method263(1178, "OFF");
 		aClass124_2670 = aClass124_2668;
 		aClass124_2672 = aClass124_2668;
 		aClass124_2669 = aClass124_2667;

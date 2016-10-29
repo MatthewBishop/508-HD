@@ -12,7 +12,7 @@ public class Class14_Sub28 extends Linkable {
 	public byte[] aByteArray3213;
 	public static SoftCache aClass52_3217;
 	public int[] anIntArray3218;
-	public static Class124 aClass124_3219 = Class14_Sub2_Sub2.method263(1178, "Loading config )2 ");
+	public static Class124 aClass124_3219 = Class124.method263(1178, "Loading config )2 ");
 	public byte[] aByteArray3220;
 	public Class127[] aClass127Array3221;
 	public static int anInt3222 = 0;
@@ -28,7 +28,7 @@ public class Class14_Sub28 extends Linkable {
 	static {
 		anIntArray3225 = new int[] { 1, 2, 4, 8 };
 		aClass52_3217 = new SoftCache(4);
-		aClass124_3228 = Class14_Sub2_Sub2.method263(1178, "Please wait)3)3)3");
+		aClass124_3228 = Class124.method263(1178, "Please wait)3)3)3");
 		aClass94_3230 = null;
 		aClass124_3229 = aClass124_3228;
 	}

@@ -16,9 +16,9 @@ public class Class14_Sub8_Sub25 extends Class14_Sub8 {
 	}
 
 	@Override
-	public int[][] method474(int i) {
-		int[][] is = aClass95_2838.method1481(1, i);
-		if (aClass95_2838.aBoolean1628) {
+	public int[][] outputColour(int i) {
+		int[][] is = triChromaticImageCache.method1481(1, i);
+		if (triChromaticImageCache.aBoolean1628) {
 			int i_18_ = anInt4506 + 1 + anInt4506;
 			int i_19_ = 65536 / i_18_;
 			int[][][] is_20_ = new int[i_18_][][];
@@ -82,7 +82,7 @@ public class Class14_Sub8_Sub25 extends Class14_Sub8 {
 	}
 
 	@Override
-	public void method475(int i, Buffer class14_sub10) {
+	public void decode(int i, Buffer class14_sub10) {
 		int i_50_ = i;
 		while_107_: do {
 			do {
@@ -99,14 +99,14 @@ public class Class14_Sub8_Sub25 extends Class14_Sub8 {
 				anInt4506 = class14_sub10.readUByte();
 				break while_107_;
 			} while (false);
-			aBoolean2862 = class14_sub10.readUByte() == 1;
+			monoChromatic = class14_sub10.readUByte() == 1;
 		} while (false);
 	}
 
 	@Override
-	public int[] method484(int i) {
-		int[] is = aClass149_2851.method2014(i);
-		if (aClass149_2851.aBoolean2402) {
+	public int[] outputMonochrome(int i) {
+		int[] is = monoChromaticImageCache.method2014(i);
+		if (monoChromaticImageCache.aBoolean2402) {
 			int i_52_ = anInt4506 + (anInt4506 + 1);
 			int i_53_ = anInt4507 + anInt4507 + 1;
 			int i_54_ = 65536 / i_53_;

@@ -13,8 +13,8 @@ public class Class69 {
 	public static int anInt1072;
 
 	static {
-		aClass124_1068 = Class14_Sub2_Sub2.method263(1178, "floorshadows");
-		aClass124_1067 = (Class14_Sub2_Sub2.method263(1178,
+		aClass124_1068 = Class124.method263(1178, "floorshadows");
+		aClass124_1067 = (Class124.method263(1178,
 				"Bitte warten Sie )2 es wird versucht)1 die Verbindung wiederherzustellen)3"));
 	}
 
@@ -27,7 +27,7 @@ public class Class69 {
 		if (i_0_ > -7)
 			method1311((byte) -37);
 		Class14_Sub15.anInt2989 = i;
-		Class9_Sub1.aClass9_2696 = null;
+		Static2.aClass9_2696 = null;
 	}
 
 	public static void method1309(int i) {

@@ -11,7 +11,7 @@ public class Class114 {
 	public static int[][][] tileHeights;
 	public int anInt1897 = '\ufde8';
 	public int anInt1898;
-	public static Class124 aClass124_1900 = Class14_Sub2_Sub2.method263(1178, "mapscene");
+	public static Class124 aClass124_1900 = Class124.method263(1178, "mapscene");
 	public Class76 aClass76_1901 = null;
 	public static int[] anIntArray1902 = new int[100];
 	public Class76 aClass76_1905 = null;
@@ -27,7 +27,7 @@ public class Class114 {
 				label235: {
 					try {
 						try {
-							if (this.aClass76_1905.method1360((byte) -94) >= (long) (var2 * 6 + 6)) {
+							if (this.aClass76_1905.method1360((byte) -94) >= var2 * 6 + 6) {
 								break label235;
 							}
 
@@ -50,7 +50,7 @@ public class Class114 {
 					label192: {
 						try {
 							try {
-								this.aClass76_1905.method1361(0, (long) (var2 * 6));
+								this.aClass76_1905.method1361(0, var2 * 6);
 								this.aClass76_1905.method1368(false, JunkTex.aByteArray5102, 0, 6);
 								var6 = (JunkTex.aByteArray5102[1] << 8 & '\uff00')
 										+ (JunkTex.aByteArray5102[0] << 48 & 16711680)
@@ -75,7 +75,7 @@ public class Class114 {
 					}
 
 					try {
-						if (var7 <= 0 || (long) var7 > this.aClass76_1901.method1360((byte) -56) / 520L) {
+						if (var7 <= 0 || var7 > this.aClass76_1901.method1360((byte) -56) / 520L) {
 							var3 = null;
 							return (byte[]) var3;
 						}
@@ -109,7 +109,7 @@ public class Class114 {
 						int var14;
 						try {
 							try {
-								this.aClass76_1901.method1361(0, (long) (var7 * 520));
+								this.aClass76_1901.method1361(0, var7 * 520);
 								var11 = -var8 + var6;
 								if (var11 > 512) {
 									var11 = 512;
@@ -138,7 +138,7 @@ public class Class114 {
 						}
 
 						try {
-							if (var14 < 0 || this.aClass76_1901.method1360((byte) -55) / 520L < (long) var14) {
+							if (var14 < 0 || this.aClass76_1901.method1360((byte) -55) / 520L < var14) {
 								var3 = null;
 								var10000 = (byte[]) var3;
 								return var10000;
@@ -241,7 +241,7 @@ public class Class114 {
 										break label225;
 									}
 
-									if ((long) (var3 * 6 + 6) > this.aClass76_1905.method1360((byte) -103)) {
+									if (var3 * 6 + 6 > this.aClass76_1905.method1360((byte) -103)) {
 										var6 = false;
 										var10000 = var6;
 										return var10000;
@@ -259,12 +259,12 @@ public class Class114 {
 
 						try {
 							try {
-								this.aClass76_1905.method1361(0, (long) (var3 * 6));
+								this.aClass76_1905.method1361(0, var3 * 6);
 								this.aClass76_1905.method1368(false, JunkTex.aByteArray5102, 0, 6);
 								var9 = (JunkTex.aByteArray5102[5] & 255)
 										+ ((JunkTex.aByteArray5102[3] & 255) << 16)
 										+ ((JunkTex.aByteArray5102[4] & 255) << 8);
-								if (var9 > 0 && (long) var9 <= this.aClass76_1901.method1360((byte) -116) / 520L) {
+								if (var9 > 0 && var9 <= this.aClass76_1901.method1360((byte) -116) / 520L) {
 									break label225;
 								}
 
@@ -289,7 +289,7 @@ public class Class114 {
 							JunkTex.aByteArray5102[2] = (byte) var1;
 							JunkTex.aByteArray5102[0] = (byte) (var1 >> 16);
 							JunkTex.aByteArray5102[5] = (byte) var9;
-							this.aClass76_1905.method1361(0, (long) (var3 * 6));
+							this.aClass76_1905.method1361(0, var3 * 6);
 							this.aClass76_1905.method1362(0, 6, (byte) 94, JunkTex.aByteArray5102);
 							var10 = 0;
 							var11 = 0;
@@ -307,7 +307,7 @@ public class Class114 {
 								int var14;
 								if (var2) {
 									label214: {
-										this.aClass76_1901.method1361(0, (long) (var9 * 520));
+										this.aClass76_1901.method1361(0, var9 * 520);
 
 										try {
 											this.aClass76_1901.method1368(false, JunkTex.aByteArray5102,
@@ -327,7 +327,7 @@ public class Class114 {
 										if (var3 == var14 && var11 == var13 && var15 == this.anInt1898) {
 											try {
 												if (var12 >= 0 && this.aClass76_1901.method1360((byte) -74)
-														/ 520L >= (long) var12) {
+														/ 520L >= var12) {
 													break label214;
 												}
 
@@ -376,7 +376,7 @@ public class Class114 {
 										JunkTex.aByteArray5102[4] = (byte) (var12 >> 16);
 										++var11;
 										JunkTex.aByteArray5102[6] = (byte) var12;
-										this.aClass76_1901.method1361(0, (long) (var9 * 520));
+										this.aClass76_1901.method1361(0, var9 * 520);
 										this.aClass76_1901.method1362(0, 8, (byte) 45,
 												JunkTex.aByteArray5102);
 										var9 = var12;
@@ -495,6 +495,7 @@ public class Class114 {
 		}
 	}
 
+	@Override
 	public String toString() {
 		try {
 			String var1 = "Cache:" + this.anInt1898;

@@ -4,19 +4,21 @@
 package rs;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
 
 public class Class109 {
 	public int anInt1829;
 	public int anInt1830;
-	public static Class124 aClass124_1831 = Class14_Sub2_Sub2.method263(1178, "null");
+	public static Class124 aClass124_1831 = Class124.method263(1178, "null");
 	public int anInt1833;
-	public static Class9_Sub1 aClass9_Sub1_1834;
+	public static Class9_Sub1 idx1;
 	public static Class14_Sub2_Sub19_Sub1[] aClass14_Sub2_Sub19_Sub1Array1835;
-	public static Class124 aClass124_1836 = Class14_Sub2_Sub2.method263(1178, ")3)3)3");
+	public static Class124 aClass124_1836 = Class124.method263(1178, ")3)3)3");
 	public byte aByte1838;
-	public static Class124 aClass124_1839 = Class14_Sub2_Sub2.method263(1178, "::fpsoff");
+	public static Class124 aClass124_1839 = Class124.method263(1178, "::fpsoff");
 	public int anInt1841;
 	public int anInt1845;
 
@@ -42,7 +44,7 @@ public class Class109 {
 		}
 		Class14_Sub9_Sub1.method708(is, i ^ ~0x91);
 		if (i != -2)
-			aClass9_Sub1_1834 = null;
+			idx1 = null;
 		boolean bool = true;
 		return bool;
 	}
@@ -54,7 +56,7 @@ public class Class109 {
 			return class14_sub2_sub19;
 		}
 		int i_10_ = i_5_;
-		long l = (long) i_10_ * 3147483667L - -((long) i_9_ * 3849834839L);
+		long l = i_10_ * 3147483667L - -(i_9_ * 3849834839L);
 		Class14_Sub2_Sub19 class14_sub2_sub19 = ((Class14_Sub2_Sub19) Class70.aClass52_1077.get(l));
 		if (class14_sub2_sub19 != null) {
 			Class14_Sub2_Sub19 class14_sub2_sub19_11_ = class14_sub2_sub19;
@@ -139,13 +141,13 @@ public class Class109 {
 			method1564(-99, 61, 81, null);
 		aClass14_Sub2_Sub19_Sub1Array1835 = null;
 		aClass124_1831 = null;
-		aClass9_Sub1_1834 = null;
+		idx1 = null;
 		aClass124_1839 = null;
 	}
 
 	public int method1572(byte i) {
 		if (i != 42)
-			aClass9_Sub1_1834 = null;
+			idx1 = null;
 		int i_35_ = aByte1838 & 0x7;
 		return i_35_;
 	}

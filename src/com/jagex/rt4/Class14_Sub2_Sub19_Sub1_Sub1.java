@@ -28,9 +28,9 @@ public class Class14_Sub2_Sub19_Sub1_Sub1 extends Class14_Sub2_Sub19_Sub1 {
 		}
 	}
 
-	public void method398(int i, int i_19_, int i_20_) {
-		i += anInt4033;
-		i_19_ += anInt4050;
+	public void drawSpriteTransparency(int i, int i_19_, int i_20_) {
+		i += offsetX;
+		i_19_ += offsetY;
 		int i_21_ = i + i_19_ * Class92.anInt1432;
 		int i_22_ = 0;
 		int i_23_ = anInt4042;
@@ -65,9 +65,9 @@ public class Class14_Sub2_Sub19_Sub1_Sub1 extends Class14_Sub2_Sub19_Sub1 {
 			method418(Class92.anIntArray1437, anIntArray5088, 0, i_22_, i_21_, i_24_, i_23_, i_25_, i_26_, i_20_);
 	}
 
-	public void method391(int i, int i_30_) {
-		i += anInt4033;
-		i_30_ += anInt4050;
+	public void drawReg(int i, int i_30_) {
+		i += offsetX;
+		i_30_ += offsetY;
 		int i_31_ = i + i_30_ * Class92.anInt1432;
 		int i_32_ = 0;
 		int i_33_ = anInt4042;
@@ -103,8 +103,8 @@ public class Class14_Sub2_Sub19_Sub1_Sub1 extends Class14_Sub2_Sub19_Sub1 {
 	}
 
 	public void method390(int i, int i_40_) {
-		i += anInt4033;
-		i_40_ += anInt4050;
+		i += offsetX;
+		i_40_ += offsetY;
 		int i_41_ = i + i_40_ * Class92.anInt1432;
 		int i_42_ = 0;
 		int i_43_ = anInt4042;
@@ -178,8 +178,8 @@ public class Class14_Sub2_Sub19_Sub1_Sub1 extends Class14_Sub2_Sub19_Sub1 {
 
 	public void method395(int i, int i_81_, int i_82_, int i_83_, int i_84_, int i_85_) {
 		if (i_85_ != 0) {
-			i -= anInt4033 << 4;
-			i_81_ -= anInt4050 << 4;
+			i -= offsetX << 4;
+			i_81_ -= offsetY << 4;
 			double d = (double) (i_84_ & 0xffff) * 9.587379924285257E-5;
 			int i_86_ = (int) Math.floor(Math.sin(d) * (double) i_85_ + 0.5);
 			int i_87_ = (int) Math.floor(Math.cos(d) * (double) i_85_ + 0.5);
@@ -620,15 +620,15 @@ public class Class14_Sub2_Sub19_Sub1_Sub1 extends Class14_Sub2_Sub19_Sub1 {
 			int i_224_ = anInt4046;
 			int i_225_ = (i_223_ << 16) / i_216_;
 			int i_226_ = (i_224_ << 16) / i_217_;
-			if (anInt4033 > 0) {
-				int i_227_ = ((anInt4033 << 16) + i_225_ - 1) / i_225_;
+			if (offsetX > 0) {
+				int i_227_ = ((offsetX << 16) + i_225_ - 1) / i_225_;
 				i += i_227_;
-				i_221_ += i_227_ * i_225_ - (anInt4033 << 16);
+				i_221_ += i_227_ * i_225_ - (offsetX << 16);
 			}
-			if (anInt4050 > 0) {
-				int i_228_ = ((anInt4050 << 16) + i_226_ - 1) / i_226_;
+			if (offsetY > 0) {
+				int i_228_ = ((offsetY << 16) + i_226_ - 1) / i_226_;
 				i_215_ += i_228_;
-				i_222_ += i_228_ * i_226_ - (anInt4050 << 16);
+				i_222_ += i_228_ * i_226_ - (offsetY << 16);
 			}
 			if (i_219_ < i_223_)
 				i_216_ = ((i_219_ << 16) - i_221_ + i_225_ - 1) / i_225_;

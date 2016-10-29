@@ -5,11 +5,10 @@ package com.jagex.cache.loaders;
 
 import com.jagex.cache.anim.AnimFrame;
 import com.jagex.cache.anim.AnimFrameBase;
+import com.jagex.io.js5.Class9;
 import com.jagex.link.Cacheable;
 import com.jagex.link.Deque;
 import com.jagex.util.Util;
-
-import rs.Class9;
 
 public class AnimFrameLoader extends Cacheable {
 	public AnimFrame[] aClass143Array3951;

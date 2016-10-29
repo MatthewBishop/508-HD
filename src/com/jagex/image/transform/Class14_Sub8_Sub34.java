@@ -40,12 +40,12 @@ public class Class14_Sub8_Sub34 extends Class14_Sub8 {
 	}
 
 	@Override
-	public void method472() {
+	public void postDecode() {
 		method659(88);
 	}
 
 	@Override
-	public void method475(int i, Buffer class14_sub10) {
+	public void decode(int i, Buffer class14_sub10) {
 		int i_16_ = i;
 		while_34_: do {
 			while_33_: do {
@@ -102,9 +102,9 @@ public class Class14_Sub8_Sub34 extends Class14_Sub8 {
 	}
 
 	@Override
-	public int[] method484(int i) {
-		int[] is = aClass149_2851.method2014(i);
-		if (aClass149_2851.aBoolean2402) {
+	public int[] outputMonochrome(int i) {
+		int[] is = monoChromaticImageCache.method2014(i);
+		if (monoChromaticImageCache.aBoolean2402) {
 			int i_18_ = 0;
 			int i_19_;
 			for (i_19_ = anInt4652 + TexStatic.anIntArray3623[i]; i_19_ < 0; i_19_ += 4096) {
@@ -182,7 +182,7 @@ public class Class14_Sub8_Sub34 extends Class14_Sub8 {
 			anIntArrayArray4658[i_33_][anInt4649] = 4096;
 		}
 		if (i <= 30)
-			method484(-111);
+			outputMonochrome(-111);
 		anIntArray4663[anInt4665] = 4096;
 	}
 }

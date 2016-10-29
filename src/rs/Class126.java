@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 import com.jagex.link.Deque;
 import com.jagex.rt4.Class148;
 import com.jagex.rt4.RT4GL;
@@ -112,7 +113,7 @@ public abstract class Class126 {
 	}
 
 	public static Class12 method1744(int i, int i_6_) {
-		Class12 class12 = ((Class12) Class14_Sub14.aClass52_2982.get((long) i));
+		Class12 class12 = ((Class12) Class14_Sub14.aClass52_2982.get(i));
 		if (class12 != null) {
 			Class12 class12_7_ = class12;
 			return class12_7_;
@@ -126,7 +127,7 @@ public abstract class Class126 {
 		if (is != null)
 			class12_8_.method220(new Buffer(is), true);
 		class12_8_.method223((byte) 126);
-		Class14_Sub14.aClass52_2982.put(class12_8_, (long) i);
+		Class14_Sub14.aClass52_2982.put(class12_8_, i);
 		Class12 class12_9_ = class12_8_;
 		return class12_9_;
 	}

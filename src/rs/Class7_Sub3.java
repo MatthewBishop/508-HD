@@ -13,12 +13,12 @@ public class Class7_Sub3 extends Class7 {
 	public static int anInt2682;
 	public static int anInt2683 = 50;
 	public static Class124 aClass124_2684;
-	public static long[] aLongArray2685;
+	public static long[] actions;
 
 	static {
 		anInt2682 = 0;
-		aClass124_2684 = Class14_Sub2_Sub2.method263(1178, "cross");
-		aLongArray2685 = new long[1000];
+		aClass124_2684 = Class124.method263(1178, "cross");
+		actions = new long[1000];
 	}
 
 	public static void method131(int i, int i_0_) {
@@ -59,7 +59,7 @@ public class Class7_Sub3 extends Class7 {
 
 	public static void method133(boolean bool) {
 		aClass124_2684 = null;
-		aLongArray2685 = null;
+		actions = null;
 		if (!bool)
 			method131(28, -126);
 		aClass20_2680 = null;

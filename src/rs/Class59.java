@@ -3,21 +3,21 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9;
+
 public class Class59 {
 	public static Class124 aClass124_953;
 	public static boolean aBoolean954 = false;
-	public static int anInt955;
 	public static Class124 aClass124_956;
 	public static Class9 aClass9_957;
 	public static Class124 aClass124_958;
 	public static int anInt959;
 
 	static {
-		aClass124_953 = Class14_Sub2_Sub2.method263(1178, "k");
-		aClass124_956 = Class14_Sub2_Sub2.method263(1178, "M");
-		aClass124_958 = Class14_Sub2_Sub2.method263(1178, "slr2)3ws?order=LPWM");
+		aClass124_953 = Class124.method263(1178, "k");
+		aClass124_956 = Class124.method263(1178, "M");
+		aClass124_958 = Class124.method263(1178, "slr2)3ws?order=LPWM");
 		anInt959 = 1;
-		anInt955 = 100;
 	}
 
 	public static boolean method1260(boolean bool, int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_,

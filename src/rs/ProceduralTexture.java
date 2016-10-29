@@ -7,26 +7,20 @@ import com.jagex.image.transform.Class14_Sub8;
 import com.jagex.image.transform.Class14_Sub8_Sub23;
 import com.jagex.image.transform.TexStatic;
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 
-public class Class107 {
-	public static Class124 aClass124_1795;
+public class ProceduralTexture {
+	public static Class124 aClass124_1795 = Class124.method263(1178, "hitmarks");
 	public Class14_Sub8 aClass14_Sub8_1797;
 	public Class14_Sub8[] aClass14_Sub8Array1798;
-	public static Class124 aClass124_1800;
-	public static Class124 aClass124_1801 = Class14_Sub2_Sub2.method263(1178, "VOLL");
-	public static int anInt1804;
+	public static Class124 aClass124_1800 = Class124.method263(1178, ")3runescape)3com)4l=");
+	public static Class124 aClass124_1801 = Class124.method263(1178, "VOLL");
+	public static int anInt1804 = 0;
 	public int[] anIntArray1805;
-	public static int anInt1806;
+	public static int anInt1806 = 0;
 	public static int[] anIntArray1809;
 	public int[] anIntArray1810;
 	public Class14_Sub8 aClass14_Sub8_1813;
-
-	static {
-		aClass124_1800 = Class14_Sub2_Sub2.method263(1178, ")3runescape)3com)4l=");
-		anInt1806 = 0;
-		aClass124_1795 = Class14_Sub2_Sub2.method263(1178, "hitmarks");
-		anInt1804 = 0;
-	}
 
 	public static void method1547(int i, int i_0_, int i_1_, int i_2_, int i_3_, boolean bool) {
 		for (int i_4_ = i_0_; i_2_ + i_0_ >= i_4_; i_4_++) {
@@ -160,13 +154,13 @@ public class Class107 {
 			int[] is_25_;
 			int[] is_26_;
 			int[] is_27_;
-			if (!aClass14_Sub8_1797.aBoolean2862) {
-				int[][] is_28_ = aClass14_Sub8_1797.method474(i_24_);
+			if (!aClass14_Sub8_1797.monoChromatic) {
+				int[][] is_28_ = aClass14_Sub8_1797.outputColour(i_24_);
 				is_26_ = is_28_[1];
 				is_27_ = is_28_[0];
 				is_25_ = is_28_[2];
 			} else {
-				int[] is_29_ = aClass14_Sub8_1797.method484(i_24_);
+				int[] is_29_ = aClass14_Sub8_1797.outputMonochrome(i_24_);
 				is_25_ = is_29_;
 				is_26_ = is_29_;
 				is_27_ = is_29_;
@@ -210,14 +204,14 @@ public class Class107 {
 			anIntArray1809 = null;
 	}
 
-	public Class107() {
+	public ProceduralTexture() {
 		anIntArray1810 = new int[0];
 		anIntArray1805 = new int[0];
 		aClass14_Sub8_1797 = new Class14_Sub8_Sub23();
-		aClass14_Sub8_1797.anInt2837 = 1;
+		aClass14_Sub8_1797.cacheSize = 1;
 		aClass14_Sub8_1813 = new Class14_Sub8_Sub23();
 		aClass14_Sub8Array1798 = new Class14_Sub8[] { aClass14_Sub8_1797, aClass14_Sub8_1813 };
-		aClass14_Sub8_1813.anInt2837 = 1;
+		aClass14_Sub8_1813.cacheSize = 1;
 	}
 
 	public byte[] method1555(int i, Interface3 interface3, double d, boolean bool, int i_36_, byte i_37_,
@@ -240,22 +234,22 @@ public class Class107 {
 			int[] is_42_;
 			int[] is_43_;
 			int[] is_44_;
-			if (aClass14_Sub8_1797.aBoolean2862) {
-				int[] is_45_ = aClass14_Sub8_1797.method484(i_41_);
+			if (aClass14_Sub8_1797.monoChromatic) {
+				int[] is_45_ = aClass14_Sub8_1797.outputMonochrome(i_41_);
 				is_44_ = is_45_;
 				is_42_ = is_45_;
 				is_43_ = is_45_;
 			} else {
-				int[][] is_46_ = aClass14_Sub8_1797.method474(i_41_);
+				int[][] is_46_ = aClass14_Sub8_1797.outputColour(i_41_);
 				is_42_ = is_46_[2];
 				is_43_ = is_46_[0];
 				is_44_ = is_46_[1];
 			}
 			int[] is_47_;
-			if (aClass14_Sub8_1813.aBoolean2862)
-				is_47_ = aClass14_Sub8_1813.method484(i_41_);
+			if (aClass14_Sub8_1813.monoChromatic)
+				is_47_ = aClass14_Sub8_1813.outputMonochrome(i_41_);
 			else
-				is_47_ = aClass14_Sub8_1813.method474(i_41_)[0];
+				is_47_ = aClass14_Sub8_1813.outputColour(i_41_)[0];
 			for (int i_48_ = i - 1; i_48_ >= 0; i_48_--) {
 				int i_49_ = is_44_[i_48_] >> 4;
 				if (i_49_ > 255)
@@ -299,7 +293,7 @@ public class Class107 {
 		return is_54_;
 	}
 
-	public Class107(Buffer class14_sub10) {
+	public ProceduralTexture(Buffer class14_sub10) {
 		int i = class14_sub10.readUByte();
 		aClass14_Sub8Array1798 = new Class14_Sub8[i];
 		int i_55_ = 0;
@@ -311,7 +305,7 @@ public class Class107 {
 				i_55_++;
 			if (class14_sub8.method479() >= 0)
 				i_56_++;
-			int i_58_ = class14_sub8.aClass14_Sub8Array2831.length;
+			int i_58_ = class14_sub8.samplers.length;
 			is[i_57_] = new int[i_58_];
 			for (int i_59_ = 0; i_59_ < i_58_; i_59_++)
 				is[i_57_][i_59_] = class14_sub10.readUByte();
@@ -323,9 +317,9 @@ public class Class107 {
 		i_55_ = 0;
 		for (int i_60_ = 0; i_60_ < i; i_60_++) {
 			Class14_Sub8 class14_sub8 = aClass14_Sub8Array1798[i_60_];
-			int i_61_ = class14_sub8.aClass14_Sub8Array2831.length;
+			int i_61_ = class14_sub8.samplers.length;
 			for (int i_62_ = 0; i_62_ < i_61_; i_62_++)
-				class14_sub8.aClass14_Sub8Array2831[i_62_] = aClass14_Sub8Array1798[is[i_60_][i_62_]];
+				class14_sub8.samplers[i_62_] = aClass14_Sub8Array1798[is[i_60_][i_62_]];
 			int i_63_ = class14_sub8.method477();
 			int i_64_ = class14_sub8.method479();
 			if (i_63_ > 0)

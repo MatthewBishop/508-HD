@@ -4,12 +4,12 @@
 package rs;
 
 public class Class111 {
-	public static Class124 aClass124_1856 = Class14_Sub2_Sub2.method263(1178, ":trade:");
+	public static Class124 aClass124_1856 = Class124.method263(1178, ":trade:");
 	public static int anInt1857;
 	public static Class124 aClass124_1858;
 	public static int anInt1859;
 	public static volatile int anInt1860 = 0;
-	public static Class124 aClass124_1861 = Class14_Sub2_Sub2.method263(1178, "K");
+	public static Class124 aClass124_1861 = Class124.method263(1178, "K");
 	public static Class124 aClass124_1863;
 	public static Class124 aClass124_1864 = aClass124_1861;
 	public static int anInt1865 = 0;
@@ -17,8 +17,8 @@ public class Class111 {
 
 	static {
 		anInt1859 = 0;
-		aClass124_1863 = Class14_Sub2_Sub2.method263(1178, "l");
-		aClass124_1866 = Class14_Sub2_Sub2.method263(1178, "_");
+		aClass124_1863 = Class124.method263(1178, "l");
+		aClass124_1866 = Class124.method263(1178, "_");
 		aClass124_1858 = aClass124_1861;
 	}
 

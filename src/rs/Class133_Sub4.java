@@ -35,6 +35,7 @@ public class Class133_Sub4 extends Class133 {
 		return class133;
 	}
 
+	@Override
 	public void method1790(int i, int i_1_, int i_2_, int i_3_, int i_4_) {
 		method1841(true, 0);
 		int i_5_ = 81 / ((-73 - i_4_) / 40);
@@ -54,7 +55,7 @@ public class Class133_Sub4 extends Class133 {
 		aClass148_Sub1_3580 = null;
 		anInt3586 = -1;
 		if (!bool)
-			method1792(-39, 15, -6, -54, 91, 28, -127, 121, -126L);
+			render(-39, 15, -6, -54, 91, 28, -127, 121, -126L);
 		anInt3573 = -1;
 	}
 
@@ -64,11 +65,12 @@ public class Class133_Sub4 extends Class133 {
 			method1840((byte) 109);
 	}
 
-	public void method1792(int i, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_, int i_12_, long l) {
+	@Override
+	public void render(int i, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_, int i_12_, long l) {
 		Class133 class133 = method1834((byte) 123);
 		if (class133 != null) {
-			class133.method1792(i, i_6_, i_7_, i_8_, i_9_, i_10_, i_11_, i_12_, l);
-			anInt3598 = class133.method1781();
+			class133.render(i, i_6_, i_7_, i_8_, i_9_, i_10_, i_11_, i_12_, l);
+			anInt3598 = class133.getMinY();
 		}
 	}
 
@@ -136,7 +138,8 @@ public class Class133_Sub4 extends Class133 {
 		Class14_Sub20.aClass14_Sub2_Sub19Array3098 = null;
 	}
 
-	public int method1781() {
+	@Override
+	public int getMinY() {
 		int i = anInt3598;
 		return i;
 	}
@@ -190,17 +193,17 @@ public class Class133_Sub4 extends Class133 {
 		Class86 class86;
 		if (aClass46_3597 == null)
 			class86 = class79.method1383(i_34_, anInt3594, is, is_33_, false, anInt3588, true, bool_31_,
-					(!bool_35_ ? aClass148_Sub1_3580 : Class63.aClass148_Sub1_999), i_32_, i_24_);
+					(!bool_35_ ? aClass148_Sub1_3580 : Static2.aClass148_Sub1_999), i_32_, i_24_);
 		else
 			class86 = class79.method1384(i_34_, anInt3594, anInt3577, is_33_, i_32_, anInt3588, bool_31_,
-					(!bool_35_ ? aClass148_Sub1_3580 : Class63.aClass148_Sub1_999), i_24_, is, aClass46_3597, 0);
+					(!bool_35_ ? aClass148_Sub1_3580 : Static2.aClass148_Sub1_999), i_24_, is, aClass46_3597, 0);
 		if (class86 == null) {
 			Class133 class133 = null;
 			return class133;
 		}
 		if (bool_31_) {
 			if (bool_35_)
-				Class63.aClass148_Sub1_999 = class86.aClass148_Sub1_1386;
+				Static2.aClass148_Sub1_999 = class86.aClass148_Sub1_1386;
 			int i_36_ = 0;
 			if (anInt3601 != 0) {
 				is_33_ = Class114.tileHeights[0];
@@ -216,7 +219,7 @@ public class Class133_Sub4 extends Class133 {
 				anInt3593 = i_32_;
 				anInt3574 = i_36_;
 				if (bool_35_)
-					Class63.aClass148_Sub1_999 = null;
+					Static2.aClass148_Sub1_999 = null;
 				aClass148_Sub1_3580 = class148_sub1;
 			}
 			anInt3586 = anInt3577;
@@ -265,8 +268,8 @@ public class Class133_Sub4 extends Class133 {
 				}
 			}
 			if (bool && aClass46_3597.loopOffset != -1) {
-				anInt3577 = (int) (Math.random() * (double) aClass46_3597.anIntArray768.length);
-				anInt3575 -= (int) ((double) aClass46_3597.anIntArray763[anInt3577] * Math.random());
+				anInt3577 = (int) (Math.random() * aClass46_3597.anIntArray768.length);
+				anInt3575 -= (int) (aClass46_3597.anIntArray763[anInt3577] * Math.random());
 			}
 		}
 		if (class133 != null)

@@ -5,6 +5,8 @@ package rs;
 
 import java.awt.Graphics;
 
+import com.jagex.io.js5.Class9;
+
 public abstract class Class108 {
 	public static Class124 aClass124_1814;
 	public static Class124 aClass124_1815;
@@ -12,7 +14,7 @@ public abstract class Class108 {
 	public static Class9 aClass9_1817;
 	public static boolean[] aBooleanArray1819;
 	public static Class124 aClass124_1821;
-	public static Class124 aClass124_1822 = Class14_Sub2_Sub2.method263(1178, "Loaded sprites");
+	public static Class124 aClass124_1822 = Class124.method263(1178, "Loaded sprites");
 	public static Class124 aClass124_1823;
 	public static int anInt1824 = -1;
 	public static Class124 aClass124_1825;
@@ -21,12 +23,12 @@ public abstract class Class108 {
 
 	static {
 		aClass124_1814 = aClass124_1822;
-		aClass124_1823 = Class14_Sub2_Sub2.method263(1178, "wave2:");
+		aClass124_1823 = Class124.method263(1178, "wave2:");
 		aClass124_1821 = aClass124_1823;
 		aClass124_1815 = aClass124_1823;
-		aClass124_1826 = Class14_Sub2_Sub2.method263(1178, "FULL");
+		aClass124_1826 = Class124.method263(1178, "FULL");
 		aClass124_1825 = aClass124_1826;
-		aClass124_1828 = Class14_Sub2_Sub2.method263(1178, "Spielwelt erstellt)3");
+		aClass124_1828 = Class124.method263(1178, "Spielwelt erstellt)3");
 	}
 
 	public static void method1556(boolean bool) {
@@ -42,44 +44,6 @@ public abstract class Class108 {
 		aBooleanArray1819 = null;
 		aClass124_1828 = null;
 		aClass124_1826 = null;
-	}
-
-	public static void method1557(byte i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_,
-			int i_7_, int i_8_) {
-		if (i_2_ == i_5_ && i_0_ == i_3_ && i_7_ == i_6_ && i_4_ == i_8_)
-			Static2.method1510(i_8_, i_1_, (byte) -46, i_7_, i_5_, i_0_);
-		else {
-			int i_9_ = i_5_;
-			int i_10_ = i_0_;
-			int i_11_ = i_2_ * 3;
-			int i_12_ = i_0_ * 3;
-			int i_13_ = i_5_ * 3;
-			int i_14_ = i_3_ * 3;
-			int i_15_ = i_4_ * 3;
-			int i_16_ = i_6_ * 3;
-			int i_17_ = i_13_ + i_16_ - (i_11_ + i_11_);
-			int i_18_ = i_11_ - i_16_ + i_7_ - i_5_;
-			int i_19_ = i_12_ + i_15_ + (-i_14_ - i_14_);
-			int i_20_ = -i_13_ + i_11_;
-			int i_21_ = -i_0_ - i_15_ + i_8_ + i_14_;
-			int i_22_ = -i_12_ + i_14_;
-			for (int i_23_ = 128; i_23_ <= 4096; i_23_ += 128) {
-				int i_24_ = i_23_ * i_23_ >> 44;
-				int i_25_ = i_24_ * i_23_ >> 12;
-				int i_26_ = i_18_ * i_25_;
-				int i_27_ = i_25_ * i_21_;
-				int i_28_ = i_17_ * i_24_;
-				int i_29_ = i_22_ * i_23_;
-				int i_30_ = i_24_ * i_19_;
-				int i_31_ = i_20_ * i_23_;
-				int i_32_ = i_5_ + (i_28_ + i_26_ + i_31_ >> 12);
-				int i_33_ = i_0_ + (i_27_ - (-i_30_ - i_29_) >> 12);
-				Static2.method1510(i_33_, i_1_, (byte) 65, i_32_, i_9_, i_10_);
-				i_9_ = i_32_;
-				i_10_ = i_33_;
-			}
-		}
-		int i_34_ = 102 % ((-20 - i) / 33);
 	}
 
 	public abstract void method1558(int i, byte i_35_, Graphics graphics, int i_36_);
@@ -123,7 +87,7 @@ public abstract class Class108 {
 					int i_50_ = class6.anInt154;
 					int i_51_ = class6.anInt156;
 					int[] is_52_ = JunkTex.anIntArrayArray4388[i_48_];
-					int[] is_53_ = Class9.anIntArrayArray190[i_49_];
+					int[] is_53_ = Static2.anIntArrayArray190[i_49_];
 					int i_54_ = 0;
 					if (i_50_ != 0) {
 						for (int i_55_ = 0; i_55_ < 4; i_55_++) {

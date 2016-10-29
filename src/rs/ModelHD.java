@@ -43,7 +43,7 @@ public class ModelHD extends Class133_Sub7 {
 	public byte[] aByteArray5016;
 	public VertexBuffer aClass29_5020;
 	public VertexBufferPointer aClass41_5018;
-	public VertexBufferPointer aClass41_5028;
+	public VertexBufferPointer vertexBufferPointer;
 	public VertexBufferPointer aClass41_5029;
 	public VertexBufferPointer aClass41_5030;
 	public VertexBufferPointer aClass41_5046;
@@ -85,9 +85,9 @@ public class ModelHD extends Class133_Sub7 {
 		i -= i_2_;
 		i_0_ -= i_3_;
 		i_1_ -= i_4_;
-		float f_9_ = (float) i * fs[0] + (float) i_0_ * fs[1] + (float) i_1_ * fs[2];
-		float f_10_ = (float) i * fs[3] + (float) i_0_ * fs[4] + (float) i_1_ * fs[5];
-		float f_11_ = (float) i * fs[6] + (float) i_0_ * fs[7] + (float) i_1_ * fs[8];
+		float f_9_ = i * fs[0] + i_0_ * fs[1] + i_1_ * fs[2];
+		float f_10_ = i * fs[3] + i_0_ * fs[4] + i_1_ * fs[5];
+		float f_11_ = i * fs[6] + i_0_ * fs[7] + i_1_ * fs[8];
 		float f_12_;
 		float f_13_;
 		if (i_5_ == 0) {
@@ -211,8 +211,8 @@ public class ModelHD extends Class133_Sub7 {
 	public static float[] method1911(int i, int i_34_, int i_35_, int i_36_, float f, float f_37_, float f_38_) {
 		float[] fs = new float[9];
 		float[] fs_39_ = new float[9];
-		float f_40_ = (float) Math.cos((double) ((float) i_36_ * 0.024543693F));
-		float f_41_ = (float) Math.sin((double) ((float) i_36_ * 0.024543693F));
+		float f_40_ = (float) Math.cos(i_36_ * 0.024543693F);
+		float f_41_ = (float) Math.sin(i_36_ * 0.024543693F);
 		float f_42_ = 1.0F - f_40_;
 		fs[0] = f_40_;
 		fs[1] = 0.0F;
@@ -226,16 +226,16 @@ public class ModelHD extends Class133_Sub7 {
 		float[] fs_43_ = new float[9];
 		float f_44_ = 1.0F;
 		float f_45_ = 0.0F;
-		f_40_ = (float) i_34_ / 32767.0F;
-		f_41_ = -(float) Math.sqrt((double) (1.0F - f_40_ * f_40_));
+		f_40_ = i_34_ / 32767.0F;
+		f_41_ = -(float) Math.sqrt(1.0F - f_40_ * f_40_);
 		f_42_ = 1.0F - f_40_;
-		float f_46_ = (float) Math.sqrt((double) (i * i + i_35_ * i_35_));
+		float f_46_ = (float) Math.sqrt(i * i + i_35_ * i_35_);
 		if (f_46_ == 0.0F && f_40_ == 0.0F)
 			fs_39_ = fs;
 		else {
 			if (f_46_ != 0.0F) {
-				f_44_ = (float) -i_35_ / f_46_;
-				f_45_ = (float) i / f_46_;
+				f_44_ = -i_35_ / f_46_;
+				f_45_ = i / f_46_;
 			}
 			fs_43_[0] = f_40_ + f_44_ * f_44_ * f_42_;
 			fs_43_[1] = f_45_ * f_41_;
@@ -279,12 +279,12 @@ public class ModelHD extends Class133_Sub7 {
 		i -= i_50_;
 		i_48_ -= i_51_;
 		i_49_ -= i_52_;
-		float f_54_ = ((float) i * fs[0] + (float) i_48_ * fs[1] + (float) i_49_ * fs[2]);
-		float f_55_ = ((float) i * fs[3] + (float) i_48_ * fs[4] + (float) i_49_ * fs[5]);
-		float f_56_ = ((float) i * fs[6] + (float) i_48_ * fs[7] + (float) i_49_ * fs[8]);
-		float f_57_ = (float) Math.sqrt((double) (f_54_ * f_54_ + f_55_ * f_55_ + f_56_ * f_56_));
-		float f_58_ = ((float) Math.atan2((double) f_54_, (double) f_56_) / 6.2831855F + 0.5F);
-		float f_59_ = ((float) Math.asin((double) (f_55_ / f_57_)) / 3.1415927F + 0.5F + f);
+		float f_54_ = (i * fs[0] + i_48_ * fs[1] + i_49_ * fs[2]);
+		float f_55_ = (i * fs[3] + i_48_ * fs[4] + i_49_ * fs[5]);
+		float f_56_ = (i * fs[6] + i_48_ * fs[7] + i_49_ * fs[8]);
+		float f_57_ = (float) Math.sqrt(f_54_ * f_54_ + f_55_ * f_55_ + f_56_ * f_56_);
+		float f_58_ = ((float) Math.atan2(f_54_, f_56_) / 6.2831855F + 0.5F);
+		float f_59_ = ((float) Math.asin(f_55_ / f_57_) / 3.1415927F + 0.5F + f);
 		if (i_53_ == 1) {
 			float f_60_ = f_58_;
 			f_58_ = -f_59_;
@@ -306,10 +306,10 @@ public class ModelHD extends Class133_Sub7 {
 		i -= i_64_;
 		i_62_ -= i_65_;
 		i_63_ -= i_66_;
-		float f_69_ = ((float) i * fs[0] + (float) i_62_ * fs[1] + (float) i_63_ * fs[2]);
-		float f_70_ = ((float) i * fs[3] + (float) i_62_ * fs[4] + (float) i_63_ * fs[5]);
-		float f_71_ = ((float) i * fs[6] + (float) i_62_ * fs[7] + (float) i_63_ * fs[8]);
-		float f_72_ = ((float) Math.atan2((double) f_69_, (double) f_71_) / 6.2831855F + 0.5F);
+		float f_69_ = (i * fs[0] + i_62_ * fs[1] + i_63_ * fs[2]);
+		float f_70_ = (i * fs[3] + i_62_ * fs[4] + i_63_ * fs[5]);
+		float f_71_ = (i * fs[6] + i_62_ * fs[7] + i_63_ * fs[8]);
+		float f_72_ = ((float) Math.atan2(f_69_, f_71_) / 6.2831855F + 0.5F);
 		if (f != 1.0F)
 			f_72_ *= f;
 		float f_73_ = f_70_ + 0.5F + f_68_;
@@ -380,7 +380,7 @@ public class ModelHD extends Class133_Sub7 {
 			i_80_ += i_83_ & 0xff;
 			i_81_ += (i_84_ & 0xffff) << 16;
 			i_81_ += i_78_ & 0xffff;
-			ls[i_78_] = ((long) i_80_ << 32) + (long) i_81_;
+			ls[i_78_] = ((long) i_80_ << 32) + i_81_;
 		}
 		Class117.method1602(is, (byte) 125, ls);
 		anInt5033 = class133_sub2.anInt3521;
@@ -404,7 +404,7 @@ public class ModelHD extends Class133_Sub7 {
 		if (class133_sub2.anIntArray3532 != null)
 			aByteArray5016 = new byte[anInt5014];
 		aClass50_5013 = new Class50();
-		aClass41_5028 = new VertexBufferPointer();
+		vertexBufferPointer = new VertexBufferPointer();
 		aClass41_5030 = new VertexBufferPointer();
 		if (RT4.useLighting)
 			aClass41_5018 = new VertexBufferPointer();
@@ -491,20 +491,20 @@ public class ModelHD extends Class133_Sub7 {
 							f_112_ = 1.0F;
 						} else if (i_113_ > 0) {
 							f = 1.0F;
-							f_112_ = (float) i_113_ / 1024.0F;
+							f_112_ = i_113_ / 1024.0F;
 						} else {
 							f_112_ = 1.0F;
-							f = (float) -i_113_ / 1024.0F;
+							f = -i_113_ / 1024.0F;
 						}
-						f_111_ = 64.0F / (float) ((class133_sub2.aShortArray3522[i_109_]) & 0xffff);
+						f_111_ = 64.0F / ((class133_sub2.aShortArray3522[i_109_]) & 0xffff);
 					} else if (i_110_ == 2) {
-						f = (64.0F / (float) (class133_sub2.aShortArray3512[i_109_] & 0xffff));
-						f_111_ = 64.0F / (float) ((class133_sub2.aShortArray3522[i_109_]) & 0xffff);
-						f_112_ = 64.0F / (float) ((class133_sub2.aShortArray3527[i_109_]) & 0xffff);
+						f = (64.0F / (class133_sub2.aShortArray3512[i_109_] & 0xffff));
+						f_111_ = 64.0F / ((class133_sub2.aShortArray3522[i_109_]) & 0xffff);
+						f_112_ = 64.0F / ((class133_sub2.aShortArray3527[i_109_]) & 0xffff);
 					} else {
-						f = ((float) class133_sub2.aShortArray3512[i_109_] / 1024.0F);
-						f_111_ = ((float) class133_sub2.aShortArray3522[i_109_] / 1024.0F);
-						f_112_ = ((float) class133_sub2.aShortArray3527[i_109_] / 1024.0F);
+						f = (class133_sub2.aShortArray3512[i_109_] / 1024.0F);
+						f_111_ = (class133_sub2.aShortArray3522[i_109_] / 1024.0F);
+						f_112_ = (class133_sub2.aShortArray3527[i_109_] / 1024.0F);
 					}
 					fs[i_109_] = method1911(class133_sub2.aShortArray3520[i_109_],
 							class133_sub2.aShortArray3531[i_109_], class133_sub2.aShortArray3511[i_109_],
@@ -559,24 +559,24 @@ public class ModelHD extends Class133_Sub7 {
 						short i_132_ = class133_sub2.aShortArray3520[i_118_];
 						short i_133_ = class133_sub2.aShortArray3531[i_118_];
 						short i_134_ = class133_sub2.aShortArray3511[i_118_];
-						float f_135_ = (float) class133_sub2.anIntArray3530[i_132_];
-						float f_136_ = (float) class133_sub2.anIntArray3526[i_132_];
-						float f_137_ = (float) class133_sub2.anIntArray3510[i_132_];
-						float f_138_ = ((float) class133_sub2.anIntArray3530[i_133_] - f_135_);
-						float f_139_ = ((float) class133_sub2.anIntArray3526[i_133_] - f_136_);
-						float f_140_ = ((float) class133_sub2.anIntArray3510[i_133_] - f_137_);
-						float f_141_ = ((float) class133_sub2.anIntArray3530[i_134_] - f_135_);
-						float f_142_ = ((float) class133_sub2.anIntArray3526[i_134_] - f_136_);
-						float f_143_ = ((float) class133_sub2.anIntArray3510[i_134_] - f_137_);
-						float f_144_ = ((float) class133_sub2.anIntArray3530[i_129_] - f_135_);
-						float f_145_ = ((float) class133_sub2.anIntArray3526[i_129_] - f_136_);
-						float f_146_ = ((float) class133_sub2.anIntArray3510[i_129_] - f_137_);
-						float f_147_ = ((float) class133_sub2.anIntArray3530[i_130_] - f_135_);
-						float f_148_ = ((float) class133_sub2.anIntArray3526[i_130_] - f_136_);
-						float f_149_ = ((float) class133_sub2.anIntArray3510[i_130_] - f_137_);
-						float f_150_ = ((float) class133_sub2.anIntArray3530[i_131_] - f_135_);
-						float f_151_ = ((float) class133_sub2.anIntArray3526[i_131_] - f_136_);
-						float f_152_ = ((float) class133_sub2.anIntArray3510[i_131_] - f_137_);
+						float f_135_ = class133_sub2.anIntArray3530[i_132_];
+						float f_136_ = class133_sub2.anIntArray3526[i_132_];
+						float f_137_ = class133_sub2.anIntArray3510[i_132_];
+						float f_138_ = (class133_sub2.anIntArray3530[i_133_] - f_135_);
+						float f_139_ = (class133_sub2.anIntArray3526[i_133_] - f_136_);
+						float f_140_ = (class133_sub2.anIntArray3510[i_133_] - f_137_);
+						float f_141_ = (class133_sub2.anIntArray3530[i_134_] - f_135_);
+						float f_142_ = (class133_sub2.anIntArray3526[i_134_] - f_136_);
+						float f_143_ = (class133_sub2.anIntArray3510[i_134_] - f_137_);
+						float f_144_ = (class133_sub2.anIntArray3530[i_129_] - f_135_);
+						float f_145_ = (class133_sub2.anIntArray3526[i_129_] - f_136_);
+						float f_146_ = (class133_sub2.anIntArray3510[i_129_] - f_137_);
+						float f_147_ = (class133_sub2.anIntArray3530[i_130_] - f_135_);
+						float f_148_ = (class133_sub2.anIntArray3526[i_130_] - f_136_);
+						float f_149_ = (class133_sub2.anIntArray3510[i_130_] - f_137_);
+						float f_150_ = (class133_sub2.anIntArray3530[i_131_] - f_135_);
+						float f_151_ = (class133_sub2.anIntArray3526[i_131_] - f_136_);
+						float f_152_ = (class133_sub2.anIntArray3510[i_131_] - f_137_);
 						float f_153_ = f_139_ * f_143_ - f_140_ * f_142_;
 						float f_154_ = f_140_ * f_141_ - f_138_ * f_143_;
 						float f_155_ = f_138_ * f_142_ - f_139_ * f_141_;
@@ -603,9 +603,9 @@ public class ModelHD extends Class133_Sub7 {
 						int i_165_ = is_92_[i_118_];
 						float[] fs_166_ = fs[i_118_];
 						byte i_167_ = class133_sub2.aByteArray3548[i_118_];
-						float f_168_ = ((float) class133_sub2.aByteArray3554[i_118_] / 256.0F);
+						float f_168_ = (class133_sub2.aByteArray3554[i_118_] / 256.0F);
 						if (i_128_ == 1) {
-							float f_169_ = ((float) ((class133_sub2.aShortArray3527[i_118_]) & 0xffff) / 1024.0F);
+							float f_169_ = (((class133_sub2.aShortArray3527[i_118_]) & 0xffff) / 1024.0F);
 							method1921(class133_sub2.anIntArray3530[i_160_], class133_sub2.anIntArray3526[i_160_],
 									class133_sub2.anIntArray3510[i_160_], i_163_, i_164_, i_165_, fs_166_, f_169_,
 									i_167_, f_168_);
@@ -654,8 +654,8 @@ public class ModelHD extends Class133_Sub7 {
 								}
 							}
 						} else if (i_128_ == 2) {
-							float f_171_ = ((float) class133_sub2.aByteArray3518[i_118_] / 256.0F);
-							float f_172_ = ((float) class133_sub2.aByteArray3529[i_118_] / 256.0F);
+							float f_171_ = (class133_sub2.aByteArray3518[i_118_] / 256.0F);
+							float f_172_ = (class133_sub2.aByteArray3529[i_118_] / 256.0F);
 							int i_173_ = (class133_sub2.anIntArray3530[i_161_] - class133_sub2.anIntArray3530[i_160_]);
 							int i_174_ = (class133_sub2.anIntArray3526[i_161_] - class133_sub2.anIntArray3526[i_160_]);
 							int i_175_ = (class133_sub2.anIntArray3510[i_161_] - class133_sub2.anIntArray3510[i_160_]);
@@ -665,15 +665,15 @@ public class ModelHD extends Class133_Sub7 {
 							int i_179_ = i_174_ * i_178_ - i_177_ * i_175_;
 							int i_180_ = i_175_ * i_176_ - i_178_ * i_173_;
 							int i_181_ = i_173_ * i_177_ - i_176_ * i_174_;
-							float f_182_ = 64.0F / (float) ((class133_sub2.aShortArray3512[i_118_]) & 0xffff);
-							float f_183_ = 64.0F / (float) ((class133_sub2.aShortArray3522[i_118_]) & 0xffff);
-							float f_184_ = 64.0F / (float) ((class133_sub2.aShortArray3527[i_118_]) & 0xffff);
-							float f_185_ = (((float) i_179_ * fs_166_[0] + (float) i_180_ * fs_166_[1]
-									+ (float) i_181_ * fs_166_[2]) / f_182_);
-							float f_186_ = (((float) i_179_ * fs_166_[3] + (float) i_180_ * fs_166_[4]
-									+ (float) i_181_ * fs_166_[5]) / f_183_);
-							float f_187_ = (((float) i_179_ * fs_166_[6] + (float) i_180_ * fs_166_[7]
-									+ (float) i_181_ * fs_166_[8]) / f_184_);
+							float f_182_ = 64.0F / ((class133_sub2.aShortArray3512[i_118_]) & 0xffff);
+							float f_183_ = 64.0F / ((class133_sub2.aShortArray3522[i_118_]) & 0xffff);
+							float f_184_ = 64.0F / ((class133_sub2.aShortArray3527[i_118_]) & 0xffff);
+							float f_185_ = ((i_179_ * fs_166_[0] + i_180_ * fs_166_[1]
+									+ i_181_ * fs_166_[2]) / f_182_);
+							float f_186_ = ((i_179_ * fs_166_[3] + i_180_ * fs_166_[4]
+									+ i_181_ * fs_166_[5]) / f_183_);
+							float f_187_ = ((i_179_ * fs_166_[6] + i_180_ * fs_166_[7]
+									+ i_181_ * fs_166_[8]) / f_184_);
 							i_127_ = method1898(f_185_, f_186_, f_187_);
 							method1888(class133_sub2.anIntArray3530[i_160_], class133_sub2.anIntArray3526[i_160_],
 									class133_sub2.anIntArray3510[i_160_], i_163_, i_164_, i_165_, i_127_, fs_166_,
@@ -748,32 +748,32 @@ public class ModelHD extends Class133_Sub7 {
 			else
 				i_188_ = class133_sub2.aByteArray3534[i_115_];
 			if (i_188_ == 0) {
-				long l = ((long) (i_118_ << 2)
-						+ (((long) (i_127_ << 24) + (long) (i_116_ << 8) + (long) i_119_) << 32));
+				long l = ((i_118_ << 2)
+						+ (((long) (i_127_ << 24) + (long) (i_116_ << 8) + i_119_) << 32));
 				int i_189_ = class133_sub2.anIntArray3549[i_115_];
 				Class89 class89 = class133_sub2.aClass89Array3552[i_189_];
 				aShortArray5021[i_114_] = method1901(class133_sub2, i_189_, l, class89.anInt1414, class89.anInt1404,
 						class89.anInt1406, class89.anInt1410, f, f_120_);
 				int i_190_ = class133_sub2.anIntArray3507[i_115_];
 				Class89 class89_191_ = class133_sub2.aClass89Array3552[i_190_];
-				aShortArray5025[i_114_] = method1901(class133_sub2, i_190_, l + (long) i_125_, class89_191_.anInt1414,
+				aShortArray5025[i_114_] = method1901(class133_sub2, i_190_, l + i_125_, class89_191_.anInt1414,
 						class89_191_.anInt1404, class89_191_.anInt1406, class89_191_.anInt1410, f_121_, f_122_);
 				int i_192_ = class133_sub2.anIntArray3540[i_115_];
 				Class89 class89_193_ = class133_sub2.aClass89Array3552[i_192_];
-				aShortArray5038[i_114_] = method1901(class133_sub2, i_192_, l + (long) i_126_, class89_193_.anInt1414,
+				aShortArray5038[i_114_] = method1901(class133_sub2, i_192_, l + i_126_, class89_193_.anInt1414,
 						class89_193_.anInt1404, class89_193_.anInt1406, class89_193_.anInt1410, f_123_, f_124_);
 			} else if (i_188_ == 1) {
 				Class138 class138 = class133_sub2.aClass138Array3536[i_115_];
-				long l = ((long) ((i_118_ << 2) + (class138.anInt2208 > 0 ? 1024 : 2048)
-						+ (class138.anInt2217 + 256 << 12) + (class138.anInt2209 + 256 << 22))
-						+ (((long) (i_127_ << 24) + (long) (i_116_ << 8) + (long) i_119_) << 32));
+				long l = ((i_118_ << 2) + (class138.anInt2208 > 0 ? 1024 : 2048)
+						+ (class138.anInt2217 + 256 << 12) + (class138.anInt2209 + 256 << 22)
+						+ (((long) (i_127_ << 24) + (long) (i_116_ << 8) + i_119_) << 32));
 				aShortArray5021[i_114_] = method1901(class133_sub2, class133_sub2.anIntArray3549[i_115_], l,
 						class138.anInt2208, class138.anInt2217, class138.anInt2209, 0, f, f_120_);
 				aShortArray5025[i_114_] = method1901(class133_sub2, class133_sub2.anIntArray3507[i_115_],
-						l + (long) i_125_, class138.anInt2208, class138.anInt2217, class138.anInt2209, 0, f_121_,
+						l + i_125_, class138.anInt2208, class138.anInt2217, class138.anInt2209, 0, f_121_,
 						f_122_);
 				aShortArray5038[i_114_] = method1901(class133_sub2, class133_sub2.anIntArray3540[i_115_],
-						l + (long) i_126_, class138.anInt2208, class138.anInt2217, class138.anInt2209, 0, f_123_,
+						l + i_126_, class138.anInt2208, class138.anInt2217, class138.anInt2209, 0, f_123_,
 						f_124_);
 			}
 			if (class133_sub2.aShortArray3528 != null)
@@ -815,18 +815,21 @@ public class ModelHD extends Class133_Sub7 {
 		aFloatArray5012 = method1894(aFloatArray5012, anInt5040);
 	}
 
-	public int method1781() {
-		if (!aClass50_5013.aBoolean820)
-			method1891();
-		return aClass50_5013.aShort825;
+	@Override
+	public int getMinY() {
+		if (!aClass50_5013.boundsCalculated)
+			calculateBounds();
+		return aClass50_5013.minY;
 	}
 
+	@Override
 	public boolean method1784() {
 		if (aBoolean5009 && vertexX != null && aShortArray5041 != null)
 			return true;
 		return false;
 	}
 
+	@Override
 	public void method1788(Class133 class133, int i, int i_200_, int i_201_, boolean bool) {
 		ModelHD modelhd_202_ = (ModelHD) class133;
 		if (anInt5014 != 0 && modelhd_202_.anInt5014 != 0) {
@@ -870,14 +873,14 @@ public class ModelHD extends Class133_Sub7 {
 			}
 			int[] is_218_ = modelhd_202_.anIntArray5031;
 			short[] is_219_ = modelhd_202_.aShortArray5036;
-			if (!modelhd_202_.aClass50_5013.aBoolean820)
-				modelhd_202_.method1891();
-			int i_220_ = modelhd_202_.aClass50_5013.aShort825;
-			int i_221_ = modelhd_202_.aClass50_5013.aShort826;
-			int i_222_ = modelhd_202_.aClass50_5013.aShort827;
-			int i_223_ = modelhd_202_.aClass50_5013.aShort824;
-			int i_224_ = modelhd_202_.aClass50_5013.aShort822;
-			int i_225_ = modelhd_202_.aClass50_5013.aShort821;
+			if (!modelhd_202_.aClass50_5013.boundsCalculated)
+				modelhd_202_.calculateBounds();
+			int i_220_ = modelhd_202_.aClass50_5013.minY;
+			int i_221_ = modelhd_202_.aClass50_5013.maxY;
+			int i_222_ = modelhd_202_.aClass50_5013.minX;
+			int i_223_ = modelhd_202_.aClass50_5013.maxX;
+			int i_224_ = modelhd_202_.aClass50_5013.minZ;
+			int i_225_ = modelhd_202_.aClass50_5013.maxZ;
 			for (int i_226_ = 0; i_226_ < anInt5033; i_226_++) {
 				int i_227_ = vertexY[i_226_] - i_200_;
 				if (i_227_ >= i_220_ && i_227_ <= i_221_) {
@@ -973,6 +976,7 @@ public class ModelHD extends Class133_Sub7 {
 		}
 	}
 
+	@Override
 	public Class133 method1791(int i, int i_245_, int i_246_) {
 		aBoolean5009 = false;
 		if (aClass77_5039 != null) {
@@ -985,35 +989,37 @@ public class ModelHD extends Class133_Sub7 {
 		return this;
 	}
 
-	public void method1792(int i, int i_247_, int i_248_, int i_249_, int i_250_, int i_251_, int i_252_, int i_253_,
+	//int yaw, int sinCameraPitch, int cosCameraPitch, int sceneX, int sceneZ, int sinCameraYaw, int sceneY, int cosCameraYaw, long l
+	@Override
+	public void render(int yaw, int sinCameraPitch, int cosCameraPitch, int sceneX, int sceneZ, int sinCameraYaw, int sceneY, int cosCameraYaw,
 			long l) {
 		if (anInt5040 != 0) {
-			if (!aClass50_5013.aBoolean820)
-				method1891();
-			int i_254_ = aClass50_5013.aShort823;
-			int i_255_ = aClass50_5013.aShort825;
-			int i_256_ = aClass50_5013.aShort826;
-			int i_257_ = i_253_ * i_250_ - i_251_ * i_249_ >> 16;
-			int i_258_ = i_252_ * i_247_ + i_257_ * i_248_ >> 16;
-			int i_259_ = i_258_ + (i_254_ * i_248_ + i_256_ * i_247_ >> 16);
+			if (!aClass50_5013.boundsCalculated)
+				calculateBounds();
+			int i_254_ = aClass50_5013.boundingPlaneRadius;
+			int i_255_ = aClass50_5013.minY;
+			int i_256_ = aClass50_5013.maxY;
+			int i_257_ = cosCameraYaw * sceneZ - sinCameraYaw * sceneX >> 16;
+			int i_258_ = sceneY * sinCameraPitch + i_257_ * cosCameraPitch >> 16;
+			int i_259_ = i_258_ + (i_254_ * cosCameraPitch + i_256_ * sinCameraPitch >> 16);
 			if (i_259_ > 50) {
-				int i_260_ = i_258_ + (-i_254_ * i_248_ + i_255_ * i_247_ >> 16);
+				int i_260_ = i_258_ + (-i_254_ * cosCameraPitch + i_255_ * sinCameraPitch >> 16);
 				if (i_260_ < 3584) {
-					int i_261_ = i_253_ * i_249_ + i_251_ * i_250_ >> 16;
+					int i_261_ = cosCameraYaw * sceneX + sinCameraYaw * sceneZ >> 16;
 					int i_262_ = i_261_ + i_254_ << 9;
 					if (i_262_ / i_259_ > JunkTex.anInt425) {
 						int i_263_ = i_261_ - i_254_ << 9;
 						if (i_263_ / i_259_ < JunkTex.anInt4547) {
-							int i_264_ = i_252_ * i_248_ - i_257_ * i_247_ >> 16;
-							int i_265_ = (i_264_ + (i_254_ * i_247_ + i_256_ * i_248_ >> 16) << 9);
+							int i_264_ = sceneY * cosCameraPitch - i_257_ * sinCameraPitch >> 16;
+							int i_265_ = (i_264_ + (i_254_ * sinCameraPitch + i_256_ * cosCameraPitch >> 16) << 9);
 							if (i_265_ / i_259_ > Class58.anInt948) {
-								int i_266_ = (i_264_ + ((-i_254_ * i_247_ + i_255_ * i_248_) >> 16) << 9);
+								int i_266_ = (i_264_ + ((-i_254_ * sinCameraPitch + i_255_ * cosCameraPitch) >> 16) << 9);
 								if (i_266_ / i_259_ < Class70.anInt1081) {
 									int i_267_ = 0;
 									int i_268_ = 0;
-									if (i != 0) {
-										i_267_ = Class3.sin[i];
-										i_268_ = Class3.cos[i];
+									if (yaw != 0) {
+										i_267_ = Class3.sin[yaw];
+										i_268_ = Class3.cos[yaw];
 									}
 									while_321_: do {
 										if (l > 0L && Class90.aBoolean1417 && i_260_ > 0) {
@@ -1035,16 +1041,16 @@ public class ModelHD extends Class133_Sub7 {
 												i_271_ = i_266_ / i_260_;
 												i_272_ = i_265_ / i_259_;
 											}
-											if (Static2.anInt2726 >= i_269_ && Static2.anInt2726 <= i_270_
-													&& Class38.anInt2622 >= i_271_ && (Class38.anInt2622 <= i_272_)) {
+											if (Static2.mouseOffFromCenterX >= i_269_ && Static2.mouseOffFromCenterX <= i_270_
+													&& Class38.mouseOffFromCenterY >= i_271_ && (Class38.mouseOffFromCenterY <= i_272_)) {
 												i_269_ = 999999;
 												i_270_ = -999999;
 												i_271_ = 999999;
 												i_272_ = -999999;
-												int i_273_ = aClass50_5013.aShort827;
-												int i_274_ = aClass50_5013.aShort824;
-												int i_275_ = aClass50_5013.aShort822;
-												int i_276_ = aClass50_5013.aShort821;
+												int i_273_ = aClass50_5013.minX;
+												int i_274_ = aClass50_5013.maxX;
+												int i_275_ = aClass50_5013.minZ;
+												int i_276_ = aClass50_5013.maxZ;
 												int[] is = { i_273_, i_274_, i_273_, i_274_, i_273_, i_274_, i_273_,
 														i_274_ };
 												int[] is_277_ = { i_275_, i_275_, i_276_, i_276_, i_275_, i_275_,
@@ -1055,19 +1061,19 @@ public class ModelHD extends Class133_Sub7 {
 													int i_280_ = is[i_279_];
 													int i_281_ = is_278_[i_279_];
 													int i_282_ = is_277_[i_279_];
-													if (i != 0) {
+													if (yaw != 0) {
 														int i_283_ = ((i_282_ * i_267_ + (i_280_ * i_268_)) >> 16);
 														i_282_ = ((i_282_ * i_268_ - (i_280_ * i_267_)) >> 16);
 														i_280_ = i_283_;
 													}
-													i_280_ += i_251_;
-													i_281_ += i_252_;
-													i_282_ += i_253_;
-													int i_284_ = ((i_282_ * i_249_ + i_280_ * i_250_) >> 16);
-													i_282_ = ((i_282_ * i_250_ - i_280_ * i_249_) >> 16);
+													i_280_ += sinCameraYaw;
+													i_281_ += sceneY;
+													i_282_ += cosCameraYaw;
+													int i_284_ = ((i_282_ * sceneX + i_280_ * sceneZ) >> 16);
+													i_282_ = ((i_282_ * sceneZ - i_280_ * sceneX) >> 16);
 													i_280_ = i_284_;
-													i_284_ = ((i_281_ * i_248_ - i_282_ * i_247_) >> 16);
-													i_282_ = ((i_281_ * i_247_ + i_282_ * i_248_) >> 16);
+													i_284_ = ((i_281_ * cosCameraPitch - i_282_ * sinCameraPitch) >> 16);
+													i_282_ = ((i_281_ * sinCameraPitch + i_282_ * cosCameraPitch) >> 16);
 													i_281_ = i_284_;
 													if (i_282_ > 0) {
 														int i_285_ = ((i_280_ << 9) / i_282_);
@@ -1082,11 +1088,11 @@ public class ModelHD extends Class133_Sub7 {
 															i_272_ = i_286_;
 													}
 												}
-												if (Static2.anInt2726 >= i_269_ && (Static2.anInt2726 <= i_270_)
-														&& (Class38.anInt2622 >= i_271_)
-														&& (Class38.anInt2622 <= i_272_)) {
-													if (aBoolean3687)
-														Class7_Sub3.aLongArray2685[Class14_Sub15.anInt2996++] = l;
+												if (Static2.mouseOffFromCenterX >= i_269_ && (Static2.mouseOffFromCenterX <= i_270_)
+														&& (Class38.mouseOffFromCenterY >= i_271_)
+														&& (Class38.mouseOffFromCenterY <= i_272_)) {
+													if (haveActions)
+														Class7_Sub3.actions[Class14_Sub15.actionsLen++] = l;
 													else {
 														if (anIntArray5061.length < anInt5040) {
 															anIntArray5061 = (new int[anInt5040]);
@@ -1096,22 +1102,22 @@ public class ModelHD extends Class133_Sub7 {
 															int i_288_ = (vertexX[i_287_]);
 															int i_289_ = (vertexY[i_287_]);
 															int i_290_ = (vertexZ[i_287_]);
-															if (i != 0) {
+															if (yaw != 0) {
 																int i_291_ = (((i_290_ * i_267_)
 																		+ (i_288_ * i_268_)) >> 16);
 																i_290_ = (((i_290_ * i_268_)
 																		- (i_288_ * i_267_)) >> 16);
 																i_288_ = i_291_;
 															}
-															i_288_ += i_251_;
-															i_289_ += i_252_;
-															i_290_ += i_253_;
-															int i_292_ = (((i_290_ * i_249_)
-																	+ (i_288_ * i_250_)) >> 16);
-															i_290_ = (((i_290_ * i_250_) - (i_288_ * i_249_)) >> 16);
+															i_288_ += sinCameraYaw;
+															i_289_ += sceneY;
+															i_290_ += cosCameraYaw;
+															int i_292_ = (((i_290_ * sceneX)
+																	+ (i_288_ * sceneZ)) >> 16);
+															i_290_ = (((i_290_ * sceneZ) - (i_288_ * sceneX)) >> 16);
 															i_288_ = i_292_;
-															i_292_ = (((i_289_ * i_248_) - (i_290_ * i_247_)) >> 16);
-															i_290_ = (((i_289_ * i_247_) + (i_290_ * i_248_)) >> 16);
+															i_292_ = (((i_289_ * cosCameraPitch) - (i_290_ * sinCameraPitch)) >> 16);
+															i_290_ = (((i_289_ * sinCameraPitch) + (i_290_ * cosCameraPitch)) >> 16);
 															i_289_ = i_292_;
 															if (i_290_ < 50)
 																break while_321_;
@@ -1131,12 +1137,12 @@ public class ModelHD extends Class133_Sub7 {
 															short i_300_ = (aShortArray5021[i_299_]);
 															short i_301_ = (aShortArray5025[i_299_]);
 															short i_302_ = (aShortArray5038[i_299_]);
-															if (method1920((Static2.anInt2726), (Class38.anInt2622),
+															if (method1920((Static2.mouseOffFromCenterX), (Class38.mouseOffFromCenterY),
 																	(anIntArray5057[i_300_]), (anIntArray5057[i_301_]),
 																	(anIntArray5057[i_302_]), (anIntArray5061[i_300_]),
 																	(anIntArray5061[i_301_]),
 																	(anIntArray5061[i_302_]))) {
-																Class7_Sub3.aLongArray2685[Class14_Sub15.anInt2996++] = l;
+																Class7_Sub3.actions[Class14_Sub15.actionsLen++] = l;
 																break;
 															}
 														}
@@ -1147,9 +1153,9 @@ public class ModelHD extends Class133_Sub7 {
 									} while (false);
 									GL gl = RT4GL.gl;
 									gl.glPushMatrix();
-									gl.glTranslatef((float) i_251_, (float) i_252_, (float) i_253_);
-									gl.glRotatef((float) i * 0.17578125F, 0.0F, 1.0F, 0.0F);
-									method1887();
+									gl.glTranslatef(sinCameraYaw, sceneY, cosCameraYaw);
+									gl.glRotatef(yaw * 0.17578125F, 0.0F, 1.0F, 0.0F);
+									GL_Draw();
 									gl.glPopMatrix();
 								}
 							}
@@ -1160,22 +1166,25 @@ public class ModelHD extends Class133_Sub7 {
 		}
 	}
 
+	@Override
 	public void method1855(int i, int i_303_, int i_304_) {
 		for (int i_305_ = 0; i_305_ < anInt5033; i_305_++) {
 			vertexX[i_305_] += i;
 			vertexY[i_305_] += i_303_;
 			vertexZ[i_305_] += i_304_;
 		}
-		aClass50_5013.aBoolean820 = false;
-		aClass41_5028.upToDate = false;
+		aClass50_5013.boundsCalculated = false;
+		vertexBufferPointer.upToDate = false;
 	}
 
+	@Override
 	public int method1856() {
-		if (!aClass50_5013.aBoolean820)
-			method1891();
-		return aClass50_5013.aShort824;
+		if (!aClass50_5013.boundsCalculated)
+			calculateBounds();
+		return aClass50_5013.maxX;
 	}
 
+	@Override
 	public void method1857(AnimFrameLoader class14_sub2_sub15, int i, boolean bool) {
 		if (vertexGroups != null && i != -1) {
 			AnimFrame animframe = class14_sub2_sub15.aClass143Array3951[i];
@@ -1201,11 +1210,12 @@ public class ModelHD extends Class133_Sub7 {
 				vertexY[i_309_] >>= 4;
 				vertexZ[i_309_] >>= 4;
 			}
-			aClass50_5013.aBoolean820 = false;
-			aClass41_5028.upToDate = false;
+			aClass50_5013.boundsCalculated = false;
+			vertexBufferPointer.upToDate = false;
 		}
 	}
 
+	@Override
 	public void method1858(int i) {
 		int i_310_ = Class3.sin[i];
 		int i_311_ = Class3.cos[i];
@@ -1214,10 +1224,11 @@ public class ModelHD extends Class133_Sub7 {
 			vertexY[i_312_] = vertexY[i_312_] * i_311_ - vertexX[i_312_] * i_310_ >> 16;
 			vertexX[i_312_] = i_313_;
 		}
-		aClass50_5013.aBoolean820 = false;
-		aClass41_5028.upToDate = false;
+		aClass50_5013.boundsCalculated = false;
+		vertexBufferPointer.upToDate = false;
 	}
 
+	@Override
 	public void method1859(AnimFrameLoader class14_sub2_sub15, int i) {
 		if (vertexGroups != null && i != -1) {
 			AnimFrame animframe = class14_sub2_sub15.aClass143Array3951[i];
@@ -1234,15 +1245,17 @@ public class ModelHD extends Class133_Sub7 {
 							animframe.transformY[i_314_], animframe.transformZ[i_314_]);
 				}
 			}
-			aClass41_5028.upToDate = false;
-			aClass50_5013.aBoolean820 = false;
+			vertexBufferPointer.upToDate = false;
+			aClass50_5013.boundsCalculated = false;
 		}
 	}
 
+	@Override
 	public Class133_Sub7 method1860(boolean bool, boolean bool_316_) {
 		return method1907(bool, bool_316_, aClass133_Sub7_Sub2_5051, aClass133_Sub7_Sub2_5049);
 	}
 
+	@Override
 	public void method1861(int i) {
 		int i_317_ = Class3.sin[i];
 		int i_318_ = Class3.cos[i];
@@ -1251,85 +1264,96 @@ public class ModelHD extends Class133_Sub7 {
 			vertexZ[i_319_] = vertexY[i_319_] * i_317_ + vertexZ[i_319_] * i_318_ >> 16;
 			vertexY[i_319_] = i_320_;
 		}
-		aClass50_5013.aBoolean820 = false;
-		aClass41_5028.upToDate = false;
+		aClass50_5013.boundsCalculated = false;
+		vertexBufferPointer.upToDate = false;
 	}
 
-	public void method1862(int i, int i_321_, int i_322_, int i_323_, int i_324_, int i_325_, int i_326_) {
+	//int pitch, int yaw, int roll, int cameraPitch,int cameraX, int cameraY, int cameraZ
+	@Override
+	public void draw(int pitch, int yaw, int roll, int cameraPitch, int cameraX, int cameraY, int cameraZ) {
 		if (anInt5040 != 0) {
 			GL gl = RT4GL.gl;
 			gl.glPushMatrix();
-			if (i_323_ != 0)
-				gl.glRotatef((float) i_323_ * 0.17578125F, 1.0F, 0.0F, 0.0F);
-			gl.glTranslatef((float) i_324_, (float) i_325_, (float) i_326_);
-			if (i_321_ != 0)
-				gl.glRotatef((float) i_321_ * 0.17578125F, 0.0F, 1.0F, 0.0F);
-			if (i != 0)
-				gl.glRotatef((float) i * 0.17578125F, 1.0F, 0.0F, 0.0F);
-			if (i_322_ != 0)
-				gl.glRotatef((float) -i_322_ * 0.17578125F, 0.0F, 0.0F, 1.0F);
-			method1887();
+			if (cameraPitch != 0)
+				gl.glRotatef(cameraPitch * 0.17578125F, 1.0F, 0.0F, 0.0F);
+			gl.glTranslatef(cameraX, cameraY, cameraZ);
+			if (yaw != 0)
+				gl.glRotatef(yaw * 0.17578125F, 0.0F, 1.0F, 0.0F);
+			if (pitch != 0)
+				gl.glRotatef(pitch * 0.17578125F, 1.0F, 0.0F, 0.0F);
+			if (roll != 0)
+				gl.glRotatef(-roll * 0.17578125F, 0.0F, 0.0F, 1.0F);
+			GL_Draw();
 			gl.glPopMatrix();
 		}
 	}
 
+	@Override
 	public int method1865() {
-		if (!aClass50_5013.aBoolean820)
-			method1891();
-		return aClass50_5013.aShort821;
+		if (!aClass50_5013.boundsCalculated)
+			calculateBounds();
+		return aClass50_5013.maxZ;
 	}
 
+	@Override
 	public int method1866() {
-		if (!aClass50_5013.aBoolean820)
-			method1891();
-		return aClass50_5013.aShort823;
+		if (!aClass50_5013.boundsCalculated)
+			calculateBounds();
+		return aClass50_5013.boundingPlaneRadius;
 	}
 
+	@Override
 	public int method1867() {
-		if (!aClass50_5013.aBoolean820)
-			method1891();
-		return aClass50_5013.aShort827;
+		if (!aClass50_5013.boundsCalculated)
+			calculateBounds();
+		return aClass50_5013.minX;
 	}
 
+	@Override
 	public int method1868() {
-		if (!aClass50_5013.aBoolean820)
-			method1891();
-		return aClass50_5013.aShort822;
+		if (!aClass50_5013.boundsCalculated)
+			calculateBounds();
+		return aClass50_5013.minZ;
 	}
 
+	@Override
 	public void method1869(int i, int i_327_, int i_328_) {
 		for (int i_329_ = 0; i_329_ < anInt5033; i_329_++) {
 			vertexX[i_329_] = vertexX[i_329_] * i >> 7;
 			vertexY[i_329_] = vertexY[i_329_] * i_327_ >> 7;
 			vertexZ[i_329_] = vertexZ[i_329_] * i_328_ >> 7;
 		}
-		aClass50_5013.aBoolean820 = false;
-		aClass41_5028.upToDate = false;
+		aClass50_5013.boundsCalculated = false;
+		vertexBufferPointer.upToDate = false;
 	}
 
+	@Override
 	public Class133_Sub7 method1870(boolean bool, boolean bool_330_) {
 		return method1907(bool, bool_330_, aClass133_Sub7_Sub2_5053, aClass133_Sub7_Sub2_5052);
 	}
 
+	@Override
 	public void method1871() {
 		for (int i = 0; i < anInt5033; i++) {
 			int i_331_ = vertexX[i];
 			vertexX[i] = vertexZ[i];
 			vertexZ[i] = -i_331_;
 		}
-		aClass50_5013.aBoolean820 = false;
-		aClass41_5028.upToDate = false;
+		aClass50_5013.boundsCalculated = false;
+		vertexBufferPointer.upToDate = false;
 	}
 
+	@Override
 	public void method1872() {
 		for (int i = 0; i < anInt5033; i++) {
 			vertexX[i] = -vertexX[i];
 			vertexZ[i] = -vertexZ[i];
 		}
-		aClass50_5013.aBoolean820 = false;
-		aClass41_5028.upToDate = false;
+		aClass50_5013.boundsCalculated = false;
+		vertexBufferPointer.upToDate = false;
 	}
 
+	@Override
 	public void method1873(AnimFrameLoader class14_sub2_sub15, int i, AnimFrameLoader class14_sub2_sub15_332_,
 			int i_333_, int[] is, boolean bool) {
 		if (i != -1) {
@@ -1385,12 +1409,13 @@ public class ModelHD extends Class133_Sub7 {
 					vertexY[i_342_] >>= 4;
 					vertexZ[i_342_] >>= 4;
 				}
-				aClass50_5013.aBoolean820 = false;
-				aClass41_5028.upToDate = false;
+				aClass50_5013.boundsCalculated = false;
+				vertexBufferPointer.upToDate = false;
 			}
 		}
 	}
 
+	@Override
 	public void method1874(int i) {
 		int i_343_ = Class3.sin[i];
 		int i_344_ = Class3.cos[i];
@@ -1399,28 +1424,29 @@ public class ModelHD extends Class133_Sub7 {
 			vertexZ[i_345_] = vertexZ[i_345_] * i_344_ - vertexX[i_345_] * i_343_ >> 16;
 			vertexX[i_345_] = i_346_;
 		}
-		aClass50_5013.aBoolean820 = false;
-		aClass41_5028.upToDate = false;
+		aClass50_5013.boundsCalculated = false;
+		vertexBufferPointer.upToDate = false;
 	}
 
+	@Override
 	public void method1875() {
 		for (int i = 0; i < anInt5033; i++) {
 			int i_347_ = vertexZ[i];
 			vertexZ[i] = vertexX[i];
 			vertexX[i] = -i_347_;
 		}
-		aClass50_5013.aBoolean820 = false;
-		aClass41_5028.upToDate = false;
+		aClass50_5013.boundsCalculated = false;
+		vertexBufferPointer.upToDate = false;
 	}
 
-	public void method1887() {
+	public void GL_Draw() {
 		GL gl = RT4GL.gl;
 		if (anInt5014 != 0) {
 			if (aByte5026 != 0)
-				method1905(true, (!aClass41_5028.upToDate && (aByte5026 & 0x1) != 0),
+				method1905(true, (!vertexBufferPointer.upToDate && (aByte5026 & 0x1) != 0),
 						(!aClass41_5030.upToDate && (aByte5026 & 0x2) != 0),
 						(aClass41_5018 != null && !aClass41_5018.upToDate && (aByte5026 & 0x4) != 0), false);
-			method1905(false, !aClass41_5028.upToDate, !aClass41_5030.upToDate,
+			method1905(false, !vertexBufferPointer.upToDate, !aClass41_5030.upToDate,
 					aClass41_5018 != null && !aClass41_5018.upToDate, !aClass41_5029.upToDate);
 			if (!aClass41_5046.upToDate)
 				method1902();
@@ -1454,42 +1480,42 @@ public class ModelHD extends Class133_Sub7 {
 				aByte5023 = (byte) 0;
 			}
 			VertexBuffer vertexBuffer = null;
-			if (aClass41_5028.aClass29_692 != null) {
-				aClass41_5028.aClass29_692.bindArray();
-				vertexBuffer = aClass41_5028.aClass29_692;
-				gl.glVertexPointer(3, 5126, aClass41_5028.anInt687, (long) aClass41_5028.anInt686);
+			if (vertexBufferPointer.aClass29_692 != null) {
+				vertexBufferPointer.aClass29_692.bindArray();
+				vertexBuffer = vertexBufferPointer.aClass29_692;
+				gl.glVertexPointer(3, 5126, vertexBufferPointer.anInt687, vertexBufferPointer.anInt686);
 			}
 			if (aClass41_5030.aClass29_692 != null) {
 				if (vertexBuffer != aClass41_5030.aClass29_692) {
 					aClass41_5030.aClass29_692.bindArray();
 					vertexBuffer = aClass41_5030.aClass29_692;
 				}
-				gl.glColorPointer(4, 5121, aClass41_5030.anInt687, (long) aClass41_5030.anInt686);
+				gl.glColorPointer(4, 5121, aClass41_5030.anInt687, aClass41_5030.anInt686);
 			}
 			if (RT4.useLighting && aClass41_5018.aClass29_692 != null) {
 				if (vertexBuffer != aClass41_5018.aClass29_692) {
 					aClass41_5018.aClass29_692.bindArray();
 					vertexBuffer = aClass41_5018.aClass29_692;
 				}
-				gl.glNormalPointer(5126, aClass41_5018.anInt687, (long) aClass41_5018.anInt686);
+				gl.glNormalPointer(5126, aClass41_5018.anInt687, aClass41_5018.anInt686);
 			}
 			if (aClass41_5029.aClass29_692 != null) {
 				if (vertexBuffer != aClass41_5029.aClass29_692) {
 					aClass41_5029.aClass29_692.bindArray();
 					vertexBuffer = aClass41_5029.aClass29_692;
 				}
-				gl.glTexCoordPointer(2, 5126, aClass41_5029.anInt687, (long) aClass41_5029.anInt686);
+				gl.glTexCoordPointer(2, 5126, aClass41_5029.anInt687, aClass41_5029.anInt686);
 			}
 			if (aClass41_5046.aClass29_692 != null)
 				aClass41_5046.aClass29_692.method1055();
-			if (aClass41_5028.aClass29_692 == null || aClass41_5030.aClass29_692 == null
+			if (vertexBufferPointer.aClass29_692 == null || aClass41_5030.aClass29_692 == null
 					|| (RT4.useLighting && aClass41_5018.aClass29_692 == null)
 					|| aClass41_5029.aClass29_692 == null) {
 				if (RT4GL.vertexBufferAsObject)
 					gl.glBindBufferARB(34962, 0);
-				if (aClass41_5028.aClass29_692 == null) {
-					aClass41_5028.aByteBuffer684.position(aClass41_5028.anInt686);
-					gl.glVertexPointer(3, 5126, aClass41_5028.anInt687, aClass41_5028.aByteBuffer684);
+				if (vertexBufferPointer.aClass29_692 == null) {
+					vertexBufferPointer.aByteBuffer684.position(vertexBufferPointer.anInt686);
+					gl.glVertexPointer(3, 5126, vertexBufferPointer.anInt687, vertexBufferPointer.aByteBuffer684);
 				}
 				if (aClass41_5030.aClass29_692 == null) {
 					aClass41_5030.aByteBuffer684.position(aClass41_5030.anInt686);
@@ -1512,12 +1538,12 @@ public class ModelHD extends Class133_Sub7 {
 				int i_350_ = anIntArray5035[i_348_ + 1];
 				int i_351_ = aShortArray5037[i_349_];
 				if (i_351_ == -1) {
-					RT4GL.method1632(-1);
+					RT4GL.bindTexture2D(-1);
 					RT4.method1778(0, 0);
 				} else
 					Class3.anInterface3_117.method16(i_351_ & 0xffff, (byte) 97);
 				if (aClass41_5046.aClass29_692 != null)
-					gl.glDrawElements(4, (i_350_ - i_349_) * 3, 5125, (long) (i_349_ * 12));
+					gl.glDrawElements(4, (i_350_ - i_349_) * 3, 5125, i_349_ * 12);
 				else {
 					aClass41_5046.aByteBuffer684.position(i_349_ * 12);
 					gl.glDrawElements(4, (i_350_ - i_349_) * 3, 5125, aClass41_5046.aByteBuffer684);
@@ -1529,25 +1555,25 @@ public class ModelHD extends Class133_Sub7 {
 	public Class148_Sub1 method1889(Class148_Sub1 class148_sub1) {
 		if (anInt5040 == 0)
 			return null;
-		if (!aClass50_5013.aBoolean820)
-			method1891();
+		if (!aClass50_5013.boundsCalculated)
+			calculateBounds();
 		int i;
 		int i_352_;
 		if (AtmosphericEffects.anInt934 > 0) {
-			i = (aClass50_5013.aShort827 - (aClass50_5013.aShort826 * AtmosphericEffects.anInt934 >> 8)) >> 3;
-			i_352_ = (aClass50_5013.aShort824 - (aClass50_5013.aShort825 * AtmosphericEffects.anInt934 >> 8)) >> 3;
+			i = (aClass50_5013.minX - (aClass50_5013.maxY * AtmosphericEffects.anInt934 >> 8)) >> 3;
+			i_352_ = (aClass50_5013.maxX - (aClass50_5013.minY * AtmosphericEffects.anInt934 >> 8)) >> 3;
 		} else {
-			i = (aClass50_5013.aShort827 - (aClass50_5013.aShort825 * AtmosphericEffects.anInt934 >> 8)) >> 3;
-			i_352_ = (aClass50_5013.aShort824 - (aClass50_5013.aShort826 * AtmosphericEffects.anInt934 >> 8)) >> 3;
+			i = (aClass50_5013.minX - (aClass50_5013.minY * AtmosphericEffects.anInt934 >> 8)) >> 3;
+			i_352_ = (aClass50_5013.maxX - (aClass50_5013.maxY * AtmosphericEffects.anInt934 >> 8)) >> 3;
 		}
 		int i_353_;
 		int i_354_;
 		if (AtmosphericEffects.anInt928 > 0) {
-			i_353_ = (aClass50_5013.aShort822 - (aClass50_5013.aShort826 * AtmosphericEffects.anInt928 >> 8)) >> 3;
-			i_354_ = (aClass50_5013.aShort821 - (aClass50_5013.aShort825 * AtmosphericEffects.anInt928 >> 8)) >> 3;
+			i_353_ = (aClass50_5013.minZ - (aClass50_5013.maxY * AtmosphericEffects.anInt928 >> 8)) >> 3;
+			i_354_ = (aClass50_5013.maxZ - (aClass50_5013.minY * AtmosphericEffects.anInt928 >> 8)) >> 3;
 		} else {
-			i_353_ = (aClass50_5013.aShort822 - (aClass50_5013.aShort825 * AtmosphericEffects.anInt928 >> 8)) >> 3;
-			i_354_ = (aClass50_5013.aShort821 - (aClass50_5013.aShort826 * AtmosphericEffects.anInt928 >> 8)) >> 3;
+			i_353_ = (aClass50_5013.minZ - (aClass50_5013.minY * AtmosphericEffects.anInt928 >> 8)) >> 3;
+			i_354_ = (aClass50_5013.maxZ - (aClass50_5013.maxY * AtmosphericEffects.anInt928 >> 8)) >> 3;
 		}
 		int i_355_ = i_352_ - i + 1;
 		int i_356_ = i_354_ - i_353_ + 1;
@@ -1611,54 +1637,54 @@ public class ModelHD extends Class133_Sub7 {
 				aShortArray5042[i] = aShortArray5041[i];
 				aShortArray5041[i] = (short) -i_376_;
 			}
-			aClass50_5013.aBoolean820 = false;
-			aClass41_5028.upToDate = false;
+			aClass50_5013.boundsCalculated = false;
+			vertexBufferPointer.upToDate = false;
 			if (aClass41_5018 != null)
 				aClass41_5018.upToDate = false;
 		}
 	}
 
-	public void method1891() {
-		int i = 32767;
-		int i_377_ = 32767;
-		int i_378_ = 32767;
-		int i_379_ = -32768;
-		int i_380_ = -32768;
-		int i_381_ = -32768;
-		int i_382_ = 0;
-		int i_383_ = 0;
+	public void calculateBounds() {
+		int minX = 32767;
+		int minY = 32767;
+		int minZ = 32767;
+		int maxX = -32768;
+		int maxY = -32768;
+		int maxZ = -32768;
+		int boundingPlaneRadius = 0;
+		int boundingSphereRadius = 0;
 		for (int i_384_ = 0; i_384_ < anInt5033; i_384_++) {
-			int i_385_ = vertexX[i_384_];
-			int i_386_ = vertexY[i_384_];
-			int i_387_ = vertexZ[i_384_];
-			if (i_385_ < i)
-				i = i_385_;
-			if (i_385_ > i_379_)
-				i_379_ = i_385_;
-			if (i_386_ < i_377_)
-				i_377_ = i_386_;
-			if (i_386_ > i_380_)
-				i_380_ = i_386_;
-			if (i_387_ < i_378_)
-				i_378_ = i_387_;
-			if (i_387_ > i_381_)
-				i_381_ = i_387_;
-			int i_388_ = i_385_ * i_385_ + i_387_ * i_387_;
-			if (i_388_ > i_382_)
-				i_382_ = i_388_;
-			i_388_ = i_385_ * i_385_ + i_387_ * i_387_ + i_386_ * i_386_;
-			if (i_388_ > i_383_)
-				i_383_ = i_388_;
+			int xVertex = vertexX[i_384_];
+			int yVertex = vertexY[i_384_];
+			int zVertex = vertexZ[i_384_];
+			if (xVertex < minX)
+				minX = xVertex;
+			if (xVertex > maxX)
+				maxX = xVertex;
+			if (yVertex < minY)
+				minY = yVertex;
+			if (yVertex > maxY)
+				maxY = yVertex;
+			if (zVertex < minZ)
+				minZ = zVertex;
+			if (zVertex > maxZ)
+				maxZ = zVertex;
+			int radius = xVertex * xVertex + zVertex * zVertex;
+			if (radius > boundingPlaneRadius)
+				boundingPlaneRadius = radius;
+			radius = xVertex * xVertex + zVertex * zVertex + yVertex * yVertex;
+			if (radius > boundingSphereRadius)
+				boundingSphereRadius = radius;
 		}
-		aClass50_5013.aShort827 = (short) i;
-		aClass50_5013.aShort824 = (short) i_379_;
-		aClass50_5013.aShort825 = (short) i_377_;
-		aClass50_5013.aShort826 = (short) i_380_;
-		aClass50_5013.aShort822 = (short) i_378_;
-		aClass50_5013.aShort821 = (short) i_381_;
-		aClass50_5013.aShort823 = (short) (int) (Math.sqrt((double) i_382_) + 0.99);
-		Math.sqrt((double) i_383_);
-		aClass50_5013.aBoolean820 = true;
+		aClass50_5013.minX = (short) minX;
+		aClass50_5013.maxX = (short) maxX;
+		aClass50_5013.minY = (short) minY;
+		aClass50_5013.maxY = (short) maxY;
+		aClass50_5013.minZ = (short) minZ;
+		aClass50_5013.maxZ = (short) maxZ;
+		aClass50_5013.boundingPlaneRadius = (short) (int) (Math.sqrt(boundingPlaneRadius) + 0.99);
+		Math.sqrt(boundingSphereRadius);
+		aClass50_5013.boundsCalculated = true;
 	}
 
 	public void method1892(int i) {
@@ -1756,14 +1782,14 @@ public class ModelHD extends Class133_Sub7 {
 			if (bool_413_) {
 				boolean bool_414_ = (!aClass41_5030.upToDate
 						&& (bool_408_ || bool_409_ && !RT4.useLighting));
-				method1905(false, !aClass41_5028.upToDate && bool, bool_414_,
+				method1905(false, !vertexBufferPointer.upToDate && bool, bool_414_,
 						(aClass41_5018 != null && !aClass41_5018.upToDate && bool_409_),
 						!aClass41_5029.upToDate && bool_410_);
 				if (!aClass41_5046.upToDate && bool_411_ && bool_408_)
 					method1902();
 			}
 			if (bool) {
-				if (aClass41_5028.upToDate) {
+				if (vertexBufferPointer.upToDate) {
 					vertexX = null;
 					vertexY = null;
 					vertexZ = null;
@@ -1818,12 +1844,12 @@ public class ModelHD extends Class133_Sub7 {
 
 	public void method1897(int i, int i_415_, ModelHD modelhd_416_, int[][] is, int[][] is_417_, int i_418_, int i_419_,
 			int i_420_) {
-		if (!modelhd_416_.aClass50_5013.aBoolean820)
-			modelhd_416_.method1891();
-		int i_421_ = i_418_ + modelhd_416_.aClass50_5013.aShort827;
-		int i_422_ = i_418_ + modelhd_416_.aClass50_5013.aShort824;
-		int i_423_ = i_420_ + modelhd_416_.aClass50_5013.aShort822;
-		int i_424_ = i_420_ + modelhd_416_.aClass50_5013.aShort821;
+		if (!modelhd_416_.aClass50_5013.boundsCalculated)
+			modelhd_416_.calculateBounds();
+		int i_421_ = i_418_ + modelhd_416_.aClass50_5013.minX;
+		int i_422_ = i_418_ + modelhd_416_.aClass50_5013.maxX;
+		int i_423_ = i_420_ + modelhd_416_.aClass50_5013.minZ;
+		int i_424_ = i_420_ + modelhd_416_.aClass50_5013.maxZ;
 		if (i != 1 && i != 2 && i != 3 && i != 5
 				|| (i_421_ >= 0 && i_422_ + 128 >> 7 < is.length && i_423_ >= 0 && i_424_ + 128 >> 7 < is[0].length)) {
 			if (i == 4 || i == 5) {
@@ -1853,7 +1879,7 @@ public class ModelHD extends Class133_Sub7 {
 					vertexY[i_425_] = vertexY[i_425_] + i_434_ - i_419_;
 				}
 			} else if (i == 2) {
-				int i_435_ = modelhd_416_.aClass50_5013.aShort825;
+				int i_435_ = modelhd_416_.aClass50_5013.minY;
 				for (int i_436_ = 0; i_436_ < anInt5033; i_436_++) {
 					int i_437_ = (vertexY[i_436_] << 16) / i_435_;
 					if (i_437_ < i_415_) {
@@ -1875,7 +1901,7 @@ public class ModelHD extends Class133_Sub7 {
 				int i_448_ = (i_415_ >> 8 & 0xff) * 4;
 				method1863(is, i_418_, i_419_, i_420_, i_447_, i_448_);
 			} else if (i == 4) {
-				int i_449_ = (modelhd_416_.aClass50_5013.aShort826 - modelhd_416_.aClass50_5013.aShort825);
+				int i_449_ = (modelhd_416_.aClass50_5013.maxY - modelhd_416_.aClass50_5013.minY);
 				for (int i_450_ = 0; i_450_ < anInt5033; i_450_++) {
 					int i_451_ = vertexX[i_450_] + i_418_;
 					int i_452_ = vertexZ[i_450_] + i_420_;
@@ -1891,7 +1917,7 @@ public class ModelHD extends Class133_Sub7 {
 					vertexY[i_450_] = vertexY[i_450_] + (i_459_ - i_419_) + i_449_;
 				}
 			} else if (i == 5) {
-				int i_460_ = (modelhd_416_.aClass50_5013.aShort826 - modelhd_416_.aClass50_5013.aShort825);
+				int i_460_ = (modelhd_416_.aClass50_5013.maxY - modelhd_416_.aClass50_5013.minY);
 				for (int i_461_ = 0; i_461_ < anInt5033; i_461_++) {
 					int i_462_ = vertexX[i_461_] + i_418_;
 					int i_463_ = vertexZ[i_461_] + i_420_;
@@ -1910,8 +1936,8 @@ public class ModelHD extends Class133_Sub7 {
 					vertexY[i_461_] = ((vertexY[i_461_] << 8) / i_460_ * i_472_ >> 8) - (i_419_ - i_470_);
 				}
 			}
-			aClass41_5028.upToDate = false;
-			aClass50_5013.aBoolean820 = false;
+			vertexBufferPointer.upToDate = false;
+			aClass50_5013.boundsCalculated = false;
 		}
 	}
 
@@ -1927,8 +1953,8 @@ public class ModelHD extends Class133_Sub7 {
 				aShortArray5041[i] = (short) -aShortArray5041[i];
 				aShortArray5042[i] = (short) -aShortArray5042[i];
 			}
-			aClass50_5013.aBoolean820 = false;
-			aClass41_5028.upToDate = false;
+			aClass50_5013.boundsCalculated = false;
+			vertexBufferPointer.upToDate = false;
 			if (aClass41_5018 != null)
 				aClass41_5018.upToDate = false;
 		}
@@ -2020,10 +2046,10 @@ public class ModelHD extends Class133_Sub7 {
 		else
 			modelhd_493_.vertexY = JunkTex.method561(vertexY, 0);
 		if (bool && bool_483_) {
-			modelhd_493_.aClass41_5028 = aClass41_5028;
+			modelhd_493_.vertexBufferPointer = vertexBufferPointer;
 			modelhd_493_.aClass50_5013 = aClass50_5013;
 		} else {
-			modelhd_493_.aClass41_5028 = new VertexBufferPointer();
+			modelhd_493_.vertexBufferPointer = new VertexBufferPointer();
 			modelhd_493_.aClass50_5013 = new Class50();
 		}
 		if (bool_484_)
@@ -2095,7 +2121,7 @@ public class ModelHD extends Class133_Sub7 {
 	public void method1905(boolean bool, boolean bool_494_, boolean bool_495_, boolean bool_496_, boolean bool_497_) {
 		int i = 0;
 		if (bool_494_) {
-			aClass41_5028.anInt686 = i;
+			vertexBufferPointer.anInt686 = i;
 			i += 12;
 		}
 		if (bool_495_) {
@@ -2118,9 +2144,9 @@ public class ModelHD extends Class133_Sub7 {
 			if (bool_494_) {
 				if (RT4GL.usingBigEndian) {
 					for (int i_498_ = 0; i_498_ < anInt5033; i_498_++) {
-						int i_499_ = Float.floatToRawIntBits((float) vertexX[i_498_]);
-						int i_500_ = Float.floatToRawIntBits((float) vertexY[i_498_]);
-						int i_501_ = Float.floatToRawIntBits((float) vertexZ[i_498_]);
+						int i_499_ = Float.floatToRawIntBits(vertexX[i_498_]);
+						int i_500_ = Float.floatToRawIntBits(vertexY[i_498_]);
+						int i_501_ = Float.floatToRawIntBits(vertexZ[i_498_]);
 						int i_502_ = anIntArray5031[i_498_];
 						int i_503_ = anIntArray5031[i_498_ + 1];
 						for (int i_504_ = i_502_; i_504_ < i_503_; i_504_++) {
@@ -2135,9 +2161,9 @@ public class ModelHD extends Class133_Sub7 {
 					}
 				} else {
 					for (int i_506_ = 0; i_506_ < anInt5033; i_506_++) {
-						int i_507_ = Float.floatToRawIntBits((float) vertexX[i_506_]);
-						int i_508_ = Float.floatToRawIntBits((float) vertexY[i_506_]);
-						int i_509_ = Float.floatToRawIntBits((float) vertexZ[i_506_]);
+						int i_507_ = Float.floatToRawIntBits(vertexX[i_506_]);
+						int i_508_ = Float.floatToRawIntBits(vertexY[i_506_]);
+						int i_509_ = Float.floatToRawIntBits(vertexZ[i_506_]);
 						int i_510_ = anIntArray5031[i_506_];
 						int i_511_ = anIntArray5031[i_506_ + 1];
 						for (int i_512_ = i_510_; i_512_ < i_511_; i_512_++) {
@@ -2157,8 +2183,8 @@ public class ModelHD extends Class133_Sub7 {
 					int i_514_ = (int) AtmosphericEffects.light0Position[0];
 					int i_515_ = (int) AtmosphericEffects.light0Position[1];
 					int i_516_ = (int) AtmosphericEffects.light0Position[2];
-					int i_517_ = (int) Math.sqrt((double) (i_514_ * i_514_ + i_515_ * i_515_ + i_516_ * i_516_));
-					int i_518_ = (int) ((float) aShort5032 * 1.3F);
+					int i_517_ = (int) Math.sqrt(i_514_ * i_514_ + i_515_ * i_515_ + i_516_ * i_516_);
+					int i_518_ = (int) (aShort5032 * 1.3F);
 					int i_519_ = aShort5024 * i_517_ >> 8;
 					for (int i_520_ = 0; i_520_ < anInt5014; i_520_++) {
 						int i_521_ = aShortArray5021[i_520_];
@@ -2245,21 +2271,21 @@ public class ModelHD extends Class133_Sub7 {
 				}
 			}
 			if (bool_496_) {
-				float f = 3.0F / (float) aShort5024;
-				float f_535_ = 3.0F / (float) (aShort5024 + aShort5024 / 2);
+				float f = 3.0F / aShort5024;
+				float f_535_ = 3.0F / (aShort5024 + aShort5024 / 2);
 				aClass14_Sub10_5011.position = aClass41_5018.anInt686;
 				if (RT4GL.usingBigEndian) {
 					for (int i_536_ = 0; i_536_ < anInt5040; i_536_++) {
 						short i_537_ = aShortArray5017[i_536_];
 						if (i_537_ == 0) {
-							aClass14_Sub10_5011.putFloatAsInt((float) aShortArray5041[i_536_] * f_535_);
-							aClass14_Sub10_5011.putFloatAsInt((float) aShortArray5019[i_536_] * f_535_);
-							aClass14_Sub10_5011.putFloatAsInt((float) aShortArray5042[i_536_] * f_535_);
+							aClass14_Sub10_5011.putFloatAsInt(aShortArray5041[i_536_] * f_535_);
+							aClass14_Sub10_5011.putFloatAsInt(aShortArray5019[i_536_] * f_535_);
+							aClass14_Sub10_5011.putFloatAsInt(aShortArray5042[i_536_] * f_535_);
 						} else {
-							float f_538_ = f / (float) i_537_;
-							aClass14_Sub10_5011.putFloatAsInt((float) aShortArray5041[i_536_] * f_538_);
-							aClass14_Sub10_5011.putFloatAsInt((float) aShortArray5019[i_536_] * f_538_);
-							aClass14_Sub10_5011.putFloatAsInt((float) aShortArray5042[i_536_] * f_538_);
+							float f_538_ = f / i_537_;
+							aClass14_Sub10_5011.putFloatAsInt(aShortArray5041[i_536_] * f_538_);
+							aClass14_Sub10_5011.putFloatAsInt(aShortArray5019[i_536_] * f_538_);
+							aClass14_Sub10_5011.putFloatAsInt(aShortArray5042[i_536_] * f_538_);
 						}
 						aClass14_Sub10_5011.position += i - 12;
 					}
@@ -2267,14 +2293,14 @@ public class ModelHD extends Class133_Sub7 {
 					for (int i_539_ = 0; i_539_ < anInt5040; i_539_++) {
 						short i_540_ = aShortArray5017[i_539_];
 						if (i_540_ == 0) {
-							aClass14_Sub10_5011.putFloatAsLEInt((float) aShortArray5041[i_539_] * f_535_, 24671);
-							aClass14_Sub10_5011.putFloatAsLEInt((float) aShortArray5019[i_539_] * f_535_, 24671);
-							aClass14_Sub10_5011.putFloatAsLEInt((float) aShortArray5042[i_539_] * f_535_, 24671);
+							aClass14_Sub10_5011.putFloatAsLEInt(aShortArray5041[i_539_] * f_535_, 24671);
+							aClass14_Sub10_5011.putFloatAsLEInt(aShortArray5019[i_539_] * f_535_, 24671);
+							aClass14_Sub10_5011.putFloatAsLEInt(aShortArray5042[i_539_] * f_535_, 24671);
 						} else {
-							float f_541_ = f / (float) i_540_;
-							aClass14_Sub10_5011.putFloatAsLEInt((float) aShortArray5041[i_539_] * f_541_, 24671);
-							aClass14_Sub10_5011.putFloatAsLEInt((float) aShortArray5019[i_539_] * f_541_, 24671);
-							aClass14_Sub10_5011.putFloatAsLEInt((float) aShortArray5042[i_539_] * f_541_, 24671);
+							float f_541_ = f / i_540_;
+							aClass14_Sub10_5011.putFloatAsLEInt(aShortArray5041[i_539_] * f_541_, 24671);
+							aClass14_Sub10_5011.putFloatAsLEInt(aShortArray5019[i_539_] * f_541_, 24671);
+							aClass14_Sub10_5011.putFloatAsLEInt(aShortArray5042[i_539_] * f_541_, 24671);
 						}
 						aClass14_Sub10_5011.position += i - 12;
 					}
@@ -2307,10 +2333,10 @@ public class ModelHD extends Class133_Sub7 {
 					} else
 						aClass29_5020.setArrayData(bytebuffer);
 					if (bool_494_) {
-						aClass41_5028.upToDate = true;
-						aClass41_5028.aByteBuffer684 = null;
-						aClass41_5028.aClass29_692 = aClass29_5020;
-						aClass41_5028.anInt687 = i;
+						vertexBufferPointer.upToDate = true;
+						vertexBufferPointer.aByteBuffer684 = null;
+						vertexBufferPointer.aClass29_692 = aClass29_5020;
+						vertexBufferPointer.anInt687 = i;
 					}
 					if (bool_495_) {
 						aClass41_5030.upToDate = true;
@@ -2338,15 +2364,15 @@ public class ModelHD extends Class133_Sub7 {
 					aByteBuffer5050.put(aClass14_Sub10_5011.payload, 0, aClass14_Sub10_5011.position);
 					aByteBuffer5050.flip();
 					if (bool_494_) {
-						aClass41_5028.upToDate = true;
-						aClass41_5028.aByteBuffer684 = aByteBuffer5050;
-						aClass41_5028.aClass29_692 = null;
-						aClass41_5028.anInt687 = i;
+						vertexBufferPointer.upToDate = true;
+						vertexBufferPointer.aByteBuffer684 = aByteBuffer5050;
+						vertexBufferPointer.aClass29_692 = null;
+						vertexBufferPointer.anInt687 = i;
 					}
 					if (bool_495_) {
 						aClass41_5030.upToDate = true;
 						aClass41_5030.aByteBuffer684 = aByteBuffer5050;
-						aClass41_5028.aClass29_692 = null;
+						vertexBufferPointer.aClass29_692 = null;
 						aClass41_5030.anInt687 = i;
 					}
 					if (bool_496_) {
@@ -2368,10 +2394,10 @@ public class ModelHD extends Class133_Sub7 {
 						aClass14_Sub10_5011.position);
 				vertexBuffer._setArrayData(bytebuffer);
 				if (bool_494_) {
-					aClass41_5028.upToDate = true;
-					aClass41_5028.aByteBuffer684 = null;
-					aClass41_5028.aClass29_692 = vertexBuffer;
-					aClass41_5028.anInt687 = i;
+					vertexBufferPointer.upToDate = true;
+					vertexBufferPointer.aByteBuffer684 = null;
+					vertexBufferPointer.aClass29_692 = vertexBuffer;
+					vertexBufferPointer.anInt687 = i;
 				}
 				if (bool_495_) {
 					aClass41_5030.upToDate = true;
@@ -2396,15 +2422,15 @@ public class ModelHD extends Class133_Sub7 {
 				bytebuffer.put(aClass14_Sub10_5011.payload, 0, aClass14_Sub10_5011.position);
 				bytebuffer.flip();
 				if (bool_494_) {
-					aClass41_5028.upToDate = true;
-					aClass41_5028.aByteBuffer684 = bytebuffer;
-					aClass41_5028.aClass29_692 = null;
-					aClass41_5028.anInt687 = i;
+					vertexBufferPointer.upToDate = true;
+					vertexBufferPointer.aByteBuffer684 = bytebuffer;
+					vertexBufferPointer.aClass29_692 = null;
+					vertexBufferPointer.anInt687 = i;
 				}
 				if (bool_495_) {
 					aClass41_5030.upToDate = true;
 					aClass41_5030.aByteBuffer684 = bytebuffer;
-					aClass41_5028.aClass29_692 = null;
+					vertexBufferPointer.aClass29_692 = null;
 					aClass41_5030.anInt687 = i;
 				}
 				if (bool_496_) {
@@ -2461,12 +2487,12 @@ public class ModelHD extends Class133_Sub7 {
 			modelhd_551_.vertexY[i] = vertexY[i];
 			modelhd_551_.vertexZ[i] = vertexZ[i];
 		}
-		if (modelhd_551_.aClass41_5028 == null)
-			modelhd_551_.aClass41_5028 = new VertexBufferPointer();
-		modelhd_551_.aClass41_5028.upToDate = false;
+		if (modelhd_551_.vertexBufferPointer == null)
+			modelhd_551_.vertexBufferPointer = new VertexBufferPointer();
+		modelhd_551_.vertexBufferPointer.upToDate = false;
 		if (modelhd_551_.aClass50_5013 == null)
 			modelhd_551_.aClass50_5013 = new Class50();
-		modelhd_551_.aClass50_5013.aBoolean820 = false;
+		modelhd_551_.aClass50_5013.boundsCalculated = false;
 		if (bool) {
 			modelhd_551_.faceAlphas = faceAlphas;
 			modelhd_551_.aClass41_5030 = aClass41_5030;
@@ -2528,7 +2554,7 @@ public class ModelHD extends Class133_Sub7 {
 		modelhd_551_.anIntArray5035 = anIntArray5035;
 		modelhd_551_.aShortArray5036 = aShortArray5036;
 		modelhd_551_.anIntArray5031 = anIntArray5031;
-		modelhd_551_.aBoolean3687 = aBoolean3687;
+		modelhd_551_.haveActions = haveActions;
 		return modelhd_551_;
 	}
 
@@ -2548,8 +2574,8 @@ public class ModelHD extends Class133_Sub7 {
 			aShortArray5021[i] = aShortArray5038[i];
 			aShortArray5038[i] = i_553_;
 		}
-		aClass50_5013.aBoolean820 = false;
-		aClass41_5028.upToDate = false;
+		aClass50_5013.boundsCalculated = false;
+		vertexBufferPointer.upToDate = false;
 		if (aClass41_5018 != null)
 			aClass41_5018.upToDate = false;
 		aClass41_5046.upToDate = false;
@@ -2615,8 +2641,8 @@ public class ModelHD extends Class133_Sub7 {
 						- aShortArray5041[i_568_] * i_564_) >> 16);
 				aShortArray5041[i_568_] = (short) i_569_;
 			}
-			aClass50_5013.aBoolean820 = false;
-			aClass41_5028.upToDate = false;
+			aClass50_5013.boundsCalculated = false;
+			vertexBufferPointer.upToDate = false;
 			if (aClass41_5018 != null)
 				aClass41_5018.upToDate = false;
 		}
@@ -2636,8 +2662,8 @@ public class ModelHD extends Class133_Sub7 {
 				aShortArray5041[i] = aShortArray5042[i];
 				aShortArray5042[i] = (short) -i_571_;
 			}
-			aClass50_5013.aBoolean820 = false;
-			aClass41_5028.upToDate = false;
+			aClass50_5013.boundsCalculated = false;
+			vertexBufferPointer.upToDate = false;
 			if (aClass41_5018 != null)
 				aClass41_5018.upToDate = false;
 		}

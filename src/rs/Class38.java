@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9;
 import com.jagex.rt4.Class14_Sub27;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 
@@ -10,7 +11,7 @@ public class Class38 implements Interface5 {
 	public static int anInt2616 = 0;
 	public static int anInt2617;
 	public static int anInt2618;
-	public static int anInt2622 = 0;
+	public static int mouseOffFromCenterY = 0;
 	public static int anInt2624;
 
 	public Class124 method24(long l, int i, int[] is, boolean bool) {
@@ -42,7 +43,7 @@ public class Class38 implements Interface5 {
 		int i_13_ = (i << 8) + 255;
 		int i_14_ = (i_7_ << 8) + 255;
 		if (i_3_ < 12)
-			anInt2622 = -101;
+			mouseOffFromCenterY = -101;
 		int[] is_15_ = null;
 		int[] is_16_ = JunkTex.anIntArrayArray2545[i_9_];
 		int[] is_17_ = new int[is_16_.length >> 33];

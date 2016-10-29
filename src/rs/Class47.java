@@ -4,6 +4,8 @@
 package rs;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.link.HashTable;
 import com.jagex.rt4.Class14_Sub27;
 
@@ -16,8 +18,8 @@ public class Class47 {
 	public static int anInt796;
 
 	static {
-		aClass124_787 = Class14_Sub2_Sub2.method263(1178, "Sprites geladen)3");
-		aClass124_793 = Class14_Sub2_Sub2.method263(1178, " <col=ffffff>");
+		aClass124_787 = Class124.method263(1178, "Sprites geladen)3");
+		aClass124_793 = Class124.method263(1178, " <col=ffffff>");
 		anInt796 = -1;
 	}
 
@@ -193,7 +195,7 @@ public class Class47 {
 					int i_29_ = (class133_sub1.anInt3495 - class133_sub1_sub2.anInt3495);
 					int i_30_ = (-class133_sub1_sub2.anInt3436 + class133_sub1.anInt3436);
 					if (i_29_ != 0 || i_30_ != 0)
-						class133_sub1.anInt3469 = (int) (Math.atan2((double) i_29_, (double) i_30_) * 325.949) & 0x7ff;
+						class133_sub1.anInt3469 = (int) (Math.atan2(i_29_, i_30_) * 325.949) & 0x7ff;
 				}
 			}
 			if (class133_sub1.anInt3453 >= 32768) {
@@ -205,7 +207,7 @@ public class Class47 {
 					int i_32_ = (class133_sub1.anInt3495 - class133_sub1_sub1.anInt3495);
 					int i_33_ = (-class133_sub1_sub1.anInt3436 + class133_sub1.anInt3436);
 					if (i_32_ != 0 || i_33_ != 0)
-						class133_sub1.anInt3469 = (int) (Math.atan2((double) i_32_, (double) i_33_) * 325.949) & 0x7ff;
+						class133_sub1.anInt3469 = (int) (Math.atan2(i_32_, i_33_) * 325.949) & 0x7ff;
 				}
 			}
 			if ((class133_sub1.anInt3504 != 0 || class133_sub1.anInt3480 != 0)
@@ -215,7 +217,7 @@ public class Class47 {
 				int i_35_ = (-((-Class58.anInt947 + (class133_sub1.anInt3480 - Class58.anInt947)) * 64)
 						+ class133_sub1.anInt3436 - 64 + class133_sub1.anInt3493 * 64);
 				if (i_34_ != 0 || i_35_ != 0)
-					class133_sub1.anInt3469 = (int) (Math.atan2((double) i_34_, (double) i_35_) * 325.949) & 0x7ff;
+					class133_sub1.anInt3469 = (int) (Math.atan2(i_34_, i_35_) * 325.949) & 0x7ff;
 				class133_sub1.anInt3480 = 0;
 				class133_sub1.anInt3504 = 0;
 			}
@@ -299,7 +301,7 @@ public class Class47 {
 			Class51 class51 = null;
 			return class51;
 		}
-		Class51 class51 = (Class51) JunkTex.aClass52_4240.get((long) i);
+		Class51 class51 = (Class51) JunkTex.aClass52_4240.get(i);
 		if (class51 != null) {
 			Class51 class51_39_ = class51;
 			return class51_39_;
@@ -309,7 +311,7 @@ public class Class47 {
 		Class51 class51_40_ = new Class51();
 		if (is != null)
 			class51_40_.method1198(new Buffer(is), 36);
-		JunkTex.aClass52_4240.put(class51_40_, (long) i);
+		JunkTex.aClass52_4240.put(class51_40_, i);
 		Class51 class51_41_ = class51_40_;
 		return class51_41_;
 	}
@@ -357,15 +359,15 @@ public class Class47 {
 					if (is_51_ != null)
 						i_64_ = is_51_[i_59_][i_60_] & 0xffffff;
 					int i_65_ = is_55_[i_59_ + 1][i_60_ + 1];
-					long l = (long) i_63_ << 32 | (long) i_64_;
-					long l_66_ = (long) i_62_ << 32 | (long) i_64_;
-					long l_67_ = (long) i_64_ | (long) i_65_ << 32;
+					long l = (long) i_63_ << 32 | i_64_;
+					long l_66_ = (long) i_62_ << 32 | i_64_;
+					long l_67_ = i_64_ | (long) i_65_ << 32;
 					int i_68_ = is_55_[i_59_][i_60_ + 1];
-					long l_69_ = (long) i_64_ | (long) i_68_ << 32;
+					long l_69_ = i_64_ | (long) i_68_ << 32;
 					int i_70_ = is_61_.length / 2;
 					Class14_Sub27 class14_sub27 = ((Class14_Sub27) hashTable.get(l_66_));
 					if (class14_sub27 == null) {
-						class14_sub27 = new Class14_Sub27((i_62_ >> 16) - 1, (float) (i_62_ & 0xffff), false,
+						class14_sub27 = new Class14_Sub27((i_62_ >> 16) - 1, i_62_ & 0xffff, false,
 								is_43_ != null, i_64_);
 						hashTable.put(l_66_, class14_sub27);
 					}
@@ -374,7 +376,7 @@ public class Class47 {
 					if (l_66_ != l) {
 						class14_sub27 = (Class14_Sub27) hashTable.get(l);
 						if (class14_sub27 == null) {
-							class14_sub27 = new Class14_Sub27((i_63_ >> 48) - 1, (float) (i_63_ & 0xffff), false,
+							class14_sub27 = new Class14_Sub27((i_63_ >> 48) - 1, i_63_ & 0xffff, false,
 									is_43_ != null, i_64_);
 							hashTable.put(l, class14_sub27);
 						}
@@ -384,7 +386,7 @@ public class Class47 {
 					if (l_67_ != l_66_ && l_67_ != l) {
 						class14_sub27 = (Class14_Sub27) hashTable.get(l_67_);
 						if (class14_sub27 == null) {
-							class14_sub27 = new Class14_Sub27((i_65_ >> 48) - 1, (float) (i_65_ & 0xffff), false,
+							class14_sub27 = new Class14_Sub27((i_65_ >> 48) - 1, i_65_ & 0xffff, false,
 									is_43_ != null, i_64_);
 							hashTable.put(l_67_, class14_sub27);
 						}
@@ -394,7 +396,7 @@ public class Class47 {
 					if (l_69_ != l_66_ && l != l_69_ && l_69_ != l_67_) {
 						class14_sub27 = (Class14_Sub27) hashTable.get(l_69_);
 						if (class14_sub27 == null) {
-							class14_sub27 = new Class14_Sub27((i_68_ >> 48) - 1, (float) (i_68_ & 0xffff), false,
+							class14_sub27 = new Class14_Sub27((i_68_ >> 48) - 1, i_68_ & 0xffff, false,
 									is_43_ != null, i_64_);
 							hashTable.put(l_69_, class14_sub27);
 						}
@@ -441,11 +443,11 @@ public class Class47 {
 					int i_78_ = is_55_[i_71_][i_72_];
 					int i_79_ = is_55_[i_71_ + 1][i_72_];
 					int i_80_ = is_55_[i_71_ + 1][i_72_ + 1];
-					long l = (long) i_74_ | (long) i_78_ << 32;
+					long l = i_74_ | (long) i_78_ << 32;
 					int i_81_ = is_55_[i_71_][i_72_ + 1];
-					long l_82_ = (long) i_79_ << 32 | (long) i_74_;
-					long l_83_ = (long) i_74_ | (long) i_80_ << 32;
-					long l_84_ = (long) i_81_ << 32 | (long) i_74_;
+					long l_82_ = (long) i_79_ << 32 | i_74_;
+					long l_83_ = i_74_ | (long) i_80_ << 32;
+					long l_84_ = (long) i_81_ << 32 | i_74_;
 					int i_85_ = is_47_[i_71_][i_72_];
 					int i_86_ = is_47_[i_71_ + 1][i_72_];
 					int i_87_ = is_47_[i_71_][i_72_ + 1];

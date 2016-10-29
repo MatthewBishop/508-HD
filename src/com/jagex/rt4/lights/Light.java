@@ -371,25 +371,8 @@ public class Light {
 		}
 	}
 
-	public static int[] method1567(boolean bool, int i, int i_16_, int i_17_, int i_18_, float f, int i_19_,
-			int i_20_) {
-		int[] is = new int[i_18_];
-		Class14_Sub8_Sub12 class14_sub8_sub12 = new Class14_Sub8_Sub12();
-		class14_sub8_sub12.aBoolean4277 = bool;
-		class14_sub8_sub12.anInt4289 = i_20_;
-		class14_sub8_sub12.anInt4300 = i_17_;
-		class14_sub8_sub12.anInt4282 = i_19_;
-		class14_sub8_sub12.anInt4291 = i;
-		class14_sub8_sub12.anInt4297 = (int) (f * 4096.0F);
-		class14_sub8_sub12.method472();
-		TexStatic.method1117(0, 1, i_18_);
-		class14_sub8_sub12.method542(-2, 0, is);
-		int[] is_22_ = is;
-		return is_22_;
-	}
-
 	public static void method830() {
-		Light.anIntArray5082 = Light.method1567(true, 8, 35, 35, 2048, 0.4F, 8, 4);
+		Light.anIntArray5082 = TexStatic.method1567(true, 8, 35, 35, 2048, 0.4F, 8, 4);
 	}
 	
 	public static void dispose() {

@@ -15,6 +15,7 @@ import com.jagex.cache.anim.AnimFrame;
 import com.jagex.image.transform.TexStatic;
 import com.jagex.io.Buffer;
 import com.jagex.io.PacketBuffer;
+import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.map.SceneCluster;
 import com.jagex.map.Scenegraph;
@@ -34,6 +35,7 @@ import com.jagex.rt4.lights.LightManager;
 import com.jagex.sound.Filter;
 import com.jagex.sound.Synthesizer;
 import com.jagex.util.BrowserControlUtil;
+import com.jagex.util.Huffman;
 import com.jagex.util.MouseCapturer;
 import com.jagex.util.TimeUtil;
 import com.jagex.util.Util;
@@ -41,8 +43,8 @@ import com.jagex.util.Util;
 public class client extends Applet_Sub1 {
 	public static Class124 aClass124_2625;
 	public static Class124 aClass124_2631;
-	public static Class124 aClass124_2636 = Class14_Sub2_Sub2.method263(1178, "Loading )2 please wait)3");
-	public static Class124 aClass124_2637 = Class14_Sub2_Sub2.method263(1178, "Loaded textures");
+	public static Class124 aClass124_2636 = Class124.method263(1178, "Loading )2 please wait)3");
+	public static Class124 aClass124_2637 = Class124.method263(1178, "Loaded textures");
 	public static Class124 aClass124_2639;
 	public static int[] anIntArray2644;
 	public static Class124[] aClass124Array2645;
@@ -50,7 +52,7 @@ public class client extends Applet_Sub1 {
 	public static boolean aBoolean2650;
 
 	static {
-		aClass124_2625 = Class14_Sub2_Sub2.method263(1178, "Lade Wordpack )2 ");
+		aClass124_2625 = Class124.method263(1178, "Lade Wordpack )2 ");
 		aClass124_2639 = aClass124_2636;
 		aClass124Array2645 = new Class124[100];
 		anInt2648 = 0;
@@ -148,6 +150,7 @@ public class client extends Applet_Sub1 {
 		}
 	}
 
+	@Override
 	public void method29(int i) {
 		try {
 			if (JunkTex.anInt4356 != 1000) {
@@ -250,7 +253,7 @@ public class client extends Applet_Sub1 {
 							if (Class7_Sub2_Sub1.aBooleanArray3703[i_16_]) {
 								Class122.aClass108_2059.method1560(Class74.anIntArray1135[i_16_], (byte) -128,
 										Class110.anIntArray1854[i_16_], Class137.anIntArray2205[i_16_], graphics,
-										Class9.anIntArray215[i_16_]);
+										Static2.anIntArray215[i_16_]);
 								Class7_Sub2_Sub1.aBooleanArray3703[i_16_] = false;
 							}
 						}
@@ -359,7 +362,7 @@ public class client extends Applet_Sub1 {
 												(JunkTex.method515((new Class124[] { Class17.aClass124_408,
 														Class14_Sub25.aClass124_3172, class142.aClass124_2296 }),
 														(byte) -67)),
-												(short) 36, (long) class142.anInt2276, i_28_);
+												(short) 36, class142.anInt2276, i_28_);
 								} else {
 									Class124[] class124s = class142.aClass124Array2304;
 									if (Class49.aBoolean814)
@@ -376,7 +379,7 @@ public class client extends Applet_Sub1 {
 																					(JunkTex.aClass124_4101),
 																					(class142.aClass124_2296) }),
 																			(byte) -8)),
-																	(short) 28, (long) (class142.anInt2276), i_28_);
+																	(short) 28, (class142.anInt2276), i_28_);
 											} else {
 												short i_34_;
 												if (i_33_ == 3)
@@ -390,7 +393,7 @@ public class client extends Applet_Sub1 {
 																				(JunkTex.aClass124_4101),
 																				(class142.aClass124_2296) }),
 																		(byte) -86)),
-																i_34_, (long) class142.anInt2276, i_28_);
+																i_34_, class142.anInt2276, i_28_);
 											}
 										}
 									}
@@ -399,7 +402,7 @@ public class client extends Applet_Sub1 {
 												(JunkTex.method515((new Class124[] {
 														(JunkTex.aClass124_4101), class142.aClass124_2296 }),
 														(byte) -2)),
-												(short) 25, (long) class142.anInt2276, i_28_);
+												(short) 25, class142.anInt2276, i_28_);
 									if (Class14_Sub2_Sub5.method282(method46(class94), -1) && class124s != null) {
 										for (int i_35_ = 2; i_35_ >= 0; i_35_--) {
 											if (class124s[i_35_] != null) {
@@ -417,7 +420,7 @@ public class client extends Applet_Sub1 {
 																				(JunkTex.aClass124_4101),
 																				(class142.aClass124_2296) }),
 																		(byte) -52)),
-																i_36_, (long) class142.anInt2276, i_28_);
+																i_36_, class142.anInt2276, i_28_);
 											}
 										}
 									}
@@ -445,7 +448,7 @@ public class client extends Applet_Sub1 {
 																				(JunkTex.aClass124_4101),
 																				(class142.aClass124_2296) }),
 																		(byte) -46)),
-																i_38_, (long) class142.anInt2276, i_28_);
+																i_38_, class142.anInt2276, i_28_);
 											}
 										}
 									}
@@ -453,7 +456,7 @@ public class client extends Applet_Sub1 {
 											(JunkTex.method515((new Class124[] {
 													JunkTex.aClass124_4101, class142.aClass124_2296 }),
 													(byte) -105)),
-											(short) 1001, (long) class142.anInt2276, i_28_);
+											(short) 1001, class142.anInt2276, i_28_);
 								}
 							} else if ((class94.anInt1548 != JunkTex.anInt3960)
 									|| JunkTex.anInt2853 != i_28_)
@@ -462,7 +465,7 @@ public class client extends Applet_Sub1 {
 												(new Class124[] { JunkTex.aClass124_2809,
 														Class14_Sub25.aClass124_3172, class142.aClass124_2296 }),
 												(byte) -50)),
-										(short) 32, (long) class142.anInt2276, i_28_);
+										(short) 32, class142.anInt2276, i_28_);
 						}
 					}
 					i_28_++;
@@ -477,7 +480,7 @@ public class client extends Applet_Sub1 {
 					Class124 class124 = Class82.method1405((byte) -89, class94, i_39_);
 					if (class124 != null) {
 						Class14_Sub11.method853(32, class124, class94.anInt1548, class94.aClass124_1508, (short) 1007,
-								(long) (i_39_ + 1), class94.anInt1478);
+								i_39_ + 1, class94.anInt1478);
 						JunkTex.anInt3411++;
 					}
 				}
@@ -492,7 +495,7 @@ public class client extends Applet_Sub1 {
 					if (class124_41_ != null) {
 						JunkTex.anInt3411++;
 						Class14_Sub11.method853(32, class124_41_, class94.anInt1548, class94.aClass124_1508, (short) 1,
-								(long) (i_40_ + 1), class94.anInt1478);
+								i_40_ + 1, class94.anInt1478);
 					}
 				}
 				if (JunkTex.method682(65280, method46(class94))) {
@@ -510,7 +513,7 @@ public class client extends Applet_Sub1 {
 
 	public static int method46(Class94 class94) {
 		Class14_Sub1 class14_sub1 = ((Class14_Sub1) (JunkTex.aClass55_4155
-				.get(((long) class94.anInt1548 << 32) + (long) class94.anInt1478)));
+				.get(((long) class94.anInt1548 << 32) + class94.anInt1478)));
 		if (class14_sub1 != null)
 			return class14_sub1.anInt2714;
 		return class94.anInt1565;
@@ -554,8 +557,8 @@ public class client extends Applet_Sub1 {
 					Class51.anInt828 = 10;
 					Class14_Sub9_Sub1.aClass124_4761 = JunkTex.aClass124_4511;
 				} else if (Class62.anInt988 == 30) {
-					Class75.aClass9_Sub1_1167 = method51(true, 0, (byte) 10, true, false);
-					Class109.aClass9_Sub1_1834 = method51(true, 1, (byte) -111, true, false);
+					Class75.idx0 = method51(true, 0, (byte) 10, true, false);
+					Class109.idx1 = method51(true, 1, (byte) -111, true, false);
 					Class138.aClass9_Sub1_2222 = method51(false, 2, (byte) -102, true, true);
 					Class14_Sub17.aClass9_Sub1_3021 = method51(true, 3, (byte) 98, true, false);
 					Static2.aClass9_Sub1_2901 = method51(true, 4, (byte) -121, true, false);
@@ -588,8 +591,8 @@ public class client extends Applet_Sub1 {
 					byte var6;
 					if (Class62.anInt988 == 40) {
 						var6 = 0;
-						var13 = var6 + Class75.aClass9_Sub1_1167.method186((byte) 91) * 4 / 100;
-						var13 += Class109.aClass9_Sub1_1834.method186((byte) 65) * 4 / 100;
+						var13 = var6 + Class75.idx0.method186((byte) 91) * 4 / 100;
+						var13 += Class109.idx1.method186((byte) 65) * 4 / 100;
 						var13 += Class138.aClass9_Sub1_2222.method186((byte) 119) * 1 / 100;
 						var13 += Class14_Sub17.aClass9_Sub1_3021.method186((byte) 75) * 2 / 100;
 						var13 += Static2.aClass9_Sub1_2901.method186((byte) 61) * 6 / 100;
@@ -783,8 +786,8 @@ public class client extends Applet_Sub1 {
 										Class131.aClass14_Sub2_Sub16_Sub1_2160, (byte) -26,
 										JunkTex.aClass9_Sub1_4739);
 								Class14_Sub29.method934(Class138.aClass9_Sub1_2222, 54);
-								Static2.method2000(Class75.aClass9_Sub1_1167, Class22.aClass9_Sub1_459, (byte) -86,
-										Class109.aClass9_Sub1_1834);
+								Static2.method2000(Class75.idx0, Class22.aClass9_Sub1_459, (byte) -86,
+										Class109.idx1);
 								Class108.method1561(Static2.aClass9_Sub1_1690, (byte) 127,
 										JunkTex.aClass9_Sub1_4739);
 								JunkTex.method234(JunkTex.aClass9_Sub1_2848, (byte) -77);
@@ -869,7 +872,7 @@ public class client extends Applet_Sub1 {
 										(byte) -59);
 								Class51.anInt828 = 80;
 							} else {
-								Class5 var17 = new Class5(JunkTex.aClass9_Sub1_4323.method167(
+								Huffman var17 = new Huffman(JunkTex.aClass9_Sub1_4323.method167(
 										Static2.aClass124_4891, JunkTex.aClass124_4244, -65));
 								Class139.method1955(-83, var17);
 								Class51.anInt828 = 80;
@@ -961,7 +964,7 @@ public class client extends Applet_Sub1 {
 			Class133_Sub5.aClass14_Sub9_Sub1_3625.method697(116 - 43);
 			Class14_Sub9_Sub1.aClass14_Sub16_4780 = null;
 			Class14_Sub2_Sub11.anInt3889 = 0;
-			Class9_Sub1.aClass9_2696 = null;
+			Static2.aClass9_2696 = null;
 			JunkTex.aClass120_854 = null;
 			return;
 		}
@@ -969,7 +972,7 @@ public class client extends Applet_Sub1 {
 		Class133_Sub5.aClass14_Sub9_Sub1_3625.method716((byte) -43);
 		Class14_Sub9_Sub1.aClass14_Sub16_4780 = null;
 		JunkTex.aClass120_854 = null;
-		if (Class9_Sub1.aClass9_2696 == null) {
+		if (Static2.aClass9_2696 == null) {
 			Class14_Sub2_Sub11.anInt3889 = 0;
 		} else {
 			Class14_Sub2_Sub11.anInt3889 = 2;
@@ -986,6 +989,7 @@ public class client extends Applet_Sub1 {
 		return class94.aBoolean1503;
 	}
 
+	@Override
 	public void method33(int i) {
 		method52(121);
 		Class124.method1715((byte) -83);
@@ -1000,7 +1004,7 @@ public class client extends Applet_Sub1 {
 		Class66.method1295(-597398239);
 		Static2.method815(0);
 		Class36.method1102((byte) -40);
-		Class9_Sub1.method181(97);
+		Static2.method181(97);
 		Class76.method1364(53);
 		Class114.method1585(false);
 		JunkTex.method1206((byte) -89);
@@ -1040,7 +1044,7 @@ public class client extends Applet_Sub1 {
 		Class53.method1212(-1);
 		AtmosphericEffects.dispose();
 		Class22.method988((byte) -108);
-		Class9.method150(3);
+		Static2.method150(3);
 		Class133_Sub2.method1828();
 		Class86.method1421((byte) 2);
 		ModelHD.method1909();
@@ -1088,7 +1092,7 @@ public class client extends Applet_Sub1 {
 		Class56_Sub1.method1243((byte) -115);
 		Class87.method1434();
 		Class116.method1599(-16844);
-		Class63.method1281((byte) -122);
+		Static2.method1281((byte) -122);
 		Class49.method1196((byte) 41);
 		Canvas_Sub2.method65((byte) -7);
 		Class58.method1258(1);
@@ -1114,7 +1118,7 @@ public class client extends Applet_Sub1 {
 		Class14_Sub2_Sub8.method291((byte) -78);
 		Class14_Sub2_Sub21.method436(-106);
 		Class14_Sub2_Sub11.method313(112);
-		Class5.method111((byte) 76);
+		Static2.method111((byte) 76);
 		Class131.method1775(-93);
 		Class44.method1157((byte) 95);
 		Class112.method1579((byte) -128);
@@ -1167,7 +1171,7 @@ public class client extends Applet_Sub1 {
 		Class14_Sub19.method887((byte) -103);
 		Class14_Sub24.method914();
 		Class16.method948();
-		Class107.method1554((byte) -118);
+		ProceduralTexture.method1554((byte) -118);
 		JunkTex.method476((byte) -65);
 		Class152.method2043(119);
 		JunkTex.method1014((byte) 116);
@@ -1281,6 +1285,7 @@ public class client extends Applet_Sub1 {
 		return class9_sub1;
 	}
 
+	@Override
 	public void method34(boolean bool) {
 		try {
 			if (JunkTex.anInt4356 != 1000) {
@@ -1290,7 +1295,7 @@ public class client extends Applet_Sub1 {
 						GregorianCalendar gregoriancalendar = new GregorianCalendar();
 						Class32.anInt563 = (gregoriancalendar.get(11) * 600 + gregoriancalendar.get(12) * 10
 								+ gregoriancalendar.get(13) / 6);
-						Class104.aRandom1732.setSeed((long) Class32.anInt563);
+						Class104.aRandom1732.setSeed(Class32.anInt563);
 					}
 					method56(20);
 					JunkTex.method648((byte) 74);
@@ -1351,6 +1356,7 @@ public class client extends Applet_Sub1 {
 		aClass124_2631 = null;
 	}
 
+	@Override
 	public void method38(boolean bool) {
 		RT4GL.method1630();
 		BrowserControlUtil.destroy();
@@ -1367,7 +1373,7 @@ public class client extends Applet_Sub1 {
 			Class14_Sub15.aClass36_2990.method1101((byte) -115);
 			Class14_Sub15.aClass36_2990 = null;
 		}
-		Class63.method1280(Class49.aCanvas819, (byte) 127);
+		Static2.method1280(Class49.aCanvas819, (byte) 127);
 		Class76.method1356(false, Class49.aCanvas819);
 		if (Class44.aClass129_726 != null)
 			Class44.aClass129_726.method1765(true, Class49.aCanvas819);
@@ -1655,8 +1661,8 @@ public class client extends Applet_Sub1 {
 					if (class94.anInt1489 == 0) {
 						if (!class94.aBoolean1455 && method49(class94) && JunkTex.aClass94_3410 != class94)
 							continue;
-						if (class94.aBoolean1584 && JunkTex.anInt4640 >= i_95_ && Class107.anInt1804 >= i_96_
-								&& JunkTex.anInt4640 < i_97_ && Class107.anInt1804 < i_98_) {
+						if (class94.aBoolean1584 && JunkTex.anInt4640 >= i_95_ && ProceduralTexture.anInt1804 >= i_96_
+								&& JunkTex.anInt4640 < i_97_ && ProceduralTexture.anInt1804 < i_98_) {
 							for (Class14_Sub21 class14_sub21 = ((Class14_Sub21) Class1.aClass2_70.getFront()); class14_sub21 != null; class14_sub21 = ((Class14_Sub21) Class1.aClass2_70
 											.getNext())) {
 								if (class14_sub21.aBoolean3109)
@@ -1671,8 +1677,8 @@ public class client extends Applet_Sub1 {
 					}
 					if (class94.aBoolean1455) {
 						boolean bool;
-						if (JunkTex.anInt4640 >= i_95_ && Class107.anInt1804 >= i_96_
-								&& JunkTex.anInt4640 < i_97_ && Class107.anInt1804 < i_98_)
+						if (JunkTex.anInt4640 >= i_95_ && ProceduralTexture.anInt1804 >= i_96_
+								&& JunkTex.anInt4640 < i_97_ && ProceduralTexture.anInt1804 < i_98_)
 							bool = true;
 						else
 							bool = false;
@@ -1737,10 +1743,10 @@ public class client extends Applet_Sub1 {
 									Class97.aClass94_1657 = class94;
 									if (bool_102_) {
 										if ((JunkTex.aBooleanArray4581[82]) && Class152.anInt2439 > 0) {
-											int i_106_ = (int) ((double) ((JunkTex.anInt3367) - i_93_
-													- ((class94.anInt1518) / 2)) * 2.0 / (double) (Class90.aFloat1426));
-											int i_107_ = (int) ((double) ((Class139.anInt2230) - i_94_
-													- ((class94.anInt1545) / 2)) * 2.0 / (double) (Class90.aFloat1426));
+											int i_106_ = (int) (((JunkTex.anInt3367) - i_93_
+													- ((class94.anInt1518) / 2)) * 2.0 / (Class90.aFloat1426));
+											int i_107_ = (int) (((Class139.anInt2230) - i_94_
+													- ((class94.anInt1545) / 2)) * 2.0 / (Class90.aFloat1426));
 											int i_108_ = Class37.anInt644 + i_106_;
 											int i_109_ = (Class133_Sub6.anInt3659 + i_107_);
 											int i_110_ = i_108_ + Class65.anInt1034;
@@ -1750,19 +1756,19 @@ public class client extends Applet_Sub1 {
 										} else {
 											Static2.aBoolean2736 = true;
 											JunkTex.anInt4132 = JunkTex.anInt4640;
-											Canvas_Sub2.anInt63 = Class107.anInt1804;
+											Canvas_Sub2.anInt63 = ProceduralTexture.anInt1804;
 											Class36.anInt631 = Class37.anInt644;
 											Class33.anInt586 = Class133_Sub6.anInt3659;
 										}
 									} else if (bool_101_ && Static2.aBoolean2736) {
 										Class44.method1155(-1,
-												(Class36.anInt631 + (int) ((double) ((JunkTex.anInt4132)
+												(Class36.anInt631 + (int) (((JunkTex.anInt4132)
 														- (JunkTex.anInt4640)) * 2.0
-														/ (double) (JunkTex.aFloat2854))));
+														/ (JunkTex.aFloat2854))));
 										Static2.method242(-1,
 												(Class33.anInt586
-														+ (int) ((double) ((Canvas_Sub2.anInt63) - (Class107.anInt1804))
-																* 2.0 / (double) (JunkTex.aFloat2854))));
+														+ (int) (((Canvas_Sub2.anInt63) - (ProceduralTexture.anInt1804))
+																* 2.0 / (JunkTex.aFloat2854))));
 									} else
 										Static2.aBoolean2736 = false;
 									continue;
@@ -1770,7 +1776,7 @@ public class client extends Applet_Sub1 {
 								if (class94.anInt1498 == 1401) {
 									if (bool_101_)
 										JunkTex.method1330(((JunkTex.anInt4640) - i_93_), class94.anInt1518,
-												class94.anInt1545, (Class107.anInt1804 - i_94_), -1);
+												class94.anInt1545, (ProceduralTexture.anInt1804 - i_94_), -1);
 									continue;
 								}
 								if (class94.anInt1498 == 1402 || class94.anInt1498 == 1404)
@@ -1793,7 +1799,7 @@ public class client extends Applet_Sub1 {
 								class14_sub21.aBoolean3109 = true;
 								class14_sub21.aClass94_3116 = class94;
 								class14_sub21.anInt3114 = JunkTex.anInt4640 - i_93_;
-								class14_sub21.anInt3106 = Class107.anInt1804 - i_94_;
+								class14_sub21.anInt3106 = ProceduralTexture.anInt1804 - i_94_;
 								class14_sub21.anObjectArray3115 = class94.anObjectArray1591;
 								Class1.aClass2_70.pushBack(class14_sub21);
 							}
@@ -1804,7 +1810,7 @@ public class client extends Applet_Sub1 {
 									class14_sub21.aBoolean3109 = true;
 									class14_sub21.aClass94_3116 = class94;
 									class14_sub21.anInt3114 = JunkTex.anInt4640 - i_93_;
-									class14_sub21.anInt3106 = Class107.anInt1804 - i_94_;
+									class14_sub21.anInt3106 = ProceduralTexture.anInt1804 - i_94_;
 									class14_sub21.anObjectArray3115 = class94.anObjectArray1592;
 									Class14_Sub15.aClass2_2988.pushBack(class14_sub21);
 								}
@@ -1814,7 +1820,7 @@ public class client extends Applet_Sub1 {
 								class14_sub21.aBoolean3109 = true;
 								class14_sub21.aClass94_3116 = class94;
 								class14_sub21.anInt3114 = JunkTex.anInt4640 - i_93_;
-								class14_sub21.anInt3106 = Class107.anInt1804 - i_94_;
+								class14_sub21.anInt3106 = ProceduralTexture.anInt1804 - i_94_;
 								class14_sub21.anObjectArray3115 = class94.anObjectArray1594;
 								Class1.aClass2_70.pushBack(class14_sub21);
 							}
@@ -1825,7 +1831,7 @@ public class client extends Applet_Sub1 {
 									class14_sub21.aBoolean3109 = true;
 									class14_sub21.aClass94_3116 = class94;
 									class14_sub21.anInt3114 = JunkTex.anInt4640 - i_93_;
-									class14_sub21.anInt3106 = Class107.anInt1804 - i_94_;
+									class14_sub21.anInt3106 = ProceduralTexture.anInt1804 - i_94_;
 									class14_sub21.anObjectArray3115 = class94.anObjectArray1600;
 									Class1.aClass2_70.pushBack(class14_sub21);
 								}
@@ -1835,7 +1841,7 @@ public class client extends Applet_Sub1 {
 								class14_sub21.aBoolean3109 = true;
 								class14_sub21.aClass94_3116 = class94;
 								class14_sub21.anInt3114 = JunkTex.anInt4640 - i_93_;
-								class14_sub21.anInt3106 = Class107.anInt1804 - i_94_;
+								class14_sub21.anInt3106 = ProceduralTexture.anInt1804 - i_94_;
 								class14_sub21.anObjectArray3115 = class94.anObjectArray1456;
 								Class1.aClass2_70.pushBack(class14_sub21);
 							}
@@ -1846,7 +1852,7 @@ public class client extends Applet_Sub1 {
 									class14_sub21.aBoolean3109 = true;
 									class14_sub21.aClass94_3116 = class94;
 									class14_sub21.anInt3114 = JunkTex.anInt4640 - i_93_;
-									class14_sub21.anInt3106 = Class107.anInt1804 - i_94_;
+									class14_sub21.anInt3106 = ProceduralTexture.anInt1804 - i_94_;
 									class14_sub21.anObjectArray3115 = class94.anObjectArray1576;
 									Class14_Sub15.aClass2_2988.pushBack(class14_sub21);
 								}
@@ -1891,7 +1897,7 @@ public class client extends Applet_Sub1 {
 									Class1.aClass2_70.pushBack(class14_sub21);
 								} else {
 									while_124_: for (int i_115_ = class94.anInt1525; i_115_ < JunkTex.anInt4018; i_115_++) {
-										int i_116_ = (Class5.anIntArray147[i_115_ & 0x1f]);
+										int i_116_ = (Static2.anIntArray147[i_115_ & 0x1f]);
 										for (int i_117_ = 0; (i_117_ < class94.anIntArray1546.length); i_117_++) {
 											if (class94.anIntArray1546[i_117_] == i_116_) {
 												Class14_Sub21 class14_sub21 = new Class14_Sub21();
@@ -2025,19 +2031,19 @@ public class client extends Applet_Sub1 {
 					if (!class94.aBoolean1455 && Class67.aClass94_1060 == null
 							&& JunkTex.aClass94_4446 == null && !Class133_Sub5.aBoolean3628) {
 						if ((class94.anInt1563 >= 0 || class94.anInt1493 != 0) && JunkTex.anInt4640 >= i_95_
-								&& Class107.anInt1804 >= i_96_ && JunkTex.anInt4640 < i_97_
-								&& Class107.anInt1804 < i_98_) {
+								&& ProceduralTexture.anInt1804 >= i_96_ && JunkTex.anInt4640 < i_97_
+								&& ProceduralTexture.anInt1804 < i_98_) {
 							if (class94.anInt1563 >= 0)
 								JunkTex.aClass94_3410 = class94s[class94.anInt1563];
 							else
 								JunkTex.aClass94_3410 = class94;
 						}
 						if (class94.anInt1489 == 8 && JunkTex.anInt4640 >= i_95_
-								&& Class107.anInt1804 >= i_96_ && JunkTex.anInt4640 < i_97_
-								&& Class107.anInt1804 < i_98_)
+								&& ProceduralTexture.anInt1804 >= i_96_ && JunkTex.anInt4640 < i_97_
+								&& ProceduralTexture.anInt1804 < i_98_)
 							Class47.aClass94_784 = class94;
 						if (class94.anInt1605 > class94.anInt1545)
-							Class97.method1491(i_93_ + class94.anInt1518, i_94_, Class107.anInt1804, class94.anInt1605,
+							Class97.method1491(i_93_ + class94.anInt1518, i_94_, ProceduralTexture.anInt1804, class94.anInt1605,
 									true, JunkTex.anInt4640, class94.anInt1545, class94);
 					}
 					if (class94.anInt1489 == 0) {
@@ -2047,7 +2053,7 @@ public class client extends Applet_Sub1 {
 							method55(class94.aClass94Array1486, class94.anInt1548, i_95_, i_96_, i_97_, i_98_,
 									i_93_ - class94.anInt1490, i_94_ - class94.anInt1547);
 						Class14_Sub15 class14_sub15 = ((Class14_Sub15) (Class14_Sub30.aClass55_3275
-								.get((long) class94.anInt1548)));
+								.get(class94.anInt1548)));
 						if (class14_sub15 != null)
 							Class12.method218(-30776, i_98_, i_93_, i_96_, class14_sub15.anInt2999, i_94_, i_95_,
 									i_97_);
@@ -2057,6 +2063,7 @@ public class client extends Applet_Sub1 {
 		}
 	}
 
+	@Override
 	public void init() {
 		try {
 			if (method41(0)) {
@@ -2104,7 +2111,7 @@ public class client extends Applet_Sub1 {
 					Class124 class124 = Static2.method231((byte) 98, is.length, is, 0);
 					boolean bool = Class58.method1257(class124, 28883);
 					if (bool)
-						Class5.aClass124_138 = class124;
+						Static2.aClass124_138 = class124;
 				}
 				JunkTex.aString4605 = getCodeBase().getHost();
 				method40(Class111.anInt1859 + 32, 503, 13062, 765, 508);
@@ -2114,6 +2121,7 @@ public class client extends Applet_Sub1 {
 		}
 	}
 
+	@Override
 	public void method25(int i) {
 		if (Class111.anInt1859 != 0) {
 			/* empty */
@@ -2129,7 +2137,7 @@ public class client extends Applet_Sub1 {
 			AtmosphericEffects.defaultFogColour = 0;
 			Class53.aShortArray866 = JunkTex.aShortArray4392;
 		} else {
-			JunkTex.aShortArrayArray4496 = Class63.aShortArrayArray1001;
+			JunkTex.aShortArrayArray4496 = Static2.aShortArrayArray1001;
 			Class53.aShortArray866 = Class12.aShortArray320;
 			Class24.aShortArray471 = Class7.aShortArray183;
 			JunkTex.aShortArrayArray98 = Canvas_Sub1.aShortArrayArray50;

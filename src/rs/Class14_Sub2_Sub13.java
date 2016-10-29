@@ -13,7 +13,7 @@ public class Class14_Sub2_Sub13 extends Cacheable {
 	public int anInt3920;
 
 	public Class14_Sub2_Sub13(int i, int i_20_) {
-		key = (long) i << 32 | (long) i_20_;
+		key = (long) i << 32 | i_20_;
 	}
 
 	public void method326() {

@@ -66,7 +66,7 @@ public class Class119 {
 			anIntArray1991 = new int[64];
 			gl.glGenTextures(64, anIntArray1991, 0);
 			for (int i = 0; i < 64; i++) {
-				RT4GL.method1632(anIntArray1991[i]);
+				RT4GL.bindTexture2D(anIntArray1991[i]);
 				textureData2l.position(i * 64 * 64 * 2);
 				gl.glTexImage2D(3553, 0, 6410, 64, 64, 0, 6410, 5121, textureData2l);
 				gl.glTexParameteri(3553, 10241, 9729);
@@ -92,7 +92,7 @@ public class Class119 {
 			textureIds2 = new int[64];
 			gl.glGenTextures(64, textureIds2, 0);
 			for (int i = 0; i < 64; i++) {
-				RT4GL.method1632(textureIds2[i]);
+				RT4GL.bindTexture2D(textureIds2[i]);
 				textureData2.position(i * 64 * 64 * 2);
 				gl.glTexImage2D(3553, 0, 6410, 64, 64, 0, 6410, 5121, textureData2);
 				gl.glTexParameteri(3553, 10241, 9729);

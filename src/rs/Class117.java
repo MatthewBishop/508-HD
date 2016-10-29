@@ -42,7 +42,7 @@ public class Class117 {
 	public int anInt1972;
 
 	static {
-		aClass124_1945 = (Class14_Sub2_Sub2.method263(1178,
+		aClass124_1945 = (Class124.method263(1178,
 				"Your friend list is full)3 Max of 100 for free users)1 and 200 for members)3"));
 		aClass124_1941 = aClass124_1945;
 	}

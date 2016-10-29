@@ -36,11 +36,11 @@ public class Class14_Sub2_Sub19_Sub1_Sub2 extends Class14_Sub2_Sub19_Sub1 {
 			}
 		}
 		GL gl = RT4GL.gl;
-		gl.glRasterPos2i(i + anInt4033, RT4GL.anInt2034 - (i_0_ + anInt4050) - anInt4042);
+		gl.glRasterPos2i(i + offsetX, RT4GL.canvasHeight - (i_0_ + offsetY) - anInt4042);
 		gl.glDrawPixels(anInt4035, anInt4042, 6408, 5121, aByteBuffer5105);
 	}
 
-	public void method391(int i, int i_6_) {
+	public void drawReg(int i, int i_6_) {
 		method390(i, i_6_);
 	}
 

@@ -46,7 +46,7 @@ public class Class14_Sub2_Sub19_Sub2_Sub1 extends Class14_Sub2_Sub19_Sub2 {
 			gl.glGenTextures(1, textures, 0);
 			texture = textures[0];
 		}
-		RT4GL.method1632(texture);
+		RT4GL.bindTexture2D(texture);
 		gl.glTexImage2D(3553, 0, 6408, width, height, 0, 6408, 5121, pixels);
 		Class11.anInt263 += pixels.limit() - anInt5091;
 		anInt5091 = pixels.limit();

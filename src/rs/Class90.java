@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
 import com.jagex.util.Util;
 
@@ -12,8 +13,8 @@ public class Class90 implements Runnable {
 	public volatile boolean aBoolean1419 = false;
 	public Class43 aClass43_1421;
 	public volatile Class75[] aClass75Array1422 = new Class75[2];
-	public static Class124 aClass124_1424 = Class14_Sub2_Sub2.method263(1178, "showVideoAd");
-	public static Class124 aClass124_1425 = Class14_Sub2_Sub2.method263(1178, "::gc");
+	public static Class124 aClass124_1424 = Class124.method263(1178, "showVideoAd");
+	public static Class124 aClass124_1425 = Class124.method263(1178, "::gc");
 	public static float aFloat1426;
 	public volatile boolean aBoolean1428 = false;
 

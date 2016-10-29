@@ -8,33 +8,33 @@ import com.jagex.cache.anim.AnimFrameBase;
 import com.jagex.cache.loaders.AnimFrameLoader;
 
 public class ModelSD extends Class133_Sub7 {
-	public short aShort4954;
+	public short minY;
 	public int anInt4955 = 0;
 	public int[] triangleVertexB;
 	public int[] anIntArray4957;
-	public int[] anIntArray4958;
+	public int[] vertexY;
 	public int[][] anIntArrayArray4959;
 	public int[] anIntArray4960;
 	public int[][] anIntArrayArray4961;
-	public int[] anIntArray4962;
-	public short aShort4963;
+	public int[] vertexX;
+	public short boundingPlaneRadius;
 	public int[] anIntArray4964;
 	public int[] triangleInfo;
 	public int anInt4966;
-	public short aShort4967;
+	public short maxX;
 	public int[] triangleVertexA;
-	public int[] anIntArray4969;
-	public short aShort4970;
+	public int[] vertexZ;
+	public short maxZ;
 	public byte[] aByteArray4971;
 	public int[] triangleVertexC;
 	public byte[] aByteArray4973;
-	public boolean aBoolean4974 = false;
+	public boolean boundsCalculated = false;
 	public static ModelSD aClass133_Sub7_Sub1_4975 = new ModelSD();
-	public short aShort4976;
-	public short aShort4977;
+	public short boundingSphereRadius;
+	public short minX;
 	public int[] anIntArray4978;
-	public short aShort4979;
-	public short aShort4980;
+	public short maxY;
+	public short minZ;
 	public int[] anIntArray4981;
 	public int triangleCount;
 	public byte[] aByteArray4983;
@@ -46,7 +46,7 @@ public class ModelSD extends Class133_Sub7 {
 	public static int[] depthTriangles;
 	public static int[] anIntArray4990;
 	public static byte[] aByteArray4991;
-	public static int[] vertexScreenY;
+	public static int[] vertexScreenX;
 	public static int[] projectSceneX;
 	public static int[] vertexDepth;
 	public static int anInt4995;
@@ -60,7 +60,7 @@ public class ModelSD extends Class133_Sub7 {
 	public static int anInt5003;
 	public static int[] anIntArray5004;
 	public static int[] anIntArray5005;
-	public static int[] vertexScreenX;
+	public static int[] vertexScreenY;
 	public static int[] anIntArray5007;
 	public static int[] anIntArray5008;
 
@@ -68,7 +68,7 @@ public class ModelSD extends Class133_Sub7 {
 		aClass133_Sub7_Sub1_4985 = new ModelSD();
 		projectSceneX = new int[4096];
 		aBooleanArray4988 = new boolean[4096];
-		vertexScreenY = new int[4096];
+		vertexScreenX = new int[4096];
 		aByteArray4991 = new byte[1];
 		projectSceneZ = new int[4096];
 		vertexDepth = new int[4096];
@@ -77,7 +77,7 @@ public class ModelSD extends Class133_Sub7 {
 		depthTriangles = new int[4096];
 		anIntArray5004 = new int[10];
 		anIntArray5000 = new int[4096];
-		vertexScreenX = new int[4096];
+		vertexScreenY = new int[4096];
 		anIntArrayArray4999 = new int[12][4096];
 		anIntArray5007 = new int[4096];
 		anIntArray5008 = new int[10];
@@ -87,61 +87,64 @@ public class ModelSD extends Class133_Sub7 {
 		anIntArray4996 = new int[10];
 	}
 
+	@Override
 	public Class133_Sub7 method1870(boolean bool, boolean bool_0_) {
 		if (!bool && aByteArray4991.length < triangleCount)
 			aByteArray4991 = new byte[triangleCount + 100];
 		return method1886(bool, aClass133_Sub7_Sub1_4985, aByteArray4991);
 	}
 
+	@Override
 	public int method1867() {
-		if (!aBoolean4974)
-			method1876();
-		return aShort4977;
+		if (!boundsCalculated)
+			calculateBounds();
+		return minX;
 	}
 
-	public void method1876() {
-		int i = 32767;
-		int i_1_ = 32767;
-		int i_2_ = 32767;
-		int i_3_ = -32768;
-		int i_4_ = -32768;
-		int i_5_ = -32768;
-		int i_6_ = 0;
-		int i_7_ = 0;
+	public void calculateBounds() {
+		int minX = 32767;
+		int minY = 32767;
+		int minZ = 32767;
+		int maxX = -32768;
+		int maxY = -32768;
+		int maxZ = -32768;
+		int boundingPlaneRadius = 0;
+		int boundingSphereRadius = 0;
 		for (int i_8_ = 0; i_8_ < anInt4955; i_8_++) {
-			int i_9_ = anIntArray4962[i_8_];
-			int i_10_ = anIntArray4958[i_8_];
-			int i_11_ = anIntArray4969[i_8_];
-			if (i_9_ < i)
-				i = i_9_;
-			if (i_9_ > i_3_)
-				i_3_ = i_9_;
-			if (i_10_ < i_1_)
-				i_1_ = i_10_;
-			if (i_10_ > i_4_)
-				i_4_ = i_10_;
-			if (i_11_ < i_2_)
-				i_2_ = i_11_;
-			if (i_11_ > i_5_)
-				i_5_ = i_11_;
-			int i_12_ = i_9_ * i_9_ + i_11_ * i_11_;
-			if (i_12_ > i_6_)
-				i_6_ = i_12_;
-			i_12_ += i_10_ * i_10_;
-			if (i_12_ > i_7_)
-				i_7_ = i_12_;
+			int xVertex = vertexX[i_8_];
+			int yVertex = vertexY[i_8_];
+			int zVertex = vertexZ[i_8_];
+			if (xVertex < minX)
+				minX = xVertex;
+			if (xVertex > maxX)
+				maxX = xVertex;
+			if (yVertex < minY)
+				minY = yVertex;
+			if (yVertex > maxY)
+				maxY = yVertex;
+			if (zVertex < minZ)
+				minZ = zVertex;
+			if (zVertex > maxZ)
+				maxZ = zVertex;
+			int radius = xVertex * xVertex + zVertex * zVertex;
+			if (radius > boundingPlaneRadius)
+				boundingPlaneRadius = radius;
+			radius += yVertex * yVertex;
+			if (radius > boundingSphereRadius)
+				boundingSphereRadius = radius;
 		}
-		aShort4977 = (short) i;
-		aShort4967 = (short) i_3_;
-		aShort4954 = (short) i_1_;
-		aShort4979 = (short) i_4_;
-		aShort4980 = (short) i_2_;
-		aShort4970 = (short) i_5_;
-		aShort4963 = (short) (int) (Math.sqrt((double) i_6_) + 0.99);
-		aShort4976 = (short) (int) (Math.sqrt((double) i_7_) + 0.99);
-		aBoolean4974 = true;
+		this.minX = (short) minX;
+		this.maxX = (short) maxX;
+		this.minY = (short) minY;
+		this.maxY = (short) maxY;
+		this.minZ = (short) minZ;
+		this.maxZ = (short) maxZ;
+		this.boundingPlaneRadius = (short) (int) (Math.sqrt(boundingPlaneRadius) + 0.99);
+		this.boundingSphereRadius = (short) (int) (Math.sqrt(boundingSphereRadius) + 0.99);
+		boundsCalculated = true;
 	}
 
+	@Override
 	public void method1873(AnimFrameLoader class14_sub2_sub15, int i, AnimFrameLoader class14_sub2_sub15_13_,
 			int i_14_, int[] is, boolean bool) {
 		if (i != -1) {
@@ -187,60 +190,61 @@ public class ModelSD extends Class133_Sub7 {
 								animframe_15_.transformZ[i_20_]);
 					}
 				}
-				aBoolean4974 = false;
+				boundsCalculated = false;
 			}
 		}
 	}
 
-	public void method1862(int i, int i_22_, int i_23_, int i_24_, int i_25_, int i_26_, int i_27_) {
-		if (!aBoolean4974)
-			method1876();
+	@Override
+	public void draw(int pitch, int yaw, int roll, int cameraPitch, int cameraX, int cameraY, int cameraZ) {
+		if (!boundsCalculated)
+			calculateBounds();
 		int i_28_ = Class3.anInt118;
 		int i_29_ = Class3.anInt110;
-		int i_30_ = Class3.sin[i];
-		int i_31_ = Class3.cos[i];
-		int i_32_ = Class3.sin[i_22_];
-		int i_33_ = Class3.cos[i_22_];
-		int i_34_ = Class3.sin[i_23_];
-		int i_35_ = Class3.cos[i_23_];
-		int i_36_ = Class3.sin[i_24_];
-		int i_37_ = Class3.cos[i_24_];
-		int i_38_ = i_26_ * i_36_ + i_27_ * i_37_ >> 16;
+		int i_30_ = Class3.sin[pitch];
+		int i_31_ = Class3.cos[pitch];
+		int i_32_ = Class3.sin[yaw];
+		int i_33_ = Class3.cos[yaw];
+		int i_34_ = Class3.sin[roll];
+		int i_35_ = Class3.cos[roll];
+		int i_36_ = Class3.sin[cameraPitch];
+		int i_37_ = Class3.cos[cameraPitch];
+		int i_38_ = cameraY * i_36_ + cameraZ * i_37_ >> 16;
 		for (int i_39_ = 0; i_39_ < anInt4955; i_39_++) {
-			int i_40_ = anIntArray4962[i_39_];
-			int i_41_ = anIntArray4958[i_39_];
-			int i_42_ = anIntArray4969[i_39_];
-			if (i_23_ != 0) {
-				int i_43_ = i_41_ * i_34_ + i_40_ * i_35_ >> 16;
-				i_41_ = i_41_ * i_35_ - i_40_ * i_34_ >> 16;
-				i_40_ = i_43_;
+			int x = vertexX[i_39_];
+			int y = vertexY[i_39_];
+			int z = vertexZ[i_39_];
+			if (roll != 0) {
+				int i_43_ = y * i_34_ + x * i_35_ >> 16;
+				y = y * i_35_ - x * i_34_ >> 16;
+				x = i_43_;
 			}
-			if (i != 0) {
-				int i_44_ = i_41_ * i_31_ - i_42_ * i_30_ >> 16;
-				i_42_ = i_41_ * i_30_ + i_42_ * i_31_ >> 16;
-				i_41_ = i_44_;
+			if (pitch != 0) {
+				int i_44_ = y * i_31_ - z * i_30_ >> 16;
+				z = y * i_30_ + z * i_31_ >> 16;
+				y = i_44_;
 			}
-			if (i_22_ != 0) {
-				int i_45_ = i_42_ * i_32_ + i_40_ * i_33_ >> 16;
-				i_42_ = i_42_ * i_33_ - i_40_ * i_32_ >> 16;
-				i_40_ = i_45_;
+			if (yaw != 0) {
+				int i_45_ = z * i_32_ + x * i_33_ >> 16;
+				z = z * i_33_ - x * i_32_ >> 16;
+				x = i_45_;
 			}
-			i_40_ += i_25_;
-			i_41_ += i_26_;
-			i_42_ += i_27_;
-			int i_46_ = i_41_ * i_37_ - i_42_ * i_36_ >> 16;
-			i_42_ = i_41_ * i_36_ + i_42_ * i_37_ >> 16;
-			i_41_ = i_46_;
-			vertexDepth[i_39_] = i_42_ - i_38_;
-			vertexScreenX[i_39_] = i_28_ + (i_40_ << 9) / i_42_;
-			vertexScreenY[i_39_] = i_29_ + (i_41_ << 9) / i_42_;
+			x += cameraX;
+			y += cameraY;
+			z += cameraZ;
+			int i_46_ = y * i_37_ - z * i_36_ >> 16;
+			z = y * i_36_ + z * i_37_ >> 16;
+			y = i_46_;
+			vertexDepth[i_39_] = z - i_38_;
+			vertexScreenY[i_39_] = i_28_ + (x << 9) / z;
+			vertexScreenX[i_39_] = i_29_ + (y << 9) / z;
 			if (anInt4966 > 0) {
-				projectSceneX[i_39_] = i_40_;
-				projectSceneY[i_39_] = i_41_;
-				projectSceneZ[i_39_] = i_42_;
+				projectSceneX[i_39_] = x;
+				projectSceneY[i_39_] = y;
+				projectSceneZ[i_39_] = z;
 			}
 		}
-		draw(false, false, 0L, aShort4976, aShort4976 << 1);
+		draw(false, false, 0L, boundingSphereRadius, boundingSphereRadius << 1);
 	}
 
 	public static void method1877() {
@@ -250,8 +254,8 @@ public class ModelSD extends Class133_Sub7 {
 		aByteArray4991 = null;
 		aBooleanArray4988 = null;
 		aBooleanArray5002 = null;
-		vertexScreenX = null;
 		vertexScreenY = null;
+		vertexScreenX = null;
 		vertexDepth = null;
 		projectSceneX = null;
 		projectSceneY = null;
@@ -268,44 +272,46 @@ public class ModelSD extends Class133_Sub7 {
 		anIntArray5008 = null;
 	}
 
+	@Override
 	public void method1855(int i, int i_47_, int i_48_) {
 		for (int i_49_ = 0; i_49_ < anInt4955; i_49_++) {
-			anIntArray4962[i_49_] += i;
-			anIntArray4958[i_49_] += i_47_;
-			anIntArray4969[i_49_] += i_48_;
+			vertexX[i_49_] += i;
+			vertexY[i_49_] += i_47_;
+			vertexZ[i_49_] += i_48_;
 		}
-		aBoolean4974 = false;
+		boundsCalculated = false;
 	}
 
-	public void method1792(int i, int i_50_, int i_51_, int i_52_, int i_53_, int i_54_, int i_55_, int i_56_, long l) {
-		if (!aBoolean4974)
-			method1876();
-		int i_57_ = i_56_ * i_53_ - i_54_ * i_52_ >> 16;
-		int i_58_ = i_55_ * i_50_ + i_57_ * i_51_ >> 16;
-		int i_59_ = i_58_ + (aShort4963 * i_51_ + aShort4979 * i_50_ >> 16);
+	@Override
+	public void render(int yaw, int sinCameraPitch, int cosCameraPitch, int sceneX, int sceneZ, int sinCameraYaw, int sceneY, int cosCameraYaw, long l) {
+		if (!boundsCalculated)
+			calculateBounds();
+		int a = cosCameraYaw * sceneZ - sinCameraYaw * sceneX >> 16;
+		int i_58_ = sceneY * sinCameraPitch + a * cosCameraPitch >> 16;
+		int i_59_ = i_58_ + (boundingPlaneRadius * cosCameraPitch + maxY * sinCameraPitch >> 16);
 		if (i_59_ > 50) {
-			int i_60_ = i_58_ + (-aShort4963 * i_51_ + aShort4954 * i_50_ >> 16);
+			int i_60_ = i_58_ + (-boundingPlaneRadius * cosCameraPitch + minY * sinCameraPitch >> 16);
 			if (i_60_ < 3500) {
-				int i_61_ = i_56_ * i_52_ + i_54_ * i_53_ >> 16;
-				int i_62_ = i_61_ + aShort4963 << 9;
+				int i_61_ = cosCameraYaw * sceneX + sinCameraYaw * sceneZ >> 16;
+				int i_62_ = i_61_ + boundingPlaneRadius << 9;
 				if (i_62_ / i_59_ > JunkTex.anInt425) {
-					int i_63_ = i_61_ - aShort4963 << 9;
+					int i_63_ = i_61_ - boundingPlaneRadius << 9;
 					if (i_63_ / i_59_ < JunkTex.anInt4547) {
-						int i_64_ = i_55_ * i_51_ - i_57_ * i_50_ >> 16;
-						int i_65_ = (i_64_ + (aShort4963 * i_50_ + aShort4979 * i_51_ >> 16) << 9);
+						int i_64_ = sceneY * cosCameraPitch - a * sinCameraPitch >> 16;
+						int i_65_ = (i_64_ + (boundingPlaneRadius * sinCameraPitch + maxY * cosCameraPitch >> 16) << 9);
 						if (i_65_ / i_59_ > Class58.anInt948) {
-							int i_66_ = (i_64_ + ((-aShort4963 * i_50_ + aShort4954 * i_51_) >> 16) << 9);
+							int i_66_ = (i_64_ + ((-boundingPlaneRadius * sinCameraPitch + minY * cosCameraPitch) >> 16) << 9);
 							if (i_66_ / i_59_ < Class70.anInt1081) {
-								boolean bool = false;
+								boolean project = false;
 								boolean bool_67_ = i_60_ <= 50;
 								boolean bool_68_ = bool_67_ || anInt4966 > 0;
 								int i_69_ = Class3.anInt118;
 								int i_70_ = Class3.anInt110;
-								int i_71_ = 0;
-								int i_72_ = 0;
-								if (i != 0) {
-									i_71_ = Class3.sin[i];
-									i_72_ = Class3.cos[i];
+								int yawsin = 0;
+								int yawcos = 0;
+								if (yaw != 0) {
+									yawsin = Class3.sin[yaw];
+									yawcos = Class3.cos[yaw];
 								}
 								boolean bool_73_ = false;
 								if (l > 0L && Class90.aBoolean1417 && i_60_ > 0) {
@@ -327,35 +333,35 @@ public class ModelSD extends Class133_Sub7 {
 										i_76_ = i_66_ / i_60_;
 										i_77_ = i_65_ / i_59_;
 									}
-									if (Static2.anInt2726 >= i_74_ && Static2.anInt2726 <= i_75_
-											&& Class38.anInt2622 >= i_76_ && Class38.anInt2622 <= i_77_) {
+									if (Static2.mouseOffFromCenterX >= i_74_ && Static2.mouseOffFromCenterX <= i_75_
+											&& Class38.mouseOffFromCenterY >= i_76_ && Class38.mouseOffFromCenterY <= i_77_) {
 										i_74_ = 999999;
 										i_75_ = -999999;
 										i_76_ = 999999;
 										i_77_ = -999999;
-										int[] is = new int[] { aShort4977, aShort4967, aShort4977, aShort4967,
-												aShort4977, aShort4967, aShort4977, aShort4967 };
-										int[] is_78_ = new int[] { aShort4980, aShort4980, aShort4970, aShort4970,
-												aShort4980, aShort4980, aShort4970, aShort4970 };
-										int[] is_79_ = new int[] { aShort4954, aShort4954, aShort4954, aShort4954,
-												aShort4979, aShort4979, aShort4979, aShort4979 };
+										int[] is = new int[] { minX, maxX, minX, maxX,
+												minX, maxX, minX, maxX };
+										int[] is_78_ = new int[] { minZ, minZ, maxZ, maxZ,
+												minZ, minZ, maxZ, maxZ };
+										int[] is_79_ = new int[] { minY, minY, minY, minY,
+												maxY, maxY, maxY, maxY };
 										for (int i_80_ = 0; i_80_ < 8; i_80_++) {
 											int i_81_ = is[i_80_];
 											int i_82_ = is_79_[i_80_];
 											int i_83_ = is_78_[i_80_];
-											if (i != 0) {
-												int i_84_ = ((i_83_ * i_71_ + i_81_ * i_72_) >> 16);
-												i_83_ = (i_83_ * i_72_ - i_81_ * i_71_) >> 16;
+											if (yaw != 0) {
+												int i_84_ = ((i_83_ * yawsin + i_81_ * yawcos) >> 16);
+												i_83_ = (i_83_ * yawcos - i_81_ * yawsin) >> 16;
 												i_81_ = i_84_;
 											}
-											i_81_ += i_54_;
-											i_82_ += i_55_;
-											i_83_ += i_56_;
-											int i_85_ = ((i_83_ * i_52_ + i_81_ * i_53_) >> 16);
-											i_83_ = (i_83_ * i_53_ - i_81_ * i_52_) >> 16;
+											i_81_ += sinCameraYaw;
+											i_82_ += sceneY;
+											i_83_ += cosCameraYaw;
+											int i_85_ = ((i_83_ * sceneX + i_81_ * sceneZ) >> 16);
+											i_83_ = (i_83_ * sceneZ - i_81_ * sceneX) >> 16;
 											i_81_ = i_85_;
-											i_85_ = (i_82_ * i_51_ - i_83_ * i_50_) >> 16;
-											i_83_ = (i_82_ * i_50_ + i_83_ * i_51_) >> 16;
+											i_85_ = (i_82_ * cosCameraPitch - i_83_ * sinCameraPitch) >> 16;
+											i_83_ = (i_82_ * sinCameraPitch + i_83_ * cosCameraPitch) >> 16;
 											i_82_ = i_85_;
 											if (i_83_ > 0) {
 												int i_86_ = (i_81_ << 9) / i_83_;
@@ -370,49 +376,49 @@ public class ModelSD extends Class133_Sub7 {
 													i_77_ = i_87_;
 											}
 										}
-										if (Static2.anInt2726 >= i_74_ && Static2.anInt2726 <= i_75_
-												&& Class38.anInt2622 >= i_76_ && Class38.anInt2622 <= i_77_) {
-											if (aBoolean3687)
-												Class7_Sub3.aLongArray2685[Class14_Sub15.anInt2996++] = l;
+										if (Static2.mouseOffFromCenterX >= i_74_ && Static2.mouseOffFromCenterX <= i_75_
+												&& Class38.mouseOffFromCenterY >= i_76_ && Class38.mouseOffFromCenterY <= i_77_) {
+											if (haveActions)
+												Class7_Sub3.actions[Class14_Sub15.actionsLen++] = l;
 											else
 												bool_73_ = true;
 										}
 									}
 								}
 								for (int i_88_ = 0; i_88_ < anInt4955; i_88_++) {
-									int i_89_ = anIntArray4962[i_88_];
-									int i_90_ = anIntArray4958[i_88_];
-									int i_91_ = anIntArray4969[i_88_];
-									if (i != 0) {
-										int i_92_ = (i_91_ * i_71_ + i_89_ * i_72_ >> 16);
-										i_91_ = (i_91_ * i_72_ - i_89_ * i_71_ >> 16);
-										i_89_ = i_92_;
+									int xVertex = vertexX[i_88_];
+									int yVertex = vertexY[i_88_];
+									int zVertex = vertexZ[i_88_];
+									if (yaw != 0) {
+										int i_92_ = (zVertex * yawsin + xVertex * yawcos >> 16);
+										zVertex = (zVertex * yawcos - xVertex * yawsin >> 16);
+										xVertex = i_92_;
 									}
-									i_89_ += i_54_;
-									i_90_ += i_55_;
-									i_91_ += i_56_;
-									int i_93_ = i_91_ * i_52_ + i_89_ * i_53_ >> 16;
-									i_91_ = i_91_ * i_53_ - i_89_ * i_52_ >> 16;
-									i_89_ = i_93_;
-									i_93_ = i_90_ * i_51_ - i_91_ * i_50_ >> 16;
-									i_91_ = i_90_ * i_50_ + i_91_ * i_51_ >> 16;
-									i_90_ = i_93_;
-									vertexDepth[i_88_] = i_91_ - i_58_;
-									if (i_91_ >= 50) {
-										vertexScreenX[i_88_] = i_69_ + (i_89_ << 9) / i_91_;
-										vertexScreenY[i_88_] = i_70_ + (i_90_ << 9) / i_91_;
+									xVertex += sinCameraYaw;
+									yVertex += sceneY;
+									zVertex += cosCameraYaw;
+									int i_93_ = zVertex * sceneX + xVertex * sceneZ >> 16;
+									zVertex = zVertex * sceneZ - xVertex * sceneX >> 16;
+									xVertex = i_93_;
+									i_93_ = yVertex * cosCameraPitch - zVertex * sinCameraPitch >> 16;
+									zVertex = yVertex * sinCameraPitch + zVertex * cosCameraPitch >> 16;
+									yVertex = i_93_;
+									vertexDepth[i_88_] = zVertex - i_58_;
+									if (zVertex >= 50) {
+										vertexScreenY[i_88_] = i_69_ + (xVertex << 9) / zVertex;
+										vertexScreenX[i_88_] = i_70_ + (yVertex << 9) / zVertex;
 									} else {
-										vertexScreenX[i_88_] = -5000;
-										bool = true;
+										vertexScreenY[i_88_] = -5000;
+										project = true;
 									}
 									if (bool_68_) {
-										projectSceneX[i_88_] = i_89_;
-										projectSceneY[i_88_] = i_90_;
-										projectSceneZ[i_88_] = i_91_;
+										projectSceneX[i_88_] = xVertex;
+										projectSceneY[i_88_] = yVertex;
+										projectSceneZ[i_88_] = zVertex;
 									}
 								}
 								try {
-									draw(bool, bool_73_, l, i_58_ - i_60_, i_59_ - i_60_ + 2);
+									draw(project, bool_73_, l, i_58_ - i_60_, i_59_ - i_60_ + 2);
 								} catch (Exception exception) {
 									/* empty */
 								}
@@ -432,9 +438,9 @@ public class ModelSD extends Class133_Sub7 {
 					int i_98_ = triangleVertexA[i_97_];
 					int i_99_ = triangleVertexB[i_97_];
 					int i_100_ = triangleVertexC[i_97_];
-					int i_101_ = vertexScreenX[i_98_];
-					int i_102_ = vertexScreenX[i_99_];
-					int i_103_ = vertexScreenX[i_100_];
+					int i_101_ = vertexScreenY[i_98_];
+					int i_102_ = vertexScreenY[i_99_];
+					int i_103_ = vertexScreenY[i_100_];
 					if (bool && (i_101_ == -5000 || i_102_ == -5000 || i_103_ == -5000)) {
 						int i_104_ = projectSceneX[i_98_];
 						int i_105_ = projectSceneX[i_99_];
@@ -460,14 +466,14 @@ public class ModelSD extends Class133_Sub7 {
 							depthTriangles[i_96_++] = i_97_;
 						}
 					} else {
-						if (bool_94_ && method1879(Static2.anInt2726 + Class3.anInt118,
-								Class38.anInt2622 + Class3.anInt110, vertexScreenY[i_98_], vertexScreenY[i_99_],
-								vertexScreenY[i_100_], i_101_, i_102_, i_103_)) {
-							Class7_Sub3.aLongArray2685[Class14_Sub15.anInt2996++] = l;
+						if (bool_94_ && method1879(Static2.mouseOffFromCenterX + Class3.anInt118,
+								Class38.mouseOffFromCenterY + Class3.anInt110, vertexScreenX[i_98_], vertexScreenX[i_99_],
+								vertexScreenX[i_100_], i_101_, i_102_, i_103_)) {
+							Class7_Sub3.actions[Class14_Sub15.actionsLen++] = l;
 							bool_94_ = false;
 						}
-						if (((i_101_ - i_102_) * (vertexScreenY[i_100_] - vertexScreenY[i_99_])
-								- ((vertexScreenY[i_98_] - vertexScreenY[i_99_]) * (i_103_ - i_102_))) > 0) {
+						if (((i_101_ - i_102_) * (vertexScreenX[i_100_] - vertexScreenX[i_99_])
+								- ((vertexScreenX[i_98_] - vertexScreenX[i_99_]) * (i_103_ - i_102_))) > 0) {
 							aBooleanArray5002[i_97_] = false;
 							if (i_101_ < 0 || i_102_ < 0 || i_103_ < 0 || i_101_ > Class3.anInt109
 									|| i_102_ > Class3.anInt109 || i_103_ > Class3.anInt109)
@@ -592,6 +598,7 @@ public class ModelSD extends Class133_Sub7 {
 		}
 	}
 
+	@Override
 	public void method1857(AnimFrameLoader class14_sub2_sub15, int i, boolean bool) {
 		if (anIntArrayArray4959 != null && i != -1) {
 			AnimFrame animframe = class14_sub2_sub15.aClass143Array3951[i];
@@ -607,7 +614,7 @@ public class ModelSD extends Class133_Sub7 {
 						animframe.transformX[i_134_], animframe.transformY[i_134_],
 						animframe.transformZ[i_134_]);
 			}
-			aBoolean4974 = false;
+			boundsCalculated = false;
 		}
 	}
 
@@ -624,10 +631,11 @@ public class ModelSD extends Class133_Sub7 {
 		return true;
 	}
 
-	public int method1781() {
-		if (!aBoolean4974)
-			method1876();
-		return aShort4954;
+	@Override
+	public int getMinY() {
+		if (!boundsCalculated)
+			calculateBounds();
+		return minY;
 	}
 
 	public static int method1880(int i, int i_143_) {
@@ -639,29 +647,33 @@ public class ModelSD extends Class133_Sub7 {
 		return (i & 0xff80) + i_143_;
 	}
 
+	@Override
 	public void method1872() {
 		for (int i = 0; i < anInt4955; i++) {
-			anIntArray4962[i] = -anIntArray4962[i];
-			anIntArray4969[i] = -anIntArray4969[i];
+			vertexX[i] = -vertexX[i];
+			vertexZ[i] = -vertexZ[i];
 		}
-		aBoolean4974 = false;
+		boundsCalculated = false;
 	}
 
+	@Override
 	public void method1875() {
 		for (int i = 0; i < anInt4955; i++) {
-			int i_144_ = anIntArray4969[i];
-			anIntArray4969[i] = anIntArray4962[i];
-			anIntArray4962[i] = -i_144_;
+			int i_144_ = vertexZ[i];
+			vertexZ[i] = vertexX[i];
+			vertexX[i] = -i_144_;
 		}
-		aBoolean4974 = false;
+		boundsCalculated = false;
 	}
 
+	@Override
 	public int method1868() {
-		if (!aBoolean4974)
-			method1876();
-		return aShort4980;
+		if (!boundsCalculated)
+			calculateBounds();
+		return minZ;
 	}
 
+	@Override
 	public void method1859(AnimFrameLoader class14_sub2_sub15, int i) {
 		if (anIntArrayArray4959 != null && i != -1) {
 			AnimFrame animframe = class14_sub2_sub15.aClass143Array3951[i];
@@ -678,23 +690,25 @@ public class ModelSD extends Class133_Sub7 {
 							animframe.transformY[i_145_], animframe.transformZ[i_145_]);
 				}
 			}
-			aBoolean4974 = false;
+			boundsCalculated = false;
 		}
 	}
 
+	@Override
 	public Class133_Sub7 method1860(boolean bool, boolean bool_147_) {
 		if (!bool && aByteArray4986.length < triangleCount)
 			aByteArray4986 = new byte[triangleCount + 100];
 		return method1886(bool, aClass133_Sub7_Sub1_4975, aByteArray4986);
 	}
 
+	@Override
 	public void method1869(int i, int i_148_, int i_149_) {
 		for (int i_150_ = 0; i_150_ < anInt4955; i_150_++) {
-			anIntArray4962[i_150_] = anIntArray4962[i_150_] * i / 128;
-			anIntArray4958[i_150_] = anIntArray4958[i_150_] * i_148_ / 128;
-			anIntArray4969[i_150_] = anIntArray4969[i_150_] * i_149_ / 128;
+			vertexX[i_150_] = vertexX[i_150_] * i / 128;
+			vertexY[i_150_] = vertexY[i_150_] * i_148_ / 128;
+			vertexZ[i_150_] = vertexZ[i_150_] * i_149_ / 128;
 		}
-		aBoolean4974 = false;
+		boundsCalculated = false;
 	}
 
 	public static int method1881(int i) {
@@ -705,10 +719,11 @@ public class ModelSD extends Class133_Sub7 {
 		return i;
 	}
 
+	@Override
 	public int method1856() {
-		if (!aBoolean4974)
-			method1876();
-		return aShort4967;
+		if (!boundsCalculated)
+			calculateBounds();
+		return maxX;
 	}
 
 	public void method1882(int i) {
@@ -726,8 +741,8 @@ public class ModelSD extends Class133_Sub7 {
 		else
 			Class3.anInt116 = aByteArray4983[i] & 0xff;
 		if (i_157_ >= 50) {
-			anIntArray5004[i_153_] = vertexScreenX[i_154_];
-			anIntArray4996[i_153_] = vertexScreenY[i_154_];
+			anIntArray5004[i_153_] = vertexScreenY[i_154_];
+			anIntArray4996[i_153_] = vertexScreenX[i_154_];
 			anIntArray5008[i_153_++] = anIntArray4957[i];
 		} else {
 			int i_160_ = projectSceneX[i_154_];
@@ -751,8 +766,8 @@ public class ModelSD extends Class133_Sub7 {
 			}
 		}
 		if (i_158_ >= 50) {
-			anIntArray5004[i_153_] = vertexScreenX[i_155_];
-			anIntArray4996[i_153_] = vertexScreenY[i_155_];
+			anIntArray5004[i_153_] = vertexScreenY[i_155_];
+			anIntArray4996[i_153_] = vertexScreenX[i_155_];
 			anIntArray5008[i_153_++] = anIntArray4978[i];
 		} else {
 			int i_165_ = projectSceneX[i_155_];
@@ -776,8 +791,8 @@ public class ModelSD extends Class133_Sub7 {
 			}
 		}
 		if (i_159_ >= 50) {
-			anIntArray5004[i_153_] = vertexScreenX[i_156_];
-			anIntArray4996[i_153_] = vertexScreenY[i_156_];
+			anIntArray5004[i_153_] = vertexScreenY[i_156_];
+			anIntArray4996[i_153_] = vertexScreenX[i_156_];
 			anIntArray5008[i_153_++] = triangleInfo[i];
 		} else {
 			int i_170_ = projectSceneX[i_156_];
@@ -899,26 +914,28 @@ public class ModelSD extends Class133_Sub7 {
 		}
 	}
 
+	@Override
 	public void method1861(int i) {
 		int i_191_ = Class3.sin[i];
 		int i_192_ = Class3.cos[i];
 		for (int i_193_ = 0; i_193_ < anInt4955; i_193_++) {
-			int i_194_ = ((anIntArray4958[i_193_] * i_192_ - anIntArray4969[i_193_] * i_191_) >> 16);
-			anIntArray4969[i_193_] = (anIntArray4958[i_193_] * i_191_ + anIntArray4969[i_193_] * i_192_) >> 16;
-			anIntArray4958[i_193_] = i_194_;
+			int i_194_ = ((vertexY[i_193_] * i_192_ - vertexZ[i_193_] * i_191_) >> 16);
+			vertexZ[i_193_] = (vertexY[i_193_] * i_191_ + vertexZ[i_193_] * i_192_) >> 16;
+			vertexY[i_193_] = i_194_;
 		}
-		aBoolean4974 = false;
+		boundsCalculated = false;
 	}
 
+	@Override
 	public void method1858(int i) {
 		int i_195_ = Class3.sin[i];
 		int i_196_ = Class3.cos[i];
 		for (int i_197_ = 0; i_197_ < anInt4955; i_197_++) {
-			int i_198_ = ((anIntArray4958[i_197_] * i_195_ + anIntArray4962[i_197_] * i_196_) >> 16);
-			anIntArray4958[i_197_] = (anIntArray4958[i_197_] * i_196_ - anIntArray4962[i_197_] * i_195_) >> 16;
-			anIntArray4962[i_197_] = i_198_;
+			int i_198_ = ((vertexY[i_197_] * i_195_ + vertexX[i_197_] * i_196_) >> 16);
+			vertexY[i_197_] = (vertexY[i_197_] * i_196_ - vertexX[i_197_] * i_195_) >> 16;
+			vertexX[i_197_] = i_198_;
 		}
-		aBoolean4974 = false;
+		boundsCalculated = false;
 	}
 
 	public void drawTriangle(int i) {
@@ -935,12 +952,12 @@ public class ModelSD extends Class133_Sub7 {
 				Class3.anInt116 = aByteArray4983[i] & 0xff;
 			if (aShortArray4984 == null || aShortArray4984[i] == -1) {
 				if (triangleInfo[i] == -1)
-					Class3.method107(vertexScreenY[i_199_], vertexScreenY[i_200_], vertexScreenY[i_201_],
-							vertexScreenX[i_199_], vertexScreenX[i_200_], vertexScreenX[i_201_],
+					Class3.method107(vertexScreenX[i_199_], vertexScreenX[i_200_], vertexScreenX[i_201_],
+							vertexScreenY[i_199_], vertexScreenY[i_200_], vertexScreenY[i_201_],
 							Class3.anIntArray119[anIntArray4957[i]]);
 				else
-					Class3.method104(vertexScreenY[i_199_], vertexScreenY[i_200_], vertexScreenY[i_201_],
-							vertexScreenX[i_199_], vertexScreenX[i_200_], vertexScreenX[i_201_], anIntArray4957[i],
+					Class3.method104(vertexScreenX[i_199_], vertexScreenX[i_200_], vertexScreenX[i_201_],
+							vertexScreenY[i_199_], vertexScreenY[i_200_], vertexScreenY[i_201_], anIntArray4957[i],
 							anIntArray4978[i], triangleInfo[i]);
 			} else {
 				int i_202_;
@@ -957,14 +974,14 @@ public class ModelSD extends Class133_Sub7 {
 					i_204_ = i_201_;
 				}
 				if (triangleInfo[i] == -1)
-					Class3.method98(vertexScreenY[i_199_], vertexScreenY[i_200_], vertexScreenY[i_201_],
-							vertexScreenX[i_199_], vertexScreenX[i_200_], vertexScreenX[i_201_], anIntArray4957[i],
+					Class3.method98(vertexScreenX[i_199_], vertexScreenX[i_200_], vertexScreenX[i_201_],
+							vertexScreenY[i_199_], vertexScreenY[i_200_], vertexScreenY[i_201_], anIntArray4957[i],
 							anIntArray4957[i], anIntArray4957[i], projectSceneX[i_202_], projectSceneX[i_203_],
 							projectSceneX[i_204_], projectSceneY[i_202_], projectSceneY[i_203_], projectSceneY[i_204_],
 							projectSceneZ[i_202_], projectSceneZ[i_203_], projectSceneZ[i_204_], aShortArray4984[i]);
 				else
-					Class3.method98(vertexScreenY[i_199_], vertexScreenY[i_200_], vertexScreenY[i_201_],
-							vertexScreenX[i_199_], vertexScreenX[i_200_], vertexScreenX[i_201_], anIntArray4957[i],
+					Class3.method98(vertexScreenX[i_199_], vertexScreenX[i_200_], vertexScreenX[i_201_],
+							vertexScreenY[i_199_], vertexScreenY[i_200_], vertexScreenY[i_201_], anIntArray4957[i],
 							anIntArray4978[i], triangleInfo[i], projectSceneX[i_202_], projectSceneX[i_203_],
 							projectSceneX[i_204_], projectSceneY[i_202_], projectSceneY[i_203_], projectSceneY[i_204_],
 							projectSceneZ[i_202_], projectSceneZ[i_203_], projectSceneZ[i_204_], aShortArray4984[i]);
@@ -979,9 +996,9 @@ public class ModelSD extends Class133_Sub7 {
 			anInt4998 = 0;
 			anInt4995 = 0;
 			for (int i_210_ = 0; i_210_ < anInt4955; i_210_++) {
-				anInt5003 += anIntArray4962[i_210_];
-				anInt4998 += anIntArray4958[i_210_];
-				anInt4995 += anIntArray4969[i_210_];
+				anInt5003 += vertexX[i_210_];
+				anInt4998 += vertexY[i_210_];
+				anInt4995 += vertexZ[i_210_];
 				i_209_++;
 			}
 			if (i_209_ > 0) {
@@ -995,54 +1012,54 @@ public class ModelSD extends Class133_Sub7 {
 			}
 		} else if (i == 1) {
 			for (int i_211_ = 0; i_211_ < anInt4955; i_211_++) {
-				anIntArray4962[i_211_] += i_206_;
-				anIntArray4958[i_211_] += i_207_;
-				anIntArray4969[i_211_] += i_208_;
+				vertexX[i_211_] += i_206_;
+				vertexY[i_211_] += i_207_;
+				vertexZ[i_211_] += i_208_;
 			}
 		} else if (i == 2) {
 			for (int i_212_ = 0; i_212_ < anInt4955; i_212_++) {
-				anIntArray4962[i_212_] -= anInt5003;
-				anIntArray4958[i_212_] -= anInt4998;
-				anIntArray4969[i_212_] -= anInt4995;
+				vertexX[i_212_] -= anInt5003;
+				vertexY[i_212_] -= anInt4998;
+				vertexZ[i_212_] -= anInt4995;
 				if (i_208_ != 0) {
 					int i_213_ = Class3.sin[i_208_];
 					int i_214_ = Class3.cos[i_208_];
-					int i_215_ = ((anIntArray4958[i_212_] * i_213_ + anIntArray4962[i_212_] * i_214_ + 32767) >> 16);
-					anIntArray4958[i_212_] = (anIntArray4958[i_212_] * i_214_ - anIntArray4962[i_212_] * i_213_
+					int i_215_ = ((vertexY[i_212_] * i_213_ + vertexX[i_212_] * i_214_ + 32767) >> 16);
+					vertexY[i_212_] = (vertexY[i_212_] * i_214_ - vertexX[i_212_] * i_213_
 							+ 32767) >> 16;
-					anIntArray4962[i_212_] = i_215_;
+					vertexX[i_212_] = i_215_;
 				}
 				if (i_206_ != 0) {
 					int i_216_ = Class3.sin[i_206_];
 					int i_217_ = Class3.cos[i_206_];
-					int i_218_ = ((anIntArray4958[i_212_] * i_217_ - anIntArray4969[i_212_] * i_216_ + 32767) >> 16);
-					anIntArray4969[i_212_] = (anIntArray4958[i_212_] * i_216_ + anIntArray4969[i_212_] * i_217_
+					int i_218_ = ((vertexY[i_212_] * i_217_ - vertexZ[i_212_] * i_216_ + 32767) >> 16);
+					vertexZ[i_212_] = (vertexY[i_212_] * i_216_ + vertexZ[i_212_] * i_217_
 							+ 32767) >> 16;
-					anIntArray4958[i_212_] = i_218_;
+					vertexY[i_212_] = i_218_;
 				}
 				if (i_207_ != 0) {
 					int i_219_ = Class3.sin[i_207_];
 					int i_220_ = Class3.cos[i_207_];
-					int i_221_ = ((anIntArray4969[i_212_] * i_219_ + anIntArray4962[i_212_] * i_220_ + 32767) >> 16);
-					anIntArray4969[i_212_] = (anIntArray4969[i_212_] * i_220_ - anIntArray4962[i_212_] * i_219_
+					int i_221_ = ((vertexZ[i_212_] * i_219_ + vertexX[i_212_] * i_220_ + 32767) >> 16);
+					vertexZ[i_212_] = (vertexZ[i_212_] * i_220_ - vertexX[i_212_] * i_219_
 							+ 32767) >> 16;
-					anIntArray4962[i_212_] = i_221_;
+					vertexX[i_212_] = i_221_;
 				}
-				anIntArray4962[i_212_] += anInt5003;
-				anIntArray4958[i_212_] += anInt4998;
-				anIntArray4969[i_212_] += anInt4995;
+				vertexX[i_212_] += anInt5003;
+				vertexY[i_212_] += anInt4998;
+				vertexZ[i_212_] += anInt4995;
 			}
 		} else if (i == 3) {
 			for (int i_222_ = 0; i_222_ < anInt4955; i_222_++) {
-				anIntArray4962[i_222_] -= anInt5003;
-				anIntArray4958[i_222_] -= anInt4998;
-				anIntArray4969[i_222_] -= anInt4995;
-				anIntArray4962[i_222_] = anIntArray4962[i_222_] * i_206_ / 128;
-				anIntArray4958[i_222_] = anIntArray4958[i_222_] * i_207_ / 128;
-				anIntArray4969[i_222_] = anIntArray4969[i_222_] * i_208_ / 128;
-				anIntArray4962[i_222_] += anInt5003;
-				anIntArray4958[i_222_] += anInt4998;
-				anIntArray4969[i_222_] += anInt4995;
+				vertexX[i_222_] -= anInt5003;
+				vertexY[i_222_] -= anInt4998;
+				vertexZ[i_222_] -= anInt4995;
+				vertexX[i_222_] = vertexX[i_222_] * i_206_ / 128;
+				vertexY[i_222_] = vertexY[i_222_] * i_207_ / 128;
+				vertexZ[i_222_] = vertexZ[i_222_] * i_208_ / 128;
+				vertexX[i_222_] += anInt5003;
+				vertexY[i_222_] += anInt4998;
+				vertexZ[i_222_] += anInt4995;
 			}
 		} else if (i == 5) {
 			for (int i_223_ = 0; i_223_ < triangleCount; i_223_++) {
@@ -1056,10 +1073,11 @@ public class ModelSD extends Class133_Sub7 {
 		}
 	}
 
+	@Override
 	public int method1865() {
-		if (!aBoolean4974)
-			method1876();
-		return aShort4970;
+		if (!boundsCalculated)
+			calculateBounds();
+		return maxZ;
 	}
 
 	public void method1885(int i, int[] is, int i_225_, int i_226_, int i_227_) {
@@ -1075,9 +1093,9 @@ public class ModelSD extends Class133_Sub7 {
 					int[] is_232_ = anIntArrayArray4959[i_231_];
 					for (int i_233_ = 0; i_233_ < is_232_.length; i_233_++) {
 						int i_234_ = is_232_[i_233_];
-						anInt5003 += anIntArray4962[i_234_];
-						anInt4998 += anIntArray4958[i_234_];
-						anInt4995 += anIntArray4969[i_234_];
+						anInt5003 += vertexX[i_234_];
+						anInt4998 += vertexY[i_234_];
+						anInt4995 += vertexZ[i_234_];
 						i_229_++;
 					}
 				}
@@ -1098,9 +1116,9 @@ public class ModelSD extends Class133_Sub7 {
 					int[] is_237_ = anIntArrayArray4959[i_236_];
 					for (int i_238_ = 0; i_238_ < is_237_.length; i_238_++) {
 						int i_239_ = is_237_[i_238_];
-						anIntArray4962[i_239_] += i_225_;
-						anIntArray4958[i_239_] += i_226_;
-						anIntArray4969[i_239_] += i_227_;
+						vertexX[i_239_] += i_225_;
+						vertexY[i_239_] += i_226_;
+						vertexZ[i_239_] += i_227_;
 					}
 				}
 			}
@@ -1111,39 +1129,39 @@ public class ModelSD extends Class133_Sub7 {
 					int[] is_242_ = anIntArrayArray4959[i_241_];
 					for (int i_243_ = 0; i_243_ < is_242_.length; i_243_++) {
 						int i_244_ = is_242_[i_243_];
-						anIntArray4962[i_244_] -= anInt5003;
-						anIntArray4958[i_244_] -= anInt4998;
-						anIntArray4969[i_244_] -= anInt4995;
+						vertexX[i_244_] -= anInt5003;
+						vertexY[i_244_] -= anInt4998;
+						vertexZ[i_244_] -= anInt4995;
 						if (i_227_ != 0) {
 							int i_245_ = Class3.sin[i_227_];
 							int i_246_ = Class3.cos[i_227_];
-							int i_247_ = ((anIntArray4958[i_244_] * i_245_ + anIntArray4962[i_244_] * i_246_
+							int i_247_ = ((vertexY[i_244_] * i_245_ + vertexX[i_244_] * i_246_
 									+ 32767) >> 16);
-							anIntArray4958[i_244_] = ((anIntArray4958[i_244_] * i_246_ - anIntArray4962[i_244_] * i_245_
+							vertexY[i_244_] = ((vertexY[i_244_] * i_246_ - vertexX[i_244_] * i_245_
 									+ 32767) >> 16);
-							anIntArray4962[i_244_] = i_247_;
+							vertexX[i_244_] = i_247_;
 						}
 						if (i_225_ != 0) {
 							int i_248_ = Class3.sin[i_225_];
 							int i_249_ = Class3.cos[i_225_];
-							int i_250_ = ((anIntArray4958[i_244_] * i_249_ - anIntArray4969[i_244_] * i_248_
+							int i_250_ = ((vertexY[i_244_] * i_249_ - vertexZ[i_244_] * i_248_
 									+ 32767) >> 16);
-							anIntArray4969[i_244_] = ((anIntArray4958[i_244_] * i_248_ + anIntArray4969[i_244_] * i_249_
+							vertexZ[i_244_] = ((vertexY[i_244_] * i_248_ + vertexZ[i_244_] * i_249_
 									+ 32767) >> 16);
-							anIntArray4958[i_244_] = i_250_;
+							vertexY[i_244_] = i_250_;
 						}
 						if (i_226_ != 0) {
 							int i_251_ = Class3.sin[i_226_];
 							int i_252_ = Class3.cos[i_226_];
-							int i_253_ = ((anIntArray4969[i_244_] * i_251_ + anIntArray4962[i_244_] * i_252_
+							int i_253_ = ((vertexZ[i_244_] * i_251_ + vertexX[i_244_] * i_252_
 									+ 32767) >> 16);
-							anIntArray4969[i_244_] = ((anIntArray4969[i_244_] * i_252_ - anIntArray4962[i_244_] * i_251_
+							vertexZ[i_244_] = ((vertexZ[i_244_] * i_252_ - vertexX[i_244_] * i_251_
 									+ 32767) >> 16);
-							anIntArray4962[i_244_] = i_253_;
+							vertexX[i_244_] = i_253_;
 						}
-						anIntArray4962[i_244_] += anInt5003;
-						anIntArray4958[i_244_] += anInt4998;
-						anIntArray4969[i_244_] += anInt4995;
+						vertexX[i_244_] += anInt5003;
+						vertexY[i_244_] += anInt4998;
+						vertexZ[i_244_] += anInt4995;
 					}
 				}
 			}
@@ -1154,15 +1172,15 @@ public class ModelSD extends Class133_Sub7 {
 					int[] is_256_ = anIntArrayArray4959[i_255_];
 					for (int i_257_ = 0; i_257_ < is_256_.length; i_257_++) {
 						int i_258_ = is_256_[i_257_];
-						anIntArray4962[i_258_] -= anInt5003;
-						anIntArray4958[i_258_] -= anInt4998;
-						anIntArray4969[i_258_] -= anInt4995;
-						anIntArray4962[i_258_] = anIntArray4962[i_258_] * i_225_ / 128;
-						anIntArray4958[i_258_] = anIntArray4958[i_258_] * i_226_ / 128;
-						anIntArray4969[i_258_] = anIntArray4969[i_258_] * i_227_ / 128;
-						anIntArray4962[i_258_] += anInt5003;
-						anIntArray4958[i_258_] += anInt4998;
-						anIntArray4969[i_258_] += anInt4995;
+						vertexX[i_258_] -= anInt5003;
+						vertexY[i_258_] -= anInt4998;
+						vertexZ[i_258_] -= anInt4995;
+						vertexX[i_258_] = vertexX[i_258_] * i_225_ / 128;
+						vertexY[i_258_] = vertexY[i_258_] * i_226_ / 128;
+						vertexZ[i_258_] = vertexZ[i_258_] * i_227_ / 128;
+						vertexX[i_258_] += anInt5003;
+						vertexY[i_258_] += anInt4998;
+						vertexZ[i_258_] += anInt4995;
 					}
 				}
 			}
@@ -1185,34 +1203,36 @@ public class ModelSD extends Class133_Sub7 {
 		}
 	}
 
+	@Override
 	public int method1866() {
-		if (!aBoolean4974)
-			method1876();
-		return aShort4963;
+		if (!boundsCalculated)
+			calculateBounds();
+		return boundingPlaneRadius;
 	}
 
+	@Override
 	public void method1871() {
 		for (int i = 0; i < anInt4955; i++) {
-			int i_265_ = anIntArray4962[i];
-			anIntArray4962[i] = anIntArray4969[i];
-			anIntArray4969[i] = -i_265_;
+			int i_265_ = vertexX[i];
+			vertexX[i] = vertexZ[i];
+			vertexZ[i] = -i_265_;
 		}
-		aBoolean4974 = false;
+		boundsCalculated = false;
 	}
 
 	public Class133_Sub7 method1886(boolean bool, ModelSD modelsd_266_, byte[] is) {
 		modelsd_266_.anInt4955 = anInt4955;
 		modelsd_266_.triangleCount = triangleCount;
 		modelsd_266_.anInt4966 = anInt4966;
-		if (modelsd_266_.anIntArray4962 == null || modelsd_266_.anIntArray4962.length < anInt4955) {
-			modelsd_266_.anIntArray4962 = new int[anInt4955 + 100];
-			modelsd_266_.anIntArray4958 = new int[anInt4955 + 100];
-			modelsd_266_.anIntArray4969 = new int[anInt4955 + 100];
+		if (modelsd_266_.vertexX == null || modelsd_266_.vertexX.length < anInt4955) {
+			modelsd_266_.vertexX = new int[anInt4955 + 100];
+			modelsd_266_.vertexY = new int[anInt4955 + 100];
+			modelsd_266_.vertexZ = new int[anInt4955 + 100];
 		}
 		for (int i = 0; i < anInt4955; i++) {
-			modelsd_266_.anIntArray4962[i] = anIntArray4962[i];
-			modelsd_266_.anIntArray4958[i] = anIntArray4958[i];
-			modelsd_266_.anIntArray4969[i] = anIntArray4969[i];
+			modelsd_266_.vertexX[i] = vertexX[i];
+			modelsd_266_.vertexY[i] = vertexY[i];
+			modelsd_266_.vertexZ[i] = vertexZ[i];
 		}
 		if (bool)
 			modelsd_266_.aByteArray4983 = aByteArray4983;
@@ -1240,20 +1260,21 @@ public class ModelSD extends Class133_Sub7 {
 		modelsd_266_.anIntArray4964 = anIntArray4964;
 		modelsd_266_.anIntArrayArray4959 = anIntArrayArray4959;
 		modelsd_266_.anIntArrayArray4961 = anIntArrayArray4961;
-		modelsd_266_.aBoolean3687 = aBoolean3687;
-		modelsd_266_.aBoolean4974 = false;
+		modelsd_266_.haveActions = haveActions;
+		modelsd_266_.boundsCalculated = false;
 		return modelsd_266_;
 	}
 
+	@Override
 	public void method1874(int i) {
 		int i_267_ = Class3.sin[i];
 		int i_268_ = Class3.cos[i];
 		for (int i_269_ = 0; i_269_ < anInt4955; i_269_++) {
-			int i_270_ = ((anIntArray4969[i_269_] * i_267_ + anIntArray4962[i_269_] * i_268_) >> 16);
-			anIntArray4969[i_269_] = (anIntArray4969[i_269_] * i_268_ - anIntArray4962[i_269_] * i_267_) >> 16;
-			anIntArray4962[i_269_] = i_270_;
+			int i_270_ = ((vertexZ[i_269_] * i_267_ + vertexX[i_269_] * i_268_) >> 16);
+			vertexZ[i_269_] = (vertexZ[i_269_] * i_268_ - vertexX[i_269_] * i_267_) >> 16;
+			vertexX[i_269_] = i_270_;
 		}
-		aBoolean4974 = false;
+		boundsCalculated = false;
 	}
 
 	public static void method1486(int i, int i_271_, byte i_272_, int[] is, int[] is_273_) {
@@ -1296,9 +1317,9 @@ public class ModelSD extends Class133_Sub7 {
 		class133_sub2.method1826();
 		class133_sub2.method1823();
 		anInt4955 = class133_sub2.anInt3521;
-		anIntArray4962 = class133_sub2.anIntArray3530;
-		anIntArray4958 = class133_sub2.anIntArray3526;
-		anIntArray4969 = class133_sub2.anIntArray3510;
+		vertexX = class133_sub2.anIntArray3530;
+		vertexY = class133_sub2.anIntArray3526;
+		vertexZ = class133_sub2.anIntArray3510;
 		triangleCount = class133_sub2.anInt3547;
 		triangleVertexA = class133_sub2.anIntArray3549;
 		triangleVertexB = class133_sub2.anIntArray3507;
@@ -1307,7 +1328,7 @@ public class ModelSD extends Class133_Sub7 {
 		aByteArray4983 = class133_sub2.aByteArray3541;
 		anIntArrayArray4959 = class133_sub2.anIntArrayArray3545;
 		anIntArrayArray4961 = class133_sub2.anIntArrayArray3509;
-		int i_285_ = (int) Math.sqrt((double) (i_282_ * i_282_ + i_283_ * i_283_ + i_284_ * i_284_));
+		int i_285_ = (int) Math.sqrt(i_282_ * i_282_ + i_283_ * i_283_ + i_284_ * i_284_);
 		int i_286_ = i_281_ * i_285_ >> 8;
 		anIntArray4957 = new int[triangleCount];
 		anIntArray4978 = new int[triangleCount];

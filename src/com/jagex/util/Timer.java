@@ -12,7 +12,7 @@ public abstract class Timer {
 		do {
 			Timer timer;
 			try {
-				timer = (Timer) Class.forName("com.jagex.util.Class99_Sub1").newInstance();
+				timer = (Timer) Class.forName("com.jagex.util.NanoTimer").newInstance();
 			} catch (Throwable throwable) {
 				break;
 			}

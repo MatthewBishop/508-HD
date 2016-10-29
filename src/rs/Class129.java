@@ -5,8 +5,6 @@ package rs;
 
 import java.awt.Component;
 
-import com.jagex.io.Buffer;
-
 public abstract class Class129 {
 	public static Class124 aClass124_2129;
 	public static int anInt2131 = 0;
@@ -15,7 +13,7 @@ public abstract class Class129 {
 	public static int anInt2136 = 0;
 
 	static {
-		aClass124_2134 = Class14_Sub2_Sub2.method263(1178, "Type");
+		aClass124_2134 = Class124.method263(1178, "Type");
 		aClass124_2129 = aClass124_2134;
 	}
 

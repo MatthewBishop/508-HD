@@ -80,18 +80,12 @@ public class Class67 {
 							class133_sub3_13_ = class133_sub3_15_;
 					}
 				}
-				long l = (long) ((i << 39) + (i_9_ + 1610612736));
+				long l = (i << 39) + (i_9_ + 1610612736);
 				Canvas_Sub2.method61(Class14_Sub2_Sub3.anInt3785, i_9_, i,
 						JunkTex.method1017(i_9_ * 128 + 64, (Class14_Sub2_Sub3.anInt3785), (byte) -119, i * 128 + 64),
 						class14_sub2_sub4.aClass133_Sub3_3789, l, class133_sub3, class133_sub3_13_);
 			}
 		}
-	}
-
-	public static int method1301(byte i, int i_16_, int i_17_, int i_18_) {
-		int i_19_ = -42 / ((i + 17) / 41);
-		int i_20_ = i_17_ <= i_16_ ? i_18_ >= i_16_ ? i_16_ : i_18_ : i_17_;
-		return i_20_;
 	}
 
 	public static Class14_Sub2_Sub19 method1302(boolean bool) {

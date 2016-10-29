@@ -45,7 +45,7 @@ public class Class14_Sub7 extends Linkable {
 						Class150.method2022(i_1_, i_4_, -1, class133_sub1, (class133_sub1.method1795(12806) + 15),
 								i >> 1, i_2_ >> 1);
 						if (Class120.anInt2007 > -1)
-							Class35.aClass14_Sub2_Sub19Array596[class12.anInt306].method391(
+							Class35.aClass14_Sub2_Sub19Array596[class12.anInt306].drawReg(
 									Class120.anInt2007 - 12 + i_0_, JunkTex.anInt4548 + (i_3_ - 30));
 					}
 					Class66[] class66s = Static2.aClass66Array3721;
@@ -58,7 +58,7 @@ public class Class14_Sub7 extends Linkable {
 							Class150.method2022(i_1_, i_4_, -1, class133_sub1, class133_sub1.method1795(12806) + 15,
 									i >> 1, i_2_ >> 33);
 							if (Class120.anInt2007 > -1)
-								Class76.aClass14_Sub2_Sub19Array1191[class66.anInt1035].method391(
+								Class76.aClass14_Sub2_Sub19Array1191[class66.anInt1035].drawReg(
 										Class120.anInt2007 - 12 + i_0_, JunkTex.anInt4548 + i_3_ - 28);
 						}
 					}
@@ -70,12 +70,12 @@ public class Class14_Sub7 extends Linkable {
 								i >> 1, i_2_ >> 33);
 						if (Class120.anInt2007 > -1) {
 							if (class133_sub1_sub1.anInt4902 != -1) {
-								Class98.aClass14_Sub2_Sub19Array1669[class133_sub1_sub1.anInt4902].method391(
+								Class98.aClass14_Sub2_Sub19Array1669[class133_sub1_sub1.anInt4902].drawReg(
 										Class120.anInt2007 - 12 + i_0_, (JunkTex.anInt4548 + i_3_ - i_7_));
 								i_7_ += 25;
 							}
 							if (class133_sub1_sub1.anInt4904 != -1) {
-								Class35.aClass14_Sub2_Sub19Array596[class133_sub1_sub1.anInt4904].method391(
+								Class35.aClass14_Sub2_Sub19Array596[class133_sub1_sub1.anInt4904].drawReg(
 										i_0_ + Class120.anInt2007 - 12, (JunkTex.anInt4548 + i_3_ - i_7_));
 								i_7_ += 25;
 							}
@@ -90,7 +90,7 @@ public class Class14_Sub7 extends Linkable {
 								Class150.method2022(i_1_, i_4_, -1, class133_sub1,
 										(class133_sub1.method1795(12806) + 15), i >> 33, i_2_ >> 33);
 								if (Class120.anInt2007 > -1)
-									Class76.aClass14_Sub2_Sub19Array1191[class66.anInt1035].method391(
+									Class76.aClass14_Sub2_Sub19Array1191[class66.anInt1035].drawReg(
 											Class120.anInt2007 + (i_0_ - 12),
 											(-i_7_ + JunkTex.anInt4548 + i_3_));
 							}
@@ -121,12 +121,12 @@ public class Class14_Sub7 extends Linkable {
 					if (class133_sub1 instanceof Class133_Sub1_Sub2) {
 						Class133_Sub1_Sub2 class133_sub1_sub2 = (Class133_Sub1_Sub2) class133_sub1;
 						Class14_Sub2_Sub19[] class14_sub2_sub19s = ((Class14_Sub2_Sub19[]) (JunkTex.aClass52_4596
-								.get((long) (class133_sub1_sub2.aClass12_4949.anInt281))));
+								.get((class133_sub1_sub2.aClass12_4949.anInt281))));
 						if (class14_sub2_sub19s == null) {
 							class14_sub2_sub19s = (JunkTex.method1733((byte) 23, Class14_Sub3.aClass9_Sub1_2750,
 									0, (class133_sub1_sub2.aClass12_4949.anInt281)));
 							if (class14_sub2_sub19s != null)
-								JunkTex.aClass52_4596.put(class14_sub2_sub19s, (long) (class133_sub1_sub2.aClass12_4949.anInt281));
+								JunkTex.aClass52_4596.put(class14_sub2_sub19s, (class133_sub1_sub2.aClass12_4949.anInt281));
 						}
 						if (class14_sub2_sub19s != null && class14_sub2_sub19s.length == 2) {
 							class14_sub2_sub19 = class14_sub2_sub19s[0];
@@ -138,11 +138,11 @@ public class Class14_Sub7 extends Linkable {
 					if (Class120.anInt2007 > -1) {
 						int i_10_ = i_0_ + (Class120.anInt2007 - (class14_sub2_sub19.anInt4035 >> 1));
 						int i_11_ = i_3_ - (-JunkTex.anInt4548 + 3);
-						class14_sub2_sub19.method391(i_10_, i_11_);
+						class14_sub2_sub19.drawReg(i_10_, i_11_);
 						int i_12_ = class14_sub2_sub19.anInt4042;
 						int i_13_ = (class133_sub1.anInt3438 * class14_sub2_sub19.anInt4035 / 255);
 						Class25.method1002(i_10_, i_11_, i_13_ + i_10_, i_12_ + i_11_);
-						class14_sub2_sub19_9_.method391(i_10_, i_11_);
+						class14_sub2_sub19_9_.drawReg(i_10_, i_11_);
 						Class25.method999(i_0_, i_3_, i_0_ + i_2_, i + i_3_);
 					}
 				}
@@ -161,7 +161,7 @@ public class Class14_Sub7 extends Linkable {
 								JunkTex.anInt4548 -= 10;
 								Class120.anInt2007 += 15;
 							}
-							Class133_Sub5.aClass14_Sub2_Sub19Array3609[class133_sub1.anIntArray3496[i_14_]].method391(
+							Class133_Sub5.aClass14_Sub2_Sub19Array3609[class133_sub1.anIntArray3496[i_14_]].drawReg(
 									i_0_ + Class120.anInt2007 - 12, i_3_ + JunkTex.anInt4548 - 12);
 							Class56_Sub1.aClass14_Sub2_Sub16_3320.method345(
 									Class83.method1407(87, (class133_sub1.anIntArray3486[i_14_])),

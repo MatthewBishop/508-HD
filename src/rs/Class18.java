@@ -7,18 +7,18 @@ public class Class18 {
 	public static int anInt411;
 	public int[][] anIntArrayArray413;
 	public int anInt414;
-	public static Class124 aClass124_415 = Class14_Sub2_Sub2.method263(1178, "unzap");
+	public static Class124 aClass124_415 = Class124.method263(1178, "unzap");
 	public static Class124 aClass124_418;
 	public int anInt419;
 
 	static {
 		anInt411 = 0;
-		aClass124_418 = Class14_Sub2_Sub2.method263(1178, "Cabbage");
+		aClass124_418 = Class124.method263(1178, "Cabbage");
 	}
 
 	public byte[] method961(boolean bool, byte[] is) {
 		if (anIntArrayArray413 != null) {
-			int i = ((int) ((long) is.length * (long) anInt414 / (long) anInt419) + 14);
+			int i = ((int) ((long) is.length * (long) anInt414 / anInt419) + 14);
 			int[] is_0_ = new int[i];
 			int i_1_ = 0;
 			int i_2_ = 0;
@@ -65,14 +65,14 @@ public class Class18 {
 			return i_13_;
 		}
 		if (anIntArrayArray413 != null)
-			i = (int) ((long) anInt414 * (long) i / (long) anInt419) + 6;
+			i = (int) ((long) anInt414 * (long) i / anInt419) + 6;
 		int i_14_ = i;
 		return i_14_;
 	}
 
 	public int method964(byte i, int i_15_) {
 		if (anIntArrayArray413 != null)
-			i_15_ = (int) ((long) i_15_ * (long) anInt414 / (long) anInt419);
+			i_15_ = (int) ((long) i_15_ * (long) anInt414 / anInt419);
 		if (i != -56) {
 			int i_16_ = -30;
 			return i_16_;
@@ -101,10 +101,10 @@ public class Class18 {
 					i_23_ = 14;
 				for (/**/; i_22_ < i_23_; i_22_++) {
 					double d_24_ = d;
-					double d_25_ = ((double) i_22_ - d_21_) * 3.141592653589793;
+					double d_25_ = (i_22_ - d_21_) * 3.141592653589793;
 					if (-1.0E-4 > d_25_ || 1.0E-4 < d_25_)
 						d_24_ *= Math.sin(d_25_) / d_25_;
-					d_24_ *= Math.cos(((double) i_22_ - d_21_) * 0.2243994752564138) * 0.46 + 0.54;
+					d_24_ *= Math.cos((i_22_ - d_21_) * 0.2243994752564138) * 0.46 + 0.54;
 					is[i_22_] = (int) Math.floor(d_24_ * 65536.0 + 0.5);
 				}
 			}

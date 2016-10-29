@@ -9,9 +9,9 @@ import com.jagex.rt4.RT4GL;
 public class Class133_Sub1_Sub2 extends Class133_Sub1 {
 	public static int[] anIntArray4944 = new int[2000];
 	public static Class14_Sub23[] aClass14_Sub23Array4945;
-	public static Class124 aClass124_4948 = Class14_Sub2_Sub2.method263(1178, "scrollen:");
+	public static Class124 aClass124_4948 = Class124.method263(1178, "scrollen:");
 	public Class12 aClass12_4949;
-	public static Class124 aClass124_4950 = Class14_Sub2_Sub2.method263(1178, "weiss:");
+	public static Class124 aClass124_4950 = Class124.method263(1178, "weiss:");
 	public static long[] aLongArray4951 = new long[200];
 
 	public static void method1811(int i) {
@@ -24,11 +24,13 @@ public class Class133_Sub1_Sub2 extends Class133_Sub1 {
 		aClass124_4948 = null;
 	}
 
-	public int method1781() {
+	@Override
+	public int getMinY() {
 		int i = anInt3449;
 		return i;
 	}
 
+	@Override
 	public boolean method1804(byte i) {
 		if (aClass12_4949 == null) {
 			boolean bool = false;
@@ -40,14 +42,15 @@ public class Class133_Sub1_Sub2 extends Class133_Sub1 {
 		return bool;
 	}
 
-	public void method1792(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, long l) {
+	@Override
+	public void render(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, long l) {
 		if (aClass12_4949 != null) {
 			Animation animation = (anInt3445 == -1 || anInt3467 != 0 ? null : JunkTex.method1129(anInt3445, 32));
 			Animation class46_7_ = (anInt3452 == -1 || anInt3452 == anInt3433 && animation != null ? null
 					: JunkTex.method1129(anInt3452, -39));
 			Class133_Sub7 class133_sub7 = aClass12_4949.method209(anInt3483, anInt3501, animation, class46_7_, -55);
 			if (class133_sub7 != null) {
-				anInt3449 = class133_sub7.method1781();
+				anInt3449 = class133_sub7.getMinY();
 				Class12 class12 = aClass12_4949;
 				if (class12.anIntArray329 != null)
 					class12 = class12.method217((byte) -18);
@@ -61,7 +64,7 @@ public class Class133_Sub1_Sub2 extends Class133_Sub1 {
 					float f_9_ = RT4GL.method1624();
 					RT4GL.method1646();
 					RT4GL.method1635(f, f_9_ - 150.0F);
-					class133_sub7_8_.method1792(0, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, -1L);
+					class133_sub7_8_.render(0, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, -1L);
 					RT4GL.method1625();
 					RT4GL.method1635(f, f_9_);
 				}
@@ -103,14 +106,14 @@ public class Class133_Sub1_Sub2 extends Class133_Sub1 {
 					if (i_12_ > i_27_ + i_31_)
 						i_12_ = i_27_ + i_31_;
 					if (i_15_ != 0) {
-						i_10_ = (int) (Math.atan2((double) (-i_37_ + i_38_), (double) i_15_) * 325.95) & 0x7ff;
+						i_10_ = (int) (Math.atan2(-i_37_ + i_38_, i_15_) * 325.95) & 0x7ff;
 						if (i_10_ != 0)
 							class133_sub7.method1861(i_10_);
 					}
 					int i_39_ = i_36_ > i_27_ ? i_27_ : i_36_;
 					int i_40_ = i_22_ < i_31_ ? i_22_ : i_31_;
 					if (i_13_ != 0) {
-						i_11_ = (int) (Math.atan2((double) (i_40_ - i_39_), (double) i_13_) * 325.95) & 0x7ff;
+						i_11_ = (int) (Math.atan2(i_40_ - i_39_, i_13_) * 325.95) & 0x7ff;
 						if (i_11_ != 0)
 							class133_sub7.method1858(i_11_);
 					}
@@ -135,12 +138,12 @@ public class Class133_Sub1_Sub2 extends Class133_Sub1 {
 					}
 				}
 				if (aClass12_4949.anInt334 == 1)
-					class133_sub7.aBoolean3687 = true;
-				class133_sub7.method1792(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, l);
+					class133_sub7.haveActions = true;
+				class133_sub7.render(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, l);
 				if (class133_sub7_41_ != null) {
 					if (aClass12_4949.anInt334 == 1)
-						class133_sub7_41_.aBoolean3687 = true;
-					class133_sub7_41_.method1792(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, l);
+						class133_sub7_41_.haveActions = true;
+					class133_sub7_41_.render(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, l);
 				}
 			}
 		}

@@ -5,13 +5,14 @@ package rs;
 
 import java.awt.Font;
 
+import com.jagex.io.js5.Class9;
 import com.jagex.rt4.Class25;
 
 public class Class123 {
 	public static int anInt2062;
 	public static Font aFont2063;
-	public static Class124 aClass124_2064 = Class14_Sub2_Sub2.method263(1178, "Started 3d library");
-	public static Class124 aClass124_2065 = Class14_Sub2_Sub2.method263(1178, ":duelstake:");
+	public static Class124 aClass124_2064 = Class124.method263(1178, "Started 3d library");
+	public static Class124 aClass124_2065 = Class124.method263(1178, ":duelstake:");
 	public static float aFloat2067;
 	public static Class124 aClass124_2068 = aClass124_2064;
 
@@ -41,7 +42,7 @@ public class Class123 {
 		Class25.method1003(i_1_ + 1, i_4_ + 18, i_3_ - 2, i_2_ - 19, 0);
 		Class133_Sub3.aClass14_Sub2_Sub16_3567.method364(Class64.aClass124_1011, i_1_ + 3, i_4_ + 14, i_5_, -1);
 		int i_6_ = JunkTex.anInt4640;
-		int i_7_ = Class107.anInt1804;
+		int i_7_ = ProceduralTexture.anInt1804;
 		if (i <= 115)
 			method1661(-17);
 		for (int i_8_ = 0; i_8_ < JunkTex.anInt4729; i_8_++) {

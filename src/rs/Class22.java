@@ -7,6 +7,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 
+import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.rt4.Class148_Sub1;
 
 public class Class22 {

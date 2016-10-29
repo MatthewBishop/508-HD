@@ -51,10 +51,4 @@ public class Class70 {
 			method1312(82);
 	}
 
-	public static void method1314(int i, int i_2_, int i_3_, int i_4_) {
-		JunkTex.anInt4327 = i_3_;
-		Class14_Sub17.anInt3005 = i;
-		Class118.anInt1982 = i_4_;
-		Class59.anInt955 = i_2_;
-	}
 }

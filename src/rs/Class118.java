@@ -11,22 +11,20 @@ public class Class118 {
 	public static Class124 aClass124_1973;
 	public static Class124 aClass124_1975;
 	public static volatile int anInt1976 = 0;
-	public static Class124 aClass124_1978 = Class14_Sub2_Sub2.method263(1178, "white:");
+	public static Class124 aClass124_1978 = Class124.method263(1178, "white:");
 	public static Class124 aClass124_1979 = aClass124_1978;
 	public static Class124 aClass124_1981;
-	public static int anInt1982;
 	public static Class124 aClass124_1985;
 	public static Class124 aClass124_1988;
 	public static Class124 aClass124_1989;
 
 	static {
-		aClass124_1975 = Class14_Sub2_Sub2.method263(1178, "Attack");
-		aClass124_1985 = Class14_Sub2_Sub2.method263(1178, "Members only world");
+		aClass124_1975 = Class124.method263(1178, "Attack");
+		aClass124_1985 = Class124.method263(1178, "Members only world");
 		aClass124_1973 = aClass124_1975;
 		aClass124_1988 = aClass124_1978;
-		aClass124_1989 = Class14_Sub2_Sub2.method263(1178, "; Max)2Age=");
+		aClass124_1989 = Class124.method263(1178, "; Max)2Age=");
 		aClass124_1981 = aClass124_1985;
-		anInt1982 = 0;
 	}
 
 	public static void method1603(int i, Class133_Sub1_Sub1 class133_sub1_sub1, int i_0_, int i_1_) {
@@ -182,7 +180,7 @@ public class Class118 {
 			return class14_sub2_sub12;
 		}
 		Class14_Sub2_Sub12 class14_sub2_sub12 = ((Class14_Sub2_Sub12) Class14_Sub2_Sub5.aClass20_3815
-				.get((long) i));
+				.get(i));
 		if (class14_sub2_sub12 != null) {
 			Class14_Sub2_Sub12 class14_sub2_sub12_17_ = class14_sub2_sub12;
 			return class14_sub2_sub12_17_;
@@ -213,7 +211,7 @@ public class Class118 {
 				while (i_24_-- > 0) {
 					int i_25_ = class14_sub10.getInt((byte) -102);
 					int i_26_ = class14_sub10.getInt((byte) -123);
-					hashTable.put((long) i_25_, new Class14_Sub1(i_26_));
+					hashTable.put(i_25_, new Class14_Sub1(i_26_));
 				}
 			}
 		}
@@ -233,7 +231,7 @@ public class Class118 {
 				class14_sub2_sub12_18_.anIntArray3900[i_27_] = class14_sub10.getInt((byte) -92);
 			class14_sub2_sub12_18_.anIntArray3907[i_27_++] = i_28_;
 		}
-		Class14_Sub2_Sub5.aClass20_3815.put(class14_sub2_sub12_18_, (long) i);
+		Class14_Sub2_Sub5.aClass20_3815.put(class14_sub2_sub12_18_, i);
 		class14_sub2_sub12 = class14_sub2_sub12_18_;
 		return class14_sub2_sub12;
 	}
@@ -304,7 +302,7 @@ public class Class118 {
 		Class14_Sub2_Sub12.aByteArrayArray3913 = new byte[i_38_][];
 		JunkTex.anIntArray3955 = new int[i_38_];
 		Class134.anIntArray2590 = new int[i_38_];
-		Class5.aByteArrayArray139 = new byte[i_38_][];
+		Static2.aByteArrayArray139 = new byte[i_38_][];
 		Class150.anIntArray2422 = new int[i_38_];
 		JunkTex.aByteArrayArray4556 = new byte[i_38_][];
 		if (i != -13873)

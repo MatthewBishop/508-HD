@@ -4,14 +4,15 @@
 package rs;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 
 public class Class7_Sub3_Sub1 extends Class7_Sub3 {
-	public static Class124 aClass124_3706 = Class14_Sub2_Sub2.method263(1178, "Hidden)2");
+	public static Class124 aClass124_3706 = Class124.method263(1178, "Hidden)2");
 	public static Class124 aClass124_3710 = null;
-	public static Class124 aClass124_3711 = Class14_Sub2_Sub2.method263(1178,
+	public static Class124 aClass124_3711 = Class124.method263(1178,
 			" steht bereits auf Ihrer Ignorieren)2Liste(Q");
 	public static int anInt3714 = 0;
-	public static Class124 aClass124_3715 = Class14_Sub2_Sub2.method263(1178, "Welt");
+	public static Class124 aClass124_3715 = Class124.method263(1178, "Welt");
 	public static int anInt3718;
 	public static int anInt3719;
 

@@ -4,13 +4,14 @@
 package rs;
 
 import com.jagex.cache.anim.Animation;
+import com.jagex.io.js5.Class9_Sub1;
 
 public class Class102 {
 	public static int anInt1702;
 	public long aLong1706;
 	public static boolean aBoolean1707;
 	public static int anInt1709;
-	public static Class124 aClass124_1710 = Class14_Sub2_Sub2.method263(1178, "Stufe)2");
+	public static Class124 aClass124_1710 = Class124.method263(1178, "Stufe)2");
 	public boolean aBoolean1711;
 	public static Class9_Sub1 aClass9_Sub1_1712;
 	public long aLong1713;
@@ -56,7 +57,7 @@ public class Class102 {
 					l ^= 0xffffffffL;
 				} else {
 					is[3] = Class66.method1294(1073741824, class46_2_.playerMainhand);
-					l ^= (long) is[3];
+					l ^= is[3];
 				}
 			}
 		}
@@ -150,16 +151,16 @@ public class Class102 {
 		aLong1713 = -1L;
 		long[] ls = Class60.aLongArray967;
 		for (int i = 0; i < 12; i++) {
-			aLong1713 = aLong1713 >>> 8 ^ ls[(int) (((long) (anIntArray1715[i] >> 56) ^ aLong1713) & 0xffL)];
-			aLong1713 = aLong1713 >>> 8 ^ ls[(int) (((long) (anIntArray1715[i] >> 16) ^ aLong1713) & 0xffL)];
-			aLong1713 = (aLong1713 >>> 8 ^ ls[(int) ((aLong1713 ^ (long) (anIntArray1715[i] >> 40)) & 0xffL)]);
-			aLong1713 = aLong1713 >>> 8 ^ ls[(int) (((long) anIntArray1715[i] ^ aLong1713) & 0xffL)];
+			aLong1713 = aLong1713 >>> 8 ^ ls[(int) ((anIntArray1715[i] >> 56 ^ aLong1713) & 0xffL)];
+			aLong1713 = aLong1713 >>> 8 ^ ls[(int) ((anIntArray1715[i] >> 16 ^ aLong1713) & 0xffL)];
+			aLong1713 = (aLong1713 >>> 8 ^ ls[(int) ((aLong1713 ^ anIntArray1715[i] >> 40) & 0xffL)]);
+			aLong1713 = aLong1713 >>> 8 ^ ls[(int) ((anIntArray1715[i] ^ aLong1713) & 0xffL)];
 		}
 		if (bool)
 			anIntArray1722 = null;
 		for (int i = 0; i < 5; i++)
-			aLong1713 = aLong1713 >>> 8 ^ ls[(int) ((aLong1713 ^ (long) anIntArray1722[i]) & 0xffL)];
-		aLong1713 = aLong1713 >>> 8 ^ ls[(int) (((long) (aBoolean1711 ? 1 : 0) ^ aLong1713) & 0xffL)];
+			aLong1713 = aLong1713 >>> 8 ^ ls[(int) ((aLong1713 ^ anIntArray1722[i]) & 0xffL)];
+		aLong1713 = aLong1713 >>> 8 ^ ls[(int) (((aBoolean1711 ? 1 : 0) ^ aLong1713) & 0xffL)];
 		if (l != 0L && l != aLong1713)
 			Class36.aClass52_621.remove(l);
 	}
@@ -286,7 +287,7 @@ public class Class102 {
 	}
 
 	public Class133_Sub7 method1524(int i, int i_45_, int i_46_, Animation animation, int i_47_) {
-		long l = (long) i << 32 | (long) (i_46_ << 16) | (long) i;
+		long l = (long) i << 32 | i_46_ << 16 | i;
 		if (i_47_ < 46) {
 			Class133_Sub7 class133_sub7 = null;
 			return class133_sub7;
@@ -327,7 +328,6 @@ public class Class102 {
 	public static void method1525(int i) {
 		aClass9_Sub1_1712 = null;
 		aClass124_1710 = null;
-		int i_52_ = 103 % ((i - 67) / 47);
 	}
 
 	public void method1526(boolean bool, int i, int i_53_) {

@@ -11,16 +11,17 @@ import java.io.StringReader;
 import java.io.StringWriter;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.util.RuntimeException_Sub1;
 import com.jagex.util.Util;
 
 public class Class138 {
-	public static Class124 aClass124_2207 = Class14_Sub2_Sub2.method263(1178, "(U3");
+	public static Class124 aClass124_2207 = Class124.method263(1178, "(U3");
 	public int anInt2208;
 	public int anInt2209;
 	public static int anInt2210;
 	public static int anInt2214;
-	public static Class124 aClass124_2215 = Class14_Sub2_Sub2.method263(1178, "Angreifen");
+	public static Class124 aClass124_2215 = Class124.method263(1178, "Angreifen");
 	public int anInt2217;
 	public static Class124 aClass124_2218;
 	public static Class124 aClass124_2219;
@@ -35,8 +36,8 @@ public class Class138 {
 		anInt2210 = 0;
 		anInt2214 = -1;
 		anInt2223 = 0;
-		aClass124_2227 = Class14_Sub2_Sub2.method263(1178, "Ausw-=hlen");
-		aClass124_2218 = Class14_Sub2_Sub2.method263(1178, "Please remove ");
+		aClass124_2227 = Class124.method263(1178, "Ausw-=hlen");
+		aClass124_2218 = Class124.method263(1178, "Please remove ");
 		anIntArray2224 = new int[128];
 		aClass124_2219 = aClass124_2218;
 		aClass124_2226 = aClass124_2218;

@@ -22,7 +22,7 @@ public class Class25 {
 		anInt475 = 0;
 		anInt478 = 0;
 		anInt476 = RT4GL.anInt2033;
-		anInt477 = RT4GL.anInt2034;
+		anInt477 = RT4GL.canvasHeight;
 		GL gl = RT4GL.gl;
 		gl.glDisable(3089);
 		method996();
@@ -40,7 +40,7 @@ public class Class25 {
 		RT4GL.method1637();
 		float f = (float) i + 0.3F;
 		float f_5_ = f + (float) (i_1_ - 1);
-		float f_6_ = (float) RT4GL.anInt2034 - ((float) i_0_ + 0.3F);
+		float f_6_ = (float) RT4GL.canvasHeight - ((float) i_0_ + 0.3F);
 		float f_7_ = f_6_ - (float) (i_2_ - 1);
 		GL gl = RT4GL.gl;
 		gl.glBegin(2);
@@ -56,7 +56,7 @@ public class Class25 {
 		RT4GL.method1637();
 		float f = (float) i;
 		float f_13_ = f + (float) i_9_;
-		float f_14_ = (float) (RT4GL.anInt2034 - i_8_);
+		float f_14_ = (float) (RT4GL.canvasHeight - i_8_);
 		float f_15_ = f_14_ - (float) i_10_;
 		GL gl = RT4GL.gl;
 		gl.glBegin(6);
@@ -76,8 +76,8 @@ public class Class25 {
 			i_16_ = 0;
 		if (i_17_ > RT4GL.anInt2033)
 			i_17_ = RT4GL.anInt2033;
-		if (i_18_ > RT4GL.anInt2034)
-			i_18_ = RT4GL.anInt2034;
+		if (i_18_ > RT4GL.canvasHeight)
+			i_18_ = RT4GL.canvasHeight;
 		anInt475 = i;
 		anInt478 = i_16_;
 		anInt476 = i_17_;
@@ -87,14 +87,14 @@ public class Class25 {
 		if (anInt475 > anInt476 || anInt478 > anInt477)
 			gl.glScissor(0, 0, 0, 0);
 		else
-			gl.glScissor(anInt475, RT4GL.anInt2034 - anInt477, anInt476 - anInt475, anInt477 - anInt478);
+			gl.glScissor(anInt475, RT4GL.canvasHeight - anInt477, anInt476 - anInt475, anInt477 - anInt478);
 		method996();
 	}
 
 	public static void method1000(int i, int i_19_, int i_20_, int i_21_) {
 		RT4GL.method1637();
 		float f = (float) i + 0.3F;
-		float f_22_ = (float) RT4GL.anInt2034 - ((float) i_19_ + 0.3F);
+		float f_22_ = (float) RT4GL.canvasHeight - ((float) i_19_ + 0.3F);
 		float f_23_ = f_22_ - (float) i_20_;
 		GL gl = RT4GL.gl;
 		gl.glBegin(1);
@@ -122,7 +122,7 @@ public class Class25 {
 		if (anInt475 > anInt476 || anInt478 > anInt477)
 			gl.glScissor(0, 0, 0, 0);
 		else
-			gl.glScissor(anInt475, RT4GL.anInt2034 - anInt477, anInt476 - anInt475, anInt477 - anInt478);
+			gl.glScissor(anInt475, RT4GL.canvasHeight - anInt477, anInt476 - anInt475, anInt477 - anInt478);
 		method996();
 	}
 
@@ -130,7 +130,7 @@ public class Class25 {
 		RT4GL.method1637();
 		float f = (float) i + 0.3F;
 		float f_31_ = f + (float) (i_28_ - 1);
-		float f_32_ = (float) RT4GL.anInt2034 - ((float) i_27_ + 0.3F);
+		float f_32_ = (float) RT4GL.canvasHeight - ((float) i_27_ + 0.3F);
 		float f_33_ = f_32_ - (float) (i_29_ - 1);
 		GL gl = RT4GL.gl;
 		gl.glBegin(2);
@@ -146,7 +146,7 @@ public class Class25 {
 		RT4GL.method1637();
 		float f = (float) i;
 		float f_38_ = f + (float) i_35_;
-		float f_39_ = (float) (RT4GL.anInt2034 - i_34_);
+		float f_39_ = (float) (RT4GL.canvasHeight - i_34_);
 		float f_40_ = f_39_ - (float) i_36_;
 		GL gl = RT4GL.gl;
 		gl.glBegin(6);
@@ -162,8 +162,8 @@ public class Class25 {
 		RT4GL.method1637();
 		float f = (float) i + 0.3F;
 		float f_45_ = (float) i_42_ + 0.3F;
-		float f_46_ = (float) RT4GL.anInt2034 - ((float) i_41_ + 0.3F);
-		float f_47_ = (float) RT4GL.anInt2034 - ((float) i_43_ + 0.3F);
+		float f_46_ = (float) RT4GL.canvasHeight - ((float) i_41_ + 0.3F);
+		float f_47_ = (float) RT4GL.canvasHeight - ((float) i_43_ + 0.3F);
 		GL gl = RT4GL.gl;
 		gl.glBegin(2);
 		gl.glColor3ub((byte) (i_44_ >> 16), (byte) (i_44_ >> 8), (byte) i_44_);
@@ -204,15 +204,15 @@ public class Class25 {
 			gl.glColor3ub((byte) (i_51_ >> 16), (byte) (i_51_ >> 8), (byte) i_51_);
 			gl.glBegin(6);
 			if (i_59_ <= i_58_) {
-				gl.glVertex2f((float) i_67_, (float) (RT4GL.anInt2034 - i_71_));
-				gl.glVertex2f((float) i_66_, (float) (RT4GL.anInt2034 - i_70_));
-				gl.glVertex2f((float) i_65_, (float) (RT4GL.anInt2034 - i_69_));
-				gl.glVertex2f((float) i_64_, (float) (RT4GL.anInt2034 - i_68_));
+				gl.glVertex2f((float) i_67_, (float) (RT4GL.canvasHeight - i_71_));
+				gl.glVertex2f((float) i_66_, (float) (RT4GL.canvasHeight - i_70_));
+				gl.glVertex2f((float) i_65_, (float) (RT4GL.canvasHeight - i_69_));
+				gl.glVertex2f((float) i_64_, (float) (RT4GL.canvasHeight - i_68_));
 			} else {
-				gl.glVertex2f((float) i_64_, (float) (RT4GL.anInt2034 - i_68_));
-				gl.glVertex2f((float) i_65_, (float) (RT4GL.anInt2034 - i_69_));
-				gl.glVertex2f((float) i_66_, (float) (RT4GL.anInt2034 - i_70_));
-				gl.glVertex2f((float) i_67_, (float) (RT4GL.anInt2034 - i_71_));
+				gl.glVertex2f((float) i_64_, (float) (RT4GL.canvasHeight - i_68_));
+				gl.glVertex2f((float) i_65_, (float) (RT4GL.canvasHeight - i_69_));
+				gl.glVertex2f((float) i_66_, (float) (RT4GL.canvasHeight - i_70_));
+				gl.glVertex2f((float) i_67_, (float) (RT4GL.canvasHeight - i_71_));
 			}
 			gl.glEnd();
 		}
@@ -222,7 +222,7 @@ public class Class25 {
 		RT4GL.method1637();
 		float f = (float) i + 0.3F;
 		float f_75_ = f + (float) i_73_;
-		float f_76_ = (float) RT4GL.anInt2034 - ((float) i_72_ + 0.3F);
+		float f_76_ = (float) RT4GL.canvasHeight - ((float) i_72_ + 0.3F);
 		GL gl = RT4GL.gl;
 		gl.glBegin(1);
 		gl.glColor3ub((byte) (i_74_ >> 16), (byte) (i_74_ >> 8), (byte) i_74_);
@@ -237,7 +237,7 @@ public class Class25 {
 		RT4GL.method1637();
 		float f = (float) i;
 		float f_82_ = f + (float) i_78_;
-		float f_83_ = (float) (RT4GL.anInt2034 - i_77_);
+		float f_83_ = (float) (RT4GL.canvasHeight - i_77_);
 		float f_84_ = f_83_ - (float) i_79_;
 		GL gl = RT4GL.gl;
 		gl.glBegin(6);

@@ -3,11 +3,13 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.link.Cacheable;
 
 public class Class14_Sub2_Sub9 extends Cacheable {
 	public static byte[][][] aByteArrayArrayArray3864;
-	public static Class124 aClass124_3861 = Class14_Sub2_Sub2.method263(1178, ")1j");
+	public static Class124 aClass124_3861 = Class124.method263(1178, ")1j");
 	public static int anInt3856;
 	public static int anInt3866;
 	public static int[] anIntArray3859 = { -1, -1, 1, 1 };
@@ -24,7 +26,7 @@ public class Class14_Sub2_Sub9 extends Cacheable {
 	public static void method304() {
 		for (int i = 0; i < JunkTex.anInt4727; i++) {
 			Class40 class40 = Class14_Sub20.aClass40Array3093[i];
-			Class63.method1279(class40);
+			Static2.method1279(class40);
 			Class14_Sub20.aClass40Array3093[i] = null;
 		}
 		JunkTex.anInt4727 = 0;

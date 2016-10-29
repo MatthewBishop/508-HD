@@ -3,13 +3,15 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.rt4.Class14_Sub2_Sub19;
+import com.jagex.util.Huffman;
 
 public class Class98 {
 	public int[] anIntArray1658;
-	public static Class5 aClass5_1659;
+	public static Huffman aClass5_1659;
 	public static int[] anIntArray1660;
-	public static Class124 aClass124_1661 = (Class14_Sub2_Sub2.method263(1178,
+	public static Class124 aClass124_1661 = (Class124.method263(1178,
 			"; Expires=Thu)1 01)2Jan)21970 00:00:00 GMT; Max)2Age=0"));
 	public Class14_Sub2_Sub21 aClass14_Sub2_Sub21_1662;
 	public int anInt1663;
@@ -18,7 +20,7 @@ public class Class98 {
 	public static byte[][] aByteArrayArray1667;
 	public static Class14_Sub2_Sub19[] aClass14_Sub2_Sub19Array1669;
 	public static int anInt1671;
-	public static Class124 aClass124_1673 = Class14_Sub2_Sub2.method263(1178, "3D)2Softwarebibliothek gestartet)3");
+	public static Class124 aClass124_1673 = Class124.method263(1178, "3D)2Softwarebibliothek gestartet)3");
 
 	public static void method1492(int i, byte i_0_) {
 		if (i_0_ >= -43)

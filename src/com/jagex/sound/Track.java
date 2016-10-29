@@ -4,9 +4,9 @@
 package com.jagex.sound;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 
 import rs.Class14_Sub12_Sub1;
-import rs.Class9;
 
 public class Track {
 	

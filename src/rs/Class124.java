@@ -12,62 +12,15 @@ import com.jagex.util.Util;
 
 public class Class124 implements Interface1 {
 
-	public static int[] anIntArray2473;
-	public static Class124 aClass124_2479 = Class14_Sub2_Sub2.method263(1178, "glow1:");
+	public static Class124 aClass124_2479 = Class124.method263(1178, "glow1:");
+	public static Class124 aClass124_2497 = aClass124_2479;
+	public static Class124[] aClass124Array2508 = new Class124[100];
+	public static Class aClass2534;
 	public static int anInt2483;
 	public static int anInt2494 = 0;
-	public byte[] aByteArray2495;
-	public static Class124 aClass124_2497 = aClass124_2479;
-	public int anInt2507;
-	public static Class124[] aClass124Array2508 = new Class124[100];
-	public int anInt2517;
-	public boolean aBoolean2532 = true;
-	public static Class aClass2534;
+
 	public static Class124 aClass124_2476 = aClass124_2479;
-
-	public Class124 method1665(int var1, int var2, int var3) {
-		if (var1 < 9) {
-			this.method1690((Class124) null, 13);
-		}
-
-		byte var4 = (byte) var2;
-		byte var5 = (byte) var3;
-		Class124 var6 = new Class124();
-		var6.anInt2507 = this.anInt2507;
-		var6.aByteArray2495 = new byte[this.anInt2507];
-
-		for (int var7 = 0; var7 < this.anInt2507; ++var7) {
-			byte var8 = this.aByteArray2495[var7];
-			if (var8 != var4) {
-				var6.aByteArray2495[var7] = var8;
-			} else {
-				var6.aByteArray2495[var7] = var5;
-			}
-		}
-
-		return var6;
-	}
-
-	public int hashCode() {
-		int var1 = this.method1709(53);
-		return var1;
-	}
-
-	public Object method1666(Applet var1, boolean var2) throws Throwable {
-		if (var2) {
-			aClass124_2497 = null;
-		}
-
-		String var3 = new String(this.aByteArray2495, 0, this.anInt2507);
-		Object var4 = Class144.method1982((byte) 88, var3, var1, (Object[]) null);
-		if (var4 instanceof String) {
-			byte[] var5 = ((String) var4).getBytes();
-			var4 = Static2.method231((byte) 114, var5.length, var5, 0);
-		}
-
-		return var4;
-	}
-
+	public static int[] anIntArray2473;
 	public static void method1667(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7,
 			int var8, int var9, int var10) {
 		int var11 = -var9 + var10;
@@ -351,6 +304,147 @@ public class Class124 implements Interface1 {
 			}
 		}
 
+	}
+	public static void method1682(int var0, int var1) {
+		Class14_Sub2_Sub13 var2 = JunkTex.method626(-118, var1, 1);
+		var2.method327();
+		if (var0 != 3163) {
+			method1667(27, 18, -37, 37, 35, 66, -109, -49, 65, -110, 36);
+		}
+
+	}
+	public static void method1687(int var0, byte var1) {
+		Class14_Sub25 var2 = (Class14_Sub25) Class132.aClass55_2167.get(var0);
+		if (var2 != null) {
+			for (int var3 = 0; var2.anIntArray3178.length > var3; ++var3) {
+				var2.anIntArray3178[var3] = -1;
+				var2.anIntArray3177[var3] = 0;
+			}
+
+			if (var1 != 88) {
+				method1714(107, -30, -100, 125, 29);
+			}
+		}
+
+	}
+	public static boolean method1714(int var0, int var1, int var2, int var3, int var4) {
+		int var5 = var3 * JunkTex.anInt2719 + var0 * Class37.anInt643 >> 16;
+		int var6 = var3 * Class37.anInt643 - var0 * JunkTex.anInt2719 >> 16;
+		int var7 = var1 * Class150.anInt2420 + var6 * Class7_Sub3_Sub1.anInt3718 >> 16;
+		int var8 = var1 * Class7_Sub3_Sub1.anInt3718 - var6 * Class150.anInt2420 >> 16;
+		if (var7 < 1) {
+			var7 = 1;
+		}
+
+		int var9 = (var5 << 9) / var7;
+		int var10 = (var8 << 9) / var7;
+		int var11 = var2 * Class150.anInt2420 + var6 * Class7_Sub3_Sub1.anInt3718 >> 16;
+		int var12 = var2 * Class7_Sub3_Sub1.anInt3718 - var6 * Class150.anInt2420 >> 16;
+		if (var11 < 1) {
+			var11 = 1;
+		}
+
+		int var13 = (var5 << 9) / var11;
+		int var14 = (var12 << 9) / var11;
+		return var7 < 50 && var11 < 50 ? false
+				: (var7 > var4 && var11 > var4 ? false
+						: (var9 < JunkTex.anInt425 && var13 < JunkTex.anInt425 ? false
+								: (var9 > JunkTex.anInt4547 && var13 > JunkTex.anInt4547 ? false
+										: (var10 < Class58.anInt948 && var14 < Class58.anInt948 ? false
+												: var10 <= Class70.anInt1081 || var14 <= Class70.anInt1081))));
+	}
+
+	public static void method1715(byte var0) {
+		aClass124_2479 = null;
+		aClass124_2497 = null;
+		if (var0 != -83) {
+			aClass124_2479 = null;
+		}
+
+		aClass124Array2508 = null;
+		anIntArray2473 = null;
+		aClass124_2476 = null;
+	}
+
+	public static void method1718(int var0) {
+		Class127.aClass52_2112.method1209();
+		if (var0 == 48) {
+			Class112.aClass52_1868.method1209();
+			Class62.aClass52_991.method1209();
+			Class49.aClass52_810.method1209();
+		}
+
+	}
+
+	public static Class method1720(String var0) {
+		try {
+			Class var1 = Class.forName(var0);
+			return var1;
+		} catch (ClassNotFoundException var2) {
+			return null;
+		}
+	}
+
+	public boolean aBoolean2532 = true;
+
+	public byte[] aByteArray2495;
+
+	public int anInt2507;
+
+	public int anInt2517;
+
+	@Override
+	public boolean equals(Object var1) {
+		if (var1 instanceof Class124) {
+			boolean var2 = this.method1704((Class124) var1, (byte) 95);
+			return var2;
+		} else {
+			throw new IllegalArgumentException();
+		}
+	}
+
+	@Override
+	public int hashCode() {
+		int var1 = this.method1709(53);
+		return var1;
+	}
+
+	public Class124 method1665(int var1, int var2, int var3) {
+		if (var1 < 9) {
+			this.method1690((Class124) null, 13);
+		}
+
+		byte var4 = (byte) var2;
+		byte var5 = (byte) var3;
+		Class124 var6 = new Class124();
+		var6.anInt2507 = this.anInt2507;
+		var6.aByteArray2495 = new byte[this.anInt2507];
+
+		for (int var7 = 0; var7 < this.anInt2507; ++var7) {
+			byte var8 = this.aByteArray2495[var7];
+			if (var8 != var4) {
+				var6.aByteArray2495[var7] = var8;
+			} else {
+				var6.aByteArray2495[var7] = var5;
+			}
+		}
+
+		return var6;
+	}
+
+	public Object method1666(Applet var1, boolean var2) throws Throwable {
+		if (var2) {
+			aClass124_2497 = null;
+		}
+
+		String var3 = new String(this.aByteArray2495, 0, this.anInt2507);
+		Object var4 = Class144.method1982((byte) 88, var3, var1, (Object[]) null);
+		if (var4 instanceof String) {
+			byte[] var5 = ((String) var4).getBytes();
+			var4 = Static2.method231((byte) 114, var5.length, var5, 0);
+		}
+
+		return var4;
 	}
 
 	public Class124 method1668(Class124 var1, int var2, int var3, int var4) {
@@ -752,7 +846,7 @@ public class Class124 implements Interface1 {
 		}
 
 		while (var4 < this.anInt2507) {
-			var2 = (long) (this.aByteArray2495[var4] & 255) + (var2 << 5) + -var2;
+			var2 = (this.aByteArray2495[var4] & 255) + (var2 << 5) + -var2;
 			++var4;
 		}
 
@@ -764,15 +858,6 @@ public class Class124 implements Interface1 {
 		int var3 = 10 / ((var1 + 53) / 59);
 		Class72.method1322(this.aByteArray2495, 0, var2, 0, this.anInt2507);
 		return var2;
-	}
-
-	public static void method1682(int var0, int var1) {
-		Class14_Sub2_Sub13 var2 = JunkTex.method626(-118, var1, 1);
-		var2.method327();
-		if (var0 != 3163) {
-			method1667(27, 18, -37, 37, 35, 66, -109, -49, 65, -110, 36);
-		}
-
 	}
 
 	public Class124 method1683(int var1) {
@@ -880,21 +965,6 @@ public class Class124 implements Interface1 {
 		}
 	}
 
-	public static void method1687(int var0, byte var1) {
-		Class14_Sub25 var2 = (Class14_Sub25) Class132.aClass55_2167.get((long) var0);
-		if (var2 != null) {
-			for (int var3 = 0; var2.anIntArray3178.length > var3; ++var3) {
-				var2.anIntArray3178[var3] = -1;
-				var2.anIntArray3177[var3] = 0;
-			}
-
-			if (var1 != 88) {
-				method1714(107, -30, -100, 125, 29);
-			}
-		}
-
-	}
-
 	public Class124 method1688(int var1) {
 		Class124 var2 = Static2.method1174(this.method1692(0), (byte) 78);
 		if (var1 != 15) {
@@ -955,11 +1025,11 @@ public class Class124 implements Interface1 {
 			var2 *= 37L;
 			byte var5 = this.aByteArray2495[var4];
 			if (var5 >= 65 && var5 <= 90) {
-				var2 += (long) (var5 - 64);
+				var2 += var5 - 64;
 			} else if (var5 >= 97 && var5 <= 122) {
-				var2 += (long) (-96 + var5);
+				var2 += -96 + var5;
 			} else if (var5 >= 48 && var5 <= 57) {
-				var2 += (long) (var5 - 21);
+				var2 += var5 - 21;
 			}
 		}
 
@@ -1118,10 +1188,6 @@ public class Class124 implements Interface1 {
 			var2 = this.method1679(10, 0);
 			return var2;
 		}
-	}
-
-	public String toString() {
-		throw new RuntimeException();
 	}
 
 	public int method1702(int var1) {
@@ -1426,15 +1492,6 @@ public class Class124 implements Interface1 {
 		throw Util.error(var12, "sl.L(" + var1 + ')');
 	}
 
-	public boolean equals(Object var1) {
-		if (var1 instanceof Class124) {
-			boolean var2 = this.method1704((Class124) var1, (byte) 95);
-			return var2;
-		} else {
-			throw new IllegalArgumentException();
-		}
-	}
-
 	public void method1713(boolean var1, int var2, int var3, Graphics var4) {
 		if (var1) {
 			this.aByteArray2495 = null;
@@ -1448,45 +1505,6 @@ public class Class124 implements Interface1 {
 		}
 
 		var4.drawString(var5, var2, var3);
-	}
-
-	public static boolean method1714(int var0, int var1, int var2, int var3, int var4) {
-		int var5 = var3 * JunkTex.anInt2719 + var0 * Class37.anInt643 >> 16;
-		int var6 = var3 * Class37.anInt643 - var0 * JunkTex.anInt2719 >> 16;
-		int var7 = var1 * Class150.anInt2420 + var6 * Class7_Sub3_Sub1.anInt3718 >> 16;
-		int var8 = var1 * Class7_Sub3_Sub1.anInt3718 - var6 * Class150.anInt2420 >> 16;
-		if (var7 < 1) {
-			var7 = 1;
-		}
-
-		int var9 = (var5 << 9) / var7;
-		int var10 = (var8 << 9) / var7;
-		int var11 = var2 * Class150.anInt2420 + var6 * Class7_Sub3_Sub1.anInt3718 >> 16;
-		int var12 = var2 * Class7_Sub3_Sub1.anInt3718 - var6 * Class150.anInt2420 >> 16;
-		if (var11 < 1) {
-			var11 = 1;
-		}
-
-		int var13 = (var5 << 9) / var11;
-		int var14 = (var12 << 9) / var11;
-		return var7 < 50 && var11 < 50 ? false
-				: (var7 > var4 && var11 > var4 ? false
-						: (var9 < JunkTex.anInt425 && var13 < JunkTex.anInt425 ? false
-								: (var9 > JunkTex.anInt4547 && var13 > JunkTex.anInt4547 ? false
-										: (var10 < Class58.anInt948 && var14 < Class58.anInt948 ? false
-												: var10 <= Class70.anInt1081 || var14 <= Class70.anInt1081))));
-	}
-
-	public static void method1715(byte var0) {
-		aClass124_2479 = null;
-		aClass124_2497 = null;
-		if (var0 != -83) {
-			aClass124_2479 = null;
-		}
-
-		aClass124Array2508 = null;
-		anIntArray2473 = null;
-		aClass124_2476 = null;
 	}
 
 	public Class124 method1716(byte var1) {
@@ -1543,16 +1561,6 @@ public class Class124 implements Interface1 {
 		}
 	}
 
-	public static void method1718(int var0) {
-		Class127.aClass52_2112.method1209();
-		if (var0 == 48) {
-			Class112.aClass52_1868.method1209();
-			Class62.aClass52_991.method1209();
-			Class49.aClass52_810.method1209();
-		}
-
-	}
-
 	public Class124[] method1719(int var1, int var2) {
 		int var3 = 0;
 
@@ -1586,12 +1594,30 @@ public class Class124 implements Interface1 {
 		}
 	}
 
-	public static Class method1720(String var0) {
-		try {
-			Class var1 = Class.forName(var0);
-			return var1;
-		} catch (ClassNotFoundException var2) {
-			return null;
+	@Override
+	public String toString() {
+		throw new RuntimeException();
+	}
+	public static Class124 method263(int i, String string) {
+		byte[] is = string.getBytes();
+		int i_1_ = is.length;
+		Class124 class124 = new Class124();
+		if (i != 1178)
+			Class14_Sub2_Sub2.anInt3758 = -71;
+		int i_2_ = 0;
+		class124.aByteArray2495 = new byte[i_1_];
+		while (i_2_ < i_1_) {
+			int i_3_ = is[i_2_++] & 0xff;
+			if (i_3_ <= 45 && i_3_ >= 40) {
+				if (i_2_ >= i_1_)
+					break;
+				int i_4_ = is[i_2_++] & 0xff;
+				class124.aByteArray2495[class124.anInt2507++] = (byte) ((i_3_ - 40) * 43 - 48 + i_4_);
+			} else if (i_3_ != 0)
+				class124.aByteArray2495[class124.anInt2507++] = (byte) i_3_;
 		}
+		class124.method1683(115);
+		Class124 class124_5_ = class124.method1712((byte) 99);
+		return class124_5_;
 	}
 }

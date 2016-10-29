@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.Class14_Sub27;
@@ -14,14 +15,14 @@ public class Class14_Sub30 extends Linkable {
 	public static Class14_Sub27[][] aClass14_Sub27ArrayArray3273;
 	public static Class124 aClass124_3274;
 	public static HashTable aClass55_3275;
-	public static Class124 aClass124_3278 = Class14_Sub2_Sub2.method263(1178, "wishes to trade with you)3");
+	public static Class124 aClass124_3278 = Class124.method263(1178, "wishes to trade with you)3");
 	public static int anInt3279;
 	public static Class124 aClass124_3281;
 	public static byte aByte3283;
 
 	static {
 		aClass124_3274 = aClass124_3278;
-		aClass124_3281 = Class14_Sub2_Sub2.method263(1178, "Mitglieder)2Welt");
+		aClass124_3281 = Class124.method263(1178, "Mitglieder)2Welt");
 		aClass55_3275 = new HashTable(8);
 	}
 

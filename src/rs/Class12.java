@@ -5,6 +5,7 @@ package rs;
 
 import com.jagex.cache.anim.Animation;
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.Class14_Sub1;
@@ -68,7 +69,7 @@ public class Class12 {
 	public boolean aBoolean342;
 
 	static {
-		aClass124_278 = Class14_Sub2_Sub2.method263(1178, "flash1:");
+		aClass124_278 = Class124.method263(1178, "flash1:");
 		aClass124_311 = aClass124_278;
 		aClass124_328 = aClass124_278;
 	}
@@ -91,7 +92,7 @@ public class Class12 {
 					return var7;
 				}
 			} else {
-				Class133_Sub7 var6 = (Class133_Sub7) Class37.aClass52_635.get((long) this.anInt337);
+				Class133_Sub7 var6 = (Class133_Sub7) Class37.aClass52_635.get(this.anInt337);
 				if (var6 == null) {
 					boolean var8 = false;
 
@@ -143,7 +144,7 @@ public class Class12 {
 
 					var6 = var15.method1827(this.anInt275 + 64, this.anInt279 + 850, -30, -50, -30);
 					((ModelHD) var6).method1895(false, false, false, true, false, false, true);
-					Class37.aClass52_635.put(var6, (long) this.anInt337);
+					Class37.aClass52_635.put(var6, this.anInt337);
 				}
 
 				if (var3 != null && var4 != null) {
@@ -280,7 +281,7 @@ public class Class12 {
 			}
 			if (class14_sub3.anIntArray2746 != null)
 				class14_sub3.anInt2773 = ((int) (Math.random()
-						* (double) (-class14_sub3.anInt2772 + class14_sub3.anInt2769)) + class14_sub3.anInt2772);
+						* (-class14_sub3.anInt2772 + class14_sub3.anInt2769)) + class14_sub3.anInt2772);
 			Class152.aClass2_2438.pushBack(class14_sub3);
 		} else if (class133_sub1_sub2 != null) {
 			class14_sub3.aClass133_Sub1_Sub2_2762 = class133_sub1_sub2;
@@ -311,7 +312,7 @@ public class Class12 {
 			if (this.aClass55_304 == null) {
 				return var2;
 			} else {
-				Class14_Sub1 var4 = (Class14_Sub1) this.aClass55_304.get((long) var3);
+				Class14_Sub1 var4 = (Class14_Sub1) this.aClass55_304.get(var3);
 				if (var1 < 113) {
 					this.aBoolean287 = false;
 				}
@@ -335,7 +336,7 @@ public class Class12 {
 			} else if (var1 != -103) {
 				return null;
 			} else {
-				Class14_Sub30 var4 = (Class14_Sub30) this.aClass55_304.get((long) var3);
+				Class14_Sub30 var4 = (Class14_Sub30) this.aClass55_304.get(var3);
 				if (var4 == null) {
 					return var2;
 				} else {
@@ -473,7 +474,7 @@ public class Class12 {
 																				linkable = new Class14_Sub1(
 																						class14_sub10.getInt(
 																								(byte) -127));
-																			aClass55_304.put((long) i_84_, linkable);
+																			aClass55_304.put(i_84_, linkable);
 																		}
 																	}
 																} else {
@@ -693,7 +694,7 @@ public class Class12 {
 					var4 = null;
 					return var4;
 				} else {
-					var4 = (Class133_Sub7) JunkTex.aClass52_4186.get((long) this.anInt337);
+					var4 = (Class133_Sub7) JunkTex.aClass52_4186.get(this.anInt337);
 					if (var1 > -93) {
 						this.anInt279 = 41;
 					}
@@ -743,7 +744,7 @@ public class Class12 {
 						}
 
 						var4 = var13.method1827(64, 768, -50, -10, -50);
-						JunkTex.aClass52_4186.put(var4, (long) this.anInt337);
+						JunkTex.aClass52_4186.put(var4, this.anInt337);
 					}
 
 					if (var2 != null) {

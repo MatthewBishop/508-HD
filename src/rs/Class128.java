@@ -8,9 +8,9 @@ import com.jagex.link.Deque;
 public class Class128 {
 	public static Deque[][][] aClass2ArrayArrayArray2119 = new Deque[4][104][104];
 	public static Class124 aClass124_2122;
-	public static Class124 aClass124_2123 = Class14_Sub2_Sub2.method263(1178, "glow3:");
+	public static Class124 aClass124_2123 = Class124.method263(1178, "glow3:");
 	public static Class124 aClass124_2126;
-	public static Class124 aClass124_2128 = Class14_Sub2_Sub2.method263(1178, "p12_full");
+	public static Class124 aClass124_2128 = Class124.method263(1178, "p12_full");
 
 	static {
 		aClass124_2126 = aClass124_2123;
@@ -42,16 +42,10 @@ public class Class128 {
 				i_3_, true, l);
 	}
 
-	public static void method1758(int i, byte i_8_) {
-		if (JunkTex.anIntArray4191 == null || i > JunkTex.anIntArray4191.length)
-			JunkTex.anIntArray4191 = new int[i];
-		int i_9_ = -29 % ((35 - i_8_) / 50);
-	}
-
 	public static int method1759(int i, byte i_10_) {
-		double d = (double) (i & 0xff) / 256.0;
-		double d_11_ = (double) ((i & 0xffe7f9) >> 48) / 256.0;
-		double d_12_ = (double) (i >> 8 & 0xff) / 256.0;
+		double d = (i & 0xff) / 256.0;
+		double d_11_ = ((i & 0xffe7f9) >> 48) / 256.0;
+		double d_12_ = (i >> 8 & 0xff) / 256.0;
 		if (i_10_ != 48) {
 			int i_13_ = 42;
 			return i_13_;

@@ -10,6 +10,7 @@ import java.io.IOException;
 
 import com.jagex.cache.anim.Animation;
 import com.jagex.cache.loaders.AnimFrameLoader;
+import com.jagex.io.js5.FileOnDisk;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 import com.jagex.util.Util;
 
@@ -19,11 +20,11 @@ public class Class76 {
 	public long aLong1188;
 	public long aLong1190 = -1L;
 	public static Class14_Sub2_Sub19[] aClass14_Sub2_Sub19Array1191;
-	public static Class124 aClass124_1192 = Class14_Sub2_Sub2.method263(1178, "runes");
+	public static Class124 aClass124_1192 = Class124.method263(1178, "runes");
 	public static int anInt1197;
 	public long aLong1198;
 	public long aLong1200;
-	public Class30 aClass30_1202;
+	public FileOnDisk aClass30_1202;
 	public static Class124 aClass124_1203;
 	public static int[] anIntArray1204;
 	public long aLong1205 = -1L;
@@ -35,7 +36,7 @@ public class Class76 {
 
 	static {
 		anInt1197 = 0;
-		aClass124_1203 = Class14_Sub2_Sub2.method263(1178, "Okay");
+		aClass124_1203 = Class124.method263(1178, "Okay");
 	}
 
 	public static void method1356(boolean bool, Component component) {
@@ -74,7 +75,7 @@ public class Class76 {
 
 	public static Class133_Sub7 method1359(int i, int i_7_, Animation animation, Class133_Sub7 class133_sub7, int i_8_,
 			int i_9_, int i_10_, int i_11_, int i_12_, int i_13_, int i_14_, int i_15_, int i_16_, boolean bool) {
-		long l = ((long) ((i_11_ << 56) + ((i_9_ << 16) + i_16_)) + (((long) i_8_ << 32) - -((long) i_12_ << 48)));
+		long l = ((i_11_ << 56) + ((i_9_ << 16) + i_16_) + (((long) i_8_ << 32) - -((long) i_12_ << 48)));
 		Class133_Sub7 class133_sub7_17_ = ((Class133_Sub7) Class14_Sub11.aClass52_2946.get(l));
 		if (class133_sub7_17_ == null) {
 			int i_18_;
@@ -178,8 +179,8 @@ public class Class76 {
 			for (int i_44_ = 0; modelhd.anInt5033 > i_44_; i_44_++)
 				modelhd.vertexY[i_44_] += (JunkTex.method1017(modelhd.vertexX[i_44_] + i_7_,
 						Class14_Sub2_Sub3.anInt3785, (byte) -109, i_14_ + modelhd.vertexZ[i_44_]) - i_10_);
-			modelhd.aClass50_5013.aBoolean820 = false;
-			modelhd.aClass41_5028.upToDate = false;
+			modelhd.aClass50_5013.boundsCalculated = false;
+			modelhd.vertexBufferPointer.upToDate = false;
 		}
 		Class133_Sub7 class133_sub7_45_ = class133_sub7_17_;
 		return class133_sub7_45_;
@@ -193,7 +194,7 @@ public class Class76 {
 	}
 
 	public void method1361(int i, long l) throws IOException {
-		if (l < (long) i)
+		if (l < i)
 			throw new IOException(new StringBuilder("Invalid seek to ").append(l).append(" in file ")
 					.append(method1367(-1)).toString());
 		aLong1187 = l;
@@ -202,22 +203,22 @@ public class Class76 {
 	public void method1362(int var1, int var2, byte var3, byte[] var4) throws IOException {
 		try {
 			try {
-				if ((long) var2 + this.aLong1187 > this.aLong1198) {
-					this.aLong1198 = this.aLong1187 + (long) var2;
+				if (var2 + this.aLong1187 > this.aLong1198) {
+					this.aLong1198 = this.aLong1187 + var2;
 				}
 
 				if (this.aLong1205 != -1L && (this.aLong1205 > this.aLong1187
-						|| (long) this.anInt1214 + this.aLong1205 < this.aLong1187)) {
+						|| this.anInt1214 + this.aLong1205 < this.aLong1187)) {
 					this.method1369(-41);
 				}
 
 				if (-1L != this.aLong1205
-						&& (long) this.aByteArray1186.length + this.aLong1205 < (long) var2 + this.aLong1187) {
-					int var5 = (int) (this.aLong1205 - this.aLong1187 + (long) this.aByteArray1186.length);
+						&& this.aByteArray1186.length + this.aLong1205 < var2 + this.aLong1187) {
+					int var5 = (int) (this.aLong1205 - this.aLong1187 + this.aByteArray1186.length);
 					Class72.method1322(var4, var1, this.aByteArray1186, (int) (this.aLong1187 + -this.aLong1205), var5);
 					var2 -= var5;
 					var1 += var5;
-					this.aLong1187 += (long) var5;
+					this.aLong1187 += var5;
 					this.anInt1214 = this.aByteArray1186.length;
 					this.method1369(122);
 				}
@@ -230,33 +231,33 @@ public class Class76 {
 
 					this.aClass30_1202.method1056(var1, var2, var4, -20563);
 					long var6 = -1L;
-					this.aLong1200 += (long) var2;
+					this.aLong1200 += var2;
 					if (this.aLong1200 > this.aLong1188) {
 						this.aLong1188 = this.aLong1200;
 					}
 
-					if (this.aLong1187 >= this.aLong1190 && this.aLong1187 < this.aLong1190 + (long) this.anInt1210) {
+					if (this.aLong1187 >= this.aLong1190 && this.aLong1187 < this.aLong1190 + this.anInt1210) {
 						var6 = this.aLong1187;
 					} else if (this.aLong1187 <= this.aLong1190 && this.aLong1187 - -((long) var2) > this.aLong1190) {
 						var6 = this.aLong1190;
 					}
 
 					long var8 = -1L;
-					if (this.aLong1190 < (long) var2 + this.aLong1187
+					if (this.aLong1190 < var2 + this.aLong1187
 							&& this.aLong1190 - -((long) this.anInt1210) >= this.aLong1187 - -((long) var2)) {
-						var8 = (long) var2 + this.aLong1187;
-					} else if (this.aLong1187 < (long) this.anInt1210 + this.aLong1190
-							&& (long) this.anInt1210 + this.aLong1190 <= (long) var2 + this.aLong1187) {
-						var8 = this.aLong1190 + (long) this.anInt1210;
+						var8 = var2 + this.aLong1187;
+					} else if (this.aLong1187 < this.anInt1210 + this.aLong1190
+							&& this.anInt1210 + this.aLong1190 <= var2 + this.aLong1187) {
+						var8 = this.aLong1190 + this.anInt1210;
 					}
 
 					if (-1L < var6 && var6 < var8) {
 						int var10 = (int) (-var6 + var8);
-						Class72.method1322(var4, (int) (-this.aLong1187 + var6 + (long) var1), this.aByteArray1208,
+						Class72.method1322(var4, (int) (-this.aLong1187 + var6 + var1), this.aByteArray1208,
 								(int) (-this.aLong1190 + var6), var10);
 					}
 
-					this.aLong1187 += (long) var2;
+					this.aLong1187 += var2;
 					return;
 				}
 			} catch (IOException var12) {
@@ -271,8 +272,8 @@ public class Class76 {
 				}
 
 				Class72.method1322(var4, var1, this.aByteArray1186, (int) (-this.aLong1205 + this.aLong1187), var2);
-				this.aLong1187 += (long) var2;
-				if (this.aLong1187 + -this.aLong1205 > (long) this.anInt1214) {
+				this.aLong1187 += var2;
+				if (this.aLong1187 + -this.aLong1205 > this.anInt1214) {
 					this.anInt1214 = (int) (this.aLong1187 + -this.aLong1205);
 				}
 			} else if (var3 < 40) {
@@ -282,15 +283,6 @@ public class Class76 {
 		} catch (Throwable var13) {
 			throw Util.error(var13,
 					"la.J(" + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null ? "{...}" : "null") + ')');
-		}
-	}
-
-	public static void method1363(int[][] is) {
-		try {
-				Static2.anIntArrayArray4038 = is;
-		} catch (Throwable throwable) {
-			throw Util.error(throwable, new StringBuilder("la.B(")
-					.append(is != null ? "{...}" : "null").append(',').append(')').toString());
 		}
 	}
 
@@ -319,7 +311,7 @@ public class Class76 {
 			if (i_55_ == -1)
 				break;
 			anInt1210 += i_55_;
-			aLong1200 += (long) i_55_;
+			aLong1200 += i_55_;
 		}
 	}
 
@@ -349,22 +341,22 @@ public class Class76 {
 			if (i_61_ + i > is.length)
 				throw new ArrayIndexOutOfBoundsException(i_61_ + i - is.length);
 			if (aLong1205 != -1L && aLong1187 >= aLong1205
-					&& (long) anInt1214 + aLong1205 >= aLong1187 - -(long) i_61_) {
+					&& anInt1214 + aLong1205 >= aLong1187 - -(long) i_61_) {
 				Class72.method1322(aByteArray1186, (int) (-aLong1205 + aLong1187), is, i, i_61_);
-				aLong1187 += (long) i_61_;
+				aLong1187 += i_61_;
 			} else {
 				try {
 					long l = aLong1187;
 					int i_62_ = i;
 					int i_63_ = i_61_;
 					if (aLong1187 >= aLong1190 && aLong1190 - -(long) anInt1210 > aLong1187) {
-						int i_64_ = (int) ((long) anInt1210 + (aLong1190 + -aLong1187));
+						int i_64_ = (int) (anInt1210 + (aLong1190 + -aLong1187));
 						if (i_61_ < i_64_)
 							i_64_ = i_61_;
 						i_61_ -= i_64_;
 						Class72.method1322(aByteArray1208, (int) (-aLong1190 + aLong1187), is, i, i_64_);
 						i += i_64_;
-						aLong1187 += (long) i_64_;
+						aLong1187 += i_64_;
 					}
 					if (i_61_ > aByteArray1208.length) {
 						aClass30_1202.method1058(-78, aLong1187);
@@ -373,10 +365,10 @@ public class Class76 {
 							int i_65_ = aClass30_1202.method1060(is, 0, i, i_61_);
 							if (i_65_ == -1)
 								break;
-							aLong1200 += (long) i_65_;
+							aLong1200 += i_65_;
 							i += i_65_;
 							i_61_ -= i_65_;
-							aLong1187 += (long) i_65_;
+							aLong1187 += i_65_;
 						}
 					} else if (i_61_ > 0) {
 						method1365(true);
@@ -385,7 +377,7 @@ public class Class76 {
 							i_66_ = anInt1210;
 						i_61_ -= i_66_;
 						Class72.method1322(aByteArray1208, 0, is, i, i_66_);
-						aLong1187 += (long) i_66_;
+						aLong1187 += i_66_;
 						i += i_66_;
 					}
 					if (aLong1205 != -1L) {
@@ -400,14 +392,14 @@ public class Class76 {
 							}
 						}
 						long l_68_ = -1L;
-						if (l < (long) anInt1214 + aLong1205 && ((long) anInt1214 + aLong1205 <= l - -(long) i_63_))
+						if (l < anInt1214 + aLong1205 && (anInt1214 + aLong1205 <= l - -(long) i_63_))
 							l_68_ = aLong1205 - -(long) anInt1214;
-						else if (aLong1205 < l - -(long) i_63_ && ((long) anInt1214 + aLong1205 >= (long) i_63_ + l))
-							l_68_ = l + (long) i_63_;
+						else if (aLong1205 < l - -(long) i_63_ && (anInt1214 + aLong1205 >= i_63_ + l))
+							l_68_ = l + i_63_;
 						long l_69_ = -1L;
-						if (l <= aLong1205 && (long) i_63_ + l > aLong1205)
+						if (l <= aLong1205 && i_63_ + l > aLong1205)
 							l_69_ = aLong1205;
-						else if (aLong1205 <= l && (long) anInt1214 + aLong1205 > l)
+						else if (aLong1205 <= l && anInt1214 + aLong1205 > l)
 							l_69_ = l;
 						if (-1L < l_69_ && l_68_ > l_69_) {
 							int i_70_ = (int) (-l_69_ + l_68_);
@@ -439,17 +431,17 @@ public class Class76 {
 				aLong1200 = aLong1205;
 			}
 			aClass30_1202.method1056(0, anInt1214, aByteArray1186, -20563);
-			if ((long) anInt1214 + aLong1205 > aLong1190
-					&& (aLong1190 - -(long) anInt1210 >= (long) anInt1214 + aLong1205))
+			if (anInt1214 + aLong1205 > aLong1190
+					&& (aLong1190 - -(long) anInt1210 >= anInt1214 + aLong1205))
 				l = aLong1205 - -(long) anInt1214;
 			else if (aLong1205 < aLong1190 - -(long) anInt1210
-					&& (aLong1190 + (long) anInt1210 <= aLong1205 + (long) anInt1214))
+					&& (aLong1190 + anInt1210 <= aLong1205 + anInt1214))
 				l = aLong1190 - -(long) anInt1210;
-			aLong1200 += (long) anInt1214;
+			aLong1200 += anInt1214;
 			if (aLong1188 < aLong1200)
 				aLong1188 = aLong1200;
 			if (aLong1190 > aLong1205 || aLong1205 >= aLong1190 - -(long) anInt1210) {
-				if (aLong1205 <= aLong1190 && (long) anInt1214 + aLong1205 > aLong1190)
+				if (aLong1205 <= aLong1190 && anInt1214 + aLong1205 > aLong1190)
 					l_72_ = aLong1190;
 			} else
 				l_72_ = aLong1205;
@@ -463,9 +455,9 @@ public class Class76 {
 		}
 	}
 
-	public Class76(Class30 class30, int i, int i_74_) throws IOException {
-		aClass30_1202 = class30;
-		aLong1198 = aLong1188 = class30.method1061((byte) -68);
+	public Class76(FileOnDisk fileOnDisk, int i, int i_74_) throws IOException {
+		aClass30_1202 = fileOnDisk;
+		aLong1198 = aLong1188 = fileOnDisk.method1061((byte) -68);
 		aLong1187 = 0L;
 		aByteArray1208 = new byte[i];
 		aByteArray1186 = new byte[i_74_];

@@ -19,7 +19,7 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 	public int[] anIntArray3886;
 	public int[] anIntArray3888;
 	public static int anInt3889 = 0;
-	public static Class124 aClass124_3892 = Class14_Sub2_Sub2.method263(1178, "cookieprefix");
+	public static Class124 aClass124_3892 = Class124.method263(1178, "cookieprefix");
 
 	public int method308(byte i, int i_0_) {
 		if (anIntArray3885 == null) {

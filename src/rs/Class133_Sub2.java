@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 
 public class Class133_Sub2 extends Class133 {
 	public short aShort3506;
@@ -394,6 +395,7 @@ public class Class133_Sub2 extends Class133 {
 		return anInt3521++;
 	}
 
+	@Override
 	public void method1788(Class133 class133, int i, int i_85_, int i_86_, boolean bool) {
 		Class133_Sub2 class133_sub2_87_ = (Class133_Sub2) class133;
 		class133_sub2_87_.method1812();
@@ -476,6 +478,7 @@ public class Class133_Sub2 extends Class133 {
 		}
 	}
 
+	@Override
 	public boolean method1784() {
 		return true;
 	}
@@ -826,6 +829,7 @@ public class Class133_Sub2 extends Class133 {
 		return new Class133_Sub2(is);
 	}
 
+	@Override
 	public Class133 method1791(int i, int i_185_, int i_186_) {
 		return method1827(aShort3539, aShort3525, i, i_185_, i_186_);
 	}
@@ -862,7 +866,7 @@ public class Class133_Sub2 extends Class133 {
 					i_199_ >>= 1;
 					i_200_ >>= 1;
 				}
-				int i_202_ = (int) Math.sqrt((double) (i_199_ * i_199_ + i_200_ * i_200_ + i_201_ * i_201_));
+				int i_202_ = (int) Math.sqrt(i_199_ * i_199_ + i_200_ * i_200_ + i_201_ * i_201_);
 				if (i_202_ <= 0)
 					i_202_ = 1;
 				i_199_ = i_199_ * 256 / i_202_;
@@ -914,13 +918,15 @@ public class Class133_Sub2 extends Class133 {
 		anIntArray3508 = null;
 	}
 
-	public int method1781() {
+	@Override
+	public int getMinY() {
 		if (!aBoolean3543)
 			method1812();
 		return aShort3506;
 	}
 
-	public void method1792(int i, int i_208_, int i_209_, int i_210_, int i_211_, int i_212_, int i_213_, int i_214_,
+	@Override
+	public void render(int i, int i_208_, int i_209_, int i_210_, int i_211_, int i_212_, int i_213_, int i_214_,
 			long l) {
 		/* empty */
 	}

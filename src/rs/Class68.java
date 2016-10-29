@@ -6,7 +6,7 @@ package rs;
 import com.jagex.rt4.ShadowManager;
 
 public class Class68 {
-	public static Class124 aClass124_1064 = Class14_Sub2_Sub2.method263(1178, " )2> <col=ffffff>");
+	public static Class124 aClass124_1064 = Class124.method263(1178, " )2> <col=ffffff>");
 
 	public static void method1305(int i, int i_3_, int i_4_, Class79 class79, int i_5_, int i_6_, int i_7_, int i_8_,
 			byte i_9_) {

@@ -171,7 +171,7 @@ public class Class14_Sub27 extends Linkable {
 		if (aClass14_Sub10_3186.position != 0 || aClass14_Sub10_3189.position != 0) {
 			GL gl = RT4GL.gl;
 			if (anInt3204 == -1 || bool) {
-				RT4GL.method1632(-1);
+				RT4GL.bindTexture2D(-1);
 				RT4.method1778(0, 0);
 			} else
 				Class3.anInterface3_117.method16(anInt3204, (byte) 97);

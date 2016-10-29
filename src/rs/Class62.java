@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.AtmosphericEffects;
 
@@ -14,8 +15,8 @@ public class Class62 {
 	public static SoftCache aClass52_991 = new SoftCache(30);
 	public static int[] anIntArray992;
 	public static Class9 aClass9_993;
-	public static Class124 aClass124_994 = Class14_Sub2_Sub2.method263(1178, ":");
-	public static Class124 aClass124_995 = Class14_Sub2_Sub2.method263(1178, "k");
+	public static Class124 aClass124_994 = Class124.method263(1178, ":");
+	public static Class124 aClass124_995 = Class124.method263(1178, "k");
 
 	public static void method1274(int i) {
 		aClass52_991 = null;
@@ -33,7 +34,7 @@ public class Class62 {
 		Class49.anInt815 = Class150.aClass71ArrayArray2421[i][i_0_].lightY;
 		if (i_1_ == 1) {
 			JunkTex.anInt847 = Class150.aClass71ArrayArray2421[i][i_0_].lightZ;
-			AtmosphericEffects.setSunPosition((float) Class82.anInt1330, (float) Class49.anInt815, (float) JunkTex.anInt847);
+			AtmosphericEffects.setSunPosition(Class82.anInt1330, Class49.anInt815, JunkTex.anInt847);
 		}
 	}
 }

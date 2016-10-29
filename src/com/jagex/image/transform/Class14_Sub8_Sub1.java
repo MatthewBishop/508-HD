@@ -27,12 +27,12 @@ public class Class14_Sub8_Sub1 extends Class14_Sub8 {
 	}
 
 	@Override
-	public void method472() {
+	public void postDecode() {
 		TexStatic.method321(256);
 	}
 
 	@Override
-	public void method475(int i, Buffer class14_sub10) {
+	public void decode(int i, Buffer class14_sub10) {
 		int i_13_ = i;
 		while_200_: do {
 			while_199_: do {
@@ -68,11 +68,11 @@ public class Class14_Sub8_Sub1 extends Class14_Sub8 {
 	}
 
 	@Override
-	public int[] method484(int i) {
-		int[] is = aClass149_2851.method2014(i);
-		if (aClass149_2851.aBoolean2402) {
+	public int[] outputMonochrome(int i) {
+		int[] is = monoChromaticImageCache.method2014(i);
+		if (monoChromaticImageCache.aBoolean2402) {
 			int i_15_ = anInt4092 >> 1;
-			int[][] is_16_ = aClass149_2851.method2019();
+			int[][] is_16_ = monoChromaticImageCache.method2019();
 			Random random = new Random(anInt4106);
 			for (int i_17_ = 0; i_17_ < anInt4095; i_17_++) {
 				int i_18_ = (anInt4092 > 0 ? (anInt4103 - i_15_ + RandomUtil.method1949(random, anInt4092))

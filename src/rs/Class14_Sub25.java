@@ -8,9 +8,9 @@ import com.jagex.map.SceneCluster;
 
 public class Class14_Sub25 extends Linkable {
 	public static boolean[][] aBooleanArrayArray3170;
-	public static Class124 aClass124_3172 = Class14_Sub2_Sub2.method263(1178, " )2> <col=ff9040>");
+	public static Class124 aClass124_3172 = Class124.method263(1178, " )2> <col=ff9040>");
 	public static int[][][] anIntArrayArrayArray3174;
-	public static Class124 aClass124_3175 = Class14_Sub2_Sub2.method263(1178, "Lade Texturen )2 ");
+	public static Class124 aClass124_3175 = Class124.method263(1178, "Lade Texturen )2 ");
 	public int[] anIntArray3177;
 	public int[] anIntArray3178 = { -1 };
 
@@ -44,7 +44,7 @@ public class Class14_Sub25 extends Linkable {
 		if (bool_1_)
 			i_2_ += JunkTex.anInt4612 + Class14_Sub2_Sub8.anInt3833;
 		if (bool)
-			i_2_ += Class63.anInt998 + SceneCluster.anInt1355;
+			i_2_ += Static2.anInt998 + SceneCluster.anInt1355;
 		int i_4_ = i_2_;
 		return i_4_;
 	}

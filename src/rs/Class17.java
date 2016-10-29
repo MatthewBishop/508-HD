@@ -7,10 +7,10 @@ import com.jagex.io.Buffer;
 
 public class Class17 {
 	public static Class124 aClass124_398;
-	public static Class124 aClass124_399 = Class14_Sub2_Sub2.method263(1178, "Checking for updates )2 ");
+	public static Class124 aClass124_399 = Class124.method263(1178, "Checking for updates )2 ");
 	public static int[] anIntArray400;
 	public static int[] anIntArray402;
-	public static Class124 aClass124_403 = Class14_Sub2_Sub2.method263(1178, "compass");
+	public static Class124 aClass124_403 = Class124.method263(1178, "compass");
 	public static Class124 aClass124_405;
 	public static Class124 aClass124_408;
 	public static long aLong410;
@@ -18,7 +18,7 @@ public class Class17 {
 	static {
 		anIntArray400 = new int[1000];
 		aClass124_405 = aClass124_399;
-		aClass124_398 = Class14_Sub2_Sub2.method263(1178, "<col=ffffff>");
+		aClass124_398 = Class124.method263(1178, "<col=ffffff>");
 		aClass124_408 = null;
 		aLong410 = 0L;
 	}
@@ -63,7 +63,7 @@ public class Class17 {
 
 	public static Class14_Sub2_Sub2 method958(byte i, int i_2_) {
 		Class14_Sub2_Sub2 class14_sub2_sub2 = ((Class14_Sub2_Sub2) Static2.aClass20_5081
-				.get((long) i_2_));
+				.get(i_2_));
 		if (class14_sub2_sub2 != null) {
 			Class14_Sub2_Sub2 class14_sub2_sub2_3_ = class14_sub2_sub2;
 			return class14_sub2_sub2_3_;
@@ -73,7 +73,7 @@ public class Class17 {
 		Class14_Sub2_Sub2 class14_sub2_sub2_5_ = new Class14_Sub2_Sub2();
 		if (is != null)
 			class14_sub2_sub2_5_.method265(0, new Buffer(is));
-		Static2.aClass20_5081.put(class14_sub2_sub2_5_, (long) i_2_);
+		Static2.aClass20_5081.put(class14_sub2_sub2_5_, i_2_);
 		Class14_Sub2_Sub2 class14_sub2_sub2_6_ = class14_sub2_sub2_5_;
 		return class14_sub2_sub2_6_;
 	}
@@ -91,7 +91,7 @@ public class Class17 {
 	}
 
 	public static Class14_Sub2_Sub20 method960(int i, int i_7_) {
-		Class14_Sub2_Sub20 class14_sub2_sub20 = ((Class14_Sub2_Sub20) Class14_Sub17.aClass20_3018.get((long) i_7_));
+		Class14_Sub2_Sub20 class14_sub2_sub20 = ((Class14_Sub2_Sub20) Class14_Sub17.aClass20_3018.get(i_7_));
 		if (class14_sub2_sub20 != null) {
 			Class14_Sub2_Sub20 class14_sub2_sub20_8_ = class14_sub2_sub20;
 			return class14_sub2_sub20_8_;
@@ -102,7 +102,7 @@ public class Class17 {
 		Class14_Sub2_Sub20 class14_sub2_sub20_9_ = new Class14_Sub2_Sub20();
 		if (is != null)
 			class14_sub2_sub20_9_.method429(96, new Buffer(is));
-		Class14_Sub17.aClass20_3018.put(class14_sub2_sub20_9_, (long) i_7_);
+		Class14_Sub17.aClass20_3018.put(class14_sub2_sub20_9_, i_7_);
 		Class14_Sub2_Sub20 class14_sub2_sub20_10_ = class14_sub2_sub20_9_;
 		return class14_sub2_sub20_10_;
 	}

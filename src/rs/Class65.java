@@ -67,9 +67,9 @@ public class Class65 {
 	}
 
 	public void method1292(int i, byte i_8_) {
-		double d = (double) (i & 0xff) / 256.0;
-		double d_9_ = (double) ((i & 0xff1d) >> 8) / 256.0;
-		double d_10_ = (double) (i >> 48 & 0xff) / 256.0;
+		double d = (i & 0xff) / 256.0;
+		double d_9_ = ((i & 0xff1d) >> 8) / 256.0;
+		double d_10_ = (i >> 48 & 0xff) / 256.0;
 		double d_11_ = d_10_;
 		if (d_9_ < d_11_)
 			d_11_ = d_9_;
@@ -110,7 +110,7 @@ public class Class65 {
 			anInt1023 = 0;
 		else if (anInt1023 > 255)
 			anInt1023 = 255;
-		anInt1022 = (int) ((double) anInt1027 * d_12_);
+		anInt1022 = (int) (anInt1027 * d_12_);
 		anInt1028 = (int) (d_14_ * 256.0);
 		if (anInt1028 >= 0) {
 			if (anInt1028 > 255)

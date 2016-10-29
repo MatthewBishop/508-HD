@@ -13,9 +13,9 @@ import com.jagex.rt4.lights.LightRenderer;
 import com.jagex.util.TimeUtil;
 
 public abstract class Class133 {
-	public static Class124 aClass124_2175 = Class14_Sub2_Sub2.method263(1178, "Spieler");
+	public static Class124 aClass124_2175 = Class124.method263(1178, "Spieler");
 	public static Class124 aClass124_2183;
-	public static Class124 aClass124_2188 = Class14_Sub2_Sub2.method263(1178, "Players");
+	public static Class124 aClass124_2188 = Class124.method263(1178, "Players");
 	public static Class14_Sub2_Sub19_Sub1[] aClass14_Sub2_Sub19_Sub1Array2186;
 	public static int[] anIntArray2176 = new int[100];
 	public static int[] anIntArray2179 = { 768, 1024, 1280, 512, 1536, 256, 0, 1792 };
@@ -25,7 +25,7 @@ public abstract class Class133 {
 	}
 
 	public static Class35 method1780(byte i, int i_0_) {
-		Class35 class35 = ((Class35) Static2.aClass52_2370.get((long) i_0_));
+		Class35 class35 = ((Class35) Static2.aClass52_2370.get(i_0_));
 		if (i != 111)
 			method1785((byte) 101);
 		if (class35 != null) {
@@ -36,7 +36,7 @@ public abstract class Class133 {
 		Class35 class35_2_ = new Class35();
 		if (is != null)
 			class35_2_.method1094((byte) 102, new Buffer(is));
-		Static2.aClass52_2370.put(class35_2_, (long) i_0_);
+		Static2.aClass52_2370.put(class35_2_, i_0_);
 		Class35 class35_3_ = class35_2_;
 		return class35_3_;
 	}
@@ -107,7 +107,7 @@ public abstract class Class133 {
 				break;
 			JunkTex.aClass81_4716.pushFront(class14_sub2_sub9);
 			Class7_Sub2_Sub1.aClass55_3698.put(class14_sub2_sub9.key, class14_sub2_sub9);
-			Class63.anInt998++;
+			Static2.anInt998++;
 			SceneCluster.anInt1355--;
 		}
 		if (JunkTex.aByte4287 != 0) {
@@ -173,7 +173,7 @@ public abstract class Class133 {
 					if (i_27_ != 0 || i_28_ != 128) {
 						f = fs[i_23_][i_20_];
 						f_31_ = fs_21_[i_23_][i_20_];
-						float f_33_ = (float) i_27_ / 128.0F;
+						float f_33_ = i_27_ / 128.0F;
 						f_32_ = fs_24_[i_23_][i_20_];
 						float f_34_ = fs[i_23_][i_20_ + 1];
 						f += (-f + fs[i_23_ + 1][i_20_]) * f_33_;
@@ -183,7 +183,7 @@ public abstract class Class133 {
 						float f_35_ = fs_21_[i_23_][i_20_ + 1];
 						f_35_ += (fs_21_[i_23_ + 1][i_20_ + 1] - f_35_) * f_33_;
 						float f_36_ = fs_24_[i_23_][i_20_ + 1];
-						float f_37_ = (float) i_28_ / 128.0F;
+						float f_37_ = i_28_ / 128.0F;
 						f_36_ += (-f_36_ + fs_24_[i_23_ + 1][i_20_ + 1]) * f_33_;
 						f_31_ += (f_35_ - f_31_) * f_37_;
 						f_32_ += (f_36_ - f_32_) * f_37_;
@@ -217,7 +217,7 @@ public abstract class Class133 {
 		Class14_Sub11.aClass52_2946.method1209();
 	}
 
-	public abstract int method1781();
+	public abstract int getMinY();
 
 	public boolean method1784() {
 		boolean bool = false;
@@ -237,6 +237,6 @@ public abstract class Class133 {
 		return class133_52_;
 	}
 
-	public abstract void method1792(int i, int i_53_, int i_54_, int i_55_, int i_56_, int i_57_, int i_58_, int i_59_,
+	public abstract void render(int i, int i_53_, int i_54_, int i_55_, int i_56_, int i_57_, int i_58_, int i_59_,
 			long l);
 }

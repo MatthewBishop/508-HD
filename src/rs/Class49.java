@@ -17,7 +17,7 @@ public class Class49 {
 	public Inflater anInflater812;
 	public static boolean aBoolean814 = false;
 	public static int anInt815;
-	public static Class124 aClass124_816 = Class14_Sub2_Sub2.method263(1178, "(U1");
+	public static Class124 aClass124_816 = Class124.method263(1178, "(U1");
 	public static int anInt817;
 	public static int anInt818;
 	public static Canvas aCanvas819;
@@ -79,8 +79,8 @@ public class Class49 {
 			i_12_ *= 1.5;
 		int i_13_ = i_12_ * Class3.cos[class142.anInt2317] >> 48;
 		int i_14_ = Class3.sin[class142.anInt2317] * i_12_ >> 16;
-		modelsd.method1862(0, class142.anInt2286, class142.anInt2326, class142.anInt2317, class142.anInt2293,
-				(-(modelsd.method1781() / 2) + i_14_ + class142.anInt2285), i_13_ + class142.anInt2285);
+		modelsd.draw(0, class142.anInt2286, class142.anInt2326, class142.anInt2317, class142.anInt2293,
+				(-(modelsd.getMinY() / 2) + i_14_ + class142.anInt2285), i_13_ + class142.anInt2285);
 		if (i >= 1) {
 			class14_sub2_sub19_sub1_11_.method411(1);
 			if (i >= 2)
@@ -90,10 +90,10 @@ public class Class49 {
 		if (i_5_ != 0)
 			class14_sub2_sub19_sub1_11_.method408(i_5_);
 		if (class142.anInt2316 != -1)
-			class14_sub2_sub19_sub1.method391(0, 0);
+			class14_sub2_sub19_sub1.drawReg(0, 0);
 		else if (class142.anInt2305 != -1) {
 			Class92.method1455(class14_sub2_sub19_sub1.anIntArray5088, 36, 32);
-			class14_sub2_sub19_sub1_11_.method391(0, 0);
+			class14_sub2_sub19_sub1_11_.drawReg(0, 0);
 			class14_sub2_sub19_sub1_11_ = class14_sub2_sub19_sub1;
 		}
 		if (bool_2_ && (class142.anInt2309 == 1 || i_3_ != 1) && i_3_ != -1)

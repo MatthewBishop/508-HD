@@ -11,7 +11,7 @@ import com.jagex.util.TimeUtil;
 
 public class Canvas_Sub1 extends Canvas {
 	public static float aFloat41;
-	public static Class124 aClass124_42 = Class14_Sub2_Sub2.method263(1178, "");
+	public static Class124 aClass124_42 = Class124.method263(1178, "");
 	public static int anInt43 = 1;
 	public static Class124 aClass124_46;
 	public static Interface5 anInterface5_48;
@@ -25,7 +25,7 @@ public class Canvas_Sub1 extends Canvas {
 	public static int anInt53;
 
 	static {
-		aClass124_46 = Class14_Sub2_Sub2.method263(1178, "<img=1>");
+		aClass124_46 = Class124.method263(1178, "<img=1>");
 		anInterface5_48 = null;
 	}
 
@@ -33,10 +33,10 @@ public class Canvas_Sub1 extends Canvas {
 		Class14_Sub9_Sub3.anIntArray4851[i_1_] = i;
 		if (i_0_ != -1)
 			method58(63, (byte) 85, -90);
-		Class14_Sub13 class14_sub13 = ((Class14_Sub13) JunkTex.aClass55_92.get((long) i_1_));
+		Class14_Sub13 class14_sub13 = ((Class14_Sub13) JunkTex.aClass55_92.get(i_1_));
 		if (class14_sub13 == null) {
 			class14_sub13 = new Class14_Sub13(4611686018427387905L);
-			JunkTex.aClass55_92.put((long) i_1_, class14_sub13);
+			JunkTex.aClass55_92.put(i_1_, class14_sub13);
 		} else if (class14_sub13.aLong2963 != 4611686018427387905L)
 			class14_sub13.aLong2963 = TimeUtil.getTime() + 500L | 0x4000000000000000L;
 	}
@@ -45,10 +45,12 @@ public class Canvas_Sub1 extends Canvas {
 		Static2.aClass52_3942.method1209();
 	}
 
+	@Override
 	public void update(Graphics graphics) {
 		aComponent52.update(graphics);
 	}
 
+	@Override
 	public void paint(Graphics graphics) {
 		aComponent52.paint(graphics);
 	}

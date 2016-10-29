@@ -14,6 +14,8 @@ import java.net.Socket;
 import java.net.URL;
 import java.util.Vector;
 
+import com.jagex.io.js5.FileOnDisk;
+
 public class Class43 implements Runnable {
 
 	public static Method aMethod702;
@@ -26,10 +28,10 @@ public class Class43 implements Runnable {
 	public static String java_vendor;
 	public static String java_version;
 	public boolean aBoolean703 = false;
-	public Class30 aClass30_716 = null;
-	public Class30 aClass30_720 = null;
-	public Class30 aClass30_722 = null;
-	public Class30[] aClass30Array711;
+	public FileOnDisk aClass30_716 = null;
+	public FileOnDisk aClass30_720 = null;
+	public FileOnDisk aClass30_722 = null;
+	public FileOnDisk[] aClass30Array711;
 	public Class31 aClass31_714 = null;
 	public Class31 aClass31_715 = null;
 	public Display aDisplay;
@@ -276,7 +278,7 @@ public class Class43 implements Runnable {
 								try {
 									var13 = new File(var11, "random.dat");
 									if (var7 == 1 || var13.exists()) {
-										this.aClass30_716 = new Class30(var13, "rw", 25L);
+										this.aClass30_716 = new FileOnDisk(var13, "rw", 25L);
 									}
 								} catch (Exception var18) {
 									this.aClass30_716 = null;
@@ -299,15 +301,15 @@ public class Class43 implements Runnable {
 										continue;
 									}
 
-									this.aClass30_720 = new Class30(var13, "rw", 104857600L);
-									this.aClass30Array711 = new Class30[var3];
+									this.aClass30_720 = new FileOnDisk(var13, "rw", 104857600L);
+									this.aClass30Array711 = new FileOnDisk[var3];
 
 									for (var14 = 0; var3 > var14; ++var14) {
-										this.aClass30Array711[var14] = new Class30(
+										this.aClass30Array711[var14] = new FileOnDisk(
 												new File(var11, "main_file_cache.idx" + var14), "rw", 1048576L);
 									}
 
-									this.aClass30_722 = new Class30(new File(var11, "main_file_cache.idx255"), "rw",
+									this.aClass30_722 = new FileOnDisk(new File(var11, "main_file_cache.idx255"), "rw",
 											1048576L);
 									this.aFile719 = this.aFile724 = var11;
 								} catch (Exception var19) {
@@ -372,7 +374,7 @@ public class Class43 implements Runnable {
 		return var3;
 	}
 
-	public Class30 method1148(int var1, String var2) {
+	public FileOnDisk method1148(int var1, String var2) {
 		if (var1 != 5) {
 			return null;
 		} else {
@@ -383,7 +385,7 @@ public class Class43 implements Runnable {
 				String var5 = var3[var4];
 				if (var5.length() <= 0 || (new File(var5)).exists()) {
 					try {
-						Class30 var6 = new Class30(new File(var5, "jagex_" + var2 + "_preferences.dat"), "rw", 10000L);
+						FileOnDisk var6 = new FileOnDisk(new File(var5, "jagex_" + var2 + "_preferences.dat"), "rw", 10000L);
 						return var6;
 					} catch (Exception var7) {
 						;
@@ -648,7 +650,7 @@ public class Class43 implements Runnable {
 													}
 
 													var12 = (String) var1.anObject528;
-													Class30 var21 = this.method1148(5, var12);
+													FileOnDisk var21 = this.method1148(5, var12);
 													var1.anObject530 = var21;
 												}
 											}

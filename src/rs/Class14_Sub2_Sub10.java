@@ -7,7 +7,7 @@ import com.jagex.cache.anim.Animation;
 import com.jagex.link.Cacheable;
 
 public class Class14_Sub2_Sub10 extends Cacheable {
-	public static Class124 aClass124_3867 = Class14_Sub2_Sub2.method263(1178, " zuerst von Ihrer Ignorieren)2Liste(Q");
+	public static Class124 aClass124_3867 = Class124.method263(1178, " zuerst von Ihrer Ignorieren)2Liste(Q");
 	public static int anInt3868 = -1;
 	public Class133_Sub6 aClass133_Sub6_3870;
 	public static short[][] aShortArrayArray3871 = {

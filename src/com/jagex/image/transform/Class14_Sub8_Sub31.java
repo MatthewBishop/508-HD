@@ -9,9 +9,9 @@ public class Class14_Sub8_Sub31 extends Class14_Sub8 {
 	}
 
 	@Override
-	public int[] method484(int i) {
-		int[] is = aClass149_2851.method2014(i);
-		if (aClass149_2851.aBoolean2402) {
+	public int[] outputMonochrome(int i) {
+		int[] is = monoChromaticImageCache.method2014(i);
+		if (monoChromaticImageCache.aBoolean2402) {
 			int[][] is_15_ = method480(0, i);
 			int[] is_16_ = is_15_[0];
 			int[] is_17_ = is_15_[1];

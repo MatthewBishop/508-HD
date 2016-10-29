@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
 
@@ -69,10 +70,10 @@ public class Class14_Sub16 extends Linkable {
 						int i_14_ = i_5_ >> 16 & 0x7f;
 						if (i_14_ > 0) {
 							int i_15_ = is_1_[i_12_];
-							Class14_Sub17 class14_sub17 = ((Class14_Sub17) aClass55_3003.get((long) i_15_));
+							Class14_Sub17 class14_sub17 = ((Class14_Sub17) aClass55_3003.get(i_15_));
 							if (class14_sub17 == null) {
 								class14_sub17 = new Class14_Sub17(new byte[128]);
-								aClass55_3003.put((long) i_15_, class14_sub17);
+								aClass55_3003.put(i_15_, class14_sub17);
 							}
 							class14_sub17.aByteArray3011[i_13_] = (byte) 1;
 						}

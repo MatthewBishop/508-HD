@@ -5,6 +5,7 @@ package rs;
 
 import com.jagex.cache.anim.Animation;
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.map.SceneCluster;
 import com.jagex.rt4.Class148;
@@ -43,8 +44,8 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 	public static Class36 aClass36_4939;
 	public int anInt4940;
 	public Class102 aClass102_4941;
-	public static Class124 aClass124_4942 = Class14_Sub2_Sub2.method263(1178, "blaugr-Un:");
-	public static Class124 aClass124_4943 = Class14_Sub2_Sub2.method263(1178, "ul");
+	public static Class124 aClass124_4942 = Class124.method263(1178, "blaugr-Un:");
+	public static Class124 aClass124_4943 = Class124.method263(1178, "ul");
 
 	public static int method1805(int i, Class9 class9) {
 		int i_0_ = 0;
@@ -76,7 +77,7 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 			i_0_++;
 		if (class9.method171(i - 2174, Class82.anInt1334))
 			i_0_++;
-		if (class9.method171(29499, Class9_Sub1.anInt2688))
+		if (class9.method171(29499, Static2.anInt2688))
 			i_0_++;
 		if (class9.method171(29499, JunkTex.anInt2720))
 			i_0_++;
@@ -98,6 +99,7 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 			aClass124_4943 = null;
 	}
 
+	@Override
 	public boolean method1804(byte i) {
 		if (i != 115)
 			method1808(true);
@@ -109,14 +111,15 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 		return bool;
 	}
 
-	public void method1792(int i, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, long l) {
+	@Override
+	public void render(int i, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, long l) {
 		if (aClass102_4941 != null) {
 			Animation animation = (anInt3445 != -1 && anInt3467 == 0 ? JunkTex.method1129(anInt3445, 25) : null);
 			Animation class46_9_ = (anInt3452 != -1 && !aBoolean4921 && (anInt3452 != anInt3433 || animation == null)
 					? JunkTex.method1129(anInt3452, -126) : null);
 			Class133_Sub7 class133_sub7 = aClass102_4941.method1516(class46_9_, anInt3483, -13, anInt3501, animation);
 			if (class133_sub7 != null) {
-				anInt3449 = class133_sub7.method1781();
+				anInt3449 = class133_sub7.getMinY();
 				if (JunkTex.aBoolean4518 && (aClass102_4941.anInt1720 == -1
 						|| (Class126.method1744(aClass102_4941.anInt1720, 170).aBoolean330))) {
 					Class133_Sub7 class133_sub7_10_ = Class76.method1359(-10345, anInt3495,
@@ -126,7 +129,7 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 					float f_11_ = RT4GL.method1624();
 					RT4GL.method1646();
 					RT4GL.method1635(f, f_11_ - 150.0F);
-					class133_sub7_10_.method1792(0, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, i_8_, -1L);
+					class133_sub7_10_.render(0, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, i_8_, -1L);
 					RT4GL.method1625();
 					RT4GL.method1635(f, f_11_);
 				}
@@ -208,10 +211,10 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 					int i_48_ = i_47_ <= i_37_ ? i_47_ : i_37_;
 					int i_49_ = i_42_ <= i_35_ ? i_42_ : i_35_;
 					int i_50_ = i_42_ >= i_47_ ? i_47_ : i_42_;
-					i_21_ = (int) (Math.atan2((double) (i_46_ - i_50_), (double) i_25_) * 325.95) & 0x7ff;
+					i_21_ = (int) (Math.atan2(i_46_ - i_50_, i_25_) * 325.95) & 0x7ff;
 					if (i_21_ != 0)
 						class133_sub7.method1861(i_21_);
-					i_20_ = (int) (Math.atan2((double) (-i_48_ + i_49_), (double) i_26_) * 325.95) & 0x7ff;
+					i_20_ = (int) (Math.atan2(-i_48_ + i_49_, i_26_) * 325.95) & 0x7ff;
 					if (i_20_ != 0)
 						class133_sub7.method1858(i_20_);
 					i_22_ = (i_22_ >> 1) - anInt3500;
@@ -251,11 +254,11 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 							class133_sub7_52_.method1872();
 					}
 				}
-				class133_sub7.aBoolean3687 = true;
-				class133_sub7.method1792(i, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, i_8_, l);
+				class133_sub7.haveActions = true;
+				class133_sub7.render(i, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, i_8_, l);
 				if (class133_sub7_51_ != null) {
-					class133_sub7_51_.aBoolean3687 = true;
-					class133_sub7_51_.method1792(i, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, i_8_, l);
+					class133_sub7_51_.haveActions = true;
+					class133_sub7_51_.render(i, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, i_8_, l);
 				}
 				if (class133_sub7_52_ != null) {
 					if (anInt3469 == 512)
@@ -270,7 +273,8 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 		}
 	}
 
-	public int method1781() {
+	@Override
+	public int getMinY() {
 		int i = anInt3449;
 		return i;
 	}
@@ -309,7 +313,7 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 					break;
 				}
 				if (i_60_ >= 32768) {
-					i_60_ = Class107.anIntArray1809[i_60_ - 32768];
+					i_60_ = ProceduralTexture.anIntArray1809[i_60_ - 32768];
 					is[i_57_] = Class66.method1294(i_60_, 1073741824);
 					int i_61_ = JunkTex.method605(78, i_60_).anInt2310;
 					if (i_61_ != 0)
@@ -395,7 +399,7 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 		if (i_76_ == -14498) {
 			int i_81_ = i_79_ * i_79_ + i_78_ * i_78_;
 			if (i_81_ >= 16 && i_81_ <= 360000) {
-				i_81_ = (int) (Math.atan2((double) i_78_, (double) i_79_) * 325.949) & 0x7ff;
+				i_81_ = (int) (Math.atan2(i_78_, i_79_) * 325.949) & 0x7ff;
 				Class133_Sub7 class133_sub7_82_ = JunkTex.method672(anInt3436, anInt3500, i_71_, 4435, i_81_,
 						class133_sub7, anInt3495);
 				if (class133_sub7_82_ != null) {
@@ -403,7 +407,7 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 					float f_83_ = RT4GL.method1624();
 					RT4GL.method1646();
 					RT4GL.method1635(f, f_83_ - 150.0F);
-					class133_sub7_82_.method1792(0, i_70_, i_73_, i, i_77_, i_75_, i_80_, i_74_, -1L);
+					class133_sub7_82_.render(0, i_70_, i_73_, i, i_77_, i_75_, i_80_, i_74_, -1L);
 					RT4GL.method1625();
 					RT4GL.method1635(f, f_83_);
 				}

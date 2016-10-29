@@ -8,17 +8,17 @@ public class Class74 {
 	public static int[] anIntArray1135;
 	public static int anInt1136;
 	public static Class124 aClass124_1137;
-	public static Class124 aClass124_1139 = Class14_Sub2_Sub2.method263(1178, "Art");
+	public static Class124 aClass124_1139 = Class124.method263(1178, "Art");
 	public static Class124 aClass124_1140;
 	public static Class124 aClass124_1141;
 	public static Class124 aClass124_1142;
 
 	static {
 		anInt1136 = 500;
-		aClass124_1141 = Class14_Sub2_Sub2.method263(1178, "Verbindung mit Update)2Server)3)3)3");
+		aClass124_1141 = Class124.method263(1178, "Verbindung mit Update)2Server)3)3)3");
 		anIntArray1135 = new int[100];
-		aClass124_1137 = Class14_Sub2_Sub2.method263(1178, "Update)2Liste geladen)3");
-		aClass124_1140 = Class14_Sub2_Sub2.method263(1178, " has logged in)3");
+		aClass124_1137 = Class124.method263(1178, "Update)2Liste geladen)3");
+		aClass124_1140 = Class124.method263(1178, " has logged in)3");
 		aClass124_1142 = aClass124_1140;
 	}
 

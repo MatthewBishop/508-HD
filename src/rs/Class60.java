@@ -29,7 +29,7 @@ public class Class60 {
 
 	static {
 		for (int i = 0; i < 256; i++) {
-			long l = (long) i;
+			long l = i;
 			for (int i_0_ = 0; i_0_ < 8; i_0_++) {
 				if (1L == (l & 0x1L))
 					l = l >>> 1 ^ ~0x3693a86a2878f0bdL;
@@ -38,9 +38,9 @@ public class Class60 {
 			}
 			aLongArray967[i] = l;
 		}
-		aClass124_982 = Class14_Sub2_Sub2.method263(1178, " loggt sich aus)3");
+		aClass124_982 = Class124.method263(1178, " loggt sich aus)3");
 		aBoolean983 = true;
-		aClass124_985 = Class14_Sub2_Sub2.method263(1178, "Card:");
+		aClass124_985 = Class124.method263(1178, "Card:");
 	}
 
 	public static void method1264(int i) {
@@ -143,7 +143,7 @@ public class Class60 {
 	}
 
 	public Class133_Sub7 method1267(int i, int i_21_) {
-		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Static2.aClass52_4053.get((long) anInt962));
+		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Static2.aClass52_4053.get(anInt962));
 		if (class133_sub7 == null) {
 			Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(JunkTex.aClass9_2711, anInt977, 0);
 			if (class133_sub2 == null) {
@@ -159,7 +159,7 @@ public class Class60 {
 					class133_sub2.method1819(aShortArray968[i_24_], aShortArray971[i_24_]);
 			}
 			class133_sub7 = class133_sub2.method1827(anInt973 + 64, anInt969 + 850, -30, -50, -30);
-			Static2.aClass52_4053.put(class133_sub7, (long) anInt962);
+			Static2.aClass52_4053.put(class133_sub7, anInt962);
 		}
 		Class133_Sub7 class133_sub7_25_;
 		if (anInt966 != -1 && i_21_ != -1)

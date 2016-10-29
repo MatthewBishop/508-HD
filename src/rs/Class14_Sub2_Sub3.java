@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 import com.jagex.link.Cacheable;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
@@ -14,8 +15,8 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 	public static int anInt3769;
 	public static int anInt3771 = 0;
 	public static int[] anIntArray3773;
-	public static Class124 aClass124_3774 = Class14_Sub2_Sub2.method263(1178, ":tradereq:");
-	public static Class124 aClass124_3778 = Class14_Sub2_Sub2.method263(1178, "T");
+	public static Class124 aClass124_3774 = Class124.method263(1178, ":tradereq:");
+	public static Class124 aClass124_3778 = Class124.method263(1178, "T");
 	public HashTable aClass55_3783;
 	public static int anInt3785;
 	public static int anInt3787;
@@ -25,13 +26,11 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 	}
 
 	public int method267(byte i, int i_0_, int i_1_) {
-		if (i >= -97)
-			method271((byte) -22, -123, -24, 37, 94, -48);
 		if (aClass55_3783 == null) {
 			int i_2_ = i_1_;
 			return i_2_;
 		}
-		Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass55_3783.get((long) i_0_);
+		Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass55_3783.get(i_0_);
 		if (class14_sub1 == null) {
 			int i_3_ = i_1_;
 			return i_3_;
@@ -68,20 +67,10 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 		return i_10_;
 	}
 
-	public static void method271(byte i, int i_11_, int i_12_, int i_13_, int i_14_, int i_15_) {
-		if (i > 89) {
-			if (i_14_ == i_15_)
-				Static2.method1120(i_13_, (byte) -121, i_11_, i_12_, i_14_);
-			else if (Class118.anInt1982 <= -i_14_ + i_12_ && JunkTex.anInt4327 >= i_12_ + i_14_
-					&& i_11_ - i_15_ >= Class14_Sub17.anInt3005 && i_15_ + i_11_ <= Class59.anInt955)
-				Class66.method1293(i_11_, i_12_, i_14_, 121, i_15_, i_13_);
-			else
-				Class7_Sub1.method124(i_14_, i_13_, i_12_, i_11_, i_15_, (byte) 65);
-		}
-	}
+
 
 	public static Class14_Sub2_Sub21 method272(int i, byte i_16_) {
-		Class14_Sub2_Sub21 class14_sub2_sub21 = (Class14_Sub2_Sub21) Class35.aClass20_599.get((long) i);
+		Class14_Sub2_Sub21 class14_sub2_sub21 = (Class14_Sub2_Sub21) Class35.aClass20_599.get(i);
 		if (class14_sub2_sub21 != null) {
 			Class14_Sub2_Sub21 class14_sub2_sub21_17_ = class14_sub2_sub21;
 			return class14_sub2_sub21_17_;
@@ -100,7 +89,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 		}
 		if (i >= 32768)
 			class14_sub2_sub21_18_.method439(19712);
-		Class35.aClass20_599.put(class14_sub2_sub21_18_, (long) i);
+		Class35.aClass20_599.put(class14_sub2_sub21_18_, i);
 		class14_sub2_sub21 = class14_sub2_sub21_18_;
 		return class14_sub2_sub21;
 	}
@@ -122,7 +111,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 					linkable = new Class14_Sub30(class14_sub10.method797(9467));
 				else
 					linkable = new Class14_Sub1(class14_sub10.getInt((byte) -112));
-				aClass55_3783.put((long) i_23_, linkable);
+				aClass55_3783.put(i_23_, linkable);
 			}
 		}
 	}
@@ -147,7 +136,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 			Class124 class124_25_ = class124;
 			return class124_25_;
 		}
-		Class14_Sub30 class14_sub30 = (Class14_Sub30) aClass55_3783.get((long) i);
+		Class14_Sub30 class14_sub30 = (Class14_Sub30) aClass55_3783.get(i);
 		if (class14_sub30 == null) {
 			Class124 class124_26_ = class124;
 			return class124_26_;
@@ -357,4 +346,6 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 		bool_44_ = true;
 		return bool_44_;
 	}
+	
+	
 }

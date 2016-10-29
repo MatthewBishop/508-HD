@@ -2,9 +2,10 @@ package com.jagex.image.transform;
 
 import java.util.Random;
 
-import com.jagex.image.transform.util.Class14_Sub22;
+import com.jagex.image.transform.class125.SC;
+import com.jagex.image.transform.util.TriChromaticImageBuffer;
 import com.jagex.image.transform.util.Class14_Sub2_Sub17;
-import com.jagex.image.transform.util.Class14_Sub6;
+import com.jagex.image.transform.util.MonoChromaticImageBuffer;
 import com.jagex.io.Buffer;
 import com.jagex.link.Cache;
 import com.jagex.util.RandomUtil;
@@ -21,7 +22,7 @@ public class TexStatic {
 		for (int i_0_ = 0; i_0_ < 256; i_0_++) {
 			for (int i_1_ = 0; i_1_ <= i_0_; i_1_++)
 				aByteArray3794[i++] = (byte) (int) (255.0
-						/ Math.sqrt((double) ((float) (i_0_ * i_0_ + 65535 + (i_1_ * i_1_)) / 65535.0F)));
+						/ Math.sqrt((i_0_ * i_0_ + 65535 + (i_1_ * i_1_)) / 65535.0F));
 		}
 	}
 	
@@ -60,6 +61,7 @@ public class TexStatic {
 		anIntArray3357 = null;
 		TexStatic.aClass14_Sub22_652 = null;
 		aClass14_Sub6_3319 = null;
+		SC.kill();
 	}
 
 	public static int[] anIntArray3623;
@@ -385,26 +387,26 @@ public class TexStatic {
 		class14_sub10.readUByte();
 		int i_0_ = class14_sub10.readUByte();
 		Class14_Sub8 class14_sub8 = method2016(i_0_);
-		class14_sub8.anInt2837 = class14_sub10.readUByte();
+		class14_sub8.cacheSize = class14_sub10.readUByte();
 		int i_1_ = class14_sub10.readUByte();
 		for (int i_2_ = 0; i_1_ > i_2_; i_2_++) {
 			int i_3_ = class14_sub10.readUByte();
-			class14_sub8.method475(i_3_, class14_sub10);
+			class14_sub8.decode(i_3_, class14_sub10);
 		}
-		class14_sub8.method472();
+		class14_sub8.postDecode();
 		Class14_Sub8 class14_sub8_4_ = class14_sub8;
 		return class14_sub8_4_;
 	}
 
-	public static Class14_Sub22 aClass14_Sub22_652 = new Class14_Sub22(0, 0);
-	public static Class14_Sub6 aClass14_Sub6_3319 = new Class14_Sub6(0, 0);
+	public static TriChromaticImageBuffer aClass14_Sub22_652 = new TriChromaticImageBuffer(0, 0);
+	public static MonoChromaticImageBuffer aClass14_Sub6_3319 = new MonoChromaticImageBuffer(0, 0);
 	public static Cache aClass20_5073 = new Cache(16);
 	public static byte[] method527(int i, byte i_6_) {
 		Class14_Sub2_Sub17 class14_sub2_sub17 = ((Class14_Sub2_Sub17) aClass20_5073
-				.get((long) i));
+				.get(i));
 		if (class14_sub2_sub17 == null) {
 			byte[] is = new byte[512];
-			Random random = new Random((long) i);
+			Random random = new Random(i);
 			for (int i_7_ = 0; i_7_ < 255; i_7_++)
 				is[i_7_] = (byte) i_7_;
 			for (int i_8_ = 0; i_8_ < 255; i_8_++) {
@@ -415,7 +417,7 @@ public class TexStatic {
 				is[i_9_] = is[-i_8_ + 511] = i_11_;
 			}
 			class14_sub2_sub17 = new Class14_Sub2_Sub17(is);
-			aClass20_5073.put(class14_sub2_sub17, (long) i);
+			aClass20_5073.put(class14_sub2_sub17, i);
 		}
 		byte[] is = class14_sub2_sub17.aByteArray4014;
 		return is;
@@ -428,6 +430,23 @@ public class TexStatic {
 		int i_6_ = (i_5_ * i_3_ >> 12) + 40960;
 		int i_7_ = i_6_ * i_4_ >> 12;
 		return i_7_;
+	}
+
+	public static int[] method1567(boolean bool, int i, int i_16_, int i_17_, int i_18_, float f, int i_19_,
+			int i_20_) {
+		int[] is = new int[i_18_];
+		Class14_Sub8_Sub12 class14_sub8_sub12 = new Class14_Sub8_Sub12();
+		class14_sub8_sub12.aBoolean4277 = bool;
+		class14_sub8_sub12.anInt4289 = i_20_;
+		class14_sub8_sub12.anInt4300 = i_17_;
+		class14_sub8_sub12.anInt4282 = i_19_;
+		class14_sub8_sub12.anInt4291 = i;
+		class14_sub8_sub12.anInt4297 = (int) (f * 4096.0F);
+		class14_sub8_sub12.postDecode();
+		method1117(0, 1, i_18_);
+		class14_sub8_sub12.method542(-2, 0, is);
+		int[] is_22_ = is;
+		return is_22_;
 	}
 
 

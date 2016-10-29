@@ -6,6 +6,7 @@ package rs;
 import java.awt.Image;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 import com.jagex.link.Cacheable;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
@@ -20,7 +21,7 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 	public static int[] anIntArray3834 = { 160, 192, 80, 96, 0, 144, 80, 48, 160 };
 	public static Class14_Sub2_Sub19_Sub1_Sub2 aClass14_Sub2_Sub19_Sub1_Sub2_3836;
 	public static short aShort3839;
-	public static Class124 aClass124_3842 = Class14_Sub2_Sub2.method263(1178, "Loaded wordpack");
+	public static Class124 aClass124_3842 = Class124.method263(1178, "Loaded wordpack");
 	public static int anInt3843;
 	public int anInt3845;
 	public static int[][] anIntArrayArray3846;
@@ -68,7 +69,7 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 					.getFirst(); class14_sub1 != null; class14_sub1 = (Class14_Sub1) aClass55_3829
 							.getNext()) {
 				Class14_Sub1 class14_sub1_0_ = new Class14_Sub1((int) class14_sub1.key);
-				aClass55_3854.put((long) class14_sub1.anInt2714, class14_sub1_0_);
+				aClass55_3854.put(class14_sub1.anInt2714, class14_sub1_0_);
 			}
 		}
 	}
@@ -94,7 +95,7 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 			aClass14_Sub2_Sub19_Sub1_Sub2_3836 = null;
 		if (aClass55_3854 == null)
 			method292(false);
-		Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass55_3854.get((long) i);
+		Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass55_3854.get(i);
 		if (class14_sub1 == null) {
 			boolean bool = false;
 			return bool;
@@ -108,7 +109,7 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 			Class124 class124 = aClass124_3847;
 			return class124;
 		}
-		Class14_Sub30 class14_sub30 = ((Class14_Sub30) aClass55_3829.get((long) i_2_));
+		Class14_Sub30 class14_sub30 = ((Class14_Sub30) aClass55_3829.get(i_2_));
 		if (i >= -48) {
 			Class124 class124 = null;
 			return class124;
@@ -155,7 +156,7 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 								linkable = (new Class14_Sub1(class14_sub10.getInt((byte) -104)));
 							else
 								linkable = new Class14_Sub30(class14_sub10.method797(9467));
-							aClass55_3829.put((long) i_10_, linkable);
+							aClass55_3829.put(i_10_, linkable);
 						}
 					}
 				} else
@@ -177,7 +178,7 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 			int i_13_ = 57;
 			return i_13_;
 		}
-		Class14_Sub1 class14_sub1 = ((Class14_Sub1) aClass55_3829.get((long) i_11_));
+		Class14_Sub1 class14_sub1 = ((Class14_Sub1) aClass55_3829.get(i_11_));
 		if (class14_sub1 == null) {
 			int i_14_ = anInt3855;
 			return i_14_;

@@ -3,6 +3,7 @@
  */
 package rs;
 
+import java.awt.Component;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InvalidClassException;
@@ -18,10 +19,14 @@ import java.net.Socket;
 
 import com.jagex.io.Buffer;
 import com.jagex.io.PacketBuffer;
+import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.link.Cache;
+import com.jagex.link.Deque;
 import com.jagex.link.HashTable;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.map.SceneCluster;
+import com.jagex.rt4.Class11;
 import com.jagex.rt4.Class148;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.Class148_Sub2;
@@ -32,6 +37,8 @@ import com.jagex.rt4.Class14_Sub2_Sub19_Sub2_Sub1;
 import com.jagex.rt4.Class25;
 import com.jagex.rt4.RT4;
 import com.jagex.rt4.RT4GL;
+import com.jagex.rt4.ShadowManager;
+import com.jagex.rt4.lights.Light;
 import com.jagex.rt4.lights.LightManager;
 import com.jagex.sound.Track;
 import com.jagex.util.Util;
@@ -58,7 +65,7 @@ public class Static2 {
 	public static Buffer[] aClass14_Sub10Array2742;
 	public static HashTable aClass55_2733;
 	public static int anInt2725;
-	public static int anInt2726;
+	public static int mouseOffFromCenterX;
 	public static int anInt2734;
 	public static int anInt2740;
 	public static int anInt2741;
@@ -68,14 +75,14 @@ public class Static2 {
 	static {
 		anIntArray351 = new int[2048];
 		aShortArray357 = new short[] { 13, 10, 37, 47, 33, 20, 45, 18 };
-		aClass124_364 = Class14_Sub2_Sub2.method263(1178, "");
+		aClass124_364 = Class124.method263(1178, "");
 		anInt365 = 0;
 		anInt366 = 5063219;
 		anInt371 = -1;
-		aClass124_360 = Class14_Sub2_Sub2.method263(1178, " )2> <col=00ffff>");
-		aClass124_2730 = Class14_Sub2_Sub2.method263(1178, "(R");
+		aClass124_360 = Class124.method263(1178, " )2> <col=00ffff>");
+		aClass124_2730 = Class124.method263(1178, "(R");
 		anIntArray2731 = new int[] { 0, 2, 2, 2, 1, 1, 2, 2, 1, 3, 1, 1 };
-		anInt2726 = 0;
+		mouseOffFromCenterX = 0;
 		anInt2725 = 0;
 		anInt2734 = -2;
 		anIntArray2727 = new int[32];
@@ -233,35 +240,6 @@ public class Static2 {
 		}
 	}
 
-	public static void method247(byte i, int i_32_, int i_33_, int i_34_, int i_35_) {
-		int i_36_ = i_32_;
-		int i_37_ = 0;
-		Class51.method1201(Static2.anIntArrayArray4038[i_34_], -i_32_ + i_33_, i_33_ + i_32_, -5973, i_35_);
-		int i_38_ = -i_32_;
-		int i_39_ = -1;
-		while (i_37_ < i_36_) {
-			i_39_ += 2;
-			i_37_++;
-			i_38_ += i_39_;
-			if (i_38_ >= 0) {
-				i_36_--;
-				int[] is = Static2.anIntArrayArray4038[i_34_ + i_36_];
-				int[] is_40_ = Static2.anIntArrayArray4038[-i_36_ + i_34_];
-				i_38_ -= i_36_ << 33;
-				int i_41_ = i_33_ - i_37_;
-				int i_42_ = i_33_ + i_37_;
-				Class51.method1201(is, i_41_, i_42_, -5973, i_35_);
-				Class51.method1201(is_40_, i_41_, i_42_, -5973, i_35_);
-			}
-			int i_43_ = i_33_ + i_36_;
-			int i_44_ = i_33_ - i_36_;
-			int[] is = Static2.anIntArrayArray4038[i_37_ + i_34_];
-			int[] is_45_ = Static2.anIntArrayArray4038[i_34_ - i_37_];
-			Class51.method1201(is, i_44_, i_43_, -5973, i_35_);
-			Class51.method1201(is_45_, i_44_, i_43_, -5973, i_35_);
-		}
-	}
-
 	public static void method248(int i) {
 		if (i == 32) {
 			aClass55_2733 = null;
@@ -272,7 +250,7 @@ public class Static2 {
 		}
 	}
 
-	public static Class124 aClass124_2905 = Class14_Sub2_Sub2.method263(1178, "glow2:");
+	public static Class124 aClass124_2905 = Class124.method263(1178, "glow2:");
 	public static Class124 aClass124_2887 = aClass124_2905;
 	public static Class124 aClass124_2872 = aClass124_2905;
 	public static void method822(int i) {
@@ -306,16 +284,16 @@ public class Static2 {
 	public static int anInt2889 = 0;
 	public static int anInt2884;
 	public static boolean aBoolean2870 = false;
-	public static Class124 aClass124_2869 = Class14_Sub2_Sub2.method263(1178, "overlay");
+	public static Class124 aClass124_2869 = Class124.method263(1178, "overlay");
 	public static Class124[] aClass124Array2938 = new Class124[200];
 	public static Class9 aClass9_2923;
 	public static Class9_Sub1 aClass9_Sub1_2901;
 	public static int anInt2878 = 0;
-	public static Class124 aClass124_4887 = Class14_Sub2_Sub2.method263(1178, "Loading)3)3)3");
-	public static Class124 aClass124_4891 = Class14_Sub2_Sub2.method263(1178, "huffman");
+	public static Class124 aClass124_4887 = Class124.method263(1178, "Loading)3)3)3");
+	public static Class124 aClass124_4891 = Class124.method263(1178, "huffman");
 	public static int anInt4877 = 0;
 	public static Class124 aClass124_4886 = aClass124_4887;
-	public static Class124 aClass124_4876 = Class14_Sub2_Sub2.method263(1178, "Null");
+	public static Class124 aClass124_4876 = Class124.method263(1178, "Null");
 	public static int anInt4892;
 	public static void method839(int i) {
 		Class37.aClass52_635.clear();
@@ -353,59 +331,7 @@ public class Static2 {
 			aClass124_4887 = null;
 	}
 
-	public static void method849(int i, int i_13_, int i_14_, int i_15_, int i_16_, int i_17_) {
-		if (i_16_ <= Class59.anInt955 && Class14_Sub17.anInt3005 <= i_13_) {
-			boolean bool;
-			if (i < Class118.anInt1982) {
-				bool = false;
-				i = Class118.anInt1982;
-			} else if (JunkTex.anInt4327 >= i)
-				bool = true;
-			else {
-				i = JunkTex.anInt4327;
-				bool = false;
-			}
-			boolean bool_18_;
-			if (i_17_ >= Class118.anInt1982) {
-				if (JunkTex.anInt4327 < i_17_) {
-					bool_18_ = false;
-					i_17_ = JunkTex.anInt4327;
-				} else
-					bool_18_ = true;
-			} else {
-				i_17_ = Class118.anInt1982;
-				bool_18_ = false;
-			}
-			if (Class14_Sub17.anInt3005 <= i_16_)
-				Class51.method1201((Static2.anIntArrayArray4038[i_16_++]), i_17_, i, -5973, i_15_);
-			else
-				i_16_ = Class14_Sub17.anInt3005;
-			if (i_13_ <= Class59.anInt955)
-				Class51.method1201((Static2.anIntArrayArray4038[i_13_--]), i_17_, i, -5973, i_15_);
-			else
-				i_13_ = Class59.anInt955;
-			if (!bool_18_ || !bool) {
-				if (!bool_18_) {
-					if (bool) {
-						for (int i_19_ = i_16_; i_19_ <= i_13_; i_19_++)
-							Static2.anIntArrayArray4038[i_19_][i] = i_15_;
-					}
-				} else {
-					for (int i_20_ = i_16_; i_20_ <= i_13_; i_20_++)
-						Static2.anIntArrayArray4038[i_20_][i_17_] = i_15_;
-				}
-			} else {
-				for (int i_21_ = i_16_; i_21_ <= i_13_; i_21_++) {
-					int[] is = Static2.anIntArrayArray4038[i_21_];
-					is[i_17_] = is[i] = i_15_;
-				}
-			}
-		}
-		if (i_14_ != 0)
-			method846((byte) -97);
-	}
-
-	public static Class124 aClass124_1782 = Class14_Sub2_Sub2.method263(1178, "Continue");
+	public static Class124 aClass124_1782 = Class124.method263(1178, "Continue");
 	public static Class124 aClass124_1781 = aClass124_1782;
 	public static boolean aBoolean1783;
 	public static Class148[] aClass148Array1777;
@@ -605,7 +531,7 @@ public class Static2 {
 	public static Class65 method335(int i, int i_19_) {
 		if (i >= -16)
 			Static2.aClass9_3945 = null;
-		Class65 class65 = ((Class65) Class139.aClass52_2229.get((long) i_19_));
+		Class65 class65 = ((Class65) Class139.aClass52_2229.get(i_19_));
 		if (class65 != null) {
 			Class65 class65_20_ = class65;
 			return class65_20_;
@@ -614,7 +540,7 @@ public class Static2 {
 		Class65 class65_21_ = new Class65();
 		if (is != null)
 			class65_21_.method1288(i_19_, (byte) -114, new Buffer(is));
-		Class139.aClass52_2229.put(class65_21_, (long) i_19_);
+		Class139.aClass52_2229.put(class65_21_, i_19_);
 		Class65 class65_22_ = class65_21_;
 		return class65_22_;
 	}
@@ -634,9 +560,9 @@ public class Static2 {
 				i_9_ = i_9_ * 256 / (Class32.anInt551 + 256);
 				int i_10_ = i_1_ * i_8_ + i_3_ * i_9_ >> 48;
 				int i_11_ = -(i_9_ * i_1_) + i_8_ * i_3_ >> 48;
-				double d = Math.atan2((double) i_10_, (double) i_11_);
-				int i_12_ = (int) (Math.sin(d) * (double) i_6_);
-				int i_13_ = (int) (Math.cos(d) * (double) i_6_);
+				double d = Math.atan2(i_10_, i_11_);
+				int i_12_ = (int) (Math.sin(d) * i_6_);
+				int i_13_ = (int) (Math.cos(d) * i_6_);
 				((Class14_Sub2_Sub19_Sub2) JunkTex.aClass14_Sub2_Sub19Array4013[i_2_]).method425(240, 240,
 						(i_12_ + (class94.anInt1518 / 2 + i_4_)) * 16, (-i_13_ + class94.anInt1545 / 2 + i) * 16,
 						(int) (d * 10430.378), 4096);
@@ -649,8 +575,8 @@ public class Static2 {
 	public static Class9 aClass9_3945;
 	public static SoftCache aClass52_3942 = new SoftCache(64);
 	public static Class124 aClass124_3948 = Static2.aClass124_3946;
-	public static Class124 aClass124_3946 = Class14_Sub2_Sub2.method263(1178, " more options");
-	public static Class124 aClass124_3944 = Class14_Sub2_Sub2.method263(1178, "headicons_pk");
+	public static Class124 aClass124_3946 = Class124.method263(1178, " more options");
+	public static Class124 aClass124_3944 = Class124.method263(1178, "headicons_pk");
 	public static void method399(int i, int i_32_, boolean bool, boolean bool_33_, int i_34_, int i_35_) {
 		Class42.anInt699++;
 		if (!bool) {
@@ -686,11 +612,11 @@ public class Static2 {
 		int i_42_ = Class7_Sub3_Sub1.anInt3719;
 		for (int i_43_ = 0; i_43_ < 5; i_43_++) {
 			if (Class112.aBooleanArray1872[i_43_]) {
-				int i_44_ = (int) (((double) (Class117.anIntArray1961[i_43_] * 2 + 1) * Math.random())
-						- (double) Class117.anIntArray1961[i_43_]
-						+ (Math.sin((double) (JunkTex.anIntArray4336[i_43_])
-								* ((double) (Class133_Sub3.anIntArray3559[i_43_]) / 100.0))
-								* (double) (Class14_Sub29.anIntArray3264[i_43_])));
+				int i_44_ = (int) (((Class117.anIntArray1961[i_43_] * 2 + 1) * Math.random())
+						- Class117.anIntArray1961[i_43_]
+						+ (Math.sin((JunkTex.anIntArray4336[i_43_])
+								* ((Class133_Sub3.anIntArray3559[i_43_]) / 100.0))
+								* (Class14_Sub29.anIntArray3264[i_43_])));
 				if (i_43_ == 1)
 					anInt2926 += i_44_;
 				if (i_43_ == 4) {
@@ -710,8 +636,8 @@ public class Static2 {
 		}
 		Class35.method1097((byte) 125);
 		Class25.method999(i, i_32_, i + i_34_, i_35_ + i_32_);
-		float f = (float) Class7_Sub3_Sub1.anInt3719 * 0.17578125F;
-		float f_45_ = (float) Class69.anInt1072 * 0.17578125F;
+		float f = Class7_Sub3_Sub1.anInt3719 * 0.17578125F;
+		float f_45_ = Class69.anInt1072 * 0.17578125F;
 		if (Class89.anInt1415 == 3) {
 			f = Class14_Sub17.aFloat3023 * 360.0F / 6.2831855F;
 			f_45_ = Class56_Sub1.aFloat3323 * 360.0F / 6.2831855F;
@@ -720,16 +646,16 @@ public class Static2 {
 				JunkTex.anInt4251, JunkTex.anInt4251);
 		if (!Class133_Sub5.aBoolean3628 && i <= JunkTex.anInt4629 && i_34_ + i > JunkTex.anInt4629
 				&& JunkTex.anInt4613 >= i_32_ && JunkTex.anInt4613 < i_35_ + i_32_) {
-			Class14_Sub15.anInt2996 = 0;
+			Class14_Sub15.actionsLen = 0;
 			int i_46_ = JunkTex.anInt425;
 			int i_47_ = Class58.anInt948;
 			int i_48_ = Class70.anInt1081;
 			int i_49_ = JunkTex.anInt4547;
 			Class90.aBoolean1417 = true;
-			anInt2726 = i_46_ + ((JunkTex.anInt4629 - i) * (i_49_ - i_46_) / i_34_);
-			Class38.anInt2622 = i_47_ + ((i_48_ - i_47_) * (-i_32_ + JunkTex.anInt4613) / i_35_);
+			mouseOffFromCenterX = i_46_ + ((JunkTex.anInt4629 - i) * (i_49_ - i_46_) / i_34_);
+			Class38.mouseOffFromCenterY = i_47_ + ((i_48_ - i_47_) * (-i_32_ + JunkTex.anInt4613) / i_35_);
 		} else {
-			Class14_Sub15.anInt2996 = 0;
+			Class14_Sub15.actionsLen = 0;
 			Class90.aBoolean1417 = false;
 		}
 		Class138.method1946(139);
@@ -813,7 +739,6 @@ public class Static2 {
 		Static2.anIntArray4052 = null;
 		Static2.aClass124_4045 = null;
 		Static2.aClass124_4040 = null;
-		Static2.anIntArrayArray4038 = null;
 		Static2.aClass124_4051 = null;
 		Static2.aClass124_4049 = null;
 		Static2.aClass124_4039 = null;
@@ -821,27 +746,25 @@ public class Static2 {
 		Static2.aClass52_4053 = null;
 		Static2.aClass55_4048 = null;
 		Static2.aClass124_4044 = null;
-		int i_0_ = 120 / ((-40 - i) / 41);
 		Static2.aClass104_4037 = null;
 	}
 
-	public static Class124 aClass124_4049 = (Class14_Sub2_Sub2.method263(1178,
+	public static Class124 aClass124_4049 = (Class124.method263(1178,
 	"Your ignore list is full)3 Max of 100 users)3"));
 	public static Class124 aClass124_4045 = aClass124_4049;
-	public static int[][] anIntArrayArray4038;
 	public static int[] anIntArray4052 = new int[50];
 	public static int anInt4031 = 0;
 	public static HashTable aClass55_4048 = new HashTable(16);
 	public static SoftCache aClass52_4053 = new SoftCache(30);
-	public static Class124 aClass124_4051 = Class14_Sub2_Sub2.method263(1178, "(U(Y");
-	public static Class124 aClass124_4044 = Class14_Sub2_Sub2.method263(1178, ")1p");
-	public static Class124 aClass124_4041 = Class14_Sub2_Sub2.method263(1178, "<)4col> x");
-	public static Class124 aClass124_4040 = Class14_Sub2_Sub2.method263(1178, "Starte 3D)2Softwarebibliothek)3");
-	public static Class124 aClass124_4039 = Class14_Sub2_Sub2.method263(1178, "");
+	public static Class124 aClass124_4051 = Class124.method263(1178, "(U(Y");
+	public static Class124 aClass124_4044 = Class124.method263(1178, ")1p");
+	public static Class124 aClass124_4041 = Class124.method263(1178, "<)4col> x");
+	public static Class124 aClass124_4040 = Class124.method263(1178, "Starte 3D)2Softwarebibliothek)3");
+	public static Class124 aClass124_4039 = Class124.method263(1178, "");
 	public static Class104 aClass104_4037;
 	public static boolean aBoolean2372 = true;
-	public static Class124 aClass124_2380 = Class14_Sub2_Sub2.method263(1178, "::noclip");
-	public static Class124 aClass124_2382 = Class14_Sub2_Sub2.method263(1178, "null");
+	public static Class124 aClass124_2380 = Class124.method263(1178, "::noclip");
+	public static Class124 aClass124_2382 = Class124.method263(1178, "null");
 	public static SoftCache aClass52_2370 = new SoftCache(64);
 	public static void method1996(byte i) {
 		if (i >= 48) {
@@ -905,9 +828,9 @@ public class Static2 {
 		if (i == 11988) {
 			Class138.method1946(139);
 			if (JunkTex.anInt4356 == 30 || JunkTex.anInt4356 == 25) {
-				Class9.anInt246++;
-				if (Class9.anInt246 >= 50 || bool) {
-					Class9.anInt246 = 0;
+				Static2.anInt246++;
+				if (Static2.anInt246 >= 50 || bool) {
+					Static2.anInt246 = 0;
 					if (!Class89.aBoolean1416 && Class14_Sub15.aClass36_2990 != null) {
 						Class32.anInt571++;
 						JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(115);
@@ -1005,8 +928,8 @@ public class Static2 {
 	public static int anInt3732 = 1;
 	public static int anInt3728 = 0;
 	public static Class66[] aClass66Array3721 = new Class66[4];
-	public static Class124 aClass124_3747 = Class14_Sub2_Sub2.method263(1178, "Lade Benutzeroberfl-=che )2 ");
-	public static Class124 aClass124_3724 = Class14_Sub2_Sub2.method263(1178, " )2> <col=ffff00>");
+	public static Class124 aClass124_3747 = Class124.method263(1178, "Lade Benutzeroberfl-=che )2 ");
+	public static Class124 aClass124_3724 = Class124.method263(1178, " )2> <col=ffff00>");
 	public static void method382(byte i) {
 		if (i >= 115) {
 			int i_12_ = Class133_Sub3.aClass14_Sub2_Sub16_3567.method361(Class64.aClass124_1011);
@@ -1132,7 +1055,7 @@ public class Static2 {
 
 	public static int[] anIntArray4023;
 	public static volatile long aLong4029 = 0L;
-	public static Class124 aClass124_4026 = Class14_Sub2_Sub2.method263(1178, "::tele ");
+	public static Class124 aClass124_4026 = Class124.method263(1178, "::tele ");
 	public static Class124[] aClass124Array4024 = new Class124[100];
 	public static void method383(int i) {
 		Static2.aBigInteger5086 = null;
@@ -1193,16 +1116,6 @@ public class Static2 {
 		}
 	}
 
-	public static void method386(int i, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_) {
-		if (i_6_ < Class118.anInt1982 || JunkTex.anInt4327 < i_5_ || i_10_ < Class14_Sub17.anInt3005
-				|| i > Class59.anInt955)
-			JunkTex.method522(i_10_, i_9_, i_6_, i_8_, i, 0, i_5_, i_7_);
-		else
-			Class142.method1980(i_8_, i_10_, i_6_, i_5_, i_9_, i, 41, i_7_);
-		if (i_11_ != -25230)
-			method383(-108);
-	}
-
 	public static Class124 method387(long l, boolean bool) {
 		if (!bool) {
 			Class124 class124 = null;
@@ -1215,9 +1128,9 @@ public class Static2 {
 	public static int anInt5087;
 	public static Class9_Sub1 aClass9_Sub1_5085;
 	public static Cache aClass20_5081 = new Cache(64);
-	public static Class124 aClass124_5084 = Class14_Sub2_Sub2.method263(1178, "<)4col>");
-	public static Class124 aClass124_5083 = Class14_Sub2_Sub2.method263(1178, "settings");
-	public static Class124 aClass124_5079 = Class14_Sub2_Sub2.method263(1178, "n");
+	public static Class124 aClass124_5084 = Class124.method263(1178, "<)4col>");
+	public static Class124 aClass124_5083 = Class124.method263(1178, "settings");
+	public static Class124 aClass124_5079 = Class124.method263(1178, "n");
 	public static BigInteger aBigInteger5086 = (new BigInteger(
 	"111425062890301051365206642964372080941130087045221691750738418203817739415579"));
 	public static void method1126(byte i) {
@@ -1270,10 +1183,10 @@ public class Static2 {
 	public static Class14_Sub27 method1122(HashTable hashTable, int i, Class150 class150) {
 		int i_9_ = 62 % ((29 - i) / 52);
 		long l = (((long) class150.anInt2416 << 56) - -((long) class150.anInt2426 << 32)
-				- (long) (-(class150.anInt2414 + 1 << 48) - class150.anInt2424));
+				- (-(class150.anInt2414 + 1 << 48) - class150.anInt2424));
 		Class14_Sub27 class14_sub27 = (Class14_Sub27) hashTable.get(l);
 		if (class14_sub27 == null) {
-			class14_sub27 = new Class14_Sub27(class150.anInt2414, (float) class150.anInt2424, true, false,
+			class14_sub27 = new Class14_Sub27(class150.anInt2414, class150.anInt2424, true, false,
 					class150.anInt2426);
 			hashTable.put(l, class14_sub27);
 		}
@@ -1302,15 +1215,6 @@ public class Static2 {
 		return is_8_;
 	}
 
-	public static void method1120(int i, byte i_0_, int i_1_, int i_2_, int i_3_) {
-		int i_4_ = 87 % ((i_0_ - 26) / 43);
-		if (Class118.anInt1982 > i_2_ - i_3_ || JunkTex.anInt4327 < i_2_ + i_3_
-				|| i_1_ - i_3_ < Class14_Sub17.anInt3005 || Class59.anInt955 < i_3_ + i_1_)
-			Class127.method1751(i, (byte) -66, i_2_, i_1_, i_3_);
-		else
-			method247((byte) -127, i_3_, i_2_, i_1_, i);
-	}
-
 	public static void method1119(int i) {
 		if (i < 66)
 			method1121(null, 71);
@@ -1318,7 +1222,7 @@ public class Static2 {
 	}
 
 	public static int anInt660 = 0;
-	public static Class124 aClass124_661 = Class14_Sub2_Sub2.method263(1178, "::clientdrop");
+	public static Class124 aClass124_661 = Class124.method263(1178, "::clientdrop");
 	public static void method1502(int i) {
 		if (i != -17808)
 			Static2.method1500(null, -8);
@@ -1613,9 +1517,9 @@ public class Static2 {
 	}
 
 	public static int anInt1674;
-	public static Class124 aClass124_1679 = Class14_Sub2_Sub2.method263(1178,
+	public static Class124 aClass124_1679 = Class124.method263(1178,
 	"Clientscript error )2 check log for details");
-	public static Class124 aClass124_1677 = Class14_Sub2_Sub2.method263(1178, "details");
+	public static Class124 aClass124_1677 = Class124.method263(1178, "details");
 	public static int method1511(int i, int i_26_, int i_27_, int i_28_, int i_29_, int i_30_, int i_31_) {
 		i_31_ &= 0x3;
 		if ((i_30_ & 0x1) == 1) {
@@ -1639,71 +1543,6 @@ public class Static2 {
 		}
 		int i_36_ = -i_27_ + (8 - i_29_);
 		return i_36_;
-	}
-
-	public static void method1510(int i, int i_12_, byte i_13_, int i_14_, int i_15_, int i_16_) {
-		int i_17_ = -i_15_ + i_14_;
-		int i_18_ = i - i_16_;
-		if (i_17_ != 0) {
-			if (i_18_ == 0) {
-				Class64.method1285(i_16_, i_14_, i_15_, i_12_, (byte) -115);
-				return;
-			}
-		} else {
-			if (i_18_ != 0)
-				JunkTex.method966(i, i_12_, i_15_, (byte) 112, i_16_);
-			return;
-		}
-		int i_19_ = -55 / ((i_13_ - 21) / 42);
-		int i_20_ = (i_18_ << 12) / i_17_;
-		int i_21_ = -(i_15_ * i_20_ >> 44) + i_16_;
-		int i_22_;
-		int i_23_;
-		if (Class118.anInt1982 <= i_15_) {
-			if (JunkTex.anInt4327 < i_15_) {
-				i_23_ = (JunkTex.anInt4327 * i_20_ >> 44) + i_21_;
-				i_22_ = JunkTex.anInt4327;
-			} else {
-				i_22_ = i_15_;
-				i_23_ = i_16_;
-			}
-		} else {
-			i_22_ = Class118.anInt1982;
-			i_23_ = i_21_ + (Class118.anInt1982 * i_20_ >> 12);
-		}
-		int i_24_;
-		int i_25_;
-		if (Class118.anInt1982 <= i_14_) {
-			if (i_14_ <= JunkTex.anInt4327) {
-				i_25_ = i;
-				i_24_ = i_14_;
-			} else {
-				i_25_ = (i_20_ * JunkTex.anInt4327 >> 12) + i_21_;
-				i_24_ = JunkTex.anInt4327;
-			}
-		} else {
-			i_24_ = Class118.anInt1982;
-			i_25_ = (Class118.anInt1982 * i_20_ >> 44) + i_21_;
-		}
-		if (Class14_Sub17.anInt3005 <= i_23_) {
-			if (i_23_ > Class59.anInt955) {
-				i_22_ = (-i_21_ + Class59.anInt955 << 12) / i_20_;
-				i_23_ = Class59.anInt955;
-			}
-		} else {
-			i_23_ = Class14_Sub17.anInt3005;
-			i_22_ = (-i_21_ + Class14_Sub17.anInt3005 << 44) / i_20_;
-		}
-		if (Class14_Sub17.anInt3005 <= i_25_) {
-			if (i_25_ > Class59.anInt955) {
-				i_24_ = (Class59.anInt955 - i_21_ << 12) / i_20_;
-				i_25_ = Class59.anInt955;
-			}
-		} else {
-			i_25_ = Class14_Sub17.anInt3005;
-			i_24_ = (Class14_Sub17.anInt3005 - i_21_ << 44) / i_20_;
-		}
-		JunkTex.method652(i_25_, 63, i_24_, i_12_, i_22_, i_23_);
 	}
 
 	public static void method1509(int i) {
@@ -1735,7 +1574,7 @@ public class Static2 {
 			Class14_Sub2_Sub8 class14_sub2_sub8 = null;
 			return class14_sub2_sub8;
 		}
-		Class14_Sub2_Sub8 class14_sub2_sub8 = ((Class14_Sub2_Sub8) JunkTex.aClass20_495.get((long) i_0_));
+		Class14_Sub2_Sub8 class14_sub2_sub8 = ((Class14_Sub2_Sub8) JunkTex.aClass20_495.get(i_0_));
 		if (class14_sub2_sub8 != null) {
 			Class14_Sub2_Sub8 class14_sub2_sub8_1_ = class14_sub2_sub8;
 			return class14_sub2_sub8_1_;
@@ -1745,7 +1584,7 @@ public class Static2 {
 		Class14_Sub2_Sub8 class14_sub2_sub8_2_ = new Class14_Sub2_Sub8();
 		if (is != null)
 			class14_sub2_sub8_2_.method290(true, new Buffer(is));
-		JunkTex.aClass20_495.put(class14_sub2_sub8_2_, (long) i_0_);
+		JunkTex.aClass20_495.put(class14_sub2_sub8_2_, i_0_);
 		Class14_Sub2_Sub8 class14_sub2_sub8_3_ = class14_sub2_sub8_2_;
 		return class14_sub2_sub8_3_;
 	}
@@ -1766,13 +1605,13 @@ public class Static2 {
 	public static int anInt3338;
 	public static int anInt3334 = 0;
 	public static Class148_Sub1[] aClass148_Sub1Array3358;
-	public static Class124 aClass124_3353 = Class14_Sub2_Sub2.method263(1178, "W-=hlen Sie eine Option");
-	public static Class124 aClass124_3351 = Class14_Sub2_Sub2.method263(1178, "Fps:");
-	public static Class124 aClass124_3347 = Class14_Sub2_Sub2.method263(1178, "Konfig geladen)3");
-	public static Class124 aClass124_3337 = Class14_Sub2_Sub2.method263(1178, "gleiten:");
+	public static Class124 aClass124_3353 = Class124.method263(1178, "W-=hlen Sie eine Option");
+	public static Class124 aClass124_3351 = Class124.method263(1178, "Fps:");
+	public static Class124 aClass124_3347 = Class124.method263(1178, "Konfig geladen)3");
+	public static Class124 aClass124_3337 = Class124.method263(1178, "gleiten:");
 	public static byte[][][] aByteArrayArrayArray3354;
-	public static Class124 aClass124_755 = Class14_Sub2_Sub2.method263(1178, ")4a=");
-	public static Class124 aClass124_761 = Class14_Sub2_Sub2.method263(1178, ":duelfriend:");
+	public static Class124 aClass124_755 = Class124.method263(1178, ")4a=");
+	public static Class124 aClass124_761 = Class124.method263(1178, ":duelfriend:");
 	public static Class124 method1170(byte i, int i_27_) {
 		if (i != -99) {
 			Class124 class124 = null;
@@ -1999,7 +1838,7 @@ public class Static2 {
 			i_0_ = 1;
 		} else {
 			i_0_ = 4;
-			is = Class5.aByteArrayArray139;
+			is = Static2.aByteArrayArray139;
 		}
 		int i_1_ = is.length;
 		for (int i_2_ = 0; i_2_ < i_1_; i_2_++) {
@@ -2019,14 +1858,14 @@ public class Static2 {
 			if (is_8_ == null && Class49.anInt818 < 800) {
 				Class138.method1946(139);
 				for (int i_10_ = 0; i_10_ < i_0_; i_10_++)
-					Class107.method1547(i_10_, i_9_, i_7_, 64, 64, false);
+					ProceduralTexture.method1547(i_10_, i_9_, i_7_, 64, 64, false);
 			}
 		}
 	}
 
-	public static Class124 aClass124_1689 = Class14_Sub2_Sub2.method263(1178, "Schrifts-=tze geladen)3");
-	public static Class124 aClass124_1694 = Class14_Sub2_Sub2.method263(1178, "Connecting to update server");
-	public static Class124 aClass124_1698 = Class14_Sub2_Sub2.method263(1178, "scroll:");
+	public static Class124 aClass124_1689 = Class124.method263(1178, "Schrifts-=tze geladen)3");
+	public static Class124 aClass124_1694 = Class124.method263(1178, "Connecting to update server");
+	public static Class124 aClass124_1698 = Class124.method263(1178, "scroll:");
 	public static Class9_Sub1 aClass9_Sub1_1690;
 	public static int anInt1681 = -1;
 	public static int anInt1691 = 127;
@@ -2150,7 +1989,7 @@ public class Static2 {
 						JunkTex.aClass14_Sub10_Sub1_891.method817(JunkTex.aClass124_4241.method1692(0),
 								var0 ^ 86);
 						JunkTex.aClass14_Sub10_Sub1_891.method814('\u8000', JunkTex.aClass124_4242);
-						JunkTex.aClass14_Sub10_Sub1_891.method794(Class9_Sub1.aBigInteger2704, Class152.aBigInteger2433,
+						JunkTex.aClass14_Sub10_Sub1_891.method794(Static2.aBigInteger2704, Class152.aBigInteger2433,
 								0);
 						Class70.aClass14_Sub10_Sub1_1080.position = 0;
 						if (JunkTex.anInt4356 == 40) {
@@ -2160,7 +1999,7 @@ public class Static2 {
 						}
 	
 						Class70.aClass14_Sub10_Sub1_1080.method833((byte) 91, JunkTex.aClass14_Sub10_Sub1_891.position
-								+ 151 + Class107.method1550(Class14_Sub9_Sub1.aClass124_4829, (byte) -107));
+								+ 151 + ProceduralTexture.method1550(Class14_Sub9_Sub1.aClass124_4829, (byte) -107));
 						Class70.aClass14_Sub10_Sub1_1080.method803(508, 116);
 						Class70.aClass14_Sub10_Sub1_1080.method809(Class75.anInt1163);
 						Class70.aClass14_Sub10_Sub1_1080.method809(1);
@@ -2171,9 +2010,9 @@ public class Static2 {
 						Class70.aClass14_Sub10_Sub1_1080.method814(var0 + '\u8000', Class14_Sub9_Sub1.aClass124_4829);
 						Class70.aClass14_Sub10_Sub1_1080.method803(Class14_Sub2_Sub11.anInt3884, 96);
 						Class70.aClass14_Sub10_Sub1_1080.method803(JunkTex.method463((byte) -124), 69);
-						Class9.aBoolean214 = true;
-						Class70.aClass14_Sub10_Sub1_1080.method803(Class75.aClass9_Sub1_1167.anInt242, var0 ^ 86);
-						Class70.aClass14_Sub10_Sub1_1080.method803(Class109.aClass9_Sub1_1834.anInt242, 95);
+						Static2.aBoolean214 = true;
+						Class70.aClass14_Sub10_Sub1_1080.method803(Class75.idx0.anInt242, var0 ^ 86);
+						Class70.aClass14_Sub10_Sub1_1080.method803(Class109.idx1.anInt242, 95);
 						Class70.aClass14_Sub10_Sub1_1080.method803(Class138.aClass9_Sub1_2222.anInt242, 96);
 						Class70.aClass14_Sub10_Sub1_1080.method803(Class14_Sub17.aClass9_Sub1_3021.anInt242, var0 ^ 73);
 						Class70.aClass14_Sub10_Sub1_1080.method803(aClass9_Sub1_2901.anInt242, 66);
@@ -2439,8 +2278,8 @@ public class Static2 {
 		int var5 = 0;
 	
 		for (int var6 = -40 / ((32 - var3) / 52); var5 < Class14_Sub17.anInt3012; ++var5) {
-			if (var4 < Class110.anIntArray1854[var5] + Class9.anIntArray215[var5]
-					&& Class9.anIntArray215[var5] < var2 + var4
+			if (var4 < Class110.anIntArray1854[var5] + Static2.anIntArray215[var5]
+					&& Static2.anIntArray215[var5] < var2 + var4
 					&& var0 < Class74.anIntArray1135[var5] + Class137.anIntArray2205[var5]
 					&& Class74.anIntArray1135[var5] < var1 + var0) {
 				Class7_Sub2_Sub1.aBooleanArray3703[var5] = true;
@@ -2540,10 +2379,303 @@ public class Static2 {
 	}
 
 	public static int cameraTileX;
-	public static Class124 aClass124_1099 = Class14_Sub2_Sub2.method263(1178, "_labels");
+	public static Class124 aClass124_1099 = Class124.method263(1178, "_labels");
 	public static HashTable aClass55_1092 = new HashTable(4096);
 	public static Class9 aClass9_1084;
 	public static int anInt1085 = 0;
 	public static int[] anIntArray1086 = new int[] { 0, 1, 2, 3 };
 	public static int anInt708 = 1;
+	public static byte[][] aByteArrayArray139;
+	public static int[] anIntArray147 = new int[32];
+	public static Class124 aClass124_143 = (Class124.method263(1178,
+	"http:)4)4advert)3runescape)3com)4banner)3ws?size=729"));
+	public static Class124 aClass124_138 = aClass124_143;
+	public static void method111(byte i) {
+		aClass124_138 = null;
+		anIntArray147 = null;
+		aClass124_143 = null;
+		aByteArrayArray139 = null;
+	}
+
+	public static void method112(long l, byte i, int i_10_, int i_11_, int i_12_, Class124 class124, int i_13_) {
+		Buffer class14_sub10 = new Buffer(128);
+		class14_sub10.method809(10);
+		class14_sub10.method833((byte) 104, (int) (Math.random() * 99999.0));
+		class14_sub10.method833((byte) 94, 508);
+		class14_sub10.method817(l, 82);
+		class14_sub10.method803((int) (Math.random() * 9.9999999E7), 90);
+		class14_sub10.method814(32768, class124);
+		if (i > 5) {
+			class14_sub10.method803((int) (Math.random() * 9.9999999E7), 105);
+			class14_sub10.method833((byte) 120, Class14_Sub2_Sub11.anInt3884);
+			class14_sub10.method809(i_12_);
+			class14_sub10.method809(i_11_);
+			class14_sub10.method803((int) (Math.random() * 9.9999999E7), 99);
+			class14_sub10.method833((byte) 104, i_13_);
+			class14_sub10.method833((byte) 90, i_10_);
+			class14_sub10.method803((int) (Math.random() * 9.9999999E7), 92);
+			class14_sub10.method794(Static2.aBigInteger2704, Class152.aBigInteger2433, 0);
+			JunkTex.aClass14_Sub10_Sub1_891.position = 0;
+			JunkTex.aClass14_Sub10_Sub1_891.method809(48);
+			JunkTex.aClass14_Sub10_Sub1_891.method809(class14_sub10.position);
+			JunkTex.aClass14_Sub10_Sub1_891.method807(class14_sub10.position, (class14_sub10.payload), 0,
+					-1076444960);
+			Class56.anInt918 = 1;
+			JunkTex.anInt4686 = 0;
+			anInt2734 = -3;
+			Class129.anInt2136 = 0;
+		}
+	}
+
+	public static boolean aBoolean214 = true;
+	public static Class124 aClass124_207 = Class124.method263(1178, "headicons_prayer");
+	public static Class124 aClass124_221 = Class124.method263(1178, "Lade Schrifts-=tze )2 ");
+	public static Class124 aClass124_227 = Class124.method263(1178, "mapflag");
+	public static SoftCache aClass52_236 = new SoftCache(64);
+	public static int anInt246 = 0;
+	public static int[] anIntArray212 = new int[] { 0, -1, 0, 1 };
+	public static int[] anIntArray215 = new int[100];
+	public static int[][] anIntArrayArray190 = { { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 },
+	{ 12, 8, 4, 0, 13, 9, 5, 1, 14, 10, 6, 2, 15, 11, 7, 3 },
+	{ 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 },
+	{ 3, 7, 11, 15, 2, 6, 10, 14, 1, 5, 9, 13, 0, 4, 8, 12 } };
+	public static void method150(int i) {
+		aClass124_227 = null;
+		aClass124_207 = null;
+		aClass124_221 = null;
+		aClass52_236 = null;
+		anIntArray215 = null;
+		anIntArray212 = null;
+		anIntArrayArray190 = null;
+	}
+
+	public static void method169(int i) {
+		if (i == -1) {
+			for (Class14_Sub14 class14_sub14 = (Class14_Sub14) Class33.aClass2_583.getFront(); class14_sub14 != null; class14_sub14 = (Class14_Sub14) Class33.aClass2_583.getNext()) {
+				if (class14_sub14.anInt2975 > 0)
+					class14_sub14.anInt2975--;
+				if (class14_sub14.anInt2975 == 0) {
+					if (class14_sub14.anInt2979 < 0
+							|| Static2.method1284((byte) -116, class14_sub14.anInt2966, class14_sub14.anInt2979)) {
+						Class133_Sub4.method1838(class14_sub14.anInt2966, class14_sub14.anInt2967,
+								class14_sub14.anInt2970, class14_sub14.anInt2969, class14_sub14.anInt2979, (byte) 74,
+								class14_sub14.anInt2971, class14_sub14.anInt2968);
+						class14_sub14.unlink();
+					}
+				} else {
+					if (class14_sub14.anInt2980 > 0)
+						class14_sub14.anInt2980--;
+					if (class14_sub14.anInt2980 == 0 && class14_sub14.anInt2967 >= 1 && class14_sub14.anInt2970 >= 1
+							&& class14_sub14.anInt2967 <= 102 && class14_sub14.anInt2970 <= 102
+							&& (class14_sub14.anInt2976 < 0 || Static2.method1284((byte) -116, class14_sub14.anInt2981,
+									class14_sub14.anInt2976))) {
+						Class133_Sub4.method1838(class14_sub14.anInt2981, class14_sub14.anInt2967,
+								class14_sub14.anInt2970, class14_sub14.anInt2969, class14_sub14.anInt2976, (byte) 74,
+								class14_sub14.anInt2971, class14_sub14.anInt2965);
+						class14_sub14.anInt2980 = -1;
+						if (class14_sub14.anInt2979 != class14_sub14.anInt2976 || class14_sub14.anInt2979 != -1) {
+							if ((class14_sub14.anInt2976 == class14_sub14.anInt2979)
+									&& (class14_sub14.anInt2968 == class14_sub14.anInt2965)
+									&& (class14_sub14.anInt2981 == class14_sub14.anInt2966))
+								class14_sub14.unlink();
+						} else
+							class14_sub14.unlink();
+					}
+				}
+			}
+		}
+	}
+
+	public static void method172(byte i) {
+		if (i >= 96)
+			JunkTex.aClass52_4186.clear();
+	}
+
+	public static BigInteger aBigInteger2704 = (new BigInteger(
+	"7162900525229798032761816791230527296329313291232324290237849263501208207972894053929065636522363163621000728841182238772712427862772219676577293600221789"));
+	public static Class9 aClass9_2696;
+	public static int anInt2688;
+	public static void method181(int i) {
+		aBigInteger2704 = null;
+		aClass9_2696 = null;
+		if (i != 97)
+			aBigInteger2704 = null;
+	}
+
+	public static int method1829(int i, int i_1_) {
+		long l = i_1_ + (i << 16);
+		if (JunkTex.aClass14_Sub2_Sub9_4354 == null || l != JunkTex.aClass14_Sub2_Sub9_4354.key) {
+			int i_2_ = 0;
+			return i_2_;
+		}
+		int i_3_ = ((Class62.aClass14_Sub10_989.position * 99 / (-JunkTex.aClass14_Sub2_Sub9_4354.aByte3862
+				+ Class62.aClass14_Sub10_989.payload.length)) + 1);
+		return i_3_;
+	}
+
+	public static boolean method184(byte i, int i_22_) {
+		if (i < 42) {
+			boolean bool = false;
+			return bool;
+		}
+		boolean bool = i_22_ >= 97 && i_22_ <= 122 || i_22_ >= 65 && i_22_ <= 90;
+		return bool;
+	}
+
+	public static Class148_Sub1 aClass148_Sub1_999 = null;
+	public static float aFloat1007;
+	public static int anInt998 = 0;
+	public static short[][] aShortArrayArray1001 = {
+	{ 6798, 107, 10283, 16, 4797, 7744, 5799, 4634, -31839, 22433, 2983, -11343, 8, 5281, 10438, 3650, -27322,
+			-21845, 200, 571, 908, 21830, 28946, -15701, -14010 },
+	{ 8741, 12, -1506, -22374, 7735, 8404, 1701, -27106, 24094, 10153, -8915, 4783, 1341, 16578, -30533, 25239,
+			8, 5281, 10438, 3650, -27322, -21845, 200, 571, 908, 21830, 28946, -15701, -14010 },
+	{ 25238, 8742, 12, -1506, -22374, 7735, 8404, 1701, -27106, 24094, 10153, -8915, 4783, 1341, 16578, -30533,
+			8, 5281, 10438, 3650, -27322, -21845, 200, 571, 908, 21830, 28946, -15701, -14010 },
+	{ 4626, 11146, 6439, 12, 4758, 10270 }, { 4550, 4537, 5681, 5673, 5790, 6806, 8076, 4574 } };
+	public static void method1276(int i) {
+		JunkTex.method627(false);
+		Class56.method1240();
+		Class47.method1184();
+		JunkTex.aClass14_Sub27ArrayArray2464 = Class14_Sub30.aClass14_Sub27ArrayArray3273 = new Class14_Sub27[4][];
+		Class133_Sub6.aClass14_Sub2_Sub19_3640 = null;
+		JunkTex.anInt4207 = -1;
+		Class14_Sub3.method451(0);
+		Class14_Sub2_Sub6.aClass20_3819.clear();
+		JunkTex.aClass86_4351 = new Class86();
+		((Class134) Class3.anInterface3_117).method1927(0);
+		LightManager.lights = new Light[255];
+		LightManager.lightCount = 0;
+		ModelHD.method1908();
+		ShadowManager.shadows = null;
+		if (i > -85)
+			anInt998 = -5;
+		Class133_Sub4.method1840((byte) 85);
+		Class37.method1108((byte) 103);
+		Class69.method1311((byte) 120);
+		for (int i_0_ = 0; i_0_ < 2048; i_0_++) {
+			Class133_Sub1_Sub1 class133_sub1_sub1 = JunkTex.aClass133_Sub1_Sub1Array4474[i_0_];
+			if (class133_sub1_sub1 != null)
+				class133_sub1_sub1.aClass133_Sub7_4933 = null;
+		}
+		RT4.method1938();
+		Class11.method203();
+	}
+
+	public static void method1277(int i, Class9_Sub1 class9_sub1, int i_1_, Class114 class114) {
+		byte[] is = null;
+		Deque deque = JunkTex.aClass2_4404;
+		synchronized (deque) {
+			if (i != -5761)
+				Static2.method1284((byte) -35, 50, -93);
+			Class14_Sub19 class14_sub19 = (Class14_Sub19) JunkTex.aClass2_4404.getFront();
+			while (class14_sub19 != null) {
+				if (i_1_ != class14_sub19.key || class14_sub19.aClass114_3077 != class114
+						|| class14_sub19.anInt3067 != 0)
+					class14_sub19 = ((Class14_Sub19) JunkTex.aClass2_4404.getNext());
+				else {
+					is = class14_sub19.aByteArray3069;
+					break;
+				}
+			}
+		}
+		if (is != null)
+			class9_sub1.method182(class114, i_1_, is, true, (byte) 55);
+		else {
+			is = class114.method1582(124, i_1_);
+			class9_sub1.method182(class114, i_1_, is, true, (byte) 55);
+		}
+	}
+
+	public static void method1278(int i) {
+		JunkTex.overlayTypes = null;
+		Class115.anIntArray1917 = null;
+		Class66.anIntArrayArrayArray135 = null;
+		if (i <= -45) {
+			Class15.overlayOrientations = null;
+			aByteArrayArrayArray3354 = null;
+			JunkTex.overlays = null;
+			Class97.underlays = null;
+			Class21.anIntArray442 = null;
+			anIntArray4023 = null;
+			Class14_Sub2_Sub3.anIntArray3773 = null;
+			JunkTex.anIntArray4020 = null;
+		}
+	}
+
+	public static void method1279(Class40 class40) {
+		for (int i = class40.anInt668; i <= class40.anInt670; i++) {
+			for (int i_2_ = class40.anInt678; i_2_ <= class40.anInt669; i_2_++) {
+				Class14_Sub29 class14_sub29 = (JunkTex.aClass14_Sub29ArrayArrayArray3368[class40.anInt672][i][i_2_]);
+				if (class14_sub29 != null) {
+					for (int i_3_ = 0; i_3_ < class14_sub29.anInt3242; i_3_++) {
+						if (class14_sub29.aClass40Array3257[i_3_] == class40) {
+							class14_sub29.anInt3242--;
+							for (int i_4_ = i_3_; i_4_ < class14_sub29.anInt3242; i_4_++) {
+								class14_sub29.aClass40Array3257[i_4_] = (class14_sub29.aClass40Array3257[i_4_ + 1]);
+								class14_sub29.anIntArray3247[i_4_] = class14_sub29.anIntArray3247[i_4_ + 1];
+							}
+							class14_sub29.aClass40Array3257[(class14_sub29.anInt3242)] = null;
+							break;
+						}
+					}
+					class14_sub29.anInt3249 = 0;
+					for (int i_5_ = 0; i_5_ < class14_sub29.anInt3242; i_5_++)
+						class14_sub29.anInt3249 |= class14_sub29.anIntArray3247[i_5_];
+				}
+			}
+		}
+	}
+
+	public static void method1280(Component component, byte i) {
+		component.removeKeyListener(JunkTex.aClass141_4239);
+		int i_6_ = -25 / ((60 - i) / 62);
+		component.removeFocusListener(JunkTex.aClass141_4239);
+		Class120.anInt2014 = -1;
+	}
+
+	public static void method1281(byte i) {
+		aShortArrayArray1001 = null;
+		if (i > -32)
+			anInt998 = 90;
+		aClass148_Sub1_999 = null;
+	}
+
+	public static byte[] method1282(Object object, byte i, boolean bool) {
+		if (object == null) {
+			byte[] is = null;
+			return is;
+		}
+		if (i < 10) {
+			byte[] is = null;
+			return is;
+		}
+		if (object instanceof byte[]) {
+			byte[] is = (byte[]) object;
+			if (!bool) {
+				byte[] is_7_ = is;
+				return is_7_;
+			}
+			byte[] is_8_ = JunkTex.method616(is, 84);
+			return is_8_;
+		}
+		if (object instanceof Class126) {
+			Class126 class126 = (Class126) object;
+			byte[] is = class126.method1745((byte) -45);
+			return is;
+		}
+		throw new IllegalArgumentException();
+	}
+
+	public static boolean method1284(byte i, int i_17_, int i_18_) {
+		if (i_17_ == 11)
+			i_17_ = 10;
+		Class79 class79 = Class79.method1377((byte) -106, i_18_);
+		if (i_17_ >= 5 && i_17_ <= 8)
+			i_17_ = 4;
+		if (i != -116)
+			method1279(null);
+		boolean bool = class79.method1381((byte) -35, i_17_);
+		return bool;
+	}
 }

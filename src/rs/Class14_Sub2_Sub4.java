@@ -13,11 +13,11 @@ public class Class14_Sub2_Sub4 extends Cacheable {
 	public Class133_Sub3 aClass133_Sub3_3789;
 	public static int[] anIntArray3791;
 	public static Class124 aClass124_3793;
-	public static Class124 aClass124_3795 = Class14_Sub2_Sub2.method263(1178, "sl_flags");
+	public static Class124 aClass124_3795 = Class124.method263(1178, "sl_flags");
 	public static Buffer aClass14_Sub10_3796;
 
 	static {
-		aClass124_3793 = Class14_Sub2_Sub2.method263(1178, " zuerst von Ihrer Freunde)2Liste(Q");
+		aClass124_3793 = Class124.method263(1178, " zuerst von Ihrer Freunde)2Liste(Q");
 		anIntArray3791 = new int[] { 2, 2, 4, 0, 1, 8, 0, 0, 0, 0, 2 };
 	}
 

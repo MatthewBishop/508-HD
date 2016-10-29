@@ -27,14 +27,14 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 	public static Class94 aClass94_1657;
 
 	static {
-		aClass124_1637 = Class14_Sub2_Sub2.method263(1178, " is already on your friend list)3");
+		aClass124_1637 = Class124.method263(1178, " is already on your friend list)3");
 		anInt1652 = 2;
 		aClass124_1640 = aClass124_1637;
 		aClass2_1647 = new Deque();
 	}
 
 	public static Class150 method1489(int i, int i_0_) {
-		Class150 class150 = (Class150) Static2.aClass52_3942.get((long) i);
+		Class150 class150 = (Class150) Static2.aClass52_3942.get(i);
 		if (class150 != null) {
 			Class150 class150_1_ = class150;
 			return class150_1_;
@@ -47,7 +47,7 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 		Class150 class150_3_ = new Class150();
 		if (is != null)
 			class150_3_.method2024(i, 0, new Buffer(is));
-		Static2.aClass52_3942.put(class150_3_, (long) i);
+		Static2.aClass52_3942.put(class150_3_, i);
 		Class150 class150_4_ = class150_3_;
 		return class150_4_;
 	}

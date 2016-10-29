@@ -1,48 +1,56 @@
 /* Class9 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-package rs;
+package com.jagex.io.js5;
 
 import com.jagex.io.Buffer;
-import com.jagex.link.ref.SoftCache;
+
+import rs.Class124;
+import rs.Class133_Sub1;
+import rs.Class72;
+import rs.Class7_Sub3_Sub1;
+import rs.Static2;
 
 public abstract class Class9 {
-	public static int[][] anIntArrayArray190 = { { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 },
-			{ 12, 8, 4, 0, 13, 9, 5, 1, 14, 10, 6, 2, 15, 11, 7, 3 },
-			{ 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 },
-			{ 3, 7, 11, 15, 2, 6, 10, 14, 1, 5, 9, 13, 0, 4, 8, 12 } };
-	public Object[] anObjectArray192;
+	public boolean aBoolean220;
+	public boolean aBoolean244;
+	public Class63 aClass63_219;
+	public Class63[] aClass63Array213;
+	public int anInt211;
+	public int anInt242;
 	public int[] anIntArray194;
 	public int[] anIntArray197;
-	public int[][] anIntArrayArray198;
 	public int[] anIntArray202;
-	public int[] anIntArray203;
-	public static Class124 aClass124_207 = Class14_Sub2_Sub2.method263(1178, "headicons_prayer");
 	public int[] anIntArray208;
-	public int anInt211;
-	public static int[] anIntArray212;
-	public Class63[] aClass63Array213;
-	public static boolean aBoolean214;
-	public static int[] anIntArray215;
-	public int[][] anIntArrayArray218;
-	public Class63 aClass63_219;
-	public boolean aBoolean220;
-	public static Class124 aClass124_221;
 	public int[] anIntArray223;
-	public static Class124 aClass124_227 = Class14_Sub2_Sub2.method263(1178, "mapflag");
-	public static SoftCache aClass52_236;
-	public Object[][] anObjectArrayArray237;
-	public int anInt242;
-	public boolean aBoolean244;
-	public static int anInt246;
+	public int[][] anIntArrayArray198;
 
-	static {
-		aBoolean214 = true;
-		anIntArray212 = new int[] { 0, -1, 0, 1 };
-		aClass124_221 = Class14_Sub2_Sub2.method263(1178, "Lade Schrifts-=tze )2 ");
-		anIntArray215 = new int[100];
-		aClass52_236 = new SoftCache(64);
-		anInt246 = 0;
+	public int[][] anIntArrayArray218;
+
+	public Object[] anObjectArray192;
+
+	public Object[][] anObjectArrayArray237;
+
+	public int[] groupFileCount;
+
+	public Class9(boolean bool, boolean bool_107_) {
+		aBoolean244 = bool_107_;
+		aBoolean220 = bool;
+	}
+
+	public int getCompletion(int i, int i_108_) {
+		if (!method153(i_108_, i ^ 0xffffffff)) {
+			int i_109_ = 0;
+			return i_109_;
+		}
+		if (i != 0)
+			method175((byte) 16, false, true);
+		if (anObjectArray192[i_108_] != null) {
+			int i_110_ = 100;
+			return i_110_;
+		}
+		int i_111_ = 0;
+		return i_111_;
 	}
 
 	public int method146(Class124 class124, int i) {
@@ -60,7 +68,7 @@ public abstract class Class9 {
 
 	public void method147(byte[] is, int i) {
 		if (i != 15)
-			anIntArray212 = null;
+			Static2.anIntArray212 = null;
 		anInt242 = Buffer.method1303(is, is.length);
 		Buffer class14_sub10 = new Buffer(Class7_Sub3_Sub1.method139(-28009, is));
 		int i_3_ = class14_sub10.readUByte();
@@ -82,7 +90,7 @@ public abstract class Class9 {
 		anIntArray202 = new int[i_6_ + 1];
 		anObjectArray192 = new Object[i_6_ + 1];
 		anIntArrayArray218 = new int[i_6_ + 1][];
-		anIntArray203 = new int[i_6_ + 1];
+		groupFileCount = new int[i_6_ + 1];
 		anObjectArrayArray237 = new Object[i_6_ + 1][];
 		anIntArray208 = new int[i_6_ + 1];
 		if (i_4_ != 0) {
@@ -98,11 +106,11 @@ public abstract class Class9 {
 		for (int i_11_ = 0; anInt211 > i_11_; i_11_++)
 			anIntArray194[anIntArray223[i_11_]] = class14_sub10.getInt((byte) -102);
 		for (int i_12_ = 0; anInt211 > i_12_; i_12_++)
-			anIntArray203[anIntArray223[i_12_]] = class14_sub10.readUShort((byte) 122);
+			groupFileCount[anIntArray223[i_12_]] = class14_sub10.readUShort((byte) 122);
 		for (int i_13_ = 0; i_13_ < anInt211; i_13_++) {
 			i_5_ = 0;
 			int i_14_ = anIntArray223[i_13_];
-			int i_15_ = anIntArray203[i_14_];
+			int i_15_ = groupFileCount[i_14_];
 			int i_16_ = -1;
 			anIntArrayArray218[i_14_] = new int[i_15_];
 			for (int i_17_ = 0; i_15_ > i_17_; i_17_++) {
@@ -119,7 +127,7 @@ public abstract class Class9 {
 			anIntArrayArray198 = new int[i_6_ + 1][];
 			for (int i_19_ = 0; anInt211 > i_19_; i_19_++) {
 				int i_20_ = anIntArray223[i_19_];
-				int i_21_ = anIntArray203[i_20_];
+				int i_21_ = groupFileCount[i_20_];
 				anIntArrayArray198[i_20_] = new int[anIntArray208[i_20_]];
 				for (int i_22_ = 0; anIntArray208[i_20_] > i_22_; i_22_++)
 					anIntArrayArray198[i_20_][i_22_] = -1;
@@ -166,7 +174,7 @@ public abstract class Class9 {
 		}
 		if (i != -23245)
 			anObjectArrayArray237 = null;
-		byte[] is_31_ = Class63.method1282(anObjectArrayArray237[i_28_][i_27_], (byte) 91, false);
+		byte[] is_31_ = Static2.method1282(anObjectArrayArray237[i_28_][i_27_], (byte) 91, false);
 		if (aBoolean244) {
 			anObjectArrayArray237[i_28_][i_27_] = null;
 			if (anIntArray208[i_28_] == 1)
@@ -176,22 +184,12 @@ public abstract class Class9 {
 		return is_32_;
 	}
 
-	public static void method150(int i) {
-		aClass124_227 = null;
-		aClass124_207 = null;
-		aClass124_221 = null;
-		aClass52_236 = null;
-		anIntArray215 = null;
-		anIntArray212 = null;
-		anIntArrayArray190 = null;
-	}
-
 	public int method151(Class124 class124, int i) {
 		class124 = class124.method1716((byte) 63);
 		if (i >= -119)
 			anIntArray208 = null;
 		int i_33_ = aClass63_219.method1283(-9, class124.method1709(108));
-		int i_34_ = method178(0, i_33_);
+		int i_34_ = getCompletion(0, i_33_);
 		return i_34_;
 	}
 
@@ -202,7 +200,7 @@ public abstract class Class9 {
 
 	public boolean method153(int i, int i_36_) {
 		if (i_36_ != -1)
-			aClass52_236 = null;
+			Static2.aClass52_236 = null;
 		if (i < 0 || anIntArray208.length <= i || anIntArray208[i] == 0) {
 			if (!Class133_Sub1.aBoolean3499) {
 				boolean bool = false;
@@ -232,7 +230,7 @@ public abstract class Class9 {
 			return bool;
 		}
 		int[] is_40_ = anIntArrayArray218[i_39_];
-		int i_41_ = anIntArray203[i_39_];
+		int i_41_ = groupFileCount[i_39_];
 		if (anObjectArrayArray237[i_39_] == null)
 			anObjectArrayArray237[i_39_] = new Object[anIntArray208[i_39_]];
 		Object[] objects = anObjectArrayArray237[i_39_];
@@ -258,9 +256,9 @@ public abstract class Class9 {
 		}
 		byte[] is_46_;
 		if (is == null || is[0] == 0 && is[1] == 0 && is[2] == 0 && is[3] == 0)
-			is_46_ = Class63.method1282(anObjectArray192[i_39_], (byte) 89, false);
+			is_46_ = Static2.method1282(anObjectArray192[i_39_], (byte) 89, false);
 		else {
-			is_46_ = Class63.method1282(anObjectArray192[i_39_], (byte) 48, true);
+			is_46_ = Static2.method1282(anObjectArray192[i_39_], (byte) 48, true);
 			Buffer class14_sub10 = new Buffer(is_46_);
 			class14_sub10.method799(is, class14_sub10.payload.length, 14802, 5);
 		}
@@ -325,7 +323,7 @@ public abstract class Class9 {
 
 	public byte[] method157(int i, int i_64_, int i_65_) {
 		if (i_65_ != 20983)
-			aClass124_207 = null;
+			Static2.aClass124_207 = null;
 		if (!method148(i, i_64_, -1)) {
 			byte[] is = null;
 			return is;
@@ -341,7 +339,7 @@ public abstract class Class9 {
 				}
 			}
 		}
-		byte[] is = Class63.method1282(anObjectArrayArray237[i_64_][i], (byte) 39, false);
+		byte[] is = Static2.method1282(anObjectArrayArray237[i_64_][i], (byte) 39, false);
 		byte[] is_66_ = is;
 		return is_66_;
 	}
@@ -387,7 +385,7 @@ public abstract class Class9 {
 	public boolean method160(Class124 class124, byte i) {
 		class124 = class124.method1716((byte) 63);
 		if (i != -102)
-			anIntArray215 = null;
+			Static2.anIntArray215 = null;
 		int i_73_ = aClass63_219.method1283(-9, class124.method1709(111));
 		boolean bool = method161((byte) 116, i_73_);
 		return bool;
@@ -425,7 +423,7 @@ public abstract class Class9 {
 
 	public byte[] method163(int i, int i_76_, int i_77_) {
 		if (i_77_ != 0)
-			aClass124_221 = null;
+			Static2.aClass124_221 = null;
 		byte[] is = method149(-23245, i, null, i_76_);
 		return is;
 	}
@@ -485,46 +483,9 @@ public abstract class Class9 {
 		}
 	}
 
-	public static void method169(int i) {
-		if (i == -1) {
-			for (Class14_Sub14 class14_sub14 = (Class14_Sub14) Class33.aClass2_583.getFront(); class14_sub14 != null; class14_sub14 = (Class14_Sub14) Class33.aClass2_583.getNext()) {
-				if (class14_sub14.anInt2975 > 0)
-					class14_sub14.anInt2975--;
-				if (class14_sub14.anInt2975 == 0) {
-					if (class14_sub14.anInt2979 < 0
-							|| Class63.method1284((byte) -116, class14_sub14.anInt2966, class14_sub14.anInt2979)) {
-						Class133_Sub4.method1838(class14_sub14.anInt2966, class14_sub14.anInt2967,
-								class14_sub14.anInt2970, class14_sub14.anInt2969, class14_sub14.anInt2979, (byte) 74,
-								class14_sub14.anInt2971, class14_sub14.anInt2968);
-						class14_sub14.unlink();
-					}
-				} else {
-					if (class14_sub14.anInt2980 > 0)
-						class14_sub14.anInt2980--;
-					if (class14_sub14.anInt2980 == 0 && class14_sub14.anInt2967 >= 1 && class14_sub14.anInt2970 >= 1
-							&& class14_sub14.anInt2967 <= 102 && class14_sub14.anInt2970 <= 102
-							&& (class14_sub14.anInt2976 < 0 || Class63.method1284((byte) -116, class14_sub14.anInt2981,
-									class14_sub14.anInt2976))) {
-						Class133_Sub4.method1838(class14_sub14.anInt2981, class14_sub14.anInt2967,
-								class14_sub14.anInt2970, class14_sub14.anInt2969, class14_sub14.anInt2976, (byte) 74,
-								class14_sub14.anInt2971, class14_sub14.anInt2965);
-						class14_sub14.anInt2980 = -1;
-						if (class14_sub14.anInt2979 != class14_sub14.anInt2976 || class14_sub14.anInt2979 != -1) {
-							if ((class14_sub14.anInt2976 == class14_sub14.anInt2979)
-									&& (class14_sub14.anInt2968 == class14_sub14.anInt2965)
-									&& (class14_sub14.anInt2981 == class14_sub14.anInt2966))
-								class14_sub14.unlink();
-						} else
-							class14_sub14.unlink();
-					}
-				}
-			}
-		}
-	}
-
 	public boolean method170(boolean bool) {
 		if (bool)
-			aClass124_227 = null;
+			Static2.aClass124_227 = null;
 		boolean bool_88_ = true;
 		for (int i = 0; i < anIntArray223.length; i++) {
 			int i_89_ = anIntArray223[i];
@@ -556,17 +517,12 @@ public abstract class Class9 {
 		throw new RuntimeException();
 	}
 
-	public static void method172(byte i) {
-		if (i >= 96)
-			JunkTex.aClass52_4186.clear();
-	}
-
 	public int method173(int i) {
 		int i_92_ = 0;
 		int i_93_ = 0;
 		for (int i_94_ = 0; anObjectArray192.length > i_94_; i_94_++) {
-			if (anIntArray203[i_94_] > 0) {
-				i_93_ += method178(0, i_94_);
+			if (groupFileCount[i_94_] > 0) {
+				i_93_ += getCompletion(0, i_94_);
 				i_92_ += 100;
 			}
 		}
@@ -585,7 +541,7 @@ public abstract class Class9 {
 
 	public void method175(byte i, boolean bool, boolean bool_99_) {
 		if (i != -99)
-			aClass52_236 = null;
+			Static2.aClass52_236 = null;
 		if (bool_99_) {
 			aClass63_219 = null;
 			anIntArray197 = null;
@@ -607,7 +563,7 @@ public abstract class Class9 {
 		}
 		int[] is = anIntArrayArray218[i_100_];
 		if (is == null) {
-			is = new int[anIntArray203[i_100_]];
+			is = new int[groupFileCount[i_100_]];
 			for (int i_101_ = 0; is.length > i_101_; i_101_++)
 				is[i_101_] = i_101_;
 		}
@@ -626,25 +582,5 @@ public abstract class Class9 {
 		}
 		int i_106_ = anIntArray208[i];
 		return i_106_;
-	}
-
-	public Class9(boolean bool, boolean bool_107_) {
-		aBoolean244 = bool_107_;
-		aBoolean220 = bool;
-	}
-
-	public int method178(int i, int i_108_) {
-		if (!method153(i_108_, i ^ 0xffffffff)) {
-			int i_109_ = 0;
-			return i_109_;
-		}
-		if (i != 0)
-			method175((byte) 16, false, true);
-		if (anObjectArray192[i_108_] != null) {
-			int i_110_ = 100;
-			return i_110_;
-		}
-		int i_111_ = 0;
-		return i_111_;
 	}
 }

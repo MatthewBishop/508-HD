@@ -101,7 +101,7 @@ public class Class14_Sub18 extends Linkable {
 			if (Class133_Sub5.aBoolean3628) {
 				if (i_4_ != 1) {
 					int i_5_ = JunkTex.anInt4640;
-					int i_6_ = Class107.anInt1804;
+					int i_6_ = ProceduralTexture.anInt1804;
 					if (JunkTex.anInt500 - 10 > i_5_ || i_5_ > JunkTex.anInt500 - (-Class14_Sub14.anInt2984 - 10)
 							|| i_6_ < Class14_Sub2_Sub8.anInt3832 - 10
 							|| (JunkTex.anInt4550 + (Class14_Sub2_Sub8.anInt3832 + 10)) < i_6_) {
@@ -158,7 +158,7 @@ public class Class14_Sub18 extends Linkable {
 				if (i_4_ == 2 && JunkTex.anInt4729 > 0 || JunkTex.anInt4608 == 1)
 					Static2.method382((byte) 126);
 				if (i_4_ == 1 && JunkTex.anInt4729 > 0 || JunkTex.anInt4608 == 2)
-					Class107.method1551(-23473);
+					ProceduralTexture.method1551(-23473);
 			}
 			if (i != -102)
 				anInt3050 = 49;

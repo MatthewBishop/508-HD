@@ -20,6 +20,7 @@ public class Class75_Sub1 extends Class75 {
 	public SourceDataLine aSourceDataLine3329;
 	public static Class aClass3330;
 
+	@Override
 	public void method1353() {
 		int i = 256;
 		if (Class14_Sub2_Sub2.aBoolean3763)
@@ -34,6 +35,7 @@ public class Class75_Sub1 extends Class75 {
 		aSourceDataLine3329.write(aByteArray3325, 0, i << 1);
 	}
 
+	@Override
 	public void method1347(int i) throws LineUnavailableException {
 		try {
 			DataLine.Info info = (new DataLine.Info(
@@ -53,11 +55,13 @@ public class Class75_Sub1 extends Class75 {
 		}
 	}
 
+	@Override
 	public int method1342() {
 		int i = anInt3327 - (aSourceDataLine3329.available() >> (Class14_Sub2_Sub2.aBoolean3763 ? 2 : 1));
 		return i;
 	}
 
+	@Override
 	public void method1351() {
 		if (aSourceDataLine3329 != null) {
 			aSourceDataLine3329.close();
@@ -65,6 +69,7 @@ public class Class75_Sub1 extends Class75 {
 		}
 	}
 
+	@Override
 	public void method1350(Component component) {
 		Mixer.Info[] infos = AudioSystem.getMixerInfo();
 		if (infos != null) {
@@ -78,11 +83,12 @@ public class Class75_Sub1 extends Class75 {
 				}
 			}
 		}
-		anAudioFormat3326 = new AudioFormat((float) Class115.anInt1909, 16, Class14_Sub2_Sub2.aBoolean3763 ? 2 : 1,
+		anAudioFormat3326 = new AudioFormat(Class115.anInt1909, 16, Class14_Sub2_Sub2.aBoolean3763 ? 2 : 1,
 				true, false);
 		aByteArray3325 = new byte[256 << (Class14_Sub2_Sub2.aBoolean3763 ? 2 : 1)];
 	}
 
+	@Override
 	public void method1335() throws LineUnavailableException {
 		aSourceDataLine3329.flush();
 		if (aBoolean3328) {

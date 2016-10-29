@@ -4,10 +4,11 @@
 package rs;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 
 public class Class45 {
-	public static Class124 aClass124_738 = Class14_Sub2_Sub2.method263(1178, "AUS");
-	public static Class124 aClass124_750 = Class14_Sub2_Sub2.method263(1178, "::rect_debug");
+	public static Class124 aClass124_738 = Class124.method263(1178, "AUS");
+	public static Class124 aClass124_750 = Class124.method263(1178, "::rect_debug");
 	public static int anInt751 = -1;
 	public static int[] anIntArray737 = { 1, 1, 1, 1 };
 	public static int[] anIntArray743 = new int[200];
@@ -358,7 +359,7 @@ public class Class45 {
 			is = Class14_Sub20.aByteArrayArray3097;
 		else
 			is = Static2.aByteArrayArray362;
-		int i = Class5.aByteArrayArray139.length;
+		int i = Static2.aByteArrayArray139.length;
 		if (bool_46_)
 			anIntArray743 = null;
 		for (int i_47_ = 0; i > i_47_; i_47_++) {

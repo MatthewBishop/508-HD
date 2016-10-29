@@ -6,14 +6,15 @@ package rs;
 import java.security.MessageDigest;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 import com.jagex.map.SceneCluster;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 import com.jagex.sound.Track;
 
 public class Class58 {
 	public static int anInt937;
-	public static Class124 aClass124_939 = Class14_Sub2_Sub2.method263(1178, "red:");
-	public static Class124 aClass124_941 = Class14_Sub2_Sub2.method263(1178, "::errortest");
+	public static Class124 aClass124_939 = Class124.method263(1178, "red:");
+	public static Class124 aClass124_941 = Class124.method263(1178, "::errortest");
 	public static Class124 aClass124_942 = aClass124_939;
 	public static Class124 aClass124_943;
 	public static Class76[] aClass76Array944 = new Class76[27];
@@ -77,7 +78,7 @@ public class Class58 {
 					if (!class14_sub3.aClass14_Sub9_Sub4_2760.previousNotNull((byte) -109))
 						class14_sub3.aClass14_Sub9_Sub4_2760 = null;
 				} else if (class14_sub3.anIntArray2746 != null && (class14_sub3.anInt2773 -= i) <= 0) {
-					int i_6_ = (int) ((double) class14_sub3.anIntArray2746.length * Math.random());
+					int i_6_ = (int) (class14_sub3.anIntArray2746.length * Math.random());
 					Track track = Track.method1451(Static2.aClass9_Sub1_2901,
 							class14_sub3.anIntArray2746[i_6_], 0);
 					if (track != null) {
@@ -88,7 +89,7 @@ public class Class58 {
 						class14_sub9_sub4.method765(0);
 						Class33.aClass14_Sub9_Sub2_585.method735(class14_sub9_sub4);
 						class14_sub3.aClass14_Sub9_Sub4_2760 = class14_sub9_sub4;
-						class14_sub3.anInt2773 = (int) ((double) (class14_sub3.anInt2769 - class14_sub3.anInt2772)
+						class14_sub3.anInt2773 = (int) ((class14_sub3.anInt2769 - class14_sub3.anInt2772)
 								* Math.random()) + class14_sub3.anInt2772;
 					}
 				}
@@ -99,10 +100,10 @@ public class Class58 {
 	public static Class124 method1256(int i, boolean bool, long l, int i_7_) {
 		if (i_7_ < 2 || i_7_ > 36)
 			throw new IllegalArgumentException(new StringBuilder("Invalid radix:").append(i_7_).toString());
-		long l_8_ = l / (long) i_7_;
+		long l_8_ = l / i_7_;
 		int i_9_ = 1;
 		while (0L != l_8_) {
-			l_8_ /= (long) i_7_;
+			l_8_ /= i_7_;
 			i_9_++;
 		}
 		int i_10_ = i_9_;
@@ -115,10 +116,10 @@ public class Class58 {
 			is[0] = (byte) 43;
 		int i_11_ = -84 % ((i + 54) / 46);
 		for (int i_12_ = 0; i_9_ > i_12_; i_12_++) {
-			int i_13_ = (int) (l % (long) i_7_);
+			int i_13_ = (int) (l % i_7_);
 			if (i_13_ < 0)
 				i_13_ = -i_13_;
-			l /= (long) i_7_;
+			l /= i_7_;
 			if (i_13_ > 9)
 				i_13_ += 39;
 			is[i_10_ - i_12_ - 1] = (byte) (i_13_ + 48);

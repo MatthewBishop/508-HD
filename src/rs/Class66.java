@@ -7,11 +7,11 @@ import com.jagex.rt4.Class14_Sub27;
 
 public class Class66 {
 	public int anInt1035;
-	public static Class124 aClass124_1037 = Class14_Sub2_Sub2.method263(1178, ":clan:");
+	public static Class124 aClass124_1037 = Class124.method263(1178, ":clan:");
 	public int anInt1038;
 	public static int anInt1039 = -1;
 	public int anInt1041;
-	public static Class124 aClass124_1042 = Class14_Sub2_Sub2.method263(1178, "Mem:");
+	public static Class124 aClass124_1042 = Class124.method263(1178, "Mem:");
 	public int anInt1043 = -1;
 	public int anInt1044;
 	public static int anInt1045;
@@ -20,55 +20,6 @@ public class Class66 {
 	public int anInt1049;
 	public static int[][][] anIntArrayArrayArray135;
 	public int anInt1051;
-
-	public static void method1293(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_) {
-		Class51.method1201(Static2.anIntArrayArray4038[i], -i_1_ + i_0_, i_0_ + i_1_, -5973, i_4_);
-		int i_5_ = 0;
-		int i_6_ = i_1_ * i_1_;
-		int i_7_ = i_3_;
-		int i_8_ = i_3_ * i_3_;
-		int i_9_ = i_8_ << 1;
-		int i_10_ = i_6_ << 33;
-		int i_11_ = 64 % ((85 - i_2_) / 32);
-		int i_12_ = i_3_ << 33;
-		int i_13_ = (-i_12_ + 1) * i_6_ + i_9_;
-		int i_14_ = i_6_ << 2;
-		int i_15_ = i_8_ - (i_12_ - 1) * i_10_;
-		int i_16_ = i_8_ << 2;
-		int i_17_ = ((i_7_ << 33) - 3) * i_10_;
-		int i_18_ = ((i_5_ << 1) + 3) * i_9_;
-		int i_19_ = (i_5_ + 1) * i_16_;
-		int i_20_ = (i_7_ - 1) * i_14_;
-		while (i_7_ > 0) {
-			i_7_--;
-			if (i_13_ < 0) {
-				while (i_13_ < 0) {
-					i_13_ += i_18_;
-					i_18_ += i_16_;
-					i_15_ += i_19_;
-					i_19_ += i_16_;
-					i_5_++;
-				}
-			}
-			if (i_15_ < 0) {
-				i_15_ += i_19_;
-				i_13_ += i_18_;
-				i_19_ += i_16_;
-				i_18_ += i_16_;
-				i_5_++;
-			}
-			int i_21_ = i - i_7_;
-			i_13_ -= i_20_;
-			i_15_ -= i_17_;
-			i_20_ -= i_14_;
-			i_17_ -= i_14_;
-			int i_22_ = i + i_7_;
-			int i_23_ = i_5_ + i_0_;
-			int i_24_ = i_0_ - i_5_;
-			Class51.method1201(Static2.anIntArrayArray4038[i_21_], i_24_, i_23_, -5973, i_4_);
-			Class51.method1201(Static2.anIntArrayArray4038[i_22_], i_24_, i_23_, -5973, i_4_);
-		}
-	}
 
 	public static int method1294(int i, int i_25_) {
 		int i_26_ = i | i_25_;
@@ -137,7 +88,7 @@ public class Class66 {
 											.method853(32, class124s[i_33_], i,
 													(JunkTex.method515(new Class124[] {
 															(JunkTex.aClass124_4694), class124 },
-													(byte) -93)), i_34_, (long) i_31_, i_30_);
+													(byte) -93)), i_34_, i_31_, i_30_);
 								}
 							}
 						}
@@ -165,24 +116,24 @@ public class Class66 {
 											.method853(32, class124s[i_35_], i,
 													(JunkTex.method515(new Class124[] {
 															(JunkTex.aClass124_4694), class124 },
-													(byte) -97)), i_37_, (long) i_31_, i_30_);
+													(byte) -97)), i_37_, i_31_, i_30_);
 								}
 							}
 						}
 						Class14_Sub11.method853(32, JunkTex.aClass124_2802, i,
 								JunkTex.method515(
 										(new Class124[] { (JunkTex.aClass124_4694), class124 }), (byte) -96),
-								(short) 1002, (long) i_31_, i_30_);
+								(short) 1002, i_31_, i_30_);
 					} else if ((JunkTex.anInt101 & 0x2) == 2)
 						Class14_Sub11.method853(32, JunkTex.aClass124_2082, i,
 								JunkTex.method515((new Class124[] { (Class17.aClass124_408),
 										(Static2.aClass124_3724), class124 }), (byte) -83),
-								(short) 34, (long) i_31_, i_30_);
+								(short) 34, i_31_, i_30_);
 				} else
 					Class14_Sub11.method853(32, Class40.aClass124_665, i,
 							(JunkTex.method515((new Class124[] { JunkTex.aClass124_2809,
 									(Static2.aClass124_3724), class124 }), (byte) -123)),
-							(short) 30, (long) i_31_, i_30_);
+							(short) 30, i_31_, i_30_);
 			}
 		}
 	}

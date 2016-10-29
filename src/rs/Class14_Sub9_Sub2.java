@@ -12,6 +12,7 @@ public class Class14_Sub9_Sub2 extends Class14_Sub9 {
 	public int anInt4841 = -1;
 	public int anInt4842 = 0;
 
+	@Override
 	public Class14_Sub9 method688() {
 		return (Class14_Sub9) aClass2_4839.getFront();
 	}
@@ -29,6 +30,7 @@ public class Class14_Sub9_Sub2 extends Class14_Sub9 {
 		class14_sub9.unlink();
 	}
 
+	@Override
 	public synchronized void method687(int[] is, int i, int i_0_) {
 		do {
 			if (anInt4841 < 0) {
@@ -60,6 +62,7 @@ public class Class14_Sub9_Sub2 extends Class14_Sub9 {
 		} while (i_0_ != 0);
 	}
 
+	@Override
 	public synchronized void method692(int i) {
 		do {
 			if (anInt4841 < 0) {
@@ -90,6 +93,7 @@ public class Class14_Sub9_Sub2 extends Class14_Sub9 {
 		} while (i != 0);
 	}
 
+	@Override
 	public int method690() {
 		return 0;
 	}
@@ -110,6 +114,7 @@ public class Class14_Sub9_Sub2 extends Class14_Sub9 {
 			class14_sub9.method689(is, i, i_5_);
 	}
 
+	@Override
 	public Class14_Sub9 method686() {
 		return (Class14_Sub9) aClass2_4839.getNext();
 	}

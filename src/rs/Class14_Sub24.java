@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 import com.jagex.link.Linkable;
 
 public class Class14_Sub24 extends Linkable {
@@ -90,19 +91,19 @@ public class Class14_Sub24 extends Linkable {
 			int i_7_ = i_4_ >> 3;
 			float[] fs = new float[i_5_];
 			for (int i_8_ = 0; i_8_ < i_6_; i_8_++) {
-				fs[i_8_ * 2] = (float) Math.cos((double) (i_8_ * 4) * 3.141592653589793 / (double) i_4_);
-				fs[i_8_ * 2 + 1] = -(float) Math.sin((double) (i_8_ * 4) * 3.141592653589793 / (double) i_4_);
+				fs[i_8_ * 2] = (float) Math.cos(i_8_ * 4 * 3.141592653589793 / i_4_);
+				fs[i_8_ * 2 + 1] = -(float) Math.sin(i_8_ * 4 * 3.141592653589793 / i_4_);
 			}
 			float[] fs_9_ = new float[i_5_];
 			for (int i_10_ = 0; i_10_ < i_6_; i_10_++) {
-				fs_9_[i_10_ * 2] = (float) Math.cos((double) (i_10_ * 2 + 1) * 3.141592653589793 / (double) (i_4_ * 2));
+				fs_9_[i_10_ * 2] = (float) Math.cos((i_10_ * 2 + 1) * 3.141592653589793 / (i_4_ * 2));
 				fs_9_[i_10_ * 2 + 1] = (float) Math
-						.sin((double) (i_10_ * 2 + 1) * 3.141592653589793 / (double) (i_4_ * 2));
+						.sin((i_10_ * 2 + 1) * 3.141592653589793 / (i_4_ * 2));
 			}
 			float[] fs_11_ = new float[i_6_];
 			for (int i_12_ = 0; i_12_ < i_7_; i_12_++) {
-				fs_11_[i_12_ * 2] = (float) Math.cos((double) (i_12_ * 4 + 2) * 3.141592653589793 / (double) i_4_);
-				fs_11_[i_12_ * 2 + 1] = -(float) Math.sin((double) (i_12_ * 4 + 2) * 3.141592653589793 / (double) i_4_);
+				fs_11_[i_12_ * 2] = (float) Math.cos((i_12_ * 4 + 2) * 3.141592653589793 / i_4_);
+				fs_11_[i_12_ * 2 + 1] = -(float) Math.sin((i_12_ * 4 + 2) * 3.141592653589793 / i_4_);
 			}
 			int[] is_13_ = new int[i_7_];
 			int i_14_ = Class48.method1192(i_7_ - 1, 25039);
@@ -176,7 +177,7 @@ public class Class14_Sub24 extends Linkable {
 		int i_32_ = (i & 0x7fe00000) >> 21;
 		if (i_31_ != 0)
 			i_30_ = -i_30_;
-		return (float) ((double) i_30_ * Math.pow(2.0, (double) (i_32_ - 788)));
+		return (float) (i_30_ * Math.pow(2.0, i_32_ - 788));
 	}
 
 	public static int method908() {
@@ -407,14 +408,14 @@ public class Class14_Sub24 extends Linkable {
 				fs[i_50_ + i_102_] = fs[i_39_ - i_102_ - 1];
 			for (int i_103_ = i_43_; i_103_ < i_44_; i_103_++) {
 				float f = (float) Math
-						.sin(((double) (i_103_ - i_43_) + 0.5) / (double) i_45_ * 0.5 * 3.141592653589793);
-				aFloatArray3153[i_103_] *= (float) Math.sin((double) f * 1.5707963267948966 * (double) f);
+						.sin((i_103_ - i_43_ + 0.5) / i_45_ * 0.5 * 3.141592653589793);
+				aFloatArray3153[i_103_] *= (float) Math.sin(f * 1.5707963267948966 * f);
 			}
 			for (int i_104_ = i_46_; i_104_ < i_47_; i_104_++) {
 				float f = (float) Math
-						.sin((((double) (i_104_ - i_46_) + 0.5) / (double) i_48_ * 0.5 * 3.141592653589793)
+						.sin(((i_104_ - i_46_ + 0.5) / i_48_ * 0.5 * 3.141592653589793)
 								+ 1.5707963267948966);
-				aFloatArray3153[i_104_] *= (float) Math.sin((double) f * 1.5707963267948966 * (double) f);
+				aFloatArray3153[i_104_] *= (float) Math.sin(f * 1.5707963267948966 * f);
 			}
 		}
 		float[] fs = null;

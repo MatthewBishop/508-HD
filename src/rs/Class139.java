@@ -5,6 +5,7 @@ package rs;
 
 import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.Class25;
+import com.jagex.util.Huffman;
 
 public class Class139 {
 	public static SoftCache aClass52_2229;
@@ -42,7 +43,7 @@ public class Class139 {
 			Class150.anIntArray2422 = new int[i_3_];
 			if (i_0_ / 8 == 48 && i_7_ / 8 == 148)
 				bool_8_ = true;
-			Class5.aByteArrayArray139 = new byte[i_3_][];
+			Static2.aByteArrayArray139 = new byte[i_3_][];
 			Class14_Sub2_Sub12.aByteArrayArray3913 = new byte[i_3_][];
 			JunkTex.anIntArray3119 = new int[i_3_];
 			JunkTex.anIntArray3955 = new int[i_3_];
@@ -124,7 +125,7 @@ public class Class139 {
 			JunkTex.aByteArrayArray4556 = null;
 			Class134.anIntArray2590 = null;
 			Class14_Sub20.aByteArrayArray3097 = new byte[i_19_][];
-			Class5.aByteArrayArray139 = new byte[i_19_][];
+			Static2.aByteArrayArray139 = new byte[i_19_][];
 			i_19_ = 0;
 			for (int i_24_ = 0; i_24_ < 4; i_24_++) {
 				for (int i_25_ = 0; i_25_ < 13; i_25_++) {
@@ -327,11 +328,11 @@ public class Class139 {
 						class124 = Class7_Sub2.aClass124_2669;
 						bool = false;
 					}
-					if (i_59_ > JunkTex.anInt4640 || Class107.anInt1804 < i_56_
-							|| JunkTex.anInt4640 >= i_59_ + i_49_ || Class107.anInt1804 >= i_56_ + i_51_
+					if (i_59_ > JunkTex.anInt4640 || ProceduralTexture.anInt1804 < i_56_
+							|| JunkTex.anInt4640 >= i_59_ + i_49_ || ProceduralTexture.anInt1804 >= i_56_ + i_51_
 							|| !bool)
 						JunkTex.aClass14_Sub2_Sub19Array4595[class45.aBoolean749 ? 1 : 0]
-								.method391(i_59_ + JunkTex.anInt4266, i_56_ + Class134.anInt2573);
+								.drawReg(i_59_ + JunkTex.anInt4266, i_56_ + Class134.anInt2573);
 					else {
 						JunkTex.anInt2801 = i_60_;
 						JunkTex.aClass14_Sub2_Sub19Array4595[class45.aBoolean749 ? 1 : 0].method400(
@@ -357,8 +358,8 @@ public class Class139 {
 		}
 	}
 
-	public static void method1955(int i, Class5 class5) {
+	public static void method1955(int i, Huffman huffman) {
 		if (i < -58)
-			Class98.aClass5_1659 = class5;
+			Class98.aClass5_1659 = huffman;
 	}
 }

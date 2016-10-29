@@ -9,12 +9,12 @@ import javax.media.opengl.GL;
 import javax.media.opengl.glu.GLU;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 import com.jagex.link.Cacheable;
 
-import rs.Class107;
+import rs.ProceduralTexture;
 import rs.Class120;
 import rs.Class66;
-import rs.Class9;
 import rs.Interface3;
 import rs.JunkTex;
 import rs.Static2;
@@ -25,7 +25,7 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 	public boolean aBoolean3738;
 	public boolean aBoolean3743;
 	public boolean aBoolean3746 = false;
-	public Class107 aClass107_3742;
+	public ProceduralTexture aClass107_3742;//Procedural Texture?
 	public float aFloat3750;
 	public int anInt3725;
 
@@ -46,7 +46,7 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 	public Class14_Sub2_Sub1(Buffer class14_sub10) {
 		anInt3744 = -1;
 		anInt3753 = 0;
-		aClass107_3742 = new Class107(class14_sub10);
+		aClass107_3742 = new ProceduralTexture(class14_sub10);
 		aBoolean3730 = class14_sub10.readUByte() == 1;
 		aBoolean3738 = class14_sub10.readUByte() == 1;
 		aBoolean3743 = class14_sub10.readUByte() == 1;
@@ -87,13 +87,13 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 		int i_7_ = RT4.method1111(0);
 		if ((i_7_ & 0x1) == 0) {
 			if (anInt3744 != -1)
-				RT4GL.method1632(anInt3744);
+				RT4GL.bindTexture2D(anInt3744);
 			else {
 				int[] is = new int[1];
 				gl.glGenTextures(1, is, 0);
 				anInt3731 = Class11.anInt267;
 				anInt3744 = is[0];
-				RT4GL.method1632(anInt3744);
+				RT4GL.bindTexture2D(anInt3744);
 				ByteBuffer bytebuffer = ByteBuffer
 						.wrap(aClass107_3742.method1555(i_6_, interface3, 0.7, aBoolean3738, i_6_, (byte) -94, class9));
 				if (anInt3752 != 2) {

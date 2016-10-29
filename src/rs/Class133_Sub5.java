@@ -26,7 +26,7 @@ public class Class133_Sub5 extends Class133 {
 	public int anInt3631;
 
 	static {
-		aClass124_3607 = Class14_Sub2_Sub2.method263(1178, "Close");
+		aClass124_3607 = Class124.method263(1178, "Close");
 		aClass124_3610 = aClass124_3607;
 	}
 
@@ -91,16 +91,18 @@ public class Class133_Sub5 extends Class133 {
 		return class133_sub7_5_;
 	}
 
-	public int method1781() {
+	@Override
+	public int getMinY() {
 		int i = anInt3617;
 		return i;
 	}
 
-	public void method1792(int i, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_, int i_12_, long l) {
+	@Override
+	public void render(int i, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_, int i_12_, long l) {
 		Class133_Sub7 class133_sub7 = method1847(5);
 		if (class133_sub7 != null) {
-			class133_sub7.method1792(i, i_6_, i_7_, i_8_, i_9_, i_10_, i_11_, i_12_, l);
-			anInt3617 = class133_sub7.method1781();
+			class133_sub7.render(i, i_6_, i_7_, i_8_, i_9_, i_10_, i_11_, i_12_, l);
+			anInt3617 = class133_sub7.getMinY();
 		}
 	}
 

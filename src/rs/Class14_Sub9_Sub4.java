@@ -20,10 +20,12 @@ public class Class14_Sub9_Sub4 extends Class14_Sub9 {
 	public int anInt4873;
 	public int anInt4874;
 
+	@Override
 	public Class14_Sub9 method686() {
 		return null;
 	}
 
+	@Override
 	public synchronized void method687(int[] is, int i, int i_0_) {
 		if (anInt4868 == 0 && anInt4867 == 0)
 			method692(i_0_);
@@ -294,6 +296,7 @@ public class Class14_Sub9_Sub4 extends Class14_Sub9 {
 		return i_31_;
 	}
 
+	@Override
 	public synchronized void method692(int i) {
 		if (anInt4867 > 0) {
 			if (i >= anInt4867) {
@@ -624,7 +627,7 @@ public class Class14_Sub9_Sub4 extends Class14_Sub9 {
 	}
 
 	public static int method754(int i, int i_105_) {
-		return (i_105_ < 0 ? i : (int) ((double) i * Math.sqrt((double) (16384 - i_105_) * 1.220703125E-4) + 0.5));
+		return (i_105_ < 0 ? i : (int) (i * Math.sqrt((16384 - i_105_) * 1.220703125E-4) + 0.5));
 	}
 
 	public static int method755(int i, int i_106_, byte[] is, int[] is_107_, int i_108_, int i_109_, int i_110_,
@@ -774,7 +777,7 @@ public class Class14_Sub9_Sub4 extends Class14_Sub9 {
 	}
 
 	public static int method762(int i, int i_137_) {
-		return (i_137_ < 0 ? -i : (int) (((double) i * Math.sqrt((double) i_137_ * 1.220703125E-4)) + 0.5));
+		return (i_137_ < 0 ? -i : (int) ((i * Math.sqrt(i_137_ * 1.220703125E-4)) + 0.5));
 	}
 
 	public static Class14_Sub9_Sub4 method763(Class14_Sub12_Sub1 class14_sub12_sub1, int i, int i_138_, int i_139_) {
@@ -861,6 +864,7 @@ public class Class14_Sub9_Sub4 extends Class14_Sub9 {
 		return anInt4873 < 0 ? -anInt4873 : anInt4873;
 	}
 
+	@Override
 	public int method690() {
 		if (anInt4868 == 0 && anInt4867 == 0)
 			return 0;
@@ -875,6 +879,7 @@ public class Class14_Sub9_Sub4 extends Class14_Sub9 {
 		return anInt4868 == -2147483648 ? 0 : anInt4868;
 	}
 
+	@Override
 	public int method691() {
 		int i = anInt4870 * 3 >> 6;
 		i = (i ^ i >> 31) + (i >>> 31);
@@ -1081,7 +1086,7 @@ public class Class14_Sub9_Sub4 extends Class14_Sub9 {
 		if (class14_sub12_sub1.aByteArray4899 == null || class14_sub12_sub1.aByteArray4899.length == 0)
 			return null;
 		return new Class14_Sub9_Sub4(class14_sub12_sub1,
-				(int) ((long) class14_sub12_sub1.anInt4895 * 256L * (long) i / (long) (Class115.anInt1909 * 100)),
+				(int) (class14_sub12_sub1.anInt4895 * 256L * i / (Class115.anInt1909 * 100)),
 				i_188_ << 6);
 	}
 
@@ -1091,6 +1096,7 @@ public class Class14_Sub9_Sub4 extends Class14_Sub9 {
 		return false;
 	}
 
+	@Override
 	public Class14_Sub9 method688() {
 		return null;
 	}

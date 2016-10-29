@@ -3,13 +3,14 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9;
 import com.jagex.link.Deque;
 import com.jagex.link.HashTable;
 
 public class Class33 {
 	public static int[][] anIntArrayArray575 = new int[104][104];
 	public static int anInt577;
-	public static Class124 aClass124_578 = Class14_Sub2_Sub2.method263(1178, "");
+	public static Class124 aClass124_578 = Class124.method263(1178, "");
 	public static Class9 aClass9_579;
 	public static short[] aShortArray580;
 	public static Deque aClass2_583;
@@ -89,7 +90,7 @@ public class Class33 {
 		JunkTex.anInt1132 = i_12_;
 		Class35.aBoolean593 = bool;
 		Class14_Sub15.anInt2989 = 10000;
-		Class9_Sub1.aClass9_2696 = class9;
+		Static2.aClass9_2696 = class9;
 		Class38.anInt2624 = i_11_;
 	}
 

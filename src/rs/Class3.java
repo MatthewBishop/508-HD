@@ -40,8 +40,8 @@ public class Class3 {
 		for (int i = 1; i < 2048; i++)
 			anIntArray105[i] = 65536 / i;
 		for (int i = 0; i < 2048; i++) {
-			sin[i] = (int) (Math.sin((double) i * 0.0030679615) * 65536.0);
-			cos[i] = (int) (Math.cos((double) i * 0.0030679615) * 65536.0);
+			sin[i] = (int) (Math.sin(i * 0.0030679615) * 65536.0);
+			cos[i] = (int) (Math.cos(i * 0.0030679615) * 65536.0);
 		}
 	}
 
@@ -409,10 +409,10 @@ public class Class3 {
 	public static void method94(int i, int i_21_) {
 		int i_22_ = i * 128;
 		for (int i_23_ = i; i_23_ < i_21_; i_23_++) {
-			double d = (double) (i_23_ >> 3) / 64.0 + 0.0078125;
-			double d_24_ = (double) (i_23_ & 0x7) / 8.0 + 0.0625;
+			double d = (i_23_ >> 3) / 64.0 + 0.0078125;
+			double d_24_ = (i_23_ & 0x7) / 8.0 + 0.0625;
 			for (int i_25_ = 0; i_25_ < 128; i_25_++) {
-				double d_26_ = (double) i_25_ / 128.0;
+				double d_26_ = i_25_ / 128.0;
 				double d_27_ = d_26_;
 				double d_28_ = d_26_;
 				double d_29_ = d_26_;
@@ -455,9 +455,9 @@ public class Class3 {
 					else
 						d_29_ = d_31_;
 				}
-				d_27_ = Math.pow(d_27_, (double) aFloat115);
-				d_28_ = Math.pow(d_28_, (double) aFloat115);
-				d_29_ = Math.pow(d_29_, (double) aFloat115);
+				d_27_ = Math.pow(d_27_, aFloat115);
+				d_28_ = Math.pow(d_28_, aFloat115);
+				d_29_ = Math.pow(d_29_, aFloat115);
 				int i_35_ = (int) (d_27_ * 256.0);
 				int i_36_ = (int) (d_28_ * 256.0);
 				int i_37_ = (int) (d_29_ * 256.0);

@@ -123,7 +123,7 @@ public class Class34 implements ShaderInterface {
 				anInt2563 = RT4GL.anInt2045;
 			}
 		} else
-			RT4GL.method1632(Class119.textureIds2[RT4GL.anInt2045 * 64 / 100 % 64]);
+			RT4GL.bindTexture2D(Class119.textureIds2[RT4GL.anInt2045 * 64 / 100 % 64]);
 	}
 
 	public void method1091() {

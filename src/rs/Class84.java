@@ -12,12 +12,12 @@ public class Class84 {
 	public static int anInt1346;
 	public static Class124 aClass124_1347;
 	public static Class124 aClass124_1349;
-	public static Class124 aClass124_1350 = Class14_Sub2_Sub2.method263(1178, "Lade Titelbild )2 ");
+	public static Class124 aClass124_1350 = Class124.method263(1178, "Lade Titelbild )2 ");
 	public static Class124 aClass124_1352;
 
 	static {
-		aClass124_1349 = Class14_Sub2_Sub2.method263(1178, "Bitte entfernen Sie ");
-		aClass124_1345 = Class14_Sub2_Sub2.method263(1178, "green:");
+		aClass124_1349 = Class124.method263(1178, "Bitte entfernen Sie ");
+		aClass124_1345 = Class124.method263(1178, "green:");
 		aClass124_1352 = aClass124_1345;
 		aClass124_1347 = aClass124_1345;
 	}

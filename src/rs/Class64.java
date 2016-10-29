@@ -3,9 +3,11 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9_Sub1;
+
 public class Class64 {
 	public static Class124 aClass124_1009;
-	public static Class124 aClass124_1010 = Class14_Sub2_Sub2.method263(1178, "<col=ffff00>");
+	public static Class124 aClass124_1010 = Class124.method263(1178, "<col=ffff00>");
 	public static Class124 aClass124_1011;
 	public static int anInt1012;
 	public static long aLong1014;
@@ -14,22 +16,12 @@ public class Class64 {
 	public static Class124 aClass124_1017;
 
 	static {
-		aClass124_1009 = Class14_Sub2_Sub2.method263(1178, "Versteckt");
+		aClass124_1009 = Class124.method263(1178, "Versteckt");
 		anIntArray1016 = new int[5];
-		aClass124_1017 = Class14_Sub2_Sub2.method263(1178, "Choose Option");
+		aClass124_1017 = Class124.method263(1178, "Choose Option");
 		aLong1014 = 0L;
 		anInt1012 = 0;
 		aClass124_1011 = aClass124_1017;
-	}
-
-	public static void method1285(int i, int i_0_, int i_1_, int i_2_, byte i_3_) {
-		if (i_3_ != -115)
-			method1287(-75);
-		if (Class14_Sub17.anInt3005 <= i && i <= Class59.anInt955) {
-			i_1_ = Class67.method1301((byte) -83, i_1_, Class118.anInt1982, JunkTex.anInt4327);
-			i_0_ = Class67.method1301((byte) -93, i_0_, Class118.anInt1982, JunkTex.anInt4327);
-			JunkTex.method1226(4, i_1_, i, i_0_, i_2_);
-		}
 	}
 
 	public static void method1286(byte i) {
@@ -62,8 +54,6 @@ public class Class64 {
 	}
 
 	public static void method1287(int i) {
-		if (i != -12065)
-			method1285(-5, 88, -88, 46, (byte) -119);
 		aClass9_Sub1_1015 = null;
 		aClass124_1010 = null;
 		anIntArray1016 = null;

@@ -4,12 +4,12 @@
 package rs;
 
 public class Class50 {
-	public boolean aBoolean820 = false;
-	public short aShort821;
-	public short aShort822;
-	public short aShort823;
-	public short aShort824;
-	public short aShort825;
-	public short aShort826;
-	public short aShort827;
+	public boolean boundsCalculated = false;
+	public short maxZ;
+	public short minZ;
+	public short boundingPlaneRadius;
+	public short maxX;
+	public short minY;
+	public short maxY;
+	public short minX;
 }

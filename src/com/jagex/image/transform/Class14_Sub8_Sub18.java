@@ -8,11 +8,9 @@ import com.jagex.image.transform.class125.Class125_Sub1;
 import com.jagex.image.transform.class125.Class125_Sub2;
 import com.jagex.image.transform.class125.Class125_Sub3;
 import com.jagex.image.transform.class125.Class125_Sub4;
+import com.jagex.image.transform.class125.SC;
 import com.jagex.image.transform.util.AccessoryMethods;
 import com.jagex.io.Buffer;
-
-import rs.Class70;
-import rs.Class76;
 
 public class Class14_Sub8_Sub18 extends Class14_Sub8 {
 	private static Class125_Sub3 method860(Buffer class14_sub10) {
@@ -51,13 +49,13 @@ public class Class14_Sub8_Sub18 extends Class14_Sub8 {
 	}
 
 	@Override
-	public int[][] method474(int i) {
-		int[][] is = aClass95_2838.method1481(1, i);
-		if (aClass95_2838.aBoolean1628) {
+	public int[][] outputColour(int i) {
+		int[][] is = triChromaticImageCache.method1481(1, i);
+		if (triChromaticImageCache.aBoolean1628) {
 			int i_19_ = TexStatic.anInt1876;
 			int i_20_ = TexStatic.anInt407;
 			int[][] is_21_ = new int[i_20_][i_19_];
-			int[][][] is_22_ = aClass95_2838.method1485();
+			int[][][] is_22_ = triChromaticImageCache.method1485();
 			method575(is_21_);
 			for (int i_23_ = 0; i_23_ < TexStatic.anInt407; i_23_++) {
 				int[] is_24_ = is_21_[i_23_];
@@ -78,10 +76,10 @@ public class Class14_Sub8_Sub18 extends Class14_Sub8 {
 	}
 
 	@Override
-	public void method475(int i, Buffer class14_sub10) {
+	public void decode(int i, Buffer class14_sub10) {
 		if (i != 0) {
 			if (i == 1)
-				aBoolean2862 = class14_sub10.readUByte() == 1;
+				monoChromatic = class14_sub10.readUByte() == 1;
 		} else {
 			aClass125Array4398 = new Class125[class14_sub10.readUByte()];
 			int i_34_ = 0;
@@ -115,10 +113,10 @@ public class Class14_Sub8_Sub18 extends Class14_Sub8 {
 	}
 
 	@Override
-	public int[] method484(int i) {
-		int[] is = aClass149_2851.method2014(i);
-		if (aClass149_2851.aBoolean2402)
-			method575(aClass149_2851.method2019());
+	public int[] outputMonochrome(int i) {
+		int[] is = monoChromaticImageCache.method2014(i);
+		if (monoChromaticImageCache.aBoolean2402)
+			method575(monoChromaticImageCache.method2019());
 		int[] is_38_ = is;
 		return is_38_;
 	}
@@ -126,8 +124,8 @@ public class Class14_Sub8_Sub18 extends Class14_Sub8 {
 	public void method575(int[][] is) {
 		int i = TexStatic.anInt1876;
 		int i_39_ = TexStatic.anInt407;
-		Class76.method1363(is);
-		Class70.method1314(0, TexStatic.anInt1927, TexStatic.anInt4882, 0);
+		SC.method1363(is);
+		SC.method1314(0, TexStatic.anInt1927, TexStatic.anInt4882, 0);
 		if (aClass125Array4398 != null) {
 			for (int i_40_ = 0; i_40_ < aClass125Array4398.length; i_40_++) {
 				Class125 class125 = aClass125Array4398[i_40_];

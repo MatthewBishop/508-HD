@@ -14,35 +14,23 @@ public class Class133_Sub3 extends Class133 {
 	public int anInt3557;
 	public int anInt3558;
 	public static int[] anIntArray3559 = new int[5];
-	public static Class124 aClass124_3563 = Class14_Sub2_Sub2.method263(1178, "Members object");
+	public static Class124 aClass124_3563 = Class124.method263(1178, "Members object");
 	public int anInt3564 = -32768;
-	public static Class124 aClass124_3566 = Class14_Sub2_Sub2.method263(1178, "null");
+	public static Class124 aClass124_3566 = Class124.method263(1178, "null");
 	public static Class14_Sub2_Sub16 aClass14_Sub2_Sub16_3567;
 	public static Class124 aClass124_3568;
-	public static Class124 aClass124_3570 = Class14_Sub2_Sub2.method263(1178, "hitbar_default");
+	public static Class124 aClass124_3570 = Class124.method263(1178, "hitbar_default");
 
 	static {
 		aClass124_3568 = aClass124_3563;
 	}
 
-	public static int method1829(int i, int i_0_, int i_1_) {
-		long l = (long) (i_1_ + (i << 16));
-		if (JunkTex.aClass14_Sub2_Sub9_4354 == null || l != JunkTex.aClass14_Sub2_Sub9_4354.key) {
-			int i_2_ = 0;
-			return i_2_;
-		}
-		if (i_0_ >= -120)
-			method1833(true, 72, 126, null, 105, -23, (byte) 94, 45, -82, 0, null);
-		int i_3_ = ((Class62.aClass14_Sub10_989.position * 99 / (-JunkTex.aClass14_Sub2_Sub9_4354.aByte3862
-				+ Class62.aClass14_Sub10_989.payload.length)) + 1);
-		return i_3_;
-	}
-
-	public void method1792(int i, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, long l) {
+	@Override
+	public void render(int i, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, long l) {
 		Class133_Sub7 class133_sub7 = JunkTex.method605(114, anInt3557).method1974(null, 0, 0, anInt3558);
 		if (class133_sub7 != null) {
-			class133_sub7.method1792(i, i_4_, i_5_, i_6_, i_7_, i_8_, i_9_, i_10_, l);
-			anInt3564 = class133_sub7.method1781();
+			class133_sub7.render(i, i_4_, i_5_, i_6_, i_7_, i_8_, i_9_, i_10_, l);
+			anInt3564 = class133_sub7.getMinY();
 		}
 	}
 
@@ -63,14 +51,15 @@ public class Class133_Sub3 extends Class133 {
 		aClass124_3566 = null;
 	}
 
-	public int method1781() {
+	@Override
+	public int getMinY() {
 		int i = anInt3564;
 		return i;
 	}
 
 	public static void method1832(int i, byte i_11_, int i_12_) {
 		if (i_11_ == -73) {
-			long l = (long) (i + (i_12_ << 48));
+			long l = i + (i_12_ << 48);
 			Class14_Sub2_Sub9 class14_sub2_sub9 = ((Class14_Sub2_Sub9) Class7_Sub2_Sub1.aClass55_3698.get(l));
 			if (class14_sub2_sub9 != null)
 				JunkTex.aClass81_4716.pushFront(class14_sub2_sub9);

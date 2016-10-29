@@ -17,6 +17,7 @@ import java.lang.reflect.Method;
 import java.net.URL;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 import com.jagex.util.TimeUtil;
 import com.jagex.util.Timer;
 import com.jagex.util.Util;
@@ -72,6 +73,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		Class141.aBoolean2244 = true;
 	}
 
+	@Override
 	public URL getCodeBase() {
 		if (Class14_Sub14.aFrame2986 != null) {
 			URL url = null;
@@ -85,13 +87,14 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		return url;
 	}
 
+	@Override
 	public void update(Graphics graphics) {
 		paint(graphics);
 	}
 
 	public static Class21 method27(int var0, int var1) {
 		try {
-			Class21 var2 = (Class21) JunkTex.aClass52_2817.get((long) var0);
+			Class21 var2 = (Class21) JunkTex.aClass52_2817.get(var0);
 			if (var2 != null) {
 				return var2;
 			} else {
@@ -105,7 +108,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 					method30(-23, -113);
 				}
 
-				JunkTex.aClass52_2817.put(var4, (long) var0);
+				JunkTex.aClass52_2817.put(var4, var0);
 				return var4;
 			}
 		} catch (Throwable var5) {
@@ -113,6 +116,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		}
 	}
 
+	@Override
 	public void start() {
 		try {
 			if (Class96.anApplet_Sub1_1632 == this && !Class14_Sub2_Sub5.aBoolean3818)
@@ -147,6 +151,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		} while (false);
 	}
 
+	@Override
 	public String getParameter(String var1) {
 		try {
 			String var2;
@@ -184,6 +189,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		Canvas_Sub1.anInterface5_48 = interface5;
 	}
 
+	@Override
 	public abstract void init();
 
 	public void method32(int i, int i_20_, int i_21_, int i_22_, String string, int i_23_, byte i_24_) {
@@ -221,6 +227,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		} while (false);
 	}
 
+	@Override
 	public synchronized void paint(Graphics graphics) {
 		try {
 			if (Class96.anApplet_Sub1_1632 == this && !Class14_Sub2_Sub5.aBoolean3818) {
@@ -240,6 +247,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		/* empty */
 	}
 
+	@Override
 	public void stop() {
 		try {
 			if (Class96.anApplet_Sub1_1632 == this && !Class14_Sub2_Sub5.aBoolean3818)
@@ -407,6 +415,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		this.method36(true, (byte) -100);
 	}
 
+	@Override
 	public AppletContext getAppletContext() {
 		try {
 			AppletContext var1;
@@ -467,6 +476,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
 	public abstract void method38(boolean bool);
 
+	@Override
 	public void destroy() {
 		if (this == Class96.anApplet_Sub1_1632 && !Class14_Sub2_Sub5.aBoolean3818) {
 			JunkTex.aLong4704 = TimeUtil.getTime();
@@ -476,6 +486,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		}
 	}
 
+	@Override
 	public URL getDocumentBase() {
 		try {
 			URL var1;

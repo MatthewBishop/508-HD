@@ -41,7 +41,7 @@ public class StaticGL {
 	public static void method67(int i, int i_19_, int i_20_, byte[][][] is, int i_21_, byte i_22_, int i_23_,
 			int i_24_) {
 		Class67.anInt1059++;
-		Class107.anInt1806 = 0;
+		ProceduralTexture.anInt1806 = 0;
 		int i_25_ = i_23_ - 16;
 		int i_26_ = i_23_ + 16;
 		int i_27_ = i_24_ - 16;
@@ -95,7 +95,7 @@ public class StaticGL {
 								class14_sub29.aBoolean3251 = true;
 							else
 								class14_sub29.aBoolean3251 = false;
-							Class107.anInt1806++;
+							ProceduralTexture.anInt1806++;
 						}
 					}
 				}
@@ -104,7 +104,7 @@ public class StaticGL {
 		boolean bool = Class114.tileHeights == Class150.anIntArrayArrayArray2419;
 		GL gl = RT4GL.gl;
 		gl.glPushMatrix();
-		gl.glTranslatef((float) -i, (float) -i_19_, (float) -i_20_);
+		gl.glTranslatef(-i, -i_19_, -i_20_);
 		if (bool) {
 			method1409();
 			RT4.method1778(3, -1);
@@ -127,7 +127,7 @@ public class StaticGL {
 			for (int i_34_ = Class14_Sub23.anInt3134; i_34_ < Class83.anInt1338; i_34_++) {
 				for (int i_35_ = 0; i_35_ < (JunkTex.aClass14_Sub27ArrayArray2464[i_34_]).length; i_35_++) {
 					Class14_Sub27 class14_sub27 = (JunkTex.aClass14_Sub27ArrayArray2464[i_34_][i_35_]);
-					float f = (201.5F - (float) i_34_ * 50.0F - (class14_sub27.aBoolean3201 ? 1.0F : 0.5F));
+					float f = (201.5F - i_34_ * 50.0F - (class14_sub27.aBoolean3201 ? 1.0F : 0.5F));
 					if (class14_sub27.anInt3204 != -1
 							&& Class3.anInterface3_117.method12(true, class14_sub27.anInt3204) == 4
 							&& Class15.aBoolean374)
@@ -177,7 +177,7 @@ public class StaticGL {
 									Class14_Sub4.method454(class14_sub29, true);
 							}
 						}
-						if (Class107.anInt1806 == 0) {
+						if (ProceduralTexture.anInt1806 == 0) {
 							if (!bool)
 								Class142.aBoolean2299 = false;
 							return;
@@ -219,7 +219,7 @@ public class StaticGL {
 									Class14_Sub4.method454(class14_sub29, false);
 							}
 						}
-						if (Class107.anInt1806 == 0) {
+						if (ProceduralTexture.anInt1806 == 0) {
 							if (!bool)
 								Class142.aBoolean2299 = false;
 							return;

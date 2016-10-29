@@ -6,6 +6,7 @@ package rs;
 import java.io.IOException;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.link.Linkable;
 
 public class Class14_Sub3 extends Linkable {
@@ -90,8 +91,8 @@ public class Class14_Sub3 extends Linkable {
 		Class115.method1592((byte) 23);
 		Class7_Sub2.method127(i);
 		Class14_Sub2_Sub5.aClass20_3815.clear();
-		Class75.aClass9_Sub1_1167.method152(-118);
-		Class109.aClass9_Sub1_1834.method152(-123);
+		Class75.idx0.method152(-118);
+		Class109.idx1.method152(-123);
 		Class14_Sub17.aClass9_Sub1_3021.method152(i ^ ~0x6b);
 		Static2.aClass9_Sub1_2901.method152(-107);
 		Class14_Sub13.aClass9_Sub1_2958.method152(-112);

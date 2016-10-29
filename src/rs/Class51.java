@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 
 public class Class51 {
 	public static int anInt828;
@@ -20,7 +21,7 @@ public class Class51 {
 
 	static {
 		anInt828 = 10;
-		aClass124_841 = Class14_Sub2_Sub2.method263(1178, "Weiter");
+		aClass124_841 = Class124.method263(1178, "Weiter");
 		anInt839 = 0;
 		anInt830 = (int) (Math.random() * 17.0) - 8;
 		anInt831 = 0;
@@ -49,24 +50,5 @@ public class Class51 {
 		aClass9_833 = null;
 		aClass124_841 = null;
 		anIntArray835 = null;
-	}
-
-	public static void method1201(int[] is, int i, int i_4_, int i_5_, int i_6_) {
-		if (i_5_ == -5973) {
-			i--;
-			int i_7_ = --i_4_ - 7;
-			while (i < i_7_) {
-				is[++i] = i_6_;
-				is[++i] = i_6_;
-				is[++i] = i_6_;
-				is[++i] = i_6_;
-				is[++i] = i_6_;
-				is[++i] = i_6_;
-				is[++i] = i_6_;
-				is[++i] = i_6_;
-			}
-			while (i_4_ > i)
-				is[++i] = i_6_;
-		}
 	}
 }

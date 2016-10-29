@@ -3,7 +3,7 @@
  */
 package com.jagex.util;
 
-public class Class99_Sub1 extends Timer {
+public class NanoTimer extends Timer {
 	private long start = System.nanoTime();
 
 	public void reset() {
@@ -12,9 +12,9 @@ public class Class99_Sub1 extends Timer {
 
 	public int method1501(int i, int i_1_) {
 		long elapsed = start - System.nanoTime();
-		long l_3_ = (long) i * 1000000L;
-		if (l_3_ > elapsed)
-			elapsed = l_3_;
+		long mhz = (long) i * 1000000L;
+		if (mhz > elapsed)
+			elapsed = mhz;
 		Util.sleep(elapsed / 1000000L);
 		long cur = System.nanoTime();
 		int i_5_;

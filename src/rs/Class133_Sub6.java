@@ -25,7 +25,7 @@ public class Class133_Sub6 extends Class133 {
 	public double aDouble3646;
 	public static Class124 aClass124_3649;
 	public double aDouble3650;
-	public static Class124 aClass124_3651 = Class14_Sub2_Sub2.method263(1178, "Oct");
+	public static Class124 aClass124_3651 = Class124.method263(1178, "Oct");
 	public int anInt3652;
 	public static Class124 aClass124_3654;
 	public int anInt3655;
@@ -33,7 +33,7 @@ public class Class133_Sub6 extends Class133 {
 	public static Class124 aClass124_3657;
 	public int anInt3658;
 	public static int anInt3659;
-	public static Class124 aClass124_3660 = Class14_Sub2_Sub2.method263(1178, "Dec");
+	public static Class124 aClass124_3660 = Class124.method263(1178, "Dec");
 	public double aDouble3661;
 	public int anInt3662;
 	public static boolean aBoolean3663;
@@ -59,19 +59,19 @@ public class Class133_Sub6 extends Class133 {
 	public int anInt3686;
 
 	static {
-		aClass124_3635 = Class14_Sub2_Sub2.method263(1178, "gr-Un:");
-		aClass124_3639 = Class14_Sub2_Sub2.method263(1178, "Mar");
-		aClass124_3636 = Class14_Sub2_Sub2.method263(1178, "Nov");
-		aClass124_3664 = Class14_Sub2_Sub2.method263(1178, "Apr");
+		aClass124_3635 = Class124.method263(1178, "gr-Un:");
+		aClass124_3639 = Class124.method263(1178, "Mar");
+		aClass124_3636 = Class124.method263(1178, "Nov");
+		aClass124_3664 = Class124.method263(1178, "Apr");
 		aBoolean3663 = false;
-		aClass124_3666 = Class14_Sub2_Sub2.method263(1178, "Texturen geladen)3");
-		aClass124_3649 = Class14_Sub2_Sub2.method263(1178, "Jul");
-		aClass124_3632 = Class14_Sub2_Sub2.method263(1178, "May");
-		aClass124_3637 = Class14_Sub2_Sub2.method263(1178, "Feb");
-		aClass124_3681 = Class14_Sub2_Sub2.method263(1178, "Jan");
-		aClass124_3654 = Class14_Sub2_Sub2.method263(1178, "Aug");
-		aClass124_3677 = Class14_Sub2_Sub2.method263(1178, "Sep");
-		aClass124_3657 = Class14_Sub2_Sub2.method263(1178, "Jun");
+		aClass124_3666 = Class124.method263(1178, "Texturen geladen)3");
+		aClass124_3649 = Class124.method263(1178, "Jul");
+		aClass124_3632 = Class124.method263(1178, "May");
+		aClass124_3637 = Class124.method263(1178, "Feb");
+		aClass124_3681 = Class124.method263(1178, "Jan");
+		aClass124_3654 = Class124.method263(1178, "Aug");
+		aClass124_3677 = Class124.method263(1178, "Sep");
+		aClass124_3657 = Class124.method263(1178, "Jun");
 		aClass124Array3642 = new Class124[] { aClass124_3681, aClass124_3637, aClass124_3639, aClass124_3664,
 				aClass124_3632, aClass124_3657, aClass124_3649, aClass124_3654, aClass124_3677, aClass124_3651,
 				aClass124_3636, aClass124_3660 };
@@ -79,25 +79,26 @@ public class Class133_Sub6 extends Class133 {
 
 	public void method1849(int i, byte i_0_, int i_1_, int i_2_, int i_3_) {
 		if (!aBoolean3643) {
-			double d = (double) (-anInt3686 + i_1_);
-			double d_4_ = (double) (i_2_ - anInt3683);
+			double d = -anInt3686 + i_1_;
+			double d_4_ = i_2_ - anInt3683;
 			double d_5_ = Math.sqrt(d_4_ * d_4_ + d * d);
-			aDouble3633 = (double) anInt3685;
-			aDouble3678 = (double) anInt3686 + d * (double) anInt3658 / d_5_;
-			aDouble3646 = (double) anInt3683 + d_4_ * (double) anInt3658 / d_5_;
+			aDouble3633 = anInt3685;
+			aDouble3678 = anInt3686 + d * anInt3658 / d_5_;
+			aDouble3646 = anInt3683 + d_4_ * anInt3658 / d_5_;
 		}
-		double d = (double) (anInt3644 + 1 - i);
-		aDouble3650 = ((double) i_2_ - aDouble3646) / d;
-		aDouble3672 = ((double) i_1_ - aDouble3678) / d;
+		double d = anInt3644 + 1 - i;
+		aDouble3650 = (i_2_ - aDouble3646) / d;
+		aDouble3672 = (i_1_ - aDouble3678) / d;
 		aDouble3674 = Math.sqrt(aDouble3650 * aDouble3650 + aDouble3672 * aDouble3672);
 		if (i_0_ == -122) {
 			if (!aBoolean3643)
-				aDouble3680 = -aDouble3674 * Math.tan((double) anInt3682 * 0.02454369);
-			aDouble3661 = ((-aDouble3633 + (double) i_3_ - d * aDouble3680) * 2.0 / (d * d));
+				aDouble3680 = -aDouble3674 * Math.tan(anInt3682 * 0.02454369);
+			aDouble3661 = ((-aDouble3633 + i_3_ - d * aDouble3680) * 2.0 / (d * d));
 		}
 	}
 
-	public int method1781() {
+	@Override
+	public int getMinY() {
 		int i = anInt3670;
 		return i;
 	}
@@ -117,12 +118,12 @@ public class Class133_Sub6 extends Class133 {
 	}
 
 	public void method1851(int i, int i_8_) {
-		aDouble3646 += aDouble3650 * (double) i_8_;
-		aDouble3678 += aDouble3672 * (double) i_8_;
-		aDouble3633 += aDouble3680 * (double) i_8_ + (double) i_8_ * (aDouble3661 * 0.5 * (double) i_8_);
-		aDouble3680 += (double) i_8_ * aDouble3661;
+		aDouble3646 += aDouble3650 * i_8_;
+		aDouble3678 += aDouble3672 * i_8_;
+		aDouble3633 += aDouble3680 * i_8_ + i_8_ * (aDouble3661 * 0.5 * i_8_);
+		aDouble3680 += i_8_ * aDouble3661;
 		if (i > -87)
-			method1781();
+			getMinY();
 		aBoolean3643 = true;
 		anInt3665 = ((int) (Math.atan2(aDouble3672, aDouble3650) * 325.949) + 1024 & 0x7ff);
 		anInt3662 = (int) (Math.atan2(aDouble3680, aDouble3674) * 325.949) & 0x7ff;
@@ -170,11 +171,12 @@ public class Class133_Sub6 extends Class133 {
 		Class83.aClass52_1339.method1208(i);
 	}
 
-	public void method1792(int i, int i_10_, int i_11_, int i_12_, int i_13_, int i_14_, int i_15_, int i_16_, long l) {
+	@Override
+	public void render(int i, int i_10_, int i_11_, int i_12_, int i_13_, int i_14_, int i_15_, int i_16_, long l) {
 		Class133_Sub7 class133_sub7 = method1850(-126);
 		if (class133_sub7 != null) {
-			class133_sub7.method1792(i, i_10_, i_11_, i_12_, i_13_, i_14_, i_15_, i_16_, l);
-			anInt3670 = class133_sub7.method1781();
+			class133_sub7.render(i, i_10_, i_11_, i_12_, i_13_, i_14_, i_15_, i_16_, l);
+			anInt3670 = class133_sub7.getMinY();
 		}
 	}
 
@@ -186,7 +188,7 @@ public class Class133_Sub6 extends Class133 {
 			if (JunkTex.aFrame3962 != null) {
 				Static2.anInt2725 = i_17_;
 				Class54.anInt887 = i;
-				JunkTex.method595(257411150, JunkTex.aClass43_4647);
+				JunkTex.method595(JunkTex.aClass43_4647);
 				JunkTex.method643(0, (byte) -82);
 				Class14_Sub21.method897(110);
 			} else

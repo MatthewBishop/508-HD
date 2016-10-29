@@ -3,7 +3,7 @@
  */
 package com.jagex.util;
 
-public class Class99_Sub2 extends Timer {
+public class SoftwareTimer extends Timer {
 	private long aLong3341;
 
 	private long[] memory = new long[10];
@@ -16,7 +16,7 @@ public class Class99_Sub2 extends Timer {
 
 	private int anInt3359;
 
-	public Class99_Sub2() {
+	public SoftwareTimer() {
 		anInt3336 = 1;
 		anInt3359 = 256;
 		aLong3341 = TimeUtil.getTime();

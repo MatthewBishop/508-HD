@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.cache.anim.Animation;
+import com.jagex.io.js5.Class9;
 import com.jagex.link.ref.SoftCache;
 
 public class Class83 {

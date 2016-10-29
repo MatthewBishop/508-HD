@@ -10,9 +10,9 @@ public class Class14_Sub8_Sub11 extends Class14_Sub8 {
 	}
 
 	@Override
-	public int[] method484(int i) {
-		int[] is = aClass149_2851.method2014(i);
-		if (aClass149_2851.aBoolean2402) {
+	public int[] outputMonochrome(int i) {
+		int[] is = monoChromaticImageCache.method2014(i);
+		if (monoChromaticImageCache.aBoolean2402) {
 			int i_10_ = TexStatic.anIntArray3623[i];
 			for (int i_11_ = 0; i_11_ < TexStatic.anInt1876; i_11_++)
 				is[i_11_] = (method534(i_10_, TexStatic.anIntArray4145[i_11_]) % 4096);

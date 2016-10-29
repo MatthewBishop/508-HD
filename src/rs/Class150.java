@@ -19,14 +19,14 @@ public class Class150 {
 	public int anInt2414;
 	public int anInt2416;
 	public static Class14_Sub2_Sub19[] aClass14_Sub2_Sub19Array2417;
-	public static Class124 aClass124_2418 = Class14_Sub2_Sub2.method263(1178, "<col=ffffff>");
+	public static Class124 aClass124_2418 = Class124.method263(1178, "<col=ffffff>");
 	public static int[][][] anIntArrayArrayArray2419;
 	public static int anInt2420;
 	public static AtmosphericChunk[][] aClass71ArrayArray2421 = new AtmosphericChunk[13][13];
 	public static int[] anIntArray2422;
 	public static int anInt2423;
 	public int anInt2424;
-	public static Class124 aClass124_2425 = Class14_Sub2_Sub2.method263(1178, "sch-Utteln:");
+	public static Class124 aClass124_2425 = Class124.method263(1178, "sch-Utteln:");
 	public int anInt2426;
 
 	public static Class14_Sub2_Sub5 method2020(int i, boolean bool, int i_0_) {

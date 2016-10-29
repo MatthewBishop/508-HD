@@ -3,6 +3,8 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9_Sub1;
+
 public class Class89 {
 	public int anInt1404;
 	public static int[][][] anIntArrayArrayArray1405 = new int[2][][];
@@ -17,7 +19,7 @@ public class Class89 {
 	public static boolean aBoolean1416 = false;
 
 	static {
-		aClass124_1408 = Class14_Sub2_Sub2.method263(1178, "Hierhin gehen");
+		aClass124_1408 = Class124.method263(1178, "Hierhin gehen");
 		anInt1413 = 2;
 	}
 

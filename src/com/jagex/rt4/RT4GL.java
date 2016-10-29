@@ -19,7 +19,6 @@ import com.jagex.rt4.lights.LightManager;
 import com.jagex.util.Util;
 
 import rs.Class124;
-import rs.Class14_Sub2_Sub2;
 import rs.Class58;
 import rs.Class70;
 import rs.JunkTex;
@@ -44,7 +43,7 @@ public class RT4GL {
 	public static String aString2031;
 	public static boolean aBoolean2032;
 	public static int anInt2033;
-	public static int anInt2034;
+	public static int canvasHeight;
 	public static float aFloat2035;
 	public static int anInt2036;
 	public static String aString2037;
@@ -66,7 +65,7 @@ public class RT4GL {
 
 	static {
 		anInt2016 = 0;
-		aClass124_2024 = Class14_Sub2_Sub2.method263(1178, "radeon");
+		aClass124_2024 = Class124.method263(1178, "radeon");
 		aBoolean2023 = true;
 		aBoolean2039 = false;
 		aFloatArray2020 = new float[16];
@@ -116,7 +115,7 @@ public class RT4GL {
 		gl = aGLContext2040.getGL();
 		new GLU();
 		anInt2033 = canvas.getSize().width;
-		anInt2034 = canvas.getSize().height;
+		canvasHeight = canvas.getSize().height;
 		if (!aBoolean2041) {
 			int i_1_ = method1636();
 			if (i_1_ != 0)
@@ -187,14 +186,14 @@ public class RT4GL {
 		gl.glGetIntegerv(3074, is, 1);
 		gl.glDrawBuffer(1026);
 		gl.glReadBuffer(1024);
-		method1632(-1);
+		bindTexture2D(-1);
 		gl.glPushAttrib(8192);
 		gl.glDisable(2912);
 		gl.glDisable(3042);
 		gl.glDisable(2929);
 		gl.glDisable(3008);
 		gl.glRasterPos2i(0, 0);
-		gl.glCopyPixels(0, 0, anInt2033, anInt2034, 6144);
+		gl.glCopyPixels(0, 0, anInt2033, canvasHeight, 6144);
 		gl.glPopAttrib();
 		gl.glDrawBuffer(is[0]);
 		gl.glReadBuffer(is[1]);
@@ -202,7 +201,7 @@ public class RT4GL {
 
 	public static void method1628(int i, int i_3_) {
 		anInt2033 = i;
-		anInt2034 = i_3_;
+		canvasHeight = i_3_;
 		aBoolean2029 = false;
 	}
 
@@ -229,7 +228,7 @@ public class RT4GL {
 		gl.glClear(16640);
 	}
 
-	public static void method1632(int i) {
+	public static void bindTexture2D(int i) {
 		if (i != anInt2036) {
 			if (i != -1) {
 				if (anInt2036 == -1)
@@ -348,7 +347,7 @@ public class RT4GL {
 	public static void method1637() {
 		RT4.method1778(0, 0);
 		method1648();
-		method1632(-1);
+		bindTexture2D(-1);
 		method1639(false);
 		method1652(false);
 		method1626(false);
@@ -400,7 +399,7 @@ public class RT4GL {
 		int i_21_ = -i;
 		int i_22_ = anInt2033 - i;
 		int i_23_ = -i_16_;
-		int i_24_ = anInt2034 - i_16_;
+		int i_24_ = canvasHeight - i_16_;
 		gl.glMatrixMode(5889);
 		gl.glLoadIdentity();
 		float f = (float) i_17_ / 512.0F;
@@ -409,7 +408,7 @@ public class RT4GL {
 		gl.glOrtho((double) ((float) i_21_ * f_25_), (double) ((float) i_22_ * f_25_),
 				(double) ((float) -i_24_ * f_26_), (double) ((float) -i_23_ * f_26_), (double) (50 - i_18_),
 				(double) (3584 - i_18_));
-		gl.glViewport(0, 0, anInt2033, anInt2034);
+		gl.glViewport(0, 0, anInt2033, canvasHeight);
 		gl.glMatrixMode(5888);
 		gl.glLoadIdentity();
 		gl.glRotatef(180.0F, 1.0F, 0.0F, 0.0F);
@@ -464,7 +463,7 @@ public class RT4GL {
 	}
 
 	public static void method1644(int i, int i_27_, int i_28_, int i_29_) {
-		method1647(0, 0, anInt2033, anInt2034, i, i_27_, 0.0F, 0.0F, i_28_, i_29_);
+		method1647(0, 0, anInt2033, canvasHeight, i, i_27_, 0.0F, 0.0F, i_28_, i_29_);
 	}
 
 	public static void method1645() {
@@ -491,7 +490,7 @@ public class RT4GL {
 		gl.glLoadIdentity();
 		method1649((float) i_38_ * aFloat2025, (float) i_39_ * aFloat2025, (float) -i_41_ * aFloat2025,
 				(float) -i_40_ * aFloat2025, 50.0F, 3584.0F);
-		gl.glViewport(i, anInt2034 - i_30_ - i_32_, i_31_, i_32_);
+		gl.glViewport(i, canvasHeight - i_30_ - i_32_, i_31_, i_32_);
 		gl.glMatrixMode(5888);
 		gl.glLoadIdentity();
 		gl.glRotatef(180.0F, 1.0F, 0.0F, 0.0F);
@@ -510,8 +509,8 @@ public class RT4GL {
 		if (!aBoolean2029) {
 			gl.glMatrixMode(5889);
 			gl.glLoadIdentity();
-			gl.glOrtho(0.0, (double) anInt2033, 0.0, (double) anInt2034, -1.0, 1.0);
-			gl.glViewport(0, 0, anInt2033, anInt2034);
+			gl.glOrtho(0.0, (double) anInt2033, 0.0, (double) canvasHeight, -1.0, 1.0);
+			gl.glViewport(0, 0, anInt2033, canvasHeight);
 			gl.glMatrixMode(5888);
 			gl.glLoadIdentity();
 			aBoolean2029 = true;

@@ -3,12 +3,14 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9;
+
 public class Class15 {
 	public static Class124 aClass124_373;
 	public static boolean aBoolean374 = true;
 	public static int anInt376;
 	public static int anInt380 = 0;
-	public static Class124 aClass124_381 = Class14_Sub2_Sub2.method263(1178, "cyan:");
+	public static Class124 aClass124_381 = Class124.method263(1178, "cyan:");
 	public static Class9 aClass9_382;
 	public static Class124 aClass124_383;
 	public static Class9 aClass9_384;

@@ -7,9 +7,9 @@ import com.jagex.image.transform.util.AccessoryMethods;
 
 public class Class14_Sub8_Sub39_Sub1 extends Class14_Sub8_Sub39 {
 	@Override
-	public int[][] method474(int i) {
-		int[][] is = aClass95_2838.method1481(1, i);
-		if (aClass95_2838.aBoolean1628 && method679(true)) {
+	public int[][] outputColour(int i) {
+		int[][] is = triChromaticImageCache.method1481(1, i);
+		if (triChromaticImageCache.aBoolean1628 && method679(true)) {
 			int[] is_7_ = is[0];
 			int[] is_8_ = is[1];
 			int i_9_ = i % anInt4744 * anInt4744;

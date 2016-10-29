@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.lights.Light;
 import com.jagex.rt4.lights.LightRenderer;
@@ -726,7 +727,7 @@ public class Class32 {
 	public static void method1074(int i, int i_144_) {
 		if (i > -74)
 			anIntArray535 = null;
-		Class14_Sub25 class14_sub25 = ((Class14_Sub25) Class132.aClass55_2167.get((long) i_144_));
+		Class14_Sub25 class14_sub25 = ((Class14_Sub25) Class132.aClass55_2167.get(i_144_));
 		if (class14_sub25 != null)
 			class14_sub25.unlink();
 	}

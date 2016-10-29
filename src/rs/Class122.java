@@ -12,8 +12,8 @@ public class Class122 {
 	public static int anInt2060;
 
 	static {
-		aClass124_2053 = Class14_Sub2_Sub2.method263(1178, "<br>(X");
-		aClass124_2058 = Class14_Sub2_Sub2.method263(1178, "Musik)2Engine vorbereitet)3");
+		aClass124_2053 = Class124.method263(1178, "<br>(X");
+		aClass124_2058 = Class124.method263(1178, "Musik)2Engine vorbereitet)3");
 		anInt2054 = 0;
 		anInt2060 = (int) (Math.random() * 33.0) - 16;
 	}

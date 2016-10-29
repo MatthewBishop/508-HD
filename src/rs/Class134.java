@@ -4,15 +4,16 @@
 package rs;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 import com.jagex.link.Cache;
 import com.jagex.rt4.Class14_Sub2_Sub1;
 import com.jagex.rt4.Class14_Sub2_Sub14;
 import com.jagex.rt4.RT4;
 
 public class Class134 implements Interface3 {
-	public static Class124 aClass124_2570 = Class14_Sub2_Sub2.method263(1178, " ");
-	public static Class124 aClass124_2575 = Class14_Sub2_Sub2.method263(1178, "::cardmem");
-	public static Class124 aClass124_2599 = Class14_Sub2_Sub2.method263(1178, "(U5");
+	public static Class124 aClass124_2570 = Class124.method263(1178, " ");
+	public static Class124 aClass124_2575 = Class124.method263(1178, "::cardmem");
+	public static Class124 aClass124_2599 = Class124.method263(1178, "(U5");
 	public static Class75 aClass75_2588;
 	public static Class9 aClass9_2598;
 	public static int anInt2572;
@@ -31,7 +32,7 @@ public class Class134 implements Interface3 {
 	}
 	
 	public boolean aBoolean2581 = false;
-	public boolean[] aBooleanArray2583;
+	public boolean[] materialActive;
 	public boolean[] aBooleanArray2594;
 	public boolean[] aBooleanArray2600;
 	public boolean[] aBooleanArray2604;
@@ -46,7 +47,7 @@ public class Class134 implements Interface3 {
 	public Class9 aClass9_2587;
 	public int anInt2582 = 50;
 
-	public short[] aShortArray2603;
+	public short[] textureColors;
 
 	public Class134(Class9 class9, Class9 class9_24_, Class9 class9_25_, int i, boolean bool) {
 		aClass9_2580 = class9;
@@ -56,54 +57,54 @@ public class Class134 implements Interface3 {
 		aClass20_2595 = new Cache(anInt2582);
 		aClass20_2585 = new Cache(anInt2582);
 		Buffer class14_sub10 = new Buffer(class9_24_.method163(0, 0, 0));
-		int i_26_ = class14_sub10.readUShort((byte) 126);
-		aByteArray2602 = new byte[i_26_];
-		aBooleanArray2600 = new boolean[i_26_];
-		aShortArray2603 = new short[i_26_];
-		aByteArray2576 = new byte[i_26_];
-		aBooleanArray2604 = new boolean[i_26_];
-		aByteArray2571 = new byte[i_26_];
-		aBooleanArray2594 = new boolean[i_26_];
-		aBooleanArray2609 = new boolean[i_26_];
-		aBooleanArray2583 = new boolean[i_26_];
-		aByteArray2608 = new byte[i_26_];
-		for (int i_27_ = 0; i_27_ < i_26_; i_27_++)
-			aBooleanArray2583[i_27_] = class14_sub10.readUByte() == 1;
-		for (int i_28_ = 0; i_26_ > i_28_; i_28_++) {
-			if (aBooleanArray2583[i_28_])
+		int amountMaterials = class14_sub10.readUShort((byte) 126);
+		aByteArray2602 = new byte[amountMaterials];
+		aBooleanArray2600 = new boolean[amountMaterials];
+		textureColors = new short[amountMaterials];
+		aByteArray2576 = new byte[amountMaterials];
+		aBooleanArray2604 = new boolean[amountMaterials];
+		aByteArray2571 = new byte[amountMaterials];
+		aBooleanArray2594 = new boolean[amountMaterials];
+		aBooleanArray2609 = new boolean[amountMaterials];
+		materialActive = new boolean[amountMaterials];
+		aByteArray2608 = new byte[amountMaterials];
+		for (int i_27_ = 0; i_27_ < amountMaterials; i_27_++)
+			materialActive[i_27_] = class14_sub10.readUByte() == 1;
+		for (int i_28_ = 0; amountMaterials > i_28_; i_28_++) {
+			if (materialActive[i_28_])
 				aBooleanArray2594[i_28_] = class14_sub10.readUByte() == 1;
 		}
-		for (int i_29_ = 0; i_26_ > i_29_; i_29_++) {
-			if (aBooleanArray2583[i_29_])
+		for (int i_29_ = 0; amountMaterials > i_29_; i_29_++) {
+			if (materialActive[i_29_])
 				aBooleanArray2600[i_29_] = class14_sub10.readUByte() == 1;
 		}
-		for (int i_30_ = 0; i_26_ > i_30_; i_30_++) {
-			if (aBooleanArray2583[i_30_])
+		for (int i_30_ = 0; amountMaterials > i_30_; i_30_++) {
+			if (materialActive[i_30_])
 				aBooleanArray2604[i_30_] = class14_sub10.readUByte() == 1;
 		}
-		for (int i_31_ = 0; i_31_ < i_26_; i_31_++) {
-			if (aBooleanArray2583[i_31_])
+		for (int i_31_ = 0; i_31_ < amountMaterials; i_31_++) {
+			if (materialActive[i_31_])
 				aBooleanArray2609[i_31_] = class14_sub10.readUByte() == 1;
 		}
-		for (int i_32_ = 0; i_26_ > i_32_; i_32_++) {
-			if (aBooleanArray2583[i_32_])
+		for (int i_32_ = 0; amountMaterials > i_32_; i_32_++) {
+			if (materialActive[i_32_])
 				aByteArray2571[i_32_] = class14_sub10.method780((byte) -77);
 		}
-		for (int i_33_ = 0; i_33_ < i_26_; i_33_++) {
-			if (aBooleanArray2583[i_33_])
+		for (int i_33_ = 0; i_33_ < amountMaterials; i_33_++) {
+			if (materialActive[i_33_])
 				aByteArray2576[i_33_] = class14_sub10.method780((byte) -77);
 		}
-		for (int i_34_ = 0; i_26_ > i_34_; i_34_++) {
-			if (aBooleanArray2583[i_34_])
+		for (int i_34_ = 0; amountMaterials > i_34_; i_34_++) {
+			if (materialActive[i_34_])
 				aByteArray2608[i_34_] = class14_sub10.method780((byte) -77);
 		}
-		for (int i_35_ = 0; i_35_ < i_26_; i_35_++) {
-			if (aBooleanArray2583[i_35_])
+		for (int i_35_ = 0; i_35_ < amountMaterials; i_35_++) {
+			if (materialActive[i_35_])
 				aByteArray2602[i_35_] = class14_sub10.method780((byte) -77);
 		}
-		for (int i_36_ = 0; i_36_ < i_26_; i_36_++) {
-			if (aBooleanArray2583[i_36_])
-				aShortArray2603[i_36_] = (short) class14_sub10.readUShort((byte) 115);
+		for (int i_36_ = 0; i_36_ < amountMaterials; i_36_++) {
+			if (materialActive[i_36_])
+				textureColors[i_36_] = (short) class14_sub10.readUShort((byte) 115);
 		}
 	}
 
@@ -210,15 +211,15 @@ public class Class134 implements Interface3 {
 	}
 
 	public Class14_Sub2_Sub14 method1923(boolean bool, int i) {
-		Class14_Sub2_Sub14 class14_sub2_sub14 = (Class14_Sub2_Sub14) aClass20_2585.get((long) i);
+		Class14_Sub2_Sub14 class14_sub2_sub14 = (Class14_Sub2_Sub14) aClass20_2585.get(i);
 		if (class14_sub2_sub14 != null) {
 			Class14_Sub2_Sub14 class14_sub2_sub14_9_ = class14_sub2_sub14;
 			return class14_sub2_sub14_9_;
 		}
 		if (bool)
 			anInt2612 = -54;
-		class14_sub2_sub14 = new Class14_Sub2_Sub14(aShortArray2603[i] & 0xffff);
-		aClass20_2585.put(class14_sub2_sub14, (long) i);
+		class14_sub2_sub14 = new Class14_Sub2_Sub14(textureColors[i] & 0xffff);
+		aClass20_2585.put(class14_sub2_sub14, i);
 		Class14_Sub2_Sub14 class14_sub2_sub14_10_ = class14_sub2_sub14;
 		return class14_sub2_sub14_10_;
 	}
@@ -231,7 +232,7 @@ public class Class134 implements Interface3 {
 	}
 
 	public Class14_Sub2_Sub1 method1926(int i, boolean bool) {
-		Class14_Sub2_Sub1 class14_sub2_sub1 = (Class14_Sub2_Sub1) aClass20_2595.get((long) i);
+		Class14_Sub2_Sub1 class14_sub2_sub1 = (Class14_Sub2_Sub1) aClass20_2595.get(i);
 		if (class14_sub2_sub1 != null) {
 			Class14_Sub2_Sub1 class14_sub2_sub1_16_ = class14_sub2_sub1;
 			return class14_sub2_sub1_16_;
@@ -245,7 +246,7 @@ public class Class134 implements Interface3 {
 			method1922(-51, (byte) -71);
 		Buffer class14_sub10 = new Buffer(is);
 		Class14_Sub2_Sub1 class14_sub2_sub1_17_ = new Class14_Sub2_Sub1(class14_sub10);
-		aClass20_2595.put(class14_sub2_sub1_17_, (long) i);
+		aClass20_2595.put(class14_sub2_sub1_17_, i);
 		class14_sub2_sub1 = class14_sub2_sub1_17_;
 		return class14_sub2_sub1;
 	}
@@ -259,7 +260,7 @@ public class Class134 implements Interface3 {
 	public int method5(int i, byte i_5_) {
 		if (i_5_ > -94)
 			method10((byte) -53, 13);
-		int i_6_ = aShortArray2603[i] & 0xffff;
+		int i_6_ = textureColors[i] & 0xffff;
 		return i_6_;
 	}
 

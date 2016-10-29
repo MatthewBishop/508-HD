@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.cache.loaders.AnimFrameLoader;
+import com.jagex.io.js5.Class9;
 import com.jagex.link.Deque;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.Class148_Sub1;
@@ -46,14 +47,14 @@ public class Class14_Sub29 extends Linkable {
 		int i = 0;
 		for (int i_0_ = 0; i_0_ < 99; i_0_++) {
 			int i_1_ = i_0_ + 1;
-			int i_2_ = (int) ((double) i_1_ + Math.pow(2.0, (double) i_1_ / 7.0) * 300.0);
+			int i_2_ = (int) (i_1_ + Math.pow(2.0, i_1_ / 7.0) * 300.0);
 			i += i_2_;
 			anIntArray3245[i_0_] = i / 4;
 		}
 		aShortArray3262 = new short[500];
 		anIntArray3264 = new int[5];
 		anInt3266 = 127;
-		aClass124_3263 = Class14_Sub2_Sub2.method263(1178, "::");
+		aClass124_3263 = Class124.method263(1178, "::");
 	}
 
 	public Class14_Sub29(int i, int i_3_, int i_4_) {
@@ -80,7 +81,7 @@ public class Class14_Sub29 extends Linkable {
 	public static int method931(int var0, int var1, int var2) {
 		try {
 			byte var3 = 0;
-			Class14_Sub25 var4 = (Class14_Sub25) Class132.aClass55_2167.get((long) var2);
+			Class14_Sub25 var4 = (Class14_Sub25) Class132.aClass55_2167.get(var2);
 			if (var4 == null) {
 				return var3;
 			} else {

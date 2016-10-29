@@ -13,16 +13,16 @@ public class Class14_Sub8_Sub15 extends Class14_Sub8 {
 	}
 
 	@Override
-	public void method475(int i, Buffer class14_sub10) {
+	public void decode(int i, Buffer class14_sub10) {
 		int i_12_ = i;
 		if (i_12_ == 0)
 			anInt4339 = class14_sub10.readUShort((byte) 115);
 	}
 
 	@Override
-	public int[] method484(int i) {
-		int[] is = aClass149_2851.method2014(i);
-		if (aClass149_2851.aBoolean2402) {
+	public int[] outputMonochrome(int i) {
+		int[] is = monoChromaticImageCache.method2014(i);
+		if (monoChromaticImageCache.aBoolean2402) {
 			int i_14_ = TexStatic.anIntArray3623[i];
 			for (int i_15_ = 0; TexStatic.anInt1876 > i_15_; i_15_++) {
 				int i_16_ = TexStatic.anIntArray4145[i_15_];

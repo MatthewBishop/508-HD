@@ -55,7 +55,7 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 			for (int i_6_ = 0; i_6_ < class14_sub29.anInt3242; i_6_++) {
 				Class40 class40 = class14_sub29.aClass40Array3257[i_6_];
 				if ((class40.aLong677 & 0x400000L) == 4194304L) {
-					int i_7_ = class40.aClass133_679.method1781();
+					int i_7_ = class40.aClass133_679.getMinY();
 					if (i_7_ != -32768 && i_7_ < i_5_)
 						i_5_ = i_7_;
 				}

@@ -10,7 +10,7 @@ public class Class14_Sub8_Sub22 extends Class14_Sub8 {
 	}
 
 	@Override
-	public int[] method484(int i) {
+	public int[] outputMonochrome(int i) {
 		int[] is = TexStatic.anIntArray4145;
 		return is;
 	}

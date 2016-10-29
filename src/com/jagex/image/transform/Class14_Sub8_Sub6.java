@@ -40,11 +40,11 @@ public class Class14_Sub8_Sub6 extends Class14_Sub8 {
 	}
 
 	@Override
-	public void method472() {
+	public void postDecode() {
 	}
 
 	@Override
-	public void method475(int i, Buffer class14_sub10) {
+	public void decode(int i, Buffer class14_sub10) {
 		int i_17_ = i;
 		while_208_: do {
 			while_207_: do {
@@ -108,10 +108,10 @@ public class Class14_Sub8_Sub6 extends Class14_Sub8 {
 	}
 
 	@Override
-	public int[] method484(int i) {
-		int[] is = aClass149_2851.method2014(i);
-		if (aClass149_2851.aBoolean2402) {
-			int[][] is_19_ = aClass149_2851.method2019();
+	public int[] outputMonochrome(int i) {
+		int[] is = monoChromaticImageCache.method2014(i);
+		if (monoChromaticImageCache.aBoolean2402) {
+			int[][] is_19_ = monoChromaticImageCache.method2019();
 			int i_20_ = 0;
 			int i_21_ = 0;
 			int i_22_ = 0;

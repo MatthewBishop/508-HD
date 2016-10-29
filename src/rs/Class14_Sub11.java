@@ -11,11 +11,11 @@ import com.jagex.rt4.Class14_Sub27;
 public class Class14_Sub11 extends Linkable {
 	public Class124 aClass124_2940;
 	public static Class124 aClass124_2941;
-	public static Class124 aClass124_2942 = Class14_Sub2_Sub2.method263(1178, "0(U");
+	public static Class124 aClass124_2942 = Class124.method263(1178, "0(U");
 	public static Class124 aClass124_2943;
 	public static SoftCache aClass52_2946;
 	public static int[] anIntArray2948 = new int[128];
-	public static Class124 aClass124_2949 = Class14_Sub2_Sub2.method263(1178, "shake:");
+	public static Class124 aClass124_2949 = Class124.method263(1178, "shake:");
 	public static int anInt2952;
 
 	static {

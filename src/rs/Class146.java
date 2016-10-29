@@ -6,6 +6,7 @@ package rs;
 import java.util.Calendar;
 import java.util.TimeZone;
 
+import com.jagex.io.js5.Class9;
 import com.jagex.rt4.Class148_Sub1;
 
 public class Class146 {
@@ -160,7 +161,7 @@ public class Class146 {
 				} else if (class133 instanceof Class133_Sub4)
 					((Class133_Sub4) class133).method1836(true);
 				else
-					Class68.method1305(i_10_, i_13_, Class9.anIntArray212[i_13_] * 8, class79, 4,
+					Class68.method1305(i_10_, i_13_, Static2.anIntArray212[i_13_] * 8, class79, 4,
 							Class14_Sub19.anIntArray3074[i_13_] * 8, i_7_, i, (byte) 100);
 			}
 		}

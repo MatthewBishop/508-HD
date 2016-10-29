@@ -59,7 +59,7 @@ public class Class14_Sub2_Sub16_Sub2 extends Class14_Sub2_Sub16 {
 				anInt5070 = is_11_[0];
 				anInt5066 = Class11.anInt267;
 			}
-			RT4GL.method1632(anInt5070);
+			RT4GL.bindTexture2D(anInt5070);
 			gl.glTexImage2D(3553, 0, 6410, anInt5067, anInt5067, 0, 6410, 5121, bytebuffer);
 			Class11.anInt263 += bytebuffer.limit() - anInt5068;
 			anInt5068 = bytebuffer.limit();
@@ -73,21 +73,21 @@ public class Class14_Sub2_Sub16_Sub2 extends Class14_Sub2_Sub16 {
 			anIntArray5069 = new int[256];
 			GL gl = RT4GL.gl;
 			for (int i = 0; i < 256; i++) {
-				float f = (float) (i % 16) / 16.0F;
-				float f_12_ = (float) (i / 16) / 16.0F;
+				float f = i % 16 / 16.0F;
+				float f_12_ = i / 16 / 16.0F;
 				float f_13_ = f + (float) anIntArray3989[i] / (float) anInt5067;
 				float f_14_ = f_12_ + (float) anIntArray3991[i] / (float) anInt5067;
 				anIntArray5069[i] = gl.glGenLists(1);
 				gl.glNewList(anIntArray5069[i], 4864);
 				gl.glBegin(6);
 				gl.glTexCoord2f(f_13_, f_12_);
-				gl.glVertex2f((float) anIntArray3989[i], 0.0F);
+				gl.glVertex2f(anIntArray3989[i], 0.0F);
 				gl.glTexCoord2f(f, f_12_);
 				gl.glVertex2f(0.0F, 0.0F);
 				gl.glTexCoord2f(f, f_14_);
-				gl.glVertex2f(0.0F, (float) -anIntArray3991[i]);
+				gl.glVertex2f(0.0F, -anIntArray3991[i]);
 				gl.glTexCoord2f(f_13_, f_14_);
-				gl.glVertex2f((float) anIntArray3989[i], (float) -anIntArray3991[i]);
+				gl.glVertex2f(anIntArray3989[i], -anIntArray3991[i]);
 				gl.glEnd();
 				gl.glEndList();
 			}
@@ -95,6 +95,7 @@ public class Class14_Sub2_Sub16_Sub2 extends Class14_Sub2_Sub16 {
 		}
 	}
 
+	@Override
 	public void finalize() throws Throwable {
 		if (anInt5070 != -1) {
 			Class11.method208(anInt5070, anInt5068, anInt5066);
@@ -109,17 +110,18 @@ public class Class14_Sub2_Sub16_Sub2 extends Class14_Sub2_Sub16 {
 		super.finalize();
 	}
 
+	@Override
 	public void method349(int i, int i_15_, int i_16_, int i_17_, int i_18_, int i_19_, boolean bool) {
 		if (Class25.aClass14_Sub2_Sub19_Sub2_479 != null) {
 			RT4GL.method1623();
 			GL gl = RT4GL.gl;
 			gl.glColor3ub((byte) (i_19_ >> 16), (byte) (i_19_ >> 8), (byte) i_19_);
-			gl.glTranslatef((float) i_15_, (float) (RT4GL.anInt2034 - i_16_), 0.0F);
-			float f = (float) (i % 16) / 16.0F;
-			float f_20_ = (float) (i / 16) / 16.0F;
+			gl.glTranslatef(i_15_, RT4GL.canvasHeight - i_16_, 0.0F);
+			float f = i % 16 / 16.0F;
+			float f_20_ = i / 16 / 16.0F;
 			float f_21_ = f + (float) anIntArray3989[i] / (float) anInt5067;
 			float f_22_ = f_20_ + (float) anIntArray3991[i] / (float) anInt5067;
-			RT4GL.method1632(anInt5070);
+			RT4GL.bindTexture2D(anInt5070);
 			Class14_Sub2_Sub19_Sub2 class14_sub2_sub19_sub2 = Class25.aClass14_Sub2_Sub19_Sub2_479;
 			gl.glActiveTexture(33985);
 			gl.glEnable(3553);
@@ -133,16 +135,16 @@ public class Class14_Sub2_Sub16_Sub2 extends Class14_Sub2_Sub16 {
 			gl.glBegin(6);
 			gl.glMultiTexCoord2f(33985, f_25_, f_24_);
 			gl.glTexCoord2f(f_21_, f_20_);
-			gl.glVertex2f((float) anIntArray3989[i], 0.0F);
+			gl.glVertex2f(anIntArray3989[i], 0.0F);
 			gl.glMultiTexCoord2f(33985, f_23_, f_24_);
 			gl.glTexCoord2f(f, f_20_);
 			gl.glVertex2f(0.0F, 0.0F);
 			gl.glMultiTexCoord2f(33985, f_23_, f_26_);
 			gl.glTexCoord2f(f, f_22_);
-			gl.glVertex2f(0.0F, (float) -anIntArray3991[i]);
+			gl.glVertex2f(0.0F, -anIntArray3991[i]);
 			gl.glMultiTexCoord2f(33985, f_25_, f_26_);
 			gl.glTexCoord2f(f_21_, f_22_);
-			gl.glVertex2f((float) anIntArray3989[i], (float) -anIntArray3991[i]);
+			gl.glVertex2f(anIntArray3989[i], -anIntArray3991[i]);
 			gl.glEnd();
 			gl.glTexEnvi(8960, 34161, 8448);
 			gl.glTexEnvi(8960, 34176, 5890);
@@ -152,9 +154,9 @@ public class Class14_Sub2_Sub16_Sub2 extends Class14_Sub2_Sub16 {
 		} else {
 			RT4GL.method1623();
 			GL gl = RT4GL.gl;
-			RT4GL.method1632(anInt5070);
+			RT4GL.bindTexture2D(anInt5070);
 			gl.glColor3ub((byte) (i_19_ >> 16), (byte) (i_19_ >> 8), (byte) i_19_);
-			gl.glTranslatef((float) i_15_, (float) (RT4GL.anInt2034 - i_16_), 0.0F);
+			gl.glTranslatef(i_15_, RT4GL.canvasHeight - i_16_, 0.0F);
 			gl.glCallList(anIntArray5069[i]);
 			gl.glLoadIdentity();
 		}
@@ -166,12 +168,13 @@ public class Class14_Sub2_Sub16_Sub2 extends Class14_Sub2_Sub16 {
 		method373();
 	}
 
+	@Override
 	public void method363(int i, int i_32_, int i_33_, int i_34_, int i_35_, int i_36_, int i_37_, boolean bool) {
 		RT4GL.method1623();
 		GL gl = RT4GL.gl;
-		RT4GL.method1632(anInt5070);
+		RT4GL.bindTexture2D(anInt5070);
 		gl.glColor4ub((byte) (i_36_ >> 16), (byte) (i_36_ >> 8), (byte) i_36_, i_37_ > 255 ? (byte) -1 : (byte) i_37_);
-		gl.glTranslatef((float) i_32_, (float) (RT4GL.anInt2034 - i_33_), 0.0F);
+		gl.glTranslatef(i_32_, RT4GL.canvasHeight - i_33_, 0.0F);
 		gl.glCallList(anIntArray5069[i]);
 		gl.glLoadIdentity();
 	}

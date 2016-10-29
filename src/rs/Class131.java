@@ -8,7 +8,7 @@ import com.jagex.rt4.Class14_Sub27;
 public class Class131 {
 	public static Class124 aClass124_2153;
 	public static volatile boolean aBoolean2154;
-	public static Class124 aClass124_2156 = (Class14_Sub2_Sub2.method263(1178,
+	public static Class124 aClass124_2156 = (Class124.method263(1178,
 			"Ihre Ignorieren)2Liste ist voll)1 Sie k-Onnen nur 100 Spieler darauf eintragen)3"));
 	public static int anInt2159;
 	public static Class14_Sub2_Sub16_Sub1 aClass14_Sub2_Sub16_Sub1_2160;
@@ -18,11 +18,11 @@ public class Class131 {
 	public static int anInt2164;
 
 	static {
-		aClass124_2153 = (Class14_Sub2_Sub2.method263(1178, " steht bereits auf Ihrer Freunde)2Liste(Q"));
+		aClass124_2153 = (Class124.method263(1178, " steht bereits auf Ihrer Freunde)2Liste(Q"));
 		aBoolean2154 = true;
-		aClass124_2163 = (Class14_Sub2_Sub2.method263(1178,
+		aClass124_2163 = (Class124.method263(1178,
 				"Sie k-Onnen sich selbst nicht selbst auf Ihre Ignorieren)2Liste setzen(Q"));
-		aClass124_2161 = Class14_Sub2_Sub2.method263(1178, "loc");
+		aClass124_2161 = Class124.method263(1178, "loc");
 	}
 
 	public static void method1772(boolean bool, int i, byte i_0_, int i_1_) {

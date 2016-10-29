@@ -71,11 +71,11 @@ public class Class142 {
 	public int anInt2328;
 
 	static {
-		aClass124_2271 = Class14_Sub2_Sub2.method263(1178, "http:)4)4");
+		aClass124_2271 = Class124.method263(1178, "http:)4)4");
 		anInt2295 = 0;
 		aBoolean2299 = false;
 		anInt2315 = 0;
-		aClass124_2321 = Class14_Sub2_Sub2.method263(1178, "::fpson");
+		aClass124_2321 = Class124.method263(1178, "::fpson");
 	}
 
 	public boolean method1964(boolean bool, byte i) {
@@ -382,7 +382,7 @@ public class Class142 {
 																																	(byte) -110));
 																										aClass55_2260
 																												.put(
-																														(long) i_32_,
+																														i_32_,
 																														linkable);
 																									}
 																								}
@@ -516,7 +516,7 @@ public class Class142 {
 				return class133_sub7;
 			}
 		}
-		Class133_Sub7 class133_sub7 = ((Class133_Sub7) JunkTex.aClass52_2075.get((long) anInt2276));
+		Class133_Sub7 class133_sub7 = ((Class133_Sub7) JunkTex.aClass52_2075.get(anInt2276));
 		if (class133_sub7 == null) {
 			Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(JunkTex.aClass9_4193, anInt2311, 0);
 			if (class133_sub2 == null) {
@@ -539,9 +539,9 @@ public class Class142 {
 			class133_sub7 = class133_sub2.method1827(anInt2281 + 64, 768 + anInt2261, -50, -10, -50);
 			if (anInt2328 != 128 || anInt2291 != 128 || anInt2327 != 128)
 				class133_sub7.method1869(anInt2328, anInt2291, anInt2327);
-			class133_sub7.aBoolean3687 = true;
+			class133_sub7.haveActions = true;
 			((ModelHD) class133_sub7).method1895(false, false, false, true, false, false, true);
-			JunkTex.aClass52_2075.put(class133_sub7, (long) anInt2276);
+			JunkTex.aClass52_2075.put(class133_sub7, anInt2276);
 		}
 		if (animation != null)
 			class133_sub7 = animation.method1167(i, 65535, class133_sub7);
@@ -585,7 +585,7 @@ public class Class142 {
 			int i_60_ = i;
 			return i_60_;
 		}
-		Class14_Sub1 class14_sub1 = ((Class14_Sub1) aClass55_2260.get((long) i_58_));
+		Class14_Sub1 class14_sub1 = ((Class14_Sub1) aClass55_2260.get(i_58_));
 		if (class14_sub1 == null) {
 			int i_61_ = i;
 			return i_61_;
@@ -627,32 +627,13 @@ public class Class142 {
 			Class124 class124_67_ = class124;
 			return class124_67_;
 		}
-		Class14_Sub30 class14_sub30 = (Class14_Sub30) aClass55_2260.get((long) i);
+		Class14_Sub30 class14_sub30 = (Class14_Sub30) aClass55_2260.get(i);
 		if (class14_sub30 == null) {
 			Class124 class124_68_ = class124;
 			return class124_68_;
 		}
 		Class124 class124_69_ = class14_sub30.aClass124_3270;
 		return class124_69_;
-	}
-
-	public static void method1980(int i, int i_70_, int i_71_, int i_72_, int i_73_, int i_74_, int i_75_, int i_76_) {
-		int i_77_ = -i_76_ + i_74_;
-		int i_78_ = i_70_ + i_76_;
-		int i_79_ = -i_76_ + i_72_;
-		for (int i_80_ = i_70_; i_78_ > i_80_; i_80_++)
-			Class51.method1201(Static2.anIntArrayArray4038[i_80_], i_71_, i_72_, -5973, i);
-		int i_81_ = i_71_ + i_76_;
-		if (i_75_ < 23)
-			method1980(90, 12, -14, -101, -7, 82, 71, 101);
-		for (int i_82_ = i_74_; i_77_ < i_82_; i_82_--)
-			Class51.method1201(Static2.anIntArrayArray4038[i_82_], i_71_, i_72_, -5973, i);
-		for (int i_83_ = i_78_; i_77_ >= i_83_; i_83_++) {
-			int[] is = Static2.anIntArrayArray4038[i_83_];
-			Class51.method1201(is, i_71_, i_81_, -5973, i);
-			Class51.method1201(is, i_81_, i_79_, -5973, i_73_);
-			Class51.method1201(is, i_79_, i_72_, -5973, i);
-		}
 	}
 
 	public Class142() {

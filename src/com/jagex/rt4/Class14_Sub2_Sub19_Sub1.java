@@ -18,15 +18,15 @@ public class Class14_Sub2_Sub19_Sub1 extends Class14_Sub2_Sub19 {
 			int i_8_ = anInt4046;
 			int i_9_ = (i_7_ << 16) / i_1_;
 			int i_10_ = (i_8_ << 16) / i_2_;
-			if (anInt4033 > 0) {
-				int i_11_ = ((anInt4033 << 16) + i_9_ - 1) / i_9_;
+			if (offsetX > 0) {
+				int i_11_ = ((offsetX << 16) + i_9_ - 1) / i_9_;
 				i += i_11_;
-				i_5_ += i_11_ * i_9_ - (anInt4033 << 16);
+				i_5_ += i_11_ * i_9_ - (offsetX << 16);
 			}
-			if (anInt4050 > 0) {
-				int i_12_ = ((anInt4050 << 16) + i_10_ - 1) / i_10_;
+			if (offsetY > 0) {
+				int i_12_ = ((offsetY << 16) + i_10_ - 1) / i_10_;
 				i_0_ += i_12_;
-				i_6_ += i_12_ * i_10_ - (anInt4050 << 16);
+				i_6_ += i_12_ * i_10_ - (offsetY << 16);
 			}
 			if (i_3_ < i_7_)
 				i_1_ = ((i_3_ << 16) - i_5_ + i_9_ - 1) / i_9_;
@@ -59,9 +59,9 @@ public class Class14_Sub2_Sub19_Sub1 extends Class14_Sub2_Sub19 {
 		}
 	}
 
-	public void method391(int i, int i_18_) {
-		i += anInt4033;
-		i_18_ += anInt4050;
+	public void drawReg(int i, int i_18_) {
+		i += offsetX;
+		i_18_ += offsetY;
 		int i_19_ = i + i_18_ * Class92.anInt1432;
 		int i_20_ = 0;
 		int i_21_ = anInt4042;
@@ -145,15 +145,15 @@ public class Class14_Sub2_Sub19_Sub1 extends Class14_Sub2_Sub19 {
 			int i_48_ = anInt4046;
 			int i_49_ = (i_47_ << 16) / i_40_;
 			int i_50_ = (i_48_ << 16) / i_41_;
-			if (anInt4033 > 0) {
-				int i_51_ = ((anInt4033 << 16) + i_49_ - 1) / i_49_;
+			if (offsetX > 0) {
+				int i_51_ = ((offsetX << 16) + i_49_ - 1) / i_49_;
 				i += i_51_;
-				i_45_ += i_51_ * i_49_ - (anInt4033 << 16);
+				i_45_ += i_51_ * i_49_ - (offsetX << 16);
 			}
-			if (anInt4050 > 0) {
-				int i_52_ = ((anInt4050 << 16) + i_50_ - 1) / i_50_;
+			if (offsetY > 0) {
+				int i_52_ = ((offsetY << 16) + i_50_ - 1) / i_50_;
 				i_39_ += i_52_;
-				i_46_ += i_52_ * i_50_ - (anInt4050 << 16);
+				i_46_ += i_52_ * i_50_ - (offsetY << 16);
 			}
 			if (i_43_ < i_47_)
 				i_40_ = ((i_43_ << 16) - i_45_ + i_49_ - 1) / i_49_;
@@ -189,17 +189,17 @@ public class Class14_Sub2_Sub19_Sub1 extends Class14_Sub2_Sub19 {
 	public void method402(int i) {
 		if (anInt4035 != anInt4034 || anInt4042 != anInt4046) {
 			int i_58_ = i;
-			if (i_58_ > anInt4033)
-				i_58_ = anInt4033;
+			if (i_58_ > offsetX)
+				i_58_ = offsetX;
 			int i_59_ = i;
-			if (i_59_ + anInt4033 + anInt4035 > anInt4034)
-				i_59_ = anInt4034 - anInt4033 - anInt4035;
+			if (i_59_ + offsetX + anInt4035 > anInt4034)
+				i_59_ = anInt4034 - offsetX - anInt4035;
 			int i_60_ = i;
-			if (i_60_ > anInt4050)
-				i_60_ = anInt4050;
+			if (i_60_ > offsetY)
+				i_60_ = offsetY;
 			int i_61_ = i;
-			if (i_61_ + anInt4050 + anInt4042 > anInt4046)
-				i_61_ = anInt4046 - anInt4050 - anInt4042;
+			if (i_61_ + offsetY + anInt4042 > anInt4046)
+				i_61_ = anInt4046 - offsetY - anInt4042;
 			int i_62_ = anInt4035 + i_58_ + i_59_;
 			int i_63_ = anInt4042 + i_60_ + i_61_;
 			int[] is = new int[i_62_ * i_63_];
@@ -210,8 +210,8 @@ public class Class14_Sub2_Sub19_Sub1 extends Class14_Sub2_Sub19 {
 			anIntArray5088 = is;
 			anInt4035 = i_62_;
 			anInt4042 = i_63_;
-			anInt4033 -= i_58_;
-			anInt4050 -= i_60_;
+			offsetX -= i_58_;
+			offsetY -= i_60_;
 		}
 	}
 
@@ -241,19 +241,19 @@ public class Class14_Sub2_Sub19_Sub1 extends Class14_Sub2_Sub19 {
 			int[] is = new int[anInt4034 * anInt4046];
 			for (int i = 0; i < anInt4042; i++) {
 				for (int i_80_ = 0; i_80_ < anInt4035; i_80_++)
-					is[(i + anInt4050) * anInt4034 + (i_80_ + anInt4033)] = anIntArray5088[i * anInt4035 + i_80_];
+					is[(i + offsetY) * anInt4034 + (i_80_ + offsetX)] = anIntArray5088[i * anInt4035 + i_80_];
 			}
 			anIntArray5088 = is;
 			anInt4035 = anInt4034;
 			anInt4042 = anInt4046;
-			anInt4033 = 0;
-			anInt4050 = 0;
+			offsetX = 0;
+			offsetY = 0;
 		}
 	}
 
-	public void method398(int i, int i_81_, int i_82_) {
-		i += anInt4033;
-		i_81_ += anInt4050;
+	public void drawSpriteTransparency(int i, int i_81_, int i_82_) {
+		i += offsetX;
+		i_81_ += offsetY;
 		int i_83_ = i + i_81_ * Class92.anInt1432;
 		int i_84_ = 0;
 		int i_85_ = anInt4042;
@@ -313,7 +313,7 @@ public class Class14_Sub2_Sub19_Sub1 extends Class14_Sub2_Sub19 {
 				is[i++] = anIntArray5088[i_101_ + i_100_ * anInt4035];
 		}
 		anIntArray5088 = is;
-		anInt4050 = anInt4046 - anInt4042 - anInt4050;
+		offsetY = anInt4046 - anInt4042 - offsetY;
 	}
 
 	public static void method407(int[] is, int[] is_102_, int i, int i_103_, int i_104_, int i_105_, int i_106_,
@@ -394,8 +394,8 @@ public class Class14_Sub2_Sub19_Sub1 extends Class14_Sub2_Sub19 {
 	}
 
 	public void method390(int i, int i_141_) {
-		i += anInt4033;
-		i_141_ += anInt4050;
+		i += offsetX;
+		i_141_ += offsetY;
 		int i_142_ = i + i_141_ * Class92.anInt1432;
 		int i_143_ = 0;
 		int i_144_ = anInt4042;
@@ -460,13 +460,13 @@ public class Class14_Sub2_Sub19_Sub1 extends Class14_Sub2_Sub19 {
 				is[i++] = anIntArray5088[i_156_ + i_155_ * anInt4035];
 		}
 		anIntArray5088 = is;
-		anInt4033 = anInt4034 - anInt4035 - anInt4033;
+		offsetX = anInt4034 - anInt4035 - offsetX;
 	}
 
 	public void method395(int i, int i_157_, int i_158_, int i_159_, int i_160_, int i_161_) {
 		if (i_161_ != 0) {
-			i -= anInt4033 << 4;
-			i_157_ -= anInt4050 << 4;
+			i -= offsetX << 4;
+			i_157_ -= offsetY << 4;
 			double d = (double) (i_160_ & 0xffff) * 9.587379924285257E-5;
 			int i_162_ = (int) Math.floor(Math.sin(d) * (double) i_161_ + 0.5);
 			int i_163_ = (int) Math.floor(Math.cos(d) * (double) i_161_ + 0.5);
@@ -880,8 +880,8 @@ public class Class14_Sub2_Sub19_Sub1 extends Class14_Sub2_Sub19 {
 	public Class14_Sub2_Sub19_Sub1(int i, int i_264_, int i_265_, int i_266_, int i_267_, int i_268_, int[] is) {
 		anInt4034 = i;
 		anInt4046 = i_264_;
-		anInt4033 = i_265_;
-		anInt4050 = i_266_;
+		offsetX = i_265_;
+		offsetY = i_266_;
 		anInt4035 = i_267_;
 		anInt4042 = i_268_;
 		anIntArray5088 = is;
@@ -891,15 +891,15 @@ public class Class14_Sub2_Sub19_Sub1 extends Class14_Sub2_Sub19 {
 		anIntArray5088 = new int[i * i_269_];
 		anInt4035 = anInt4034 = i;
 		anInt4042 = anInt4046 = i_269_;
-		anInt4033 = anInt4050 = 0;
+		offsetX = offsetY = 0;
 	}
 
 	public void method400(int i, int i_270_, int i_271_, int i_272_) {
 		if (i_271_ == 256)
-			method391(i, i_270_);
+			drawReg(i, i_270_);
 		else {
-			i += anInt4033;
-			i_270_ += anInt4050;
+			i += offsetX;
+			i_270_ += offsetY;
 			int i_273_ = i + i_270_ * Class92.anInt1432;
 			int i_274_ = 0;
 			int i_275_ = anInt4042;

@@ -3,11 +3,14 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.Class9_Sub1;
+
 public class Class7_Sub1 extends Class7 {
 	public static Class9 aClass9_2652;
 	public static int anInt2653 = -1;
 	public static int anInt2655;
-	public static Class124 aClass124_2656 = Class14_Sub2_Sub2.method263(1178, "");
+	public static Class124 aClass124_2656 = Class124.method263(1178, "");
 	public static Class9_Sub1 aClass9_Sub1_2657;
 	public static int anInt2659;
 	public static Class124 aClass124_2660;
@@ -18,7 +21,7 @@ public class Class7_Sub1 extends Class7 {
 	static {
 		anInt2655 = 0;
 		aShortArray2663 = new short[256];
-		aClass124_2660 = Class14_Sub2_Sub2.method263(1178, "rot:");
+		aClass124_2660 = Class124.method263(1178, "rot:");
 	}
 
 	public static Class124 method121(int i, int i_0_) {
@@ -39,7 +42,7 @@ public class Class7_Sub1 extends Class7 {
 			if (JunkTex.anInt3419 > 1)
 				Class67.aClass94_1060 = null;
 		} else {
-			int i = Class107.anInt1804;
+			int i = ProceduralTexture.anInt1804;
 			i -= Canvas_Sub2.anInt63;
 			int i_3_ = JunkTex.anInt4640;
 			if (i < Class48.anInt798)
@@ -88,7 +91,7 @@ public class Class7_Sub1 extends Class7 {
 				} else if ((Class103.anInt1730 != 1 && !Class127.method1754(128, (JunkTex.anInt4729) - 1))
 						|| JunkTex.anInt4729 <= 2) {
 					if (JunkTex.anInt4729 > 0)
-						Class107.method1551(-23473);
+						ProceduralTexture.method1551(-23473);
 				} else
 					Static2.method382((byte) 127);
 				Class67.aClass94_1060 = null;
@@ -103,65 +106,5 @@ public class Class7_Sub1 extends Class7 {
 		aClass124_2656 = null;
 		aShortArray2663 = null;
 		aClass124_2660 = null;
-	}
-
-	public static void method124(int i, int i_9_, int i_10_, int i_11_, int i_12_, byte i_13_) {
-		int i_14_ = 0;
-		int i_15_ = i_12_;
-		int i_16_ = i * i;
-		int i_17_ = i_12_ * i_12_;
-		int i_18_ = i_17_ << 1;
-		int i_19_ = i_12_ << 1;
-		int i_20_ = i_16_ << 33;
-		if (i_13_ >= 50) {
-			int i_21_ = i_17_ - i_20_ * (i_19_ - 1);
-			int i_22_ = (-i_19_ + 1) * i_16_ + i_18_;
-			int i_23_ = i_17_ << 34;
-			int i_24_ = i_16_ << 2;
-			int i_25_ = i_18_ * ((i_14_ << 1) + 3);
-			int i_26_ = i_23_ * (i_14_ + 1);
-			int i_27_ = ((i_15_ << 1) - 3) * i_20_;
-			if (i_11_ >= Class14_Sub17.anInt3005 && Class59.anInt955 >= i_11_) {
-				int i_28_ = Class67.method1301((byte) 93, i_10_ + i, Class118.anInt1982, JunkTex.anInt4327);
-				int i_29_ = Class67.method1301((byte) -122, -i + i_10_, Class118.anInt1982,
-						JunkTex.anInt4327);
-				Class51.method1201((Static2.anIntArrayArray4038[i_11_]), i_29_, i_28_, -5973, i_9_);
-			}
-			int i_30_ = (i_15_ - 1) * i_24_;
-			while (i_15_ > 0) {
-				if (i_22_ < 0) {
-					while (i_22_ < 0) {
-						i_21_ += i_26_;
-						i_26_ += i_23_;
-						i_14_++;
-						i_22_ += i_25_;
-						i_25_ += i_23_;
-					}
-				}
-				if (i_21_ < 0) {
-					i_22_ += i_25_;
-					i_25_ += i_23_;
-					i_21_ += i_26_;
-					i_14_++;
-					i_26_ += i_23_;
-				}
-				i_21_ -= i_27_;
-				int i_31_ = --i_15_ + i_11_;
-				int i_32_ = i_15_ + i_11_;
-				if (i_32_ >= Class14_Sub17.anInt3005 && Class59.anInt955 >= i_31_) {
-					int i_33_ = Class67.method1301((byte) -70, i_14_ + i_10_, Class118.anInt1982,
-							JunkTex.anInt4327);
-					int i_34_ = Class67.method1301((byte) 76, -i_14_ + i_10_, Class118.anInt1982,
-							JunkTex.anInt4327);
-					if (Class14_Sub17.anInt3005 <= i_31_)
-						Class51.method1201((Static2.anIntArrayArray4038[i_31_]), i_34_, i_33_, -5973, i_9_);
-					if (Class59.anInt955 >= i_32_)
-						Class51.method1201((Static2.anIntArrayArray4038[i_32_]), i_34_, i_33_, -5973, i_9_);
-				}
-				i_22_ -= i_30_;
-				i_27_ -= i_24_;
-				i_30_ -= i_24_;
-			}
-		}
 	}
 }

@@ -13,7 +13,7 @@ public class Class78 {
 
 	public static int method1370(int i, int i_0_) {
 		int i_1_;
-		for (i_1_ = (int) Math.pow((double) i, 1.0 / (double) i_0_) + 1; Class12.method221(i_0_, i_1_,
+		for (i_1_ = (int) Math.pow(i, 1.0 / i_0_) + 1; Class12.method221(i_0_, i_1_,
 				(byte) -96) > i; i_1_--) {
 			/* empty */
 		}
@@ -142,7 +142,7 @@ public class Class78 {
 					int i_31_ = 1;
 					for (int i_32_ = 0; i_32_ < anInt1224; i_32_++) {
 						int i_33_ = i_29_ / i_31_ % i_27_;
-						float f_34_ = ((float) anIntArray1220[i_33_] * f_24_ + f + f_30_);
+						float f_34_ = (anIntArray1220[i_33_] * f_24_ + f + f_30_);
 						aFloatArrayArray1222[i_29_][i_32_] = f_34_;
 						if (bool_26_)
 							f_30_ = f_34_;
@@ -154,7 +154,7 @@ public class Class78 {
 					float f_36_ = 0.0F;
 					int i_37_ = i_35_ * anInt1224;
 					for (int i_38_ = 0; i_38_ < anInt1224; i_38_++) {
-						float f_39_ = ((float) anIntArray1220[i_37_] * f_24_ + f + f_36_);
+						float f_39_ = (anIntArray1220[i_37_] * f_24_ + f + f_36_);
 						aFloatArrayArray1222[i_35_][i_38_] = f_39_;
 						if (bool_26_)
 							f_36_ = f_39_;

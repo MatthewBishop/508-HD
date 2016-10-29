@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 import com.jagex.rt4.Class11;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 
@@ -67,7 +68,7 @@ public abstract class Class133_Sub1 extends Class133 {
 	public static boolean aBoolean3499 = false;
 	public int anInt3500;
 	public int anInt3501;
-	public static Class124 aClass124_3502 = Class14_Sub2_Sub2.method263(1178, "; version=1; path=)4; domain=");
+	public static Class124 aClass124_3502 = Class124.method263(1178, "; version=1; path=)4; domain=");
 	public int anInt3504;
 	public static Class14_Sub2_Sub19 aClass14_Sub2_Sub19_3505;
 
@@ -307,16 +308,6 @@ public abstract class Class133_Sub1 extends Class133 {
 				break;
 			}
 		}
-	}
-
-	public static void method1802(int i, int i_32_, int i_33_, int i_34_, int i_35_, int i_36_, int i_37_) {
-		if (i_34_ != 128)
-			method1798(null, (byte) -76);
-		if (Class118.anInt1982 > -i_37_ + i || i_37_ + i > JunkTex.anInt4327
-				|| i_32_ - i_37_ < Class14_Sub17.anInt3005 || i_37_ + i_32_ > Class59.anInt955)
-			JunkTex.method1734(i_35_, i_37_, i_33_, i_36_, 52, i_32_, i);
-		else
-			Class14_Sub13.method861(i, i_35_, (byte) -100, i_37_, i_32_, i_36_, i_33_);
 	}
 
 	public static void method1803(Class133 class133, int i, int i_38_, int i_39_, int i_40_, int i_41_) {

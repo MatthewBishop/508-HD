@@ -17,16 +17,16 @@ public class Class14_Sub8_Sub17 extends Class14_Sub8 {
 	}
 
 	@Override
-	public void method472() {
+	public void postDecode() {
 		if (anIntArrayArray4376 == null)
 			method567(1);
 		method565();
 	}
 
 	@Override
-	public int[][] method474(int i) {
-		int[][] is = aClass95_2838.method1481(1, i);
-		if (aClass95_2838.aBoolean1628) {
+	public int[][] outputColour(int i) {
+		int[][] is = triChromaticImageCache.method1481(1, i);
+		if (triChromaticImageCache.aBoolean1628) {
 			int[] is_7_ = method483(0, i);
 			int[] is_8_ = is[0];
 			int[] is_9_ = is[1];
@@ -48,7 +48,7 @@ public class Class14_Sub8_Sub17 extends Class14_Sub8 {
 	}
 
 	@Override
-	public void method475(int i, Buffer class14_sub10) {
+	public void decode(int i, Buffer class14_sub10) {
 		if (i == 0) {
 			int i_15_ = class14_sub10.readUByte();
 			if (i_15_ == 0) {

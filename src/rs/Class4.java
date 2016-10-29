@@ -25,7 +25,7 @@ public class Class4 {
 	static {
 		anInt123 = 0;
 		aClass124_129 = null;
-		aClass124_126 = Class14_Sub2_Sub2.method263(1178, "Prepared sound engine");
+		aClass124_126 = Class124.method263(1178, "Prepared sound engine");
 		aClass124_131 = aClass124_126;
 		aClass2_127 = new Deque();
 	}

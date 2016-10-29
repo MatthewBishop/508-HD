@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9;
 import com.jagex.link.HashTable;
 
 public class Class88 {

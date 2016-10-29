@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9;
 import com.jagex.link.Cache;
 import com.jagex.link.Cacheable;
 import com.jagex.link.Deque;
@@ -20,7 +21,7 @@ public class Class14_Sub2_Sub5 extends Cacheable {
 	public int anInt3810 = 0;
 	public int anInt3812;
 	public int anInt3813;
-	public static Class124 aClass124_3814 = Class14_Sub2_Sub2.method263(1178, "(Y<)4col>");
+	public static Class124 aClass124_3814 = Class124.method263(1178, "(Y<)4col>");
 	public static Cache aClass20_3815 = new Cache(128);
 	public static byte[][][] aByteArrayArrayArray3816;
 	public static Class9 aClass9_3817;
@@ -48,18 +49,6 @@ public class Class14_Sub2_Sub5 extends Cacheable {
 			aBoolean3803 = false;
 		boolean bool = (i >> 30 & 0x1) != 0;
 		return bool;
-	}
-
-	public static void method283(int i, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_) {
-		if (i_7_ == i)
-			Class133_Sub1.method1802(i_4_, i_5_, i_3_, 128, i_6_, i_1_, i);
-		else {
-			if (i_4_ - i >= Class118.anInt1982 && JunkTex.anInt4327 >= i + i_4_
-					&& Class14_Sub17.anInt3005 <= i_5_ - i_7_ && i_7_ + i_5_ <= Class59.anInt955)
-				JunkTex.method606(i_6_, i_3_, i_7_, i_5_, -15882, i_1_, i, i_4_);
-			else
-				JunkTex.method593(i_4_, i, i_1_, i_7_, 0 ^ ~0x77, i_3_, i_5_, i_6_);
-		}
 	}
 
 	public static void method284(int i) {

@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9;
 import com.jagex.link.Deque;
 import com.jagex.link.Linkable;
 
@@ -12,9 +13,9 @@ public class Class14_Sub15 extends Linkable {
 	public static Class36 aClass36_2990;
 	public int anInt2991;
 	public boolean aBoolean2992 = false;
-	public static Class124 aClass124_2993 = Class14_Sub2_Sub2.method263(1178, "<img=0>");
-	public static Class124 aClass124_2995 = Class14_Sub2_Sub2.method263(1178, "cookiehost");
-	public static int anInt2996 = 0;
+	public static Class124 aClass124_2993 = Class124.method263(1178, "<img=0>");
+	public static Class124 aClass124_2995 = Class124.method263(1178, "cookiehost");
+	public static int actionsLen = 0;
 	public int anInt2999;
 
 	static {

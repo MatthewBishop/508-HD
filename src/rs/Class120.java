@@ -3,11 +3,12 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9;
 import com.jagex.link.HashTable;
 import com.jagex.sound.Track;
 
 public class Class120 {
-	public static Class124 aClass124_2001 = Class14_Sub2_Sub2.method263(1178, "welle:");
+	public static Class124 aClass124_2001 = Class124.method263(1178, "welle:");
 	public static int[] anIntArray2002;
 	public Class9 aClass9_2003;
 	public HashTable aClass55_2004 = new HashTable(256);
@@ -22,7 +23,7 @@ public class Class120 {
 
 	static {
 		anInt2005 = 1;
-		aClass124_2012 = Class14_Sub2_Sub2.method263(1178, "::qa_op_test");
+		aClass124_2012 = Class124.method263(1178, "::qa_op_test");
 		anIntArray2008 = new int[2];
 		anInt2014 = 0;
 		anIntArray2009 = new int[64];
@@ -49,7 +50,7 @@ public class Class120 {
 						i_4_ >> 1, i >> 33, class66.anInt1041 * 2, (byte) 126,
 						(class66.anInt1051 + (-Class58.anInt947 + class66.anInt1044 << 7)));
 				if (anInt2007 > -1 && Class14_Sub2_Sub20.anInt4064 % 20 < 10)
-					Class76.aClass14_Sub2_Sub19Array1191[class66.anInt1035].method391(i_1_ + anInt2007 - 12,
+					Class76.aClass14_Sub2_Sub19Array1191[class66.anInt1035].drawReg(i_1_ + anInt2007 - 12,
 							JunkTex.anInt4548 + i_5_ - 28);
 			}
 		}
@@ -58,7 +59,7 @@ public class Class120 {
 	public Class14_Sub12_Sub1 method1616(int i, int i_7_, int[] is, boolean bool) {
 		int i_8_ = i_7_ ^ ((i & 0x40000fff) << 4 | i >>> 44);
 		i_8_ |= i << 16;
-		long l = (long) i_8_;
+		long l = i_8_;
 		if (!bool) {
 			Class14_Sub12_Sub1 class14_sub12_sub1 = null;
 			return class14_sub12_sub1;
@@ -88,7 +89,7 @@ public class Class120 {
 	public Class14_Sub12_Sub1 method1617(int i, int i_12_, int[] is, int i_13_) {
 		int i_14_ = i_13_ ^ (i << 4 & 0xfffc | i >>> 44);
 		i_14_ |= i << 48;
-		long l = 0x100000000L ^ (long) i_14_;
+		long l = 0x100000000L ^ i_14_;
 		Class14_Sub12_Sub1 class14_sub12_sub1 = (Class14_Sub12_Sub1) aClass55_2015.get(l);
 		if (class14_sub12_sub1 != null) {
 			Class14_Sub12_Sub1 class14_sub12_sub1_15_ = class14_sub12_sub1;

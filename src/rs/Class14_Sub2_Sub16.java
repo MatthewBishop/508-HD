@@ -16,7 +16,7 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 	public static Class124 aClass124_3973;
 	public static Class124 aClass124_3974;
 	public static Class124 aClass124_3975;
-	public static Class124 aClass124_3976 = Class14_Sub2_Sub2.method263(1178, "str=");
+	public static Class124 aClass124_3976 = Class124.method263(1178, "str=");
 	public static Class124 aClass124_3977;
 	public static Class124 aClass124_3979;
 	public static Class124 aClass124_3981;
@@ -46,28 +46,28 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 	public static int anInt4009;
 	public static int anInt4010;
 	static {
-		aClass124_3974 = Class14_Sub2_Sub2.method263(1178, ")4trans");
-		aClass124_3977 = Class14_Sub2_Sub2.method263(1178, "times");
-		aClass124_3970 = Class14_Sub2_Sub2.method263(1178, "shad");
-		aClass124_3983 = Class14_Sub2_Sub2.method263(1178, "u=");
-		aClass124_3985 = Class14_Sub2_Sub2.method263(1178, "euro");
-		aClass124_3986 = Class14_Sub2_Sub2.method263(1178, "nbsp");
-		aClass124_3981 = Class14_Sub2_Sub2.method263(1178, "shad=");
-		aClass124_3992 = Class14_Sub2_Sub2.method263(1178, "img=");
-		aClass124_3987 = Class14_Sub2_Sub2.method263(1178, "str");
-		aClass124_3973 = Class14_Sub2_Sub2.method263(1178, ")4shad");
-		aClass124_3982 = Class14_Sub2_Sub2.method263(1178, "gt");
-		aClass124_3988 = Class14_Sub2_Sub2.method263(1178, "br");
-		aClass124_3984 = Class14_Sub2_Sub2.method263(1178, ")4str");
-		aClass124_3979 = Class14_Sub2_Sub2.method263(1178, "col=");
-		aClass124_3994 = Class14_Sub2_Sub2.method263(1178, "u");
-		aClass124_3972 = Class14_Sub2_Sub2.method263(1178, ")4u");
-		aClass124_3997 = Class14_Sub2_Sub2.method263(1178, "copy");
-		aClass124_3990 = Class14_Sub2_Sub2.method263(1178, "reg");
-		aClass124_3998 = Class14_Sub2_Sub2.method263(1178, ")4col");
-		aClass124_3967 = Class14_Sub2_Sub2.method263(1178, "shy");
-		aClass124_4000 = Class14_Sub2_Sub2.method263(1178, "trans=");
-		aClass124_3995 = Class14_Sub2_Sub2.method263(1178, "lt");
+		aClass124_3974 = Class124.method263(1178, ")4trans");
+		aClass124_3977 = Class124.method263(1178, "times");
+		aClass124_3970 = Class124.method263(1178, "shad");
+		aClass124_3983 = Class124.method263(1178, "u=");
+		aClass124_3985 = Class124.method263(1178, "euro");
+		aClass124_3986 = Class124.method263(1178, "nbsp");
+		aClass124_3981 = Class124.method263(1178, "shad=");
+		aClass124_3992 = Class124.method263(1178, "img=");
+		aClass124_3987 = Class124.method263(1178, "str");
+		aClass124_3973 = Class124.method263(1178, ")4shad");
+		aClass124_3982 = Class124.method263(1178, "gt");
+		aClass124_3988 = Class124.method263(1178, "br");
+		aClass124_3984 = Class124.method263(1178, ")4str");
+		aClass124_3979 = Class124.method263(1178, "col=");
+		aClass124_3994 = Class124.method263(1178, "u");
+		aClass124_3972 = Class124.method263(1178, ")4u");
+		aClass124_3997 = Class124.method263(1178, "copy");
+		aClass124_3990 = Class124.method263(1178, "reg");
+		aClass124_3998 = Class124.method263(1178, ")4col");
+		aClass124_3967 = Class124.method263(1178, "shy");
+		aClass124_4000 = Class124.method263(1178, "trans=");
+		aClass124_3995 = Class124.method263(1178, "lt");
 		aClass124_3975 = Class7_Sub1.method121(100, -13);
 		anInt4003 = 256;
 		anInt4002 = -1;
@@ -208,12 +208,12 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 	public void method343(Class124 class124, int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_) {
 		if (class124 != null) {
 			method354(i_1_, i_2_);
-			double d = 7.0 - (double) i_4_ / 8.0;
+			double d = 7.0 - i_4_ / 8.0;
 			if (d < 0.0)
 				d = 0.0;
 			int[] is = new int[class124.anInt2507];
 			for (int i_5_ = 0; i_5_ < class124.anInt2507; i_5_++)
-				is[i_5_] = (int) (Math.sin((double) i_5_ / 1.5 + (double) i_3_ / 1.0) * d);
+				is[i_5_] = (int) (Math.sin(i_5_ / 1.5 + i_3_ / 1.0) * d);
 			method355(class124, i - method361(class124) / 2, i_0_, null, is);
 		}
 	}
@@ -293,7 +293,7 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 	public int method350(Class124 class124, int i, int i_23_, int i_24_, int i_25_, Random random, int i_26_) {
 		if (class124 == null)
 			return 0;
-		random.setSeed((long) i_26_);
+		random.setSeed(i_26_);
 		method346(i_24_, i_25_, (random.nextInt() & 0x1f) + 192);
 		int[] is = new int[class124.anInt2507];
 		int i_27_ = 0;
@@ -450,7 +450,7 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 			method354(i_42_, i_43_);
 			int[] is = new int[class124.anInt2507];
 			for (int i_45_ = 0; i_45_ < class124.anInt2507; i_45_++)
-				is[i_45_] = (int) (Math.sin((double) i_45_ / 2.0 + (double) i_44_ / 5.0) * 5.0);
+				is[i_45_] = (int) (Math.sin(i_45_ / 2.0 + i_44_ / 5.0) * 5.0);
 			method355(class124, i - method361(class124) / 2, i_41_, null, is);
 		}
 	}
@@ -563,7 +563,7 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 					}
 					int i_63_ = anIntArray3996[i_53_];
 					if (anInt4010 != -1)
-						Class25.method1007(i, i_47_ + (int) ((double) anInt3978 * 0.7), i_63_, anInt4010);
+						Class25.method1007(i, i_47_ + (int) (anInt3978 * 0.7), i_63_, anInt4010);
 					if (anInt4009 != -1)
 						Class25.method1007(i, i_47_ + anInt3978, i_63_, anInt4009);
 					i += i_63_;
@@ -647,7 +647,7 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 					}
 					int i_74_ = anIntArray3996[i_68_];
 					if (anInt4010 != -1)
-						Class25.method1007(i, i_64_ + (int) ((double) anInt3978 * 0.7), i_74_, anInt4010);
+						Class25.method1007(i, i_64_ + (int) (anInt3978 * 0.7), i_74_, anInt4010);
 					if (anInt4009 != -1)
 						Class25.method1007(i, i_64_ + anInt3978 + 1, i_74_, anInt4009);
 					i += i_74_;
@@ -663,8 +663,8 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 			int[] is = new int[class124.anInt2507];
 			int[] is_79_ = new int[class124.anInt2507];
 			for (int i_80_ = 0; i_80_ < class124.anInt2507; i_80_++) {
-				is[i_80_] = (int) (Math.sin((double) i_80_ / 5.0 + (double) i_78_ / 5.0) * 5.0);
-				is_79_[i_80_] = (int) (Math.sin((double) i_80_ / 3.0 + (double) i_78_ / 5.0) * 5.0);
+				is[i_80_] = (int) (Math.sin(i_80_ / 5.0 + i_78_ / 5.0) * 5.0);
+				is_79_[i_80_] = (int) (Math.sin(i_80_ / 3.0 + i_78_ / 5.0) * 5.0);
 			}
 			method355(class124, i - method361(class124) / 2, i_75_, is, is_79_);
 		}

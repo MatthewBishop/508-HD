@@ -6,7 +6,7 @@ package rs;
 import com.jagex.cache.loaders.AnimFrameLoader;
 
 public abstract class Class133_Sub7 extends Class133 {
-	public boolean aBoolean3687 = false;
+	public boolean haveActions = false;
 
 	public abstract void method1855(int i, int i_0_, int i_1_);
 
@@ -22,7 +22,7 @@ public abstract class Class133_Sub7 extends Class133 {
 
 	public abstract void method1861(int i);
 
-	public abstract void method1862(int i, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_);
+	public abstract void draw(int i, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_);
 
 	public void method1863(int[][] is, int i, int i_9_, int i_10_, int i_11_, int i_12_) {
 		boolean bool = false;
@@ -45,12 +45,12 @@ public abstract class Class133_Sub7 extends Class133 {
 		int i_29_ = i_20_ < i_26_ ? i_20_ : i_26_;
 		int i_30_ = i_17_ < i_23_ ? i_17_ : i_23_;
 		if (i_12_ != 0) {
-			int i_31_ = ((int) (Math.atan2((double) (i_27_ - i_28_), (double) i_12_) * 325.95) & 0x7ff);
+			int i_31_ = ((int) (Math.atan2(i_27_ - i_28_, i_12_) * 325.95) & 0x7ff);
 			if (i_31_ != 0)
 				method1861(i_31_);
 		}
 		if (i_11_ != 0) {
-			int i_32_ = ((int) (Math.atan2((double) (i_30_ - i_29_), (double) i_11_) * 325.95) & 0x7ff);
+			int i_32_ = ((int) (Math.atan2(i_30_ - i_29_, i_11_) * 325.95) & 0x7ff);
 			if (i_32_ != 0)
 				method1858(i_32_);
 		}
@@ -84,7 +84,8 @@ public abstract class Class133_Sub7 extends Class133 {
 
 	public abstract void method1869(int i, int i_41_, int i_42_);
 
-	public abstract int method1781();
+	@Override
+	public abstract int getMinY();
 
 	public abstract Class133_Sub7 method1870(boolean bool, boolean bool_43_);
 
@@ -95,7 +96,8 @@ public abstract class Class133_Sub7 extends Class133 {
 	public abstract void method1873(AnimFrameLoader class14_sub2_sub15, int i,
 			AnimFrameLoader class14_sub2_sub15_44_, int i_45_, int[] is, boolean bool);
 
-	public abstract void method1792(int i, int i_46_, int i_47_, int i_48_, int i_49_, int i_50_, int i_51_, int i_52_,
+	@Override
+	public abstract void render(int i, int i_46_, int i_47_, int i_48_, int i_49_, int i_50_, int i_51_, int i_52_,
 			long l);
 
 	public abstract void method1874(int i);

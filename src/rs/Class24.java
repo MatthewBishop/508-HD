@@ -8,12 +8,12 @@ public class Class24 implements Runnable {
 
 	public static int anInt465 = 0;
 	public static int[] anIntArray467 = new int[32];
-	public static Class124 aClass124_470 = Class14_Sub2_Sub2.method263(1178, "mapfunction");
+	public static Class124 aClass124_470 = Class124.method263(1178, "mapfunction");
 	public static short[] aShortArray471;
 	public static Class124 aClass124_474;
 
 	static {
-		aClass124_474 = Class14_Sub2_Sub2.method263(1178, "rect_debug=");
+		aClass124_474 = Class124.method263(1178, "rect_debug=");
 	}
 
 	public void run() {
@@ -106,7 +106,7 @@ public class Class24 implements Runnable {
 	public static int method993(boolean var0, int var1, int var2, int var3) {
 		try {
 			byte var4 = 0;
-			Class14_Sub25 var5 = (Class14_Sub25) Class132.aClass55_2167.get((long) var3);
+			Class14_Sub25 var5 = (Class14_Sub25) Class132.aClass55_2167.get(var3);
 			if (var5 == null) {
 				boolean var11 = false;
 				return var4;
@@ -121,7 +121,7 @@ public class Class24 implements Runnable {
 						if (var5.anIntArray3178[var7] >= 0 && Class108.anInt1816 > var5.anIntArray3178[var7]) {
 							Class142 var8 = JunkTex.method605(96, var5.anIntArray3178[var7]);
 							if (var8.aClass55_2260 != null) {
-								Class14_Sub1 var9 = (Class14_Sub1) var8.aClass55_2260.get((long) var2);
+								Class14_Sub1 var9 = (Class14_Sub1) var8.aClass55_2260.get(var2);
 								if (var9 != null) {
 									if (!var0) {
 										var6 += var9.anInt2714;

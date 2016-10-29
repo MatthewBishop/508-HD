@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 import com.jagex.link.HashTable;
 import com.jagex.util.TimeUtil;
 
@@ -24,7 +25,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 	public HashTable aClass55_4781;
 	public int[] anIntArray4784;
 	public Class27 aClass27_4789;
-	public static Class124 aClass124_4790 = Class14_Sub2_Sub2.method263(1178, "Free world");
+	public static Class124 aClass124_4790 = Class124.method263(1178, "Free world");
 	public static Class124 aClass124_4794;
 	public int[] anIntArray4796;
 	public int[] anIntArray4798;
@@ -55,20 +56,21 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 	static {
 		aClass124_4770 = aClass124_4790;
 		anIntArray4804 = new int[] { 1, 0, 0, 0, 1, 0, 2, 1, 1, 1, 0 };
-		aClass124_4794 = Class14_Sub2_Sub2.method263(1178, "Hidden");
-		aClass124_4810 = Class14_Sub2_Sub2.method263(1178, "Loaded interfaces");
-		aClass124_4767 = Class14_Sub2_Sub2.method263(1178, "Loaded input handler");
+		aClass124_4794 = Class124.method263(1178, "Hidden");
+		aClass124_4810 = Class124.method263(1178, "Loaded interfaces");
+		aClass124_4767 = Class124.method263(1178, "Loaded input handler");
 		aClass124_4762 = aClass124_4810;
 		aClass124_4808 = aClass124_4794;
 		anIntArray4827 = new int[256];
-		aClass124_4814 = Class14_Sub2_Sub2.method263(1178, "settings=");
+		aClass124_4814 = Class124.method263(1178, "settings=");
 		aClass124_4773 = aClass124_4767;
 		aClass124_4829 = null;
 		aDouble4756 = -1.0;
-		aClass124_4831 = Class14_Sub2_Sub2.method263(1178, "");
+		aClass124_4831 = Class124.method263(1178, "");
 		aClass124_4761 = aClass124_4831;
 	}
 
+	@Override
 	public synchronized Class14_Sub9 method686() {
 		Class14_Sub9 class14_sub9 = null;
 		return class14_sub9;
@@ -92,6 +94,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 			aClass55_4781 = null;
 	}
 
+	@Override
 	public synchronized void method692(int i) {
 		if (aClass27_4789.method1049()) {
 			int i_4_ = aClass27_4789.anInt506 * anInt4806 / Class115.anInt1909;
@@ -101,7 +104,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 					aLong4838 = l;
 					break;
 				}
-				int i_5_ = (int) (((long) i_4_ + aLong4836 + (-aLong4838 + -1L)) / (long) i_4_);
+				int i_5_ = (int) ((i_4_ + aLong4836 + (-aLong4838 + -1L)) / i_4_);
 				aLong4838 += (long) i_5_ * (long) i_4_;
 				i -= i_5_;
 				aClass14_Sub9_Sub3_4835.method692(i_5_);
@@ -111,6 +114,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 		aClass14_Sub9_Sub3_4835.method692(i);
 	}
 
+	@Override
 	public synchronized Class14_Sub9 method688() {
 		Class14_Sub9_Sub3 class14_sub9_sub3 = aClass14_Sub9_Sub3_4835;
 		return class14_sub9_sub3;
@@ -149,8 +153,8 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 			return i_9_;
 		}
 		if (class127.anInt2097 > 0)
-			i_8_ = (int) (((double) i_8_
-					* Math.pow(0.5, ((double) class127.anInt2097 * ((double) class14_sub18.anInt3040 * 1.953125E-5))))
+			i_8_ = (int) ((i_8_
+					* Math.pow(0.5, (class127.anInt2097 * (class14_sub18.anInt3040 * 1.953125E-5))))
 					+ 0.5);
 		if (class127.aByteArray2109 != null) {
 			int i_10_ = class14_sub18.anInt3058;
@@ -195,7 +199,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 				}
 			}
 		}
-		Class14_Sub28 class14_sub28 = ((Class14_Sub28) aClass55_4781.get((long) anIntArray4775[i_19_]));
+		Class14_Sub28 class14_sub28 = ((Class14_Sub28) aClass55_4781.get(anIntArray4775[i_19_]));
 		if (class14_sub28 != null) {
 			Class14_Sub12_Sub1 class14_sub12_sub1 = class14_sub28.aClass14_Sub12_Sub1Array3212[i];
 			if (class14_sub12_sub1 != null) {
@@ -246,10 +250,10 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 		if (i_24_ >= -100)
 			aDouble4756 = -0.8864850902319418;
 		JunkTex.anIntArray4275[i] = i_25_;
-		Class14_Sub13 class14_sub13 = ((Class14_Sub13) JunkTex.aClass55_92.get((long) i));
+		Class14_Sub13 class14_sub13 = ((Class14_Sub13) JunkTex.aClass55_92.get(i));
 		if (class14_sub13 == null) {
 			class14_sub13 = new Class14_Sub13(TimeUtil.getTime() - -500L);
-			JunkTex.aClass55_92.put((long) i, class14_sub13);
+			JunkTex.aClass55_92.put(i, class14_sub13);
 		} else
 			class14_sub13.aLong2963 = TimeUtil.getTime() - -500L;
 	}
@@ -352,14 +356,14 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 		for (Class14_Sub17 class14_sub17 = ((Class14_Sub17) class14_sub16.aClass55_3003.getFirst()); class14_sub17 != null; class14_sub17 = (Class14_Sub17) class14_sub16.aClass55_3003
 						.getNext()) {
 			int i_39_ = (int) class14_sub17.key;
-			Class14_Sub28 class14_sub28 = ((Class14_Sub28) aClass55_4781.get((long) i_39_));
+			Class14_Sub28 class14_sub28 = ((Class14_Sub28) aClass55_4781.get(i_39_));
 			if (class14_sub28 == null) {
 				class14_sub28 = Class14_Sub2_Sub5.method285(i_39_, class9, (byte) 98);
 				if (class14_sub28 == null) {
 					bool = false;
 					continue;
 				}
-				aClass55_4781.put((long) i_39_, class14_sub28);
+				aClass55_4781.put(i_39_, class14_sub28);
 			}
 			if (!class14_sub28.method927(is, class120, true, class14_sub17.aByteArray3011))
 				bool = false;
@@ -381,6 +385,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 		}
 	}
 
+	@Override
 	public synchronized int method690() {
 		int i = 0;
 		return i;
@@ -457,6 +462,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 		}
 	}
 
+	@Override
 	public synchronized void method687(int[] is, int i, int i_61_) {
 		if (aClass27_4789.method1049()) {
 			int i_62_ = aClass27_4789.anInt506 * anInt4806 / Class115.anInt1909;
@@ -466,7 +472,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 					aLong4838 = l;
 					break;
 				}
-				int i_63_ = (int) (((long) i_62_ + aLong4836 + -aLong4838 + -1L) / (long) i_62_);
+				int i_63_ = (int) ((i_62_ + aLong4836 + -aLong4838 + -1L) / i_62_);
 				aLong4838 += (long) i_63_ * (long) i_62_;
 				i_61_ -= i_63_;
 				aClass14_Sub9_Sub3_4835.method687(is, i, i_63_);
@@ -716,11 +722,11 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 			if (i_97_ > class14_sub18.anInt3043)
 				i_98_ = i_98_ * class14_sub18.anInt3043 / i_97_;
 			i_98_ += anIntArray4819[class14_sub18.anInt3053] >> 39;
-			double d = Math.sin((double) (class14_sub18.anInt3049 & 0x1ff) * 0.01227184630308513);
-			i_96_ += (int) (d * (double) i_98_);
+			double d = Math.sin((class14_sub18.anInt3049 & 0x1ff) * 0.01227184630308513);
+			i_96_ += (int) (d * i_98_);
 		}
-		int i_99_ = (int) (((double) ((class14_sub18.aClass14_Sub12_Sub1_3059.anInt4895) * 256)
-				* Math.pow(2.0, (double) i_96_ * 3.255208333333333E-4) / (double) Class115.anInt1909) + 0.5);
+		int i_99_ = (int) (((class14_sub18.aClass14_Sub12_Sub1_3059.anInt4895) * 256
+				* Math.pow(2.0, i_96_ * 3.255208333333333E-4) / Class115.anInt1909) + 0.5);
 		int i_100_ = i_99_ >= 1 ? i_99_ : 1;
 		return i_100_;
 	}
@@ -791,7 +797,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 	public void method723(byte i, int i_108_, int i_109_) {
 		anIntArray4766[i_109_] = i_108_;
 		int i_110_ = -111 % ((i - 17) / 39);
-		anIntArray4796[i_109_] = (int) ((Math.pow(2.0, (double) i_108_ * 5.4931640625E-4) * 2097152.0) + 0.5);
+		anIntArray4796[i_109_] = (int) ((Math.pow(2.0, i_108_ * 5.4931640625E-4) * 2097152.0) + 0.5);
 	}
 
 	public void method724(int i, int i_111_) {
@@ -835,7 +841,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 		}
 		int i_114_ = class14_sub18.anInt3063;
 		if (i_114_ > 0) {
-			i_114_ -= (int) (Math.pow(2.0, ((double) (anIntArray4805[class14_sub18.anInt3053]) * 4.921259842519685E-4))
+			i_114_ -= (int) (Math.pow(2.0, ((anIntArray4805[class14_sub18.anInt3053]) * 4.921259842519685E-4))
 					* 16.0 + 0.5);
 			if (i_114_ < 0)
 				i_114_ = 0;
@@ -845,14 +851,14 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 		class14_sub18.anInt3043++;
 		Class127 class127 = class14_sub18.aClass127_3062;
 		class14_sub18.anInt3049 += class127.anInt2103;
-		double d = ((double) ((class14_sub18.anInt3037 - 60 << 8)
+		double d = (((class14_sub18.anInt3037 - 60 << 8)
 				+ (class14_sub18.anInt3063 * class14_sub18.anInt3056 >> 12)) * 5.086263020833333E-6);
 		boolean bool = false;
 		if (class127.anInt2097 > 0) {
 			if (class127.anInt2106 <= 0)
 				class14_sub18.anInt3040 += 128;
 			else
-				class14_sub18.anInt3040 += (int) ((Math.pow(2.0, (double) class127.anInt2106 * d) * 128.0) + 0.5);
+				class14_sub18.anInt3040 += (int) ((Math.pow(2.0, class127.anInt2106 * d) * 128.0) + 0.5);
 			if (class14_sub18.anInt3040 * class127.anInt2097 >= 819200)
 				bool = true;
 		}
@@ -860,7 +866,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 			if (class127.anInt2096 <= 0)
 				class14_sub18.anInt3058 += 128;
 			else
-				class14_sub18.anInt3058 += (int) ((Math.pow(2.0, d * (double) class127.anInt2096) * 128.0) + 0.5);
+				class14_sub18.anInt3058 += (int) ((Math.pow(2.0, d * class127.anInt2096) * 128.0) + 0.5);
 			for (/**/; (class14_sub18.anInt3045 < class127.aByteArray2109.length - 2
 					&& (class14_sub18.anInt3058 > ((class127.aByteArray2109[class14_sub18.anInt3045 + 2] << 8)
 							& 0xff00))); class14_sub18.anInt3045 += 2) {
@@ -874,7 +880,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 				&& (anIntArray4817[class14_sub18.anInt3053] & 0x1) == 0 && (class14_sub18.anInt3039 < 0
 						|| class14_sub18 != (aClass14_Sub18ArrayArray4825[class14_sub18.anInt3053][class14_sub18.anInt3039]))) {
 			if (class127.anInt2099 > 0)
-				class14_sub18.anInt3041 += (int) ((Math.pow(2.0, (double) class127.anInt2099 * d) * 128.0) + 0.5);
+				class14_sub18.anInt3041 += (int) ((Math.pow(2.0, class127.anInt2099 * d) * 128.0) + 0.5);
 			else
 				class14_sub18.anInt3041 += 128;
 			for (/**/; (class14_sub18.anInt3035 < class127.aByteArray2098.length - 2

@@ -13,7 +13,7 @@ import com.jagex.util.TimeUtil;
 
 public class Class104 {
 	public static Class124 aClass124_1736;
-	public static Class124 aClass124_1739 = Class14_Sub2_Sub2.method263(1178, " ");
+	public static Class124 aClass124_1739 = Class124.method263(1178, " ");
 	public static Class124 aClass124_1743;
 	public static Class124 aClass124_1748;
 	public static Class124 aClass124_1749;
@@ -22,10 +22,10 @@ public class Class104 {
 	public static Random aRandom1732 = new Random();
 	static {
 		aClass124_1736 = aClass124_1739;
-		aClass124_1749 = Class14_Sub2_Sub2.method263(1178, "yellow:");
+		aClass124_1749 = Class124.method263(1178, "yellow:");
 		aClass124_1748 = aClass124_1749;
 		aClass124_1743 = aClass124_1749;
-		aClass124_1750 = Class14_Sub2_Sub2.method263(1178, "<col=80ff00>");
+		aClass124_1750 = Class124.method263(1178, "<col=80ff00>");
 	}
 	public static Class124 method1532(int i, int i_0_) {
 		if (i != 4)

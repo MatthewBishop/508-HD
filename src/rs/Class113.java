@@ -44,7 +44,7 @@ public class Class113 {
 					}
 
 					if (Class14_Sub9_Sub1.aClass14_Sub16_4780 == null) {
-						Class14_Sub9_Sub1.aClass14_Sub16_4780 = Class14_Sub16.method875(Class9_Sub1.aClass9_2696,
+						Class14_Sub9_Sub1.aClass14_Sub16_4780 = Class14_Sub16.method875(Static2.aClass9_2696,
 								Class38.anInt2624, JunkTex.anInt3930);
 						if (Class14_Sub9_Sub1.aClass14_Sub16_4780 == null) {
 							var5 = false;
@@ -66,7 +66,7 @@ public class Class113 {
 						Class133_Sub5.aClass14_Sub9_Sub1_3625.method710(-28225, JunkTex.anInt1132);
 						Class133_Sub5.aClass14_Sub9_Sub1_3625.method719(0, Class35.aBoolean593,
 								Class14_Sub9_Sub1.aClass14_Sub16_4780);
-						Class9_Sub1.aClass9_2696 = null;
+						Static2.aClass9_2696 = null;
 						Class14_Sub2_Sub11.anInt3889 = 0;
 						JunkTex.aClass120_854 = null;
 						Class14_Sub9_Sub1.aClass14_Sub16_4780 = null;
@@ -85,7 +85,7 @@ public class Class113 {
 			JunkTex.aClass120_854 = null;
 			Class14_Sub2_Sub11.anInt3889 = 0;
 			Class14_Sub9_Sub1.aClass14_Sub16_4780 = null;
-			Class9_Sub1.aClass9_2696 = null;
+			Static2.aClass9_2696 = null;
 		}
 		return false;
 	}

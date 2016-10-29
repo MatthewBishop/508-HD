@@ -4,7 +4,7 @@
 package rs;
 
 public class Class140 {
-	public static Class124 aClass124_2234 = Class14_Sub2_Sub2.method263(1178, "");
+	public static Class124 aClass124_2234 = Class124.method263(1178, "");
 	public static int anInt2238;
 
 	public static void method1956(byte i) {
@@ -61,7 +61,7 @@ public class Class140 {
 				class94.anInt1487 = Static2.anInt1681;
 		} else if (i_0_ == 327) {
 			class94.anInt1465 = 150;
-			class94.anInt1578 = (int) (Math.sin((double) Class14_Sub2_Sub20.anInt4064 / 40.0) * 256.0) & 0x7ff;
+			class94.anInt1578 = (int) (Math.sin(Class14_Sub2_Sub20.anInt4064 / 40.0) * 256.0) & 0x7ff;
 			class94.anInt1543 = 5;
 			class94.anInt1550 = -1;
 		} else if (i_0_ == 328) {
@@ -69,7 +69,7 @@ public class Class140 {
 				class94.anInt1550 = 0;
 			else {
 				class94.anInt1465 = 150;
-				class94.anInt1578 = (int) (Math.sin((double) Class14_Sub2_Sub20.anInt4064 / 40.0) * 256.0) & 0x7ff;
+				class94.anInt1578 = (int) (Math.sin(Class14_Sub2_Sub20.anInt4064 / 40.0) * 256.0) & 0x7ff;
 				class94.anInt1543 = 5;
 				class94.anInt1550 = ((int) Class14_Sub3.aClass133_Sub1_Sub1_2748.aClass124_4922
 						.method1692(i + 29163) << 11) + 2047;

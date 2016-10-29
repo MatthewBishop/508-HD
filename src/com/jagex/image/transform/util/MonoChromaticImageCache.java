@@ -6,9 +6,9 @@ package com.jagex.image.transform.util;
 import com.jagex.image.transform.TexStatic;
 import com.jagex.link.Deque;
 
-public class Class149 {
+public class MonoChromaticImageCache {
 	public boolean aBoolean2402;
-	private Class14_Sub6[] aClass14_Sub6Array2401;
+	private MonoChromaticImageBuffer[] aClass14_Sub6Array2401;
 	private Deque aClass2_2394;
 	private int anInt2385;
 	private int anInt2392 = 0;
@@ -18,13 +18,13 @@ public class Class149 {
 
 	private int[][] anIntArrayArray2386;
 
-	public Class149(int i, int i_5_, int i_6_) {
+	public MonoChromaticImageCache(int i, int i_5_, int i_6_) {
 		aClass2_2394 = new Deque();
 		aBoolean2402 = false;
 		anInt2385 = i;
 		anIntArrayArray2386 = new int[anInt2385][i_6_];
 		anInt2393 = i_5_;
-		aClass14_Sub6Array2401 = new Class14_Sub6[anInt2393];
+		aClass14_Sub6Array2401 = new MonoChromaticImageBuffer[anInt2393];
 	}
 
 	public int[] method2014(int i) {
@@ -35,16 +35,16 @@ public class Class149 {
 				int[] is = anIntArrayArray2386[0];
 				return is;
 			}
-			Class14_Sub6 class14_sub6 = aClass14_Sub6Array2401[i];
+			MonoChromaticImageBuffer class14_sub6 = aClass14_Sub6Array2401[i];
 			if (class14_sub6 == null) {
 				aBoolean2402 = true;
 				if (anInt2385 <= anInt2392) {
-					Class14_Sub6 class14_sub6_1_ = (Class14_Sub6) aClass2_2394.getTail();
-					class14_sub6 = new Class14_Sub6(i, class14_sub6_1_.anInt2813);
+					MonoChromaticImageBuffer class14_sub6_1_ = (MonoChromaticImageBuffer) aClass2_2394.getTail();
+					class14_sub6 = new MonoChromaticImageBuffer(i, class14_sub6_1_.anInt2813);
 					aClass14_Sub6Array2401[class14_sub6_1_.anInt2814] = null;
 					class14_sub6_1_.unlink();
 				} else {
-					class14_sub6 = new Class14_Sub6(i, anInt2392);
+					class14_sub6 = new MonoChromaticImageBuffer(i, anInt2392);
 					anInt2392++;
 				}
 				aClass14_Sub6Array2401[i] = class14_sub6;

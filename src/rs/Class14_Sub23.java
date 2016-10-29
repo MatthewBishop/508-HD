@@ -9,7 +9,7 @@ public class Class14_Sub23 extends Linkable {
 	public static Class114 aClass114_3126;
 	public Class124 aClass124_3127;
 	public int anInt3128;
-	public static Class124 aClass124_3130 = Class14_Sub2_Sub2.method263(1178, "W-=hlen Sie eine Welt");
+	public static Class124 aClass124_3130 = Class124.method263(1178, "W-=hlen Sie eine Welt");
 	public byte aByte3131;
 	public Class124 aClass124_3132;
 	public static int anInt3134;

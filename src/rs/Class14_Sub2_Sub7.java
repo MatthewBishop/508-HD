@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.link.Cacheable;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 
@@ -15,7 +16,7 @@ public class Class14_Sub2_Sub7 extends Cacheable {
 	public static Class14_Sub2_Sub19 aClass14_Sub2_Sub19_3826;
 
 	static {
-		aClass124_3821 = Class14_Sub2_Sub2.method263(1178, "blinken1:");
+		aClass124_3821 = Class124.method263(1178, "blinken1:");
 	}
 
 	public static void method288(int i) {

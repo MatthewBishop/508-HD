@@ -6,10 +6,12 @@ package rs;
 import java.awt.FontMetrics;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.link.Linkable;
 
 public class Class14_Sub19 extends Linkable {
-	public static Class124 aClass124_3065 = Class14_Sub2_Sub2.method263(1178, ")4l=");
+	public static Class124 aClass124_3065 = Class124.method263(1178, ")4l=");
 	public int anInt3067;
 	public static Buffer aClass14_Sub10_3068;
 	public byte[] aByteArray3069;
@@ -26,7 +28,7 @@ public class Class14_Sub19 extends Linkable {
 
 	static {
 		anInt3071 = 0;
-		aClass124_3075 = Class14_Sub2_Sub2.method263(1178, "<img=1>");
+		aClass124_3075 = Class124.method263(1178, "<img=1>");
 		aClass94_3070 = null;
 		anIntArray3079 = new int[2];
 		anIntArray3074 = new int[] { 1, 0, -1, 0 };

@@ -9,7 +9,7 @@ import com.jagex.rt4.Class14_Sub2_Sub19_Sub1_Sub1;
 
 public class Class56 {
 	public static int[] anIntArray913;
-	public static Class124 aClass124_914 = Class14_Sub2_Sub2.method263(1178,
+	public static Class124 aClass124_914 = Class124.method263(1178,
 			"Please wait )2 attempting to reestablish)3");
 	public static int[] anIntArray917;
 	public static int anInt918;
@@ -44,7 +44,7 @@ public class Class56 {
 			is = Class14_Sub2_Sub12.aByteArrayArray3913;
 		} else {
 			i_0_ = 4;
-			is = Class5.aByteArrayArray139;
+			is = Static2.aByteArrayArray139;
 		}
 		for (int i_1_ = 0; i_1_ < i_0_; i_1_++) {
 			Class138.method1946(139);
@@ -71,7 +71,7 @@ public class Class56 {
 						}
 					}
 					if (!bool_5_)
-						Class107.method1547(i_1_, i_3_ * 8, i_2_ * 8, 8, 8, false);
+						ProceduralTexture.method1547(i_1_, i_3_ * 8, i_2_ * 8, 8, 8, false);
 				}
 			}
 		}

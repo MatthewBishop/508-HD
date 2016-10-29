@@ -208,7 +208,7 @@ public class LightManager {
 			RT4.method1778(0, 0);
 			RT4GL.method1638(0);
 			RT4GL.method1651();
-			RT4GL.method1632(RT4GL.anInt2038);
+			RT4GL.bindTexture2D(RT4GL.anInt2038);
 			gl.glDepthMask(false);
 			RT4GL.method1639(false);
 			gl.glBlendFunc(774, 1);

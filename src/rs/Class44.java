@@ -3,17 +3,19 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9;
+
 public class Class44 {
 	public static Class9 aClass9_725;
 	public static Class129 aClass129_726;
 	public static Class124 aClass124_728;
 	public static Class124 aClass124_729;
-	public static Class124 aClass124_730 = Class14_Sub2_Sub2.method263(1178, "Walk here");
-	public static Class124 aClass124_732 = Class14_Sub2_Sub2.method263(1178, "sl_arrows");
+	public static Class124 aClass124_730 = Class124.method263(1178, "Walk here");
+	public static Class124 aClass124_732 = Class124.method263(1178, "sl_arrows");
 
 	static {
 		aClass124_729 = aClass124_730;
-		aClass124_728 = Class14_Sub2_Sub2.method263(1178, "::rebuild");
+		aClass124_728 = Class124.method263(1178, "::rebuild");
 	}
 
 	public static void method1154(int i) {
@@ -54,42 +56,4 @@ public class Class44 {
 		return i_1_;
 	}
 
-	public static void method1159(int i, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_,
-			int i_10_) {
-		if (i_5_ != -13755)
-			aClass124_728 = null;
-		if (i_7_ == i_4_ && i_9_ == i_6_ && i_3_ == i_8_ && i == i_10_)
-			JunkTex.method652(i, i_5_ + 13858, i_3_, i_2_, i_7_, i_6_);
-		else {
-			int i_11_ = i_7_;
-			int i_12_ = i_7_ * 3;
-			int i_13_ = i_6_ * 3;
-			int i_14_ = i_6_;
-			int i_15_ = i_4_ * 3;
-			int i_16_ = i_9_ * 3;
-			int i_17_ = i_10_ * 3;
-			int i_18_ = i_8_ * 3;
-			int i_19_ = -i_16_ + i_17_ - (i_16_ - i_13_);
-			int i_20_ = i_12_ + (-i_15_ - i_15_ + i_18_);
-			int i_21_ = -i_6_ + (i_16_ + i - i_17_);
-			int i_22_ = -i_7_ + (i_3_ - (i_18_ - i_15_));
-			int i_23_ = i_15_ - i_12_;
-			int i_24_ = -i_13_ + i_16_;
-			for (int i_25_ = 128; i_25_ <= 4096; i_25_ += 128) {
-				int i_26_ = i_25_ * i_25_ >> 44;
-				int i_27_ = i_26_ * i_25_ >> 44;
-				int i_28_ = i_27_ * i_21_;
-				int i_29_ = i_20_ * i_26_;
-				int i_30_ = i_27_ * i_22_;
-				int i_31_ = i_19_ * i_26_;
-				int i_32_ = i_25_ * i_24_;
-				int i_33_ = i_25_ * i_23_;
-				int i_34_ = i_6_ + (i_31_ + (i_28_ + i_32_) >> 44);
-				int i_35_ = (i_30_ + i_29_ + i_33_ >> 44) + i_7_;
-				JunkTex.method652(i_34_, 101, i_35_, i_2_, i_11_, i_14_);
-				i_11_ = i_35_;
-				i_14_ = i_34_;
-			}
-		}
-	}
 }

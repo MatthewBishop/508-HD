@@ -9,7 +9,6 @@ import rs.Class138;
 import rs.Class140;
 import rs.Class14_Sub17;
 import rs.Class14_Sub2_Sub12;
-import rs.Class14_Sub2_Sub2;
 import rs.Class14_Sub3;
 import rs.Class18;
 import rs.Class33;
@@ -19,7 +18,7 @@ import rs.Class94;
 import rs.JunkTex;
 
 public class SceneCluster {
-	public static Class124 aClass124_1365 = Class14_Sub2_Sub2.method263(1178, "hint_headicons");
+	public static Class124 aClass124_1365 = Class124.method263(1178, "hint_headicons");
 	public static Class18 aClass18_1362;
 	public static Class94 aClass94_1372;
 	public static int anInt1355 = 0;
@@ -75,19 +74,8 @@ public class SceneCluster {
 
 	public static void method1416(int i) {
 		aClass94_1372 = null;
-		if (i != 2)
-			method1417(-97, -57, 88, -69, -59, -98);
 		aClass124_1365 = null;
 		aClass18_1362 = null;
 	}
 
-	public static void method1417(int i, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_) {
-		if (i_4_ != 0)
-			method1415(-44);
-		if (i < Class118.anInt1982 || JunkTex.anInt4327 < i_6_ || Class14_Sub17.anInt3005 > i_2_
-				|| Class59.anInt955 < i_3_)
-			Class14_Sub2_Sub12.method324(i, i_5_, i_3_, i_6_, (byte) -128, i_2_);
-		else
-			JunkTex.method674((byte) 92, i_6_, i_5_, i, i_2_, i_3_);
-	}
 }

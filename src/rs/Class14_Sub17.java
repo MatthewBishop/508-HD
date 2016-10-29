@@ -3,6 +3,8 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.link.Cache;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.Class14_Sub27;
@@ -10,11 +12,10 @@ import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
 
 public class Class14_Sub17 extends Linkable {
 	public static Class87 aClass87_3004;
-	public static int anInt3005;
-	public static Class124 aClass124_3006 = Class14_Sub2_Sub2.method263(1178, "May");
+	public static Class124 aClass124_3006 = Class124.method263(1178, "May");
 	public static Class124 aClass124_3008;
 	public static Class124 aClass124_3009;
-	public static Class124 aClass124_3010 = Class14_Sub2_Sub2.method263(1178, "Sep");
+	public static Class124 aClass124_3010 = Class124.method263(1178, "Sep");
 	public byte[] aByteArray3011;
 	public static int anInt3012;
 	public static Class124 aClass124_3014;
@@ -39,23 +40,22 @@ public class Class14_Sub17 extends Linkable {
 	public static Class9 aClass9_3034;
 
 	static {
-		anInt3005 = 0;
-		aClass124_3015 = Class14_Sub2_Sub2.method263(1178, "Aug");
-		aClass124_3019 = Class14_Sub2_Sub2.method263(1178, "Clientscript error in: ");
-		aClass124_3008 = Class14_Sub2_Sub2.method263(1178, "Nov");
+		aClass124_3015 = Class124.method263(1178, "Aug");
+		aClass124_3019 = Class124.method263(1178, "Clientscript error in: ");
+		aClass124_3008 = Class124.method263(1178, "Nov");
 		anInt3020 = 0;
-		aClass124_3016 = Class14_Sub2_Sub2.method263(1178, "Oct");
-		aClass124_3009 = Class14_Sub2_Sub2.method263(1178, "Apr");
-		aClass124_3024 = Class14_Sub2_Sub2.method263(1178, "Dec");
-		aClass124_3027 = Class14_Sub2_Sub2.method263(1178, "Jun");
-		aClass124_3014 = Class14_Sub2_Sub2.method263(1178, ")4g");
-		aClass124_3029 = Class14_Sub2_Sub2.method263(1178, "Jul");
-		aClass124_3028 = Class14_Sub2_Sub2.method263(1178, "Loading interfaces )2 ");
-		aClass124_3022 = Class14_Sub2_Sub2.method263(1178, "Feb");
-		aClass124_3017 = Class14_Sub2_Sub2.method263(1178, "Jan");
+		aClass124_3016 = Class124.method263(1178, "Oct");
+		aClass124_3009 = Class124.method263(1178, "Apr");
+		aClass124_3024 = Class124.method263(1178, "Dec");
+		aClass124_3027 = Class124.method263(1178, "Jun");
+		aClass124_3014 = Class124.method263(1178, ")4g");
+		aClass124_3029 = Class124.method263(1178, "Jul");
+		aClass124_3028 = Class124.method263(1178, "Loading interfaces )2 ");
+		aClass124_3022 = Class124.method263(1178, "Feb");
+		aClass124_3017 = Class124.method263(1178, "Jan");
 		anInt3012 = 0;
-		aClass124_3031 = Class14_Sub2_Sub2.method263(1178, "Mar");
-		aClass124_3026 = Class14_Sub2_Sub2.method263(1178, "<col=00ff80>");
+		aClass124_3031 = Class124.method263(1178, "Mar");
+		aClass124_3026 = Class124.method263(1178, "<col=00ff80>");
 		aClass124_3033 = aClass124_3028;
 		aClass124Array3025 = new Class124[] { aClass124_3017, aClass124_3022, aClass124_3031, aClass124_3009,
 				aClass124_3006, aClass124_3027, aClass124_3029, aClass124_3015, aClass124_3010, aClass124_3016,
@@ -84,29 +84,9 @@ public class Class14_Sub17 extends Linkable {
 		return class14_sub2_sub19_sub1s_4_;
 	}
 
-	public static void method879(int i, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_) {
-		int i_11_ = i_8_ + i;
-		int i_12_ = -i_8_ + i_7_;
-		int i_13_ = i_8_ + i_10_;
-		for (int i_14_ = i; i_14_ < i_11_; i_14_++)
-			Class51.method1201(Static2.anIntArrayArray4038[i_14_], i_10_, i_9_, -5973, i_5_);
-		if (i_6_ != 255)
-			method878((byte) 127);
-		int i_15_ = i_9_ - i_8_;
-		for (int i_16_ = i_7_; i_12_ < i_16_; i_16_--)
-			Class51.method1201(Static2.anIntArrayArray4038[i_16_], i_10_, i_9_, -5973, i_5_);
-		for (int i_17_ = i_11_; i_12_ >= i_17_; i_17_++) {
-			int[] is = Static2.anIntArrayArray4038[i_17_];
-			Class51.method1201(is, i_10_, i_13_, i_6_ ^ ~0x17ab, i_5_);
-			Class51.method1201(is, i_15_, i_9_, -5973, i_5_);
-		}
-	}
-
 	public static void method880(int i) {
 		aClass87_3004 = null;
 		aClass124_3024 = null;
-		if (i != 1)
-			method879(-24, 21, 8, 58, -53, -45, 96);
 		aClass20_3018 = null;
 		aClass124_3010 = null;
 		aClass9_3034 = null;
@@ -163,10 +143,10 @@ public class Class14_Sub17 extends Linkable {
 				f_35_ = fs[i_28_ + 1][i_25_ + 1];
 			} else if (i_29_ != 0 || i_24_ != 128) {
 				f_33_ = fs_26_[i_28_][i_25_];
-				float f_36_ = (float) i_29_ / 128.0F;
+				float f_36_ = i_29_ / 128.0F;
 				f_34_ = fs_23_[i_28_][i_25_];
 				f_33_ += f_36_ * (-f_33_ + fs_26_[i_28_ + 1][i_25_]);
-				float f_37_ = (float) i_24_ / 128.0F;
+				float f_37_ = i_24_ / 128.0F;
 				float f_38_ = fs_26_[i_28_][i_25_ + 1];
 				f_35_ = fs[i_28_][i_25_];
 				f_34_ += f_36_ * (fs_23_[i_28_ + 1][i_25_] - f_34_);
@@ -203,7 +183,7 @@ public class Class14_Sub17 extends Linkable {
 		int i_46_ = (i_28_ << 39) + i_29_;
 		int i_47_ = (class14_sub27.method921(i_46_, i_44_, i_45_, f_33_, f_34_, f_35_, bool ? i_32_ & ~0xff : i_32_,
 				(is == null ? 0.0F
-						: (float) (i_44_
+						: (i_44_
 								- JunkTex.method647(i_25_, i_19_ ^ ~0x1deb3a54, i_29_, i_24_, is, i_28_))
 								/ f)));
 		return i_47_;

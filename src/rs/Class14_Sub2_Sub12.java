@@ -10,9 +10,9 @@ import com.jagex.rt4.ShadowManager;
 
 public class Class14_Sub2_Sub12 extends Cacheable {
 	public static SoftCache aClass52_3894;
-	public static Class124 aClass124_3895 = Class14_Sub2_Sub2.method263(1178, "blinken2:");
+	public static Class124 aClass124_3895 = Class124.method263(1178, "blinken2:");
 	public int anInt3896;
-	public static Class124 aClass124_3897 = Class14_Sub2_Sub2.method263(1178, "Loading textures )2 ");
+	public static Class124 aClass124_3897 = Class124.method263(1178, "Loading textures )2 ");
 	public Class124[] aClass124Array3899;
 	public int[] anIntArray3900;
 	public int anInt3901;
@@ -35,7 +35,7 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 		anInt3912 = -1;
 		aLongArray3914 = new long[32];
 		anIntArray3916 = new int[25];
-		aClass124_3915 = (Class14_Sub2_Sub2.method263(1178, "(U0a )2 non)2existant gosub script)2num: "));
+		aClass124_3915 = (Class124.method263(1178, "(U0a )2 non)2existant gosub script)2num: "));
 		anIntArray3917 = new int[] { 16776960, 16711680, 65280, 65535, 16711935, 16777215 };
 	}
 
@@ -96,7 +96,7 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 	}
 
 	public static int method322(int i, byte i_6_, int i_7_) {
-		Class14_Sub25 class14_sub25 = ((Class14_Sub25) Class132.aClass55_2167.get((long) i));
+		Class14_Sub25 class14_sub25 = ((Class14_Sub25) Class132.aClass55_2167.get(i));
 		if (class14_sub25 == null) {
 			int i_8_ = 0;
 			return i_8_;
@@ -123,12 +123,4 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 		return class14_sub29.aClass37_3255.aLong634;
 	}
 
-	public static void method324(int i, int i_15_, int i_16_, int i_17_, byte i_18_, int i_19_) {
-		int i_21_ = Class67.method1301((byte) -84, i_19_, Class14_Sub17.anInt3005, Class59.anInt955);
-		int i_22_ = Class67.method1301((byte) -112, i_16_, Class14_Sub17.anInt3005, Class59.anInt955);
-		int i_23_ = Class67.method1301((byte) -103, i, Class118.anInt1982, JunkTex.anInt4327);
-		int i_24_ = Class67.method1301((byte) -60, i_17_, Class118.anInt1982, JunkTex.anInt4327);
-		for (int i_25_ = i_21_; i_22_ >= i_25_; i_25_++)
-			Class51.method1201(Static2.anIntArrayArray4038[i_25_], i_23_, i_24_, -5973, i_15_);
-	}
 }

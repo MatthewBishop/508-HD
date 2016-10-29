@@ -13,14 +13,14 @@ public class Class14_Sub8_Sub29 extends Class14_Sub8 {
 	}
 
 	@Override
-	public void method472() {
+	public void postDecode() {
 		TexStatic.method321(256);
 	}
 
 	@Override
-	public int[][] method474(int i) {
-		int[][] is = aClass95_2838.method1481(1, i);
-		if (aClass95_2838.aBoolean1628) {
+	public int[][] outputColour(int i) {
+		int[][] is = triChromaticImageCache.method1481(1, i);
+		if (triChromaticImageCache.aBoolean1628) {
 			int[] is_17_ = method483(1, i);
 			int[] is_18_ = method483(2, i);
 			int[] is_19_ = is[0];
@@ -44,7 +44,7 @@ public class Class14_Sub8_Sub29 extends Class14_Sub8 {
 	}
 
 	@Override
-	public void method475(int i, Buffer class14_sub10) {
+	public void decode(int i, Buffer class14_sub10) {
 		int i_32_ = i;
 		do {
 			if (i_32_ != 0) {
@@ -54,14 +54,14 @@ public class Class14_Sub8_Sub29 extends Class14_Sub8 {
 				anInt4578 = class14_sub10.readUShort((byte) 109) << 4;
 				break;
 			}
-			aBoolean2862 = class14_sub10.readUByte() == 1;
+			monoChromatic = class14_sub10.readUByte() == 1;
 		} while (false);
 	}
 
 	@Override
-	public int[] method484(int i) {
-		int[] is = aClass149_2851.method2014(i);
-		if (aClass149_2851.aBoolean2402) {
+	public int[] outputMonochrome(int i) {
+		int[] is = monoChromaticImageCache.method2014(i);
+		if (monoChromaticImageCache.aBoolean2402) {
 			int[] is_34_ = method483(1, i);
 			int[] is_35_ = method483(2, i);
 			for (int i_36_ = 0; TexStatic.anInt1876 > i_36_; i_36_++) {

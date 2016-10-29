@@ -112,6 +112,7 @@ public class Class14_Sub2_Sub16_Sub1 extends Class14_Sub2_Sub16 {
 		aByteArrayArray5065 = is_61_;
 	}
 
+	@Override
 	public void method349(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, boolean bool) {
 		int i_5_ = i_0_ + i_1_ * Class92.anInt1432;
 		int i_6_ = Class92.anInt1432 - i_2_;
@@ -150,6 +151,7 @@ public class Class14_Sub2_Sub16_Sub1 extends Class14_Sub2_Sub16 {
 		}
 	}
 
+	@Override
 	public void method363(int i, int i_44_, int i_45_, int i_46_, int i_47_, int i_48_, int i_49_, boolean bool) {
 		int i_50_ = i_44_ + i_45_ * Class92.anInt1432;
 		int i_51_ = Class92.anInt1432 - i_46_;

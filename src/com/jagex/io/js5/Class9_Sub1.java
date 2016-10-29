@@ -1,43 +1,31 @@
 /* Class9_Sub1 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-package rs;
-
-import java.math.BigInteger;
+package com.jagex.io.js5;
 
 import com.jagex.io.Buffer;
 
+import rs.Class1;
+import rs.Class114;
+import rs.Class133_Sub3;
+import rs.Class7;
+import rs.Class7_Sub3_Sub1;
+import rs.JunkTex;
+import rs.Static2;
+
 public class Class9_Sub1 extends Class9 {
-	public int anInt2687;
-	public static int anInt2688;
-	public Class114 aClass114_2689;
 	public boolean aBoolean2691 = false;
-	public int anInt2692;
-	public Class114 aClass114_2693;
-	public static Class9 aClass9_2696;
 	public volatile boolean aBoolean2697 = false;
 	public volatile boolean[] aBooleanArray2698;
+	public Class114 aClass114_2689;
+	public Class114 aClass114_2693;
+	public int anInt2687;
+
+	public int anInt2692;
+
 	public int anInt2700;
+
 	public int anInt2703 = -1;
-	public static BigInteger aBigInteger2704 = (new BigInteger(
-			"7162900525229798032761816791230527296329313291232324290237849263501208207972894053929065636522363163621000728841182238772712427862772219676577293600221789"));
-
-	public void method164(int i, int i_0_) {
-		if (method153(i_0_, -1)) {
-			int i_1_ = 79 % ((i + 86) / 36);
-			if (aClass114_2689 == null || aBooleanArray2698 == null || !aBooleanArray2698[i_0_])
-				JunkTex.method633((byte) 2, 100, this, anInt2687, true, anIntArray202[i_0_], i_0_);
-			else
-				Class63.method1277(-5761, this, i_0_, aClass114_2689);
-		}
-	}
-
-	public void method174(byte i, int i_2_) {
-		if (i > -62)
-			anInt2703 = 62;
-		if (method153(i_2_, -1))
-			Class133_Sub3.method1832(i_2_, (byte) -73, anInt2687);
-	}
 
 	public Class9_Sub1(Class114 class114, Class114 class114_3_, int i, boolean bool, boolean bool_4_, boolean bool_5_) {
 		super(bool, bool_4_);
@@ -48,6 +36,41 @@ public class Class9_Sub1 extends Class9 {
 		JunkTex.method969(anInt2687, this, (byte) -71);
 	}
 
+	public int getCompletion(int i, int i_17_) {
+		if (!method153(i_17_, -1)) {
+			int i_18_ = 0;
+			return i_18_;
+		}
+		if (i != 0)
+			method186((byte) 83);
+		if (anObjectArray192[i_17_] != null) {
+			int i_19_ = 100;
+			return i_19_;
+		}
+		if (aBooleanArray2698[i_17_]) {
+			int i_20_ = 100;
+			return i_20_;
+		}
+		int i_21_ = Static2.method1829(anInt2687, i_17_);
+		return i_21_;
+	}
+
+	public void method164(int i, int i_0_) {
+		if (method153(i_0_, -1)) {
+			if (aClass114_2689 == null || aBooleanArray2698 == null || !aBooleanArray2698[i_0_])
+				JunkTex.method633((byte) 2, 100, this, anInt2687, true, anIntArray202[i_0_], i_0_);
+			else
+				Static2.method1277(-5761, this, i_0_, aClass114_2689);
+		}
+	}
+
+	public void method174(byte i, int i_2_) {
+		if (i > -62)
+			anInt2703 = 62;
+		if (method153(i_2_, -1))
+			Class133_Sub3.method1832(i_2_, (byte) -73, anInt2687);
+	}
+
 	public void method180(int i, int i_6_, int i_7_) {
 		anInt2692 = i_7_;
 		if (i != -6)
@@ -56,14 +79,7 @@ public class Class9_Sub1 extends Class9 {
 		if (aClass114_2693 == null)
 			JunkTex.method633((byte) 0, 126, this, 255, true, anInt2692, anInt2687);
 		else
-			Class63.method1277(-5761, this, anInt2687, aClass114_2693);
-	}
-
-	public static void method181(int i) {
-		aBigInteger2704 = null;
-		aClass9_2696 = null;
-		if (i != 97)
-			aBigInteger2704 = null;
+			Static2.method1277(-5761, this, anInt2687, aClass114_2693);
 	}
 
 	public void method182(Class114 class114, int i, byte[] is, boolean bool, byte i_8_) {
@@ -144,34 +160,6 @@ public class Class9_Sub1 extends Class9 {
 		}
 	}
 
-	public int method178(int i, int i_17_) {
-		if (!method153(i_17_, -1)) {
-			int i_18_ = 0;
-			return i_18_;
-		}
-		if (i != 0)
-			method186((byte) 83);
-		if (anObjectArray192[i_17_] != null) {
-			int i_19_ = 100;
-			return i_19_;
-		}
-		if (aBooleanArray2698[i_17_]) {
-			int i_20_ = 100;
-			return i_20_;
-		}
-		int i_21_ = Class133_Sub3.method1829(anInt2687, -127, i_17_);
-		return i_21_;
-	}
-
-	public static boolean method184(byte i, int i_22_) {
-		if (i < 42) {
-			boolean bool = false;
-			return bool;
-		}
-		boolean bool = i_22_ >= 97 && i_22_ <= 122 || i_22_ >= 65 && i_22_ <= 90;
-		return bool;
-	}
-
 	public void method185(int i) {
 		aBooleanArray2698 = new boolean[anObjectArray192.length];
 		for (int i_23_ = 0; aBooleanArray2698.length > i_23_; i_23_++)
@@ -183,7 +171,7 @@ public class Class9_Sub1 extends Class9 {
 			int i_24_ = 0;
 			if (i == -24792) {
 				for (/**/; i_24_ < aBooleanArray2698.length; i_24_++) {
-					if (anIntArray203[i_24_] > 0) {
+					if (groupFileCount[i_24_] > 0) {
 						JunkTex.method2018(this, i_24_, aClass114_2689, true);
 						anInt2703 = i_24_;
 					}
@@ -203,7 +191,7 @@ public class Class9_Sub1 extends Class9 {
 			int i_26_ = 99;
 			return i_26_;
 		}
-		int i_27_ = Class133_Sub3.method1829(255, -121, anInt2687);
+		int i_27_ = Static2.method1829(255, anInt2687);
 		if (i < 54)
 			method183(-9, null, false, (byte) -91, false);
 		if (i_27_ >= 100)

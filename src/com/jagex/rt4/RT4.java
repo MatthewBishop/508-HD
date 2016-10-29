@@ -164,7 +164,7 @@ public class RT4 {
 		}
 		class14_sub8_sub12.anInt4289 = i_7_;
 		class14_sub8_sub12.anInt4282 = i_6_;
-		class14_sub8_sub12.method472();
+		class14_sub8_sub12.postDecode();
 		TexStatic.method1117(0, i_3_, i_8_);
 		for (int i_10_ = 0; i_10_ < i_3_; i_10_++)
 			class14_sub8_sub12.method542(-2, i_10_, is[i_10_]);

@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.zip.CRC32;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.FileOnDisk;
 import com.jagex.link.Linkable;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.RT4;
@@ -64,10 +65,10 @@ public class Class14_Sub14 extends Linkable {
 			Class135.anInt2189 = 0;
 			JunkTex.aBoolean3397 = false;
 			Class14_Sub23.anInt3135 = 255;
-			JunkTex.method595(257411150, class43);
+			JunkTex.method595(class43);
 		} else {
 			JunkTex.anInt4190 = 3;
-			Class30 class30 = null;
+			FileOnDisk fileOnDisk = null;
 			JunkTex.method495((byte) -47, true);
 			Class15.aBoolean374 = true;
 			Static2.anInt1691 = 127;
@@ -93,12 +94,12 @@ public class Class14_Sub14 extends Linkable {
 				while (class31.anInt529 == 0)
 					Util.sleep(1L);
 				if (class31.anInt529 == 1) {
-					class30 = (Class30) class31.anObject530;
+					fileOnDisk = (FileOnDisk) class31.anObject530;
 					int i_0_ = 0;
 					int i_1_;
 					byte[] is;
-					for (is = new byte[(int) class30.method1061((byte) -111)]; is.length > i_0_; i_0_ += i_1_) {
-						i_1_ = class30.method1060(is, 0, i_0_, is.length - i_0_);
+					for (is = new byte[(int) fileOnDisk.method1061((byte) -111)]; is.length > i_0_; i_0_ += i_1_) {
+						i_1_ = fileOnDisk.method1060(is, 0, i_0_, is.length - i_0_);
 						if (i_1_ == -1)
 							throw new IOException("EOF");
 					}
@@ -108,8 +109,8 @@ public class Class14_Sub14 extends Linkable {
 				/* empty */
 			}
 			try {
-				if (class30 != null)
-					class30.method1057(25861);
+				if (fileOnDisk != null)
+					fileOnDisk.method1057(25861);
 			} catch (Exception exception) {
 				/* empty */
 			}

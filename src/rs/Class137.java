@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.cache.anim.Animation;
+import com.jagex.io.js5.Class9;
 import com.jagex.rt4.Class11;
 import com.jagex.rt4.Class14_Sub2_Sub19;
 import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
@@ -26,27 +27,14 @@ public class Class137 {
 	public static Class124 aClass124_2206;
 
 	static {
-		aClass124_2195 = Class14_Sub2_Sub2.method263(1178, ")4");
-		aClass124_2200 = Class14_Sub2_Sub2.method263(1178, "null");
+		aClass124_2195 = Class124.method263(1178, ")4");
+		aClass124_2200 = Class124.method263(1178, "null");
 		anIntArrayArray2203 = new int[104][104];
 		anIntArray2205 = new int[100];
-		aClass124_2204 = Class14_Sub2_Sub2.method263(1178, "purple:");
+		aClass124_2204 = Class124.method263(1178, "purple:");
 		aClass124_2202 = aClass124_2204;
-		aClass124_2206 = Class14_Sub2_Sub2.method263(1178, ":clanreq:");
+		aClass124_2206 = Class124.method263(1178, ":clanreq:");
 		aClass124_2201 = aClass124_2204;
-	}
-
-	public static void method1939(int i, boolean bool, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_,
-			int i_6_, int i_7_) {
-		if (Class118.anInt1982 > i_5_ || i_5_ > JunkTex.anInt4327 || Class118.anInt1982 > i
-				|| JunkTex.anInt4327 < i || i_7_ < Class118.anInt1982 || i_7_ > JunkTex.anInt4327
-				|| i_6_ < Class118.anInt1982 || i_6_ > JunkTex.anInt4327 || i_2_ < Class14_Sub17.anInt3005
-				|| i_2_ > Class59.anInt955 || i_4_ < Class14_Sub17.anInt3005 || i_4_ > Class59.anInt955
-				|| i_3_ < Class14_Sub17.anInt3005 || Class59.anInt955 < i_3_ || Class14_Sub17.anInt3005 > i_1_
-				|| Class59.anInt955 < i_1_)
-			Class108.method1557((byte) 14, i_2_, i_0_, i, i_4_, i_3_, i_5_, i_7_, i_6_, i_1_);
-		else
-			Class44.method1159(i_1_, i_0_, i_6_, i, -13755, i_2_, i_5_, i_7_, i_4_, i_3_);
 	}
 
 	public static void method1940(byte i) {
@@ -107,7 +95,7 @@ public class Class137 {
 					&& (i_10_ == class94.anInt1540 || (i_10_ == -1412584499 && Class67.aClass94_1060 == class94))) {
 				int i_17_;
 				if (i == -1) {
-					Class9.anIntArray215[Class14_Sub17.anInt3012] = i_12_ + class94.anInt1523;
+					Static2.anIntArray215[Class14_Sub17.anInt3012] = i_12_ + class94.anInt1523;
 					Class74.anIntArray1135[Class14_Sub17.anInt3012] = i_15_ + class94.anInt1583;
 					Class110.anIntArray1854[Class14_Sub17.anInt3012] = class94.anInt1518;
 					anIntArray2205[Class14_Sub17.anInt3012] = class94.anInt1545;
@@ -135,7 +123,7 @@ public class Class137 {
 						if (JunkTex.aBoolean4188 && Class59.aBoolean954) {
 							int i_21_ = JunkTex.anInt4640;
 							i_21_ -= JunkTex.anInt4132;
-							int i_22_ = Class107.anInt1804;
+							int i_22_ = ProceduralTexture.anInt1804;
 							if (i_21_ < Class108.anInt1824)
 								i_21_ = Class108.anInt1824;
 							i_22_ -= Canvas_Sub2.anInt63;
@@ -289,7 +277,7 @@ public class Class137 {
 								method1942(i_17_, i_23_, i_24_, class94.anInt1548, class94.aClass94Array1486, i_25_,
 										i_18_ - class94.anInt1490, i_26_, (byte) 93, -class94.anInt1547 + i_19_);
 							Class14_Sub15 class14_sub15 = ((Class14_Sub15) (Class14_Sub30.aClass55_3275
-									.get((long) class94.anInt1548)));
+									.get(class94.anInt1548)));
 							if (class14_sub15 != null) {
 								if (class14_sub15.anInt2991 == 0 && !Class133_Sub5.aBoolean3628
 										&& JunkTex.anInt4629 >= i_23_
@@ -326,7 +314,7 @@ public class Class137 {
 													Class14_Sub2_Sub19 class14_sub2_sub19 = (class94
 															.method1479((byte) 91, i_34_));
 													if (class14_sub2_sub19 != null)
-														class14_sub2_sub19.method391(i_37_, i_38_);
+														class14_sub2_sub19.drawReg(i_37_, i_38_);
 													else if (Class94.aBoolean1554)
 														Class103.method1531(class94);
 												}
@@ -354,7 +342,7 @@ public class Class137 {
 														Class103.method1531(class94);
 													else if ((class94 == (JunkTex.aClass94_4446))
 															&& (i_34_ == (Class122.anInt2054))) {
-														int i_41_ = (-(Class111.anInt1865) + (Class107.anInt1804));
+														int i_41_ = (-(Class111.anInt1865) + (ProceduralTexture.anInt1804));
 														if (i_41_ < 5 && i_41_ > -5)
 															i_41_ = 0;
 														int i_42_ = ((JunkTex.anInt4640)
@@ -365,7 +353,7 @@ public class Class137 {
 															i_42_ = 0;
 															i_41_ = 0;
 														}
-														class14_sub2_sub19.method398(i_37_ + i_42_, i_38_ + i_41_, 128);
+														class14_sub2_sub19.drawSpriteTransparency(i_37_ + i_42_, i_38_ + i_41_, 128);
 														if (i_10_ != -1) {
 															Class94 class94_43_ = (class94s[(i_10_ & 0xffff)]);
 															int i_44_ = (Class25.anInt477);
@@ -402,9 +390,9 @@ public class Class137 {
 														}
 													} else if (((Class94.aClass94_1469) != class94)
 															|| ((JunkTex.anInt4314) != i_34_))
-														class14_sub2_sub19.method391(i_37_, i_38_);
+														class14_sub2_sub19.drawReg(i_37_, i_38_);
 													else
-														class14_sub2_sub19.method398(i_37_, i_38_, 128);
+														class14_sub2_sub19.drawSpriteTransparency(i_37_, i_38_, 128);
 												}
 											}
 											i_34_++;
@@ -497,7 +485,7 @@ public class Class137 {
 															(class94.anInt1545 / 2 + i_19_), i_52_, 0);
 												else if (i_20_ == 0) {
 													if ((class94.anInt1518 == i_51_) && (i_50_ == (class94.anInt1545)))
-														class14_sub2_sub19.method391(i_18_, i_19_);
+														class14_sub2_sub19.drawReg(i_18_, i_19_);
 													else
 														class14_sub2_sub19.method389(i_18_, i_19_, class94.anInt1518,
 																(class94.anInt1545));
@@ -518,11 +506,11 @@ public class Class137 {
 															for (int i_56_ = 0; i_56_ < i_53_; i_56_++) {
 																for (int i_57_ = 0; (i_57_ < i_54_); i_57_++) {
 																	if (i_20_ == 0)
-																		class14_sub2_sub19.method391(
+																		class14_sub2_sub19.drawReg(
 																				i_56_ * i_51_ + i_18_,
 																				i_19_ + i_57_ * i_50_);
 																	else
-																		class14_sub2_sub19.method398(
+																		class14_sub2_sub19.drawSpriteTransparency(
 																				i_18_ + i_56_ * i_51_,
 																				i_19_ + i_50_ * i_57_,
 																				-(i_20_ & 0xff) + 256);
@@ -566,7 +554,7 @@ public class Class137 {
 											if (Class94.aBoolean1554)
 												Class103.method1531(class94);
 										} else
-											class14_sub2_sub19.method391(i_18_, i_19_);
+											class14_sub2_sub19.drawReg(i_18_, i_19_);
 									}
 								} else if (class94.anInt1489 == 6) {
 									boolean bool = Class89.method1440(class94, 10151);
@@ -586,7 +574,7 @@ public class Class137 {
 											if (class133_sub7 == null)
 												Class103.method1531(class94);
 											else
-												i_61_ = -class133_sub7.method1781() / 2;
+												i_61_ = -class133_sub7.getMinY() / 2;
 										}
 									} else if (class94.anInt1543 != 5) {
 										if (i_60_ != -1) {
@@ -632,8 +620,8 @@ public class Class137 {
 												+ (i_18_ + class94.anInt1518 / 2));
 										if (!class94.aBoolean1599) {
 											RT4GL.method1644(i_66_, i_65_, i_63_, i_64_);
-											RT4GL.method1635((float) class94.aShort1528,
-													((float) class94.aShort1602 * 1.5F));
+											RT4GL.method1635(class94.aShort1528,
+													(class94.aShort1602 * 1.5F));
 										} else
 											RT4GL.method1642(i_66_, i_65_, (class94.anInt1513), (class94.aShort1602),
 													i_63_, i_64_);
@@ -653,10 +641,10 @@ public class Class137 {
 										int i_68_ = (((Class3.sin[class94.anInt1465])
 												* class94.anInt1513) >> 48);
 										if (!class94.aBoolean1455)
-											class133_sub7.method1862(0, class94.anInt1578, 0, class94.anInt1465, 0,
+											class133_sub7.draw(0, class94.anInt1578, 0, class94.anInt1465, 0,
 													i_68_, i_67_);
 										else
-											class133_sub7.method1862(0, class94.anInt1578, class94.anInt1516,
+											class133_sub7.draw(0, class94.anInt1578, class94.anInt1516,
 													class94.anInt1465, class94.anInt1459,
 													i_61_ + (i_68_ + class94.anInt1482), i_67_ + class94.anInt1482);
 										if (class94.aBoolean1606)

@@ -3,14 +3,16 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class9;
+
 public class Class54 {
 	public static volatile boolean aBoolean877 = false;
 	public static boolean aBoolean879 = true;
 	public static int anInt880;
 	public static boolean aBoolean881 = false;
-	public static Class124 aClass124_883 = Class14_Sub2_Sub2.method263(1178, ")3google)3com");
+	public static Class124 aClass124_883 = Class124.method263(1178, ")3google)3com");
 	public static Class9 aClass9_885;
-	public static Class124 aClass124_886 = Class14_Sub2_Sub2.method263(1178, " )2> ");
+	public static Class124 aClass124_886 = Class124.method263(1178, " )2> ");
 	public static int anInt887 = 0;
 	public static Class87 aClass87_888;
 

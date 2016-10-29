@@ -23,9 +23,9 @@ public class Class148_Sub2 extends Class148 {
 		i += anInt2375;
 		i_0_ += anInt2374;
 		GL gl = RT4GL.gl;
-		RT4GL.method1632(anInt3691);
+		RT4GL.bindTexture2D(anInt3691);
 		method2012(1);
-		gl.glTranslatef((float) i, (float) (RT4GL.anInt2034 - i_0_), 0.0F);
+		gl.glTranslatef((float) i, (float) (RT4GL.canvasHeight - i_0_), 0.0F);
 		gl.glCallList(anInt3694);
 		gl.glLoadIdentity();
 	}
@@ -35,10 +35,10 @@ public class Class148_Sub2 extends Class148 {
 		i += anInt2375;
 		i_1_ += anInt2374;
 		GL gl = RT4GL.gl;
-		RT4GL.method1632(anInt3691);
+		RT4GL.bindTexture2D(anInt3691);
 		method2012(1);
 		gl.glColor4f(1.0F, 1.0F, 1.0F, (float) i_2_ / 256.0F);
-		gl.glTranslatef((float) i, (float) (RT4GL.anInt2034 - i_1_), 0.0F);
+		gl.glTranslatef((float) i, (float) (RT4GL.canvasHeight - i_1_), 0.0F);
 		gl.glCallList(anInt3694);
 		gl.glLoadIdentity();
 	}
@@ -120,7 +120,7 @@ public class Class148_Sub2 extends Class148 {
 			anInt3691 = is_11_[0];
 			anInt3690 = Class11.anInt267;
 		}
-		RT4GL.method1632(anInt3691);
+		RT4GL.bindTexture2D(anInt3691);
 		gl.glTexImage2D(3553, 0, 6408, anInt3696, anInt3693, 0, 6408, 5121, bytebuffer);
 		Class11.anInt263 += bytebuffer.limit() - anInt3695;
 		anInt3695 = bytebuffer.limit();

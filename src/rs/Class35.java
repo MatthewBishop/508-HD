@@ -12,12 +12,12 @@ import com.jagex.rt4.Class25;
 
 public class Class35 {
 	public int anInt587 = 0;
-	public static Class124 aClass124_588 = Class14_Sub2_Sub2.method263(1178, " <col=00ff80>");
+	public static Class124 aClass124_588 = Class124.method263(1178, " <col=00ff80>");
 	public static Deque aClass2_589;
 	public static boolean aBoolean593;
 	public static Class14_Sub2_Sub19[] aClass14_Sub2_Sub19Array596;
-	public static Class124 aClass124_597 = Class14_Sub2_Sub2.method263(1178, "zap");
-	public static Class124 aClass124_598 = Class14_Sub2_Sub2.method263(1178, "Benutzen");
+	public static Class124 aClass124_597 = Class124.method263(1178, "zap");
+	public static Class124 aClass124_598 = Class124.method263(1178, "Benutzen");
 	public static Cache aClass20_599;
 	public static float aFloat600;
 	public static Class124 aClass124_601;
@@ -27,7 +27,7 @@ public class Class35 {
 	static {
 		aClass2_589 = new Deque();
 		aClass20_599 = new Cache(64);
-		aClass124_601 = Class14_Sub2_Sub2.method263(1178, "m");
+		aClass124_601 = Class124.method263(1178, "m");
 		anInt602 = -1;
 	}
 

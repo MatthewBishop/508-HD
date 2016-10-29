@@ -8,6 +8,7 @@ import java.awt.Container;
 import java.awt.Graphics;
 import java.awt.Insets;
 
+import com.jagex.io.js5.Class9;
 import com.jagex.link.HashTable;
 import com.jagex.rt4.RT4;
 
@@ -21,7 +22,7 @@ public class Class132 {
 	static {
 		aClass55_2167 = new HashTable(32);
 		aBoolean2170 = false;
-		aClass124_2172 = Class14_Sub2_Sub2.method263(1178, "(U0a )2 in: ");
+		aClass124_2172 = Class124.method263(1178, "(U0a )2 in: ");
 	}
 
 	public static void method1776(boolean bool) {

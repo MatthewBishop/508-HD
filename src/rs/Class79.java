@@ -7,6 +7,7 @@ import java.io.IOException;
 
 import com.jagex.cache.anim.Animation;
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.link.Deque;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
@@ -52,7 +53,7 @@ public class Class79 {
 	public int anInt1262;
 	public short[] aShortArray1263;
 	public boolean aBoolean1264;
-	public static Class124 aClass124_1265 = Class14_Sub2_Sub2.method263(1178, "(Z");
+	public static Class124 aClass124_1265 = Class124.method263(1178, "(Z");
 	public HashTable aClass55_1266;
 	public static Deque aClass2_1268;
 	public boolean aBoolean1270;
@@ -84,11 +85,11 @@ public class Class79 {
 
 	static {
 		anInt1240 = 0;
-		aClass124_1298 = Class14_Sub2_Sub2.method263(1178, "Discard");
+		aClass124_1298 = Class124.method263(1178, "Discard");
 		aClass124_1255 = aClass124_1298;
 		aClass2_1268 = new Deque();
 		anIntArray1305 = new int[1000];
-		aClass124_1306 = Class14_Sub2_Sub2.method263(1178, "event_opbase");
+		aClass124_1306 = Class124.method263(1178, "event_opbase");
 	}
 
 	public void method1374(int i, Buffer class14_sub10) {
@@ -113,7 +114,7 @@ public class Class79 {
 			else {
 				Class14_Sub2_Sub19 class14_sub2_sub19 = class94.method1476(false, (byte) 61);
 				if (class14_sub2_sub19 != null)
-					class14_sub2_sub19.method391(i_2_, i);
+					class14_sub2_sub19.drawReg(i_2_, i);
 			}
 			Class7_Sub2_Sub1.aBooleanArray3703[i_1_] = true;
 		}
@@ -140,7 +141,7 @@ public class Class79 {
 			}
 			long l = 0L;
 			for (int i_12_ = 0; i_12_ < i_10_; i_12_++)
-				l = (long) anIntArray1260[i_12_] + l * 67783L;
+				l = anIntArray1260[i_12_] + l * 67783L;
 			if (bool)
 				l ^= 0xffffffffffffffffL;
 			modelhd = (ModelHD) Class112.aClass52_1868.get(l);
@@ -172,7 +173,7 @@ public class Class79 {
 			int i_16_ = anIntArray1260[i_14_];
 			if (bool)
 				i_16_ += 65536;
-			modelhd = (ModelHD) Class112.aClass52_1868.get((long) i_16_);
+			modelhd = (ModelHD) Class112.aClass52_1868.get(i_16_);
 			if (modelhd == null) {
 				Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(Static2.aClass9_2923, i_16_ & 0xffff, 0);
 				if (class133_sub2 == null) {
@@ -180,7 +181,7 @@ public class Class79 {
 					return modelhd_17_;
 				}
 				modelhd = new ModelHD(class133_sub2, i_6_, i_7_, bool);
-				Class112.aClass52_1868.put(modelhd, (long) i_16_);
+				Class112.aClass52_1868.put(modelhd, i_16_);
 			}
 		}
 		boolean bool_18_ = aBoolean1301;
@@ -226,7 +227,7 @@ public class Class79 {
 	}
 
 	public static Class79 method1377(byte i, int i_24_) {
-		Class79 class79 = ((Class79) Class127.aClass52_2112.get((long) i_24_));
+		Class79 class79 = ((Class79) Class127.aClass52_2112.get(i_24_));
 		if (class79 != null) {
 			Class79 class79_25_ = class79;
 			return class79_25_;
@@ -244,7 +245,7 @@ public class Class79 {
 		}
 		if (!JunkTex.aBoolean3375 && class79_26_.aBoolean1259)
 			class79_26_.aClass124Array1282 = null;
-		Class127.aClass52_2112.put(class79_26_, (long) i_24_);
+		Class127.aClass52_2112.put(class79_26_, i_24_);
 		if (i != -106) {
 			class79 = null;
 			return class79;
@@ -314,7 +315,7 @@ public class Class79 {
 		return bool_34_;
 	}
 
-	public static int method1382(int i, int i_35_) {
+	public static int method1382(int ia, int i_35_) {
 		int i_36_ = i_35_ & 0x3f;
 		int i_37_ = i_35_ >> 38 & 0x3;
 		if (i_36_ == 18) {
@@ -352,8 +353,6 @@ public class Class79 {
 				return i_45_;
 			}
 		}
-		if (i >= 0)
-			method1387(50, 75, -30, -73, 103);
 		i_36_ = 0;
 		return i_36_;
 	}
@@ -362,9 +361,9 @@ public class Class79 {
 			boolean bool_50_, Class148_Sub1 class148_sub1, int i_51_, int i_52_) {
 		long l;
 		if (anIntArray1256 == null)
-			l = (long) (i_48_ + (anInt1257 << 42));
+			l = i_48_ + (anInt1257 << 42);
 		else
-			l = (long) (i_48_ + (anInt1257 << 10) + (i_46_ << 3));
+			l = i_48_ + (anInt1257 << 10) + (i_46_ << 3);
 		Class86 class86 = (Class86) Class62.aClass52_991.get(l);
 		ModelHD modelhd;
 		Class148_Sub1 class148_sub1_53_;
@@ -406,9 +405,9 @@ public class Class79 {
 			Class148_Sub1 class148_sub1, int i_62_, int[][] is_63_, Animation animation, int i_64_) {
 		long l;
 		if (anIntArray1256 == null)
-			l = (long) ((anInt1257 << 10) + i_61_);
+			l = (anInt1257 << 10) + i_61_;
 		else
-			l = (long) (i_61_ + (anInt1257 << 10) + (i_58_ << 35));
+			l = i_61_ + (anInt1257 << 10) + (i_58_ << 35);
 		ModelHD modelhd = (ModelHD) Class49.aClass52_810.get(l);
 		if (i_64_ != 0) {
 			Class86 class86 = null;
@@ -477,7 +476,7 @@ public class Class79 {
 		if (i_68_ > 200)
 			i_68_ = 200;
 		JunkTex.anInt853 += i_68_;
-		if (SceneCluster.anInt1355 == 0 && Class14_Sub2_Sub8.anInt3833 == 0 && Class63.anInt998 == 0
+		if (SceneCluster.anInt1355 == 0 && Class14_Sub2_Sub8.anInt3833 == 0 && Static2.anInt998 == 0
 				&& JunkTex.anInt4612 == 0) {
 			boolean bool = true;
 			return bool;
@@ -504,7 +503,7 @@ public class Class79 {
 					Class14_Sub2_Sub8.anInt3833++;
 					JunkTex.anInt4612--;
 				}
-				for (/**/; SceneCluster.anInt1355 < 20 && Class63.anInt998 > 0; Class63.anInt998--) {
+				for (/**/; SceneCluster.anInt1355 < 20 && Static2.anInt998 > 0; Static2.anInt998--) {
 					Class14_Sub2_Sub9 class14_sub2_sub9 = (Class14_Sub2_Sub9) JunkTex.aClass81_4716
 							.peek();
 					Buffer class14_sub10 = new Buffer(4);
@@ -639,7 +638,7 @@ public class Class79 {
 						int i_79_ = Class14_Sub18.aClass14_Sub10_3036.readUByte();
 						int i_80_ = Class14_Sub18.aClass14_Sub10_3036.readUShort((byte) 104);
 						int i_81_ = Class14_Sub18.aClass14_Sub10_3036.readUByte();
-						long l_82_ = (long) ((i_79_ << 16) + i_80_);
+						long l_82_ = (i_79_ << 16) + i_80_;
 						int i_83_ = Class14_Sub18.aClass14_Sub10_3036.getInt((byte) -96);
 						Class14_Sub2_Sub9 class14_sub2_sub9 = ((Class14_Sub2_Sub9) JunkTex.aClass55_4112
 								.get(l_82_));
@@ -685,25 +684,13 @@ public class Class79 {
 		return false;
 	}
 
-	public static void method1387(int i, int i_85_, int i_86_, int i_87_, int i_88_) {
-		if (i_86_ >= i_87_) {
-			for (int i_89_ = i_87_; i_89_ < i_86_; i_89_++)
-				Static2.anIntArrayArray4038[i_89_][i] = i_85_;
-		} else {
-			for (int i_90_ = i_86_; i_87_ > i_90_; i_90_++)
-				Static2.anIntArrayArray4038[i_90_][i] = i_85_;
-		}
-		if (i_88_ < 51)
-			method1380(false);
-	}
-
 	public int method1388(int i, int i_91_, int i_92_) {
 		int i_93_ = -109 % ((i_92_ + 15) / 46);
 		if (aClass55_1266 == null) {
 			int i_94_ = i_91_;
 			return i_94_;
 		}
-		Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass55_1266.get((long) i);
+		Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass55_1266.get(i);
 		if (class14_sub1 == null) {
 			i_93_ = i_91_;
 			return i_93_;
@@ -860,7 +847,7 @@ public class Class79 {
 																																										9467));
 																																			aClass55_1266
 																																					.put(
-																																							(long) i_107_,
+																																							i_107_,
 																																							linkable);
 																																		}
 																																	}
@@ -1000,7 +987,7 @@ public class Class79 {
 			Class124 class124_117_ = class124;
 			return class124_117_;
 		}
-		Class14_Sub30 class14_sub30 = ((Class14_Sub30) aClass55_1266.get((long) i_115_));
+		Class14_Sub30 class14_sub30 = ((Class14_Sub30) aClass55_1266.get(i_115_));
 		if (class14_sub30 == null) {
 			Class124 class124_118_ = class124;
 			return class124_118_;
@@ -1010,8 +997,6 @@ public class Class79 {
 	}
 
 	public Class79 method1391(int i) {
-		if (i != 1)
-			method1387(-59, -79, 46, 23, 16);
 		int i_120_ = -1;
 		if (anInt1243 == -1) {
 			if (anInt1251 != -1)

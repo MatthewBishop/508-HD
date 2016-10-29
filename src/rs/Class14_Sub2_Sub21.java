@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class9;
 import com.jagex.link.Cacheable;
 
 public class Class14_Sub2_Sub21 extends Cacheable {
@@ -23,7 +24,7 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 	static {
 		anIntArray4077 = new int[] { 2, 0, 0, 2, 0, 0, 0, 4, 4 };
 		anIntArray4078 = new int[4096];
-		aClass124_4070 = Class14_Sub2_Sub2.method263(1178, "skill)2");
+		aClass124_4070 = Class124.method263(1178, "skill)2");
 		aClass124_4083 = aClass124_4070;
 	}
 
@@ -128,7 +129,7 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 			JunkTex.anInt4602++;
 			JunkTex.anInt4599 = Class14_Sub4.anInt2790;
 			JunkTex.anInt4640 = JunkTex.anInt4724;
-			Class107.anInt1804 = Class14_Sub9_Sub3.anInt4848;
+			ProceduralTexture.anInt1804 = Class14_Sub9_Sub3.anInt4848;
 			Class7_Sub3_Sub1.anInt3714 = Class127.anInt2105;
 			JunkTex.anInt3367 = Class111.anInt1860;
 			Class139.anInt2230 = Class118.anInt1976;
@@ -175,7 +176,7 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 			for (int i_25_ = 0; i_25_ < anIntArray4073.length && is.length > i_25_; i_25_++) {
 				int i_26_ = Class14_Sub2_Sub4.anIntArray3791[method433(-94, i_25_)];
 				if (i_26_ > 0)
-					class14_sub10.method827((long) is[i_25_], i_26_, (byte) 118);
+					class14_sub10.method827(is[i_25_], i_26_, (byte) 118);
 			}
 		}
 	}
@@ -196,7 +197,7 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 				i_27_, (byte) -73, i_28_);
 		if (class94.aClass94Array1486 != null)
 			JunkTex.method340(class94.aClass94Array1486, bool, class94.anInt1548, i_27_, (byte) -56, i_28_);
-		Class14_Sub15 class14_sub15 = ((Class14_Sub15) Class14_Sub30.aClass55_3275.get((long) class94.anInt1548));
+		Class14_Sub15 class14_sub15 = ((Class14_Sub15) Class14_Sub30.aClass55_3275.get(class94.anInt1548));
 		if (class14_sub15 != null)
 			JunkTex.method566(i_27_, class14_sub15.anInt2999, -1, i_28_, bool);
 	}
