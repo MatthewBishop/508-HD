@@ -7,7 +7,7 @@ import java.io.IOException;
 
 import com.jagex.io.Buffer;
 import com.jagex.map.SceneCluster;
-import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
+import com.jagex.rt4.AbstractSprite_Sub1;
 import com.jagex.rt4.lights.Light;
 import com.jagex.rt4.lights.LightRenderer;
 import com.jagex.util.TimeUtil;
@@ -16,7 +16,7 @@ public abstract class Class133 {
 	public static Class124 aClass124_2175 = Class124.method263(1178, "Spieler");
 	public static Class124 aClass124_2183;
 	public static Class124 aClass124_2188 = Class124.method263(1178, "Players");
-	public static Class14_Sub2_Sub19_Sub1[] aClass14_Sub2_Sub19_Sub1Array2186;
+	public static AbstractSprite_Sub1[] aClass14_Sub2_Sub19_Sub1Array2186;
 	public static int[] anIntArray2176 = new int[100];
 	public static int[] anIntArray2179 = { 768, 1024, 1280, 512, 1536, 256, 0, 1792 };
 

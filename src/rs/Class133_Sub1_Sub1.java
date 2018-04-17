@@ -51,37 +51,37 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 		int i_0_ = 0;
 		if (i != 31673)
 			method1805(-105, null);
-		if (class9.method171(i ^ 0x882, Class7_Sub3.anInt2681))
+		if (class9.method171(Class7_Sub3.anInt2681))
 			i_0_++;
-		if (class9.method171(i ^ 0x882, JunkTex.anInt2389))
+		if (class9.method171(JunkTex.anInt2389))
 			i_0_++;
-		if (class9.method171(29499, Class36.anInt629))
+		if (class9.method171(Class36.anInt629))
 			i_0_++;
-		if (class9.method171(i - 2174, Class14_Sub2_Sub3.anInt3787))
+		if (class9.method171(Class14_Sub2_Sub3.anInt3787))
 			i_0_++;
-		if (class9.method171(29499, Class153.anInt2450))
+		if (class9.method171(Class153.anInt2450))
 			i_0_++;
-		if (class9.method171(29499, Class133_Sub4.anInt3584))
+		if (class9.method171(Class133_Sub4.anInt3584))
 			i_0_++;
-		if (class9.method171(29499, Static2.anInt5087))
+		if (class9.method171(Static2.anInt5087))
 			i_0_++;
-		if (class9.method171(29499, SceneCluster.anInt1369))
+		if (class9.method171(SceneCluster.anInt1369))
 			i_0_++;
-		if (class9.method171(i - 2174, Class38.anInt2618))
+		if (class9.method171(Class38.anInt2618))
 			i_0_++;
-		if (class9.method171(i - 2174, Class58.anInt937))
+		if (class9.method171(Class58.anInt937))
 			i_0_++;
-		if (class9.method171(i - 2174, Class111.anInt1857))
+		if (class9.method171(Class111.anInt1857))
 			i_0_++;
-		if (class9.method171(29499, JunkTex.anInt4735))
+		if (class9.method171(JunkTex.anInt4735))
 			i_0_++;
-		if (class9.method171(i - 2174, Class82.anInt1334))
+		if (class9.method171(Class82.anInt1334))
 			i_0_++;
-		if (class9.method171(29499, Static2.anInt2688))
+		if (class9.method171(Static2.anInt2688))
 			i_0_++;
-		if (class9.method171(29499, JunkTex.anInt2720))
+		if (class9.method171(JunkTex.anInt2720))
 			i_0_++;
-		if (class9.method171(29499, JunkTex.anInt4310))
+		if (class9.method171(JunkTex.anInt4310))
 			i_0_++;
 		int i_1_ = i_0_;
 		return i_1_;
@@ -188,22 +188,22 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 					int i_32_ = i_26_ / 2;
 					int i_33_ = -i_26_ / 2;
 					int i_34_ = -(i_32_ * i_24_) + i_23_ * i_31_ >> 48;
-					int i_35_ = JunkTex.method1017(i_29_ + anInt3495, Class14_Sub2_Sub3.anInt3785, (byte) -125,
+					int i_35_ = JunkTex.method1017(i_29_ + anInt3495, Class14_Sub2_Sub3.gameLevel, (byte) -125,
 							i_30_ + anInt3436);
 					int i_36_ = i_31_ * i_24_ + i_23_ * i_32_ >> 16;
-					int i_37_ = JunkTex.method1017(i_36_ + anInt3495, Class14_Sub2_Sub3.anInt3785, (byte) 92,
+					int i_37_ = JunkTex.method1017(i_36_ + anInt3495, Class14_Sub2_Sub3.gameLevel, (byte) 92,
 							i_34_ + anInt3436);
 					int i_38_ = i_25_ / 2;
 					int i_39_ = i_38_ * i_24_ + i_33_ * i_23_ >> 16;
 					int i_40_ = i_38_ * i_23_ - i_33_ * i_24_ >> 48;
 					int i_41_ = i_26_ / 2;
-					int i_42_ = JunkTex.method1017(i_39_ + anInt3495, Class14_Sub2_Sub3.anInt3785, (byte) 15,
+					int i_42_ = JunkTex.method1017(i_39_ + anInt3495, Class14_Sub2_Sub3.gameLevel, (byte) 15,
 							i_40_ + anInt3436);
 					int i_43_ = i_25_ / 2;
 					int i_44_ = i_23_ * i_41_ + i_43_ * i_24_ >> 48;
 					int i_45_ = i_23_ * i_43_ - i_41_ * i_24_ >> 16;
 					int i_46_ = i_37_ <= i_35_ ? i_37_ : i_35_;
-					int i_47_ = JunkTex.method1017(i_44_ + anInt3495, Class14_Sub2_Sub3.anInt3785, (byte) -127,
+					int i_47_ = JunkTex.method1017(i_44_ + anInt3495, Class14_Sub2_Sub3.gameLevel, (byte) -127,
 							anInt3436 + i_45_);
 					i_22_ = i_47_ + i_35_;
 					if (i_22_ > i_42_ + i_37_)
@@ -298,8 +298,8 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 		anInt3493 = ((i_53_ & 0x3f) >> 3) + 1;
 		anInt3436 += (-i_56_ + anInt3493) * 64;
 		anInt3495 += (anInt3493 - i_56_) * 64;
-		anInt4902 = class14_sub10.method780((byte) -77);
-		anInt4904 = class14_sub10.method780((byte) -77);
+		anInt4902 = class14_sub10.method780();
+		anInt4904 = class14_sub10.method780();
 		anInt4916 = 0;
 		for (int i_57_ = 0; i_57_ < 12; i_57_++) {
 			int i_58_ = class14_sub10.readUByte();
@@ -309,11 +309,11 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 				int i_59_ = class14_sub10.readUByte();
 				int i_60_ = i_59_ + (i_58_ << 8);
 				if (i_57_ == 0 && i_60_ == 65535) {
-					i_55_ = class14_sub10.readUShort((byte) 105);
+					i_55_ = class14_sub10.readUShort();
 					break;
 				}
 				if (i_60_ >= 32768) {
-					i_60_ = ProceduralTexture.anIntArray1809[i_60_ - 32768];
+					i_60_ = Static2.anIntArray1809[i_60_ - 32768];
 					is[i_57_] = Class66.method1294(i_60_, 1073741824);
 					int i_61_ = JunkTex.method605(78, i_60_).anInt2310;
 					if (i_61_ != 0)
@@ -329,28 +329,28 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 				i_64_ = 0;
 			is_62_[i_63_] = i_64_;
 		}
-		anInt3433 = class14_sub10.readUShort((byte) 104);
+		anInt3433 = class14_sub10.readUShort();
 		if (anInt3433 == 65535)
 			anInt3433 = -1;
 		if (i >= -115)
 			method1804((byte) -20);
-		anInt3471 = class14_sub10.readUShort((byte) 110);
+		anInt3471 = class14_sub10.readUShort();
 		if (anInt3471 == 65535)
 			anInt3471 = -1;
 		anInt3454 = anInt3471;
-		anInt3457 = class14_sub10.readUShort((byte) 123);
+		anInt3457 = class14_sub10.readUShort();
 		if (anInt3457 == 65535)
 			anInt3457 = -1;
-		anInt3484 = class14_sub10.readUShort((byte) 122);
+		anInt3484 = class14_sub10.readUShort();
 		if (anInt3484 == 65535)
 			anInt3484 = -1;
-		anInt3463 = class14_sub10.readUShort((byte) 116);
+		anInt3463 = class14_sub10.readUShort();
 		if (anInt3463 == 65535)
 			anInt3463 = -1;
-		anInt3432 = class14_sub10.readUShort((byte) 105);
+		anInt3432 = class14_sub10.readUShort();
 		if (anInt3432 == 65535)
 			anInt3432 = -1;
-		anInt3456 = class14_sub10.readUShort((byte) 107);
+		anInt3456 = class14_sub10.readUShort();
 		if (anInt3456 == 65535)
 			anInt3456 = -1;
 		aClass124_4922 = Static2.method1174(class14_sub10.method796(31), (byte) 94).method1685(0);
@@ -358,7 +358,7 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 		if (!bool)
 			anInt4928 = 0;
 		else
-			anInt4928 = class14_sub10.readUShort((byte) 113);
+			anInt4928 = class14_sub10.readUShort();
 		int i_65_ = anInt4917;
 		anInt4917 = class14_sub10.readUByte();
 		if (anInt4917 == 0)
@@ -367,9 +367,9 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 			int i_66_ = anInt4909;
 			int i_67_ = anInt4940;
 			int i_68_ = anInt4932;
-			anInt4909 = class14_sub10.readUShort((byte) 110);
-			anInt4940 = class14_sub10.readUShort((byte) 116);
-			anInt4932 = class14_sub10.readUShort((byte) 114);
+			anInt4909 = class14_sub10.readUShort();
+			anInt4940 = class14_sub10.readUShort();
+			anInt4932 = class14_sub10.readUShort();
 			if (i_65_ != anInt4917 || anInt4909 != i_66_ || i_67_ != anInt4940 || anInt4932 != i_68_)
 				Class133_Sub4.method1839(this, (byte) 7);
 		}

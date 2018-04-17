@@ -42,7 +42,7 @@ public class Class7_Sub1 extends Class7 {
 			if (JunkTex.anInt3419 > 1)
 				Class67.aClass94_1060 = null;
 		} else {
-			int i = ProceduralTexture.anInt1804;
+			int i = Static2.anInt1804;
 			i -= Canvas_Sub2.anInt63;
 			int i_3_ = JunkTex.anInt4640;
 			if (i < Class48.anInt798)
@@ -91,7 +91,7 @@ public class Class7_Sub1 extends Class7 {
 				} else if ((Class103.anInt1730 != 1 && !Class127.method1754(128, (JunkTex.anInt4729) - 1))
 						|| JunkTex.anInt4729 <= 2) {
 					if (JunkTex.anInt4729 > 0)
-						ProceduralTexture.method1551(-23473);
+						Static2.method1551(-23473);
 				} else
 					Static2.method382((byte) 127);
 				Class67.aClass94_1060 = null;

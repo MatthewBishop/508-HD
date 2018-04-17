@@ -137,18 +137,18 @@ public class Class133_Sub2 extends Class133 {
 		Buffer class14_sub10_20_ = new Buffer(is);
 		Buffer class14_sub10_21_ = new Buffer(is);
 		class14_sub10.position = is.length - 18;
-		int i = class14_sub10.readUShort((byte) 125);
-		int i_22_ = class14_sub10.readUShort((byte) 125);
+		int i = class14_sub10.readUShort();
+		int i_22_ = class14_sub10.readUShort();
 		int i_23_ = class14_sub10.readUByte();
 		int i_24_ = class14_sub10.readUByte();
 		int i_25_ = class14_sub10.readUByte();
 		int i_26_ = class14_sub10.readUByte();
 		int i_27_ = class14_sub10.readUByte();
 		int i_28_ = class14_sub10.readUByte();
-		int i_29_ = class14_sub10.readUShort((byte) 110);
-		int i_30_ = class14_sub10.readUShort((byte) 109);
-		int i_31_ = class14_sub10.readUShort((byte) 126);
-		int i_32_ = class14_sub10.readUShort((byte) 107);
+		int i_29_ = class14_sub10.readUShort();
+		int i_30_ = class14_sub10.readUShort();
+		int i_31_ = class14_sub10.readUShort();
+		int i_32_ = class14_sub10.readUShort();
 		int i_33_ = 0;
 		int i_34_ = i_33_;
 		i_33_ += i;
@@ -246,7 +246,7 @@ public class Class133_Sub2 extends Class133 {
 		class14_sub10_20_.position = i_40_;
 		class14_sub10_21_.position = i_37_;
 		for (int i_55_ = 0; i_55_ < i_22_; i_55_++) {
-			aShortArray3533[i_55_] = (short) class14_sub10.readUShort((byte) 113);
+			aShortArray3533[i_55_] = (short) class14_sub10.readUShort();
 			if (i_24_ == 1) {
 				int i_56_ = class14_sub10_18_.readUByte();
 				if ((i_56_ & 0x1) == 1) {
@@ -266,9 +266,9 @@ public class Class133_Sub2 extends Class133 {
 				}
 			}
 			if (i_25_ == 255)
-				aByteArray3546[i_55_] = class14_sub10_19_.method780((byte) -77);
+				aByteArray3546[i_55_] = class14_sub10_19_.method780();
 			if (i_26_ == 1)
-				aByteArray3541[i_55_] = class14_sub10_20_.method780((byte) -77);
+				aByteArray3541[i_55_] = class14_sub10_20_.method780();
 			if (i_27_ == 1)
 				anIntArray3532[i_55_] = class14_sub10_21_.readUByte();
 		}
@@ -321,9 +321,9 @@ public class Class133_Sub2 extends Class133 {
 		class14_sub10.position = i_43_;
 		for (int i_64_ = 0; i_64_ < i_23_; i_64_++) {
 			aByteArray3514[i_64_] = (byte) 0;
-			aShortArray3520[i_64_] = (short) class14_sub10.readUShort((byte) 127);
-			aShortArray3531[i_64_] = (short) class14_sub10.readUShort((byte) 103);
-			aShortArray3511[i_64_] = (short) class14_sub10.readUShort((byte) 123);
+			aShortArray3520[i_64_] = (short) class14_sub10.readUShort();
+			aShortArray3531[i_64_] = (short) class14_sub10.readUShort();
+			aShortArray3511[i_64_] = (short) class14_sub10.readUShort();
 		}
 		if (aByteArray3535 != null) {
 			boolean bool_65_ = false;
@@ -504,8 +504,8 @@ public class Class133_Sub2 extends Class133 {
 		Buffer class14_sub10_111_ = new Buffer(is);
 		Buffer class14_sub10_112_ = new Buffer(is);
 		class14_sub10.position = is.length - 23;
-		int i = class14_sub10.readUShort((byte) 120);
-		int i_113_ = class14_sub10.readUShort((byte) 124);
+		int i = class14_sub10.readUShort();
+		int i_113_ = class14_sub10.readUShort();
 		int i_114_ = class14_sub10.readUByte();
 		int i_115_ = class14_sub10.readUByte();
 		int i_116_ = class14_sub10.readUByte();
@@ -513,11 +513,11 @@ public class Class133_Sub2 extends Class133 {
 		int i_118_ = class14_sub10.readUByte();
 		int i_119_ = class14_sub10.readUByte();
 		int i_120_ = class14_sub10.readUByte();
-		int i_121_ = class14_sub10.readUShort((byte) 110);
-		int i_122_ = class14_sub10.readUShort((byte) 116);
-		int i_123_ = class14_sub10.readUShort((byte) 107);
-		int i_124_ = class14_sub10.readUShort((byte) 115);
-		int i_125_ = class14_sub10.readUShort((byte) 109);
+		int i_121_ = class14_sub10.readUShort();
+		int i_122_ = class14_sub10.readUShort();
+		int i_123_ = class14_sub10.readUShort();
+		int i_124_ = class14_sub10.readUShort();
+		int i_125_ = class14_sub10.readUShort();
 		int i_126_ = 0;
 		int i_127_ = 0;
 		int i_128_ = 0;
@@ -525,7 +525,7 @@ public class Class133_Sub2 extends Class133 {
 			aByteArray3514 = new byte[i_114_];
 			class14_sub10.position = 0;
 			for (int i_129_ = 0; i_129_ < i_114_; i_129_++) {
-				byte i_130_ = (aByteArray3514[i_129_] = class14_sub10.method780((byte) -77));
+				byte i_130_ = (aByteArray3514[i_129_] = class14_sub10.method780());
 				if (i_130_ == 0)
 					i_126_++;
 				if (i_130_ >= 1 && i_130_ <= 3)
@@ -660,17 +660,17 @@ public class Class133_Sub2 extends Class133 {
 		class14_sub10_111_.position = i_140_;
 		class14_sub10_112_.position = i_141_;
 		for (int i_160_ = 0; i_160_ < i_113_; i_160_++) {
-			aShortArray3533[i_160_] = (short) class14_sub10.readUShort((byte) 113);
+			aShortArray3533[i_160_] = (short) class14_sub10.readUShort();
 			if (i_115_ == 1)
-				aByteArray3534[i_160_] = class14_sub10_107_.method780((byte) -77);
+				aByteArray3534[i_160_] = class14_sub10_107_.method780();
 			if (i_116_ == 255)
-				aByteArray3546[i_160_] = class14_sub10_108_.method780((byte) -77);
+				aByteArray3546[i_160_] = class14_sub10_108_.method780();
 			if (i_117_ == 1)
-				aByteArray3541[i_160_] = class14_sub10_109_.method780((byte) -77);
+				aByteArray3541[i_160_] = class14_sub10_109_.method780();
 			if (i_118_ == 1)
 				anIntArray3532[i_160_] = class14_sub10_110_.readUByte();
 			if (i_119_ == 1)
-				aShortArray3528[i_160_] = (short) (class14_sub10_111_.readUShort((byte) 118) - 1);
+				aShortArray3528[i_160_] = (short) (class14_sub10_111_.readUShort() - 1);
 			if (aByteArray3535 != null) {
 				if (aShortArray3528[i_160_] != -1)
 					aByteArray3535[i_160_] = (byte) (class14_sub10_112_.readUByte() - 1);
@@ -733,44 +733,44 @@ public class Class133_Sub2 extends Class133 {
 		for (int i_168_ = 0; i_168_ < i_114_; i_168_++) {
 			int i_169_ = aByteArray3514[i_168_] & 0xff;
 			if (i_169_ == 0) {
-				aShortArray3520[i_168_] = (short) class14_sub10.readUShort((byte) 116);
-				aShortArray3531[i_168_] = (short) class14_sub10.readUShort((byte) 112);
-				aShortArray3511[i_168_] = (short) class14_sub10.readUShort((byte) 111);
+				aShortArray3520[i_168_] = (short) class14_sub10.readUShort();
+				aShortArray3531[i_168_] = (short) class14_sub10.readUShort();
+				aShortArray3511[i_168_] = (short) class14_sub10.readUShort();
 			}
 			if (i_169_ == 1) {
-				aShortArray3520[i_168_] = (short) class14_sub10_107_.readUShort((byte) 108);
-				aShortArray3531[i_168_] = (short) class14_sub10_107_.readUShort((byte) 126);
-				aShortArray3511[i_168_] = (short) class14_sub10_107_.readUShort((byte) 116);
-				aShortArray3512[i_168_] = (short) class14_sub10_108_.readUShort((byte) 109);
-				aShortArray3522[i_168_] = (short) class14_sub10_108_.readUShort((byte) 115);
-				aShortArray3527[i_168_] = (short) class14_sub10_108_.readUShort((byte) 127);
-				aByteArray3516[i_168_] = class14_sub10_109_.method780((byte) -77);
-				aByteArray3548[i_168_] = class14_sub10_110_.method780((byte) -77);
-				aByteArray3554[i_168_] = class14_sub10_111_.method780((byte) -77);
+				aShortArray3520[i_168_] = (short) class14_sub10_107_.readUShort();
+				aShortArray3531[i_168_] = (short) class14_sub10_107_.readUShort();
+				aShortArray3511[i_168_] = (short) class14_sub10_107_.readUShort();
+				aShortArray3512[i_168_] = (short) class14_sub10_108_.readUShort();
+				aShortArray3522[i_168_] = (short) class14_sub10_108_.readUShort();
+				aShortArray3527[i_168_] = (short) class14_sub10_108_.readUShort();
+				aByteArray3516[i_168_] = class14_sub10_109_.method780();
+				aByteArray3548[i_168_] = class14_sub10_110_.method780();
+				aByteArray3554[i_168_] = class14_sub10_111_.method780();
 			}
 			if (i_169_ == 2) {
-				aShortArray3520[i_168_] = (short) class14_sub10_107_.readUShort((byte) 101);
-				aShortArray3531[i_168_] = (short) class14_sub10_107_.readUShort((byte) 109);
-				aShortArray3511[i_168_] = (short) class14_sub10_107_.readUShort((byte) 125);
-				aShortArray3512[i_168_] = (short) class14_sub10_108_.readUShort((byte) 101);
-				aShortArray3522[i_168_] = (short) class14_sub10_108_.readUShort((byte) 117);
-				aShortArray3527[i_168_] = (short) class14_sub10_108_.readUShort((byte) 125);
-				aByteArray3516[i_168_] = class14_sub10_109_.method780((byte) -77);
-				aByteArray3548[i_168_] = class14_sub10_110_.method780((byte) -77);
-				aByteArray3554[i_168_] = class14_sub10_111_.method780((byte) -77);
-				aByteArray3518[i_168_] = class14_sub10_111_.method780((byte) -77);
-				aByteArray3529[i_168_] = class14_sub10_111_.method780((byte) -77);
+				aShortArray3520[i_168_] = (short) class14_sub10_107_.readUShort();
+				aShortArray3531[i_168_] = (short) class14_sub10_107_.readUShort();
+				aShortArray3511[i_168_] = (short) class14_sub10_107_.readUShort();
+				aShortArray3512[i_168_] = (short) class14_sub10_108_.readUShort();
+				aShortArray3522[i_168_] = (short) class14_sub10_108_.readUShort();
+				aShortArray3527[i_168_] = (short) class14_sub10_108_.readUShort();
+				aByteArray3516[i_168_] = class14_sub10_109_.method780();
+				aByteArray3548[i_168_] = class14_sub10_110_.method780();
+				aByteArray3554[i_168_] = class14_sub10_111_.method780();
+				aByteArray3518[i_168_] = class14_sub10_111_.method780();
+				aByteArray3529[i_168_] = class14_sub10_111_.method780();
 			}
 			if (i_169_ == 3) {
-				aShortArray3520[i_168_] = (short) class14_sub10_107_.readUShort((byte) 122);
-				aShortArray3531[i_168_] = (short) class14_sub10_107_.readUShort((byte) 122);
-				aShortArray3511[i_168_] = (short) class14_sub10_107_.readUShort((byte) 103);
-				aShortArray3512[i_168_] = (short) class14_sub10_108_.readUShort((byte) 123);
-				aShortArray3522[i_168_] = (short) class14_sub10_108_.readUShort((byte) 118);
-				aShortArray3527[i_168_] = (short) class14_sub10_108_.readUShort((byte) 118);
-				aByteArray3516[i_168_] = class14_sub10_109_.method780((byte) -77);
-				aByteArray3548[i_168_] = class14_sub10_110_.method780((byte) -77);
-				aByteArray3554[i_168_] = class14_sub10_111_.method780((byte) -77);
+				aShortArray3520[i_168_] = (short) class14_sub10_107_.readUShort();
+				aShortArray3531[i_168_] = (short) class14_sub10_107_.readUShort();
+				aShortArray3511[i_168_] = (short) class14_sub10_107_.readUShort();
+				aShortArray3512[i_168_] = (short) class14_sub10_108_.readUShort();
+				aShortArray3522[i_168_] = (short) class14_sub10_108_.readUShort();
+				aShortArray3527[i_168_] = (short) class14_sub10_108_.readUShort();
+				aByteArray3516[i_168_] = class14_sub10_109_.method780();
+				aByteArray3548[i_168_] = class14_sub10_110_.method780();
+				aByteArray3554[i_168_] = class14_sub10_111_.method780();
 			}
 		}
 	}

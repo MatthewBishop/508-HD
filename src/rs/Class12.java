@@ -42,7 +42,7 @@ public class Class12 {
 	public boolean aBoolean307;
 	public boolean aBoolean308;
 	public int[] anIntArray309;
-	public static byte[][] aByteArrayArray310;
+	public static byte[][] spritePaletteIndicators;
 	public static Class124 aClass124_311;
 	public short aShort313;
 	public short[] aShortArray314;
@@ -222,7 +222,7 @@ public class Class12 {
 		aClass124_278 = null;
 		aClass124_328 = null;
 		aClass9_332 = null;
-		aByteArrayArray310 = null;
+		spritePaletteIndicators = null;
 		aClass124_311 = null;
 	}
 
@@ -359,14 +359,14 @@ public class Class12 {
 							if (i_70_ != 13) {
 								if (i_70_ != 14) {
 									if (i_70_ == 15)
-										anInt286 = class14_sub10.readUShort((byte) 112);
+										anInt286 = class14_sub10.readUShort();
 									else if (i_70_ == 16)
-										anInt318 = class14_sub10.readUShort((byte) 125);
+										anInt318 = class14_sub10.readUShort();
 									else if (i_70_ == 17) {
-										anInt296 = class14_sub10.readUShort((byte) 103);
-										anInt284 = class14_sub10.readUShort((byte) 116);
-										anInt276 = class14_sub10.readUShort((byte) 105);
-										anInt339 = class14_sub10.readUShort((byte) 113);
+										anInt296 = class14_sub10.readUShort();
+										anInt284 = class14_sub10.readUShort();
+										anInt276 = class14_sub10.readUShort();
+										anInt339 = class14_sub10.readUShort();
 									} else if (i_70_ < 30 || i_70_ >= 35) {
 										if (i_70_ != 40) {
 											if (i_70_ == 41) {
@@ -375,40 +375,40 @@ public class Class12 {
 												aShortArray305 = new short[i_71_];
 												for (int i_72_ = 0; i_71_ > i_72_; i_72_++) {
 													aShortArray314[i_72_] = (short) (class14_sub10
-															.readUShort((byte) 108));
+															.readUShort());
 													aShortArray305[i_72_] = (short) (class14_sub10
-															.readUShort((byte) 119));
+															.readUShort());
 												}
 											} else if (i_70_ == 42) {
 												int i_73_ = class14_sub10.readUByte();
 												aByteArray333 = new byte[i_73_];
 												for (int i_74_ = 0; i_74_ < i_73_; i_74_++)
-													aByteArray333[i_74_] = (class14_sub10.method780((byte) -77));
+													aByteArray333[i_74_] = (class14_sub10.method780());
 											} else if (i_70_ != 60) {
 												if (i_70_ == 93)
 													aBoolean342 = false;
 												else if (i_70_ != 95) {
 													if (i_70_ != 97) {
 														if (i_70_ == 98)
-															anInt297 = (class14_sub10.readUShort((byte) 119));
+															anInt297 = (class14_sub10.readUShort());
 														else if (i_70_ != 99) {
 															if (i_70_ == 100)
-																anInt275 = (class14_sub10.method780((byte) -77));
+																anInt275 = (class14_sub10.method780());
 															else if (i_70_ != 101) {
 																if (i_70_ == 102)
-																	anInt306 = (class14_sub10.readUShort((byte) 111));
+																	anInt306 = (class14_sub10.readUShort());
 																else if (i_70_ == 103)
-																	anInt303 = (class14_sub10.readUShort((byte) 121));
+																	anInt303 = (class14_sub10.readUShort());
 																else if ((i_70_ == 106) || (i_70_ == 118)) {
-																	anInt326 = (class14_sub10.readUShort((byte) 116));
+																	anInt326 = (class14_sub10.readUShort());
 																	if (anInt326 == 65535)
 																		anInt326 = -1;
 																	int i_75_ = -1;
-																	anInt277 = (class14_sub10.readUShort((byte) 125));
+																	anInt277 = (class14_sub10.readUShort());
 																	if (anInt277 == 65535)
 																		anInt277 = -1;
 																	if (i_70_ == 118) {
-																		i_75_ = class14_sub10.readUShort((byte) 106);
+																		i_75_ = class14_sub10.readUShort();
 																		if (i_75_ == 65535)
 																			i_75_ = -1;
 																	}
@@ -416,7 +416,7 @@ public class Class12 {
 																	anIntArray329 = (new int[(i_76_ + 2)]);
 																	for (int i_77_ = 0; (i_77_ <= i_76_); i_77_++) {
 																		anIntArray329[i_77_] = class14_sub10
-																				.readUShort((byte) 117);
+																				.readUShort();
 																		if (anIntArray329[i_77_] == 65535)
 																			anIntArray329[i_77_] = -1;
 																	}
@@ -429,19 +429,19 @@ public class Class12 {
 																	aBoolean330 = false;
 																else if (i_70_ == 113) {
 																	aShort313 = (short) class14_sub10
-																			.readUShort((byte) 125);
+																			.readUShort();
 																	aShort285 = (short) class14_sub10
-																			.readUShort((byte) 123);
+																			.readUShort();
 																} else if (i_70_ == 114) {
-																	aByte321 = (class14_sub10.method780((byte) -77));
-																	aByte331 = (class14_sub10.method780((byte) -77));
+																	aByte321 = (class14_sub10.method780());
+																	aByte331 = (class14_sub10.method780());
 																} else if (i_70_ != 115) {
 																	if (i_70_ == 119)
-																		aByte290 = class14_sub10.method780((byte) -77);
+																		aByte290 = class14_sub10.method780();
 																	else if (i_70_ == 120) {
-																		anInt289 = class14_sub10.readUShort((byte) 126);
-																		anInt301 = class14_sub10.readUShort((byte) 121);
-																		anInt292 = class14_sub10.readUShort((byte) 109);
+																		anInt289 = class14_sub10.readUShort();
+																		anInt301 = class14_sub10.readUShort();
+																		anInt292 = class14_sub10.readUShort();
 																		anInt293 = class14_sub10.readUByte();
 																	} else if (i_70_ == 121) {
 																		anIntArrayArray316 = new int[anIntArray309.length][];
@@ -449,12 +449,12 @@ public class Class12 {
 																		for (int i_79_ = 0; i_78_ > i_79_; i_79_++) {
 																			int i_80_ = class14_sub10.readUByte();
 																			int[] is = anIntArrayArray316[i_80_] = new int[3];
-																			is[0] = class14_sub10.method780((byte) -77);
-																			is[1] = class14_sub10.method780((byte) -77);
-																			is[2] = class14_sub10.method780((byte) -77);
+																			is[0] = class14_sub10.method780();
+																			is[1] = class14_sub10.method780();
+																			is[2] = class14_sub10.method780();
 																		}
 																	} else if (i_70_ == 122)
-																		anInt281 = class14_sub10.readUShort((byte) 113);
+																		anInt281 = class14_sub10.readUShort();
 																	else if (i_70_ == 249) {
 																		int i_81_ = class14_sub10.readUByte();
 																		if (aClass55_304 == null) {
@@ -482,7 +482,7 @@ public class Class12 {
 																	aShort315 = (short) (class14_sub10.readUByte() * 4);
 																}
 															} else
-																anInt279 = ((class14_sub10.method780((byte) -77)) * 5);
+																anInt279 = ((class14_sub10.method780()) * 5);
 														} else
 															aBoolean307 = true;
 													} else
@@ -493,14 +493,14 @@ public class Class12 {
 												int i_85_ = class14_sub10.readUByte();
 												anIntArray338 = new int[i_85_];
 												for (int i_86_ = 0; i_86_ < i_85_; i_86_++)
-													anIntArray338[i_86_] = (class14_sub10.readUShort((byte) 126));
+													anIntArray338[i_86_] = (class14_sub10.readUShort());
 											}
 										} else {
 											int i_87_ = class14_sub10.readUByte();
 											aShortArray319 = new short[i_87_];
 											aShortArray317 = new short[i_87_];
 											for (int i_88_ = 0; i_88_ < i_87_; i_88_++) {
-												aShortArray319[i_88_] = (short) (class14_sub10.readUShort((byte) 106));
+												aShortArray319[i_88_] = (short) (class14_sub10.readUShort());
 												aShortArray317[i_88_] = (short) (class14_sub10.readUShort((byte) 123));
 											}
 										}
@@ -511,9 +511,9 @@ public class Class12 {
 											aClass124Array291[i_70_ - 30] = null;
 									}
 								} else
-									anInt296 = class14_sub10.readUShort((byte) 108);
+									anInt296 = class14_sub10.readUShort();
 							} else
-								anInt323 = class14_sub10.readUShort((byte) 121);
+								anInt323 = class14_sub10.readUShort();
 						} else
 							anInt334 = class14_sub10.readUByte();
 					} else
@@ -522,7 +522,7 @@ public class Class12 {
 					int i_89_ = class14_sub10.readUByte();
 					anIntArray309 = new int[i_89_];
 					for (int i_90_ = 0; i_89_ > i_90_; i_90_++)
-						anIntArray309[i_90_] = class14_sub10.readUShort((byte) 120);
+						anIntArray309[i_90_] = class14_sub10.readUShort();
 				}
 			}
 		} catch (Throwable throwable) {
@@ -644,7 +644,7 @@ public class Class12 {
 			}
 
 			if (var2 != -96) {
-				aByteArrayArray310 = null;
+				spritePaletteIndicators = null;
 			}
 
 			if (var0 == 1) {
@@ -662,7 +662,7 @@ public class Class12 {
 		Class129 class129;
 		try {
 			if (i != -18108)
-				aByteArrayArray310 = null;
+				spritePaletteIndicators = null;
 			class129 = (Class129) Class.forName("rs.Class129_Sub1").newInstance();
 		} catch (Throwable throwable) {
 			Class129 class129_132_ = null;

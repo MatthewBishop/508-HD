@@ -44,11 +44,11 @@ public class Class65 {
 				anInt1024 = class14_sub10.method829(-109);
 				method1292(anInt1024, (byte) 87);
 			} else if (i_4_ == 2) {
-				anInt1030 = class14_sub10.readUShort((byte) 109);
+				anInt1030 = class14_sub10.readUShort();
 				if (anInt1030 == 65535)
 					anInt1030 = -1;
 			} else if (i_4_ == 3)
-				anInt1019 = class14_sub10.readUShort((byte) 103);
+				anInt1019 = class14_sub10.readUShort();
 			else if (i_4_ == 4)
 				aBoolean1020 = false;
 		}

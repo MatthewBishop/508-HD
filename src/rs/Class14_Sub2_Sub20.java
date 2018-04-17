@@ -44,7 +44,7 @@ public class Class14_Sub2_Sub20 extends Cacheable {
 
 	public void method431(Buffer class14_sub10, int i_9_) {
 		if (i_9_ == 2)
-			anInt4062 = class14_sub10.readUShort((byte) 119);
+			anInt4062 = class14_sub10.readUShort();
 	}
 
 	public static Class14_Sub2_Sub5 method432(int i, Class124 class124) {

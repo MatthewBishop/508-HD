@@ -20,13 +20,13 @@ public abstract class Class129 {
 	public abstract void method1760(int i, Component component);
 
 	public static void method1761(byte i) {
-		Class14_Sub2_Sub12.anIntArray3918 = null;
+		Class14_Sub2_Sub12.spriteYOffsets = null;
 		if (i > 2) {
-			Class12.aByteArrayArray310 = null;
-			Class76.anIntArray1204 = null;
-			Class17.anIntArray402 = null;
-			Class40.anIntArray675 = null;
-			JunkTex.anIntArray1114 = null;
+			Class12.spritePaletteIndicators = null;
+			Class76.spriteHeights = null;
+			Class17.spriteWidths = null;
+			Class40.spriteXOffsets = null;
+			JunkTex.spritePalette = null;
 		}
 	}
 

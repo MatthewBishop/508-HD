@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.rt4.Class14_Sub27;
+import com.jagex.rt4.HDTile;
 
 public class Class66 {
 	public int anInt1035;
@@ -37,7 +37,7 @@ public class Class66 {
 	public static void method1296(int i, int i_27_, int i_28_, int i_29_) {
 		Class14_Sub14.aClass14_Sub29ArrayArrayArray2987 = new Class14_Sub29[i][i_27_][i_28_];
 		JunkTex.anIntArrayArrayArray2391 = new int[i][i_27_ + 1][i_28_ + 1];
-		Class14_Sub30.aClass14_Sub27ArrayArray3273 = new Class14_Sub27[4][];
+		Class14_Sub30.aClass14_Sub27ArrayArray3273 = new HDTile[4][];
 		JunkTex.method627(false);
 		Static2.anInt3338 = i_27_;
 		JunkTex.anInt4337 = i_28_;

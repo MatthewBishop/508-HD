@@ -11,7 +11,7 @@ import com.jagex.link.Cacheable;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.Class14_Sub1;
-import com.jagex.rt4.Class14_Sub2_Sub19_Sub1_Sub2;
+import com.jagex.rt4.AbstractSprite_Sub1_Sub2;
 
 public class Class14_Sub2_Sub8 extends Cacheable {
 	public HashTable aClass55_3829;
@@ -19,7 +19,7 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 	public static int anInt3832;
 	public static int anInt3833 = 0;
 	public static int[] anIntArray3834 = { 160, 192, 80, 96, 0, 144, 80, 48, 160 };
-	public static Class14_Sub2_Sub19_Sub1_Sub2 aClass14_Sub2_Sub19_Sub1_Sub2_3836;
+	public static AbstractSprite_Sub1_Sub2 aClass14_Sub2_Sub19_Sub1_Sub2_3836;
 	public static short aShort3839;
 	public static Class124 aClass124_3842 = Class124.method263(1178, "Loaded wordpack");
 	public static int anInt3843;
@@ -147,7 +147,7 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 					if (i_7_ == 4)
 						anInt3855 = class14_sub10.getInt((byte) -107);
 					else if (i_7_ == 5 || i_7_ == 6) {
-						int i_8_ = class14_sub10.readUShort((byte) 104);
+						int i_8_ = class14_sub10.readUShort();
 						aClass55_3829 = new HashTable(JunkTex.method653(i_8_));
 						for (int i_9_ = 0; i_9_ < i_8_; i_9_++) {
 							int i_10_ = class14_sub10.getInt((byte) -115);

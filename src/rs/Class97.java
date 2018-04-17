@@ -33,22 +33,22 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 		aClass2_1647 = new Deque();
 	}
 
-	public static Class150 method1489(int i, int i_0_) {
-		Class150 class150 = (Class150) Static2.aClass52_3942.get(i);
-		if (class150 != null) {
-			Class150 class150_1_ = class150;
+	public static OverlayType list(int i, int i_0_) {
+		OverlayType overlayType = (OverlayType) Static2.aClass52_3942.get(i);
+		if (overlayType != null) {
+			OverlayType class150_1_ = overlayType;
 			return class150_1_;
 		}
 		if (i_0_ != -9810) {
-			Class150 class150_2_ = null;
+			OverlayType class150_2_ = null;
 			return class150_2_;
 		}
 		byte[] is = Static2.aClass9_372.method163(i, 4, 0);
-		Class150 class150_3_ = new Class150();
+		OverlayType class150_3_ = new OverlayType();
 		if (is != null)
 			class150_3_.method2024(i, 0, new Buffer(is));
 		Static2.aClass52_3942.put(class150_3_, i);
-		Class150 class150_4_ = class150_3_;
+		OverlayType class150_4_ = class150_3_;
 		return class150_4_;
 	}
 

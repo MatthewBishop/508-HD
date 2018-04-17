@@ -9,7 +9,6 @@ import com.jagex.link.Linkable;
 public class Class14_Sub13 extends Linkable {
 	public static Class124 aClass124_2955 = Class124.method263(1178, "Fallen lassen");
 	public static Class9_Sub1 aClass9_Sub1_2958;
-	public static Interface3 anInterface3_2960;
 	public long aLong2963;
 	public static int anInt2964 = 0;
 
@@ -33,12 +32,9 @@ public class Class14_Sub13 extends Linkable {
 		}
 	}
 
-	public static void method863(byte i) {
-		anInterface3_2960 = null;
+	public static void method863() {
 		aClass9_Sub1_2958 = null;
 		aClass124_2955 = null;
-		if (i < 66)
-			anInterface3_2960 = null;
 	}
 
 	public Class14_Sub13() {

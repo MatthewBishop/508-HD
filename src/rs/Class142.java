@@ -32,7 +32,7 @@ public class Class142 {
 	public short[] aShortArray2279;
 	public int anInt2281;
 	public short[] aShortArray2283;
-	public static int[] anIntArray2284;
+	public static int[] occludersMaxZ;
 	public int anInt2285;
 	public int anInt2286;
 	public int anInt2288;
@@ -219,7 +219,7 @@ public class Class142 {
 
 	public static void method1969(boolean bool) {
 		if (bool) {
-			anIntArray2284 = null;
+			occludersMaxZ = null;
 			aClass124_2271 = null;
 			aClass124_2321 = null;
 		}
@@ -256,14 +256,14 @@ public class Class142 {
 
 	public void method1972(int i, int i_24_, Buffer class14_sub10) {
 		if (i == 1)
-			anInt2311 = class14_sub10.readUShort((byte) 104);
+			anInt2311 = class14_sub10.readUShort();
 		else if (i == 2)
 			aClass124_2296 = class14_sub10.method797(9467);
 		else if (i != 4) {
 			if (i == 5)
-				anInt2317 = class14_sub10.readUShort((byte) 102);
+				anInt2317 = class14_sub10.readUShort();
 			else if (i == 6)
-				anInt2286 = class14_sub10.readUShort((byte) 111);
+				anInt2286 = class14_sub10.readUShort();
 			else if (i != 7) {
 				if (i != 8) {
 					if (i == 11)
@@ -272,10 +272,10 @@ public class Class142 {
 						anInt2288 = class14_sub10.getInt((byte) -112);
 					else if (i != 16) {
 						if (i == 23)
-							anInt2274 = class14_sub10.readUShort((byte) 116);
+							anInt2274 = class14_sub10.readUShort();
 						else if (i != 24) {
 							if (i == 25)
-								anInt2264 = class14_sub10.readUShort((byte) 118);
+								anInt2264 = class14_sub10.readUShort();
 							else if (i != 26) {
 								if (i >= 30 && i < 35) {
 									aClass124Array2263[i - 30] = class14_sub10.method797(9467);
@@ -314,15 +314,15 @@ public class Class142 {
 																				anIntArray2320 = new int[10];
 																			}
 																			anIntArray2325[i - 100] = class14_sub10
-																					.readUShort((byte) 112);
+																					.readUShort();
 																			anIntArray2320[i - 100] = class14_sub10
-																					.readUShort((byte) 118);
+																					.readUShort();
 																		} else if (i != 110) {
 																			if (i != 111) {
 																				if (i != 112) {
 																					if (i == 113)
 																						anInt2281 = class14_sub10
-																								.method780((byte) -77);
+																								.method780();
 																					else if (i != 114) {
 																						if (i == 115)
 																							anInt2310 = class14_sub10
@@ -330,8 +330,7 @@ public class Class142 {
 																						else if (i != 121) {
 																							if (i == 122)
 																								anInt2305 = class14_sub10
-																										.readUShort(
-																												(byte) 123);
+																										.readUShort();
 																							else if (i == 124) {
 																								if (anIntArrayArray2289 == null)
 																									anIntArrayArray2289 = new int[11][];
@@ -344,14 +343,11 @@ public class Class142 {
 																													i_24_ + 19943);
 																							} else if (i == 125) {
 																								anInt2297 = class14_sub10
-																										.method780(
-																												(byte) -77);
+																										.method780();
 																								anInt2256 = class14_sub10
-																										.method780(
-																												(byte) -77);
+																										.method780();
 																								anInt2319 = class14_sub10
-																										.method780(
-																												(byte) -77);
+																										.method780();
 																							} else if (i != 126) {
 																								if (i == 249) {
 																									int i_29_ = class14_sub10
@@ -388,34 +384,30 @@ public class Class142 {
 																								}
 																							} else {
 																								anInt2258 = class14_sub10
-																										.method780(
-																												(byte) -77);
+																										.method780();
 																								anInt2290 = class14_sub10
-																										.method780(
-																												(byte) -77);
+																										.method780();
 																								anInt2324 = class14_sub10
-																										.method780(
-																												(byte) -77);
+																										.method780();
 																							}
 																						} else
 																							anInt2257 = class14_sub10
-																									.readUShort(
-																											(byte) 118);
+																									.readUShort();
 																					} else
 																						anInt2261 = class14_sub10
-																								.method780((byte) -77)
+																								.method780()
 																								* 5;
 																				} else
 																					anInt2327 = class14_sub10
-																							.readUShort((byte) 119);
+																							.readUShort();
 																			} else
 																				anInt2291 = class14_sub10
-																						.readUShort((byte) 103);
+																						.readUShort();
 																		} else
 																			anInt2328 = class14_sub10
-																					.readUShort((byte) 117);
+																					.readUShort();
 																	} else
-																		anInt2316 = class14_sub10.readUShort((byte) 121);
+																		anInt2316 = class14_sub10.readUShort();
 																} else
 																	anInt2268 = (class14_sub10.readUShort((byte) 120));
 															} else
@@ -432,7 +424,7 @@ public class Class142 {
 											int i_33_ = class14_sub10.readUByte();
 											aByteArray2318 = new byte[i_33_];
 											for (int i_34_ = 0; i_34_ < i_33_; i_34_++)
-												aByteArray2318[i_34_] = (class14_sub10.method780((byte) -77));
+												aByteArray2318[i_34_] = (class14_sub10.method780());
 										}
 									} else {
 										int i_35_ = class14_sub10.readUByte();
@@ -446,23 +438,23 @@ public class Class142 {
 								} else
 									aClass124Array2304[i - 35] = class14_sub10.method797(i_24_ + 29410);
 							} else
-								anInt2322 = class14_sub10.readUShort((byte) 123);
+								anInt2322 = class14_sub10.readUShort();
 						} else
-							anInt2255 = class14_sub10.readUShort((byte) 123);
+							anInt2255 = class14_sub10.readUShort();
 					} else
 						aBoolean2306 = true;
 				} else {
-					anInt2285 = class14_sub10.readUShort((byte) 127);
+					anInt2285 = class14_sub10.readUShort();
 					if (anInt2285 > 32767)
 						anInt2285 -= 65536;
 				}
 			} else {
-				anInt2293 = class14_sub10.readUShort((byte) 127);
+				anInt2293 = class14_sub10.readUShort();
 				if (anInt2293 > 32767)
 					anInt2293 -= 65536;
 			}
 		} else
-			anInt2273 = class14_sub10.readUShort((byte) 121);
+			anInt2273 = class14_sub10.readUShort();
 		if (i_24_ != -19943)
 			anInt2293 = -62;
 	}
@@ -574,7 +566,7 @@ public class Class142 {
 		int i_56_ = 60 % ((-46 - i) / 63);
 		for (/**/; i_55_ < 13; i_55_++) {
 			for (int i_57_ = 0; i_57_ < 13; i_57_++)
-				Class150.aClass71ArrayArray2421[i_55_][i_57_] = atmosphericChunk;
+				OverlayType.aClass71ArrayArray2421[i_55_][i_57_] = atmosphericChunk;
 		}
 	}
 

@@ -5,7 +5,7 @@ package rs;
 
 import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.link.Cacheable;
-import com.jagex.rt4.Class14_Sub2_Sub19;
+import com.jagex.rt4.AbstractSprite;
 
 public class Class14_Sub2_Sub7 extends Cacheable {
 	public static int anInt3820;
@@ -13,7 +13,7 @@ public class Class14_Sub2_Sub7 extends Cacheable {
 	public Class133_Sub5 aClass133_Sub5_3822;
 	public static Class9_Sub1 aClass9_Sub1_3824;
 	public static int[] anIntArray3825 = new int[2048];
-	public static Class14_Sub2_Sub19 aClass14_Sub2_Sub19_3826;
+	public static AbstractSprite aClass14_Sub2_Sub19_3826;
 
 	static {
 		aClass124_3821 = Class124.method263(1178, "blinken1:");

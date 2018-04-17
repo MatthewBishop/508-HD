@@ -192,7 +192,7 @@ public class Class45 {
 			int i_15_ = Class133_Sub6.anInt3676;
 			Class133_Sub6.anInt3676 = (i_9_ - 6) * 8;
 			Class58.anInt947 = i * 8 - 48;
-			Class70.aClass14_Sub2_Sub5_1078 = Class150.method2020(Class129.anInt2133 * 8, false, Class49.anInt818 * 8);
+			Class70.aClass14_Sub2_Sub5_1078 = OverlayType.method2020(Class129.anInt2133 * 8, false, Class49.anInt818 * 8);
 			int i_16_ = Class133_Sub6.anInt3676 - i_15_;
 			int i_17_ = Class58.anInt947 - i_14_;
 			i_15_ = Class133_Sub6.anInt3676;
@@ -242,7 +242,7 @@ public class Class45 {
 				}
 			}
 			int i_24_ = 0;
-			Class14_Sub2_Sub3.anInt3785 = i_10_;
+			Class14_Sub2_Sub3.gameLevel = i_10_;
 			if (i_12_ > -116)
 				method1163(false, -63);
 			Class14_Sub3.aClass133_Sub1_Sub1_2748.method1800((byte) -85, i_11_, false, i_13_);

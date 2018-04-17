@@ -45,8 +45,8 @@ public class Envelope {
 		durations = new int[segments];
 		peaks = new int[segments];
 		for (int i = 0; i < segments; i++) {
-			durations[i] = class14_sub10.readUShort((byte) 112);
-			peaks[i] = class14_sub10.readUShort((byte) 110);
+			durations[i] = class14_sub10.readUShort();
+			peaks[i] = class14_sub10.readUShort();
 		}
 	}
 

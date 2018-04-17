@@ -51,7 +51,7 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 		if (bool && Class69.anInt1071 >= 100) {
 			JunkTex.anInt4741 = Class123.anInt2062 * 128 + 64;
 			Class14_Sub30.anInt3271 = JunkTex.anInt4731 * 128 + 64;
-			Static2.anInt2926 = (JunkTex.method1017(JunkTex.anInt4741, Class14_Sub2_Sub3.anInt3785,
+			Static2.anInt2926 = (JunkTex.method1017(JunkTex.anInt4741, Class14_Sub2_Sub3.gameLevel,
 					(byte) 80, Class14_Sub30.anInt3271) - JunkTex.anInt4480);
 		}
 		Class89.anInt1415 = 2;
@@ -108,45 +108,45 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 			if (!JunkTex.aBoolean4357)
 				Class37.method1108((byte) 96);
 			else if (anInt3714 == 1) {
-				int i_19_ = Class150.anInt2423 / 5;
+				int i_19_ = OverlayType.anInt2423 / 5;
 				int i_20_ = i_19_ + (JunkTex.anInt4266 + 140);
 				if (i_20_ <= JunkTex.anInt3367 && JunkTex.anInt3367 <= i_20_ + 14
-						&& Class134.anInt2573 + 4 <= Class139.anInt2230
-						&& Class134.anInt2573 + 18 >= Class139.anInt2230)
+						&& Static2.anInt2573 + 4 <= Class139.anInt2230
+						&& Static2.anInt2573 + 18 >= Class139.anInt2230)
 					Class32.method1082(0, 0, 54);
 				else if (JunkTex.anInt3367 >= i_20_ + 15 && i_20_ + 80 >= JunkTex.anInt3367
-						&& Class139.anInt2230 >= Class134.anInt2573 + 4
-						&& Class139.anInt2230 <= Class134.anInt2573 + 18)
+						&& Class139.anInt2230 >= Static2.anInt2573 + 4
+						&& Class139.anInt2230 <= Static2.anInt2573 + 18)
 					Class32.method1082(0, 1, i + 29310);
 				else {
 					int i_21_ = i_19_ + (JunkTex.anInt4266 + 250);
 					if (i_21_ <= JunkTex.anInt3367 && i_21_ + 14 >= JunkTex.anInt3367
-							&& Class139.anInt2230 >= Class134.anInt2573 + 4
-							&& Class134.anInt2573 + 18 >= Class139.anInt2230)
+							&& Class139.anInt2230 >= Static2.anInt2573 + 4
+							&& Static2.anInt2573 + 18 >= Class139.anInt2230)
 						Class32.method1082(1, 0, -118);
 					else if (i_21_ + 15 <= JunkTex.anInt3367 && i_21_ + 80 >= JunkTex.anInt3367
-							&& Class139.anInt2230 >= Class134.anInt2573 + 4
-							&& Class134.anInt2573 + 18 >= Class139.anInt2230)
+							&& Class139.anInt2230 >= Static2.anInt2573 + 4
+							&& Static2.anInt2573 + 18 >= Class139.anInt2230)
 						Class32.method1082(1, 1, -111);
 					else {
 						int i_22_ = JunkTex.anInt4266 - (-i_19_ - 360);
 						if (JunkTex.anInt3367 >= i_22_ && JunkTex.anInt3367 <= i_22_ + 14
-								&& Class134.anInt2573 + 4 <= Class139.anInt2230
-								&& Class134.anInt2573 + 18 >= Class139.anInt2230)
+								&& Static2.anInt2573 + 4 <= Class139.anInt2230
+								&& Static2.anInt2573 + 18 >= Class139.anInt2230)
 							Class32.method1082(2, 0, i + 29476);
 						else if (i_22_ + 15 <= JunkTex.anInt3367 && JunkTex.anInt3367 <= i_22_ + 80
-								&& (Class134.anInt2573 + 4 <= Class139.anInt2230)
-								&& (Class134.anInt2573 + 18 >= Class139.anInt2230))
+								&& (Static2.anInt2573 + 4 <= Class139.anInt2230)
+								&& (Static2.anInt2573 + 18 >= Class139.anInt2230))
 							Class32.method1082(2, 1, -112);
 						else {
 							int i_23_ = JunkTex.anInt4266 + i_19_ + 470;
 							if (i_23_ <= JunkTex.anInt3367 && i_23_ + 14 >= JunkTex.anInt3367
-									&& Class134.anInt2573 + 4 <= Class139.anInt2230
-									&& (Class134.anInt2573 + 18 >= Class139.anInt2230))
+									&& Static2.anInt2573 + 4 <= Class139.anInt2230
+									&& (Static2.anInt2573 + 18 >= Class139.anInt2230))
 								Class32.method1082(3, 0, 51);
 							else if (JunkTex.anInt3367 >= i_23_ + 15 && JunkTex.anInt3367 <= i_23_ + 80
-									&& (Class139.anInt2230 >= Class134.anInt2573 + 4)
-									&& (Class134.anInt2573 + 18 >= Class139.anInt2230))
+									&& (Class139.anInt2230 >= Static2.anInt2573 + 4)
+									&& (Static2.anInt2573 + 18 >= Class139.anInt2230))
 								Class32.method1082(3, 1, i + 29514);
 							else if (JunkTex.anInt2801 != -1) {
 								Class45 class45 = (Class133_Sub1.aClass45Array3435[JunkTex.anInt2801]);

@@ -14,7 +14,7 @@ public class Class120 {
 	public HashTable aClass55_2004 = new HashTable(256);
 	public static int anInt2005;
 	public static int anInt2007 = -1;
-	public static int[] anIntArray2008;
+	public static int[] z_max_occluders;
 	public static int[] anIntArray2009;
 	public Class9 aClass9_2010;
 	public static Class124 aClass124_2012;
@@ -24,7 +24,7 @@ public class Class120 {
 	static {
 		anInt2005 = 1;
 		aClass124_2012 = Class124.method263(1178, "::qa_op_test");
-		anIntArray2008 = new int[2];
+		z_max_occluders = new int[2];
 		anInt2014 = 0;
 		anIntArray2009 = new int[64];
 	}
@@ -34,7 +34,7 @@ public class Class120 {
 		aClass124_2001 = null;
 		if (i <= -2) {
 			anIntArray2009 = null;
-			anIntArray2008 = null;
+			z_max_occluders = null;
 			aClass124_2012 = null;
 		}
 	}

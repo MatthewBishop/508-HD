@@ -8,9 +8,9 @@ import java.util.zip.Inflater;
 
 import com.jagex.io.Buffer;
 import com.jagex.link.ref.SoftCache;
-import com.jagex.rt4.Class14_Sub2_Sub19;
-import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
-import com.jagex.rt4.Class14_Sub2_Sub19_Sub2;
+import com.jagex.rt4.AbstractSprite;
+import com.jagex.rt4.AbstractSprite_Sub1;
+import com.jagex.rt4.AbstractSprite_Sub2;
 
 public class Class49 {
 	public static SoftCache aClass52_810 = new SoftCache(50);
@@ -26,7 +26,7 @@ public class Class49 {
 		this(-1, 1000000, 1000000);
 	}
 
-	public static Class14_Sub2_Sub19 method1194(boolean bool, int i, int i_0_, boolean bool_1_, boolean bool_2_,
+	public static AbstractSprite method1194(boolean bool, int i, int i_0_, boolean bool_1_, boolean bool_2_,
 			int i_3_, boolean bool_4_, int i_5_) {
 		if (!bool_4_)
 			anInt815 = 114;
@@ -42,22 +42,22 @@ public class Class49 {
 		}
 		ModelSD modelsd = class142.method1978(0);
 		if (modelsd == null) {
-			Class14_Sub2_Sub19 class14_sub2_sub19 = null;
+			AbstractSprite class14_sub2_sub19 = null;
 			return class14_sub2_sub19;
 		}
-		Class14_Sub2_Sub19_Sub1 class14_sub2_sub19_sub1 = null;
+		AbstractSprite_Sub1 class14_sub2_sub19_sub1 = null;
 		if (class142.anInt2316 != -1) {
-			class14_sub2_sub19_sub1 = ((Class14_Sub2_Sub19_Sub1) method1194(true, 1, class142.anInt2268, true, false,
+			class14_sub2_sub19_sub1 = ((AbstractSprite_Sub1) method1194(true, 1, class142.anInt2268, true, false,
 					10, true, 0));
 			if (class14_sub2_sub19_sub1 == null) {
-				Class14_Sub2_Sub19 class14_sub2_sub19 = null;
+				AbstractSprite class14_sub2_sub19 = null;
 				return class14_sub2_sub19;
 			}
 		} else if (class142.anInt2305 != -1) {
-			class14_sub2_sub19_sub1 = ((Class14_Sub2_Sub19_Sub1) method1194(true, i, class142.anInt2257, false, false,
+			class14_sub2_sub19_sub1 = ((AbstractSprite_Sub1) method1194(true, i, class142.anInt2257, false, false,
 					i_3_, bool_4_, i_5_));
 			if (class14_sub2_sub19_sub1 == null) {
-				Class14_Sub2_Sub19 class14_sub2_sub19 = null;
+				AbstractSprite class14_sub2_sub19 = null;
 				return class14_sub2_sub19;
 			}
 		}
@@ -66,8 +66,8 @@ public class Class49 {
 		int[] is_9_ = new int[4];
 		int i_10_ = Class92.anInt1435;
 		Class92.method1452(is_9_);
-		Class14_Sub2_Sub19_Sub1 class14_sub2_sub19_sub1_11_ = new Class14_Sub2_Sub19_Sub1(36, 32);
-		Class92.method1455(class14_sub2_sub19_sub1_11_.anIntArray5088, 36, 32);
+		AbstractSprite_Sub1 class14_sub2_sub19_sub1_11_ = new AbstractSprite_Sub1(36, 32);
+		Class92.method1455(class14_sub2_sub19_sub1_11_.pixels, 36, 32);
 		Class3.method97();
 		Class3.method90(16, 16);
 		Class3.aBoolean107 = false;
@@ -85,14 +85,14 @@ public class Class49 {
 			class14_sub2_sub19_sub1_11_.method411(1);
 			if (i >= 2)
 				class14_sub2_sub19_sub1_11_.method411(16777215);
-			Class92.method1455(class14_sub2_sub19_sub1_11_.anIntArray5088, 36, 32);
+			Class92.method1455(class14_sub2_sub19_sub1_11_.pixels, 36, 32);
 		}
 		if (i_5_ != 0)
 			class14_sub2_sub19_sub1_11_.method408(i_5_);
 		if (class142.anInt2316 != -1)
 			class14_sub2_sub19_sub1.drawReg(0, 0);
 		else if (class142.anInt2305 != -1) {
-			Class92.method1455(class14_sub2_sub19_sub1.anIntArray5088, 36, 32);
+			Class92.method1455(class14_sub2_sub19_sub1.pixels, 36, 32);
 			class14_sub2_sub19_sub1_11_.drawReg(0, 0);
 			class14_sub2_sub19_sub1_11_ = class14_sub2_sub19_sub1;
 		}
@@ -103,10 +103,10 @@ public class Class49 {
 		Class3.method97();
 		Class3.aBoolean107 = true;
 		if (!bool) {
-			Class14_Sub2_Sub19_Sub2 class14_sub2_sub19_sub2 = new Class14_Sub2_Sub19_Sub2(class14_sub2_sub19_sub1_11_);
+			AbstractSprite_Sub2 class14_sub2_sub19_sub2 = new AbstractSprite_Sub2(class14_sub2_sub19_sub1_11_);
 			return class14_sub2_sub19_sub2;
 		}
-		Class14_Sub2_Sub19_Sub1 class14_sub2_sub19_sub1_15_ = class14_sub2_sub19_sub1_11_;
+		AbstractSprite_Sub1 class14_sub2_sub19_sub1_15_ = class14_sub2_sub19_sub1_11_;
 		return class14_sub2_sub19_sub1_15_;
 	}
 

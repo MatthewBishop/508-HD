@@ -8,6 +8,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import com.jagex.link.HashTable;
+import com.jagex.util.ArrayUtils;
 import com.jagex.util.Util;
 
 public class Class124 implements Interface1 {
@@ -330,16 +331,16 @@ public class Class124 implements Interface1 {
 	public static boolean method1714(int var0, int var1, int var2, int var3, int var4) {
 		int var5 = var3 * JunkTex.anInt2719 + var0 * Class37.anInt643 >> 16;
 		int var6 = var3 * Class37.anInt643 - var0 * JunkTex.anInt2719 >> 16;
-		int var7 = var1 * Class150.anInt2420 + var6 * Class7_Sub3_Sub1.anInt3718 >> 16;
-		int var8 = var1 * Class7_Sub3_Sub1.anInt3718 - var6 * Class150.anInt2420 >> 16;
+		int var7 = var1 * OverlayType.anInt2420 + var6 * Class7_Sub3_Sub1.anInt3718 >> 16;
+		int var8 = var1 * Class7_Sub3_Sub1.anInt3718 - var6 * OverlayType.anInt2420 >> 16;
 		if (var7 < 1) {
 			var7 = 1;
 		}
 
 		int var9 = (var5 << 9) / var7;
 		int var10 = (var8 << 9) / var7;
-		int var11 = var2 * Class150.anInt2420 + var6 * Class7_Sub3_Sub1.anInt3718 >> 16;
-		int var12 = var2 * Class7_Sub3_Sub1.anInt3718 - var6 * Class150.anInt2420 >> 16;
+		int var11 = var2 * OverlayType.anInt2420 + var6 * Class7_Sub3_Sub1.anInt3718 >> 16;
+		int var12 = var2 * Class7_Sub3_Sub1.anInt3718 - var6 * OverlayType.anInt2420 >> 16;
 		if (var11 < 1) {
 			var11 = 1;
 		}
@@ -459,11 +460,11 @@ public class Class124 implements Interface1 {
 				}
 
 				byte[] var6 = new byte[var5];
-				Class72.method1322(this.aByteArray2495, 0, var6, 0, this.anInt2507);
+				ArrayUtils.method1322(this.aByteArray2495, 0, var6, 0, this.anInt2507);
 				this.aByteArray2495 = var6;
 			}
 
-			Class72.method1322(var1.aByteArray2495, var4, this.aByteArray2495, this.anInt2507, -var4 + var2);
+			ArrayUtils.method1322(var1.aByteArray2495, var4, this.aByteArray2495, this.anInt2507, -var4 + var2);
 			this.anInt2507 += -var4 + var2;
 			return this;
 		} else {
@@ -704,7 +705,7 @@ public class Class124 implements Interface1 {
 				}
 
 				byte[] var4 = new byte[var3];
-				Class72.method1322(this.aByteArray2495, 0, var4, 0, this.anInt2507);
+				ArrayUtils.method1322(this.aByteArray2495, 0, var4, 0, this.anInt2507);
 				this.aByteArray2495 = var4;
 			}
 
@@ -712,7 +713,7 @@ public class Class124 implements Interface1 {
 				this.method1677(-68);
 			}
 
-			Class72.method1322(var2.aByteArray2495, 0, this.aByteArray2495, this.anInt2507, var2.anInt2507);
+			ArrayUtils.method1322(var2.aByteArray2495, 0, this.aByteArray2495, this.anInt2507, var2.anInt2507);
 			this.anInt2507 += var2.anInt2507;
 			return this;
 		}
@@ -856,7 +857,7 @@ public class Class124 implements Interface1 {
 	public byte[] method1681(int var1) {
 		byte[] var2 = new byte[this.anInt2507];
 		int var3 = 10 / ((var1 + 53) / 59);
-		Class72.method1322(this.aByteArray2495, 0, var2, 0, this.anInt2507);
+		ArrayUtils.method1322(this.aByteArray2495, 0, var2, 0, this.anInt2507);
 		return var2;
 	}
 
@@ -871,7 +872,7 @@ public class Class124 implements Interface1 {
 			this.anInt2517 = 0;
 			if (this.anInt2507 != this.aByteArray2495.length) {
 				byte[] var2 = new byte[this.anInt2507];
-				Class72.method1322(this.aByteArray2495, 0, var2, 0, this.anInt2507);
+				ArrayUtils.method1322(this.aByteArray2495, 0, var2, 0, this.anInt2507);
 				this.aByteArray2495 = var2;
 			}
 
@@ -949,7 +950,7 @@ public class Class124 implements Interface1 {
 					}
 
 					byte[] var4 = new byte[var3];
-					Class72.method1322(this.aByteArray2495, 0, var4, 0, this.anInt2507);
+					ArrayUtils.method1322(this.aByteArray2495, 0, var4, 0, this.anInt2507);
 					this.aByteArray2495 = var4;
 				}
 
@@ -984,7 +985,7 @@ public class Class124 implements Interface1 {
 			byte var7 = -105;
 			return var7;
 		} else {
-			Class72.method1322(this.aByteArray2495, var1, var3, var2, -var1 + var5);
+			ArrayUtils.method1322(this.aByteArray2495, var1, var3, var2, -var1 + var5);
 			int var6 = var5 - var1;
 			return var6;
 		}
@@ -1058,7 +1059,7 @@ public class Class124 implements Interface1 {
 			Class124 var3 = new Class124();
 			var3.aByteArray2495 = new byte[this.anInt2507 + 1];
 			var3.anInt2507 = this.anInt2507 + 1;
-			Class72.method1322(this.aByteArray2495, 0, var3.aByteArray2495, 0, this.anInt2507);
+			ArrayUtils.method1322(this.aByteArray2495, 0, var3.aByteArray2495, 0, this.anInt2507);
 			var3.aByteArray2495[this.anInt2507] = (byte) var2;
 			return var3;
 		} else {
@@ -1099,7 +1100,7 @@ public class Class124 implements Interface1 {
 		Class124 var4 = new Class124();
 		var4.aByteArray2495 = new byte[var2 - var1];
 		var4.anInt2507 = var2 - var1;
-		Class72.method1322(this.aByteArray2495, var1, var4.aByteArray2495, 0, var4.anInt2507);
+		ArrayUtils.method1322(this.aByteArray2495, var1, var4.aByteArray2495, 0, var4.anInt2507);
 		return var4;
 	}
 
@@ -1154,7 +1155,7 @@ public class Class124 implements Interface1 {
 				}
 
 				byte[] var4 = new byte[var3];
-				Class72.method1322(this.aByteArray2495, 0, var4, 0, this.anInt2507);
+				ArrayUtils.method1322(this.aByteArray2495, 0, var4, 0, this.anInt2507);
 				this.aByteArray2495 = var4;
 			}
 

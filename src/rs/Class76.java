@@ -11,7 +11,8 @@ import java.io.IOException;
 import com.jagex.cache.anim.Animation;
 import com.jagex.cache.loaders.AnimFrameLoader;
 import com.jagex.io.js5.FileOnDisk;
-import com.jagex.rt4.Class14_Sub2_Sub19;
+import com.jagex.rt4.AbstractSprite;
+import com.jagex.util.ArrayUtils;
 import com.jagex.util.Util;
 
 public class Class76 {
@@ -19,14 +20,14 @@ public class Class76 {
 	public long aLong1187;
 	public long aLong1188;
 	public long aLong1190 = -1L;
-	public static Class14_Sub2_Sub19[] aClass14_Sub2_Sub19Array1191;
+	public static AbstractSprite[] aClass14_Sub2_Sub19Array1191;
 	public static Class124 aClass124_1192 = Class124.method263(1178, "runes");
 	public static int anInt1197;
 	public long aLong1198;
 	public long aLong1200;
 	public FileOnDisk aClass30_1202;
 	public static Class124 aClass124_1203;
-	public static int[] anIntArray1204;
+	public static int[] spriteHeights;
 	public long aLong1205 = -1L;
 	public static int anInt1207 = 2;
 	public byte[] aByteArray1208;
@@ -41,7 +42,7 @@ public class Class76 {
 
 	public static void method1356(boolean bool, Component component) {
 		if (bool)
-			anIntArray1204 = null;
+			spriteHeights = null;
 		component.removeMouseListener(Class67.aClass97_1055);
 		component.removeMouseMotionListener(Class67.aClass97_1055);
 		component.removeFocusListener(Class67.aClass97_1055);
@@ -174,11 +175,11 @@ public class Class76 {
 		if (i_13_ != 0)
 			class133_sub7_17_.method1874(i_13_);
 		ModelHD modelhd = (ModelHD) class133_sub7_17_;
-		if (i_10_ != JunkTex.method1017(i_7_ + i_40_, Class14_Sub2_Sub3.anInt3785, (byte) 117, i_14_ + i_42_)
-				|| i_10_ != JunkTex.method1017(i_7_ + i_41_, Class14_Sub2_Sub3.anInt3785, (byte) 77, i_43_ + i_14_)) {
+		if (i_10_ != JunkTex.method1017(i_7_ + i_40_, Class14_Sub2_Sub3.gameLevel, (byte) 117, i_14_ + i_42_)
+				|| i_10_ != JunkTex.method1017(i_7_ + i_41_, Class14_Sub2_Sub3.gameLevel, (byte) 77, i_43_ + i_14_)) {
 			for (int i_44_ = 0; modelhd.anInt5033 > i_44_; i_44_++)
 				modelhd.vertexY[i_44_] += (JunkTex.method1017(modelhd.vertexX[i_44_] + i_7_,
-						Class14_Sub2_Sub3.anInt3785, (byte) -109, i_14_ + modelhd.vertexZ[i_44_]) - i_10_);
+						Class14_Sub2_Sub3.gameLevel, (byte) -109, i_14_ + modelhd.vertexZ[i_44_]) - i_10_);
 			modelhd.aClass50_5013.boundsCalculated = false;
 			modelhd.vertexBufferPointer.upToDate = false;
 		}
@@ -215,7 +216,7 @@ public class Class76 {
 				if (-1L != this.aLong1205
 						&& this.aByteArray1186.length + this.aLong1205 < var2 + this.aLong1187) {
 					int var5 = (int) (this.aLong1205 - this.aLong1187 + this.aByteArray1186.length);
-					Class72.method1322(var4, var1, this.aByteArray1186, (int) (this.aLong1187 + -this.aLong1205), var5);
+					ArrayUtils.method1322(var4, var1, this.aByteArray1186, (int) (this.aLong1187 + -this.aLong1205), var5);
 					var2 -= var5;
 					var1 += var5;
 					this.aLong1187 += var5;
@@ -253,7 +254,7 @@ public class Class76 {
 
 					if (-1L < var6 && var6 < var8) {
 						int var10 = (int) (-var6 + var8);
-						Class72.method1322(var4, (int) (-this.aLong1187 + var6 + var1), this.aByteArray1208,
+						ArrayUtils.method1322(var4, (int) (-this.aLong1187 + var6 + var1), this.aByteArray1208,
 								(int) (-this.aLong1190 + var6), var10);
 					}
 
@@ -271,7 +272,7 @@ public class Class76 {
 					this.aLong1205 = this.aLong1187;
 				}
 
-				Class72.method1322(var4, var1, this.aByteArray1186, (int) (-this.aLong1205 + this.aLong1187), var2);
+				ArrayUtils.method1322(var4, var1, this.aByteArray1186, (int) (-this.aLong1205 + this.aLong1187), var2);
 				this.aLong1187 += var2;
 				if (this.aLong1187 + -this.aLong1205 > this.anInt1214) {
 					this.anInt1214 = (int) (this.aLong1187 + -this.aLong1205);
@@ -289,7 +290,7 @@ public class Class76 {
 	public static void method1364(int i) {
 		aClass14_Sub2_Sub19Array1191 = null;
 		aClass88Array1211 = null;
-		anIntArray1204 = null;
+		spriteHeights = null;
 		aClass124_1203 = null;
 		aClass124_1192 = null;
 	}
@@ -342,7 +343,7 @@ public class Class76 {
 				throw new ArrayIndexOutOfBoundsException(i_61_ + i - is.length);
 			if (aLong1205 != -1L && aLong1187 >= aLong1205
 					&& anInt1214 + aLong1205 >= aLong1187 - -(long) i_61_) {
-				Class72.method1322(aByteArray1186, (int) (-aLong1205 + aLong1187), is, i, i_61_);
+				ArrayUtils.method1322(aByteArray1186, (int) (-aLong1205 + aLong1187), is, i, i_61_);
 				aLong1187 += i_61_;
 			} else {
 				try {
@@ -354,7 +355,7 @@ public class Class76 {
 						if (i_61_ < i_64_)
 							i_64_ = i_61_;
 						i_61_ -= i_64_;
-						Class72.method1322(aByteArray1208, (int) (-aLong1190 + aLong1187), is, i, i_64_);
+						ArrayUtils.method1322(aByteArray1208, (int) (-aLong1190 + aLong1187), is, i, i_64_);
 						i += i_64_;
 						aLong1187 += i_64_;
 					}
@@ -376,7 +377,7 @@ public class Class76 {
 						if (anInt1210 < i_66_)
 							i_66_ = anInt1210;
 						i_61_ -= i_66_;
-						Class72.method1322(aByteArray1208, 0, is, i, i_66_);
+						ArrayUtils.method1322(aByteArray1208, 0, is, i, i_66_);
 						aLong1187 += i_66_;
 						i += i_66_;
 					}
@@ -403,7 +404,7 @@ public class Class76 {
 							l_69_ = l;
 						if (-1L < l_69_ && l_68_ > l_69_) {
 							int i_70_ = (int) (-l_69_ + l_68_);
-							Class72.method1322(aByteArray1186, (int) (-aLong1205 + l_69_), is,
+							ArrayUtils.method1322(aByteArray1186, (int) (-aLong1205 + l_69_), is,
 									(int) (-l + l_69_) + i_62_, i_70_);
 							if (aLong1187 < l_68_) {
 								i_61_ -= -aLong1187 + l_68_;
@@ -447,7 +448,7 @@ public class Class76 {
 				l_72_ = aLong1205;
 			if (-1L < l_72_ && l > l_72_) {
 				int i_73_ = (int) (l - l_72_);
-				Class72.method1322(aByteArray1186, (int) (l_72_ - aLong1205), aByteArray1208,
+				ArrayUtils.method1322(aByteArray1186, (int) (l_72_ - aLong1205), aByteArray1208,
 						(int) (-aLong1190 + l_72_), i_73_);
 			}
 			aLong1205 = -1L;

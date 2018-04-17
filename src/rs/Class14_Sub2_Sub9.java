@@ -33,7 +33,7 @@ public class Class14_Sub2_Sub9 extends Cacheable {
 	}
 
 	public static void method305(Class9 class9, Class9 class9_5_, Class9 class9_6_, Class9 class9_7_, byte i) {
-		Class134.aClass9_2598 = class9_6_;
+		Static2.aClass9_2598 = class9_6_;
 		Class83.aClass9_1335 = class9_7_;
 		if (i <= -48) {
 			JunkTex.aClass9_4486 = class9_5_;

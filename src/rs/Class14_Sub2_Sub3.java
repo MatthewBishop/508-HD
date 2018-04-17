@@ -4,12 +4,10 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
 import com.jagex.link.Cacheable;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.Class14_Sub1;
-import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
 
 public class Class14_Sub2_Sub3 extends Cacheable {
 	public static int anInt3769;
@@ -18,7 +16,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 	public static Class124 aClass124_3774 = Class124.method263(1178, ":tradereq:");
 	public static Class124 aClass124_3778 = Class124.method263(1178, "T");
 	public HashTable aClass55_3783;
-	public static int anInt3785;
+	public static int gameLevel;
 	public static int anInt3787;
 
 	static {
@@ -48,15 +46,6 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 		}
 		if (i != -1)
 			method272(70, (byte) -7);
-	}
-
-	public static Class14_Sub2_Sub19_Sub1 method269(Class9 class9, int i, int i_6_) {
-		if (!JunkTex.method1027(class9, i_6_, (byte) 67)) {
-			Class14_Sub2_Sub19_Sub1 class14_sub2_sub19_sub1 = null;
-			return class14_sub2_sub19_sub1;
-		}
-		Class14_Sub2_Sub19_Sub1 class14_sub2_sub19_sub1 = JunkTex.method641((byte) -123);
-		return class14_sub2_sub19_sub1;
 	}
 
 	public static int method270(int i, int i_7_, int i_8_) {
@@ -172,7 +161,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 		int i_43_ = 0;
 		boolean bool_44_ = false;
 		Class14_Sub2_Sub21.anIntArray4078[i_42_++] = i_33_;
-		int[][] is = Class14_Sub21.aClass32Array3100[anInt3785].anIntArrayArray546;
+		int[][] is = Class14_Sub21.aClass32Array3100[gameLevel].anIntArrayArray546;
 		while (i_42_ != i_43_) {
 			i_40_ = JunkTex.anIntArray4691[i_43_];
 			i_41_ = Class14_Sub2_Sub21.anIntArray4078[i_43_];
@@ -182,9 +171,9 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 				break;
 			}
 			if (i != 0) {
-				if (i >= 5 && i != 10 || !(Class14_Sub21.aClass32Array3100[anInt3785].method1076(i_36_, 2, i - 1, i_34_,
+				if (i >= 5 && i != 10 || !(Class14_Sub21.aClass32Array3100[gameLevel].method1076(i_36_, 2, i - 1, i_34_,
 						i_31_, i_40_, i_41_, 18288))) {
-					if (i < 10 && (Class14_Sub21.aClass32Array3100[anInt3785].method1066(2, i - 1, i_40_, i_34_, i_41_,
+					if (i < 10 && (Class14_Sub21.aClass32Array3100[gameLevel].method1066(2, i - 1, i_40_, i_34_, i_41_,
 							(byte) -120, i_36_, i_31_))) {
 						bool_44_ = true;
 						break;
@@ -194,7 +183,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 					break;
 				}
 			}
-			if (i_35_ != 0 && i_37_ != 0 && (Class14_Sub21.aClass32Array3100[anInt3785].method1078(i_41_, i_37_, i_40_,
+			if (i_35_ != 0 && i_37_ != 0 && (Class14_Sub21.aClass32Array3100[gameLevel].method1078(i_41_, i_37_, i_40_,
 					i_32_, (byte) -63, i_31_, i_34_, 2, i_35_))) {
 				bool_44_ = true;
 				break;

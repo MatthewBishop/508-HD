@@ -19,7 +19,7 @@ public class Class40 {
 	public int anInt672;
 	public int anInt673;
 	public static Class14_Sub29[][][] aClass14_Sub29ArrayArrayArray674;
-	public static int[] anIntArray675;
+	public static int[] spriteXOffsets;
 	public static Class124 aClass124_676 = Class124.method263(1178, "Use");
 	public long aLong677 = 0L;
 	public int anInt678;
@@ -39,7 +39,7 @@ public class Class40 {
 		if (i != 0)
 			aClass124_680 = null;
 		aClass2_664 = null;
-		anIntArray675 = null;
+		spriteXOffsets = null;
 		aClass14_Sub29ArrayArrayArray674 = null;
 	}
 }

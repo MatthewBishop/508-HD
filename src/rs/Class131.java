@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.rt4.Class14_Sub27;
+import com.jagex.rt4.HDTile;
 
 public class Class131 {
 	public static Class124 aClass124_2153;
@@ -13,7 +13,7 @@ public class Class131 {
 	public static int anInt2159;
 	public static Class14_Sub2_Sub16_Sub1 aClass14_Sub2_Sub16_Sub1_2160;
 	public static Class124 aClass124_2161;
-	public static Class14_Sub27[][] aClass14_Sub27ArrayArray2162;
+	public static HDTile[][] aClass14_Sub27ArrayArray2162;
 	public static Class124 aClass124_2163;
 	public static int anInt2164;
 

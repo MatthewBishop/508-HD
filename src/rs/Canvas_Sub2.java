@@ -6,6 +6,8 @@ package rs;
 import java.awt.Canvas;
 import java.awt.event.FocusListener;
 
+import com.jagex.util.ArrayUtils;
+
 public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 	public static int anInt54 = 0;
 	public static int anInt55;
@@ -77,7 +79,7 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 			return fs_9_;
 		}
 		float[] fs_10_ = new float[fs.length];
-		Class72.method1323(fs, 0, fs_10_, 0, fs.length);
+		ArrayUtils.method1323(fs, 0, fs_10_, 0, fs.length);
 		float[] fs_11_ = fs_10_;
 		return fs_11_;
 	}
@@ -125,7 +127,7 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 					i_17_ == 1, (Class14_Sub3.aClass133_Sub1_Sub1_2748.anIntArray3476[0]) + i_15_);
 			if (class133_sub1_sub2.aClass12_4949.method212((byte) -128))
 				Class12.method213(class133_sub1_sub2.anIntArray3476[0], class133_sub1_sub2.anIntArray3443[0], null,
-						(byte) -35, Class14_Sub2_Sub3.anInt3785, null, class133_sub1_sub2, 0);
+						(byte) -35, Class14_Sub2_Sub3.gameLevel, null, class133_sub1_sub2, 0);
 		}
 		JunkTex.aClass14_Sub10_Sub1_4734.disableBitAccess();
 		if (i > -95)
@@ -137,7 +139,7 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 				.getFront(); class14_sub2_sub10 != null; class14_sub2_sub10 = (Class14_Sub2_Sub10) Class4.aClass2_127
 						.getNext()) {
 			Class133_Sub6 class133_sub6 = class14_sub2_sub10.aClass133_Sub6_3870;
-			if (Class14_Sub2_Sub3.anInt3785 != class133_sub6.anInt3655
+			if (Class14_Sub2_Sub3.gameLevel != class133_sub6.anInt3655
 					|| class133_sub6.anInt3644 < Class14_Sub2_Sub20.anInt4064)
 				class14_sub2_sub10.unlink();
 			else if (Class14_Sub2_Sub20.anInt4064 >= class133_sub6.anInt3679) {
@@ -168,7 +170,7 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 										class133_sub1_sub1.anInt3436) - class133_sub6.anInt3667));
 				}
 				class133_sub6.method1851(-95, Class51.anInt839);
-				JunkTex.method519(Class14_Sub2_Sub3.anInt3785, (int) class133_sub6.aDouble3678,
+				JunkTex.method519(Class14_Sub2_Sub3.gameLevel, (int) class133_sub6.aDouble3678,
 						(int) class133_sub6.aDouble3646, (int) class133_sub6.aDouble3633, 60, class133_sub6,
 						class133_sub6.anInt3665, -1L, false);
 			}

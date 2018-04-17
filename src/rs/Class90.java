@@ -5,7 +5,7 @@ package rs;
 
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9;
-import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
+import com.jagex.rt4.AbstractSprite_Sub1;
 import com.jagex.util.Util;
 
 public class Class90 implements Runnable {
@@ -89,10 +89,10 @@ public class Class90 implements Runnable {
 		aBoolean1419 = false;
 	}
 
-	public static Class14_Sub2_Sub19_Sub1[] method1446(int var0, Class9 var1, int var2, int var3) {
+	public static AbstractSprite_Sub1[] method1446(int var0, Class9 var1, int var2, int var3) {
 		try {
-			Class14_Sub2_Sub19_Sub1[] var4;
-			if (!Class109.method1564(-2, var3, var0, var1)) {
+			AbstractSprite_Sub1[] var4;
+			if (!Class109.method1564(var3, var0, var1)) {
 				var4 = null;
 				return var4;
 			} else {

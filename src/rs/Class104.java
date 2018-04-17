@@ -18,7 +18,7 @@ public class Class104 {
 	public static Class124 aClass124_1748;
 	public static Class124 aClass124_1749;
 	public static Class124 aClass124_1750;
-	public static int[] anIntArray1737;
+	public static int[] occludersMinZ;
 	public static Random aRandom1732 = new Random();
 	static {
 		aClass124_1736 = aClass124_1739;
@@ -59,7 +59,7 @@ public class Class104 {
 		aClass124_1749 = null;
 		aClass124_1748 = null;
 		aClass124_1750 = null;
-		anIntArray1737 = null;
+		occludersMinZ = null;
 	}
 	public byte[] aByteArray1744 = new byte[4];
 	public byte[] aByteArray1747;

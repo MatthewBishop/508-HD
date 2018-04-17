@@ -65,7 +65,7 @@ public class Class14_Sub2_Sub5 extends Cacheable {
 			Class14_Sub28 class14_sub28 = null;
 			return class14_sub28;
 		}
-		byte[] is = class9.method165(83, i);
+		byte[] is = class9.getFileSmart(83, i);
 		if (is == null) {
 			Class14_Sub28 class14_sub28 = null;
 			return class14_sub28;

@@ -1,7 +1,8 @@
 package com.jagex.rt4.lights;
 
-import com.jagex.image.transform.Class14_Sub8_Sub12;
-import com.jagex.image.transform.TexStatic;
+import org.jagex.image.transform.Class14_Sub8_Sub12;
+import org.jagex.image.transform.TexStatic;
+
 import com.jagex.io.Buffer;
 
 import rs.Class3;
@@ -48,15 +49,15 @@ public class Light {
 		aBoolean1112 = (anInt1125 & 0x10) != 0;
 		aBoolean1123 = (anInt1125 & 0x8) != 0;
 		anInt1125 &= 0x7;
-		param1 = class14_sub10.readUShort((byte) 113);
-		param3 = class14_sub10.readUShort((byte) 113);
-		param2 = class14_sub10.readUShort((byte) 107);
+		param1 = class14_sub10.readUShort();
+		param3 = class14_sub10.readUShort();
+		param2 = class14_sub10.readUShort();
 		anInt1120 = class14_sub10.readUByte();
 		method1331(64);
 		aShortArray1106 = new short[anInt1120 * 2 + 1];
 		for (int i = 0; i < aShortArray1106.length; i++)
-			aShortArray1106[i] = (short) class14_sub10.readUShort((byte) 124);
-		anInt1122 = Class3.anIntArray119[class14_sub10.readUShort((byte) 116)];
+			aShortArray1106[i] = (short) class14_sub10.readUShort();
+		anInt1122 = Class3.anIntArray119[class14_sub10.readUShort()];
 		int i = class14_sub10.readUByte();
 		anInt1130 = i & 0x1f;
 		anInt1109 = (i & 0xe0) << 35;

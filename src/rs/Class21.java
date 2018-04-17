@@ -5,9 +5,10 @@ package rs;
 
 import com.jagex.io.Buffer;
 import com.jagex.link.ref.SoftCache;
+import com.jagex.util.ArrayUtils;
 
 public class Class21 {
-	public static int[] anIntArray437;
+	public static int[] occludersY;
 	public static Class36 aClass36_441;
 	public static int[] anIntArray442;
 	public static SoftCache aClass52_444 = new SoftCache(64);
@@ -53,26 +54,26 @@ public class Class21 {
 			int i_3_ = class14_sub10.readUByte();
 			anIntArray457 = new int[i_3_];
 			for (int i_4_ = 0; i_4_ < i_3_; i_4_++)
-				anIntArray457[i_4_] = class14_sub10.readUShort((byte) 118);
+				anIntArray457[i_4_] = class14_sub10.readUShort();
 		} else if (i != 3) {
 			if (i == 40) {
 				int i_5_ = class14_sub10.readUByte();
 				aShortArray445 = new short[i_5_];
 				aShortArray450 = new short[i_5_];
 				for (int i_6_ = 0; i_6_ < i_5_; i_6_++) {
-					aShortArray445[i_6_] = (short) class14_sub10.readUShort((byte) 116);
-					aShortArray450[i_6_] = (short) class14_sub10.readUShort((byte) 103);
+					aShortArray445[i_6_] = (short) class14_sub10.readUShort();
+					aShortArray450[i_6_] = (short) class14_sub10.readUShort();
 				}
 			} else if (i == 41) {
 				int i_7_ = class14_sub10.readUByte();
 				aShortArray453 = new short[i_7_];
 				aShortArray455 = new short[i_7_];
 				for (int i_8_ = 0; i_7_ > i_8_; i_8_++) {
-					aShortArray453[i_8_] = (short) class14_sub10.readUShort((byte) 113);
-					aShortArray455[i_8_] = (short) class14_sub10.readUShort((byte) 122);
+					aShortArray453[i_8_] = (short) class14_sub10.readUShort();
+					aShortArray455[i_8_] = (short) class14_sub10.readUShort();
 				}
 			} else if (i >= 60 && i < 70)
-				anIntArray447[i - 60] = class14_sub10.readUShort((byte) 107);
+				anIntArray447[i - 60] = class14_sub10.readUShort();
 		} else
 			aBoolean449 = true;
 	}
@@ -123,7 +124,7 @@ public class Class21 {
 				}
 			}
 			Class76.aClass88Array1211 = new Class88[i_16_];
-			Class72.method1320(class88s_15_, 0, Class76.aClass88Array1211, 0, i_16_);
+			ArrayUtils.method1320(class88s_15_, 0, Class76.aClass88Array1211, 0, i_16_);
 			int[] is = new int[Class76.aClass88Array1211.length];
 			for (int i_20_ = 0; i_20_ < Class76.aClass88Array1211.length; i_20_++) {
 				Class88 class88 = Class76.aClass88Array1211[i_20_];
@@ -138,7 +139,7 @@ public class Class21 {
 	public static void method979(int i) {
 		aClass52_444 = null;
 		aClass36_441 = null;
-		anIntArray437 = null;
+		occludersY = null;
 		anIntArrayArray452 = null;
 		anIntArray442 = null;
 		int i_21_ = -8 / ((-18 - i) / 38);
@@ -207,7 +208,7 @@ public class Class21 {
 				bool_30_ = false;
 		}
 		if (bool)
-			anIntArray437 = null;
+			occludersY = null;
 		boolean bool_31_ = bool_30_;
 		return bool_31_;
 	}

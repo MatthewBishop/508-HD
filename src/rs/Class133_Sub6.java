@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.cache.anim.Animation;
-import com.jagex.rt4.Class14_Sub2_Sub19;
+import com.jagex.rt4.AbstractSprite;
 import com.jagex.rt4.RT4GL;
 import com.jagex.util.BrowserControlUtil;
 
@@ -17,7 +17,7 @@ public class Class133_Sub6 extends Class133 {
 	public static Class124 aClass124_3637;
 	public Animation aClass46_3638;
 	public static Class124 aClass124_3639;
-	public static Class14_Sub2_Sub19 aClass14_Sub2_Sub19_3640;
+	public static AbstractSprite aClass14_Sub2_Sub19_3640;
 	public int anInt3641;
 	public static Class124[] aClass124Array3642;
 	public boolean aBoolean3643 = false;
@@ -164,7 +164,7 @@ public class Class133_Sub6 extends Class133 {
 	}
 
 	public static void method1853(int i, int i_9_) {
-		Class150.aClass52_2406.method1208(i);
+		OverlayType.aClass52_2406.method1208(i);
 		JunkTex.aClass52_4588.method1208(i);
 		if (i_9_ != -32768)
 			method1854(-5, -101, 81);

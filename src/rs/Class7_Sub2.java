@@ -3,7 +3,6 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9;
 import com.jagex.rt4.Class148_Sub1;
 
 public class Class7_Sub2 extends Class7 {
@@ -11,7 +10,6 @@ public class Class7_Sub2 extends Class7 {
 	public static Class124 aClass124_2668 = Class124.method263(1178, "flash3:");
 	public static Class124 aClass124_2669;
 	public static Class124 aClass124_2670;
-	public static Class9 aClass9_2671;
 	public static Class124 aClass124_2672;
 	public static Class124[] aClass124Array2674;
 	public static int anInt2675;
@@ -42,7 +40,7 @@ public class Class7_Sub2 extends Class7 {
 		aClass124_2669 = null;
 		aClass124_2672 = null;
 		aClass124_2667 = null;
-		aClass9_2671 = null;
+
 		aClass148_Sub1Array2677 = null;
 		if (i > 96) {
 			aClass124_2668 = null;

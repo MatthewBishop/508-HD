@@ -4,8 +4,8 @@
 package rs;
 
 import com.jagex.io.js5.Class9;
-import com.jagex.rt4.Class14_Sub27;
-import com.jagex.rt4.Class14_Sub2_Sub19;
+import com.jagex.rt4.HDTile;
+import com.jagex.rt4.AbstractSprite;
 
 public class Class38 implements Interface5 {
 	public static int anInt2616 = 0;
@@ -35,7 +35,7 @@ public class Class38 implements Interface5 {
 		return class124;
 	}
 
-	public static void method1114(int i, int i_0_, float[][] fs, int[][] is, boolean bool, Class14_Sub27 class14_sub27,
+	public static void method1114(int i, int i_0_, float[][] fs, int[][] is, boolean bool, HDTile class14_sub27,
 			float[][] fs_1_, int i_2_, int i_3_, int i_4_, float[][] fs_5_, byte i_6_, int i_7_, int i_8_, byte i_9_,
 			int i_10_) {
 		int i_11_ = (i_4_ << 40) + 255;
@@ -253,14 +253,14 @@ public class Class38 implements Interface5 {
 		class14_sub27.method920(i_8_, i_2_, i_10_, is_17_, is_15_, false);
 	}
 
-	public static Class14_Sub2_Sub19[] method1115(boolean bool, Class9 class9, int i, int i_39_) {
-		if (!Class109.method1564(-2, i, i_39_, class9)) {
-			Class14_Sub2_Sub19[] class14_sub2_sub19s = null;
+	public static AbstractSprite[] method1115(boolean bool, Class9 class9, int i, int i_39_) {
+		if (!Class109.method1564(i, i_39_, class9)) {
+			AbstractSprite[] class14_sub2_sub19s = null;
 			return class14_sub2_sub19s;
 		}
 		if (bool)
 			method1116(-87, true);
-		Class14_Sub2_Sub19[] class14_sub2_sub19s = JunkTex.method535(!bool);
+		AbstractSprite[] class14_sub2_sub19s = JunkTex.method535(!bool);
 		return class14_sub2_sub19s;
 	}
 
@@ -301,16 +301,16 @@ public class Class38 implements Interface5 {
 							Class14_Sub2_Sub8.anIntArrayArray3846[i_42_][i_43_] = Class42.anInt699;
 						}
 						class133_sub1_sub1.anInt3500 = JunkTex.method1017(class133_sub1_sub1.anInt3495,
-								Class14_Sub2_Sub3.anInt3785, (byte) 85, class133_sub1_sub1.anInt3436);
-						JunkTex.method519(Class14_Sub2_Sub3.anInt3785, class133_sub1_sub1.anInt3495,
+								Class14_Sub2_Sub3.gameLevel, (byte) 85, class133_sub1_sub1.anInt3436);
+						JunkTex.method519(Class14_Sub2_Sub3.gameLevel, class133_sub1_sub1.anInt3495,
 								class133_sub1_sub1.anInt3436, class133_sub1_sub1.anInt3500,
 								class133_sub1_sub1.anInt3493 * 64 + 60 - 64, class133_sub1_sub1,
 								class133_sub1_sub1.anInt3461, l, class133_sub1_sub1.aBoolean3488);
 					} else {
 						class133_sub1_sub1.aBoolean4921 = false;
 						class133_sub1_sub1.anInt3500 = JunkTex.method1017(class133_sub1_sub1.anInt3495,
-								Class14_Sub2_Sub3.anInt3785, (byte) -112, class133_sub1_sub1.anInt3436);
-						Class128.method1757(Class14_Sub2_Sub3.anInt3785, class133_sub1_sub1.anInt3495,
+								Class14_Sub2_Sub3.gameLevel, (byte) -112, class133_sub1_sub1.anInt3436);
+						Class128.method1757(Class14_Sub2_Sub3.gameLevel, class133_sub1_sub1.anInt3495,
 								class133_sub1_sub1.anInt3436, class133_sub1_sub1.anInt3500, class133_sub1_sub1,
 								class133_sub1_sub1.anInt3461, l, class133_sub1_sub1.anInt4914,
 								class133_sub1_sub1.anInt4908, class133_sub1_sub1.anInt4906,

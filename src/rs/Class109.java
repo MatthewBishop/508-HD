@@ -6,8 +6,8 @@ package rs;
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9;
 import com.jagex.io.js5.Class9_Sub1;
-import com.jagex.rt4.Class14_Sub2_Sub19;
-import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
+import com.jagex.rt4.AbstractSprite;
+import com.jagex.rt4.AbstractSprite_Sub1;
 
 public class Class109 {
 	public int anInt1829;
@@ -15,7 +15,7 @@ public class Class109 {
 	public static Class124 aClass124_1831 = Class124.method263(1178, "null");
 	public int anInt1833;
 	public static Class9_Sub1 idx1;
-	public static Class14_Sub2_Sub19_Sub1[] aClass14_Sub2_Sub19_Sub1Array1835;
+	public static AbstractSprite_Sub1[] aClass14_Sub2_Sub19_Sub1Array1835;
 	public static Class124 aClass124_1836 = Class124.method263(1178, ")3)3)3");
 	public byte aByte1838;
 	public static Class124 aClass124_1839 = Class124.method263(1178, "::fpsoff");
@@ -36,37 +36,35 @@ public class Class109 {
 		}
 	}
 
-	public static boolean method1564(int i, int i_3_, int i_4_, Class9 class9) {
-		byte[] is = class9.method163(i_3_, i_4_, i + 2);
+	public static boolean method1564(int i_3_, int i_4_, Class9 class9) {
+		byte[] is = class9.method163(i_3_, i_4_, 0);
 		if (is == null) {
 			boolean bool = false;
 			return bool;
 		}
-		Class14_Sub9_Sub1.method708(is, i ^ ~0x91);
-		if (i != -2)
-			idx1 = null;
+		Class14_Sub9_Sub1.decodeSprites(is);
 		boolean bool = true;
 		return bool;
 	}
 
-	public static Class14_Sub2_Sub19 method1565(int i, int i_5_, boolean bool, int i_6_, byte i_7_, int i_8_) {
+	public static AbstractSprite method1565(int i, int i_5_, boolean bool, int i_6_, byte i_7_, int i_8_) {
 		int i_9_ = (i << 17) + i_6_ - (-(bool ? 65536 : 0) - (i_8_ << 51));
 		if (i_7_ > -35) {
-			Class14_Sub2_Sub19 class14_sub2_sub19 = null;
+			AbstractSprite class14_sub2_sub19 = null;
 			return class14_sub2_sub19;
 		}
 		int i_10_ = i_5_;
 		long l = i_10_ * 3147483667L - -(i_9_ * 3849834839L);
-		Class14_Sub2_Sub19 class14_sub2_sub19 = ((Class14_Sub2_Sub19) Class70.aClass52_1077.get(l));
+		AbstractSprite class14_sub2_sub19 = ((AbstractSprite) Class70.aClass52_1077.get(l));
 		if (class14_sub2_sub19 != null) {
-			Class14_Sub2_Sub19 class14_sub2_sub19_11_ = class14_sub2_sub19;
+			AbstractSprite class14_sub2_sub19_11_ = class14_sub2_sub19;
 			return class14_sub2_sub19_11_;
 		}
 		Class3.aBoolean103 = false;
-		Class14_Sub2_Sub19 class14_sub2_sub19_12_ = Class49.method1194(false, i, i_6_, false, bool, i_5_, true, i_8_);
+		AbstractSprite class14_sub2_sub19_12_ = Class49.method1194(false, i, i_6_, false, bool, i_5_, true, i_8_);
 		if (class14_sub2_sub19_12_ != null && !Class3.aBoolean103)
 			Class70.aClass52_1077.put(class14_sub2_sub19_12_, l);
-		Class14_Sub2_Sub19 class14_sub2_sub19_13_ = class14_sub2_sub19_12_;
+		AbstractSprite class14_sub2_sub19_13_ = class14_sub2_sub19_12_;
 		return class14_sub2_sub19_13_;
 	}
 
@@ -138,7 +136,7 @@ public class Class109 {
 	public static void method1571(int i) {
 		aClass124_1836 = null;
 		if (i != 0)
-			method1564(-99, 61, 81, null);
+			method1564(61, 81, null);
 		aClass14_Sub2_Sub19_Sub1Array1835 = null;
 		aClass124_1831 = null;
 		idx1 = null;
@@ -164,8 +162,8 @@ public class Class109 {
 	}
 
 	public Class109(Buffer class14_sub10) {
-		aByte1838 = class14_sub10.method780((byte) -77);
-		anInt1830 = class14_sub10.readUShort((byte) 125);
+		aByte1838 = class14_sub10.method780();
+		anInt1830 = class14_sub10.readUShort();
 		anInt1833 = class14_sub10.getInt((byte) -99);
 		anInt1841 = class14_sub10.getInt((byte) -102);
 		anInt1845 = class14_sub10.getInt((byte) -117);

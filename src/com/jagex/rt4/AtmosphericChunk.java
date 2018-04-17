@@ -41,11 +41,11 @@ public class AtmosphericChunk {
 		if ((var2 & 2) == 0) {
 			this.lightModelAmbient = 1.1523438F;
 		} else {
-			this.lightModelAmbient = (float) var1.readUShort((byte) 110) / 256.0F;
+			this.lightModelAmbient = (float) var1.readUShort() / 256.0F;
 		}
 
 		if ((var2 & 4) != 0) {
-			this.light0Diffuse = (float) var1.readUShort((byte) 122) / 256.0F;
+			this.light0Diffuse = (float) var1.readUShort() / 256.0F;
 		} else {
 			this.light0Diffuse = 0.69921875F;
 		}
@@ -53,7 +53,7 @@ public class AtmosphericChunk {
 		if ((var2 & 8) == 0) {
 			this.light1Diffuse = 1.2F;
 		} else {
-			this.light1Diffuse = (float) var1.readUShort((byte) 120) / 256.0F;
+			this.light1Diffuse = (float) var1.readUShort() / 256.0F;
 		}
 
 		if ((var2 & 16) != 0) {
@@ -75,7 +75,7 @@ public class AtmosphericChunk {
 		if ((var2 & 64) == 0) {
 			this.fogDepth = 0;
 		} else {
-			this.fogDepth = var1.readUShort((byte) 111);
+			this.fogDepth = var1.readUShort();
 		}
 
 	}

@@ -271,7 +271,7 @@ public class ShadowManager {
 		RT4GL.method1638(1);
 		RT4GL.method1656(1);
 		RT4GL.method1651();
-		RT4GL.method1639(false);
+		RT4GL.USE_GL_LIGHTING(false);
 		RT4.method1778(0, 0);
 		gl.glDepthMask(false);
 		for (int chunkX = 0; chunkX < chunkCountX; chunkX++) {

@@ -14,8 +14,8 @@ import com.jagex.link.Linkable;
 import com.jagex.map.SceneCluster;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.Class14_Sub1;
-import com.jagex.rt4.Class14_Sub2_Sub19;
-import com.jagex.rt4.Class14_Sub2_Sub19_Sub2;
+import com.jagex.rt4.AbstractSprite;
+import com.jagex.rt4.AbstractSprite_Sub2;
 import com.jagex.rt4.Class25;
 import com.jagex.util.TimeUtil;
 
@@ -107,12 +107,12 @@ public class Class79 {
 		Class25.method999(i_2_, i, i_2_ + class94.anInt1518, i + class94.anInt1545);
 		if (i_3_ == 2) {
 			if (JunkTex.anInt4633 < 3)
-				((Class14_Sub2_Sub19_Sub2) JunkTex.aClass14_Sub2_Sub19_4508).method420(i_2_, i,
-						class94.anInt1518, class94.anInt1545, JunkTex.aClass14_Sub2_Sub19_4508.anInt4035 / 2,
-						JunkTex.aClass14_Sub2_Sub19_4508.anInt4042 / 2, JunkTex.anInt4408, 256,
-						(Class14_Sub2_Sub19_Sub2) class94.method1476(false, (byte) 61));
+				((AbstractSprite_Sub2) JunkTex.aClass14_Sub2_Sub19_4508).method420(i_2_, i,
+						class94.anInt1518, class94.anInt1545, JunkTex.aClass14_Sub2_Sub19_4508.width / 2,
+						JunkTex.aClass14_Sub2_Sub19_4508.height / 2, JunkTex.anInt4408, 256,
+						(AbstractSprite_Sub2) class94.method1476(false, (byte) 61));
 			else {
-				Class14_Sub2_Sub19 class14_sub2_sub19 = class94.method1476(false, (byte) 61);
+				AbstractSprite class14_sub2_sub19 = class94.method1476(false, (byte) 61);
 				if (class14_sub2_sub19 != null)
 					class14_sub2_sub19.drawReg(i_2_, i);
 			}
@@ -636,7 +636,7 @@ public class Class79 {
 					if (JunkTex.aClass14_Sub2_Sub9_4354 == null) {
 						Class14_Sub18.aClass14_Sub10_3036.position = 0;
 						int i_79_ = Class14_Sub18.aClass14_Sub10_3036.readUByte();
-						int i_80_ = Class14_Sub18.aClass14_Sub10_3036.readUShort((byte) 104);
+						int i_80_ = Class14_Sub18.aClass14_Sub10_3036.readUShort();
 						int i_81_ = Class14_Sub18.aClass14_Sub10_3036.readUByte();
 						long l_82_ = (i_79_ << 16) + i_80_;
 						int i_83_ = Class14_Sub18.aClass14_Sub10_3036.getInt((byte) -96);
@@ -709,7 +709,7 @@ public class Class79 {
 					anIntArray1256 = new int[i_96_];
 					anIntArray1260 = new int[i_96_];
 					for (int i_97_ = 0; i_96_ > i_97_; i_97_++) {
-						anIntArray1260[i_97_] = class14_sub10.readUShort((byte) 122);
+						anIntArray1260[i_97_] = class14_sub10.readUShort();
 						anIntArray1256[i_97_] = class14_sub10.readUByte();
 					}
 				} else
@@ -723,7 +723,7 @@ public class Class79 {
 						anIntArray1256 = null;
 						anIntArray1260 = new int[i_98_];
 						for (int i_99_ = 0; i_98_ > i_99_; i_99_++)
-							anIntArray1260[i_99_] = class14_sub10.readUShort((byte) 124);
+							anIntArray1260[i_99_] = class14_sub10.readUShort();
 					} else
 						class14_sub10.position += i_98_ * 2;
 				}
@@ -742,9 +742,9 @@ public class Class79 {
 											anInt1229 = 1;
 										else if (i != 28) {
 											if (i == 29)
-												anInt1233 = (class14_sub10.method780((byte) -77));
+												anInt1233 = (class14_sub10.method780());
 											else if (i == 39)
-												anInt1238 = (class14_sub10.method780((byte) -77)) * 5;
+												anInt1238 = (class14_sub10.method780()) * 5;
 											else if (i < 30 || i >= 35) {
 												if (i != 40) {
 													if (i == 41) {
@@ -762,11 +762,11 @@ public class Class79 {
 															if (i != 62) {
 																if (i != 64) {
 																	if (i == 65)
-																		anInt1239 = class14_sub10.readUShort((byte) 111);
+																		anInt1239 = class14_sub10.readUShort();
 																	else if (i != 66) {
 																		if (i == 67)
 																			anInt1292 = class14_sub10
-																					.readUShort((byte) 125);
+																					.readUShort();
 																		else if (i != 68) {
 																			if (i != 69) {
 																				if (i != 70) {
@@ -779,17 +779,14 @@ public class Class79 {
 																												&& i != 92) {
 																											if (i == 78) {
 																												anInt1294 = class14_sub10
-																														.readUShort(
-																																(byte) 106);
+																														.readUShort();
 																												anInt1271 = class14_sub10
 																														.readUByte();
 																											} else if (i == 79) {
 																												anInt1289 = class14_sub10
-																														.readUShort(
-																																(byte) 118);
+																														.readUShort();
 																												anInt1254 = class14_sub10
-																														.readUShort(
-																																(byte) 108);
+																														.readUShort();
 																												anInt1271 = class14_sub10
 																														.readUByte();
 																												int i_102_ = class14_sub10
@@ -797,8 +794,7 @@ public class Class79 {
 																												anIntArray1287 = new int[i_102_];
 																												for (int i_103_ = 0; i_102_ > i_103_; i_103_++)
 																													anIntArray1287[i_103_] = class14_sub10
-																															.readUShort(
-																																	(byte) 115);
+																															.readUShort();
 																											} else if (i != 81) {
 																												if (i != 82) {
 																													if (i == 88)
@@ -810,8 +806,7 @@ public class Class79 {
 																															else if (i == 93) {
 																																aByte1286 = (byte) 3;
 																																aShort1304 = (short) class14_sub10
-																																		.readUShort(
-																																				(byte) 114);
+																																		.readUShort();
 																															} else if (i == 94)
 																																aByte1286 = (byte) 4;
 																															else if (i == 95)
@@ -869,20 +864,17 @@ public class Class79 {
 																											}
 																										} else {
 																											anInt1243 = class14_sub10
-																													.readUShort(
-																															(byte) 105);
+																													.readUShort();
 																											if (anInt1243 == 65535)
 																												anInt1243 = -1;
 																											anInt1251 = class14_sub10
-																													.readUShort(
-																															(byte) 118);
+																													.readUShort();
 																											if (anInt1251 == 65535)
 																												anInt1251 = -1;
 																											int i_108_ = -1;
 																											if (i == 92) {
 																												i_108_ = class14_sub10
-																														.readUShort(
-																																(byte) 108);
+																														.readUShort();
 																												if (i_108_ == 65535)
 																													i_108_ = -1;
 																											}
@@ -892,8 +884,7 @@ public class Class79 {
 																													+ 2];
 																											for (int i_110_ = 0; i_109_ >= i_110_; i_110_++) {
 																												anIntArray1276[i_110_] = class14_sub10
-																														.readUShort(
-																																(byte) 106);
+																														.readUShort();
 																												if (anIntArray1276[i_110_] == 65535)
 																													anIntArray1276[i_110_] = -1;
 																											}
@@ -920,9 +911,9 @@ public class Class79 {
 																				anInt1244 = class14_sub10.readUByte();
 																		} else
 																			anInt1281 = class14_sub10
-																					.readUShort((byte) 108);
+																					.readUShort();
 																	} else
-																		anInt1252 = class14_sub10.readUShort((byte) 115);
+																		anInt1252 = class14_sub10.readUShort();
 																} else
 																	aBoolean1296 = false;
 															} else
@@ -934,7 +925,7 @@ public class Class79 {
 														aByteArray1297 = new byte[i_111_];
 														for (int i_112_ = 0; i_111_ > i_112_; i_112_++)
 															aByteArray1297[i_112_] = (class14_sub10
-																	.method780((byte) -77));
+																	.method780());
 													}
 												} else {
 													int i_113_ = class14_sub10.readUByte();
@@ -956,7 +947,7 @@ public class Class79 {
 										} else
 											anInt1246 = class14_sub10.readUByte();
 									} else {
-										anInt1278 = class14_sub10.readUShort((byte) 112);
+										anInt1278 = class14_sub10.readUShort();
 										if (anInt1278 == 65535)
 											anInt1278 = -1;
 									}

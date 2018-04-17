@@ -6,26 +6,26 @@ package rs;
 import javax.media.opengl.GL;
 
 import com.jagex.rt4.AtmosphericEffects;
-import com.jagex.rt4.Class14_Sub27;
-import com.jagex.rt4.GLEffect3;
+import com.jagex.rt4.HDTile;
 import com.jagex.rt4.RT4;
 import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.ShadowManager;
 import com.jagex.rt4.lights.LightManager;
+import com.jagex.rt4.shader.WaterShader;
 
 public class StaticGL {
 	public static void method1409() {
 		GL gl = RT4GL.gl;
 		gl.glDisableClientState(32886);
-		RT4GL.method1639(false);
+		RT4GL.USE_GL_LIGHTING(false);
 		gl.glDisable(2929);
 		gl.glPushAttrib(128);
 		gl.glFogf(2915, 3072.0F);
 		RT4GL.method1646();
 		for (int i = 0; i < Class14_Sub30.aClass14_Sub27ArrayArray3273[0].length; i++) {
-			Class14_Sub27 class14_sub27 = Class14_Sub30.aClass14_Sub27ArrayArray3273[0][i];
+			HDTile class14_sub27 = Class14_Sub30.aClass14_Sub27ArrayArray3273[0][i];
 			if (class14_sub27.anInt3204 >= 0
-					&& (Class3.anInterface3_117.method12(true, class14_sub27.anInt3204) == 4)) {
+					&& (Class3.anInterface3_117.method12(class14_sub27.anInt3204) == 4)) {
 				gl.glColor4fv(RT4.method657(81, class14_sub27.anInt3190), 0);
 				float f = 201.5F - (class14_sub27.aBoolean3201 ? 1.0F : 0.5F);
 				class14_sub27.method922((JunkTex.aClass14_Sub29ArrayArrayArray3368), f, true);
@@ -41,7 +41,7 @@ public class StaticGL {
 	public static void method67(int i, int i_19_, int i_20_, byte[][][] is, int i_21_, byte i_22_, int i_23_,
 			int i_24_) {
 		Class67.anInt1059++;
-		ProceduralTexture.anInt1806 = 0;
+		Static2.anInt1806 = 0;
 		int i_25_ = i_23_ - 16;
 		int i_26_ = i_23_ + 16;
 		int i_27_ = i_24_ - 16;
@@ -95,13 +95,13 @@ public class StaticGL {
 								class14_sub29.aBoolean3251 = true;
 							else
 								class14_sub29.aBoolean3251 = false;
-							ProceduralTexture.anInt1806++;
+							Static2.anInt1806++;
 						}
 					}
 				}
 			}
 		}
-		boolean bool = Class114.tileHeights == Class150.anIntArrayArrayArray2419;
+		boolean bool = Class114.tileHeights == OverlayType.anIntArrayArrayArray2419;
 		GL gl = RT4GL.gl;
 		gl.glPushMatrix();
 		gl.glTranslatef(-i, -i_19_, -i_20_);
@@ -109,11 +109,11 @@ public class StaticGL {
 			method1409();
 			RT4.method1778(3, -1);
 			Class14_Sub30.aBoolean3269 = true;
-			GLEffect3.enableTexCoordArray();
+			WaterShader.enableTexCoordArray();
 			Class7_Sub1.anInt2653 = -1;
 			JunkTex.anInt4675 = -1;
 			for (int i_33_ = 0; i_33_ < (JunkTex.aClass14_Sub27ArrayArray2464[0]).length; i_33_++) {
-				Class14_Sub27 class14_sub27 = (JunkTex.aClass14_Sub27ArrayArray2464[0][i_33_]);
+				HDTile class14_sub27 = (JunkTex.aClass14_Sub27ArrayArray2464[0][i_33_]);
 				float f = 251.5F - (class14_sub27.aBoolean3201 ? 1.0F : 0.5F);
 				if (class14_sub27.anInt3190 != Class7_Sub1.anInt2653) {
 					Class7_Sub1.anInt2653 = class14_sub27.anInt3190;
@@ -122,14 +122,14 @@ public class StaticGL {
 				}
 				class14_sub27.method922((JunkTex.aClass14_Sub29ArrayArrayArray3368), f, false);
 			}
-			GLEffect3.disableTexCoordArray();
+			WaterShader.disableTexCoordArray();
 		} else {
 			for (int i_34_ = Class14_Sub23.anInt3134; i_34_ < Class83.anInt1338; i_34_++) {
 				for (int i_35_ = 0; i_35_ < (JunkTex.aClass14_Sub27ArrayArray2464[i_34_]).length; i_35_++) {
-					Class14_Sub27 class14_sub27 = (JunkTex.aClass14_Sub27ArrayArray2464[i_34_][i_35_]);
+					HDTile class14_sub27 = (JunkTex.aClass14_Sub27ArrayArray2464[i_34_][i_35_]);
 					float f = (201.5F - i_34_ * 50.0F - (class14_sub27.aBoolean3201 ? 1.0F : 0.5F));
 					if (class14_sub27.anInt3204 != -1
-							&& Class3.anInterface3_117.method12(true, class14_sub27.anInt3204) == 4
+							&& Class3.anInterface3_117.method12(class14_sub27.anInt3204) == 4
 							&& Class15.aBoolean374)
 						RT4.method1304(class14_sub27.anInt3190);
 					class14_sub27.method922(JunkTex.aClass14_Sub29ArrayArrayArray3368, f, false);
@@ -177,7 +177,7 @@ public class StaticGL {
 									Class14_Sub4.method454(class14_sub29, true);
 							}
 						}
-						if (ProceduralTexture.anInt1806 == 0) {
+						if (Static2.anInt1806 == 0) {
 							if (!bool)
 								Class142.aBoolean2299 = false;
 							return;
@@ -219,7 +219,7 @@ public class StaticGL {
 									Class14_Sub4.method454(class14_sub29, false);
 							}
 						}
-						if (ProceduralTexture.anInt1806 == 0) {
+						if (Static2.anInt1806 == 0) {
 							if (!bool)
 								Class142.aBoolean2299 = false;
 							return;

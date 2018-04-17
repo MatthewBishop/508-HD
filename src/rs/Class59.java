@@ -37,7 +37,7 @@ public class Class59 {
 		boolean bool_16_ = false;
 		JunkTex.anIntArray4691[i_15_] = i_7_;
 		Class14_Sub2_Sub21.anIntArray4078[i_15_++] = i_9_;
-		int[][] is = (Class14_Sub21.aClass32Array3100[Class14_Sub2_Sub3.anInt3785].anIntArrayArray546);
+		int[][] is = (Class14_Sub21.aClass32Array3100[Class14_Sub2_Sub3.gameLevel].anIntArrayArray546);
 		while (i_14_ != i_15_) {
 			i_12_ = Class14_Sub2_Sub21.anIntArray4078[i_14_];
 			i_13_ = JunkTex.anIntArray4691[i_14_];
@@ -47,9 +47,9 @@ public class Class59 {
 				break;
 			}
 			if (i != 0) {
-				if (i >= 5 && i != 10 || !(Class14_Sub21.aClass32Array3100[Class14_Sub2_Sub3.anInt3785].method1076(i_1_,
+				if (i >= 5 && i != 10 || !(Class14_Sub21.aClass32Array3100[Class14_Sub2_Sub3.gameLevel].method1076(i_1_,
 						1, i - 1, i_3_, i_6_, i_13_, i_12_, i_4_ + 18288))) {
-					if (i < 10 && (Class14_Sub21.aClass32Array3100[Class14_Sub2_Sub3.anInt3785].method1066(1, i - 1,
+					if (i < 10 && (Class14_Sub21.aClass32Array3100[Class14_Sub2_Sub3.gameLevel].method1066(1, i - 1,
 							i_13_, i_3_, i_12_, (byte) -39, i_1_, i_6_))) {
 						bool_16_ = true;
 						break;
@@ -59,7 +59,7 @@ public class Class59 {
 					break;
 				}
 			}
-			if (i_0_ != 0 && i_2_ != 0 && (Class14_Sub21.aClass32Array3100[Class14_Sub2_Sub3.anInt3785]
+			if (i_0_ != 0 && i_2_ != 0 && (Class14_Sub21.aClass32Array3100[Class14_Sub2_Sub3.gameLevel]
 					.method1078(i_12_, i_2_, i_13_, i_5_, (byte) -63, i_6_, i_3_, 1, i_0_))) {
 				bool_16_ = true;
 				break;
@@ -243,7 +243,7 @@ public class Class59 {
 			} else if (i == 3) {
 				int i_33_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 7);
 				int i_34_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 1);
-				Class14_Sub2_Sub3.anInt3785 = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 2);
+				Class14_Sub2_Sub3.gameLevel = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 2);
 				int i_35_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 1);
 				if (i_35_ == 1)
 					Class14_Sub2_Sub7.anIntArray3825[Class64.anInt1012++] = 2047;

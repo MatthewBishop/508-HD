@@ -34,7 +34,7 @@ public class Class53 {
 			Class120.anInt2007 = -1;
 			JunkTex.anInt4548 = -1;
 		} else {
-			int i_7_ = -i_4_ + JunkTex.method1017(i_1_, Class14_Sub2_Sub3.anInt3785, (byte) -8, i_6_);
+			int i_7_ = -i_4_ + JunkTex.method1017(i_1_, Class14_Sub2_Sub3.gameLevel, (byte) -8, i_6_);
 			i_1_ -= JunkTex.anInt4741;
 			i_6_ -= Class14_Sub30.anInt3271;
 			int i_8_ = Class3.sin[Class7_Sub3_Sub1.anInt3719];
@@ -69,7 +69,7 @@ public class Class53 {
 	public static void method1216(int i) {
 		int i_16_ = Class123.anInt2062 * i + 64;
 		int i_17_ = JunkTex.anInt4731 * 128 + 64;
-		int i_18_ = (JunkTex.method1017(i_16_, Class14_Sub2_Sub3.anInt3785, (byte) -121, i_17_)
+		int i_18_ = (JunkTex.method1017(i_16_, Class14_Sub2_Sub3.gameLevel, (byte) -121, i_17_)
 				- JunkTex.anInt4480);
 		if (Class69.anInt1071 < 100) {
 			if (i_18_ > Static2.anInt2926) {
@@ -111,12 +111,12 @@ public class Class53 {
 		} else {
 			Class14_Sub30.anInt3271 = JunkTex.anInt4731 * 128 + 64;
 			JunkTex.anInt4741 = Class123.anInt2062 * 128 + 64;
-			Static2.anInt2926 = (JunkTex.method1017(JunkTex.anInt4741, Class14_Sub2_Sub3.anInt3785,
+			Static2.anInt2926 = (JunkTex.method1017(JunkTex.anInt4741, Class14_Sub2_Sub3.gameLevel,
 					(byte) -123, Class14_Sub30.anInt3271) - JunkTex.anInt4480);
 		}
 		i_17_ = Class33.anInt577 * 128 + 64;
 		i_16_ = Class117.anInt1948 * 128 + 64;
-		i_18_ = (JunkTex.method1017(i_16_, Class14_Sub2_Sub3.anInt3785, (byte) -117, i_17_)
+		i_18_ = (JunkTex.method1017(i_16_, Class14_Sub2_Sub3.gameLevel, (byte) -117, i_17_)
 				- Class14_Sub2_Sub9.anInt3866);
 		int i_19_ = -Class14_Sub30.anInt3271 + i_17_;
 		int i_20_ = i_16_ - JunkTex.anInt4741;

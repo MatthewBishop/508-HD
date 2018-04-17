@@ -3,6 +3,8 @@
  */
 package rs;
 
+import com.jagex.util.TextureDefInterface;
+
 public class Class3 {
 	public static boolean aBoolean103 = false;
 	public static boolean aBoolean104;
@@ -18,7 +20,7 @@ public class Class3 {
 	public static int[] anIntArray114;
 	public static float aFloat115;
 	public static int anInt116;
-	public static Interface3 anInterface3_117;
+	public static TextureDefInterface anInterface3_117;
 	public static int anInt118;
 	public static int[] anIntArray119;
 	public static boolean aBoolean120;
@@ -402,7 +404,7 @@ public class Class3 {
 		}
 	}
 
-	public static void method93(Interface3 interface3) {
+	public static void method93(TextureDefInterface interface3) {
 		anInterface3_117 = interface3;
 	}
 
@@ -835,15 +837,15 @@ public class Class3 {
 	public static void method98(int i, int i_69_, int i_70_, int i_71_, int i_72_, int i_73_, int i_74_, int i_75_,
 			int i_76_, int i_77_, int i_78_, int i_79_, int i_80_, int i_81_, int i_82_, int i_83_, int i_84_,
 			int i_85_, int i_86_) {
-		int[] is = anInterface3_117.method11(aFloat115, i_86_, 31);
+		int[] is = anInterface3_117.method11(aFloat115, i_86_);
 		if (is == null || anInt116 > 10) {
-			int i_87_ = anInterface3_117.method5(i_86_, (byte) -121);
+			int i_87_ = anInterface3_117.method5(i_86_);
 			aBoolean103 = true;
 			method104(i, i_69_, i_70_, i_71_, i_72_, i_73_, method100(i_87_, i_74_), method100(i_87_, i_75_),
 					method100(i_87_, i_76_));
 		} else {
-			aBoolean120 = anInterface3_117.method15(1, i_86_);
-			aBoolean104 = anInterface3_117.method6(i_86_, -105);
+			aBoolean120 = anInterface3_117.method15(i_86_);
+			aBoolean104 = anInterface3_117.method6(i_86_);
 			int i_88_ = i_72_ - i_71_;
 			int i_89_ = i_69_ - i;
 			int i_90_ = i_73_ - i_71_;

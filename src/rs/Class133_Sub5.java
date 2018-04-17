@@ -4,13 +4,13 @@
 package rs;
 
 import com.jagex.cache.anim.Animation;
-import com.jagex.rt4.Class14_Sub2_Sub19;
+import com.jagex.rt4.AbstractSprite;
 
 public class Class133_Sub5 extends Class133 {
 	public int anInt3605;
 	public static Class124 aClass124_3607;
 	public int anInt3608 = 0;
-	public static Class14_Sub2_Sub19[] aClass14_Sub2_Sub19Array3609;
+	public static AbstractSprite[] aClass14_Sub2_Sub19Array3609;
 	public static Class124 aClass124_3610;
 	public Animation aClass46_3611;
 	public static int anInt3612 = 0;

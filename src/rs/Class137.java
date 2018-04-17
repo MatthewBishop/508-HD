@@ -6,9 +6,9 @@ package rs;
 import com.jagex.cache.anim.Animation;
 import com.jagex.io.js5.Class9;
 import com.jagex.rt4.Class11;
-import com.jagex.rt4.Class14_Sub2_Sub19;
-import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
-import com.jagex.rt4.Class14_Sub2_Sub19_Sub2;
+import com.jagex.rt4.AbstractSprite;
+import com.jagex.rt4.AbstractSprite_Sub1;
+import com.jagex.rt4.AbstractSprite_Sub2;
 import com.jagex.rt4.Class25;
 import com.jagex.rt4.RT4;
 import com.jagex.rt4.RT4GL;
@@ -123,7 +123,7 @@ public class Class137 {
 						if (JunkTex.aBoolean4188 && Class59.aBoolean954) {
 							int i_21_ = JunkTex.anInt4640;
 							i_21_ -= JunkTex.anInt4132;
-							int i_22_ = ProceduralTexture.anInt1804;
+							int i_22_ = Static2.anInt1804;
 							if (i_21_ < Class108.anInt1824)
 								i_21_ = Class108.anInt1824;
 							i_22_ -= Canvas_Sub2.anInt63;
@@ -311,7 +311,7 @@ public class Class137 {
 											}
 											if (class94.anIntArray1452[i_34_] <= 0) {
 												if ((class94.anIntArray1560 != null) && i_34_ < 20) {
-													Class14_Sub2_Sub19 class14_sub2_sub19 = (class94
+													AbstractSprite class14_sub2_sub19 = (class94
 															.method1479((byte) 91, i_34_));
 													if (class14_sub2_sub19 != null)
 														class14_sub2_sub19.drawReg(i_37_, i_38_);
@@ -326,7 +326,7 @@ public class Class137 {
 														&& i_13_ > i_38_)
 														|| (((JunkTex.aClass94_4446) == class94)
 																&& (i_34_ == (Class122.anInt2054)))) {
-													Class14_Sub2_Sub19 class14_sub2_sub19;
+													AbstractSprite class14_sub2_sub19;
 													if (Class51.anInt831 == 1 && ((JunkTex.anInt2853) == i_34_)
 															&& ((JunkTex.anInt3960) == (class94.anInt1548)))
 														class14_sub2_sub19 = (Class109.method1565(2,
@@ -342,7 +342,7 @@ public class Class137 {
 														Class103.method1531(class94);
 													else if ((class94 == (JunkTex.aClass94_4446))
 															&& (i_34_ == (Class122.anInt2054))) {
-														int i_41_ = (-(Class111.anInt1865) + (ProceduralTexture.anInt1804));
+														int i_41_ = (-(Class111.anInt1865) + (Static2.anInt1804));
 														if (i_41_ < 5 && i_41_ > -5)
 															i_41_ = 0;
 														int i_42_ = ((JunkTex.anInt4640)
@@ -467,7 +467,7 @@ public class Class137 {
 									}
 								} else if (class94.anInt1489 == 5) {
 									if (class94.aBoolean1455) {
-										Class14_Sub2_Sub19 class14_sub2_sub19;
+										AbstractSprite class14_sub2_sub19;
 										if (class94.anInt1532 == -1)
 											class14_sub2_sub19 = (class94.method1476(false, (byte) 61));
 										else
@@ -497,9 +497,9 @@ public class Class137 {
 												int i_54_ = ((-1 - (-i_50_ - (class94.anInt1545))) / i_50_);
 												Class25.method1002(i_18_, i_19_, class94.anInt1518 + i_18_,
 														(i_19_ + class94.anInt1545));
-												boolean bool = RandomUtil.method1594(class14_sub2_sub19.anInt4035);
-												boolean bool_55_ = RandomUtil.method1594(class14_sub2_sub19.anInt4042);
-												Class14_Sub2_Sub19_Sub2 class14_sub2_sub19_sub2 = ((Class14_Sub2_Sub19_Sub2) class14_sub2_sub19);
+												boolean bool = RandomUtil.method1594(class14_sub2_sub19.width);
+												boolean bool_55_ = RandomUtil.method1594(class14_sub2_sub19.height);
+												AbstractSprite_Sub2 class14_sub2_sub19_sub2 = ((AbstractSprite_Sub2) class14_sub2_sub19);
 												if (!bool || !bool_55_) {
 													if (!bool) {
 														if (!bool_55_) {
@@ -548,7 +548,7 @@ public class Class137 {
 										} else if (Class94.aBoolean1554)
 											Class103.method1531(class94);
 									} else {
-										Class14_Sub2_Sub19 class14_sub2_sub19 = (class94
+										AbstractSprite class14_sub2_sub19 = (class94
 												.method1476(Class89.method1440(class94, 10151), (byte) 61));
 										if (class14_sub2_sub19 == null) {
 											if (Class94.aBoolean1554)
@@ -781,14 +781,14 @@ public class Class137 {
 		}
 	}
 
-	public static Class14_Sub2_Sub19_Sub1 method1943(int i, Class9 class9, int i_88_, byte i_89_) {
-		if (!Class109.method1564(-2, i, i_88_, class9)) {
-			Class14_Sub2_Sub19_Sub1 class14_sub2_sub19_sub1 = null;
+	public static AbstractSprite_Sub1 method1943(int i, Class9 class9, int i_88_, byte i_89_) {
+		if (!Class109.method1564(i, i_88_, class9)) {
+			AbstractSprite_Sub1 class14_sub2_sub19_sub1 = null;
 			return class14_sub2_sub19_sub1;
 		}
 		if (i_89_ < 35)
 			RT4.rotateX = -18;
-		Class14_Sub2_Sub19_Sub1 class14_sub2_sub19_sub1 = Class56.method1239(0);
+		AbstractSprite_Sub1 class14_sub2_sub19_sub1 = Class56.constructLDSpriteAlpha(0);
 		return class14_sub2_sub19_sub1;
 	}
 }

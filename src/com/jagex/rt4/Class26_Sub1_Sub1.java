@@ -8,7 +8,7 @@ public class Class26_Sub1_Sub1 extends Class26_Sub1 {
 
 	public byte[] method1029(int i, int i_0_, int i_1_) {
 		aByteArray4900 = new byte[i * i_0_ * i_1_ * 2];
-		method1020(i_0_, i_1_, i, 0);
+		method1020(i_0_, i_1_, i);
 		return aByteArray4900;
 	}
 

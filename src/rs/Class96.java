@@ -4,7 +4,7 @@
 package rs;
 
 public class Class96 {
-	public static int[] anIntArray1630 = new int[2];
+	public static int[] z_min_occluders = new int[2];
 	public static Class124 aClass124_1631 = Class124.method263(1178, "name_icons");
 	public static Applet_Sub1 anApplet_Sub1_1632 = null;
 	public static short aShort1633;
@@ -19,7 +19,7 @@ public class Class96 {
 	public static void method1487(boolean bool) {
 		if (!bool) {
 			aClass124_1634 = null;
-			anIntArray1630 = null;
+			z_min_occluders = null;
 			aClass124_1631 = null;
 		}
 	}

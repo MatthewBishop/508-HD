@@ -81,9 +81,9 @@ public class Class22 {
 			Class148_Sub1 class148_sub1 = null;
 			return class148_sub1;
 		}
-		Class148_Sub1 class148_sub1 = new Class148_Sub1(Class14_Sub11.anInt2952, Class14_Sub30.anInt3279,
-				Class40.anIntArray675[0], Class14_Sub2_Sub12.anIntArray3918[0], Class17.anIntArray402[0],
-				Class76.anIntArray1204[0], Class12.aByteArrayArray310[0], JunkTex.anIntArray1114);
+		Class148_Sub1 class148_sub1 = new Class148_Sub1(Class14_Sub11.spriteTrimWidth, Class14_Sub30.spriteTrimHeight,
+				Class40.spriteXOffsets[0], Class14_Sub2_Sub12.spriteYOffsets[0], Class17.spriteWidths[0],
+				Class76.spriteHeights[0], Class12.spritePaletteIndicators[0], JunkTex.spritePalette);
 		Class129.method1761((byte) 123);
 		Class148_Sub1 class148_sub1_4_ = class148_sub1;
 		return class148_sub1_4_;

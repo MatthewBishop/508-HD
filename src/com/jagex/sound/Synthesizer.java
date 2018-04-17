@@ -6,8 +6,7 @@ package com.jagex.sound;
 import java.util.Random;
 
 import com.jagex.io.Buffer;
-
-import rs.Class72;
+import com.jagex.util.ArrayUtils;
 
 public class Synthesizer {
 	public static int[] SINE;
@@ -71,7 +70,7 @@ public class Synthesizer {
 	}
 
 	public int[] synthesize(int sampleCount, int duration) {
-		Class72.fillArray(samples, 0, sampleCount);
+		ArrayUtils.fillArray(samples, 0, sampleCount);
 		if (duration < 10)
 			return samples;
 		double d = (double) sampleCount / ((double) duration + 0.0);
@@ -264,8 +263,8 @@ public class Synthesizer {
 		}
 		delayTime = class14_sub10.method818((byte) -97);
 		delayDecay = class14_sub10.method818((byte) 108);
-		duration = class14_sub10.readUShort((byte) 119);
-		offset = class14_sub10.readUShort((byte) 101);
+		duration = class14_sub10.readUShort();
+		offset = class14_sub10.readUShort();
 		filter = new Filter();
 		filterEnvelope = new Envelope();
 		filter.decode(class14_sub10, filterEnvelope);

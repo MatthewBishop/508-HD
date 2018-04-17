@@ -4,8 +4,8 @@
 package rs;
 
 import com.jagex.map.Scenegraph;
-import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
-import com.jagex.rt4.Class14_Sub2_Sub19_Sub1_Sub1;
+import com.jagex.rt4.AbstractSprite_Sub1;
+import com.jagex.rt4.AbstractSprite_Sub1_Sub1;
 
 public class Class56 {
 	public static int[] anIntArray913;
@@ -71,35 +71,35 @@ public class Class56 {
 						}
 					}
 					if (!bool_5_)
-						ProceduralTexture.method1547(i_1_, i_3_ * 8, i_2_ * 8, 8, 8, false);
+						Static2.method1547(i_1_, i_3_ * 8, i_2_ * 8, 8, 8, false);
 				}
 			}
 		}
 	}
 
-	public static Class14_Sub2_Sub19_Sub1 method1239(int i) {
-		byte[] is = Class12.aByteArrayArray310[0];
-		int i_12_ = Class76.anIntArray1204[i] * Class17.anIntArray402[0];
-		Class14_Sub2_Sub19_Sub1 class14_sub2_sub19_sub1;
-		if (JunkTex.aBooleanArray3416[0]) {
+	public static AbstractSprite_Sub1 constructLDSpriteAlpha(int i) {
+		byte[] is = Class12.spritePaletteIndicators[0];
+		int i_12_ = Class76.spriteHeights[i] * Class17.spriteWidths[0];
+		AbstractSprite_Sub1 class14_sub2_sub19_sub1;
+		if (JunkTex.spriteHasAlpha[0]) {
 			int[] is_13_ = new int[i_12_];
-			byte[] is_14_ = Class98.aByteArrayArray1667[0];
+			byte[] is_14_ = Class98.spriteAlphas[0];
 			for (int i_15_ = 0; i_15_ < i_12_; i_15_++)
 				is_13_[i_15_] = (Class66.method1294(JunkTex.method617(-16777216, is_14_[i_15_] << 56),
-						(JunkTex.anIntArray1114[JunkTex.method617(is[i_15_], 255)])));
-			class14_sub2_sub19_sub1 = new Class14_Sub2_Sub19_Sub1_Sub1(Class14_Sub11.anInt2952, Class14_Sub30.anInt3279,
-					Class40.anIntArray675[0], (Class14_Sub2_Sub12.anIntArray3918[0]), Class17.anIntArray402[0],
-					Class76.anIntArray1204[0], is_13_);
+						(JunkTex.spritePalette[JunkTex.method617(is[i_15_], 255)])));
+			class14_sub2_sub19_sub1 = new AbstractSprite_Sub1_Sub1(Class14_Sub11.spriteTrimWidth, Class14_Sub30.spriteTrimHeight,
+					Class40.spriteXOffsets[0], (Class14_Sub2_Sub12.spriteYOffsets[0]), Class17.spriteWidths[0],
+					Class76.spriteHeights[0], is_13_);
 		} else {
 			int[] is_16_ = new int[i_12_];
 			for (int i_17_ = 0; i_17_ < i_12_; i_17_++)
-				is_16_[i_17_] = (JunkTex.anIntArray1114[JunkTex.method617(is[i_17_], 255)]);
-			class14_sub2_sub19_sub1 = new Class14_Sub2_Sub19_Sub1(Class14_Sub11.anInt2952, Class14_Sub30.anInt3279,
-					Class40.anIntArray675[0], (Class14_Sub2_Sub12.anIntArray3918[0]), Class17.anIntArray402[0],
-					Class76.anIntArray1204[0], is_16_);
+				is_16_[i_17_] = (JunkTex.spritePalette[JunkTex.method617(is[i_17_], 255)]);
+			class14_sub2_sub19_sub1 = new AbstractSprite_Sub1(Class14_Sub11.spriteTrimWidth, Class14_Sub30.spriteTrimHeight,
+					Class40.spriteXOffsets[0], (Class14_Sub2_Sub12.spriteYOffsets[0]), Class17.spriteWidths[0],
+					Class76.spriteHeights[0], is_16_);
 		}
 		Class129.method1761((byte) 83);
-		Class14_Sub2_Sub19_Sub1 class14_sub2_sub19_sub1_18_ = class14_sub2_sub19_sub1;
+		AbstractSprite_Sub1 class14_sub2_sub19_sub1_18_ = class14_sub2_sub19_sub1;
 		return class14_sub2_sub19_sub1_18_;
 	}
 

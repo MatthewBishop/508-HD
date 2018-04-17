@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.link.Linkable;
-import com.jagex.rt4.Class14_Sub2_Sub19;
+import com.jagex.rt4.AbstractSprite;
 
 public class Class14_Sub20 extends Linkable {
 	public int anInt3083;
@@ -19,7 +19,7 @@ public class Class14_Sub20 extends Linkable {
 	public static int anInt3095;
 	public static Class124 aClass124_3096;
 	public static byte[][] aByteArrayArray3097;
-	public static Class14_Sub2_Sub19[] aClass14_Sub2_Sub19Array3098;
+	public static AbstractSprite[] aClass14_Sub2_Sub19Array3098;
 	
 	static {
 		anInt3087 = 0;

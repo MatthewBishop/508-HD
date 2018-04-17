@@ -6,17 +6,17 @@ package rs;
 import com.jagex.io.js5.Class9;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
-import com.jagex.rt4.Class14_Sub27;
+import com.jagex.rt4.HDTile;
 
 public class Class14_Sub30 extends Linkable {
 	public static boolean aBoolean3269 = false;
 	public Class124 aClass124_3270;
 	public static int anInt3271;
-	public static Class14_Sub27[][] aClass14_Sub27ArrayArray3273;
+	public static HDTile[][] aClass14_Sub27ArrayArray3273;
 	public static Class124 aClass124_3274;
 	public static HashTable aClass55_3275;
 	public static Class124 aClass124_3278 = Class124.method263(1178, "wishes to trade with you)3");
-	public static int anInt3279;
+	public static int spriteTrimHeight;
 	public static Class124 aClass124_3281;
 	public static byte aByte3283;
 
@@ -125,7 +125,7 @@ public class Class14_Sub30 extends Linkable {
 	}
 
 	public static void method941(byte i) {
-		Class150.aClass52_2406.method1209();
+		OverlayType.aClass52_2406.method1209();
 		JunkTex.aClass52_4588.method1209();
 		if (i == 11)
 			Class83.aClass52_1339.method1209();

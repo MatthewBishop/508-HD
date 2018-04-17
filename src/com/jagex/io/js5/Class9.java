@@ -4,10 +4,10 @@
 package com.jagex.io.js5;
 
 import com.jagex.io.Buffer;
+import com.jagex.util.ArrayUtils;
 
 import rs.Class124;
 import rs.Class133_Sub1;
-import rs.Class72;
 import rs.Class7_Sub3_Sub1;
 import rs.Static2;
 
@@ -77,12 +77,12 @@ public abstract class Class9 {
 		if (i_3_ >= 6)
 			class14_sub10.getInt((byte) -102);
 		int i_4_ = class14_sub10.readUByte();
-		anInt211 = class14_sub10.readUShort((byte) 111);
+		anInt211 = class14_sub10.readUShort();
 		int i_5_ = 0;
 		int i_6_ = -1;
 		anIntArray223 = new int[anInt211];
 		for (int i_7_ = 0; i_7_ < anInt211; i_7_++) {
-			anIntArray223[i_7_] = i_5_ += class14_sub10.readUShort((byte) 104);
+			anIntArray223[i_7_] = i_5_ += class14_sub10.readUShort();
 			if (i_6_ < anIntArray223[i_7_])
 				i_6_ = anIntArray223[i_7_];
 		}
@@ -106,7 +106,7 @@ public abstract class Class9 {
 		for (int i_11_ = 0; anInt211 > i_11_; i_11_++)
 			anIntArray194[anIntArray223[i_11_]] = class14_sub10.getInt((byte) -102);
 		for (int i_12_ = 0; anInt211 > i_12_; i_12_++)
-			groupFileCount[anIntArray223[i_12_]] = class14_sub10.readUShort((byte) 122);
+			groupFileCount[anIntArray223[i_12_]] = class14_sub10.readUShort();
 		for (int i_13_ = 0; i_13_ < anInt211; i_13_++) {
 			i_5_ = 0;
 			int i_14_ = anIntArray223[i_13_];
@@ -114,7 +114,7 @@ public abstract class Class9 {
 			int i_16_ = -1;
 			anIntArrayArray218[i_14_] = new int[i_15_];
 			for (int i_17_ = 0; i_15_ > i_17_; i_17_++) {
-				int i_18_ = (anIntArrayArray218[i_14_][i_17_] = i_5_ += class14_sub10.readUShort((byte) 112));
+				int i_18_ = (anIntArrayArray218[i_14_][i_17_] = i_5_ += class14_sub10.readUShort());
 				if (i_18_ > i_16_)
 					i_16_ = i_18_;
 			}
@@ -290,7 +290,7 @@ public abstract class Class9 {
 				int i_58_ = 0;
 				for (int i_59_ = 0; i_59_ < i_41_; i_59_++) {
 					i_58_ += class14_sub10.getInt((byte) -115);
-					Class72.method1322(is_47_, i_56_, is_54_[i_59_], is_49_[i_59_], i_58_);
+					ArrayUtils.method1322(is_47_, i_56_, is_54_[i_59_], is_49_[i_59_], i_58_);
 					i_56_ += i_58_;
 					is_49_[i_59_] += i_58_;
 				}
@@ -432,7 +432,7 @@ public abstract class Class9 {
 		int i_79_ = -111 % ((-86 - i) / 36);
 	}
 
-	public byte[] method165(int i, int i_80_) {
+	public byte[] getFileSmart(int i, int i_80_) {
 		if (anIntArray208.length == 1) {
 			byte[] is = method163(i_80_, 0, 0);
 			return is;
@@ -499,14 +499,12 @@ public abstract class Class9 {
 		return bool_90_;
 	}
 
-	public boolean method171(int i, int i_91_) {
-		if (i != 29499)
-			method168(43, (byte) 17);
+	public boolean method171(int i_91_) {
 		if (1 == anIntArray208.length) {
 			boolean bool = method158(i_91_, 0, (byte) 100);
 			return bool;
 		}
-		if (!method153(i_91_, i - 29500)) {
+		if (!method153(i_91_, 29499 - 29500)) {
 			boolean bool = false;
 			return bool;
 		}

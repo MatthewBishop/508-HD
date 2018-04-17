@@ -133,7 +133,7 @@ public class Class133_Sub3 extends Class133 {
 			}
 			if (atmosphericChunk == null)
 				atmosphericChunk = new AtmosphericChunk();
-			Class150.aClass71ArrayArray2421[i >> 3][i_15_ >> 35] = atmosphericChunk;
+			OverlayType.aClass71ArrayArray2421[i >> 3][i_15_ >> 35] = atmosphericChunk;
 		}
 	}
 }

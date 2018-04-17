@@ -32,7 +32,7 @@ public class RT4GL {
 	public static float[] aFloatArray2020;
 	public static boolean vertexBufferAsObject;
 	public static int anInt2022;
-	public static boolean aBoolean2023;
+	public static boolean using_gl_lighting;
 	public static Class124 aClass124_2024;
 	public static float aFloat2025 = 0.09765625F;
 	public static boolean aBoolean2026;
@@ -54,7 +54,7 @@ public class RT4GL {
 	public static boolean aBoolean2042;
 	public static int anInt2043;
 	public static float aFloat2044;
-	public static int anInt2045;
+	public static int loopCycleWrapper;
 	public static boolean usingBigEndian;
 	public static int anInt2047;
 	public static boolean aBoolean2048;
@@ -66,10 +66,10 @@ public class RT4GL {
 	static {
 		anInt2016 = 0;
 		aClass124_2024 = Class124.method263(1178, "radeon");
-		aBoolean2023 = true;
+		using_gl_lighting = true;
 		aBoolean2039 = false;
 		aFloatArray2020 = new float[16];
-		anInt2045 = 0;
+		loopCycleWrapper = 0;
 		anInt2022 = 0;
 		aFloat2044 = 0.0F;
 		aBoolean2041 = false;
@@ -84,7 +84,7 @@ public class RT4GL {
 		method1648();
 		method1638(5);
 		method1656(0);
-		method1639(false);
+		USE_GL_LIGHTING(false);
 		method1652(false);
 		method1626(false);
 		method1651();
@@ -145,7 +145,7 @@ public class RT4GL {
 		method1648();
 		method1638(1);
 		method1656(1);
-		method1639(false);
+		USE_GL_LIGHTING(false);
 		method1652(false);
 		method1626(false);
 		method1651();
@@ -156,7 +156,7 @@ public class RT4GL {
 		method1648();
 		method1638(0);
 		method1656(0);
-		method1639(false);
+		USE_GL_LIGHTING(false);
 		method1652(false);
 		method1626(false);
 		method1651();
@@ -348,7 +348,7 @@ public class RT4GL {
 		RT4.method1778(0, 0);
 		method1648();
 		bindTexture2D(-1);
-		method1639(false);
+		USE_GL_LIGHTING(false);
 		method1652(false);
 		method1626(false);
 		method1651();
@@ -372,13 +372,13 @@ public class RT4GL {
 		}
 	}
 
-	public static void method1639(boolean bool) {
-		if (bool != aBoolean2023) {
-			if (bool)
+	public static void USE_GL_LIGHTING(boolean enable) {
+		if (enable != using_gl_lighting) {
+			if (enable)
 				gl.glEnable(2896);
 			else
 				gl.glDisable(2896);
-			aBoolean2023 = bool;
+			using_gl_lighting = enable;
 		}
 	}
 
@@ -427,7 +427,7 @@ public class RT4GL {
 		gl.glEnable(2896);
 		gl.glEnable(2912);
 		gl.glEnable(2929);
-		aBoolean2023 = true;
+		using_gl_lighting = true;
 		aBoolean2032 = true;
 		aBoolean2017 = true;
 		JunkTex.method685(-53);
@@ -468,10 +468,10 @@ public class RT4GL {
 
 	public static void method1645() {
 		if (RT4.useLighting) {
-			method1639(true);
+			USE_GL_LIGHTING(true);
 			method1634(true);
 		} else {
-			method1639(false);
+			USE_GL_LIGHTING(false);
 			method1634(false);
 		}
 	}
@@ -587,7 +587,7 @@ public class RT4GL {
 		method1648();
 		method1638(0);
 		method1656(0);
-		method1639(false);
+		USE_GL_LIGHTING(false);
 		method1652(false);
 		method1626(false);
 		method1651();

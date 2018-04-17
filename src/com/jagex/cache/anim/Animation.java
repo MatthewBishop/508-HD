@@ -55,17 +55,17 @@ public class Animation {
 	public void decode(int i, Buffer class14_sub10, int i_13_) {
 		if (i_13_ == -11) {
 			if (i == 1) {
-				int i_14_ = class14_sub10.readUShort((byte) 102);
+				int i_14_ = class14_sub10.readUShort();
 				anIntArray763 = new int[i_14_];
 				for (int i_15_ = 0; i_14_ > i_15_; i_15_++)
-					anIntArray763[i_15_] = class14_sub10.readUShort((byte) 123);
+					anIntArray763[i_15_] = class14_sub10.readUShort();
 				anIntArray768 = new int[i_14_];
 				for (int i_16_ = 0; i_14_ > i_16_; i_16_++)
-					anIntArray768[i_16_] = class14_sub10.readUShort((byte) 117);
+					anIntArray768[i_16_] = class14_sub10.readUShort();
 				for (int i_17_ = 0; i_14_ > i_17_; i_17_++)
-					anIntArray768[i_17_] = (class14_sub10.readUShort((byte) 103) << 48) + anIntArray768[i_17_];
+					anIntArray768[i_17_] = (class14_sub10.readUShort() << 48) + anIntArray768[i_17_];
 			} else if (i == 2)
-				loopOffset = class14_sub10.readUShort((byte) 120);
+				loopOffset = class14_sub10.readUShort();
 			else if (i == 3) {
 				int i_18_ = class14_sub10.readUByte();
 				interleaveOrder = new int[i_18_ + 1];
@@ -77,7 +77,7 @@ public class Animation {
 			else if (i != 5) {
 				if (i != 6) {
 					if (i == 7)
-						playerMainhand = class14_sub10.readUShort((byte) 102);
+						playerMainhand = class14_sub10.readUShort();
 					else if (i == 8)
 						maximumLoops = class14_sub10.readUByte();
 					else if (i == 9)
@@ -87,7 +87,7 @@ public class Animation {
 					else if (i != 11) {
 						if (i != 12) {
 							if (i == 13) {
-								int i_20_ = class14_sub10.readUShort((byte) 102);
+								int i_20_ = class14_sub10.readUShort();
 								anIntArrayArray776 = new int[i_20_][];
 								for (int i_21_ = 0; i_20_ > i_21_; i_21_++) {
 									int i_22_ = class14_sub10.readUByte();
@@ -95,7 +95,7 @@ public class Animation {
 										anIntArrayArray776[i_21_] = new int[i_22_];
 										anIntArrayArray776[i_21_][0] = class14_sub10.method829(41);
 										for (int i_23_ = 1; i_22_ > i_23_; i_23_++)
-											anIntArrayArray776[i_21_][i_23_] = class14_sub10.readUShort((byte) 113);
+											anIntArrayArray776[i_21_][i_23_] = class14_sub10.readUShort();
 									}
 								}
 							} else if (i == 14)
@@ -104,15 +104,15 @@ public class Animation {
 							int i_24_ = class14_sub10.readUByte();
 							anIntArray775 = new int[i_24_];
 							for (int i_25_ = 0; i_24_ > i_25_; i_25_++)
-								anIntArray775[i_25_] = class14_sub10.readUShort((byte) 109);
+								anIntArray775[i_25_] = class14_sub10.readUShort();
 							for (int i_26_ = 0; i_26_ < i_24_; i_26_++)
-								anIntArray775[i_26_] = (class14_sub10.readUShort((byte) 125) << 48)
+								anIntArray775[i_26_] = (class14_sub10.readUShort() << 48)
 										+ anIntArray775[i_26_];
 						}
 					} else
 						anInt753 = class14_sub10.readUByte();
 				} else
-					anInt771 = class14_sub10.readUShort((byte) 123);
+					anInt771 = class14_sub10.readUShort();
 			} else
 				anInt777 = class14_sub10.readUByte();
 		}

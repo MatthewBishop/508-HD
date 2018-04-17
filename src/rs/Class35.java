@@ -7,7 +7,7 @@ import com.jagex.io.Buffer;
 import com.jagex.link.Cache;
 import com.jagex.link.Deque;
 import com.jagex.rt4.AtmosphericEffects;
-import com.jagex.rt4.Class14_Sub2_Sub19;
+import com.jagex.rt4.AbstractSprite;
 import com.jagex.rt4.Class25;
 
 public class Class35 {
@@ -15,7 +15,7 @@ public class Class35 {
 	public static Class124 aClass124_588 = Class124.method263(1178, " <col=00ff80>");
 	public static Deque aClass2_589;
 	public static boolean aBoolean593;
-	public static Class14_Sub2_Sub19[] aClass14_Sub2_Sub19Array596;
+	public static AbstractSprite[] aClass14_Sub2_Sub19Array596;
 	public static Class124 aClass124_597 = Class124.method263(1178, "zap");
 	public static Class124 aClass124_598 = Class124.method263(1178, "Benutzen");
 	public static Cache aClass20_599;
@@ -103,8 +103,6 @@ public class Class35 {
 	}
 
 	public static void method1095(int i) {
-		if (i != -572)
-			method1097((byte) -44);
 		aClass20_599 = null;
 		aClass124_601 = null;
 		aClass14_Sub2_Sub19Array596 = null;
@@ -116,7 +114,7 @@ public class Class35 {
 
 	public void method1096(Buffer class14_sub10, int i, int i_14_) {
 		if (i == 5)
-			anInt587 = class14_sub10.readUShort((byte) 123);
+			anInt587 = class14_sub10.readUShort();
 		if (i_14_ != -14431)
 			anInt602 = -105;
 	}
@@ -130,26 +128,26 @@ public class Class35 {
 					for (int i_18_ = 0; i_18_ < 104; i_18_++)
 						Class28.aByteArrayArrayArray512[i_17_][i_16_][i_18_] = i_15_;
 				}
-				if (Class14_Sub2_Sub3.anInt3785 != 3) {
+				if (Class14_Sub2_Sub3.gameLevel != 3) {
 					for (int i_19_ = 0; i_19_ < 2; i_19_++) {
-						Class14_Sub2_Sub11.anIntArray3872[i_19_] = -1000000;
-						JunkTex.anIntArray4422[i_19_] = 1000000;
-						Class14_Sub19.anIntArray3079[i_19_] = 0;
-						Class96.anIntArray1630[i_19_] = 1000000;
-						Class120.anIntArray2008[i_19_] = 0;
+						Class14_Sub2_Sub11.y_occluders[i_19_] = -1000000;
+						JunkTex.x_min_occluders[i_19_] = 1000000;
+						Class14_Sub19.x_max_occluders[i_19_] = 0;
+						Class96.z_min_occluders[i_19_] = 1000000;
+						Class120.z_max_occluders[i_19_] = 0;
 					}
 					int i_20_ = -21 / ((i - 73) / 40);
 					if (Class89.anInt1415 != 1) {
-						i_16_ = JunkTex.method1017(JunkTex.anInt4741, Class14_Sub2_Sub3.anInt3785,
+						i_16_ = JunkTex.method1017(JunkTex.anInt4741, Class14_Sub2_Sub3.gameLevel,
 								(byte) -119, Class14_Sub30.anInt3271);
 						if (-Static2.anInt2926 + i_16_ < 800
-								&& ((JunkTex.tileFlags[Class14_Sub2_Sub3.anInt3785][JunkTex.anInt4741 >> 7][Class14_Sub30.anInt3271 >> 39])
+								&& ((JunkTex.tileFlags[Class14_Sub2_Sub3.gameLevel][JunkTex.anInt4741 >> 7][Class14_Sub30.anInt3271 >> 39])
 										& 0x4) != 0)
 							Static2.method1498(false, Class14_Sub30.anInt3271 >> 7, (JunkTex.aClass14_Sub29ArrayArrayArray3368),
 									JunkTex.anInt4741 >> 7,
 									1);
 					} else {
-						if (((JunkTex.tileFlags[Class14_Sub2_Sub3.anInt3785][(Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495 >> 39)][(Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436 >> 39)])
+						if (((JunkTex.tileFlags[Class14_Sub2_Sub3.gameLevel][(Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495 >> 39)][(Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436 >> 39)])
 								& 0x4) != 0)
 							Static2.method1498(false, (Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436) >> 39,
 									(JunkTex.aClass14_Sub29ArrayArrayArray3368),
@@ -181,7 +179,7 @@ public class Class35 {
 											i_16_--;
 									} else
 										i_16_++;
-									if (((JunkTex.tileFlags[Class14_Sub2_Sub3.anInt3785][i_16_][i_20_])
+									if (((JunkTex.tileFlags[Class14_Sub2_Sub3.gameLevel][i_16_][i_20_])
 											& 0x4) != 0) {
 										Static2.method1498(false, i_20_, (JunkTex.aClass14_Sub29ArrayArrayArray3368),
 												i_16_, 1);
@@ -195,7 +193,7 @@ public class Class35 {
 												i_20_--;
 										} else
 											i_20_++;
-										if (((JunkTex.tileFlags[Class14_Sub2_Sub3.anInt3785][i_16_][i_20_])
+										if (((JunkTex.tileFlags[Class14_Sub2_Sub3.gameLevel][i_16_][i_20_])
 												& 0x4) != 0)
 											break;
 									}
@@ -212,7 +210,7 @@ public class Class35 {
 										i_20_++;
 									else if (i_20_ > i_21_)
 										i_20_--;
-									if (((JunkTex.tileFlags[Class14_Sub2_Sub3.anInt3785][i_16_][i_20_])
+									if (((JunkTex.tileFlags[Class14_Sub2_Sub3.gameLevel][i_16_][i_20_])
 											& 0x4) != 0) {
 										Static2.method1498(false, i_20_, (JunkTex.aClass14_Sub29ArrayArrayArray3368),
 												i_16_, 1);
@@ -225,7 +223,7 @@ public class Class35 {
 										else if (i_16_ > i_23_)
 											i_16_--;
 										i_28_ -= 65536;
-										if (((JunkTex.tileFlags[Class14_Sub2_Sub3.anInt3785][i_16_][i_20_])
+										if (((JunkTex.tileFlags[Class14_Sub2_Sub3.gameLevel][i_16_][i_20_])
 												& 0x4) != 0)
 											break;
 									}

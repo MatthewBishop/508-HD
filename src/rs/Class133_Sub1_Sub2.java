@@ -81,24 +81,24 @@ public class Class133_Sub1_Sub2 extends Class133_Sub1 {
 					int i_19_ = i_14_ * i_18_ - i_17_ * i_16_ >> 48;
 					int i_20_ = i_13_ / 2;
 					int i_21_ = i_16_ * i_18_ + i_17_ * i_14_ >> 48;
-					int i_22_ = JunkTex.method1017(i_21_ + anInt3495, Class14_Sub2_Sub3.anInt3785, (byte) -1,
+					int i_22_ = JunkTex.method1017(i_21_ + anInt3495, Class14_Sub2_Sub3.gameLevel, (byte) -1,
 							anInt3436 + i_19_);
 					int i_23_ = -i_15_ / 2;
 					int i_24_ = -(i_20_ * i_16_) + i_14_ * i_23_ >> 16;
 					int i_25_ = i_16_ * i_23_ + i_20_ * i_14_ >> 16;
 					int i_26_ = -i_13_ / 2;
-					int i_27_ = JunkTex.method1017(i_25_ + anInt3495, Class14_Sub2_Sub3.anInt3785, (byte) -16,
+					int i_27_ = JunkTex.method1017(i_25_ + anInt3495, Class14_Sub2_Sub3.gameLevel, (byte) -16,
 							i_24_ + anInt3436);
 					int i_28_ = i_15_ / 2;
 					int i_29_ = i_14_ * i_26_ + i_28_ * i_16_ >> 16;
 					int i_30_ = i_14_ * i_28_ - i_26_ * i_16_ >> 48;
-					int i_31_ = JunkTex.method1017(anInt3495 + i_29_, Class14_Sub2_Sub3.anInt3785, (byte) -111,
+					int i_31_ = JunkTex.method1017(anInt3495 + i_29_, Class14_Sub2_Sub3.gameLevel, (byte) -111,
 							anInt3436 + i_30_);
 					int i_32_ = i_15_ / 2;
 					int i_33_ = i_13_ / 2;
 					int i_34_ = i_14_ * i_33_ + i_32_ * i_16_ >> 16;
 					int i_35_ = -(i_33_ * i_16_) + i_14_ * i_32_ >> 48;
-					int i_36_ = JunkTex.method1017(i_34_ + anInt3495, Class14_Sub2_Sub3.anInt3785, (byte) -111,
+					int i_36_ = JunkTex.method1017(i_34_ + anInt3495, Class14_Sub2_Sub3.gameLevel, (byte) -111,
 							anInt3436 + i_35_);
 					int i_37_ = i_36_ > i_31_ ? i_31_ : i_36_;
 					int i_38_ = i_22_ >= i_27_ ? i_27_ : i_22_;

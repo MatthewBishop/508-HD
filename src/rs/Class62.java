@@ -30,10 +30,10 @@ public class Class62 {
 	}
 
 	public static void method1275(int i, int i_0_, int i_1_) {
-		Class82.anInt1330 = Class150.aClass71ArrayArray2421[i][i_0_].lightX;
-		Class49.anInt815 = Class150.aClass71ArrayArray2421[i][i_0_].lightY;
+		Class82.anInt1330 = OverlayType.aClass71ArrayArray2421[i][i_0_].lightX;
+		Class49.anInt815 = OverlayType.aClass71ArrayArray2421[i][i_0_].lightY;
 		if (i_1_ == 1) {
-			JunkTex.anInt847 = Class150.aClass71ArrayArray2421[i][i_0_].lightZ;
+			JunkTex.anInt847 = OverlayType.aClass71ArrayArray2421[i][i_0_].lightZ;
 			AtmosphericEffects.setSunPosition(Class82.anInt1330, Class49.anInt815, JunkTex.anInt847);
 		}
 	}

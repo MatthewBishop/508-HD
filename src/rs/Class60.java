@@ -101,7 +101,7 @@ public class Class60 {
 		if (i != 1) {
 			if (i != 2) {
 				if (i == 4)
-					anInt963 = class14_sub10.readUShort((byte) 108);
+					anInt963 = class14_sub10.readUShort();
 				else if (i != 5) {
 					if (i != 6) {
 						if (i == 7)
@@ -124,20 +124,20 @@ public class Class60 {
 								aShortArray961 = new short[i_19_];
 								aShortArray981 = new short[i_19_];
 								for (int i_20_ = 0; i_19_ > i_20_; i_20_++) {
-									aShortArray981[i_20_] = (short) class14_sub10.readUShort((byte) 104);
-									aShortArray961[i_20_] = (short) class14_sub10.readUShort((byte) 121);
+									aShortArray981[i_20_] = (short) class14_sub10.readUShort();
+									aShortArray961[i_20_] = (short) class14_sub10.readUShort();
 								}
 							}
 						} else
 							aBoolean978 = true;
 					} else
-						anInt964 = class14_sub10.readUShort((byte) 101);
+						anInt964 = class14_sub10.readUShort();
 				} else
-					anInt965 = class14_sub10.readUShort((byte) 118);
+					anInt965 = class14_sub10.readUShort();
 			} else
-				anInt966 = class14_sub10.readUShort((byte) 124);
+				anInt966 = class14_sub10.readUShort();
 		} else
-			anInt977 = class14_sub10.readUShort((byte) 105);
+			anInt977 = class14_sub10.readUShort();
 		if (bool)
 			method1269((byte) 23);
 	}

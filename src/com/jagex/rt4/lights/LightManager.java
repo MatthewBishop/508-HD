@@ -210,7 +210,7 @@ public class LightManager {
 			RT4GL.method1651();
 			RT4GL.bindTexture2D(RT4GL.anInt2038);
 			gl.glDepthMask(false);
-			RT4GL.method1639(false);
+			RT4GL.USE_GL_LIGHTING(false);
 			gl.glBlendFunc(774, 1);
 			gl.glFogfv(2918, new float[] { 0.0F, 0.0F, 0.0F, 0.0F }, 0);
 			gl.glTexEnvi(8960, 34176, 34166);

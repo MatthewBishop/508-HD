@@ -8,7 +8,7 @@ import com.jagex.link.Cacheable;
 import com.jagex.util.MouseCapturer;
 
 public class Class14_Sub2_Sub11 extends Cacheable {
-	public static int[] anIntArray3872 = new int[2];
+	public static int[] y_occluders = new int[2];
 	public static int anInt3874;
 	public Class124 aClass124_3876;
 	public static MouseCapturer aClass100_3878;
@@ -163,7 +163,7 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 			anIntArray3885 = new int[i_22_];
 			anIntArray3888 = new int[i_22_];
 			for (int i_23_ = 0; i_23_ < i_22_; i_23_++) {
-				anIntArray3885[i_23_] = class14_sub10.readUShort((byte) 105);
+				anIntArray3885[i_23_] = class14_sub10.readUShort();
 				int i_24_ = class14_sub10.readUByte();
 				if (i_24_ == 0)
 					anIntArray3888[i_23_] = -1;
@@ -175,7 +175,7 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 			anIntArray3886 = new int[i_25_];
 			anIntArray3882 = new int[i_25_];
 			for (int i_26_ = 0; i_26_ < i_25_; i_26_++) {
-				anIntArray3882[i_26_] = class14_sub10.readUShort((byte) 114);
+				anIntArray3882[i_26_] = class14_sub10.readUShort();
 				int i_27_ = class14_sub10.readUByte();
 				if (i_27_ != 0)
 					anIntArray3886[i_26_] = i_27_;
@@ -189,7 +189,7 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 		aClass124_3892 = null;
 		aClass100_3878 = null;
 		if (i >= 77)
-			anIntArray3872 = null;
+			y_occluders = null;
 	}
 
 	public static void method314(byte i, int i_28_, int i_29_, int i_30_, int i_31_) {

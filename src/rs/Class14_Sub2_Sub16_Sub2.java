@@ -8,7 +8,7 @@ import java.nio.ByteBuffer;
 import javax.media.opengl.GL;
 
 import com.jagex.rt4.Class11;
-import com.jagex.rt4.Class14_Sub2_Sub19_Sub2;
+import com.jagex.rt4.AbstractSprite_Sub2;
 import com.jagex.rt4.Class25;
 import com.jagex.rt4.RT4GL;
 
@@ -122,16 +122,16 @@ public class Class14_Sub2_Sub16_Sub2 extends Class14_Sub2_Sub16 {
 			float f_21_ = f + (float) anIntArray3989[i] / (float) anInt5067;
 			float f_22_ = f_20_ + (float) anIntArray3991[i] / (float) anInt5067;
 			RT4GL.bindTexture2D(anInt5070);
-			Class14_Sub2_Sub19_Sub2 class14_sub2_sub19_sub2 = Class25.aClass14_Sub2_Sub19_Sub2_479;
+			AbstractSprite_Sub2 class14_sub2_sub19_sub2 = Class25.aClass14_Sub2_Sub19_Sub2_479;
 			gl.glActiveTexture(33985);
 			gl.glEnable(3553);
 			gl.glBindTexture(3553, class14_sub2_sub19_sub2.texture);
 			gl.glTexEnvi(8960, 34161, 7681);
 			gl.glTexEnvi(8960, 34176, 34168);
-			float f_23_ = ((float) (i_15_ - Class25.anInt475) / (float) class14_sub2_sub19_sub2.width);
-			float f_24_ = ((float) (i_16_ - Class25.anInt478) / (float) class14_sub2_sub19_sub2.height);
-			float f_25_ = ((float) (i_15_ + i_17_ - Class25.anInt475) / (float) class14_sub2_sub19_sub2.width);
-			float f_26_ = ((float) (i_16_ + i_18_ - Class25.anInt478) / (float) class14_sub2_sub19_sub2.height);
+			float f_23_ = ((float) (i_15_ - Class25.anInt475) / (float) class14_sub2_sub19_sub2.width_);
+			float f_24_ = ((float) (i_16_ - Class25.anInt478) / (float) class14_sub2_sub19_sub2.height_);
+			float f_25_ = ((float) (i_15_ + i_17_ - Class25.anInt475) / (float) class14_sub2_sub19_sub2.width_);
+			float f_26_ = ((float) (i_16_ + i_18_ - Class25.anInt478) / (float) class14_sub2_sub19_sub2.height_);
 			gl.glBegin(6);
 			gl.glMultiTexCoord2f(33985, f_25_, f_24_);
 			gl.glTexCoord2f(f_21_, f_20_);

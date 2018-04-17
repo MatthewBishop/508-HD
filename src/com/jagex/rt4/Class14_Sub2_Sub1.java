@@ -8,14 +8,15 @@ import java.nio.ByteBuffer;
 import javax.media.opengl.GL;
 import javax.media.opengl.glu.GLU;
 
+import org.jagex.image.transform.util.ProceduralTexture;
+
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9;
 import com.jagex.link.Cacheable;
+import com.jagex.util.TextureDefInterface;
 
-import rs.ProceduralTexture;
 import rs.Class120;
 import rs.Class66;
-import rs.Interface3;
 import rs.JunkTex;
 import rs.Static2;
 
@@ -25,7 +26,7 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 	public boolean aBoolean3738;
 	public boolean aBoolean3743;
 	public boolean aBoolean3746 = false;
-	public ProceduralTexture aClass107_3742;//Procedural Texture?
+	public ProceduralTexture proceduralTexture;//Procedural Texture?
 	public float aFloat3750;
 	public int anInt3725;
 
@@ -46,14 +47,14 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 	public Class14_Sub2_Sub1(Buffer class14_sub10) {
 		anInt3744 = -1;
 		anInt3753 = 0;
-		aClass107_3742 = new ProceduralTexture(class14_sub10);
+		proceduralTexture = new ProceduralTexture(class14_sub10);
 		aBoolean3730 = class14_sub10.readUByte() == 1;
 		aBoolean3738 = class14_sub10.readUByte() == 1;
 		aBoolean3743 = class14_sub10.readUByte() == 1;
 		aBoolean3726 = class14_sub10.readUByte() == 1;
 		int i = class14_sub10.readUByte() & 0x3;
-		anInt3735 = class14_sub10.method780((byte) -77);
-		anInt3751 = class14_sub10.method780((byte) -77);
+		anInt3735 = class14_sub10.method780();
+		anInt3751 = class14_sub10.method780();
 		int i_53_ = class14_sub10.readUByte();
 		class14_sub10.readUByte();
 		if (i == 1)
@@ -77,10 +78,9 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 		super.finalize();
 	}
 
-	public boolean method252(Interface3 interface3, boolean bool, int i, Class9 class9) {
-		if (!aClass107_3742.method1548(interface3, -122, class9)) {
-			boolean bool_5_ = false;
-			return bool_5_;
+	public boolean method252(TextureDefInterface interface3, boolean bool, int i, Class9 class9) {
+		if (!proceduralTexture.method1548(interface3, class9)) {
+			return false;
 		}
 		GL gl = RT4GL.gl;
 		int i_6_ = bool ? 64 : 128;
@@ -95,7 +95,7 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 				anInt3744 = is[0];
 				RT4GL.bindTexture2D(anInt3744);
 				ByteBuffer bytebuffer = ByteBuffer
-						.wrap(aClass107_3742.method1555(i_6_, interface3, 0.7, aBoolean3738, i_6_, (byte) -94, class9));
+						.wrap(proceduralTexture.method1555(i_6_, interface3, 0.7, aBoolean3738, i_6_, (byte) -94, class9));
 				if (anInt3752 != 2) {
 					if (anInt3752 != 1) {
 						gl.glTexImage2D(3553, 0, 6408, i_6_, i_6_, 0, 6408, 5121, bytebuffer);
@@ -110,7 +110,7 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 							i_6_ >>= 1;
 							if (i_6_ == 0)
 								break;
-							bytebuffer = ByteBuffer.wrap(aClass107_3742.method1555(i_6_, interface3, 0.7, aBoolean3738,
+							bytebuffer = ByteBuffer.wrap(proceduralTexture.method1555(i_6_, interface3, 0.7, aBoolean3738,
 									i_6_, (byte) -84, class9));
 						}
 						gl.glTexParameteri(3553, 10241, 9987);
@@ -140,8 +140,8 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 			if (anInt3751 == 0 && anInt3735 == 0)
 				RT4GL.method1651();
 			else {
-				float f = (float) (anInt3751 * RT4GL.anInt2045) / (float) i_6_;
-				float f_9_ = (float) (anInt3735 * RT4GL.anInt2045) / (float) i_6_;
+				float f = (float) (anInt3751 * RT4GL.loopCycleWrapper) / (float) i_6_;
+				float f_9_ = (float) (anInt3735 * RT4GL.loopCycleWrapper) / (float) i_6_;
 				RT4GL.method1641(f_9_, f, 0.0F);
 			}
 		}
@@ -177,22 +177,21 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 		}
 	}
 
-	public boolean method254(Class9 class9, int i, Interface3 interface3) {
+	public boolean method254(Class9 class9, int i, TextureDefInterface interface3) {
 		if (i != 255)
 			method254(null, -71, null);
-		boolean bool = aClass107_3742.method1548(interface3, -120, class9);
+		boolean bool = proceduralTexture.method1548(interface3, class9);
 		return bool;
 	}
 
-	public int[] method255(Interface3 interface3, float f, int i, Class9 class9, boolean bool) {
+	public int[] method255(TextureDefInterface interface3, float f, int i, Class9 class9, boolean bool) {
 		if (anIntArray3745 == null || f != aFloat3750) {
-			if (!aClass107_3742.method1548(interface3, -119, class9)) {
+			if (!proceduralTexture.method1548(interface3, class9)) {
 				int[] is = null;
 				return is;
 			}
 			int i_22_ = !bool ? 128 : 64;
-			anIntArray3745 = aClass107_3742.method1553(i_22_, true, 0, aBoolean3738, class9, (double) f, i_22_,
-					interface3);
+			anIntArray3745 = proceduralTexture.method1553(i_22_, true, aBoolean3738, class9, (double) f, i_22_, interface3);
 			aFloat3750 = f;
 			if (aBoolean3730) {
 				int[] is = new int[i_22_];
@@ -270,15 +269,15 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 		return is;
 	}
 
-	public int[] method257(boolean bool, Class9 class9, boolean bool_52_, Interface3 interface3) {
-		if (!aClass107_3742.method1548(interface3, -120, class9)) {
+	public int[] method257(boolean bool, Class9 class9, boolean bool_52_, TextureDefInterface interface3) {
+		if (!proceduralTexture.method1548(interface3, class9)) {
 			int[] is = null;
 			return is;
 		}
 		int i = bool_52_ ? 64 : 128;
 		if (bool)
 			method253(-104, true);
-		int[] is = aClass107_3742.method1553(i, false, 0, aBoolean3738, class9, 1.0, i, interface3);
+		int[] is = proceduralTexture.method1553(i, false, aBoolean3738, class9, 1.0, i, interface3);
 		return is;
 	}
 }

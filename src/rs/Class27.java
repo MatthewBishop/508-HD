@@ -26,8 +26,8 @@ public class Class27 {
 	public void method1035(byte[] is) {
 		aClass14_Sub10_502.payload = is;
 		aClass14_Sub10_502.position = 10;
-		int i = aClass14_Sub10_502.readUShort((byte) 102);
-		anInt506 = aClass14_Sub10_502.readUShort((byte) 124);
+		int i = aClass14_Sub10_502.readUShort();
+		anInt506 = aClass14_Sub10_502.readUShort();
 		anInt504 = 500000;
 		anIntArray509 = new int[i];
 		int i_0_ = 0;

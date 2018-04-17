@@ -5,7 +5,8 @@ package com.jagex.rt4;
 
 import java.util.Random;
 
-import com.jagex.image.transform.TexStatic;
+import org.jagex.image.transform.TexStatic;
+
 import com.jagex.util.RandomUtil;
 
 public abstract class Class26 {
@@ -63,7 +64,7 @@ public abstract class Class26 {
 			aShortArray496[i_82_] = (short) (int) Math.pow(2.0, (double) i_82_);
 	}
 
-	public void method1020(int i, int i_83_, int i_84_, int i_85_l) {
+	public void method1020(int i, int i_83_, int i_84_) {
 		int[] is = new int[i_84_];
 		int[] is_86_ = new int[i];
 		for (int i_87_ = 0; i_87_ < i_84_; i_87_++)

@@ -6,7 +6,7 @@ package rs;
 import com.jagex.io.Buffer;
 import com.jagex.link.Linkable;
 import com.jagex.link.ref.SoftCache;
-import com.jagex.rt4.Class14_Sub27;
+import com.jagex.rt4.HDTile;
 
 public class Class14_Sub11 extends Linkable {
 	public Class124 aClass124_2940;
@@ -16,7 +16,7 @@ public class Class14_Sub11 extends Linkable {
 	public static SoftCache aClass52_2946;
 	public static int[] anIntArray2948 = new int[128];
 	public static Class124 aClass124_2949 = Class124.method263(1178, "shake:");
-	public static int anInt2952;
+	public static int spriteTrimWidth;
 
 	static {
 		aClass124_2943 = aClass124_2949;
@@ -72,8 +72,8 @@ public class Class14_Sub11 extends Linkable {
 	public static void method855(int i) {
 		Class40.aClass14_Sub29ArrayArrayArray674 = (new Class14_Sub29[i][Static2.anInt3338][JunkTex.anInt4337]);
 		JunkTex.anIntArrayArray2799 = new int[Static2.anInt3338][JunkTex.anInt4337];
-		Class150.anIntArrayArrayArray2419 = (new int[i][Static2.anInt3338 + 1][JunkTex.anInt4337 + 1]);
-		Class131.aClass14_Sub27ArrayArray2162 = new Class14_Sub27[i][];
+		OverlayType.anIntArrayArrayArray2419 = (new int[i][Static2.anInt3338 + 1][JunkTex.anInt4337 + 1]);
+		Class131.aClass14_Sub27ArrayArray2162 = new HDTile[i][];
 	}
 
 	public static void method856(byte i) {

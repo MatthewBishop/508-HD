@@ -111,18 +111,18 @@ public class Class54 {
 		if (!bool)
 			method1220(-109, false, false, -28);
 		for (int i_12_ = 0; Class131.anInt2159 > i_12_; i_12_++) {
-			Class150 class150 = Class97.method1489(i_12_, -9810);
-			if (class150 != null) {
-				int i_13_ = class150.anInt2414;
-				if (i_13_ >= 0 && !Class3.anInterface3_117.method13(0, i_13_))
+			OverlayType overlayType = Class97.list(i_12_, -9810);
+			if (overlayType != null) {
+				int i_13_ = overlayType.anInt2414;
+				if (i_13_ >= 0 && !Class3.anInterface3_117.method13(i_13_))
 					i_13_ = -1;
 				int i_14_;
-				if (class150.anInt2405 < 0) {
+				if (overlayType.anInt2405 < 0) {
 					if (i_13_ >= 0)
 						i_14_ = (Class3.anIntArray119[(Class7_Sub3_Sub1.method135(false, 96,
-								Class3.anInterface3_117.method5(i_13_, (byte) -113)))]);
-					else if (class150.anInt2411 != -1) {
-						int i_15_ = class150.anInt2411;
+								Class3.anInterface3_117.method5(i_13_)))]);
+					else if (overlayType.anInt2411 != -1) {
+						int i_15_ = overlayType.anInt2411;
 						int i_16_ = i + (i_15_ & 0x7f);
 						if (i_16_ < 0)
 							i_16_ = 0;
@@ -133,7 +133,7 @@ public class Class54 {
 					} else
 						i_14_ = -1;
 				} else {
-					int i_18_ = class150.anInt2405;
+					int i_18_ = overlayType.anInt2405;
 					int i_19_ = i + (i_18_ & 0x7f);
 					if (i_19_ < 0)
 						i_19_ = 0;

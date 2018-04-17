@@ -36,8 +36,8 @@ public class Track {
 				synthesizers[i].decode(class14_sub10);
 			}
 		}
-		loopStart = class14_sub10.readUShort((byte) 101);
-		loopEnd = class14_sub10.readUShort((byte) 105);
+		loopStart = class14_sub10.readUShort();
+		loopEnd = class14_sub10.readUShort();
 	}
 
 	private byte[] method1448() {

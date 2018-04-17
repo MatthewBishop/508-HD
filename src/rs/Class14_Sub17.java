@@ -7,8 +7,8 @@ import com.jagex.io.js5.Class9;
 import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.link.Cache;
 import com.jagex.link.Linkable;
-import com.jagex.rt4.Class14_Sub27;
-import com.jagex.rt4.Class14_Sub2_Sub19_Sub1;
+import com.jagex.rt4.HDTile;
+import com.jagex.rt4.AbstractSprite_Sub1;
 
 public class Class14_Sub17 extends Linkable {
 	public static Class87 aClass87_3004;
@@ -63,24 +63,24 @@ public class Class14_Sub17 extends Linkable {
 		aClass20_3018 = new Cache(64);
 	}
 
-	public static Class14_Sub2_Sub19_Sub1[] method878(byte i) {
+	public static AbstractSprite_Sub1[] method878(byte i) {
 		if (i > -104) {
-			Class14_Sub2_Sub19_Sub1[] class14_sub2_sub19_sub1s = null;
+			AbstractSprite_Sub1[] class14_sub2_sub19_sub1s = null;
 			return class14_sub2_sub19_sub1s;
 		}
-		Class14_Sub2_Sub19_Sub1[] class14_sub2_sub19_sub1s = new Class14_Sub2_Sub19_Sub1[Class32.anInt547];
-		for (int i_0_ = 0; i_0_ < Class32.anInt547; i_0_++) {
-			byte[] is = Class12.aByteArrayArray310[i_0_];
-			int i_1_ = Class76.anIntArray1204[i_0_] * Class17.anIntArray402[i_0_];
+		AbstractSprite_Sub1[] class14_sub2_sub19_sub1s = new AbstractSprite_Sub1[Class32.spriteAmount];
+		for (int i_0_ = 0; i_0_ < Class32.spriteAmount; i_0_++) {
+			byte[] is = Class12.spritePaletteIndicators[i_0_];
+			int i_1_ = Class76.spriteHeights[i_0_] * Class17.spriteWidths[i_0_];
 			int[] is_2_ = new int[i_1_];
 			for (int i_3_ = 0; i_3_ < i_1_; i_3_++)
-				is_2_[i_3_] = (JunkTex.anIntArray1114[JunkTex.method617(255, is[i_3_])]);
-			class14_sub2_sub19_sub1s[i_0_] = new Class14_Sub2_Sub19_Sub1(Class14_Sub11.anInt2952,
-					Class14_Sub30.anInt3279, Class40.anIntArray675[i_0_], (Class14_Sub2_Sub12.anIntArray3918[i_0_]),
-					Class17.anIntArray402[i_0_], Class76.anIntArray1204[i_0_], is_2_);
+				is_2_[i_3_] = (JunkTex.spritePalette[JunkTex.method617(255, is[i_3_])]);
+			class14_sub2_sub19_sub1s[i_0_] = new AbstractSprite_Sub1(Class14_Sub11.spriteTrimWidth,
+					Class14_Sub30.spriteTrimHeight, Class40.spriteXOffsets[i_0_], (Class14_Sub2_Sub12.spriteYOffsets[i_0_]),
+					Class17.spriteWidths[i_0_], Class76.spriteHeights[i_0_], is_2_);
 		}
 		Class129.method1761((byte) 123);
-		Class14_Sub2_Sub19_Sub1[] class14_sub2_sub19_sub1s_4_ = class14_sub2_sub19_sub1s;
+		AbstractSprite_Sub1[] class14_sub2_sub19_sub1s_4_ = class14_sub2_sub19_sub1s;
 		return class14_sub2_sub19_sub1s_4_;
 	}
 
@@ -109,7 +109,7 @@ public class Class14_Sub17 extends Linkable {
 		aClass9_Sub1_3021 = null;
 	}
 
-	public static int method881(int i, int i_18_, Class14_Sub27 class14_sub27, byte i_19_, int i_20_, int i_21_,
+	public static int method881(int i, int i_18_, HDTile class14_sub27, byte i_19_, int i_20_, int i_21_,
 			int i_22_, boolean bool, float[][] fs, float[][] fs_23_, int i_24_, int i_25_, float[][] fs_26_, int[][] is,
 			float f, int[][] is_27_, int i_28_, int i_29_) {
 		if (i_22_ != 1) {

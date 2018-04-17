@@ -6,7 +6,7 @@ package rs;
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9;
 import com.jagex.rt4.Class11;
-import com.jagex.rt4.Class14_Sub2_Sub19;
+import com.jagex.rt4.AbstractSprite;
 
 public abstract class Class133_Sub1 extends Class133 {
 	public int anInt3431;
@@ -70,7 +70,7 @@ public abstract class Class133_Sub1 extends Class133 {
 	public int anInt3501;
 	public static Class124 aClass124_3502 = Class124.method263(1178, "; version=1; path=)4; domain=");
 	public int anInt3504;
-	public static Class14_Sub2_Sub19 aClass14_Sub2_Sub19_3505;
+	public static AbstractSprite aClass14_Sub2_Sub19_3505;
 
 	public static void method1793(Class9 class9, int i) {
 		if (i == 14555)
@@ -177,7 +177,7 @@ public abstract class Class133_Sub1 extends Class133 {
 				Class15.method943((JunkTex.method515((new Class124[] { JunkTex.aClass124_4362,
 						Class83.method1407(120, i_14_), Class59.aClass124_953 }), (byte) -82)), false, null, 0);
 			}
-			if (class124.method1717(i + 33, Class134.aClass124_2575)) {
+			if (class124.method1717(i + 33, Static2.aClass124_2575)) {
 				System.out.println(new StringBuilder("oncard_geometry:").append(Class11.arbBufferMemory).toString());
 				System.out.println(new StringBuilder("oncard_2d:").append(Class11.anInt263).toString());
 				System.out.println(new StringBuilder("oncard_texture:").append(Class11.textureMemory).toString());

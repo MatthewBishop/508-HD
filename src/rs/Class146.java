@@ -35,7 +35,7 @@ public class Class146 {
 	}
 
 	public static Class14_Sub2_Sub16_Sub1 method1991(int i, Class9 class9, Class9 class9_1_, int i_2_, int i_3_) {
-		if (!Class109.method1564(-2, i, i_3_, class9)) {
+		if (!Class109.method1564(i, i_3_, class9)) {
 			Class14_Sub2_Sub16_Sub1 class14_sub2_sub16_sub1 = null;
 			return class14_sub2_sub16_sub1;
 		}
@@ -47,11 +47,11 @@ public class Class146 {
 	}
 
 	public static Class148_Sub1[] method1992(byte i) {
-		Class148_Sub1[] class148_sub1s = new Class148_Sub1[Class32.anInt547];
-		for (int i_4_ = 0; i_4_ < Class32.anInt547; i_4_++)
-			class148_sub1s[i_4_] = new Class148_Sub1(Class14_Sub11.anInt2952, Class14_Sub30.anInt3279,
-					Class40.anIntArray675[i_4_], Class14_Sub2_Sub12.anIntArray3918[i_4_], Class17.anIntArray402[i_4_],
-					Class76.anIntArray1204[i_4_], Class12.aByteArrayArray310[i_4_], JunkTex.anIntArray1114);
+		Class148_Sub1[] class148_sub1s = new Class148_Sub1[Class32.spriteAmount];
+		for (int i_4_ = 0; i_4_ < Class32.spriteAmount; i_4_++)
+			class148_sub1s[i_4_] = new Class148_Sub1(Class14_Sub11.spriteTrimWidth, Class14_Sub30.spriteTrimHeight,
+					Class40.spriteXOffsets[i_4_], Class14_Sub2_Sub12.spriteYOffsets[i_4_], Class17.spriteWidths[i_4_],
+					Class76.spriteHeights[i_4_], Class12.spritePaletteIndicators[i_4_], JunkTex.spritePalette);
 		Class129.method1761((byte) 103);
 		if (i != -111)
 			method1995(71);

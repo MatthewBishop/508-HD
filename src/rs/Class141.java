@@ -33,7 +33,7 @@ public class Class141 implements KeyListener, FocusListener {
 	public static int method1961(int i, byte i_1_, int i_2_, int i_3_) {
 		int i_4_ = Class3.anIntArray119[ModelSD.method1880(i_3_, i)];
 		if (i_2_ > 0) {
-			int i_5_ = Class3.anInterface3_117.method14(i_2_ & 0xffff, 96);
+			int i_5_ = Class3.anInterface3_117.method14(i_2_ & 0xffff);
 			if (i_5_ != 0) {
 				int i_6_;
 				if (i < 0)

@@ -28,7 +28,7 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 	public static Class124 aClass124_3915;
 	public static int[] anIntArray3916;
 	public static int[] anIntArray3917;
-	public static int[] anIntArray3918;
+	public static int[] spriteYOffsets;
 
 	static {
 		aClass52_3894 = new SoftCache(100);
@@ -40,16 +40,16 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 	}
 
 	public static void method317(byte i) {
-		if (!Class128.method1755(130068615) && Class142.anInt2295 != Class14_Sub2_Sub3.anInt3785)
-			Class45.method1162(Class49.anInt818, Class129.anInt2133, Class14_Sub2_Sub3.anInt3785,
+		if (!Class128.method1755(130068615) && Class142.anInt2295 != Class14_Sub2_Sub3.gameLevel)
+			Class45.method1162(Class49.anInt818, Class129.anInt2133, Class14_Sub2_Sub3.gameLevel,
 					(Class14_Sub3.aClass133_Sub1_Sub1_2748.anIntArray3443[0]), (byte) -117,
 					(Class14_Sub3.aClass133_Sub1_Sub1_2748.anIntArray3476[0]), false);
 		else {
 			if (i > -116)
 				anIntArray3917 = null;
-			if (JunkTex.anInt4207 != Class14_Sub2_Sub3.anInt3785) {
-				JunkTex.anInt4207 = Class14_Sub2_Sub3.anInt3785;
-				JunkTex.method502(false, Class14_Sub2_Sub3.anInt3785);
+			if (JunkTex.anInt4207 != Class14_Sub2_Sub3.gameLevel) {
+				JunkTex.anInt4207 = Class14_Sub2_Sub3.gameLevel;
+				JunkTex.method502(false, Class14_Sub2_Sub3.gameLevel);
 				JunkTex.method602(-1);
 			}
 		}
@@ -92,7 +92,7 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 			aClass124_3897 = null;
 		aClass52_3894 = null;
 		aLongArray3914 = null;
-		anIntArray3918 = null;
+		spriteYOffsets = null;
 	}
 
 	public static int method322(int i, byte i_6_, int i_7_) {

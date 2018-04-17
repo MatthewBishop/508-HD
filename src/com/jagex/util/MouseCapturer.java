@@ -3,8 +3,8 @@
  */
 package com.jagex.util;
 
-import rs.ProceduralTexture;
 import rs.JunkTex;
+import rs.Static2;
 
 public class MouseCapturer implements Runnable {
 	public boolean running = true;
@@ -27,7 +27,7 @@ public class MouseCapturer implements Runnable {
 			synchronized (object) {
 				if (capturedCoordinateCount < 500) {
 					coordinatesX[capturedCoordinateCount] = JunkTex.anInt4640;
-					coordinatesY[capturedCoordinateCount] = ProceduralTexture.anInt1804;
+					coordinatesY[capturedCoordinateCount] = Static2.anInt1804;
 					capturedCoordinateCount++;
 				}
 			}

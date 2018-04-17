@@ -131,7 +131,7 @@ public class Class14_Sub28 extends Linkable {
 		}
 		byte[] is_9_ = new byte[i];
 		for (int i_10_ = 0; i > i_10_; i_10_++)
-			is_9_[i_10_] = class14_sub10.method780((byte) -77);
+			is_9_[i_10_] = class14_sub10.method780();
 		class14_sub10.position++;
 		i++;
 		int i_11_ = class14_sub10.position;
@@ -142,7 +142,7 @@ public class Class14_Sub28 extends Linkable {
 		}
 		byte[] is_13_ = new byte[i_12_];
 		for (int i_14_ = 0; i_12_ > i_14_; i_14_++)
-			is_13_[i_14_] = class14_sub10.method780((byte) -77);
+			is_13_[i_14_] = class14_sub10.method780();
 		class14_sub10.position++;
 		int i_15_ = class14_sub10.position;
 		int i_16_ = 0;
@@ -153,7 +153,7 @@ public class Class14_Sub28 extends Linkable {
 		}
 		byte[] is_17_ = new byte[i_16_];
 		for (int i_18_ = 0; i_18_ < i_16_; i_18_++)
-			is_17_[i_18_] = class14_sub10.method780((byte) -77);
+			is_17_[i_18_] = class14_sub10.method780();
 		i_16_++;
 		class14_sub10.position++;
 		byte[] is_19_ = new byte[i_16_];
@@ -197,7 +197,7 @@ public class Class14_Sub28 extends Linkable {
 		byte[] is_29_ = new byte[i_27_];
 		byte[] is_30_ = i_26_ <= 0 ? null : new byte[i_26_ * 2];
 		for (int i_31_ = 0; i_27_ > i_31_; i_31_++)
-			is_29_[i_31_] = class14_sub10.method780((byte) -77);
+			is_29_[i_31_] = class14_sub10.method780();
 		class14_sub10.position++;
 		i_27_++;
 		int i_32_ = 0;
@@ -293,20 +293,20 @@ public class Class14_Sub28 extends Linkable {
 			Class127 class127_47_ = class127s[i_46_];
 			if (class127_47_.aByteArray2109 != null) {
 				for (int i_48_ = 1; i_48_ < class127_47_.aByteArray2109.length; i_48_ += 2)
-					class127_47_.aByteArray2109[i_48_] = class14_sub10.method780((byte) -77);
+					class127_47_.aByteArray2109[i_48_] = class14_sub10.method780();
 			}
 			if (class127_47_.aByteArray2098 != null) {
 				for (int i_49_ = 3; class127_47_.aByteArray2098.length - 2 > i_49_; i_49_ += 2)
-					class127_47_.aByteArray2098[i_49_] = class14_sub10.method780((byte) -77);
+					class127_47_.aByteArray2098[i_49_] = class14_sub10.method780();
 			}
 		}
 		if (is_28_ != null) {
 			for (int i_50_ = 1; is_28_.length > i_50_; i_50_ += 2)
-				is_28_[i_50_] = class14_sub10.method780((byte) -77);
+				is_28_[i_50_] = class14_sub10.method780();
 		}
 		if (is_30_ != null) {
 			for (int i_51_ = 1; i_51_ < is_30_.length; i_51_ += 2)
-				is_30_[i_51_] = class14_sub10.method780((byte) -77);
+				is_30_[i_51_] = class14_sub10.method780();
 		}
 		for (int i_52_ = 0; i_20_ > i_52_; i_52_++) {
 			Class127 class127_53_ = class127s[i_52_];

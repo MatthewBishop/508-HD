@@ -104,7 +104,7 @@ public class Class133_Sub4 extends Class133 {
 				.get(class133_sub1_sub1.aClass124_4922.method1692(0)));
 		if (class14_sub3 == null)
 			Class12.method213(class133_sub1_sub1.anIntArray3476[0], class133_sub1_sub1.anIntArray3443[0], null,
-					(byte) -35, Class14_Sub2_Sub3.anInt3785, class133_sub1_sub1, null, 0);
+					(byte) -35, Class14_Sub2_Sub3.gameLevel, class133_sub1_sub1, null, 0);
 		else
 			class14_sub3.method452(18631);
 		if (i != 7)
@@ -113,7 +113,7 @@ public class Class133_Sub4 extends Class133 {
 
 	public static void method1840(byte i) {
 		Class14_Sub29.aClass148_Sub1Array3265 = null;
-		Class150.aClass14_Sub2_Sub19Array2417 = null;
+		OverlayType.aClass14_Sub2_Sub19Array2417 = null;
 		JunkTex.aClass14_Sub2_Sub19Array4385 = null;
 		Class76.aClass14_Sub2_Sub19Array1191 = null;
 		Static2.aClass148Array1777 = null;

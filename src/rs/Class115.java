@@ -114,8 +114,8 @@ public class Class115 {
 							JunkTex.aClass75_4682.method1338(var0 ^ -255);
 						}
 
-						if (Class134.aClass75_2588 != null) {
-							Class134.aClass75_2588.method1338(255);
+						if (Static2.aClass75_2588 != null) {
+							Static2.aClass75_2588.method1338(255);
 						}
 
 						var2 = Class14_Sub15.aClass36_2990.method1107((byte) 30);
@@ -123,8 +123,8 @@ public class Class115 {
 							JunkTex.aClass75_4682.method1338(255);
 						}
 
-						if (Class134.aClass75_2588 != null) {
-							Class134.aClass75_2588.method1338(255);
+						if (Static2.aClass75_2588 != null) {
+							Static2.aClass75_2588.method1338(255);
 						}
 
 						if (var2 != 21) {

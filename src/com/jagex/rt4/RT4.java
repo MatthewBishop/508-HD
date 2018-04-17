@@ -1,20 +1,25 @@
 package com.jagex.rt4;
 
-import com.jagex.image.transform.Class14_Sub8_Sub12;
-import com.jagex.image.transform.TexStatic;
 import com.jagex.rt4.lights.Light;
+import com.jagex.rt4.shader.Class101;
+import com.jagex.rt4.shader.WaterfallShader;
+import com.jagex.rt4.shader.Class23;
+import com.jagex.rt4.shader.WaterMovementShader;
+import com.jagex.rt4.shader.WaterShader;
+import com.jagex.rt4.shader.LavaShader;
+import com.jagex.rt4.shader.ShaderInterface;
 
 import rs.Class14_Sub30;
 import rs.Class15;
 
 public class RT4 {
 
-	static float[] aFloatArray3171 = new float[] { 0.073F, 0.169F, 0.24F, 1.0F };
+	public static float[] aFloatArray3171 = new float[] { 0.073F, 0.169F, 0.24F, 1.0F };
 
 	private static float[] aFloatArray3964 = new float[4];
 	
 	private static int anInt1871 = 0;
-	static int anInt3578 = 128;
+	public static int anInt3578 = 128;
 	private static int anInt3957 = 0;
 	private static ShaderInterface[] anInterface2Array2245;
 	public static int rotateX;
@@ -38,9 +43,9 @@ public class RT4 {
 		RT4.anInterface2Array2245 = new ShaderInterface[7];
 		RT4.anInterface2Array2245[1] = new Class23();
 		RT4.anInterface2Array2245[2] = new LavaShader();
-		RT4.anInterface2Array2245[3] = new GLEffect3();
-		RT4.anInterface2Array2245[4] = new Class34();
-		RT4.anInterface2Array2245[5] = new Class19();
+		RT4.anInterface2Array2245[3] = new WaterShader();
+		RT4.anInterface2Array2245[4] = new WaterMovementShader();
+		RT4.anInterface2Array2245[5] = new WaterfallShader();
 		RT4.anInterface2Array2245[6] = new Class101();
 	}
 
@@ -149,27 +154,6 @@ public class RT4 {
 				* (f_5_ * ((float) (255 &  (i_0_ >> 40)) / 255.0F * f_2_));
 		float[] fs = RT4.aFloatArray3964;
 		return fs;
-	}
-
-	public static int[][] method279(int i, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, float f,
-			boolean bool) {
-		Class14_Sub8_Sub12 class14_sub8_sub12 = new Class14_Sub8_Sub12();
-		class14_sub8_sub12.anInt4297 = (int) (f * 4096.0F);
-		class14_sub8_sub12.anInt4291 = i_4_;
-		class14_sub8_sub12.aBoolean4277 = bool;
-		int[][] is = new int[i_3_][i_8_];
-		if (i != 256) {
-			int[][] is_9_ = null;
-			return is_9_;
-		}
-		class14_sub8_sub12.anInt4289 = i_7_;
-		class14_sub8_sub12.anInt4282 = i_6_;
-		class14_sub8_sub12.postDecode();
-		TexStatic.method1117(0, i_3_, i_8_);
-		for (int i_10_ = 0; i_10_ < i_3_; i_10_++)
-			class14_sub8_sub12.method542(-2, i_10_, is[i_10_]);
-		int[][] is_11_ = is;
-		return is_11_;
 	}
 
 }

@@ -8,7 +8,7 @@ import java.security.MessageDigest;
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9;
 import com.jagex.map.SceneCluster;
-import com.jagex.rt4.Class14_Sub2_Sub19;
+import com.jagex.rt4.AbstractSprite;
 import com.jagex.sound.Track;
 
 public class Class58 {
@@ -207,14 +207,14 @@ public class Class58 {
 			anInt948 = 118;
 	}
 
-	public static Class14_Sub2_Sub19 method1259(int i, Class9 class9, int i_22_, int i_23_) {
+	public static AbstractSprite method1259(int i, Class9 class9, int i_22_, int i_23_) {
 		if (i >= -80)
 			method1257(null, -79);
-		if (!Class109.method1564(-2, i_22_, i_23_, class9)) {
-			Class14_Sub2_Sub19 class14_sub2_sub19 = null;
+		if (!Class109.method1564(i_22_, i_23_, class9)) {
+			AbstractSprite class14_sub2_sub19 = null;
 			return class14_sub2_sub19;
 		}
-		Class14_Sub2_Sub19 class14_sub2_sub19 = Class67.method1302(false);
+		AbstractSprite class14_sub2_sub19 = Class67.method1302(false);
 		return class14_sub2_sub19;
 	}
 }

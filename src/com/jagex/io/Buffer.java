@@ -68,9 +68,7 @@ public class Buffer extends Linkable {
 		position = 0;
 	}
 
-	public byte method780(byte i) {
-		if (i != -77)
-			method821(-81);
+	public byte method780() {
 		byte i_0_ = payload[position++];
 		return i_0_;
 	}
@@ -98,9 +96,12 @@ public class Buffer extends Linkable {
 		payload[position++] = (byte) i_2_;
 	}
 
-	public int readUShort(byte i) {
-		if (i <= 100)
-			method802(-109);
+	public int readUShort(byte b) {
+		// TODO Auto-generated method stub
+		return readUShort();
+	}
+	
+	public int readUShort() {
 		position += 2;
 		int i_3_ = ((payload[position - 1] & 0xff) + (payload[position - 2] << 8 & 0xff00));
 		return i_3_;
@@ -186,7 +187,7 @@ public class Buffer extends Linkable {
 	public int readSmart() {
 		int i_15_ = payload[position] & 0xff;
 		if (i_15_ >= 128) {
-			int i_17_ = readUShort((byte) 121) - 49152;
+			int i_17_ = readUShort() - 49152;
 			return i_17_;
 		}
 		int i_18_ = readUByte() - 64;
@@ -402,7 +403,7 @@ public class Buffer extends Linkable {
 			int i_62_ = readUByte();
 			return i_62_;
 		}
-		int i_63_ = readUShort((byte) 114) - 32768;
+		int i_63_ = readUShort() - 32768;
 		return i_63_;
 	}
 
@@ -585,4 +586,6 @@ public class Buffer extends Linkable {
 			anIntArray3086[i] = i_0_;
 		}
 	}
+
+
 }

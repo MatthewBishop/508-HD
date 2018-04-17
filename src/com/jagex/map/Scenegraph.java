@@ -45,21 +45,22 @@ public class Scenegraph {
 
 	public static void method1503() {
 		Class133_Sub6.activeOccluderCount = 0;
-		while_175_: for (int i = 0; i < clusterCount; i++) {
+		while_175_: 
+		for (int i = 0; i < clusterCount; i++) {
 			SceneCluster scenecluster = clusters[i];
-			if (Class21.anIntArray437 != null) {
-				for (int i_6_ = 0; i_6_ < Class21.anIntArray437.length; i_6_++) {
-					if (Class21.anIntArray437[i_6_] != -1000000
-							&& (scenecluster.minY <= Class21.anIntArray437[i_6_]
-									|| (scenecluster.maxY <= Class21.anIntArray437[i_6_]))
-							&& (scenecluster.minX <= Static2.anIntArray1790[i_6_]
-									|| (scenecluster.maxX <= Static2.anIntArray1790[i_6_]))
-							&& (scenecluster.minX >= Class98.anIntArray1660[i_6_]
-									|| (scenecluster.maxX >= Class98.anIntArray1660[i_6_]))
-							&& (scenecluster.minZ <= Class142.anIntArray2284[i_6_]
-									|| (scenecluster.maxZ <= Class142.anIntArray2284[i_6_]))
-							&& (scenecluster.minZ >= Class104.anIntArray1737[i_6_]
-									|| (scenecluster.maxZ >= Class104.anIntArray1737[i_6_])))
+			if (Class21.occludersY != null) {
+				for (int pos = 0; pos < Class21.occludersY.length; pos++) {
+					if (Class21.occludersY[pos] != -1000000
+							&& (scenecluster.minY <= Class21.occludersY[pos]
+									|| (scenecluster.maxY <= Class21.occludersY[pos]))
+							&& (scenecluster.minX <= Static2.occludersMaxX[pos]
+									|| (scenecluster.maxX <= Static2.occludersMaxX[pos]))
+							&& (scenecluster.minX >= Class98.occludersMinX[pos]
+									|| (scenecluster.maxX >= Class98.occludersMinX[pos]))
+							&& (scenecluster.minZ <= Class142.occludersMaxZ[pos]
+									|| (scenecluster.maxZ <= Class142.occludersMaxZ[pos]))
+							&& (scenecluster.minZ >= Class104.occludersMinZ[pos]
+									|| (scenecluster.maxZ >= Class104.occludersMinZ[pos])))
 						continue while_175_;
 				}
 			}

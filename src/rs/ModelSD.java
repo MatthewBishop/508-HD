@@ -1337,7 +1337,7 @@ public class ModelSD extends Class133_Sub7 {
 			aShortArray4984 = new short[triangleCount];
 			for (int i_287_ = 0; i_287_ < triangleCount; i_287_++) {
 				short i_288_ = class133_sub2.aShortArray3528[i_287_];
-				if (i_288_ != -1 && Class3.anInterface3_117.method13(0, i_288_))
+				if (i_288_ != -1 && Class3.anInterface3_117.method13(i_288_))
 					aShortArray4984[i_287_] = i_288_;
 				else
 					aShortArray4984[i_287_] = (short) -1;

@@ -47,7 +47,7 @@ public class StaticStrings {
 		JunkTex.aClass124_694 = Class59.aClass124_956;
 		Class117.aClass124_1941 = Class1.aClass124_71;
 		Static2.aClass124_2872 = Class115.aClass124_1910;
-		Class14_Sub11.aClass124_2943 = Class150.aClass124_2425;
+		Class14_Sub11.aClass124_2943 = OverlayType.aClass124_2425;
 		Static2.aClass124_4886 = JunkTex.aClass124_4100;
 		Class44.aClass124_729 = Class89.aClass124_1408;
 		JunkTex.aClass124_4167 = JunkTex.aClass124_2804;
@@ -71,7 +71,7 @@ public class StaticStrings {
 		Class129.aClass124_2129 = Class74.aClass124_1139;
 		Class128.aClass124_2122 = JunkTex.aClass124_4325;
 		JunkTex.aClass124_4202 = JunkTex.aClass124_499;
-		Class108.aClass124_1825 = ProceduralTexture.aClass124_1801;
+		Class108.aClass124_1825 = Static2.aClass124_1801;
 		Class53.aClass124_869 = JunkTex.aClass124_4393;
 		Class74.aClass124_1142 = Class14_Sub20.aClass124_3096;
 		Class14_Sub28.aClass124_3229 = Class75.aClass124_1165;

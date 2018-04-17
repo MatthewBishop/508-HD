@@ -37,7 +37,7 @@ public class Class86 {
 			class124 = JunkTex.aClass124_4481;
 		Class124 class124_2_ = (JunkTex
 				.method515(
-						(new Class124[] { Class142.aClass124_2271, class124, ProceduralTexture.aClass124_1800,
+						(new Class124[] { Class142.aClass124_2271, class124, Static2.aClass124_1800,
 								Class83.method1407(102, JunkTex.language), JunkTex.aClass124_4341,
 								Class83.method1407(111, Class14_Sub2_Sub11.anInt3884), Class137.aClass124_2195 }),
 						(byte) -24));
@@ -80,7 +80,7 @@ public class Class86 {
 	public static Class98 method1422(int i, Buffer class14_sub10) {
 		int i_6_ = 52 % ((3 - i) / 36);
 		Class98 class98 = new Class98();
-		class98.anInt1663 = class14_sub10.readUShort((byte) 102);
+		class98.anInt1663 = class14_sub10.readUShort();
 		class98.aClass14_Sub2_Sub21_1662 = Class14_Sub2_Sub3.method272(class98.anInt1663, (byte) 46);
 		Class98 class98_7_ = class98;
 		return class98_7_;

@@ -6,7 +6,7 @@ package rs;
 import java.util.zip.CRC32;
 
 import com.jagex.io.js5.Class9;
-import com.jagex.rt4.Class14_Sub2_Sub19;
+import com.jagex.rt4.AbstractSprite;
 
 public class Class7 {
 	public static Class124 aClass124_174;
@@ -56,12 +56,12 @@ public class Class7 {
 		return i_3_;
 	}
 
-	public static Class14_Sub2_Sub19 method117(Class9 class9, int i, byte i_4_) {
-		if (!JunkTex.method1027(class9, i, (byte) 126)) {
-			Class14_Sub2_Sub19 class14_sub2_sub19 = null;
+	public static AbstractSprite method117(Class9 class9, int i, byte i_4_) {
+		if (!JunkTex.decodedSprites(class9, i, (byte) 126)) {
+			AbstractSprite class14_sub2_sub19 = null;
 			return class14_sub2_sub19;
 		}
-		Class14_Sub2_Sub19 class14_sub2_sub19 = Class67.method1302(false);
+		AbstractSprite class14_sub2_sub19 = Class67.method1302(false);
 		return class14_sub2_sub19;
 	}
 

@@ -10,10 +10,10 @@ public class Class25 {
 	public static int anInt476 = 0;
 	public static int anInt477 = 0;
 	public static int anInt478 = 0;
-	public static Class14_Sub2_Sub19_Sub2 aClass14_Sub2_Sub19_Sub2_479 = null;
+	public static AbstractSprite_Sub2 aClass14_Sub2_Sub19_Sub2_479 = null;
 
-	public static void method1008(Class14_Sub2_Sub19_Sub2 class14_sub2_sub19_sub2) {
-		if (class14_sub2_sub19_sub2.anInt4042 != anInt477 - anInt478)
+	public static void method1008(AbstractSprite_Sub2 class14_sub2_sub19_sub2) {
+		if (class14_sub2_sub19_sub2.height != anInt477 - anInt478)
 			throw new IllegalArgumentException();
 		aClass14_Sub2_Sub19_Sub2_479 = class14_sub2_sub19_sub2;
 	}

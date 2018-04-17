@@ -4,8 +4,8 @@
 package rs;
 
 import com.jagex.link.Deque;
-import com.jagex.rt4.Class14_Sub2_Sub19;
-import com.jagex.rt4.Class14_Sub2_Sub19_Sub2;
+import com.jagex.rt4.AbstractSprite;
+import com.jagex.rt4.AbstractSprite_Sub2;
 
 public class Class67 {
 	public static Class97 aClass97_1055 = new Class97();
@@ -43,9 +43,9 @@ public class Class67 {
 	}
 
 	public static void method1300(int i, int i_8_, int i_9_) {
-		Deque deque = (Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.anInt3785][i_9_][i]);
+		Deque deque = (Class128.aClass2ArrayArrayArray2119[Class14_Sub2_Sub3.gameLevel][i_9_][i]);
 		if (deque == null)
-			Class135.method1928(Class14_Sub2_Sub3.anInt3785, i_9_, i);
+			Class135.method1928(Class14_Sub2_Sub3.gameLevel, i_9_, i);
 		else {
 			int i_10_ = -99999999;
 			Class14_Sub2_Sub4 class14_sub2_sub4 = null;
@@ -62,7 +62,7 @@ public class Class67 {
 				}
 			}
 			if (class14_sub2_sub4 == null)
-				Class135.method1928(Class14_Sub2_Sub3.anInt3785, i_9_, i);
+				Class135.method1928(Class14_Sub2_Sub3.gameLevel, i_9_, i);
 			else {
 				Class133_Sub3 class133_sub3 = null;
 				if (i_8_ != 9210)
@@ -81,28 +81,28 @@ public class Class67 {
 					}
 				}
 				long l = (i << 39) + (i_9_ + 1610612736);
-				Canvas_Sub2.method61(Class14_Sub2_Sub3.anInt3785, i_9_, i,
-						JunkTex.method1017(i_9_ * 128 + 64, (Class14_Sub2_Sub3.anInt3785), (byte) -119, i * 128 + 64),
+				Canvas_Sub2.method61(Class14_Sub2_Sub3.gameLevel, i_9_, i,
+						JunkTex.method1017(i_9_ * 128 + 64, (Class14_Sub2_Sub3.gameLevel), (byte) -119, i * 128 + 64),
 						class14_sub2_sub4.aClass133_Sub3_3789, l, class133_sub3, class133_sub3_13_);
 			}
 		}
 	}
 
-	public static Class14_Sub2_Sub19 method1302(boolean bool) {
-		byte[] is = Class12.aByteArrayArray310[0];
-		int i = Class17.anIntArray402[0] * Class76.anIntArray1204[0];
+	public static AbstractSprite method1302(boolean bool) {
+		byte[] is = Class12.spritePaletteIndicators[0];
+		int i = Class17.spriteWidths[0] * Class76.spriteHeights[0];
 		int[] is_21_ = new int[i];
 		if (bool) {
-			Class14_Sub2_Sub19 class14_sub2_sub19 = null;
+			AbstractSprite class14_sub2_sub19 = null;
 			return class14_sub2_sub19;
 		}
 		for (int i_22_ = 0; i_22_ < i; i_22_++)
-			is_21_[i_22_] = (JunkTex.anIntArray1114[JunkTex.method617(is[i_22_], 255)]);
-		Class14_Sub2_Sub19_Sub2 class14_sub2_sub19_sub2 = new Class14_Sub2_Sub19_Sub2(Class14_Sub11.anInt2952,
-				Class14_Sub30.anInt3279, Class40.anIntArray675[0], Class14_Sub2_Sub12.anIntArray3918[0],
-				Class17.anIntArray402[0], Class76.anIntArray1204[0], is_21_);
+			is_21_[i_22_] = (JunkTex.spritePalette[JunkTex.method617(is[i_22_], 255)]);
+		AbstractSprite_Sub2 class14_sub2_sub19_sub2 = new AbstractSprite_Sub2(Class14_Sub11.spriteTrimWidth,
+				Class14_Sub30.spriteTrimHeight, Class40.spriteXOffsets[0], Class14_Sub2_Sub12.spriteYOffsets[0],
+				Class17.spriteWidths[0], Class76.spriteHeights[0], is_21_);
 		Class129.method1761((byte) 12);
-		Class14_Sub2_Sub19_Sub2 class14_sub2_sub19_sub2_23_ = class14_sub2_sub19_sub2;
+		AbstractSprite_Sub2 class14_sub2_sub19_sub2_23_ = class14_sub2_sub19_sub2;
 		return class14_sub2_sub19_sub2_23_;
 	}
 }

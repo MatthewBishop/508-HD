@@ -17,6 +17,7 @@ import com.jagex.rt4.RT4;
 import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.VertexBuffer;
 import com.jagex.rt4.VertexBufferPointer;
+import com.jagex.util.ArrayUtils;
 
 public class ModelHD extends Class133_Sub7 {
 	public static ByteBuffer aByteBuffer5050;
@@ -127,7 +128,7 @@ public class ModelHD extends Class133_Sub7 {
 
 	public static float[] method1894(float[] fs, int i) {
 		float[] fs_16_ = new float[i];
-		Class72.method1323(fs, 0, fs_16_, 0, i);
+		ArrayUtils.method1323(fs, 0, fs_16_, 0, i);
 		return fs_16_;
 	}
 
@@ -153,7 +154,7 @@ public class ModelHD extends Class133_Sub7 {
 	public static int method1904(int i, short i_22_, int i_23_, byte i_24_) {
 		int i_25_ = Class3.anIntArray119[ModelSD.method1880(i, i_23_)];
 		if (i_22_ != -1) {
-			int i_26_ = Class3.anInterface3_117.method14(i_22_ & 0xffff, 25);
+			int i_26_ = Class3.anInterface3_117.method14(i_22_ & 0xffff);
 			if (i_26_ != 0) {
 				int i_27_;
 				if (i_23_ < 0)
@@ -270,7 +271,7 @@ public class ModelHD extends Class133_Sub7 {
 
 	public static short[] method1914(short[] is, int i) {
 		short[] is_47_ = new short[i];
-		Class72.method1319(is, 0, is_47_, 0, i);
+		ArrayUtils.method1319(is, 0, is_47_, 0, i);
 		return is_47_;
 	}
 
@@ -366,12 +367,12 @@ public class ModelHD extends Class133_Sub7 {
 			if (class133_sub2.aShortArray3528 != null) {
 				i_84_ = class133_sub2.aShortArray3528[i_79_];
 				if (i_84_ != -1) {
-					i_82_ = Class3.anInterface3_117.method12(true, i_84_ & 0xffff);
+					i_82_ = Class3.anInterface3_117.method12(i_84_ & 0xffff);
 					i_83_ = Class3.anInterface3_117.method8(i_84_ & 0xffff);
 				}
 			}
 			boolean bool_85_ = ((class133_sub2.aByteArray3541 != null && class133_sub2.aByteArray3541[i_79_] != 0)
-					|| i_84_ != -1 && !Class3.anInterface3_117.method6(i_84_ & 0xffff, -98));
+					|| i_84_ != -1 && !Class3.anInterface3_117.method6(i_84_ & 0xffff));
 			if ((bool || bool_85_) && class133_sub2.aByteArray3546 != null)
 				i_80_ += class133_sub2.aByteArray3546[i_79_] << 17;
 			if (bool_85_)
@@ -1541,7 +1542,7 @@ public class ModelHD extends Class133_Sub7 {
 					RT4GL.bindTexture2D(-1);
 					RT4.method1778(0, 0);
 				} else
-					Class3.anInterface3_117.method16(i_351_ & 0xffff, (byte) 97);
+					Class3.anInterface3_117.method16(i_351_ & 0xffff);
 				if (aClass41_5046.aClass29_692 != null)
 					gl.glDrawElements(4, (i_350_ - i_349_) * 3, 5125, i_349_ * 12);
 				else {
@@ -2457,13 +2458,13 @@ public class ModelHD extends Class133_Sub7 {
 		int i_546_ = 0;
 		int i_547_ = 0;
 		if (i != -1) {
-			i_546_ = Class3.anInterface3_117.method14(i & 0xffff, 82);
+			i_546_ = Class3.anInterface3_117.method14(i & 0xffff);
 			i_547_ = Class3.anInterface3_117.method9(i & 0xffff);
 		}
 		int i_548_ = 0;
 		int i_549_ = 0;
 		if (i_544_ != -1) {
-			i_548_ = Class3.anInterface3_117.method14(i_544_ & 0xffff, 70);
+			i_548_ = Class3.anInterface3_117.method14(i_544_ & 0xffff);
 			i_549_ = Class3.anInterface3_117.method9(i_544_ & 0xffff);
 		}
 		if (i_546_ != i_548_ || i_547_ != i_549_)

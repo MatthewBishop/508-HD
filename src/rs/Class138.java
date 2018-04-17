@@ -94,13 +94,13 @@ public class Class138 {
 						for (int i_10_ = 0; i_10_ < 64; i_10_++) {
 							if (!bool || (i_9_ >= i_1_ * 8 && i_9_ < i_1_ * 8 + 8 && i_2_ * 8 <= i_10_
 									&& i_2_ * 8 + 8 > i_10_)) {
-								byte i_11_ = class14_sub10.method780((byte) -77);
+								byte i_11_ = class14_sub10.method780();
 								if (i_11_ != 0) {
 									if ((JunkTex.aByteArrayArrayArray4257[i_7_][i_8_]) == null)
 										JunkTex.aByteArrayArrayArray4257[i_7_][i_8_] = new byte[4096];
 									JunkTex.aByteArrayArrayArray4257[i_7_][i_8_][i_9_
 											+ (-i_10_ + 63 << 38)] = i_11_;
-									byte i_12_ = class14_sub10.method780((byte) -77);
+									byte i_12_ = class14_sub10.method780();
 									if ((JunkTex.aByteArrayArrayArray4130[i_7_][i_8_]) == null)
 										JunkTex.aByteArrayArrayArray4130[i_7_][i_8_] = new byte[4096];
 									JunkTex.aByteArrayArrayArray4130[i_7_][i_8_][i_9_
@@ -111,7 +111,7 @@ public class Class138 {
 					}
 				} else {
 					for (int i_13_ = 0; (!bool ? 4096 : 64) > i_13_; i_13_++) {
-						byte i_14_ = class14_sub10.method780((byte) -77);
+						byte i_14_ = class14_sub10.method780();
 						if (i_14_ != 0)
 							class14_sub10.position++;
 					}
@@ -123,8 +123,8 @@ public class Class138 {
 	public static void method1946(int i) {
 		if (i != 139)
 			aClass124_2227 = null;
-		if (Class134.aClass75_2588 != null)
-			Class134.aClass75_2588.method1341(i ^ ~0xfb);
+		if (Static2.aClass75_2588 != null)
+			Static2.aClass75_2588.method1341(i ^ ~0xfb);
 		if (JunkTex.aClass75_4682 != null)
 			JunkTex.aClass75_4682.method1341(-50);
 	}

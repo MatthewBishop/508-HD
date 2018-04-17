@@ -78,20 +78,20 @@ public class Filter {
 		pairs[0] = i >> 4;
 		pairs[1] = i & 0xf;
 		if (i != 0) {
-			unity[0] = class14_sub10.readUShort((byte) 107);
-			unity[1] = class14_sub10.readUShort((byte) 103);
+			unity[0] = class14_sub10.readUShort();
+			unity[1] = class14_sub10.readUShort();
 			int i_12_ = class14_sub10.readUByte();
 			for (int i_13_ = 0; i_13_ < 2; i_13_++) {
 				for (int i_14_ = 0; i_14_ < pairs[i_13_]; i_14_++) {
-					phases[i_13_][0][i_14_] = class14_sub10.readUShort((byte) 108);
-					magnitudes[i_13_][0][i_14_] = class14_sub10.readUShort((byte) 121);
+					phases[i_13_][0][i_14_] = class14_sub10.readUShort();
+					magnitudes[i_13_][0][i_14_] = class14_sub10.readUShort();
 				}
 			}
 			for (int i_15_ = 0; i_15_ < 2; i_15_++) {
 				for (int i_16_ = 0; i_16_ < pairs[i_15_]; i_16_++) {
 					if ((i_12_ & 1 << i_15_ * 4 << i_16_) != 0) {
-						phases[i_15_][1][i_16_] = class14_sub10.readUShort((byte) 108);
-						magnitudes[i_15_][1][i_16_] = class14_sub10.readUShort((byte) 125);
+						phases[i_15_][1][i_16_] = class14_sub10.readUShort();
+						magnitudes[i_15_][1][i_16_] = class14_sub10.readUShort();
 					} else {
 						phases[i_15_][1][i_16_] = phases[i_15_][0][i_16_];
 						magnitudes[i_15_][1][i_16_] = magnitudes[i_15_][0][i_16_];

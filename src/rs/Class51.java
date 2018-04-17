@@ -39,7 +39,7 @@ public class Class51 {
 
 	public void method1199(int i, Buffer class14_sub10, byte i_2_) {
 		if (i == 1) {
-			anInt842 = class14_sub10.readUShort((byte) 126);
+			anInt842 = class14_sub10.readUShort();
 			anInt832 = class14_sub10.readUByte();
 			anInt834 = class14_sub10.readUByte();
 		}

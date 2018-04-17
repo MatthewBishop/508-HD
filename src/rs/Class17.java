@@ -9,7 +9,7 @@ public class Class17 {
 	public static Class124 aClass124_398;
 	public static Class124 aClass124_399 = Class124.method263(1178, "Checking for updates )2 ");
 	public static int[] anIntArray400;
-	public static int[] anIntArray402;
+	public static int[] spriteWidths;
 	public static Class124 aClass124_403 = Class124.method263(1178, "compass");
 	public static Class124 aClass124_405;
 	public static Class124 aClass124_408;
@@ -79,7 +79,7 @@ public class Class17 {
 	}
 
 	public static void method959(int i) {
-		anIntArray402 = null;
+		spriteWidths = null;
 		aClass124_405 = null;
 		aClass124_408 = null;
 		aClass124_398 = null;

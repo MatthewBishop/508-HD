@@ -18,7 +18,7 @@ public class Class32 {
 	public static Class124[] aClass124Array542;
 	public int anInt545 = 0;
 	public int[][] anIntArrayArray546;
-	public static int anInt547;
+	public static int spriteAmount;
 	public int anInt548;
 	public static int anInt549 = 50;
 	public static int anInt551;
@@ -238,8 +238,8 @@ public class Class32 {
 						boolean bool = false;
 						if (i_54_ != 0) {
 							if (i_53_ != 0) {
-								Class150 class150 = Class97.method1489(i_53_ - 1, -9810);
-								if (class150.anInt2411 == -1) {
+								OverlayType overlayType = Class97.list(i_53_ - 1, -9810);
+								if (overlayType.anInt2411 == -1) {
 									byte i_55_ = is_35_[i_52_][i_48_];
 									if (i_55_ != 0) {
 										int[] is_56_ = (Class21.anIntArrayArray452[i_55_]);
@@ -255,8 +255,8 @@ public class Class32 {
 						} else {
 							if (i_53_ == 0)
 								continue;
-							Class150 class150 = Class97.method1489(i_53_ - 1, -9810);
-							if (class150.anInt2411 == -1)
+							OverlayType overlayType = Class97.list(i_53_ - 1, -9810);
+							if (overlayType.anInt2411 == -1)
 								continue;
 							if (is_35_[i_52_][i_48_] != 0) {
 								int[] is_58_ = (JunkTex.anIntArrayArray2545[is_35_[i_52_][i_48_]]);
@@ -359,8 +359,8 @@ public class Class32 {
 						if (i_88_ == 0) {
 							if (i_87_ == 0)
 								continue;
-							Class150 class150 = Class97.method1489(i_87_ - 1, -9810);
-							if (class150.anInt2411 == -1)
+							OverlayType overlayType = Class97.list(i_87_ - 1, -9810);
+							if (overlayType.anInt2411 == -1)
 								continue;
 							if (is_35_[i_85_][i_81_] != 0) {
 								Class133.method1787((JunkTex.anIntArrayArray2545[is_35_[i_85_][i_81_]]),
@@ -369,8 +369,8 @@ public class Class32 {
 								continue;
 							}
 						} else if (i_87_ != 0) {
-							Class150 class150 = Class97.method1489(i_87_ - 1, -9810);
-							if (class150.anInt2411 != -1) {
+							OverlayType overlayType = Class97.list(i_87_ - 1, -9810);
+							if (overlayType.anInt2411 != -1) {
 								byte i_89_ = is_35_[i_85_][i_81_];
 								if (i_89_ != 0)
 									bool = true;

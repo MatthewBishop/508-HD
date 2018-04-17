@@ -5,7 +5,7 @@ package rs;
 
 import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.link.Linkable;
-import com.jagex.rt4.Class14_Sub27;
+import com.jagex.rt4.HDTile;
 import com.jagex.rt4.RT4GL;
 import com.jagex.util.BrowserControlUtil;
 
@@ -98,7 +98,7 @@ public class Class14_Sub21 extends Linkable {
 		}
 	}
 
-	public static void method895(int i, Class14_Sub27[] class14_sub27s) {
+	public static void setHDTiles(int i, HDTile[] class14_sub27s) {
 		JunkTex.aClass14_Sub27ArrayArray2464[i] = class14_sub27s;
 	}
 

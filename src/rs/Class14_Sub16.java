@@ -88,7 +88,7 @@ public class Class14_Sub16 extends Linkable {
 	public Class14_Sub16(Buffer class14_sub10) {
 		class14_sub10.position = class14_sub10.payload.length - 3;
 		int i = class14_sub10.readUByte();
-		int i_16_ = class14_sub10.readUShort((byte) 108);
+		int i_16_ = class14_sub10.readUShort();
 		int i_17_ = i * 10 + 14;
 		class14_sub10.position = 0;
 		int i_18_ = 0;

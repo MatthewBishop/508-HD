@@ -9,6 +9,7 @@ import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.link.Cache;
 import com.jagex.rt4.Class148;
+import com.jagex.util.ArrayUtils;
 import com.jagex.util.TimeUtil;
 import com.jagex.util.Util;
 
@@ -109,17 +110,17 @@ public class Class75 {
 				byte[] is = Static2.aClass104_4037.method1533((byte) 81);
 				if (is != null) {
 					Buffer class14_sub10 = new Buffer(is);
-					JunkTex.anInt1129 = class14_sub10.readUShort((byte) 111);
+					JunkTex.anInt1129 = class14_sub10.readUShort();
 					Class133_Sub1.aClass45Array3435 = new Class45[JunkTex.anInt1129];
 					for (int i_5_ = 0; JunkTex.anInt1129 > i_5_; i_5_++) {
 						Class45 class45 = (Class133_Sub1.aClass45Array3435[i_5_] = new Class45());
-						int i_6_ = class14_sub10.readUShort((byte) 127);
+						int i_6_ = class14_sub10.readUShort();
 						class45.aBoolean749 = (i_6_ & 0x8000) != 0;
 						class45.anInt744 = i_6_ & 0x7fff;
 						class45.aClass124_741 = class14_sub10.method797(9467);
 						class45.anInt752 = class14_sub10.method805(0);
 						class45.anInt742 = i_5_;
-						int i_7_ = class14_sub10.readUShort((byte) 121);
+						int i_7_ = class14_sub10.readUShort();
 						class45.anInt745 = Class47.method1182(i_7_, -1);
 					}
 					Class14_Sub2_Sub11.method309(Class133_Sub1.aClass45Array3435,
@@ -346,7 +347,7 @@ public class Class75 {
 		int i_20_ = i;
 		if (Class14_Sub2_Sub2.aBoolean3763)
 			i_20_ <<= 1;
-		Class72.fillArray(is, 0, i_20_);
+		ArrayUtils.fillArray(is, 0, i_20_);
 		anInt1176 -= i;
 		if (aClass14_Sub9_1154 != null && anInt1176 <= 0) {
 			anInt1176 += Class115.anInt1909 >> 4;

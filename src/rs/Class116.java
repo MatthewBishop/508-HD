@@ -547,7 +547,7 @@ public class Class116 {
 																} else if (i_6_ == 3308) {
 																	int i_57_ = (((Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495) >> 7)
 																			+ Class133_Sub6.anInt3676);
-																	int i_58_ = (Class14_Sub2_Sub3.anInt3785);
+																	int i_58_ = (Class14_Sub2_Sub3.gameLevel);
 																	int i_59_ = (((Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436) >> 39)
 																			+ Class58.anInt947);
 																	Class79.anIntArray1305[i_3_++] = ((i_57_ << 46)
@@ -1776,7 +1776,7 @@ public class Class116 {
 																								i_1_ - 154);
 																					else if (i_6_ == 5206) {
 																						int i_149_ = Class79.anIntArray1305[--i_3_];
-																						Class14_Sub2_Sub5 class14_sub2_sub5 = Class150
+																						Class14_Sub2_Sub5 class14_sub2_sub5 = OverlayType
 																								.method2020(
 																										i_149_ >> 14
 																												& 0x3fff,
@@ -1856,10 +1856,10 @@ public class Class116 {
 																						JunkTex.aClass14_Sub10_Sub1_891
 																								.writeOpcode(161);
 																						JunkTex.aClass14_Sub10_Sub1_891
-																								.method809(ProceduralTexture.method1550(
+																								.method809(Static2.method1550(
 																										class124_158_,
 																										(byte) -107)
-																										+ ProceduralTexture
+																										+ Static2
 																												.method1550(
 																														class124,
 																														(byte) -107)
@@ -1960,7 +1960,7 @@ public class Class116 {
 																					} else if (i_6_ == 5419) {
 																						Class124 class124 = Class140.aClass124_2234;
 																						if (JunkTex.aClass31_2458 != null) {
-																							class124 = ProceduralTexture
+																							class124 = Static2
 																									.method1552(
 																											JunkTex.aClass31_2458.anInt526,
 																											27968);
@@ -2393,9 +2393,7 @@ public class Class116 {
 																					} else if (i_6_ == 6006) {
 																						JunkTex.aBoolean3397 = Class79.anIntArray1305[--i_3_] == 1;
 																						((Class134) Class3.anInterface3_117)
-																								.method1924(
-																										!JunkTex.aBoolean3397,
-																										i_1_ - 112);
+																								.method1924(											!JunkTex.aBoolean3397);
 																						JunkTex.method595(
 																								JunkTex.aClass43_4647);
 																						Static2.aBoolean214 = false;
