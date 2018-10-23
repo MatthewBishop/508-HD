@@ -254,7 +254,7 @@ public class Class38 implements Interface5 {
 	}
 
 	public static AbstractSprite[] method1115(boolean bool, Class9 class9, int i, int i_39_) {
-		if (!Class109.method1564(i, i_39_, class9)) {
+		if (!Static3.method1564(i, i_39_, class9)) {
 			AbstractSprite[] class14_sub2_sub19s = null;
 			return class14_sub2_sub19s;
 		}

@@ -3,10 +3,7 @@
  */
 package com.jagex.rt4;
 
-import com.jagex.io.js5.Class9;
-
 import rs.Class92;
-import rs.JunkTex;
 
 public class AbstractSprite_Sub1 extends AbstractSprite {
 	public int[] pixels;
@@ -937,12 +934,5 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 				method403(Class92.anIntArray1437, pixels, 0, i_274_, i_273_, i_276_, i_275_, i_277_, i_278_,
 						i_271_, i_272_);
 		}
-	}
-
-	public static AbstractSprite_Sub1 constructLDSprite(Class9 class9, int i, int i_6_) {
-		if (!JunkTex.decodedSprites(class9, i_6_, (byte) 67)) {
-			return null;
-		}
-		return JunkTex.constructLDSprite((byte) -123);
 	}
 }

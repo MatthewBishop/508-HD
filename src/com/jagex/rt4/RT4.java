@@ -134,6 +134,7 @@ public class RT4 {
 		RT4.rotateX = i;
 		RT4.translateY = i_28_;
 	}
+	
 	public static float[] method657(int i, int i_0_) {
 		float f = AtmosphericEffects.getAmbientModelModifier() + AtmosphericEffects.getLight1Modifier();
 		int i_1_ = AtmosphericEffects.getLightModelColour();

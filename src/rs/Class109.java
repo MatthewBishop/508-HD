@@ -4,7 +4,6 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
 import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.rt4.AbstractSprite;
 import com.jagex.rt4.AbstractSprite_Sub1;
@@ -34,17 +33,6 @@ public class Class109 {
 				}
 			}
 		}
-	}
-
-	public static boolean method1564(int i_3_, int i_4_, Class9 class9) {
-		byte[] is = class9.method163(i_3_, i_4_, 0);
-		if (is == null) {
-			boolean bool = false;
-			return bool;
-		}
-		Class14_Sub9_Sub1.decodeSprites(is);
-		boolean bool = true;
-		return bool;
 	}
 
 	public static AbstractSprite method1565(int i, int i_5_, boolean bool, int i_6_, byte i_7_, int i_8_) {
@@ -136,7 +124,7 @@ public class Class109 {
 	public static void method1571(int i) {
 		aClass124_1836 = null;
 		if (i != 0)
-			method1564(61, 81, null);
+			Static3.method1564(61, 81, null);
 		aClass14_Sub2_Sub19_Sub1Array1835 = null;
 		aClass124_1831 = null;
 		idx1 = null;

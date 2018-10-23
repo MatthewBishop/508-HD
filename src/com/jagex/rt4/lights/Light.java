@@ -1,6 +1,5 @@
 package com.jagex.rt4.lights;
 
-import org.jagex.image.transform.Class14_Sub8_Sub12;
 import org.jagex.image.transform.TexStatic;
 
 import com.jagex.io.Buffer;

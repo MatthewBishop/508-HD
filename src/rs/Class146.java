@@ -35,7 +35,7 @@ public class Class146 {
 	}
 
 	public static Class14_Sub2_Sub16_Sub1 method1991(int i, Class9 class9, Class9 class9_1_, int i_2_, int i_3_) {
-		if (!Class109.method1564(i, i_3_, class9)) {
+		if (!Static3.method1564(i, i_3_, class9)) {
 			Class14_Sub2_Sub16_Sub1 class14_sub2_sub16_sub1 = null;
 			return class14_sub2_sub16_sub1;
 		}

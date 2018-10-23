@@ -91,7 +91,7 @@ public class Class127 {
 	public static Class148_Sub1 method1752(int i, Class9 class9, boolean bool, int i_32_) {
 		if (!bool)
 			method1750(null, (byte) 88);
-		if (!Class109.method1564(i, i_32_, class9)) {
+		if (!Static3.method1564(i, i_32_, class9)) {
 			Class148_Sub1 class148_sub1 = null;
 			return class148_sub1;
 		}

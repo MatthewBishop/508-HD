@@ -17,7 +17,7 @@ public abstract class AbstractSprite extends Cacheable {
 	public int anInt4046;
 
 	public int offsetY;
-
+//	public abstract void method38();
 	public abstract void method389(int i, int i_1_, int i_2_, int i_3_);
 
 	public abstract void method390(int i, int i_4_);

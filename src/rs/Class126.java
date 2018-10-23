@@ -143,7 +143,7 @@ public abstract class Class126 {
 	}
 
 	public static Class148[] method1747(int i, int i_10_, int i_11_, Class9 class9) {
-		if (!Class109.method1564(i, i_10_, class9)) {
+		if (!Static3.method1564(i, i_10_, class9)) {
 			Class148[] class148s = null;
 			return class148s;
 		}

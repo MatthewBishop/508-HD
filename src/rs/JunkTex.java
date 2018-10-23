@@ -833,21 +833,6 @@ public class JunkTex {
 		Static2.aClass52_4053.clear();
 	}
 
-	public static boolean decodedSprites(Class9 class9, int i, byte i_3_) {
-		byte[] is = class9.getFileSmart(73, i);
-		if (is == null) {
-			boolean bool = false;
-			return bool;
-		}
-		if (i_3_ <= 10) {
-			boolean bool = false;
-			return bool;
-		}
-		Class14_Sub9_Sub1.decodeSprites(is);
-		boolean bool = true;
-		return bool;
-	}
-
 	public static int method1028(int i, int i_4_, int i_5_, int i_6_) {
 		i &= 0x3;
 		if (i_5_ == (i ^ 0xffffffff)) {
@@ -7184,7 +7169,7 @@ public class JunkTex {
 			Class148 class148 = null;
 			return class148;
 		}
-		if (!decodedSprites(class9, i, (byte) 100)) {
+		if (!Static3.decodedSprites(class9, i, (byte) 100)) {
 			Class148 class148 = null;
 			return class148;
 		}
@@ -9836,7 +9821,7 @@ public class JunkTex {
 	public static int[] anIntArray4104 = { 0, 4, 4, 8, 0, 0, 8, 0, 0 };
 
 	public static AbstractSprite_Sub1 method485(int i, Class9 class9, int i_0_, int i_1_) {
-		if (!Class109.method1564(i_1_, i_0_, class9)) {
+		if (!Static3.method1564(i_1_, i_0_, class9)) {
 			AbstractSprite_Sub1 class14_sub2_sub19_sub1 = null;
 			return class14_sub2_sub19_sub1;
 		}
@@ -10478,8 +10463,6 @@ public class JunkTex {
 		aClass124_2077 = null;
 		aClass124_2082 = null;
 		aClass14_Sub9_Sub1_2071 = null;
-		if (i != 10)
-			RT4.translateX = 98;
 		aClass52_2075 = null;
 	}
 	public static boolean aBoolean3392;
@@ -10595,7 +10578,7 @@ public class JunkTex {
 		Class70.aClass52_1079.clear();
 	}
 	public static AbstractSprite[] method1733(byte i, Class9 class9, int i_9_, int i_10_) {
-		if (!Class109.method1564(i_9_, i_10_, class9)) {
+		if (!Static3.method1564(i_9_, i_10_, class9)) {
 			AbstractSprite[] class14_sub2_sub19s = null;
 			return class14_sub2_sub19s;
 		}
@@ -10652,7 +10635,7 @@ public class JunkTex {
 	public static Class148_Sub1[] method1729(Class9 class9, int i, int i_19_, byte i_20_) {
 		if (i_20_ != 48)
 			method1729(null, -104, -52, (byte) -6);
-		if (!Class109.method1564(i_19_, i, class9)) {
+		if (!Static3.method1564(i_19_, i, class9)) {
 			Class148_Sub1[] class148_sub1s = null;
 			return class148_sub1s;
 		}

@@ -782,7 +782,7 @@ public class Class137 {
 	}
 
 	public static AbstractSprite_Sub1 method1943(int i, Class9 class9, int i_88_, byte i_89_) {
-		if (!Class109.method1564(i, i_88_, class9)) {
+		if (!Static3.method1564(i, i_88_, class9)) {
 			AbstractSprite_Sub1 class14_sub2_sub19_sub1 = null;
 			return class14_sub2_sub19_sub1;
 		}

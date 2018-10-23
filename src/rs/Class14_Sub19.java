@@ -50,7 +50,7 @@ public class Class14_Sub19 extends Linkable {
 	}
 
 	public static Class14_Sub2_Sub16 method888(int i, int i_0_, Class9 class9, int i_1_, Class9 class9_2_) {
-		if (!Class109.method1564(i_1_, i_0_, class9_2_)) {
+		if (!Static3.method1564(i_1_, i_0_, class9_2_)) {
 			Class14_Sub2_Sub16 class14_sub2_sub16 = null;
 			return class14_sub2_sub16;
 		}

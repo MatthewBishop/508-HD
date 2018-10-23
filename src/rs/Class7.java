@@ -43,21 +43,16 @@ public class Class7 {
 	}
 
 	public static int method115(byte i, int i_0_) {
-		if (i < 115)
-			method117(null, -42, (byte) 126);
-		int i_1_ = i_0_ >>> 8;
-		return i_1_;
+		return i_0_ >>> 8;
 	}
 
 	public static int method116(int i, int i_2_) {
-		if (i_2_ != 14719)
-			method117(null, -104, (byte) 88);
 		int i_3_ = i & 0xff;
 		return i_3_;
 	}
 
 	public static AbstractSprite method117(Class9 class9, int i, byte i_4_) {
-		if (!JunkTex.decodedSprites(class9, i, (byte) 126)) {
+		if (!Static3.decodedSprites(class9, i, (byte) 126)) {
 			AbstractSprite class14_sub2_sub19 = null;
 			return class14_sub2_sub19;
 		}

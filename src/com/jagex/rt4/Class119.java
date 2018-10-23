@@ -8,18 +8,13 @@ import java.nio.ByteBuffer;
 import javax.media.opengl.GL;
 
 public class Class119 {
-	public static int texture3DPointer2l;
+	public static int texture3DPointer2l = -1;
 	public static int[] anIntArray1991 = null;
-	public static ByteBuffer textureData2;
+	private static ByteBuffer textureData2;
 	public static int texture3DPointer2 = -1;
-	public static int[] textureIds2;
-	public static ByteBuffer textureData2l;
+	public static int[] textureIds2 = null;
+	private static ByteBuffer textureData2l;
 	public static boolean allows3DTextureMapping;
-
-	static {
-		texture3DPointer2l = -1;
-		textureIds2 = null;
-	}
 
 	public static void finalizeCard() {
 		if (texture3DPointer2 != -1) {
@@ -50,7 +45,7 @@ public class Class119 {
 		}
 	}
 
-	public static void method1610() {
+	private static void method1610() {
 		GL gl = RT4GL.gl;
 		if (allows3DTextureMapping) {
 			int[] is = new int[1];
@@ -76,7 +71,7 @@ public class Class119 {
 		}
 	}
 
-	public static void method1611() {
+	private static void method1611() {
 		GL gl = RT4GL.gl;
 		if (allows3DTextureMapping) {
 			int[] is = new int[1];

@@ -210,7 +210,7 @@ public class Class58 {
 	public static AbstractSprite method1259(int i, Class9 class9, int i_22_, int i_23_) {
 		if (i >= -80)
 			method1257(null, -79);
-		if (!Class109.method1564(i_22_, i_23_, class9)) {
+		if (!Static3.method1564(i_22_, i_23_, class9)) {
 			AbstractSprite class14_sub2_sub19 = null;
 			return class14_sub2_sub19;
 		}

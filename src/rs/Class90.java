@@ -92,7 +92,7 @@ public class Class90 implements Runnable {
 	public static AbstractSprite_Sub1[] method1446(int var0, Class9 var1, int var2, int var3) {
 		try {
 			AbstractSprite_Sub1[] var4;
-			if (!Class109.method1564(var3, var0, var1)) {
+			if (!Static3.method1564(var3, var0, var1)) {
 				var4 = null;
 				return var4;
 			} else {
