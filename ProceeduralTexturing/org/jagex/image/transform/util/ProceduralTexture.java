@@ -99,8 +99,7 @@ public class ProceduralTexture {
 			if (!class9.method171(anIntArray1810[i_10_]))
 				return false;
 		}
-		int i_11_ = 0;
-		for (/**/; anIntArray1805.length > i_11_; i_11_++) {
+		for (int i_11_ = 0; anIntArray1805.length > i_11_; i_11_++) {
 			if (!interface3.method10(anIntArray1805[i_11_]))
 				return false;
 		}

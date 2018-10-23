@@ -2028,7 +2028,7 @@ public class Class116 {
 																									+ 1];
 																							Class124 class124_173_ = JunkTex.aClass124Array5101[i_4_];
 																							int i_174_ = Class79.anIntArray1305[--i_3_];
-																							if (JunkTex.anInt4356 == 10
+																							if (JunkTex.gameState == 10
 																									&& Class142.anInt2315 == 0
 																									&& Class56.anInt918 == 0)
 																								Static2
@@ -2045,7 +2045,7 @@ public class Class116 {
 																								JunkTex.anInt4525 = -2;
 																						} else if (i_6_ == 5603) {
 																							i_3_ -= 4;
-																							if (JunkTex.anInt4356 == 10
+																							if (JunkTex.gameState == 10
 																									&& Class142.anInt2315 == 0
 																									&& Class56.anInt918 == 0)
 																								JunkTex
@@ -2060,7 +2060,7 @@ public class Class116 {
 																												(byte) -28);
 																						} else if (i_6_ == 5604) {
 																							i_4_--;
-																							if (JunkTex.anInt4356 == 10
+																							if (JunkTex.gameState == 10
 																									&& Class142.anInt2315 == 0
 																									&& Class56.anInt918 == 0)
 																								Class14_Sub2_Sub11
@@ -2072,7 +2072,7 @@ public class Class116 {
 																						} else if (i_6_ == 5605) {
 																							i_4_ -= 2;
 																							i_3_ -= 4;
-																							if (JunkTex.anInt4356 == 10
+																							if (JunkTex.gameState == 10
 																									&& Class142.anInt2315 == 0
 																									&& Class56.anInt918 == 0)
 																								Static2.method112(

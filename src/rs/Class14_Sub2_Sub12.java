@@ -74,9 +74,9 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 		ShadowManager.method2029(104, 104);
 		Class14_Sub15.method871(Class14_Sub3.aClass9_Sub1_2750, Class64.aClass9_Sub1_1015, -125);
 		JunkTex.method85(Class14_Sub3.aClass9_Sub1_2750, true);
-		if (JunkTex.anInt4356 == 10)
+		if (JunkTex.gameState == 10)
 			Class126.method1743(27252, 28);
-		if ((JunkTex.anInt4356 ^ 0xffffffff) == i)
+		if ((JunkTex.gameState ^ 0xffffffff) == i)
 			Class126.method1743(27252, 25);
 	}
 

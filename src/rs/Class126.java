@@ -65,8 +65,8 @@ public abstract class Class126 {
 	}
 
 	public static void method1743(int i, int i_4_) {
-		if (JunkTex.anInt4356 != i_4_) {
-			if (JunkTex.anInt4356 == 0)
+		if (JunkTex.gameState != i_4_) {
+			if (JunkTex.gameState == 0)
 				JunkTex.method639(-1);
 			if (i_4_ == 40)
 				Static2.method380(Class75.anInt1163, JunkTex.aClass124_4242,
@@ -90,8 +90,8 @@ public abstract class Class126 {
 			boolean bool = i_4_ == 5 || i_4_ == 10 || i_4_ == 28;
 			if (i != 27252)
 				method1746(58);
-			boolean bool_5_ = (JunkTex.anInt4356 == 5 || JunkTex.anInt4356 == 10
-					|| JunkTex.anInt4356 == 28);
+			boolean bool_5_ = (JunkTex.gameState == 5 || JunkTex.gameState == 10
+					|| JunkTex.gameState == 28);
 			if (!bool_5_ == bool) {
 				if (!bool) {
 					Class69.method1308(2, (byte) -114);
@@ -108,7 +108,7 @@ public abstract class Class126 {
 			}
 			if (i_4_ == 25 || i_4_ == 28 || i_4_ == 40)
 				RT4GL.method1627();
-			JunkTex.anInt4356 = i_4_;
+			JunkTex.gameState = i_4_;
 		}
 	}
 

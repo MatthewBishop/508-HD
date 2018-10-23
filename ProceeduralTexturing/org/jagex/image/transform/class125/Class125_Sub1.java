@@ -90,10 +90,10 @@ public class Class125_Sub1 extends Class125 {
 		int i_37_ = i_28_ * (i_11_ - 1);
 		if (i_5_ >= SC.anInt3005 && i_5_ <= SC.anInt955) {
 			int[] is = SC.anIntArrayArray4038[i_5_];
-			int i_38_ = SC.method1301((byte) 72, -i_0_ + i, SC.anInt1982, SC.anInt4327);
-			int i_39_ = SC.method1301((byte) -105, i + i_0_, SC.anInt1982, SC.anInt4327);
-			int i_40_ = SC.method1301((byte) -125, -i_10_ + i, SC.anInt1982, SC.anInt4327);
-			int i_41_ = SC.method1301((byte) 27, i + i_10_, SC.anInt1982, SC.anInt4327);
+			int i_38_ = SC.method1301(-i_0_ + i, SC.anInt1982, SC.anInt4327);
+			int i_39_ = SC.method1301(i + i_0_, SC.anInt1982, SC.anInt4327);
+			int i_40_ = SC.method1301(-i_10_ + i, SC.anInt1982, SC.anInt4327);
+			int i_41_ = SC.method1301(i + i_10_, SC.anInt1982, SC.anInt4327);
 			SC.method1201(is, i_38_, i_40_, i_1_);
 			SC.method1201(is, i_40_, i_41_, i_6_);
 			SC.method1201(is, i_41_, i_39_, i_1_);
@@ -146,14 +146,11 @@ public class Class125_Sub1 extends Class125 {
 			i_35_ -= i_26_;
 			int i_43_ = i_5_ + i_7_;
 			if (SC.anInt3005 <= i_43_ && SC.anInt955 >= i_42_) {
-				int i_44_ = SC.method1301((byte) 40, i_8_ + i, SC.anInt1982, SC.anInt4327);
-				int i_45_ = SC.method1301((byte) -112, -i_8_ + i, SC.anInt1982,
-						SC.anInt4327);
+				int i_44_ = SC.method1301(i_8_ + i, SC.anInt1982, SC.anInt4327);
+				int i_45_ = SC.method1301(-i_8_ + i, SC.anInt1982, SC.anInt4327);
 				if (bool) {
-					int i_46_ = SC.method1301((byte) 35, i + i_9_, SC.anInt1982,
-							SC.anInt4327);
-					int i_47_ = SC.method1301((byte) -81, -i_9_ + i, SC.anInt1982,
-							SC.anInt4327);
+					int i_46_ = SC.method1301(i + i_9_, SC.anInt1982, SC.anInt4327);
+					int i_47_ = SC.method1301(-i_9_ + i, SC.anInt1982, SC.anInt4327);
 					if (i_42_ >= SC.anInt3005) {
 						int[] is = SC.anIntArrayArray4038[i_42_];
 						SC.method1201(is, i_45_, i_47_, i_1_);
@@ -307,11 +304,10 @@ public class Class125_Sub1 extends Class125 {
 		int i_25_ = -1;
 		if (SC.anInt3005 <= i_15_ && i_15_ <= SC.anInt955) {
 			int[] is = SC.anIntArrayArray4038[i_15_];
-			int i_26_ = SC.method1301((byte) -102, i_16_ - i_11_, SC.anInt1982,
-					SC.anInt4327);
-			int i_27_ = SC.method1301((byte) 36, i_11_ + i_16_, SC.anInt1982, SC.anInt4327);
-			int i_28_ = SC.method1301((byte) 31, i_16_ - i_21_, SC.anInt1982, SC.anInt4327);
-			int i_29_ = SC.method1301((byte) 101, i_21_ + i_16_, SC.anInt1982, SC.anInt4327);
+			int i_26_ = SC.method1301(i_16_ - i_11_, SC.anInt1982, SC.anInt4327);
+			int i_27_ = SC.method1301(i_11_ + i_16_, SC.anInt1982, SC.anInt4327);
+			int i_28_ = SC.method1301(i_16_ - i_21_, SC.anInt1982, SC.anInt4327);
+			int i_29_ = SC.method1301(i_21_ + i_16_, SC.anInt1982, SC.anInt4327);
 			SC.method1201(is, i_26_, i_28_, i_13_);
 			SC.method1201(is, i_28_, i_29_, i);
 			SC.method1201(is, i_29_, i_27_, i_13_);
@@ -334,24 +330,18 @@ public class Class125_Sub1 extends Class125 {
 				int i_31_ = i_18_ + i_15_;
 				if (i_31_ >= SC.anInt3005 && i_30_ <= SC.anInt955) {
 					if (i_21_ <= i_18_) {
-						int i_32_ = SC.method1301((byte) 99, i_16_ + i_17_, SC.anInt1982,
-								SC.anInt4327);
-						int i_33_ = SC.method1301((byte) 80, -i_17_ + i_16_, SC.anInt1982,
-								SC.anInt4327);
+						int i_32_ = SC.method1301(i_16_ + i_17_, SC.anInt1982, SC.anInt4327);
+						int i_33_ = SC.method1301(-i_17_ + i_16_, SC.anInt1982, SC.anInt4327);
 						if (SC.anInt955 >= i_31_)
 							SC.method1201((SC.anIntArrayArray4038[i_31_]), i_33_, i_32_, i_13_);
 						if (SC.anInt3005 <= i_30_)
 							SC.method1201((SC.anIntArrayArray4038[i_30_]), i_33_, i_32_, i_13_);
 					} else {
 						int i_34_ = SC.anIntArray4191[i_18_];
-						int i_35_ = SC.method1301((byte) -122, i_17_ + i_16_, SC.anInt1982,
-								SC.anInt4327);
-						int i_36_ = SC.method1301((byte) -110, i_16_ - i_17_, SC.anInt1982,
-								SC.anInt4327);
-						int i_37_ = SC.method1301((byte) -120, i_34_ + i_16_, SC.anInt1982,
-								SC.anInt4327);
-						int i_38_ = SC.method1301((byte) -103, -i_34_ + i_16_, SC.anInt1982,
-								SC.anInt4327);
+						int i_35_ = SC.method1301(i_17_ + i_16_, SC.anInt1982, SC.anInt4327);
+						int i_36_ = SC.method1301(i_16_ - i_17_, SC.anInt1982, SC.anInt4327);
+						int i_37_ = SC.method1301(i_34_ + i_16_, SC.anInt1982, SC.anInt4327);
+						int i_38_ = SC.method1301(-i_34_ + i_16_, SC.anInt1982, SC.anInt4327);
 						if (SC.anInt955 >= i_31_) {
 							int[] is = (SC.anIntArrayArray4038[i_31_]);
 							SC.method1201(is, i_36_, i_38_, i_13_);
@@ -373,8 +363,8 @@ public class Class125_Sub1 extends Class125 {
 				int i_41_ = i_18_ + i_16_;
 				int i_42_ = i_16_ - i_18_;
 				if (SC.anInt1982 <= i_41_ && i_42_ <= SC.anInt4327) {
-					i_41_ = SC.method1301((byte) -58, i_41_, SC.anInt1982, SC.anInt4327);
-					i_42_ = SC.method1301((byte) 104, i_42_, SC.anInt1982, SC.anInt4327);
+					i_41_ = SC.method1301(i_41_, SC.anInt1982, SC.anInt4327);
+					i_42_ = SC.method1301(i_42_, SC.anInt1982, SC.anInt4327);
 					if (i_21_ <= i_17_) {
 						if (SC.anInt955 >= i_40_)
 							SC.method1201((SC.anIntArrayArray4038[i_40_]), i_42_, i_41_, i_13_);
@@ -382,10 +372,8 @@ public class Class125_Sub1 extends Class125 {
 							SC.method1201((SC.anIntArrayArray4038[i_39_]), i_42_, i_41_, i_13_);
 					} else {
 						int i_43_ = (i_23_ < i_17_ ? SC.anIntArray4191[i_17_] : i_23_);
-						int i_44_ = SC.method1301((byte) 75, i_43_ + i_16_, SC.anInt1982,
-								SC.anInt4327);
-						int i_45_ = SC.method1301((byte) -109, i_16_ - i_43_, SC.anInt1982,
-								SC.anInt4327);
+						int i_44_ = SC.method1301(i_43_ + i_16_, SC.anInt1982, SC.anInt4327);
+						int i_45_ = SC.method1301(i_16_ - i_43_, SC.anInt1982, SC.anInt4327);
 						if (SC.anInt955 >= i_40_) {
 							int[] is = (SC.anIntArrayArray4038[i_40_]);
 							SC.method1201(is, i_42_, i_45_, i_13_);
@@ -515,9 +503,8 @@ public class Class125_Sub1 extends Class125 {
 			int i_26_ = i_23_ * (i_14_ + 1);
 			int i_27_ = ((i_15_ << 1) - 3) * i_20_;
 			if (i_11_ >= SC.anInt3005 && SC.anInt955 >= i_11_) {
-				int i_28_ = SC.method1301((byte) 93, i_10_ + i, SC.anInt1982, SC.anInt4327);
-				int i_29_ = SC.method1301((byte) -122, -i + i_10_, SC.anInt1982,
-						SC.anInt4327);
+				int i_28_ = SC.method1301(i_10_ + i, SC.anInt1982, SC.anInt4327);
+				int i_29_ = SC.method1301(-i + i_10_, SC.anInt1982, SC.anInt4327);
 				SC.method1201((SC.anIntArrayArray4038[i_11_]), i_29_, i_28_, i_9_);
 			}
 			int i_30_ = (i_15_ - 1) * i_24_;
@@ -542,10 +529,8 @@ public class Class125_Sub1 extends Class125 {
 				int i_31_ = --i_15_ + i_11_;
 				int i_32_ = i_15_ + i_11_;
 				if (i_32_ >= SC.anInt3005 && SC.anInt955 >= i_31_) {
-					int i_33_ = SC.method1301((byte) -70, i_14_ + i_10_, SC.anInt1982,
-							SC.anInt4327);
-					int i_34_ = SC.method1301((byte) 76, -i_14_ + i_10_, SC.anInt1982,
-							SC.anInt4327);
+					int i_33_ = SC.method1301(i_14_ + i_10_, SC.anInt1982, SC.anInt4327);
+					int i_34_ = SC.method1301(-i_14_ + i_10_, SC.anInt1982, SC.anInt4327);
 					if (SC.anInt3005 <= i_31_)
 						SC.method1201((SC.anIntArrayArray4038[i_31_]), i_34_, i_33_, i_9_);
 					if (SC.anInt955 >= i_32_)
@@ -609,9 +594,9 @@ public class Class125_Sub1 extends Class125 {
 	public static void method1751(int i, byte i_18_, int i_19_, int i_20_, int i_21_) {
 		int i_22_ = i_21_;
 		int i_23_ = -i_21_;
-		int i_24_ = SC.method1301((byte) -118, i_19_ + i_21_, SC.anInt1982, SC.anInt4327);
+		int i_24_ = SC.method1301(i_19_ + i_21_, SC.anInt1982, SC.anInt4327);
 		int i_25_ = 0;
-		int i_26_ = SC.method1301((byte) 65, i_19_ - i_21_, SC.anInt1982, SC.anInt4327);
+		int i_26_ = SC.method1301(i_19_ - i_21_, SC.anInt1982, SC.anInt4327);
 		SC.method1201(SC.anIntArrayArray4038[i_20_], i_26_, i_24_, i);
 		int i_27_ = -1;
 		if (i_18_ <= -64) {
@@ -624,10 +609,8 @@ public class Class125_Sub1 extends Class125 {
 					i_23_ -= i_22_ << 33;
 					i_26_ = i_20_ - i_22_;
 					if (SC.anInt3005 <= i_24_ && SC.anInt955 >= i_26_) {
-						int i_28_ = SC.method1301((byte) -101, i_19_ + i_25_, SC.anInt1982,
-								SC.anInt4327);
-						int i_29_ = SC.method1301((byte) -93, -i_25_ + i_19_, SC.anInt1982,
-								SC.anInt4327);
+						int i_28_ = SC.method1301(i_19_ + i_25_, SC.anInt1982, SC.anInt4327);
+						int i_29_ = SC.method1301(-i_25_ + i_19_, SC.anInt1982, SC.anInt4327);
 						if (SC.anInt955 >= i_24_)
 							SC.method1201((SC.anIntArrayArray4038[i_24_]), i_29_, i_28_, i);
 						if (SC.anInt3005 <= i_26_)
@@ -637,10 +620,8 @@ public class Class125_Sub1 extends Class125 {
 				i_24_ = -++i_25_ + i_20_;
 				i_26_ = i_20_ + i_25_;
 				if (i_26_ >= SC.anInt3005 && i_24_ <= SC.anInt955) {
-					int i_30_ = SC.method1301((byte) 57, i_22_ + i_19_, SC.anInt1982,
-							SC.anInt4327);
-					int i_31_ = SC.method1301((byte) -127, -i_22_ + i_19_, SC.anInt1982,
-							SC.anInt4327);
+					int i_30_ = SC.method1301(i_22_ + i_19_, SC.anInt1982, SC.anInt4327);
+					int i_31_ = SC.method1301(-i_22_ + i_19_, SC.anInt1982, SC.anInt4327);
 					if (SC.anInt955 >= i_26_)
 						SC.method1201((SC.anIntArrayArray4038[i_26_]), i_31_, i_30_, i);
 					if (i_24_ >= SC.anInt3005)

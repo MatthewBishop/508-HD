@@ -142,4 +142,8 @@ public class Class14_Sub8_Sub18 extends Class14_Sub8 {
 			}
 		}
 	}
+
+	public static void kill() {
+		SC.kill();
+	}
 }

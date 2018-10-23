@@ -107,18 +107,18 @@ public class Class125_Sub4 extends Class125 {
 	}
 	
 	public static void method466(int i, int i_7_, int ia_8_, int i_9_, int i_10_, int i_11_, int i_12_) {
-		int i_13_ = SC.method1301((byte) -91, i_7_, SC.anInt3005, SC.anInt955);
-		int i_14_ = SC.method1301((byte) -124, i_12_, SC.anInt3005, SC.anInt955);
-		int i_15_ = SC.method1301((byte) 105, i, SC.anInt1982, SC.anInt4327);
-		int i_16_ = SC.method1301((byte) -125, i_11_, SC.anInt1982, SC.anInt4327);
-		int i_17_ = SC.method1301((byte) -74, i_7_ + i_10_, SC.anInt3005, SC.anInt955);
-		int i_18_ = SC.method1301((byte) 61, -i_10_ + i_12_, SC.anInt3005, SC.anInt955);
+		int i_13_ = SC.method1301(i_7_, SC.anInt3005, SC.anInt955);
+		int i_14_ = SC.method1301(i_12_, SC.anInt3005, SC.anInt955);
+		int i_15_ = SC.method1301(i, SC.anInt1982, SC.anInt4327);
+		int i_16_ = SC.method1301(i_11_, SC.anInt1982, SC.anInt4327);
+		int i_17_ = SC.method1301(i_7_ + i_10_, SC.anInt3005, SC.anInt955);
+		int i_18_ = SC.method1301(-i_10_ + i_12_, SC.anInt3005, SC.anInt955);
 		for (int i_19_ = i_13_; i_19_ < i_17_; i_19_++)
 			SC.method1201(SC.anIntArrayArray4038[i_19_], i_15_, i_16_, i_9_);
 		for (int i_20_ = i_14_; i_18_ < i_20_; i_20_--)
 			SC.method1201(SC.anIntArrayArray4038[i_20_], i_15_, i_16_, i_9_);
-		int i_21_ = SC.method1301((byte) -126, i + i_10_, SC.anInt1982, SC.anInt4327);
-		int i_22_ = SC.method1301((byte) 47, i_11_ - i_10_, SC.anInt1982, SC.anInt4327);
+		int i_21_ = SC.method1301(i + i_10_, SC.anInt1982, SC.anInt4327);
+		int i_22_ = SC.method1301(i_11_ - i_10_, SC.anInt1982, SC.anInt4327);
 		for (int i_23_ = i_17_; i_23_ <= i_18_; i_23_++) {
 			int[] is = SC.anIntArrayArray4038[i_23_];
 			SC.method1201(is, i_15_, i_21_,  i_9_);
@@ -153,19 +153,19 @@ public class Class125_Sub4 extends Class125 {
 	}
 	
 	public static void method522(int i, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_) {
-		int i_10_ = SC.method1301((byte) -122, i, SC.anInt3005, SC.anInt955);
-		int i_11_ = SC.method1301((byte) 116, i_6_, SC.anInt3005, SC.anInt955);
+		int i_10_ = SC.method1301(i, SC.anInt3005, SC.anInt955);
+		int i_11_ = SC.method1301(i_6_, SC.anInt3005, SC.anInt955);
 		if (i_7_ == 0) {
-			int i_12_ = SC.method1301((byte) -95, i_4_, SC.anInt1982, SC.anInt4327);
-			int i_13_ = SC.method1301((byte) 40, i_8_, SC.anInt1982, SC.anInt4327);
-			int i_14_ = SC.method1301((byte) -124, i_9_ + i, SC.anInt3005, SC.anInt955);
-			int i_15_ = SC.method1301((byte) 106, i_6_ - i_9_, SC.anInt3005, SC.anInt955);
+			int i_12_ = SC.method1301(i_4_, SC.anInt1982, SC.anInt4327);
+			int i_13_ = SC.method1301(i_8_, SC.anInt1982, SC.anInt4327);
+			int i_14_ = SC.method1301(i_9_ + i, SC.anInt3005, SC.anInt955);
+			int i_15_ = SC.method1301(i_6_ - i_9_, SC.anInt3005, SC.anInt955);
 			for (int i_16_ = i_10_; i_14_ > i_16_; i_16_++)
 				SC.method1201((SC.anIntArrayArray4038[i_16_]), i_12_, i_13_, i_5_);
 			for (int i_17_ = i_11_; i_17_ > i_15_; i_17_--)
 				SC.method1201((SC.anIntArrayArray4038[i_17_]), i_12_, i_13_, i_5_);
-			int i_18_ = SC.method1301((byte) 67, i_9_ + i_4_, SC.anInt1982, SC.anInt4327);
-			int i_19_ = SC.method1301((byte) -74, i_8_ - i_9_, SC.anInt1982, SC.anInt4327);
+			int i_18_ = SC.method1301(i_9_ + i_4_, SC.anInt1982, SC.anInt4327);
+			int i_19_ = SC.method1301(i_8_ - i_9_, SC.anInt1982, SC.anInt4327);
 			for (int i_20_ = i_14_; i_20_ <= i_15_; i_20_++) {
 				int[] is = SC.anIntArrayArray4038[i_20_];
 				SC.method1201(is, i_12_, i_18_, i_5_);
@@ -204,7 +204,7 @@ public class Class125_Sub4 extends Class125 {
 	public static void method1417(int i, int i_2_, int i_3_, int i_5_, int i_6_) {
 		if (i < SC.anInt1982 || SC.anInt4327 < i_6_ || SC.anInt3005 > i_2_
 				|| SC.anInt955 < i_3_)
-			method324(i, i_5_, i_3_, i_6_, (byte) -128, i_2_);
+			method324(i, i_5_, i_3_, i_6_, i_2_);
 		else
 			method674(i_6_, i_5_, i, i_2_, i_3_);
 	}
@@ -215,11 +215,11 @@ public class Class125_Sub4 extends Class125 {
 			SC.method1201(SC.anIntArrayArray4038[i_5_], i_2_, i_0_, i_1_);
 	}
 	
-	public static void method324(int i, int i_15_, int i_16_, int i_17_, byte i_18_, int i_19_) {
-		int i_21_ = SC.method1301((byte) -84, i_19_, SC.anInt3005, SC.anInt955);
-		int i_22_ = SC.method1301((byte) -112, i_16_, SC.anInt3005, SC.anInt955);
-		int i_23_ = SC.method1301((byte) -103, i, SC.anInt1982, SC.anInt4327);
-		int i_24_ = SC.method1301((byte) -60, i_17_, SC.anInt1982, SC.anInt4327);
+	public static void method324(int i, int i_15_, int i_16_, int i_17_, int i_19_) {
+		int i_21_ = SC.method1301(i_19_, SC.anInt3005, SC.anInt955);
+		int i_22_ = SC.method1301(i_16_, SC.anInt3005, SC.anInt955);
+		int i_23_ = SC.method1301(i, SC.anInt1982, SC.anInt4327);
+		int i_24_ = SC.method1301(i_17_, SC.anInt1982, SC.anInt4327);
 		for (int i_25_ = i_21_; i_22_ >= i_25_; i_25_++)
 			SC.method1201(SC.anIntArrayArray4038[i_25_], i_23_, i_24_, i_15_);
 	}

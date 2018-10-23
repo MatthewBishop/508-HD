@@ -666,7 +666,7 @@ public class Static2 {
 		boolean bool_51_ = false;
 		RT4GL.method1626(true);
 		int i_52_;
-		if (JunkTex.anInt4356 == 10)
+		if (JunkTex.gameState == 10)
 			i_52_ = JunkTex.method576(Class51.anInt839, (JunkTex.anInt4741 >> 10),
 					Class14_Sub30.anInt3271 >> 10, -3217, JunkTex.anInt4190);
 		else
@@ -765,9 +765,9 @@ public class Static2 {
 	public static SoftCache aClass52_2370 = new SoftCache(64);
 	public static void method1996(byte i) {
 		if (i >= 48) {
-			if (JunkTex.anInt4356 == 10)
+			if (JunkTex.gameState == 10)
 				Class126.method1743(27252, 28);
-			if (JunkTex.anInt4356 == 30)
+			if (JunkTex.gameState == 30)
 				Class126.method1743(27252, 25);
 		}
 	}
@@ -824,7 +824,7 @@ public class Static2 {
 	public static void method259(boolean bool, int i) {
 		if (i == 11988) {
 			Class138.method1946(139);
-			if (JunkTex.anInt4356 == 30 || JunkTex.anInt4356 == 25) {
+			if (JunkTex.gameState == 30 || JunkTex.gameState == 25) {
 				Static2.anInt246++;
 				if (Static2.anInt246 >= 50 || bool) {
 					Static2.anInt246 = 0;
@@ -1989,7 +1989,7 @@ public class Static2 {
 						JunkTex.aClass14_Sub10_Sub1_891.method794(Static2.aBigInteger2704, Class152.aBigInteger2433,
 								0);
 						Class70.aClass14_Sub10_Sub1_1080.position = 0;
-						if (JunkTex.anInt4356 == 40) {
+						if (JunkTex.gameState == 40) {
 							Class70.aClass14_Sub10_Sub1_1080.method809(18);
 						} else {
 							Class70.aClass14_Sub10_Sub1_1080.method809(16);

@@ -12,12 +12,12 @@ public class SC {
 		int i_18_ = i - i_16_;
 		if (i_17_ != 0) {
 			if (i_18_ == 0) {
-				SC.method1285(i_16_, i_14_, i_15_, i_12_, (byte) -115);
+				SC.method1285(i_16_, i_14_, i_15_, i_12_);
 				return;
 			}
 		} else {
 			if (i_18_ != 0)
-				SC.method966(i, i_12_, i_15_, (byte) 112, i_16_);
+				SC.method966(i, i_12_, i_15_, i_16_);
 			return;
 		}
 		int i_20_ = (i_18_ << 12) / i_17_;
@@ -71,15 +71,15 @@ public class SC {
 		SC.method652(i_25_, i_24_, i_12_, i_22_, i_23_);
 	}
 
-	public static void method1285(int i, int i_0_, int i_1_, int i_2_, byte i_3_) {
+	public static void method1285(int i, int i_0_, int i_1_, int i_2_) {
 		if (anInt3005 <= i && i <= anInt955) {
-			i_1_ = SC.method1301((byte) -83, i_1_, anInt1982, anInt4327);
-			i_0_ = SC.method1301((byte) -93, i_0_, anInt1982, anInt4327);
+			i_1_ = SC.method1301(i_1_, anInt1982, anInt4327);
+			i_0_ = SC.method1301(i_0_, anInt1982, anInt4327);
 			SC.method1226(i_1_, i, i_0_, i_2_);
 		}
 	}
 
-	public static void method1387(int i, int i_85_, int i_86_, int i_87_, int i_8a8_) {
+	public static void method1387(int i, int i_85_, int i_86_, int i_87_) {
 		if (i_86_ >= i_87_) {
 			for (int i_89_ = i_87_; i_89_ < i_86_; i_89_++)
 				SC.anIntArrayArray4038[i_89_][i] = i_85_;
@@ -99,7 +99,7 @@ public class SC {
 			}
 		} else {
 			if (i_6_ != 0)
-				method1387(i_3_, i_2_, i, i_4_, 82);
+				method1387(i_3_, i_2_, i, i_4_);
 			return;
 		}
 		if (i_5_ < 0)
@@ -175,16 +175,16 @@ public class SC {
 			is[++i] = i_6_;
 	}
 
-	public static void method966(int i, int i_0_, int i_1_, byte i_2_, int i_3_) {
+	public static void method966(int i, int i_0_, int i_1_, int i_3_) {
 		if (anInt1982 <= i_1_ && anInt4327 >= i_1_) {
-			i_3_ = SC.method1301((byte) -101, i_3_, anInt3005, anInt955);
-			i = SC.method1301((byte) 115, i, anInt3005, anInt955);
-			method1387(i_1_, i_0_, i, i_3_, 52);
+			i_3_ = SC.method1301(i_3_, anInt3005, anInt955);
+			i = SC.method1301(i, anInt3005, anInt955);
+			method1387(i_1_, i_0_, i, i_3_);
 		}
 	}
 
-	public static int method1301(byte i, int i_16_, int i_17_, int i_18_) {
-		int i_20_ = i_17_ <= i_16_ ? i_18_ >= i_16_ ? i_16_ : i_18_ : i_17_;
+	public static int method1301(int a, int b, int c) {
+		int i_20_ = b <= a ? c >= a ? a : c : b;
 		return i_20_;
 	}
 
@@ -200,7 +200,6 @@ public class SC {
 	}
 
 	public static void kill() {
-
 		anIntArray4191 = null;
 		anIntArrayArray4038 = null;
 	}

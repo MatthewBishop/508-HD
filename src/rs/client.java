@@ -65,12 +65,12 @@ public class client extends Applet_Sub1 {
 		try {
 			if (Class24.anInt465 >= 4) {
 				this.method28("js5crc", -1);
-				JunkTex.anInt4356 = 1000;
+				JunkTex.gameState = 1000;
 			} else {
 				if (Class51.anInt829 >= 4) {
-					if (JunkTex.anInt4356 == 0 || JunkTex.anInt4356 == 5) {
+					if (JunkTex.gameState == 0 || JunkTex.gameState == 5) {
 						this.method28("js5io", -1);
-						JunkTex.anInt4356 = 1000;
+						JunkTex.gameState = 1000;
 						return;
 					}
 
@@ -112,7 +112,7 @@ public class client extends Applet_Sub1 {
 					}
 
 					if (JunkTex.anInt2721 == 3) {
-						if (JunkTex.anInt4356 != 0 && JunkTex.anInt4356 != 5
+						if (JunkTex.gameState != 0 && JunkTex.gameState != 5
 								&& Class133_Sub1_Sub1.aClass36_4939.method1104(24249) <= 0) {
 							if (30000L < TimeUtil.getTime() + -Class12.aLong282) {
 								this.method54(-2, (byte) -120);
@@ -135,11 +135,11 @@ public class client extends Applet_Sub1 {
 					}
 
 					if (JunkTex.anInt2721 == 4) {
-						boolean var6 = JunkTex.anInt4356 == 5 || JunkTex.anInt4356 == 10
-								|| JunkTex.anInt4356 == 28;
+						boolean var6 = JunkTex.gameState == 5 || JunkTex.gameState == 10
+								|| JunkTex.gameState == 28;
 						Class133.method1783(Class133_Sub1_Sub1.aClass36_4939, (byte) 49, !var6);
 						JunkTex.aClass31_1328 = null;
-						JunkTex.anInt3363 = 0;
+						JunkTex.errorCount = 0;
 						Class133_Sub1_Sub1.aClass36_4939 = null;
 						JunkTex.anInt2721 = 0;
 					}
@@ -154,11 +154,11 @@ public class client extends Applet_Sub1 {
 	@Override
 	public void method29(int i) {
 		try {
-			if (JunkTex.anInt4356 != 1000) {
+			if (JunkTex.gameState != 1000) {
 				boolean bool = Class113.method1581(0);
 				if (bool && Class14_Sub7.aBoolean2827 && JunkTex.aClass75_4682 != null)
 					JunkTex.aClass75_4682.method1344(true);
-				if (JunkTex.anInt4356 == 30 || JunkTex.anInt4356 == 10) {
+				if (JunkTex.gameState == 30 || JunkTex.gameState == 10) {
 					if (Class54.aBoolean877)
 						Class14_Sub21.method897(120);
 					else if (Class132.aLong2169 != 0L && (Class132.aLong2169 < TimeUtil.getTime()))
@@ -166,7 +166,7 @@ public class client extends Applet_Sub1 {
 				}
 				if (0L != Class56_Sub1.aLong3317 && Class56_Sub1.aLong3317 < TimeUtil.getTime()
 						&& Class14_Sub15.aClass36_2990 != null
-						&& (JunkTex.anInt4356 == 30 || JunkTex.anInt4356 == 25))
+						&& (JunkTex.gameState == 30 || JunkTex.gameState == 25))
 					Class88.method1436((byte) -125);
 				if (JunkTex.aFrame3962 == null) {
 					Container container;
@@ -188,7 +188,7 @@ public class client extends Applet_Sub1 {
 						JunkTex.method643(500, (byte) -93);
 				}
 				if (JunkTex.aFrame3962 != null && !Class83.aBoolean1342
-						&& (JunkTex.anInt4356 == 30 || JunkTex.anInt4356 == 10))
+						&& (JunkTex.gameState == 30 || JunkTex.gameState == 10))
 					Class14_Sub2_Sub20.method428(i - 7);
 				if (i != 1)
 					method43(-81);
@@ -201,13 +201,13 @@ public class client extends Applet_Sub1 {
 					Class132.method1779(0);
 				for (int i_12_ = 0; i_12_ < 100; i_12_++)
 					JunkTex.aBooleanArray4698[i_12_] = true;
-				if (JunkTex.anInt4356 != 0) {
-					if (JunkTex.anInt4356 == 5)
+				if (JunkTex.gameState != 0) {
+					if (JunkTex.gameState == 5)
 						JunkTex.method623(false, Class133_Sub3.aClass14_Sub2_Sub16_3567);
-					else if (JunkTex.anInt4356 != 10) {
-						if (JunkTex.anInt4356 != 25 && JunkTex.anInt4356 != 28) {
-							if (JunkTex.anInt4356 != 30) {
-								if (JunkTex.anInt4356 == 40)
+					else if (JunkTex.gameState != 10) {
+						if (JunkTex.gameState != 25 && JunkTex.gameState != 28) {
+							if (JunkTex.gameState != 30) {
+								if (JunkTex.gameState == 40)
 									Class84.method1411(false,
 											(JunkTex.method515(
 													(new Class124[] { (JunkTex.aClass124_2462),
@@ -242,11 +242,11 @@ public class client extends Applet_Sub1 {
 						Class70.method1313(-11198);
 				} else
 					Class22.method984(Class51.anInt828, -1644, bool_11_, null, Class14_Sub9_Sub1.aClass124_4761);
-				if (JunkTex.anInt4356 != 0) {
+				if (JunkTex.gameState != 0) {
 					RT4GL.method1657();
 					for (int i_15_ = 0; Class14_Sub17.anInt3012 > i_15_; i_15_++)
 						Class7_Sub2_Sub1.aBooleanArray3703[i_15_] = false;
-				} else if ((JunkTex.anInt4356 == 30 || JunkTex.anInt4356 == 10)
+				} else if ((JunkTex.gameState == 30 || JunkTex.gameState == 10)
 						&& Class124.anInt2494 == 0 && !bool_11_) {
 					try {
 						Graphics graphics = Class49.aCanvas819.getGraphics();
@@ -261,7 +261,7 @@ public class client extends Applet_Sub1 {
 					} catch (Exception exception) {
 						Class49.aCanvas819.repaint();
 					}
-				} else if (JunkTex.anInt4356 != 0) {
+				} else if (JunkTex.gameState != 0) {
 					try {
 						Graphics graphics = Class49.aCanvas819.getGraphics();
 						Class122.aClass108_2059.method1558(0, (byte) 29, graphics, 0);
@@ -643,7 +643,9 @@ public class client extends Applet_Sub1 {
 						JunkTex.aClass14_Sub9_Sub1_2071.method702(0, 9, 128);
 						JunkTex.aClass75_4682 = JunkTex.method235(22050, 68,
 								JunkTex.aClass43_4647, Class49.aCanvas819, 0);
+						
 						JunkTex.aClass75_4682.method1352(JunkTex.aClass14_Sub9_Sub1_2071, false);
+						
 						Class88.method1438(JunkTex.aClass14_Sub9_Sub1_2071, Static2.aClass9_Sub1_5085,
 								false, Class47.aClass9_Sub1_790, Static2.aClass9_Sub1_2901);
 						Static2.aClass75_2588 = JunkTex.method235(2048, 97, JunkTex.aClass43_4647,
@@ -699,7 +701,7 @@ public class client extends Applet_Sub1 {
 
 								if (var3 == 5) {
 									this.method28("dll", -1);
-									JunkTex.anInt4356 = 1000;
+									JunkTex.gameState = 1000;
 									return;
 								}
 
@@ -735,7 +737,7 @@ public class client extends Applet_Sub1 {
 								String var11 = this.method50(true, var15 + " " + var8);
 								this.method35("os=" + var10 + "&gcard=" + var11 + "&error_code=" + var3, "caps_" + var7,
 										(byte) 52);
-								JunkTex.anInt4356 = 1000;
+								JunkTex.gameState = 1000;
 							} else {
 								ShadowManager.method2029(104, 104);
 								Class14_Sub15.method871(Class14_Sub3.aClass9_Sub1_2750, Class64.aClass9_Sub1_1015,
@@ -940,7 +942,8 @@ public class client extends Applet_Sub1 {
 			}
 
 		} catch (Throwable var12) {
-			throw Util.error(var12, "client.H(" + var1 + ')');
+		//	throw Util.error(var12, "client.H(" + var1 + ')');
+			var12.printStackTrace();
 		}
 	}
 
@@ -1289,7 +1292,7 @@ public class client extends Applet_Sub1 {
 	@Override
 	public void method34(boolean bool) {
 		try {
-			if (JunkTex.anInt4356 != 1000) {
+			if (JunkTex.gameState != 1000) {
 				Class14_Sub2_Sub20.anInt4064++;
 				if (bool) {
 					if (Class14_Sub2_Sub20.anInt4064 % 1000 == 1) {
@@ -1309,22 +1312,22 @@ public class client extends Applet_Sub1 {
 						int i = Class44.aClass129_726.method1763(-128);
 						Class113.anInt1881 = i;
 					}
-					if (JunkTex.anInt4356 == 0) {
+					if (JunkTex.gameState == 0) {
 						method47((byte) 119);
 						JunkTex.method531((byte) -112);
-					} else if (JunkTex.anInt4356 != 5) {
-						if (JunkTex.anInt4356 == 25 || JunkTex.anInt4356 == 28)
+					} else if (JunkTex.gameState != 5) {
+						if (JunkTex.gameState == 25 || JunkTex.gameState == 28)
 							JunkTex.method329(true);
 					} else {
 						method47((byte) 122);
 						JunkTex.method531((byte) -112);
 					}
-					if (JunkTex.anInt4356 == 10) {
+					if (JunkTex.gameState == 10) {
 						method53((byte) 102);
 						Class115.method1593(-2);
 						Static2.method1315(0);
-					} else if (JunkTex.anInt4356 != 30) {
-						if (JunkTex.anInt4356 == 40) {
+					} else if (JunkTex.gameState != 30) {
+						if (JunkTex.gameState == 40) {
 							Static2.method1315(0);
 							if (JunkTex.anInt4525 != -3) {
 								if (JunkTex.anInt4525 != 15) {
@@ -1534,24 +1537,24 @@ public class client extends Applet_Sub1 {
 		else
 			Class131.anInt2164 = Static2.anInt3348;
 		Class133_Sub1_Sub1.aClass36_4939 = null;
-		JunkTex.anInt3363++;
-		if (JunkTex.anInt3363 < 2 || i != 7 && i != 9) {
-			if (JunkTex.anInt3363 < 2 || i != 6) {
-				if (JunkTex.anInt3363 >= 4) {
-					if (JunkTex.anInt4356 != 0 && JunkTex.anInt4356 != 5)
+		JunkTex.errorCount++;
+		if (JunkTex.errorCount < 2 || i != 7 && i != 9) {
+			if (JunkTex.errorCount < 2 || i != 6) {
+				if (JunkTex.errorCount >= 4) {
+					if (JunkTex.gameState != 0 && JunkTex.gameState != 5)
 						JunkTex.anInt1314 = 3000;
 					else {
 						method28("js5connect", -1);
-						JunkTex.anInt4356 = 1000;
+						JunkTex.gameState = 1000;
 					}
 				}
 			} else {
 				method28("js5connect_outofdate", -1);
-				JunkTex.anInt4356 = 1000;
+				JunkTex.gameState = 1000;
 			}
-		} else if (JunkTex.anInt4356 == 0 || JunkTex.anInt4356 == 5) {
+		} else if (JunkTex.gameState == 0 || JunkTex.gameState == 5) {
 			method28("js5connect_full", -1);
-			JunkTex.anInt4356 = 1000;
+			JunkTex.gameState = 1000;
 		} else
 			JunkTex.anInt1314 = 3000;
 		if (i_85_ >= -118)

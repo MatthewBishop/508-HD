@@ -56,7 +56,7 @@ public class JunkTex {
 		JunkTex.aClass94_3388 = null;
 	}
 	static {
-		JunkTex.anInt3363 = 0;
+		JunkTex.errorCount = 0;
 		JunkTex.aShort3372 = (short) 256;
 	}
 	static {
@@ -2474,7 +2474,7 @@ public class JunkTex {
 				Class68.method1307((byte) -58);
 				Class14_Sub3.method451(0);
 				if (Class14_Sub14.aFrame2986 != null && Class14_Sub15.aClass36_2990 != null
-						&& JunkTex.anInt4356 == 25) {
+						&& JunkTex.gameState == 25) {
 					aClass14_Sub10_Sub1_891.writeOpcode(22);
 					aClass14_Sub10_Sub1_891.method803(1057001181, 103);
 				}
@@ -2499,7 +2499,7 @@ public class JunkTex {
 						}
 					}
 				}
-				if (JunkTex.anInt4356 == 28)
+				if (JunkTex.gameState == 28)
 					Class126.method1743(27252, 10);
 				else {
 					Class126.method1743(27252, 30);
@@ -2567,7 +2567,7 @@ public class JunkTex {
 			for (int i_0_ = 0; i_0_ < 100 && JunkTex.method664(false); i_0_++) {
 				/* empty */
 			}
-			if (JunkTex.anInt4356 == 30) {
+			if (JunkTex.gameState == 30) {
 				Static2.method1540(aClass14_Sub10_Sub1_891, 141, -15);
 				Object object = Class14_Sub2_Sub11.aClass100_3878.synchronizedObject;
 				synchronized (object) {
@@ -2707,7 +2707,7 @@ public class JunkTex {
 					Static2.aBoolean214 = true;
 				}
 				Class14_Sub2_Sub12.method317((byte) -127);
-				if (JunkTex.anInt4356 == 30) {
+				if (JunkTex.gameState == 30) {
 					Static2.method169(-1);
 					Static2.method1318((byte) 112);
 					Class96.anInt1636++;
@@ -6682,7 +6682,7 @@ public class JunkTex {
 			method643(-67, (byte) 80);
 		Class56_Sub1.aLong3317 = TimeUtil.getTime() - -(long) i;
 		if (i == 0 && Class14_Sub15.aClass36_2990 != null
-				&& (JunkTex.anInt4356 == 30 || JunkTex.anInt4356 == 25))
+				&& (JunkTex.gameState == 30 || JunkTex.gameState == 25))
 			Class88.method1436((byte) -92);
 	}
 	public static boolean[][] aBooleanArrayArray4138;
@@ -8607,7 +8607,7 @@ public class JunkTex {
 
 	public static int anInt4355;
 
-	public static int anInt4356 = 0;
+	public static int gameState = 0;
 
 	public static void method559(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_) {
 		Class110.aClass148Array1848[0].method2001(i_1_, i_3_);
@@ -10607,7 +10607,7 @@ public class JunkTex {
 
 	public static Class14_Sub29[][][] aClass14_Sub29ArrayArrayArray3368;
 
-	public static int anInt3363;
+	public static int errorCount;
 
 	public static int anInt3367 = 0;
 

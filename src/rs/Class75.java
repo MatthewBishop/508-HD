@@ -437,8 +437,6 @@ public class Class75 {
 
 	public synchronized void method1352(Class14_Sub9 class14_sub9, boolean bool) {
 		aClass14_Sub9_1154 = class14_sub9;
-		if (bool)
-			method1339(null, 29, -75, -79);
 	}
 
 	public void method1353() throws Exception {

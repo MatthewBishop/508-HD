@@ -2,7 +2,6 @@ package org.jagex.image.transform;
 
 import java.util.Random;
 
-import org.jagex.image.transform.class125.SC;
 import org.jagex.image.transform.util.Class14_Sub2_Sub17;
 import org.jagex.image.transform.util.MonoChromaticImageBuffer;
 import org.jagex.image.transform.util.ProceduralTexture;
@@ -89,7 +88,7 @@ public class TexStatic {
 		anIntArray3357 = null;
 		TexStatic.EMPTY_TRI_CACHE = null;
 		EMPTY_MONO_CACHE = null;
-		SC.kill();
+		Class14_Sub8_Sub18.kill();
 		aClass9_2671 = null;
 	}
 

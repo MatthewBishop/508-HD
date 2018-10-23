@@ -21,22 +21,22 @@ import rs.JunkTex;
 import rs.Static2;
 
 public class Class14_Sub2_Sub1 extends Cacheable {
-	public boolean aBoolean3726;
+	public boolean repeatTTexture;
 	public boolean aBoolean3730;
 	public boolean aBoolean3738;
-	public boolean aBoolean3743;
+	public boolean repeatSTexture;
 	public boolean aBoolean3746 = false;
 	public ProceduralTexture proceduralTexture;//Procedural Texture?
 	public float aFloat3750;
-	public int anInt3725;
+	public int combineRGBType;
 
 	public int anInt3731;
 
-	public int anInt3735;
+	public int rotateX;
 
 	public int anInt3744;
 
-	public int anInt3751;
+	public int rotateY;
 
 	public int anInt3752;
 
@@ -50,22 +50,22 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 		proceduralTexture = new ProceduralTexture(class14_sub10);
 		aBoolean3730 = class14_sub10.readUByte() == 1;
 		aBoolean3738 = class14_sub10.readUByte() == 1;
-		aBoolean3743 = class14_sub10.readUByte() == 1;
-		aBoolean3726 = class14_sub10.readUByte() == 1;
+		repeatSTexture = class14_sub10.readUByte() == 1;
+		repeatTTexture = class14_sub10.readUByte() == 1;
 		int i = class14_sub10.readUByte() & 0x3;
-		anInt3735 = class14_sub10.method780();
-		anInt3751 = class14_sub10.method780();
+		rotateX = class14_sub10.method780();
+		rotateY = class14_sub10.method780();
 		int i_53_ = class14_sub10.readUByte();
 		class14_sub10.readUByte();
 		if (i == 1)
-			anInt3725 = 2;
+			combineRGBType = 2;
 		else if (i != 2) {
 			if (i != 3)
-				anInt3725 = 0;
+				combineRGBType = 0;
 			else
-				anInt3725 = 4;
+				combineRGBType = 4;
 		} else
-			anInt3725 = 3;
+			combineRGBType = 3;
 		anInt3752 = i_53_ >> 4 & 0xf;
 	}
 
@@ -126,22 +126,22 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 					Class11.textureMemory += bytebuffer.limit() * 4 / 3 - anInt3753;
 					anInt3753 = bytebuffer.limit() * 4 / 3;
 				}
-				gl.glTexParameteri(3553, 10242, !aBoolean3743 ? 33071 : 10497);
-				gl.glTexParameteri(3553, 10243, aBoolean3726 ? 10497 : 33071);
+				gl.glTexParameteri(3553, 10242, !repeatSTexture ? 33071 : 10497);
+				gl.glTexParameteri(3553, 10243, repeatTTexture ? 10497 : 33071);
 			}
 		}
 		if ((i_7_ & 0x2) == 0)
-			RT4GL.method1638(anInt3725);
+			RT4GL.method1638(combineRGBType);
 		if (i <= 99)
 			Static2.method258(12);
 		if ((i_7_ & 0x4) == 0)
 			RT4GL.method1656(0);
 		if ((i_7_ & 0x8) == 0) {
-			if (anInt3751 == 0 && anInt3735 == 0)
+			if (rotateY == 0 && rotateX == 0)
 				RT4GL.method1651();
 			else {
-				float f = (float) (anInt3751 * RT4GL.loopCycleWrapper) / (float) i_6_;
-				float f_9_ = (float) (anInt3735 * RT4GL.loopCycleWrapper) / (float) i_6_;
+				float f = (float) (rotateY * RT4GL.loopCycleWrapper) / (float) i_6_;
+				float f_9_ = (float) (rotateX * RT4GL.loopCycleWrapper) / (float) i_6_;
 				RT4GL.method1641(f_9_, f, 0.0F);
 			}
 		}
@@ -153,14 +153,14 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 		if (anIntArray3745 != null) {
 			if (bool)
 				Static2.aClass124_3747 = null;
-			if (anInt3751 != 0 || anInt3735 != 0) {
+			if (rotateY != 0 || rotateX != 0) {
 				if (Class120.anIntArray2002 == null || anIntArray3745.length > Class120.anIntArray2002.length)
 					Class120.anIntArray2002 = new int[anIntArray3745.length];
 				int i_11_ = 4096 != anIntArray3745.length ? 128 : 64;
 				int i_12_ = anIntArray3745.length;
 				int i_13_ = i_11_ - 1;
-				int i_14_ = anInt3735 * i;
-				int i_15_ = i_11_ * i * anInt3751;
+				int i_14_ = rotateX * i;
+				int i_15_ = i_11_ * i * rotateY;
 				int i_16_ = i_12_ - 1;
 				for (int i_17_ = 0; i_12_ > i_17_; i_17_ += i_11_) {
 					int i_18_ = i_16_ & i_15_ + i_17_;
