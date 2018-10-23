@@ -50,7 +50,7 @@ public class Class132 {
 					if (JunkTex.aFrame3962 != null)
 						container = JunkTex.aFrame3962;
 					else if (Class14_Sub14.aFrame2986 == null)
-						container = JunkTex.aClass43_4647.applet;
+						container = JunkTex.signlink.applet;
 					else
 						container = Class14_Sub14.aFrame2986;
 					int i_7_ = 0;

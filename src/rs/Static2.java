@@ -1262,7 +1262,7 @@ public class Static2 {
 			if (var0 != Static2.anInt3352) {
 				boolean var1;
 				try {
-					Class90.aClass124_1424.method1666(JunkTex.aClass43_4647.applet, false);
+					Class90.aClass124_1424.method1666(JunkTex.signlink.applet, false);
 					var1 = true;
 				} catch (Throwable var3) {
 					return false;
@@ -1899,7 +1899,7 @@ public class Static2 {
 				label273: {
 					try {
 						if (Class142.anInt2315 == 1) {
-							JunkTex.aClass31_4454 = JunkTex.aClass43_4647.method1153(0,
+							JunkTex.aClass31_4454 = JunkTex.signlink.method1153(0,
 									JunkTex.aString4605, Class131.anInt2164);
 							Class142.anInt2315 = 2;
 						}
@@ -1921,7 +1921,7 @@ public class Static2 {
 	
 					try {
 						Class14_Sub15.aClass36_2990 = new Class36((Socket) JunkTex.aClass31_4454.anObject530,
-								JunkTex.aClass43_4647);
+								JunkTex.signlink);
 						JunkTex.aClass31_4454 = null;
 						long var2 = Class48.aLong802 = JunkTex.aClass124_4241.method1692(0);
 						int var4 = (int) (var2 >> 16 & 31L);
@@ -2165,14 +2165,14 @@ public class Static2 {
 									if (Class146.anInt2365 == 1) {
 										try {
 											Class35.aClass124_597
-													.method1666(JunkTex.aClass43_4647.applet, false);
+													.method1666(JunkTex.signlink.applet, false);
 										} catch (Throwable var8) {
 											;
 										}
 									} else {
 										try {
 											Class18.aClass124_415
-													.method1666(JunkTex.aClass43_4647.applet, false);
+													.method1666(JunkTex.signlink.applet, false);
 										} catch (Throwable var7) {
 											;
 										}

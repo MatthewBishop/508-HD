@@ -155,12 +155,12 @@ public class Class14_Sub14 extends Linkable {
 
 	public static void method870(int i, Class124 class124) {
 		Class14_Sub9_Sub1.aClass124_4829 = class124;
-		if (JunkTex.aClass43_4647.applet != null) {
+		if (JunkTex.signlink.applet != null) {
 			try {
 				Class124 class124_7_ = (Class14_Sub2_Sub11.aClass124_3892
-						.method1703(JunkTex.aClass43_4647.applet, (byte) -106));
+						.method1703(JunkTex.signlink.applet, (byte) -106));
 				Class124 class124_8_ = (Class14_Sub15.aClass124_2995
-						.method1703(JunkTex.aClass43_4647.applet, (byte) -33));
+						.method1703(JunkTex.signlink.applet, (byte) -33));
 				Class124 class124_9_ = (JunkTex.method515((new Class124[] { class124_7_,
 						Class14_Sub9_Sub1.aClass124_4814, class124, Class133_Sub1.aClass124_3502, class124_8_ }),
 						(byte) -120));
@@ -178,7 +178,7 @@ public class Class14_Sub14 extends Linkable {
 				JunkTex
 						.method515(new Class124[] { JunkTex.aClass124_691, class124_9_, Static2.aClass124_2730 },
 								(byte) -34)
-						.method1669(27664, JunkTex.aClass43_4647.applet);
+						.method1669(27664, JunkTex.signlink.applet);
 			} catch (Throwable throwable) {
 				/* empty */
 			}

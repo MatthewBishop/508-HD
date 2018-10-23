@@ -184,11 +184,11 @@ public class Class133_Sub6 extends Class133 {
 		RT4GL.method1630();
 		BrowserControlUtil.hide();
 		if (i_18_ >= 32) {
-			JunkTex.aFrame3962 = Class138.method1950(i_17_, 95, 0, i, JunkTex.aClass43_4647, 0);
+			JunkTex.aFrame3962 = Class138.method1950(i_17_, 95, 0, i, JunkTex.signlink, 0);
 			if (JunkTex.aFrame3962 != null) {
 				Static2.anInt2725 = i_17_;
 				Class54.anInt887 = i;
-				JunkTex.method595(JunkTex.aClass43_4647);
+				JunkTex.method595(JunkTex.signlink);
 				JunkTex.method643(0, (byte) -82);
 				Class14_Sub21.method897(110);
 			} else

@@ -1421,7 +1421,7 @@ public class Class32 {
 		int i_183_ = -85 % ((45 - i) / 41);
 		try {
 			if (Static2.aClass104_4037 == null)
-				Static2.aClass104_4037 = new Class104(JunkTex.aClass43_4647,
+				Static2.aClass104_4037 = new Class104(JunkTex.signlink,
 						JunkTex
 								.method515((new Class124[] { Class86.method1419((byte) 127), Class59.aClass124_958 }),
 										(byte) -103)

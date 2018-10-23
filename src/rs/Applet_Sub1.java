@@ -79,8 +79,8 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			URL url = null;
 			return url;
 		}
-		if (JunkTex.aClass43_4647 != null && this != JunkTex.aClass43_4647.applet) {
-			URL url = JunkTex.aClass43_4647.applet.getCodeBase();
+		if (JunkTex.signlink != null && this != JunkTex.signlink.applet) {
+			URL url = JunkTex.signlink.applet.getCodeBase();
 			return url;
 		}
 		URL url = super.getCodeBase();
@@ -158,9 +158,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			if (Class14_Sub14.aFrame2986 != null) {
 				var2 = null;
 				return var2;
-			} else if (JunkTex.aClass43_4647 != null
-					&& this != JunkTex.aClass43_4647.applet) {
-				var2 = JunkTex.aClass43_4647.applet.getParameter(var1);
+			} else if (JunkTex.signlink != null
+					&& this != JunkTex.signlink.applet) {
+				var2 = JunkTex.signlink.applet.getParameter(var1);
 				return var2;
 			} else {
 				var2 = super.getParameter(var1);
@@ -211,8 +211,8 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 					Insets insets = Class14_Sub14.aFrame2986.getInsets();
 					Class14_Sub14.aFrame2986.setSize(JunkTex.anInt4622 + (insets.left + insets.right),
 							insets.bottom + (insets.top + Class14_Sub2_Sub21.anInt4086));
-					Static2.aClass43_358 = JunkTex.aClass43_4647 = new Class43(true, null, i_23_, string, i);
-					JunkTex.aClass43_4647.method1143(5, this, 0);
+					Static2.aClass43_358 = JunkTex.signlink = new Class43(true, null, i_23_, string, i);
+					JunkTex.signlink.method1143(5, this, 0);
 				} catch (Exception exception) {
 					Class14_Sub9_Sub3.method738(null, exception, 95);
 				}
@@ -289,8 +289,8 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			}
 		}
 
-		if (JunkTex.aClass43_4647.applet != null) {
-			JunkTex.aClass43_4647.applet.destroy();
+		if (JunkTex.signlink.applet != null) {
+			JunkTex.signlink.applet.destroy();
 		}
 
 		try {
@@ -308,9 +308,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			}
 		}
 
-		if (JunkTex.aClass43_4647 != null) {
+		if (JunkTex.signlink != null) {
 			try {
-				JunkTex.aClass43_4647.method1150((byte) 8);
+				JunkTex.signlink.method1150((byte) 8);
 			} catch (Exception var5) {
 				;
 			}
@@ -329,7 +329,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	}
 
 	public static void providesignlink(Class43 class43) {
-		Static2.aClass43_358 = JunkTex.aClass43_4647 = class43;
+		Static2.aClass43_358 = JunkTex.signlink = class43;
 	}
 
 	public void windowClosing(WindowEvent windowevent) {
@@ -384,11 +384,11 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				break label90;
 			}
 
-			if (JunkTex.aClass43_4647.applet != null) {
+			if (JunkTex.signlink.applet != null) {
 				Method var8 = Class43.aMethod702;
 				if (var8 != null) {
 					try {
-						var8.invoke(JunkTex.aClass43_4647.applet, new Object[] { Boolean.TRUE });
+						var8.invoke(JunkTex.signlink.applet, new Object[] { Boolean.TRUE });
 					} catch (Throwable var3) {
 						;
 					}
@@ -408,7 +408,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				}
 
 				this.method26(118);
-				JunkTex.method555(41, JunkTex.aClass43_4647, Class49.aCanvas819);
+				JunkTex.method555(41, JunkTex.signlink, Class49.aCanvas819);
 			}
 		}
 
@@ -422,9 +422,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			if (Class14_Sub14.aFrame2986 != null) {
 				var1 = null;
 				return var1;
-			} else if (JunkTex.aClass43_4647 != null
-					&& this != JunkTex.aClass43_4647.applet) {
-				var1 = JunkTex.aClass43_4647.applet.getAppletContext();
+			} else if (JunkTex.signlink != null
+					&& this != JunkTex.signlink.applet) {
+				var1 = JunkTex.signlink.applet.getAppletContext();
 				return var1;
 			} else {
 				var1 = super.getAppletContext();
@@ -443,7 +443,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		Container container;
 		if (JunkTex.aFrame3962 == null) {
 			if (Class14_Sub14.aFrame2986 == null)
-				container = JunkTex.aClass43_4647.applet;
+				container = JunkTex.signlink.applet;
 			else
 				container = Class14_Sub14.aFrame2986;
 		} else
@@ -493,9 +493,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			if (Class14_Sub14.aFrame2986 != null) {
 				var1 = null;
 				return var1;
-			} else if (JunkTex.aClass43_4647 != null
-					&& this != JunkTex.aClass43_4647.applet) {
-				var1 = JunkTex.aClass43_4647.applet.getDocumentBase();
+			} else if (JunkTex.signlink != null
+					&& this != JunkTex.signlink.applet) {
+				var1 = JunkTex.signlink.applet.getDocumentBase();
 				return var1;
 			} else {
 				var1 = super.getDocumentBase();
@@ -534,9 +534,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 					Static2.aBoolean1783 = false;
 				else
 					Static2.aBoolean1783 = true;
-				if (JunkTex.aClass43_4647 == null)
-					Static2.aClass43_358 = JunkTex.aClass43_4647 = new Class43(false, this, i, null, 0);
-				JunkTex.aClass43_4647.method1143(5, this, 0);
+				if (JunkTex.signlink == null)
+					Static2.aClass43_358 = JunkTex.signlink = new Class43(false, this, i, null, 0);
+				JunkTex.signlink.method1143(5, this, 0);
 			}
 		} catch (Exception exception) {
 			Class14_Sub9_Sub3.method738(null, exception, 95);

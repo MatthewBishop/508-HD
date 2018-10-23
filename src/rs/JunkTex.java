@@ -990,7 +990,7 @@ public class JunkTex {
 				do {
 					if (Static2.aBoolean1783) {
 						try {
-							Class144.method1982((byte) 122, "openjs", (JunkTex.aClass43_4647.applet),
+							Class144.method1982((byte) 122, "openjs", (JunkTex.signlink.applet),
 									(new Object[] { class124.method1691(0, Class96.anApplet_Sub1_1632.getCodeBase())
 											.toString() }));
 						} catch (Throwable throwable) {
@@ -2092,78 +2092,78 @@ public class JunkTex {
 		if (i > -62)
 			JunkTex.aClass9_2711 = null;
 	}
-	public static Class75 method235(int i, int i_0_, Class43 class43, Component component, int i_1_) {
+	public static Class75 method235(int i, int i_0_, Class43 signlink, Component component, int i_1_) {
 		if (Class115.anInt1909 == 0)
 			throw new IllegalStateException();
-		if (i_1_ >= 0 && i_1_ < 2) {
-			if (i < 256)
-				i = 256;
-			while_54_: do {
-				do {
-					Class75 class75;
-					try {
-						if (i_0_ >= 38)
-							break;
-						Object object = null;
-						class75 = (Class75) object;
-					} catch (Throwable throwable) {
-						break while_54_;
-					}
-					return class75;
-				} while (false);
+		if (i_1_ < 0 || i_1_ >= 2) {
+			throw new IllegalArgumentException();
+		}
+		if (i < 256)
+			i = 256;
+		while_54_: do {
+			do {
 				Class75 class75;
 				try {
-					Class75 class75_2_ = ((Class75) Class.forName("rs.Class75_Sub1").newInstance());
-					class75_2_.anIntArray1150 = new int[256 * (!Class14_Sub2_Sub2.aBoolean3763 ? 1 : 2)];
-					class75_2_.anInt1173 = i;
-					class75_2_.method1350(component);
-					class75_2_.anInt1174 = (i & ~0x3ff) + 1024;
-					if (class75_2_.anInt1174 > 16384)
-						class75_2_.anInt1174 = 16384;
-					class75_2_.method1347(class75_2_.anInt1174);
-					if (Static2.anInt1674 > 0 && Class69.aClass90_1070 == null) {
-						Class69.aClass90_1070 = new Class90();
-						Class69.aClass90_1070.aClass43_1421 = class43;
-						class43.method1143(Static2.anInt1674, Class69.aClass90_1070, 0);
-					}
-					if (Class69.aClass90_1070 != null) {
-						if (Class69.aClass90_1070.aClass75Array1422[i_1_] != null)
-							throw new IllegalArgumentException();
-						Class69.aClass90_1070.aClass75Array1422[i_1_] = class75_2_;
-					}
-					class75 = class75_2_;
+					if (i_0_ >= 38)
+						break;
+					Object object = null;
+					class75 = (Class75) object;
 				} catch (Throwable throwable) {
-					break;
+					break while_54_;
 				}
 				return class75;
 			} while (false);
-			new Throwable();
-			Class75_Sub2 class75_sub2;
+			Class75 class75;
 			try {
-				Class75_Sub2 class75_sub2_3_ = new Class75_Sub2(class43, i_1_);
-				class75_sub2_3_.anInt1173 = i;
-				class75_sub2_3_.anIntArray1150 = new int[256 * (Class14_Sub2_Sub2.aBoolean3763 ? 2 : 1)];
-				class75_sub2_3_.method1350(component);
-				class75_sub2_3_.anInt1174 = 16384;
-				class75_sub2_3_.method1347(class75_sub2_3_.anInt1174);
+				Class75 class75_2_ = ((Class75) Class.forName("rs.Class75_Sub1").newInstance());
+				class75_2_.anIntArray1150 = new int[256 * (!Class14_Sub2_Sub2.aBoolean3763 ? 1 : 2)];
+				class75_2_.anInt1173 = i;
+				class75_2_.method1350(component);
+				class75_2_.anInt1174 = (i & ~0x3ff) + 1024;
+				if (class75_2_.anInt1174 > 16384)
+					class75_2_.anInt1174 = 16384;
+				class75_2_.method1347(class75_2_.anInt1174);
 				if (Static2.anInt1674 > 0 && Class69.aClass90_1070 == null) {
 					Class69.aClass90_1070 = new Class90();
-					Class69.aClass90_1070.aClass43_1421 = class43;
-					class43.method1143(Static2.anInt1674, Class69.aClass90_1070, 0);
+					Class69.aClass90_1070.aClass43_1421 = signlink;
+					signlink.method1143(Static2.anInt1674, Class69.aClass90_1070, 0);
 				}
 				if (Class69.aClass90_1070 != null) {
 					if (Class69.aClass90_1070.aClass75Array1422[i_1_] != null)
 						throw new IllegalArgumentException();
-					Class69.aClass90_1070.aClass75Array1422[i_1_] = class75_sub2_3_;
+					Class69.aClass90_1070.aClass75Array1422[i_1_] = class75_2_;
 				}
-				class75_sub2 = class75_sub2_3_;
+				class75 = class75_2_;
 			} catch (Throwable throwable) {
-				return null;
+				break;
 			}
-			return class75_sub2;
+			return class75;
+		} while (false);
+		Class75_Sub2 class75_sub2;
+		try {
+			Class75_Sub2 class75_sub2_3_ = new Class75_Sub2(signlink, i_1_);
+			class75_sub2_3_.anInt1173 = i;
+			class75_sub2_3_.anIntArray1150 = new int[256 * (Class14_Sub2_Sub2.aBoolean3763 ? 2 : 1)];
+			class75_sub2_3_.method1350(component);
+			class75_sub2_3_.anInt1174 = 16384;
+			class75_sub2_3_.method1347(class75_sub2_3_.anInt1174);
+			if (Static2.anInt1674 > 0 && Class69.aClass90_1070 == null) {
+				Class69.aClass90_1070 = new Class90();
+				Class69.aClass90_1070.aClass43_1421 = signlink;
+				signlink.method1143(Static2.anInt1674, Class69.aClass90_1070, 0);
+			}
+			if (Class69.aClass90_1070 != null) {
+				if (Class69.aClass90_1070.aClass75Array1422[i_1_] != null)
+					throw new IllegalArgumentException();
+				Class69.aClass90_1070.aClass75Array1422[i_1_] = class75_sub2_3_;
+			}
+			class75_sub2 = class75_sub2_3_;
+		} catch (Throwable throwable) {
+			return null;
 		}
-		throw new IllegalArgumentException();
+		return class75_sub2;
 	}
+	
 	public static void method236(boolean bool, Class14_Sub15 class14_sub15, byte i) {
 		int i_4_ = class14_sub15.anInt2999;
 		int i_5_ = (int) class14_sub15.key;
@@ -4742,7 +4742,7 @@ public class JunkTex {
 	}
 	public static Class124 aClass124_4653 = Class124.method263(1178, "<col=ff3000>");
 
-	public static Class43 aClass43_4647;
+	public static Class43 signlink;
 
 	public static int anInt4666 = -2;
 
@@ -4768,7 +4768,7 @@ public class JunkTex {
 		return i_11_;
 	}
 	public static void method660(boolean bool) {
-		aClass43_4647 = null;
+		signlink = null;
 		aClass124_4653 = null;
 		if (bool)
 			JunkTex.method661(false, 105);
@@ -4925,7 +4925,7 @@ public class JunkTex {
 		}
 		if (Class133_Sub4.anInt3579 == 172) {
 			int i_16_ = aClass14_Sub10_Sub1_4734.getInt((byte) -107);
-			JunkTex.aClass31_2458 = aClass43_4647.method1141((byte) 48, i_16_);
+			JunkTex.aClass31_2458 = signlink.method1141((byte) 48, i_16_);
 			Class133_Sub4.anInt3579 = -1;
 			boolean bool = true;
 			return bool;
@@ -5777,7 +5777,7 @@ public class JunkTex {
 			return bool;
 		}
 		if (Class133_Sub4.anInt3579 == 139) {
-			Class133_Sub1.method1796((byte) 24, aClass43_4647, JunkTex.anInt4280,
+			Class133_Sub1.method1796((byte) 24, signlink, JunkTex.anInt4280,
 					(aClass14_Sub10_Sub1_4734));
 			Class133_Sub4.anInt3579 = -1;
 			boolean bool = true;
@@ -6645,7 +6645,7 @@ public class JunkTex {
 		if (aFrame3962 != null)
 			container = aFrame3962;
 		else if (Class14_Sub14.aFrame2986 == null)
-			container = aClass43_4647.applet;
+			container = signlink.applet;
 		else
 			container = Class14_Sub14.aFrame2986;
 		anInt4622 = container.getSize().width;
@@ -6854,7 +6854,7 @@ public class JunkTex {
 			if (Static2.anInt3352 != 0) {
 				boolean bool;
 				try {
-					bool = !((Boolean) (aClass124_844.method1666(aClass43_4647.applet,
+					bool = !((Boolean) (aClass124_844.method1666(signlink.applet,
 							false))).booleanValue();
 				} catch (Throwable throwable) {
 					Throwable throwable_1_ = new Throwable();
@@ -10165,11 +10165,11 @@ public class JunkTex {
 		if (Static2.aClass75_2588 != null)
 			Static2.aClass75_2588.method1345(25065);
 		Class131.method1772(aBoolean4528, 2, (byte) 26, 22050);
-		aClass75_4682 = method235(22050, 68, aClass43_4647,
+		aClass75_4682 = method235(22050, 68, signlink,
 				Class49.aCanvas819, 0);
 		aClass75_4682.method1352(JunkTex.aClass14_Sub9_Sub1_2071, false);
 		int i_1_ = -48 % ((-26 - i) / 57);
-		Static2.aClass75_2588 = method235(2048, 102, aClass43_4647, Class49.aCanvas819,
+		Static2.aClass75_2588 = method235(2048, 102, signlink, Class49.aCanvas819,
 				1);
 		Static2.aClass75_2588.method1352(Class33.aClass14_Sub9_Sub2_585, false);
 	}

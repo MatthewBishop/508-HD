@@ -104,7 +104,7 @@ public class Class21 {
 	public static Class88[] method978(int i) {
 		int i_14_ = 63 / ((0 - i) / 39);
 		if (Class76.aClass88Array1211 == null) {
-			Class88[] class88s = Class14_Sub18.method884(-3189, JunkTex.aClass43_4647);
+			Class88[] class88s = Class14_Sub18.method884(-3189, JunkTex.signlink);
 			Class88[] class88s_15_ = new Class88[class88s.length];
 			int i_16_ = 0;
 			while_56_: for (int i_17_ = 0; i_17_ < class88s.length; i_17_++) {

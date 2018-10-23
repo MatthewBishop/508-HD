@@ -84,7 +84,7 @@ public class Class115 {
 				label139: {
 					try {
 						if (~Class56.anInt918 == var0) {
-							JunkTex.aClass31_4454 = JunkTex.aClass43_4647.method1153(0,
+							JunkTex.aClass31_4454 = JunkTex.signlink.method1153(0,
 									JunkTex.aString4605, Class131.anInt2164);
 							Class56.anInt918 = 2;
 						}
@@ -106,7 +106,7 @@ public class Class115 {
 
 					try {
 						Class14_Sub15.aClass36_2990 = new Class36((Socket) JunkTex.aClass31_4454.anObject530,
-								JunkTex.aClass43_4647);
+								JunkTex.signlink);
 						JunkTex.aClass31_4454 = null;
 						Class14_Sub15.aClass36_2990.method1100(0, 3, JunkTex.aClass14_Sub10_Sub1_891.position,
 								JunkTex.aClass14_Sub10_Sub1_891.payload);

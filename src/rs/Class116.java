@@ -2364,7 +2364,7 @@ public class Class116 {
 																						Class14_Sub23
 																								.method903((byte) 54);
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6002) {
 																						JunkTex.method495(
@@ -2375,47 +2375,47 @@ public class Class116 {
 																						JunkTex
 																								.method602(-1);
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6003) {
 																						Class139.aBoolean2233 = Class79.anIntArray1305[--i_3_] == 1;
 																						JunkTex
 																								.method602(-1);
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6005) {
 																						Static2.aBoolean2372 = Class79.anIntArray1305[--i_3_] == 1;
 																						Static2.method1996((byte) 83);
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6006) {
 																						JunkTex.aBoolean3397 = Class79.anIntArray1305[--i_3_] == 1;
 																						((Class134) Class3.anInterface3_117)
 																								.method1924(											!JunkTex.aBoolean3397);
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6007) {
 																						Class135.aBoolean2190 = Class79.anIntArray1305[--i_3_] == 1;
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6008) {
 																						Class33.aBoolean584 = Class79.anIntArray1305[--i_3_] == 1;
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6009) {
 																						Class28.aBoolean516 = Class79.anIntArray1305[--i_3_] == 1;
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6010) {
 																						JunkTex.aBoolean4518 = Class79.anIntArray1305[--i_3_] == 1;
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6011) {
 																						int i_183_ = Class79.anIntArray1305[--i_3_];
@@ -2423,7 +2423,7 @@ public class Class116 {
 																							i_183_ = 0;
 																						Class89.anInt1413 = i_183_;
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6012) {
 																						RT4.method1778(0,
@@ -2442,19 +2442,19 @@ public class Class116 {
 																							Class3.method103(0.7F);
 																						Static2.method1996((byte) 64);
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6014) {
 																						Class15.aBoolean374 = Class79.anIntArray1305[--i_3_] == 1;
 																						Static2.method1996((byte) 111);
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6015) {
 																						JunkTex.aBoolean4420 = Class79.anIntArray1305[--i_3_] == 1;
 																						Class14_Sub13.method858(-1);
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6016) {
 																						int i_184_ = Class79.anIntArray1305[--i_3_];
@@ -2463,14 +2463,14 @@ public class Class116 {
 																						Class54.aBoolean877 = true;
 																						Class135.anInt2189 = i_184_;
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6017) {
 																						JunkTex.aBoolean4528 = Class79.anIntArray1305[--i_3_] == 1;
 																						JunkTex
 																								.method375(126);
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6018) {
 																						int i_185_ = Class79.anIntArray1305[--i_3_];
@@ -2480,7 +2480,7 @@ public class Class116 {
 																							i_185_ = 127;
 																						Class14_Sub29.anInt3266 = i_185_;
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6019) {
 																						int i_186_ = Class79.anIntArray1305[--i_3_];
@@ -2510,7 +2510,7 @@ public class Class116 {
 																							Class14_Sub23.anInt3135 = i_186_;
 																						}
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6020) {
 																						int i_187_ = Class79.anIntArray1305[--i_3_];
@@ -2520,7 +2520,7 @@ public class Class116 {
 																							i_187_ = 127;
 																						Static2.anInt1691 = i_187_;
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6021) {
 																						Class1.aBoolean74 = Class79.anIntArray1305[--i_3_] == 1;
@@ -2531,7 +2531,7 @@ public class Class116 {
 																							break;
 																						JunkTex.aBoolean845 = Class79.anIntArray1305[--i_3_] == 1;
 																						JunkTex.method595(
-																								JunkTex.aClass43_4647);
+																								JunkTex.signlink);
 																						JunkTex.method643(0,
 																								(byte) -126);
 																					}
