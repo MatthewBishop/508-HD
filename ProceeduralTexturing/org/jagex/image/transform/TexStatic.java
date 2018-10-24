@@ -270,7 +270,7 @@ public class TexStatic {
 
 	public static Class9 aClass9_2671;
 	
-	public static int[][] method279(int i, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, float f,
+	public static int[][] prepareLavaShader(int i, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, float f,
 			boolean bool) {
 		Class14_Sub8_Sub12 class14_sub8_sub12 = new Class14_Sub8_Sub12();
 		class14_sub8_sub12.anInt4297 = (int) (f * 4096.0F);
@@ -291,7 +291,7 @@ public class TexStatic {
 		return is_11_;
 	}
 
-	public static int[] method1567(boolean bool, int i, int i_16_, int i_17_, int i_18_, float f, int i_19_,
+	public static int[] prepareLights(boolean bool, int i, int i_16_, int i_17_, int i_18_, float f, int i_19_,
 			int i_20_) {
 		int[] is = new int[i_18_];
 		Class14_Sub8_Sub12 class14_sub8_sub12 = new Class14_Sub8_Sub12();

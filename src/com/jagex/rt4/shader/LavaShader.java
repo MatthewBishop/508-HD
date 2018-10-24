@@ -147,8 +147,8 @@ public class LavaShader implements ShaderInterface {
 			GL gl = RT4GL.gl;
 			gl.glGenProgramsARB(1, is, 0);
 			this.anInt2566 = is[0];
-			int[][] is_2_ = TexStatic.method279(256, 256, 4, 0, 8, 3, 64, 0.4F, false);
-			int[][] is_3_ = TexStatic.method279(256, 256, 4, 8, 8, 3, 64, 0.4F, false);
+			int[][] is_2_ = TexStatic.prepareLavaShader(256, 256, 4, 0, 8, 3, 64, 0.4F, false);
+			int[][] is_3_ = TexStatic.prepareLavaShader(256, 256, 4, 8, 8, 3, 64, 0.4F, false);
 			Buffer class14_sub10 = new Buffer(262144);
 			for (int i = 0; i < 256; i++) {
 				int[] is_4_ = is_2_[i];

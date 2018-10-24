@@ -372,7 +372,7 @@ public class Light {
 	}
 
 	public static void method830() {
-		Light.anIntArray5082 = TexStatic.method1567(true, 8, 35, 35, 2048, 0.4F, 8, 4);
+		Light.anIntArray5082 = TexStatic.prepareLights(true, 8, 35, 35, 2048, 0.4F, 8, 4);
 	}
 	
 	public static void dispose() {

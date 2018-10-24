@@ -26,7 +26,7 @@ public class StaticGL {
 			HDTile class14_sub27 = Class14_Sub30.aClass14_Sub27ArrayArray3273[0][i];
 			if (class14_sub27.anInt3204 >= 0
 					&& (Class3.anInterface3_117.method12(class14_sub27.anInt3204) == 4)) {
-				gl.glColor4fv(RT4.method657(81, class14_sub27.anInt3190), 0);
+				gl.glColor4fv(RT4.getRBGAValue(class14_sub27.anInt3190), 0);
 				float f = 201.5F - (class14_sub27.aBoolean3201 ? 1.0F : 0.5F);
 				class14_sub27.method922((JunkTex.aClass14_Sub29ArrayArrayArray3368), f, true);
 			}

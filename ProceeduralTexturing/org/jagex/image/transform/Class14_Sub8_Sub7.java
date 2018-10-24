@@ -18,7 +18,7 @@ public class Class14_Sub8_Sub7 extends Class14_Sub8 {
 
 	public Class14_Sub8_Sub7(int i) {
 		super(0, false);
-		method513(i, 739418402);
+		method513(i);
 	}
 
 	@Override
@@ -42,10 +42,10 @@ public class Class14_Sub8_Sub7 extends Class14_Sub8 {
 	public void decode(int i, Buffer class14_sub10) {
 		int i_107_ = i;
 		if (i_107_ == 0)
-			method513(class14_sub10.method829(76), 739418402);
+			method513(class14_sub10.method829(76));
 	}
 
-	public void method513(int i, int i_108_) {
+	private void method513(int i) {
 		anInt4213 = (i & 0xff0000) >> 44;
 		anInt4212 = i >> 4 & 0xff0;
 		anInt4198 = (i & 0xff) << 36;
