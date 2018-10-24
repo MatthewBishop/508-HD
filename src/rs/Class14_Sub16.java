@@ -13,7 +13,7 @@ public class Class14_Sub16 extends Linkable {
 	public HashTable aClass55_3003;
 
 	public static Class14_Sub16 method875(Class9 class9, int i, int i_0_) {
-		byte[] is = class9.method163(i_0_, i, 0);
+		byte[] is = class9.method163(i_0_, i);
 		if (is == null)
 			return null;
 		return new Class14_Sub16(new Buffer(is));

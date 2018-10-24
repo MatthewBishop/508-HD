@@ -50,7 +50,7 @@ public class Class120 {
 						i_4_ >> 1, i >> 33, class66.anInt1041 * 2, (byte) 126,
 						(class66.anInt1051 + (-Class58.anInt947 + class66.anInt1044 << 7)));
 				if (anInt2007 > -1 && Class14_Sub2_Sub20.anInt4064 % 20 < 10)
-					Class76.aClass14_Sub2_Sub19Array1191[class66.anInt1035].drawReg(i_1_ + anInt2007 - 12,
+					Static2.aClass14_Sub2_Sub19Array1191[class66.anInt1035].drawReg(i_1_ + anInt2007 - 12,
 							JunkTex.anInt4548 + i_5_ - 28);
 			}
 		}
@@ -122,11 +122,11 @@ public class Class120 {
 	}
 
 	public Class14_Sub12_Sub1 method1618(int[] is, byte i, int i_19_) {
-		if (aClass9_2003.method155(i + 6794) == 1) {
+		if (aClass9_2003.method155() == 1) {
 			Class14_Sub12_Sub1 class14_sub12_sub1 = method1617(0, 7711, is, i_19_);
 			return class14_sub12_sub1;
 		}
-		if (aClass9_2003.method177(i_19_, i ^ ~0x34c4) == 1) {
+		if (aClass9_2003.method177(i_19_) == 1) {
 			Class14_Sub12_Sub1 class14_sub12_sub1 = method1617(i_19_, 7711, is, 0);
 			return class14_sub12_sub1;
 		}
@@ -136,11 +136,11 @@ public class Class120 {
 	}
 
 	public Class14_Sub12_Sub1 method1619(int[] is, int i, int i_20_) {
-		if (aClass9_2010.method155(6756) == 1) {
+		if (aClass9_2010.method155() == 1) {
 			Class14_Sub12_Sub1 class14_sub12_sub1 = method1616(0, i_20_, is, true);
 			return class14_sub12_sub1;
 		}
-		if (aClass9_2010.method177(i_20_, 13537) == 1) {
+		if (aClass9_2010.method177(i_20_) == 1) {
 			Class14_Sub12_Sub1 class14_sub12_sub1 = method1616(i_20_, 0, is, true);
 			return class14_sub12_sub1;
 		}

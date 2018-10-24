@@ -19,7 +19,7 @@ public class Class14_Sub7 extends Linkable {
 	public int anInt2830;
 
 	public static void method469(int i, int i_0_, int i_1_, int i_2_, boolean bool, int i_3_, int i_4_) {
-		Class126.anInt2089 = 0;
+		Static2.anInt2089 = 0;
 		for (int i_5_ = -1; Static2.anInt2878 + JunkTex.anInt4306 > i_5_; i_5_++) {
 			Class133_Sub1 class133_sub1;
 			if (i_5_ == -1)
@@ -58,7 +58,7 @@ public class Class14_Sub7 extends Linkable {
 							OverlayType.method2022(i_1_, i_4_, -1, class133_sub1, class133_sub1.method1795(12806) + 15,
 									i >> 1, i_2_ >> 33);
 							if (Class120.anInt2007 > -1)
-								Class76.aClass14_Sub2_Sub19Array1191[class66.anInt1035].drawReg(
+								Static2.aClass14_Sub2_Sub19Array1191[class66.anInt1035].drawReg(
 										Class120.anInt2007 - 12 + i_0_, JunkTex.anInt4548 + i_3_ - 28);
 						}
 					}
@@ -90,7 +90,7 @@ public class Class14_Sub7 extends Linkable {
 								OverlayType.method2022(i_1_, i_4_, -1, class133_sub1,
 										(class133_sub1.method1795(12806) + 15), i >> 33, i_2_ >> 33);
 								if (Class120.anInt2007 > -1)
-									Class76.aClass14_Sub2_Sub19Array1191[class66.anInt1035].drawReg(
+									Static2.aClass14_Sub2_Sub19Array1191[class66.anInt1035].drawReg(
 											Class120.anInt2007 + (i_0_ - 12),
 											(-i_7_ + JunkTex.anInt4548 + i_3_));
 							}
@@ -102,17 +102,17 @@ public class Class14_Sub7 extends Linkable {
 								&& Class98.method1493(-1, (((Class133_Sub1_Sub1) class133_sub1).aClass124_4922))))) {
 					OverlayType.method2022(i_1_, i_4_, -1, class133_sub1, class133_sub1.method1795(12806), i >> 33,
 							i_2_ >> 1);
-					if (Class120.anInt2007 > -1 && Class32.anInt549 > Class126.anInt2089) {
-						Class32.anIntArray533[Class126.anInt2089] = Class133_Sub3.aClass14_Sub2_Sub16_3567
+					if (Class120.anInt2007 > -1 && Class32.anInt549 > Static2.anInt2089) {
+						Class32.anIntArray533[Static2.anInt2089] = Class133_Sub3.aClass14_Sub2_Sub16_3567
 								.method361(class133_sub1.aClass124_3462) / 2;
-						Class32.anIntArray565[Class126.anInt2089] = Class133_Sub3.aClass14_Sub2_Sub16_3567.anInt3978;
-						Class32.anIntArray535[Class126.anInt2089] = Class120.anInt2007;
-						Class32.anIntArray534[Class126.anInt2089] = JunkTex.anInt4548;
-						Class32.anIntArray564[Class126.anInt2089] = class133_sub1.anInt3466;
-						Class32.anIntArray537[Class126.anInt2089] = class133_sub1.anInt3439;
-						Class32.anIntArray568[Class126.anInt2089] = class133_sub1.anInt3473;
-						Class32.aClass124Array542[Class126.anInt2089] = class133_sub1.aClass124_3462;
-						Class126.anInt2089++;
+						Class32.anIntArray565[Static2.anInt2089] = Class133_Sub3.aClass14_Sub2_Sub16_3567.anInt3978;
+						Class32.anIntArray535[Static2.anInt2089] = Class120.anInt2007;
+						Class32.anIntArray534[Static2.anInt2089] = JunkTex.anInt4548;
+						Class32.anIntArray564[Static2.anInt2089] = class133_sub1.anInt3466;
+						Class32.anIntArray537[Static2.anInt2089] = class133_sub1.anInt3439;
+						Class32.anIntArray568[Static2.anInt2089] = class133_sub1.anInt3473;
+						Class32.aClass124Array542[Static2.anInt2089] = class133_sub1.aClass124_3462;
+						Static2.anInt2089++;
 					}
 				}
 				if (Class14_Sub2_Sub20.anInt4064 < class133_sub1.anInt3450) {
@@ -174,7 +174,7 @@ public class Class14_Sub7 extends Linkable {
 		}
 		if (!bool)
 			aBoolean2827 = true;
-		for (int i_15_ = 0; i_15_ < Class126.anInt2089; i_15_++) {
+		for (int i_15_ = 0; i_15_ < Static2.anInt2089; i_15_++) {
 			int i_16_ = Class32.anIntArray535[i_15_];
 			int i_17_ = Class32.anIntArray533[i_15_];
 			boolean bool_18_ = true;

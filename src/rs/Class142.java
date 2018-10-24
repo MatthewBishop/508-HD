@@ -94,11 +94,11 @@ public class Class142 {
 		if (i >= -54)
 			method1979(114, null, (byte) -25);
 		boolean bool_4_ = true;
-		if (!JunkTex.aClass9_4193.method158(0, i_0_, (byte) 46))
+		if (!JunkTex.aClass9_4193.method158(0, i_0_))
 			bool_4_ = false;
-		if (i_1_ != -1 && !JunkTex.aClass9_4193.method158(0, i_1_, (byte) -112))
+		if (i_1_ != -1 && !JunkTex.aClass9_4193.method158(0, i_1_))
 			bool_4_ = false;
-		if (i_2_ != -1 && !JunkTex.aClass9_4193.method158(0, i_2_, (byte) 88))
+		if (i_2_ != -1 && !JunkTex.aClass9_4193.method158(0, i_2_))
 			bool_4_ = false;
 		boolean bool_5_ = bool_4_;
 		return bool_5_;
@@ -552,9 +552,9 @@ public class Class142 {
 			return bool_52_;
 		}
 		boolean bool_53_ = true;
-		if (!JunkTex.aClass9_4193.method158(0, i_50_, (byte) 76))
+		if (!JunkTex.aClass9_4193.method158(0, i_50_))
 			bool_53_ = false;
-		if (i_51_ != -1 && !JunkTex.aClass9_4193.method158(0, i_51_, (byte) -90))
+		if (i_51_ != -1 && !JunkTex.aClass9_4193.method158(0, i_51_))
 			bool_53_ = false;
 		boolean bool_54_ = bool_53_;
 		return bool_54_;

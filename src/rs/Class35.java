@@ -81,7 +81,7 @@ public class Class35 {
 		JunkTex.anInt4251 = i * i_5_ / 334;
 		JunkTex.anInt3952 = (short) i_0_;
 		Static2.anInt4031 = i_3_;
-		Class14_Sub19.anInt3071 = i_1_;
+		Static2.anInt3071 = i_1_;
 		JunkTex.anInt4135 = (short) i;
 	}
 
@@ -132,7 +132,7 @@ public class Class35 {
 					for (int i_19_ = 0; i_19_ < 2; i_19_++) {
 						Class14_Sub2_Sub11.y_occluders[i_19_] = -1000000;
 						JunkTex.x_min_occluders[i_19_] = 1000000;
-						Class14_Sub19.x_max_occluders[i_19_] = 0;
+						Static2.x_max_occluders[i_19_] = 0;
 						Class96.z_min_occluders[i_19_] = 1000000;
 						Class120.z_max_occluders[i_19_] = 0;
 					}

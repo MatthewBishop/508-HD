@@ -3,7 +3,6 @@
  */
 package rs;
 
-import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9;
 
 public class Class7_Sub3_Sub1 extends Class7_Sub3 {
@@ -72,32 +71,6 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 			Class15.aClass9_382 = class9;
 			Static2.aClass9_2923 = class9_10_;
 		}
-	}
-
-	public static byte[] method139(int i, byte[] is) {
-		Buffer class14_sub10 = new Buffer(is);
-		if (i != -28009)
-			anInt3714 = 116;
-		int i_12_ = class14_sub10.readUByte();
-		int i_13_ = class14_sub10.getInt((byte) -107);
-		if (i_13_ < 0 || JunkTex.anInt2797 != 0 && i_13_ > JunkTex.anInt2797)
-			throw new RuntimeException();
-		if (i_12_ == 0) {
-			byte[] is_14_ = new byte[i_13_];
-			class14_sub10.method824(i_13_, (byte) 97, 0, is_14_);
-			byte[] is_15_ = is_14_;
-			return is_15_;
-		}
-		int i_16_ = class14_sub10.getInt((byte) -120);
-		if (i_16_ < 0 || JunkTex.anInt2797 != 0 && i_16_ > JunkTex.anInt2797)
-			throw new RuntimeException();
-		byte[] is_17_ = new byte[i_16_];
-		if (i_12_ != 1)
-			Class56.aClass49_922.method1195(is_17_, false, class14_sub10);
-		else
-			Class136.method1934(is_17_, i_16_, is, i_13_, 9);
-		byte[] is_18_ = is_17_;
-		return is_18_;
 	}
 
 	public static void method140(Applet_Sub1 applet_sub1, int i) {
@@ -174,13 +147,13 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 												(byte) -19));
 									Class124 class124_24_ = (JunkTex.method515((new Class124[] {
 											JunkTex.aClass124_3408, class45.aClass124_741, Class54.aClass124_883,
-											class124, Class14_Sub19.aClass124_3065,
+											class124, Static2.aClass124_3065,
 											(Class83.method1407(20, JunkTex.language)), Static2.aClass124_755,
 											(Class83.method1407(28, (Class14_Sub2_Sub11.anInt3884))),
 											Class14_Sub17.aClass124_3014, Class83.method1407(71, 1),
 											(Static2.aClass124_4044),
 											(Class83.method1407(i + 29452, Class14_Sub2_Sub3.anInt3771)),
-											(Class14_Sub2_Sub9.aClass124_3861),
+											(Static2.aClass124_3861),
 											(Class83.method1407(9, Static2.anInt3352)) }), (byte) -4));
 									try {
 										applet_sub1.getAppletContext().showDocument(class124_24_.method1676((byte) -52),

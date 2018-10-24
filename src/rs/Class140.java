@@ -19,7 +19,7 @@ public class Class140 {
 		if (!bool)
 			aClass124_2234 = null;
 		Class62.aClass52_991.method1208(i);
-		Class49.aClass52_810.method1208(i);
+		Static2.aClass52_810.method1208(i);
 	}
 
 	public static void method1958(byte i) {

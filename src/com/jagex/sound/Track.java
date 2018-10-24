@@ -11,7 +11,7 @@ import rs.Class14_Sub12_Sub1;
 public class Track {
 	
 	public static Track method1451(Class9 class9, int i, int i_11_) {
-		byte[] is = class9.method163(i_11_, i, 0);
+		byte[] is = class9.method163(i_11_, i);
 		if (is == null)
 			return null;
 		return new Track(new Buffer(is));

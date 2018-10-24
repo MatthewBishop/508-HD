@@ -55,7 +55,7 @@ public class Class133_Sub1_Sub2 extends Class133_Sub1 {
 				if (class12.anIntArray329 != null)
 					class12 = class12.method217((byte) -18);
 				if (JunkTex.aBoolean4518 && class12.aBoolean330) {
-					Class133_Sub7 class133_sub7_8_ = (Class76.method1359(-10345, anInt3495,
+					Class133_Sub7 class133_sub7_8_ = (Static2.method1359(-10345, anInt3495,
 							class46_7_ == null ? animation : class46_7_, class133_sub7, aClass12_4949.aShort313,
 							aClass12_4949.aByte321, anInt3500, aClass12_4949.aByte331, aClass12_4949.aShort285, i,
 							anInt3436, class46_7_ != null ? anInt3483 : anInt3501, aClass12_4949.anInt334,

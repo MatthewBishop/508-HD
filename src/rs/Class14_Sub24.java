@@ -190,7 +190,7 @@ public class Class14_Sub24 extends Linkable {
 
 	public static boolean method909(Class9 class9) {
 		if (!aBoolean3155) {
-			byte[] is = class9.method163(0, 0, 0);
+			byte[] is = class9.method163(0, 0);
 			if (is == null)
 				return false;
 			method905(is);
@@ -201,10 +201,10 @@ public class Class14_Sub24 extends Linkable {
 
 	public static Class14_Sub24 method910(Class9 class9, int i, int i_33_) {
 		if (!method909(class9)) {
-			class9.method158(i_33_, i, (byte) 85);
+			class9.method158(i_33_, i);
 			return null;
 		}
-		byte[] is = class9.method163(i_33_, i, 0);
+		byte[] is = class9.method163(i_33_, i);
 		if (is == null)
 			return null;
 		return new Class14_Sub24(is);

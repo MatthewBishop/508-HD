@@ -38,7 +38,7 @@ public class Class134 implements TextureDefInterface {
 		anInt2582 = i;
 		aClass20_2595 = new Cache(anInt2582);
 		aClass20_2585 = new Cache(anInt2582);
-		Buffer class14_sub10 = new Buffer(class9_24_.method163(0, 0, 0));
+		Buffer class14_sub10 = new Buffer(class9_24_.method163(0, 0));
 		int amountMaterials = class14_sub10.readUShort();
 		aByteArray2602 = new byte[amountMaterials];
 		aBooleanArray2600 = new boolean[amountMaterials];
@@ -185,7 +185,7 @@ public class Class134 implements TextureDefInterface {
 			Class14_Sub2_Sub1 class14_sub2_sub1_16_ = class14_sub2_sub1;
 			return class14_sub2_sub1_16_;
 		}
-		byte[] is = aClass9_2580.method163(0, i, 0);
+		byte[] is = aClass9_2580.method163(0, i);
 		if (is == null) {
 			class14_sub2_sub1 = null;
 			return class14_sub2_sub1;

@@ -823,7 +823,7 @@ public class Class133_Sub2 extends Class133 {
 	}
 
 	public static Class133_Sub2 method1824(Class9 class9, int i, int i_184_) {
-		byte[] is = class9.method163(i_184_, i, 0);
+		byte[] is = class9.method163(i_184_, i);
 		if (is == null)
 			return null;
 		return new Class133_Sub2(is);

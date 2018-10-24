@@ -64,7 +64,7 @@ public class Class127 {
 			return class60_10_;
 		}
 		byte[] is = (JunkTex.aClass9_4338.method163(Class79.method1378(i, 5823),
-				Class131.method1773(i, (byte) -124), 0));
+				Class131.method1773(i, (byte) -124)));
 		Class60 class60_11_ = new Class60();
 		class60_11_.anInt962 = i;
 		if (is != null)

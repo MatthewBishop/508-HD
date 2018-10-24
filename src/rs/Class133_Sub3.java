@@ -57,15 +57,6 @@ public class Class133_Sub3 extends Class133 {
 		return i;
 	}
 
-	public static void method1832(int i, byte i_11_, int i_12_) {
-		if (i_11_ == -73) {
-			long l = i + (i_12_ << 48);
-			Class14_Sub2_Sub9 class14_sub2_sub9 = ((Class14_Sub2_Sub9) Class7_Sub2_Sub1.aClass55_3698.get(l));
-			if (class14_sub2_sub9 != null)
-				JunkTex.aClass81_4716.pushFront(class14_sub2_sub9);
-		}
-	}
-
 	public static void method1833(boolean bool, int i, int i_13_, byte[] is, int i_14_, int i_15_, byte i_16_,
 			int i_17_, int i_18_, int i_19_, Class32[] class32s) {
 		if (!bool) {
@@ -119,7 +110,7 @@ public class Class133_Sub3 extends Class133 {
 									i_31_ = light.param3 >> 39;
 									i_30_ = light.param1 >> 7;
 									if (i_30_ >= 0 && i_31_ >= 0 && i_30_ < 104 && i_31_ < 104) {
-										light.param2 = (Class114.tileHeights[light.anInt1125][i_30_][i_31_])
+										light.param2 = (Static2.tileHeights[light.anInt1125][i_30_][i_31_])
 												- light.param2;
 										LightManager.method200(light);
 									}

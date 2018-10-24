@@ -42,7 +42,7 @@ public class Class146 {
 		if (i_2_ != -13824)
 			anInt2357 = 59;
 		Class14_Sub2_Sub16_Sub1 class14_sub2_sub16_sub1 = Static2.method336(4,
-				class9_1_.method163(i, i_3_, 0));
+				class9_1_.method163(i, i_3_));
 		return class14_sub2_sub16_sub1;
 	}
 
@@ -51,7 +51,7 @@ public class Class146 {
 		for (int i_4_ = 0; i_4_ < Class32.spriteAmount; i_4_++)
 			class148_sub1s[i_4_] = new Class148_Sub1(Class14_Sub11.spriteTrimWidth, Class14_Sub30.spriteTrimHeight,
 					Class40.spriteXOffsets[i_4_], Class14_Sub2_Sub12.spriteYOffsets[i_4_], Class17.spriteWidths[i_4_],
-					Class76.spriteHeights[i_4_], Class12.spritePaletteIndicators[i_4_], JunkTex.spritePalette);
+					Static2.spriteHeights[i_4_], Class12.spritePaletteIndicators[i_4_], JunkTex.spritePalette);
 		Class129.method1761((byte) 103);
 		if (i != -111)
 			method1995(71);
@@ -134,16 +134,16 @@ public class Class146 {
 								((Class133_Sub4) class133).method1836(true);
 						} else if (i_14_ == 8) {
 							if (!(class133 instanceof Class133_Sub4))
-								Class68.method1305(i_10_, i_13_ + 4, ((Class14_Sub2_Sub9.anIntArray3859[i_13_]) * 8),
-										class79, 4, (Class114.anIntArray1893[i_13_]) * 8, i_7_, i, (byte) 107);
+								Class68.method1305(i_10_, i_13_ + 4, ((Static2.anIntArray3859[i_13_]) * 8),
+										class79, 4, (Static2.anIntArray1893[i_13_]) * 8, i_7_, i, (byte) 107);
 							else
 								((Class133_Sub4) class133).method1836(true);
 							if (class133_15_ instanceof Class133_Sub4)
 								((Class133_Sub4) class133_15_).method1836(true);
 							else
 								Class68.method1305(i_10_, (i_13_ + 2 & 0x3) + 4,
-										(Class14_Sub2_Sub9.anIntArray3859[i_13_] * 8), class79, 4,
-										Class114.anIntArray1893[i_13_] * 8, i_7_, i, (byte) 125);
+										(Static2.anIntArray3859[i_13_] * 8), class79, 4,
+										Static2.anIntArray1893[i_13_] * 8, i_7_, i, (byte) 125);
 						} else if (i_14_ == 11) {
 							if (class133 instanceof Class133_Sub4)
 								((Class133_Sub4) class133).method1836(true);
@@ -154,15 +154,15 @@ public class Class146 {
 						else
 							Class68.method1305(i_10_, i_13_, 0, class79, i_14_, 0, i_7_, i, (byte) 86);
 					} else if (!(class133 instanceof Class133_Sub4))
-						Class68.method1305(i_10_, i_13_ + 4, (Class14_Sub2_Sub9.anIntArray3859[i_13_]) * 8, class79, 4,
-								Class114.anIntArray1893[i_13_] * 8, i_7_, i, (byte) 107);
+						Class68.method1305(i_10_, i_13_ + 4, (Static2.anIntArray3859[i_13_]) * 8, class79, 4,
+								Static2.anIntArray1893[i_13_] * 8, i_7_, i, (byte) 107);
 					else
 						((Class133_Sub4) class133).method1836(true);
 				} else if (class133 instanceof Class133_Sub4)
 					((Class133_Sub4) class133).method1836(true);
 				else
 					Class68.method1305(i_10_, i_13_, Static2.anIntArray212[i_13_] * 8, class79, 4,
-							Class14_Sub19.anIntArray3074[i_13_] * 8, i_7_, i, (byte) 100);
+							Static2.anIntArray3074[i_13_] * 8, i_7_, i, (byte) 100);
 			}
 		}
 	}

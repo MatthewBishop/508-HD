@@ -61,10 +61,10 @@ public class Class14_Sub30 extends Linkable {
 		int i_12_ = i_13_ = i_8_ + 128;
 		int i_15_;
 		int i_14_ = i_15_ = i_10_ + 128;
-		int i_16_ = Class114.tileHeights[i][i_6_][i_7_] - Static2.anInt2741;
-		int i_17_ = Class114.tileHeights[i][i_6_ + 1][i_7_] - Static2.anInt2741;
-		int i_18_ = Class114.tileHeights[i][i_6_ + 1][i_7_ + 1] - Static2.anInt2741;
-		int i_19_ = Class114.tileHeights[i][i_6_][i_7_ + 1] - Static2.anInt2741;
+		int i_16_ = Static2.tileHeights[i][i_6_][i_7_] - Static2.anInt2741;
+		int i_17_ = Static2.tileHeights[i][i_6_ + 1][i_7_] - Static2.anInt2741;
+		int i_18_ = Static2.tileHeights[i][i_6_ + 1][i_7_ + 1] - Static2.anInt2741;
+		int i_19_ = Static2.tileHeights[i][i_6_][i_7_ + 1] - Static2.anInt2741;
 		int i_20_ = i_10_ * i_4_ + i_8_ * i_5_ >> 16;
 		i_10_ = i_10_ * i_5_ - i_8_ * i_4_ >> 16;
 		i_8_ = i_20_;
@@ -104,7 +104,7 @@ public class Class14_Sub30 extends Linkable {
 						Class3.anInt116 = 0;
 						if (((i_25_ - i_27_) * (i_24_ - i_28_) - (i_26_ - i_28_) * (i_23_ - i_27_)) > 0
 								&& Class142.aBoolean2299
-								&& (JunkTex.method549(Class14_Sub19.anInt3073 + Class3.anInt118,
+								&& (JunkTex.method549(Static2.anInt3073 + Class3.anInt118,
 										Static2.anInt3334 + Class3.anInt110, i_26_, i_28_, i_24_, i_25_, i_27_,
 										i_23_))) {
 							Class66.anInt1039 = i_6_;
@@ -112,7 +112,7 @@ public class Class14_Sub30 extends Linkable {
 						}
 						if (((i_21_ - i_23_) * (i_28_ - i_24_) - (i_22_ - i_24_) * (i_27_ - i_23_)) > 0
 								&& Class142.aBoolean2299
-								&& (JunkTex.method549(Class14_Sub19.anInt3073 + Class3.anInt118,
+								&& (JunkTex.method549(Static2.anInt3073 + Class3.anInt118,
 										Static2.anInt3334 + Class3.anInt110, i_22_, i_24_, i_28_, i_21_, i_23_,
 										i_27_))) {
 							Class66.anInt1039 = i_6_;

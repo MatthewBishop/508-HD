@@ -1,16 +1,17 @@
 /* Class136 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-package rs;
+package com.jagex.cache.fs;
 
-public class Class136 {
-	public static Class117 aClass117_2191 = new Class117();
+public class BZip2Decompressor {
+	public static BZip2BlockEntry aClass117_2191 = new BZip2BlockEntry();
 
 	public static void method1929() {
+		anIntArray2473 = null;
 		aClass117_2191 = null;
 	}
 
-	public static void method1930(Class117 class117) {
+	public static void method1930(BZip2BlockEntry class117) {
 		boolean bool = false;
 		boolean bool_0_ = false;
 		boolean bool_1_ = false;
@@ -34,8 +35,8 @@ public class Class136 {
 		int[] is_17_ = null;
 		int[] is_18_ = null;
 		class117.anInt1947 = 1;
-		if (Class124.anIntArray2473 == null)
-			Class124.anIntArray2473 = new int[class117.anInt1947 * 100000];
+		if (BZip2Decompressor.anIntArray2473 == null)
+			BZip2Decompressor.anIntArray2473 = new int[class117.anInt1947 * 100000];
 		boolean bool_19_ = true;
 		while (bool_19_) {
 			byte i_20_ = method1937(class117);
@@ -193,7 +194,7 @@ public class Class136 {
 					i_21_ = (class117.aByteArray1959[(class117.aByteArray1966[class117.anIntArray1968[0]]) & 0xff]);
 					class117.anIntArray1935[i_21_ & 0xff] += i_56_;
 					for (/**/; i_56_ > 0; i_56_--) {
-						Class124.anIntArray2473[i_50_] = i_21_ & 0xff;
+						BZip2Decompressor.anIntArray2473[i_50_] = i_21_ & 0xff;
 						i_50_++;
 					}
 				} else {
@@ -239,7 +240,7 @@ public class Class136 {
 						}
 					}
 					class117.anIntArray1935[class117.aByteArray1959[i_20_ & 0xff] & 0xff]++;
-					Class124.anIntArray2473[i_50_] = class117.aByteArray1959[i_20_ & 0xff] & 0xff;
+					BZip2Decompressor.anIntArray2473[i_50_] = class117.aByteArray1959[i_20_ & 0xff] & 0xff;
 					i_50_++;
 					if (i_45_ == 0) {
 						i_44_++;
@@ -267,13 +268,13 @@ public class Class136 {
 			for (int i_69_ = 1; i_69_ <= 256; i_69_++)
 				class117.anIntArray1938[i_69_] += class117.anIntArray1938[i_69_ - 1];
 			for (int i_70_ = 0; i_70_ < i_50_; i_70_++) {
-				i_21_ = (byte) (Class124.anIntArray2473[i_70_] & 0xff);
-				Class124.anIntArray2473[class117.anIntArray1938[i_21_ & 0xff]] |= i_70_ << 8;
+				i_21_ = (byte) (BZip2Decompressor.anIntArray2473[i_70_] & 0xff);
+				BZip2Decompressor.anIntArray2473[class117.anIntArray1938[i_21_ & 0xff]] |= i_70_ << 8;
 				class117.anIntArray1938[i_21_ & 0xff]++;
 			}
-			class117.anInt1946 = Class124.anIntArray2473[class117.anInt1942] >> 8;
+			class117.anInt1946 = BZip2Decompressor.anIntArray2473[class117.anInt1942] >> 8;
 			class117.anInt1939 = 0;
-			class117.anInt1946 = Class124.anIntArray2473[class117.anInt1946];
+			class117.anInt1946 = BZip2Decompressor.anIntArray2473[class117.anInt1946];
 			class117.anInt1953 = (byte) (class117.anInt1946 & 0xff);
 			class117.anInt1946 >>= 8;
 			class117.anInt1939++;
@@ -314,12 +315,12 @@ public class Class136 {
 			is_71_[i_85_] = (is[i_85_ - 1] + 1 << 1) - is_71_[i_85_];
 	}
 
-	public static void method1932(Class117 class117) {
+	public static void method1932(BZip2BlockEntry class117) {
 		byte i = class117.aByte1960;
 		int i_86_ = class117.anInt1970;
 		int i_87_ = class117.anInt1939;
 		int i_88_ = class117.anInt1953;
-		int[] is = Class124.anIntArray2473;
+		int[] is = BZip2Decompressor.anIntArray2473;
 		int i_89_ = class117.anInt1946;
 		byte[] is_90_ = class117.aByteArray1954;
 		int i_91_ = class117.anInt1944;
@@ -418,14 +419,14 @@ public class Class136 {
 		class117.anInt1970 = i_86_;
 		class117.anInt1939 = i_87_;
 		class117.anInt1953 = i_88_;
-		Class124.anIntArray2473 = is;
+		BZip2Decompressor.anIntArray2473 = is;
 		class117.anInt1946 = i_89_;
 		class117.aByteArray1954 = is_90_;
 		class117.anInt1944 = i_91_;
 		class117.anInt1949 = i_92_;
 	}
 
-	public static int method1933(int i, Class117 class117) {
+	public static int method1933(int i, BZip2BlockEntry class117) {
 		int i_98_;
 		for (;;) {
 			if (class117.anInt1972 >= i) {
@@ -445,8 +446,8 @@ public class Class136 {
 		return i_98_;
 	}
 
-	public static int method1934(byte[] is, int i, byte[] is_100_, int i_101_, int i_102_) {
-		Class117 class117 = aClass117_2191;
+	public static int decompress(byte[] is, int i, byte[] is_100_, int i_101_, int i_102_) {
+		BZip2BlockEntry class117 = aClass117_2191;
 		int i_103_;
 		synchronized (class117) {
 			aClass117_2191.aByteArray1971 = is_100_;
@@ -467,11 +468,11 @@ public class Class136 {
 		return i_103_;
 	}
 
-	public static byte method1935(Class117 class117) {
+	public static byte method1935(BZip2BlockEntry class117) {
 		return (byte) method1933(1, class117);
 	}
 
-	public static void method1936(Class117 class117) {
+	public static void method1936(BZip2BlockEntry class117) {
 		class117.anInt1940 = 0;
 		for (int i = 0; i < 256; i++) {
 			if (class117.aBooleanArray1965[i]) {
@@ -481,7 +482,9 @@ public class Class136 {
 		}
 	}
 
-	public static byte method1937(Class117 class117) {
+	public static byte method1937(BZip2BlockEntry class117) {
 		return (byte) method1933(8, class117);
 	}
+
+	public static int[] anIntArray2473;
 }

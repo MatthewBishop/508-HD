@@ -18,10 +18,10 @@ public class Class22 {
 
 	public static void method984(int i, int i_0_, boolean bool, Color color, Class124 class124) {
 		try {
-			Graphics graphics = Class49.aCanvas819.getGraphics();
+			Graphics graphics = Static2.aCanvas819.getGraphics();
 			if (Class123.aFont2063 == null) {
 				Class123.aFont2063 = new Font("Helvetica", 1, 13);
-				Class14_Sub19.aFontMetrics3081 = Class49.aCanvas819.getFontMetrics(Class123.aFont2063);
+				Static2.aFontMetrics3081 = Static2.aCanvas819.getFontMetrics(Class123.aFont2063);
 			}
 			if (bool) {
 				graphics.setColor(Color.black);
@@ -31,7 +31,7 @@ public class Class22 {
 				color = new Color(140, 17, 17);
 			try {
 				if (Class14_Sub2_Sub8.anImage3830 == null)
-					Class14_Sub2_Sub8.anImage3830 = Class49.aCanvas819.createImage(304, 34);
+					Class14_Sub2_Sub8.anImage3830 = Static2.aCanvas819.createImage(304, 34);
 				Graphics graphics_1_ = Class14_Sub2_Sub8.anImage3830.getGraphics();
 				graphics_1_.setColor(color);
 				graphics_1_.drawRect(0, 0, 303, 33);
@@ -44,7 +44,7 @@ public class Class22 {
 				if (i_0_ != -1644)
 					method987(109, 6, -69, -24, 29, -66, 34, 77, 72, 117, 5, -23, -52, -27, 53, -13, -88, 5, 64, 110);
 				class124.method1713(false,
-						(-class124.method1695((Class14_Sub19.aFontMetrics3081), (byte) -94) + 304) / 2, 22,
+						(-class124.method1695((Static2.aFontMetrics3081), (byte) -94) + 304) / 2, 22,
 						graphics_1_);
 				graphics.drawImage(Class14_Sub2_Sub8.anImage3830, Class83.anInt1340 / 2 - 152,
 						Class14_Sub20.anInt3094 / 2 - 18, null);
@@ -60,7 +60,7 @@ public class Class22 {
 				graphics.setFont(Class123.aFont2063);
 				graphics.setColor(Color.white);
 				class124.method1713(false,
-						i_2_ + (304 - class124.method1695((Class14_Sub19.aFontMetrics3081), (byte) -91)) / 2, i_3_ + 22,
+						i_2_ + (304 - class124.method1695((Static2.aFontMetrics3081), (byte) -91)) / 2, i_3_ + 22,
 						graphics);
 			}
 			if (JunkTex.aClass124_5099 != null) {
@@ -68,11 +68,11 @@ public class Class22 {
 				graphics.setColor(Color.white);
 				JunkTex.aClass124_5099.method1713(false,
 						(Class83.anInt1340 / 2 - (JunkTex.aClass124_5099
-								.method1695(Class14_Sub19.aFontMetrics3081, (byte) -106)) / 2),
+								.method1695(Static2.aFontMetrics3081, (byte) -106)) / 2),
 						Class14_Sub20.anInt3094 / 2 - 26, graphics);
 			}
 		} catch (Exception exception) {
-			Class49.aCanvas819.repaint();
+			Static2.aCanvas819.repaint();
 		}
 	}
 
@@ -83,7 +83,7 @@ public class Class22 {
 		}
 		Class148_Sub1 class148_sub1 = new Class148_Sub1(Class14_Sub11.spriteTrimWidth, Class14_Sub30.spriteTrimHeight,
 				Class40.spriteXOffsets[0], Class14_Sub2_Sub12.spriteYOffsets[0], Class17.spriteWidths[0],
-				Class76.spriteHeights[0], Class12.spritePaletteIndicators[0], JunkTex.spritePalette);
+				Static2.spriteHeights[0], Class12.spritePaletteIndicators[0], JunkTex.spritePalette);
 		Class129.method1761((byte) 123);
 		Class148_Sub1 class148_sub1_4_ = class148_sub1;
 		return class148_sub1_4_;

@@ -66,9 +66,9 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 		}
 		byte[] is;
 		if (i >= 32768)
-			is = JunkTex.aClass9_4384.method163(i & 0x7fff, 1, 0);
+			is = JunkTex.aClass9_4384.method163(i & 0x7fff, 1);
 		else
-			is = Class14_Sub2_Sub8.aClass9_3850.method163(i, 1, 0);
+			is = Class14_Sub2_Sub8.aClass9_3850.method163(i, 1);
 		Class14_Sub2_Sub21 class14_sub2_sub21_18_ = new Class14_Sub2_Sub21();
 		if (is != null)
 			class14_sub2_sub21_18_.method437(new Buffer(is), 99);

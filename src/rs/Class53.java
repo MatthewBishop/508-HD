@@ -115,9 +115,9 @@ public class Class53 {
 					(byte) -123, Class14_Sub30.anInt3271) - JunkTex.anInt4480);
 		}
 		i_17_ = Class33.anInt577 * 128 + 64;
-		i_16_ = Class117.anInt1948 * 128 + 64;
+		i_16_ = Static2.anInt1948 * 128 + 64;
 		i_18_ = (JunkTex.method1017(i_16_, Class14_Sub2_Sub3.gameLevel, (byte) -117, i_17_)
-				- Class14_Sub2_Sub9.anInt3866);
+				- Static2.anInt3866);
 		int i_19_ = -Class14_Sub30.anInt3271 + i_17_;
 		int i_20_ = i_16_ - JunkTex.anInt4741;
 		int i_21_ = i_18_ - Static2.anInt2926;

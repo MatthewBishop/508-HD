@@ -14,7 +14,6 @@ public class Class56 {
 	public static int[] anIntArray917;
 	public static int anInt918;
 	public static Class124[] aClass124Array919;
-	public static Class49 aClass49_922;
 	public static Class124 aClass124_923;
 
 	static {
@@ -22,12 +21,11 @@ public class Class56 {
 		anInt918 = 0;
 		aClass124Array919 = new Class124[8];
 		aClass124_923 = aClass124_914;
-		aClass49_922 = new Class49();
+		
 	}
 
 	public static void method1237(int i) {
 		aClass124_923 = null;
-		aClass49_922 = null;
 		anIntArray917 = null;
 		if (i == 1232386310) {
 			anIntArray913 = null;
@@ -79,7 +77,7 @@ public class Class56 {
 
 	public static AbstractSprite_Sub1 constructLDSpriteAlpha(int i) {
 		byte[] is = Class12.spritePaletteIndicators[0];
-		int i_12_ = Class76.spriteHeights[i] * Class17.spriteWidths[0];
+		int i_12_ = Static2.spriteHeights[i] * Class17.spriteWidths[0];
 		AbstractSprite_Sub1 class14_sub2_sub19_sub1;
 		if (JunkTex.spriteHasAlpha[0]) {
 			int[] is_13_ = new int[i_12_];
@@ -89,14 +87,14 @@ public class Class56 {
 						(JunkTex.spritePalette[JunkTex.method617(is[i_15_], 255)])));
 			class14_sub2_sub19_sub1 = new AbstractSprite_Sub1_Sub1(Class14_Sub11.spriteTrimWidth, Class14_Sub30.spriteTrimHeight,
 					Class40.spriteXOffsets[0], (Class14_Sub2_Sub12.spriteYOffsets[0]), Class17.spriteWidths[0],
-					Class76.spriteHeights[0], is_13_);
+					Static2.spriteHeights[0], is_13_);
 		} else {
 			int[] is_16_ = new int[i_12_];
 			for (int i_17_ = 0; i_17_ < i_12_; i_17_++)
 				is_16_[i_17_] = (JunkTex.spritePalette[JunkTex.method617(is[i_17_], 255)]);
 			class14_sub2_sub19_sub1 = new AbstractSprite_Sub1(Class14_Sub11.spriteTrimWidth, Class14_Sub30.spriteTrimHeight,
 					Class40.spriteXOffsets[0], (Class14_Sub2_Sub12.spriteYOffsets[0]), Class17.spriteWidths[0],
-					Class76.spriteHeights[0], is_16_);
+					Static2.spriteHeights[0], is_16_);
 		}
 		Class129.method1761((byte) 83);
 		AbstractSprite_Sub1 class14_sub2_sub19_sub1_18_ = class14_sub2_sub19_sub1;

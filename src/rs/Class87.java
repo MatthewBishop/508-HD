@@ -191,7 +191,7 @@ public class Class87 {
 		int i_48_ = fontmetrics.getMaxAscent();
 		int i_49_ = fontmetrics.getMaxAscent() + fontmetrics.getMaxDescent();
 		int i_50_ = fontmetrics.getHeight();
-		Image image = Class49.aCanvas819.createImage(i_46_, i_49_);
+		Image image = Static2.aCanvas819.createImage(i_46_, i_49_);
 		Graphics graphics = image.getGraphics();
 		graphics.setColor(Color.black);
 		graphics.fillRect(0, 0, i_46_, i_49_);

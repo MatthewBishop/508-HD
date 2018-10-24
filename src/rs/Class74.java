@@ -23,7 +23,7 @@ public class Class74 {
 	}
 
 	public static void method1333(int i, byte i_0_, int i_1_) {
-		if (i_0_ == 46 && Class126.method1741((byte) 90, i))
+		if (i_0_ == 46 && Static2.method1741((byte) 90, i))
 			JunkTex.method539(i_0_ - 2081454114, Class1.aClass94ArrayArray75[i], i_1_);
 	}
 

@@ -103,7 +103,7 @@ public class Class21 {
 
 	public static Class88[] method978(int i) {
 		int i_14_ = 63 / ((0 - i) / 39);
-		if (Class76.aClass88Array1211 == null) {
+		if (Static2.aClass88Array1211 == null) {
 			Class88[] class88s = Class14_Sub18.method884(-3189, JunkTex.signlink);
 			Class88[] class88s_15_ = new Class88[class88s.length];
 			int i_16_ = 0;
@@ -123,16 +123,16 @@ public class Class21 {
 					i_16_++;
 				}
 			}
-			Class76.aClass88Array1211 = new Class88[i_16_];
-			ArrayUtils.method1320(class88s_15_, 0, Class76.aClass88Array1211, 0, i_16_);
-			int[] is = new int[Class76.aClass88Array1211.length];
-			for (int i_20_ = 0; i_20_ < Class76.aClass88Array1211.length; i_20_++) {
-				Class88 class88 = Class76.aClass88Array1211[i_20_];
+			Static2.aClass88Array1211 = new Class88[i_16_];
+			ArrayUtils.method1320(class88s_15_, 0, Static2.aClass88Array1211, 0, i_16_);
+			int[] is = new int[Static2.aClass88Array1211.length];
+			for (int i_20_ = 0; i_20_ < Static2.aClass88Array1211.length; i_20_++) {
+				Class88 class88 = Static2.aClass88Array1211[i_20_];
 				is[i_20_] = class88.anInt1397 * class88.anInt1396;
 			}
-			Class114.method1586(is, Class76.aClass88Array1211, (byte) 122);
+			Static2.method1586(is, Static2.aClass88Array1211, (byte) 122);
 		}
-		Class88[] class88s = Class76.aClass88Array1211;
+		Class88[] class88s = Static2.aClass88Array1211;
 		return class88s;
 	}
 
@@ -194,7 +194,7 @@ public class Class21 {
 			aClass52_444 = null;
 		boolean bool_28_ = true;
 		for (int i = 0; i < anIntArray457.length; i++) {
-			if (!Class14_Sub2_Sub8.aClass9_3848.method158(0, anIntArray457[i], (byte) 124))
+			if (!Class14_Sub2_Sub8.aClass9_3848.method158(0, anIntArray457[i]))
 				bool_28_ = false;
 		}
 		boolean bool_29_ = bool_28_;
@@ -204,7 +204,7 @@ public class Class21 {
 	public boolean method983(boolean bool) {
 		boolean bool_30_ = true;
 		for (int i = 0; i < 5; i++) {
-			if (anIntArray447[i] != -1 && !Class14_Sub2_Sub8.aClass9_3848.method158(0, anIntArray447[i], (byte) 74))
+			if (anIntArray447[i] != -1 && !Class14_Sub2_Sub8.aClass9_3848.method158(0, anIntArray447[i]))
 				bool_30_ = false;
 		}
 		if (bool)

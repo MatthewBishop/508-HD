@@ -52,13 +52,13 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		if (Class74.anInt1136++ > 50) {
 			Class74.anInt1136 -= 50;
 			Class141.aBoolean2244 = true;
-			Class49.aCanvas819.setSize(Class83.anInt1340, Class14_Sub20.anInt3094);
-			Class49.aCanvas819.setVisible(true);
+			Static2.aCanvas819.setSize(Class83.anInt1340, Class14_Sub20.anInt3094);
+			Static2.aCanvas819.setVisible(true);
 			if (Class14_Sub14.aFrame2986 == null || JunkTex.aFrame3962 != null)
-				Class49.aCanvas819.setLocation(JunkTex.anInt895, Class76.anInt1197);
+				Static2.aCanvas819.setLocation(JunkTex.anInt895, Static2.anInt1197);
 			else {
 				Insets insets = Class14_Sub14.aFrame2986.getInsets();
-				Class49.aCanvas819.setLocation(JunkTex.anInt895 + insets.left, Class76.anInt1197 + insets.top);
+				Static2.aCanvas819.setLocation(JunkTex.anInt895 + insets.left, Static2.anInt1197 + insets.top);
 			}
 		}
 		method29(1);
@@ -98,7 +98,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			if (var2 != null) {
 				return var2;
 			} else {
-				byte[] var3 = JunkTex.aClass9_2792.method163(var0, 3, 0);
+				byte[] var3 = JunkTex.aClass9_2792.method163(var0, 3);
 				Class21 var4 = new Class21();
 				if (var3 != null) {
 					var4.method980(-29502, new Buffer(var3));
@@ -196,7 +196,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		do {
 			try {
 				try {
-					Class76.anInt1197 = 0;
+					Static2.anInt1197 = 0;
 					Class96.anApplet_Sub1_1632 = this;
 					Class14_Sub2_Sub21.anInt4086 = Class14_Sub20.anInt3094 = i_21_;
 					JunkTex.anInt4622 = Class83.anInt1340 = i_22_;
@@ -299,10 +299,10 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			;
 		}
 
-		if (Class49.aCanvas819 != null) {
+		if (Static2.aCanvas819 != null) {
 			try {
-				Class49.aCanvas819.removeFocusListener(this);
-				Class49.aCanvas819.getParent().remove(Class49.aCanvas819);
+				Static2.aCanvas819.removeFocusListener(this);
+				Static2.aCanvas819.getParent().remove(Static2.aCanvas819);
 			} catch (Exception var6) {
 				;
 			}
@@ -408,7 +408,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				}
 
 				this.method26(118);
-				JunkTex.method555(41, JunkTex.signlink, Class49.aCanvas819);
+				JunkTex.method555(41, JunkTex.signlink, Static2.aCanvas819);
 			}
 		}
 
@@ -436,9 +436,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	}
 
 	public synchronized void method37(int i) {
-		if (Class49.aCanvas819 != null) {
-			Class49.aCanvas819.removeFocusListener(this);
-			Class49.aCanvas819.getParent().remove(Class49.aCanvas819);
+		if (Static2.aCanvas819 != null) {
+			Static2.aCanvas819.removeFocusListener(this);
+			Static2.aCanvas819.getParent().remove(Static2.aCanvas819);
 		}
 		Container container;
 		if (JunkTex.aFrame3962 == null) {
@@ -449,20 +449,20 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		} else
 			container = JunkTex.aFrame3962;
 		container.setLayout(null);
-		Class49.aCanvas819 = new Canvas_Sub1(this);
-		Class49.aCanvas819.setIgnoreRepaint(true);
+		Static2.aCanvas819 = new Canvas_Sub1(this);
+		Static2.aCanvas819.setIgnoreRepaint(true);
 		if (i != 5)
 			aBooleanArray20 = null;
-		container.add(Class49.aCanvas819);
-		Class49.aCanvas819.setSize(Class83.anInt1340, Class14_Sub20.anInt3094);
-		Class49.aCanvas819.setVisible(true);
+		container.add(Static2.aCanvas819);
+		Static2.aCanvas819.setSize(Class83.anInt1340, Class14_Sub20.anInt3094);
+		Static2.aCanvas819.setVisible(true);
 		if (Class14_Sub14.aFrame2986 == container) {
 			Insets insets = Class14_Sub14.aFrame2986.getInsets();
-			Class49.aCanvas819.setLocation(JunkTex.anInt895 + insets.left, insets.top + Class76.anInt1197);
+			Static2.aCanvas819.setLocation(JunkTex.anInt895 + insets.left, insets.top + Static2.anInt1197);
 		} else
-			Class49.aCanvas819.setLocation(JunkTex.anInt895, Class76.anInt1197);
-		Class49.aCanvas819.addFocusListener(this);
-		Class49.aCanvas819.requestFocus();
+			Static2.aCanvas819.setLocation(JunkTex.anInt895, Static2.anInt1197);
+		Static2.aCanvas819.addFocusListener(this);
+		Static2.aCanvas819.requestFocus();
 		Class131.aBoolean2154 = true;
 		Class83.aBoolean1342 = true;
 		Class141.aBoolean2244 = true;
@@ -526,7 +526,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				if (i_47_ != 13062)
 					aBooleanArray20 = null;
 				Class96.anApplet_Sub1_1632 = this;
-				Class76.anInt1197 = 0;
+				Static2.anInt1197 = 0;
 				JunkTex.anInt4622 = Class83.anInt1340 = i_48_;
 				JunkTex.anInt895 = 0;
 				String string = getParameter("openwinjs");

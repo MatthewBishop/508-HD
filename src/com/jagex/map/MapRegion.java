@@ -12,7 +12,6 @@ import com.jagex.rt4.lights.LightManager;
 
 import rs.Class1;
 import rs.Class109;
-import rs.Class114;
 import rs.Class115;
 import rs.Class128;
 import rs.Class142;
@@ -48,12 +47,12 @@ public class MapRegion {
 				if (i_5_ == 0) {
 					if (!bool) {
 						if (i != 0)
-							Class114.tileHeights[i][i_3_][i_4_] = (Class114.tileHeights[i - 1][i_3_][i_4_] - 240);
+							Static2.tileHeights[i][i_3_][i_4_] = (Static2.tileHeights[i - 1][i_3_][i_4_] - 240);
 						else
-							Class114.tileHeights[0][i_3_][i_4_] = -MapSmoothing.calculateHeight((i_4_ + 556238 + i_1_),
+							Static2.tileHeights[0][i_3_][i_4_] = -MapSmoothing.calculateHeight((i_4_ + 556238 + i_1_),
 									(i_3_ + 932731 + i_2_)) * 8;
 					} else
-						Class114.tileHeights[0][i_3_][i_4_] = JunkTex.anIntArrayArrayArray2391[0][i_3_][i_4_];
+						Static2.tileHeights[0][i_3_][i_4_] = JunkTex.anIntArrayArrayArray2391[0][i_3_][i_4_];
 					break;
 				}
 				if (i_5_ == 1) {
@@ -62,12 +61,12 @@ public class MapRegion {
 						if (i_6_ == 1)
 							i_6_ = 0;
 						if (i == 0)
-							Class114.tileHeights[0][i_3_][i_4_] = -i_6_ * 8;
+							Static2.tileHeights[0][i_3_][i_4_] = -i_6_ * 8;
 						else
-							Class114.tileHeights[i][i_3_][i_4_] = (-(i_6_ * 8)
-									+ Class114.tileHeights[i - 1][i_3_][i_4_]);
+							Static2.tileHeights[i][i_3_][i_4_] = (-(i_6_ * 8)
+									+ Static2.tileHeights[i - 1][i_3_][i_4_]);
 					} else
-						Class114.tileHeights[0][i_3_][i_4_] = (JunkTex.anIntArrayArrayArray2391[0][i_3_][i_4_]
+						Static2.tileHeights[0][i_3_][i_4_] = (JunkTex.anIntArrayArrayArray2391[0][i_3_][i_4_]
 								+ i_6_ * 8);
 					break;
 				}
@@ -142,10 +141,10 @@ public class MapRegion {
 				for (int i_21_ = 1; i_21_ < 103; i_21_++) {
 					for (int i_22_ = 1; i_22_ < 103; i_22_++) {
 						int i_23_ = 96;
-						int i_24_ = (-Class114.tileHeights[i_14_][i_22_][i_21_ - 1]
-								+ (Class114.tileHeights[i_14_][i_22_][i_21_ + 1]));
-						int i_25_ = (-Class114.tileHeights[i_14_][i_22_ - 1][i_21_]
-								+ (Class114.tileHeights[i_14_][i_22_ + 1][i_21_]));
+						int i_24_ = (-Static2.tileHeights[i_14_][i_22_][i_21_ - 1]
+								+ (Static2.tileHeights[i_14_][i_22_][i_21_ + 1]));
+						int i_25_ = (-Static2.tileHeights[i_14_][i_22_ - 1][i_21_]
+								+ (Static2.tileHeights[i_14_][i_22_ + 1][i_21_]));
 						int i_26_ = (int) Math.sqrt((double) (i_25_ * i_25_ + 65536 + i_24_ * i_24_));
 						int i_27_ = (i_25_ << 8) / i_26_;
 						int i_28_ = -65536 / i_26_;
@@ -241,10 +240,10 @@ public class MapRegion {
 						int i_52_ = Class97.underlays[i_14_][i_50_][i_51_] & 0xff;
 						int i_53_ = (JunkTex.overlays[i_14_][i_50_][i_51_] & 0xff);
 						if (i_52_ > 0 || i_53_ > 0) {
-							int i_54_ = Class114.tileHeights[i_14_][i_50_][i_51_];
-							int i_55_ = (Class114.tileHeights[i_14_][i_50_ + 1][i_51_ + 1]);
-							int i_56_ = (Class114.tileHeights[i_14_][i_50_ + 1][i_51_]);
-							int i_57_ = (Class114.tileHeights[i_14_][i_50_][i_51_ + 1]);
+							int i_54_ = Static2.tileHeights[i_14_][i_50_][i_51_];
+							int i_55_ = (Static2.tileHeights[i_14_][i_50_ + 1][i_51_ + 1]);
+							int i_56_ = (Static2.tileHeights[i_14_][i_50_ + 1][i_51_]);
+							int i_57_ = (Static2.tileHeights[i_14_][i_50_][i_51_ + 1]);
 							if (i_14_ > 0) {
 								boolean bool_58_ = true;
 								if (i_52_ == 0 && (JunkTex.overlayTypes[i_14_][i_50_][i_51_]) != 0)
@@ -283,10 +282,10 @@ public class MapRegion {
 										Class14_Sub2_Sub21.method441(i_66_, 127, i_60_), 0, 0, 0, 0, i_59_, 0);
 								if (i_14_ > 0 && i_60_ != -1 && (Static2.method335(-107, i_52_ - 1).aBoolean1020))
 									ShadowManager.method2042(0, 0, true, false, i_50_, i_51_,
-											-(Class114.tileHeights[0][i_50_][i_51_]) + i_54_,
-											i_56_ - (Class114.tileHeights[0][i_50_ + 1][i_51_]),
-											-(Class114.tileHeights[0][i_50_ + 1][i_51_ + 1]) + i_55_,
-											-(Class114.tileHeights[0][i_50_][i_51_ + 1]) + i_57_);
+											-(Static2.tileHeights[0][i_50_][i_51_]) + i_54_,
+											i_56_ - (Static2.tileHeights[0][i_50_ + 1][i_51_]),
+											-(Static2.tileHeights[0][i_50_ + 1][i_51_ + 1]) + i_55_,
+											-(Static2.tileHeights[0][i_50_][i_51_ + 1]) + i_57_);
 								if (!bool && (JunkTex.anIntArrayArray2799 != null) && i_14_ == 0) {
 									while_313_: for (int i_67_ = i_50_ - 1; i_50_ + 1 >= i_67_; i_67_++) {
 										for (int i_68_ = i_51_ - 1; i_68_ <= i_51_ + 1; i_68_++) {
@@ -381,10 +380,10 @@ public class MapRegion {
 								if (i_14_ > 0)
 									ShadowManager.method2042(i_70_, i_71_, i_77_ == -2 || !overlayType.aBoolean2407,
 											(i_60_ == -1 || !(Static2.method335(-92, i_52_ - 1).aBoolean1020)), i_50_,
-											i_51_, i_54_ - (Class114.tileHeights[0][i_50_][i_51_]),
-											i_56_ - (Class114.tileHeights[0][i_50_ + 1][i_51_]),
-											i_55_ - (Class114.tileHeights[0][i_50_ + 1][i_51_ + 1]),
-											i_57_ - (Class114.tileHeights[0][i_50_][i_51_ + 1]));
+											i_51_, i_54_ - (Static2.tileHeights[0][i_50_][i_51_]),
+											i_56_ - (Static2.tileHeights[0][i_50_ + 1][i_51_]),
+											i_55_ - (Static2.tileHeights[0][i_50_ + 1][i_51_ + 1]),
+											i_57_ - (Static2.tileHeights[0][i_50_][i_51_ + 1]));
 							}
 						}
 					}
@@ -392,7 +391,7 @@ public class MapRegion {
 			}
 			float[][] fs = new float[105][105];
 			float[][] fs_84_ = new float[105][105];
-			int[][] is_85_ = Class114.tileHeights[i_14_];
+			int[][] is_85_ = Static2.tileHeights[i_14_];
 			float[][] fs_86_ = new float[105][105];
 			for (int i_87_ = 1; i_87_ <= 103; i_87_++) {
 				for (int i_88_ = 1; i_88_ <= 103; i_88_++) {
@@ -408,14 +407,14 @@ public class MapRegion {
 				HDTile[] class14_sub27s = Class47.method1189(fs_84_, is_12_, JunkTex.anIntArrayArrayArray2391[0],
 						fs, (byte) -125, JunkTex.tileFlags, i_14_, is, Class15.overlayOrientations[i_14_],
 						Class97.underlays[i_14_], JunkTex.overlays[i_14_], JunkTex.anIntArrayArray2799,
-						JunkTex.overlayTypes[i_14_], fs_86_, Class114.tileHeights[i_14_]);
+						JunkTex.overlayTypes[i_14_], fs_86_, Static2.tileHeights[i_14_]);
 				Class14_Sub21.setHDTiles(i_14_, class14_sub27s);
 			} else {
 				HDTile[] class14_sub27s = Class47.method1189(fs_84_, is_12_, null, fs, (byte) -109,
 						JunkTex.tileFlags, i_14_, is, Class15.overlayOrientations[i_14_], Class97.underlays[i_14_],
 						JunkTex.overlays[i_14_], null, JunkTex.overlayTypes[i_14_], fs_86_,
-						Class114.tileHeights[i_14_]);
-				HDTile[] class14_sub27s_91_ = JunkTex.method1398(Class114.tileHeights[i_14_],
+						Static2.tileHeights[i_14_]);
+				HDTile[] class14_sub27s_91_ = JunkTex.method1398(Static2.tileHeights[i_14_],
 						Class15.overlayOrientations[i_14_], 4, JunkTex.overlays[i_14_], JunkTex.overlayTypes[i_14_],
 						i_14_, fs, fs_84_, is_12_, JunkTex.tileFlags, fs_86_, Class97.underlays[i_14_]);
 				HDTile[] class14_sub27s_92_ = (new HDTile[class14_sub27s.length
@@ -426,7 +425,7 @@ public class MapRegion {
 					class14_sub27s_92_[class14_sub27s.length + i_94_] = class14_sub27s_91_[i_94_];
 				Class14_Sub21.setHDTiles(i_14_, class14_sub27s_92_);
 				Class32.method1064(Class15.overlayOrientations[i_14_], JunkTex.overlayTypes[i_14_], fs_84_,
-						Class97.underlays[i_14_], fs_86_, LightManager.lights, -46, i_14_, Class114.tileHeights[i_14_],
+						Class97.underlays[i_14_], fs_86_, LightManager.lights, -46, i_14_, Static2.tileHeights[i_14_],
 						JunkTex.overlays[i_14_], LightManager.lightCount, fs);
 			}
 			Class97.underlays[i_14_] = null;
@@ -476,8 +475,8 @@ public class MapRegion {
 							int i_106_ = ((-i_102_ + i_104_ + 1) * (i_101_ - i_100_ + 1));
 							if (i_106_ >= 8) {
 								int i_107_ = 240;
-								int i_108_ = ((Class114.tileHeights[i_104_][i_99_][i_100_]) - i_107_);
-								int i_109_ = (Class114.tileHeights[i_102_][i_99_][i_100_]);
+								int i_108_ = ((Static2.tileHeights[i_104_][i_99_][i_100_]) - i_107_);
+								int i_109_ = (Static2.tileHeights[i_102_][i_99_][i_100_]);
 								Scenegraph.method120(1, i_99_ * 128, i_99_ * 128, i_100_ * 128, i_101_ * 128 + 128,
 										i_108_, i_109_);
 								for (int i_110_ = i_102_; i_104_ >= i_110_; i_110_++) {
@@ -517,8 +516,8 @@ public class MapRegion {
 							int i_118_ = ((i_113_ + 1 - i_112_) * (i_115_ + 1 - i_114_));
 							if (i_118_ >= 8) {
 								int i_119_ = 240;
-								int i_120_ = (Class114.tileHeights[i_114_][i_112_][i_98_]);
-								int i_121_ = -i_119_ + (Class114.tileHeights[i_115_][i_112_][i_98_]);
+								int i_120_ = (Static2.tileHeights[i_114_][i_112_][i_98_]);
+								int i_121_ = -i_119_ + (Static2.tileHeights[i_115_][i_112_][i_98_]);
 								Scenegraph.method120(2, i_112_ * 128, i_113_ * 128 + 128, i_98_ * 128, i_98_ * 128,
 										i_121_, i_120_);
 								for (int i_122_ = i_114_; i_122_ <= i_115_; i_122_++) {
@@ -554,7 +553,7 @@ public class MapRegion {
 								}
 							}
 							if ((-i_124_ + (i_127_ + 1)) * (i_125_ + (-i_126_ + 1)) >= 4) {
-								int i_130_ = (Class114.tileHeights[i_97_][i_124_][i_126_]);
+								int i_130_ = (Static2.tileHeights[i_97_][i_124_][i_126_]);
 								Scenegraph.method120(4, i_124_ * 128, i_127_ * 128 + 128, i_126_ * 128,
 										i_125_ * 128 + 128, i_130_, i_130_);
 								for (int i_131_ = i_124_; i_131_ <= i_127_; i_131_++) {

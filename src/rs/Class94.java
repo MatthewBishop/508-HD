@@ -178,7 +178,7 @@ public class Class94 {
 			return class14_sub2_sub16_0_;
 		}
 		int i_1_ = 103 % ((-15 - i) / 47);
-		Class14_Sub2_Sub16 class14_sub2_sub16_2_ = Class14_Sub19.method888(-113, anInt1588, Class51.aClass9_833, 0,
+		Class14_Sub2_Sub16 class14_sub2_sub16_2_ = Static2.method888(-113, anInt1588, Class51.aClass9_833, 0,
 				Static2.aClass9_2598);
 		if (class14_sub2_sub16_2_ != null) {
 			class14_sub2_sub16_2_.method352(class148s, null);
@@ -727,7 +727,7 @@ public class Class94 {
 			return class133_sub7;
 		}
 		if (i == (i_57_ ^ 0xffffffff)) {
-			Class133_Sub7 class133_sub7 = Class126.method1744(i_58_, i ^ ~0xa8).method224((byte) -118, animation, i_56_);
+			Class133_Sub7 class133_sub7 = Static2.method1744(i_58_, i ^ ~0xa8).method224((byte) -118, animation, i_56_);
 			if (class133_sub7 == null) {
 				aBoolean1554 = true;
 				Class133_Sub7 class133_sub7_60_ = null;
@@ -762,7 +762,7 @@ public class Class94 {
 			return class133_sub7_65_;
 		}
 		if (i_57_ == 6) {
-			Class133_Sub7 class133_sub7 = Class126.method1744(i_58_, 170).method209(0, i_56_, animation, null, -67);
+			Class133_Sub7 class133_sub7 = Static2.method1744(i_58_, 170).method209(0, i_56_, animation, null, -67);
 			if (class133_sub7 == null) {
 				aBoolean1554 = true;
 				Class133_Sub7 class133_sub7_66_ = null;

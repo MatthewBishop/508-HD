@@ -90,7 +90,7 @@ public class Class67 {
 
 	public static AbstractSprite method1302(boolean bool) {
 		byte[] is = Class12.spritePaletteIndicators[0];
-		int i = Class17.spriteWidths[0] * Class76.spriteHeights[0];
+		int i = Class17.spriteWidths[0] * Static2.spriteHeights[0];
 		int[] is_21_ = new int[i];
 		if (bool) {
 			AbstractSprite class14_sub2_sub19 = null;
@@ -100,7 +100,7 @@ public class Class67 {
 			is_21_[i_22_] = (JunkTex.spritePalette[JunkTex.method617(is[i_22_], 255)]);
 		AbstractSprite_Sub2 class14_sub2_sub19_sub2 = new AbstractSprite_Sub2(Class14_Sub11.spriteTrimWidth,
 				Class14_Sub30.spriteTrimHeight, Class40.spriteXOffsets[0], Class14_Sub2_Sub12.spriteYOffsets[0],
-				Class17.spriteWidths[0], Class76.spriteHeights[0], is_21_);
+				Class17.spriteWidths[0], Static2.spriteHeights[0], is_21_);
 		Class129.method1761((byte) 12);
 		AbstractSprite_Sub2 class14_sub2_sub19_sub2_23_ = class14_sub2_sub19_sub2;
 		return class14_sub2_sub19_sub2_23_;

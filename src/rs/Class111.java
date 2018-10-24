@@ -66,7 +66,7 @@ public class Class111 {
 		}
 		Class33.method1088((byte) 127);
 		Class89.anInt1415 = 1;
-		Class126.method1743(27252, 30);
+		Static2.method1743(27252, 30);
 		int i_3_ = 68 % ((-21 - i) / 53);
 		for (int i_4_ = 0; i_4_ < 100; i_4_++)
 			JunkTex.aBooleanArray4698[i_4_] = true;

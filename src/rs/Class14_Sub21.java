@@ -116,17 +116,17 @@ public class Class14_Sub21 extends Linkable {
 		if (i <= 108)
 			method893((byte) 29);
 		BrowserControlUtil.hide();
-		Static2.method1280(Class49.aCanvas819, (byte) 123);
-		Class76.method1356(false, Class49.aCanvas819);
+		Static2.method1280(Static2.aCanvas819, (byte) 123);
+		Static2.method1356(false, Static2.aCanvas819);
 		if (Class44.aClass129_726 != null)
-			Class44.aClass129_726.method1765(true, Class49.aCanvas819);
+			Class44.aClass129_726.method1765(true, Static2.aCanvas819);
 		JunkTex.method1329(0);
-		JunkTex.method572(Class49.aCanvas819, false);
-		Class56_Sub1.method1242(Class49.aCanvas819, 0);
+		JunkTex.method572(Static2.aCanvas819, false);
+		Class56_Sub1.method1242(Static2.aCanvas819, 0);
 		if (Class44.aClass129_726 != null)
-			Class44.aClass129_726.method1760(-14827, Class49.aCanvas819);
+			Class44.aClass129_726.method1760(-14827, Static2.aCanvas819);
 		Static2.method1276(-105);
-		RT4GL.method1621(Class49.aCanvas819, Class135.anInt2189 * 2);
+		RT4GL.method1621(Static2.aCanvas819, Class135.anInt2189 * 2);
 		Class14_Sub2_Sub12.method319(-31);
 		Class132.method1779(0);
 		Class132.aLong2169 = 0L;

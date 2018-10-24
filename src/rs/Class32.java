@@ -701,7 +701,7 @@ public class Class32 {
 
 	public static void method1072(Class9 class9, byte i) {
 		Static2.aClass9_372 = class9;
-		Class131.anInt2159 = Static2.aClass9_372.method177(4, 13537);
+		Class131.anInt2159 = Static2.aClass9_372.method177(4);
 		if (i >= -14)
 			method1074(-76, -127);
 	}

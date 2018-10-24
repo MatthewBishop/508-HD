@@ -23,7 +23,7 @@ public abstract class Class129 {
 		Class14_Sub2_Sub12.spriteYOffsets = null;
 		if (i > 2) {
 			Class12.spritePaletteIndicators = null;
-			Class76.spriteHeights = null;
+			Static2.spriteHeights = null;
 			Class17.spriteWidths = null;
 			Class40.spriteXOffsets = null;
 			JunkTex.spritePalette = null;

@@ -6,6 +6,7 @@ package rs;
 import java.security.MessageDigest;
 
 import com.jagex.io.Buffer;
+import com.jagex.io.js5.Class76;
 import com.jagex.io.js5.Class9;
 import com.jagex.map.SceneCluster;
 import com.jagex.rt4.AbstractSprite;

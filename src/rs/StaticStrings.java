@@ -25,7 +25,7 @@ public class StaticStrings {
 		JunkTex.aClass124_4368 = Class110.aClass124_1849;
 		Class7_Sub2.aClass124_2672 = JunkTex.aClass124_4632;
 		Class111.aClass124_1864 = Class14_Sub2_Sub3.aClass124_3778;
-		JunkTex.aClass124_4264 = Class76.aClass124_1203;
+		JunkTex.aClass124_4264 = Static2.aClass124_1203;
 		JunkTex.aClass124_4330 = Class7_Sub3_Sub1.aClass124_3711;
 		Class14_Sub28.aClass124_3226 = JunkTex.aClass124_4259;
 		Class14_Sub30.aClass124_3274 = JunkTex.aClass124_4224;
@@ -45,7 +45,7 @@ public class StaticStrings {
 		Class48.aClass124_797 = Class102.aClass124_1710;
 		Class12.aClass124_328 = Class14_Sub2_Sub7.aClass124_3821;
 		JunkTex.aClass124_694 = Class59.aClass124_956;
-		Class117.aClass124_1941 = Class1.aClass124_71;
+		Static2.aClass124_1941 = Class1.aClass124_71;
 		Static2.aClass124_2872 = Class115.aClass124_1910;
 		Class14_Sub11.aClass124_2943 = OverlayType.aClass124_2425;
 		Static2.aClass124_4886 = JunkTex.aClass124_4100;

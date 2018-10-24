@@ -3,14 +3,12 @@
  */
 package rs;
 
-import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.AtmosphericEffects;
 
 public class Class62 {
 	public static int anInt988 = 0;
-	public static Buffer aClass14_Sub10_989;
 	public static int anInt990 = 0;
 	public static SoftCache aClass52_991 = new SoftCache(30);
 	public static int[] anIntArray992;
@@ -25,16 +23,15 @@ public class Class62 {
 		aClass124_995 = null;
 		if (i > 33) {
 			aClass9_993 = null;
-			aClass14_Sub10_989 = null;
 		}
 	}
 
 	public static void method1275(int i, int i_0_, int i_1_) {
 		Class82.anInt1330 = OverlayType.aClass71ArrayArray2421[i][i_0_].lightX;
-		Class49.anInt815 = OverlayType.aClass71ArrayArray2421[i][i_0_].lightY;
+		Static2.anInt815 = OverlayType.aClass71ArrayArray2421[i][i_0_].lightY;
 		if (i_1_ == 1) {
 			JunkTex.anInt847 = OverlayType.aClass71ArrayArray2421[i][i_0_].lightZ;
-			AtmosphericEffects.setSunPosition(Class82.anInt1330, Class49.anInt815, JunkTex.anInt847);
+			AtmosphericEffects.setSunPosition(Class82.anInt1330, Static2.anInt815, JunkTex.anInt847);
 		}
 	}
 }

@@ -15,12 +15,12 @@ public class AnimFrameLoader extends Cacheable {
 
 	public AnimFrameLoader(Class9 class9, Class9 class9_9_, int i, boolean bool) {
 		Deque deque = new Deque();
-		int i_10_ = class9.method177(i, 13537);
+		int i_10_ = class9.method177(i);
 		aClass143Array3951 = new AnimFrame[i_10_];
-		int[] is = class9.method176((byte) 45, i);
+		int[] is = class9.method176(i);
 		for (int i_11_ = 0; i_11_ < is.length; i_11_++) {
 			AnimFrameBase animframebase = null;
-			byte[] is_12_ = class9.method163(is[i_11_], i, 0);
+			byte[] is_12_ = class9.method163(is[i_11_], i);
 			int i_13_ = is_12_[1] & 0xff | is_12_[0] << 8 & 0xff00;
 			for (AnimFrameBase animframebase_14_ = (AnimFrameBase) deque.getFront(); animframebase_14_ != null; animframebase_14_ = (AnimFrameBase) deque.getNext()) {
 				if (animframebase_14_.anInt2805 == i_13_) {
@@ -31,9 +31,9 @@ public class AnimFrameLoader extends Cacheable {
 			if (animframebase == null) {
 				byte[] is_15_;
 				if (!bool)
-					is_15_ = class9_9_.method157(0, i_13_, 20983);
+					is_15_ = class9_9_.method157(0, i_13_);
 				else
-					is_15_ = class9_9_.method157(i_13_, 0, 20983);
+					is_15_ = class9_9_.method157(i_13_, 0);
 				animframebase = new AnimFrameBase(i_13_, is_15_);
 				deque.pushBack(animframebase);
 			}
@@ -47,24 +47,24 @@ public class AnimFrameLoader extends Cacheable {
 
 	public static AnimFrameLoader method933(Class9 class9, Class9 class9_19_, int i, byte i_20_, boolean bool) {
 		boolean bool_21_ = false;
-		int[] is = class9_19_.method176((byte) 84, i);
+		int[] is = class9_19_.method176(i);
 		bool_21_ = true;
-		is = class9_19_.method176((byte) 84, i);
+		is = class9_19_.method176(i);
 		if (i_20_ >= -52) {
 			AnimFrameLoader class14_sub2_sub15 = null;
 			return class14_sub2_sub15;
 		}
 		for (int i_22_ = 0; i_22_ < is.length; i_22_++) {
-			byte[] is_23_ = class9_19_.method157(is[i_22_], i, 20983);
+			byte[] is_23_ = class9_19_.method157(is[i_22_], i);
 			if (is_23_ == null)
 				bool_21_ = false;
 			else {
 				int i_24_ = is_23_[1] & 0xff | (is_23_[0] & 0xff) << 8;
 				byte[] is_25_;
 				if (bool)
-					is_25_ = class9.method157(i_24_, 0, 20983);
+					is_25_ = class9.method157(i_24_, 0);
 				else
-					is_25_ = class9.method157(0, i_24_, 20983);
+					is_25_ = class9.method157(0, i_24_);
 				if (is_25_ == null)
 					bool_21_ = false;
 			}

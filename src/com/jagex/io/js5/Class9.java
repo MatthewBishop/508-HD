@@ -3,13 +3,11 @@
  */
 package com.jagex.io.js5;
 
+import com.jagex.cache.fs.StaticFileSystem;
 import com.jagex.io.Buffer;
 import com.jagex.util.ArrayUtils;
 
 import rs.Class124;
-import rs.Class133_Sub1;
-import rs.Class7_Sub3_Sub1;
-import rs.Static2;
 
 public abstract class Class9 {
 	public boolean aBoolean220;
@@ -32,19 +30,19 @@ public abstract class Class9 {
 	public Object[][] anObjectArrayArray237;
 
 	public int[] groupFileCount;
+	public static boolean aBoolean4245 = false;
+	public static boolean aBoolean3499 = false;
 
 	public Class9(boolean bool, boolean bool_107_) {
 		aBoolean244 = bool_107_;
 		aBoolean220 = bool;
 	}
 
-	public int getCompletion(int i, int i_108_) {
-		if (!method153(i_108_, i ^ 0xffffffff)) {
+	public int getCompletion(int i_108_) {
+		if (!method153(i_108_)) {
 			int i_109_ = 0;
 			return i_109_;
 		}
-		if (i != 0)
-			method175((byte) 16, false, true);
 		if (anObjectArray192[i_108_] != null) {
 			int i_110_ = 100;
 			return i_110_;
@@ -53,12 +51,10 @@ public abstract class Class9 {
 		return i_111_;
 	}
 
-	public int method146(Class124 class124, int i) {
+	public int method146(Class124 class124) {
 		class124 = class124.method1716((byte) 63);
 		int i_0_ = aClass63_219.method1283(-9, class124.method1709(86));
-		if (i != 0)
-			anIntArrayArray198 = null;
-		if (!method153(i_0_, -1)) {
+		if (!method153(i_0_)) {
 			int i_1_ = -1;
 			return i_1_;
 		}
@@ -66,11 +62,9 @@ public abstract class Class9 {
 		return i_2_;
 	}
 
-	public void method147(byte[] is, int i) {
-		if (i != 15)
-			Static2.anIntArray212 = null;
+	public void method147(byte[] is) {
 		anInt242 = Buffer.method1303(is, is.length);
-		Buffer class14_sub10 = new Buffer(Class7_Sub3_Sub1.method139(-28009, is));
+		Buffer class14_sub10 = new Buffer(StaticFileSystem.unpackContainer(is));
 		int i_3_ = class14_sub10.readUByte();
 		if (i_3_ != 5 && i_3_ != 6)
 			throw new RuntimeException(new StringBuilder("Incorrect JS5 protocol number: ").append(i_3_).toString());
@@ -146,7 +140,7 @@ public abstract class Class9 {
 
 	public boolean method148(int i, int i_25_, int i_26_) {
 		if (i_26_ < (i_25_ ^ 0xffffffff) || i < 0 || i_25_ >= anIntArray208.length || i >= anIntArray208[i_25_]) {
-			if (Class133_Sub1.aBoolean3499)
+			if (Class9.aBoolean3499)
 				throw new IllegalArgumentException(
 						new StringBuilder(String.valueOf(i_25_)).append(",").append(i).toString());
 			boolean bool = false;
@@ -156,25 +150,23 @@ public abstract class Class9 {
 		return bool;
 	}
 
-	public byte[] method149(int i, int i_27_, int[] is, int i_28_) {
+	public byte[] method149(int i_27_, int[] is, int i_28_) {
 		if (!method148(i_27_, i_28_, -1)) {
 			byte[] is_29_ = null;
 			return is_29_;
 		}
 		if (anObjectArrayArray237[i_28_] == null || anObjectArrayArray237[i_28_][i_27_] == null) {
-			boolean bool = method156((byte) -17, i_28_, is);
+			boolean bool = method156(i_28_, is);
 			if (!bool) {
 				method164(-128, i_28_);
-				bool = method156((byte) -107, i_28_, is);
+				bool = method156(i_28_, is);
 				if (!bool) {
 					byte[] is_30_ = null;
 					return is_30_;
 				}
 			}
 		}
-		if (i != -23245)
-			anObjectArrayArray237 = null;
-		byte[] is_31_ = Static2.method1282(anObjectArrayArray237[i_28_][i_27_], (byte) 91, false);
+		byte[] is_31_ = Class9.method1282(anObjectArrayArray237[i_28_][i_27_], false);
 		if (aBoolean244) {
 			anObjectArrayArray237[i_28_][i_27_] = null;
 			if (anIntArray208[i_28_] == 1)
@@ -184,12 +176,10 @@ public abstract class Class9 {
 		return is_32_;
 	}
 
-	public int method151(Class124 class124, int i) {
+	public int method151(Class124 class124) {
 		class124 = class124.method1716((byte) 63);
-		if (i >= -119)
-			anIntArray208 = null;
 		int i_33_ = aClass63_219.method1283(-9, class124.method1709(108));
-		int i_34_ = getCompletion(0, i_33_);
+		int i_34_ = getCompletion(i_33_);
 		return i_34_;
 	}
 
@@ -198,11 +188,9 @@ public abstract class Class9 {
 			anObjectArrayArray237[i_35_] = null;
 	}
 
-	public boolean method153(int i, int i_36_) {
-		if (i_36_ != -1)
-			Static2.aClass52_236 = null;
+	public boolean method153(int i) {
 		if (i < 0 || anIntArray208.length <= i || anIntArray208[i] == 0) {
-			if (!Class133_Sub1.aBoolean3499) {
+			if (!Class9.aBoolean3499) {
 				boolean bool = false;
 				return bool;
 			}
@@ -211,17 +199,13 @@ public abstract class Class9 {
 		return true;
 	}
 
-	public int method155(int i) {
-		if (i != 6756) {
-			int i_37_ = -40;
-			return i_37_;
-		}
+	public int method155() {
 		int i_38_ = anIntArray208.length;
 		return i_38_;
 	}
 
-	public boolean method156(byte i, int i_39_, int[] is) {
-		if (!method153(i_39_, -1)) {
+	public boolean method156(int i_39_, int[] is) {
+		if (!method153(i_39_)) {
 			boolean bool = false;
 			return bool;
 		}
@@ -235,10 +219,6 @@ public abstract class Class9 {
 			anObjectArrayArray237[i_39_] = new Object[anIntArray208[i_39_]];
 		Object[] objects = anObjectArrayArray237[i_39_];
 		boolean bool = true;
-		if (i > -10) {
-			boolean bool_42_ = false;
-			return bool_42_;
-		}
 		for (int i_43_ = 0; i_43_ < i_41_; i_43_++) {
 			int i_44_;
 			if (is_40_ != null)
@@ -256,13 +236,13 @@ public abstract class Class9 {
 		}
 		byte[] is_46_;
 		if (is == null || is[0] == 0 && is[1] == 0 && is[2] == 0 && is[3] == 0)
-			is_46_ = Static2.method1282(anObjectArray192[i_39_], (byte) 89, false);
+			is_46_ = Class9.method1282(anObjectArray192[i_39_], false);
 		else {
-			is_46_ = Static2.method1282(anObjectArray192[i_39_], (byte) 48, true);
+			is_46_ = Class9.method1282(anObjectArray192[i_39_], true);
 			Buffer class14_sub10 = new Buffer(is_46_);
 			class14_sub10.method799(is, class14_sub10.payload.length, 14802, 5);
 		}
-		byte[] is_47_ = Class7_Sub3_Sub1.method139(-28009, is_46_);
+		byte[] is_47_ = StaticFileSystem.unpackContainer(is_46_);
 		if (aBoolean220)
 			anObjectArray192[i_39_] = null;
 		if (i_41_ > 1) {
@@ -302,7 +282,7 @@ public abstract class Class9 {
 				else
 					i_61_ = i_60_;
 				if (!aBoolean244)
-					objects[i_61_] = Static2.method251(false, is_54_[i_60_], -125);
+					objects[i_61_] = Class9.wrapBuffer(false, is_54_[i_60_]);
 				else
 					objects[i_61_] = is_54_[i_60_];
 			}
@@ -315,36 +295,34 @@ public abstract class Class9 {
 			if (aBoolean244)
 				objects[i_62_] = is_47_;
 			else
-				objects[i_62_] = Static2.method251(false, is_47_, -83);
+				objects[i_62_] = Class9.wrapBuffer(false, is_47_);
 		}
 		boolean bool_63_ = true;
 		return bool_63_;
 	}
 
-	public byte[] method157(int i, int i_64_, int i_65_) {
-		if (i_65_ != 20983)
-			Static2.aClass124_207 = null;
+	public byte[] method157(int i, int i_64_) {
 		if (!method148(i, i_64_, -1)) {
 			byte[] is = null;
 			return is;
 		}
 		if (anObjectArrayArray237[i_64_] == null || anObjectArrayArray237[i_64_][i] == null) {
-			boolean bool = method156((byte) -19, i_64_, null);
+			boolean bool = method156(i_64_, null);
 			if (!bool) {
 				method164(77, i_64_);
-				bool = method156((byte) -88, i_64_, null);
+				bool = method156(i_64_, null);
 				if (!bool) {
 					byte[] is = null;
 					return is;
 				}
 			}
 		}
-		byte[] is = Static2.method1282(anObjectArrayArray237[i_64_][i], (byte) 39, false);
+		byte[] is = Class9.method1282(anObjectArrayArray237[i_64_][i], false);
 		byte[] is_66_ = is;
 		return is_66_;
 	}
 
-	public boolean method158(int i, int i_67_, byte i_68_) {
+	public boolean method158(int i, int i_67_) {
 		if (!method148(i, i_67_, -1)) {
 			boolean bool = false;
 			return bool;
@@ -358,7 +336,6 @@ public abstract class Class9 {
 			return bool;
 		}
 		method164(108, i_67_);
-		int i_69_ = 26 % ((i_68_ + 22) / 62);
 		if (anObjectArray192[i_67_] != null) {
 			boolean bool = true;
 			return bool;
@@ -367,32 +344,28 @@ public abstract class Class9 {
 		return bool;
 	}
 
-	public boolean method159(int i, Class124 class124, Class124 class124_70_) {
+	public boolean method159(Class124 class124, Class124 class124_70_) {
 		class124_70_ = class124_70_.method1716((byte) 63);
 		class124 = class124.method1716((byte) 63);
-		int i_71_ = aClass63_219.method1283(i - 13, class124_70_.method1709(49));
-		if (!method153(i_71_, -1)) {
+		int i_71_ = aClass63_219.method1283(4 - 13, class124_70_.method1709(49));
+		if (!method153(i_71_)) {
 			boolean bool = false;
 			return bool;
 		}
 		int i_72_ = aClass63Array213[i_71_].method1283(-9, class124.method1709(93));
-		if (i != 4)
-			anIntArrayArray218 = null;
-		boolean bool = method158(i_72_, i_71_, (byte) 79);
+		boolean bool = method158(i_72_, i_71_);
 		return bool;
 	}
 
-	public boolean method160(Class124 class124, byte i) {
+	public boolean method160(Class124 class124) {
 		class124 = class124.method1716((byte) 63);
-		if (i != -102)
-			Static2.anIntArray215 = null;
 		int i_73_ = aClass63_219.method1283(-9, class124.method1709(111));
-		boolean bool = method161((byte) 116, i_73_);
+		boolean bool = method161(i_73_);
 		return bool;
 	}
 
-	public boolean method161(byte i, int i_74_) {
-		if (!method153(i_74_, -1)) {
+	public boolean method161(int i_74_) {
+		if (!method153(i_74_)) {
 			boolean bool = false;
 			return bool;
 		}
@@ -400,11 +373,7 @@ public abstract class Class9 {
 			boolean bool = true;
 			return bool;
 		}
-		method164(i - 243, i_74_);
-		if (i != 116) {
-			boolean bool = true;
-			return bool;
-		}
+		method164(116 - 243, i_74_);
 		if (anObjectArray192[i_74_] != null) {
 			boolean bool = true;
 			return bool;
@@ -413,44 +382,38 @@ public abstract class Class9 {
 		return bool;
 	}
 
-	public void method162(byte i, Class124 class124) {
+	public void method162(Class124 class124) {
 		class124 = class124.method1716((byte) 63);
 		int i_75_ = aClass63_219.method1283(-9, class124.method1709(57));
-		method174((byte) -92, i_75_);
-		if (i != -106)
-			method168(97, (byte) -53);
+		method174(i_75_);
 	}
 
-	public byte[] method163(int i, int i_76_, int i_77_) {
-		if (i_77_ != 0)
-			Static2.aClass124_221 = null;
-		byte[] is = method149(-23245, i, null, i_76_);
+	public byte[] method163(int i, int i_76_) {
+		byte[] is = method149(i, null, i_76_);
 		return is;
 	}
 
 	public void method164(int i, int i_78_) {
-		int i_79_ = -111 % ((-86 - i) / 36);
+
 	}
 
-	public byte[] getFileSmart(int i, int i_80_) {
+	public byte[] getFileSmart(int i_80_) {
 		if (anIntArray208.length == 1) {
-			byte[] is = method163(i_80_, 0, 0);
+			byte[] is = method163(i_80_, 0);
 			return is;
 		}
-		if (!method153(i_80_, -1)) {
+		if (!method153(i_80_)) {
 			byte[] is = null;
 			return is;
 		}
-		int i_81_ = 109 / ((-20 - i) / 56);
 		if (anIntArray208[i_80_] == 1) {
-			byte[] is = method163(0, i_80_, 0);
+			byte[] is = method163(0, i_80_);
 			return is;
 		}
 		throw new RuntimeException();
 	}
 
-	public boolean method166(byte i, Class124 class124) {
-		int i_82_ = 41 % ((i - 56) / 58);
+	public boolean method166(Class124 class124) {
 		class124 = class124.method1716((byte) 63);
 		int i_83_ = aClass63_219.method1283(-9, class124.method1709(108));
 		if (i_83_ < 0) {
@@ -461,31 +424,26 @@ public abstract class Class9 {
 		return bool;
 	}
 
-	public byte[] method167(Class124 class124, Class124 class124_84_, int i) {
+	public byte[] method167(Class124 class124, Class124 class124_84_) {
 		class124 = class124.method1716((byte) 63);
-		int i_85_ = 125 % ((i - 3) / 60);
 		class124_84_ = class124_84_.method1716((byte) 63);
 		int i_86_ = aClass63_219.method1283(-9, class124.method1709(99));
-		if (!method153(i_86_, -1)) {
+		if (!method153(i_86_)) {
 			byte[] is = null;
 			return is;
 		}
-		i_85_ = aClass63Array213[i_86_].method1283(-9, class124_84_.method1709(74));
-		byte[] is = method163(i_85_, i_86_, 0);
+		int i_85_ = aClass63Array213[i_86_].method1283(-9, class124_84_.method1709(74));
+		byte[] is = method163(i_85_, i_86_);
 		return is;
 	}
 
-	public void method168(int i, byte i_87_) {
-		if (method153(i, -1)) {
+	public void method168(int i) {
+		if (method153(i)) {
 			anObjectArrayArray237[i] = null;
-			if (i_87_ != -90)
-				method160(null, (byte) -8);
 		}
 	}
 
-	public boolean method170(boolean bool) {
-		if (bool)
-			Static2.aClass124_227 = null;
+	public boolean method170() {
 		boolean bool_88_ = true;
 		for (int i = 0; i < anIntArray223.length; i++) {
 			int i_89_ = anIntArray223[i];
@@ -501,15 +459,15 @@ public abstract class Class9 {
 
 	public boolean method171(int i_91_) {
 		if (1 == anIntArray208.length) {
-			boolean bool = method158(i_91_, 0, (byte) 100);
+			boolean bool = method158(i_91_, 0);
 			return bool;
 		}
-		if (!method153(i_91_, 29499 - 29500)) {
+		if (!method153(i_91_)) {
 			boolean bool = false;
 			return bool;
 		}
 		if (anIntArray208[i_91_] == 1) {
-			boolean bool = method158(0, i_91_, (byte) 49);
+			boolean bool = method158(0, i_91_);
 			return bool;
 		}
 		throw new RuntimeException();
@@ -520,7 +478,7 @@ public abstract class Class9 {
 		int i_93_ = 0;
 		for (int i_94_ = 0; anObjectArray192.length > i_94_; i_94_++) {
 			if (groupFileCount[i_94_] > 0) {
-				i_93_ += getCompletion(0, i_94_);
+				i_93_ += getCompletion(i_94_);
 				i_92_ += 100;
 			}
 		}
@@ -533,13 +491,11 @@ public abstract class Class9 {
 		return i_97_;
 	}
 
-	public void method174(byte i, int i_98_) {
+	public void method174(int i_98_) {
 		/* empty */
 	}
 
-	public void method175(byte i, boolean bool, boolean bool_99_) {
-		if (i != -99)
-			Static2.aClass52_236 = null;
+	public void method175(boolean bool, boolean bool_99_) {
 		if (bool_99_) {
 			aClass63_219 = null;
 			anIntArray197 = null;
@@ -550,12 +506,8 @@ public abstract class Class9 {
 		}
 	}
 
-	public int[] method176(byte i, int i_100_) {
-		if (i < 1) {
-			int[] is = null;
-			return is;
-		}
-		if (!method153(i_100_, -1)) {
+	public int[] method176(int i_100_) {
+		if (!method153(i_100_)) {
 			int[] is = null;
 			return is;
 		}
@@ -569,16 +521,70 @@ public abstract class Class9 {
 		return is_102_;
 	}
 
-	public int method177(int i, int i_103_) {
-		if (i_103_ != 13537) {
-			int i_104_ = -39;
-			return i_104_;
-		}
-		if (!method153(i, i_103_ - 13538)) {
+	public int method177(int i) {
+		if (!method153(i)) {
 			int i_105_ = 0;
 			return i_105_;
 		}
 		int i_106_ = anIntArray208[i];
 		return i_106_;
+	}
+
+	public static byte[] method616(byte[] is) {
+		int i_1_ = is.length;
+		byte[] is_2_ = new byte[i_1_];
+		ArrayUtils.method1322(is, 0, is_2_, 0, i_1_);
+		byte[] is_3_ = is_2_;
+		return is_3_;
+	}
+
+	public static Object wrapBuffer(boolean bool, byte[] is) {
+		if (is == null) {
+			Object object = null;
+			return object;
+		}
+		do {
+			if (136 < is.length && !Class9.aBoolean4245) {
+				DataWrapper class126;
+				try {
+					DataWrapper class126_1_ = ((DataWrapper) Class.forName("com.jagex.io.js5.DataWrapper").newInstance());
+					class126_1_.method1740(is, 101);
+					class126 = class126_1_;
+				} catch (Throwable throwable) {
+					Throwable throwable_2_ = new Throwable();
+					Class9.aBoolean4245 = true;
+					break;
+				}
+				return class126;
+			}
+		} while (false);
+		if (bool) {
+			byte[] is_3_ = Class9.method616(is);
+			return is_3_;
+		}
+		byte[] is_4_ = is;
+		return is_4_;
+	}
+
+	public static byte[] method1282(Object object, boolean bool) {
+		if (object == null) {
+			byte[] is = null;
+			return is;
+		}
+		if (object instanceof byte[]) {
+			byte[] is = (byte[]) object;
+			if (!bool) {
+				byte[] is_7_ = is;
+				return is_7_;
+			}
+			byte[] is_8_ = Class9.method616(is);
+			return is_8_;
+		}
+		if (object instanceof DataWrapper) {
+			DataWrapper class126 = (DataWrapper) object;
+			byte[] is = class126.method1745((byte) -45);
+			return is;
+		}
+		throw new IllegalArgumentException();
 	}
 }

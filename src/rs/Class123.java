@@ -64,8 +64,8 @@ public class Class123 {
 		if (i >= -12)
 			method1662(87, null, 24);
 		JunkTex.aClass9_4193 = class9_11_;
-		int i_12_ = Class15.aClass9_384.method155(6756) - 1;
-		Class108.anInt1816 = Class15.aClass9_384.method177(i_12_, 13537) + i_12_ * 256;
+		int i_12_ = Class15.aClass9_384.method155() - 1;
+		Class108.anInt1816 = Class15.aClass9_384.method177(i_12_) + i_12_ * 256;
 		Class4.aClass14_Sub2_Sub16_Sub1_137 = class14_sub2_sub16_sub1;
 	}
 }

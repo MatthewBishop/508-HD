@@ -41,7 +41,7 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 
 	public static void method317(byte i) {
 		if (!Class128.method1755(130068615) && Class142.anInt2295 != Class14_Sub2_Sub3.gameLevel)
-			Class45.method1162(Class49.anInt818, Class129.anInt2133, Class14_Sub2_Sub3.gameLevel,
+			Class45.method1162(Static2.anInt818, Class129.anInt2133, Class14_Sub2_Sub3.gameLevel,
 					(Class14_Sub3.aClass133_Sub1_Sub1_2748.anIntArray3443[0]), (byte) -117,
 					(Class14_Sub3.aClass133_Sub1_Sub1_2748.anIntArray3476[0]), false);
 		else {
@@ -75,9 +75,9 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 		Class14_Sub15.method871(Class14_Sub3.aClass9_Sub1_2750, Class64.aClass9_Sub1_1015, -125);
 		JunkTex.method85(Class14_Sub3.aClass9_Sub1_2750, true);
 		if (JunkTex.gameState == 10)
-			Class126.method1743(27252, 28);
+			Static2.method1743(27252, 28);
 		if ((JunkTex.gameState ^ 0xffffffff) == i)
-			Class126.method1743(27252, 25);
+			Static2.method1743(27252, 25);
 	}
 
 	public static void method320(byte i) {

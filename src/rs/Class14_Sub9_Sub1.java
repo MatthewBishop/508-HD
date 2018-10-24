@@ -37,16 +37,6 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 		aClass124_4831 = Class124.method263(1178, "");
 		aClass124_4761 = aClass124_4831;
 	}
-	public static void method696(byte i) {
-		Object object = JunkTex.anObject4417;
-		synchronized (object) {
-			if (Class138.anInt2223 == 0)
-				JunkTex.signlink.method1143(5, new Class24(), 0);
-			Class138.anInt2223 = 600;
-		}
-		if (i != -119)
-			aClass124_4790 = null;
-	}
 	public static void method700(int i, int i_24_, int i_25_) {
 		JunkTex.anIntArray4275[i] = i_25_;
 		Class14_Sub13 class14_sub13 = ((Class14_Sub13) JunkTex.aClass55_92.get(i));
@@ -226,10 +216,8 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 		aClass14_Sub9_Sub3_4835.method692(i);
 	}
 
-	public int method693(Class14_Sub18 class14_sub18, boolean bool) {
+	public int method693(Class14_Sub18 class14_sub18) {
 		int i = anIntArray4801[class14_sub18.anInt3053];
-		if (!bool)
-			method696((byte) 3);
 		if (i >= 8192) {
 			int i_0_ = (-((-class14_sub18.anInt3038 + 128) * (16384 - i) + 32 >> 6) + 16384);
 			return i_0_;
@@ -337,10 +325,10 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 				if (anIntArray4826[i_19_] == 0)
 					class14_sub18.aClass14_Sub9_Sub4_3051 = Class14_Sub9_Sub4.method763(class14_sub12_sub1,
 							method718(class14_sub18, -128), method698(-627246801, class14_sub18),
-							method693(class14_sub18, true));
+							method693(class14_sub18));
 				else {
 					class14_sub18.aClass14_Sub9_Sub4_3051 = Class14_Sub9_Sub4.method763(class14_sub12_sub1,
-							method718(class14_sub18, -113), 0, method693(class14_sub18, true));
+							method718(class14_sub18, -113), 0, method693(class14_sub18));
 					method705(106, class14_sub18, class14_sub28.aShortArray3223[i] < 0);
 				}
 				if (class14_sub28.aShortArray3223[i] < 0)
@@ -851,7 +839,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 			return bool_115_;
 		}
 		class14_sub18.aClass14_Sub9_Sub4_3051.method746(class14_sub18.anInt3048, method698(-627246801, class14_sub18),
-				method693(class14_sub18, true));
+				method693(class14_sub18));
 		boolean bool_116_ = false;
 		return bool_116_;
 	}

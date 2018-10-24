@@ -71,13 +71,13 @@ public class Class14_Sub17 extends Linkable {
 		AbstractSprite_Sub1[] class14_sub2_sub19_sub1s = new AbstractSprite_Sub1[Class32.spriteAmount];
 		for (int i_0_ = 0; i_0_ < Class32.spriteAmount; i_0_++) {
 			byte[] is = Class12.spritePaletteIndicators[i_0_];
-			int i_1_ = Class76.spriteHeights[i_0_] * Class17.spriteWidths[i_0_];
+			int i_1_ = Static2.spriteHeights[i_0_] * Class17.spriteWidths[i_0_];
 			int[] is_2_ = new int[i_1_];
 			for (int i_3_ = 0; i_3_ < i_1_; i_3_++)
 				is_2_[i_3_] = (JunkTex.spritePalette[JunkTex.method617(255, is[i_3_])]);
 			class14_sub2_sub19_sub1s[i_0_] = new AbstractSprite_Sub1(Class14_Sub11.spriteTrimWidth,
 					Class14_Sub30.spriteTrimHeight, Class40.spriteXOffsets[i_0_], (Class14_Sub2_Sub12.spriteYOffsets[i_0_]),
-					Class17.spriteWidths[i_0_], Class76.spriteHeights[i_0_], is_2_);
+					Class17.spriteWidths[i_0_], Static2.spriteHeights[i_0_], is_2_);
 		}
 		Class129.method1761((byte) 123);
 		AbstractSprite_Sub1[] class14_sub2_sub19_sub1s_4_ = class14_sub2_sub19_sub1s;

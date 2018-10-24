@@ -5,7 +5,6 @@ package com.jagex.map;
 
 import rs.Class102;
 import rs.Class104;
-import rs.Class114;
 import rs.Class133_Sub6;
 import rs.Class142;
 import rs.Class14_Sub2_Sub8;
@@ -234,12 +233,12 @@ public class Scenegraph {
 			return false;
 		int i_49_ = i_46_ << 7;
 		int i_50_ = i_47_ << 7;
-		if (method1310(i_49_ + 1, (Class114.tileHeights[i][i_46_][i_47_] + i_48_), i_50_ + 1)
-				&& method1310(i_49_ + 128 - 1, (Class114.tileHeights[i][i_46_ + 1][i_47_] + i_48_),
+		if (method1310(i_49_ + 1, (Static2.tileHeights[i][i_46_][i_47_] + i_48_), i_50_ + 1)
+				&& method1310(i_49_ + 128 - 1, (Static2.tileHeights[i][i_46_ + 1][i_47_] + i_48_),
 						i_50_ + 1)
-				&& method1310(i_49_ + 128 - 1, (Class114.tileHeights[i][i_46_ + 1][i_47_ + 1]) + i_48_,
+				&& method1310(i_49_ + 128 - 1, (Static2.tileHeights[i][i_46_ + 1][i_47_ + 1]) + i_48_,
 						i_50_ + 128 - 1)
-				&& method1310(i_49_ + 1, (Class114.tileHeights[i][i_46_][i_47_ + 1] + i_48_),
+				&& method1310(i_49_ + 1, (Static2.tileHeights[i][i_46_][i_47_ + 1] + i_48_),
 						i_50_ + 128 - 1))
 			return true;
 		return false;
@@ -253,11 +252,11 @@ public class Scenegraph {
 			return true;
 		int i_10_ = i_7_ << 7;
 		int i_11_ = i_8_ << 7;
-		if (method1310(i_10_ + 1, Class114.tileHeights[i][i_7_][i_8_], i_11_ + 1)
-				&& method1310(i_10_ + 128 - 1, Class114.tileHeights[i][i_7_ + 1][i_8_], i_11_ + 1)
-				&& method1310(i_10_ + 128 - 1, (Class114.tileHeights[i][i_7_ + 1][i_8_ + 1]),
+		if (method1310(i_10_ + 1, Static2.tileHeights[i][i_7_][i_8_], i_11_ + 1)
+				&& method1310(i_10_ + 128 - 1, Static2.tileHeights[i][i_7_ + 1][i_8_], i_11_ + 1)
+				&& method1310(i_10_ + 128 - 1, (Static2.tileHeights[i][i_7_ + 1][i_8_ + 1]),
 						i_11_ + 128 - 1)
-				&& method1310(i_10_ + 1, Class114.tileHeights[i][i_7_][i_8_ + 1], i_11_ + 128 - 1)) {
+				&& method1310(i_10_ + 1, Static2.tileHeights[i][i_7_][i_8_ + 1], i_11_ + 128 - 1)) {
 			JunkTex.anIntArrayArrayArray2724[i][i_7_][i_8_] = Class67.anInt1059;
 			return true;
 		}
@@ -270,7 +269,7 @@ public class Scenegraph {
 			return false;
 		int i_15_ = i_12_ << 7;
 		int i_16_ = i_13_ << 7;
-		int i_17_ = Class114.tileHeights[i][i_12_][i_13_] - 1;
+		int i_17_ = Static2.tileHeights[i][i_12_][i_13_] - 1;
 		int i_18_ = i_17_ - 120;
 		int i_19_ = i_17_ - 230;
 		int i_20_ = i_17_ - 238;

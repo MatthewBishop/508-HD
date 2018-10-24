@@ -8,7 +8,7 @@ import java.awt.event.FocusListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.io.js5.SFSS;
 
 public class Class141 implements KeyListener, FocusListener {
 	public static Class94 aClass94_2239;
@@ -16,11 +16,8 @@ public class Class141 implements KeyListener, FocusListener {
 	public static volatile boolean aBoolean2244;
 	public static int[] anIntArray2246 = new int[32];
 
-	public static Class9_Sub1[] aClass9_Sub1Array2253;
-
 	static {
 		aBoolean2244 = true;
-		aClass9_Sub1Array2253 = new Class9_Sub1[256];
 	}
 
 	public static void method1960(int i, int i_0_) {
@@ -93,7 +90,6 @@ public class Class141 implements KeyListener, FocusListener {
 	}
 
 	public static void method1962(boolean bool) {
-		aClass9_Sub1Array2253 = null;
 		aClass94_2239 = null;
 		anIntArray2246 = null;
 		aClass87_2242 = null;

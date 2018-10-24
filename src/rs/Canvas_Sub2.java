@@ -97,7 +97,7 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 			Class133_Sub1_Sub2 class133_sub1_sub2 = Class14_Sub4.aClass133_Sub1_Sub2Array2785[i_12_];
 			JunkTex.anIntArray3965[JunkTex.anInt4306++] = i_12_;
 			class133_sub1_sub2.anInt3447 = Class14_Sub2_Sub20.anInt4064;
-			class133_sub1_sub2.aClass12_4949 = Class126
+			class133_sub1_sub2.aClass12_4949 = Static2
 					.method1744(JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 14), 170);
 			int i_13_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 1);
 			if (i_13_ == 1)

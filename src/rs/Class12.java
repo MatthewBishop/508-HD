@@ -97,7 +97,7 @@ public class Class12 {
 					boolean var8 = false;
 
 					for (int var9 = 0; var9 < this.anIntArray309.length; ++var9) {
-						if (!JunkTex.aClass9_429.method158(0, this.anIntArray309[var9], (byte) 109)) {
+						if (!JunkTex.aClass9_429.method158(0, this.anIntArray309[var9])) {
 							var8 = true;
 						}
 					}
@@ -207,7 +207,7 @@ public class Class12 {
 			int i_35_ = Class6.anIntArray148[i_29_];
 			int i_36_ = Class6.anIntArray148[i_30_];
 			if (((i_31_ - i_32_) * (i_36_ - i_35_) - (i_34_ - i_35_) * (i_33_ - i_32_)) > 0 && Class142.aBoolean2299
-					&& JunkTex.method549((Class14_Sub19.anInt3073 + Class3.anInt118),
+					&& JunkTex.method549((Static2.anInt3073 + Class3.anInt118),
 							(Static2.anInt3334 + Class3.anInt110), i_34_, i_35_, i_36_, i_31_, i_32_, i_33_)) {
 				Class66.anInt1039 = i_19_;
 				JunkTex.anInt4636 = i_20_;
@@ -238,7 +238,7 @@ public class Class12 {
 
 				for (int var2 = 0; this.anIntArray329.length > var2; ++var2) {
 					if (this.anIntArray329[var2] != -1) {
-						Class12 var3 = Class126.method1744(this.anIntArray329[var2], 170);
+						Class12 var3 = Static2.method1744(this.anIntArray329[var2], 170);
 						if (var3.anInt289 != -1 || var3.anInt301 != -1 || var3.anInt292 != -1) {
 							return true;
 						}
@@ -545,7 +545,7 @@ public class Class12 {
 				}
 
 				if (var2 >= 0 && this.anIntArray329.length - 1 > var2 && this.anIntArray329[var2] != -1) {
-					Class12 var7 = Class126.method1744(this.anIntArray329[var2], var1 + 188);
+					Class12 var7 = Static2.method1744(this.anIntArray329[var2], var1 + 188);
 					return var7;
 				} else {
 					int var3 = this.anIntArray329[this.anIntArray329.length - 1];
@@ -554,7 +554,7 @@ public class Class12 {
 						var4 = null;
 						return var4;
 					} else {
-						var4 = Class126.method1744(var3, 170);
+						var4 = Static2.method1744(var3, 170);
 						return var4;
 					}
 				}
@@ -567,7 +567,7 @@ public class Class12 {
 	public static void method218(int i, int i_105_, int i_106_, int i_107_, int i_108_, int i_109_, int i_110_,
 			int i_111_) {
 		try {
-			if (Class126.method1741((byte) -113, i_108_)) {
+			if (Static2.method1741((byte) -113, i_108_)) {
 				if (i != -30776)
 					aClass124_328 = null;
 				client.method55(Class1.aClass94ArrayArray75[i_108_], -1, i_110_, i_107_, i_111_, i_105_, i_106_,
@@ -703,7 +703,7 @@ public class Class12 {
 						boolean var5 = false;
 
 						for (int var6 = 0; this.anIntArray338.length > var6; ++var6) {
-							if (!JunkTex.aClass9_429.method158(0, this.anIntArray338[var6], (byte) -121)) {
+							if (!JunkTex.aClass9_429.method158(0, this.anIntArray338[var6])) {
 								var5 = true;
 							}
 						}

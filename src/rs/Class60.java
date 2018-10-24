@@ -48,7 +48,7 @@ public class Class60 {
 		int i_1_ = -21 / ((69 - i) / 37);
 		Class112.aClass52_1868.clear();
 		Class62.aClass52_991.clear();
-		Class49.aClass52_810.clear();
+		Static2.aClass52_810.clear();
 	}
 
 	public static boolean method1265(byte i, int i_2_, byte[] is, int i_3_) {

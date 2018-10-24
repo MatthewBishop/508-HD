@@ -76,17 +76,17 @@ public class Class7_Sub1 extends Class7 {
 						Class14_Sub21 class14_sub21 = new Class14_Sub21();
 						class14_sub21.aClass94_3116 = Class67.aClass94_1060;
 						class14_sub21.anInt3106 = i_7_;
-						class14_sub21.aClass94_3105 = Class14_Sub19.aClass94_3070;
+						class14_sub21.aClass94_3105 = Static2.aClass94_3070;
 						class14_sub21.anObjectArray3115 = Class67.aClass94_1060.anObjectArray1475;
 						class14_sub21.anInt3114 = i_8_;
 						Class133_Sub3.method1830(class14_sub21, -1976917689);
 					}
-					if (Class14_Sub19.aClass94_3070 != null && client.method57(Class67.aClass94_1060) != null) {
+					if (Static2.aClass94_3070 != null && client.method57(Class67.aClass94_1060) != null) {
 						JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(179);
-						JunkTex.aClass14_Sub10_Sub1_891.method803(Class14_Sub19.aClass94_3070.anInt1548, 88);
+						JunkTex.aClass14_Sub10_Sub1_891.method803(Static2.aClass94_3070.anInt1548, 88);
 						JunkTex.aClass14_Sub10_Sub1_891.method803(Class67.aClass94_1060.anInt1548, 127);
 						JunkTex.aClass14_Sub10_Sub1_891.method833((byte) 117, Class67.aClass94_1060.anInt1478);
-						JunkTex.aClass14_Sub10_Sub1_891.method838(-1676904088, Class14_Sub19.aClass94_3070.anInt1478);
+						JunkTex.aClass14_Sub10_Sub1_891.method838(-1676904088, Static2.aClass94_3070.anInt1478);
 					}
 				} else if ((Class103.anInt1730 != 1 && !Class127.method1754(128, (JunkTex.anInt4729) - 1))
 						|| JunkTex.anInt4729 <= 2) {

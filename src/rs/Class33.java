@@ -38,7 +38,7 @@ public class Class33 {
 					int i_6_ = Class14_Sub2_Sub3.gameLevel;
 					if (i_6_ < 3 && (JunkTex.tileFlags[1][i_4_][i_5_] & 0x2) == 2)
 						i_6_++;
-					int i_7_ = -Class114.tileHeights[i_6_][i_4_][i_5_] + i_2_;
+					int i_7_ = -Static2.tileHeights[i_6_][i_4_][i_5_] + i_2_;
 					if (i_7_ > i_3_)
 						i_3_ = i_7_;
 				}
@@ -75,7 +75,7 @@ public class Class33 {
 			return class14_sub2_sub16;
 		}
 		Class14_Sub2_Sub16_Sub2 class14_sub2_sub16_sub2 = new Class14_Sub2_Sub16_Sub2(is, Class40.spriteXOffsets,
-				Class14_Sub2_Sub12.spriteYOffsets, Class17.spriteWidths, Class76.spriteHeights,
+				Class14_Sub2_Sub12.spriteYOffsets, Class17.spriteWidths, Static2.spriteHeights,
 				Class12.spritePaletteIndicators);
 		Class129.method1761((byte) 5);
 		Class14_Sub2_Sub16_Sub2 class14_sub2_sub16_sub2_9_ = class14_sub2_sub16_sub2;

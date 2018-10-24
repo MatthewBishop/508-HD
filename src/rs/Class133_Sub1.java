@@ -65,7 +65,6 @@ public abstract class Class133_Sub1 extends Class133 {
 	public int anInt3495;
 	public int[] anIntArray3496;
 	public int anInt3498;
-	public static boolean aBoolean3499 = false;
 	public int anInt3500;
 	public int anInt3501;
 	public static Class124 aClass124_3502 = Class124.method263(1178, "; version=1; path=)4; domain=");
@@ -185,7 +184,7 @@ public abstract class Class133_Sub1 extends Class133 {
 			if (class124.method1717(40, Static2.aClass124_661))
 				Static2.method1508((byte) 90);
 			if (class124.method1717(40, Class44.aClass124_728))
-				Class126.method1743(i + 27245, 25);
+				Static2.method1743(i + 27245, 25);
 			if (class124.method1717(i + 33, Class142.aClass124_2321))
 				Class133_Sub6.aBoolean3663 = true;
 			if (class124.method1717(40, Class109.aClass124_1839))
@@ -205,7 +204,7 @@ public abstract class Class133_Sub1 extends Class133 {
 			if (class124.method1690(Class45.aClass124_750, 33)) {
 				Class124.anInt2494 = class124.method1696(12, 15).method1684((byte) 9).method1702(124);
 				Class15.method943((JunkTex.method515(
-						(new Class124[] { Class24.aClass124_474, Class83.method1407(108, (Class124.anInt2494)) }),
+						(new Class124[] { Static2.aClass124_474, Class83.method1407(108, (Class124.anInt2494)) }),
 						(byte) -53)), false, null, 0);
 			}
 			if (class124.method1717(40, Class120.aClass124_2012))
@@ -325,14 +324,14 @@ public abstract class Class133_Sub1 extends Class133 {
 									&& (!bool || i_47_ >= i_43_ || i_48_ >= i_45_ || i_48_ < i_39_ && i_47_ != i_38_)) {
 								Class14_Sub29 class14_sub29 = (JunkTex.aClass14_Sub29ArrayArrayArray3368[i_46_][i_47_][i_48_]);
 								if (class14_sub29 != null) {
-									int i_49_ = (((Class114.tileHeights[i_46_][i_47_][i_48_])
-											+ (Class114.tileHeights[i_46_][i_47_ + 1][i_48_])
-											+ (Class114.tileHeights[i_46_][i_47_][i_48_ + 1])
-											+ (Class114.tileHeights[i_46_][i_47_ + 1][i_48_ + 1])) / 4
-											- ((Class114.tileHeights[i][i_38_][i_39_])
-													+ (Class114.tileHeights[i][i_38_ + 1][i_39_])
-													+ (Class114.tileHeights[i][i_38_][i_39_ + 1])
-													+ (Class114.tileHeights[i][i_38_ + 1][i_39_ + 1])) / 4);
+									int i_49_ = (((Static2.tileHeights[i_46_][i_47_][i_48_])
+											+ (Static2.tileHeights[i_46_][i_47_ + 1][i_48_])
+											+ (Static2.tileHeights[i_46_][i_47_][i_48_ + 1])
+											+ (Static2.tileHeights[i_46_][i_47_ + 1][i_48_ + 1])) / 4
+											- ((Static2.tileHeights[i][i_38_][i_39_])
+													+ (Static2.tileHeights[i][i_38_ + 1][i_39_])
+													+ (Static2.tileHeights[i][i_38_][i_39_ + 1])
+													+ (Static2.tileHeights[i][i_38_ + 1][i_39_ + 1])) / 4);
 									Class113 class113 = class14_sub29.aClass113_3250;
 									if (class113 != null) {
 										if (class113.aClass133_1877.method1784())

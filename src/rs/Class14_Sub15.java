@@ -23,14 +23,14 @@ public class Class14_Sub15 extends Linkable {
 	}
 
 	public static void method871(Class9 class9, Class9 class9_0_, int i) {
-		Class56_Sub1.aClass14_Sub2_Sub16_3320 = Class14_Sub19.method888(-107, Class14_Sub2_Sub21.anInt4088, class9_0_,
+		Class56_Sub1.aClass14_Sub2_Sub16_3320 = Static2.method888(-107, Class14_Sub2_Sub21.anInt4088, class9_0_,
 				0, class9);
 		Class131.aClass14_Sub2_Sub16_Sub1_2160 = Class146.method1991(0, class9, class9_0_, -13824,
 				Class14_Sub2_Sub21.anInt4088);
-		Class84.aClass14_Sub2_Sub16_1344 = Class14_Sub19.method888(-110, JunkTex.anInt4367, class9_0_, 0,
+		Class84.aClass14_Sub2_Sub16_1344 = Static2.method888(-110, JunkTex.anInt4367, class9_0_, 0,
 				class9);
 		if (i <= -83)
-			Class133_Sub3.aClass14_Sub2_Sub16_3567 = Class14_Sub19.method888(-108, JunkTex.anInt4102,
+			Class133_Sub3.aClass14_Sub2_Sub16_3567 = Static2.method888(-108, JunkTex.anInt4102,
 					class9_0_, 0, class9);
 	}
 

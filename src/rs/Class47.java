@@ -306,8 +306,7 @@ public class Class47 {
 			Class51 class51_39_ = class51;
 			return class51_39_;
 		}
-		byte[] is = Class7_Sub1.aClass9_2652.method163(Class14_Sub15.method873(1023, i), Canvas_Sub2.method68(i, -1),
-				0);
+		byte[] is = Class7_Sub1.aClass9_2652.method163(Class14_Sub15.method873(1023, i), Canvas_Sub2.method68(i, -1));
 		Class51 class51_40_ = new Class51();
 		if (is != null)
 			class51_40_.method1198(new Buffer(is), 36);

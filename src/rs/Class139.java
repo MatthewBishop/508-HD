@@ -65,24 +65,22 @@ public class Class139 {
 								.method146((JunkTex.method515(
 										(new Class124[] { Class35.aClass124_601, Class83.method1407(43, i_9_),
 												Class111.aClass124_1866, Class83.method1407(81, i_10_) }),
-										(byte) -103)), 0));
+										(byte) -103))));
 						OverlayType.anIntArray2422[i_3_] = (Class14_Sub13.aClass9_Sub1_2958.method146(
 								(JunkTex.method515(
 										(new Class124[] { Class111.aClass124_1863, Class83.method1407(112, i_9_),
 												Class111.aClass124_1866, Class83.method1407(47, i_10_) }),
-										(byte) -21)),
-								0));
+										(byte) -21))));
 						JunkTex.anIntArray3955[i_3_] = (Class14_Sub13.aClass9_Sub1_2958
 								.method146((JunkTex.method515(
 										(new Class124[] { Class82.aClass124_1333, Class83.method1407(41, i_9_),
 												Class111.aClass124_1866, Class83.method1407(87, i_10_) }),
-										(byte) -123)), 0));
+										(byte) -123))));
 						JunkTex.anIntArray3119[i_3_] = (Class14_Sub13.aClass9_Sub1_2958
 								.method146(
 										(JunkTex.method515((new Class124[] {
 												Class133_Sub1_Sub1.aClass124_4943, Class83.method1407(94, i_9_),
-												Class111.aClass124_1866, Class83.method1407(47, i_10_) }), (byte) -39)),
-								0));
+												Class111.aClass124_1866, Class83.method1407(47, i_10_) }), (byte) -39))));
 					}
 					i_3_++;
 				}
@@ -149,22 +147,20 @@ public class Class139 {
 										.method146((JunkTex.method515(
 												(new Class124[] { Class35.aClass124_601, Class83.method1407(62, i_32_),
 														Class111.aClass124_1866, Class83.method1407(81, i_33_) }),
-												(byte) -40)), 0));
+												(byte) -40))));
 								OverlayType.anIntArray2422[i_19_] = (Class14_Sub13.aClass9_Sub1_2958.method146(
 										(JunkTex.method515((new Class124[] { Class111.aClass124_1863,
 												Class83.method1407(105, i_32_), Class111.aClass124_1866,
-												Class83.method1407(79, i_33_) }), (byte) -42)),
-										0));
+												Class83.method1407(79, i_33_) }), (byte) -42))));
 								JunkTex.anIntArray3955[i_19_] = (Class14_Sub13.aClass9_Sub1_2958
 										.method146((JunkTex.method515(
 												(new Class124[] { Class82.aClass124_1333, Class83.method1407(29, i_32_),
 														Class111.aClass124_1866, Class83.method1407(14, i_33_) }),
-												(byte) -88)), 0));
+												(byte) -88))));
 								JunkTex.anIntArray3119[i_19_] = (Class14_Sub13.aClass9_Sub1_2958.method146(
 										(JunkTex.method515((new Class124[] {
 												Class133_Sub1_Sub1.aClass124_4943, Class83.method1407(13, i_32_),
-												Class111.aClass124_1866, Class83.method1407(55, i_33_) }), (byte) -6)),
-										0));
+												Class111.aClass124_1866, Class83.method1407(55, i_33_) }), (byte) -6))));
 								i_19_++;
 							}
 						}
@@ -213,13 +209,13 @@ public class Class139 {
 				JunkTex.aClass14_Sub2_Sub19Array4595 = Class38.method1115(false,
 						Class14_Sub3.aClass9_Sub1_2750, 0, Static2.anInt371);
 			if (JunkTex.aClass148Array4580 == null)
-				JunkTex.aClass148Array4580 = Class126.method1747(0, JunkTex.anInt5098, 229,
+				JunkTex.aClass148Array4580 = Static2.method1747(0, JunkTex.anInt5098, 229,
 						Class14_Sub3.aClass9_Sub1_2750);
 			if (Class75.aClass148Array1184 == null)
-				Class75.aClass148Array1184 = Class126.method1747(0, JunkTex.anInt4532, 229,
+				Class75.aClass148Array1184 = Static2.method1747(0, JunkTex.anInt4532, 229,
 						Class14_Sub3.aClass9_Sub1_2750);
 			if (JunkTex.aClass148Array4473 == null)
-				JunkTex.aClass148Array4473 = Class126.method1747(0, Class127.anInt2118, 229,
+				JunkTex.aClass148Array4473 = Static2.method1747(0, Class127.anInt2118, 229,
 						Class14_Sub3.aClass9_Sub1_2750);
 			i_43_ = OverlayType.anInt2423 / 5;
 			int i_44_ = OverlayType.anInt2423 / 5 * 4;

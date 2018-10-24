@@ -67,7 +67,7 @@ public class Class66 {
 				if (Class51.anInt831 != 1) {
 					if (!Class14_Sub4.aBoolean2784) {
 						Class124[] class124s = class12.aClass124Array291;
-						if (Class49.aBoolean814)
+						if (Static2.aBoolean814)
 							class124s = Static2.method1545(5, class124s);
 						if (class124s != null) {
 							for (int i_33_ = 4; i_33_ >= 0; i_33_--) {

@@ -24,7 +24,7 @@ public class Class88 {
 		JunkTex.method560(-12501);
 		Class90.method1443(2);
 		int i_0_ = -49 / ((90 - i) / 36);
-		Class24.method991((byte) -2);
+		Static2.method991((byte) -2);
 		Static2.method1124(97);
 		Class14_Sub30.method941((byte) 11);
 		Class7_Sub3.method134(0);

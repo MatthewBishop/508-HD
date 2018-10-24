@@ -27,7 +27,7 @@ public class Class152 {
 	}
 
 	public static void method2044(Class9 class9, byte i) {
-		class9.method146(Class76.aClass124_1192, 0);
+		class9.method146(Static2.aClass124_1192);
 		if (i >= -123)
 			method2043(77);
 	}

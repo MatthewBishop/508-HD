@@ -22,7 +22,7 @@ public class Class109 {
 	public int anInt1845;
 
 	public static void method1563(int i, int i_0_) {
-		if (Class126.method1741((byte) 108, i)) {
+		if (Static2.method1741((byte) 108, i)) {
 			Class94[] class94s = Class1.aClass94ArrayArray75[i];
 			int i_1_ = -41 % ((43 - i_0_) / 47);
 			for (int i_2_ = 0; i_2_ < class94s.length; i_2_++) {
@@ -49,7 +49,7 @@ public class Class109 {
 			return class14_sub2_sub19_11_;
 		}
 		Class3.aBoolean103 = false;
-		AbstractSprite class14_sub2_sub19_12_ = Class49.method1194(false, i, i_6_, false, bool, i_5_, true, i_8_);
+		AbstractSprite class14_sub2_sub19_12_ = Static2.method1194(false, i, i_6_, false, bool, i_5_, true, i_8_);
 		if (class14_sub2_sub19_12_ != null && !Class3.aBoolean103)
 			Class70.aClass52_1077.put(class14_sub2_sub19_12_, l);
 		AbstractSprite class14_sub2_sub19_13_ = class14_sub2_sub19_12_;
@@ -88,7 +88,7 @@ public class Class109 {
 		if (i > -25)
 			aClass124_1836 = null;
 		Class118.method1608(-13873);
-		Class126.method1743(27252, 28);
+		Static2.method1743(27252, 28);
 	}
 
 	public static void method1569(int i, int i_23_) {

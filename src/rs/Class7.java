@@ -3,8 +3,6 @@
  */
 package rs;
 
-import java.util.zip.CRC32;
-
 import com.jagex.io.js5.Class9;
 import com.jagex.rt4.AbstractSprite;
 
@@ -20,7 +18,6 @@ public class Class7 {
 	public static Class124 aClass124_188;
 	public static Class124 aClass124_189;
 	public static Class124[] aClass124Array178;
-	public static CRC32 aCRC32_171 = new CRC32();
 	public static int anInt177;
 	public static int anInt179;
 	public static int anInt182;
@@ -84,7 +81,6 @@ public class Class7 {
 			aShortArray183 = null;
 			aClass124_181 = null;
 			aClass124_186 = null;
-			aCRC32_171 = null;
 		}
 	}
 }

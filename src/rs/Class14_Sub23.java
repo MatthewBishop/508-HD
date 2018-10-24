@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.io.js5.Class114;
 import com.jagex.link.Linkable;
 
 public class Class14_Sub23 extends Linkable {

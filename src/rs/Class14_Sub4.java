@@ -48,7 +48,7 @@ public class Class14_Sub4 extends Linkable {
 				int i_3_ = class14_sub29_0_.anInt3261;
 				Class14_Sub29[][] class14_sub29s = JunkTex.aClass14_Sub29ArrayArrayArray3368[i_2_];
 				float f = 0.0F;
-				if (OverlayType.anIntArrayArrayArray2419 == Class114.tileHeights) {
+				if (OverlayType.anIntArrayArrayArray2419 == Static2.tileHeights) {
 					int i_4_ = JunkTex.anIntArrayArray2799[i][i_1_];
 					int i_5_ = i_4_ & 0xffffff;
 					if (i_5_ != Class7_Sub1.anInt2653) {

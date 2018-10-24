@@ -465,7 +465,7 @@ public class Class116 {
 																} else if (i_6_ == 3107) {
 																	int i_40_ = (Class79.anIntArray1305[--i_3_]);
 																	Class124 class124 = (JunkTex.aClass124Array5101[--i_4_]);
-																	Class114.method1587(class124, 0, i_40_);
+																	Static2.method1587(class124, 0, i_40_);
 																} else if (i_6_ == 3108) {
 																	i_3_ -= 3;
 																	int i_41_ = (Class79.anIntArray1305[i_3_]);
@@ -634,13 +634,13 @@ public class Class116 {
 																	i_3_ -= 2;
 																	int i_70_ = (Class79.anIntArray1305[i_3_]);
 																	int i_71_ = (Class79.anIntArray1305[(i_3_ + 1)]);
-																	Class79.anIntArray1305[i_3_++] = (Class24
+																	Class79.anIntArray1305[i_3_++] = (Static2
 																			.method993(false, -28006, i_71_, i_70_));
 																} else if (i_6_ == 3332) {
 																	i_3_ -= 2;
 																	int i_72_ = (Class79.anIntArray1305[i_3_]);
 																	int i_73_ = (Class79.anIntArray1305[(i_3_ + 1)]);
-																	Class79.anIntArray1305[i_3_++] = (Class24
+																	Class79.anIntArray1305[i_3_++] = (Static2
 																			.method993(true, -28006, i_73_, i_72_));
 																} else {
 																	if (i_6_ != 3333)
@@ -825,7 +825,7 @@ public class Class116 {
 																			&& (i_92_ < Class42.anInt698))
 																		JunkTex.aClass124Array5101[i_4_++] = Static2
 																				.method1174(
-																						Class126.aLongArray2095[i_92_],
+																						Static2.aLongArray2095[i_92_],
 																						(byte) 76)
 																				.method1685(0);
 																	else
@@ -879,7 +879,7 @@ public class Class116 {
 																			|| (class124.method1690(
 																					Canvas_Sub1.aClass124_46, 33)))
 																		class124 = class124.method1696(7, 15);
-																	Class79.anIntArray1305[i_3_++] = (Class117
+																	Class79.anIntArray1305[i_3_++] = (Static2
 																			.method1601(class124, 6));
 																}
 															} else if (i_6_ >= 4000) {
@@ -982,7 +982,7 @@ public class Class116 {
 																						int i_104_ = -1;
 																						if (i_103_ < 100
 																								&& Static2.aClass124Array4024[i_103_] != null)
-																							i_104_ = Class114.anIntArray1902[i_103_];
+																							i_104_ = Static2.anIntArray1902[i_103_];
 																						Class79.anIntArray1305[i_3_++] = i_104_;
 																					} else if (i_6_ == 5005)
 																						Class79.anIntArray1305[i_3_++] = JunkTex.anInt4505;
@@ -2623,13 +2623,13 @@ public class Class116 {
 																						.method958((byte) 6, i_200_);
 																				if (class14_sub2_sub2
 																						.method261((byte) 42))
-																					JunkTex.aClass124Array5101[i_4_++] = Class126
+																					JunkTex.aClass124Array5101[i_4_++] = Static2
 																							.method1744(i_201_, 170)
 																							.method215(-103,
 																									class14_sub2_sub2.aClass124_3760,
 																									i_200_);
 																				else
-																					Class79.anIntArray1305[i_3_++] = Class126
+																					Class79.anIntArray1305[i_3_++] = Static2
 																							.method1744(i_201_,
 																									i_1_ + 91)
 																							.method214(i_1_ + 40,
@@ -2823,7 +2823,7 @@ public class Class116 {
 																		int i_224_ = Class79.anIntArray1305[i_3_];
 																		int i_225_ = Class79.anIntArray1305[i_3_ + 1];
 																		byte[] is_226_ = Class64.aClass9_Sub1_1015
-																				.method163(0, i_225_, i_1_ ^ 0x4f);
+																				.method163(0, i_225_);
 																		Class14_Sub2_Sub16_Sub1 class14_sub2_sub16_sub1 = new Class14_Sub2_Sub16_Sub1(
 																				is_226_);
 																		class14_sub2_sub16_sub1.method352(
@@ -2836,7 +2836,7 @@ public class Class116 {
 																		int i_227_ = Class79.anIntArray1305[i_3_];
 																		int i_228_ = Class79.anIntArray1305[i_3_ + 1];
 																		byte[] is_229_ = Class64.aClass9_Sub1_1015
-																				.method163(0, i_228_, 0);
+																				.method163(0, i_228_);
 																		Class14_Sub2_Sub16_Sub1 class14_sub2_sub16_sub1 = new Class14_Sub2_Sub16_Sub1(
 																				is_229_);
 																		class14_sub2_sub16_sub1.method352(

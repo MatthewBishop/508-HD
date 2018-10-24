@@ -5,7 +5,7 @@ package rs;
 
 import java.awt.Frame;
 
-import com.jagex.io.Buffer;
+import com.jagex.io.js5.SFSS;
 import com.jagex.link.Cacheable;
 import com.jagex.util.Util;
 
@@ -14,8 +14,6 @@ public class Class14_Sub2_Sub4 extends Cacheable {
 	public static int[] anIntArray3791;
 	public static Class124 aClass124_3793;
 	public static Class124 aClass124_3795 = Class124.method263(1178, "sl_flags");
-	public static Buffer aClass14_Sub10_3796;
-
 	static {
 		aClass124_3793 = Class124.method263(1178, " zuerst von Ihrer Freunde)2Liste(Q");
 		anIntArray3791 = new int[] { 2, 2, 4, 0, 1, 8, 0, 0, 0, 0, 2 };
@@ -41,7 +39,6 @@ public class Class14_Sub2_Sub4 extends Cacheable {
 	public static void method280(byte i) {
 		anIntArray3791 = null;
 		aClass124_3793 = null;
-		aClass14_Sub10_3796 = null;
 		aClass124_3795 = null;
 	}
 }

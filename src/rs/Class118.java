@@ -92,7 +92,7 @@ public class Class118 {
 						bool_9_ = true;
 					else {
 						for (int i_10_ = 0; i_10_ < Class42.anInt698; i_10_++) {
-							if (Class126.aLongArray2095[i_10_] == l) {
+							if (Static2.aLongArray2095[i_10_] == l) {
 								bool_9_ = true;
 								break;
 							}
@@ -100,21 +100,21 @@ public class Class118 {
 					}
 				}
 				if (!bool_9_ && JunkTex.anInt4754 == 0) {
-					Class14_Sub19.aClass14_Sub10_3068.position = 0;
+					Static2.aClass14_Sub10_3068.position = 0;
 					JunkTex.aClass14_Sub10_Sub1_4734.method824(i_7_, (byte) 76, 0,
-							Class14_Sub19.aClass14_Sub10_3068.payload);
+							Static2.aClass14_Sub10_3068.payload);
 					int i_11_ = -1;
-					Class14_Sub19.aClass14_Sub10_3068.position = 0;
+					Static2.aClass14_Sub10_3068.position = 0;
 					Class124 class124;
 					if (bool) {
-						Class98 class98 = Class86.method1422(i - 46, (Class14_Sub19.aClass14_Sub10_3068));
+						Class98 class98 = Class86.method1422(i - 46, (Static2.aClass14_Sub10_3068));
 						i_11_ = class98.anInt1663;
 						i_5_ &= 0x7fff;
 						class124 = (class98.aClass14_Sub2_Sub21_1662.method442(-103,
-								Class14_Sub19.aClass14_Sub10_3068));
+								Static2.aClass14_Sub10_3068));
 					} else
 						class124 = (Class14_Sub2_Sub16.method368(
-								Class75.method1337(Class14_Sub19.aClass14_Sub10_3068, 32767).method1677(i ^ 0x1)));
+								Class75.method1337(Static2.aClass14_Sub10_3068, 32767).method1677(i ^ 0x1)));
 					class133_sub1_sub1.aClass124_3462 = class124.method1684((byte) 9);
 					class133_sub1_sub1.anInt3473 = 150;
 					class133_sub1_sub1.anInt3439 = i_5_ & 0xff;
@@ -130,7 +130,7 @@ public class Class118 {
 									bool ? 17 : 1, class124, i_11_);
 					} else
 						JunkTex.method493((byte) -95, null,
-								(JunkTex.method515((new Class124[] { Class14_Sub19.aClass124_3075,
+								(JunkTex.method515((new Class124[] { Static2.aClass124_3075,
 										class133_sub1_sub1.method1808(true) }), (byte) -7)),
 								!bool ? 1 : 17, class124, i_11_);
 				}
@@ -185,7 +185,7 @@ public class Class118 {
 			Class14_Sub2_Sub12 class14_sub2_sub12_17_ = class14_sub2_sub12;
 			return class14_sub2_sub12_17_;
 		}
-		byte[] is = JunkTex.aClass9_Sub1_4521.method163(0, i, 0);
+		byte[] is = JunkTex.aClass9_Sub1_4521.method163(0, i);
 		if (is == null) {
 			class14_sub2_sub12 = null;
 			return class14_sub2_sub12;
@@ -317,32 +317,30 @@ public class Class118 {
 								(JunkTex.method515(
 										new Class124[] { Class35.aClass124_601, Class83.method1407(i + 13887, i_39_),
 												Class111.aClass124_1866, Class83.method1407(53, i_40_) },
-										(byte) -127)),
-								0));
+										(byte) -127))));
 				OverlayType.anIntArray2422[i_38_] = (Class14_Sub13.aClass9_Sub1_2958
 						.method146(
 								(JunkTex
 										.method515(
 												new Class124[] { Class111.aClass124_1863, Class83.method1407(18, i_39_),
 														Class111.aClass124_1866, Class83.method1407(39, i_40_) },
-												(byte) -50)),
-								0));
+												(byte) -50))));
 				Static2.anIntArray2590[i_38_] = (Class14_Sub13.aClass9_Sub1_2958
 						.method146((JunkTex.method515((new Class124[] {
 								Static2.aClass124_5079, Class83.method1407(115, i_39_),
-								Class111.aClass124_1866, Class83.method1407(i + 13934, i_40_) }), (byte) -59)), 0));
+								Class111.aClass124_1866, Class83.method1407(i + 13934, i_40_) }), (byte) -59))));
 				JunkTex.anIntArray3955[i_38_] = (Class14_Sub13.aClass9_Sub1_2958
 						.method146(
 								(JunkTex
 										.method515(
 												new Class124[] { Class82.aClass124_1333, Class83.method1407(99, i_39_),
 														Class111.aClass124_1866, Class83.method1407(82, i_40_) },
-												(byte) -44)),
-								0));
+												(byte) -44))
+								));
 				JunkTex.anIntArray3119[i_38_] = (Class14_Sub13.aClass9_Sub1_2958
 						.method146((JunkTex.method515(new Class124[] { Class133_Sub1_Sub1.aClass124_4943,
 								Class83.method1407(i + 13886, i_39_), Class111.aClass124_1866,
-								Class83.method1407(13, i_40_) }, (byte) -128)), 0));
+								Class83.method1407(13, i_40_) }, (byte) -128))));
 				if (Static2.anIntArray2590[i_38_] == -1) {
 					Class62.anIntArray992[i_38_] = -1;
 					OverlayType.anIntArray2422[i_38_] = -1;

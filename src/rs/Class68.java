@@ -43,16 +43,16 @@ public class Class68 {
 		int i_17_ = (i << 7) + (i_12_ << 38);
 		int i_18_ = (i_11_ << 6) + (i_7_ << 7);
 		int i_19_ = 0;
-		int[][] is = Class114.tileHeights[i_8_];
+		int[][] is = Static2.tileHeights[i_8_];
 		int i_20_ = ((is[i_13_][i_16_] + is[i_14_][i_16_] + is[i_13_][i_15_] + is[i_14_][i_15_]) >> 34);
 		if (i_8_ != 0) {
-			int[][] is_21_ = Class114.tileHeights[0];
+			int[][] is_21_ = Static2.tileHeights[0];
 			i_19_ = i_20_ - ((is_21_[i_14_][i_16_] + is_21_[i_13_][i_15_] + is_21_[i_14_][i_15_]
 					+ is_21_[i_13_][i_16_]) >> 34);
 		}
 		int[][] is_22_ = null;
 		if (i_8_ < 3)
-			is_22_ = Class114.tileHeights[i_8_ + 1];
+			is_22_ = Static2.tileHeights[i_8_ + 1];
 		Class86 class86 = class79.method1383(i_20_, i_5_, is, is_22_, false, i_3_, true, true, null, i_17_, i_18_);
 		ShadowManager.method2030(class86.aClass148_Sub1_1386, i_17_ - i_6_, i_19_, i_18_ - i_4_);
 	}

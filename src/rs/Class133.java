@@ -3,14 +3,10 @@
  */
 package rs;
 
-import java.io.IOException;
-
 import com.jagex.io.Buffer;
-import com.jagex.map.SceneCluster;
 import com.jagex.rt4.AbstractSprite_Sub1;
 import com.jagex.rt4.lights.Light;
 import com.jagex.rt4.lights.LightRenderer;
-import com.jagex.util.TimeUtil;
 
 public abstract class Class133 {
 	public static Class124 aClass124_2175 = Class124.method263(1178, "Spieler");
@@ -32,7 +28,7 @@ public abstract class Class133 {
 			Class35 class35_1_ = class35;
 			return class35_1_;
 		}
-		byte[] is = Class12.aClass9_332.method163(i_0_, 16, i - 111);
+		byte[] is = Class12.aClass9_332.method163(i_0_, 16);
 		Class35 class35_2_ = new Class35();
 		if (is != null)
 			class35_2_.method1094((byte) 102, new Buffer(is));
@@ -74,62 +70,6 @@ public abstract class Class133 {
 			JunkTex.aClass14_Sub10_Sub1_891.method809(((JunkTex.anIntArray4691[i_4_]) - i_7_));
 			JunkTex.aClass14_Sub10_Sub1_891.method789(((Class14_Sub2_Sub21.anIntArray4078[i_4_]) - i_8_), 273558984);
 		}
-	}
-
-	public static void method1783(Class36 class36, byte i, boolean bool) {
-		if (Class4.aClass36_134 != null) {
-			try {
-				Class4.aClass36_134.method1101((byte) 122);
-			} catch (Exception exception) {
-				/* empty */
-			}
-			Class4.aClass36_134 = null;
-		}
-		Class4.aClass36_134 = class36;
-		Class14_Sub3.method449(bool, i - 45);
-		Class62.aClass14_Sub10_989 = null;
-		Class14_Sub18.aClass14_Sub10_3036.position = 0;
-		JunkTex.aClass14_Sub2_Sub9_4354 = null;
-		Class14_Sub2_Sub3.anInt3769 = 0;
-		for (;;) {
-			Class14_Sub2_Sub9 class14_sub2_sub9 = ((Class14_Sub2_Sub9) JunkTex.aClass55_4112
-					.getFirst());
-			if (class14_sub2_sub9 == null)
-				break;
-			Static2.aClass55_1092.put(class14_sub2_sub9.key, class14_sub2_sub9);
-			Class14_Sub2_Sub8.anInt3833--;
-			JunkTex.anInt4612++;
-		}
-		for (;;) {
-			Class14_Sub2_Sub9 class14_sub2_sub9 = ((Class14_Sub2_Sub9) JunkTex.aClass55_4227
-					.getFirst());
-			if (class14_sub2_sub9 == null)
-				break;
-			JunkTex.aClass81_4716.pushFront(class14_sub2_sub9);
-			Class7_Sub2_Sub1.aClass55_3698.put(class14_sub2_sub9.key, class14_sub2_sub9);
-			Static2.anInt998++;
-			SceneCluster.anInt1355--;
-		}
-		if (JunkTex.aByte4287 != 0) {
-			try {
-				Buffer class14_sub10 = new Buffer(4);
-				class14_sub10.method809(4);
-				class14_sub10.method809(JunkTex.aByte4287);
-				class14_sub10.method833((byte) 118, 0);
-				Class4.aClass36_134.method1100(0, i - 46, 4, class14_sub10.payload);
-			} catch (IOException ioexception) {
-				try {
-					Class4.aClass36_134.method1101((byte) 112);
-				} catch (Exception exception) {
-					/* empty */
-				}
-				Class51.anInt829++;
-				Class4.aClass36_134 = null;
-			}
-		}
-		JunkTex.anInt853 = 0;
-		if (i == 49)
-			Class146.aLong2364 = TimeUtil.getTime();
 	}
 
 	public static void method1785(byte i) {

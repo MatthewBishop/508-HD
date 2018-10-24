@@ -182,10 +182,10 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 	}
 
 	public static void method444(int i, Class9 class9) {
-		JunkTex.anInt4509 = class9.method146(JunkTex.aClass124_1105, i + 30451);
+		JunkTex.anInt4509 = class9.method146(JunkTex.aClass124_1105);
 		if (i != -30451)
 			method444(69, null);
-		JunkTex.anInt4594 = class9.method146(JunkTex.aClass124_422, 0);
+		JunkTex.anInt4594 = class9.method146(JunkTex.aClass124_422);
 	}
 
 	public static void method445(Class94 class94, int i, boolean bool) {

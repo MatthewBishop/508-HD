@@ -64,19 +64,6 @@ public class Class1 {
 		}
 	}
 
-	public static void method71(Class114 class114, int i, byte i_7_, byte[] is) {
-		Class14_Sub19 class14_sub19 = new Class14_Sub19();
-		class14_sub19.key = i;
-		class14_sub19.anInt3067 = 0;
-		class14_sub19.aClass114_3077 = class114;
-		class14_sub19.aByteArray3069 = is;
-		Deque deque = JunkTex.aClass2_4404;
-		synchronized (deque) {
-			JunkTex.aClass2_4404.pushBack(class14_sub19);
-		}
-		Class14_Sub9_Sub1.method696((byte) -119);
-	}
-
 	public static void method72(boolean bool) {
 		anIntArray69 = null;
 		aClass124_71 = null;

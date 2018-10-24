@@ -1,11 +1,11 @@
 /* Class126_Sub1 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-package rs;
+package com.jagex.io.js5;
 
 import java.nio.ByteBuffer;
 
-public class Class126_Sub1 extends Class126 {
+public class ByteArrayWrapper extends DataWrapper {
 	public ByteBuffer aByteBuffer3429;
 
 	@Override

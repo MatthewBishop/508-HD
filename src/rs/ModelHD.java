@@ -383,7 +383,7 @@ public class ModelHD extends Class133_Sub7 {
 			i_81_ += i_78_ & 0xffff;
 			ls[i_78_] = ((long) i_80_ << 32) + i_81_;
 		}
-		Class117.method1602(is, (byte) 125, ls);
+		Static2.method1602(is, (byte) 125, ls);
 		anInt5033 = class133_sub2.anInt3521;
 		vertexX = class133_sub2.anIntArray3530;
 		vertexY = class133_sub2.anIntArray3526;

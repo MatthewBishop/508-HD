@@ -40,7 +40,7 @@ public class Class132 {
 
 	public static void method1779(int i) {
 		int i_3_ = JunkTex.anInt895;
-		int i_4_ = Class76.anInt1197;
+		int i_4_ = Static2.anInt1197;
 		int i_5_ = JunkTex.anInt4622 - Class83.anInt1340 - i_3_;
 		if (i == 0) {
 			int i_6_ = (-Class14_Sub20.anInt3094 + (Class14_Sub2_Sub21.anInt4086 - i_4_));

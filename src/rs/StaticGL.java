@@ -101,7 +101,7 @@ public class StaticGL {
 				}
 			}
 		}
-		boolean bool = Class114.tileHeights == OverlayType.anIntArrayArrayArray2419;
+		boolean bool = Static2.tileHeights == OverlayType.anIntArrayArrayArray2419;
 		GL gl = RT4GL.gl;
 		gl.glPushMatrix();
 		gl.glTranslatef(-i, -i_19_, -i_20_);
@@ -137,7 +137,7 @@ public class StaticGL {
 				if (i_34_ == 0 && Class89.anInt1413 > 0) {
 					RT4GL.method1640(101.5F);
 					ShadowManager.method2038(Static2.cameraTileX, Class102.cameraTileZ, JunkTex.anInt1108, i_19_,
-							Class53.visibilityMap, Class114.tileHeights[0]);
+							Class53.visibilityMap, Static2.tileHeights[0]);
 				}
 			}
 			LightManager.method195(Static2.cameraTileX, Class102.cameraTileZ,

@@ -65,7 +65,7 @@ public class Class98 {
 	public static void method1496(int i, int i_3_, int i_4_) {
 		Class142.aBoolean2299 = true;
 		Class86.anInt1389 = i;
-		Class14_Sub19.anInt3073 = i_3_;
+		Static2.anInt3073 = i_3_;
 		Static2.anInt3334 = i_4_;
 		Class66.anInt1039 = -1;
 		JunkTex.anInt4636 = -1;

@@ -21,12 +21,11 @@ public class Class124 implements Interface1 {
 	public static int anInt2494 = 0;
 
 	public static Class124 aClass124_2476 = aClass124_2479;
-	public static int[] anIntArray2473;
 	public static void method1667(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7,
 			int var8, int var9, int var10) {
 		int var11 = -var9 + var10;
 		int var12 = var3 - var1;
-		if (Class14_Sub2_Sub9.anInt3856 > var10) {
+		if (Static2.anInt3856 > var10) {
 			++var11;
 		}
 
@@ -64,7 +63,7 @@ public class Class124 implements Interface1 {
 					byte[][] var19 = Class86.aByteArrayArrayArray1383[var17];
 					byte[][] var20 = Class14_Sub2_Sub5.aByteArrayArrayArray3816[var17];
 					byte[][] var21 = JunkTex.aByteArrayArrayArray4257[var17];
-					byte[][] var22 = Class14_Sub2_Sub9.aByteArrayArrayArray3864[var17];
+					byte[][] var22 = Static2.aByteArrayArrayArray3864[var17];
 					byte[][] var23 = JunkTex.aByteArrayArrayArray4130[var17];
 
 					for (var24 = 0; var24 < var12; ++var24) {
@@ -363,7 +362,6 @@ public class Class124 implements Interface1 {
 		}
 
 		aClass124Array2508 = null;
-		anIntArray2473 = null;
 		aClass124_2476 = null;
 	}
 
@@ -372,7 +370,7 @@ public class Class124 implements Interface1 {
 		if (var0 == 48) {
 			Class112.aClass52_1868.method1209();
 			Class62.aClass52_991.method1209();
-			Class49.aClass52_810.method1209();
+			Static2.aClass52_810.method1209();
 		}
 
 	}
@@ -671,11 +669,11 @@ public class Class124 implements Interface1 {
 				++var5;
 			}
 
-			if (Class126.anIntArray2094[var3] < Class126.anIntArray2094[var4]) {
+			if (Static2.anIntArray2094[var3] < Static2.anIntArray2094[var4]) {
 				return -1;
 			}
 
-			if (Class126.anIntArray2094[var3] > Class126.anIntArray2094[var4]) {
+			if (Static2.anIntArray2094[var3] > Static2.anIntArray2094[var4]) {
 				var11 = 1;
 				return var11;
 			}
@@ -1172,10 +1170,6 @@ public class Class124 implements Interface1 {
 	}
 
 	public int method1700(int var1, Class124 var2) {
-		if (var1 != -19928) {
-			anIntArray2473 = null;
-		}
-
 		int var3 = this.method1707(var2, (byte) 59, 0);
 		return var3;
 	}

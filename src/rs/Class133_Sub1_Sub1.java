@@ -121,8 +121,8 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 			if (class133_sub7 != null) {
 				anInt3449 = class133_sub7.getMinY();
 				if (JunkTex.aBoolean4518 && (aClass102_4941.anInt1720 == -1
-						|| (Class126.method1744(aClass102_4941.anInt1720, 170).aBoolean330))) {
-					Class133_Sub7 class133_sub7_10_ = Class76.method1359(-10345, anInt3495,
+						|| (Static2.method1744(aClass102_4941.anInt1720, 170).aBoolean330))) {
+					Class133_Sub7 class133_sub7_10_ = Static2.method1359(-10345, anInt3495,
 							(class46_9_ == null ? animation : class46_9_), class133_sub7, 0, 160, anInt3500, 240, 0, i,
 							anInt3436, (class46_9_ != null ? anInt3483 : anInt3501), 1, aBoolean3488);
 					float f = RT4GL.method1653();

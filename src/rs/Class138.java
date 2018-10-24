@@ -86,7 +86,7 @@ public class Class138 {
 				int i_4_ = class14_sub10.readUByte();
 				int i_5_ = -Class65.anInt1034 + i_3_ * 64;
 				int i_6_ = (-(i_4_ * 64) + Class35.anInt603 + (JunkTex.anInt4332 - 1));
-				if (i_5_ >= 0 && i_6_ - 63 >= 0 && i_5_ + 63 < Class14_Sub2_Sub9.anInt3856
+				if (i_5_ >= 0 && i_6_ - 63 >= 0 && i_5_ + 63 < Static2.anInt3856
 						&& i_6_ < JunkTex.anInt4332) {
 					int i_7_ = i_5_ >> 38;
 					int i_8_ = i_6_ >> 6;

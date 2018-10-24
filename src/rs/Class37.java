@@ -119,12 +119,12 @@ public class Class37 {
 			Static2.anInt3728 = 0;
 			Static2.method822(-37);
 			Class108.method1559((byte) -100);
-			Class117.anInt1948 = 0;
+			Static2.anInt1948 = 0;
 			Class14_Sub20.anInt3095 = 0;
 			Class7.anInt177 = 0;
 			Class14_Sub29.anInt3267 = 0;
 			JunkTex.anInt4731 = 0;
-			Class14_Sub2_Sub9.anInt3866 = 0;
+			Static2.anInt3866 = 0;
 			Class69.anInt1071 = 0;
 			Class33.anInt577 = 0;
 			Class123.anInt2062 = 0;
@@ -132,7 +132,7 @@ public class Class37 {
 			for (int i_7_ = 0; Class133_Sub1_Sub2.anIntArray4944.length > i_7_; i_7_++)
 				Class133_Sub1_Sub2.anIntArray4944[i_7_] = -1;
 			if (Class14_Sub2_Sub12.anInt3912 != -1)
-				Class49.method1197(Class14_Sub2_Sub12.anInt3912, false);
+				Static2.method1197(Class14_Sub2_Sub12.anInt3912, false);
 			for (Class14_Sub15 class14_sub15 = ((Class14_Sub15) Class14_Sub30.aClass55_3275.getFirst()); class14_sub15 != null; class14_sub15 = (Class14_Sub15) Class14_Sub30.aClass55_3275
 							.getNext())
 				JunkTex.method236(true, class14_sub15, (byte) -128);
