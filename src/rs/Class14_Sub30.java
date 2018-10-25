@@ -9,7 +9,6 @@ import com.jagex.link.Linkable;
 import com.jagex.rt4.HDTile;
 
 public class Class14_Sub30 extends Linkable {
-	public static boolean aBoolean3269 = false;
 	public Class124 aClass124_3270;
 	public static int anInt3271;
 	public static HDTile[][] aClass14_Sub27ArrayArray3273;

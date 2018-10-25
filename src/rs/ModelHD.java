@@ -1008,14 +1008,14 @@ public class ModelHD extends Class133_Sub7 {
 				if (i_260_ < 3584) {
 					int i_261_ = cosCameraYaw * sceneX + sinCameraYaw * sceneZ >> 16;
 					int i_262_ = i_261_ + i_254_ << 9;
-					if (i_262_ / i_259_ > JunkTex.anInt425) {
+					if (i_262_ / i_259_ > JunkTex.viewportLeft) {
 						int i_263_ = i_261_ - i_254_ << 9;
-						if (i_263_ / i_259_ < JunkTex.anInt4547) {
+						if (i_263_ / i_259_ < JunkTex.viewportRight) {
 							int i_264_ = sceneY * cosCameraPitch - i_257_ * sinCameraPitch >> 16;
 							int i_265_ = (i_264_ + (i_254_ * sinCameraPitch + i_256_ * cosCameraPitch >> 16) << 9);
-							if (i_265_ / i_259_ > Class58.anInt948) {
+							if (i_265_ / i_259_ > Class58.viewportTop) {
 								int i_266_ = (i_264_ + ((-i_254_ * sinCameraPitch + i_255_ * cosCameraPitch) >> 16) << 9);
-								if (i_266_ / i_259_ < Class70.anInt1081) {
+								if (i_266_ / i_259_ < Class70.viewportBottom) {
 									int i_267_ = 0;
 									int i_268_ = 0;
 									if (yaw != 0) {
@@ -1508,11 +1508,11 @@ public class ModelHD extends Class133_Sub7 {
 				gl.glTexCoordPointer(2, 5126, aClass41_5029.anInt687, aClass41_5029.anInt686);
 			}
 			if (aClass41_5046.aClass29_692 != null)
-				aClass41_5046.aClass29_692.method1055();
+				aClass41_5046.aClass29_692.bindElement();
 			if (vertexBufferPointer.aClass29_692 == null || aClass41_5030.aClass29_692 == null
 					|| (RT4.useLighting && aClass41_5018.aClass29_692 == null)
 					|| aClass41_5029.aClass29_692 == null) {
-				if (RT4GL.vertexBufferAsObject)
+				if (RT4GL.has_vbo)
 					gl.glBindBufferARB(34962, 0);
 				if (vertexBufferPointer.aClass29_692 == null) {
 					vertexBufferPointer.aByteBuffer684.position(vertexBufferPointer.anInt686);
@@ -1531,7 +1531,7 @@ public class ModelHD extends Class133_Sub7 {
 					gl.glTexCoordPointer(2, 5126, aClass41_5029.anInt687, aClass41_5029.aByteBuffer684);
 				}
 			}
-			if (aClass41_5046.aClass29_692 == null && RT4GL.vertexBufferAsObject)
+			if (aClass41_5046.aClass29_692 == null && RT4GL.has_vbo)
 				gl.glBindBufferARB(34963, 0);
 			int i = anIntArray5035.length - 1;
 			for (int i_348_ = 0; i_348_ < i; i_348_++) {
@@ -1997,20 +1997,20 @@ public class ModelHD extends Class133_Sub7 {
 			aClass14_Sub10_5011 = new Buffer((anInt5040 + 100) * 12);
 		else
 			aClass14_Sub10_5011.position = 0;
-		if (RT4GL.usingBigEndian) {
+		if (RT4GL.byte_order_bigendian) {
 			for (int i = 0; i < anInt5014; i++) {
-				aClass14_Sub10_5011.method803(aShortArray5021[i], 116);
-				aClass14_Sub10_5011.method803(aShortArray5025[i], 74);
-				aClass14_Sub10_5011.method803(aShortArray5038[i], 79);
+				aClass14_Sub10_5011.writeInt(aShortArray5021[i], 116);
+				aClass14_Sub10_5011.writeInt(aShortArray5025[i], 74);
+				aClass14_Sub10_5011.writeInt(aShortArray5038[i], 79);
 			}
 		} else {
 			for (int i = 0; i < anInt5014; i++) {
-				aClass14_Sub10_5011.method825(-70, aShortArray5021[i]);
-				aClass14_Sub10_5011.method825(-82, aShortArray5025[i]);
-				aClass14_Sub10_5011.method825(-65, aShortArray5038[i]);
+				aClass14_Sub10_5011.writeIntLE(-70, aShortArray5021[i]);
+				aClass14_Sub10_5011.writeIntLE(-82, aShortArray5025[i]);
+				aClass14_Sub10_5011.writeIntLE(-65, aShortArray5038[i]);
 			}
 		}
-		if (RT4GL.vertexBufferAsObject) {
+		if (RT4GL.has_vbo) {
 			VertexBuffer vertexBuffer = new VertexBuffer();
 			ByteBuffer bytebuffer = ByteBuffer.wrap(aClass14_Sub10_5011.payload, 0,
 					aClass14_Sub10_5011.position);
@@ -2143,7 +2143,7 @@ public class ModelHD extends Class133_Sub7 {
 			else
 				aClass14_Sub10_5011.position = 0;
 			if (bool_494_) {
-				if (RT4GL.usingBigEndian) {
+				if (RT4GL.byte_order_bigendian) {
 					for (int i_498_ = 0; i_498_ < anInt5033; i_498_++) {
 						int i_499_ = Float.floatToRawIntBits(vertexX[i_498_]);
 						int i_500_ = Float.floatToRawIntBits(vertexY[i_498_]);
@@ -2155,9 +2155,9 @@ public class ModelHD extends Class133_Sub7 {
 							if (i_505_ == -1)
 								break;
 							aClass14_Sub10_5011.position = i_505_ * i;
-							aClass14_Sub10_5011.method803(i_499_, 123);
-							aClass14_Sub10_5011.method803(i_500_, 90);
-							aClass14_Sub10_5011.method803(i_501_, 85);
+							aClass14_Sub10_5011.writeInt(i_499_, 123);
+							aClass14_Sub10_5011.writeInt(i_500_, 90);
+							aClass14_Sub10_5011.writeInt(i_501_, 85);
 						}
 					}
 				} else {
@@ -2172,9 +2172,9 @@ public class ModelHD extends Class133_Sub7 {
 							if (i_513_ == -1)
 								break;
 							aClass14_Sub10_5011.position = i_513_ * i;
-							aClass14_Sub10_5011.method825(-32, i_507_);
-							aClass14_Sub10_5011.method825(-79, i_508_);
-							aClass14_Sub10_5011.method825(-99, i_509_);
+							aClass14_Sub10_5011.writeIntLE(-32, i_507_);
+							aClass14_Sub10_5011.writeIntLE(-79, i_508_);
+							aClass14_Sub10_5011.writeIntLE(-99, i_509_);
 						}
 					}
 				}
@@ -2249,11 +2249,11 @@ public class ModelHD extends Class133_Sub7 {
 						int i_532_ = method1904(aShortArray5045[i_520_], aShortArray5037[i_520_], i_529_,
 								faceAlphas[i_520_]);
 						aClass14_Sub10_5011.position = aClass41_5030.anInt686 + i_521_ * i;
-						aClass14_Sub10_5011.method803(i_530_, 118);
+						aClass14_Sub10_5011.writeInt(i_530_, 118);
 						aClass14_Sub10_5011.position = aClass41_5030.anInt686 + i_524_ * i;
-						aClass14_Sub10_5011.method803(i_531_, 105);
+						aClass14_Sub10_5011.writeInt(i_531_, 105);
 						aClass14_Sub10_5011.position = aClass41_5030.anInt686 + i_527_ * i;
-						aClass14_Sub10_5011.method803(i_532_, 90);
+						aClass14_Sub10_5011.writeInt(i_532_, 90);
 					}
 					aShortArray5041 = null;
 					aShortArray5019 = null;
@@ -2263,11 +2263,11 @@ public class ModelHD extends Class133_Sub7 {
 						int i_534_ = method1904(aShortArray5045[i_533_], aShortArray5037[i_533_], aShort5032,
 								faceAlphas[i_533_]);
 						aClass14_Sub10_5011.position = (aClass41_5030.anInt686 + aShortArray5021[i_533_] * i);
-						aClass14_Sub10_5011.method803(i_534_, 90);
+						aClass14_Sub10_5011.writeInt(i_534_, 90);
 						aClass14_Sub10_5011.position = (aClass41_5030.anInt686 + aShortArray5025[i_533_] * i);
-						aClass14_Sub10_5011.method803(i_534_, 108);
+						aClass14_Sub10_5011.writeInt(i_534_, 108);
 						aClass14_Sub10_5011.position = (aClass41_5030.anInt686 + aShortArray5038[i_533_] * i);
-						aClass14_Sub10_5011.method803(i_534_, 91);
+						aClass14_Sub10_5011.writeInt(i_534_, 91);
 					}
 				}
 			}
@@ -2275,18 +2275,18 @@ public class ModelHD extends Class133_Sub7 {
 				float f = 3.0F / aShort5024;
 				float f_535_ = 3.0F / (aShort5024 + aShort5024 / 2);
 				aClass14_Sub10_5011.position = aClass41_5018.anInt686;
-				if (RT4GL.usingBigEndian) {
+				if (RT4GL.byte_order_bigendian) {
 					for (int i_536_ = 0; i_536_ < anInt5040; i_536_++) {
 						short i_537_ = aShortArray5017[i_536_];
 						if (i_537_ == 0) {
-							aClass14_Sub10_5011.putFloatAsInt(aShortArray5041[i_536_] * f_535_);
-							aClass14_Sub10_5011.putFloatAsInt(aShortArray5019[i_536_] * f_535_);
-							aClass14_Sub10_5011.putFloatAsInt(aShortArray5042[i_536_] * f_535_);
+							aClass14_Sub10_5011.writeFloat(aShortArray5041[i_536_] * f_535_);
+							aClass14_Sub10_5011.writeFloat(aShortArray5019[i_536_] * f_535_);
+							aClass14_Sub10_5011.writeFloat(aShortArray5042[i_536_] * f_535_);
 						} else {
 							float f_538_ = f / i_537_;
-							aClass14_Sub10_5011.putFloatAsInt(aShortArray5041[i_536_] * f_538_);
-							aClass14_Sub10_5011.putFloatAsInt(aShortArray5019[i_536_] * f_538_);
-							aClass14_Sub10_5011.putFloatAsInt(aShortArray5042[i_536_] * f_538_);
+							aClass14_Sub10_5011.writeFloat(aShortArray5041[i_536_] * f_538_);
+							aClass14_Sub10_5011.writeFloat(aShortArray5019[i_536_] * f_538_);
+							aClass14_Sub10_5011.writeFloat(aShortArray5042[i_536_] * f_538_);
 						}
 						aClass14_Sub10_5011.position += i - 12;
 					}
@@ -2294,14 +2294,14 @@ public class ModelHD extends Class133_Sub7 {
 					for (int i_539_ = 0; i_539_ < anInt5040; i_539_++) {
 						short i_540_ = aShortArray5017[i_539_];
 						if (i_540_ == 0) {
-							aClass14_Sub10_5011.putFloatAsLEInt(aShortArray5041[i_539_] * f_535_, 24671);
-							aClass14_Sub10_5011.putFloatAsLEInt(aShortArray5019[i_539_] * f_535_, 24671);
-							aClass14_Sub10_5011.putFloatAsLEInt(aShortArray5042[i_539_] * f_535_, 24671);
+							aClass14_Sub10_5011.writeFloatLE(aShortArray5041[i_539_] * f_535_, 24671);
+							aClass14_Sub10_5011.writeFloatLE(aShortArray5019[i_539_] * f_535_, 24671);
+							aClass14_Sub10_5011.writeFloatLE(aShortArray5042[i_539_] * f_535_, 24671);
 						} else {
 							float f_541_ = f / i_540_;
-							aClass14_Sub10_5011.putFloatAsLEInt(aShortArray5041[i_539_] * f_541_, 24671);
-							aClass14_Sub10_5011.putFloatAsLEInt(aShortArray5019[i_539_] * f_541_, 24671);
-							aClass14_Sub10_5011.putFloatAsLEInt(aShortArray5042[i_539_] * f_541_, 24671);
+							aClass14_Sub10_5011.writeFloatLE(aShortArray5041[i_539_] * f_541_, 24671);
+							aClass14_Sub10_5011.writeFloatLE(aShortArray5019[i_539_] * f_541_, 24671);
+							aClass14_Sub10_5011.writeFloatLE(aShortArray5042[i_539_] * f_541_, 24671);
 						}
 						aClass14_Sub10_5011.position += i - 12;
 					}
@@ -2309,16 +2309,16 @@ public class ModelHD extends Class133_Sub7 {
 			}
 			if (bool_497_) {
 				aClass14_Sub10_5011.position = aClass41_5029.anInt686;
-				if (RT4GL.usingBigEndian) {
+				if (RT4GL.byte_order_bigendian) {
 					for (int i_542_ = 0; i_542_ < anInt5040; i_542_++) {
-						aClass14_Sub10_5011.putFloatAsInt(aFloatArray5047[i_542_]);
-						aClass14_Sub10_5011.putFloatAsInt(aFloatArray5012[i_542_]);
+						aClass14_Sub10_5011.writeFloat(aFloatArray5047[i_542_]);
+						aClass14_Sub10_5011.writeFloat(aFloatArray5012[i_542_]);
 						aClass14_Sub10_5011.position += i - 8;
 					}
 				} else {
 					for (int i_543_ = 0; i_543_ < anInt5040; i_543_++) {
-						aClass14_Sub10_5011.putFloatAsLEInt(aFloatArray5047[i_543_], 24671);
-						aClass14_Sub10_5011.putFloatAsLEInt(aFloatArray5012[i_543_], 24671);
+						aClass14_Sub10_5011.writeFloatLE(aFloatArray5047[i_543_], 24671);
+						aClass14_Sub10_5011.writeFloatLE(aFloatArray5012[i_543_], 24671);
 						aClass14_Sub10_5011.position += i - 8;
 					}
 				}
@@ -2389,7 +2389,7 @@ public class ModelHD extends Class133_Sub7 {
 						aClass41_5029.anInt687 = i;
 					}
 				}
-			} else if (RT4GL.vertexBufferAsObject) {
+			} else if (RT4GL.has_vbo) {
 				VertexBuffer vertexBuffer = new VertexBuffer();
 				ByteBuffer bytebuffer = ByteBuffer.wrap(aClass14_Sub10_5011.payload, 0,
 						aClass14_Sub10_5011.position);

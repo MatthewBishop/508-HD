@@ -172,7 +172,7 @@ public class WaterShader implements ShaderInterface {
 			gl.glTexParameteri(3552, 10240, 9729);
 			gl.glTexParameteri(3552, 10242, 33071);
 			this.gradientAlpha = is[0];
-			WaterShader.texture1or2 = RT4GL.maxTextureUnits > 2 && RT4GL.aBoolean2042;
+			WaterShader.texture1or2 = RT4GL.maxTextureUnits > 2 && RT4GL.has_texture_3d;
 			this.createLists();
 		}
 	}

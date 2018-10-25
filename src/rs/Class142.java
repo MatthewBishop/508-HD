@@ -8,7 +8,7 @@ import com.jagex.io.Buffer;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.AtmosphericChunk;
-import com.jagex.rt4.Class14_Sub1;
+import com.jagex.rt4.IntegerNode;
 
 public class Class142 {
 	public int anInt2255;
@@ -372,7 +372,7 @@ public class Class142 {
 																															.method797(
 																																	9467));
 																										else
-																											linkable = new Class14_Sub1(
+																											linkable = new IntegerNode(
 																													class14_sub10
 																															.getInt(
 																																	(byte) -110));
@@ -577,12 +577,12 @@ public class Class142 {
 			int i_60_ = i;
 			return i_60_;
 		}
-		Class14_Sub1 class14_sub1 = ((Class14_Sub1) aClass55_2260.get(i_58_));
+		IntegerNode class14_sub1 = ((IntegerNode) aClass55_2260.get(i_58_));
 		if (class14_sub1 == null) {
 			int i_61_ = i;
 			return i_61_;
 		}
-		int i_62_ = class14_sub1.anInt2714;
+		int i_62_ = class14_sub1.value;
 		return i_62_;
 	}
 

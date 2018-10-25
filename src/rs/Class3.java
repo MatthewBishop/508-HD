@@ -53,10 +53,10 @@ public class Class3 {
 		int i_3_ = i_1_ - i_2_ * Class92.anInt1432;
 		anInt118 = i - i_3_;
 		anInt110 = i_0_ - i_2_;
-		JunkTex.anInt425 = -anInt118;
-		JunkTex.anInt4547 = anInt109 - anInt118;
-		Class58.anInt948 = -anInt110;
-		Class70.anInt1081 = anInt106 - anInt110;
+		JunkTex.viewportLeft = -anInt118;
+		JunkTex.viewportRight = anInt109 - anInt118;
+		Class58.viewportTop = -anInt110;
+		Class70.viewportBottom = anInt106 - anInt110;
 	}
 
 	public static void method91(byte[] is, int i, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_) {
@@ -1371,10 +1371,10 @@ public class Class3 {
 	public static void method102() {
 		anInt118 = anInt109 / 2;
 		anInt110 = anInt106 / 2;
-		JunkTex.anInt425 = -anInt118;
-		JunkTex.anInt4547 = anInt109 - anInt118;
-		Class58.anInt948 = -anInt110;
-		Class70.anInt1081 = anInt106 - anInt110;
+		JunkTex.viewportLeft = -anInt118;
+		JunkTex.viewportRight = anInt109 - anInt118;
+		Class58.viewportTop = -anInt110;
+		Class70.viewportBottom = anInt106 - anInt110;
 	}
 
 	public static void method103(float f) {

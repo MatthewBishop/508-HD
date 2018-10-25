@@ -64,7 +64,7 @@ public class Class90 implements Runnable {
 								if (class75 != null)
 									class75.method1341(-82);
 							}
-							Util.sleep(10L);
+							Util.accuratesleep(10L);
 							JunkTex.method555(45, aClass43_1421, null);
 						}
 					} catch (Exception exception) {

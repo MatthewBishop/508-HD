@@ -214,7 +214,7 @@ public class Class138 {
 		}
 		Class31 class31 = class43.method1137(i, (byte) 112, i_31_, i_29_, i_30_);
 		while (class31.anInt529 == 0)
-			Util.sleep(10L);
+			Util.accuratesleep(10L);
 		Frame frame = (Frame) class31.anObject530;
 		if (frame == null) {
 			Frame frame_33_ = null;

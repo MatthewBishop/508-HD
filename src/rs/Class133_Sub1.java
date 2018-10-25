@@ -5,7 +5,7 @@ package rs;
 
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9;
-import com.jagex.rt4.Class11;
+import com.jagex.rt4.CardMemManager;
 import com.jagex.rt4.AbstractSprite;
 
 public abstract class Class133_Sub1 extends Class133 {
@@ -177,9 +177,9 @@ public abstract class Class133_Sub1 extends Class133 {
 						Class83.method1407(120, i_14_), Class59.aClass124_953 }), (byte) -82)), false, null, 0);
 			}
 			if (class124.method1717(i + 33, Static2.aClass124_2575)) {
-				System.out.println(new StringBuilder("oncard_geometry:").append(Class11.arbBufferMemory).toString());
-				System.out.println(new StringBuilder("oncard_2d:").append(Class11.anInt263).toString());
-				System.out.println(new StringBuilder("oncard_texture:").append(Class11.textureMemory).toString());
+				System.out.println(new StringBuilder("oncard_geometry:").append(CardMemManager.arbBufferMemory).toString());
+				System.out.println(new StringBuilder("oncard_2d:").append(CardMemManager.memory2d).toString());
+				System.out.println(new StringBuilder("oncard_texture:").append(CardMemManager.textureMemory).toString());
 			}
 			if (class124.method1717(40, Static2.aClass124_661))
 				Static2.method1508((byte) 90);
@@ -198,11 +198,11 @@ public abstract class Class133_Sub1 extends Class133 {
 				}
 			}
 			if (class124.method1690(JunkTex.aClass124_4561, 33) && Class7.anInt182 != 0)
-				Applet_Sub1.method30(-104, class124.method1696(6, i ^ 0x8).method1702(82));
+				Applet_Sub1.method30(-104, class124.method1696(6, i ^ 0x8).stringToBase10(82));
 			if (class124.method1717(40, Class58.aClass124_941) && Class7.anInt182 == 2)
 				throw new RuntimeException();
 			if (class124.method1690(Class45.aClass124_750, 33)) {
-				Class124.anInt2494 = class124.method1696(12, 15).method1684((byte) 9).method1702(124);
+				Class124.anInt2494 = class124.method1696(12, 15).method1684((byte) 9).stringToBase10(124);
 				Class15.method943((JunkTex.method515(
 						(new Class124[] { Static2.aClass124_474, Class83.method1407(108, (Class124.anInt2494)) }),
 						(byte) -53)), false, null, 0);
@@ -219,7 +219,7 @@ public abstract class Class133_Sub1 extends Class133 {
 		if (i != 7)
 			aClass45Array3435 = null;
 		JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(107);
-		JunkTex.aClass14_Sub10_Sub1_891.method809(class124.method1693(0) - 1);
+		JunkTex.aClass14_Sub10_Sub1_891.writeByte(class124.length(0) - 1);
 		JunkTex.aClass14_Sub10_Sub1_891.method814(32768, class124.method1696(2, 15));
 	}
 

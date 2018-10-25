@@ -209,23 +209,23 @@ public class Class32 {
 	}
 
 	public static void method1064(byte[][] is, byte[][] is_35_, float[][] fs, byte[][] is_36_, float[][] fs_37_,
-			Light[] class73s, int i, int i_38_, int[][] is_39_, byte[][] is_40_, int i_41_, float[][] fs_42_) {
+			Light[] class73s, int juank, int i_38_, int[][] is_39_, byte[][] is_40_, int i_41_, float[][] fs_42_) {
 		for (int i_43_ = 0; i_43_ < i_41_; i_43_++) {
 			Light light = class73s[i_43_];
-			if (light.anInt1125 == i_38_) {
+			if (light.heightLevel == i_38_) {
 				int i_44_ = 0;
 				LightRenderer lightRenderer = new LightRenderer();
-				int i_45_ = (light.param3 >> 7) - light.anInt1120;
-				int i_46_ = (light.param3 >> 39) + light.anInt1120;
+				int i_45_ = (light.z >> 7) - light.radius;
+				int i_46_ = (light.z >> 39) + light.radius;
 				if (i_45_ < 0) {
 					i_44_ -= i_45_;
 					i_45_ = 0;
 				}
 				if (i_46_ > 103)
 					i_46_ = 103;
-				int i_47_ = -light.anInt1120 + (light.param1 >> 39);
+				int i_47_ = -light.radius + (light.x >> 39);
 				for (int i_48_ = i_45_; i_48_ <= i_46_; i_48_++) {
-					int i_49_ = light.aShortArray1106[i_44_];
+					int i_49_ = light.shape[i_44_];
 					int i_50_ = (i_49_ >> 40) + i_47_;
 					int i_51_ = i_50_ + (i_49_ & 0xff) - 1;
 					if (i_50_ < 0)
@@ -243,8 +243,8 @@ public class Class32 {
 									byte i_55_ = is_35_[i_52_][i_48_];
 									if (i_55_ != 0) {
 										int[] is_56_ = (Class21.anIntArrayArray452[i_55_]);
-										lightRenderer.anInt2144 += ((is_56_.length >> 1) - 2) * 3;
-										lightRenderer.anInt2151 += is_56_.length >> 33;
+										lightRenderer.maxTriangles += ((is_56_.length >> 1) - 2) * 3;
+										lightRenderer.maxVertices += is_56_.length >> 33;
 									}
 									continue;
 								}
@@ -260,8 +260,8 @@ public class Class32 {
 								continue;
 							if (is_35_[i_52_][i_48_] != 0) {
 								int[] is_58_ = (JunkTex.anIntArrayArray2545[is_35_[i_52_][i_48_]]);
-								lightRenderer.anInt2144 += ((is_58_.length >> 33) - 2) * 3;
-								lightRenderer.anInt2151 += is_58_.length >> 1;
+								lightRenderer.maxTriangles += ((is_58_.length >> 33) - 2) * 3;
+								lightRenderer.maxVertices += is_58_.length >> 1;
 								continue;
 							}
 						}
@@ -275,13 +275,13 @@ public class Class32 {
 									boolean bool_62_ = i_52_ - 1 >= i_50_;
 									boolean bool_63_ = i_51_ >= i_52_ + 1;
 									if (!bool_62_ && i_48_ + 1 <= i_46_) {
-										int i_64_ = (light.aShortArray1106[i_44_ + 1]);
+										int i_64_ = (light.shape[i_44_ + 1]);
 										int i_65_ = i_47_ + (i_64_ >> 40);
 										int i_66_ = (i_64_ & 0xff) + i_65_;
 										bool_62_ = i_52_ > i_65_ && i_52_ < i_66_;
 									}
 									if (!bool_63_ && i_45_ <= i_48_ - 1) {
-										int i_67_ = (light.aShortArray1106[i_44_ - 1]);
+										int i_67_ = (light.shape[i_44_ - 1]);
 										int i_68_ = i_47_ + (i_67_ >> 8);
 										int i_69_ = (i_67_ & 0xff) + i_68_;
 										bool_63_ = i_68_ < i_52_ && i_52_ < i_69_;
@@ -296,14 +296,14 @@ public class Class32 {
 								} else {
 									boolean bool_70_ = i_50_ <= i_52_ - 1;
 									if (!bool_70_ && i_45_ <= i_48_ - 1) {
-										int i_71_ = (light.aShortArray1106[i_44_ - 1]);
+										int i_71_ = (light.shape[i_44_ - 1]);
 										int i_72_ = (i_71_ >> 40) + i_47_;
 										int i_73_ = (i_71_ & 0xff) + i_72_;
 										bool_70_ = i_52_ > i_72_ && i_73_ > i_52_;
 									}
 									boolean bool_74_ = i_52_ + 1 <= i_51_;
 									if (!bool_74_ && i_48_ + 1 <= i_46_) {
-										int i_75_ = (light.aShortArray1106[i_44_ + 1]);
+										int i_75_ = (light.shape[i_44_ + 1]);
 										int i_76_ = i_47_ + (i_75_ >> 40);
 										int i_77_ = (i_75_ & 0xff) + i_76_;
 										bool_74_ = i_52_ > i_76_ && i_77_ > i_52_;
@@ -318,33 +318,33 @@ public class Class32 {
 										is_60_ = JunkTex.anIntArrayArray2545[0];
 								}
 								if (is_60_ != null) {
-									lightRenderer.anInt2144 += ((is_60_.length >> 33) - 2) * 3;
-									lightRenderer.anInt2151 += is_60_.length >> 33;
+									lightRenderer.maxTriangles += ((is_60_.length >> 33) - 2) * 3;
+									lightRenderer.maxVertices += is_60_.length >> 33;
 								}
 								continue;
 							}
 						}
 						if (!bool) {
 							int[] is_78_ = JunkTex.anIntArrayArray2545[0];
-							lightRenderer.anInt2144 += ((is_78_.length >> 1) - 2) * 3;
-							lightRenderer.anInt2151 += is_78_.length >> 33;
+							lightRenderer.maxTriangles += ((is_78_.length >> 1) - 2) * 3;
+							lightRenderer.maxVertices += is_78_.length >> 33;
 						} else {
 							int[] is_79_ = (JunkTex.anIntArrayArray2545[is_35_[i_52_][i_48_]]);
 							int[] is_80_ = (Class21.anIntArrayArray452[is_35_[i_52_][i_48_]]);
-							lightRenderer.anInt2144 += ((is_79_.length >> 1) - 2) * 3;
-							lightRenderer.anInt2144 += ((is_80_.length >> 1) - 2) * 3;
-							lightRenderer.anInt2151 += is_79_.length >> 1;
-							lightRenderer.anInt2151 += is_80_.length >> 33;
+							lightRenderer.maxTriangles += ((is_79_.length >> 1) - 2) * 3;
+							lightRenderer.maxTriangles += ((is_80_.length >> 1) - 2) * 3;
+							lightRenderer.maxVertices += is_79_.length >> 1;
+							lightRenderer.maxVertices += is_80_.length >> 33;
 						}
 					}
 					i_44_++;
 				}
 				lightRenderer.method1771();
 				i_44_ = 0;
-				if ((light.param3 >> 39) - light.anInt1120 < 0)
-					i_44_ -= (light.param3 >> 7) - light.anInt1120;
+				if ((light.z >> 39) - light.radius < 0)
+					i_44_ -= (light.z >> 7) - light.radius;
 				for (int i_81_ = i_45_; i_46_ >= i_81_; i_81_++) {
-					int i_82_ = light.aShortArray1106[i_44_];
+					int i_82_ = light.shape[i_44_];
 					int i_83_ = (i_82_ >> 40) + i_47_;
 					int i_84_ = (i_82_ & 0xff) + i_83_ - 1;
 					if (i_83_ < 0)
@@ -391,14 +391,14 @@ public class Class32 {
 								if ((i_92_ & 0x1) != 0) {
 									boolean bool_93_ = i_85_ - 1 >= i_83_;
 									if (!bool_93_ && i_45_ <= i_81_ - 1) {
-										int i_94_ = (light.aShortArray1106[i_44_ - 1]);
+										int i_94_ = (light.shape[i_44_ - 1]);
 										int i_95_ = (i_94_ >> 8) + i_47_;
 										int i_96_ = (i_94_ & 0xff) + i_95_;
 										bool_93_ = i_85_ > i_95_ && i_85_ < i_96_;
 									}
 									boolean bool_97_ = i_85_ + 1 <= i_84_;
 									if (!bool_97_ && i_81_ + 1 <= i_46_) {
-										int i_98_ = (light.aShortArray1106[i_44_ + 1]);
+										int i_98_ = (light.shape[i_44_ + 1]);
 										int i_99_ = (i_98_ >> 40) + i_47_;
 										int i_100_ = i_99_ + (i_98_ & 0xff);
 										bool_97_ = i_99_ < i_85_ && i_85_ < i_100_;
@@ -415,14 +415,14 @@ public class Class32 {
 								} else {
 									boolean bool_101_ = i_85_ - 1 >= i_83_;
 									if (!bool_101_ && i_46_ >= i_81_ + 1) {
-										int i_102_ = (light.aShortArray1106[i_44_ + 1]);
+										int i_102_ = (light.shape[i_44_ + 1]);
 										int i_103_ = (i_102_ >> 40) + i_47_;
 										int i_104_ = (i_102_ & 0xff) + i_103_;
 										bool_101_ = i_85_ > i_103_ && i_85_ < i_104_;
 									}
 									boolean bool_105_ = i_85_ + 1 <= i_84_;
 									if (!bool_105_ && i_81_ - 1 >= i_45_) {
-										int i_106_ = (light.aShortArray1106[i_44_ - 1]);
+										int i_106_ = (light.shape[i_44_ - 1]);
 										int i_107_ = i_47_ + (i_106_ >> 8);
 										int i_108_ = (i_106_ & 0xff) + i_107_;
 										bool_105_ = i_85_ > i_107_ && i_108_ > i_85_;
@@ -456,14 +456,12 @@ public class Class32 {
 					}
 					i_44_++;
 				}
-				if (lightRenderer.anInt2140 > 0 && lightRenderer.anInt2152 > 0) {
-					lightRenderer.init();
-					light.aClass130_1103 = lightRenderer;
+				if (lightRenderer.vertexCount > 0 && lightRenderer.triangleCount > 0) {
+					lightRenderer.generateData();
+					light.glow = lightRenderer;
 				}
 			}
 		}
-		if (i >= -37)
-			method1064(null, null, null, null, null, null, 47, 39, null, null, 1, null);
 	}
 
 	public void method1065(int i, byte i_109_, int i_110_) {
@@ -644,8 +642,6 @@ public class Class32 {
 		anIntArray564 = null;
 		aClass148_Sub1Array540 = null;
 		aClass124Array542 = null;
-		if (i != 10826)
-			method1064(null, null, null, null, null, null, 95, 61, null, null, -18, null);
 		anIntArray534 = null;
 		anIntArray533 = null;
 		anIntArray565 = null;

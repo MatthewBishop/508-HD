@@ -135,7 +135,7 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 		aClass124Array4011 = null;
 	}
 	public static Class124 method368(Class124 class124) {
-		int i = class124.method1693(0);
+		int i = class124.length(0);
 		int i_153_ = 0;
 		for (int i_154_ = 0; i_154_ < i; i_154_++) {
 			byte i_155_ = class124.aByteArray2495[i_154_];
@@ -253,7 +253,7 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 			else if (class124.method1704(aClass124_3998, (byte) 93))
 				anInt4007 = anInt4005;
 			else if (class124.method1690(aClass124_4000, 33))
-				anInt4003 = class124.method1696(6, 15).method1702(126);
+				anInt4003 = class124.method1696(6, 15).stringToBase10(126);
 			else if (class124.method1704(aClass124_3974, (byte) 105))
 				anInt4003 = anInt4001;
 			else if (class124.method1690(aClass124_3976, 33))
@@ -318,14 +318,14 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 		int i_33_ = -1;
 		int i_34_ = -1;
 		int i_35_ = 0;
-		int i_36_ = class124.method1693(0);
+		int i_36_ = class124.length(0);
 		for (int i_37_ = 0; i_37_ < i_36_; i_37_++) {
 			int i_38_ = class124.method1710(0, i_37_);
 			if (i_38_ == 60)
 				i_33_ = i_37_;
 			else {
 				if (i_38_ == 62 && i_33_ != -1) {
-					Class124 class124_39_ = class124.method1697(i_33_ + 1, i_37_, (byte) -104);
+					Class124 class124_39_ = class124.substring(i_33_ + 1, i_37_, (byte) -104);
 					i_33_ = -1;
 					aClass124_3975.method1686((byte) -5, 60);
 					aClass124_3975.method1675((byte) -128, class124_39_);
@@ -334,12 +334,12 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 						if (class124s[i_35_] != null) {
 							class124s[i_35_].method1699(0, (byte) 75);
 							class124s[i_35_] = (class124s[i_35_].method1668(aClass124_3975,
-									aClass124_3975.method1693(0), 0, i_29_));
+									aClass124_3975.length(0), 0, i_29_));
 						} else
-							class124s[i_35_] = aClass124_3975.method1697(i_29_, aClass124_3975.method1693(0),
+							class124s[i_35_] = aClass124_3975.substring(i_29_, aClass124_3975.length(0),
 									(byte) -104);
 						i_35_++;
-						i_29_ = aClass124_3975.method1693(0);
+						i_29_ = aClass124_3975.length(0);
 						i = 0;
 						i_30_ = -1;
 						i_34_ = -1;
@@ -385,7 +385,7 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 						i_34_ = 174;
 					} else if (class124_39_.method1690(aClass124_3992, 33)) {
 						try {
-							int i_40_ = class124_39_.method1696(4, 15).method1702(106);
+							int i_40_ = class124_39_.method1696(4, 15).stringToBase10(106);
 							i += aClass148Array3971[i_40_].anInt2378;
 							i_34_ = -1;
 						} catch (Exception exception) {
@@ -403,7 +403,7 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 						i_34_ = i_38_;
 					}
 					if (i_38_ == 32) {
-						i_30_ = aClass124_3975.method1693(0);
+						i_30_ = aClass124_3975.length(0);
 						i_31_ = i;
 						i_32_ = 1;
 					}
@@ -412,7 +412,7 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 							class124s[i_35_].method1699(0, (byte) 52);
 							class124s[i_35_] = class124s[i_35_].method1668(aClass124_3975, i_30_ - i_32_, 0, i_29_);
 						} else
-							class124s[i_35_] = aClass124_3975.method1697(i_29_, i_30_ - i_32_, (byte) -104);
+							class124s[i_35_] = aClass124_3975.substring(i_29_, i_30_ - i_32_, (byte) -104);
 						i_35_++;
 						i_29_ = i_30_;
 						i_30_ = -1;
@@ -420,19 +420,19 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 						i_34_ = -1;
 					}
 					if (i_38_ == 45) {
-						i_30_ = aClass124_3975.method1693(0);
+						i_30_ = aClass124_3975.length(0);
 						i_31_ = i;
 						i_32_ = 0;
 					}
 				}
 			}
 		}
-		if (aClass124_3975.method1693(0) > i_29_) {
+		if (aClass124_3975.length(0) > i_29_) {
 			if (class124s[i_35_] != null) {
 				class124s[i_35_].method1699(0, (byte) 120);
-				class124s[i_35_] = class124s[i_35_].method1668(aClass124_3975, aClass124_3975.method1693(0), 0, i_29_);
+				class124s[i_35_] = class124s[i_35_].method1668(aClass124_3975, aClass124_3975.length(0), 0, i_29_);
 			} else
-				class124s[i_35_] = aClass124_3975.method1697(i_29_, aClass124_3975.method1693(0), (byte) -104);
+				class124s[i_35_] = aClass124_3975.substring(i_29_, aClass124_3975.length(0), (byte) -104);
 			i_35_++;
 		}
 		return i_35_;
@@ -476,7 +476,7 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 				i_49_ = i_52_;
 			else {
 				if (i_53_ == 62 && i_49_ != -1) {
-					Class124 class124_54_ = class124.method1697(i_49_ + 1, i_52_, (byte) -104);
+					Class124 class124_54_ = class124.substring(i_49_ + 1, i_52_, (byte) -104);
 					i_49_ = -1;
 					if (class124_54_.method1704(aClass124_3995, (byte) 90))
 						i_53_ = 60;
@@ -508,7 +508,7 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 								else
 									i_56_ = 0;
 								i_51_++;
-								int i_57_ = class124_54_.method1696(4, 15).method1702(78);
+								int i_57_ = class124_54_.method1696(4, 15).stringToBase10(78);
 								Class148 class148 = aClass148Array3971[i_57_];
 								int i_58_ = (anIntArray3968 != null ? anIntArray3968[i_57_] : class148.anInt2373);
 								if (anInt4003 == 256)
@@ -583,7 +583,7 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 				i_65_ = i_67_;
 			else {
 				if (i_68_ == 62 && i_65_ != -1) {
-					Class124 class124_69_ = class124.method1697(i_65_ + 1, i_67_, (byte) -104);
+					Class124 class124_69_ = class124.substring(i_65_ + 1, i_67_, (byte) -104);
 					i_65_ = -1;
 					if (class124_69_.method1704(aClass124_3995, (byte) 64))
 						i_68_ = 60;
@@ -604,7 +604,7 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 					else {
 						if (class124_69_.method1690(aClass124_3992, 33)) {
 							try {
-								int i_70_ = class124_69_.method1696(4, 15).method1702(126);
+								int i_70_ = class124_69_.method1696(4, 15).stringToBase10(126);
 								Class148 class148 = aClass148Array3971[i_70_];
 								int i_71_ = (anIntArray3968 != null ? anIntArray3968[i_70_] : class148.anInt2373);
 								if (anInt4003 == 256)
@@ -739,7 +739,7 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 				i = i_106_;
 			else {
 				if (i_107_ == 62 && i != -1) {
-					Class124 class124_108_ = class124.method1697(i + 1, i_106_, (byte) -104);
+					Class124 class124_108_ = class124.substring(i + 1, i_106_, (byte) -104);
 					i = -1;
 					if (class124_108_.method1704(aClass124_3995, (byte) 89))
 						i_107_ = 60;
@@ -760,7 +760,7 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 					else {
 						if (class124_108_.method1690(aClass124_3992, 33)) {
 							try {
-								int i_109_ = class124_108_.method1696(4, 15).method1702(60);
+								int i_109_ = class124_108_.method1696(4, 15).stringToBase10(60);
 								i_105_ += aClass148Array3971[i_109_].anInt2378;
 								i_104_ = -1;
 							} catch (Exception exception) {
@@ -784,7 +784,7 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 	public void method362(Class124 class124, int i) {
 		int i_110_ = 0;
 		boolean bool = false;
-		for (int i_111_ = 0; i_111_ < class124.method1693(0); i_111_++) {
+		for (int i_111_ = 0; i_111_ < class124.length(0); i_111_++) {
 			int i_112_ = class124.method1710(0, i_111_);
 			if (i_112_ == 60)
 				bool = true;

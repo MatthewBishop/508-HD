@@ -7,7 +7,7 @@ import java.nio.ByteBuffer;
 
 import javax.media.opengl.GL;
 
-import com.jagex.rt4.Class11;
+import com.jagex.rt4.CardMemManager;
 import com.jagex.rt4.AbstractSprite_Sub2;
 import com.jagex.rt4.Class25;
 import com.jagex.rt4.RT4GL;
@@ -57,11 +57,11 @@ public class Class14_Sub2_Sub16_Sub2 extends Class14_Sub2_Sub16 {
 				int[] is_11_ = new int[1];
 				gl.glGenTextures(1, is_11_, 0);
 				anInt5070 = is_11_[0];
-				anInt5066 = Class11.anInt267;
+				anInt5066 = CardMemManager.memoryManagerId;
 			}
 			RT4GL.bindTexture2D(anInt5070);
 			gl.glTexImage2D(3553, 0, 6410, anInt5067, anInt5067, 0, 6410, 5121, bytebuffer);
-			Class11.anInt263 += bytebuffer.limit() - anInt5068;
+			CardMemManager.memory2d += bytebuffer.limit() - anInt5068;
 			anInt5068 = bytebuffer.limit();
 			gl.glTexParameteri(3553, 10241, 9728);
 			gl.glTexParameteri(3553, 10240, 9728);
@@ -91,20 +91,20 @@ public class Class14_Sub2_Sub16_Sub2 extends Class14_Sub2_Sub16 {
 				gl.glEnd();
 				gl.glEndList();
 			}
-			anInt5066 = Class11.anInt267;
+			anInt5066 = CardMemManager.memoryManagerId;
 		}
 	}
 
 	@Override
 	public void finalize() throws Throwable {
 		if (anInt5070 != -1) {
-			Class11.method208(anInt5070, anInt5068, anInt5066);
+			CardMemManager.method208(anInt5070, anInt5068, anInt5066);
 			anInt5070 = -1;
 			anInt5068 = 0;
 		}
 		if (anIntArray5069 != null) {
 			for (int i = 0; i < anIntArray5069.length; i++)
-				Class11.method206(anIntArray5069[i], anInt5066);
+				CardMemManager.method206(anIntArray5069[i], anInt5066);
 			anIntArray5069 = null;
 		}
 		super.finalize();

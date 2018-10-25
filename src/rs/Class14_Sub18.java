@@ -63,7 +63,7 @@ public class Class14_Sub18 extends Linkable {
 		}
 		Class31 class31 = class43.method1136(-12444);
 		while (class31.anInt529 == 0)
-			Util.sleep(10L);
+			Util.accuratesleep(10L);
 		if (class31.anInt529 == 2) {
 			Class88[] class88s = new Class88[0];
 			return class88s;

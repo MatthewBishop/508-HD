@@ -8,7 +8,7 @@ import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
-import com.jagex.rt4.Class14_Sub1;
+import com.jagex.rt4.IntegerNode;
 import com.jagex.util.Util;
 
 public class Class12 {
@@ -312,7 +312,7 @@ public class Class12 {
 			if (this.aClass55_304 == null) {
 				return var2;
 			} else {
-				Class14_Sub1 var4 = (Class14_Sub1) this.aClass55_304.get(var3);
+				IntegerNode var4 = (IntegerNode) this.aClass55_304.get(var3);
 				if (var1 < 113) {
 					this.aBoolean287 = false;
 				}
@@ -320,7 +320,7 @@ public class Class12 {
 				if (var4 == null) {
 					return var2;
 				} else {
-					int var5 = var4.anInt2714;
+					int var5 = var4.value;
 					return var5;
 				}
 			}
@@ -471,7 +471,7 @@ public class Class12 {
 																				linkable = new Class14_Sub30(
 																						class14_sub10.method797(9467));
 																			else
-																				linkable = new Class14_Sub1(
+																				linkable = new IntegerNode(
 																						class14_sub10.getInt(
 																								(byte) -127));
 																			aClass55_304.put(i_84_, linkable);

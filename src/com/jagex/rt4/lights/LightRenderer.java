@@ -9,164 +9,164 @@ import javax.media.opengl.GL;
 
 import com.jagex.io.Buffer;
 import com.jagex.link.HashTable;
-import com.jagex.rt4.Class14_Sub1;
+import com.jagex.rt4.IntegerNode;
 import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.VertexBuffer;
 
 import rs.JunkTex;
 
 public class LightRenderer {
-	public byte[] aByteArray2141;
-	public byte[] aByteArray2145;
-	public byte[] aByteArray2146;
-	public ByteBuffer aByteBuffer2139;
-	public ByteBuffer aByteBuffer2147;
-	public VertexBuffer aClass29_2137;
-	public VertexBuffer aClass29_2142;
-	public HashTable aClass55_2138;
-	public int anInt2140;
-	public int anInt2144;
-	public int anInt2151;
-	public int anInt2152;
-	public int[] anIntArray2143;
-	public int[] anIntArray2148;
-	public int[] anIntArray2149;
-	public int[] anIntArray2150;
+	public byte[] vertexGreen;
+	public byte[] vertexRed;
+	public byte[] vertexBlue;
+	public ByteBuffer elementByteBuffer;
+	public ByteBuffer arrayByteBuffer;
+	public VertexBuffer arrayVBO;
+	public VertexBuffer elementVBO;
+	public HashTable vertexList;
+	public int vertexCount;
+	public int maxTriangles;
+	public int maxVertices;
+	public int triangleCount;
+	public int[] vertexX;
+	public int[] vertexY;
+	public int[] triIndex;
+	public int[] vertexZ;
 
-	public void init() {
-		Buffer class14_sub10 = new Buffer(anInt2152 * 4);
-		Buffer class14_sub10_0_ = new Buffer(anInt2140 * 16);
-		if (RT4GL.usingBigEndian) {
-			for (int i = 0; i < anInt2140; i++) {
-				class14_sub10_0_.method809(aByteArray2145[i]);
-				class14_sub10_0_.method809(aByteArray2141[i]);
-				class14_sub10_0_.method809(aByteArray2146[i]);
-				class14_sub10_0_.method809(255);
-				class14_sub10_0_.putFloatAsInt((float) anIntArray2143[i]);
-				class14_sub10_0_.putFloatAsInt((float) anIntArray2148[i]);
-				class14_sub10_0_.putFloatAsInt((float) anIntArray2150[i]);
+	public void generateData() {
+		Buffer elementStream = new Buffer(triangleCount * 4);
+		Buffer arrayStream = new Buffer(vertexCount * 16);
+		if (RT4GL.byte_order_bigendian) {
+			for (int i = 0; i < vertexCount; i++) {
+				arrayStream.writeByte(vertexRed[i]);
+				arrayStream.writeByte(vertexGreen[i]);
+				arrayStream.writeByte(vertexBlue[i]);
+				arrayStream.writeByte(255);
+				arrayStream.writeFloat((float) vertexX[i]);
+				arrayStream.writeFloat((float) vertexY[i]);
+				arrayStream.writeFloat((float) vertexZ[i]);
 			}
-			for (int i = 0; i < anInt2152; i++)
-				class14_sub10.method803(anIntArray2149[i], 107);
+			for (int i = 0; i < triangleCount; i++)
+				elementStream.writeInt(triIndex[i], 107);
 		} else {
-			for (int i = 0; i < anInt2140; i++) {
-				class14_sub10_0_.method809(aByteArray2145[i]);
-				class14_sub10_0_.method809(aByteArray2141[i]);
-				class14_sub10_0_.method809(aByteArray2146[i]);
-				class14_sub10_0_.method809(255);
-				class14_sub10_0_.putFloatAsLEInt((float) anIntArray2143[i], 24671);
-				class14_sub10_0_.putFloatAsLEInt((float) anIntArray2148[i], 24671);
-				class14_sub10_0_.putFloatAsLEInt((float) anIntArray2150[i], 24671);
+			for (int i = 0; i < vertexCount; i++) {
+				arrayStream.writeByte(vertexRed[i]);
+				arrayStream.writeByte(vertexGreen[i]);
+				arrayStream.writeByte(vertexBlue[i]);
+				arrayStream.writeByte(255);
+				arrayStream.writeFloatLE((float) vertexX[i], 24671);
+				arrayStream.writeFloatLE((float) vertexY[i], 24671);
+				arrayStream.writeFloatLE((float) vertexZ[i], 24671);
 			}
-			for (int i = 0; i < anInt2152; i++)
-				class14_sub10.method825(-99, anIntArray2149[i]);
+			for (int i = 0; i < triangleCount; i++)
+				elementStream.writeIntLE(-99, triIndex[i]);
 		}
-		if (RT4GL.vertexBufferAsObject) {
-			aClass29_2137 = new VertexBuffer();
-			ByteBuffer bytebuffer = ByteBuffer.wrap(class14_sub10_0_.payload);
-			aClass29_2137._setArrayData(bytebuffer);
-			aClass29_2142 = new VertexBuffer();
-			bytebuffer = ByteBuffer.wrap(class14_sub10.payload);
-			aClass29_2142.setElementData(bytebuffer);
+		if (RT4GL.has_vbo) {
+			arrayVBO = new VertexBuffer();
+			ByteBuffer bytebuffer = ByteBuffer.wrap(arrayStream.payload);
+			arrayVBO._setArrayData(bytebuffer);
+			elementVBO = new VertexBuffer();
+			bytebuffer = ByteBuffer.wrap(elementStream.payload);
+			elementVBO.setElementData(bytebuffer);
 		} else {
-			aByteBuffer2147 = ByteBuffer.allocateDirect(class14_sub10_0_.position);
-			aByteBuffer2147.put(class14_sub10_0_.payload);
-			aByteBuffer2147.flip();
-			aByteBuffer2139 = ByteBuffer.allocateDirect(class14_sub10.position);
-			aByteBuffer2139.put(class14_sub10.payload);
-			aByteBuffer2139.flip();
+			arrayByteBuffer = ByteBuffer.allocateDirect(arrayStream.position);
+			arrayByteBuffer.put(arrayStream.payload);
+			arrayByteBuffer.flip();
+			elementByteBuffer = ByteBuffer.allocateDirect(elementStream.position);
+			elementByteBuffer.put(elementStream.payload);
+			elementByteBuffer.flip();
 		}
-		anIntArray2143 = null;
-		anIntArray2148 = null;
-		anIntArray2150 = null;
-		aByteArray2145 = null;
-		aByteArray2141 = null;
-		aByteArray2146 = null;
-		anIntArray2149 = null;
-		aClass55_2138 = null;
+		vertexX = null;
+		vertexY = null;
+		vertexZ = null;
+		vertexRed = null;
+		vertexGreen = null;
+		vertexBlue = null;
+		triIndex = null;
+		vertexList = null;
 	}
 
 	public void render() {
 		GL gl = RT4GL.gl;
-		if (RT4GL.vertexBufferAsObject) {
-			aClass29_2137.bindArray();
+		if (RT4GL.has_vbo) {
+			arrayVBO.bindArray();
 			gl.glInterleavedArrays(10787, 16, 0L);
-			RT4GL.aBoolean2027 = false;
-			aClass29_2142.method1055();
-			gl.glDrawElements(4, anInt2152, 5125, 0L);
+			RT4GL.normal_array_enabled = false;
+			elementVBO.bindElement();
+			gl.glDrawElements(4, triangleCount, 5125, 0L);
 		} else {
-			if (RT4GL.vertexBufferAsObject) {
+			if (RT4GL.has_vbo) {
 				gl.glBindBufferARB(34962, 0);
 				gl.glBindBufferARB(34963, 0);
 			}
-			gl.glInterleavedArrays(10787, 16, aByteBuffer2147);
-			RT4GL.aBoolean2027 = false;
-			gl.glDrawElements(4, anInt2152, 5125, aByteBuffer2139);
+			gl.glInterleavedArrays(10787, 16, arrayByteBuffer);
+			RT4GL.normal_array_enabled = false;
+			gl.glDrawElements(4, triangleCount, 5125, elementByteBuffer);
 		}
 	}
 
-	public int method1769(Light light, int i, int i_1_, int i_2_, float f, float f_3_, float f_4_) {
+	public int addVertex(Light light, int x, int y, int z, float v2_x, float v2_y, float v2_z) {
 		long l = 0L;
-		if ((i & 0x7f) == 0 || (i_2_ & 0x7f) == 0) {
-			l = (long) (i + (i_2_ << 16));
-			Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass55_2138.get(l);
-			if (class14_sub1 != null)
-				return class14_sub1.anInt2714;
+		if ((x & 0x7f) == 0 || (z & 0x7f) == 0) {
+			l = (long) (x + (z << 16));
+			IntegerNode integerNode = (IntegerNode) vertexList.get(l);
+			if (integerNode != null)
+				return integerNode.value;
 		}
-		int i_5_ = light.anInt1122;
-		float f_6_ = (float) (light.param1 - i);
-		float f_7_ = (float) (light.param2 - i_1_);
-		float f_8_ = (float) (light.param3 - i_2_);
-		float f_9_ = (float) Math.sqrt((double) (f_6_ * f_6_ + f_7_ * f_7_ + f_8_ * f_8_));
-		float f_10_ = 1.0F / f_9_;
-		f_6_ *= f_10_;
-		f_7_ *= f_10_;
-		f_8_ *= f_10_;
-		float f_11_ = f_9_ / (float) ((light.anInt1120 << 7) + 64);
-		float f_12_ = 1.0F - f_11_ * f_11_;
-		if (f_12_ < 0.0F)
-			f_12_ = 0.0F;
-		float f_13_ = f_6_ * f + f_7_ * f_3_ + f_8_ * f_4_;
-		if (f_13_ < 0.0F)
-			f_13_ = 0.0F;
-		float f_14_ = f_13_ * f_12_ * 2.0F;
-		if (f_14_ > 1.0F)
-			f_14_ = 1.0F;
-		int i_15_ = (int) (f_14_ * (float) (i_5_ >> 16 & 0xff));
-		if (i_15_ > 255)
-			i_15_ = 255;
-		int i_16_ = (int) (f_14_ * (float) (i_5_ >> 8 & 0xff));
-		if (i_16_ > 255)
-			i_16_ = 255;
-		int i_17_ = (int) (f_14_ * (float) (i_5_ & 0xff));
-		if (i_17_ > 255)
-			i_17_ = 255;
-		aByteArray2145[anInt2140] = (byte) i_15_;
-		aByteArray2141[anInt2140] = (byte) i_16_;
-		aByteArray2146[anInt2140] = (byte) i_17_;
-		anIntArray2143[anInt2140] = i;
-		anIntArray2148[anInt2140] = i_1_;
-		anIntArray2150[anInt2140] = i_2_;
-		aClass55_2138.put(l, new Class14_Sub1(anInt2140));
-		return anInt2140++;
+		int rgb = light.diffuseColour;
+		float direction_x = (float) (light.x - x);
+		float direction_y = (float) (light.y - y);
+		float direction_z = (float) (light.z - z);
+		float distance_from_center = (float) Math.sqrt((double) (direction_x * direction_x + direction_y * direction_y + direction_z * direction_z));
+		float oneDividedByDistance = 1.0F / distance_from_center;
+		direction_x *= oneDividedByDistance;
+		direction_y *= oneDividedByDistance;
+		direction_z *= oneDividedByDistance;
+		float unit_distance = distance_from_center / (float) ((light.radius << 7) + 64);
+		float one_minus_unit_distance_squared = 1.0F - unit_distance * unit_distance;
+		if (one_minus_unit_distance_squared < 0.0F)
+			one_minus_unit_distance_squared = 0.0F;
+		float dot_of_distance_and_v2 = direction_x * v2_x + direction_y * v2_y + direction_z * v2_z;
+		if (dot_of_distance_and_v2 < 0.0F)
+			dot_of_distance_and_v2 = 0.0F;
+		float colour_modifier = dot_of_distance_and_v2 * one_minus_unit_distance_squared * 2.0F;
+		if (colour_modifier > 1.0F)
+			colour_modifier = 1.0F;
+		int r = (int) (colour_modifier * (float) (rgb >> 16 & 0xff));
+		if (r > 255)
+			r = 255;
+		int g = (int) (colour_modifier * (float) (rgb >> 8 & 0xff));
+		if (g > 255)
+			g = 255;
+		int b = (int) (colour_modifier * (float) (rgb & 0xff));
+		if (b > 255)
+			b = 255;
+		vertexRed[vertexCount] = (byte) r;
+		vertexGreen[vertexCount] = (byte) g;
+		vertexBlue[vertexCount] = (byte) b;
+		vertexX[vertexCount] = x;
+		vertexY[vertexCount] = y;
+		vertexZ[vertexCount] = z;
+		vertexList.put(l, new IntegerNode(vertexCount));
+		return vertexCount++;
 	}
 
-	public void method1770(int[] is) {
+	public void addTriangle(int[] is) {
 		for (int i = 1; i < is.length - 1; i++) {
-			anIntArray2149[anInt2152++] = is[0];
-			anIntArray2149[anInt2152++] = is[i];
-			anIntArray2149[anInt2152++] = is[i + 1];
+			triIndex[triangleCount++] = is[0];
+			triIndex[triangleCount++] = is[i];
+			triIndex[triangleCount++] = is[i + 1];
 		}
 	}
 
 	public void method1771() {
-		anIntArray2149 = new int[anInt2144];
-		anIntArray2143 = new int[anInt2151];
-		anIntArray2148 = new int[anInt2151];
-		anIntArray2150 = new int[anInt2151];
-		aByteArray2145 = new byte[anInt2151];
-		aByteArray2141 = new byte[anInt2151];
-		aByteArray2146 = new byte[anInt2151];
-		aClass55_2138 = new HashTable(JunkTex.method653(anInt2151));
+		triIndex = new int[maxTriangles];
+		vertexX = new int[maxVertices];
+		vertexY = new int[maxVertices];
+		vertexZ = new int[maxVertices];
+		vertexRed = new byte[maxVertices];
+		vertexGreen = new byte[maxVertices];
+		vertexBlue = new byte[maxVertices];
+		vertexList = new HashTable(JunkTex.method653(maxVertices));
 	}
 }

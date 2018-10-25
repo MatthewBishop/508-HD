@@ -12,7 +12,7 @@ public class Class70 {
 	public static Class14_Sub2_Sub5 aClass14_Sub2_Sub5_1078;
 	public static SoftCache aClass52_1079 = new SoftCache(5);
 	public static PacketBuffer aClass14_Sub10_Sub1_1080 = new PacketBuffer(5000);
-	public static int anInt1081;
+	public static int viewportBottom;
 	public static int[] anIntArray1082 = { 1, 1, 1, 1, 4, 1, 1, 5, 6, 1, 5, 0, 7, 0, 4, 1, 7, 2, 1, 1, 6, 1, 1, 3, 6, 1,
 			7, 0, 0, 6, 7, 0, 1, 7, 6, 1, 1, 1, 5, 4, 3, 2, 1, 1, 0, 4, 1, 5 };
 

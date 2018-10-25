@@ -268,10 +268,10 @@ public class ShadowManager {
 
 	public static void method2038(int i, int i_91_, int i_92_, int i_93_, boolean[][] bools, int[][] is) {
 		GL gl = RT4GL.gl;
-		RT4GL.method1638(1);
-		RT4GL.method1656(1);
-		RT4GL.method1651();
-		RT4GL.USE_GL_LIGHTING(false);
+		RT4GL.setRgbCombineMode(1);
+		RT4GL.setAlphaCombineMode(1);
+		RT4GL.resetTextureMatrix();
+		RT4GL.setLightingEnabled(false);
 		RT4.method1778(0, 0);
 		gl.glDepthMask(false);
 		for (int chunkX = 0; chunkX < chunkCountX; chunkX++) {
@@ -299,7 +299,7 @@ public class ShadowManager {
 		}
 		gl.glEnableClientState(32886);
 		gl.glDepthMask(true);
-		RT4GL.method1645();
+		RT4GL.applyLightingSetting();
 	}
 
 	public static boolean method2039(byte[] is, int i, int i_98_, int i_99_, int i_100_, int i_101_) {

@@ -31,7 +31,7 @@ public class MouseCapturer implements Runnable {
 					capturedCoordinateCount++;
 				}
 			}
-			Util.sleep(50L);
+			Util.accuratesleep(50L);
 		}
 	}
 }

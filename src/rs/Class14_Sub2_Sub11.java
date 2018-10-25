@@ -265,7 +265,7 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 
 	public static void method316(long l, int i) {
 		JunkTex.aClass14_Sub10_Sub1_891.position = 0;
-		JunkTex.aClass14_Sub10_Sub1_891.method809(118);
+		JunkTex.aClass14_Sub10_Sub1_891.writeByte(118);
 		JunkTex.aClass14_Sub10_Sub1_891.method817(l, 114);
 		Static2.anInt2734 = -3;
 		Class129.anInt2136 = 0;

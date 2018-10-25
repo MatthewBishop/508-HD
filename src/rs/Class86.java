@@ -6,7 +6,7 @@ package rs;
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9;
 import com.jagex.rt4.Class148_Sub1;
-import com.jagex.rt4.Class14_Sub1;
+import com.jagex.rt4.IntegerNode;
 
 public class Class86 {
 	public Class133 aClass133_1379;
@@ -48,24 +48,24 @@ public class Class86 {
 		int i_3_ = JunkTex.aClass2_4163.size();
 		if (i_3_ != 0) {
 			JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(67);
-			JunkTex.aClass14_Sub10_Sub1_891.method809(0);
+			JunkTex.aClass14_Sub10_Sub1_891.writeByte(0);
 			i_3_ = JunkTex.aClass14_Sub10_Sub1_891.position;
-			Class14_Sub1 class14_sub1 = (Class14_Sub1) JunkTex.aClass2_4163.popFront();
-			JunkTex.aClass14_Sub10_Sub1_891.method833((byte) 108, class14_sub1.anInt2714);
-			int i_4_ = class14_sub1.anInt2714;
+			IntegerNode class14_sub1 = (IntegerNode) JunkTex.aClass2_4163.popFront();
+			JunkTex.aClass14_Sub10_Sub1_891.method833((byte) 108, class14_sub1.value);
+			int i_4_ = class14_sub1.value;
 			if (i <= 73)
 				method1422(29, null);
 			int i_5_ = 0;
-			while ((class14_sub1 = ((Class14_Sub1) JunkTex.aClass2_4163.popFront())) != null) {
-				if (i_5_ >= 255 || class14_sub1.anInt2714 != i_4_ + 1) {
-					JunkTex.aClass14_Sub10_Sub1_891.method809(i_5_);
+			while ((class14_sub1 = ((IntegerNode) JunkTex.aClass2_4163.popFront())) != null) {
+				if (i_5_ >= 255 || class14_sub1.value != i_4_ + 1) {
+					JunkTex.aClass14_Sub10_Sub1_891.writeByte(i_5_);
 					i_5_ = 0;
-					JunkTex.aClass14_Sub10_Sub1_891.method833((byte) 122, class14_sub1.anInt2714);
+					JunkTex.aClass14_Sub10_Sub1_891.method833((byte) 122, class14_sub1.value);
 				} else
 					i_5_++;
-				i_4_ = class14_sub1.anInt2714;
+				i_4_ = class14_sub1.value;
 			}
-			JunkTex.aClass14_Sub10_Sub1_891.method809(i_5_);
+			JunkTex.aClass14_Sub10_Sub1_891.writeByte(i_5_);
 			JunkTex.aClass14_Sub10_Sub1_891.method804((JunkTex.aClass14_Sub10_Sub1_891.position) - i_3_, (byte) 32);
 		}
 	}

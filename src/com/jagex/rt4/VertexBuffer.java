@@ -17,7 +17,7 @@ public class VertexBuffer {
 		GL gl = RT4GL.gl;
 		gl.glBindBufferARB(34962, bufferID);
 		gl.glBufferDataARB(34962, bytebuffer.limit(), bytebuffer, isStream ? 35040 : 35044);
-		Class11.arbBufferMemory += bytebuffer.limit() - bufferSize;
+		CardMemManager.arbBufferMemory += bytebuffer.limit() - bufferSize;
 		bufferSize = bytebuffer.limit();
 	}
 
@@ -41,7 +41,7 @@ public class VertexBuffer {
 
 	public void finalize() throws Throwable {
 		if (bufferID != -1) {
-			Class11.requestARBBufferDeletion(bufferID, bufferSize, anInt517);
+			CardMemManager.requestARBBufferDeletion(bufferID, bufferSize, anInt517);
 			bufferID = -1;
 			bufferSize = 0;
 		}
@@ -52,11 +52,11 @@ public class VertexBuffer {
 		GL gl = RT4GL.gl;
 		gl.glBindBufferARB(34963, bufferID);
 		gl.glBufferDataARB(34963, bytebuffer.limit(), bytebuffer, isStream ? 35040 : 35044);
-		Class11.arbBufferMemory += bytebuffer.limit() - bufferSize;
+		CardMemManager.arbBufferMemory += bytebuffer.limit() - bufferSize;
 		bufferSize = bytebuffer.limit();
 	}
 
-	public void method1055() {
+	public void bindElement() {
 		GL gl = RT4GL.gl;
 		gl.glBindBufferARB(34963, bufferID);
 	}
@@ -67,6 +67,6 @@ public class VertexBuffer {
 		gl.glGenBuffersARB(1, is, 0);
 		isStream = bool;
 		bufferID = is[0];
-		anInt517 = Class11.anInt267;
+		anInt517 = CardMemManager.memoryManagerId;
 	}
 }

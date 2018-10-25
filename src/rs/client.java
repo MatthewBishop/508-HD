@@ -25,9 +25,9 @@ import com.jagex.link.ref.SoftCache;
 import com.jagex.map.SceneCluster;
 import com.jagex.map.Scenegraph;
 import com.jagex.rt4.AtmosphericEffects;
-import com.jagex.rt4.Class11;
+import com.jagex.rt4.CardMemManager;
 import com.jagex.rt4.Class119;
-import com.jagex.rt4.Class14_Sub1;
+import com.jagex.rt4.IntegerNode;
 import com.jagex.rt4.HDTile;
 import com.jagex.rt4.Class25;
 import com.jagex.rt4.RT4;
@@ -104,8 +104,8 @@ public class client extends Applet_Sub1 {
 						Class133_Sub1_Sub1.aClass36_4939 = new Class36((Socket) JunkTex.aClass31_1328.anObject530,
 								JunkTex.signlink);
 						Buffer var2 = new Buffer(5);
-						var2.method809(15);
-						var2.method803(508, 112);
+						var2.writeByte(15);
+						var2.writeInt(508, 112);
 						Class133_Sub1_Sub1.aClass36_4939.method1100(0, 3, 5, var2.payload);
 						++JunkTex.anInt2721;
 						Class12.aLong282 = TimeUtil.getTime();
@@ -517,10 +517,10 @@ public class client extends Applet_Sub1 {
 	}
 
 	public static int method46(Class94 class94) {
-		Class14_Sub1 class14_sub1 = ((Class14_Sub1) (JunkTex.aClass55_4155
+		IntegerNode class14_sub1 = ((IntegerNode) (JunkTex.aClass55_4155
 				.get(((long) class94.anInt1548 << 32) + class94.anInt1478)));
 		if (class14_sub1 != null)
-			return class14_sub1.anInt2714;
+			return class14_sub1.value;
 		return class94.anInt1565;
 	}
 
@@ -552,7 +552,7 @@ public class client extends Applet_Sub1 {
 				int var13;
 				if (Class62.anInt988 == 10) {
 					Class66.method1296(4, 104, 104, 28);
-					LightManager.method189(4, 104, 104);
+					LightManager.initializeLightMap(4, 104, 104);
 
 					for (var13 = 0; var13 < 4; ++var13) {
 						Class14_Sub21.aClass32Array3100[var13] = new Class32(104, 104);
@@ -695,7 +695,7 @@ public class client extends Applet_Sub1 {
 								Class31 var14 = JunkTex.signlink.method1142(this.getClass(), 10);
 
 								while (var14.anInt529 == 0) {
-									Util.sleep(100L);
+									Util.accuratesleep(100L);
 								}
 
 								if (var14.anInt529 == 1) {
@@ -708,14 +708,14 @@ public class client extends Applet_Sub1 {
 									return;
 								}
 
-								Util.sleep(1000L);
+								Util.accuratesleep(1000L);
 							}
 
-							var3 = RT4GL.method1621(Static2.aCanvas819, Class135.anInt2189 * 2);
+							var3 = RT4GL.createglcanvas(Static2.aCanvas819, Class135.anInt2189 * 2);
 							if (var3 != 0) {
-								String var15 = RT4GL.aString2031;
+								String var15 = RT4GL.vendor;
 								String var7 = "unknown";
-								String var8 = RT4GL.aString2037;
+								String var8 = RT4GL.renderer;
 								String var9 = var15.toLowerCase();
 								if (var9.indexOf("microsoft") != -1) {
 									var7 = "vesa";
@@ -1063,7 +1063,7 @@ public class client extends Applet_Sub1 {
 		Static2.method992((byte) 64);
 		Class103.method1527((byte) 121);
 		Class120.method1614((byte) -16);
-		Class11.method207();
+		CardMemManager.kill();
 		Class90.method1445(-104);
 		Class64.method1287(i - 12096);
 		Static2.method1997(64);
@@ -1086,7 +1086,7 @@ public class client extends Applet_Sub1 {
 		Class92.method1463();
 		Static2.method258(1869706832);
 		Static2.method334(-121);
-		LightManager.dispose();
+		LightManager.destroy();
 		JunkTex.method1327((byte) -100);
 		JunkTex.method339(15121);
 		JunkTex.method1132(118);
@@ -1183,7 +1183,7 @@ public class client extends Applet_Sub1 {
 		JunkTex.method1014((byte) 116);
 		JunkTex.method1484(i ^ 0x1d);
 		JunkTex.method2017((byte) -115);
-		Class119.method1613();
+		Class119.kill();
 		LavaShader.method1271();
 		WaterMovementShader.method1090();
 		JunkTex.method967(-20514);
@@ -1310,7 +1310,7 @@ public class client extends Applet_Sub1 {
 					Class138.method1946(139);
 					Class17.method956(false);
 					Class14_Sub2_Sub21.method440((byte) -114);
-					Class11.method205();
+					CardMemManager.process();
 					if (Class44.aClass129_726 != null) {
 						int i = Class44.aClass129_726.method1763(-128);
 						Class113.anInt1881 = i;
@@ -1365,7 +1365,7 @@ public class client extends Applet_Sub1 {
 
 	@Override
 	public void method38(boolean bool) {
-		RT4GL.method1630();
+		RT4GL.destroyGL();
 		BrowserControlUtil.destroy();
 		if (JunkTex.aFrame3962 != null) {
 			Class14_Sub2_Sub4.method278(JunkTex.signlink, JunkTex.aFrame3962, -119);

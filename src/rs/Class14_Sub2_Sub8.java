@@ -10,7 +10,7 @@ import com.jagex.io.js5.Class9;
 import com.jagex.link.Cacheable;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
-import com.jagex.rt4.Class14_Sub1;
+import com.jagex.rt4.IntegerNode;
 import com.jagex.rt4.AbstractSprite_Sub1_Sub2;
 
 public class Class14_Sub2_Sub8 extends Cacheable {
@@ -65,11 +65,11 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 	public void method292(boolean bool) {
 		aClass55_3854 = new HashTable(aClass55_3829.getBucketCount());
 		if (!bool) {
-			for (Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass55_3829
-					.getFirst(); class14_sub1 != null; class14_sub1 = (Class14_Sub1) aClass55_3829
+			for (IntegerNode class14_sub1 = (IntegerNode) aClass55_3829
+					.getFirst(); class14_sub1 != null; class14_sub1 = (IntegerNode) aClass55_3829
 							.getNext()) {
-				Class14_Sub1 class14_sub1_0_ = new Class14_Sub1((int) class14_sub1.key);
-				aClass55_3854.put(class14_sub1.anInt2714, class14_sub1_0_);
+				IntegerNode class14_sub1_0_ = new IntegerNode((int) class14_sub1.key);
+				aClass55_3854.put(class14_sub1.value, class14_sub1_0_);
 			}
 		}
 	}
@@ -95,7 +95,7 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 			aClass14_Sub2_Sub19_Sub1_Sub2_3836 = null;
 		if (aClass55_3854 == null)
 			method292(false);
-		Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass55_3854.get(i);
+		IntegerNode class14_sub1 = (IntegerNode) aClass55_3854.get(i);
 		if (class14_sub1 == null) {
 			boolean bool = false;
 			return bool;
@@ -153,7 +153,7 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 							int i_10_ = class14_sub10.getInt((byte) -115);
 							Linkable linkable;
 							if (i_7_ != 5)
-								linkable = (new Class14_Sub1(class14_sub10.getInt((byte) -104)));
+								linkable = (new IntegerNode(class14_sub10.getInt((byte) -104)));
 							else
 								linkable = new Class14_Sub30(class14_sub10.method797(9467));
 							aClass55_3829.put(i_10_, linkable);
@@ -178,12 +178,12 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 			int i_13_ = 57;
 			return i_13_;
 		}
-		Class14_Sub1 class14_sub1 = ((Class14_Sub1) aClass55_3829.get(i_11_));
+		IntegerNode class14_sub1 = ((IntegerNode) aClass55_3829.get(i_11_));
 		if (class14_sub1 == null) {
 			int i_14_ = anInt3855;
 			return i_14_;
 		}
-		int i_15_ = class14_sub1.anInt2714;
+		int i_15_ = class14_sub1.value;
 		return i_15_;
 	}
 

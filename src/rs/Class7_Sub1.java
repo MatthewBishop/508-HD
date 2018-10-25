@@ -83,8 +83,8 @@ public class Class7_Sub1 extends Class7 {
 					}
 					if (Static2.aClass94_3070 != null && client.method57(Class67.aClass94_1060) != null) {
 						JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(179);
-						JunkTex.aClass14_Sub10_Sub1_891.method803(Static2.aClass94_3070.anInt1548, 88);
-						JunkTex.aClass14_Sub10_Sub1_891.method803(Class67.aClass94_1060.anInt1548, 127);
+						JunkTex.aClass14_Sub10_Sub1_891.writeInt(Static2.aClass94_3070.anInt1548, 88);
+						JunkTex.aClass14_Sub10_Sub1_891.writeInt(Class67.aClass94_1060.anInt1548, 127);
 						JunkTex.aClass14_Sub10_Sub1_891.method833((byte) 117, Class67.aClass94_1060.anInt1478);
 						JunkTex.aClass14_Sub10_Sub1_891.method838(-1676904088, Static2.aClass94_3070.anInt1478);
 					}

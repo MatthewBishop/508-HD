@@ -128,10 +128,10 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 					float f = RT4GL.method1653();
 					float f_11_ = RT4GL.method1624();
 					RT4GL.method1646();
-					RT4GL.method1635(f, f_11_ - 150.0F);
+					RT4GL.setupSomeCustomProjection(f, f_11_ - 150.0F);
 					class133_sub7_10_.render(0, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, i_8_, -1L);
-					RT4GL.method1625();
-					RT4GL.method1635(f, f_11_);
+					RT4GL.enableDepthBufferWriting();
+					RT4GL.setupSomeCustomProjection(f, f_11_);
 				}
 				if (Class14_Sub3.aClass133_Sub1_Sub1_2748 == this) {
 					for (int i_12_ = Static2.aClass66Array3721.length - 1; i_12_ >= 0; i_12_--) {
@@ -406,10 +406,10 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 					float f = RT4GL.method1653();
 					float f_83_ = RT4GL.method1624();
 					RT4GL.method1646();
-					RT4GL.method1635(f, f_83_ - 150.0F);
+					RT4GL.setupSomeCustomProjection(f, f_83_ - 150.0F);
 					class133_sub7_82_.render(0, i_70_, i_73_, i, i_77_, i_75_, i_80_, i_74_, -1L);
-					RT4GL.method1625();
-					RT4GL.method1635(f, f_83_);
+					RT4GL.enableDepthBufferWriting();
+					RT4GL.setupSomeCustomProjection(f, f_83_);
 				}
 			}
 		}

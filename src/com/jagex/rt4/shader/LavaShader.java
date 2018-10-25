@@ -142,7 +142,7 @@ public class LavaShader implements ShaderInterface {
 	}
 
 	public LavaShader() {
-		if (this.anInt2565 < 0 && RT4GL.aBoolean2048 && RT4GL.maxTextureUnits >= 2) {
+		if (this.anInt2565 < 0 && RT4GL.has_vertex_program && RT4GL.maxTextureUnits >= 2) {
 			int[] is = new int[1];
 			GL gl = RT4GL.gl;
 			gl.glGenProgramsARB(1, is, 0);
@@ -154,16 +154,16 @@ public class LavaShader implements ShaderInterface {
 				int[] is_4_ = is_2_[i];
 				int[] is_5_ = is_3_[i];
 				for (int i_6_ = 0; i_6_ < 64; i_6_++) {
-					if (RT4GL.usingBigEndian) {
-						class14_sub10.putFloatAsInt(is_4_[i_6_] / 4096.0F);
-						class14_sub10.putFloatAsInt(is_5_[i_6_] / 4096.0F);
-						class14_sub10.putFloatAsInt(1.0F);
-						class14_sub10.putFloatAsInt(1.0F);
+					if (RT4GL.byte_order_bigendian) {
+						class14_sub10.writeFloat(is_4_[i_6_] / 4096.0F);
+						class14_sub10.writeFloat(is_5_[i_6_] / 4096.0F);
+						class14_sub10.writeFloat(1.0F);
+						class14_sub10.writeFloat(1.0F);
 					} else {
-						class14_sub10.putFloatAsLEInt(is_4_[i_6_] / 4096.0F, 24671);
-						class14_sub10.putFloatAsLEInt(is_5_[i_6_] / 4096.0F, 24671);
-						class14_sub10.putFloatAsLEInt(1.0F, 24671);
-						class14_sub10.putFloatAsLEInt(1.0F, 24671);
+						class14_sub10.writeFloatLE(is_4_[i_6_] / 4096.0F, 24671);
+						class14_sub10.writeFloatLE(is_5_[i_6_] / 4096.0F, 24671);
+						class14_sub10.writeFloatLE(1.0F, 24671);
+						class14_sub10.writeFloatLE(1.0F, 24671);
 					}
 				}
 			}

@@ -4,7 +4,6 @@
 package com.jagex.util;
 
 import rs.Class66;
-import rs.Static2;
 
 public class Huffman {
 	private byte[] aByteArray145;
@@ -74,15 +73,13 @@ public class Huffman {
 		}
 	}
 
-	public int method110(byte[] is, byte[] is_0_, int i, int i_1_, int i_2_, byte i_3_) {
+	public int method110(byte[] is, byte[] is_0_, int i, int i_1_, int i_2_) {
 		if (i_2_ == 0) {
 			int i_4_ = 0;
 			return i_4_;
 		}
 		int i_5_ = 0;
 		i_2_ += i;
-		if (i_3_ != -30)
-			Static2.aClass124_143 = null;
 		int i_6_ = i_1_;
 		for (;;) {
 			byte i_7_ = is[i_6_];

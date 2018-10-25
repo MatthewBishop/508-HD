@@ -36,7 +36,7 @@ public class Class88 {
 		JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(129);
 		if (i >= -50)
 			method1439(11, -123, -108, 106);
-		JunkTex.aClass14_Sub10_Sub1_891.method809(Class1.method73((byte) -58));
+		JunkTex.aClass14_Sub10_Sub1_891.writeByte(Class1.method73((byte) -58));
 		JunkTex.aClass14_Sub10_Sub1_891.method833((byte) 109, Class83.anInt1340);
 		JunkTex.aClass14_Sub10_Sub1_891.method833((byte) 94, Class14_Sub20.anInt3094);
 		Class56_Sub1.aLong3317 = 0L;

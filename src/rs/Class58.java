@@ -20,7 +20,7 @@ public class Class58 {
 	public static Class124 aClass124_943;
 	public static Class76[] aClass76Array944 = new Class76[27];
 	public static int anInt947;
-	public static int anInt948;
+	public static int viewportTop;
 	public static int anInt949;
 	public static boolean[] aBooleanArray950;
 
@@ -153,7 +153,7 @@ public class Class58 {
 			do {
 				boolean bool;
 				try {
-					Class124 class124_17_ = class124.method1697(0, i_15_, (byte) -104);
+					Class124 class124_17_ = class124.substring(0, i_15_, (byte) -104);
 					Class124 class124_18_ = class124.method1696(i_15_ + 1, 15);
 					MessageDigest messagedigest = MessageDigest.getInstance("SHA");
 					messagedigest.reset();
@@ -205,7 +205,7 @@ public class Class58 {
 		aClass124_943 = null;
 		aBooleanArray950 = null;
 		if (i != 1)
-			anInt948 = 118;
+			viewportTop = 118;
 	}
 
 	public static AbstractSprite method1259(int i, Class9 class9, int i_22_, int i_23_) {

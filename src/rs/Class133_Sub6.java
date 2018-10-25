@@ -181,7 +181,7 @@ public class Class133_Sub6 extends Class133 {
 	}
 
 	public static void method1854(int i, int i_17_, int i_18_) {
-		RT4GL.method1630();
+		RT4GL.destroyGL();
 		BrowserControlUtil.hide();
 		if (i_18_ >= 32) {
 			JunkTex.aFrame3962 = Class138.method1950(i_17_, 95, 0, i, JunkTex.signlink, 0);

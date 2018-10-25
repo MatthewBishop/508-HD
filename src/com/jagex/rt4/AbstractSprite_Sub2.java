@@ -46,12 +46,12 @@ public class AbstractSprite_Sub2 extends AbstractSprite {
 
 	public void finalize() throws Throwable {
 		if (texture != -1) {
-			Class11.method208(texture, anInt5091, anInt5095);
+			CardMemManager.method208(texture, anInt5091, anInt5095);
 			texture = -1;
 			anInt5091 = 0;
 		}
 		if (listId != -1) {
-			Class11.method206(listId, anInt5095);
+			CardMemManager.method206(listId, anInt5095);
 			listId = -1;
 		}
 		super.finalize();
@@ -355,7 +355,7 @@ public class AbstractSprite_Sub2 extends AbstractSprite {
 		GL gl = RT4GL.gl;
 		if (listId == -1) {
 			listId = gl.glGenLists(1);
-			anInt5095 = Class11.anInt267;
+			anInt5095 = CardMemManager.memoryManagerId;
 		}
 		gl.glNewList(listId, 4864);
 		gl.glBegin(6);
@@ -454,11 +454,11 @@ public class AbstractSprite_Sub2 extends AbstractSprite {
 			int[] textures = new int[1];
 			gl.glGenTextures(1, textures, 0);
 			texture = textures[0];
-			anInt5095 = Class11.anInt267;
+			anInt5095 = CardMemManager.memoryManagerId;
 		}
 		RT4GL.bindTexture2D(texture);
 		gl.glTexImage2D(3553, 0, 6408, width_, height_, 0, 6408, 5121, pixels);
-		Class11.anInt263 += pixels.limit() - anInt5091;
+		CardMemManager.memory2d += pixels.limit() - anInt5091;
 		anInt5091 = pixels.limit();
 	}
 }

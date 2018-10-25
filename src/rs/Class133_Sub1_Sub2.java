@@ -63,10 +63,10 @@ public class Class133_Sub1_Sub2 extends Class133_Sub1 {
 					float f = RT4GL.method1653();
 					float f_9_ = RT4GL.method1624();
 					RT4GL.method1646();
-					RT4GL.method1635(f, f_9_ - 150.0F);
+					RT4GL.setupSomeCustomProjection(f, f_9_ - 150.0F);
 					class133_sub7_8_.render(0, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, -1L);
-					RT4GL.method1625();
-					RT4GL.method1635(f, f_9_);
+					RT4GL.enableDepthBufferWriting();
+					RT4GL.setupSomeCustomProjection(f, f_9_);
 				}
 				int i_10_ = 0;
 				int i_11_ = 0;

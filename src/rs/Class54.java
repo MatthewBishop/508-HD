@@ -23,7 +23,7 @@ public class Class54 {
 			Class124 class124 = null;
 			return class124;
 		}
-		if (class94.aClass124_1589 == null || (class94.aClass124_1589.method1684((byte) 9).method1693(0) == 0)) {
+		if (class94.aClass124_1589 == null || (class94.aClass124_1589.method1684((byte) 9).length(0) == 0)) {
 			if (JunkTex.aBoolean3392) {
 				Class124 class124 = JunkTex.aClass124_4607;
 				return class124;

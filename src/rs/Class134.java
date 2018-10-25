@@ -147,7 +147,7 @@ public class Class134 implements TextureDefInterface {
 			int[] is = null;
 			return is;
 		}
-		int[] is = class14_sub2_sub1.method257(false, aClass9_2587, (aBoolean2581 || aBooleanArray2604[i_15_]), this);
+		int[] is = class14_sub2_sub1.method257(aClass9_2587, (aBoolean2581 || aBooleanArray2604[i_15_]), this);
 		return is;
 	}
 
@@ -156,7 +156,7 @@ public class Class134 implements TextureDefInterface {
 				.getFirst(); class14_sub2_sub1 != null; class14_sub2_sub1 = (Class14_Sub2_Sub1) aClass20_2595
 						.getNext()) {
 			if (class14_sub2_sub1.aBoolean3746) {
-				class14_sub2_sub1.method253(i, false);
+				class14_sub2_sub1.method253(i);
 				class14_sub2_sub1.aBoolean3746 = false;
 			}
 		}

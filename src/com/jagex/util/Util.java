@@ -2,7 +2,7 @@ package com.jagex.util;
 
 public class Util {
 
-	public static void method1742(long l) {
+	public static void sleep(long l) {
 		try {
 			Thread.sleep(l);
 		} catch (InterruptedException interruptedexception) {
@@ -10,13 +10,13 @@ public class Util {
 		}
 	}
 
-	public static void sleep(long l) {
+	public static void accuratesleep(long l) {
 		if (l > 0L) {
 			if (0L != l % 10L)
-				method1742(l);
+				sleep(l);
 			else {
-				method1742(l - 1L);
-				method1742(1L);
+				sleep(l - 1L);
+				sleep(1L);
 			}
 		}
 	}

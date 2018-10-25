@@ -5,7 +5,7 @@ package rs;
 
 import com.jagex.cache.anim.Animation;
 import com.jagex.io.js5.Class9;
-import com.jagex.rt4.Class11;
+import com.jagex.rt4.CardMemManager;
 import com.jagex.rt4.AbstractSprite;
 import com.jagex.rt4.AbstractSprite_Sub1;
 import com.jagex.rt4.AbstractSprite_Sub2;
@@ -233,7 +233,7 @@ public class Class137 {
 													(byte) -116)), i_30_, i_29_, i_32_, -1);
 									i_29_ += 15;
 									i_32_ = 16776960;
-									int i_33_ = ((Class11.arbBufferMemory + Class11.anInt263 + Class11.textureMemory) / 1024);
+									int i_33_ = ((CardMemManager.arbBufferMemory + CardMemManager.memory2d + CardMemManager.textureMemory) / 1024);
 									if (i_33_ > 65536)
 										i_32_ = 16711680;
 									Class84.aClass14_Sub2_Sub16_1344.method348((JunkTex.method515(
@@ -439,7 +439,7 @@ public class Class137 {
 											i_49_ = class94.anInt1521;
 											if ((JunkTex.aClass94_3410 == class94) && class94.anInt1579 != 0)
 												i_49_ = class94.anInt1579;
-											if (class94.aClass124_1552.method1693(0) > 0)
+											if (class94.aClass124_1552.length(0) > 0)
 												class124 = class94.aClass124_1552;
 										}
 										if (class94.aBoolean1455 && class94.anInt1532 != -1) {
@@ -620,18 +620,18 @@ public class Class137 {
 												+ (i_18_ + class94.anInt1518 / 2));
 										if (!class94.aBoolean1599) {
 											RT4GL.method1644(i_66_, i_65_, i_63_, i_64_);
-											RT4GL.method1635(class94.aShort1528,
+											RT4GL.setupSomeCustomProjection(class94.aShort1528,
 													(class94.aShort1602 * 1.5F));
 										} else
 											RT4GL.method1642(i_66_, i_65_, (class94.anInt1513), (class94.aShort1602),
 													i_63_, i_64_);
-										RT4GL.method1645();
-										RT4GL.method1652(true);
-										RT4GL.method1626(false);
+										RT4GL.applyLightingSetting();
+										RT4GL.setDepthTestEnabled(true);
+										RT4GL.setFogEnabled(false);
 										Class35.method1093(-75);
 										if (Class89.aBoolean1409) {
 											Class25.method994();
-											RT4GL.method1629();
+											RT4GL.clearDepthBuffer();
 											Class25.method999(i_8_, i_9_, i_11_, i_13_);
 											Class89.aBoolean1409 = false;
 										}
@@ -648,7 +648,7 @@ public class Class137 {
 													class94.anInt1465, class94.anInt1459,
 													i_61_ + (i_68_ + class94.anInt1482), i_67_ + class94.anInt1482);
 										if (class94.aBoolean1606)
-											RT4GL.method1625();
+											RT4GL.enableDepthBufferWriting();
 									}
 								} else {
 									if (class94.anInt1489 == 7) {
@@ -706,11 +706,11 @@ public class Class137 {
 										Class124 class124 = class94.aClass124_1499;
 										Class14_Sub2_Sub16 class14_sub2_sub16 = Class84.aClass14_Sub2_Sub16_1344;
 										class124 = (JunkTex.method557(i_14_ - 218, class124, class94));
-										while (class124.method1693(i_14_ ^ 0x5d) > 0) {
-											int i_76_ = (class124.method1700(-19928, (JunkTex.aClass124_2807)));
+										while (class124.length(i_14_ ^ 0x5d) > 0) {
+											int i_76_ = (class124.indexOf(-19928, (JunkTex.aClass124_2807)));
 											Class124 class124_77_;
 											if (i_76_ != -1) {
-												class124_77_ = (class124.method1697(0, i_76_, (byte) -104));
+												class124_77_ = (class124.substring(0, i_76_, (byte) -104));
 												class124 = (class124.method1696(i_76_ + 4, 15));
 											} else {
 												class124_77_ = class124;
@@ -736,14 +736,14 @@ public class Class137 {
 										int i_81_ = (i_80_ + class14_sub2_sub16.anInt3978 + 2);
 										class124 = class94.aClass124_1499;
 										class124 = (JunkTex.method557(112, class124, class94));
-										while (class124.method1693(0) > 0) {
-											int i_82_ = (class124.method1700(-19928, (JunkTex.aClass124_2807)));
+										while (class124.length(0) > 0) {
+											int i_82_ = (class124.indexOf(-19928, (JunkTex.aClass124_2807)));
 											Class124 class124_83_;
 											if (i_82_ == -1) {
 												class124_83_ = class124;
 												class124 = (JunkTex.aClass124_4244);
 											} else {
-												class124_83_ = (class124.method1697(0, i_82_, (byte) -104));
+												class124_83_ = (class124.substring(0, i_82_, (byte) -104));
 												class124 = (class124.method1696(i_82_ + 4, 15));
 											}
 											class14_sub2_sub16.method364(class124_83_, i_79_ + 3, i_81_, 0, -1);

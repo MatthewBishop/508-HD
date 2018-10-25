@@ -29,7 +29,7 @@ public class Shadow {
 		int[] is = new int[1];
 		gl.glGenTextures(1, is, 0);
 		anInt348 = is[0];
-		Class11.textureMemory += 16384;
+		CardMemManager.textureMemory += 16384;
 		RT4GL.bindTexture2D(anInt348);
 		gl.glTexParameteri(3553, 10241, 9729);
 		gl.glTexParameteri(3553, 10240, 9729);
@@ -43,18 +43,18 @@ public class Shadow {
 		if (aClass29_345 != null) {
 			aClass29_345.bindArray();
 			gl.glInterleavedArrays(10791, 20, 0L);
-			RT4GL.aBoolean2027 = false;
+			RT4GL.normal_array_enabled = false;
 		} else {
-			if (RT4GL.vertexBufferAsObject)
+			if (RT4GL.has_vbo)
 				gl.glBindBufferARB(34962, 0);
 			gl.glInterleavedArrays(10791, 20, aByteBuffer350);
-			RT4GL.aBoolean2027 = false;
+			RT4GL.normal_array_enabled = false;
 		}
 		if (aClass29_347 != null) {
-			aClass29_347.method1055();
+			aClass29_347.bindElement();
 			gl.glDrawElements(4, 384, 5125, 0L);
 		} else {
-			if (RT4GL.vertexBufferAsObject)
+			if (RT4GL.has_vbo)
 				gl.glBindBufferARB(34963, 0);
 			gl.glDrawElements(4, 384, 5125, aByteBuffer343);
 		}
@@ -110,22 +110,22 @@ public class Shadow {
 		Buffer class14_sub10 = new Buffer(1620);
 		for (int i_11_ = 0; i_11_ <= 8; i_11_++) {
 			for (int i_12_ = 0; i_12_ <= 8; i_12_++) {
-				if (RT4GL.usingBigEndian) {
-					class14_sub10.putFloatAsInt((float) i_12_ / 8.0F);
-					class14_sub10.putFloatAsInt((float) i_11_ / 8.0F);
-					class14_sub10.putFloatAsInt((float) (i_12_ * 128));
-					class14_sub10.putFloatAsInt((float) (is[i_12_ + i][i_11_ + i_10_]));
-					class14_sub10.putFloatAsInt((float) (i_11_ * 128));
+				if (RT4GL.byte_order_bigendian) {
+					class14_sub10.writeFloat((float) i_12_ / 8.0F);
+					class14_sub10.writeFloat((float) i_11_ / 8.0F);
+					class14_sub10.writeFloat((float) (i_12_ * 128));
+					class14_sub10.writeFloat((float) (is[i_12_ + i][i_11_ + i_10_]));
+					class14_sub10.writeFloat((float) (i_11_ * 128));
 				} else {
-					class14_sub10.putFloatAsLEInt((float) i_12_ / 8.0F, 24671);
-					class14_sub10.putFloatAsLEInt((float) i_11_ / 8.0F, 24671);
-					class14_sub10.putFloatAsLEInt((float) (i_12_ * 128), 24671);
-					class14_sub10.putFloatAsLEInt((float) (is[i_12_ + i][i_11_ + i_10_]), 24671);
-					class14_sub10.putFloatAsLEInt((float) (i_11_ * 128), 24671);
+					class14_sub10.writeFloatLE((float) i_12_ / 8.0F, 24671);
+					class14_sub10.writeFloatLE((float) i_11_ / 8.0F, 24671);
+					class14_sub10.writeFloatLE((float) (i_12_ * 128), 24671);
+					class14_sub10.writeFloatLE((float) (is[i_12_ + i][i_11_ + i_10_]), 24671);
+					class14_sub10.writeFloatLE((float) (i_11_ * 128), 24671);
 				}
 			}
 		}
-		if (RT4GL.vertexBufferAsObject) {
+		if (RT4GL.has_vbo) {
 			ByteBuffer bytebuffer = ByteBuffer.wrap(class14_sub10.payload, 0, class14_sub10.position);
 			aClass29_345 = new VertexBuffer();
 			aClass29_345._setArrayData(bytebuffer);
@@ -137,24 +137,24 @@ public class Shadow {
 		Buffer class14_sub10_13_ = new Buffer(1536);
 		for (int i_14_ = 0; i_14_ < 8; i_14_++) {
 			for (int i_15_ = 0; i_15_ < 8; i_15_++) {
-				if (RT4GL.usingBigEndian) {
-					class14_sub10_13_.method803(i_15_ + (i_14_ + 1) * 9, 107);
-					class14_sub10_13_.method803(i_15_ + i_14_ * 9, 77);
-					class14_sub10_13_.method803(i_15_ + 1 + i_14_ * 9, 65);
-					class14_sub10_13_.method803(i_15_ + (i_14_ + 1) * 9, 122);
-					class14_sub10_13_.method803(i_15_ + 1 + i_14_ * 9, 101);
-					class14_sub10_13_.method803(i_15_ + 1 + (i_14_ + 1) * 9, 106);
+				if (RT4GL.byte_order_bigendian) {
+					class14_sub10_13_.writeInt(i_15_ + (i_14_ + 1) * 9, 107);
+					class14_sub10_13_.writeInt(i_15_ + i_14_ * 9, 77);
+					class14_sub10_13_.writeInt(i_15_ + 1 + i_14_ * 9, 65);
+					class14_sub10_13_.writeInt(i_15_ + (i_14_ + 1) * 9, 122);
+					class14_sub10_13_.writeInt(i_15_ + 1 + i_14_ * 9, 101);
+					class14_sub10_13_.writeInt(i_15_ + 1 + (i_14_ + 1) * 9, 106);
 				} else {
-					class14_sub10_13_.method825(-47, i_15_ + (i_14_ + 1) * 9);
-					class14_sub10_13_.method825(-76, i_15_ + i_14_ * 9);
-					class14_sub10_13_.method825(-69, i_15_ + 1 + i_14_ * 9);
-					class14_sub10_13_.method825(-21, i_15_ + (i_14_ + 1) * 9);
-					class14_sub10_13_.method825(-27, i_15_ + 1 + i_14_ * 9);
-					class14_sub10_13_.method825(-32, i_15_ + 1 + (i_14_ + 1) * 9);
+					class14_sub10_13_.writeIntLE(-47, i_15_ + (i_14_ + 1) * 9);
+					class14_sub10_13_.writeIntLE(-76, i_15_ + i_14_ * 9);
+					class14_sub10_13_.writeIntLE(-69, i_15_ + 1 + i_14_ * 9);
+					class14_sub10_13_.writeIntLE(-21, i_15_ + (i_14_ + 1) * 9);
+					class14_sub10_13_.writeIntLE(-27, i_15_ + 1 + i_14_ * 9);
+					class14_sub10_13_.writeIntLE(-32, i_15_ + 1 + (i_14_ + 1) * 9);
 				}
 			}
 		}
-		if (RT4GL.vertexBufferAsObject) {
+		if (RT4GL.has_vbo) {
 			ByteBuffer bytebuffer = ByteBuffer.wrap(class14_sub10_13_.payload, 0, class14_sub10_13_.position);
 			aClass29_347 = new VertexBuffer();
 			aClass29_347.setElementData(bytebuffer);

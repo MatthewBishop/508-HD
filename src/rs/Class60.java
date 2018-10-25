@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.rt4.Class14_Sub1;
+import com.jagex.rt4.IntegerNode;
 
 public class Class60 {
 	public short[] aShortArray961;
@@ -201,7 +201,7 @@ public class Class60 {
 	public static void method1270(int i, byte i_27_) {
 		if (i_27_ != 46)
 			method1264(-75);
-		JunkTex.aClass2_4163.pushBack(new Class14_Sub1(i));
+		JunkTex.aClass2_4163.pushBack(new IntegerNode(i));
 	}
 
 	public Class60() {

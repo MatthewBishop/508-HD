@@ -480,7 +480,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	public void destroy() {
 		if (this == Class96.anApplet_Sub1_1632 && !Class14_Sub2_Sub5.aBoolean3818) {
 			JunkTex.aLong4704 = TimeUtil.getTime();
-			Util.sleep(5000L);
+			Util.accuratesleep(5000L);
 			Static2.aClass43_358 = null;
 			method36(false, (byte) -67);
 		}

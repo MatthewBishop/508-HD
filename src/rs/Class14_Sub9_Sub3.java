@@ -167,7 +167,7 @@ public class Class14_Sub9_Sub3 extends Class14_Sub9 {
 									.append(Class48.aLong802).append("&v1=").append(Class43.java_vendor).append("&v2=")
 									.append(Class43.java_version).append("&e=").append(string_11_).toString())));
 					while (class31.anInt529 == 0)
-						Util.sleep(1L);
+						Util.accuratesleep(1L);
 					if (class31.anInt529 == 1) {
 						DataInputStream datainputstream = (DataInputStream) class31.anObject530;
 						datainputstream.read();

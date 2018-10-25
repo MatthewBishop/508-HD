@@ -8,12 +8,15 @@ import java.nio.ByteBuffer;
 import javax.media.opengl.GL;
 
 public class Class119 {
+	private static ByteBuffer textureData2;
+	private static ByteBuffer textureData2l;
+	
 	public static int texture3DPointer2l = -1;
 	public static int[] anIntArray1991 = null;
-	private static ByteBuffer textureData2;
+
 	public static int texture3DPointer2 = -1;
 	public static int[] textureIds2 = null;
-	private static ByteBuffer textureData2l;
+
 	public static boolean allows3DTextureMapping;
 
 	public static void finalizeCard() {
@@ -22,26 +25,26 @@ public class Class119 {
 			int[] is = { texture3DPointer2 };
 			gl.glDeleteTextures(1, is, 0);
 			texture3DPointer2 = -1;
-			Class11.textureMemory -= textureData2.limit() * 2;
+			CardMemManager.textureMemory -= textureData2.limit() * 2;
 		}
 		if (textureIds2 != null) {
 			GL gl = RT4GL.gl;
 			gl.glDeleteTextures(64, textureIds2, 0);
 			textureIds2 = null;
-			Class11.textureMemory -= textureData2.limit() * 2;
+			CardMemManager.textureMemory -= textureData2.limit() * 2;
 		}
 		if (texture3DPointer2l != -1) {
 			GL gl = RT4GL.gl;
 			int[] is = { texture3DPointer2l };
 			gl.glDeleteTextures(1, is, 0);
 			texture3DPointer2l = -1;
-			Class11.textureMemory -= textureData2l.limit() * 2;
+			CardMemManager.textureMemory -= textureData2l.limit() * 2;
 		}
 		if (anIntArray1991 != null) {
 			GL gl = RT4GL.gl;
 			gl.glDeleteTextures(64, anIntArray1991, 0);
 			anIntArray1991 = null;
-			Class11.textureMemory -= textureData2l.limit() * 2;
+			CardMemManager.textureMemory -= textureData2l.limit() * 2;
 		}
 	}
 
@@ -56,7 +59,7 @@ public class Class119 {
 			gl.glTexParameteri(32879, 10241, 9729);
 			gl.glTexParameteri(32879, 10240, 9729);
 			texture3DPointer2l = is[0];
-			Class11.textureMemory += textureData2l.limit() * 2;
+			CardMemManager.textureMemory += textureData2l.limit() * 2;
 		} else {
 			anIntArray1991 = new int[64];
 			gl.glGenTextures(64, anIntArray1991, 0);
@@ -67,7 +70,7 @@ public class Class119 {
 				gl.glTexParameteri(3553, 10241, 9729);
 				gl.glTexParameteri(3553, 10240, 9729);
 			}
-			Class11.textureMemory += textureData2l.limit() * 2;
+			CardMemManager.textureMemory += textureData2l.limit() * 2;
 		}
 	}
 
@@ -82,7 +85,7 @@ public class Class119 {
 			gl.glTexParameteri(32879, 10241, 9729);
 			gl.glTexParameteri(32879, 10240, 9729);
 			texture3DPointer2 = is[0];
-			Class11.textureMemory += textureData2.limit() * 2;
+			CardMemManager.textureMemory += textureData2.limit() * 2;
 		} else {
 			textureIds2 = new int[64];
 			gl.glGenTextures(64, textureIds2, 0);
@@ -93,12 +96,12 @@ public class Class119 {
 				gl.glTexParameteri(3553, 10241, 9729);
 				gl.glTexParameteri(3553, 10240, 9729);
 			}
-			Class11.textureMemory += textureData2.limit() * 2;
+			CardMemManager.textureMemory += textureData2.limit() * 2;
 		}
 	}
 
 	public static void method1612() {
-		allows3DTextureMapping = RT4GL.aBoolean2042;
+		allows3DTextureMapping = RT4GL.has_texture_3d;
 		if (textureData2 == null) {
 			Class26_Sub2_Sub1 class26_sub2_sub1 = new Class26_Sub2_Sub1();
 			byte[] is;
@@ -127,7 +130,7 @@ public class Class119 {
 		method1610();
 	}
 
-	public static void method1613() {
+	public static void kill() {
 		textureIds2 = null;
 		anIntArray1991 = null;
 		textureData2 = null;

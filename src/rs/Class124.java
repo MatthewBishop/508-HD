@@ -348,10 +348,10 @@ public class Class124 implements Interface1 {
 		int var14 = (var12 << 9) / var11;
 		return var7 < 50 && var11 < 50 ? false
 				: (var7 > var4 && var11 > var4 ? false
-						: (var9 < JunkTex.anInt425 && var13 < JunkTex.anInt425 ? false
-								: (var9 > JunkTex.anInt4547 && var13 > JunkTex.anInt4547 ? false
-										: (var10 < Class58.anInt948 && var14 < Class58.anInt948 ? false
-												: var10 <= Class70.anInt1081 || var14 <= Class70.anInt1081))));
+						: (var9 < JunkTex.viewportLeft && var13 < JunkTex.viewportLeft ? false
+								: (var9 > JunkTex.viewportRight && var13 > JunkTex.viewportRight ? false
+										: (var10 < Class58.viewportTop && var14 < Class58.viewportTop ? false
+												: var10 <= Class70.viewportBottom || var14 <= Class70.viewportBottom))));
 	}
 
 	public static void method1715(byte var0) {
@@ -1039,7 +1039,7 @@ public class Class124 implements Interface1 {
 		return var2;
 	}
 
-	public int method1693(int var1) {
+	public int length(int var1) {
 		if (var1 != 0) {
 			aClass124_2476 = null;
 		}
@@ -1086,11 +1086,11 @@ public class Class124 implements Interface1 {
 			aClass124_2479 = null;
 		}
 
-		Class124 var3 = this.method1697(var1, this.anInt2507, (byte) -104);
+		Class124 var3 = this.substring(var1, this.anInt2507, (byte) -104);
 		return var3;
 	}
 
-	public Class124 method1697(int var1, int var2, byte var3) {
+	public Class124 substring(int var1, int var2, byte var3) {
 		if (var3 != -104) {
 			this.method1685(-2);
 		}
@@ -1169,12 +1169,12 @@ public class Class124 implements Interface1 {
 		}
 	}
 
-	public int method1700(int var1, Class124 var2) {
+	public int indexOf(int var1, Class124 var2) {
 		int var3 = this.method1707(var2, (byte) 59, 0);
 		return var3;
 	}
 
-	public boolean method1701(int var1) {
+	public boolean isValidStringBase10(int var1) {
 		boolean var2;
 		if (var1 < 118) {
 			var2 = true;
@@ -1185,7 +1185,7 @@ public class Class124 implements Interface1 {
 		}
 	}
 
-	public int method1702(int var1) {
+	public int stringToBase10(int var1) {
 		if (var1 <= 41) {
 			aClass124Array2508 = null;
 		}
@@ -1580,11 +1580,11 @@ public class Class124 implements Interface1 {
 					;
 				}
 
-				var10[var5++] = this.method1697(var6, var6 + var9, (byte) -104);
+				var10[var5++] = this.substring(var6, var6 + var9, (byte) -104);
 				var6 += var9 + 1;
 			}
 
-			var10[var3] = this.method1697(var6, this.anInt2507, (byte) -104);
+			var10[var3] = this.substring(var6, this.anInt2507, (byte) -104);
 			return var10;
 		}
 	}

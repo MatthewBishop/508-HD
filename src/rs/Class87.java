@@ -61,7 +61,7 @@ public class Class87 {
 	public void method1427(Class124 class124, int i, int i_12_, int i_13_, boolean bool) {
 		if (aBoolean1390 || i_13_ == 0)
 			bool = false;
-		for (int i_14_ = 0; i_14_ < class124.method1693(0); i_14_++) {
+		for (int i_14_ = 0; i_14_ < class124.length(0); i_14_++) {
 			int i_15_ = anIntArray1395[class124.method1710(0, i_14_)];
 			if (bool) {
 				method1428(i_15_, i + 1, i_12_, 1, aByteArray1393);
@@ -157,11 +157,11 @@ public class Class87 {
 
 	public int method1431(Class124 class124) {
 		int i = 0;
-		for (int i_45_ = 0; i_45_ < class124.method1693(0); i_45_++) {
-			if (class124.method1710(0, i_45_) == 64 && i_45_ + 4 < class124.method1693(0)
+		for (int i_45_ = 0; i_45_ < class124.length(0); i_45_++) {
+			if (class124.method1710(0, i_45_) == 64 && i_45_ + 4 < class124.length(0)
 					&& class124.method1710(0, i_45_ + 4) == 64)
 				i_45_ += 4;
-			else if (class124.method1710(0, i_45_) == 126 && i_45_ + 4 < class124.method1693(0)
+			else if (class124.method1710(0, i_45_) == 126 && i_45_ + 4 < class124.length(0)
 					&& class124.method1710(0, i_45_ + 4) == 126)
 				i_45_ += 4;
 			else

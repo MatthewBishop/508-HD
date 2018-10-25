@@ -48,7 +48,7 @@ public class AbstractSprite_Sub2_Sub1 extends AbstractSprite_Sub2 {
 		}
 		RT4GL.bindTexture2D(texture);
 		gl.glTexImage2D(3553, 0, 6408, width_, height_, 0, 6408, 5121, pixels);
-		Class11.anInt263 += pixels.limit() - anInt5091;
+		CardMemManager.memory2d += pixels.limit() - anInt5091;
 		anInt5091 = pixels.limit();
 	}
 }

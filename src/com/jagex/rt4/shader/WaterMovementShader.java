@@ -101,9 +101,9 @@ public class WaterMovementShader implements ShaderInterface {
 
 	public void enable() {
 		GL gl = RT4GL.gl;
-		RT4GL.method1638(2);
-		RT4GL.method1656(2);
-		RT4GL.method1651();
+		RT4GL.setRgbCombineMode(2);
+		RT4GL.setAlphaCombineMode(2);
+		RT4GL.resetTextureMatrix();
 		gl.glCallList(this.anInt2562);
 		float f = 2662.4001F;
 		f += (RT4.rotateX - 128) * 0.5F;

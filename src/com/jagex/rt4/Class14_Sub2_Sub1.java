@@ -71,7 +71,7 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 
 	public void finalize() throws Throwable {
 		if (anInt3744 != -1) {
-			Class11.method202(anInt3744, anInt3753, anInt3731);
+			CardMemManager.method202(anInt3744, anInt3753, anInt3731);
 			anInt3753 = 0;
 			anInt3744 = -1;
 		}
@@ -91,7 +91,7 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 			else {
 				int[] is = new int[1];
 				gl.glGenTextures(1, is, 0);
-				anInt3731 = Class11.anInt267;
+				anInt3731 = CardMemManager.memoryManagerId;
 				anInt3744 = is[0];
 				RT4GL.bindTexture2D(anInt3744);
 				ByteBuffer bytebuffer = ByteBuffer
@@ -101,7 +101,7 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 						gl.glTexImage2D(3553, 0, 6408, i_6_, i_6_, 0, 6408, 5121, bytebuffer);
 						gl.glTexParameteri(3553, 10241, 9729);
 						gl.glTexParameteri(3553, 10240, 9729);
-						Class11.textureMemory += bytebuffer.limit() - anInt3753;
+						CardMemManager.textureMemory += bytebuffer.limit() - anInt3753;
 						anInt3753 = bytebuffer.limit();
 					} else {
 						int i_8_ = 0;
@@ -115,7 +115,7 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 						}
 						gl.glTexParameteri(3553, 10241, 9987);
 						gl.glTexParameteri(3553, 10240, 9729);
-						Class11.textureMemory += bytebuffer.limit() * 4 / 3 - anInt3753;
+						CardMemManager.textureMemory += bytebuffer.limit() * 4 / 3 - anInt3753;
 						anInt3753 = bytebuffer.limit() * 4 / 3;
 					}
 				} else {
@@ -123,7 +123,7 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 					glu.gluBuild2DMipmaps(3553, 6408, i_6_, i_6_, 6408, 5121, bytebuffer);
 					gl.glTexParameteri(3553, 10241, 9987);
 					gl.glTexParameteri(3553, 10240, 9729);
-					Class11.textureMemory += bytebuffer.limit() * 4 / 3 - anInt3753;
+					CardMemManager.textureMemory += bytebuffer.limit() * 4 / 3 - anInt3753;
 					anInt3753 = bytebuffer.limit() * 4 / 3;
 				}
 				gl.glTexParameteri(3553, 10242, !repeatSTexture ? 33071 : 10497);
@@ -131,14 +131,14 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 			}
 		}
 		if ((i_7_ & 0x2) == 0)
-			RT4GL.method1638(combineRGBType);
+			RT4GL.setRgbCombineMode(combineRGBType);
 		if (i <= 99)
 			Static2.method258(12);
 		if ((i_7_ & 0x4) == 0)
-			RT4GL.method1656(0);
+			RT4GL.setAlphaCombineMode(0);
 		if ((i_7_ & 0x8) == 0) {
 			if (rotateY == 0 && rotateX == 0)
-				RT4GL.method1651();
+				RT4GL.resetTextureMatrix();
 			else {
 				float f = (float) (rotateY * RT4GL.loopCycleWrapper) / (float) i_6_;
 				float f_9_ = (float) (rotateX * RT4GL.loopCycleWrapper) / (float) i_6_;
@@ -149,10 +149,8 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 		return bool_10_;
 	}
 
-	public void method253(int i, boolean bool) {
+	public void method253(int i) {
 		if (anIntArray3745 != null) {
-			if (bool)
-				Static2.aClass124_3747 = null;
 			if (rotateY != 0 || rotateX != 0) {
 				if (Class120.anIntArray2002 == null || anIntArray3745.length > Class120.anIntArray2002.length)
 					Class120.anIntArray2002 = new int[anIntArray3745.length];
@@ -269,14 +267,12 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 		return is;
 	}
 
-	public int[] method257(boolean bool, Class9 class9, boolean bool_52_, TextureDefInterface interface3) {
+	public int[] method257(Class9 class9, boolean bool_52_, TextureDefInterface interface3) {
 		if (!proceduralTexture.method1548(interface3, class9)) {
 			int[] is = null;
 			return is;
 		}
 		int i = bool_52_ ? 64 : 128;
-		if (bool)
-			method253(-104, true);
 		int[] is = proceduralTexture.method1553(i, false, aBoolean3738, class9, 1.0, i, interface3);
 		return is;
 	}

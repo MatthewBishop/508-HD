@@ -112,7 +112,7 @@ public class Class14_Sub21 extends Linkable {
 	}
 
 	public static void method897(int i) {
-		RT4GL.method1630();
+		RT4GL.destroyGL();
 		if (i <= 108)
 			method893((byte) 29);
 		BrowserControlUtil.hide();
@@ -126,7 +126,7 @@ public class Class14_Sub21 extends Linkable {
 		if (Class44.aClass129_726 != null)
 			Class44.aClass129_726.method1760(-14827, Static2.aCanvas819);
 		Static2.method1276(-105);
-		RT4GL.method1621(Static2.aCanvas819, Class135.anInt2189 * 2);
+		RT4GL.createglcanvas(Static2.aCanvas819, Class135.anInt2189 * 2);
 		Class14_Sub2_Sub12.method319(-31);
 		Class132.method1779(0);
 		Class132.aLong2169 = 0L;

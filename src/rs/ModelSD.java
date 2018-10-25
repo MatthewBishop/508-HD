@@ -294,14 +294,14 @@ public class ModelSD extends Class133_Sub7 {
 			if (i_60_ < 3500) {
 				int i_61_ = cosCameraYaw * sceneX + sinCameraYaw * sceneZ >> 16;
 				int i_62_ = i_61_ + boundingPlaneRadius << 9;
-				if (i_62_ / i_59_ > JunkTex.anInt425) {
+				if (i_62_ / i_59_ > JunkTex.viewportLeft) {
 					int i_63_ = i_61_ - boundingPlaneRadius << 9;
-					if (i_63_ / i_59_ < JunkTex.anInt4547) {
+					if (i_63_ / i_59_ < JunkTex.viewportRight) {
 						int i_64_ = sceneY * cosCameraPitch - a * sinCameraPitch >> 16;
 						int i_65_ = (i_64_ + (boundingPlaneRadius * sinCameraPitch + maxY * cosCameraPitch >> 16) << 9);
-						if (i_65_ / i_59_ > Class58.anInt948) {
+						if (i_65_ / i_59_ > Class58.viewportTop) {
 							int i_66_ = (i_64_ + ((-boundingPlaneRadius * sinCameraPitch + minY * cosCameraPitch) >> 16) << 9);
-							if (i_66_ / i_59_ < Class70.anInt1081) {
+							if (i_66_ / i_59_ < Class70.viewportBottom) {
 								boolean project = false;
 								boolean bool_67_ = i_60_ <= 50;
 								boolean bool_68_ = bool_67_ || anInt4966 > 0;

@@ -10,7 +10,7 @@ import com.jagex.link.Deque;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.Class148_Sub1;
-import com.jagex.rt4.Class14_Sub1;
+import com.jagex.rt4.IntegerNode;
 import com.jagex.rt4.AbstractSprite;
 import com.jagex.rt4.AbstractSprite_Sub2;
 import com.jagex.rt4.Class25;
@@ -471,12 +471,12 @@ public class Class79 {
 			int i_94_ = i_91_;
 			return i_94_;
 		}
-		Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass55_1266.get(i);
+		IntegerNode class14_sub1 = (IntegerNode) aClass55_1266.get(i);
 		if (class14_sub1 == null) {
 			i_93_ = i_91_;
 			return i_93_;
 		}
-		i_93_ = class14_sub1.anInt2714;
+		i_93_ = class14_sub1.value;
 		return i_93_;
 	}
 
@@ -610,7 +610,7 @@ public class Class79 {
 																																							35 - 147);
 																																			Linkable linkable;
 																																			if (!bool)
-																																				linkable = new Class14_Sub1(
+																																				linkable = new IntegerNode(
 																																						class14_sub10
 																																								.getInt(
 																																										(byte) -108));

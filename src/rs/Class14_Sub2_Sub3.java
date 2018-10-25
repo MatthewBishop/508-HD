@@ -7,7 +7,7 @@ import com.jagex.io.Buffer;
 import com.jagex.link.Cacheable;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
-import com.jagex.rt4.Class14_Sub1;
+import com.jagex.rt4.IntegerNode;
 
 public class Class14_Sub2_Sub3 extends Cacheable {
 	public static int anInt3769;
@@ -28,12 +28,12 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 			int i_2_ = i_1_;
 			return i_2_;
 		}
-		Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass55_3783.get(i_0_);
+		IntegerNode class14_sub1 = (IntegerNode) aClass55_3783.get(i_0_);
 		if (class14_sub1 == null) {
 			int i_3_ = i_1_;
 			return i_3_;
 		}
-		int i_4_ = class14_sub1.anInt2714;
+		int i_4_ = class14_sub1.value;
 		return i_4_;
 	}
 
@@ -99,7 +99,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 				if (bool)
 					linkable = new Class14_Sub30(class14_sub10.method797(9467));
 				else
-					linkable = new Class14_Sub1(class14_sub10.getInt((byte) -112));
+					linkable = new IntegerNode(class14_sub10.getInt((byte) -112));
 				aClass55_3783.put(i_23_, linkable);
 			}
 		}

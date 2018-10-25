@@ -97,22 +97,22 @@ public class Class133_Sub3 extends Class133 {
 						if (i_28_ > 0) {
 							for (int i_29_ = 0; i_28_ > i_29_; i_29_++) {
 								Light light = new Light(class14_sub10);
-								int i_30_ = light.param1 >> 7;
-								int i_31_ = light.param3 >> 7;
-								if (light.anInt1125 == i_17_ && i_18_ <= i_30_ && i_30_ < i_18_ + 8 && i_19_ <= i_31_
+								int i_30_ = light.x >> 7;
+								int i_31_ = light.z >> 7;
+								if (light.heightLevel == i_17_ && i_18_ <= i_30_ && i_30_ < i_18_ + 8 && i_19_ <= i_31_
 										&& i_19_ + 8 > i_31_) {
-									int i_32_ = ((i << 7) + (JunkTex.method634(light.param3 & 0x3ff,
-											-207592252, i_13_, light.param1 & 0x3ff)));
-									int i_33_ = ((JunkTex.method1028(i_13_, light.param1 & 0x3ff, -1,
-											light.param3 & 0x3ff)) + (i_15_ << 7));
-									light.param3 = i_33_;
-									light.param1 = i_32_;
-									i_31_ = light.param3 >> 39;
-									i_30_ = light.param1 >> 7;
+									int i_32_ = ((i << 7) + (JunkTex.method634(light.z & 0x3ff,
+											-207592252, i_13_, light.x & 0x3ff)));
+									int i_33_ = ((JunkTex.method1028(i_13_, light.x & 0x3ff, -1,
+											light.z & 0x3ff)) + (i_15_ << 7));
+									light.z = i_33_;
+									light.x = i_32_;
+									i_31_ = light.z >> 39;
+									i_30_ = light.x >> 7;
 									if (i_30_ >= 0 && i_31_ >= 0 && i_30_ < 104 && i_31_ < 104) {
-										light.param2 = (Static2.tileHeights[light.anInt1125][i_30_][i_31_])
-												- light.param2;
-										LightManager.method200(light);
+										light.y = (Static2.tileHeights[light.heightLevel][i_30_][i_31_])
+												- light.y;
+										LightManager.addLight(light);
 									}
 								}
 							}

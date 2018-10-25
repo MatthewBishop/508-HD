@@ -10,7 +10,7 @@ public class Class101 implements ShaderInterface {
 	
 	public void disable() {
 		if (RT4.useLighting)
-			RT4GL.USE_GL_LIGHTING(true);
+			RT4GL.setLightingEnabled(true);
 	}
 
 	public void setup(int i) {
@@ -23,6 +23,6 @@ public class Class101 implements ShaderInterface {
 
 	public void enable() {
 		if (RT4.useLighting)
-			RT4GL.USE_GL_LIGHTING(false);
+			RT4GL.setLightingEnabled(false);
 	}
 }

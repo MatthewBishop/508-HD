@@ -94,11 +94,11 @@ public class HDTile extends Linkable {
 		long l = 0L;
 		if ((i & 0x7f) == 0 || (i_4_ & 0x7f) == 0) {
 			l = (long) (i + (i_4_ << 16)) + ((long) i_7_ << 32);
-			Class14_Sub1 class14_sub1 = (Class14_Sub1) aClass55_3195.get(l);
+			IntegerNode class14_sub1 = (IntegerNode) aClass55_3195.get(l);
 			if (class14_sub1 != null) {
-				if (i_3_ < anIntArray3183[class14_sub1.anInt2714])
-					anIntArray3183[class14_sub1.anInt2714] = i_3_;
-				return class14_sub1.anInt2714;
+				if (i_3_ < anIntArray3183[class14_sub1.value])
+					anIntArray3183[class14_sub1.value] = i_3_;
+				return class14_sub1.value;
 			}
 		}
 		anIntArray3197[anInt3202] = i;
@@ -111,7 +111,7 @@ public class HDTile extends Linkable {
 		aFloatArray3185[anInt3202] = f_6_;
 		anIntArray3207[anInt3202] = i_7_;
 		if (l != 0L)
-			aClass55_3195.put(l, new Class14_Sub1(anInt3202));
+			aClass55_3195.put(l, new IntegerNode(anInt3202));
 		return anInt3202++;
 	}
 
@@ -124,7 +124,7 @@ public class HDTile extends Linkable {
 			aClass14_Sub10_3189 = new Buffer(anInt3210 * 4);
 		else
 			aClass14_Sub10_3189.position = 0;
-		if (RT4GL.usingBigEndian) {
+		if (RT4GL.byte_order_bigendian) {
 			for (int i = 0; i < anInt3187; i++) {
 				Class14_Sub29 class14_sub29 = (class14_sub29s[anIntArray3196[i]][anIntArray3199[i]][anIntArray3205[i]]);
 				if (class14_sub29 != null && class14_sub29.aBoolean3235) {
@@ -134,15 +134,15 @@ public class HDTile extends Linkable {
 						int[] is_9_ = anIntArrayArray3203[i];
 						if (is_9_ != null) {
 							for (int i_10_ = 0; i_10_ < is_9_.length; i_10_++)
-								aClass14_Sub10_3189.method803(is_9_[i_10_], 110);
+								aClass14_Sub10_3189.writeInt(is_9_[i_10_], 110);
 						}
 						class14_sub10 = (aBooleanArray3194[i] ? aClass14_Sub10_3189 : aClass14_Sub10_3186);
 					} else
 						class14_sub10 = aClass14_Sub10_3186;
 					for (int i_11_ = 1; i_11_ < is.length - 1; i_11_++) {
-						class14_sub10.method803(is[0], 121);
-						class14_sub10.method803(is[i_11_], 103);
-						class14_sub10.method803(is[i_11_ + 1], 111);
+						class14_sub10.writeInt(is[0], 121);
+						class14_sub10.writeInt(is[i_11_], 103);
+						class14_sub10.writeInt(is[i_11_ + 1], 111);
 					}
 				}
 			}
@@ -156,15 +156,15 @@ public class HDTile extends Linkable {
 						int[] is_12_ = anIntArrayArray3203[i];
 						if (is_12_ != null) {
 							for (int i_13_ = 0; i_13_ < is_12_.length; i_13_++)
-								aClass14_Sub10_3189.method825(-73, is_12_[i_13_]);
+								aClass14_Sub10_3189.writeIntLE(-73, is_12_[i_13_]);
 						}
 						class14_sub10 = (aBooleanArray3194[i] ? aClass14_Sub10_3189 : aClass14_Sub10_3186);
 					} else
 						class14_sub10 = aClass14_Sub10_3186;
 					for (int i_14_ = 1; i_14_ < is.length - 1; i_14_++) {
-						class14_sub10.method825(-117, is[0]);
-						class14_sub10.method825(-94, is[i_14_]);
-						class14_sub10.method825(-85, is[i_14_ + 1]);
+						class14_sub10.writeIntLE(-117, is[0]);
+						class14_sub10.writeIntLE(-94, is[i_14_]);
+						class14_sub10.writeIntLE(-85, is[i_14_ + 1]);
 					}
 				}
 			}
@@ -190,7 +190,7 @@ public class HDTile extends Linkable {
 					gl.glClientActiveTexture(33984);
 				}
 			} else {
-				if (RT4GL.vertexBufferAsObject)
+				if (RT4GL.has_vbo)
 					gl.glBindBufferARB(34962, 0);
 				aByteBuffer3206.position(0);
 				gl.glVertexPointer(3, 5126, i, aByteBuffer3206);
@@ -209,7 +209,7 @@ public class HDTile extends Linkable {
 					gl.glClientActiveTexture(33984);
 				}
 			}
-			if (RT4GL.vertexBufferAsObject)
+			if (RT4GL.has_vbo)
 				gl.glBindBufferARB(34963, 0);
 			if (aClass14_Sub10_3186.position != 0) {
 				if (aByteBuffer3200 == null || (aByteBuffer3200.capacity() < aClass14_Sub10_3186.position))
@@ -219,7 +219,7 @@ public class HDTile extends Linkable {
 					aByteBuffer3200.clear();
 				aByteBuffer3200.put(aClass14_Sub10_3186.payload, 0, aClass14_Sub10_3186.position);
 				aByteBuffer3200.flip();
-				RT4GL.method1640(f);
+				RT4GL.setupSomeCustomProjectionStub(f);
 				gl.glDrawElements(4, aClass14_Sub10_3186.position / 4, 5125, aByteBuffer3200);
 			}
 			if (aClass14_Sub10_3189.position != 0) {
@@ -230,10 +230,10 @@ public class HDTile extends Linkable {
 					aByteBuffer3192.clear();
 				aByteBuffer3192.put(aClass14_Sub10_3189.payload, 0, aClass14_Sub10_3189.position);
 				aByteBuffer3192.flip();
-				RT4GL.method1640(f - 100.0F);
+				RT4GL.setupSomeCustomProjectionStub(f - 100.0F);
 				RT4GL.method1646();
 				gl.glDrawElements(4, aClass14_Sub10_3189.position / 4, 5125, aByteBuffer3192);
-				RT4GL.method1625();
+				RT4GL.enableDepthBufferWriting();
 			}
 		}
 	}
@@ -262,33 +262,33 @@ public class HDTile extends Linkable {
 	public void method925() {
 		Buffer class14_sub10 = new Buffer((aBoolean3209 ? 40 : 36) * anInt3202);
 		for (int i = 0; i < anInt3202; i++) {
-			if (RT4GL.usingBigEndian) {
-				class14_sub10.putFloatAsInt((float) anIntArray3197[i]);
-				class14_sub10.putFloatAsInt((float) anIntArray3183[i]);
-				class14_sub10.putFloatAsInt((float) anIntArray3191[i]);
-				class14_sub10.method803(anIntArray3207[i], 103);
-				class14_sub10.putFloatAsInt(aFloatArray3198[i]);
-				class14_sub10.putFloatAsInt(aFloatArray3193[i]);
-				class14_sub10.putFloatAsInt(aFloatArray3185[i]);
-				class14_sub10.putFloatAsInt((float) anIntArray3197[i] / aFloat3211);
-				class14_sub10.putFloatAsInt((float) anIntArray3191[i] / aFloat3211);
+			if (RT4GL.byte_order_bigendian) {
+				class14_sub10.writeFloat((float) anIntArray3197[i]);
+				class14_sub10.writeFloat((float) anIntArray3183[i]);
+				class14_sub10.writeFloat((float) anIntArray3191[i]);
+				class14_sub10.writeInt(anIntArray3207[i], 103);
+				class14_sub10.writeFloat(aFloatArray3198[i]);
+				class14_sub10.writeFloat(aFloatArray3193[i]);
+				class14_sub10.writeFloat(aFloatArray3185[i]);
+				class14_sub10.writeFloat((float) anIntArray3197[i] / aFloat3211);
+				class14_sub10.writeFloat((float) anIntArray3191[i] / aFloat3211);
 				if (aBoolean3209)
-					class14_sub10.putFloatAsInt(aFloatArray3188[i]);
+					class14_sub10.writeFloat(aFloatArray3188[i]);
 			} else {
-				class14_sub10.putFloatAsLEInt((float) anIntArray3197[i], 24671);
-				class14_sub10.putFloatAsLEInt((float) anIntArray3183[i], 24671);
-				class14_sub10.putFloatAsLEInt((float) anIntArray3191[i], 24671);
-				class14_sub10.method803(anIntArray3207[i], 119);
-				class14_sub10.putFloatAsLEInt(aFloatArray3198[i], 24671);
-				class14_sub10.putFloatAsLEInt(aFloatArray3193[i], 24671);
-				class14_sub10.putFloatAsLEInt(aFloatArray3185[i], 24671);
-				class14_sub10.putFloatAsLEInt((float) anIntArray3197[i] / aFloat3211, 24671);
-				class14_sub10.putFloatAsLEInt((float) anIntArray3191[i] / aFloat3211, 24671);
+				class14_sub10.writeFloatLE((float) anIntArray3197[i], 24671);
+				class14_sub10.writeFloatLE((float) anIntArray3183[i], 24671);
+				class14_sub10.writeFloatLE((float) anIntArray3191[i], 24671);
+				class14_sub10.writeInt(anIntArray3207[i], 119);
+				class14_sub10.writeFloatLE(aFloatArray3198[i], 24671);
+				class14_sub10.writeFloatLE(aFloatArray3193[i], 24671);
+				class14_sub10.writeFloatLE(aFloatArray3185[i], 24671);
+				class14_sub10.writeFloatLE((float) anIntArray3197[i] / aFloat3211, 24671);
+				class14_sub10.writeFloatLE((float) anIntArray3191[i] / aFloat3211, 24671);
 				if (aBoolean3209)
-					class14_sub10.putFloatAsLEInt(aFloatArray3188[i], 24671);
+					class14_sub10.writeFloatLE(aFloatArray3188[i], 24671);
 			}
 		}
-		if (RT4GL.vertexBufferAsObject) {
+		if (RT4GL.has_vbo) {
 			ByteBuffer bytebuffer = ByteBuffer.wrap(class14_sub10.payload, 0, class14_sub10.position);
 			aClass29_3182 = new VertexBuffer();
 			aClass29_3182._setArrayData(bytebuffer);

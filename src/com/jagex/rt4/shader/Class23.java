@@ -7,24 +7,24 @@ import java.nio.ByteBuffer;
 
 import javax.media.opengl.GL;
 
-import com.jagex.rt4.Class11;
+import com.jagex.rt4.CardMemManager;
 import com.jagex.rt4.RT4;
 import com.jagex.rt4.RT4GL;
 
 public class Class23 implements ShaderInterface {
-	private static int anInt2554 = 12;
-	private static int anInt2556 = 96;
-	private static int anInt2559 = 36;
+	private static int C12 = 12;
+	private static int C96 = 96;
+	private static int C36 = 36;
 
 	private boolean aBoolean2555;
-	private int anInt2558;
+	private int listIndex;
 
 	private int[] anIntArray2557 = null;
 
 	public Class23() {
 		this.aBoolean2555 = false;
-		this.anInt2558 = -1;
-		if (RT4GL.aBoolean2026 && RT4GL.maxTextureUnits >= 2) {
+		this.listIndex = -1;
+		if (RT4GL.has_cubemap && RT4GL.maxTextureUnits >= 2) {
 			this.method989();
 			GL gl = RT4GL.gl;
 			gl.glBindTexture(34067, this.anIntArray2557[0]);
@@ -53,7 +53,7 @@ public class Class23 implements ShaderInterface {
 	public void disable() {
 		GL gl = RT4GL.gl;
 		if (RT4.useLighting)
-			gl.glCallList(this.anInt2558 + 1);
+			gl.glCallList(this.listIndex + 1);
 		else
 			gl.glTexEnvi(8960, 34184, 5890);
 	}
@@ -61,8 +61,8 @@ public class Class23 implements ShaderInterface {
 	public void enable() {
 		GL gl = RT4GL.gl;
 		if (RT4.useLighting) {
-			RT4GL.method1656(1);
-			gl.glCallList(this.anInt2558);
+			RT4GL.setAlphaCombineMode(1);
+			gl.glCallList(this.listIndex);
 		} else
 			gl.glTexEnvi(8960, 34184, 34167);
 	}
@@ -107,9 +107,9 @@ public class Class23 implements ShaderInterface {
 					int i_10_;
 					int i_11_;
 					if (f_8_ > 0.0F) {
-						i_9_ = (int) (Math.pow(f_8_, Class23.anInt2556) * 255.0);
-						i_10_ = (int) (Math.pow(f_8_, Class23.anInt2559) * 255.0);
-						i_11_ = (int) (Math.pow(f_8_, Class23.anInt2554) * 255.0);
+						i_9_ = (int) (Math.pow(f_8_, Class23.C96) * 255.0);
+						i_10_ = (int) (Math.pow(f_8_, Class23.C36) * 255.0);
+						i_11_ = (int) (Math.pow(f_8_, Class23.C12) * 255.0);
 					} else
 						i_9_ = i_10_ = i_11_ = 0;
 					if (RT4GL.maxTextureUnits < 3) {
@@ -133,14 +133,14 @@ public class Class23 implements ShaderInterface {
 			gl.glTexImage2D(i_2_ + 34069, 0, 6406, 64, 64, 0, 6406, 5121, ByteBuffer.wrap(is_1_));
 			gl.glBindTexture(34067, this.anIntArray2557[2]);
 			gl.glTexImage2D(i_2_ + 34069, 0, 6406, 64, 64, 0, 6406, 5121, ByteBuffer.wrap(is));
-			Class11.textureMemory += i * 3;
+			CardMemManager.textureMemory += i * 3;
 		}
 	}
 
 	private void method990() {
 		GL gl = RT4GL.gl;
-		this.anInt2558 = gl.glGenLists(2);
-		gl.glNewList(this.anInt2558, 4864);
+		this.listIndex = gl.glGenLists(2);
+		gl.glNewList(this.listIndex, 4864);
 		if (this.anIntArray2557 != null) {
 			gl.glActiveTexture(33985);
 			gl.glTexGeni(8192, 9472, 34065);
@@ -166,7 +166,7 @@ public class Class23 implements ShaderInterface {
 				gl.glTexEnvi(8960, 34193, 770);
 				gl.glTexEnvi(8960, 34162, 7681);
 				gl.glTexEnvi(8960, 34184, 34167);
-				gl.glBindTexture(3553, RT4GL.anInt2038);
+				gl.glBindTexture(3553, RT4GL.generated_texture_id);
 				gl.glEnable(3553);
 			} else {
 				gl.glTexEnvi(8960, 34161, 260);
@@ -178,7 +178,7 @@ public class Class23 implements ShaderInterface {
 		} else
 			gl.glTexEnvi(8960, 34184, 34167);
 		gl.glEndList();
-		gl.glNewList(this.anInt2558 + 1, 4864);
+		gl.glNewList(this.listIndex + 1, 4864);
 		if (this.anIntArray2557 != null) {
 			gl.glActiveTexture(33985);
 			gl.glDisable(3168);

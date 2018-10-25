@@ -42,11 +42,11 @@ public class Class14_Sub14 extends Linkable {
 	public static Frame aFrame2986;
 	public static Class14_Sub29[][][] aClass14_Sub29ArrayArrayArray2987;
 
-	public static void method865(Class43 class43, boolean bool, int i) {
-		if (bool) {
+	public static void method865(Class43 class43, boolean safemode, int i) {
+		if (safemode) {
 			JunkTex.anInt4190 = 3;
 			JunkTex.method495((byte) -47, false);
-			Class15.aBoolean374 = false;
+			RT4.aBoolean374 = false;
 			Class14_Sub29.anInt3266 = 127;
 			Static2.aBoolean2372 = false;
 			Class33.aBoolean584 = false;
@@ -70,7 +70,7 @@ public class Class14_Sub14 extends Linkable {
 			JunkTex.anInt4190 = 3;
 			FileOnDisk fileOnDisk = null;
 			JunkTex.method495((byte) -47, true);
-			Class15.aBoolean374 = true;
+			RT4.aBoolean374 = true;
 			Static2.anInt1691 = 127;
 			JunkTex.aBoolean4528 = true;
 			Class33.aBoolean584 = true;
@@ -92,7 +92,7 @@ public class Class14_Sub14 extends Linkable {
 			try {
 				Class31 class31 = class43.method1152("runescape", 0);
 				while (class31.anInt529 == 0)
-					Util.sleep(1L);
+					Util.accuratesleep(1L);
 				if (class31.anInt529 == 1) {
 					fileOnDisk = (FileOnDisk) class31.anObject530;
 					int i_0_ = 0;
@@ -126,7 +126,7 @@ public class Class14_Sub14 extends Linkable {
 
 	public static void method867(byte i, Class124 class124, int i_2_) {
 		JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(111);
-		JunkTex.aClass14_Sub10_Sub1_891.method809(i_2_);
+		JunkTex.aClass14_Sub10_Sub1_891.writeByte(i_2_);
 		if (i >= 81)
 			JunkTex.aClass14_Sub10_Sub1_891.method835(class124.method1692(0), true);
 	}
@@ -164,7 +164,7 @@ public class Class14_Sub14 extends Linkable {
 				Class124 class124_9_ = (JunkTex.method515((new Class124[] { class124_7_,
 						Class14_Sub9_Sub1.aClass124_4814, class124, Class133_Sub1.aClass124_3502, class124_8_ }),
 						(byte) -120));
-				if (class124.method1693(i - 6346) == 0)
+				if (class124.length(i - 6346) == 0)
 					class124_9_ = JunkTex
 							.method515((new Class124[] { class124_9_, (Class98.aClass124_1661) }), (byte) -122);
 				else

@@ -7,56 +7,62 @@ import com.jagex.io.Buffer;
 import rs.Class3;
 import rs.JunkTex;
 
+/**
+ * Jagex, lighting system. It is notable that they later added additional lights.
+ * 
+ *  anInt1130 was equal to 31. In these.
+ *
+ */
 public class Light {
-	public boolean aBoolean1112;
-	public boolean aBoolean1123;
-	public LightRenderer aClass130_1103;
-	public float aFloat1107;
-	public float aFloat1111;
-	public float[] params;
+	public boolean fromGroundToHL;
+	public boolean fromHLToSky;
+	public LightRenderer glow;
+	public float intensity;
+	public float quadraticAttenuation;
+	public float[] diffuseColourComponents;
 	public int anInt1102;
-	public int param2;
+	public int y;
 	public int anInt1109;
 	public int anInt1113;
 	public int flickeringType;
-	public int anInt1120;
+	public int radius;
 	public int anInt1121;
-	public int anInt1122;
-	public int param3;
+	public int diffuseColour;
+	public int z;
 
-	public int anInt1125;
+	public int heightLevel;
 
-	public int param1;
+	public int x;
 
 	public int anInt1130;
 
-	public short[] aShortArray1106;
+	public short[] shape;
 	public static int[] anIntArray5082;
 
 	public Light() {
-		params = new float[4];
+		diffuseColourComponents = new float[4];
 		if (Light.anIntArray5082 == null)
 			Light.method830();
 		method1332((byte) 101);
 	}
 
 	public Light(Buffer class14_sub10) {
-		params = new float[4];
+		diffuseColourComponents = new float[4];
 		if (Light.anIntArray5082 == null)
 			Light.method830();
-		anInt1125 = class14_sub10.readUByte();
-		aBoolean1112 = (anInt1125 & 0x10) != 0;
-		aBoolean1123 = (anInt1125 & 0x8) != 0;
-		anInt1125 &= 0x7;
-		param1 = class14_sub10.readUShort();
-		param3 = class14_sub10.readUShort();
-		param2 = class14_sub10.readUShort();
-		anInt1120 = class14_sub10.readUByte();
-		method1331(64);
-		aShortArray1106 = new short[anInt1120 * 2 + 1];
-		for (int i = 0; i < aShortArray1106.length; i++)
-			aShortArray1106[i] = (short) class14_sub10.readUShort();
-		anInt1122 = Class3.anIntArray119[class14_sub10.readUShort()];
+		heightLevel = class14_sub10.readUByte();
+		fromGroundToHL = (heightLevel & 0x10) != 0;
+		fromHLToSky = (heightLevel & 0x8) != 0;
+		heightLevel &= 0x7;
+		x = class14_sub10.readUShort();
+		z = class14_sub10.readUShort();
+		y = class14_sub10.readUShort();
+		radius = class14_sub10.readUByte();
+		calcAttenuation(64);
+		shape = new short[radius * 2 + 1];
+		for (int i = 0; i < shape.length; i++)
+			shape[i] = (short) class14_sub10.readUShort();
+		diffuseColour = Class3.anIntArray119[class14_sub10.readUShort()];
 		int i = class14_sub10.readUByte();
 		anInt1130 = i & 0x1f;
 		anInt1109 = (i & 0xe0) << 35;
@@ -117,16 +123,16 @@ public class Light {
 		}
 		if (flickeringEffectsDisabled)
 			i_3_ = 2048;
-		aFloat1107 = (float) (anInt1113 + (i_3_ * anInt1102 >> 11)) / 2048.0F;
-		float f = aFloat1107 / 255.0F;
-		params[2] = (float) JunkTex.method617(255, anInt1122) * f;
-		params[0] = (float) JunkTex.method617(anInt1122 >> 48, 255) * f;
-		params[1] = f * (float) JunkTex.method617(anInt1122 >> 40, 255);
+		intensity = (float) (anInt1113 + (i_3_ * anInt1102 >> 11)) / 2048.0F;
+		float f = intensity / 255.0F;
+		diffuseColourComponents[2] = (float) JunkTex.method617(255, diffuseColour) * f;
+		diffuseColourComponents[0] = (float) JunkTex.method617(diffuseColour >> 48, 255) * f;
+		diffuseColourComponents[1] = f * (float) JunkTex.method617(diffuseColour >> 40, 255);
 	}
 
-	public void method1331(int i) {
-		int i_9_ = i + (anInt1120 << 7);
-		aFloat1111 = 1.0F / (float) (i_9_ * i_9_);
+	public void calcAttenuation(int i) {
+		int i_9_ = i + (radius << 7);
+		quadraticAttenuation = 1.0F / (float) (i_9_ * i_9_);
 	}
 
 	public void method1332(byte ia) {

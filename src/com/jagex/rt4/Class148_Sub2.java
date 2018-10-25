@@ -49,7 +49,7 @@ public class Class148_Sub2 extends Class148 {
 		GL gl = RT4GL.gl;
 		if (anInt3694 == -1) {
 			anInt3694 = gl.glGenLists(1);
-			anInt3690 = Class11.anInt267;
+			anInt3690 = CardMemManager.memoryManagerId;
 		}
 		gl.glNewList(anInt3694, 4864);
 		gl.glBegin(6);
@@ -81,12 +81,12 @@ public class Class148_Sub2 extends Class148 {
 
 	public void finalize() throws Throwable {
 		if (anInt3691 != -1) {
-			Class11.method208(anInt3691, anInt3695, anInt3690);
+			CardMemManager.method208(anInt3691, anInt3695, anInt3690);
 			anInt3691 = -1;
 			anInt3695 = 0;
 		}
 		if (anInt3694 != -1) {
-			Class11.method206(anInt3694, anInt3690);
+			CardMemManager.method206(anInt3694, anInt3690);
 			anInt3694 = -1;
 		}
 		super.finalize();
@@ -118,11 +118,11 @@ public class Class148_Sub2 extends Class148 {
 			int[] is_11_ = new int[1];
 			gl.glGenTextures(1, is_11_, 0);
 			anInt3691 = is_11_[0];
-			anInt3690 = Class11.anInt267;
+			anInt3690 = CardMemManager.memoryManagerId;
 		}
 		RT4GL.bindTexture2D(anInt3691);
 		gl.glTexImage2D(3553, 0, 6408, anInt3696, anInt3693, 0, 6408, 5121, bytebuffer);
-		Class11.anInt263 += bytebuffer.limit() - anInt3695;
+		CardMemManager.memory2d += bytebuffer.limit() - anInt3695;
 		anInt3695 = bytebuffer.limit();
 	}
 

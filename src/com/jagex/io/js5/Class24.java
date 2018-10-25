@@ -55,7 +55,7 @@ public class Class24 implements Runnable {
 							Class138.anInt2223 = 600;
 						}
 					} else {
-						Util.sleep(100L);
+						Util.accuratesleep(100L);
 						var12 = JunkTex.anObject4417;
 						var4 = JunkTex.anObject4417;
 						synchronized (var4) {

@@ -46,15 +46,15 @@ public abstract class Class133 {
 		int i_8_ = Class14_Sub2_Sub21.anIntArray4078[i_4_];
 		if (i_5_ == 0) {
 			JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(49);
-			JunkTex.aClass14_Sub10_Sub1_891.method809(i_6_ + 3 + i_6_);
+			JunkTex.aClass14_Sub10_Sub1_891.writeByte(i_6_ + 3 + i_6_);
 		}
 		if (i_5_ == 1) {
 			JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(119);
-			JunkTex.aClass14_Sub10_Sub1_891.method809(i_6_ + 3 + (i_6_ + 14));
+			JunkTex.aClass14_Sub10_Sub1_891.writeByte(i_6_ + 3 + (i_6_ + 14));
 		}
 		if (i_5_ == 2) {
 			JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(138);
-			JunkTex.aClass14_Sub10_Sub1_891.method809(i_6_ + i_6_ + 3);
+			JunkTex.aClass14_Sub10_Sub1_891.writeByte(i_6_ + i_6_ + 3);
 		}
 		JunkTex.aClass14_Sub10_Sub1_891.method801((byte) -86, i_7_ + Class133_Sub6.anInt3676);
 		JunkTex.aClass14_Sub10_Sub1_891.method792(i_8_ + Class58.anInt947, (byte) -98);
@@ -67,7 +67,7 @@ public abstract class Class133 {
 			anIntArray2176 = null;
 		for (/**/; i_9_ < i_6_; i_9_++) {
 			i_4_--;
-			JunkTex.aClass14_Sub10_Sub1_891.method809(((JunkTex.anIntArray4691[i_4_]) - i_7_));
+			JunkTex.aClass14_Sub10_Sub1_891.writeByte(((JunkTex.anIntArray4691[i_4_]) - i_7_));
 			JunkTex.aClass14_Sub10_Sub1_891.method789(((Class14_Sub2_Sub21.anIntArray4078[i_4_]) - i_8_), 273558984);
 		}
 	}
@@ -82,7 +82,7 @@ public abstract class Class133 {
 	}
 
 	public static void method1787(int[] is, int i, float[][] fs, int i_20_, LightRenderer lightRenderer, float[][] fs_21_,
-			int[][] is_22_, int i_23_, float[][] fs_24_, boolean bool, Light light) {
+			int[][] is_22_, int i_23_, float[][] fs_24_, boolean boola, Light light) {
 		int[] is_25_ = new int[is.length / 2];
 		for (int i_26_ = 0; is_25_.length > i_26_; i_26_++) {
 			int i_27_ = is[i_26_ + i_26_];
@@ -146,11 +146,9 @@ public abstract class Class133 {
 			int i_38_ = i_27_ + (i_23_ << 39);
 			int i_39_ = JunkTex.method647(i_20_, -501955161, i_27_, i_28_, is_22_, i_23_);
 			int i_40_ = i_28_ + (i_20_ << 7);
-			is_25_[i_26_] = lightRenderer.method1769(light, i_38_, i_39_, i_40_, f, f_31_, f_32_);
+			is_25_[i_26_] = lightRenderer.addVertex(light, i_38_, i_39_, i_40_, f, f_31_, f_32_);
 		}
-		lightRenderer.method1770(is_25_);
-		if (!bool)
-			anIntArray2176 = null;
+		lightRenderer.addTriangle(is_25_);
 	}
 
 	public static void method1789(byte i) {

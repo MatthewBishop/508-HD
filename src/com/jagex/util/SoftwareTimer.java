@@ -54,7 +54,7 @@ public class SoftwareTimer extends Timer {
 		if (anInt3336 < i)
 			anInt3336 = i;
 		int i_9_ = 0;
-		Util.sleep((long) anInt3336);
+		Util.accuratesleep((long) anInt3336);
 		for (/**/; anInt3355 < 256; anInt3355 += anInt3359)
 			i_9_++;
 		anInt3355 &= 0xff;

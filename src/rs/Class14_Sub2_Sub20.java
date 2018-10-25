@@ -19,7 +19,7 @@ public class Class14_Sub2_Sub20 extends Cacheable {
 	}
 
 	public static void method428(int i) {
-		RT4GL.method1630();
+		RT4GL.destroyGL();
 		BrowserControlUtil.hide();
 		if (JunkTex.aFrame3962 != null)
 			Class14_Sub2_Sub4.method278(JunkTex.signlink, JunkTex.aFrame3962, 120);

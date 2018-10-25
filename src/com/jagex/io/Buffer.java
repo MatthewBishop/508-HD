@@ -122,7 +122,7 @@ public class Buffer extends Linkable {
 			return i_6_;
 		}
 		int i_7_ = Buffer.method427(payload, (byte) 82, position, i);
-		method803(i_7_, i_5_ + 189);
+		writeInt(i_7_, i_5_ + 189);
 		int i_8_ = i_7_;
 		return i_8_;
 	}
@@ -132,19 +132,19 @@ public class Buffer extends Linkable {
 			if ((i & ~0x3fff) != 0) {
 				if ((i & ~0x1fffff) != 0) {
 					if ((i & ~0xfffffff) != 0)
-						method809(i >>> 60 | 0x80);
-					method809(i >>> 21 | 0x80);
+						writeByte(i >>> 60 | 0x80);
+					writeByte(i >>> 21 | 0x80);
 				}
-				method809((i | 0x2029bd) >>> 14);
+				writeByte((i | 0x2029bd) >>> 14);
 			}
-			method809((i | 0x4016) >>> 7);
+			writeByte((i | 0x4016) >>> 7);
 		}
 		if (i_9_ != -5227)
 			method831(111);
-		method809(i & 0x7f);
+		writeByte(i & 0x7f);
 	}
 
-	public void putFloatAsLEInt(float f, int i) {
+	public void writeFloatLE(float f, int i) {
 		int i_10_ = Float.floatToRawIntBits(f);
 		payload[position++] = (byte) i_10_;
 		payload[position++] = (byte) (i_10_ >> 8);
@@ -171,7 +171,7 @@ public class Buffer extends Linkable {
 
 	public int method791(int i) {
 		if (i != -3977)
-			method809(-122);
+			writeByte(-122);
 		position += 2;
 		int i_13_ = ((payload[position - 1] << 8 & 0xff00) + (payload[position - 2] & 0xff));
 		return i_13_;
@@ -245,8 +245,8 @@ public class Buffer extends Linkable {
 				i_32_ -= ((i_33_ << 36 ^ i_33_ >>> 5) + i_33_ ^ is[i_31_ & 0x3] + i_31_);
 			}
 			position -= 8;
-			method803(i_32_, 127);
-			method803(i_33_, 68);
+			writeInt(i_32_, 127);
+			writeInt(i_33_, 68);
 		}
 		position = i_27_;
 	}
@@ -284,7 +284,7 @@ public class Buffer extends Linkable {
 		return i_43_;
 	}
 
-	public void method803(int i, int i_44_) {
+	public void writeInt(int i, int i_44_) {
 		payload[position++] = (byte) (i >> 24);
 		payload[position++] = (byte) (i >> 16);
 		if (i_44_ > 63) {
@@ -332,13 +332,13 @@ public class Buffer extends Linkable {
 		}
 	}
 
-	public void method809(int i) {
+	public void writeByte(int i) {
 		payload[position++] = (byte) i;
 	}
 
 	public void method810(int i) {
 		if (i >= 0 && i < 128)
-			method809(i);
+			writeByte(i);
 		else if (i >= 0 && i < 32768)
 			method833((byte) 116, i + 32768);
 		else
@@ -374,7 +374,7 @@ public class Buffer extends Linkable {
 
 	public void method814(int i, Class124 class124) {
 		if (i == 32768) {
-			position += class124.method1689(0, position, payload, -586, class124.method1693(0));
+			position += class124.method1689(0, position, payload, -586, class124.length(0));
 			payload[position++] = (byte) 0;
 		}
 	}
@@ -448,7 +448,7 @@ public class Buffer extends Linkable {
 			is[i_70_] = payload[position++];
 	}
 
-	public void method825(int i, int i_71_) {
+	public void writeIntLE(int i, int i_71_) {
 		payload[position++] = (byte) i_71_;
 		payload[position++] = (byte) (i_71_ >> 8);
 		payload[position++] = (byte) (i_71_ >> 16);
@@ -514,7 +514,7 @@ public class Buffer extends Linkable {
 		}
 	}
 
-	public void putFloatAsInt(float f) {
+	public void writeFloat(float f) {
 		int i_83_ = Float.floatToRawIntBits(f);
 		payload[position++] = (byte) (i_83_ >> 56);
 		payload[position++] = (byte) (i_83_ >> 16);

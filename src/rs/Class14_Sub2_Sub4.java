@@ -27,10 +27,10 @@ public class Class14_Sub2_Sub4 extends Cacheable {
 		for (;;) {
 			Class31 class31 = class43.method1135(frame, -30170);
 			while (class31.anInt529 == 0)
-				Util.sleep(10L);
+				Util.accuratesleep(10L);
 			if (class31.anInt529 == 1)
 				break;
-			Util.sleep(100L);
+			Util.accuratesleep(100L);
 		}
 		frame.setVisible(false);
 		frame.dispose();

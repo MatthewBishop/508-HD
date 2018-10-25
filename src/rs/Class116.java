@@ -8,7 +8,7 @@ import java.util.Date;
 
 import com.jagex.link.HashTable;
 import com.jagex.map.SceneCluster;
-import com.jagex.rt4.Class14_Sub1;
+import com.jagex.rt4.IntegerNode;
 import com.jagex.rt4.RT4;
 import com.jagex.rt4.RT4GL;
 import com.jagex.util.BrowserControlUtil;
@@ -301,10 +301,10 @@ public class Class116 {
 						}
 						if (i_6_ == 51) {
 							HashTable hashTable = (class14_sub2_sub12.aClass55Array3903[is[i_2_]]);
-							Class14_Sub1 class14_sub1 = ((Class14_Sub1) hashTable
+							IntegerNode class14_sub1 = ((IntegerNode) hashTable
 									.get((Class79.anIntArray1305[--i_3_])));
 							if (class14_sub1 != null)
-								i_2_ += class14_sub1.anInt2714;
+								i_2_ += class14_sub1.value;
 							continue;
 						}
 					}
@@ -446,10 +446,10 @@ public class Class116 {
 																else if (i_6_ == 3104) {
 																	int i_39_ = 0;
 																	Class124 class124 = (JunkTex.aClass124Array5101[--i_4_]);
-																	if (class124.method1701(124))
-																		i_39_ = class124.method1702(i_1_ ^ 0x38);
+																	if (class124.isValidStringBase10(124))
+																		i_39_ = class124.stringToBase10(i_1_ ^ 0x38);
 																	JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(43);
-																	JunkTex.aClass14_Sub10_Sub1_891.method803(i_39_,
+																	JunkTex.aClass14_Sub10_Sub1_891.writeInt(i_39_,
 																			124);
 																} else if (i_6_ == 3105) {
 																	Class124 class124 = (JunkTex.aClass124Array5101[--i_4_]);
@@ -459,7 +459,7 @@ public class Class116 {
 																} else if (i_6_ == 3106) {
 																	Class124 class124 = (JunkTex.aClass124Array5101[--i_4_]);
 																	JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(127);
-																	JunkTex.aClass14_Sub10_Sub1_891.method809(((class124.method1693(i_1_ ^ 0x4f)) + 1));
+																	JunkTex.aClass14_Sub10_Sub1_891.writeByte(((class124.length(i_1_ ^ 0x4f)) + 1));
 																	JunkTex.aClass14_Sub10_Sub1_891
 																			.method814((i_1_ + 32689), class124);
 																} else if (i_6_ == 3107) {
@@ -947,11 +947,11 @@ public class Class116 {
 																						JunkTex.aClass14_Sub10_Sub1_891
 																								.writeOpcode(212);
 																						JunkTex.aClass14_Sub10_Sub1_891
-																								.method809(Class14_Sub3.anInt2764);
+																								.writeByte(Class14_Sub3.anInt2764);
 																						JunkTex.aClass14_Sub10_Sub1_891
-																								.method809(JunkTex.anInt4505);
+																								.writeByte(JunkTex.anInt4505);
 																						JunkTex.aClass14_Sub10_Sub1_891
-																								.method809(Class32.anInt566);
+																								.writeByte(Class32.anInt566);
 																					} else if (i_6_ == 5002) {
 																						i_3_ -= 2;
 																						int i_100_ = Class79.anIntArray1305[i_3_
@@ -966,9 +966,9 @@ public class Class116 {
 																												i_1_ ^ 0x4f),
 																										i_1_ + 32);
 																						JunkTex.aClass14_Sub10_Sub1_891
-																								.method809(i_101_ - 1);
+																								.writeByte(i_101_ - 1);
 																						JunkTex.aClass14_Sub10_Sub1_891
-																								.method809(i_100_);
+																								.writeByte(i_100_);
 																					} else if (i_6_ == 5003) {
 																						Class124 class124 = null;
 																						int i_102_ = Class79.anIntArray1305[--i_3_];
@@ -1007,7 +1007,7 @@ public class Class116 {
 																								class124 = class124
 																										.method1696(
 																												Class104.aClass124_1748
-																														.method1693(
+																														.length(
 																																0),
 																												15);
 																								i_106_ = 0;
@@ -1019,7 +1019,7 @@ public class Class116 {
 																								class124 = class124
 																										.method1696(
 																												Class58.aClass124_943
-																														.method1693(
+																														.length(
 																																0),
 																												15);
 																							} else if (!class124_105_
@@ -1034,7 +1034,7 @@ public class Class116 {
 																									class124 = class124
 																											.method1696(
 																													Class15.aClass124_383
-																															.method1693(
+																															.length(
 																																	0),
 																													15);
 																								} else if (class124_105_
@@ -1045,7 +1045,7 @@ public class Class116 {
 																									class124 = class124
 																											.method1696(
 																													Class137.aClass124_2202
-																															.method1693(
+																															.length(
 																																	0),
 																													15);
 																								} else if (class124_105_
@@ -1055,7 +1055,7 @@ public class Class116 {
 																									class124 = class124
 																											.method1696(
 																													Class118.aClass124_1979
-																															.method1693(
+																															.length(
 																																	i_1_ ^ 0x4f),
 																													15);
 																									i_106_ = 5;
@@ -1070,7 +1070,7 @@ public class Class116 {
 																										class124 = class124
 																												.method1696(
 																														Class127.aClass124_2113
-																																.method1693(
+																																.length(
 																																		0),
 																														i_1_ - 64);
 																										i_106_ = 7;
@@ -1085,7 +1085,7 @@ public class Class116 {
 																											class124 = class124
 																													.method1696(
 																															Class124.aClass124_2476
-																																	.method1693(
+																																	.length(
 																																			0),
 																															15);
 																											i_106_ = 9;
@@ -1097,7 +1097,7 @@ public class Class116 {
 																											class124 = class124
 																													.method1696(
 																															Static2.aClass124_2887
-																																	.method1693(
+																																	.length(
 																																			i_1_ - 79),
 																															15);
 																										} else if (!class124_105_
@@ -1117,7 +1117,7 @@ public class Class116 {
 																														class124 = class124
 																																.method1696(
 																																		Class58.aClass124_942
-																																				.method1693(
+																																				.length(
 																																						i_1_ ^ 0x4f),
 																																		15);
 																													} else if (!class124_105_
@@ -1131,7 +1131,7 @@ public class Class116 {
 																															class124 = class124
 																																	.method1696(
 																																			Class15.aClass124_373
-																																					.method1693(
+																																					.length(
 																																							i_1_ ^ 0x4f),
 																																			15);
 																															i_106_ = 3;
@@ -1146,7 +1146,7 @@ public class Class116 {
 																																class124 = class124
 																																		.method1696(
 																																				Class118.aClass124_1988
-																																						.method1693(
+																																						.length(
 																																								0),
 																																				15);
 																																i_106_ = 5;
@@ -1161,7 +1161,7 @@ public class Class116 {
 																																	class124 = class124
 																																			.method1696(
 																																					Class127.aClass124_2117
-																																							.method1693(
+																																							.length(
 																																									0),
 																																					i_1_ - 64);
 																																	i_106_ = 7;
@@ -1181,7 +1181,7 @@ public class Class116 {
 																																			class124 = class124
 																																					.method1696(
 																																							Static2.aClass124_2872
-																																									.method1693(
+																																									.length(
 																																											0),
 																																							i_1_ ^ 0x40);
 																																		} else if (class124_105_
@@ -1191,7 +1191,7 @@ public class Class116 {
 																																			class124 = class124
 																																					.method1696(
 																																							Class128.aClass124_2122
-																																									.method1693(
+																																									.length(
 																																											i_1_ ^ 0x4f),
 																																							15);
 																																			i_106_ = 11;
@@ -1200,7 +1200,7 @@ public class Class116 {
 																																		class124 = class124
 																																				.method1696(
 																																						Class124.aClass124_2497
-																																								.method1693(
+																																								.length(
 																																										0),
 																																						i_1_ ^ 0x40);
 																																		i_106_ = 9;
@@ -1210,7 +1210,7 @@ public class Class116 {
 																																	class124 = class124
 																																			.method1696(
 																																					Class7_Sub2.aClass124_2672
-																																							.method1693(
+																																							.length(
 																																									0),
 																																					15);
 																																}
@@ -1218,7 +1218,7 @@ public class Class116 {
 																																class124 = class124
 																																		.method1696(
 																																				Class12.aClass124_328
-																																						.method1693(
+																																						.length(
 																																								0),
 																																				i_1_ - 64);
 																																i_106_ = 6;
@@ -1228,7 +1228,7 @@ public class Class116 {
 																															class124 = class124
 																																	.method1696(
 																																			Class137.aClass124_2201
-																																					.method1693(
+																																					.length(
 																																							i_1_ ^ 0x4f),
 																																			15);
 																														}
@@ -1237,7 +1237,7 @@ public class Class116 {
 																														class124 = class124
 																																.method1696(
 																																		Class84.aClass124_1352
-																																				.method1693(
+																																				.length(
 																																						i_1_ - 79),
 																																		i_1_ ^ 0x40);
 																													}
@@ -1246,7 +1246,7 @@ public class Class116 {
 																													class124 = class124
 																															.method1696(
 																																	Class104.aClass124_1743
-																																			.method1693(
+																																			.length(
 																																					i_1_ ^ 0x4f),
 																																	i_1_ ^ 0x40);
 																												}
@@ -1256,7 +1256,7 @@ public class Class116 {
 																											class124 = class124
 																													.method1696(
 																															Class128.aClass124_2126
-																																	.method1693(
+																																	.length(
 																																			i_1_ - 79),
 																															15);
 																										}
@@ -1265,7 +1265,7 @@ public class Class116 {
 																										class124 = class124
 																												.method1696(
 																														Class7_Sub2.aClass124_2670
-																																.method1693(
+																																.length(
 																																		0),
 																														15);
 																									}
@@ -1273,7 +1273,7 @@ public class Class116 {
 																									class124 = class124
 																											.method1696(
 																													Class12.aClass124_311
-																															.method1693(
+																															.length(
 																																	i_1_ - 79),
 																													15);
 																									i_106_ = 6;
@@ -1283,7 +1283,7 @@ public class Class116 {
 																								class124 = class124
 																										.method1696(
 																												Class84.aClass124_1347
-																														.method1693(
+																														.length(
 																																0),
 																												15);
 																							}
@@ -1298,7 +1298,7 @@ public class Class116 {
 																								class124 = class124
 																										.method1696(
 																												JunkTex.aClass124_4545
-																														.method1693(
+																														.length(
 																																0),
 																												15);
 																								i_107_ = 1;
@@ -1310,7 +1310,7 @@ public class Class116 {
 																								class124 = class124
 																										.method1696(
 																												Class108.aClass124_1815
-																														.method1693(
+																														.length(
 																																i_1_ ^ 0x4f),
 																												15);
 																							} else if (class124_105_
@@ -1321,7 +1321,7 @@ public class Class116 {
 																								class124 = class124
 																										.method1696(
 																												Class14_Sub11.aClass124_2941
-																														.method1693(
+																														.length(
 																																0),
 																												15);
 																							} else if (!class124_105_
@@ -1336,7 +1336,7 @@ public class Class116 {
 																									class124 = class124
 																											.method1696(
 																													JunkTex.aClass124_4021
-																															.method1693(
+																															.length(
 																																	0),
 																													15);
 																								} else if (JunkTex.language != 0) {
@@ -1352,7 +1352,7 @@ public class Class116 {
 																											class124 = class124
 																													.method1696(
 																															Class108.aClass124_1821
-																																	.method1693(
+																																	.length(
 																																			0),
 																															15);
 																										} else if (!class124_105_
@@ -1370,7 +1370,7 @@ public class Class116 {
 																													class124 = class124
 																															.method1696(
 																																	JunkTex.aClass124_4019
-																																			.method1693(
+																																			.length(
 																																					0),
 																																	i_1_ ^ 0x40);
 																													i_107_ = 5;
@@ -1380,7 +1380,7 @@ public class Class116 {
 																												class124 = class124
 																														.method1696(
 																																Static2.aClass124_1683
-																																		.method1693(
+																																		.length(
 																																				i_1_ ^ 0x4f),
 																																i_1_ - 64);
 																											}
@@ -1389,7 +1389,7 @@ public class Class116 {
 																											class124 = class124
 																													.method1696(
 																															Class14_Sub11.aClass124_2943
-																																	.method1693(
+																																	.length(
 																																			0),
 																															15);
 																										}
@@ -1398,7 +1398,7 @@ public class Class116 {
 																										class124 = class124
 																												.method1696(
 																														JunkTex.aClass124_4538
-																																.method1693(
+																																.length(
 																																		0),
 																														15);
 																									}
@@ -1407,7 +1407,7 @@ public class Class116 {
 																								class124 = class124
 																										.method1696(
 																												Static2.aClass124_1682
-																														.method1693(
+																														.length(
 																																i_1_ ^ 0x4f),
 																												15);
 																								i_107_ = 4;
@@ -1415,12 +1415,12 @@ public class Class116 {
 																							JunkTex.aClass14_Sub10_Sub1_891
 																									.writeOpcode(222);
 																							JunkTex.aClass14_Sub10_Sub1_891
-																									.method809(0);
+																									.writeByte(0);
 																							int i_108_ = JunkTex.aClass14_Sub10_Sub1_891.position;
 																							JunkTex.aClass14_Sub10_Sub1_891
-																									.method809(i_106_);
+																									.writeByte(i_106_);
 																							JunkTex.aClass14_Sub10_Sub1_891
-																									.method809(i_107_);
+																									.writeByte(i_107_);
 																							Class14_Sub11.method854(
 																									JunkTex.aClass14_Sub10_Sub1_891,
 																									class124);
@@ -1441,7 +1441,7 @@ public class Class116 {
 																							JunkTex.aClass14_Sub10_Sub1_891
 																									.writeOpcode(178);
 																							JunkTex.aClass14_Sub10_Sub1_891
-																									.method809(0);
+																									.writeByte(0);
 																							int i_110_ = JunkTex.aClass14_Sub10_Sub1_891.position;
 																							JunkTex.aClass14_Sub10_Sub1_891
 																									.method817(
@@ -1571,10 +1571,10 @@ public class Class116 {
 																						JunkTex.aClass14_Sub10_Sub1_891
 																								.writeOpcode(250);
 																						JunkTex.aClass14_Sub10_Sub1_891
-																								.method809(0);
+																								.writeByte(0);
 																						int i_127_ = JunkTex.aClass14_Sub10_Sub1_891.position;
 																						JunkTex.aClass14_Sub10_Sub1_891
-																								.method809(0);
+																								.writeByte(0);
 																						JunkTex.aClass14_Sub10_Sub1_891
 																								.method833((byte) 114,
 																										Class22.aClass98_464.anInt1663);
@@ -1593,7 +1593,7 @@ public class Class116 {
 																						JunkTex.aClass14_Sub10_Sub1_891
 																								.writeOpcode(78);
 																						JunkTex.aClass14_Sub10_Sub1_891
-																								.method809(0);
+																								.writeByte(0);
 																						int i_128_ = JunkTex.aClass14_Sub10_Sub1_891.position;
 																						JunkTex.aClass14_Sub10_Sub1_891
 																								.method817(
@@ -1616,10 +1616,10 @@ public class Class116 {
 																						JunkTex.aClass14_Sub10_Sub1_891
 																								.writeOpcode(250);
 																						JunkTex.aClass14_Sub10_Sub1_891
-																								.method809(0);
+																								.writeByte(0);
 																						int i_129_ = JunkTex.aClass14_Sub10_Sub1_891.position;
 																						JunkTex.aClass14_Sub10_Sub1_891
-																								.method809(1);
+																								.writeByte(1);
 																						Static2.anInt4892++;
 																						JunkTex.aClass14_Sub10_Sub1_891
 																								.method833((byte) 100,
@@ -1856,7 +1856,7 @@ public class Class116 {
 																						JunkTex.aClass14_Sub10_Sub1_891
 																								.writeOpcode(161);
 																						JunkTex.aClass14_Sub10_Sub1_891
-																								.method809(Static2.method1550(
+																								.writeByte(Static2.method1550(
 																										class124_158_,
 																										(byte) -107)
 																										+ Static2
@@ -1871,7 +1871,7 @@ public class Class116 {
 																								.method814(32768,
 																										class124);
 																						JunkTex.aClass14_Sub10_Sub1_891
-																								.method809(i_157_);
+																								.writeByte(i_157_);
 																					} else if (i_6_ == 5401) {
 																						i_3_ -= 2;
 																						Class33.aShortArray580[Class79.anIntArray1305[i_3_]] = (short) Class128
@@ -2008,12 +2008,12 @@ public class Class116 {
 																								+ 1];
 																						int i_172_ = Class79.anIntArray1305[--i_3_];
 																						if (class124
-																								.method1693(0) > 0) {
+																								.length(0) > 0) {
 																							if (Class7_Sub2.aClass124Array2674 == null)
 																								Class7_Sub2.aClass124Array2674 = new Class124[Class115.anIntArray1916[Static2.anInt3749]];
 																							Class7_Sub2.aClass124Array2674[i_172_] = class124;
 																						}
-																						if (class124_171_.method1693(
+																						if (class124_171_.length(
 																								i_1_ ^ 0x4f) > 0) {
 																							if (JunkTex.aClass124Array859 == null)
 																								JunkTex.aClass124Array859 = new Class124[Class115.anIntArray1916[Static2.anInt3749]];
@@ -2315,7 +2315,7 @@ public class Class116 {
 																							Class79.anIntArray1305[i_3_++] = !RT4.useLighting
 																									? 0 : 1;
 																						else if (i_6_ == 6114)
-																							Class79.anIntArray1305[i_3_++] = !Class15.aBoolean374
+																							Class79.anIntArray1305[i_3_++] = !RT4.aBoolean374
 																									? 0 : 1;
 																						else if (i_6_ == 6115)
 																							Class79.anIntArray1305[i_3_++] = JunkTex.aBoolean4420
@@ -2332,7 +2332,7 @@ public class Class116 {
 																						else if (i_6_ == 6120)
 																							Class79.anIntArray1305[i_3_++] = Static2.anInt1691;
 																						else if (i_6_ == 6121)
-																							Class79.anIntArray1305[i_3_++] = RT4GL.aBoolean2050
+																							Class79.anIntArray1305[i_3_++] = RT4GL.has_multisample
 																									? 1 : 0;
 																						else {
 																							if (i_6_ != 6122)
@@ -2445,7 +2445,7 @@ public class Class116 {
 																								JunkTex.signlink);
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6014) {
-																						Class15.aBoolean374 = Class79.anIntArray1305[--i_3_] == 1;
+																						RT4.aBoolean374 = Class79.anIntArray1305[--i_3_] == 1;
 																						Static2.method1996((byte) 111);
 																						JunkTex.method595(
 																								JunkTex.signlink);
@@ -2887,22 +2887,22 @@ public class Class116 {
 																			Class79.anIntArray1305[i_3_++] = 0;
 																		else
 																			Class79.anIntArray1305[i_3_++] = class124
-																					.method1693(0);
+																					.length(0);
 																	} else if (i_6_ == 4118) {
 																		i_3_ -= 2;
 																		int i_236_ = Class79.anIntArray1305[i_3_ + 1];
 																		Class124 class124 = JunkTex.aClass124Array5101[--i_4_];
 																		int i_237_ = Class79.anIntArray1305[i_3_];
 																		JunkTex.aClass124Array5101[i_4_++] = class124
-																				.method1697(i_237_, i_236_,
+																				.substring(i_237_, i_236_,
 																						(byte) -104);
 																	} else if (i_6_ == 4119) {
 																		Class124 class124 = JunkTex.aClass124Array5101[--i_4_];
 																		Class124 class124_238_ = Class7_Sub1.method121(
-																				class124.method1693(0), -127);
+																				class124.length(0), -127);
 																		boolean bool_239_ = false;
 																		for (int i_240_ = 0; i_240_ < class124
-																				.method1693(0); i_240_++) {
+																				.length(0); i_240_++) {
 																			int i_241_ = class124.method1710(0, i_240_);
 																			if (i_241_ == 60)
 																				bool_239_ = true;
@@ -3239,18 +3239,18 @@ public class Class116 {
 											}
 											Class124 class124 = (JunkTex.aClass124Array5101[--i_4_]);
 											int[] is_305_ = null;
-											if (class124.method1693(0) > 0
-													&& (class124.method1710(0, (class124.method1693(0) - 1))) == 89) {
+											if (class124.length(0) > 0
+													&& (class124.method1710(0, (class124.length(0) - 1))) == 89) {
 												int i_306_ = (Class79.anIntArray1305[--i_3_]);
 												if (i_306_ > 0) {
 													is_305_ = new int[i_306_];
 													while (i_306_-- > 0)
 														is_305_[i_306_] = (Class79.anIntArray1305[--i_3_]);
 												}
-												class124 = (class124.method1697(0, (class124.method1693(0) - 1),
+												class124 = (class124.substring(0, (class124.length(0) - 1),
 														(byte) -104));
 											}
-											Object[] objects_307_ = (new Object[(class124.method1693(i_1_ ^ 0x4f))
+											Object[] objects_307_ = (new Object[(class124.length(i_1_ ^ 0x4f))
 													+ 1]);
 											for (int i_308_ = objects_307_.length - 1; i_308_ >= 1; i_308_--) {
 												if (class124.method1710(0, (i_308_ - 1)) != 115)

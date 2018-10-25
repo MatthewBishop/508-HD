@@ -5,7 +5,7 @@ package rs;
 
 import com.jagex.io.Buffer;
 import com.jagex.link.HashTable;
-import com.jagex.rt4.Class14_Sub1;
+import com.jagex.rt4.IntegerNode;
 
 public class Class118 {
 	public static Class124 aClass124_1973;
@@ -211,7 +211,7 @@ public class Class118 {
 				while (i_24_-- > 0) {
 					int i_25_ = class14_sub10.getInt((byte) -102);
 					int i_26_ = class14_sub10.getInt((byte) -123);
-					hashTable.put(i_25_, new Class14_Sub1(i_26_));
+					hashTable.put(i_25_, new IntegerNode(i_26_));
 				}
 			}
 		}

@@ -112,7 +112,7 @@ public class Class36 implements Runnable {
 
 			if (this.aClass31_606 != null) {
 				while (this.aClass31_606.anInt529 == 0) {
-					Util.sleep(1L);
+					Util.accuratesleep(1L);
 				}
 
 				if (this.aClass31_606.anInt529 == 1) {

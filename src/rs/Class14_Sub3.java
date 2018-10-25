@@ -46,7 +46,7 @@ public class Class14_Sub3 extends Linkable {
 		if (Class4.aClass36_134 != null) {
 			try {
 				Buffer class14_sub10 = new Buffer(4);
-				class14_sub10.method809(!bool ? 3 : 2);
+				class14_sub10.writeByte(!bool ? 3 : 2);
 				class14_sub10.method783(255, 0);
 				Class4.aClass36_134.method1100(0, 3, i, class14_sub10.payload);
 			} catch (IOException ioexception) {

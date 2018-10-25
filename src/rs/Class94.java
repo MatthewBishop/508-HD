@@ -474,7 +474,7 @@ public class Class94 {
 			aClass124Array1479 = new Class124[5];
 			for (int i_34_ = 0; i_34_ < 5; i_34_++) {
 				Class124 class124 = class14_sub10.method797(9467);
-				if (class124.method1693(0) > 0) {
+				if (class124.length(0) > 0) {
 					aClass124Array1479[i_34_] = class124;
 					anInt1565 |= 1 << i_34_ + 23;
 				}
@@ -544,7 +544,7 @@ public class Class94 {
 				anInt1565 |= 0x40000000;
 			for (int i_36_ = 0; i_36_ < 5; i_36_++) {
 				Class124 class124 = class14_sub10.method797(9467);
-				if (class124.method1693(0) > 0) {
+				if (class124.length(0) > 0) {
 					aClass124Array1479[i_36_] = class124;
 					anInt1565 |= 1 << i_36_ + 23;
 				}
@@ -560,7 +560,7 @@ public class Class94 {
 		}
 		if (anInt1572 == 1 || anInt1572 == 4 || anInt1572 == 5 || anInt1572 == 6) {
 			aClass124_1556 = class14_sub10.method797(9467);
-			if (aClass124_1556.method1693(0) == 0) {
+			if (aClass124_1556.length(0) == 0) {
 				if (anInt1572 == 1)
 					aClass124_1556 = JunkTex.aClass124_4264;
 				if (anInt1572 == 4)

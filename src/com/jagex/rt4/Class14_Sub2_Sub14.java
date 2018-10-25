@@ -23,7 +23,7 @@ public class Class14_Sub2_Sub14 extends Cacheable {
 		int[] is = new int[1];
 		gl.glGenTextures(1, is, 0);
 		anInt3941 = is[0];
-		anInt3938 = Class11.anInt267;
+		anInt3938 = CardMemManager.memoryManagerId;
 		RT4GL.bindTexture2D(anInt3941);
 		int i_24_ = Class3.anIntArray119[i];
 		byte[] is_25_ = { (byte) (i_24_ >> 48), (byte) (i_24_ >> 8), (byte) i_24_, -1 };
@@ -31,13 +31,13 @@ public class Class14_Sub2_Sub14 extends Cacheable {
 		gl.glTexImage2D(3553, 0, 6408, 1, 1, 0, 6408, 5121, bytebuffer);
 		gl.glTexParameteri(3553, 10241, 9729);
 		gl.glTexParameteri(3553, 10240, 9729);
-		Class11.textureMemory += bytebuffer.limit() - anInt3943;
+		CardMemManager.textureMemory += bytebuffer.limit() - anInt3943;
 		anInt3943 = bytebuffer.limit();
 	}
 
 	public void finalize() throws Throwable {
 		if (anInt3941 != -1) {
-			Class11.method202(anInt3941, anInt3943, anInt3938);
+			CardMemManager.method202(anInt3941, anInt3943, anInt3938);
 			anInt3941 = -1;
 			anInt3943 = 0;
 		}
@@ -49,8 +49,8 @@ public class Class14_Sub2_Sub14 extends Cacheable {
 			if ((i & 0x1) == 0)
 				RT4GL.bindTexture2D(anInt3941);
 			if ((i & 0x2) == 0)
-				RT4GL.method1638(0);
+				RT4GL.setRgbCombineMode(0);
 			if ((i & 0x4) == 0)
-				RT4GL.method1656(0);
+				RT4GL.setAlphaCombineMode(0);
 		}
 }

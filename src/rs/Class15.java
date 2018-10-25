@@ -7,7 +7,6 @@ import com.jagex.io.js5.Class9;
 
 public class Class15 {
 	public static Class124 aClass124_373;
-	public static boolean aBoolean374 = true;
 	public static int anInt376;
 	public static int anInt380 = 0;
 	public static Class124 aClass124_381 = Class124.method263(1178, "cyan:");

@@ -226,8 +226,8 @@ public class Class14_Sub16 extends Linkable {
 		class14_sub10.position += i_18_ * 3;
 		aByteArray3002 = new byte[i_17_];
 		Buffer class14_sub10_69_ = new Buffer(aByteArray3002);
-		class14_sub10_69_.method803(1297377380, 65);
-		class14_sub10_69_.method803(6, 72);
+		class14_sub10_69_.writeInt(1297377380, 65);
+		class14_sub10_69_.writeInt(6, 72);
 		class14_sub10_69_.method833((byte) 86, i > 1 ? 1 : 0);
 		class14_sub10_69_.method833((byte) 99, i);
 		class14_sub10_69_.method833((byte) 122, i_16_);
@@ -242,7 +242,7 @@ public class Class14_Sub16 extends Linkable {
 		int[] is = new int[128];
 		i_45_ = 0;
 		for (int i_77_ = 0; i_77_ < i; i_77_++) {
-			class14_sub10_69_.method803(1297379947, 80);
+			class14_sub10_69_.writeInt(1297379947, 80);
 			class14_sub10_69_.position += 4;
 			int i_78_ = class14_sub10_69_.position;
 			int i_79_ = -1;
@@ -255,40 +255,40 @@ public class Class14_Sub16 extends Linkable {
 					i_79_ = i_81_ & 0xf;
 					if (i_81_ == 7) {
 						if (bool)
-							class14_sub10_69_.method809(255);
-						class14_sub10_69_.method809(47);
-						class14_sub10_69_.method809(0);
+							class14_sub10_69_.writeByte(255);
+						class14_sub10_69_.writeByte(47);
+						class14_sub10_69_.writeByte(0);
 						break while_168_;
 					}
 					if (i_81_ == 23) {
 						if (bool)
-							class14_sub10_69_.method809(255);
-						class14_sub10_69_.method809(81);
-						class14_sub10_69_.method809(3);
-						class14_sub10_69_.method809((class14_sub10.payload[i_68_++]));
-						class14_sub10_69_.method809((class14_sub10.payload[i_68_++]));
-						class14_sub10_69_.method809((class14_sub10.payload[i_68_++]));
+							class14_sub10_69_.writeByte(255);
+						class14_sub10_69_.writeByte(81);
+						class14_sub10_69_.writeByte(3);
+						class14_sub10_69_.writeByte((class14_sub10.payload[i_68_++]));
+						class14_sub10_69_.writeByte((class14_sub10.payload[i_68_++]));
+						class14_sub10_69_.writeByte((class14_sub10.payload[i_68_++]));
 					} else {
 						i_70_ ^= i_81_ >> 4;
 						if (i_79_ == 0) {
 							if (bool)
-								class14_sub10_69_.method809(i_70_ + 144);
+								class14_sub10_69_.writeByte(i_70_ + 144);
 							i_71_ += class14_sub10.payload[i_55_++];
 							i_72_ += class14_sub10.payload[i_56_++];
-							class14_sub10_69_.method809(i_71_ & 0x7f);
-							class14_sub10_69_.method809(i_72_ & 0x7f);
+							class14_sub10_69_.writeByte(i_71_ & 0x7f);
+							class14_sub10_69_.writeByte(i_72_ & 0x7f);
 						} else if (i_79_ == 1) {
 							if (bool)
-								class14_sub10_69_.method809(i_70_ + 128);
+								class14_sub10_69_.writeByte(i_70_ + 128);
 							i_71_ += class14_sub10.payload[i_55_++];
 							i_73_ += class14_sub10.payload[i_58_++];
-							class14_sub10_69_.method809(i_71_ & 0x7f);
-							class14_sub10_69_.method809(i_73_ & 0x7f);
+							class14_sub10_69_.writeByte(i_71_ & 0x7f);
+							class14_sub10_69_.writeByte(i_73_ & 0x7f);
 						} else if (i_79_ == 2) {
 							if (bool)
-								class14_sub10_69_.method809(i_70_ + 176);
+								class14_sub10_69_.writeByte(i_70_ + 176);
 							i_45_ = i_45_ + (class14_sub10.payload[i_32_++]) & 0x7f;
-							class14_sub10_69_.method809(i_45_);
+							class14_sub10_69_.writeByte(i_45_);
 							int i_82_;
 							if (i_45_ == 0 || i_45_ == 32)
 								i_82_ = class14_sub10.payload[i_62_++];
@@ -318,32 +318,32 @@ public class Class14_Sub16 extends Linkable {
 								i_82_ = class14_sub10.payload[i_57_++];
 							i_82_ += is[i_45_];
 							is[i_45_] = i_82_;
-							class14_sub10_69_.method809(i_82_ & 0x7f);
+							class14_sub10_69_.writeByte(i_82_ & 0x7f);
 						} else if (i_79_ == 3) {
 							if (bool)
-								class14_sub10_69_.method809(i_70_ + 224);
+								class14_sub10_69_.writeByte(i_70_ + 224);
 							i_74_ += class14_sub10.payload[i_63_++];
 							i_74_ += class14_sub10.payload[i_51_++] << 7;
-							class14_sub10_69_.method809(i_74_ & 0x7f);
-							class14_sub10_69_.method809(i_74_ >> 7 & 0x7f);
+							class14_sub10_69_.writeByte(i_74_ & 0x7f);
+							class14_sub10_69_.writeByte(i_74_ >> 7 & 0x7f);
 						} else if (i_79_ == 4) {
 							if (bool)
-								class14_sub10_69_.method809(i_70_ + 208);
+								class14_sub10_69_.writeByte(i_70_ + 208);
 							i_75_ += class14_sub10.payload[i_50_++];
-							class14_sub10_69_.method809(i_75_ & 0x7f);
+							class14_sub10_69_.writeByte(i_75_ & 0x7f);
 						} else if (i_79_ == 5) {
 							if (bool)
-								class14_sub10_69_.method809(i_70_ + 160);
+								class14_sub10_69_.writeByte(i_70_ + 160);
 							i_71_ += class14_sub10.payload[i_55_++];
 							i_76_ += class14_sub10.payload[i_49_++];
-							class14_sub10_69_.method809(i_71_ & 0x7f);
-							class14_sub10_69_.method809(i_76_ & 0x7f);
+							class14_sub10_69_.writeByte(i_71_ & 0x7f);
+							class14_sub10_69_.writeByte(i_76_ & 0x7f);
 						} else {
 							if (i_79_ != 6)
 								break;
 							if (bool)
-								class14_sub10_69_.method809(i_70_ + 192);
-							class14_sub10_69_.method809((class14_sub10.payload[i_62_++]));
+								class14_sub10_69_.writeByte(i_70_ + 192);
+							class14_sub10_69_.writeByte((class14_sub10.payload[i_62_++]));
 						}
 					}
 				}

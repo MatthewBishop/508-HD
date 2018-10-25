@@ -5,14 +5,14 @@ package com.jagex.rt4;
 
 import com.jagex.link.Linkable;
 
-public class Class14_Sub1 extends Linkable {
-	public int anInt2714;
+public class IntegerNode extends Linkable {
+	public int value;
 
-	public Class14_Sub1() {
+	public IntegerNode() {
 		/* empty */
 	}
 
-	public Class14_Sub1(int i) {
-		anInt2714 = i;
+	public IntegerNode(int i) {
+		value = i;
 	}
 }

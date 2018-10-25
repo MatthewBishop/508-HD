@@ -310,7 +310,7 @@ public class Class75 {
 			if (bool) {
 				Class69.aClass90_1070.aBoolean1428 = true;
 				while (Class69.aClass90_1070.aBoolean1419)
-					Util.sleep(50L);
+					Util.accuratesleep(50L);
 				Class69.aClass90_1070 = null;
 			}
 		}

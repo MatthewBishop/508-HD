@@ -21,7 +21,7 @@ public class Class25 {
 	public static void method994() {
 		anInt475 = 0;
 		anInt478 = 0;
-		anInt476 = RT4GL.anInt2033;
+		anInt476 = RT4GL.canvasWidth;
 		anInt477 = RT4GL.canvasHeight;
 		GL gl = RT4GL.gl;
 		gl.glDisable(3089);
@@ -74,8 +74,8 @@ public class Class25 {
 			i = 0;
 		if (i_16_ < 0)
 			i_16_ = 0;
-		if (i_17_ > RT4GL.anInt2033)
-			i_17_ = RT4GL.anInt2033;
+		if (i_17_ > RT4GL.canvasWidth)
+			i_17_ = RT4GL.canvasWidth;
 		if (i_18_ > RT4GL.canvasHeight)
 			i_18_ = RT4GL.canvasHeight;
 		anInt475 = i;

@@ -9,9 +9,24 @@ import com.jagex.rt4.shader.WaterShader;
 import com.jagex.rt4.shader.LavaShader;
 import com.jagex.rt4.shader.ShaderInterface;
 
-import rs.Class14_Sub30;
-import rs.Class15;
-
+/**
+ * r550 also has type7 and 8 shaders, while the type 8 uses the type 4 shader.
+ * 
+ * Type 1 and 6 are loaded from the texture def. (CLass134)
+ * @author David
+ *
+ */
+/*
+ * 1 noticeable on cabin fever/mos le harmless. Appears to deal with 
+ * FLoor blending. Noticeable on coasts there.
+ * */
+/*6 or 1 deal with object/npc texturing 
+ * 
+ * Not 6 is light, also does some obj/npc texturing
+ * 
+ * 1 noticeable on cabin fever/mos le harmless. Appears to deal with 
+ * FLoor blending. Noticeable on coasts there. Also deals with visibility of textures on basilisks and the benches in slayer cave.
+ * */
 public class RT4 {
 
 	public static float[] aFloatArray3171 = new float[] { 0.073F, 0.169F, 0.24F, 1.0F };
@@ -100,12 +115,12 @@ public class RT4 {
 	}
 
 	public static void method1778(int i, int i_1_) {
-		if (i == 4 && !Class15.aBoolean374) {
+		if (i == 4 && !RT4.aBoolean374) {
 			i = 2;
 			i_1_ = 2;
 		}
 		if (i != RT4.anInt3957) {
-			if (!Class14_Sub30.aBoolean3269) {
+			if (!RT4.aBoolean3269) {
 				if (RT4.anInt3957 != 0)
 					anInterface2Array2245[RT4.anInt3957].disable();
 				if (i != 0) {
@@ -148,5 +163,9 @@ public class RT4 {
 		RT4.colours[1] = sceneLight * (lightness * ((float) (255 & (i_0_ >> 40)) / 255.0F * f_2_));//g
 		return RT4.colours;
 	}
+
+	public static boolean aBoolean3269 = false;
+
+	public static boolean aBoolean374 = true;
 
 }

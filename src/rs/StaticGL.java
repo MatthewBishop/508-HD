@@ -17,7 +17,7 @@ public class StaticGL {
 	public static void method1409() {
 		GL gl = RT4GL.gl;
 		gl.glDisableClientState(32886);
-		RT4GL.USE_GL_LIGHTING(false);
+		RT4GL.setLightingEnabled(false);
 		gl.glDisable(2929);
 		gl.glPushAttrib(128);
 		gl.glFogf(2915, 3072.0F);
@@ -32,10 +32,10 @@ public class StaticGL {
 			}
 		}
 		gl.glEnableClientState(32886);
-		RT4GL.method1645();
+		RT4GL.applyLightingSetting();
 		gl.glEnable(2929);
 		gl.glPopAttrib();
-		RT4GL.method1625();
+		RT4GL.enableDepthBufferWriting();
 	}
 
 	public static void method67(int i, int i_19_, int i_20_, byte[][][] is, int i_21_, byte i_22_, int i_23_,
@@ -108,7 +108,7 @@ public class StaticGL {
 		if (bool) {
 			method1409();
 			RT4.method1778(3, -1);
-			Class14_Sub30.aBoolean3269 = true;
+			RT4.aBoolean3269 = true;
 			WaterShader.enableTexCoordArray();
 			Class7_Sub1.anInt2653 = -1;
 			JunkTex.anInt4675 = -1;
@@ -130,17 +130,17 @@ public class StaticGL {
 					float f = (201.5F - i_34_ * 50.0F - (class14_sub27.aBoolean3201 ? 1.0F : 0.5F));
 					if (class14_sub27.anInt3204 != -1
 							&& Class3.anInterface3_117.method12(class14_sub27.anInt3204) == 4
-							&& Class15.aBoolean374)
+							&& RT4.aBoolean374)
 						RT4.method1304(class14_sub27.anInt3190);
 					class14_sub27.method922(JunkTex.aClass14_Sub29ArrayArrayArray3368, f, false);
 				}
 				if (i_34_ == 0 && Class89.anInt1413 > 0) {
-					RT4GL.method1640(101.5F);
+					RT4GL.setupSomeCustomProjectionStub(101.5F);
 					ShadowManager.method2038(Static2.cameraTileX, Class102.cameraTileZ, JunkTex.anInt1108, i_19_,
 							Class53.visibilityMap, Static2.tileHeights[0]);
 				}
 			}
-			LightManager.method195(Static2.cameraTileX, Class102.cameraTileZ,
+			LightManager.renderFloorGlow(Static2.cameraTileX, Class102.cameraTileZ,
 					JunkTex.aClass14_Sub29ArrayArrayArray3368);
 		}
 		gl.glPopMatrix();
