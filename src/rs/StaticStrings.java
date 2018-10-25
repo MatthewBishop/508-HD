@@ -68,7 +68,7 @@ public class StaticStrings {
 		Static2.aClass124_1693 = Class74.aClass124_1141;
 		Class104.aClass124_1736 = JunkTex.aClass124_4121;
 		client.aClass124_2639 = JunkTex.aClass124_2857;
-		Class129.aClass124_2129 = Class74.aClass124_1139;
+		Static2.aClass124_2129 = Class74.aClass124_1139;
 		Class128.aClass124_2122 = JunkTex.aClass124_4325;
 		JunkTex.aClass124_4202 = JunkTex.aClass124_499;
 		Class108.aClass124_1825 = Static2.aClass124_1801;

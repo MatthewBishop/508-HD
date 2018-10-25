@@ -3,7 +3,6 @@ package com.jagex.io.js5;
 import com.jagex.link.Deque;
 import com.jagex.util.Util;
 
-import rs.Class138;
 import rs.Class14_Sub9_Sub3;
 import rs.JunkTex;
 
@@ -46,26 +45,26 @@ public class Class24 implements Runnable {
 						var12 = JunkTex.anObject4417;
 						var4 = JunkTex.anObject4417;
 						synchronized (var4) {
-							if (Class138.anInt2223 <= 1) {
-								Class138.anInt2223 = 0;
+							if (SFSS.anInt2223 <= 1) {
+								SFSS.anInt2223 = 0;
 								JunkTex.anObject4417.notifyAll();
 								return;
 							}
 
-							Class138.anInt2223 = 600;
+							SFSS.anInt2223 = 600;
 						}
 					} else {
 						Util.accuratesleep(100L);
 						var12 = JunkTex.anObject4417;
 						var4 = JunkTex.anObject4417;
 						synchronized (var4) {
-							if (Class138.anInt2223 <= 1) {
-								Class138.anInt2223 = 0;
+							if (SFSS.anInt2223 <= 1) {
+								SFSS.anInt2223 = 0;
 								JunkTex.anObject4417.notifyAll();
 								return;
 							}
 
-							--Class138.anInt2223;
+							--SFSS.anInt2223;
 						}
 					}
 				}

@@ -7,6 +7,8 @@ import java.nio.ByteBuffer;
 
 import javax.media.opengl.GL;
 
+import org.lwjgl.opengl.GL11;
+
 import com.jagex.rt4.Class119;
 import com.jagex.rt4.RT4;
 import com.jagex.rt4.RT4GL;
@@ -139,8 +141,8 @@ public class WaterMovementShader implements ShaderInterface {
 		gl.glGenTextures(1, is_0_, 0);
 		gl.glBindTexture(3552, is_0_[0]);
 		gl.glTexImage1D(3552, 0, 6406, 2, 0, 6406, 5121, ByteBuffer.wrap(is));
-		gl.glTexParameteri(3552, 10241, 9729);
-		gl.glTexParameteri(3552, 10240, 9729);
+		gl.glTexParameteri(3552, GL11.GL_TEXTURE_MIN_FILTER, 9729);
+		gl.glTexParameteri(3552, GL11.GL_TEXTURE_MAG_FILTER, 9729);
 		gl.glTexParameteri(3552, 10242, 33071);
 		this.anInt2561 = is_0_[0];
 	}

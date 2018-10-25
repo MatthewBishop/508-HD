@@ -25,7 +25,7 @@ public class StaticGL {
 		for (int i = 0; i < Class14_Sub30.aClass14_Sub27ArrayArray3273[0].length; i++) {
 			HDTile class14_sub27 = Class14_Sub30.aClass14_Sub27ArrayArray3273[0][i];
 			if (class14_sub27.anInt3204 >= 0
-					&& (Class3.anInterface3_117.method12(class14_sub27.anInt3204) == 4)) {
+					&& (SDRaster.anInterface3_117.method12(class14_sub27.anInt3204) == 4)) {
 				gl.glColor4fv(RT4.getRBGAValue(class14_sub27.anInt3190), 0);
 				float f = 201.5F - (class14_sub27.aBoolean3201 ? 1.0F : 0.5F);
 				class14_sub27.method922((JunkTex.aClass14_Sub29ArrayArrayArray3368), f, true);
@@ -52,8 +52,8 @@ public class StaticGL {
 				for (int i_31_ = Class14_Sub9_Sub3.anInt4849; i_31_ < JunkTex.anInt4526; i_31_++) {
 					Class14_Sub29 class14_sub29 = class14_sub29s[i_30_][i_31_];
 					if (class14_sub29 != null) {
-						if (!(Class53.visibilityMap[i_30_ - Static2.cameraTileX + JunkTex.anInt1108][(i_31_
-								- Class102.cameraTileZ + JunkTex.anInt1108)])
+						if (!(Class53.visibilityMap[i_30_ - Static2.cameraTileX + JunkTex.cameraDistance][(i_31_
+								- Class102.cameraTileZ + JunkTex.cameraDistance)])
 								|| (is != null && i_29_ >= i_21_ && is[i_29_][i_30_][i_31_] == i_22_)) {
 							class14_sub29.aBoolean3235 = false;
 							class14_sub29.aBoolean3240 = false;
@@ -101,7 +101,7 @@ public class StaticGL {
 				}
 			}
 		}
-		boolean bool = Static2.tileHeights == OverlayType.anIntArrayArrayArray2419;
+		boolean bool = Static2.tileHeights == OverlayType.underWaterTileHeightMap;
 		GL gl = RT4GL.gl;
 		gl.glPushMatrix();
 		gl.glTranslatef(-i, -i_19_, -i_20_);
@@ -129,14 +129,14 @@ public class StaticGL {
 					HDTile class14_sub27 = (JunkTex.aClass14_Sub27ArrayArray2464[i_34_][i_35_]);
 					float f = (201.5F - i_34_ * 50.0F - (class14_sub27.aBoolean3201 ? 1.0F : 0.5F));
 					if (class14_sub27.anInt3204 != -1
-							&& Class3.anInterface3_117.method12(class14_sub27.anInt3204) == 4
+							&& SDRaster.anInterface3_117.method12(class14_sub27.anInt3204) == 4
 							&& RT4.aBoolean374)
 						RT4.method1304(class14_sub27.anInt3190);
 					class14_sub27.method922(JunkTex.aClass14_Sub29ArrayArrayArray3368, f, false);
 				}
 				if (i_34_ == 0 && Class89.anInt1413 > 0) {
 					RT4GL.setupSomeCustomProjectionStub(101.5F);
-					ShadowManager.method2038(Static2.cameraTileX, Class102.cameraTileZ, JunkTex.anInt1108, i_19_,
+					ShadowManager.method2038(Static2.cameraTileX, Class102.cameraTileZ, JunkTex.cameraDistance, i_19_,
 							Class53.visibilityMap, Static2.tileHeights[0]);
 				}
 			}
@@ -146,11 +146,11 @@ public class StaticGL {
 		gl.glPopMatrix();
 		for (int i_36_ = Class14_Sub23.anInt3134; i_36_ < Class83.anInt1338; i_36_++) {
 			Class14_Sub29[][] class14_sub29s = JunkTex.aClass14_Sub29ArrayArrayArray3368[i_36_];
-			for (int i_37_ = -JunkTex.anInt1108; i_37_ <= 0; i_37_++) {
+			for (int i_37_ = -JunkTex.cameraDistance; i_37_ <= 0; i_37_++) {
 				int i_38_ = Static2.cameraTileX + i_37_;
 				int i_39_ = Static2.cameraTileX - i_37_;
 				if (i_38_ >= Class7_Sub1.anInt2659 || i_39_ < JunkTex.anInt4722) {
-					for (int i_40_ = -JunkTex.anInt1108; i_40_ <= 0; i_40_++) {
+					for (int i_40_ = -JunkTex.cameraDistance; i_40_ <= 0; i_40_++) {
 						int i_41_ = Class102.cameraTileZ + i_40_;
 						int i_42_ = Class102.cameraTileZ - i_40_;
 						if (i_38_ >= Class7_Sub1.anInt2659) {
@@ -188,11 +188,11 @@ public class StaticGL {
 		}
 		for (int i_43_ = Class14_Sub23.anInt3134; i_43_ < Class83.anInt1338; i_43_++) {
 			Class14_Sub29[][] class14_sub29s = JunkTex.aClass14_Sub29ArrayArrayArray3368[i_43_];
-			for (int i_44_ = -JunkTex.anInt1108; i_44_ <= 0; i_44_++) {
+			for (int i_44_ = -JunkTex.cameraDistance; i_44_ <= 0; i_44_++) {
 				int i_45_ = Static2.cameraTileX + i_44_;
 				int i_46_ = Static2.cameraTileX - i_44_;
 				if (i_45_ >= Class7_Sub1.anInt2659 || i_46_ < JunkTex.anInt4722) {
-					for (int i_47_ = -JunkTex.anInt1108; i_47_ <= 0; i_47_++) {
+					for (int i_47_ = -JunkTex.cameraDistance; i_47_ <= 0; i_47_++) {
 						int i_48_ = Class102.cameraTileZ + i_47_;
 						int i_49_ = Class102.cameraTileZ - i_47_;
 						if (i_45_ >= Class7_Sub1.anInt2659) {

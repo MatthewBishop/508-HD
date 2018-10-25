@@ -7,6 +7,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import com.jagex.StringConstants;
 import com.jagex.link.HashTable;
 import com.jagex.util.ArrayUtils;
 import com.jagex.util.Util;
@@ -313,16 +314,12 @@ public class Class124 implements Interface1 {
 		}
 
 	}
-	public static void method1687(int var0, byte var1) {
+	public static void method1687(int var0) {
 		Class14_Sub25 var2 = (Class14_Sub25) Class132.aClass55_2167.get(var0);
 		if (var2 != null) {
 			for (int var3 = 0; var2.anIntArray3178.length > var3; ++var3) {
 				var2.anIntArray3178[var3] = -1;
 				var2.anIntArray3177[var3] = 0;
-			}
-
-			if (var1 != 88) {
-				method1714(107, -30, -100, 125, 29);
 			}
 		}
 
@@ -1421,7 +1418,7 @@ public class Class124 implements Interface1 {
 	}
 
 	public Class124 method1712(byte var1) {
-		Class var2 = aClass2534 == null ? (aClass2534 = method1720("rs.Class124")) : aClass2534;
+		Class var2 = aClass2534 == null ? (aClass2534 = method1720(StringConstants.CLASS_124)) : aClass2534;
 		synchronized (var2) {
 			label74: {
 				long var3;

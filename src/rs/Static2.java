@@ -75,7 +75,7 @@ public class Static2 {
 	public static int mouseOffFromCenterX;
 	public static int anInt2734;
 	public static int anInt2740;
-	public static int anInt2741;
+	public static int cameraY;
 	public static int[] anIntArray2727;
 	public static int[] anIntArray2731;
 
@@ -228,7 +228,7 @@ public class Static2 {
 						(Static2.spriteHeights[i_22_]), is_27_);
 			}
 		}
-		Class129.method1761((byte) 19);
+		Static2.method1761((byte) 19);
 		AbstractSprite[] class14_sub2_sub19s_29_ = class14_sub2_sub19s;
 		return class14_sub2_sub19s_29_;
 	}
@@ -519,7 +519,7 @@ public class Static2 {
 				Class12.spritePaletteIndicators);
 		if (i != 4)
 			Static2.method332(null, 25, -60, -103, 2, 125, 49);
-		Class129.method1761((byte) 32);
+		Static2.method1761((byte) 32);
 		Class14_Sub2_Sub16_Sub1 class14_sub2_sub16_sub1_23_ = class14_sub2_sub16_sub1;
 		return class14_sub2_sub16_sub1_23_;
 	}
@@ -561,9 +561,9 @@ public class Static2 {
 			else {
 				i_6_ -= 10;
 				int i_7_ = JunkTex.anInt696 + JunkTex.anInt4408 & 0x7ff;
-				int i_8_ = Class3.cos[i_7_];
+				int i_8_ = SDRaster.cos[i_7_];
 				i_8_ = i_8_ * 256 / (Class32.anInt551 + 256);
-				int i_9_ = Class3.sin[i_7_];
+				int i_9_ = SDRaster.sin[i_7_];
 				i_9_ = i_9_ * 256 / (Class32.anInt551 + 256);
 				int i_10_ = i_1_ * i_8_ + i_3_ * i_9_ >> 48;
 				int i_11_ = -(i_9_ * i_1_) + i_8_ * i_3_ >> 48;
@@ -698,7 +698,7 @@ public class Static2 {
 		Class14_Sub7.method469(i_35_, i, JunkTex.anInt4251, i_34_, bool_33_, i_32_,
 				JunkTex.anInt4251);
 		Class120.method1615(i_34_, JunkTex.anInt4251, i, JunkTex.anInt4251, -26, i_35_, i_32_);
-		((Class134) Class3.anInterface3_117).method1922(Class51.anInt839);
+		((Class134) SDRaster.anInterface3_117).method1922(Class51.anInt839);
 		Class75.method1343(i_32_, -74, i, i_34_, i_35_);
 		Class7_Sub3_Sub1.anInt3719 = i_42_;
 		anInt2926 = i_38_;
@@ -733,7 +733,7 @@ public class Static2 {
 			class148s[i_7_] = new Class148_Sub2(Class14_Sub11.spriteTrimWidth, Class14_Sub30.spriteTrimHeight,
 					Class40.spriteXOffsets[i_7_], Class14_Sub2_Sub12.spriteYOffsets[i_7_], Class17.spriteWidths[i_7_],
 					Static2.spriteHeights[i_7_], Class12.spritePaletteIndicators[i_7_], JunkTex.spritePalette);
-		Class129.method1761((byte) 97);
+		Static2.method1761((byte) 97);
 		Class148[] class148s_8_ = class148s;
 		return class148s_8_;
 	}
@@ -1150,7 +1150,7 @@ public class Static2 {
 					is[i_12_] = (byte) -1;
 			}
 		}
-		class14_sub10.method807(24, is, 0, -1076444960);
+		class14_sub10.method807(24, is, 0);
 	}
 
 	public static HDTile method1122(HashTable hashTable, int i, OverlayType overlayType) {
@@ -1745,7 +1745,7 @@ public class Static2 {
 									i_74_ = 127;
 								int i_75_ = ((i_73_ & 0x380) + ((i_39_ + i_73_ & 0xfc00) + i_74_));
 								is_72_[(JunkTex.method617(4032, i_69_ << 38) + JunkTex
-										.method617(i_57_, 63))] = (Class3.anIntArray119[Class14_Sub2_Sub21.method441(96,
+										.method617(i_57_, 63))] = (SDRaster.anIntArray119[Class14_Sub2_Sub21.method441(96,
 												127, i_75_)]);
 							} else if (is_72_ != null)
 								is_72_[(JunkTex.method617(4032, i_69_ << 6)
@@ -1787,8 +1787,8 @@ public class Static2 {
 			int i_16_ = i_12_ * i_12_ + i * i;
 			int i_17_ = Math.max(class94.anInt1518 / 2, class94.anInt1545 / 2) + 10;
 			if (i_16_ <= i_17_ * i_17_) {
-				i_16_ = Class3.sin[i_15_];
-				i_17_ = Class3.cos[i_15_];
+				i_16_ = SDRaster.sin[i_15_];
+				i_17_ = SDRaster.cos[i_15_];
 				i_17_ = i_13_ * i_17_ / (Class32.anInt551 + 256);
 				i_16_ = i_16_ * 256 / (Class32.anInt551 + 256);
 				int i_18_ = -(i_16_ * i_12_) + i_17_ * i >> 48;
@@ -1820,7 +1820,7 @@ public class Static2 {
 			int i_5_ = ((JunkTex.anIntArray2858[i_2_] >> 8) * 64 - Class133_Sub6.anInt3676);
 			if (is_4_ != null) {
 				Class138.method1946(139);
-				JunkTex.method608(Static2.anInt818 * 8 - 48, bool, Class129.anInt2133 * 8 - 48, i_3_, is_4_,
+				JunkTex.method608(Static2.anInt818 * 8 - 48, bool, Static2.anInt2133 * 8 - 48, i_3_, is_4_,
 						i_5_, (byte) 80, Class14_Sub21.aClass32Array3100);
 			}
 		}
@@ -2014,7 +2014,7 @@ public class Static2 {
 						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class28.aClass9_Sub1_513.anInt242, 97);
 						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class14_Sub2_Sub7.aClass9_Sub1_3824.anInt242, 105);
 						Class70.aClass14_Sub10_Sub1_1080.method807(JunkTex.aClass14_Sub10_Sub1_891.position,
-								JunkTex.aClass14_Sub10_Sub1_891.payload, 0, -1076444960);
+								JunkTex.aClass14_Sub10_Sub1_891.payload, 0);
 						Class14_Sub15.aClass36_2990.method1100(0, 3, Class70.aClass14_Sub10_Sub1_1080.position,
 								Class70.aClass14_Sub10_Sub1_1080.payload);
 						JunkTex.aClass14_Sub10_Sub1_891.setEncryption(var1);
@@ -2187,7 +2187,7 @@ public class Static2 {
 									JunkTex.anInt4525 = 2;
 									Class142.anInt2315 = 0;
 									Class37.method1109(12827);
-									Class129.anInt2133 = -1;
+									Static2.anInt2133 = -1;
 									Class139.method1951((byte) -119, false);
 									Class133_Sub4.anInt3579 = -1;
 									return;
@@ -2391,12 +2391,11 @@ public class Static2 {
 			JunkTex.aClass14_Sub10_Sub1_891.position = 0;
 			JunkTex.aClass14_Sub10_Sub1_891.writeByte(48);
 			JunkTex.aClass14_Sub10_Sub1_891.writeByte(class14_sub10.position);
-			JunkTex.aClass14_Sub10_Sub1_891.method807(class14_sub10.position, (class14_sub10.payload), 0,
-					-1076444960);
+			JunkTex.aClass14_Sub10_Sub1_891.method807(class14_sub10.position, (class14_sub10.payload), 0);
 			Class56.anInt918 = 1;
 			JunkTex.anInt4686 = 0;
 			anInt2734 = -3;
-			Class129.anInt2136 = 0;
+			Static2.anInt2136 = 0;
 		}
 	}
 
@@ -2505,7 +2504,7 @@ public class Static2 {
 		Class14_Sub3.method451(0);
 		Class14_Sub2_Sub6.aClass20_3819.clear();
 		JunkTex.aClass86_4351 = new Class86();
-		((Class134) Class3.anInterface3_117).method1927();
+		((Class134) SDRaster.anInterface3_117).method1927();
 		LightManager.lights = new Light[255];
 		LightManager.lightCount = 0;
 		ModelHD.method1908();
@@ -2782,17 +2781,17 @@ public class Static2 {
 		Class92.method1452(is_9_);
 		AbstractSprite_Sub1 class14_sub2_sub19_sub1_11_ = new AbstractSprite_Sub1(36, 32);
 		Class92.method1455(class14_sub2_sub19_sub1_11_.pixels, 36, 32);
-		Class3.method97();
-		Class3.method90(16, 16);
-		Class3.aBoolean107 = false;
+		SDRaster.method97();
+		SDRaster.method90(16, 16);
+		SDRaster.aBoolean107 = false;
 		int i_12_ = class142.anInt2273;
 		if (!bool_1_) {
 			if (i == 2)
 				i_12_ *= 1.04;
 		} else
 			i_12_ *= 1.5;
-		int i_13_ = i_12_ * Class3.cos[class142.anInt2317] >> 48;
-		int i_14_ = Class3.sin[class142.anInt2317] * i_12_ >> 16;
+		int i_13_ = i_12_ * SDRaster.cos[class142.anInt2317] >> 48;
+		int i_14_ = SDRaster.sin[class142.anInt2317] * i_12_ >> 16;
 		modelsd.draw(0, class142.anInt2286, class142.anInt2326, class142.anInt2317, class142.anInt2293,
 				(-(modelsd.getMinY() / 2) + i_14_ + class142.anInt2285), i_13_ + class142.anInt2285);
 		if (i >= 1) {
@@ -2814,8 +2813,8 @@ public class Static2 {
 			Class4.aClass14_Sub2_Sub16_Sub1_137.method364(method249(67, i_3_), 0, 9, 16776960, 1);
 		Class92.method1455(is, i_8_, i_10_);
 		Class92.method1459(is_9_);
-		Class3.method97();
-		Class3.aBoolean107 = true;
+		SDRaster.method97();
+		SDRaster.aBoolean107 = true;
 		if (!bool) {
 			AbstractSprite_Sub2 class14_sub2_sub19_sub2 = new AbstractSprite_Sub2(class14_sub2_sub19_sub1_11_);
 			return class14_sub2_sub19_sub2;
@@ -3149,8 +3148,8 @@ public class Static2 {
 				int i_24_ = is[i_22_];
 				for (int i_25_ = 0; i_18_ > i_25_; i_25_++) {
 					int i_26_ = (i_25_ << 43) / i_18_;
-					int i_27_ = i_24_ * Class3.cos[i_26_] + i_14_ >> 48;
-					int i_28_ = i_23_ * Class3.sin[i_26_] + i_7_ >> 16;
+					int i_27_ = i_24_ * SDRaster.cos[i_26_] + i_14_ >> 48;
+					int i_28_ = i_23_ * SDRaster.sin[i_26_] + i_7_ >> 16;
 					is_21_[i_22_][i_25_] = class133_sub2.method1818(i_28_, 0, i_27_);
 				}
 			}
@@ -3349,8 +3348,8 @@ public class Static2 {
 	}
 
 	public static Class14_Sub2_Sub5 method889(Buffer class14_sub10, int i) {
-		Class14_Sub2_Sub5 class14_sub2_sub5 = new Class14_Sub2_Sub5(class14_sub10.method797(9467),
-				class14_sub10.method797(9467), class14_sub10.readUShort(), class14_sub10.readUShort(),
+		Class14_Sub2_Sub5 class14_sub2_sub5 = new Class14_Sub2_Sub5(class14_sub10.method797(),
+				class14_sub10.method797(), class14_sub10.readUShort(), class14_sub10.readUShort(),
 				class14_sub10.getInt((byte) -96), class14_sub10.readUByte() == 1);
 		int i_3_ = class14_sub10.readUByte();
 		for (int i_4_ = 0; i_4_ < i_3_; i_4_++)
@@ -3398,4 +3397,46 @@ public class Static2 {
 	public static int[] anIntArray3074 = new int[] { 1, 0, -1, 0 };
 	public static int[] anIntArray3082 = new int[] { 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3 };
 	public static int[] x_max_occluders = new int[2];
+	public static Class124 method1766(int[] is, int i, byte i_1_, long l) {
+		if (Canvas_Sub1.anInterface5_48 != null) {
+			Class124 class124 = Canvas_Sub1.anInterface5_48.method24(l, i, is, true);
+			if (class124 != null) {
+				Class124 class124_2_ = class124;
+				return class124_2_;
+			}
+		}
+		if (i == 5) {
+			Class124 class124 = method1174(l, (byte) 88).method1685(0);
+			return class124;
+		}
+		if (i_1_ < 123) {
+			Class124 class124 = null;
+			return class124;
+		}
+		Class124 class124 = method387(l, true);
+		return class124;
+	}
+
+	public static void method1764(int i) {
+		Static2.aClass124_2129 = null;
+		int i_0_ = -53 % ((i + 59) / 47);
+		Static2.aClass124_2134 = null;
+	}
+
+	public static void method1761(byte i) {
+		Class14_Sub2_Sub12.spriteYOffsets = null;
+		if (i > 2) {
+			Class12.spritePaletteIndicators = null;
+			spriteHeights = null;
+			Class17.spriteWidths = null;
+			Class40.spriteXOffsets = null;
+			JunkTex.spritePalette = null;
+		}
+	}
+
+	public static int anInt2136 = 0;
+	public static Class124 aClass124_2129 = Static2.aClass124_2134;
+	public static Class124 aClass124_2134 = Class124.method263(1178, "Type");
+	public static int anInt2133;
+	public static int anInt2131 = 0;
 }

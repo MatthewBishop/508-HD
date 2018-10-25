@@ -54,9 +54,9 @@ public class LightRenderer {
 				arrayStream.writeByte(vertexGreen[i]);
 				arrayStream.writeByte(vertexBlue[i]);
 				arrayStream.writeByte(255);
-				arrayStream.writeFloatLE((float) vertexX[i], 24671);
-				arrayStream.writeFloatLE((float) vertexY[i], 24671);
-				arrayStream.writeFloatLE((float) vertexZ[i], 24671);
+				arrayStream.writeFloatLE((float) vertexX[i]);
+				arrayStream.writeFloatLE((float) vertexY[i]);
+				arrayStream.writeFloatLE((float) vertexZ[i]);
 			}
 			for (int i = 0; i < triangleCount; i++)
 				elementStream.writeIntLE(-99, triIndex[i]);

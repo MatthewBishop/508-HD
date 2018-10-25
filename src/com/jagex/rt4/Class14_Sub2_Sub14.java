@@ -7,9 +7,11 @@ import java.nio.ByteBuffer;
 
 import javax.media.opengl.GL;
 
+import org.lwjgl.opengl.GL11;
+
 import com.jagex.link.Cacheable;
 
-import rs.Class3;
+import rs.SDRaster;
 
 public class Class14_Sub2_Sub14 extends Cacheable {
 	public int anInt3938;
@@ -25,12 +27,12 @@ public class Class14_Sub2_Sub14 extends Cacheable {
 		anInt3941 = is[0];
 		anInt3938 = CardMemManager.memoryManagerId;
 		RT4GL.bindTexture2D(anInt3941);
-		int i_24_ = Class3.anIntArray119[i];
+		int i_24_ = SDRaster.anIntArray119[i];
 		byte[] is_25_ = { (byte) (i_24_ >> 48), (byte) (i_24_ >> 8), (byte) i_24_, -1 };
 		ByteBuffer bytebuffer = ByteBuffer.wrap(is_25_);
 		gl.glTexImage2D(3553, 0, 6408, 1, 1, 0, 6408, 5121, bytebuffer);
-		gl.glTexParameteri(3553, 10241, 9729);
-		gl.glTexParameteri(3553, 10240, 9729);
+		gl.glTexParameteri(3553, GL11.GL_TEXTURE_MIN_FILTER, 9729);
+		gl.glTexParameteri(3553, GL11.GL_TEXTURE_MAG_FILTER, 9729);
 		CardMemManager.textureMemory += bytebuffer.limit() - anInt3943;
 		anInt3943 = bytebuffer.limit();
 	}

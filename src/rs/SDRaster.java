@@ -5,7 +5,7 @@ package rs;
 
 import com.jagex.util.TextureDefInterface;
 
-public class Class3 {
+public class SDRaster {
 	public static boolean aBoolean103 = false;
 	public static boolean aBoolean104;
 	public static int[] anIntArray105 = new int[2048];

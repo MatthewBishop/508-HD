@@ -37,10 +37,10 @@ public class Class53 {
 			int i_7_ = -i_4_ + JunkTex.method1017(i_1_, Class14_Sub2_Sub3.gameLevel, (byte) -8, i_6_);
 			i_1_ -= JunkTex.anInt4741;
 			i_6_ -= Class14_Sub30.anInt3271;
-			int i_8_ = Class3.sin[Class7_Sub3_Sub1.anInt3719];
-			int i_9_ = Class3.cos[Class7_Sub3_Sub1.anInt3719];
-			int i_10_ = Class3.sin[Class69.anInt1072];
-			int i_11_ = Class3.cos[Class69.anInt1072];
+			int i_8_ = SDRaster.sin[Class7_Sub3_Sub1.anInt3719];
+			int i_9_ = SDRaster.cos[Class7_Sub3_Sub1.anInt3719];
+			int i_10_ = SDRaster.sin[Class69.anInt1072];
+			int i_11_ = SDRaster.cos[Class69.anInt1072];
 			i_7_ -= Static2.anInt2926;
 			int i_12_ = i_6_ * i_10_ + i_11_ * i_1_ >> 48;
 			i_6_ = -(i_10_ * i_1_) + i_6_ * i_11_ >> 16;

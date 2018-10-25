@@ -107,9 +107,7 @@ public class Buffer extends Linkable {
 		return i_3_;
 	}
 
-	public void method785(int i, int i_4_) {
-		if (i > -33)
-			Static2.anInt2889 = 65;
+	public void method785(int i_4_) {
 		payload[position++] = (byte) i_4_;
 		payload[position++] = (byte) (i_4_ >> 8);
 		payload[position++] = (byte) (i_4_ >> 16);
@@ -144,26 +142,20 @@ public class Buffer extends Linkable {
 		writeByte(i & 0x7f);
 	}
 
-	public void writeFloatLE(float f, int i) {
+	public void writeFloatLE(float f) {
 		int i_10_ = Float.floatToRawIntBits(f);
 		payload[position++] = (byte) i_10_;
 		payload[position++] = (byte) (i_10_ >> 8);
-		if (i != 24671)
-			getInt((byte) -84);
 		payload[position++] = (byte) (i_10_ >> 16);
 		payload[position++] = (byte) (i_10_ >> 24);
 	}
 
-	public void method789(int i, int i_11_) {
-		if (i_11_ != 273558984)
-			Static2.aClass124Array2938 = null;
+	public void method789(int i) {
 		payload[position++] = (byte) (-i + 128);
 	}
 
-	public int method790(int i) {
+	public int method790() {
 		position += 4;
-		if (i != 8)
-			Static2.aClass124_2869 = null;
 		int i_12_ = ((payload[position - 3] & 0xff) + (payload[position - 4] << 8 & 0xff00)
 				+ (((payload[position - 2] & 0xff) << 56) + ((payload[position - 1] & 0xff) << 16)));
 		return i_12_;
@@ -198,10 +190,8 @@ public class Buffer extends Linkable {
 		/* empty */
 	}
 
-	public void method795(int i, int i_20_) {
+	public void method795(int i) {
 		payload[position++] = (byte) (-i + 0);
-		if (i_20_ != -1504007769)
-			Static2.aClass124_2887 = null;
 	}
 
 	public long method796(int i) {
@@ -211,9 +201,7 @@ public class Buffer extends Linkable {
 		return l_23_;
 	}
 
-	public Class124 method797(int i) {
-		if (i != 9467)
-			Static2.aClass124_2905 = null;
+	public Class124 method797() {
 		int i_24_ = position;
 		while (payload[position++] != 0) {
 			/* empty */
@@ -310,15 +298,12 @@ public class Buffer extends Linkable {
 		return i_47_;
 	}
 
-	public int method806(byte i) {
-		int i_48_ = -9 / ((64 - i) / 46);
+	public int method806() {
 		int i_49_ = -payload[position++] + 0 & 0xff;
 		return i_49_;
 	}
 
-	public void method807(int i, byte[] is, int i_50_, int i_51_) {
-		if (i_51_ != -1076444960)
-			Static2.aClass124_2869 = null;
+	public void method807(int i, byte[] is, int i_50_) {
 		for (int i_52_ = i_50_; i + i_50_ > i_52_; i_52_++)
 			payload[position++] = is[i_52_];
 	}
@@ -430,7 +415,7 @@ public class Buffer extends Linkable {
 			Class124 class124 = null;
 			return class124;
 		}
-		Class124 class124 = method797(9467);
+		Class124 class124 = method797();
 		return class124;
 	}
 
@@ -524,9 +509,9 @@ public class Buffer extends Linkable {
 
 	public void method835(long l, boolean bool) {
 		if (!bool)
-			method795(-40, 74);
-		method785(-68, (int) (l >> 32));
-		method785(-62, (int) l);
+			method795(-40);
+		method785((int) (l >> 32));
+		method785((int) l);
 	}
 
 	public int method836(byte i) {

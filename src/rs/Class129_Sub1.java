@@ -15,23 +15,20 @@ public class Class129_Sub1 extends Class129 implements MouseWheelListener {
 	}
 
 	@Override
-	public void method1760(int i, Component component) {
+	public void addMouseWheelListener(Component component) {
 		component.addMouseWheelListener(this);
-		if (i != -14827)
-			anInt3430 = -10;
 	}
 
 	@Override
-	public void method1765(boolean bool, Component component) {
-		if (!bool)
-			anInt3430 = 123;
+	public void removeMouseWheelListener(Component component) {
 		component.removeMouseWheelListener(this);
 	}
 
+	/**
+	 * Gets the net mouse wheel movement in a single game cycle.
+	 */
 	@Override
-	public synchronized int method1763(int i) {
-		if (i > -122)
-			method1763(-57);
+	public synchronized int getWheelRotation() {
 		int i_0_ = anInt3430;
 		anInt3430 = 0;
 		int i_1_ = i_0_;

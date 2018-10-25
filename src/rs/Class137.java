@@ -336,7 +336,7 @@ public class Class137 {
 														class14_sub2_sub19 = (Class109.method1565(1,
 																(class94.anIntArray1542[i_34_]), (class94.aBoolean1575),
 																i_40_, (byte) -100, 3153952));
-													if (Class3.aBoolean103)
+													if (SDRaster.aBoolean103)
 														JunkTex.aBooleanArray4698[i_17_] = true;
 													if (class14_sub2_sub19 == null)
 														Class103.method1531(class94);
@@ -637,8 +637,8 @@ public class Class137 {
 										}
 										if (class94.aBoolean1606)
 											RT4GL.method1646();
-										int i_67_ = ((class94.anInt1513 * (Class3.cos[class94.anInt1465])) >> 48);
-										int i_68_ = (((Class3.sin[class94.anInt1465])
+										int i_67_ = ((class94.anInt1513 * (SDRaster.cos[class94.anInt1465])) >> 48);
+										int i_68_ = (((SDRaster.sin[class94.anInt1465])
 												* class94.anInt1513) >> 48);
 										if (!class94.aBoolean1455)
 											class133_sub7.draw(0, class94.anInt1578, 0, class94.anInt1465, 0,

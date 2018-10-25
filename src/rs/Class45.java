@@ -172,10 +172,10 @@ public class Class45 {
 		}
 	}
 	public static void method1162(int i, int i_9_, int i_10_, int i_11_, byte i_12_, int i_13_, boolean bool) {
-		if (i_9_ != Class129.anInt2133 || Static2.anInt818 != i
+		if (i_9_ != Static2.anInt2133 || Static2.anInt818 != i
 				|| (i_10_ != Class142.anInt2295 && !Class128.method1755(130068615))) {
 			Static2.anInt818 = i;
-			Class129.anInt2133 = i_9_;
+			Static2.anInt2133 = i_9_;
 			Class142.anInt2295 = i_10_;
 			if (Class128.method1755(130068615))
 				Class142.anInt2295 = 0;
@@ -188,7 +188,7 @@ public class Class45 {
 			int i_15_ = Class133_Sub6.anInt3676;
 			Class133_Sub6.anInt3676 = (i_9_ - 6) * 8;
 			Class58.anInt947 = i * 8 - 48;
-			Class70.aClass14_Sub2_Sub5_1078 = OverlayType.method2020(Class129.anInt2133 * 8, false, Static2.anInt818 * 8);
+			Class70.aClass14_Sub2_Sub5_1078 = OverlayType.method2020(Static2.anInt2133 * 8, false, Static2.anInt818 * 8);
 			int i_16_ = Class133_Sub6.anInt3676 - i_15_;
 			int i_17_ = Class58.anInt947 - i_14_;
 			i_15_ = Class133_Sub6.anInt3676;

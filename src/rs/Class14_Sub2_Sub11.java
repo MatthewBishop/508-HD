@@ -157,7 +157,7 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 
 	public void method312(Buffer class14_sub10, byte i, int i_21_) {
 		if (i_21_ == 1)
-			aClass124_3876 = class14_sub10.method797(9467);
+			aClass124_3876 = class14_sub10.method797();
 		else if (i_21_ == 2) {
 			int i_22_ = class14_sub10.readUByte();
 			anIntArray3885 = new int[i_22_];
@@ -268,7 +268,7 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 		JunkTex.aClass14_Sub10_Sub1_891.writeByte(118);
 		JunkTex.aClass14_Sub10_Sub1_891.method817(l, 114);
 		Static2.anInt2734 = -3;
-		Class129.anInt2136 = 0;
+		Static2.anInt2136 = 0;
 		if (i != 24967)
 			method314((byte) 35, 43, -40, -1, 83);
 		JunkTex.anInt4686 = 0;

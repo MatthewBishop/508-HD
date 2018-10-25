@@ -7,6 +7,8 @@ import java.nio.ByteBuffer;
 
 import javax.media.opengl.GL;
 
+import org.lwjgl.opengl.GL11;
+
 public class Class119 {
 	private static ByteBuffer textureData2;
 	private static ByteBuffer textureData2l;
@@ -56,8 +58,8 @@ public class Class119 {
 			gl.glBindTexture(32879, is[0]);
 			textureData2l.position(0);
 			gl.glTexImage3D(32879, 0, 6410, 128, 128, 32, 0, 6410, 5121, textureData2l);
-			gl.glTexParameteri(32879, 10241, 9729);
-			gl.glTexParameteri(32879, 10240, 9729);
+			gl.glTexParameteri(32879, GL11.GL_TEXTURE_MIN_FILTER, 9729);
+			gl.glTexParameteri(32879, GL11.GL_TEXTURE_MAG_FILTER, 9729);
 			texture3DPointer2l = is[0];
 			CardMemManager.textureMemory += textureData2l.limit() * 2;
 		} else {
@@ -67,8 +69,8 @@ public class Class119 {
 				RT4GL.bindTexture2D(anIntArray1991[i]);
 				textureData2l.position(i * 64 * 64 * 2);
 				gl.glTexImage2D(3553, 0, 6410, 64, 64, 0, 6410, 5121, textureData2l);
-				gl.glTexParameteri(3553, 10241, 9729);
-				gl.glTexParameteri(3553, 10240, 9729);
+				gl.glTexParameteri(3553, GL11.GL_TEXTURE_MIN_FILTER, 9729);
+				gl.glTexParameteri(3553, GL11.GL_TEXTURE_MAG_FILTER, 9729);
 			}
 			CardMemManager.textureMemory += textureData2l.limit() * 2;
 		}
@@ -82,8 +84,8 @@ public class Class119 {
 			gl.glBindTexture(32879, is[0]);
 			textureData2.position(0);
 			gl.glTexImage3D(32879, 0, 6410, 128, 128, 32, 0, 6410, 5121, textureData2);
-			gl.glTexParameteri(32879, 10241, 9729);
-			gl.glTexParameteri(32879, 10240, 9729);
+			gl.glTexParameteri(32879, GL11.GL_TEXTURE_MIN_FILTER, 9729);
+			gl.glTexParameteri(32879, GL11.GL_TEXTURE_MAG_FILTER, 9729);
 			texture3DPointer2 = is[0];
 			CardMemManager.textureMemory += textureData2.limit() * 2;
 		} else {
@@ -93,8 +95,8 @@ public class Class119 {
 				RT4GL.bindTexture2D(textureIds2[i]);
 				textureData2.position(i * 64 * 64 * 2);
 				gl.glTexImage2D(3553, 0, 6410, 64, 64, 0, 6410, 5121, textureData2);
-				gl.glTexParameteri(3553, 10241, 9729);
-				gl.glTexParameteri(3553, 10240, 9729);
+				gl.glTexParameteri(3553, GL11.GL_TEXTURE_MIN_FILTER, 9729);
+				gl.glTexParameteri(3553, GL11.GL_TEXTURE_MAG_FILTER, 9729);
 			}
 			CardMemManager.textureMemory += textureData2.limit() * 2;
 		}

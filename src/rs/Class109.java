@@ -48,9 +48,9 @@ public class Class109 {
 			AbstractSprite class14_sub2_sub19_11_ = class14_sub2_sub19;
 			return class14_sub2_sub19_11_;
 		}
-		Class3.aBoolean103 = false;
+		SDRaster.aBoolean103 = false;
 		AbstractSprite class14_sub2_sub19_12_ = Static2.method1194(false, i, i_6_, false, bool, i_5_, true, i_8_);
-		if (class14_sub2_sub19_12_ != null && !Class3.aBoolean103)
+		if (class14_sub2_sub19_12_ != null && !SDRaster.aBoolean103)
 			Class70.aClass52_1077.put(class14_sub2_sub19_12_, l);
 		AbstractSprite class14_sub2_sub19_13_ = class14_sub2_sub19_12_;
 		return class14_sub2_sub19_13_;

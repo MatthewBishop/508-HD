@@ -73,9 +73,9 @@ public class Class133_Sub1_Sub2 extends Class133_Sub1 {
 				int i_12_ = 0;
 				if (aClass12_4949.aShort280 != 0 || aClass12_4949.aShort315 != 0) {
 					int i_13_ = aClass12_4949.aShort280;
-					int i_14_ = Class3.cos[i];
+					int i_14_ = SDRaster.cos[i];
 					int i_15_ = aClass12_4949.aShort315;
-					int i_16_ = Class3.sin[i];
+					int i_16_ = SDRaster.sin[i];
 					int i_17_ = -i_13_ / 2;
 					int i_18_ = -i_15_ / 2;
 					int i_19_ = i_14_ * i_18_ - i_17_ * i_16_ >> 48;

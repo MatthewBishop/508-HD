@@ -160,10 +160,10 @@ public class LavaShader implements ShaderInterface {
 						class14_sub10.writeFloat(1.0F);
 						class14_sub10.writeFloat(1.0F);
 					} else {
-						class14_sub10.writeFloatLE(is_4_[i_6_] / 4096.0F, 24671);
-						class14_sub10.writeFloatLE(is_5_[i_6_] / 4096.0F, 24671);
-						class14_sub10.writeFloatLE(1.0F, 24671);
-						class14_sub10.writeFloatLE(1.0F, 24671);
+						class14_sub10.writeFloatLE(is_4_[i_6_] / 4096.0F);
+						class14_sub10.writeFloatLE(is_5_[i_6_] / 4096.0F);
+						class14_sub10.writeFloatLE(1.0F);
+						class14_sub10.writeFloatLE(1.0F);
 					}
 				}
 			}

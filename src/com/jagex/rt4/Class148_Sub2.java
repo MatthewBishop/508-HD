@@ -7,6 +7,8 @@ import java.nio.ByteBuffer;
 
 import javax.media.opengl.GL;
 
+import org.lwjgl.opengl.GL11;
+
 import rs.JunkTex;
 
 public class Class148_Sub2 extends Class148 {
@@ -70,11 +72,11 @@ public class Class148_Sub2 extends Class148 {
 			anInt3692 = i;
 			GL gl = RT4GL.gl;
 			if (i == 2) {
-				gl.glTexParameteri(3553, 10241, 9729);
-				gl.glTexParameteri(3553, 10240, 9729);
+				gl.glTexParameteri(3553, GL11.GL_TEXTURE_MIN_FILTER, 9729);
+				gl.glTexParameteri(3553, GL11.GL_TEXTURE_MAG_FILTER, 9729);
 			} else {
-				gl.glTexParameteri(3553, 10241, 9728);
-				gl.glTexParameteri(3553, 10240, 9728);
+				gl.glTexParameteri(3553, GL11.GL_TEXTURE_MIN_FILTER, 9728);
+				gl.glTexParameteri(3553, GL11.GL_TEXTURE_MAG_FILTER, 9728);
 			}
 		}
 	}

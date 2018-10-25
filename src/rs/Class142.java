@@ -204,7 +204,7 @@ public class Class142 {
 		anInt2273 = class142_18_.anInt2273;
 		aByteArray2318 = class142_18_.aByteArray2318;
 		if (i <= 116)
-			method1976((byte) 29);
+			method1976();
 		anInt2326 = class142_18_.anInt2326;
 		aShortArray2278 = class142_18_.aShortArray2278;
 		anInt2309 = 1;
@@ -258,7 +258,7 @@ public class Class142 {
 		if (i == 1)
 			anInt2311 = class14_sub10.readUShort();
 		else if (i == 2)
-			aClass124_2296 = class14_sub10.method797(9467);
+			aClass124_2296 = class14_sub10.method797();
 		else if (i != 4) {
 			if (i == 5)
 				anInt2317 = class14_sub10.readUShort();
@@ -278,7 +278,7 @@ public class Class142 {
 								anInt2264 = class14_sub10.readUShort();
 							else if (i != 26) {
 								if (i >= 30 && i < 35) {
-									aClass124Array2263[i - 30] = class14_sub10.method797(9467);
+									aClass124Array2263[i - 30] = class14_sub10.method797();
 									if (aClass124Array2263[i - 30].method1717(i_24_ + 19983,
 											Class14_Sub9_Sub1.aClass124_4808))
 										aClass124Array2263[i - 30] = null;
@@ -369,8 +369,7 @@ public class Class142 {
 																										if (bool)
 																											linkable = new Class14_Sub30(
 																													class14_sub10
-																															.method797(
-																																	9467));
+																															.method797());
 																										else
 																											linkable = new IntegerNode(
 																													class14_sub10
@@ -436,7 +435,7 @@ public class Class142 {
 										}
 									}
 								} else
-									aClass124Array2304[i - 35] = class14_sub10.method797(i_24_ + 29410);
+									aClass124Array2304[i - 35] = class14_sub10.method797();
 							} else
 								anInt2322 = class14_sub10.readUShort();
 						} else
@@ -560,11 +559,9 @@ public class Class142 {
 		return bool_54_;
 	}
 
-	public static void method1976(byte i) {
+	public static void method1976() {
 		AtmosphericChunk atmosphericChunk = new AtmosphericChunk();
-		int i_55_ = 0;
-		int i_56_ = 60 % ((-46 - i) / 63);
-		for (/**/; i_55_ < 13; i_55_++) {
+		for (int i_55_ = 0; i_55_ < 13; i_55_++) {
 			for (int i_57_ = 0; i_57_ < 13; i_57_++)
 				OverlayType.aClass71ArrayArray2421[i_55_][i_57_] = atmosphericChunk;
 		}

@@ -79,7 +79,7 @@ public class Class14_Sub17 extends Linkable {
 					Class14_Sub30.spriteTrimHeight, Class40.spriteXOffsets[i_0_], (Class14_Sub2_Sub12.spriteYOffsets[i_0_]),
 					Class17.spriteWidths[i_0_], Static2.spriteHeights[i_0_], is_2_);
 		}
-		Class129.method1761((byte) 123);
+		Static2.method1761((byte) 123);
 		AbstractSprite_Sub1[] class14_sub2_sub19_sub1s_4_ = class14_sub2_sub19_sub1s;
 		return class14_sub2_sub19_sub1s_4_;
 	}

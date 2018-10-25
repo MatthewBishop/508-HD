@@ -43,7 +43,7 @@ public class Class115 {
 	public static void method1591(int var0, int var1, int var2) {
 		JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(63);
 		JunkTex.aClass14_Sub10_Sub1_891.method801((byte) -114, var0);
-		JunkTex.aClass14_Sub10_Sub1_891.method785(var2 ^ -86, var1);
+		JunkTex.aClass14_Sub10_Sub1_891.method785(var1);
 	}
 
 	public static void method1592(byte var0) {
@@ -62,7 +62,7 @@ public class Class115 {
 					Class14_Sub15.aClass36_2990 = null;
 				}
 
-				if (Class129.anInt2136 >= 1) {
+				if (Static2.anInt2136 >= 1) {
 					Static2.anInt2734 = -5;
 					Class56.anInt918 = 0;
 					return;
@@ -75,7 +75,7 @@ public class Class115 {
 					Class131.anInt2164 = Class84.anInt1346;
 				}
 
-				++Class129.anInt2136;
+				++Static2.anInt2136;
 				JunkTex.anInt4686 = 0;
 			}
 
@@ -202,11 +202,11 @@ public class Class115 {
 				Class14_Sub15.aClass36_2990 = null;
 			}
 
-			if (Class129.anInt2136 >= 1) {
+			if (Static2.anInt2136 >= 1) {
 				Static2.anInt2734 = -4;
 				Class56.anInt918 = 0;
 			} else {
-				++Class129.anInt2136;
+				++Static2.anInt2136;
 				if (Class84.anInt1346 == Class131.anInt2164) {
 					Class131.anInt2164 = Static2.anInt3348;
 				} else {

@@ -114,13 +114,13 @@ public class Class54 {
 			OverlayType overlayType = Class97.list(i_12_, -9810);
 			if (overlayType != null) {
 				int i_13_ = overlayType.anInt2414;
-				if (i_13_ >= 0 && !Class3.anInterface3_117.method13(i_13_))
+				if (i_13_ >= 0 && !SDRaster.anInterface3_117.method13(i_13_))
 					i_13_ = -1;
 				int i_14_;
 				if (overlayType.anInt2405 < 0) {
 					if (i_13_ >= 0)
-						i_14_ = (Class3.anIntArray119[(Class7_Sub3_Sub1.method135(false, 96,
-								Class3.anInterface3_117.method5(i_13_)))]);
+						i_14_ = (SDRaster.anIntArray119[(Class7_Sub3_Sub1.method135(false, 96,
+								SDRaster.anInterface3_117.method5(i_13_)))]);
 					else if (overlayType.anInt2411 != -1) {
 						int i_15_ = overlayType.anInt2411;
 						int i_16_ = i + (i_15_ & 0x7f);
@@ -129,7 +129,7 @@ public class Class54 {
 						else if (i_16_ > 127)
 							i_16_ = 127;
 						int i_17_ = (i_16_ + (i_15_ & 0x380) + (i_15_ + i_11_ & 0xfc00));
-						i_14_ = (Class3.anIntArray119[Class7_Sub3_Sub1.method135(false, 96, i_17_)]);
+						i_14_ = (SDRaster.anIntArray119[Class7_Sub3_Sub1.method135(false, 96, i_17_)]);
 					} else
 						i_14_ = -1;
 				} else {
@@ -140,7 +140,7 @@ public class Class54 {
 					else if (i_19_ > 127)
 						i_19_ = 127;
 					int i_20_ = i_19_ + (i_11_ + i_18_ & 0xfc00) + (i_18_ & 0x380);
-					i_14_ = (Class3.anIntArray119[Class7_Sub3_Sub1.method135(false, 96, i_20_)]);
+					i_14_ = (SDRaster.anIntArray119[Class7_Sub3_Sub1.method135(false, 96, i_20_)]);
 				}
 				Class56.anIntArray917[i_12_ + 1] = i_14_;
 			}

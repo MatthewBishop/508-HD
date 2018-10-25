@@ -7,6 +7,10 @@ import java.nio.ByteBuffer;
 
 import javax.media.opengl.GL;
 
+import org.lwjgl.opengl.GL11;
+import org.lwjgl.opengl.GL12;
+import org.lwjgl.opengl.GL13;
+
 import com.jagex.rt4.CardMemManager;
 import com.jagex.rt4.RT4;
 import com.jagex.rt4.RT4GL;
@@ -25,29 +29,29 @@ public class Class23 implements ShaderInterface {
 		this.aBoolean2555 = false;
 		this.listIndex = -1;
 		if (RT4GL.has_cubemap && RT4GL.maxTextureUnits >= 2) {
-			this.method989();
+			this.prepare();
 			GL gl = RT4GL.gl;
-			gl.glBindTexture(34067, this.anIntArray2557[0]);
-			gl.glTexParameteri(34067, 10241, 9729);
-			gl.glTexParameteri(34067, 10240, 9729);
-			gl.glTexParameteri(34067, 32882, 33071);
-			gl.glTexParameteri(34067, 10242, 33071);
-			gl.glTexParameteri(34067, 10243, 33071);
-			gl.glBindTexture(34067, this.anIntArray2557[1]);
-			gl.glTexParameteri(34067, 10241, 9729);
-			gl.glTexParameteri(34067, 10240, 9729);
-			gl.glTexParameteri(34067, 32882, 33071);
-			gl.glTexParameteri(34067, 10242, 33071);
-			gl.glTexParameteri(34067, 10243, 33071);
-			gl.glBindTexture(34067, this.anIntArray2557[2]);
-			gl.glTexParameteri(34067, 10241, 9729);
-			gl.glTexParameteri(34067, 10240, 9729);
-			gl.glTexParameteri(34067, 32882, 33071);
-			gl.glTexParameteri(34067, 10242, 33071);
-			gl.glTexParameteri(34067, 10243, 33071);
+			gl.glBindTexture(GL13.GL_TEXTURE_CUBE_MAP, this.anIntArray2557[0]);
+			gl.glTexParameteri(GL13.GL_TEXTURE_CUBE_MAP, GL11.GL_TEXTURE_MIN_FILTER, GL11.GL_LINEAR);
+			gl.glTexParameteri(GL13.GL_TEXTURE_CUBE_MAP, GL11.GL_TEXTURE_MAG_FILTER, GL11.GL_LINEAR);
+			gl.glTexParameteri(GL13.GL_TEXTURE_CUBE_MAP, GL12.GL_TEXTURE_WRAP_R, GL12.GL_CLAMP_TO_EDGE);
+			gl.glTexParameteri(GL13.GL_TEXTURE_CUBE_MAP, GL11.GL_TEXTURE_WRAP_S, GL12.GL_CLAMP_TO_EDGE);
+			gl.glTexParameteri(GL13.GL_TEXTURE_CUBE_MAP, GL11.GL_TEXTURE_WRAP_T, GL12.GL_CLAMP_TO_EDGE);
+			gl.glBindTexture(GL13.GL_TEXTURE_CUBE_MAP, this.anIntArray2557[1]);
+			gl.glTexParameteri(GL13.GL_TEXTURE_CUBE_MAP, GL11.GL_TEXTURE_MIN_FILTER, GL11.GL_LINEAR);
+			gl.glTexParameteri(GL13.GL_TEXTURE_CUBE_MAP, GL11.GL_TEXTURE_MAG_FILTER, GL11.GL_LINEAR);
+			gl.glTexParameteri(GL13.GL_TEXTURE_CUBE_MAP, GL12.GL_TEXTURE_WRAP_R, GL12.GL_CLAMP_TO_EDGE);
+			gl.glTexParameteri(GL13.GL_TEXTURE_CUBE_MAP, GL11.GL_TEXTURE_WRAP_S, GL12.GL_CLAMP_TO_EDGE);
+			gl.glTexParameteri(GL13.GL_TEXTURE_CUBE_MAP, GL11.GL_TEXTURE_WRAP_T, GL12.GL_CLAMP_TO_EDGE);
+			gl.glBindTexture(GL13.GL_TEXTURE_CUBE_MAP, this.anIntArray2557[2]);
+			gl.glTexParameteri(GL13.GL_TEXTURE_CUBE_MAP, GL11.GL_TEXTURE_MIN_FILTER, GL11.GL_LINEAR);
+			gl.glTexParameteri(GL13.GL_TEXTURE_CUBE_MAP, GL11.GL_TEXTURE_MAG_FILTER, GL11.GL_LINEAR);
+			gl.glTexParameteri(GL13.GL_TEXTURE_CUBE_MAP, GL12.GL_TEXTURE_WRAP_R, GL12.GL_CLAMP_TO_EDGE);
+			gl.glTexParameteri(GL13.GL_TEXTURE_CUBE_MAP, GL11.GL_TEXTURE_WRAP_S, GL12.GL_CLAMP_TO_EDGE);
+			gl.glTexParameteri(GL13.GL_TEXTURE_CUBE_MAP, GL11.GL_TEXTURE_WRAP_T, GL12.GL_CLAMP_TO_EDGE);
 			this.aBoolean2555 = RT4GL.maxTextureUnits < 3;
 		}
-		this.method990();
+		this.postProcess();
 	}
 
 	public void disable() {
@@ -71,7 +75,7 @@ public class Class23 implements ShaderInterface {
 		return 4;
 	}
 
-	private void method989() {
+	private void prepare() {
 		GL gl = RT4GL.gl;
 		if (this.anIntArray2557 == null) {
 			this.anIntArray2557 = new int[3];
@@ -127,17 +131,17 @@ public class Class23 implements ShaderInterface {
 					i_3_++;
 				}
 			}
-			gl.glBindTexture(34067, this.anIntArray2557[0]);
-			gl.glTexImage2D(i_2_ + 34069, 0, 6406, 64, 64, 0, 6406, 5121, ByteBuffer.wrap(is_0_));
-			gl.glBindTexture(34067, this.anIntArray2557[1]);
-			gl.glTexImage2D(i_2_ + 34069, 0, 6406, 64, 64, 0, 6406, 5121, ByteBuffer.wrap(is_1_));
-			gl.glBindTexture(34067, this.anIntArray2557[2]);
-			gl.glTexImage2D(i_2_ + 34069, 0, 6406, 64, 64, 0, 6406, 5121, ByteBuffer.wrap(is));
+			gl.glBindTexture(GL13.GL_TEXTURE_CUBE_MAP, this.anIntArray2557[0]);
+			gl.glTexImage2D(i_2_ + 34069, 0, GL11.GL_ALPHA, 64, 64, 0, GL11.GL_ALPHA, 5121, ByteBuffer.wrap(is_0_));
+			gl.glBindTexture(GL13.GL_TEXTURE_CUBE_MAP, this.anIntArray2557[1]);
+			gl.glTexImage2D(i_2_ + 34069, 0, GL11.GL_ALPHA, 64, 64, 0, GL11.GL_ALPHA, 5121, ByteBuffer.wrap(is_1_));
+			gl.glBindTexture(GL13.GL_TEXTURE_CUBE_MAP, this.anIntArray2557[2]);
+			gl.glTexImage2D(i_2_ + 34069, 0, GL11.GL_ALPHA, 64, 64, 0, GL11.GL_ALPHA, 5121, ByteBuffer.wrap(is));
 			CardMemManager.textureMemory += i * 3;
 		}
 	}
 
-	private void method990() {
+	private void postProcess() {
 		GL gl = RT4GL.gl;
 		this.listIndex = gl.glGenLists(2);
 		gl.glNewList(this.listIndex, 4864);
@@ -149,7 +153,7 @@ public class Class23 implements ShaderInterface {
 			gl.glEnable(3168);
 			gl.glEnable(3169);
 			gl.glEnable(3170);
-			gl.glEnable(34067);
+			gl.glEnable(GL13.GL_TEXTURE_CUBE_MAP);
 			gl.glMatrixMode(5890);
 			gl.glLoadIdentity();
 			gl.glRotatef(22.5F, 1.0F, 0.0F, 0.0F);
@@ -184,7 +188,7 @@ public class Class23 implements ShaderInterface {
 			gl.glDisable(3168);
 			gl.glDisable(3169);
 			gl.glDisable(3170);
-			gl.glDisable(34067);
+			gl.glDisable(GL13.GL_TEXTURE_CUBE_MAP);
 			gl.glMatrixMode(5890);
 			gl.glLoadIdentity();
 			gl.glMatrixMode(5888);
@@ -214,9 +218,9 @@ public class Class23 implements ShaderInterface {
 	public void setup(int i) {
 		GL gl = RT4GL.gl;
 		if (RT4.useLighting && this.anIntArray2557 != null) {
-			gl.glActiveTexture(33985);
-			gl.glBindTexture(34067, this.anIntArray2557[i - 1]);
-			gl.glActiveTexture(33984);
+			gl.glActiveTexture(GL13.GL_TEXTURE1);
+			gl.glBindTexture(GL13.GL_TEXTURE_CUBE_MAP, this.anIntArray2557[i - 1]);
+			gl.glActiveTexture(GL13.GL_TEXTURE0);
 		}
 	}
 }

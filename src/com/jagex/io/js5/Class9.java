@@ -3,6 +3,7 @@
  */
 package com.jagex.io.js5;
 
+import com.jagex.StringConstants;
 import com.jagex.cache.fs.StaticFileSystem;
 import com.jagex.io.Buffer;
 import com.jagex.util.ArrayUtils;
@@ -547,7 +548,7 @@ public abstract class Class9 {
 			if (136 < is.length && !Class9.aBoolean4245) {
 				DataWrapper class126;
 				try {
-					DataWrapper class126_1_ = ((DataWrapper) Class.forName("com.jagex.io.js5.DataWrapper").newInstance());
+					DataWrapper class126_1_ = ((DataWrapper) Class.forName(StringConstants.DATA_WRAPPER).newInstance());
 					class126_1_.method1740(is, 101);
 					class126 = class126_1_;
 				} catch (Throwable throwable) {

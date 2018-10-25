@@ -41,7 +41,7 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 
 	public static void method317(byte i) {
 		if (!Class128.method1755(130068615) && Class142.anInt2295 != Class14_Sub2_Sub3.gameLevel)
-			Class45.method1162(Static2.anInt818, Class129.anInt2133, Class14_Sub2_Sub3.gameLevel,
+			Class45.method1162(Static2.anInt818, Static2.anInt2133, Class14_Sub2_Sub3.gameLevel,
 					(Class14_Sub3.aClass133_Sub1_Sub1_2748.anIntArray3443[0]), (byte) -117,
 					(Class14_Sub3.aClass133_Sub1_Sub1_2748.anIntArray3476[0]), false);
 		else {

@@ -264,7 +264,7 @@ public class Class47 {
 	public static void method1184() {
 		Class40.aClass14_Sub29ArrayArrayArray674 = null;
 		JunkTex.anIntArrayArray2799 = null;
-		OverlayType.anIntArrayArrayArray2419 = null;
+		OverlayType.underWaterTileHeightMap = null;
 		Class131.aClass14_Sub27ArrayArray2162 = null;
 	}
 

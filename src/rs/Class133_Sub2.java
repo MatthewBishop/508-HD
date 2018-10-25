@@ -58,10 +58,10 @@ public class Class133_Sub2 extends Class133 {
 	public byte[] aByteArray3554;
 
 	static {
-		anIntArray3508 = Class3.cos;
+		anIntArray3508 = SDRaster.cos;
 		anInt3537 = 0;
 		anIntArray3551 = new int[10000];
-		anIntArray3523 = Class3.sin;
+		anIntArray3523 = SDRaster.sin;
 	}
 
 	public void method1812() {

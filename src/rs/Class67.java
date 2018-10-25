@@ -101,7 +101,7 @@ public class Class67 {
 		AbstractSprite_Sub2 class14_sub2_sub19_sub2 = new AbstractSprite_Sub2(Class14_Sub11.spriteTrimWidth,
 				Class14_Sub30.spriteTrimHeight, Class40.spriteXOffsets[0], Class14_Sub2_Sub12.spriteYOffsets[0],
 				Class17.spriteWidths[0], Static2.spriteHeights[0], is_21_);
-		Class129.method1761((byte) 12);
+		Static2.method1761((byte) 12);
 		AbstractSprite_Sub2 class14_sub2_sub19_sub2_23_ = class14_sub2_sub19_sub2;
 		return class14_sub2_sub19_sub2_23_;
 	}

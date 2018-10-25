@@ -30,7 +30,7 @@ public class Class139 {
 					JunkTex.anIntArrayArray3391[i_4_][i_5_] = JunkTex.aClass14_Sub10_Sub1_4734
 							.getInt((byte) -108);
 			}
-			int i_6_ = JunkTex.aClass14_Sub10_Sub1_4734.method806((byte) -16);
+			int i_6_ = JunkTex.aClass14_Sub10_Sub1_4734.method806();
 			int i_7_ = JunkTex.aClass14_Sub10_Sub1_4734.readUShort();
 			boolean bool_8_ = false;
 			if ((i_0_ / 8 == 48 || i_0_ / 8 == 49) && i_7_ / 8 == 48)
@@ -278,7 +278,7 @@ public class Class139 {
 					Class75.aClass148Array1184[1].method2001(i_48_ + 15, Static2.anInt2573 + 4);
 				else
 					Class75.aClass148Array1184[3].method2001(i_48_ + 15, Static2.anInt2573 + 4);
-				class14_sub2_sub16.method364(Class129.aClass124_2129, i_48_ + 32, Static2.anInt2573 + 17, 16777215,
+				class14_sub2_sub16.method364(Static2.aClass124_2129, i_48_ + 32, Static2.anInt2573 + 17, 16777215,
 						-1);
 			}
 			Class25.method1004(OverlayType.anInt2423 - 58 - 10, Static2.anInt2573 + 4, 58, 16, 0);

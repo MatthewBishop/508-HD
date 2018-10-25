@@ -84,7 +84,7 @@ public class Class22 {
 		Class148_Sub1 class148_sub1 = new Class148_Sub1(Class14_Sub11.spriteTrimWidth, Class14_Sub30.spriteTrimHeight,
 				Class40.spriteXOffsets[0], Class14_Sub2_Sub12.spriteYOffsets[0], Class17.spriteWidths[0],
 				Static2.spriteHeights[0], Class12.spritePaletteIndicators[0], JunkTex.spritePalette);
-		Class129.method1761((byte) 123);
+		Static2.method1761((byte) 123);
 		Class148_Sub1 class148_sub1_4_ = class148_sub1;
 		return class148_sub1_4_;
 	}

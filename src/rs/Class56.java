@@ -96,7 +96,7 @@ public class Class56 {
 					Class40.spriteXOffsets[0], (Class14_Sub2_Sub12.spriteYOffsets[0]), Class17.spriteWidths[0],
 					Static2.spriteHeights[0], is_16_);
 		}
-		Class129.method1761((byte) 83);
+		Static2.method1761((byte) 83);
 		AbstractSprite_Sub1 class14_sub2_sub19_sub1_18_ = class14_sub2_sub19_sub1;
 		return class14_sub2_sub19_sub1_18_;
 	}

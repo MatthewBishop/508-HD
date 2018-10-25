@@ -152,9 +152,9 @@ public class ModelHD extends Class133_Sub7 {
 	}
 
 	public static int method1904(int i, short i_22_, int i_23_, byte i_24_) {
-		int i_25_ = Class3.anIntArray119[ModelSD.method1880(i, i_23_)];
+		int i_25_ = SDRaster.anIntArray119[ModelSD.method1880(i, i_23_)];
 		if (i_22_ != -1) {
-			int i_26_ = Class3.anInterface3_117.method14(i_22_ & 0xffff);
+			int i_26_ = SDRaster.anInterface3_117.method14(i_22_ & 0xffff);
 			if (i_26_ != 0) {
 				int i_27_;
 				if (i_23_ < 0)
@@ -172,7 +172,7 @@ public class ModelHD extends Class133_Sub7 {
 							+ (((i_27_ & 0xff00) * i_28_ + (i_25_ & 0xff00) * i_29_) & 0xff0000)) >> 8;
 				}
 			}
-			int i_30_ = Class3.anInterface3_117.method9(i_22_ & 0xffff);
+			int i_30_ = SDRaster.anInterface3_117.method9(i_22_ & 0xffff);
 			if (i_30_ != 0) {
 				i_30_ += 256;
 				int i_31_ = ((i_25_ & 0xff0000) >> 16) * i_30_;
@@ -349,7 +349,7 @@ public class ModelHD extends Class133_Sub7 {
 		for (int i_77_ = 0; i_77_ < class133_sub2.anInt3547; i_77_++) {
 			if ((class133_sub2.aByteArray3534 == null || class133_sub2.aByteArray3534[i_77_] != 2)
 					&& (class133_sub2.aShortArray3528 == null || class133_sub2.aShortArray3528[i_77_] == -1
-							|| !Class3.anInterface3_117.method7((class133_sub2.aShortArray3528[i_77_]) & 0xffff))) {
+							|| !SDRaster.anInterface3_117.method7((class133_sub2.aShortArray3528[i_77_]) & 0xffff))) {
 				is[anInt5014++] = i_77_;
 				anIntArray5031[class133_sub2.anIntArray3549[i_77_]]++;
 				anIntArray5031[class133_sub2.anIntArray3507[i_77_]]++;
@@ -367,12 +367,12 @@ public class ModelHD extends Class133_Sub7 {
 			if (class133_sub2.aShortArray3528 != null) {
 				i_84_ = class133_sub2.aShortArray3528[i_79_];
 				if (i_84_ != -1) {
-					i_82_ = Class3.anInterface3_117.method12(i_84_ & 0xffff);
-					i_83_ = Class3.anInterface3_117.method8(i_84_ & 0xffff);
+					i_82_ = SDRaster.anInterface3_117.method12(i_84_ & 0xffff);
+					i_83_ = SDRaster.anInterface3_117.method8(i_84_ & 0xffff);
 				}
 			}
 			boolean bool_85_ = ((class133_sub2.aByteArray3541 != null && class133_sub2.aByteArray3541[i_79_] != 0)
-					|| i_84_ != -1 && !Class3.anInterface3_117.method6(i_84_ & 0xffff));
+					|| i_84_ != -1 && !SDRaster.anInterface3_117.method6(i_84_ & 0xffff));
 			if ((bool || bool_85_) && class133_sub2.aByteArray3546 != null)
 				i_80_ += class133_sub2.aByteArray3546[i_79_] << 17;
 			if (bool_85_)
@@ -1019,8 +1019,8 @@ public class ModelHD extends Class133_Sub7 {
 									int i_267_ = 0;
 									int i_268_ = 0;
 									if (yaw != 0) {
-										i_267_ = Class3.sin[yaw];
-										i_268_ = Class3.cos[yaw];
+										i_267_ = SDRaster.sin[yaw];
+										i_268_ = SDRaster.cos[yaw];
 									}
 									while_321_: do {
 										if (l > 0L && Class90.aBoolean1417 && i_260_ > 0) {
@@ -1218,8 +1218,8 @@ public class ModelHD extends Class133_Sub7 {
 
 	@Override
 	public void method1858(int i) {
-		int i_310_ = Class3.sin[i];
-		int i_311_ = Class3.cos[i];
+		int i_310_ = SDRaster.sin[i];
+		int i_311_ = SDRaster.cos[i];
 		for (int i_312_ = 0; i_312_ < anInt5033; i_312_++) {
 			int i_313_ = vertexY[i_312_] * i_310_ + vertexX[i_312_] * i_311_ >> 16;
 			vertexY[i_312_] = vertexY[i_312_] * i_311_ - vertexX[i_312_] * i_310_ >> 16;
@@ -1258,8 +1258,8 @@ public class ModelHD extends Class133_Sub7 {
 
 	@Override
 	public void method1861(int i) {
-		int i_317_ = Class3.sin[i];
-		int i_318_ = Class3.cos[i];
+		int i_317_ = SDRaster.sin[i];
+		int i_318_ = SDRaster.cos[i];
 		for (int i_319_ = 0; i_319_ < anInt5033; i_319_++) {
 			int i_320_ = vertexY[i_319_] * i_318_ - vertexZ[i_319_] * i_317_ >> 16;
 			vertexZ[i_319_] = vertexY[i_319_] * i_317_ + vertexZ[i_319_] * i_318_ >> 16;
@@ -1418,8 +1418,8 @@ public class ModelHD extends Class133_Sub7 {
 
 	@Override
 	public void method1874(int i) {
-		int i_343_ = Class3.sin[i];
-		int i_344_ = Class3.cos[i];
+		int i_343_ = SDRaster.sin[i];
+		int i_344_ = SDRaster.cos[i];
 		for (int i_345_ = 0; i_345_ < anInt5033; i_345_++) {
 			int i_346_ = vertexZ[i_345_] * i_343_ + vertexX[i_345_] * i_344_ >> 16;
 			vertexZ[i_345_] = vertexZ[i_345_] * i_344_ - vertexX[i_345_] * i_343_ >> 16;
@@ -1542,7 +1542,7 @@ public class ModelHD extends Class133_Sub7 {
 					RT4GL.bindTexture2D(-1);
 					RT4.method1778(0, 0);
 				} else
-					Class3.anInterface3_117.method16(i_351_ & 0xffff);
+					SDRaster.anInterface3_117.method16(i_351_ & 0xffff);
 				if (aClass41_5046.aClass29_692 != null)
 					gl.glDrawElements(4, (i_350_ - i_349_) * 3, 5125, i_349_ * 12);
 				else {
@@ -1617,7 +1617,7 @@ public class ModelHD extends Class133_Sub7 {
 				int i_373_ = anIntArray5057[i_367_];
 				int i_374_ = anIntArray5057[i_368_];
 				if (((i_369_ - i_370_) * (i_373_ - i_374_) - (i_373_ - i_372_) * (i_371_ - i_370_)) > 0)
-					Class3.method91(class148_sub1_357_.paletteIndicators, i_372_, i_373_, i_374_, i_369_, i_370_, i_371_,
+					SDRaster.method91(class148_sub1_357_.paletteIndicators, i_372_, i_373_, i_374_, i_369_, i_370_, i_371_,
 							i_355_);
 			}
 		}
@@ -1726,22 +1726,22 @@ public class ModelHD extends Class133_Sub7 {
 				vertexY[i_395_] -= centroidY;
 				vertexZ[i_395_] -= centroidZ;
 				if (i_391_ != 0) {
-					int i_396_ = Class3.sin[i_391_];
-					int i_397_ = Class3.cos[i_391_];
+					int i_396_ = SDRaster.sin[i_391_];
+					int i_397_ = SDRaster.cos[i_391_];
 					int i_398_ = ((vertexY[i_395_] * i_396_ + vertexX[i_395_] * i_397_ + 32767) >> 16);
 					vertexY[i_395_] = (vertexY[i_395_] * i_397_ - vertexX[i_395_] * i_396_ + 32767) >> 16;
 					vertexX[i_395_] = i_398_;
 				}
 				if (i_389_ != 0) {
-					int i_399_ = Class3.sin[i_389_];
-					int i_400_ = Class3.cos[i_389_];
+					int i_399_ = SDRaster.sin[i_389_];
+					int i_400_ = SDRaster.cos[i_389_];
 					int i_401_ = ((vertexY[i_395_] * i_400_ - vertexZ[i_395_] * i_399_ + 32767) >> 16);
 					vertexZ[i_395_] = (vertexY[i_395_] * i_399_ + vertexZ[i_395_] * i_400_ + 32767) >> 16;
 					vertexY[i_395_] = i_401_;
 				}
 				if (i_390_ != 0) {
-					int i_402_ = Class3.sin[i_390_];
-					int i_403_ = Class3.cos[i_390_];
+					int i_402_ = SDRaster.sin[i_390_];
+					int i_403_ = SDRaster.cos[i_390_];
 					int i_404_ = ((vertexZ[i_395_] * i_402_ + vertexX[i_395_] * i_403_ + 32767) >> 16);
 					vertexZ[i_395_] = (vertexZ[i_395_] * i_403_ - vertexX[i_395_] * i_402_ + 32767) >> 16;
 					vertexX[i_395_] = i_404_;
@@ -2294,14 +2294,14 @@ public class ModelHD extends Class133_Sub7 {
 					for (int i_539_ = 0; i_539_ < anInt5040; i_539_++) {
 						short i_540_ = aShortArray5017[i_539_];
 						if (i_540_ == 0) {
-							aClass14_Sub10_5011.writeFloatLE(aShortArray5041[i_539_] * f_535_, 24671);
-							aClass14_Sub10_5011.writeFloatLE(aShortArray5019[i_539_] * f_535_, 24671);
-							aClass14_Sub10_5011.writeFloatLE(aShortArray5042[i_539_] * f_535_, 24671);
+							aClass14_Sub10_5011.writeFloatLE(aShortArray5041[i_539_] * f_535_);
+							aClass14_Sub10_5011.writeFloatLE(aShortArray5019[i_539_] * f_535_);
+							aClass14_Sub10_5011.writeFloatLE(aShortArray5042[i_539_] * f_535_);
 						} else {
 							float f_541_ = f / i_540_;
-							aClass14_Sub10_5011.writeFloatLE(aShortArray5041[i_539_] * f_541_, 24671);
-							aClass14_Sub10_5011.writeFloatLE(aShortArray5019[i_539_] * f_541_, 24671);
-							aClass14_Sub10_5011.writeFloatLE(aShortArray5042[i_539_] * f_541_, 24671);
+							aClass14_Sub10_5011.writeFloatLE(aShortArray5041[i_539_] * f_541_);
+							aClass14_Sub10_5011.writeFloatLE(aShortArray5019[i_539_] * f_541_);
+							aClass14_Sub10_5011.writeFloatLE(aShortArray5042[i_539_] * f_541_);
 						}
 						aClass14_Sub10_5011.position += i - 12;
 					}
@@ -2317,8 +2317,8 @@ public class ModelHD extends Class133_Sub7 {
 					}
 				} else {
 					for (int i_543_ = 0; i_543_ < anInt5040; i_543_++) {
-						aClass14_Sub10_5011.writeFloatLE(aFloatArray5047[i_543_], 24671);
-						aClass14_Sub10_5011.writeFloatLE(aFloatArray5012[i_543_], 24671);
+						aClass14_Sub10_5011.writeFloatLE(aFloatArray5047[i_543_]);
+						aClass14_Sub10_5011.writeFloatLE(aFloatArray5012[i_543_]);
 						aClass14_Sub10_5011.position += i - 8;
 					}
 				}
@@ -2458,14 +2458,14 @@ public class ModelHD extends Class133_Sub7 {
 		int i_546_ = 0;
 		int i_547_ = 0;
 		if (i != -1) {
-			i_546_ = Class3.anInterface3_117.method14(i & 0xffff);
-			i_547_ = Class3.anInterface3_117.method9(i & 0xffff);
+			i_546_ = SDRaster.anInterface3_117.method14(i & 0xffff);
+			i_547_ = SDRaster.anInterface3_117.method9(i & 0xffff);
 		}
 		int i_548_ = 0;
 		int i_549_ = 0;
 		if (i_544_ != -1) {
-			i_548_ = Class3.anInterface3_117.method14(i_544_ & 0xffff);
-			i_549_ = Class3.anInterface3_117.method9(i_544_ & 0xffff);
+			i_548_ = SDRaster.anInterface3_117.method14(i_544_ & 0xffff);
+			i_549_ = SDRaster.anInterface3_117.method9(i_544_ & 0xffff);
 		}
 		if (i_546_ != i_548_ || i_547_ != i_549_)
 			aClass41_5030.upToDate = false;
@@ -2629,8 +2629,8 @@ public class ModelHD extends Class133_Sub7 {
 		if (aShortArray5041 == null)
 			method1874(i);
 		else {
-			int i_564_ = Class3.sin[i];
-			int i_565_ = Class3.cos[i];
+			int i_564_ = SDRaster.sin[i];
+			int i_565_ = SDRaster.cos[i];
 			for (int i_566_ = 0; i_566_ < anInt5033; i_566_++) {
 				int i_567_ = (vertexZ[i_566_] * i_564_ + vertexX[i_566_] * i_565_ >> 16);
 				vertexZ[i_566_] = (vertexZ[i_566_] * i_565_ - vertexX[i_566_] * i_564_ >> 16);
@@ -2750,22 +2750,22 @@ public class ModelHD extends Class133_Sub7 {
 						vertexY[i_600_] -= centroidY;
 						vertexZ[i_600_] -= centroidZ;
 						if (i_583_ != 0) {
-							int i_601_ = Class3.sin[i_583_];
-							int i_602_ = Class3.cos[i_583_];
+							int i_601_ = SDRaster.sin[i_583_];
+							int i_602_ = SDRaster.cos[i_583_];
 							int i_603_ = ((vertexY[i_600_] * i_601_ + vertexX[i_600_] * i_602_ + 32767) >> 16);
 							vertexY[i_600_] = (vertexY[i_600_] * i_602_ - vertexX[i_600_] * i_601_ + 32767) >> 16;
 							vertexX[i_600_] = i_603_;
 						}
 						if (i_581_ != 0) {
-							int i_604_ = Class3.sin[i_581_];
-							int i_605_ = Class3.cos[i_581_];
+							int i_604_ = SDRaster.sin[i_581_];
+							int i_605_ = SDRaster.cos[i_581_];
 							int i_606_ = ((vertexY[i_600_] * i_605_ - vertexZ[i_600_] * i_604_ + 32767) >> 16);
 							vertexZ[i_600_] = (vertexY[i_600_] * i_604_ + vertexZ[i_600_] * i_605_ + 32767) >> 16;
 							vertexY[i_600_] = i_606_;
 						}
 						if (i_582_ != 0) {
-							int i_607_ = Class3.sin[i_582_];
-							int i_608_ = Class3.cos[i_582_];
+							int i_607_ = SDRaster.sin[i_582_];
+							int i_608_ = SDRaster.cos[i_582_];
 							int i_609_ = ((vertexZ[i_600_] * i_607_ + vertexX[i_600_] * i_608_ + 32767) >> 16);
 							vertexZ[i_600_] = (vertexZ[i_600_] * i_608_ - vertexX[i_600_] * i_607_ + 32767) >> 16;
 							vertexX[i_600_] = i_609_;
@@ -2790,8 +2790,8 @@ public class ModelHD extends Class133_Sub7 {
 								if (i_618_ == -1)
 									break;
 								if (i_583_ != 0) {
-									int i_619_ = Class3.sin[i_583_];
-									int i_620_ = Class3.cos[i_583_];
+									int i_619_ = SDRaster.sin[i_583_];
+									int i_620_ = SDRaster.cos[i_583_];
 									int i_621_ = ((aShortArray5019[i_618_] * i_619_ + aShortArray5041[i_618_] * i_620_
 											+ 32767) >> 16);
 									aShortArray5019[i_618_] = (short) (((aShortArray5019[i_618_] * i_620_)
@@ -2799,8 +2799,8 @@ public class ModelHD extends Class133_Sub7 {
 									aShortArray5041[i_618_] = (short) i_621_;
 								}
 								if (i_581_ != 0) {
-									int i_622_ = Class3.sin[i_581_];
-									int i_623_ = Class3.cos[i_581_];
+									int i_622_ = SDRaster.sin[i_581_];
+									int i_623_ = SDRaster.cos[i_581_];
 									int i_624_ = ((aShortArray5019[i_618_] * i_623_ - aShortArray5042[i_618_] * i_622_
 											+ 32767) >> 16);
 									aShortArray5042[i_618_] = (short) (((aShortArray5019[i_618_] * i_622_)
@@ -2808,8 +2808,8 @@ public class ModelHD extends Class133_Sub7 {
 									aShortArray5019[i_618_] = (short) i_624_;
 								}
 								if (i_582_ != 0) {
-									int i_625_ = Class3.sin[i_582_];
-									int i_626_ = Class3.cos[i_582_];
+									int i_625_ = SDRaster.sin[i_582_];
+									int i_626_ = SDRaster.cos[i_582_];
 									int i_627_ = ((aShortArray5042[i_618_] * i_625_ + aShortArray5041[i_618_] * i_626_
 											+ 32767) >> 16);
 									aShortArray5042[i_618_] = (short) (((aShortArray5042[i_618_] * i_626_)

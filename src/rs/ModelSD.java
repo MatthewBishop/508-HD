@@ -199,16 +199,16 @@ public class ModelSD extends Class133_Sub7 {
 	public void draw(int pitch, int yaw, int roll, int cameraPitch, int cameraX, int cameraY, int cameraZ) {
 		if (!boundsCalculated)
 			calculateBounds();
-		int i_28_ = Class3.anInt118;
-		int i_29_ = Class3.anInt110;
-		int i_30_ = Class3.sin[pitch];
-		int i_31_ = Class3.cos[pitch];
-		int i_32_ = Class3.sin[yaw];
-		int i_33_ = Class3.cos[yaw];
-		int i_34_ = Class3.sin[roll];
-		int i_35_ = Class3.cos[roll];
-		int i_36_ = Class3.sin[cameraPitch];
-		int i_37_ = Class3.cos[cameraPitch];
+		int i_28_ = SDRaster.anInt118;
+		int i_29_ = SDRaster.anInt110;
+		int i_30_ = SDRaster.sin[pitch];
+		int i_31_ = SDRaster.cos[pitch];
+		int i_32_ = SDRaster.sin[yaw];
+		int i_33_ = SDRaster.cos[yaw];
+		int i_34_ = SDRaster.sin[roll];
+		int i_35_ = SDRaster.cos[roll];
+		int i_36_ = SDRaster.sin[cameraPitch];
+		int i_37_ = SDRaster.cos[cameraPitch];
 		int i_38_ = cameraY * i_36_ + cameraZ * i_37_ >> 16;
 		for (int i_39_ = 0; i_39_ < anInt4955; i_39_++) {
 			int x = vertexX[i_39_];
@@ -305,13 +305,13 @@ public class ModelSD extends Class133_Sub7 {
 								boolean project = false;
 								boolean bool_67_ = i_60_ <= 50;
 								boolean bool_68_ = bool_67_ || anInt4966 > 0;
-								int i_69_ = Class3.anInt118;
-								int i_70_ = Class3.anInt110;
+								int i_69_ = SDRaster.anInt118;
+								int i_70_ = SDRaster.anInt110;
 								int yawsin = 0;
 								int yawcos = 0;
 								if (yaw != 0) {
-									yawsin = Class3.sin[yaw];
-									yawcos = Class3.cos[yaw];
+									yawsin = SDRaster.sin[yaw];
+									yawcos = SDRaster.cos[yaw];
 								}
 								boolean bool_73_ = false;
 								if (l > 0L && Class90.aBoolean1417 && i_60_ > 0) {
@@ -466,8 +466,8 @@ public class ModelSD extends Class133_Sub7 {
 							depthTriangles[i_96_++] = i_97_;
 						}
 					} else {
-						if (bool_94_ && method1879(Static2.mouseOffFromCenterX + Class3.anInt118,
-								Class38.mouseOffFromCenterY + Class3.anInt110, vertexScreenX[i_98_], vertexScreenX[i_99_],
+						if (bool_94_ && method1879(Static2.mouseOffFromCenterX + SDRaster.anInt118,
+								Class38.mouseOffFromCenterY + SDRaster.anInt110, vertexScreenX[i_98_], vertexScreenX[i_99_],
 								vertexScreenX[i_100_], i_101_, i_102_, i_103_)) {
 							Class7_Sub3.actions[Class14_Sub15.actionsLen++] = l;
 							bool_94_ = false;
@@ -475,8 +475,8 @@ public class ModelSD extends Class133_Sub7 {
 						if (((i_101_ - i_102_) * (vertexScreenX[i_100_] - vertexScreenX[i_99_])
 								- ((vertexScreenX[i_98_] - vertexScreenX[i_99_]) * (i_103_ - i_102_))) > 0) {
 							aBooleanArray5002[i_97_] = false;
-							if (i_101_ < 0 || i_102_ < 0 || i_103_ < 0 || i_101_ > Class3.anInt109
-									|| i_102_ > Class3.anInt109 || i_103_ > Class3.anInt109)
+							if (i_101_ < 0 || i_102_ < 0 || i_103_ < 0 || i_101_ > SDRaster.anInt109
+									|| i_102_ > SDRaster.anInt109 || i_103_ > SDRaster.anInt109)
 								aBooleanArray4988[i_97_] = true;
 							else
 								aBooleanArray4988[i_97_] = false;
@@ -727,8 +727,8 @@ public class ModelSD extends Class133_Sub7 {
 	}
 
 	public void method1882(int i) {
-		int i_151_ = Class3.anInt118;
-		int i_152_ = Class3.anInt110;
+		int i_151_ = SDRaster.anInt118;
+		int i_152_ = SDRaster.anInt110;
 		int i_153_ = 0;
 		int i_154_ = triangleVertexA[i];
 		int i_155_ = triangleVertexB[i];
@@ -737,9 +737,9 @@ public class ModelSD extends Class133_Sub7 {
 		int i_158_ = projectSceneZ[i_155_];
 		int i_159_ = projectSceneZ[i_156_];
 		if (aByteArray4983 == null)
-			Class3.anInt116 = 0;
+			SDRaster.anInt116 = 0;
 		else
-			Class3.anInt116 = aByteArray4983[i] & 0xff;
+			SDRaster.anInt116 = aByteArray4983[i] & 0xff;
 		if (i_157_ >= 50) {
 			anIntArray5004[i_153_] = vertexScreenY[i_154_];
 			anIntArray4996[i_153_] = vertexScreenX[i_154_];
@@ -749,7 +749,7 @@ public class ModelSD extends Class133_Sub7 {
 			int i_161_ = projectSceneY[i_154_];
 			int i_162_ = anIntArray4957[i];
 			if (i_159_ >= 50) {
-				int i_163_ = (50 - i_157_) * Class3.anIntArray105[i_159_ - i_157_];
+				int i_163_ = (50 - i_157_) * SDRaster.anIntArray105[i_159_ - i_157_];
 				anIntArray5004[i_153_] = (i_151_
 						+ (i_160_ + ((projectSceneX[i_156_] - i_160_) * i_163_ >> 16) << 9) / 50);
 				anIntArray4996[i_153_] = (i_152_
@@ -757,7 +757,7 @@ public class ModelSD extends Class133_Sub7 {
 				anIntArray5008[i_153_++] = i_162_ + ((triangleInfo[i] - i_162_) * i_163_ >> 16);
 			}
 			if (i_158_ >= 50) {
-				int i_164_ = (50 - i_157_) * Class3.anIntArray105[i_158_ - i_157_];
+				int i_164_ = (50 - i_157_) * SDRaster.anIntArray105[i_158_ - i_157_];
 				anIntArray5004[i_153_] = (i_151_
 						+ (i_160_ + ((projectSceneX[i_155_] - i_160_) * i_164_ >> 16) << 9) / 50);
 				anIntArray4996[i_153_] = (i_152_
@@ -774,7 +774,7 @@ public class ModelSD extends Class133_Sub7 {
 			int i_166_ = projectSceneY[i_155_];
 			int i_167_ = anIntArray4978[i];
 			if (i_157_ >= 50) {
-				int i_168_ = (50 - i_158_) * Class3.anIntArray105[i_157_ - i_158_];
+				int i_168_ = (50 - i_158_) * SDRaster.anIntArray105[i_157_ - i_158_];
 				anIntArray5004[i_153_] = (i_151_
 						+ (i_165_ + ((projectSceneX[i_154_] - i_165_) * i_168_ >> 16) << 9) / 50);
 				anIntArray4996[i_153_] = (i_152_
@@ -782,7 +782,7 @@ public class ModelSD extends Class133_Sub7 {
 				anIntArray5008[i_153_++] = i_167_ + ((anIntArray4957[i] - i_167_) * i_168_ >> 16);
 			}
 			if (i_159_ >= 50) {
-				int i_169_ = (50 - i_158_) * Class3.anIntArray105[i_159_ - i_158_];
+				int i_169_ = (50 - i_158_) * SDRaster.anIntArray105[i_159_ - i_158_];
 				anIntArray5004[i_153_] = (i_151_
 						+ (i_165_ + ((projectSceneX[i_156_] - i_165_) * i_169_ >> 16) << 9) / 50);
 				anIntArray4996[i_153_] = (i_152_
@@ -799,7 +799,7 @@ public class ModelSD extends Class133_Sub7 {
 			int i_171_ = projectSceneY[i_156_];
 			int i_172_ = triangleInfo[i];
 			if (i_158_ >= 50) {
-				int i_173_ = (50 - i_159_) * Class3.anIntArray105[i_158_ - i_159_];
+				int i_173_ = (50 - i_159_) * SDRaster.anIntArray105[i_158_ - i_159_];
 				anIntArray5004[i_153_] = (i_151_
 						+ (i_170_ + ((projectSceneX[i_155_] - i_170_) * i_173_ >> 16) << 9) / 50);
 				anIntArray4996[i_153_] = (i_152_
@@ -807,7 +807,7 @@ public class ModelSD extends Class133_Sub7 {
 				anIntArray5008[i_153_++] = i_172_ + ((anIntArray4978[i] - i_172_) * i_173_ >> 16);
 			}
 			if (i_157_ >= 50) {
-				int i_174_ = (50 - i_159_) * Class3.anIntArray105[i_157_ - i_159_];
+				int i_174_ = (50 - i_159_) * SDRaster.anIntArray105[i_157_ - i_159_];
 				anIntArray5004[i_153_] = (i_151_
 						+ (i_170_ + ((projectSceneX[i_154_] - i_170_) * i_174_ >> 16) << 9) / 50);
 				anIntArray4996[i_153_] = (i_152_
@@ -821,17 +821,17 @@ public class ModelSD extends Class133_Sub7 {
 		int i_178_ = anIntArray4996[0];
 		int i_179_ = anIntArray4996[1];
 		int i_180_ = anIntArray4996[2];
-		Class3.aBoolean112 = false;
+		SDRaster.aBoolean112 = false;
 		if (i_153_ == 3) {
-			if (i_175_ < 0 || i_176_ < 0 || i_177_ < 0 || i_175_ > Class3.anInt109 || i_176_ > Class3.anInt109
-					|| i_177_ > Class3.anInt109)
-				Class3.aBoolean112 = true;
+			if (i_175_ < 0 || i_176_ < 0 || i_177_ < 0 || i_175_ > SDRaster.anInt109 || i_176_ > SDRaster.anInt109
+					|| i_177_ > SDRaster.anInt109)
+				SDRaster.aBoolean112 = true;
 			if (aShortArray4984 == null || aShortArray4984[i] == -1) {
 				if (triangleInfo[i] == -1)
-					Class3.method107(i_178_, i_179_, i_180_, i_175_, i_176_, i_177_,
-							Class3.anIntArray119[anIntArray4957[i]]);
+					SDRaster.method107(i_178_, i_179_, i_180_, i_175_, i_176_, i_177_,
+							SDRaster.anIntArray119[anIntArray4957[i]]);
 				else
-					Class3.method104(i_178_, i_179_, i_180_, i_175_, i_176_, i_177_, anIntArray5008[0],
+					SDRaster.method104(i_178_, i_179_, i_180_, i_175_, i_176_, i_177_, anIntArray5008[0],
 							anIntArray5008[1], anIntArray5008[2]);
 			} else {
 				int i_181_;
@@ -848,30 +848,30 @@ public class ModelSD extends Class133_Sub7 {
 					i_183_ = i_156_;
 				}
 				if (triangleInfo[i] == -1)
-					Class3.method98(i_178_, i_179_, i_180_, i_175_, i_176_, i_177_, anIntArray4957[i],
+					SDRaster.method98(i_178_, i_179_, i_180_, i_175_, i_176_, i_177_, anIntArray4957[i],
 							anIntArray4957[i], anIntArray4957[i], projectSceneX[i_181_], projectSceneX[i_182_],
 							projectSceneX[i_183_], projectSceneY[i_181_], projectSceneY[i_182_], projectSceneY[i_183_],
 							projectSceneZ[i_181_], projectSceneZ[i_182_], projectSceneZ[i_183_], aShortArray4984[i]);
 				else
-					Class3.method98(i_178_, i_179_, i_180_, i_175_, i_176_, i_177_, anIntArray5008[0],
+					SDRaster.method98(i_178_, i_179_, i_180_, i_175_, i_176_, i_177_, anIntArray5008[0],
 							anIntArray5008[1], anIntArray5008[2], projectSceneX[i_181_], projectSceneX[i_182_],
 							projectSceneX[i_183_], projectSceneY[i_181_], projectSceneY[i_182_], projectSceneY[i_183_],
 							projectSceneZ[i_181_], projectSceneZ[i_182_], projectSceneZ[i_183_], aShortArray4984[i]);
 			}
 		}
 		if (i_153_ == 4) {
-			if (i_175_ < 0 || i_176_ < 0 || i_177_ < 0 || i_175_ > Class3.anInt109 || i_176_ > Class3.anInt109
-					|| i_177_ > Class3.anInt109 || anIntArray5004[3] < 0 || anIntArray5004[3] > Class3.anInt109)
-				Class3.aBoolean112 = true;
+			if (i_175_ < 0 || i_176_ < 0 || i_177_ < 0 || i_175_ > SDRaster.anInt109 || i_176_ > SDRaster.anInt109
+					|| i_177_ > SDRaster.anInt109 || anIntArray5004[3] < 0 || anIntArray5004[3] > SDRaster.anInt109)
+				SDRaster.aBoolean112 = true;
 			if (aShortArray4984 == null || aShortArray4984[i] == -1) {
 				if (triangleInfo[i] == -1) {
-					int i_185_ = Class3.anIntArray119[anIntArray4957[i]];
-					Class3.method107(i_178_, i_179_, i_180_, i_175_, i_176_, i_177_, i_185_);
-					Class3.method107(i_178_, i_180_, anIntArray4996[3], i_175_, i_177_, anIntArray5004[3], i_185_);
+					int i_185_ = SDRaster.anIntArray119[anIntArray4957[i]];
+					SDRaster.method107(i_178_, i_179_, i_180_, i_175_, i_176_, i_177_, i_185_);
+					SDRaster.method107(i_178_, i_180_, anIntArray4996[3], i_175_, i_177_, anIntArray5004[3], i_185_);
 				} else {
-					Class3.method104(i_178_, i_179_, i_180_, i_175_, i_176_, i_177_, anIntArray5008[0],
+					SDRaster.method104(i_178_, i_179_, i_180_, i_175_, i_176_, i_177_, anIntArray5008[0],
 							anIntArray5008[1], anIntArray5008[2]);
-					Class3.method104(i_178_, i_180_, anIntArray4996[3], i_175_, i_177_, anIntArray5004[3],
+					SDRaster.method104(i_178_, i_180_, anIntArray4996[3], i_175_, i_177_, anIntArray5004[3],
 							anIntArray5008[0], anIntArray5008[2], anIntArray5008[3]);
 				}
 			} else {
@@ -890,21 +890,21 @@ public class ModelSD extends Class133_Sub7 {
 				}
 				short i_190_ = aShortArray4984[i];
 				if (triangleInfo[i] == -1) {
-					Class3.method98(i_178_, i_179_, i_180_, i_175_, i_176_, i_177_, anIntArray4957[i],
+					SDRaster.method98(i_178_, i_179_, i_180_, i_175_, i_176_, i_177_, anIntArray4957[i],
 							anIntArray4957[i], anIntArray4957[i], projectSceneX[i_186_], projectSceneX[i_187_],
 							projectSceneX[i_188_], projectSceneY[i_186_], projectSceneY[i_187_], projectSceneY[i_188_],
 							projectSceneZ[i_186_], projectSceneZ[i_187_], projectSceneZ[i_188_], i_190_);
-					Class3.method98(i_178_, i_180_, anIntArray4996[3], i_175_, i_177_, anIntArray5004[3],
+					SDRaster.method98(i_178_, i_180_, anIntArray4996[3], i_175_, i_177_, anIntArray5004[3],
 							anIntArray4957[i], anIntArray4957[i], anIntArray4957[i], projectSceneX[i_186_],
 							projectSceneX[i_187_], projectSceneX[i_188_], projectSceneY[i_186_], projectSceneY[i_187_],
 							projectSceneY[i_188_], projectSceneZ[i_186_], projectSceneZ[i_187_], projectSceneZ[i_188_],
 							i_190_);
 				} else {
-					Class3.method98(i_178_, i_179_, i_180_, i_175_, i_176_, i_177_, anIntArray5008[0],
+					SDRaster.method98(i_178_, i_179_, i_180_, i_175_, i_176_, i_177_, anIntArray5008[0],
 							anIntArray5008[1], anIntArray5008[2], projectSceneX[i_186_], projectSceneX[i_187_],
 							projectSceneX[i_188_], projectSceneY[i_186_], projectSceneY[i_187_], projectSceneY[i_188_],
 							projectSceneZ[i_186_], projectSceneZ[i_187_], projectSceneZ[i_188_], i_190_);
-					Class3.method98(i_178_, i_180_, anIntArray4996[3], i_175_, i_177_, anIntArray5004[3],
+					SDRaster.method98(i_178_, i_180_, anIntArray4996[3], i_175_, i_177_, anIntArray5004[3],
 							anIntArray5008[0], anIntArray5008[2], anIntArray5008[3], projectSceneX[i_186_],
 							projectSceneX[i_187_], projectSceneX[i_188_], projectSceneY[i_186_], projectSceneY[i_187_],
 							projectSceneY[i_188_], projectSceneZ[i_186_], projectSceneZ[i_187_], projectSceneZ[i_188_],
@@ -916,8 +916,8 @@ public class ModelSD extends Class133_Sub7 {
 
 	@Override
 	public void method1861(int i) {
-		int i_191_ = Class3.sin[i];
-		int i_192_ = Class3.cos[i];
+		int i_191_ = SDRaster.sin[i];
+		int i_192_ = SDRaster.cos[i];
 		for (int i_193_ = 0; i_193_ < anInt4955; i_193_++) {
 			int i_194_ = ((vertexY[i_193_] * i_192_ - vertexZ[i_193_] * i_191_) >> 16);
 			vertexZ[i_193_] = (vertexY[i_193_] * i_191_ + vertexZ[i_193_] * i_192_) >> 16;
@@ -928,8 +928,8 @@ public class ModelSD extends Class133_Sub7 {
 
 	@Override
 	public void method1858(int i) {
-		int i_195_ = Class3.sin[i];
-		int i_196_ = Class3.cos[i];
+		int i_195_ = SDRaster.sin[i];
+		int i_196_ = SDRaster.cos[i];
 		for (int i_197_ = 0; i_197_ < anInt4955; i_197_++) {
 			int i_198_ = ((vertexY[i_197_] * i_195_ + vertexX[i_197_] * i_196_) >> 16);
 			vertexY[i_197_] = (vertexY[i_197_] * i_196_ - vertexX[i_197_] * i_195_) >> 16;
@@ -945,18 +945,18 @@ public class ModelSD extends Class133_Sub7 {
 			int i_199_ = triangleVertexA[i];
 			int i_200_ = triangleVertexB[i];
 			int i_201_ = triangleVertexC[i];
-			Class3.aBoolean112 = aBooleanArray4988[i];
+			SDRaster.aBoolean112 = aBooleanArray4988[i];
 			if (aByteArray4983 == null)
-				Class3.anInt116 = 0;
+				SDRaster.anInt116 = 0;
 			else
-				Class3.anInt116 = aByteArray4983[i] & 0xff;
+				SDRaster.anInt116 = aByteArray4983[i] & 0xff;
 			if (aShortArray4984 == null || aShortArray4984[i] == -1) {
 				if (triangleInfo[i] == -1)
-					Class3.method107(vertexScreenX[i_199_], vertexScreenX[i_200_], vertexScreenX[i_201_],
+					SDRaster.method107(vertexScreenX[i_199_], vertexScreenX[i_200_], vertexScreenX[i_201_],
 							vertexScreenY[i_199_], vertexScreenY[i_200_], vertexScreenY[i_201_],
-							Class3.anIntArray119[anIntArray4957[i]]);
+							SDRaster.anIntArray119[anIntArray4957[i]]);
 				else
-					Class3.method104(vertexScreenX[i_199_], vertexScreenX[i_200_], vertexScreenX[i_201_],
+					SDRaster.method104(vertexScreenX[i_199_], vertexScreenX[i_200_], vertexScreenX[i_201_],
 							vertexScreenY[i_199_], vertexScreenY[i_200_], vertexScreenY[i_201_], anIntArray4957[i],
 							anIntArray4978[i], triangleInfo[i]);
 			} else {
@@ -974,13 +974,13 @@ public class ModelSD extends Class133_Sub7 {
 					i_204_ = i_201_;
 				}
 				if (triangleInfo[i] == -1)
-					Class3.method98(vertexScreenX[i_199_], vertexScreenX[i_200_], vertexScreenX[i_201_],
+					SDRaster.method98(vertexScreenX[i_199_], vertexScreenX[i_200_], vertexScreenX[i_201_],
 							vertexScreenY[i_199_], vertexScreenY[i_200_], vertexScreenY[i_201_], anIntArray4957[i],
 							anIntArray4957[i], anIntArray4957[i], projectSceneX[i_202_], projectSceneX[i_203_],
 							projectSceneX[i_204_], projectSceneY[i_202_], projectSceneY[i_203_], projectSceneY[i_204_],
 							projectSceneZ[i_202_], projectSceneZ[i_203_], projectSceneZ[i_204_], aShortArray4984[i]);
 				else
-					Class3.method98(vertexScreenX[i_199_], vertexScreenX[i_200_], vertexScreenX[i_201_],
+					SDRaster.method98(vertexScreenX[i_199_], vertexScreenX[i_200_], vertexScreenX[i_201_],
 							vertexScreenY[i_199_], vertexScreenY[i_200_], vertexScreenY[i_201_], anIntArray4957[i],
 							anIntArray4978[i], triangleInfo[i], projectSceneX[i_202_], projectSceneX[i_203_],
 							projectSceneX[i_204_], projectSceneY[i_202_], projectSceneY[i_203_], projectSceneY[i_204_],
@@ -1022,24 +1022,24 @@ public class ModelSD extends Class133_Sub7 {
 				vertexY[i_212_] -= anInt4998;
 				vertexZ[i_212_] -= anInt4995;
 				if (i_208_ != 0) {
-					int i_213_ = Class3.sin[i_208_];
-					int i_214_ = Class3.cos[i_208_];
+					int i_213_ = SDRaster.sin[i_208_];
+					int i_214_ = SDRaster.cos[i_208_];
 					int i_215_ = ((vertexY[i_212_] * i_213_ + vertexX[i_212_] * i_214_ + 32767) >> 16);
 					vertexY[i_212_] = (vertexY[i_212_] * i_214_ - vertexX[i_212_] * i_213_
 							+ 32767) >> 16;
 					vertexX[i_212_] = i_215_;
 				}
 				if (i_206_ != 0) {
-					int i_216_ = Class3.sin[i_206_];
-					int i_217_ = Class3.cos[i_206_];
+					int i_216_ = SDRaster.sin[i_206_];
+					int i_217_ = SDRaster.cos[i_206_];
 					int i_218_ = ((vertexY[i_212_] * i_217_ - vertexZ[i_212_] * i_216_ + 32767) >> 16);
 					vertexZ[i_212_] = (vertexY[i_212_] * i_216_ + vertexZ[i_212_] * i_217_
 							+ 32767) >> 16;
 					vertexY[i_212_] = i_218_;
 				}
 				if (i_207_ != 0) {
-					int i_219_ = Class3.sin[i_207_];
-					int i_220_ = Class3.cos[i_207_];
+					int i_219_ = SDRaster.sin[i_207_];
+					int i_220_ = SDRaster.cos[i_207_];
 					int i_221_ = ((vertexZ[i_212_] * i_219_ + vertexX[i_212_] * i_220_ + 32767) >> 16);
 					vertexZ[i_212_] = (vertexZ[i_212_] * i_220_ - vertexX[i_212_] * i_219_
 							+ 32767) >> 16;
@@ -1133,8 +1133,8 @@ public class ModelSD extends Class133_Sub7 {
 						vertexY[i_244_] -= anInt4998;
 						vertexZ[i_244_] -= anInt4995;
 						if (i_227_ != 0) {
-							int i_245_ = Class3.sin[i_227_];
-							int i_246_ = Class3.cos[i_227_];
+							int i_245_ = SDRaster.sin[i_227_];
+							int i_246_ = SDRaster.cos[i_227_];
 							int i_247_ = ((vertexY[i_244_] * i_245_ + vertexX[i_244_] * i_246_
 									+ 32767) >> 16);
 							vertexY[i_244_] = ((vertexY[i_244_] * i_246_ - vertexX[i_244_] * i_245_
@@ -1142,8 +1142,8 @@ public class ModelSD extends Class133_Sub7 {
 							vertexX[i_244_] = i_247_;
 						}
 						if (i_225_ != 0) {
-							int i_248_ = Class3.sin[i_225_];
-							int i_249_ = Class3.cos[i_225_];
+							int i_248_ = SDRaster.sin[i_225_];
+							int i_249_ = SDRaster.cos[i_225_];
 							int i_250_ = ((vertexY[i_244_] * i_249_ - vertexZ[i_244_] * i_248_
 									+ 32767) >> 16);
 							vertexZ[i_244_] = ((vertexY[i_244_] * i_248_ + vertexZ[i_244_] * i_249_
@@ -1151,8 +1151,8 @@ public class ModelSD extends Class133_Sub7 {
 							vertexY[i_244_] = i_250_;
 						}
 						if (i_226_ != 0) {
-							int i_251_ = Class3.sin[i_226_];
-							int i_252_ = Class3.cos[i_226_];
+							int i_251_ = SDRaster.sin[i_226_];
+							int i_252_ = SDRaster.cos[i_226_];
 							int i_253_ = ((vertexZ[i_244_] * i_251_ + vertexX[i_244_] * i_252_
 									+ 32767) >> 16);
 							vertexZ[i_244_] = ((vertexZ[i_244_] * i_252_ - vertexX[i_244_] * i_251_
@@ -1267,8 +1267,8 @@ public class ModelSD extends Class133_Sub7 {
 
 	@Override
 	public void method1874(int i) {
-		int i_267_ = Class3.sin[i];
-		int i_268_ = Class3.cos[i];
+		int i_267_ = SDRaster.sin[i];
+		int i_268_ = SDRaster.cos[i];
 		for (int i_269_ = 0; i_269_ < anInt4955; i_269_++) {
 			int i_270_ = ((vertexZ[i_269_] * i_267_ + vertexX[i_269_] * i_268_) >> 16);
 			vertexZ[i_269_] = (vertexZ[i_269_] * i_268_ - vertexX[i_269_] * i_267_) >> 16;
@@ -1337,7 +1337,7 @@ public class ModelSD extends Class133_Sub7 {
 			aShortArray4984 = new short[triangleCount];
 			for (int i_287_ = 0; i_287_ < triangleCount; i_287_++) {
 				short i_288_ = class133_sub2.aShortArray3528[i_287_];
-				if (i_288_ != -1 && Class3.anInterface3_117.method13(i_288_))
+				if (i_288_ != -1 && SDRaster.anInterface3_117.method13(i_288_))
 					aShortArray4984[i_287_] = i_288_;
 				else
 					aShortArray4984[i_287_] = (short) -1;

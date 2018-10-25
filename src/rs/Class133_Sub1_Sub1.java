@@ -176,8 +176,8 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 				int i_21_ = 0;
 				int i_22_ = 0;
 				if (aShort4927 != 0 && aShort4913 != 0) {
-					int i_23_ = Class3.cos[i];
-					int i_24_ = Class3.sin[i];
+					int i_23_ = SDRaster.cos[i];
+					int i_24_ = SDRaster.sin[i];
 					int i_25_ = aShort4913;
 					int i_26_ = aShort4927;
 					int i_27_ = -i_26_ / 2;

@@ -161,7 +161,7 @@ public class Class58 {
 					is = messagedigest.digest();
 					byte[] is_19_ = class124_18_.method1673(46);
 					class14_sub10 = new Buffer(5000);
-					class14_sub10.method807(is_19_.length, is_19_, 0, i ^ ~0x40294fcc);
+					class14_sub10.method807(is_19_.length, is_19_, 0);
 					class14_sub10.position = 0;
 					class14_sub10.method816((Static2.aBigInteger5086), Class110.aBigInteger1852, false);
 					if (class14_sub10.payload[0] == 1)

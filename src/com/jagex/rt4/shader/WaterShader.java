@@ -7,6 +7,8 @@ import java.nio.ByteBuffer;
 
 import javax.media.opengl.GL;
 
+import org.lwjgl.opengl.GL11;
+
 import com.jagex.rt4.Class119;
 import com.jagex.rt4.RT4;
 import com.jagex.rt4.RT4GL;
@@ -168,8 +170,8 @@ public class WaterShader implements ShaderInterface {
 			gl.glGenTextures(1, is, 0);
 			gl.glBindTexture(3552, is[0]);
 			gl.glTexImage1D(3552, 0, 6406, 8, 0, 6406, 5121, ByteBuffer.wrap(is_0_));
-			gl.glTexParameteri(3552, 10241, 9729);
-			gl.glTexParameteri(3552, 10240, 9729);
+			gl.glTexParameteri(3552, GL11.GL_TEXTURE_MIN_FILTER, 9729);
+			gl.glTexParameteri(3552, GL11.GL_TEXTURE_MAG_FILTER, 9729);
 			gl.glTexParameteri(3552, 10242, 33071);
 			this.gradientAlpha = is[0];
 			WaterShader.texture1or2 = RT4GL.maxTextureUnits > 2 && RT4GL.has_texture_3d;

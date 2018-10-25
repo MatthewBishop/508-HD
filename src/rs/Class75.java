@@ -117,7 +117,7 @@ public class Class75 {
 						int i_6_ = class14_sub10.readUShort();
 						class45.aBoolean749 = (i_6_ & 0x8000) != 0;
 						class45.anInt744 = i_6_ & 0x7fff;
-						class45.aClass124_741 = class14_sub10.method797(9467);
+						class45.aClass124_741 = class14_sub10.method797();
 						class45.anInt752 = class14_sub10.method805(0);
 						class45.anInt742 = i_5_;
 						int i_7_ = class14_sub10.readUShort();

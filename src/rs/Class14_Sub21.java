@@ -119,12 +119,12 @@ public class Class14_Sub21 extends Linkable {
 		Static2.method1280(Static2.aCanvas819, (byte) 123);
 		Static2.method1356(false, Static2.aCanvas819);
 		if (Class44.aClass129_726 != null)
-			Class44.aClass129_726.method1765(true, Static2.aCanvas819);
+			Class44.aClass129_726.removeMouseWheelListener(Static2.aCanvas819);
 		JunkTex.method1329(0);
 		JunkTex.method572(Static2.aCanvas819, false);
 		Class56_Sub1.method1242(Static2.aCanvas819, 0);
 		if (Class44.aClass129_726 != null)
-			Class44.aClass129_726.method1760(-14827, Static2.aCanvas819);
+			Class44.aClass129_726.addMouseWheelListener(Static2.aCanvas819);
 		Static2.method1276(-105);
 		RT4GL.createglcanvas(Static2.aCanvas819, Class135.anInt2189 * 2);
 		Class14_Sub2_Sub12.method319(-31);

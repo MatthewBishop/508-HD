@@ -20,7 +20,7 @@ public class Class14_Sub2_Sub2 extends Cacheable {
 		if (i != 1) {
 			if (i != 2) {
 				if (i == 5)
-					aClass124_3760 = class14_sub10.method797(9467);
+					aClass124_3760 = class14_sub10.method797();
 			} else
 				anInt3766 = class14_sub10.getInt((byte) -91);
 		} else

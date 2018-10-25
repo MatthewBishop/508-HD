@@ -3,7 +3,7 @@
  */
 package com.jagex.map;
 
-import rs.Class3;
+import rs.SDRaster;
 
 public class MapSmoothing {
 	public static int calculateHeight(int i, int i_0_) {
@@ -54,7 +54,7 @@ public class MapSmoothing {
 	}
 
 	private static int interpolate(int i, int i_26_, int i_27_, int i_28_) {
-		int i_29_ = 65536 - Class3.cos[i_26_ * 1024 / i] >> 1;
+		int i_29_ = 65536 - SDRaster.cos[i_26_ * 1024 / i] >> 1;
 		int i_30_ = (i_28_ * i_29_ >> 16) + (i_27_ * (-i_29_ + 65536) >> 48);
 		return i_30_;
 	}

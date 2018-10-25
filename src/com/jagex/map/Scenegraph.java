@@ -64,14 +64,14 @@ public class Scenegraph {
 				}
 			}
 			if (scenecluster.type == 1) {
-				int i_7_ = (scenecluster.minTileX - Static2.cameraTileX + JunkTex.anInt1108);
-				if (i_7_ >= 0 && i_7_ <= JunkTex.anInt1108 + JunkTex.anInt1108) {
-					int i_8_ = (scenecluster.minTileZ - Class102.cameraTileZ + JunkTex.anInt1108);
+				int i_7_ = (scenecluster.minTileX - Static2.cameraTileX + JunkTex.cameraDistance);
+				if (i_7_ >= 0 && i_7_ <= JunkTex.cameraDistance + JunkTex.cameraDistance) {
+					int i_8_ = (scenecluster.minTileZ - Class102.cameraTileZ + JunkTex.cameraDistance);
 					if (i_8_ < 0)
 						i_8_ = 0;
-					int i_9_ = (scenecluster.maxTileZ - Class102.cameraTileZ + JunkTex.anInt1108);
-					if (i_9_ > JunkTex.anInt1108 + JunkTex.anInt1108)
-						i_9_ = JunkTex.anInt1108 + JunkTex.anInt1108;
+					int i_9_ = (scenecluster.maxTileZ - Class102.cameraTileZ + JunkTex.cameraDistance);
+					if (i_9_ > JunkTex.cameraDistance + JunkTex.cameraDistance)
+						i_9_ = JunkTex.cameraDistance + JunkTex.cameraDistance;
 					boolean bool = false;
 					while_171_: do {
 						do {
@@ -92,20 +92,20 @@ public class Scenegraph {
 						}
 						scenecluster.minNormalZ = (scenecluster.minZ - Class14_Sub2_Sub8.anInt3853 << 8) / i_10_;
 						scenecluster.maxNormalZ = (scenecluster.maxZ - Class14_Sub2_Sub8.anInt3853 << 8) / i_10_;
-						scenecluster.minNormalY = ((scenecluster.minY - Static2.anInt2741 << 8) / i_10_);
-						scenecluster.maxNormalY = ((scenecluster.maxY - Static2.anInt2741 << 8) / i_10_);
+						scenecluster.minNormalY = ((scenecluster.minY - Static2.cameraY << 8) / i_10_);
+						scenecluster.maxNormalY = ((scenecluster.maxY - Static2.cameraY << 8) / i_10_);
 						activeOccluders[Class133_Sub6.activeOccluderCount++] = scenecluster;
 					}
 				}
 			} else if (scenecluster.type == 2) {
-				int i_11_ = (scenecluster.minTileZ - Class102.cameraTileZ + JunkTex.anInt1108);
-				if (i_11_ >= 0 && i_11_ <= JunkTex.anInt1108 + JunkTex.anInt1108) {
-					int i_12_ = (scenecluster.minTileX - Static2.cameraTileX + JunkTex.anInt1108);
+				int i_11_ = (scenecluster.minTileZ - Class102.cameraTileZ + JunkTex.cameraDistance);
+				if (i_11_ >= 0 && i_11_ <= JunkTex.cameraDistance + JunkTex.cameraDistance) {
+					int i_12_ = (scenecluster.minTileX - Static2.cameraTileX + JunkTex.cameraDistance);
 					if (i_12_ < 0)
 						i_12_ = 0;
-					int i_13_ = (scenecluster.maxTileX - Static2.cameraTileX + JunkTex.anInt1108);
-					if (i_13_ > JunkTex.anInt1108 + JunkTex.anInt1108)
-						i_13_ = JunkTex.anInt1108 + JunkTex.anInt1108;
+					int i_13_ = (scenecluster.maxTileX - Static2.cameraTileX + JunkTex.cameraDistance);
+					if (i_13_ > JunkTex.cameraDistance + JunkTex.cameraDistance)
+						i_13_ = JunkTex.cameraDistance + JunkTex.cameraDistance;
 					boolean bool = false;
 					while_172_: do {
 						do {
@@ -126,27 +126,27 @@ public class Scenegraph {
 						}
 						scenecluster.minNormalX = ((scenecluster.minX - Class4.anInt125 << 8) / i_14_);
 						scenecluster.maxNormalX = ((scenecluster.maxX - Class4.anInt125 << 8) / i_14_);
-						scenecluster.minNormalY = ((scenecluster.minY - Static2.anInt2741 << 8) / i_14_);
-						scenecluster.maxNormalY = ((scenecluster.maxY - Static2.anInt2741 << 8) / i_14_);
+						scenecluster.minNormalY = ((scenecluster.minY - Static2.cameraY << 8) / i_14_);
+						scenecluster.maxNormalY = ((scenecluster.maxY - Static2.cameraY << 8) / i_14_);
 						activeOccluders[Class133_Sub6.activeOccluderCount++] = scenecluster;
 					}
 				}
 			} else if (scenecluster.type == 4) {
-				int i_15_ = scenecluster.minY - Static2.anInt2741;
+				int i_15_ = scenecluster.minY - Static2.cameraY;
 				if (i_15_ > 128) {
-					int i_16_ = (scenecluster.minTileZ - Class102.cameraTileZ + JunkTex.anInt1108);
+					int i_16_ = (scenecluster.minTileZ - Class102.cameraTileZ + JunkTex.cameraDistance);
 					if (i_16_ < 0)
 						i_16_ = 0;
-					int i_17_ = (scenecluster.maxTileZ - Class102.cameraTileZ + JunkTex.anInt1108);
-					if (i_17_ > JunkTex.anInt1108 + JunkTex.anInt1108)
-						i_17_ = JunkTex.anInt1108 + JunkTex.anInt1108;
+					int i_17_ = (scenecluster.maxTileZ - Class102.cameraTileZ + JunkTex.cameraDistance);
+					if (i_17_ > JunkTex.cameraDistance + JunkTex.cameraDistance)
+						i_17_ = JunkTex.cameraDistance + JunkTex.cameraDistance;
 					if (i_16_ <= i_17_) {
-						int i_18_ = (scenecluster.minTileX - Static2.cameraTileX + JunkTex.anInt1108);
+						int i_18_ = (scenecluster.minTileX - Static2.cameraTileX + JunkTex.cameraDistance);
 						if (i_18_ < 0)
 							i_18_ = 0;
-						int i_19_ = (scenecluster.maxTileX - Static2.cameraTileX + JunkTex.anInt1108);
-						if (i_19_ > JunkTex.anInt1108 + JunkTex.anInt1108)
-							i_19_ = JunkTex.anInt1108 + JunkTex.anInt1108;
+						int i_19_ = (scenecluster.maxTileX - Static2.cameraTileX + JunkTex.cameraDistance);
+						if (i_19_ > JunkTex.cameraDistance + JunkTex.cameraDistance)
+							i_19_ = JunkTex.cameraDistance + JunkTex.cameraDistance;
 						boolean bool = false;
 						while_173_: for (int i_20_ = i_18_; i_20_ <= i_19_; i_20_++) {
 							for (int i_21_ = i_16_; i_21_ <= i_17_; i_21_++) {

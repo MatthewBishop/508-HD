@@ -8,6 +8,8 @@ import java.nio.ByteOrder;
 
 import javax.media.opengl.GL;
 
+import org.lwjgl.opengl.GL11;
+
 import com.jagex.io.Buffer;
 
 public class Shadow {
@@ -31,8 +33,8 @@ public class Shadow {
 		anInt348 = is[0];
 		CardMemManager.textureMemory += 16384;
 		RT4GL.bindTexture2D(anInt348);
-		gl.glTexParameteri(3553, 10241, 9729);
-		gl.glTexParameteri(3553, 10240, 9729);
+		gl.glTexParameteri(3553, GL11.GL_TEXTURE_MIN_FILTER, 9729);
+		gl.glTexParameteri(3553, GL11.GL_TEXTURE_MAG_FILTER, 9729);
 		gl.glTexParameteri(3553, 10242, 33071);
 		gl.glTexParameteri(3553, 10243, 33071);
 	}
@@ -117,11 +119,11 @@ public class Shadow {
 					class14_sub10.writeFloat((float) (is[i_12_ + i][i_11_ + i_10_]));
 					class14_sub10.writeFloat((float) (i_11_ * 128));
 				} else {
-					class14_sub10.writeFloatLE((float) i_12_ / 8.0F, 24671);
-					class14_sub10.writeFloatLE((float) i_11_ / 8.0F, 24671);
-					class14_sub10.writeFloatLE((float) (i_12_ * 128), 24671);
-					class14_sub10.writeFloatLE((float) (is[i_12_ + i][i_11_ + i_10_]), 24671);
-					class14_sub10.writeFloatLE((float) (i_11_ * 128), 24671);
+					class14_sub10.writeFloatLE((float) i_12_ / 8.0F);
+					class14_sub10.writeFloatLE((float) i_11_ / 8.0F);
+					class14_sub10.writeFloatLE((float) (i_12_ * 128));
+					class14_sub10.writeFloatLE((float) (is[i_12_ + i][i_11_ + i_10_]));
+					class14_sub10.writeFloatLE((float) (i_11_ * 128));
 				}
 			}
 		}

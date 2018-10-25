@@ -77,7 +77,7 @@ public class Class33 {
 		Class14_Sub2_Sub16_Sub2 class14_sub2_sub16_sub2 = new Class14_Sub2_Sub16_Sub2(is, Class40.spriteXOffsets,
 				Class14_Sub2_Sub12.spriteYOffsets, Class17.spriteWidths, Static2.spriteHeights,
 				Class12.spritePaletteIndicators);
-		Class129.method1761((byte) 5);
+		Static2.method1761((byte) 5);
 		Class14_Sub2_Sub16_Sub2 class14_sub2_sub16_sub2_9_ = class14_sub2_sub16_sub2;
 		return class14_sub2_sub16_sub2_9_;
 	}

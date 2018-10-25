@@ -27,7 +27,6 @@ public class Class138 {
 	public static Class124 aClass124_2219;
 	public static float aFloat2220;
 	public static Class9_Sub1 aClass9_Sub1_2222;
-	public static int anInt2223;
 	public static int[] anIntArray2224;
 	public static Class124 aClass124_2226;
 	public static Class124 aClass124_2227;
@@ -35,7 +34,7 @@ public class Class138 {
 	static {
 		anInt2210 = 0;
 		anInt2214 = -1;
-		anInt2223 = 0;
+		
 		aClass124_2227 = Class124.method263(1178, "Ausw-=hlen");
 		aClass124_2218 = Class124.method263(1178, "Please remove ");
 		anIntArray2224 = new int[128];

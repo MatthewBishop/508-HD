@@ -43,11 +43,11 @@ public class Class66 {
 		JunkTex.anInt4337 = i_28_;
 		JunkTex.anIntArrayArrayArray2724 = new int[i][i_27_ + 1][i_28_ + 1];
 		Class56.method1240();
-		JunkTex.anInt1108 = i_29_;
-		Class53.visibilityMap = (new boolean[JunkTex.anInt1108 + JunkTex.anInt1108 + 1][JunkTex.anInt1108
-				+ JunkTex.anInt1108 + 1]);
-		JunkTex.aBooleanArrayArray4138 = (new boolean[JunkTex.anInt1108 + JunkTex.anInt1108
-				+ 2][JunkTex.anInt1108 + JunkTex.anInt1108 + 2]);
+		JunkTex.cameraDistance = i_29_;
+		Class53.visibilityMap = (new boolean[JunkTex.cameraDistance + JunkTex.cameraDistance + 1][JunkTex.cameraDistance
+				+ JunkTex.cameraDistance + 1]);
+		JunkTex.aBooleanArrayArray4138 = (new boolean[JunkTex.cameraDistance + JunkTex.cameraDistance
+				+ 2][JunkTex.cameraDistance + JunkTex.cameraDistance + 2]);
 	}
 
 	public static void method1297(int i, Class12 class12, int i_30_, int i_31_, byte i_32_) {

@@ -3,6 +3,8 @@
  */
 package com.jagex.util;
 
+import com.jagex.StringConstants;
+
 public abstract class Timer {
 	public abstract int method1501(int i, int i_50_);
 
@@ -12,7 +14,7 @@ public abstract class Timer {
 		do {
 			Timer timer;
 			try {
-				timer = (Timer) Class.forName("com.jagex.util.NanoTimer").newInstance();
+				timer = (Timer) Class.forName(StringConstants.NANO_TIMER).newInstance();
 			} catch (Throwable throwable) {
 				break;
 			}

@@ -617,8 +617,7 @@ public class Class79 {
 																																			else
 																																				linkable = new Class14_Sub30(
 																																						class14_sub10
-																																								.method797(
-																																										9467));
+																																								.method797());
 																																			aClass55_1266
 																																					.put(
 																																							i_107_,
@@ -718,7 +717,7 @@ public class Class79 {
 													}
 												}
 											} else {
-												aClass124Array1282[i - 30] = class14_sub10.method797(9467);
+												aClass124Array1282[i - 30] = class14_sub10.method797();
 												if (aClass124Array1282[i - 30].method1717(40,
 														(Class14_Sub9_Sub1.aClass124_4808)))
 													aClass124Array1282[i - 30] = null;
@@ -745,7 +744,7 @@ public class Class79 {
 			} else
 				anInt1245 = class14_sub10.readUByte();
 		} else
-			aClass124_1290 = class14_sub10.method797(9467);
+			aClass124_1290 = class14_sub10.method797();
 	}
 
 	public Class124 method1390(byte i, int i_115_, Class124 class124) {

@@ -108,9 +108,9 @@ public abstract class Class133_Sub1 extends Class133 {
 			try {
 				int i_4_ = class14_sub10.readUByte();
 				if (i_4_ == 0 || i_4_ == 1 || i_4_ == 2) {
-					String string = new String(class14_sub10.method797(i ^ 0x24e3).method1681(86));
+					String string = new String(class14_sub10.method797().method1681(86));
 					int i_5_ = 0;
-					String string_6_ = new String(class14_sub10.method797(9467).method1681(-126));
+					String string_6_ = new String(class14_sub10.method797().method1681(-126));
 					if (i_4_ == 1)
 						i_5_ = class14_sub10.getInt((byte) -107);
 					class14_sub7.anIntArray2825[i_3_] = i_4_;
@@ -118,12 +118,12 @@ public abstract class Class133_Sub1 extends Class133 {
 					class14_sub7.aClass31Array2828[i_3_] = class43.method1140(123,
 							Class14_Sub9_Sub1.method711(string, 45), string_6_);
 				} else if (i_4_ == 3 || i_4_ == 4) {
-					String string = new String(class14_sub10.method797(9467).method1681(-114));
-					String string_7_ = new String(class14_sub10.method797(9467).method1681(i + 91));
+					String string = new String(class14_sub10.method797().method1681(-114));
+					String string_7_ = new String(class14_sub10.method797().method1681(i + 91));
 					int i_8_ = class14_sub10.readUByte();
 					String[] strings = new String[i_8_];
 					for (int i_9_ = 0; i_8_ > i_9_; i_9_++)
-						strings[i_9_] = new String(class14_sub10.method797(i + 9443).method1681(33));
+						strings[i_9_] = new String(class14_sub10.method797().method1681(33));
 					byte[][] is = new byte[i_8_][];
 					if (i_4_ == 3) {
 						for (int i_10_ = 0; i_8_ > i_10_; i_10_++) {

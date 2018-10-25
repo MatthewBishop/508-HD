@@ -14,7 +14,7 @@ import com.jagex.link.Linkable;
 import com.jagex.rt4.shader.WaterShader;
 
 import rs.Class14_Sub29;
-import rs.Class3;
+import rs.SDRaster;
 import rs.JunkTex;
 
 public class HDTile extends Linkable {
@@ -175,7 +175,7 @@ public class HDTile extends Linkable {
 				RT4GL.bindTexture2D(-1);
 				RT4.method1778(0, 0);
 			} else
-				Class3.anInterface3_117.method16(anInt3204);
+				SDRaster.anInterface3_117.method16(anInt3204);
 			int i = aBoolean3209 ? 40 : 36;
 			if (aClass29_3182 != null) {
 				aClass29_3182.bindArray();
@@ -275,17 +275,17 @@ public class HDTile extends Linkable {
 				if (aBoolean3209)
 					class14_sub10.writeFloat(aFloatArray3188[i]);
 			} else {
-				class14_sub10.writeFloatLE((float) anIntArray3197[i], 24671);
-				class14_sub10.writeFloatLE((float) anIntArray3183[i], 24671);
-				class14_sub10.writeFloatLE((float) anIntArray3191[i], 24671);
+				class14_sub10.writeFloatLE((float) anIntArray3197[i]);
+				class14_sub10.writeFloatLE((float) anIntArray3183[i]);
+				class14_sub10.writeFloatLE((float) anIntArray3191[i]);
 				class14_sub10.writeInt(anIntArray3207[i], 119);
-				class14_sub10.writeFloatLE(aFloatArray3198[i], 24671);
-				class14_sub10.writeFloatLE(aFloatArray3193[i], 24671);
-				class14_sub10.writeFloatLE(aFloatArray3185[i], 24671);
-				class14_sub10.writeFloatLE((float) anIntArray3197[i] / aFloat3211, 24671);
-				class14_sub10.writeFloatLE((float) anIntArray3191[i] / aFloat3211, 24671);
+				class14_sub10.writeFloatLE(aFloatArray3198[i]);
+				class14_sub10.writeFloatLE(aFloatArray3193[i]);
+				class14_sub10.writeFloatLE(aFloatArray3185[i]);
+				class14_sub10.writeFloatLE((float) anIntArray3197[i] / aFloat3211);
+				class14_sub10.writeFloatLE((float) anIntArray3191[i] / aFloat3211);
 				if (aBoolean3209)
-					class14_sub10.writeFloatLE(aFloatArray3188[i], 24671);
+					class14_sub10.writeFloatLE(aFloatArray3188[i]);
 			}
 		}
 		if (RT4GL.has_vbo) {

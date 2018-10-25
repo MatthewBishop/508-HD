@@ -72,7 +72,7 @@ public class Class14_Sub11 extends Linkable {
 	public static void method855(int i) {
 		Class40.aClass14_Sub29ArrayArrayArray674 = (new Class14_Sub29[i][Static2.anInt3338][JunkTex.anInt4337]);
 		JunkTex.anIntArrayArray2799 = new int[Static2.anInt3338][JunkTex.anInt4337];
-		OverlayType.anIntArrayArrayArray2419 = (new int[i][Static2.anInt3338 + 1][JunkTex.anInt4337 + 1]);
+		OverlayType.underWaterTileHeightMap = (new int[i][Static2.anInt3338 + 1][JunkTex.anInt4337 + 1]);
 		Class131.aClass14_Sub27ArrayArray2162 = new HDTile[i][];
 	}
 

@@ -52,7 +52,7 @@ public class Class146 {
 			class148_sub1s[i_4_] = new Class148_Sub1(Class14_Sub11.spriteTrimWidth, Class14_Sub30.spriteTrimHeight,
 					Class40.spriteXOffsets[i_4_], Class14_Sub2_Sub12.spriteYOffsets[i_4_], Class17.spriteWidths[i_4_],
 					Static2.spriteHeights[i_4_], Class12.spritePaletteIndicators[i_4_], JunkTex.spritePalette);
-		Class129.method1761((byte) 103);
+		Static2.method1761((byte) 103);
 		if (i != -111)
 			method1995(71);
 		Class148_Sub1[] class148_sub1s_5_ = class148_sub1s;

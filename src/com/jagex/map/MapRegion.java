@@ -23,7 +23,7 @@ import rs.OverlayType;
 import rs.Class21;
 import rs.Class22;
 import rs.Class28;
-import rs.Class3;
+import rs.SDRaster;
 import rs.Class32;
 import rs.Class37;
 import rs.Class47;
@@ -265,7 +265,7 @@ public class MapRegion {
 								} else
 									i_61_ = 0;
 								int i_62_ = (i_61_ + (i_60_ + i_13_ & 0xfc00) + (i_60_ & 0x380));
-								i_59_ = (Class3.anIntArray119[Class14_Sub2_Sub21.method441(96, 127, i_62_)]);
+								i_59_ = (SDRaster.anIntArray119[Class14_Sub2_Sub21.method441(96, 127, i_62_)]);
 							} else {
 								i_59_ = 0;
 								i_60_ = -1;
@@ -294,7 +294,7 @@ public class MapRegion {
 												int i_69_ = ((JunkTex.overlays[i_14_][i_67_][i_68_]) & 0xff);
 												if (i_69_ != 0) {
 													OverlayType overlayType = (Class97.list(i_69_ - 1, -9810));
-													if ((overlayType.anInt2414 != -1) && ((Class3.anInterface3_117
+													if ((overlayType.anInt2414 != -1) && ((SDRaster.anInterface3_117
 															.method12((overlayType.anInt2414))) == 4)) {
 														JunkTex.anIntArrayArray2799[i_50_][i_51_] = ((overlayType.anInt2426)
 																+ ((overlayType.anInt2413) << 56));
@@ -311,7 +311,7 @@ public class MapRegion {
 								OverlayType overlayType = Class97.list(i_53_ - 1, -9810);
 								if (!bool && (JunkTex.anIntArrayArray2799 != null) && i_14_ == 0) {
 									if (overlayType.anInt2414 == -1
-											|| (Class3.anInterface3_117.method12(overlayType.anInt2414)) != 4) {
+											|| (SDRaster.anInterface3_117.method12(overlayType.anInt2414)) != 4) {
 										while_312_: for (int i_72_ = i_50_ - 1; i_72_ <= i_50_ + 1; i_72_++) {
 											for (int i_73_ = i_51_ - 1; i_51_ + 1 >= i_73_; i_73_++) {
 												if ((i_72_ != i_50_ || i_73_ != i_51_) && i_72_ >= 0 && i_72_ < 104
@@ -319,7 +319,7 @@ public class MapRegion {
 													int i_74_ = ((JunkTex.overlays[i_14_][i_72_][i_73_]) & 0xff);
 													if (i_74_ != 0) {
 														OverlayType class150_75_ = (Class97.list(i_74_ - 1, -9810));
-														if ((class150_75_.anInt2414) != -1 && ((Class3.anInterface3_117
+														if ((class150_75_.anInt2414) != -1 && ((SDRaster.anInterface3_117
 																.method12((class150_75_.anInt2414))) == 4)) {
 															JunkTex.anIntArrayArray2799[i_50_][i_51_] = (((class150_75_.anInt2413) << 56)
 																	+ (class150_75_.anInt2426));
@@ -334,7 +334,7 @@ public class MapRegion {
 												+ (overlayType.anInt2413 << 24));
 								}
 								int i_76_ = overlayType.anInt2414;
-								if (i_76_ >= 0 && !Class3.anInterface3_117.method13(i_76_))
+								if (i_76_ >= 0 && !SDRaster.anInterface3_117.method13(i_76_))
 									i_76_ = -1;
 								int i_77_;
 								int i_78_;
@@ -347,15 +347,15 @@ public class MapRegion {
 										else if (i_79_ > 127)
 											i_79_ = 127;
 										int i_80_ = ((i_13_ + i_77_ & 0xfc00) + ((i_77_ & 0x380) + i_79_));
-										i_78_ = (Class3.anIntArray119[(Class7_Sub3_Sub1.method135(false, 96, i_80_))]);
+										i_78_ = (SDRaster.anIntArray119[(Class7_Sub3_Sub1.method135(false, 96, i_80_))]);
 									} else {
 										i_77_ = -2;
 										i_78_ = 0;
 									}
 								} else {
 									i_77_ = -1;
-									i_78_ = (Class3.anIntArray119[(Class7_Sub3_Sub1.method135(false, 96,
-											(Class3.anInterface3_117.method5(i_76_))))]);
+									i_78_ = (SDRaster.anIntArray119[(Class7_Sub3_Sub1.method135(false, 96,
+											(SDRaster.anInterface3_117.method5(i_76_))))]);
 								}
 								if (overlayType.anInt2405 >= 0) {
 									int i_81_ = overlayType.anInt2405;
@@ -366,7 +366,7 @@ public class MapRegion {
 									} else
 										i_82_ = 0;
 									int i_83_ = (i_82_ + (i_81_ & 0x380) + (i_13_ + i_81_ & 0xfc00));
-									i_78_ = (Class3.anIntArray119[Class7_Sub3_Sub1.method135(false, 96, i_83_)]);
+									i_78_ = (SDRaster.anIntArray119[Class7_Sub3_Sub1.method135(false, 96, i_83_)]);
 								}
 								Class22.method987(i_14_, i_50_, i_51_, i_70_, i_71_, i_76_, i_54_, i_56_, i_55_, i_57_,
 										Class14_Sub2_Sub21.method441(i_63_, 127, i_60_),

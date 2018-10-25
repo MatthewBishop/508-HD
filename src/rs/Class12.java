@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.StringConstants;
 import com.jagex.cache.anim.Animation;
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9;
@@ -176,7 +177,7 @@ public class Class12 {
 		int i_21_ = class6.anIntArray164.length;
 		for (int i_22_ = 0; i_22_ < i_21_; i_22_++) {
 			int i_23_ = class6.anIntArray164[i_22_] - Class4.anInt125;
-			int i_24_ = class6.anIntArray158[i_22_] - Static2.anInt2741;
+			int i_24_ = class6.anIntArray158[i_22_] - Static2.cameraY;
 			int i_25_ = class6.anIntArray155[i_22_] - Class14_Sub2_Sub8.anInt3853;
 			int i_26_ = i_25_ * i_17_ + i_23_ * i_18_ >> 16;
 			i_25_ = i_25_ * i_18_ - i_23_ * i_17_ >> 16;
@@ -191,10 +192,10 @@ public class Class12 {
 				Class6.anIntArray159[i_22_] = i_24_;
 				Class6.anIntArray162[i_22_] = i_25_;
 			}
-			Class6.anIntArray161[i_22_] = Class3.anInt118 + (i_23_ << 9) / i_25_;
-			Class6.anIntArray148[i_22_] = Class3.anInt110 + (i_24_ << 9) / i_25_;
+			Class6.anIntArray161[i_22_] = SDRaster.anInt118 + (i_23_ << 9) / i_25_;
+			Class6.anIntArray148[i_22_] = SDRaster.anInt110 + (i_24_ << 9) / i_25_;
 		}
-		Class3.anInt116 = 0;
+		SDRaster.anInt116 = 0;
 		i_21_ = class6.anIntArray163.length;
 		for (int i_27_ = 0; i_27_ < i_21_; i_27_++) {
 			int i_28_ = class6.anIntArray163[i_27_];
@@ -207,8 +208,8 @@ public class Class12 {
 			int i_35_ = Class6.anIntArray148[i_29_];
 			int i_36_ = Class6.anIntArray148[i_30_];
 			if (((i_31_ - i_32_) * (i_36_ - i_35_) - (i_34_ - i_35_) * (i_33_ - i_32_)) > 0 && Class142.aBoolean2299
-					&& JunkTex.method549((Static2.anInt3073 + Class3.anInt118),
-							(Static2.anInt3334 + Class3.anInt110), i_34_, i_35_, i_36_, i_31_, i_32_, i_33_)) {
+					&& JunkTex.method549((Static2.anInt3073 + SDRaster.anInt118),
+							(Static2.anInt3334 + SDRaster.anInt110), i_34_, i_35_, i_36_, i_31_, i_32_, i_33_)) {
 				Class66.anInt1039 = i_19_;
 				JunkTex.anInt4636 = i_20_;
 			}
@@ -469,7 +470,7 @@ public class Class12 {
 																			Linkable linkable;
 																			if (bool)
 																				linkable = new Class14_Sub30(
-																						class14_sub10.method797(9467));
+																						class14_sub10.method797());
 																			else
 																				linkable = new IntegerNode(
 																						class14_sub10.getInt(
@@ -505,7 +506,7 @@ public class Class12 {
 											}
 										}
 									} else {
-										aClass124Array291[i_70_ - 30] = class14_sub10.method797(9467);
+										aClass124Array291[i_70_ - 30] = class14_sub10.method797();
 										if (aClass124Array291[i_70_ - 30].method1717(40,
 												Class14_Sub9_Sub1.aClass124_4808))
 											aClass124Array291[i_70_ - 30] = null;
@@ -517,7 +518,7 @@ public class Class12 {
 						} else
 							anInt334 = class14_sub10.readUByte();
 					} else
-						aClass124_302 = class14_sub10.method797(9467);
+						aClass124_302 = class14_sub10.method797();
 				} else {
 					int i_89_ = class14_sub10.readUByte();
 					anIntArray309 = new int[i_89_];
@@ -663,7 +664,7 @@ public class Class12 {
 		try {
 			if (i != -18108)
 				spritePaletteIndicators = null;
-			class129 = (Class129) Class.forName("rs.Class129_Sub1").newInstance();
+			class129 = (Class129) Class.forName(StringConstants.CLASS129_SUB1).newInstance();
 		} catch (Throwable throwable) {
 			Class129 class129_132_ = null;
 			return class129_132_;

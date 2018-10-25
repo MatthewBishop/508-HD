@@ -20,7 +20,7 @@ public class OverlayType {
 	public int anInt2416;
 	public static AbstractSprite[] aClass14_Sub2_Sub19Array2417;
 	public static Class124 aClass124_2418 = Class124.method263(1178, "<col=ffffff>");
-	public static int[][][] anIntArrayArrayArray2419;
+	public static int[][][] underWaterTileHeightMap;
 	public static int anInt2420;
 	public static AtmosphericChunk[][] aClass71ArrayArray2421 = new AtmosphericChunk[13][13];
 	public static int[] anIntArray2422;
@@ -44,7 +44,7 @@ public class OverlayType {
 	public static void method2021(byte i) {
 		int i_1_ = -116 / ((-5 - i) / 55);
 		anIntArray2422 = null;
-		anIntArrayArrayArray2419 = null;
+		underWaterTileHeightMap = null;
 		aClass14_Sub2_Sub19Array2417 = null;
 		aClass124_2418 = null;
 		aClass71ArrayArray2421 = null;

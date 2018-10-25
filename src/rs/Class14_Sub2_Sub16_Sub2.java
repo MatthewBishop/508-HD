@@ -7,6 +7,8 @@ import java.nio.ByteBuffer;
 
 import javax.media.opengl.GL;
 
+import org.lwjgl.opengl.GL11;
+
 import com.jagex.rt4.CardMemManager;
 import com.jagex.rt4.AbstractSprite_Sub2;
 import com.jagex.rt4.Class25;
@@ -63,8 +65,8 @@ public class Class14_Sub2_Sub16_Sub2 extends Class14_Sub2_Sub16 {
 			gl.glTexImage2D(3553, 0, 6410, anInt5067, anInt5067, 0, 6410, 5121, bytebuffer);
 			CardMemManager.memory2d += bytebuffer.limit() - anInt5068;
 			anInt5068 = bytebuffer.limit();
-			gl.glTexParameteri(3553, 10241, 9728);
-			gl.glTexParameteri(3553, 10240, 9728);
+			gl.glTexParameteri(3553, GL11.GL_TEXTURE_MIN_FILTER, 9728);
+			gl.glTexParameteri(3553, GL11.GL_TEXTURE_MAG_FILTER, 9728);
 		}
 	}
 

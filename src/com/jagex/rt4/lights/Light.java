@@ -4,7 +4,7 @@ import org.jagex.image.transform.TexStatic;
 
 import com.jagex.io.Buffer;
 
-import rs.Class3;
+import rs.SDRaster;
 import rs.JunkTex;
 
 /**
@@ -62,7 +62,7 @@ public class Light {
 		shape = new short[radius * 2 + 1];
 		for (int i = 0; i < shape.length; i++)
 			shape[i] = (short) class14_sub10.readUShort();
-		diffuseColour = Class3.anIntArray119[class14_sub10.readUShort()];
+		diffuseColour = SDRaster.anIntArray119[class14_sub10.readUShort()];
 		int i = class14_sub10.readUByte();
 		anInt1130 = i & 0x1f;
 		anInt1109 = (i & 0xe0) << 35;
@@ -109,7 +109,7 @@ public class Light {
 			i_3_ = 2048;
 		} while (false);*/
 		if (i_2_ == 1) {
-			i_3_ = ((Class3.sin[i_1_] >> 38) + 1024);
+			i_3_ = ((SDRaster.sin[i_1_] >> 38) + 1024);
 		} else if (i_2_ == 2) {
 			i_3_ = i_1_;
 		} else if (i_2_ == 3) {

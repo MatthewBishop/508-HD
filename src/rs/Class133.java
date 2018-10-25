@@ -58,8 +58,7 @@ public abstract class Class133 {
 		}
 		JunkTex.aClass14_Sub10_Sub1_891.method801((byte) -86, i_7_ + Class133_Sub6.anInt3676);
 		JunkTex.aClass14_Sub10_Sub1_891.method792(i_8_ + Class58.anInt947, (byte) -98);
-		JunkTex.aClass14_Sub10_Sub1_891.method795((!(JunkTex.aBooleanArray4581[82]) ? 0 : 1),
-				i - 1503987590);
+		JunkTex.aClass14_Sub10_Sub1_891.method795((!(JunkTex.aBooleanArray4581[82]) ? 0 : 1));
 		Static2.anInt1085 = JunkTex.anIntArray4691[0];
 		JunkTex.anInt4335 = Class14_Sub2_Sub21.anIntArray4078[0];
 		int i_9_ = 1;
@@ -68,7 +67,7 @@ public abstract class Class133 {
 		for (/**/; i_9_ < i_6_; i_9_++) {
 			i_4_--;
 			JunkTex.aClass14_Sub10_Sub1_891.writeByte(((JunkTex.anIntArray4691[i_4_]) - i_7_));
-			JunkTex.aClass14_Sub10_Sub1_891.method789(((Class14_Sub2_Sub21.anIntArray4078[i_4_]) - i_8_), 273558984);
+			JunkTex.aClass14_Sub10_Sub1_891.method789(((Class14_Sub2_Sub21.anIntArray4078[i_4_]) - i_8_));
 		}
 	}
 

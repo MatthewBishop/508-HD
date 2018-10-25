@@ -28,9 +28,9 @@ public class Class141 implements KeyListener, FocusListener {
 	}
 
 	public static int method1961(int i, byte i_1_, int i_2_, int i_3_) {
-		int i_4_ = Class3.anIntArray119[ModelSD.method1880(i_3_, i)];
+		int i_4_ = SDRaster.anIntArray119[ModelSD.method1880(i_3_, i)];
 		if (i_2_ > 0) {
-			int i_5_ = Class3.anInterface3_117.method14(i_2_ & 0xffff);
+			int i_5_ = SDRaster.anInterface3_117.method14(i_2_ & 0xffff);
 			if (i_5_ != 0) {
 				int i_6_;
 				if (i < 0)
@@ -48,7 +48,7 @@ public class Class141 implements KeyListener, FocusListener {
 							+ (i_7_ * (i_6_ & 0xff00ff) + i_8_ * (i_4_ & 0xff00ff) & ~0xff00ff)) >> 40;
 				}
 			}
-			int i_9_ = Class3.anInterface3_117.method9(i_2_ & 0xffff);
+			int i_9_ = SDRaster.anInterface3_117.method9(i_2_ & 0xffff);
 			if (i_9_ != 0) {
 				i_9_ += 256;
 				int i_10_ = ((i_4_ & 0xff0000) >> 48) * i_9_;

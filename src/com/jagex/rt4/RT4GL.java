@@ -31,7 +31,7 @@ public class RT4GL {
 	public static float[] matrices;
 	public static boolean has_vbo;
 	public static int anInt2022;
-	public static boolean using_gl_lighting;
+	private static boolean using_gl_lighting;
 	public static float defaultZoom = 0.09765625F;
 	public static boolean has_cubemap;
 	public static boolean normal_array_enabled;

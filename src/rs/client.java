@@ -837,25 +837,25 @@ public class client extends Applet_Sub1 {
 								Class134 var16 = new Class134(Class98.aClass9_Sub1_1666,
 										Class14_Sub2_Sub7.aClass9_Sub1_3824, Class14_Sub3.aClass9_Sub1_2750, 200,
 										!JunkTex.aBoolean3397);
-								Class3.method93(var16);
+								SDRaster.method93(var16);
 								if (!RT4.useLighting) {
 									if (JunkTex.anInt4190 == 1) {
-										Class3.method103(0.9F);
+										SDRaster.method103(0.9F);
 									}
 
 									if (JunkTex.anInt4190 == 2) {
-										Class3.method103(0.8F);
+										SDRaster.method103(0.8F);
 									}
 
 									if (JunkTex.anInt4190 == 3) {
-										Class3.method103(0.7F);
+										SDRaster.method103(0.7F);
 									}
 
 									if (JunkTex.anInt4190 == 4) {
-										Class3.method103(0.6F);
+										SDRaster.method103(0.6F);
 									}
 								} else {
-									Class3.method103(0.7F);
+									SDRaster.method103(0.7F);
 								}
 
 								Class14_Sub9_Sub1.aClass124_4761 = aClass124_2631;
@@ -1022,7 +1022,7 @@ public class client extends Applet_Sub1 {
 		Class88.method1437(false);
 		Class133_Sub1_Sub1.method1806(i + 86);
 		JunkTex.method1236((byte) -128);
-		Class129.method1764(i ^ ~0x73);
+		Static2.method1764(i ^ ~0x73);
 		Class14_Sub23.method902(-7741);
 		Class109.method1571(0);
 		Static2.method388(-117);
@@ -1082,7 +1082,7 @@ public class client extends Applet_Sub1 {
 		Static2.method248(32);
 		JunkTex.method970(5);
 		Static2.method1925();
-		Class3.method106();
+		SDRaster.method106();
 		Class92.method1463();
 		Static2.method258(1869706832);
 		Static2.method334(-121);
@@ -1312,7 +1312,7 @@ public class client extends Applet_Sub1 {
 					Class14_Sub2_Sub21.method440((byte) -114);
 					CardMemManager.process();
 					if (Class44.aClass129_726 != null) {
-						int i = Class44.aClass129_726.method1763(-128);
+						int i = Class44.aClass129_726.getWheelRotation();
 						Class113.anInt1881 = i;
 					}
 					if (JunkTex.gameState == 0) {
@@ -1383,7 +1383,7 @@ public class client extends Applet_Sub1 {
 		Static2.method1280(Static2.aCanvas819, (byte) 127);
 		Static2.method1356(false, Static2.aCanvas819);
 		if (Class44.aClass129_726 != null)
-			Class44.aClass129_726.method1765(true, Static2.aCanvas819);
+			Class44.aClass129_726.removeMouseWheelListener(Static2.aCanvas819);
 		JunkTex.method494((byte) -94);
 		JunkTex.method676(-96);
 		Class44.aClass129_726 = null;
@@ -1392,7 +1392,7 @@ public class client extends Applet_Sub1 {
 		if (Static2.aClass75_2588 != null)
 			Static2.aClass75_2588.method1345(25065);
 		Class14_Sub14.method866(bool);
-		JunkTex.method669(79);
+		SFSS.method669();
 		try {
 			if (JunkTex.aClass76_4098 != null)
 				JunkTex.aClass76_4098.method1358(-1473276056);
@@ -2010,7 +2010,7 @@ public class client extends Applet_Sub1 {
 								class14_sub21.anObjectArray3115 = class94.anObjectArray1555;
 								Class1.aClass2_70.pushBack(class14_sub21);
 							}
-							if (Class129.anInt2131 > class94.anInt1587 && class94.anObjectArray1484 != null) {
+							if (Static2.anInt2131 > class94.anInt1587 && class94.anObjectArray1484 != null) {
 								Class14_Sub21 class14_sub21 = new Class14_Sub21();
 								class14_sub21.aClass94_3116 = class94;
 								class14_sub21.anObjectArray3115 = class94.anObjectArray1484;
@@ -2156,7 +2156,7 @@ public class client extends Applet_Sub1 {
 		Class56_Sub1.method1242(Static2.aCanvas819, i ^ 0xffffffff);
 		Class44.aClass129_726 = Class12.method222(-18108);
 		if (Class44.aClass129_726 != null)
-			Class44.aClass129_726.method1760(-14827, Static2.aCanvas819);
+			Class44.aClass129_726.addMouseWheelListener(Static2.aCanvas819);
 		JunkTex.anInt4128 = Static2.anInt708;
 		try {
 			if (JunkTex.signlink.aClass30_720 != null) {

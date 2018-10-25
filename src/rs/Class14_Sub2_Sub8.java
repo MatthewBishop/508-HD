@@ -155,12 +155,12 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 							if (i_7_ != 5)
 								linkable = (new IntegerNode(class14_sub10.getInt((byte) -104)));
 							else
-								linkable = new Class14_Sub30(class14_sub10.method797(9467));
+								linkable = new Class14_Sub30(class14_sub10.method797());
 							aClass55_3829.put(i_10_, linkable);
 						}
 					}
 				} else
-					aClass124_3847 = class14_sub10.method797(9467);
+					aClass124_3847 = class14_sub10.method797();
 			} else
 				anInt3845 = class14_sub10.readUByte();
 		} else

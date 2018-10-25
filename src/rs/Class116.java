@@ -2349,13 +2349,13 @@ public class Class116 {
 																						JunkTex.anInt4190 = i_182_;
 																						if (!RT4.useLighting) {
 																							if (JunkTex.anInt4190 == 1)
-																								Class3.method103(0.9F);
+																								SDRaster.method103(0.9F);
 																							if (JunkTex.anInt4190 == 2)
-																								Class3.method103(0.8F);
+																								SDRaster.method103(0.8F);
 																							if (JunkTex.anInt4190 == 3)
-																								Class3.method103(0.7F);
+																								SDRaster.method103(0.7F);
 																							if (JunkTex.anInt4190 == 4)
-																								Class3.method103(0.6F);
+																								SDRaster.method103(0.6F);
 																						}
 																						Class14_Sub13.method858(-1);
 																						if (!RT4.useLighting)
@@ -2392,7 +2392,7 @@ public class Class116 {
 																						Static2.aBoolean214 = false;
 																					} else if (i_6_ == 6006) {
 																						JunkTex.aBoolean3397 = Class79.anIntArray1305[--i_3_] == 1;
-																						((Class134) Class3.anInterface3_117)
+																						((Class134) SDRaster.anInterface3_117)
 																								.method1924(											!JunkTex.aBoolean3397);
 																						JunkTex.method595(
 																								JunkTex.signlink);
@@ -2431,15 +2431,15 @@ public class Class116 {
 																						RT4.useLighting = Class79.anIntArray1305[--i_3_] == 1;
 																						if (!RT4.useLighting) {
 																							if (JunkTex.anInt4190 == 1)
-																								Class3.method103(0.9F);
+																								SDRaster.method103(0.9F);
 																							if (JunkTex.anInt4190 == 2)
-																								Class3.method103(0.8F);
+																								SDRaster.method103(0.8F);
 																							if (JunkTex.anInt4190 == 3)
-																								Class3.method103(0.7F);
+																								SDRaster.method103(0.7F);
 																							if (JunkTex.anInt4190 == 4)
-																								Class3.method103(0.6F);
+																								SDRaster.method103(0.6F);
 																						} else
-																							Class3.method103(0.7F);
+																							SDRaster.method103(0.7F);
 																						Static2.method1996((byte) 64);
 																						JunkTex.method595(
 																								JunkTex.signlink);

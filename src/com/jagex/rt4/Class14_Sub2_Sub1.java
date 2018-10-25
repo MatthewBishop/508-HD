@@ -9,6 +9,7 @@ import javax.media.opengl.GL;
 import javax.media.opengl.glu.GLU;
 
 import org.jagex.image.transform.util.ProceduralTexture;
+import org.lwjgl.opengl.GL11;
 
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9;
@@ -99,8 +100,8 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 				if (anInt3752 != 2) {
 					if (anInt3752 != 1) {
 						gl.glTexImage2D(3553, 0, 6408, i_6_, i_6_, 0, 6408, 5121, bytebuffer);
-						gl.glTexParameteri(3553, 10241, 9729);
-						gl.glTexParameteri(3553, 10240, 9729);
+						gl.glTexParameteri(3553, GL11.GL_TEXTURE_MIN_FILTER, 9729);
+						gl.glTexParameteri(3553, GL11.GL_TEXTURE_MAG_FILTER, 9729);
 						CardMemManager.textureMemory += bytebuffer.limit() - anInt3753;
 						anInt3753 = bytebuffer.limit();
 					} else {
@@ -113,16 +114,16 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 							bytebuffer = ByteBuffer.wrap(proceduralTexture.method1555(i_6_, interface3, 0.7, aBoolean3738,
 									i_6_, (byte) -84, class9));
 						}
-						gl.glTexParameteri(3553, 10241, 9987);
-						gl.glTexParameteri(3553, 10240, 9729);
+						gl.glTexParameteri(3553, GL11.GL_TEXTURE_MIN_FILTER, 9987);
+						gl.glTexParameteri(3553, GL11.GL_TEXTURE_MAG_FILTER, 9729);
 						CardMemManager.textureMemory += bytebuffer.limit() * 4 / 3 - anInt3753;
 						anInt3753 = bytebuffer.limit() * 4 / 3;
 					}
 				} else {
 					GLU glu = new GLU();
 					glu.gluBuild2DMipmaps(3553, 6408, i_6_, i_6_, 6408, 5121, bytebuffer);
-					gl.glTexParameteri(3553, 10241, 9987);
-					gl.glTexParameteri(3553, 10240, 9729);
+					gl.glTexParameteri(3553, GL11.GL_TEXTURE_MIN_FILTER, 9987);
+					gl.glTexParameteri(3553, GL11.GL_TEXTURE_MAG_FILTER, 9729);
 					CardMemManager.textureMemory += bytebuffer.limit() * 4 / 3 - anInt3753;
 					anInt3753 = bytebuffer.limit() * 4 / 3;
 				}

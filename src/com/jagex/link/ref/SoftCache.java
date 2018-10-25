@@ -3,6 +3,7 @@
  */
 package com.jagex.link.ref;
 
+import com.jagex.StringConstants;
 import com.jagex.link.Cacheable;
 import com.jagex.link.HashTable;
 import com.jagex.link.Queue;
@@ -18,7 +19,7 @@ public class SoftCache {
 	private static ReferenceFactory create() {
 		ReferenceFactory referenceFactory;
 		try {
-			referenceFactory = (ReferenceFactory) Class.forName("com.jagex.link.ref.SoftReferenceFactory").newInstance();
+			referenceFactory = (ReferenceFactory) Class.forName(StringConstants.SOFT_REFERENCE_FACTORY).newInstance();
 		} catch (Throwable throwable) {
 			return null;
 		}

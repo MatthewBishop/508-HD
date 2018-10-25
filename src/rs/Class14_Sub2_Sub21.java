@@ -160,7 +160,7 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 			for (int i_23_ = 0; i_23_ < anIntArray4073.length; i_23_++) {
 				class124.method1675((byte) -127, aClass124Array4080[i_23_]);
 				class124.method1675((byte) -128,
-						(Class129.method1766(anIntArrayArray4075[i_23_], anIntArray4073[i_23_], (byte) 124,
+						(Static2.method1766(anIntArrayArray4075[i_23_], anIntArray4073[i_23_], (byte) 124,
 								class14_sub10.method837((Class153.anIntArray2453[(anIntArray4073[i_23_])]), -115))));
 			}
 		}
@@ -234,6 +234,6 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 				}
 			}
 		} else
-			aClass124Array4080 = class14_sub10.method797(i ^ 0x24fb).method1719(60, 123);
+			aClass124Array4080 = class14_sub10.method797().method1719(60, 123);
 	}
 }
