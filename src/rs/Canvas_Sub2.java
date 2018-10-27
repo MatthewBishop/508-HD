@@ -6,6 +6,7 @@ package rs;
 import java.awt.Canvas;
 import java.awt.event.FocusListener;
 
+import com.jagex.applet.Class43;
 import com.jagex.util.ArrayUtils;
 
 public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
@@ -41,23 +42,23 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 		anInt63 = 0;
 	}
 
-	public static void method61(int i, int i_0_, int i_1_, int i_2_, Class133 class133, long l, Class133 class133_3_,
-			Class133 class133_4_) {
+	public static void method61(int i, int i_0_, int i_1_, int i_2_, SceneGraphNode sceneGraphNode, long l, SceneGraphNode sceneGraphNode_3_,
+			SceneGraphNode sceneGraphNode_4_) {
 		Class115 class115 = new Class115();
-		class115.aClass133_1919 = class133;
+		class115.aSceneGraphNode_1919 = sceneGraphNode;
 		class115.anInt1913 = i_0_ * 128 + 64;
 		class115.anInt1925 = i_1_ * 128 + 64;
 		class115.anInt1911 = i_2_;
 		class115.aLong1915 = l;
-		class115.aClass133_1926 = class133_3_;
-		class115.aClass133_1921 = class133_4_;
+		class115.aSceneGraphNode_1926 = sceneGraphNode_3_;
+		class115.aSceneGraphNode_1921 = sceneGraphNode_4_;
 		int i_5_ = 0;
 		Class14_Sub29 class14_sub29 = JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_0_][i_1_];
 		if (class14_sub29 != null) {
 			for (int i_6_ = 0; i_6_ < class14_sub29.anInt3242; i_6_++) {
 				Class40 class40 = class14_sub29.aClass40Array3257[i_6_];
-				if ((class40.aLong677 & 0x400000L) == 4194304L) {
-					int i_7_ = class40.aClass133_679.getMinY();
+				if ((class40.bitPacked & 0x400000L) == 4194304L) {
+					int i_7_ = class40.aSceneGraphNode_679.getMinYorMaxYCheckTHIS();
 					if (i_7_ != -32768 && i_7_ < i_5_)
 						i_5_ = i_7_;
 				}
@@ -90,11 +91,11 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 			if (i_12_ == 32767)
 				break;
 			boolean bool = false;
-			if (Class14_Sub4.aClass133_Sub1_Sub2Array2785[i_12_] == null) {
-				Class14_Sub4.aClass133_Sub1_Sub2Array2785[i_12_] = new Class133_Sub1_Sub2();
+			if (Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[i_12_] == null) {
+				Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[i_12_] = new SceneGraphNode_GameEntity_Sub2();
 				bool = true;
 			}
-			Class133_Sub1_Sub2 class133_sub1_sub2 = Class14_Sub4.aClass133_Sub1_Sub2Array2785[i_12_];
+			SceneGraphNode_GameEntity_Sub2 class133_sub1_sub2 = Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[i_12_];
 			JunkTex.anIntArray3965[JunkTex.anInt4306++] = i_12_;
 			class133_sub1_sub2.anInt3447 = Class14_Sub2_Sub20.anInt4064;
 			class133_sub1_sub2.aClass12_4949 = Static2
@@ -108,7 +109,7 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 			int i_15_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 5);
 			if (i_15_ > 15)
 				i_15_ -= 32;
-			int i_16_ = (Class133.anIntArray2179[JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 3)]);
+			int i_16_ = (SceneGraphNode.anIntArray2179[JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 3)]);
 			if (bool)
 				class133_sub1_sub2.anInt3469 = class133_sub1_sub2.anInt3461 = i_16_;
 			int i_17_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 1);
@@ -123,8 +124,8 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 			if (class133_sub1_sub2.anInt3492 == 0)
 				class133_sub1_sub2.anInt3461 = 0;
 			class133_sub1_sub2.anInt3471 = class133_sub1_sub2.aClass12_4949.anInt286;
-			class133_sub1_sub2.method1800((byte) -79, i_14_ + (Class14_Sub3.aClass133_Sub1_Sub1_2748.anIntArray3443[0]),
-					i_17_ == 1, (Class14_Sub3.aClass133_Sub1_Sub1_2748.anIntArray3476[0]) + i_15_);
+			class133_sub1_sub2.method1800((byte) -79, i_14_ + (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anIntArray3443[0]),
+					i_17_ == 1, (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anIntArray3476[0]) + i_15_);
 			if (class133_sub1_sub2.aClass12_4949.method212((byte) -128))
 				Class12.method213(class133_sub1_sub2.anIntArray3476[0], class133_sub1_sub2.anIntArray3443[0], null,
 						(byte) -35, Class14_Sub2_Sub3.gameLevel, null, class133_sub1_sub2, 0);
@@ -138,13 +139,13 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 		for (Class14_Sub2_Sub10 class14_sub2_sub10 = (Class14_Sub2_Sub10) Class4.aClass2_127
 				.getFront(); class14_sub2_sub10 != null; class14_sub2_sub10 = (Class14_Sub2_Sub10) Class4.aClass2_127
 						.getNext()) {
-			Class133_Sub6 class133_sub6 = class14_sub2_sub10.aClass133_Sub6_3870;
+			SceneGraphNode_Projectile class133_sub6 = class14_sub2_sub10.aSceneGraphNode_Projectile_3870;
 			if (Class14_Sub2_Sub3.gameLevel != class133_sub6.anInt3655
 					|| class133_sub6.anInt3644 < Class14_Sub2_Sub20.anInt4064)
 				class14_sub2_sub10.unlink();
 			else if (Class14_Sub2_Sub20.anInt4064 >= class133_sub6.anInt3679) {
 				if (class133_sub6.anInt3669 > 0) {
-					Class133_Sub1_Sub2 class133_sub1_sub2 = (Class14_Sub4.aClass133_Sub1_Sub2Array2785[class133_sub6.anInt3669
+					SceneGraphNode_GameEntity_Sub2 class133_sub1_sub2 = (Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[class133_sub6.anInt3669
 							- 1]);
 					if (class133_sub1_sub2 != null && class133_sub1_sub2.anInt3495 >= 0
 							&& class133_sub1_sub2.anInt3495 < 13312 && class133_sub1_sub2.anInt3436 >= 0
@@ -156,11 +157,11 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 				}
 				if (class133_sub6.anInt3669 < 0) {
 					int i_18_ = -class133_sub6.anInt3669 - 1;
-					Class133_Sub1_Sub1 class133_sub1_sub1;
+					SceneGraphNode_GameEntity_Sub1 class133_sub1_sub1;
 					if (i_18_ == Class14_Sub2_Sub10.anInt3868)
-						class133_sub1_sub1 = Class14_Sub3.aClass133_Sub1_Sub1_2748;
+						class133_sub1_sub1 = Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748;
 					else
-						class133_sub1_sub1 = (JunkTex.aClass133_Sub1_Sub1Array4474[i_18_]);
+						class133_sub1_sub1 = (JunkTex.aSceneGraphNode_GameEntity_Sub1Array4474[i_18_]);
 					if (class133_sub1_sub1 != null && class133_sub1_sub1.anInt3495 >= 0
 							&& class133_sub1_sub1.anInt3495 < 13312 && class133_sub1_sub1.anInt3436 >= 0
 							&& class133_sub1_sub1.anInt3436 < 13312)

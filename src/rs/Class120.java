@@ -8,7 +8,7 @@ import com.jagex.link.HashTable;
 import com.jagex.sound.Track;
 
 public class Class120 {
-	public static Class124 aClass124_2001 = Class124.method263(1178, "welle:");
+	public static Class124 aClass124_2001 = Class124.method263("welle:");
 	public static int[] anIntArray2002;
 	public Class9 aClass9_2003;
 	public HashTable aClass55_2004 = new HashTable(256);
@@ -23,7 +23,7 @@ public class Class120 {
 
 	static {
 		anInt2005 = 1;
-		aClass124_2012 = Class124.method263(1178, "::qa_op_test");
+		aClass124_2012 = Class124.method263("::qa_op_test");
 		z_max_occluders = new int[2];
 		anInt2014 = 0;
 		anIntArray2009 = new int[64];
@@ -46,7 +46,7 @@ public class Class120 {
 		for (Class66[] class66s = Static2.aClass66Array3721; i_6_ < class66s.length; i_6_++) {
 			Class66 class66 = class66s[i_6_];
 			if (class66 != null && class66.anInt1046 == 2) {
-				Class53.method1213(i_2_, i_0_, (class66.anInt1047 - Class133_Sub6.anInt3676 << 7) + class66.anInt1038,
+				Class53.method1213(i_2_, i_0_, (class66.anInt1047 - SceneGraphNode_Projectile.anInt3676 << 7) + class66.anInt1038,
 						i_4_ >> 1, i >> 33, class66.anInt1041 * 2, (byte) 126,
 						(class66.anInt1051 + (-Class58.anInt947 + class66.anInt1044 << 7)));
 				if (anInt2007 > -1 && Class14_Sub2_Sub20.anInt4064 % 20 < 10)

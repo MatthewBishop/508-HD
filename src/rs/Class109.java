@@ -11,13 +11,13 @@ import com.jagex.rt4.AbstractSprite_Sub1;
 public class Class109 {
 	public int anInt1829;
 	public int anInt1830;
-	public static Class124 aClass124_1831 = Class124.method263(1178, "null");
+	public static Class124 aClass124_1831 = Class124.method263("null");
 	public int anInt1833;
 	public static Class9_Sub1 idx1;
 	public static AbstractSprite_Sub1[] aClass14_Sub2_Sub19_Sub1Array1835;
-	public static Class124 aClass124_1836 = Class124.method263(1178, ")3)3)3");
+	public static Class124 aClass124_1836 = Class124.method263(")3)3)3");
 	public byte aByte1838;
-	public static Class124 aClass124_1839 = Class124.method263(1178, "::fpsoff");
+	public static Class124 aClass124_1839 = Class124.method263("::fpsoff");
 	public int anInt1841;
 	public int anInt1845;
 
@@ -72,12 +72,12 @@ public class Class109 {
 		JunkTex.method1032(false, -1291652884);
 		Class14_Sub2_Sub8.method297((byte) -36);
 		JunkTex.method1328(Class14_Sub2_Sub12.anInt3912, true);
-		Class14_Sub3.aClass133_Sub1_Sub1_2748 = new Class133_Sub1_Sub1();
-		Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436 = 3000;
-		Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495 = 3000;
+		Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748 = new SceneGraphNode_GameEntity_Sub1();
+		Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436 = 3000;
+		Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495 = 3000;
 		if (Class89.anInt1415 == 2) {
-			Class133_Sub6.anInt3676 = Class123.anInt2062 - 48;
-			JunkTex.anInt4741 = (Class123.anInt2062 * 128 - Class133_Sub6.anInt3676 * 128 + 64);
+			SceneGraphNode_Projectile.anInt3676 = Class123.anInt2062 - 48;
+			JunkTex.anInt4741 = (Class123.anInt2062 * 128 - SceneGraphNode_Projectile.anInt3676 * 128 + 64);
 			Class123.anInt2062 = JunkTex.anInt4741 >> 39;
 			Class58.anInt947 = JunkTex.anInt4731 - 48;
 			Class14_Sub30.anInt3271 = (JunkTex.anInt4731 * 128 + 64 - Class58.anInt947 * 128);
@@ -100,7 +100,7 @@ public class Class109 {
 				class14_sub29_25_.anInt3243--;
 				for (int i_26_ = 0; i_26_ < class14_sub29_25_.anInt3242; i_26_++) {
 					Class40 class40 = class14_sub29_25_.aClass40Array3257[i_26_];
-					if ((class40.aLong677 >> 29 & 0x3L) == 2L && class40.anInt668 == i && class40.anInt678 == i_23_)
+					if ((class40.bitPacked >> 29 & 0x3L) == 2L && class40.anInt668 == i && class40.anInt678 == i_23_)
 						class40.anInt672--;
 				}
 			}
@@ -111,13 +111,13 @@ public class Class109 {
 		JunkTex.aClass14_Sub29ArrayArrayArray3368[3][i][i_23_] = null;
 	}
 
-	public static boolean method1570(int i, int i_27_, int i_28_, int i_29_, int i_30_, int i_31_, Class133 class133,
+	public static boolean method1570(int i, int i_27_, int i_28_, int i_29_, int i_30_, int i_31_, SceneGraphNode sceneGraphNode,
 			int i_32_, long l) {
-		if (class133 == null)
+		if (sceneGraphNode == null)
 			return true;
 		int i_33_ = i_27_ * 128 + i_30_ * 64;
 		int i_34_ = i_28_ * 128 + i_31_ * 64;
-		return JunkTex.method580(i, i_27_, i_28_, i_30_, i_31_, i_33_, i_34_, i_29_, class133, i_32_, false,
+		return JunkTex.method580(i, i_27_, i_28_, i_30_, i_31_, i_33_, i_34_, i_29_, sceneGraphNode, i_32_, false,
 				l);
 	}
 

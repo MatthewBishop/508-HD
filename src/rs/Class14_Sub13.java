@@ -7,7 +7,7 @@ import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.link.Linkable;
 
 public class Class14_Sub13 extends Linkable {
-	public static Class124 aClass124_2955 = Class124.method263(1178, "Fallen lassen");
+	public static Class124 aClass124_2955 = Class124.method263("Fallen lassen");
 	public static Class9_Sub1 aClass9_Sub1_2958;
 	public long aLong2963;
 	public static int anInt2964 = 0;

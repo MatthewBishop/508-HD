@@ -6,7 +6,7 @@ package rs;
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9;
 
-public class Class133_Sub2 extends Class133 {
+public class SceneGraphNode_Model extends SceneGraphNode {
 	public short aShort3506;
 	public int[] anIntArray3507;
 	public static int[] anIntArray3508;
@@ -106,7 +106,7 @@ public class Class133_Sub2 extends Class133 {
 		}
 	}
 
-	public int method1814(Class133_Sub2 class133_sub2_11_, int i) {
+	public int method1814(SceneGraphNode_Model class133_sub2_11_, int i) {
 		int i_12_ = -1;
 		int i_13_ = class133_sub2_11_.anIntArray3530[i];
 		int i_14_ = class133_sub2_11_.anIntArray3526[i];
@@ -396,8 +396,8 @@ public class Class133_Sub2 extends Class133 {
 	}
 
 	@Override
-	public void method1788(Class133 class133, int i, int i_85_, int i_86_, boolean bool) {
-		Class133_Sub2 class133_sub2_87_ = (Class133_Sub2) class133;
+	public void method1788(SceneGraphNode sceneGraphNode, int i, int i_85_, int i_86_, boolean bool) {
+		SceneGraphNode_Model class133_sub2_87_ = (SceneGraphNode_Model) sceneGraphNode;
 		class133_sub2_87_.method1812();
 		class133_sub2_87_.method1826();
 		anInt3537++;
@@ -822,15 +822,15 @@ public class Class133_Sub2 extends Class133 {
 		}
 	}
 
-	public static Class133_Sub2 method1824(Class9 class9, int i, int i_184_) {
+	public static SceneGraphNode_Model method1824(Class9 class9, int i, int i_184_) {
 		byte[] is = class9.method163(i_184_, i);
 		if (is == null)
 			return null;
-		return new Class133_Sub2(is);
+		return new SceneGraphNode_Model(is);
 	}
 
 	@Override
-	public Class133 method1791(int i, int i_185_, int i_186_) {
+	public SceneGraphNode method1791(int i, int i_185_, int i_186_) {
 		return method1827(aShort3539, aShort3525, i, i_185_, i_186_);
 	}
 
@@ -905,7 +905,7 @@ public class Class133_Sub2 extends Class133 {
 		}
 	}
 
-	public Class133_Sub7 method1827(int i, int i_204_, int i_205_, int i_206_, int i_207_) {
+	public SceneGraphNode_AbstractModelRenderer method1827(int i, int i_204_, int i_205_, int i_206_, int i_207_) {
 		ModelHD modelhd = new ModelHD(this, i, i_204_, true);
 		modelhd.method1913();
 		return modelhd;
@@ -919,7 +919,7 @@ public class Class133_Sub2 extends Class133 {
 	}
 
 	@Override
-	public int getMinY() {
+	public int getMinYorMaxYCheckTHIS() {
 		if (!aBoolean3543)
 			method1812();
 		return aShort3506;
@@ -931,12 +931,12 @@ public class Class133_Sub2 extends Class133 {
 		/* empty */
 	}
 
-	public Class133_Sub2() {
+	public SceneGraphNode_Model() {
 		aByte3542 = (byte) 0;
 		anInt3547 = 0;
 	}
 
-	public Class133_Sub2(byte[] is) {
+	public SceneGraphNode_Model(byte[] is) {
 		aByte3542 = (byte) 0;
 		anInt3547 = 0;
 		if (is[is.length - 1] == -1 && is[is.length - 2] == -1)
@@ -945,7 +945,7 @@ public class Class133_Sub2 extends Class133 {
 			method1815(is);
 	}
 
-	public Class133_Sub2(int i, int i_215_, int i_216_) {
+	public SceneGraphNode_Model(int i, int i_215_, int i_216_) {
 		aByte3542 = (byte) 0;
 		anInt3547 = 0;
 		anIntArray3530 = new int[i];
@@ -978,7 +978,7 @@ public class Class133_Sub2 extends Class133 {
 		}
 	}
 
-	public Class133_Sub2(Class133_Sub2[] class133_sub2s, int i) {
+	public SceneGraphNode_Model(SceneGraphNode_Model[] class133_sub2s, int i) {
 		aByte3542 = (byte) 0;
 		anInt3547 = 0;
 		boolean bool = false;
@@ -992,7 +992,7 @@ public class Class133_Sub2 extends Class133 {
 		anInt3544 = 0;
 		aByte3542 = (byte) -1;
 		for (int i_222_ = 0; i_222_ < i; i_222_++) {
-			Class133_Sub2 class133_sub2_223_ = class133_sub2s[i_222_];
+			SceneGraphNode_Model class133_sub2_223_ = class133_sub2s[i_222_];
 			if (class133_sub2_223_ != null) {
 				anInt3521 += class133_sub2_223_.anInt3521;
 				anInt3547 += class133_sub2_223_.anInt3547;
@@ -1050,7 +1050,7 @@ public class Class133_Sub2 extends Class133 {
 		anInt3547 = 0;
 		anInt3544 = 0;
 		for (int i_224_ = 0; i_224_ < i; i_224_++) {
-			Class133_Sub2 class133_sub2_225_ = class133_sub2s[i_224_];
+			SceneGraphNode_Model class133_sub2_225_ = class133_sub2s[i_224_];
 			if (class133_sub2_225_ != null) {
 				for (int i_226_ = 0; i_226_ < class133_sub2_225_.anInt3547; i_226_++) {
 					if (bool && class133_sub2_225_.aByteArray3534 != null)

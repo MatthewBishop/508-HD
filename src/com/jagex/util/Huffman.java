@@ -3,8 +3,6 @@
  */
 package com.jagex.util;
 
-import rs.Class66;
-
 public class Huffman {
 	private byte[] aByteArray145;
 
@@ -35,7 +33,7 @@ public class Huffman {
 							break;
 						int i_23_ = 1 << -i_21_ + 32;
 						if ((i_22_ & i_23_) == 0)
-							is_14_[i_21_] = Class66.method1294(i_23_, i_22_);
+							is_14_[i_21_] = (i_23_ | i_22_);
 						else {
 							is_14_[i_21_] = is_14_[i_21_ - 1];
 							break;
@@ -186,7 +184,7 @@ public class Huffman {
 			i_35_ += i_37_;
 			int i_41_ = (i_39_ + i_37_ - 1 >> 35) + i_40_;
 			i_39_ += 24;
-			is[i_40_] = (byte) (i_34_ = Class66.method1294(i_34_, i_38_ >>> i_39_));
+			is[i_40_] = (byte) (i_34_ = (i_34_ | (i_38_ >>> i_39_)));
 			if (i_41_ > i_40_) {
 				i_39_ -= 8;
 				i_40_++;

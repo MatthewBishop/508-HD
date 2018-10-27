@@ -24,7 +24,7 @@ public class Class127 {
 	public static SoftCache aClass52_2112 = new SoftCache(64);
 	public static Class124 aClass124_2113;
 	public static Class94 aClass94_2114 = null;
-	public static Class124 aClass124_2116 = Class124.method263(1178, "flash2:");
+	public static Class124 aClass124_2116 = Class124.method263("flash2:");
 	public static Class124 aClass124_2117;
 	public static int anInt2118;
 
@@ -34,16 +34,16 @@ public class Class127 {
 		aClass124_2117 = aClass124_2116;
 	}
 
-	public static void method1748(int i, int i_0_, int i_1_, int i_2_, Class133 class133, Class133 class133_3_,
+	public static void method1748(int i, int i_0_, int i_1_, int i_2_, SceneGraphNode sceneGraphNode, SceneGraphNode sceneGraphNode_3_,
 			int i_4_, int i_5_, int i_6_, int i_7_, long l) {
-		if (class133 != null) {
+		if (sceneGraphNode != null) {
 			Class37 class37 = new Class37();
 			class37.aLong634 = l;
 			class37.anInt653 = i_0_ * 128 + 64;
 			class37.anInt633 = i_1_ * 128 + 64;
 			class37.anInt650 = i_2_;
-			class37.aClass133_642 = class133;
-			class37.aClass133_638 = class133_3_;
+			class37.aSceneGraphNode_642 = sceneGraphNode;
+			class37.aSceneGraphNode_638 = sceneGraphNode_3_;
 			class37.anInt649 = i_4_;
 			class37.anInt647 = i_5_;
 			class37.anInt641 = i_6_;

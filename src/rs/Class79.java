@@ -49,7 +49,7 @@ public class Class79 {
 	public int anInt1262;
 	public short[] aShortArray1263;
 	public boolean aBoolean1264;
-	public static Class124 aClass124_1265 = Class124.method263(1178, "(Z");
+	public static Class124 aClass124_1265 = Class124.method263("(Z");
 	public HashTable aClass55_1266;
 	public static Deque aClass2_1268;
 	public boolean aBoolean1270;
@@ -81,11 +81,11 @@ public class Class79 {
 
 	static {
 		anInt1240 = 0;
-		aClass124_1298 = Class124.method263(1178, "Discard");
+		aClass124_1298 = Class124.method263("Discard");
 		aClass124_1255 = aClass124_1298;
 		aClass2_1268 = new Deque();
 		anIntArray1305 = new int[1000];
-		aClass124_1306 = Class124.method263(1178, "event_opbase");
+		aClass124_1306 = Class124.method263("event_opbase");
 	}
 
 	public void method1374(int i, Buffer class14_sub10) {
@@ -142,17 +142,17 @@ public class Class79 {
 				l ^= 0xffffffffffffffffL;
 			modelhd = (ModelHD) Class112.aClass52_1868.get(l);
 			if (modelhd == null) {
-				Class133_Sub2 class133_sub2 = null;
+				SceneGraphNode_Model class133_sub2 = null;
 				for (int i_13_ = 0; i_10_ > i_13_; i_13_++) {
-					class133_sub2 = Class133_Sub2.method1824(Static2.aClass9_2923,
+					class133_sub2 = SceneGraphNode_Model.method1824(Static2.aClass9_2923,
 							(anIntArray1260[i_13_] & 0xffff), 0);
 					if (class133_sub2 == null)
 						return null;
 					if (i_10_ > 1)
-						Class74.aClass133_Sub2Array1134[i_13_] = class133_sub2;
+						Class74.aSceneGraphNode_ModelArray1134[i_13_] = class133_sub2;
 				}
 				if (i_10_ > 1)
-					class133_sub2 = new Class133_Sub2(Class74.aClass133_Sub2Array1134, i_10_);
+					class133_sub2 = new SceneGraphNode_Model(Class74.aSceneGraphNode_ModelArray1134, i_10_);
 				modelhd = new ModelHD(class133_sub2, i_6_, i_7_, bool);
 				Class112.aClass52_1868.put(modelhd, l);
 			}
@@ -171,7 +171,7 @@ public class Class79 {
 				i_16_ += 65536;
 			modelhd = (ModelHD) Class112.aClass52_1868.get(i_16_);
 			if (modelhd == null) {
-				Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(Static2.aClass9_2923, i_16_ & 0xffff, 0);
+				SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(Static2.aClass9_2923, i_16_ & 0xffff, 0);
 				if (class133_sub2 == null) {
 					ModelHD modelhd_17_ = null;
 					return modelhd_17_;
@@ -365,11 +365,11 @@ public class Class79 {
 		Class148_Sub1 class148_sub1_53_;
 		if (class86 != null) {
 			class148_sub1_53_ = class86.aClass148_Sub1_1386;
-			modelhd = (ModelHD) class86.aClass133_1379;
+			modelhd = (ModelHD) class86.aSceneGraphNode_1379;
 		} else {
 			modelhd = method1376(i_48_, 0, false, i_46_);
 			if (modelhd == null) {
-				JunkTex.aClass86_4351.aClass133_1379 = null;
+				JunkTex.aClass86_4351.aSceneGraphNode_1379 = null;
 				JunkTex.aClass86_4351.aClass148_Sub1_1386 = null;
 				Class86 class86_54_ = JunkTex.aClass86_4351;
 				return class86_54_;
@@ -381,7 +381,7 @@ public class Class79 {
 			else
 				class148_sub1_53_ = null;
 			Class86 class86_55_ = new Class86();
-			class86_55_.aClass133_1379 = modelhd;
+			class86_55_.aSceneGraphNode_1379 = modelhd;
 			class86_55_.aClass148_Sub1_1386 = class148_sub1_53_;
 			Class62.aClass52_991.put(class86_55_, l);
 		}
@@ -391,7 +391,7 @@ public class Class79 {
 		if (aByte1286 != 0)
 			modelhd_57_.method1897(aByte1286, aShort1304, modelhd, is, is_47_, i_51_, i, i_52_);
 		modelhd_57_.method1895(anInt1250 == 0, true, true, true, anInt1250 == 0, true, false);
-		JunkTex.aClass86_4351.aClass133_1379 = modelhd_57_;
+		JunkTex.aClass86_4351.aSceneGraphNode_1379 = modelhd_57_;
 		JunkTex.aClass86_4351.aClass148_Sub1_1386 = class148_sub1_53_;
 		modelhd_57_.aBoolean5009 = bool_56_;
 		return JunkTex.aClass86_4351;
@@ -443,7 +443,7 @@ public class Class79 {
 			}
 			modelhd_65_.method1897(aByte1286, aShort1304, modelhd, is_63_, is, i_60_, i, i_62_);
 		}
-		JunkTex.aClass86_4351.aClass133_1379 = modelhd_65_;
+		JunkTex.aClass86_4351.aSceneGraphNode_1379 = modelhd_65_;
 		return JunkTex.aClass86_4351;
 	}
 
@@ -678,13 +678,13 @@ public class Class79 {
 																								aBoolean1228 = true;
 																						} else
 																							anInt1274 = class14_sub10
-																									.method805(0);
+																									.method805();
 																					} else
 																						anInt1226 = class14_sub10
-																								.method805(0);
+																								.method805();
 																				} else
 																					anInt1279 = class14_sub10
-																							.method805(0);
+																							.method805();
 																			} else
 																				anInt1244 = class14_sub10.readUByte();
 																		} else

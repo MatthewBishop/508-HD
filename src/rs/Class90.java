@@ -3,6 +3,8 @@
  */
 package rs;
 
+import com.jagex.applet.Class43;
+import com.jagex.applet.ErrorReporting;
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9;
 import com.jagex.rt4.AbstractSprite_Sub1;
@@ -13,8 +15,8 @@ public class Class90 implements Runnable {
 	public volatile boolean aBoolean1419 = false;
 	public Class43 aClass43_1421;
 	public volatile Class75[] aClass75Array1422 = new Class75[2];
-	public static Class124 aClass124_1424 = Class124.method263(1178, "showVideoAd");
-	public static Class124 aClass124_1425 = Class124.method263(1178, "::gc");
+	public static Class124 aClass124_1424 = Class124.method263("showVideoAd");
+	public static Class124 aClass124_1425 = Class124.method263("::gc");
 	public static float aFloat1426;
 	public volatile boolean aBoolean1428 = false;
 
@@ -24,16 +26,16 @@ public class Class90 implements Runnable {
 			method1445(95);
 	}
 
-	public static void method1444(int i, int i_0_, int i_1_, int i_2_, Class133 class133, Class133 class133_3_,
+	public static void method1444(int i, int i_0_, int i_1_, int i_2_, SceneGraphNode sceneGraphNode, SceneGraphNode sceneGraphNode_3_,
 			int i_4_, int i_5_, long l) {
-		if (class133 != null || class133_3_ != null) {
+		if (sceneGraphNode != null || sceneGraphNode_3_ != null) {
 			Class113 class113 = new Class113();
 			class113.aLong1887 = l;
 			class113.anInt1878 = i_0_ * 128 + 64;
 			class113.anInt1886 = i_1_ * 128 + 64;
 			class113.anInt1882 = i_2_;
-			class113.aClass133_1877 = class133;
-			class113.aClass133_1884 = class133_3_;
+			class113.aSceneGraphNode_1877 = sceneGraphNode;
+			class113.aSceneGraphNode_1884 = sceneGraphNode_3_;
 			class113.anInt1880 = i_4_;
 			class113.anInt1888 = i_5_;
 			for (int i_6_ = i; i_6_ >= 0; i_6_--) {
@@ -65,12 +67,12 @@ public class Class90 implements Runnable {
 									class75.method1341(-82);
 							}
 							Util.accuratesleep(10L);
-							JunkTex.method555(45, aClass43_1421, null);
+							ErrorReporting.method555(45, aClass43_1421, null);
 						}
 					} catch (Exception exception) {
 						try {
 							Throwable throwable = new Throwable();
-							Class14_Sub9_Sub3.method738(null, throwable, 95);
+							ErrorReporting.method738(null, throwable, 95);
 						} catch (Throwable throwable) {
 							RuntimeException runtimeexception = new RuntimeException();
 							aBoolean1419 = false;

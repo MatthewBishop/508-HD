@@ -10,7 +10,7 @@ public class Class42 {
 
 	static {
 		anInt698 = 0;
-		aClass124_700 = Class124.method263(1178, "not yet implemented");
+		aClass124_700 = Class124.method263("not yet implemented");
 	}
 
 	public static void method1134(int i) {

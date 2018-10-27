@@ -3,15 +3,15 @@
  */
 package rs;
 
+import com.jagex.applet.Applet_Sub1;
 import com.jagex.io.js5.Class9;
 
 public class Class7_Sub3_Sub1 extends Class7_Sub3 {
-	public static Class124 aClass124_3706 = Class124.method263(1178, "Hidden)2");
+	public static Class124 aClass124_3706 = Class124.method263("Hidden)2");
 	public static Class124 aClass124_3710 = null;
-	public static Class124 aClass124_3711 = Class124.method263(1178,
-			" steht bereits auf Ihrer Ignorieren)2Liste(Q");
+	public static Class124 aClass124_3711 = Class124.method263(" steht bereits auf Ihrer Ignorieren)2Liste(Q");
 	public static int anInt3714 = 0;
-	public static Class124 aClass124_3715 = Class124.method263(1178, "Welt");
+	public static Class124 aClass124_3715 = Class124.method263("Welt");
 	public static int anInt3718;
 	public static int anInt3719;
 
@@ -122,7 +122,7 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 									&& (Static2.anInt2573 + 18 >= Class139.anInt2230))
 								Class32.method1082(3, 1, i + 29514);
 							else if (JunkTex.anInt2801 != -1) {
-								Class45 class45 = (Class133_Sub1.aClass45Array3435[JunkTex.anInt2801]);
+								Class45 class45 = (SceneGraphNode_GameEntity.aClass45Array3435[JunkTex.anInt2801]);
 								if (!class45.aBoolean749 != Class132.aBoolean2170) {
 									byte[] is = JunkTex.method515(
 											(new Class124[] { class45.aClass124_741, Class54.aClass124_883 }),

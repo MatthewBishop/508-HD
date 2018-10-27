@@ -12,7 +12,7 @@ import com.jagex.rt4.Class148;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.RT4GL;
 
-public class Class133_Sub1_Sub1 extends Class133_Sub1 {
+public class SceneGraphNode_GameEntity_Sub1 extends SceneGraphNode_GameEntity {
 	public int anInt4902;
 	public int anInt4904 = -1;
 	public int anInt4905;
@@ -35,7 +35,7 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 	public int anInt4929;
 	public int anInt4931;
 	public int anInt4932;
-	public Class133_Sub7 aClass133_Sub7_4933;
+	public SceneGraphNode_AbstractModelRenderer aSceneGraphNode_AbstractModelRenderer_4933;
 	public int anInt4934;
 	public static Class9 aClass9_4935;
 	public static int anInt4936 = 0;
@@ -44,8 +44,8 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 	public static Class36 aClass36_4939;
 	public int anInt4940;
 	public Class102 aClass102_4941;
-	public static Class124 aClass124_4942 = Class124.method263(1178, "blaugr-Un:");
-	public static Class124 aClass124_4943 = Class124.method263(1178, "ul");
+	public static Class124 aClass124_4942 = Class124.method263("blaugr-Un:");
+	public static Class124 aClass124_4943 = Class124.method263("ul");
 
 	public static int method1805(int i, Class9 class9) {
 		int i_0_ = 0;
@@ -61,7 +61,7 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 			i_0_++;
 		if (class9.method171(Class153.anInt2450))
 			i_0_++;
-		if (class9.method171(Class133_Sub4.anInt3584))
+		if (class9.method171(SceneGraphNode_AnimatedLocation.anInt3584))
 			i_0_++;
 		if (class9.method171(Static2.anInt5087))
 			i_0_++;
@@ -117,12 +117,12 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 			Animation animation = (anInt3445 != -1 && anInt3467 == 0 ? JunkTex.method1129(anInt3445, 25) : null);
 			Animation class46_9_ = (anInt3452 != -1 && !aBoolean4921 && (anInt3452 != anInt3433 || animation == null)
 					? JunkTex.method1129(anInt3452, -126) : null);
-			Class133_Sub7 class133_sub7 = aClass102_4941.method1516(class46_9_, anInt3483, -13, anInt3501, animation);
+			SceneGraphNode_AbstractModelRenderer class133_sub7 = aClass102_4941.method1516(class46_9_, anInt3483, -13, anInt3501, animation);
 			if (class133_sub7 != null) {
-				anInt3449 = class133_sub7.getMinY();
+				anInt3449 = class133_sub7.getMinYorMaxYCheckTHIS();
 				if (JunkTex.aBoolean4518 && (aClass102_4941.anInt1720 == -1
 						|| (Static2.method1744(aClass102_4941.anInt1720, 170).aBoolean330))) {
-					Class133_Sub7 class133_sub7_10_ = Static2.method1359(-10345, anInt3495,
+					SceneGraphNode_AbstractModelRenderer class133_sub7_10_ = Static2.method1359(-10345, anInt3495,
 							(class46_9_ == null ? animation : class46_9_), class133_sub7, 0, 160, anInt3500, 240, 0, i,
 							anInt3436, (class46_9_ != null ? anInt3483 : anInt3501), 1, aBoolean3488);
 					float f = RT4GL.method1653();
@@ -133,38 +133,38 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 					RT4GL.enableDepthBufferWriting();
 					RT4GL.setupSomeCustomProjection(f, f_11_);
 				}
-				if (Class14_Sub3.aClass133_Sub1_Sub1_2748 == this) {
+				if (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748 == this) {
 					for (int i_12_ = Static2.aClass66Array3721.length - 1; i_12_ >= 0; i_12_--) {
 						Class66 class66 = Static2.aClass66Array3721[i_12_];
 						if (class66 != null && class66.anInt1043 != -1) {
 							if (class66.anInt1046 == 1 && class66.anInt1049 >= 0
-									&& ((Class14_Sub4.aClass133_Sub1_Sub2Array2785).length > class66.anInt1049)) {
-								Class133_Sub1_Sub2 class133_sub1_sub2 = (Class14_Sub4.aClass133_Sub1_Sub2Array2785[class66.anInt1049]);
+									&& ((Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785).length > class66.anInt1049)) {
+								SceneGraphNode_GameEntity_Sub2 class133_sub1_sub2 = (Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[class66.anInt1049]);
 								if (class133_sub1_sub2 != null) {
-									int i_13_ = (-((Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495) / 32)
+									int i_13_ = (-((Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495) / 32)
 											+ (class133_sub1_sub2.anInt3495 / 32));
-									int i_14_ = (-((Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436) / 32)
+									int i_14_ = (-((Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436) / 32)
 											+ (class133_sub1_sub2.anInt3436 / 32));
 									method1809(i_4_, i_2_, class133_sub7, class66.anInt1043, i, i_3_, i_8_, i_6_,
 											-14498, i_5_, i_13_, i_14_, i_7_);
 								}
 							}
 							if (class66.anInt1046 == 2) {
-								int i_15_ = ((-Class133_Sub6.anInt3676 + class66.anInt1047) * 4
-										+ (-((Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495) / 32) + 2));
+								int i_15_ = ((-SceneGraphNode_Projectile.anInt3676 + class66.anInt1047) * 4
+										+ (-((Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495) / 32) + 2));
 								int i_16_ = ((-Class58.anInt947 + class66.anInt1044) * 4
-										+ (-((Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436) / 32) + 2));
+										+ (-((Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436) / 32) + 2));
 								method1809(i_4_, i_2_, class133_sub7, class66.anInt1043, i, i_3_, i_8_, i_6_, -14498,
 										i_5_, i_15_, i_16_, i_7_);
 							}
 							if (class66.anInt1046 == 10 && class66.anInt1049 >= 0
-									&& (class66.anInt1049 < (JunkTex.aClass133_Sub1_Sub1Array4474).length)) {
-								Class133_Sub1_Sub1 class133_sub1_sub1_17_ = (JunkTex.aClass133_Sub1_Sub1Array4474[class66.anInt1049]);
+									&& (class66.anInt1049 < (JunkTex.aSceneGraphNode_GameEntity_Sub1Array4474).length)) {
+								SceneGraphNode_GameEntity_Sub1 class133_sub1_sub1_17_ = (JunkTex.aSceneGraphNode_GameEntity_Sub1Array4474[class66.anInt1049]);
 								if (class133_sub1_sub1_17_ != null) {
 									int i_18_ = ((class133_sub1_sub1_17_.anInt3495 / 32)
-											- (Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495) / 32);
+											- (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495) / 32);
 									int i_19_ = ((class133_sub1_sub1_17_.anInt3436 / 32)
-											- (Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436) / 32);
+											- (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436) / 32);
 									method1809(i_4_, i_2_, class133_sub7, class66.anInt1043, i, i_3_, i_8_, i_6_,
 											-14498, i_5_, i_18_, i_19_, i_7_);
 								}
@@ -221,7 +221,7 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 					if (i_22_ != 0)
 						class133_sub7.method1855(0, i_22_, 0);
 				}
-				Class133_Sub7 class133_sub7_51_ = null;
+				SceneGraphNode_AbstractModelRenderer class133_sub7_51_ = null;
 				if (!aBoolean4921 && anInt3487 != -1 && anInt3470 != -1) {
 					Class60 class60 = Class127.method1749(anInt3487, (byte) -123);
 					class133_sub7_51_ = class60.method1267(0, anInt3470);
@@ -237,12 +237,12 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 						}
 					}
 				}
-				Class133_Sub7 class133_sub7_52_ = null;
-				if (!aBoolean4921 && aClass133_Sub7_4933 != null) {
+				SceneGraphNode_AbstractModelRenderer class133_sub7_52_ = null;
+				if (!aBoolean4921 && aSceneGraphNode_AbstractModelRenderer_4933 != null) {
 					if (anInt4910 <= Class14_Sub2_Sub20.anInt4064)
-						aClass133_Sub7_4933 = null;
+						aSceneGraphNode_AbstractModelRenderer_4933 = null;
 					if (anInt4929 <= Class14_Sub2_Sub20.anInt4064 && anInt4910 > Class14_Sub2_Sub20.anInt4064) {
-						class133_sub7_52_ = aClass133_Sub7_4933;
+						class133_sub7_52_ = aSceneGraphNode_AbstractModelRenderer_4933;
 						class133_sub7_52_.method1855(-anInt3495 + anInt4934, -anInt3500 + anInt4931,
 								anInt4920 - anInt3436);
 						if (anInt3469 == 512)
@@ -274,7 +274,7 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 	}
 
 	@Override
-	public int getMinY() {
+	public int getMinYorMaxYCheckTHIS() {
 		int i = anInt3449;
 		return i;
 	}
@@ -371,7 +371,7 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 			anInt4940 = class14_sub10.readUShort();
 			anInt4932 = class14_sub10.readUShort();
 			if (i_65_ != anInt4917 || anInt4909 != i_66_ || i_67_ != anInt4940 || anInt4932 != i_68_)
-				Class133_Sub4.method1839(this, (byte) 7);
+				SceneGraphNode_AnimatedLocation.method1839(this, (byte) 7);
 		}
 		if (aClass102_4941 == null)
 			aClass102_4941 = new Class102();
@@ -394,13 +394,13 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 		return class124_69_;
 	}
 
-	public void method1809(int i, int i_70_, Class133_Sub7 class133_sub7, int i_71_, int i_72_, int i_73_, int i_74_,
+	public void method1809(int i, int i_70_, SceneGraphNode_AbstractModelRenderer class133_sub7, int i_71_, int i_72_, int i_73_, int i_74_,
 			int i_75_, int i_76_, int i_77_, int i_78_, int i_79_, int i_80_) {
 		if (i_76_ == -14498) {
 			int i_81_ = i_79_ * i_79_ + i_78_ * i_78_;
 			if (i_81_ >= 16 && i_81_ <= 360000) {
 				i_81_ = (int) (Math.atan2(i_78_, i_79_) * 325.949) & 0x7ff;
-				Class133_Sub7 class133_sub7_82_ = JunkTex.method672(anInt3436, anInt3500, i_71_, 4435, i_81_,
+				SceneGraphNode_AbstractModelRenderer class133_sub7_82_ = JunkTex.method672(anInt3436, anInt3500, i_71_, 4435, i_81_,
 						class133_sub7, anInt3495);
 				if (class133_sub7_82_ != null) {
 					float f = RT4GL.method1653();
@@ -426,7 +426,7 @@ public class Class133_Sub1_Sub1 extends Class133_Sub1 {
 		}
 	}
 
-	public Class133_Sub1_Sub1() {
+	public SceneGraphNode_GameEntity_Sub1() {
 		anInt4905 = 0;
 		aShort4913 = (short) 0;
 		anInt4917 = 0;

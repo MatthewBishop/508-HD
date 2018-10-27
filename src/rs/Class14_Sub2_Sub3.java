@@ -10,18 +10,13 @@ import com.jagex.link.Linkable;
 import com.jagex.rt4.IntegerNode;
 
 public class Class14_Sub2_Sub3 extends Cacheable {
-	public static int anInt3769;
 	public static int anInt3771 = 0;
 	public static int[] anIntArray3773;
-	public static Class124 aClass124_3774 = Class124.method263(1178, ":tradereq:");
-	public static Class124 aClass124_3778 = Class124.method263(1178, "T");
+	public static Class124 aClass124_3774 = Class124.method263(":tradereq:");
+	public static Class124 aClass124_3778 = Class124.method263("T");
 	public HashTable aClass55_3783;
 	public static int gameLevel;
 	public static int anInt3787;
-
-	static {
-		anInt3769 = 0;
-	}
 
 	public int method267(byte i, int i_0_, int i_1_) {
 		if (aClass55_3783 == null) {
@@ -48,10 +43,8 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 			method272(70, (byte) -7);
 	}
 
-	public static int method270(int i, int i_7_, int i_8_) {
+	public static int method270(int i, int i_8_) {
 		int i_9_ = i >>> 63;
-		if (i_7_ != 1)
-			anInt3769 = 75;
 		int i_10_ = (i_9_ + i) / i_8_ - i_9_;
 		return i_10_;
 	}
@@ -142,16 +135,14 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 		}
 	}
 
-	public static boolean method277(int i, int i_28_, int i_29_, byte i_30_, int i_31_, boolean bool, int i_32_,
-			int i_33_, int i_34_, int i_35_, int i_36_, int i_37_) {
+	public static boolean method277(int i, int i_28_, int i_29_, int i_31_, boolean bool, int i_32_, int i_33_,
+			int i_34_, int i_35_, int i_36_, int i_37_) {
 		for (int i_38_ = 0; i_38_ < 104; i_38_++) {
 			for (int i_39_ = 0; i_39_ < 104; i_39_++) {
 				Class33.anIntArrayArray575[i_38_][i_39_] = 0;
 				Class137.anIntArrayArray2203[i_38_][i_39_] = 99999999;
 			}
 		}
-		if (i_30_ != 98)
-			anInt3769 = 110;
 		Class33.anIntArrayArray575[i_28_][i_33_] = 99;
 		Class137.anIntArrayArray2203[i_28_][i_33_] = 0;
 		int i_40_ = i_28_;
@@ -325,7 +316,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 			i_43_ = Class33.anIntArrayArray575[i_40_][i_41_];
 		}
 		if (i_55_ > 0) {
-			Class133.method1782(-20179, i_55_, i_29_);
+			SceneGraphNode.method1782(-20179, i_55_, i_29_);
 			return true;
 		}
 		if (i_29_ == 1) {

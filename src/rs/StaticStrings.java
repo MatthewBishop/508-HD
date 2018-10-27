@@ -19,7 +19,7 @@ public class StaticStrings {
 		JunkTex.aClass124_2852 = Class7_Sub3_Sub1.aClass124_3715;
 		JunkTex.aClass124_4019 = Static2.aClass124_3337;
 		Class123.aClass124_2068 = Class98.aClass124_1673;
-		Class84.aClass124_1352 = Class133_Sub6.aClass124_3635;
+		Class84.aClass124_1352 = SceneGraphNode_Projectile.aClass124_3635;
 		JunkTex.aClass124_2077 = JunkTex.aClass124_4365;
 		Class138.aClass124_2226 = Class84.aClass124_1349;
 		JunkTex.aClass124_4368 = Class110.aClass124_1849;
@@ -30,15 +30,15 @@ public class StaticStrings {
 		Class14_Sub28.aClass124_3226 = JunkTex.aClass124_4259;
 		Class14_Sub30.aClass124_3274 = JunkTex.aClass124_4224;
 		JunkTex.aClass124_4538 = Class120.aClass124_2001;
-		client.aClass124_2631 = Class133_Sub6.aClass124_3666;
+		client.aClass124_2631 = SceneGraphNode_Projectile.aClass124_3666;
 		JunkTex.aClass124_94 = JunkTex.aClass124_4706;
-		Class133_Sub3.aClass124_3568 = Class115.aClass124_1924;
+		SceneGraphNode_GroundObject.aClass124_3568 = Class115.aClass124_1924;
 		JunkTex.aClass124_3409 = Class14_Sub2_Sub4.aClass124_3793;
 		JunkTex.aClass124_2802 = JunkTex.aClass124_2542;
 		Class64.aClass124_1011 = Static2.aClass124_3353;
 		Class127.aClass124_2117 = Class14_Sub2_Sub12.aClass124_3895;
 		JunkTex.aClass124_4113 = Class60.aClass124_982;
-		Class133_Sub5.aClass124_3610 = JunkTex.aClass124_3124;
+		SceneGraphNode_SpotAnimation.aClass124_3610 = JunkTex.aClass124_3124;
 		Class124.aClass124_2497 = Class75.aClass124_1152;
 		Class14_Sub17.aClass124_3033 = Static2.aClass124_3747;
 		JunkTex.aClass124_4511 = Class108.aClass124_1828;
@@ -54,7 +54,7 @@ public class StaticStrings {
 		JunkTex.aClass124_3291 = Class131.aClass124_2163;
 		JunkTex.aClass124_4302 = Static2.aClass124_4040;
 		Class58.aClass124_942 = Class7_Sub1.aClass124_2660;
-		Class118.aClass124_1988 = Class133_Sub1_Sub2.aClass124_4950;
+		Class118.aClass124_1988 = SceneGraphNode_GameEntity_Sub2.aClass124_4950;
 		Class110.aClass124_1853 = Static2.aClass124_221;
 		Class97.aClass124_1640 = Class131.aClass124_2153;
 		JunkTex.aClass124_4122 = Class84.aClass124_1350;
@@ -78,10 +78,10 @@ public class StaticStrings {
 		JunkTex.aClass124_4315 = Class14_Sub2_Sub10.aClass124_3867;
 		JunkTex.aClass124_4118 = Class14_Sub13.aClass124_2955;
 		Static2.aClass124_3948 = JunkTex.aClass124_4696;
-		Static2.aClass124_1683 = Class133_Sub1_Sub2.aClass124_4948;
+		Static2.aClass124_1683 = SceneGraphNode_GameEntity_Sub2.aClass124_4948;
 		Class75.aClass124_1182 = Class56_Sub1.aClass124_3321;
 		Class104.aClass124_1743 = Class40.aClass124_680;
-		Class15.aClass124_373 = Class133_Sub1_Sub1.aClass124_4942;
+		Class15.aClass124_373 = SceneGraphNode_GameEntity_Sub1.aClass124_4942;
 		JunkTex.aClass124_4702 = JunkTex.aClass124_4412;
 		JunkTex.aClass124_695 = Class59.aClass124_956;
 		Class118.aClass124_1981 = Class14_Sub30.aClass124_3281;
@@ -95,7 +95,7 @@ public class StaticStrings {
 		Class14_Sub9_Sub1.aClass124_4808 = Class64.aClass124_1009;
 		Class56.aClass124_923 = Class69.aClass124_1067;
 		Static2.aClass124_1781 = Class51.aClass124_841;
-		Class133.aClass124_2183 = Class133.aClass124_2175;
+		SceneGraphNode.aClass124_2183 = SceneGraphNode.aClass124_2175;
 		Class118.aClass124_1973 = Class138.aClass124_2215;
 	}
 }

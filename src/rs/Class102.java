@@ -4,14 +4,14 @@
 package rs;
 
 import com.jagex.cache.anim.Animation;
+import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.util.Util;
 
 public class Class102 {
-	public static int anInt1702;
 	public long aLong1706;
-	public static boolean aBoolean1707;
 	public static int anInt1709;
-	public static Class124 aClass124_1710 = Class124.method263(1178, "Stufe)2");
+	public static Class124 aClass124_1710 = Class124.method263("Stufe)2");
 	public boolean aBoolean1711;
 	public static Class9_Sub1 aClass9_Sub1_1712;
 	public long aLong1713;
@@ -26,13 +26,13 @@ public class Class102 {
 		anInt1717 = 0;
 	}
 
-	public Class133_Sub7 method1516(Animation animation, int i, int i_0_, int i_1_, Animation class46_2_) {
+	public SceneGraphNode_AbstractModelRenderer method1516(Animation animation, int i, int i_0_, int i_1_, Animation class46_2_) {
 		if (i_0_ != -13) {
-			Class133_Sub7 class133_sub7 = null;
+			SceneGraphNode_AbstractModelRenderer class133_sub7 = null;
 			return class133_sub7;
 		}
 		if (anInt1720 != -1) {
-			Class133_Sub7 class133_sub7 = Static2.method1744(anInt1720, 170).method209(i, i_1_, class46_2_, animation,
+			SceneGraphNode_AbstractModelRenderer class133_sub7 = Static2.method1744(anInt1720, 170).method209(i, i_1_, class46_2_, animation,
 					-110);
 			return class133_sub7;
 		}
@@ -61,39 +61,39 @@ public class Class102 {
 				}
 			}
 		}
-		Class133_Sub7 class133_sub7 = (Class133_Sub7) Class36.aClass52_621.get(l);
+		SceneGraphNode_AbstractModelRenderer class133_sub7 = (SceneGraphNode_AbstractModelRenderer) Class36.aClass52_621.get(l);
 		if (class133_sub7 == null) {
 			boolean bool = false;
 			for (int i_4_ = 0; i_4_ < 12; i_4_++) {
 				int i_5_ = is[i_4_];
 				if ((i_5_ & 0x40000000) == 0) {
-					if ((i_5_ & ~0x7fffffff) != 0 && !Applet_Sub1.method27(i_5_ & 0x3fffffff, -4).method982(false))
+					if ((i_5_ & ~0x7fffffff) != 0 && !Class102.method27(i_5_ & 0x3fffffff, -4).method982(false))
 						bool = true;
 				} else if (!JunkTex.method605(89, i_5_ & 0x3fffffff).method1964(aBoolean1711, (byte) -72))
 					bool = true;
 			}
 			if (bool) {
 				if (aLong1706 != -1L)
-					class133_sub7 = ((Class133_Sub7) Class36.aClass52_621.get(aLong1706));
+					class133_sub7 = ((SceneGraphNode_AbstractModelRenderer) Class36.aClass52_621.get(aLong1706));
 				if (class133_sub7 == null) {
-					Class133_Sub7 class133_sub7_6_ = null;
+					SceneGraphNode_AbstractModelRenderer class133_sub7_6_ = null;
 					return class133_sub7_6_;
 				}
 			}
 			if (class133_sub7 == null) {
-				Class133_Sub2[] class133_sub2s = new Class133_Sub2[12];
+				SceneGraphNode_Model[] class133_sub2s = new SceneGraphNode_Model[12];
 				int i_7_ = 0;
 				for (int i_8_ = 0; i_8_ < 12; i_8_++) {
 					int i_9_ = is[i_8_];
 					if ((i_9_ & 0x40000000) == 0) {
 						if ((i_9_ & ~0x7fffffff) != 0) {
-							Class133_Sub2 class133_sub2 = Applet_Sub1.method27(i_9_ & 0x3fffffff, -4)
+							SceneGraphNode_Model class133_sub2 = Class102.method27(i_9_ & 0x3fffffff, -4)
 									.method981((byte) -47);
 							if (class133_sub2 != null)
 								class133_sub2s[i_7_++] = class133_sub2;
 						}
 					} else {
-						Class133_Sub2 class133_sub2 = JunkTex.method605(98, i_9_ & 0x3fffffff)
+						SceneGraphNode_Model class133_sub2 = JunkTex.method605(98, i_9_ & 0x3fffffff)
 								.method1965(i_0_ + 52, aBoolean1711);
 						if (class133_sub2 != null)
 							class133_sub2s[i_7_++] = class133_sub2;
@@ -117,7 +117,7 @@ public class Class102 {
 						}
 					}
 				}
-				Class133_Sub2 class133_sub2 = new Class133_Sub2(class133_sub2s, i_7_);
+				SceneGraphNode_Model class133_sub2 = new SceneGraphNode_Model(class133_sub2s, i_7_);
 				for (int i_18_ = 0; i_18_ < 5; i_18_++) {
 					if (JunkTex.aShortArrayArray4496[i_18_].length > anIntArray1722[i_18_])
 						class133_sub2.method1813(Class53.aShortArray866[i_18_],
@@ -132,7 +132,7 @@ public class Class102 {
 				aLong1706 = l;
 			}
 		}
-		Class133_Sub7 class133_sub7_19_;
+		SceneGraphNode_AbstractModelRenderer class133_sub7_19_;
 		if (class46_2_ != null || animation != null) {
 			if (class46_2_ != null && animation != null)
 				class133_sub7_19_ = class46_2_.method1178(i, (byte) 46, i_1_, class133_sub7, animation);
@@ -142,7 +142,7 @@ public class Class102 {
 				class133_sub7_19_ = class46_2_.method1168((byte) 120, i_1_, class133_sub7);
 		} else
 			return class133_sub7;
-		Class133_Sub7 class133_sub7_20_ = class133_sub7_19_;
+		SceneGraphNode_AbstractModelRenderer class133_sub7_20_ = class133_sub7_19_;
 		return class133_sub7_20_;
 	}
 
@@ -167,7 +167,7 @@ public class Class102 {
 
 	public void method1518(int i, int i_21_, int i_22_) {
 		int i_23_ = client.anIntArray2644[i];
-		if (anIntArray1715[i_23_] != 0 && Applet_Sub1.method27(i_21_, -4) != null) {
+		if (anIntArray1715[i_23_] != 0 && Class102.method27(i_21_, -4) != null) {
 			anIntArray1715[i_23_] = Class66.method1294(-2147483648, i_21_);
 			if (i_22_ <= 112)
 				method1526(true, 116, 35);
@@ -192,14 +192,14 @@ public class Class102 {
 		return i_26_;
 	}
 
-	public Class133_Sub7 method1521(Animation animation, int i, int i_27_) {
+	public SceneGraphNode_AbstractModelRenderer method1521(Animation animation, int i, int i_27_) {
 		if (i != 1073741823)
 			method1516(null, 5, -39, 66, null);
 		if (anInt1720 != -1) {
-			Class133_Sub7 class133_sub7 = Static2.method1744(anInt1720, 170).method224((byte) -113, animation, i_27_);
+			SceneGraphNode_AbstractModelRenderer class133_sub7 = Static2.method1744(anInt1720, 170).method224((byte) -113, animation, i_27_);
 			return class133_sub7;
 		}
-		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Class70.aClass52_1079.get(aLong1713));
+		SceneGraphNode_AbstractModelRenderer class133_sub7 = ((SceneGraphNode_AbstractModelRenderer) Class70.aClass52_1079.get(aLong1713));
 		if (class133_sub7 == null) {
 			boolean bool = false;
 			for (int i_28_ = 0; i_28_ < 12; i_28_++) {
@@ -207,30 +207,30 @@ public class Class102 {
 				if ((i_29_ & 0x40000000) != 0) {
 					if (!JunkTex.method605(i - 1073741729, i_29_ & 0x3fffffff).method1975(0, aBoolean1711))
 						bool = true;
-				} else if ((i_29_ & ~0x7fffffff) != 0 && !Applet_Sub1.method27(i_29_ & 0x3fffffff, -4).method983(false))
+				} else if ((i_29_ & ~0x7fffffff) != 0 && !Class102.method27(i_29_ & 0x3fffffff, -4).method983(false))
 					bool = true;
 			}
 			if (bool) {
-				Class133_Sub7 class133_sub7_30_ = null;
+				SceneGraphNode_AbstractModelRenderer class133_sub7_30_ = null;
 				return class133_sub7_30_;
 			}
 			int i_31_ = 0;
-			Class133_Sub2[] class133_sub2s = new Class133_Sub2[12];
+			SceneGraphNode_Model[] class133_sub2s = new SceneGraphNode_Model[12];
 			for (int i_32_ = 0; i_32_ < 12; i_32_++) {
 				int i_33_ = anIntArray1715[i_32_];
 				if ((i_33_ & 0x40000000) != 0) {
-					Class133_Sub2 class133_sub2 = JunkTex.method605(i ^ 0x3fffffa8, i_33_ & 0x3fffffff)
+					SceneGraphNode_Model class133_sub2 = JunkTex.method605(i ^ 0x3fffffa8, i_33_ & 0x3fffffff)
 							.method1973(-107, aBoolean1711);
 					if (class133_sub2 != null)
 						class133_sub2s[i_31_++] = class133_sub2;
 				} else if ((i_33_ & ~0x7fffffff) != 0) {
-					Class133_Sub2 class133_sub2 = Applet_Sub1.method27(i_33_ & 0x3fffffff, i ^ ~0x3ffffffc)
+					SceneGraphNode_Model class133_sub2 = Class102.method27(i_33_ & 0x3fffffff, i ^ ~0x3ffffffc)
 							.method977((byte) 61);
 					if (class133_sub2 != null)
 						class133_sub2s[i_31_++] = class133_sub2;
 				}
 			}
-			Class133_Sub2 class133_sub2 = new Class133_Sub2(class133_sub2s, i_31_);
+			SceneGraphNode_Model class133_sub2 = new SceneGraphNode_Model(class133_sub2s, i_31_);
 			for (int i_34_ = 0; i_34_ < 5; i_34_++) {
 				if (anIntArray1722[i_34_] < JunkTex.aShortArrayArray4496[i_34_].length)
 					class133_sub2.method1813(Class53.aShortArray866[i_34_],
@@ -252,7 +252,7 @@ public class Class102 {
 			is = new int[12];
 			for (int i_37_ = 0; i_37_ < 7; i_37_++) {
 				for (int i_38_ = 0; Class38.anInt2617 > i_38_; i_38_++) {
-					Class21 class21 = Applet_Sub1.method27(i_38_, -4);
+					Class21 class21 = Class102.method27(i_38_, -4);
 					if (class21 != null && !class21.aBoolean449 && (bool ? 7 : 0) + i_37_ == class21.anInt446) {
 						is[client.anIntArray2644[i_37_]] = Class66.method1294(i_38_, -2147483648);
 						break;
@@ -286,24 +286,24 @@ public class Class102 {
 		return i_44_;
 	}
 
-	public Class133_Sub7 method1524(int i, int i_45_, int i_46_, Animation animation, int i_47_) {
+	public SceneGraphNode_AbstractModelRenderer method1524(int i, int i_45_, int i_46_, Animation animation, int i_47_) {
 		long l = (long) i << 32 | i_46_ << 16 | i;
 		if (i_47_ < 46) {
-			Class133_Sub7 class133_sub7 = null;
+			SceneGraphNode_AbstractModelRenderer class133_sub7 = null;
 			return class133_sub7;
 		}
-		Class133_Sub7 class133_sub7 = (Class133_Sub7) Class70.aClass52_1079.get(l);
+		SceneGraphNode_AbstractModelRenderer class133_sub7 = (SceneGraphNode_AbstractModelRenderer) Class70.aClass52_1079.get(l);
 		if (class133_sub7 == null) {
-			Class133_Sub2[] class133_sub2s = new Class133_Sub2[2];
+			SceneGraphNode_Model[] class133_sub2s = new SceneGraphNode_Model[2];
 			int i_48_ = 0;
-			if (Applet_Sub1.method27(i, -4).method983(false) && Applet_Sub1.method27(i_46_, -4).method983(false)) {
-				Class133_Sub2 class133_sub2 = Applet_Sub1.method27(i, -4).method977((byte) 61);
+			if (Class102.method27(i, -4).method983(false) && Class102.method27(i_46_, -4).method983(false)) {
+				SceneGraphNode_Model class133_sub2 = Class102.method27(i, -4).method977((byte) 61);
 				if (class133_sub2 != null)
 					class133_sub2s[i_48_++] = class133_sub2;
-				class133_sub2 = Applet_Sub1.method27(i_46_, -4).method977((byte) 61);
+				class133_sub2 = Class102.method27(i_46_, -4).method977((byte) 61);
 				if (class133_sub2 != null)
 					class133_sub2s[i_48_++] = class133_sub2;
-				class133_sub2 = new Class133_Sub2(class133_sub2s, i_48_);
+				class133_sub2 = new SceneGraphNode_Model(class133_sub2s, i_48_);
 				for (int i_49_ = 0; i_49_ < 5; i_49_++) {
 					if (JunkTex.aShortArrayArray4496[i_49_].length > anIntArray1722[i_49_])
 						class133_sub2.method1813(Class53.aShortArray866[i_49_],
@@ -315,13 +315,13 @@ public class Class102 {
 				class133_sub7 = class133_sub2.method1827(64, 768, -50, -10, -50);
 				Class70.aClass52_1079.put(class133_sub7, l);
 			} else {
-				Class133_Sub7 class133_sub7_50_ = null;
+				SceneGraphNode_AbstractModelRenderer class133_sub7_50_ = null;
 				return class133_sub7_50_;
 			}
 		}
 		if (animation != null)
 			class133_sub7 = animation.method1167(i_45_, 65535, class133_sub7);
-		Class133_Sub7 class133_sub7_51_ = class133_sub7;
+		SceneGraphNode_AbstractModelRenderer class133_sub7_51_ = class133_sub7;
 		return class133_sub7_51_;
 	}
 
@@ -333,5 +333,25 @@ public class Class102 {
 	public void method1526(boolean bool, int i, int i_53_) {
 		anIntArray1722[i_53_] = i;
 		method1517(bool);
+	}
+
+	public static Class21 method27(int var0, int var1) {
+		try {
+			Class21 var2 = (Class21) JunkTex.aClass52_2817.get(var0);
+			if (var2 != null) {
+				return var2;
+			} else {
+				byte[] var3 = JunkTex.aClass9_2792.method163(var0, 3);
+				Class21 var4 = new Class21();
+				if (var3 != null) {
+					var4.method980(-29502, new Buffer(var3));
+				}
+		
+				JunkTex.aClass52_2817.put(var4, var0);
+				return var4;
+			}
+		} catch (Throwable var5) {
+			throw Util.error(var5, "pb.JA(" + var0 + ',' + var1 + ')');
+		}
 	}
 }

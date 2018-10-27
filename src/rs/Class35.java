@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.applet.Applet_Sub1;
 import com.jagex.io.Buffer;
 import com.jagex.link.Cache;
 import com.jagex.link.Deque;
@@ -12,12 +13,12 @@ import com.jagex.rt4.Class25;
 
 public class Class35 {
 	public int anInt587 = 0;
-	public static Class124 aClass124_588 = Class124.method263(1178, " <col=00ff80>");
+	public static Class124 aClass124_588 = Class124.method263(" <col=00ff80>");
 	public static Deque aClass2_589;
 	public static boolean aBoolean593;
 	public static AbstractSprite[] aClass14_Sub2_Sub19Array596;
-	public static Class124 aClass124_597 = Class124.method263(1178, "zap");
-	public static Class124 aClass124_598 = Class124.method263(1178, "Benutzen");
+	public static Class124 aClass124_597 = Class124.method263("zap");
+	public static Class124 aClass124_598 = Class124.method263("Benutzen");
 	public static Cache aClass20_599;
 	public static float aFloat600;
 	public static Class124 aClass124_601;
@@ -27,7 +28,7 @@ public class Class35 {
 	static {
 		aClass2_589 = new Deque();
 		aClass20_599 = new Cache(64);
-		aClass124_601 = Class124.method263(1178, "m");
+		aClass124_601 = Class124.method263("m");
 		anInt602 = -1;
 	}
 
@@ -147,22 +148,22 @@ public class Class35 {
 									JunkTex.anInt4741 >> 7,
 									1);
 					} else {
-						if (((JunkTex.tileFlags[Class14_Sub2_Sub3.gameLevel][(Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495 >> 39)][(Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436 >> 39)])
+						if (((JunkTex.tileFlags[Class14_Sub2_Sub3.gameLevel][(Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495 >> 39)][(Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436 >> 39)])
 								& 0x4) != 0)
-							Static2.method1498(false, (Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436) >> 39,
+							Static2.method1498(false, (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436) >> 39,
 									(JunkTex.aClass14_Sub29ArrayArrayArray3368),
-									(Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495) >> 39,
+									(Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495) >> 39,
 									0);
 						if (Class7_Sub3_Sub1.anInt3719 < 310) {
 							i_16_ = JunkTex.anInt4741 >> 39;
 							i_20_ = Class14_Sub30.anInt3271 >> 39;
-							int i_21_ = ((Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436) >> 39);
+							int i_21_ = ((Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436) >> 39);
 							int i_22_;
 							if (i_20_ >= i_21_)
 								i_22_ = i_20_ - i_21_;
 							else
 								i_22_ = -i_20_ + i_21_;
-							int i_23_ = ((Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495) >> 39);
+							int i_23_ = ((Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495) >> 39);
 							int i_24_;
 							if (i_23_ > i_16_)
 								i_24_ = i_23_ - i_16_;

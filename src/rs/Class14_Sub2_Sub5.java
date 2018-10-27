@@ -21,12 +21,11 @@ public class Class14_Sub2_Sub5 extends Cacheable {
 	public int anInt3810 = 0;
 	public int anInt3812;
 	public int anInt3813;
-	public static Class124 aClass124_3814 = Class124.method263(1178, "(Y<)4col>");
+	public static Class124 aClass124_3814 = Class124.method263("(Y<)4col>");
 	public static Cache aClass20_3815 = new Cache(128);
 	public static byte[][][] aByteArrayArrayArray3816;
 	public static Class9 aClass9_3817;
-	public static boolean aBoolean3818 = false;
-
+	
 	public void method281(int i) {
 		anInt3797 = i;
 		anInt3810 = 0;

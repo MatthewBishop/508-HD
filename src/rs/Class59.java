@@ -11,13 +11,11 @@ public class Class59 {
 	public static Class124 aClass124_956;
 	public static Class9 aClass9_957;
 	public static Class124 aClass124_958;
-	public static int anInt959;
-
 	static {
-		aClass124_953 = Class124.method263(1178, "k");
-		aClass124_956 = Class124.method263(1178, "M");
-		aClass124_958 = Class124.method263(1178, "slr2)3ws?order=LPWM");
-		anInt959 = 1;
+		aClass124_953 = Class124.method263("k");
+		aClass124_956 = Class124.method263("M");
+		aClass124_958 = Class124.method263("slr2)3ws?order=LPWM");
+		
 	}
 
 	public static boolean method1260(boolean bool, int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_,
@@ -199,7 +197,7 @@ public class Class59 {
 			i_15_ = Class33.anIntArrayArray575[i_13_][i_12_];
 		}
 		if (i_27_ > 0) {
-			Class133.method1782(-20179, i_27_, i_8_);
+			SceneGraphNode.method1782(-20179, i_27_, i_8_);
 			return true;
 		}
 		if (i_8_ == 1) {
@@ -228,15 +226,15 @@ public class Class59 {
 				Class14_Sub2_Sub7.anIntArray3825[Class64.anInt1012++] = 2047;
 			else if (i == 1) {
 				int i_28_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 3);
-				Class14_Sub3.aClass133_Sub1_Sub1_2748.method1799(false, (byte) 127, i_28_);
+				Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.method1799(false, (byte) 127, i_28_);
 				int i_29_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 1);
 				if (i_29_ == 1)
 					Class14_Sub2_Sub7.anIntArray3825[Class64.anInt1012++] = 2047;
 			} else if (i == 2) {
 				int i_30_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 3);
-				Class14_Sub3.aClass133_Sub1_Sub1_2748.method1799(true, (byte) 100, i_30_);
+				Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.method1799(true, (byte) 100, i_30_);
 				int i_31_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 3);
-				Class14_Sub3.aClass133_Sub1_Sub1_2748.method1799(true, (byte) 123, i_31_);
+				Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.method1799(true, (byte) 123, i_31_);
 				int i_32_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 1);
 				if (i_32_ == 1)
 					Class14_Sub2_Sub7.anIntArray3825[Class64.anInt1012++] = 2047;
@@ -248,7 +246,7 @@ public class Class59 {
 				if (i_35_ == 1)
 					Class14_Sub2_Sub7.anIntArray3825[Class64.anInt1012++] = 2047;
 				int i_36_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 7);
-				Class14_Sub3.aClass133_Sub1_Sub1_2748.method1800((byte) -87, i_36_, i_34_ == 1, i_33_);
+				Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.method1800((byte) -87, i_36_, i_34_ == 1, i_33_);
 			}
 		}
 	}

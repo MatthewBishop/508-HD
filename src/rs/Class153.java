@@ -29,11 +29,11 @@ public class Class153 {
 		for (Class14_Sub2_Sub7 class14_sub2_sub7 = (Class14_Sub2_Sub7) Class79.aClass2_1268
 				.getFront(); class14_sub2_sub7 != null; class14_sub2_sub7 = (Class14_Sub2_Sub7) Class79.aClass2_1268
 						.getNext()) {
-			Class133_Sub5 class133_sub5 = class14_sub2_sub7.aClass133_Sub5_3822;
-			if (class133_sub5.anInt3620 == Class14_Sub2_Sub3.gameLevel && !class133_sub5.aBoolean3621) {
+			SceneGraphNode_SpotAnimation class133_sub5 = class14_sub2_sub7.aSceneGraphNode_SpotAnimation_3822;
+			if (class133_sub5.anInt3620 == Class14_Sub2_Sub3.gameLevel && !class133_sub5.finishedAnimating) {
 				if (Class14_Sub2_Sub20.anInt4064 >= class133_sub5.anInt3616) {
 					class133_sub5.method1845((byte) 94, Class51.anInt839);
-					if (class133_sub5.aBoolean3621)
+					if (class133_sub5.finishedAnimating)
 						class14_sub2_sub7.unlink();
 					else
 						JunkTex.method519(class133_sub5.anInt3620, class133_sub5.anInt3622,

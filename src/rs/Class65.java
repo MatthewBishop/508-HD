@@ -11,16 +11,11 @@ public class Class65 {
 	public int anInt1022;
 	public int anInt1023;
 	public int anInt1024;
-	public static int anInt1025;
 	public static boolean aBoolean1026 = false;
 	public int anInt1027;
 	public int anInt1028;
 	public int anInt1030;
 	public static int anInt1034;
-
-	static {
-		anInt1025 = 20;
-	}
 
 	public void method1288(int i, byte i_0_, Buffer class14_sub10) {
 		for (;;) {
@@ -33,8 +28,6 @@ public class Class65 {
 	}
 
 	public static void method1289(boolean bool) {
-		if (!bool)
-			method1291(39, -31, 22);
 		Static2.aClass52_2370.clear();
 	}
 
@@ -60,7 +53,7 @@ public class Class65 {
 			return null;
 		for (int i_7_ = 0; i_7_ < class14_sub29.anInt3242; i_7_++) {
 			Class40 class40 = class14_sub29.aClass40Array3257[i_7_];
-			if ((class40.aLong677 >> 29 & 0x3L) == 2L && class40.anInt668 == i_5_ && class40.anInt678 == i_6_)
+			if ((class40.bitPacked >> 29 & 0x3L) == 2L && class40.anInt668 == i_5_ && class40.anInt678 == i_6_)
 				return class40;
 		}
 		return null;
@@ -117,6 +110,21 @@ public class Class65 {
 				anInt1028 = 255;
 		} else
 			anInt1028 = 0;
+	}
+
+	public static Class65 list(int i_19_) {
+		Class65 class65 = ((Class65) Class139.aClass52_2229.get(i_19_));
+		if (class65 != null) {
+			Class65 class65_20_ = class65;
+			return class65_20_;
+		}
+		byte[] is = Class14_Sub17.aClass9_3034.method163(i_19_, 1);
+		Class65 class65_21_ = new Class65();
+		if (is != null)
+			class65_21_.method1288(i_19_, (byte) -114, new Buffer(is));
+		Class139.aClass52_2229.put(class65_21_, i_19_);
+		Class65 class65_22_ = class65_21_;
+		return class65_22_;
 	}
 
 	public Class65() {

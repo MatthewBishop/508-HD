@@ -8,6 +8,7 @@ import com.jagex.rt4.AtmosphericEffects;
 import com.jagex.rt4.HDTile;
 import com.jagex.rt4.RT4;
 import com.jagex.rt4.ShadowManager;
+import com.jagex.rt4.Terrain;
 import com.jagex.rt4.lights.LightManager;
 
 import rs.Class1;
@@ -26,7 +27,6 @@ import rs.Class28;
 import rs.SDRaster;
 import rs.Class32;
 import rs.Class37;
-import rs.Class47;
 import rs.Class51;
 import rs.Class65;
 import rs.Class66;
@@ -180,7 +180,7 @@ public class MapRegion {
 					if (i_38_ < 104) {
 						int i_39_ = Class97.underlays[i_14_][i_38_][i_37_] & 0xff;
 						if (i_39_ > 0) {
-							Class65 class65 = Static2.method335(-100, i_39_ - 1);
+							Class65 class65 = Class65.list(i_39_ - 1);
 							Class115.anIntArray1917[i_37_] += class65.anInt1022;
 							Class14_Sub2_Sub3.anIntArray3773[i_37_] += class65.anInt1028;
 							Class21.anIntArray442[i_37_] += class65.anInt1023;
@@ -192,7 +192,7 @@ public class MapRegion {
 					if (i_40_ >= 0) {
 						int i_41_ = Class97.underlays[i_14_][i_40_][i_37_] & 0xff;
 						if (i_41_ > 0) {
-							Class65 class65 = Static2.method335(-98, i_41_ - 1);
+							Class65 class65 = Class65.list(i_41_ - 1);
 							Class115.anIntArray1917[i_37_] -= class65.anInt1022;
 							Class14_Sub2_Sub3.anIntArray3773[i_37_] -= class65.anInt1028;
 							Class21.anIntArray442[i_37_] -= class65.anInt1023;
@@ -248,7 +248,7 @@ public class MapRegion {
 								boolean bool_58_ = true;
 								if (i_52_ == 0 && (JunkTex.overlayTypes[i_14_][i_50_][i_51_]) != 0)
 									bool_58_ = false;
-								if (i_53_ > 0 && !(Class97.list(i_53_ - 1, -9810).aBoolean2410))
+								if (i_53_ > 0 && !(OverlayType.list(i_53_ - 1).aBoolean2410))
 									bool_58_ = false;
 								if (bool_58_ && i_56_ == i_54_ && i_55_ == i_54_ && i_57_ == i_54_)
 									Class66.anIntArrayArrayArray135[i_14_][i_50_][i_51_] = (Class66
@@ -280,7 +280,7 @@ public class MapRegion {
 										Class14_Sub2_Sub21.method441(i_64_, 127, i_60_),
 										Class14_Sub2_Sub21.method441(i_65_, 127, i_60_),
 										Class14_Sub2_Sub21.method441(i_66_, 127, i_60_), 0, 0, 0, 0, i_59_, 0);
-								if (i_14_ > 0 && i_60_ != -1 && (Static2.method335(-107, i_52_ - 1).aBoolean1020))
+								if (i_14_ > 0 && i_60_ != -1 && (Class65.list(i_52_ - 1).aBoolean1020))
 									ShadowManager.method2042(0, 0, true, false, i_50_, i_51_,
 											-(Static2.tileHeights[0][i_50_][i_51_]) + i_54_,
 											i_56_ - (Static2.tileHeights[0][i_50_ + 1][i_51_]),
@@ -293,7 +293,7 @@ public class MapRegion {
 													&& i_68_ >= 0 && i_68_ < 104) {
 												int i_69_ = ((JunkTex.overlays[i_14_][i_67_][i_68_]) & 0xff);
 												if (i_69_ != 0) {
-													OverlayType overlayType = (Class97.list(i_69_ - 1, -9810));
+													OverlayType overlayType = (OverlayType.list(i_69_ - 1));
 													if ((overlayType.anInt2414 != -1) && ((SDRaster.anInterface3_117
 															.method12((overlayType.anInt2414))) == 4)) {
 														JunkTex.anIntArrayArray2799[i_50_][i_51_] = ((overlayType.anInt2426)
@@ -308,7 +308,7 @@ public class MapRegion {
 							} else {
 								int i_70_ = ((JunkTex.overlayTypes[i_14_][i_50_][i_51_]) + 1);
 								byte i_71_ = (Class15.overlayOrientations[i_14_][i_50_][i_51_]);
-								OverlayType overlayType = Class97.list(i_53_ - 1, -9810);
+								OverlayType overlayType = OverlayType.list(i_53_ - 1);
 								if (!bool && (JunkTex.anIntArrayArray2799 != null) && i_14_ == 0) {
 									if (overlayType.anInt2414 == -1
 											|| (SDRaster.anInterface3_117.method12(overlayType.anInt2414)) != 4) {
@@ -318,7 +318,7 @@ public class MapRegion {
 														&& i_73_ >= 0 && i_73_ < 104) {
 													int i_74_ = ((JunkTex.overlays[i_14_][i_72_][i_73_]) & 0xff);
 													if (i_74_ != 0) {
-														OverlayType class150_75_ = (Class97.list(i_74_ - 1, -9810));
+														OverlayType class150_75_ = (OverlayType.list(i_74_ - 1));
 														if ((class150_75_.anInt2414) != -1 && ((SDRaster.anInterface3_117
 																.method12((class150_75_.anInt2414))) == 4)) {
 															JunkTex.anIntArrayArray2799[i_50_][i_51_] = (((class150_75_.anInt2413) << 56)
@@ -379,7 +379,7 @@ public class MapRegion {
 										Class7_Sub3_Sub1.method135(false, i_66_, i_77_), i_59_, i_78_);
 								if (i_14_ > 0)
 									ShadowManager.method2042(i_70_, i_71_, i_77_ == -2 || !overlayType.aBoolean2407,
-											(i_60_ == -1 || !(Static2.method335(-92, i_52_ - 1).aBoolean1020)), i_50_,
+											(i_60_ == -1 || !(Class65.list(i_52_ - 1).aBoolean1020)), i_50_,
 											i_51_, i_54_ - (Static2.tileHeights[0][i_50_][i_51_]),
 											i_56_ - (Static2.tileHeights[0][i_50_ + 1][i_51_]),
 											i_55_ - (Static2.tileHeights[0][i_50_ + 1][i_51_ + 1]),
@@ -404,19 +404,18 @@ public class MapRegion {
 				}
 			}
 			if (bool) {
-				HDTile[] class14_sub27s = Class47.method1189(fs_84_, is_12_, JunkTex.anIntArrayArrayArray2391[0],
-						fs, (byte) -125, JunkTex.tileFlags, i_14_, is, Class15.overlayOrientations[i_14_],
-						Class97.underlays[i_14_], JunkTex.overlays[i_14_], JunkTex.anIntArrayArray2799,
-						JunkTex.overlayTypes[i_14_], fs_86_, Static2.tileHeights[i_14_]);
+				HDTile[] class14_sub27s = Terrain.addTiles(fs_84_, is_12_, JunkTex.anIntArrayArrayArray2391[0],
+						fs, JunkTex.tileFlags, i_14_, is, Class15.overlayOrientations[i_14_], Class97.underlays[i_14_],
+						JunkTex.overlays[i_14_], JunkTex.anIntArrayArray2799, JunkTex.overlayTypes[i_14_],
+						fs_86_, Static2.tileHeights[i_14_]);
 				Class14_Sub21.setHDTiles(i_14_, class14_sub27s);
 			} else {
-				HDTile[] class14_sub27s = Class47.method1189(fs_84_, is_12_, null, fs, (byte) -109,
-						JunkTex.tileFlags, i_14_, is, Class15.overlayOrientations[i_14_], Class97.underlays[i_14_],
-						JunkTex.overlays[i_14_], null, JunkTex.overlayTypes[i_14_], fs_86_,
-						Static2.tileHeights[i_14_]);
-				HDTile[] class14_sub27s_91_ = JunkTex.method1398(Static2.tileHeights[i_14_],
-						Class15.overlayOrientations[i_14_], 4, JunkTex.overlays[i_14_], JunkTex.overlayTypes[i_14_],
-						i_14_, fs, fs_84_, is_12_, JunkTex.tileFlags, fs_86_, Class97.underlays[i_14_]);
+				HDTile[] class14_sub27s = Terrain.addTiles(fs_84_, is_12_, null, fs, JunkTex.tileFlags,
+						i_14_, is, Class15.overlayOrientations[i_14_], Class97.underlays[i_14_], JunkTex.overlays[i_14_],
+						null, JunkTex.overlayTypes[i_14_], fs_86_, Static2.tileHeights[i_14_]);
+				HDTile[] class14_sub27s_91_ = Terrain.addEdgeSmoothingMesh(Static2.tileHeights[i_14_],
+						Class15.overlayOrientations[i_14_], JunkTex.overlays[i_14_], JunkTex.overlayTypes[i_14_], i_14_,
+						fs, fs_84_, is_12_, JunkTex.tileFlags, fs_86_, Class97.underlays[i_14_]);
 				HDTile[] class14_sub27s_92_ = (new HDTile[class14_sub27s.length
 						+ class14_sub27s_91_.length]);
 				for (int i_93_ = 0; i_93_ < class14_sub27s.length; i_93_++)
@@ -424,9 +423,9 @@ public class MapRegion {
 				for (int i_94_ = 0; class14_sub27s_91_.length > i_94_; i_94_++)
 					class14_sub27s_92_[class14_sub27s.length + i_94_] = class14_sub27s_91_[i_94_];
 				Class14_Sub21.setHDTiles(i_14_, class14_sub27s_92_);
-				Class32.method1064(Class15.overlayOrientations[i_14_], JunkTex.overlayTypes[i_14_], fs_84_,
-						Class97.underlays[i_14_], fs_86_, LightManager.lights, -46, i_14_, Static2.tileHeights[i_14_],
-						JunkTex.overlays[i_14_], LightManager.lightCount, fs);
+				Terrain.method1064(Class15.overlayOrientations[i_14_], JunkTex.overlayTypes[i_14_], fs_84_,
+						Class97.underlays[i_14_], fs_86_, LightManager.lights, i_14_, Static2.tileHeights[i_14_], JunkTex.overlays[i_14_],
+						LightManager.lightCount, fs);
 			}
 			Class97.underlays[i_14_] = null;
 			JunkTex.overlays[i_14_] = null;

@@ -11,8 +11,8 @@ import com.jagex.rt4.Class25;
 public class Class123 {
 	public static int anInt2062;
 	public static Font aFont2063;
-	public static Class124 aClass124_2064 = Class124.method263(1178, "Started 3d library");
-	public static Class124 aClass124_2065 = Class124.method263(1178, ":duelstake:");
+	public static Class124 aClass124_2064 = Class124.method263("Started 3d library");
+	public static Class124 aClass124_2065 = Class124.method263(":duelstake:");
 	public static float aFloat2067;
 	public static Class124 aClass124_2068 = aClass124_2064;
 
@@ -40,7 +40,7 @@ public class Class123 {
 		Class25.method1004(i_1_, i_4_, i_3_, i_2_, i_5_);
 		Class25.method1004(i_1_ + 1, i_4_ + 1, i_3_ - 2, 16, 0);
 		Class25.method1003(i_1_ + 1, i_4_ + 18, i_3_ - 2, i_2_ - 19, 0);
-		Class133_Sub3.aClass14_Sub2_Sub16_3567.method364(Class64.aClass124_1011, i_1_ + 3, i_4_ + 14, i_5_, -1);
+		SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567.method364(Class64.aClass124_1011, i_1_ + 3, i_4_ + 14, i_5_, -1);
 		int i_6_ = JunkTex.anInt4640;
 		int i_7_ = Static2.anInt1804;
 		if (i <= 115)
@@ -50,7 +50,7 @@ public class Class123 {
 			int i_10_ = 16777215;
 			if (i_1_ < i_6_ && i_6_ < i_3_ + i_1_ && i_9_ - 13 < i_7_ && i_7_ < i_9_ + 3)
 				i_10_ = 16776960;
-			Class133_Sub3.aClass14_Sub2_Sub16_3567.method364(Static2.method1170((byte) -99, i_8_), i_1_ + 3, i_9_,
+			SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567.method364(Static2.method1170((byte) -99, i_8_), i_1_ + 3, i_9_,
 					i_10_, 0);
 		}
 		Static2.method1317(Class14_Sub2_Sub8.anInt3832, JunkTex.anInt4550, Class14_Sub14.anInt2984, 127,

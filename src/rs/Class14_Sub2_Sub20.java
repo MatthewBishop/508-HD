@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.applet.ErrorReporting;
 import com.jagex.io.Buffer;
 import com.jagex.link.Cacheable;
 import com.jagex.rt4.RT4GL;
@@ -21,9 +22,9 @@ public class Class14_Sub2_Sub20 extends Cacheable {
 	public static void method428(int i) {
 		RT4GL.destroyGL();
 		BrowserControlUtil.hide();
-		if (JunkTex.aFrame3962 != null)
-			Class14_Sub2_Sub4.method278(JunkTex.signlink, JunkTex.aFrame3962, 120);
-		JunkTex.aFrame3962 = null;
+		if (ErrorReporting.aFrame3962 != null)
+			Class14_Sub2_Sub4.method278(ErrorReporting.signlink, ErrorReporting.aFrame3962, 120);
+		ErrorReporting.aFrame3962 = null;
 		JunkTex.method643(0, (byte) -92);
 		Class14_Sub21.method897(121);
 	}

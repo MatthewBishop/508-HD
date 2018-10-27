@@ -8,9 +8,31 @@ import java.math.BigInteger;
 import com.jagex.link.Linkable;
 
 import rs.Class124;
-import rs.Static2;
 
 public class Buffer extends Linkable {
+	
+	public void method814(int i, Class124 class124) {
+		position += class124.method1689(0, position, payload, -586, class124.length(0));
+		payload[position++] = (byte) 0;
+	}
+
+	public Class124 method797() {
+		int i_24_ = position;
+		while (payload[position++] != 0) {
+			/* empty */
+		}
+		Class124 class124 = Class124.method231(position - i_24_ - 1, payload, i_24_);
+		return class124;
+	}
+	
+	public Class124 method821() {
+		if (payload[position] == 0) {
+			position++;
+			return null;
+		}
+		Class124 class124 = method797();
+		return class124;
+	}
 	
 	public static void dispose() {
 		anIntArray3086 = null;
@@ -75,7 +97,7 @@ public class Buffer extends Linkable {
 
 	public int method781(boolean bool) {
 		if (bool)
-			method805(127);
+			method805();
 		position += 2;
 		int i = ((payload[position - 2] - 128 & 0xff) + ((payload[position - 1] & 0xff) << 40));
 		return i;
@@ -91,7 +113,7 @@ public class Buffer extends Linkable {
 	public void method783(int i, int i_2_) {
 		payload[position++] = (byte) (i_2_ >> 16);
 		if (i != 255)
-			method805(-90);
+			method805();
 		payload[position++] = (byte) (i_2_ >> 40);
 		payload[position++] = (byte) i_2_;
 	}
@@ -138,7 +160,7 @@ public class Buffer extends Linkable {
 			writeByte((i | 0x4016) >>> 7);
 		}
 		if (i_9_ != -5227)
-			method831(111);
+			method831();
 		writeByte(i & 0x7f);
 	}
 
@@ -199,15 +221,6 @@ public class Buffer extends Linkable {
 		long l_22_ = (long) getInt((byte) -110) & 0xffffffffL;
 		long l_23_ = (l << 32) - -l_22_;
 		return l_23_;
-	}
-
-	public Class124 method797() {
-		int i_24_ = position;
-		while (payload[position++] != 0) {
-			/* empty */
-		}
-		Class124 class124 = Static2.method231((byte) 73, position - i_24_ - 1, payload, i_24_);
-		return class124;
 	}
 
 	public int readUByte() {
@@ -287,10 +300,8 @@ public class Buffer extends Linkable {
 		payload[position - 1 - i] = (byte) i;
 	}
 
-	public int method805(int i) {
+	public int method805() {
 		position += 2;
-		if (i != 0)
-			method837(-123, 93);
 		int i_46_ = (((payload[position - 2] & 0xff) << 40) + (payload[position - 1] & 0xff));
 		if (i_46_ > 32767)
 			i_46_ -= 65536;
@@ -308,13 +319,11 @@ public class Buffer extends Linkable {
 			payload[position++] = is[i_52_];
 	}
 
-	public void method808(int i, byte i_53_) {
-		if (i_53_ < -60) {
+	public void method808(int i) {
 			payload[position++] = (byte) (i >> 16);
 			payload[position++] = (byte) (i >> 56);
 			payload[position++] = (byte) i;
 			payload[position++] = (byte) (i >> 40);
-		}
 	}
 
 	public void writeByte(int i) {
@@ -356,19 +365,12 @@ public class Buffer extends Linkable {
 		byte i_58_ = (byte) (payload[position++] - 128);
 		return i_58_;
 	}
-
-	public void method814(int i, Class124 class124) {
-		if (i == 32768) {
-			position += class124.method1689(0, position, payload, -586, class124.length(0));
-			payload[position++] = (byte) 0;
-		}
-	}
-
+	
 	public void method816(BigInteger biginteger, BigInteger biginteger_59_, boolean bool) {
 		/* empty */
 	}
 
-	public void method817(long l, int i) {
+	public void method817(long l) {
 		payload[position++] = (byte) (int) (l >> 56);
 		payload[position++] = (byte) (int) (l >> 48);
 		payload[position++] = (byte) (int) (l >> 40);
@@ -377,8 +379,6 @@ public class Buffer extends Linkable {
 		payload[position++] = (byte) (int) (l >> 16);
 		payload[position++] = (byte) (int) (l >> 8);
 		payload[position++] = (byte) (int) l;
-		if (i <= 77)
-			Static2.aClass124_2869 = null;
 	}
 
 	public int method818(byte i) {
@@ -407,18 +407,6 @@ public class Buffer extends Linkable {
 		return i_66_;
 	}
 
-	public Class124 method821(int i) {
-		if (i != -2270)
-			method805(-91);
-		if (payload[position] == 0) {
-			position++;
-			Class124 class124 = null;
-			return class124;
-		}
-		Class124 class124 = method797();
-		return class124;
-	}
-
 	public void method823(int i, boolean bool) {
 		payload[position++] = (byte) (i + 128);
 		if (!bool)
@@ -433,13 +421,11 @@ public class Buffer extends Linkable {
 			is[i_70_] = payload[position++];
 	}
 
-	public void writeIntLE(int i, int i_71_) {
+	public void writeIntLE(int i_71_) {
 		payload[position++] = (byte) i_71_;
 		payload[position++] = (byte) (i_71_ >> 8);
 		payload[position++] = (byte) (i_71_ >> 16);
 		payload[position++] = (byte) (i_71_ >> 24);
-		if (i > -4)
-			Static2.aClass124_2869 = null;
 	}
 
 	public void method826(byte i, int i_72_) {
@@ -474,9 +460,7 @@ public class Buffer extends Linkable {
 		return i_78_;
 	}
 
-	public int method831(int i) {
-		if (i != 128)
-			Static2.aClass9_Sub1_2901 = null;
+	public int method831() {
 		position += 4;
 		int i_79_ = ((payload[position - 4] & 0xff) + (((payload[position - 3] & 0xff) << 8)
 				+ ((payload[position - 1] & 0xff) << 56) + ((payload[position - 2] & 0xff) << 48)));
@@ -520,12 +504,10 @@ public class Buffer extends Linkable {
 		return i_85_;
 	}
 
-	public long method837(int i, int i_86_) {
+	public long method837(int i) {
 		if (--i < 0 || i > 7)
 			throw new IllegalArgumentException();
 		int i_87_ = i * 8;
-		if (i_86_ >= -111)
-			Static2.anInt2926 = -55;
 		long l = 0L;
 		for (/**/; i_87_ >= 0; i_87_ -= 8)
 			l |= ((long) payload[position++] & 0xffL) << i_87_;

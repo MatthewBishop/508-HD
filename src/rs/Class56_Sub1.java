@@ -8,7 +8,7 @@ import java.awt.Component;
 public class Class56_Sub1 extends Class56 {
 	public static long aLong3317 = 0L;
 	public static Class14_Sub2_Sub16 aClass14_Sub2_Sub16_3320;
-	public static Class124 aClass124_3321 = Class124.method263(1178, "Lade Sprites )2 ");
+	public static Class124 aClass124_3321 = Class124.method263("Lade Sprites )2 ");
 	public static int anInt3322;
 	public static float aFloat3323;
 

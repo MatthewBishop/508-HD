@@ -7,7 +7,7 @@ import com.jagex.rt4.Class148_Sub1;
 
 public class Class7_Sub2 extends Class7 {
 	public static Class124 aClass124_2667;
-	public static Class124 aClass124_2668 = Class124.method263(1178, "flash3:");
+	public static Class124 aClass124_2668 = Class124.method263("flash3:");
 	public static Class124 aClass124_2669;
 	public static Class124 aClass124_2670;
 	public static Class124 aClass124_2672;
@@ -17,7 +17,7 @@ public class Class7_Sub2 extends Class7 {
 	public static Class148_Sub1[] aClass148_Sub1Array2677;
 
 	static {
-		aClass124_2667 = Class124.method263(1178, "OFF");
+		aClass124_2667 = Class124.method263("OFF");
 		aClass124_2670 = aClass124_2668;
 		aClass124_2672 = aClass124_2668;
 		aClass124_2669 = aClass124_2667;
@@ -32,7 +32,7 @@ public class Class7_Sub2 extends Class7 {
 				Class83.method1407(i_1_ + 32, i & 0x3f), Class53.aClass124_867, Class83.method1407(37, i_1_ & i_0_) }),
 				(byte) -82));
 		class124.method1705((byte) 116);
-		Class133_Sub1.method1798(class124, (byte) 7);
+		SceneGraphNode_GameEntity.method1798(class124, (byte) 7);
 	}
 
 	public static void method126(int i) {

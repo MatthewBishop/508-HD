@@ -71,11 +71,11 @@ public class Class142 {
 	public int anInt2328;
 
 	static {
-		aClass124_2271 = Class124.method263(1178, "http:)4)4");
+		aClass124_2271 = Class124.method263("http:)4)4");
 		anInt2295 = 0;
 		aBoolean2299 = false;
 		anInt2315 = 0;
-		aClass124_2321 = Class124.method263(1178, "::fpson");
+		aClass124_2321 = Class124.method263("::fpson");
 	}
 
 	public boolean method1964(boolean bool, byte i) {
@@ -104,7 +104,7 @@ public class Class142 {
 		return bool_5_;
 	}
 
-	public Class133_Sub2 method1965(int i, boolean bool) {
+	public SceneGraphNode_Model method1965(int i, boolean bool) {
 		int i_6_ = anInt2255;
 		int i_7_ = anInt2274;
 		int i_8_ = anInt2292;
@@ -114,19 +114,19 @@ public class Class142 {
 			i_8_ = anInt2303;
 		}
 		if (i_7_ == -1) {
-			Class133_Sub2 class133_sub2 = null;
+			SceneGraphNode_Model class133_sub2 = null;
 			return class133_sub2;
 		}
-		Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(JunkTex.aClass9_4193, i_7_, 0);
+		SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(JunkTex.aClass9_4193, i_7_, 0);
 		if (i_6_ != -1) {
-			Class133_Sub2 class133_sub2_9_ = Class133_Sub2.method1824(JunkTex.aClass9_4193, i_6_, 0);
+			SceneGraphNode_Model class133_sub2_9_ = SceneGraphNode_Model.method1824(JunkTex.aClass9_4193, i_6_, 0);
 			if (i_8_ == -1) {
-				Class133_Sub2[] class133_sub2s = { class133_sub2, class133_sub2_9_ };
-				class133_sub2 = new Class133_Sub2(class133_sub2s, 2);
+				SceneGraphNode_Model[] class133_sub2s = { class133_sub2, class133_sub2_9_ };
+				class133_sub2 = new SceneGraphNode_Model(class133_sub2s, 2);
 			} else {
-				Class133_Sub2 class133_sub2_10_ = Class133_Sub2.method1824(JunkTex.aClass9_4193, i_8_, 0);
-				Class133_Sub2[] class133_sub2s = { class133_sub2, class133_sub2_9_, class133_sub2_10_ };
-				class133_sub2 = new Class133_Sub2(class133_sub2s, 3);
+				SceneGraphNode_Model class133_sub2_10_ = SceneGraphNode_Model.method1824(JunkTex.aClass9_4193, i_8_, 0);
+				SceneGraphNode_Model[] class133_sub2s = { class133_sub2, class133_sub2_9_, class133_sub2_10_ };
+				class133_sub2 = new SceneGraphNode_Model(class133_sub2s, 3);
 			}
 		}
 		if (!bool && (anInt2297 != 0 || anInt2256 != 0 || anInt2319 != 0))
@@ -142,7 +142,7 @@ public class Class142 {
 			for (int i_13_ = 0; i_13_ < aShortArray2283.length; i_13_++)
 				class133_sub2.method1819(aShortArray2283[i_13_], aShortArray2279[i_13_]);
 		}
-		Class133_Sub2 class133_sub2_14_ = class133_sub2;
+		SceneGraphNode_Model class133_sub2_14_ = class133_sub2;
 		return class133_sub2_14_;
 	}
 
@@ -339,8 +339,7 @@ public class Class142 {
 																								anIntArrayArray2289[i_27_] = new int[6];
 																								for (int i_28_ = 0; i_28_ < 6; i_28_++)
 																									anIntArrayArray2289[i_27_][i_28_] = class14_sub10
-																											.method805(
-																													i_24_ + 19943);
+																											.method805();
 																							} else if (i == 125) {
 																								anInt2297 = class14_sub10
 																										.method780();
@@ -458,9 +457,9 @@ public class Class142 {
 			anInt2293 = -62;
 	}
 
-	public Class133_Sub2 method1973(int i, boolean bool) {
+	public SceneGraphNode_Model method1973(int i, boolean bool) {
 		if (i >= -34) {
-			Class133_Sub2 class133_sub2 = null;
+			SceneGraphNode_Model class133_sub2 = null;
 			return class133_sub2;
 		}
 		int i_37_ = anInt2298;
@@ -470,14 +469,14 @@ public class Class142 {
 			i_37_ = anInt2277;
 		}
 		if (i_38_ == -1) {
-			Class133_Sub2 class133_sub2 = null;
+			SceneGraphNode_Model class133_sub2 = null;
 			return class133_sub2;
 		}
-		Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(JunkTex.aClass9_4193, i_38_, 0);
+		SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(JunkTex.aClass9_4193, i_38_, 0);
 		if (i_37_ != -1) {
-			Class133_Sub2 class133_sub2_39_ = Class133_Sub2.method1824(JunkTex.aClass9_4193, i_37_, 0);
-			Class133_Sub2[] class133_sub2s = { class133_sub2, class133_sub2_39_ };
-			class133_sub2 = new Class133_Sub2(class133_sub2s, 2);
+			SceneGraphNode_Model class133_sub2_39_ = SceneGraphNode_Model.method1824(JunkTex.aClass9_4193, i_37_, 0);
+			SceneGraphNode_Model[] class133_sub2s = { class133_sub2, class133_sub2_39_ };
+			class133_sub2 = new SceneGraphNode_Model(class133_sub2s, 2);
 		}
 		if (aShortArray2278 != null) {
 			for (int i_40_ = 0; i_40_ < aShortArray2278.length; i_40_++)
@@ -487,13 +486,13 @@ public class Class142 {
 			for (int i_41_ = 0; i_41_ < aShortArray2283.length; i_41_++)
 				class133_sub2.method1819(aShortArray2283[i_41_], aShortArray2279[i_41_]);
 		}
-		Class133_Sub2 class133_sub2_42_ = class133_sub2;
+		SceneGraphNode_Model class133_sub2_42_ = class133_sub2;
 		return class133_sub2_42_;
 	}
 
-	public Class133_Sub7 method1974(Animation animation, int i, int i_43_, int i_44_) {
+	public SceneGraphNode_AbstractModelRenderer method1974(Animation animation, int i, int i_43_, int i_44_) {
 		if (i_43_ != 0) {
-			Class133_Sub7 class133_sub7 = null;
+			SceneGraphNode_AbstractModelRenderer class133_sub7 = null;
 			return class133_sub7;
 		}
 		if (anIntArray2325 != null && i_44_ > 1) {
@@ -503,15 +502,15 @@ public class Class142 {
 					i_45_ = anIntArray2325[i_46_];
 			}
 			if (i_45_ != -1) {
-				Class133_Sub7 class133_sub7 = JunkTex.method605(96, i_45_).method1974(animation, i, 0, 1);
+				SceneGraphNode_AbstractModelRenderer class133_sub7 = JunkTex.method605(96, i_45_).method1974(animation, i, 0, 1);
 				return class133_sub7;
 			}
 		}
-		Class133_Sub7 class133_sub7 = ((Class133_Sub7) JunkTex.aClass52_2075.get(anInt2276));
+		SceneGraphNode_AbstractModelRenderer class133_sub7 = ((SceneGraphNode_AbstractModelRenderer) JunkTex.aClass52_2075.get(anInt2276));
 		if (class133_sub7 == null) {
-			Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(JunkTex.aClass9_4193, anInt2311, 0);
+			SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(JunkTex.aClass9_4193, anInt2311, 0);
 			if (class133_sub2 == null) {
-				Class133_Sub7 class133_sub7_47_ = null;
+				SceneGraphNode_AbstractModelRenderer class133_sub7_47_ = null;
 				return class133_sub7_47_;
 			}
 			if (aShortArray2278 != null) {
@@ -584,7 +583,7 @@ public class Class142 {
 	}
 
 	public ModelSD method1978(int i) {
-		Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(JunkTex.aClass9_4193, anInt2311, i);
+		SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(JunkTex.aClass9_4193, anInt2311, i);
 		if (class133_sub2 == null) {
 			ModelSD modelsd = null;
 			return modelsd;

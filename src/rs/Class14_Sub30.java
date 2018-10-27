@@ -14,14 +14,14 @@ public class Class14_Sub30 extends Linkable {
 	public static HDTile[][] aClass14_Sub27ArrayArray3273;
 	public static Class124 aClass124_3274;
 	public static HashTable aClass55_3275;
-	public static Class124 aClass124_3278 = Class124.method263(1178, "wishes to trade with you)3");
+	public static Class124 aClass124_3278 = Class124.method263("wishes to trade with you)3");
 	public static int spriteTrimHeight;
 	public static Class124 aClass124_3281;
 	public static byte aByte3283;
 
 	static {
 		aClass124_3274 = aClass124_3278;
-		aClass124_3281 = Class124.method263(1178, "Mitglieder)2Welt");
+		aClass124_3281 = Class124.method263("Mitglieder)2Welt");
 		aClass55_3275 = new HashTable(8);
 	}
 
@@ -53,9 +53,9 @@ public class Class14_Sub30 extends Linkable {
 	public static void method940(Class153 class153, int i, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_,
 			boolean bool) {
 		int i_9_;
-		int i_8_ = i_9_ = (i_6_ << 7) - Class4.anInt125;
+		int i_8_ = i_9_ = (i_6_ << 7) - Class4.cameraX;
 		int i_11_;
-		int i_10_ = i_11_ = (i_7_ << 7) - Class14_Sub2_Sub8.anInt3853;
+		int i_10_ = i_11_ = (i_7_ << 7) - Class14_Sub2_Sub8.cameraZ;
 		int i_13_;
 		int i_12_ = i_13_ = i_8_ + 128;
 		int i_15_;

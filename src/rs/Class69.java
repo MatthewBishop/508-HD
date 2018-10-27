@@ -13,9 +13,8 @@ public class Class69 {
 	public static int anInt1072;
 
 	static {
-		aClass124_1068 = Class124.method263(1178, "floorshadows");
-		aClass124_1067 = (Class124.method263(1178,
-				"Bitte warten Sie )2 es wird versucht)1 die Verbindung wiederherzustellen)3"));
+		aClass124_1068 = Class124.method263("floorshadows");
+		aClass124_1067 = (Class124.method263("Bitte warten Sie )2 es wird versucht)1 die Verbindung wiederherzustellen)3"));
 	}
 
 	public static void method1308(int i, byte i_0_) {
@@ -52,7 +51,7 @@ public class Class69 {
 		JunkTex.aByteArrayArrayArray4257 = null;
 		Class7_Sub1.aClass14_Sub2_Sub5_2665 = null;
 		Class35.aClass2_589.clear();
-		Class133_Sub1.aClass14_Sub2_Sub19_3505 = null;
+		SceneGraphNode_GameEntity.aClass14_Sub2_Sub19_3505 = null;
 		JunkTex.aClass87_4672 = null;
 		Class152.aClass146_2435 = null;
 		Class14_Sub2_Sub8.aClass14_Sub2_Sub19_Sub1_Sub2_3836 = null;

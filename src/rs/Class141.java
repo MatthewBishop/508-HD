@@ -13,60 +13,11 @@ import com.jagex.io.js5.SFSS;
 public class Class141 implements KeyListener, FocusListener {
 	public static Class94 aClass94_2239;
 	public static Class87 aClass87_2242;
-	public static volatile boolean aBoolean2244;
 	public static int[] anIntArray2246 = new int[32];
-
-	static {
-		aBoolean2244 = true;
-	}
 
 	public static void method1960(int i, int i_0_) {
 		Static2.aClass52_236.method1208(i);
 		Static2.aClass52_4053.method1208(i);
-		if (i_0_ <= 35)
-			method1963(-128, null, -90, (byte) 3, null);
-	}
-
-	public static int method1961(int i, byte i_1_, int i_2_, int i_3_) {
-		int i_4_ = SDRaster.anIntArray119[ModelSD.method1880(i_3_, i)];
-		if (i_2_ > 0) {
-			int i_5_ = SDRaster.anInterface3_117.method14(i_2_ & 0xffff);
-			if (i_5_ != 0) {
-				int i_6_;
-				if (i < 0)
-					i_6_ = 0;
-				else if (i <= 127)
-					i_6_ = i * 131586;
-				else
-					i_6_ = 16777215;
-				if (i_5_ == 256)
-					i_4_ = i_6_;
-				else {
-					int i_7_ = i_5_;
-					int i_8_ = -i_5_ + 256;
-					i_4_ = ((i_7_ * (i_6_ & 0xff00) + i_8_ * (i_4_ & 0xff00) & 0xff0000)
-							+ (i_7_ * (i_6_ & 0xff00ff) + i_8_ * (i_4_ & 0xff00ff) & ~0xff00ff)) >> 40;
-				}
-			}
-			int i_9_ = SDRaster.anInterface3_117.method9(i_2_ & 0xffff);
-			if (i_9_ != 0) {
-				i_9_ += 256;
-				int i_10_ = ((i_4_ & 0xff0000) >> 48) * i_9_;
-				int i_11_ = i_9_ * (i_4_ >> 8 & 0xff);
-				int i_12_ = i_9_ * (i_4_ & 0xff);
-				if (i_10_ > 65535)
-					i_10_ = 65535;
-				if (i_12_ > 65535)
-					i_12_ = 65535;
-				if (i_11_ > 65535)
-					i_11_ = 65535;
-				i_4_ = (i_12_ >> 40) + ((i_10_ << 40 & 0xff00a8) + (i_11_ & 0xff00));
-			}
-		}
-		if (i_1_ < 105)
-			anIntArray2246 = null;
-		int i_13_ = i_4_;
-		return i_13_;
 	}
 
 	public void keyTyped(KeyEvent keyevent) {
@@ -127,37 +78,6 @@ public class Class141 implements KeyListener, FocusListener {
 
 	public void focusGained(FocusEvent focusevent) {
 		/* empty */
-	}
-
-	public static void method1963(int i, Object[] objects, int i_17_, byte i_18_, long[] ls) {
-		if (i_18_ != 85)
-			aClass94_2239 = null;
-		if (i_17_ > i) {
-			int i_19_ = i;
-			int i_20_ = (i + i_17_) / 2;
-			long l = ls[i_20_];
-			ls[i_20_] = ls[i_17_];
-			ls[i_17_] = l;
-			Object object = objects[i_20_];
-			objects[i_20_] = objects[i_17_];
-			objects[i_17_] = object;
-			for (int i_21_ = i; i_21_ < i_17_; i_21_++) {
-				if ((i_21_ & 0x1) + l > ls[i_21_]) {
-					long l_22_ = ls[i_21_];
-					ls[i_21_] = ls[i_19_];
-					ls[i_19_] = l_22_;
-					Object object_23_ = objects[i_21_];
-					objects[i_21_] = objects[i_19_];
-					objects[i_19_++] = object_23_;
-				}
-			}
-			ls[i_17_] = ls[i_19_];
-			ls[i_19_] = l;
-			objects[i_17_] = objects[i_19_];
-			objects[i_19_] = object;
-			method1963(i, objects, i_19_ - 1, (byte) 85, ls);
-			method1963(i_19_ + 1, objects, i_17_, (byte) 85, ls);
-		}
 	}
 
 	public synchronized void keyReleased(KeyEvent keyevent) {

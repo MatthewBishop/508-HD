@@ -10,9 +10,9 @@ import com.jagex.rt4.ShadowManager;
 
 public class Class14_Sub2_Sub12 extends Cacheable {
 	public static SoftCache aClass52_3894;
-	public static Class124 aClass124_3895 = Class124.method263(1178, "blinken2:");
+	public static Class124 aClass124_3895 = Class124.method263("blinken2:");
 	public int anInt3896;
-	public static Class124 aClass124_3897 = Class124.method263(1178, "Loading textures )2 ");
+	public static Class124 aClass124_3897 = Class124.method263("Loading textures )2 ");
 	public Class124[] aClass124Array3899;
 	public int[] anIntArray3900;
 	public int anInt3901;
@@ -24,7 +24,6 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 	public int anInt3911;
 	public static int anInt3912;
 	public static byte[][] aByteArrayArray3913;
-	public static long[] aLongArray3914;
 	public static Class124 aClass124_3915;
 	public static int[] anIntArray3916;
 	public static int[] anIntArray3917;
@@ -33,17 +32,17 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 	static {
 		aClass52_3894 = new SoftCache(100);
 		anInt3912 = -1;
-		aLongArray3914 = new long[32];
+		
 		anIntArray3916 = new int[25];
-		aClass124_3915 = (Class124.method263(1178, "(U0a )2 non)2existant gosub script)2num: "));
+		aClass124_3915 = (Class124.method263("(U0a )2 non)2existant gosub script)2num: "));
 		anIntArray3917 = new int[] { 16776960, 16711680, 65280, 65535, 16711935, 16777215 };
 	}
 
 	public static void method317(byte i) {
 		if (!Class128.method1755(130068615) && Class142.anInt2295 != Class14_Sub2_Sub3.gameLevel)
 			Class45.method1162(Static2.anInt818, Static2.anInt2133, Class14_Sub2_Sub3.gameLevel,
-					(Class14_Sub3.aClass133_Sub1_Sub1_2748.anIntArray3443[0]), (byte) -117,
-					(Class14_Sub3.aClass133_Sub1_Sub1_2748.anIntArray3476[0]), false);
+					(Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anIntArray3443[0]), (byte) -117,
+					(Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anIntArray3476[0]), false);
 		else {
 			if (i > -116)
 				anIntArray3917 = null;
@@ -66,7 +65,7 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 		if (i_0_ < 0 || i_0_ > i_4_)
 			i_0_ = 0;
 		i_4_ <<= i_3_;
-		Canvas_Sub1.method58((i_4_ & i_0_ << i_3_ | (Class14_Sub9_Sub3.anIntArray4851[i_1_] & (i_4_ ^ 0xffffffff))),
+		Static2.method58((i_4_ & i_0_ << i_3_ | (Class14_Sub9_Sub3.anIntArray4851[i_1_] & (i_4_ ^ 0xffffffff))),
 				(byte) -1, i_1_);
 	}
 
@@ -91,7 +90,6 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 		if (i != -48)
 			aClass124_3897 = null;
 		aClass52_3894 = null;
-		aLongArray3914 = null;
 		spriteYOffsets = null;
 	}
 

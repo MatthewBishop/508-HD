@@ -5,6 +5,9 @@ package rs;
 
 import java.awt.Component;
 
+import com.jagex.applet.Class43;
+import com.jagex.applet.Interface4;
+
 public class Class75_Sub2 extends Class75 {
 	public static Interface4 anInterface4_3331;
 	public int anInt3332;

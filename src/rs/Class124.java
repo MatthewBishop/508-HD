@@ -14,7 +14,15 @@ import com.jagex.util.Util;
 
 public class Class124 implements Interface1 {
 
-	public static Class124 aClass124_2479 = Class124.method263(1178, "glow1:");
+	public String string() {
+		return new String(this.aByteArray2495, 0, this.anInt2507);
+	}
+		
+	public static Class124 create(byte[] var5) {
+		return  Class124.method231(var5.length, var5, 0);
+	}
+	
+	public static Class124 aClass124_2479 = Class124.method263("glow1:");
 	public static Class124 aClass124_2497 = aClass124_2479;
 	public static Class124[] aClass124Array2508 = new Class124[100];
 	public static Class aClass2534;
@@ -95,7 +103,7 @@ public class Class124 implements Interface1 {
 										var32 = 1;
 									}
 
-									Class92.method1454(var14, var25, var16, var27, var32);
+									SD2DRaster.method1454(var14, var25, var16, var27, var32);
 									continue;
 								}
 							}
@@ -108,7 +116,7 @@ public class Class124 implements Interface1 {
 							int var34 = var21[var28] != null ? Class56.anIntArray917[var21[var28][var31] & 255] : 0;
 							int var36;
 							if (var33 == 0 && var34 == 0) {
-								Class92.method1454(var14, var25, var16, var27, var32);
+								SD2DRaster.method1454(var14, var25, var16, var27, var32);
 							} else {
 								byte var35;
 								if (var33 != 0) {
@@ -119,10 +127,10 @@ public class Class124 implements Interface1 {
 									}
 
 									if (var36 != 0 && var16 > 1 && var27 > 1) {
-										Class131.method1774(Class92.anIntArray1437, var35 & 3, var32, var14,
+										Class131.method1774(SD2DRaster.anIntArray1437, var35 & 3, var32, var14,
 												var36 >> 34, true, var16, false, var33, var25, var27);
 									} else {
-										Class92.method1454(var14, var25, var16, var27, var33);
+										SD2DRaster.method1454(var14, var25, var16, var27, var33);
 									}
 								}
 
@@ -134,10 +142,10 @@ public class Class124 implements Interface1 {
 									var35 = var23[var28][var31];
 									var36 = var35 & 252;
 									if (var36 == 0 || var16 <= 1 || var27 <= 1) {
-										Class92.method1454(var14, var25, var16, var27, var34);
+										SD2DRaster.method1454(var14, var25, var16, var27, var34);
 									}
 
-									Class131.method1774(Class92.anIntArray1437, var35 & 3, 0, var14, var36 >> 2,
+									Class131.method1774(SD2DRaster.anIntArray1437, var35 & 3, 0, var14, var36 >> 2,
 											var33 == 0, var16, false, var34, var25, var27);
 								}
 							}
@@ -168,58 +176,58 @@ public class Class124 implements Interface1 {
 									if (var48 != 1) {
 										if (var48 != 2) {
 											if (var48 == 3) {
-												Class92.method1461(var36, var25, var27, var38);
+												SD2DRaster.method1461(var36, var25, var27, var38);
 											} else if (var48 == 4) {
-												Class92.method1458(var14, var37, var16, var38);
+												SD2DRaster.method1458(var14, var37, var16, var38);
 											} else if (var48 != 9) {
 												if (var48 == 10) {
-													Class92.method1461(var36, var25, var27, 16777215);
-													Class92.method1458(var14, var25, var16, var38);
+													SD2DRaster.method1461(var36, var25, var27, 16777215);
+													SD2DRaster.method1458(var14, var25, var16, var38);
 												} else if (var48 != 11) {
 													if (var48 == 12) {
-														Class92.method1461(var14, var25, var27, 16777215);
-														Class92.method1458(var14, var37, var16, var38);
+														SD2DRaster.method1461(var14, var25, var27, 16777215);
+														SD2DRaster.method1458(var14, var37, var16, var38);
 													} else if (var48 != 17) {
 														if (var48 != 18) {
 															if (var48 == 19) {
-																Class92.method1458(var36, var37, 1, var38);
+																SD2DRaster.method1458(var36, var37, 1, var38);
 															} else if (var48 == 20) {
-																Class92.method1458(var14, var37, 1, var38);
+																SD2DRaster.method1458(var14, var37, 1, var38);
 															} else {
 																int var39;
 																if (var48 != 25) {
 																	if (var48 == 26) {
 																		for (var39 = 0; var27 > var39; ++var39) {
-																			Class92.method1458(var39 + var14,
+																			SD2DRaster.method1458(var39 + var14,
 																					var39 + var25, 1, var38);
 																		}
 																	}
 																} else {
 																	for (var39 = 0; var27 > var39; ++var39) {
-																		Class92.method1458(var14 + var39, var37 - var39,
+																		SD2DRaster.method1458(var14 + var39, var37 - var39,
 																				1, var38);
 																	}
 																}
 															}
 														} else {
-															Class92.method1458(var36, var25, 1, var38);
+															SD2DRaster.method1458(var36, var25, 1, var38);
 														}
 													} else {
-														Class92.method1458(var14, var25, 1, var38);
+														SD2DRaster.method1458(var14, var25, 1, var38);
 													}
 												} else {
-													Class92.method1461(var36, var25, var27, 16777215);
-													Class92.method1458(var14, var37, var16, var38);
+													SD2DRaster.method1461(var36, var25, var27, 16777215);
+													SD2DRaster.method1458(var14, var37, var16, var38);
 												}
 											} else {
-												Class92.method1461(var14, var25, var27, 16777215);
-												Class92.method1458(var14, var25, var16, var38);
+												SD2DRaster.method1461(var14, var25, var27, 16777215);
+												SD2DRaster.method1458(var14, var25, var16, var38);
 											}
 										} else {
-											Class92.method1458(var14, var25, var16, var38);
+											SD2DRaster.method1458(var14, var25, var16, var38);
 										}
 									} else {
-										Class92.method1461(var14, var25, var27, var38);
+										SD2DRaster.method1461(var14, var25, var27, var38);
 									}
 								}
 							}
@@ -246,7 +254,7 @@ public class Class124 implements Interface1 {
 
 						var42 = (var6 * (var18 + 1) + var2 >> 16) + var0;
 						var43 = var42 - var41;
-						Class92.method1454(var14, var41, var16, var43, var40);
+						SD2DRaster.method1454(var14, var41, var16, var43, var40);
 					}
 
 					var10000 = var15 + var8;
@@ -293,7 +301,7 @@ public class Class124 implements Interface1 {
 														var16 * 2, var43 * 2);
 											}
 										} else {
-											Class133_Sub4.aClass148_Sub1Array3581[var25 - 1].method2006(var14, var41,
+											SceneGraphNode_AnimatedLocation.aClass148_Sub1Array3581[var25 - 1].method2006(var14, var41,
 													var16 * 2, var43 * 2);
 										}
 									}
@@ -437,7 +445,7 @@ public class Class124 implements Interface1 {
 		Object var4 = Class144.method1982((byte) 88, var3, var1, (Object[]) null);
 		if (var4 instanceof String) {
 			byte[] var5 = ((String) var4).getBytes();
-			var4 = Static2.method231((byte) 114, var5.length, var5, 0);
+			var4 = Class124.method231(var5.length, var5, 0);
 		}
 
 		return var4;
@@ -968,7 +976,7 @@ public class Class124 implements Interface1 {
 		}
 
 		if (var2 == null) {
-			Class124 var3 = Canvas_Sub1.aClass124_42;
+			Class124 var3 = Static2.aClass124_42;
 			return var3;
 		} else {
 			return var2;
@@ -1099,11 +1107,7 @@ public class Class124 implements Interface1 {
 		return var4;
 	}
 
-	public int method1698(byte var1, Class124 var2) {
-		if (var1 <= 48) {
-			method1667(-82, 57, 26, -11, 20, -29, 110, -29, 49, 5, 15);
-		}
-
+	public int method1698(Class124 var2) {
 		int var3;
 		if (var2.anInt2507 < this.anInt2507) {
 			var3 = var2.anInt2507;
@@ -1590,12 +1594,23 @@ public class Class124 implements Interface1 {
 	public String toString() {
 		throw new RuntimeException();
 	}
-	public static Class124 method263(int i, String string) {
+	
+	public static Class124 method231(int i_2_, byte[] is, int i_3_) {
+		Class124 class124 = new Class124();
+		class124.anInt2507 = 0;
+		class124.aByteArray2495 = new byte[i_2_];
+		for (int i_4_ = i_3_; i_2_ + i_3_ > i_4_; i_4_++) {
+			if (is[i_4_] != 0)
+				class124.aByteArray2495[class124.anInt2507++] = is[i_4_];
+		}
+		Class124 class124_5_ = class124;
+		return class124_5_;
+	}
+	
+	public static Class124 method263(String string) {
 		byte[] is = string.getBytes();
 		int i_1_ = is.length;
 		Class124 class124 = new Class124();
-		if (i != 1178)
-			Class14_Sub2_Sub2.anInt3758 = -71;
 		int i_2_ = 0;
 		class124.aByteArray2495 = new byte[i_1_];
 		while (i_2_ < i_1_) {

@@ -19,7 +19,7 @@ import com.jagex.rt4.VertexBuffer;
 import com.jagex.rt4.VertexBufferPointer;
 import com.jagex.util.ArrayUtils;
 
-public class ModelHD extends Class133_Sub7 {
+public class ModelHD extends SceneGraphNode_AbstractModelRenderer {
 	public static ByteBuffer aByteBuffer5050;
 	public static ModelHD aClass133_Sub7_Sub2_5049 = new ModelHD();
 	public static ModelHD aClass133_Sub7_Sub2_5051 = new ModelHD();
@@ -152,7 +152,7 @@ public class ModelHD extends Class133_Sub7 {
 	}
 
 	public static int method1904(int i, short i_22_, int i_23_, byte i_24_) {
-		int i_25_ = SDRaster.anIntArray119[ModelSD.method1880(i, i_23_)];
+		int i_25_ = SDRaster.anIntArray119[ModelSD.blendColours(i, i_23_)];
 		if (i_22_ != -1) {
 			int i_26_ = SDRaster.anInterface3_117.method14(i_22_ & 0xffff);
 			if (i_26_ != 0) {
@@ -338,7 +338,7 @@ public class ModelHD extends Class133_Sub7 {
 		anInt5033 = 0;
 	}
 
-	public ModelHD(Class133_Sub2 class133_sub2, int i, int i_76_, boolean bool) {
+	public ModelHD(SceneGraphNode_Model class133_sub2, int i, int i_76_, boolean bool) {
 		aBoolean5009 = false;
 		aByte5023 = (byte) 0;
 		anInt5040 = 0;
@@ -817,7 +817,7 @@ public class ModelHD extends Class133_Sub7 {
 	}
 
 	@Override
-	public int getMinY() {
+	public int getMinYorMaxYCheckTHIS() {
 		if (!aClass50_5013.boundsCalculated)
 			calculateBounds();
 		return aClass50_5013.minY;
@@ -831,8 +831,8 @@ public class ModelHD extends Class133_Sub7 {
 	}
 
 	@Override
-	public void method1788(Class133 class133, int i, int i_200_, int i_201_, boolean bool) {
-		ModelHD modelhd_202_ = (ModelHD) class133;
+	public void method1788(SceneGraphNode sceneGraphNode, int i, int i_200_, int i_201_, boolean bool) {
+		ModelHD modelhd_202_ = (ModelHD) sceneGraphNode;
 		if (anInt5014 != 0 && modelhd_202_.anInt5014 != 0) {
 			int i_203_ = modelhd_202_.anInt5033;
 			int[] is = modelhd_202_.vertexX;
@@ -978,7 +978,7 @@ public class ModelHD extends Class133_Sub7 {
 	}
 
 	@Override
-	public Class133 method1791(int i, int i_245_, int i_246_) {
+	public SceneGraphNode method1791(int i, int i_245_, int i_246_) {
 		aBoolean5009 = false;
 		if (aClass77_5039 != null) {
 			aShortArray5041 = aClass77_5039.aShortArray1219;
@@ -1252,7 +1252,7 @@ public class ModelHD extends Class133_Sub7 {
 	}
 
 	@Override
-	public Class133_Sub7 method1860(boolean bool, boolean bool_316_) {
+	public SceneGraphNode_AbstractModelRenderer method1860(boolean bool, boolean bool_316_) {
 		return method1907(bool, bool_316_, aClass133_Sub7_Sub2_5051, aClass133_Sub7_Sub2_5049);
 	}
 
@@ -1329,7 +1329,7 @@ public class ModelHD extends Class133_Sub7 {
 	}
 
 	@Override
-	public Class133_Sub7 method1870(boolean bool, boolean bool_330_) {
+	public SceneGraphNode_AbstractModelRenderer method1870(boolean bool, boolean bool_330_) {
 		return method1907(bool, bool_330_, aClass133_Sub7_Sub2_5053, aClass133_Sub7_Sub2_5052);
 	}
 
@@ -1560,21 +1560,21 @@ public class ModelHD extends Class133_Sub7 {
 			calculateBounds();
 		int i;
 		int i_352_;
-		if (AtmosphericEffects.anInt934 > 0) {
-			i = (aClass50_5013.minX - (aClass50_5013.maxY * AtmosphericEffects.anInt934 >> 8)) >> 3;
-			i_352_ = (aClass50_5013.maxX - (aClass50_5013.minY * AtmosphericEffects.anInt934 >> 8)) >> 3;
+		if (AtmosphericEffects.lightX > 0) {
+			i = (aClass50_5013.minX - (aClass50_5013.maxY * AtmosphericEffects.lightX >> 8)) >> 3;
+			i_352_ = (aClass50_5013.maxX - (aClass50_5013.minY * AtmosphericEffects.lightX >> 8)) >> 3;
 		} else {
-			i = (aClass50_5013.minX - (aClass50_5013.minY * AtmosphericEffects.anInt934 >> 8)) >> 3;
-			i_352_ = (aClass50_5013.maxX - (aClass50_5013.maxY * AtmosphericEffects.anInt934 >> 8)) >> 3;
+			i = (aClass50_5013.minX - (aClass50_5013.minY * AtmosphericEffects.lightX >> 8)) >> 3;
+			i_352_ = (aClass50_5013.maxX - (aClass50_5013.maxY * AtmosphericEffects.lightX >> 8)) >> 3;
 		}
 		int i_353_;
 		int i_354_;
-		if (AtmosphericEffects.anInt928 > 0) {
-			i_353_ = (aClass50_5013.minZ - (aClass50_5013.maxY * AtmosphericEffects.anInt928 >> 8)) >> 3;
-			i_354_ = (aClass50_5013.maxZ - (aClass50_5013.minY * AtmosphericEffects.anInt928 >> 8)) >> 3;
+		if (AtmosphericEffects.lightZ > 0) {
+			i_353_ = (aClass50_5013.minZ - (aClass50_5013.maxY * AtmosphericEffects.lightZ >> 8)) >> 3;
+			i_354_ = (aClass50_5013.maxZ - (aClass50_5013.minY * AtmosphericEffects.lightZ >> 8)) >> 3;
 		} else {
-			i_353_ = (aClass50_5013.minZ - (aClass50_5013.minY * AtmosphericEffects.anInt928 >> 8)) >> 3;
-			i_354_ = (aClass50_5013.maxZ - (aClass50_5013.maxY * AtmosphericEffects.anInt928 >> 8)) >> 3;
+			i_353_ = (aClass50_5013.minZ - (aClass50_5013.minY * AtmosphericEffects.lightZ >> 8)) >> 3;
+			i_354_ = (aClass50_5013.maxZ - (aClass50_5013.maxY * AtmosphericEffects.lightZ >> 8)) >> 3;
 		}
 		int i_355_ = i_352_ - i + 1;
 		int i_356_ = i_354_ - i_353_ + 1;
@@ -1593,8 +1593,8 @@ public class ModelHD extends Class133_Sub7 {
 			anIntArray5057 = new int[anInt5040];
 		}
 		for (int i_358_ = 0; i_358_ < anInt5033; i_358_++) {
-			int i_359_ = ((vertexX[i_358_] - (vertexY[i_358_] * AtmosphericEffects.anInt934 >> 8) >> 3) - i);
-			int i_360_ = ((vertexZ[i_358_] - (vertexY[i_358_] * AtmosphericEffects.anInt928 >> 8) >> 3) - i_353_);
+			int i_359_ = ((vertexX[i_358_] - (vertexY[i_358_] * AtmosphericEffects.lightX >> 8) >> 3) - i);
+			int i_360_ = ((vertexZ[i_358_] - (vertexY[i_358_] * AtmosphericEffects.lightZ >> 8) >> 3) - i_353_);
 			int i_361_ = anIntArray5031[i_358_];
 			int i_362_ = anIntArray5031[i_358_ + 1];
 			for (int i_363_ = i_361_; i_363_ < i_362_; i_363_++) {
@@ -1967,7 +1967,7 @@ public class ModelHD extends Class133_Sub7 {
 			aClass41_5018.upToDate = false;
 	}
 
-	public short method1901(Class133_Sub2 class133_sub2, int i, long l, int i_473_, int i_474_, int i_475_, int i_476_,
+	public short method1901(SceneGraphNode_Model class133_sub2, int i, long l, int i_473_, int i_474_, int i_475_, int i_476_,
 			float f, float f_477_) {
 		int i_478_ = anIntArray5031[i];
 		int i_479_ = anIntArray5031[i + 1];
@@ -2005,9 +2005,9 @@ public class ModelHD extends Class133_Sub7 {
 			}
 		} else {
 			for (int i = 0; i < anInt5014; i++) {
-				aClass14_Sub10_5011.writeIntLE(-70, aShortArray5021[i]);
-				aClass14_Sub10_5011.writeIntLE(-82, aShortArray5025[i]);
-				aClass14_Sub10_5011.writeIntLE(-65, aShortArray5038[i]);
+				aClass14_Sub10_5011.writeIntLE(aShortArray5021[i]);
+				aClass14_Sub10_5011.writeIntLE(aShortArray5025[i]);
+				aClass14_Sub10_5011.writeIntLE(aShortArray5038[i]);
 			}
 		}
 		if (RT4GL.has_vbo) {
@@ -2172,9 +2172,9 @@ public class ModelHD extends Class133_Sub7 {
 							if (i_513_ == -1)
 								break;
 							aClass14_Sub10_5011.position = i_513_ * i;
-							aClass14_Sub10_5011.writeIntLE(-32, i_507_);
-							aClass14_Sub10_5011.writeIntLE(-79, i_508_);
-							aClass14_Sub10_5011.writeIntLE(-99, i_509_);
+							aClass14_Sub10_5011.writeIntLE(i_507_);
+							aClass14_Sub10_5011.writeIntLE(i_508_);
+							aClass14_Sub10_5011.writeIntLE(i_509_);
 						}
 					}
 				}
@@ -2471,7 +2471,7 @@ public class ModelHD extends Class133_Sub7 {
 			aClass41_5030.upToDate = false;
 	}
 
-	public Class133_Sub7 method1907(boolean bool, boolean bool_550_, ModelHD modelhd_551_, ModelHD modelhd_552_) {
+	public SceneGraphNode_AbstractModelRenderer method1907(boolean bool, boolean bool_550_, ModelHD modelhd_551_, ModelHD modelhd_552_) {
 		modelhd_551_.anInt5033 = anInt5033;
 		modelhd_551_.anInt5040 = anInt5040;
 		modelhd_551_.anInt5014 = anInt5014;

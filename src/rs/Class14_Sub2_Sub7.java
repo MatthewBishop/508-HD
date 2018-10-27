@@ -8,15 +8,14 @@ import com.jagex.link.Cacheable;
 import com.jagex.rt4.AbstractSprite;
 
 public class Class14_Sub2_Sub7 extends Cacheable {
-	public static int anInt3820;
 	public static Class124 aClass124_3821;
-	public Class133_Sub5 aClass133_Sub5_3822;
+	public SceneGraphNode_SpotAnimation aSceneGraphNode_SpotAnimation_3822;
 	public static Class9_Sub1 aClass9_Sub1_3824;
 	public static int[] anIntArray3825 = new int[2048];
 	public static AbstractSprite aClass14_Sub2_Sub19_3826;
 
 	static {
-		aClass124_3821 = Class124.method263(1178, "blinken1:");
+		aClass124_3821 = Class124.method263("blinken1:");
 	}
 
 	public static void method288(int i) {
@@ -59,7 +58,7 @@ public class Class14_Sub2_Sub7 extends Cacheable {
 			method289((byte) -96, 52, null, null, 107);
 	}
 
-	public Class14_Sub2_Sub7(Class133_Sub5 class133_sub5) {
-		aClass133_Sub5_3822 = class133_sub5;
+	public Class14_Sub2_Sub7(SceneGraphNode_SpotAnimation class133_sub5) {
+		aSceneGraphNode_SpotAnimation_3822 = class133_sub5;
 	}
 }

@@ -24,8 +24,8 @@ public class Class14_Sub2_Sub16_Sub1 extends Class14_Sub2_Sub16 {
 
 	private static void method370(int[] is, byte[] is_23_, int i, int i_24_, int i_25_, int i_26_, int i_27_, int i_28_,
 			int i_29_, int i_30_, int i_31_, int[] is_32_, int[] is_33_) {
-		int i_34_ = i - Class92.anInt1433;
-		int i_35_ = i_24_ - Class92.anInt1438;
+		int i_34_ = i - SD2DRaster.anInt1433;
+		int i_35_ = i_24_ - SD2DRaster.anInt1438;
 		for (int i_36_ = i_35_; i_36_ < i_35_ + i_26_; i_36_++) {
 			int i_37_ = is_32_[i_36_];
 			int i_38_ = is_33_[i_36_];
@@ -56,7 +56,7 @@ public class Class14_Sub2_Sub16_Sub1 extends Class14_Sub2_Sub16 {
 				i_42_ = i_39_ - i_38_;
 			for (int i_43_ = -i_38_; i_43_ < 0; i_43_++) {
 				if (is_23_[i_28_++] != 0)
-					Class92.anIntArray1437[i_29_++] = i_27_;
+					SD2DRaster.anIntArray1437[i_29_++] = i_27_;
 				else
 					i_29_++;
 			}
@@ -114,75 +114,75 @@ public class Class14_Sub2_Sub16_Sub1 extends Class14_Sub2_Sub16 {
 
 	@Override
 	public void method349(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, boolean bool) {
-		int i_5_ = i_0_ + i_1_ * Class92.anInt1432;
-		int i_6_ = Class92.anInt1432 - i_2_;
+		int i_5_ = i_0_ + i_1_ * SD2DRaster.anInt1432;
+		int i_6_ = SD2DRaster.anInt1432 - i_2_;
 		int i_7_ = 0;
 		int i_8_ = 0;
-		if (i_1_ < Class92.anInt1438) {
-			int i_9_ = Class92.anInt1438 - i_1_;
+		if (i_1_ < SD2DRaster.anInt1438) {
+			int i_9_ = SD2DRaster.anInt1438 - i_1_;
 			i_3_ -= i_9_;
-			i_1_ = Class92.anInt1438;
+			i_1_ = SD2DRaster.anInt1438;
 			i_8_ += i_9_ * i_2_;
-			i_5_ += i_9_ * Class92.anInt1432;
+			i_5_ += i_9_ * SD2DRaster.anInt1432;
 		}
-		if (i_1_ + i_3_ > Class92.anInt1436)
-			i_3_ -= i_1_ + i_3_ - Class92.anInt1436;
-		if (i_0_ < Class92.anInt1433) {
-			int i_10_ = Class92.anInt1433 - i_0_;
+		if (i_1_ + i_3_ > SD2DRaster.anInt1436)
+			i_3_ -= i_1_ + i_3_ - SD2DRaster.anInt1436;
+		if (i_0_ < SD2DRaster.anInt1433) {
+			int i_10_ = SD2DRaster.anInt1433 - i_0_;
 			i_2_ -= i_10_;
-			i_0_ = Class92.anInt1433;
+			i_0_ = SD2DRaster.anInt1433;
 			i_8_ += i_10_;
 			i_5_ += i_10_;
 			i_7_ += i_10_;
 			i_6_ += i_10_;
 		}
-		if (i_0_ + i_2_ > Class92.anInt1434) {
-			int i_11_ = i_0_ + i_2_ - Class92.anInt1434;
+		if (i_0_ + i_2_ > SD2DRaster.anInt1434) {
+			int i_11_ = i_0_ + i_2_ - SD2DRaster.anInt1434;
 			i_2_ -= i_11_;
 			i_7_ += i_11_;
 			i_6_ += i_11_;
 		}
 		if (i_2_ > 0 && i_3_ > 0) {
-			if (Class92.anIntArray1440 != null)
-				method370(Class92.anIntArray1437, aByteArrayArray5065[i], i_0_, i_1_, i_2_, i_3_, i_4_, i_8_, i_5_,
-						i_6_, i_7_, Class92.anIntArray1440, Class92.anIntArray1439);
+			if (SD2DRaster.anIntArray1440 != null)
+				method370(SD2DRaster.anIntArray1437, aByteArrayArray5065[i], i_0_, i_1_, i_2_, i_3_, i_4_, i_8_, i_5_,
+						i_6_, i_7_, SD2DRaster.anIntArray1440, SD2DRaster.anIntArray1439);
 			else
-				method371(Class92.anIntArray1437, aByteArrayArray5065[i], i_4_, i_8_, i_5_, i_2_, i_3_, i_6_, i_7_);
+				method371(SD2DRaster.anIntArray1437, aByteArrayArray5065[i], i_4_, i_8_, i_5_, i_2_, i_3_, i_6_, i_7_);
 		}
 	}
 
 	@Override
 	public void method363(int i, int i_44_, int i_45_, int i_46_, int i_47_, int i_48_, int i_49_, boolean bool) {
-		int i_50_ = i_44_ + i_45_ * Class92.anInt1432;
-		int i_51_ = Class92.anInt1432 - i_46_;
+		int i_50_ = i_44_ + i_45_ * SD2DRaster.anInt1432;
+		int i_51_ = SD2DRaster.anInt1432 - i_46_;
 		int i_52_ = 0;
 		int i_53_ = 0;
-		if (i_45_ < Class92.anInt1438) {
-			int i_54_ = Class92.anInt1438 - i_45_;
+		if (i_45_ < SD2DRaster.anInt1438) {
+			int i_54_ = SD2DRaster.anInt1438 - i_45_;
 			i_47_ -= i_54_;
-			i_45_ = Class92.anInt1438;
+			i_45_ = SD2DRaster.anInt1438;
 			i_53_ += i_54_ * i_46_;
-			i_50_ += i_54_ * Class92.anInt1432;
+			i_50_ += i_54_ * SD2DRaster.anInt1432;
 		}
-		if (i_45_ + i_47_ > Class92.anInt1436)
-			i_47_ -= i_45_ + i_47_ - Class92.anInt1436;
-		if (i_44_ < Class92.anInt1433) {
-			int i_55_ = Class92.anInt1433 - i_44_;
+		if (i_45_ + i_47_ > SD2DRaster.anInt1436)
+			i_47_ -= i_45_ + i_47_ - SD2DRaster.anInt1436;
+		if (i_44_ < SD2DRaster.anInt1433) {
+			int i_55_ = SD2DRaster.anInt1433 - i_44_;
 			i_46_ -= i_55_;
-			i_44_ = Class92.anInt1433;
+			i_44_ = SD2DRaster.anInt1433;
 			i_53_ += i_55_;
 			i_50_ += i_55_;
 			i_52_ += i_55_;
 			i_51_ += i_55_;
 		}
-		if (i_44_ + i_46_ > Class92.anInt1434) {
-			int i_56_ = i_44_ + i_46_ - Class92.anInt1434;
+		if (i_44_ + i_46_ > SD2DRaster.anInt1434) {
+			int i_56_ = i_44_ + i_46_ - SD2DRaster.anInt1434;
 			i_46_ -= i_56_;
 			i_52_ += i_56_;
 			i_51_ += i_56_;
 		}
 		if (i_46_ > 0 && i_47_ > 0)
-			method369(Class92.anIntArray1437, aByteArrayArray5065[i], i_48_, i_53_, i_50_, i_46_, i_47_, i_51_, i_52_,
+			method369(SD2DRaster.anIntArray1437, aByteArrayArray5065[i], i_48_, i_53_, i_50_, i_46_, i_47_, i_51_, i_52_,
 					i_49_);
 	}
 }

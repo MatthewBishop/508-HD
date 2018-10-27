@@ -6,14 +6,14 @@ package rs;
 public class Class53 {
 	public static boolean aBoolean865 = true;
 	public static short[] aShortArray866;
-	public static Class124 aClass124_867 = Class124.method263(1178, ")1");
+	public static Class124 aClass124_867 = Class124.method263(")1");
 	public static Class124 aClass124_868;
 	public static Class124 aClass124_869;
 	public static boolean[][] visibilityMap;
 	public static int anInt874 = 0;
 
 	static {
-		aClass124_868 = (Class124.method263(1178, "RuneScape is loading )2 please wait)3)3)3"));
+		aClass124_868 = (Class124.method263("RuneScape is loading )2 please wait)3)3)3"));
 		aClass124_869 = aClass124_868;
 	}
 

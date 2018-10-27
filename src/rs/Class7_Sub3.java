@@ -17,7 +17,7 @@ public class Class7_Sub3 extends Class7 {
 
 	static {
 		anInt2682 = 0;
-		aClass124_2684 = Class124.method263(1178, "cross");
+		aClass124_2684 = Class124.method263("cross");
 		actions = new long[1000];
 	}
 

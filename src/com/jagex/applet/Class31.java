@@ -1,7 +1,7 @@
 /* Class31 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-package rs;
+package com.jagex.applet;
 
 public class Class31 {
 	public int anInt525;

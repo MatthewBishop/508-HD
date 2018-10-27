@@ -19,7 +19,7 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 	public int[] anIntArray3886;
 	public int[] anIntArray3888;
 	public static int anInt3889 = 0;
-	public static Class124 aClass124_3892 = Class124.method263(1178, "cookieprefix");
+	public static Class124 aClass124_3892 = Class124.method263("cookieprefix");
 
 	public int method308(byte i, int i_0_) {
 		if (anIntArray3885 == null) {
@@ -198,13 +198,13 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 				Class58.method1255(i_30_, class14_sub3, i_29_, i_28_, -31083, i_31_);
 			for (Class14_Sub3 class14_sub3 = (Class14_Sub3) JunkTex.aClass2_683.getFront(); class14_sub3 != null; class14_sub3 = (Class14_Sub3) JunkTex.aClass2_683.getNext()) {
 				int i_32_ = 1;
-				if (class14_sub3.aClass133_Sub1_Sub2_2762.anInt3433 != class14_sub3.aClass133_Sub1_Sub2_2762.anInt3452) {
-					if (class14_sub3.aClass133_Sub1_Sub2_2762.anInt3456 == class14_sub3.aClass133_Sub1_Sub2_2762.anInt3452)
+				if (class14_sub3.aSceneGraphNode_GameEntity_Sub2_2762.anInt3433 != class14_sub3.aSceneGraphNode_GameEntity_Sub2_2762.anInt3452) {
+					if (class14_sub3.aSceneGraphNode_GameEntity_Sub2_2762.anInt3456 == class14_sub3.aSceneGraphNode_GameEntity_Sub2_2762.anInt3452)
 						i_32_ = 2;
 				} else
 					i_32_ = 0;
 				if (i_32_ != class14_sub3.anInt2756) {
-					int i_33_ = Static2.method1500((class14_sub3.aClass133_Sub1_Sub2_2762), -1);
+					int i_33_ = Static2.method1500((class14_sub3.aSceneGraphNode_GameEntity_Sub2_2762), -1);
 					if (class14_sub3.anInt2753 != i_33_) {
 						if (class14_sub3.aClass14_Sub9_Sub4_2775 != null) {
 							Class33.aClass14_Sub9_Sub2_585.method730(class14_sub3.aClass14_Sub9_Sub4_2775);
@@ -214,24 +214,24 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 					}
 					class14_sub3.anInt2756 = i_32_;
 				}
-				class14_sub3.anInt2751 = (class14_sub3.aClass133_Sub1_Sub2_2762.anInt3493 * 64
-						+ class14_sub3.aClass133_Sub1_Sub2_2762.anInt3436);
-				class14_sub3.anInt2774 = class14_sub3.aClass133_Sub1_Sub2_2762.anInt3495;
-				class14_sub3.anInt2761 = (class14_sub3.aClass133_Sub1_Sub2_2762.anInt3493 * 64
-						+ class14_sub3.aClass133_Sub1_Sub2_2762.anInt3495);
-				class14_sub3.anInt2767 = class14_sub3.aClass133_Sub1_Sub2_2762.anInt3436;
+				class14_sub3.anInt2751 = (class14_sub3.aSceneGraphNode_GameEntity_Sub2_2762.anInt3493 * 64
+						+ class14_sub3.aSceneGraphNode_GameEntity_Sub2_2762.anInt3436);
+				class14_sub3.anInt2774 = class14_sub3.aSceneGraphNode_GameEntity_Sub2_2762.anInt3495;
+				class14_sub3.anInt2761 = (class14_sub3.aSceneGraphNode_GameEntity_Sub2_2762.anInt3493 * 64
+						+ class14_sub3.aSceneGraphNode_GameEntity_Sub2_2762.anInt3495);
+				class14_sub3.anInt2767 = class14_sub3.aSceneGraphNode_GameEntity_Sub2_2762.anInt3436;
 				Class58.method1255(i_30_, class14_sub3, i_29_, i_28_, -31083, i_31_);
 			}
 			for (Class14_Sub3 class14_sub3 = ((Class14_Sub3) Class88.aClass55_1398
 					.getFirst()); class14_sub3 != null; class14_sub3 = (Class14_Sub3) Class88.aClass55_1398
 							.getNext()) {
 				int i_34_ = 1;
-				if (class14_sub3.aClass133_Sub1_Sub1_2755.anInt3433 == class14_sub3.aClass133_Sub1_Sub1_2755.anInt3452)
+				if (class14_sub3.aSceneGraphNode_GameEntity_Sub1_2755.anInt3433 == class14_sub3.aSceneGraphNode_GameEntity_Sub1_2755.anInt3452)
 					i_34_ = 0;
-				else if (class14_sub3.aClass133_Sub1_Sub1_2755.anInt3456 == class14_sub3.aClass133_Sub1_Sub1_2755.anInt3452)
+				else if (class14_sub3.aSceneGraphNode_GameEntity_Sub1_2755.anInt3456 == class14_sub3.aSceneGraphNode_GameEntity_Sub1_2755.anInt3452)
 					i_34_ = 2;
 				if (i_34_ != class14_sub3.anInt2756) {
-					int i_35_ = Class116.method1597(false, (class14_sub3.aClass133_Sub1_Sub1_2755));
+					int i_35_ = Class116.method1597(false, (class14_sub3.aSceneGraphNode_GameEntity_Sub1_2755));
 					if (class14_sub3.anInt2753 != i_35_) {
 						if (class14_sub3.aClass14_Sub9_Sub4_2775 != null) {
 							Class33.aClass14_Sub9_Sub2_585.method730(class14_sub3.aClass14_Sub9_Sub4_2775);
@@ -241,12 +241,12 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 					}
 					class14_sub3.anInt2756 = i_34_;
 				}
-				class14_sub3.anInt2767 = class14_sub3.aClass133_Sub1_Sub1_2755.anInt3436;
-				class14_sub3.anInt2761 = (class14_sub3.aClass133_Sub1_Sub1_2755.anInt3493 * 64
-						+ class14_sub3.aClass133_Sub1_Sub1_2755.anInt3495);
-				class14_sub3.anInt2774 = class14_sub3.aClass133_Sub1_Sub1_2755.anInt3495;
-				class14_sub3.anInt2751 = (class14_sub3.aClass133_Sub1_Sub1_2755.anInt3493 * 64
-						+ class14_sub3.aClass133_Sub1_Sub1_2755.anInt3436);
+				class14_sub3.anInt2767 = class14_sub3.aSceneGraphNode_GameEntity_Sub1_2755.anInt3436;
+				class14_sub3.anInt2761 = (class14_sub3.aSceneGraphNode_GameEntity_Sub1_2755.anInt3493 * 64
+						+ class14_sub3.aSceneGraphNode_GameEntity_Sub1_2755.anInt3495);
+				class14_sub3.anInt2774 = class14_sub3.aSceneGraphNode_GameEntity_Sub1_2755.anInt3495;
+				class14_sub3.anInt2751 = (class14_sub3.aSceneGraphNode_GameEntity_Sub1_2755.anInt3493 * 64
+						+ class14_sub3.aSceneGraphNode_GameEntity_Sub1_2755.anInt3436);
 				Class58.method1255(i_30_, class14_sub3, i_29_, i_28_, -31083, i_31_);
 			}
 		}
@@ -266,7 +266,7 @@ public class Class14_Sub2_Sub11 extends Cacheable {
 	public static void method316(long l, int i) {
 		JunkTex.aClass14_Sub10_Sub1_891.position = 0;
 		JunkTex.aClass14_Sub10_Sub1_891.writeByte(118);
-		JunkTex.aClass14_Sub10_Sub1_891.method817(l, 114);
+		JunkTex.aClass14_Sub10_Sub1_891.method817(l);
 		Static2.anInt2734 = -3;
 		Static2.anInt2136 = 0;
 		if (i != 24967)

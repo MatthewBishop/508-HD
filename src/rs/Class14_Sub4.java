@@ -19,7 +19,7 @@ public class Class14_Sub4 extends Linkable {
 	public int anInt2779;
 	public static int anInt2782;
 	public static boolean aBoolean2784;
-	public static Class133_Sub1_Sub2[] aClass133_Sub1_Sub2Array2785;
+	public static SceneGraphNode_GameEntity_Sub2[] aSceneGraphNode_GameEntity_Sub2Array2785;
 	public static int[] anIntArray2786 = new int[32];
 	public static Deque aClass2_2787;
 	public static int anInt2788;
@@ -29,7 +29,7 @@ public class Class14_Sub4 extends Linkable {
 	static {
 		anInt2782 = 0;
 		aBoolean2784 = false;
-		aClass133_Sub1_Sub2Array2785 = new Class133_Sub1_Sub2[32768];
+		aSceneGraphNode_GameEntity_Sub2Array2785 = new SceneGraphNode_GameEntity_Sub2[32768];
 		anInt2790 = 0;
 		anInt2789 = 0;
 		aClass2_2787 = new Deque();
@@ -132,25 +132,25 @@ public class Class14_Sub4 extends Linkable {
 						Class113 class113 = class14_sub29_13_.aClass113_3250;
 						if (class113 != null) {
 							if ((class113.anInt1880 & class14_sub29_0_.anInt3236) != 0)
-								LightManager.loadclosestlights_wall(class113.anInt1880, Class4.anInt125, Static2.cameraY,
-										Class14_Sub2_Sub8.anInt3853, i_3_, i, i_1_);
+								LightManager.loadclosestlights_wall(class113.anInt1880, Class4.cameraX, Static2.cameraY,
+										Class14_Sub2_Sub8.cameraZ, i_3_, i, i_1_);
 							else
-								LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY, Class14_Sub2_Sub8.anInt3853, i_2_,
+								LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY, Class14_Sub2_Sub8.cameraZ, i_2_,
 										i, i_1_);
-							class113.aClass133_1877.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
-									JunkTex.anInt2719, Class37.anInt643, class113.anInt1878 - Class4.anInt125,
+							class113.aSceneGraphNode_1877.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+									JunkTex.anInt2719, Class37.anInt643, class113.anInt1878 - Class4.cameraX,
 									class113.anInt1882 - Static2.cameraY,
-									(class113.anInt1886 - Class14_Sub2_Sub8.anInt3853), class113.aLong1887);
+									(class113.anInt1886 - Class14_Sub2_Sub8.cameraZ), class113.aLong1887);
 						}
 						for (int i_14_ = 0; i_14_ < class14_sub29_13_.anInt3242; i_14_++) {
 							Class40 class40 = class14_sub29_13_.aClass40Array3257[i_14_];
 							if (class40 != null) {
-								LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY, Class14_Sub2_Sub8.anInt3853, i_2_,
+								LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY, Class14_Sub2_Sub8.cameraZ, i_2_,
 										i, i_1_);
-								class40.aClass133_679.render(class40.anInt663, OverlayType.anInt2420,
+								class40.aSceneGraphNode_679.render(class40.anInt663, OverlayType.anInt2420,
 										Class7_Sub3_Sub1.anInt3718, JunkTex.anInt2719, Class37.anInt643,
-										class40.anInt667 - Class4.anInt125, class40.anInt671 - Static2.cameraY,
-										(class40.anInt666 - Class14_Sub2_Sub8.anInt3853), class40.aLong677);
+										class40.x - Class4.cameraX, class40.y - Static2.cameraY,
+										(class40.z - Class14_Sub2_Sub8.cameraZ), class40.bitPacked);
 							}
 						}
 						RT4GL.setupSomeCustomProjectionStub(f);
@@ -184,11 +184,11 @@ public class Class14_Sub4 extends Linkable {
 						if (class4 != null && (class4.aLong132 & 0x80000000L) != 0L) {
 							if (class4.aBoolean133)
 								RT4GL.setupSomeCustomProjectionStub(f + 50.0F - 1.5F);
-							LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY, Class14_Sub2_Sub8.anInt3853, i_2_, i,
+							LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY, Class14_Sub2_Sub8.cameraZ, i_2_, i,
 									i_1_);
-							class4.aClass133_124.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
-									JunkTex.anInt2719, Class37.anInt643, class4.anInt136 - Class4.anInt125,
-									class4.anInt121 - Static2.cameraY, class4.anInt122 - Class14_Sub2_Sub8.anInt3853,
+							class4.aSceneGraphNode_124.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+									JunkTex.anInt2719, Class37.anInt643, class4.anInt136 - Class4.cameraX,
+									class4.anInt121 - Static2.cameraY, class4.anInt122 - Class14_Sub2_Sub8.cameraZ,
 									class4.aLong132);
 							if (class4.aBoolean133)
 								RT4GL.setupSomeCustomProjectionStub(f);
@@ -233,38 +233,38 @@ public class Class14_Sub4 extends Linkable {
 							class14_sub29_0_.anInt3231 = 0;
 						if ((class113.anInt1880 & i_17_) != 0
 								&& !Scenegraph.method1530(i_3_, i, i_1_, class113.anInt1880)) {
-							LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY, Class14_Sub2_Sub8.anInt3853, i_2_, i,
+							LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY, Class14_Sub2_Sub8.cameraZ, i_2_, i,
 									i_1_);
-							class113.aClass133_1877.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
-									JunkTex.anInt2719, Class37.anInt643, class113.anInt1878 - Class4.anInt125,
+							class113.aSceneGraphNode_1877.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+									JunkTex.anInt2719, Class37.anInt643, class113.anInt1878 - Class4.cameraX,
 									class113.anInt1882 - Static2.cameraY,
-									(class113.anInt1886 - Class14_Sub2_Sub8.anInt3853), class113.aLong1887);
+									(class113.anInt1886 - Class14_Sub2_Sub8.cameraZ), class113.aLong1887);
 						}
 						if ((class113.anInt1888 & i_17_) != 0
 								&& !Scenegraph.method1530(i_3_, i, i_1_, class113.anInt1888)) {
-							LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY, Class14_Sub2_Sub8.anInt3853, i_2_, i,
+							LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY, Class14_Sub2_Sub8.cameraZ, i_2_, i,
 									i_1_);
-							class113.aClass133_1884.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
-									JunkTex.anInt2719, Class37.anInt643, class113.anInt1878 - Class4.anInt125,
+							class113.aSceneGraphNode_1884.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+									JunkTex.anInt2719, Class37.anInt643, class113.anInt1878 - Class4.cameraX,
 									class113.anInt1882 - Static2.cameraY,
-									(class113.anInt1886 - Class14_Sub2_Sub8.anInt3853), class113.aLong1887);
+									(class113.anInt1886 - Class14_Sub2_Sub8.cameraZ), class113.aLong1887);
 						}
 					}
-					if (class37 != null && !Scenegraph.method1478(i_3_, i, i_1_, class37.aClass133_642.getMinY())) {
+					if (class37 != null && !Scenegraph.method1478(i_3_, i, i_1_, class37.aSceneGraphNode_642.getMinYorMaxYCheckTHIS())) {
 						RT4GL.setupSomeCustomProjectionStub(f - 0.5F);
 						if ((class37.anInt649 & i_17_) != 0) {
-							LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY, Class14_Sub2_Sub8.anInt3853, i_2_, i,
+							LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY, Class14_Sub2_Sub8.cameraZ, i_2_, i,
 									i_1_);
-							class37.aClass133_642.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+							class37.aSceneGraphNode_642.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
 									JunkTex.anInt2719, Class37.anInt643,
-									(class37.anInt653 - Class4.anInt125 + class37.anInt641),
+									(class37.anInt653 - Class4.cameraX + class37.anInt641),
 									class37.anInt650 - Static2.cameraY,
-									(class37.anInt633 - Class14_Sub2_Sub8.anInt3853 + class37.anInt646),
+									(class37.anInt633 - Class14_Sub2_Sub8.cameraZ + class37.anInt646),
 									class37.aLong634);
 						} else if (class37.anInt649 == 256) {
-							int i_18_ = class37.anInt653 - Class4.anInt125;
+							int i_18_ = class37.anInt653 - Class4.cameraX;
 							int i_19_ = class37.anInt650 - Static2.cameraY;
-							int i_20_ = (class37.anInt633 - Class14_Sub2_Sub8.anInt3853);
+							int i_20_ = (class37.anInt633 - Class14_Sub2_Sub8.cameraZ);
 							int i_21_ = class37.anInt647;
 							int i_22_;
 							if (i_21_ == 1 || i_21_ == 2)
@@ -277,15 +277,15 @@ public class Class14_Sub4 extends Linkable {
 							else
 								i_23_ = i_20_;
 							if (i_23_ < i_22_) {
-								LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY, Class14_Sub2_Sub8.anInt3853, i_2_,
+								LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY, Class14_Sub2_Sub8.cameraZ, i_2_,
 										i, i_1_);
-								class37.aClass133_642.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+								class37.aSceneGraphNode_642.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
 										JunkTex.anInt2719, Class37.anInt643, i_18_ + class37.anInt641, i_19_,
 										i_20_ + class37.anInt646, class37.aLong634);
-							} else if (class37.aClass133_638 != null) {
-								LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY, Class14_Sub2_Sub8.anInt3853, i_2_,
+							} else if (class37.aSceneGraphNode_638 != null) {
+								LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY, Class14_Sub2_Sub8.cameraZ, i_2_,
 										i, i_1_);
-								class37.aClass133_638.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+								class37.aSceneGraphNode_638.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
 										JunkTex.anInt2719, Class37.anInt643, i_18_, i_19_, i_20_,
 										class37.aLong634);
 							}
@@ -297,34 +297,34 @@ public class Class14_Sub4 extends Linkable {
 						if (class4 != null && (class4.aLong132 & 0x80000000L) == 0L) {
 							if (class4.aBoolean133)
 								RT4GL.setupSomeCustomProjectionStub(f + 50.0F - 1.5F);
-							LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY, Class14_Sub2_Sub8.anInt3853, i_2_, i,
+							LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY, Class14_Sub2_Sub8.cameraZ, i_2_, i,
 									i_1_);
-							class4.aClass133_124.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
-									JunkTex.anInt2719, Class37.anInt643, class4.anInt136 - Class4.anInt125,
-									class4.anInt121 - Static2.cameraY, class4.anInt122 - Class14_Sub2_Sub8.anInt3853,
+							class4.aSceneGraphNode_124.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+									JunkTex.anInt2719, Class37.anInt643, class4.anInt136 - Class4.cameraX,
+									class4.anInt121 - Static2.cameraY, class4.anInt122 - Class14_Sub2_Sub8.cameraZ,
 									class4.aLong132);
 							if (class4.aBoolean133)
 								RT4GL.setupSomeCustomProjectionStub(f);
 						}
 						Class115 class115 = class14_sub29_0_.aClass115_3256;
 						if (class115 != null && class115.anInt1914 == 0) {
-							LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY, Class14_Sub2_Sub8.anInt3853, i_2_, i,
+							LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY, Class14_Sub2_Sub8.cameraZ, i_2_, i,
 									i_1_);
-							if (class115.aClass133_1926 != null)
-								class115.aClass133_1926.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
-										JunkTex.anInt2719, Class37.anInt643, class115.anInt1913 - Class4.anInt125,
+							if (class115.aSceneGraphNode_1926 != null)
+								class115.aSceneGraphNode_1926.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+										JunkTex.anInt2719, Class37.anInt643, class115.anInt1913 - Class4.cameraX,
 										class115.anInt1911 - Static2.cameraY,
-										(class115.anInt1925 - Class14_Sub2_Sub8.anInt3853), class115.aLong1915);
-							if (class115.aClass133_1921 != null)
-								class115.aClass133_1921.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
-										JunkTex.anInt2719, Class37.anInt643, class115.anInt1913 - Class4.anInt125,
+										(class115.anInt1925 - Class14_Sub2_Sub8.cameraZ), class115.aLong1915);
+							if (class115.aSceneGraphNode_1921 != null)
+								class115.aSceneGraphNode_1921.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+										JunkTex.anInt2719, Class37.anInt643, class115.anInt1913 - Class4.cameraX,
 										class115.anInt1911 - Static2.cameraY,
-										(class115.anInt1925 - Class14_Sub2_Sub8.anInt3853), class115.aLong1915);
-							if (class115.aClass133_1919 != null)
-								class115.aClass133_1919.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
-										JunkTex.anInt2719, Class37.anInt643, class115.anInt1913 - Class4.anInt125,
+										(class115.anInt1925 - Class14_Sub2_Sub8.cameraZ), class115.aLong1915);
+							if (class115.aSceneGraphNode_1919 != null)
+								class115.aSceneGraphNode_1919.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+										JunkTex.anInt2719, Class37.anInt643, class115.anInt1913 - Class4.cameraX,
 										class115.anInt1911 - Static2.cameraY,
-										(class115.anInt1925 - Class14_Sub2_Sub8.anInt3853), class115.aLong1915);
+										(class115.anInt1925 - Class14_Sub2_Sub8.cameraZ), class115.aLong1915);
 						}
 					}
 					int i_24_ = class14_sub29_0_.anInt3249;
@@ -366,15 +366,15 @@ public class Class14_Sub4 extends Linkable {
 						if (!Scenegraph.method1530(i_3_, i, i_1_, class113.anInt1880)) {
 							do {
 								if ((class113.aLong1887 & 0xfc000L) == 16384L) {
-									int i_31_ = class113.anInt1878 - Class4.anInt125;
-									int i_32_ = (class113.anInt1886 - Class14_Sub2_Sub8.anInt3853);
+									int i_31_ = class113.anInt1878 - Class4.cameraX;
+									int i_32_ = (class113.anInt1886 - Class14_Sub2_Sub8.cameraZ);
 									int i_33_ = (int) (class113.aLong1887 >> 20 & 0x3L);
 									if (i_33_ == 0) {
 										i_31_ -= 64;
 										i_32_ += 64;
 										if (i_32_ < i_31_ && i > 0 && i_1_ < (JunkTex.anInt4337) - 1) {
-											LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY,
-													Class14_Sub2_Sub8.anInt3853, i_2_, i - 1, i_1_ + 1);
+											LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY,
+													Class14_Sub2_Sub8.cameraZ, i_2_, i - 1, i_1_ + 1);
 											break;
 										}
 									} else if (i_33_ == 1) {
@@ -382,35 +382,35 @@ public class Class14_Sub4 extends Linkable {
 										i_32_ += 64;
 										if (i_32_ < -i_31_ && i < Static2.anInt3338 - 1
 												&& i_1_ < (JunkTex.anInt4337) - 1) {
-											LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY,
-													Class14_Sub2_Sub8.anInt3853, i_2_, i + 1, i_1_ + 1);
+											LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY,
+													Class14_Sub2_Sub8.cameraZ, i_2_, i + 1, i_1_ + 1);
 											break;
 										}
 									} else if (i_33_ == 2) {
 										i_31_ += 64;
 										i_32_ -= 64;
 										if (i_32_ > i_31_ && i < Static2.anInt3338 - 1 && i_1_ > 0) {
-											LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY,
-													Class14_Sub2_Sub8.anInt3853, i_2_, i + 1, i_1_ - 1);
+											LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY,
+													Class14_Sub2_Sub8.cameraZ, i_2_, i + 1, i_1_ - 1);
 											break;
 										}
 									} else if (i_33_ == 3) {
 										i_31_ -= 64;
 										i_32_ -= 64;
 										if (i_32_ > -i_31_ && i > 0 && i_1_ > 0) {
-											LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY,
-													Class14_Sub2_Sub8.anInt3853, i_2_, i - 1, i_1_ - 1);
+											LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY,
+													Class14_Sub2_Sub8.cameraZ, i_2_, i - 1, i_1_ - 1);
 											break;
 										}
 									}
 								}
-								LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY, Class14_Sub2_Sub8.anInt3853, i_2_,
+								LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY, Class14_Sub2_Sub8.cameraZ, i_2_,
 										i, i_1_);
 							} while (false);
-							class113.aClass133_1877.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
-									JunkTex.anInt2719, Class37.anInt643, class113.anInt1878 - Class4.anInt125,
+							class113.aSceneGraphNode_1877.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+									JunkTex.anInt2719, Class37.anInt643, class113.anInt1878 - Class4.cameraX,
 									class113.anInt1882 - Static2.cameraY,
-									(class113.anInt1886 - Class14_Sub2_Sub8.anInt3853), class113.aLong1887);
+									(class113.anInt1886 - Class14_Sub2_Sub8.cameraZ), class113.aLong1887);
 						}
 						class14_sub29_0_.anInt3231 = 0;
 					}
@@ -470,12 +470,12 @@ public class Class14_Sub4 extends Linkable {
 										i_45_ = class40.anInt673;
 										i_46_ = i_47_;
 									} else if (class40.anInt673 == i_45_) {
-										int i_48_ = (class40.anInt667 - Class4.anInt125);
-										int i_49_ = (class40.anInt666 - Class14_Sub2_Sub8.anInt3853);
-										int i_50_ = ((JunkTex.aClass40Array4143[i_46_].anInt667)
-												- Class4.anInt125);
-										int i_51_ = ((JunkTex.aClass40Array4143[i_46_].anInt666)
-												- Class14_Sub2_Sub8.anInt3853);
+										int i_48_ = (class40.x - Class4.cameraX);
+										int i_49_ = (class40.z - Class14_Sub2_Sub8.cameraZ);
+										int i_50_ = ((JunkTex.aClass40Array4143[i_46_].x)
+												- Class4.cameraX);
+										int i_51_ = ((JunkTex.aClass40Array4143[i_46_].z)
+												- Class14_Sub2_Sub8.cameraZ);
 										if (i_48_ * i_48_ + i_49_ * i_49_ > i_50_ * i_50_ + i_51_ * i_51_)
 											i_46_ = i_47_;
 									}
@@ -486,13 +486,13 @@ public class Class14_Sub4 extends Linkable {
 							Class40 class40 = JunkTex.aClass40Array4143[i_46_];
 							class40.anInt662 = Class67.anInt1059;
 							if (!JunkTex.method619(i_3_, class40.anInt668, class40.anInt670,
-									class40.anInt678, class40.anInt669, class40.aClass133_679.getMinY())) {
-								if ((class40.aLong677 & 0xfc000L) == 147456L) {
-									LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY, (Class14_Sub2_Sub8.anInt3853),
+									class40.anInt678, class40.anInt669, class40.aSceneGraphNode_679.getMinYorMaxYCheckTHIS())) {
+								if ((class40.bitPacked & 0xfc000L) == 147456L) {
+									LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY, (Class14_Sub2_Sub8.cameraZ),
 											i_2_, i, i_1_);
-									int i_52_ = class40.anInt667 - Class4.anInt125;
-									int i_53_ = (class40.anInt666 - Class14_Sub2_Sub8.anInt3853);
-									int i_54_ = (int) (class40.aLong677 >> 20 & 0x3L);
+									int i_52_ = class40.x - Class4.cameraX;
+									int i_53_ = (class40.z - Class14_Sub2_Sub8.cameraZ);
+									int i_54_ = (int) (class40.bitPacked >> 20 & 0x3L);
 									if (i_54_ == 1 || i_54_ == 3) {
 										if (i_53_ > -i_52_)
 											LightManager.removeLightsNotOnTiles(i_2_, i, i_1_ - 1, i - 1, i_1_);
@@ -503,13 +503,13 @@ public class Class14_Sub4 extends Linkable {
 									else
 										LightManager.removeLightsNotOnTiles(i_2_, i, i_1_ + 1, i - 1, i_1_);
 								} else
-									LightManager.loadLightingForTiles(Class4.anInt125, Static2.cameraY, (Class14_Sub2_Sub8.anInt3853),
+									LightManager.loadLightingForTiles(Class4.cameraX, Static2.cameraY, (Class14_Sub2_Sub8.cameraZ),
 											i_2_, class40.anInt668, class40.anInt678, class40.anInt670,
 											class40.anInt669);
-								class40.aClass133_679.render(class40.anInt663, OverlayType.anInt2420,
+								class40.aSceneGraphNode_679.render(class40.anInt663, OverlayType.anInt2420,
 										Class7_Sub3_Sub1.anInt3718, JunkTex.anInt2719, Class37.anInt643,
-										class40.anInt667 - Class4.anInt125, class40.anInt671 - Static2.cameraY,
-										(class40.anInt666 - Class14_Sub2_Sub8.anInt3853), class40.aLong677);
+										class40.x - Class4.cameraX, class40.y - Static2.cameraY,
+										(class40.z - Class14_Sub2_Sub8.cameraZ), class40.bitPacked);
 							}
 							for (int i_55_ = class40.anInt668; i_55_ <= class40.anInt670; i_55_++) {
 								for (int i_56_ = class40.anInt678; i_56_ <= class40.anInt669; i_56_++) {
@@ -552,40 +552,40 @@ public class Class14_Sub4 extends Linkable {
 					Static2.anInt1806--;
 					Class115 class115 = class14_sub29_0_.aClass115_3256;
 					if (class115 != null && class115.anInt1914 != 0) {
-						LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY, Class14_Sub2_Sub8.anInt3853, i_2_, i,
+						LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY, Class14_Sub2_Sub8.cameraZ, i_2_, i,
 								i_1_);
-						if (class115.aClass133_1926 != null)
-							class115.aClass133_1926.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
-									JunkTex.anInt2719, Class37.anInt643, class115.anInt1913 - Class4.anInt125,
+						if (class115.aSceneGraphNode_1926 != null)
+							class115.aSceneGraphNode_1926.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+									JunkTex.anInt2719, Class37.anInt643, class115.anInt1913 - Class4.cameraX,
 									(class115.anInt1911 - Static2.cameraY - class115.anInt1914),
-									(class115.anInt1925 - Class14_Sub2_Sub8.anInt3853), class115.aLong1915);
-						if (class115.aClass133_1921 != null)
-							class115.aClass133_1921.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
-									JunkTex.anInt2719, Class37.anInt643, class115.anInt1913 - Class4.anInt125,
+									(class115.anInt1925 - Class14_Sub2_Sub8.cameraZ), class115.aLong1915);
+						if (class115.aSceneGraphNode_1921 != null)
+							class115.aSceneGraphNode_1921.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+									JunkTex.anInt2719, Class37.anInt643, class115.anInt1913 - Class4.cameraX,
 									(class115.anInt1911 - Static2.cameraY - class115.anInt1914),
-									(class115.anInt1925 - Class14_Sub2_Sub8.anInt3853), class115.aLong1915);
-						if (class115.aClass133_1919 != null)
-							class115.aClass133_1919.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
-									JunkTex.anInt2719, Class37.anInt643, class115.anInt1913 - Class4.anInt125,
+									(class115.anInt1925 - Class14_Sub2_Sub8.cameraZ), class115.aLong1915);
+						if (class115.aSceneGraphNode_1919 != null)
+							class115.aSceneGraphNode_1919.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+									JunkTex.anInt2719, Class37.anInt643, class115.anInt1913 - Class4.cameraX,
 									(class115.anInt1911 - Static2.cameraY - class115.anInt1914),
-									(class115.anInt1925 - Class14_Sub2_Sub8.anInt3853), class115.aLong1915);
+									(class115.anInt1925 - Class14_Sub2_Sub8.cameraZ), class115.aLong1915);
 					}
 					if (class14_sub29_0_.anInt3236 != 0) {
 						Class37 class37 = class14_sub29_0_.aClass37_3255;
-						if (class37 != null && !Scenegraph.method1478(i_3_, i, i_1_, class37.aClass133_642.getMinY())) {
+						if (class37 != null && !Scenegraph.method1478(i_3_, i, i_1_, class37.aSceneGraphNode_642.getMinYorMaxYCheckTHIS())) {
 							if ((class37.anInt649 & class14_sub29_0_.anInt3236) != 0) {
-								LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY, Class14_Sub2_Sub8.anInt3853, i_2_,
+								LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY, Class14_Sub2_Sub8.cameraZ, i_2_,
 										i, i_1_);
-								class37.aClass133_642.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+								class37.aSceneGraphNode_642.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
 										JunkTex.anInt2719, Class37.anInt643,
-										(class37.anInt653 - Class4.anInt125 + class37.anInt641),
+										(class37.anInt653 - Class4.cameraX + class37.anInt641),
 										class37.anInt650 - Static2.cameraY,
-										(class37.anInt633 - Class14_Sub2_Sub8.anInt3853 + class37.anInt646),
+										(class37.anInt633 - Class14_Sub2_Sub8.cameraZ + class37.anInt646),
 										class37.aLong634);
 							} else if (class37.anInt649 == 256) {
-								int i_62_ = class37.anInt653 - Class4.anInt125;
+								int i_62_ = class37.anInt653 - Class4.cameraX;
 								int i_63_ = class37.anInt650 - Static2.cameraY;
-								int i_64_ = (class37.anInt633 - Class14_Sub2_Sub8.anInt3853);
+								int i_64_ = (class37.anInt633 - Class14_Sub2_Sub8.cameraZ);
 								int i_65_ = class37.anInt647;
 								int i_66_;
 								if (i_65_ == 1 || i_65_ == 2)
@@ -598,15 +598,15 @@ public class Class14_Sub4 extends Linkable {
 								else
 									i_67_ = i_64_;
 								if (i_67_ >= i_66_) {
-									LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY, (Class14_Sub2_Sub8.anInt3853),
+									LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY, (Class14_Sub2_Sub8.cameraZ),
 											i_2_, i, i_1_);
-									class37.aClass133_642.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+									class37.aSceneGraphNode_642.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
 											JunkTex.anInt2719, Class37.anInt643, i_62_ + class37.anInt641, i_63_,
 											i_64_ + class37.anInt646, class37.aLong634);
-								} else if (class37.aClass133_638 != null) {
-									LightManager.loadLightingForTile(Class4.anInt125, Static2.cameraY, (Class14_Sub2_Sub8.anInt3853),
+								} else if (class37.aSceneGraphNode_638 != null) {
+									LightManager.loadLightingForTile(Class4.cameraX, Static2.cameraY, (Class14_Sub2_Sub8.cameraZ),
 											i_2_, i, i_1_);
-									class37.aClass133_638.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+									class37.aSceneGraphNode_638.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
 											JunkTex.anInt2719, Class37.anInt643, i_62_, i_63_, i_64_,
 											class37.aLong634);
 								}
@@ -616,21 +616,21 @@ public class Class14_Sub4 extends Linkable {
 						if (class113 != null) {
 							if ((class113.anInt1888 & class14_sub29_0_.anInt3236) != 0
 									&& !Scenegraph.method1530(i_3_, i, i_1_, class113.anInt1888)) {
-								LightManager.loadclosestlights_wall(class113.anInt1888, Class4.anInt125, Static2.cameraY,
-										Class14_Sub2_Sub8.anInt3853, i_3_, i, i_1_);
-								class113.aClass133_1884.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
-										JunkTex.anInt2719, Class37.anInt643, class113.anInt1878 - Class4.anInt125,
+								LightManager.loadclosestlights_wall(class113.anInt1888, Class4.cameraX, Static2.cameraY,
+										Class14_Sub2_Sub8.cameraZ, i_3_, i, i_1_);
+								class113.aSceneGraphNode_1884.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+										JunkTex.anInt2719, Class37.anInt643, class113.anInt1878 - Class4.cameraX,
 										class113.anInt1882 - Static2.cameraY,
-										(class113.anInt1886 - Class14_Sub2_Sub8.anInt3853), class113.aLong1887);
+										(class113.anInt1886 - Class14_Sub2_Sub8.cameraZ), class113.aLong1887);
 							}
 							if ((class113.anInt1880 & class14_sub29_0_.anInt3236) != 0
 									&& !Scenegraph.method1530(i_3_, i, i_1_, class113.anInt1880)) {
-								LightManager.loadclosestlights_wall(class113.anInt1880, Class4.anInt125, Static2.cameraY,
-										Class14_Sub2_Sub8.anInt3853, i_3_, i, i_1_);
-								class113.aClass133_1877.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
-										JunkTex.anInt2719, Class37.anInt643, class113.anInt1878 - Class4.anInt125,
+								LightManager.loadclosestlights_wall(class113.anInt1880, Class4.cameraX, Static2.cameraY,
+										Class14_Sub2_Sub8.cameraZ, i_3_, i, i_1_);
+								class113.aSceneGraphNode_1877.render(0, OverlayType.anInt2420, Class7_Sub3_Sub1.anInt3718,
+										JunkTex.anInt2719, Class37.anInt643, class113.anInt1878 - Class4.cameraX,
 										class113.anInt1882 - Static2.cameraY,
-										(class113.anInt1886 - Class14_Sub2_Sub8.anInt3853), class113.aLong1887);
+										(class113.anInt1886 - Class14_Sub2_Sub8.cameraZ), class113.aLong1887);
 							}
 						}
 					}
@@ -668,7 +668,7 @@ public class Class14_Sub4 extends Linkable {
 	public static void method455(int i) {
 		aClass2_2787 = null;
 		anIntArray2786 = null;
-		aClass133_Sub1_Sub2Array2785 = null;
+		aSceneGraphNode_GameEntity_Sub2Array2785 = null;
 		if (i >= -108)
 			method454(null, false);
 	}
@@ -691,7 +691,7 @@ public class Class14_Sub4 extends Linkable {
 			AnimFrameLoader class14_sub2_sub15_77_ = class14_sub2_sub15;
 			return class14_sub2_sub15_77_;
 		}
-		class14_sub2_sub15 = AnimFrameLoader.method933(Class133_Sub1_Sub1.aClass9_4935, JunkTex.aClass9_3427, i_76_,
+		class14_sub2_sub15 = AnimFrameLoader.method933(SceneGraphNode_GameEntity_Sub1.aClass9_4935, JunkTex.aClass9_3427, i_76_,
 				(byte) -101, false);
 		if (i != 3)
 			method459(null, 52);
@@ -718,19 +718,18 @@ public class Class14_Sub4 extends Linkable {
 	public static void method459(Class124 class124, int i) {
 		if (i != 2)
 			aBoolean2784 = false;
-		if (Class133_Sub1_Sub2.aClass14_Sub23Array4945 != null) {
+		if (SceneGraphNode_GameEntity_Sub2.aClass14_Sub23Array4945 != null) {
 			long l = class124.method1692(0);
 			int i_84_ = 0;
 			if (l != 0L) {
-				for (/**/; (Class133_Sub1_Sub2.aClass14_Sub23Array4945.length > i_84_
-						&& l != (Class133_Sub1_Sub2.aClass14_Sub23Array4945[i_84_].key)); i_84_++) {
+				for (/**/; (SceneGraphNode_GameEntity_Sub2.aClass14_Sub23Array4945.length > i_84_
+						&& l != (SceneGraphNode_GameEntity_Sub2.aClass14_Sub23Array4945[i_84_].key)); i_84_++) {
 					/* empty */
 				}
-				if (Class133_Sub1_Sub2.aClass14_Sub23Array4945.length > i_84_
-						&& (Class133_Sub1_Sub2.aClass14_Sub23Array4945[i_84_] != null)) {
+				if (SceneGraphNode_GameEntity_Sub2.aClass14_Sub23Array4945.length > i_84_
+						&& (SceneGraphNode_GameEntity_Sub2.aClass14_Sub23Array4945[i_84_] != null)) {
 					JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(200);
-					JunkTex.aClass14_Sub10_Sub1_891.method817(Class133_Sub1_Sub2.aClass14_Sub23Array4945[i_84_].key,
-							112);
+					JunkTex.aClass14_Sub10_Sub1_891.method817(SceneGraphNode_GameEntity_Sub2.aClass14_Sub23Array4945[i_84_].key);
 				}
 			}
 		}

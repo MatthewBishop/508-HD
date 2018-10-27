@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.applet.Class31;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.AbstractSprite;
 import com.jagex.rt4.Class25;
@@ -21,24 +22,24 @@ public class Class14_Sub7 extends Linkable {
 	public static void method469(int i, int i_0_, int i_1_, int i_2_, boolean bool, int i_3_, int i_4_) {
 		Static2.anInt2089 = 0;
 		for (int i_5_ = -1; Static2.anInt2878 + JunkTex.anInt4306 > i_5_; i_5_++) {
-			Class133_Sub1 class133_sub1;
+			SceneGraphNode_GameEntity class133_sub1;
 			if (i_5_ == -1)
-				class133_sub1 = Class14_Sub3.aClass133_Sub1_Sub1_2748;
+				class133_sub1 = Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748;
 			else if (Static2.anInt2878 <= i_5_)
-				class133_sub1 = (Class14_Sub4.aClass133_Sub1_Sub2Array2785[(JunkTex.anIntArray3965[-Static2.anInt2878
+				class133_sub1 = (Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[(JunkTex.anIntArray3965[-Static2.anInt2878
 						+ i_5_])]);
 			else
-				class133_sub1 = (JunkTex.aClass133_Sub1_Sub1Array4474[Static2.anIntArray351[i_5_]]);
+				class133_sub1 = (JunkTex.aSceneGraphNode_GameEntity_Sub1Array4474[Static2.anIntArray351[i_5_]]);
 			if (class133_sub1 != null && class133_sub1.method1804((byte) 115)) {
-				if (class133_sub1 instanceof Class133_Sub1_Sub2) {
-					Class12 class12 = ((Class133_Sub1_Sub2) class133_sub1).aClass12_4949;
+				if (class133_sub1 instanceof SceneGraphNode_GameEntity_Sub2) {
+					Class12 class12 = ((SceneGraphNode_GameEntity_Sub2) class133_sub1).aClass12_4949;
 					if (class12.anIntArray329 != null)
 						class12 = class12.method217((byte) -18);
 					if (class12 == null)
 						continue;
 				}
 				if (i_5_ >= Static2.anInt2878) {
-					Class12 class12 = ((Class133_Sub1_Sub2) class133_sub1).aClass12_4949;
+					Class12 class12 = ((SceneGraphNode_GameEntity_Sub2) class133_sub1).aClass12_4949;
 					if (class12.anIntArray329 != null)
 						class12 = class12.method217((byte) -18);
 					if (class12.anInt306 >= 0 && (Class35.aClass14_Sub2_Sub19Array596.length > class12.anInt306)) {
@@ -63,7 +64,7 @@ public class Class14_Sub7 extends Linkable {
 						}
 					}
 				} else {
-					Class133_Sub1_Sub1 class133_sub1_sub1 = (Class133_Sub1_Sub1) class133_sub1;
+					SceneGraphNode_GameEntity_Sub1 class133_sub1_sub1 = (SceneGraphNode_GameEntity_Sub1) class133_sub1;
 					int i_7_ = 30;
 					if (class133_sub1_sub1.anInt4902 != -1 || class133_sub1_sub1.anInt4904 != -1) {
 						OverlayType.method2022(i_1_, i_4_, -1, class133_sub1, (class133_sub1.method1795(12806) + 15),
@@ -99,13 +100,13 @@ public class Class14_Sub7 extends Linkable {
 				}
 				if (class133_sub1.aClass124_3462 != null && (Static2.anInt2878 <= i_5_
 						|| Class14_Sub3.anInt2764 == 0 || Class14_Sub3.anInt2764 == 3 || (Class14_Sub3.anInt2764 == 1
-								&& Class98.method1493(-1, (((Class133_Sub1_Sub1) class133_sub1).aClass124_4922))))) {
+								&& Class98.method1493(-1, (((SceneGraphNode_GameEntity_Sub1) class133_sub1).aClass124_4922))))) {
 					OverlayType.method2022(i_1_, i_4_, -1, class133_sub1, class133_sub1.method1795(12806), i >> 33,
 							i_2_ >> 1);
 					if (Class120.anInt2007 > -1 && Class32.anInt549 > Static2.anInt2089) {
-						Class32.anIntArray533[Static2.anInt2089] = Class133_Sub3.aClass14_Sub2_Sub16_3567
+						Class32.anIntArray533[Static2.anInt2089] = SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567
 								.method361(class133_sub1.aClass124_3462) / 2;
-						Class32.anIntArray565[Static2.anInt2089] = Class133_Sub3.aClass14_Sub2_Sub16_3567.anInt3978;
+						Class32.anIntArray565[Static2.anInt2089] = SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567.anInt3978;
 						Class32.anIntArray535[Static2.anInt2089] = Class120.anInt2007;
 						Class32.anIntArray534[Static2.anInt2089] = JunkTex.anInt4548;
 						Class32.anIntArray564[Static2.anInt2089] = class133_sub1.anInt3466;
@@ -118,8 +119,8 @@ public class Class14_Sub7 extends Linkable {
 				if (Class14_Sub2_Sub20.anInt4064 < class133_sub1.anInt3450) {
 					AbstractSprite class14_sub2_sub19 = JunkTex.aClass14_Sub2_Sub19Array4385[0];
 					AbstractSprite class14_sub2_sub19_9_ = JunkTex.aClass14_Sub2_Sub19Array4385[1];
-					if (class133_sub1 instanceof Class133_Sub1_Sub2) {
-						Class133_Sub1_Sub2 class133_sub1_sub2 = (Class133_Sub1_Sub2) class133_sub1;
+					if (class133_sub1 instanceof SceneGraphNode_GameEntity_Sub2) {
+						SceneGraphNode_GameEntity_Sub2 class133_sub1_sub2 = (SceneGraphNode_GameEntity_Sub2) class133_sub1;
 						AbstractSprite[] class14_sub2_sub19s = ((AbstractSprite[]) (JunkTex.aClass52_4596
 								.get((class133_sub1_sub2.aClass12_4949.anInt281))));
 						if (class14_sub2_sub19s == null) {
@@ -161,7 +162,7 @@ public class Class14_Sub7 extends Linkable {
 								JunkTex.anInt4548 -= 10;
 								Class120.anInt2007 += 15;
 							}
-							Class133_Sub5.aClass14_Sub2_Sub19Array3609[class133_sub1.anIntArray3496[i_14_]].drawReg(
+							SceneGraphNode_SpotAnimation.aClass14_Sub2_Sub19Array3609[class133_sub1.anIntArray3496[i_14_]].drawReg(
 									i_0_ + Class120.anInt2007 - 12, i_3_ + JunkTex.anInt4548 - 12);
 							Class56_Sub1.aClass14_Sub2_Sub16_3320.method345(
 									Class83.method1407(87, (class133_sub1.anIntArray3486[i_14_])),
@@ -237,30 +238,30 @@ public class Class14_Sub7 extends Linkable {
 						i_22_ = -((i_25_ - 100) * 327680) + 16777215;
 				}
 				if (Class32.anIntArray537[i_15_] == 0)
-					Class133_Sub3.aClass14_Sub2_Sub16_3567.method345(class124, i_0_ + Class120.anInt2007,
+					SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567.method345(class124, i_0_ + Class120.anInt2007,
 							i_3_ + JunkTex.anInt4548, i_22_, 0);
 				if (Class32.anIntArray537[i_15_] == 1)
-					Class133_Sub3.aClass14_Sub2_Sub16_3567.method353(class124, i_0_ + Class120.anInt2007,
+					SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567.method353(class124, i_0_ + Class120.anInt2007,
 							JunkTex.anInt4548 + i_3_, i_22_, 0, Class42.anInt699);
 				if (Class32.anIntArray537[i_15_] == 2)
-					Class133_Sub3.aClass14_Sub2_Sub16_3567.method357(class124, Class120.anInt2007 + i_0_,
+					SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567.method357(class124, Class120.anInt2007 + i_0_,
 							JunkTex.anInt4548 + i_3_, i_22_, 0, Class42.anInt699);
 				if (Class32.anIntArray537[i_15_] == 3)
-					Class133_Sub3.aClass14_Sub2_Sub16_3567.method343(class124, i_0_ + Class120.anInt2007,
+					SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567.method343(class124, i_0_ + Class120.anInt2007,
 							JunkTex.anInt4548 + i_3_, i_22_, 0, Class42.anInt699,
 							-Class32.anIntArray568[i_15_] + 150);
 				if (Class32.anIntArray537[i_15_] == 4) {
 					int i_26_ = ((-Class32.anIntArray568[i_15_] + 150)
-							* (Class133_Sub3.aClass14_Sub2_Sub16_3567.method361(class124) + 100) / 150);
+							* (SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567.method361(class124) + 100) / 150);
 					Class25.method1002(Class120.anInt2007 + i_0_ - 50, i_3_, Class120.anInt2007 + i_0_ + 50, i + i_3_);
-					Class133_Sub3.aClass14_Sub2_Sub16_3567.method364(class124,
+					SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567.method364(class124,
 							-i_26_ + (i_0_ + Class120.anInt2007) + 50, JunkTex.anInt4548 + i_3_, i_22_, 0);
 					Class25.method999(i_0_, i_3_, i_0_ + i_2_, i_3_ + i);
 				}
 				if (Class32.anIntArray537[i_15_] == 5) {
 					int i_27_ = -Class32.anIntArray568[i_15_] + 150;
 					Class25.method1002(
-							i_0_, (-Class133_Sub3.aClass14_Sub2_Sub16_3567.anInt3978 + i_3_
+							i_0_, (-SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567.anInt3978 + i_3_
 									+ JunkTex.anInt4548 - 1),
 							i_2_ + i_0_, i_3_ + JunkTex.anInt4548 + 5);
 					int i_28_ = 0;
@@ -269,12 +270,12 @@ public class Class14_Sub7 extends Linkable {
 							i_28_ = i_27_ - 125;
 					} else
 						i_28_ = i_27_ - 25;
-					Class133_Sub3.aClass14_Sub2_Sub16_3567.method345(class124, Class120.anInt2007 + i_0_,
+					SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567.method345(class124, Class120.anInt2007 + i_0_,
 							JunkTex.anInt4548 + (i_3_ + i_28_), i_22_, 0);
 					Class25.method999(i_0_, i_3_, i_0_ + i_2_, i + i_3_);
 				}
 			} else
-				Class133_Sub3.aClass14_Sub2_Sub16_3567.method345(class124, Class120.anInt2007 + i_0_,
+				SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567.method345(class124, Class120.anInt2007 + i_0_,
 						i_3_ + JunkTex.anInt4548, 16776960, 0);
 		}
 	}

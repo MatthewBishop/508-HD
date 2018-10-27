@@ -31,7 +31,7 @@ public class Class14_Sub29 extends Linkable {
 		aShortArray3262 = new short[500];
 		anIntArray3264 = new int[5];
 		anInt3266 = 127;
-		aClass124_3263 = Class124.method263(1178, "::");
+		aClass124_3263 = Class124.method263("::");
 	}
 	public static void method930(byte i) {
 		try {

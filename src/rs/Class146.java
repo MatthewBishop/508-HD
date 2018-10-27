@@ -19,7 +19,6 @@ public class Class146 {
 	public static int anInt2358;
 	public short[] aShortArray2361;
 	public Class124[] aClass124Array2362;
-	public static long aLong2364;
 	public static int anInt2365;
 
 	static {
@@ -82,34 +81,34 @@ public class Class146 {
 		if (class79.method1392(-127))
 			Class14_Sub2_Sub21.method434(i_10_, i_8_, class79, i_9_ ^ 0x84, i_7_);
 		if (l != 0L) {
-			Class133 class133 = null;
-			Class133 class133_15_ = null;
+			SceneGraphNode sceneGraphNode = null;
+			SceneGraphNode sceneGraphNode_15_ = null;
 			if (i_6_ == 0) {
 				Class113 class113 = JunkTex.method681(i_8_, i_10_, i_7_);
 				if (class113 != null) {
-					class133_15_ = class113.aClass133_1884;
-					class133 = class113.aClass133_1877;
+					sceneGraphNode_15_ = class113.aSceneGraphNode_1884;
+					sceneGraphNode = class113.aSceneGraphNode_1877;
 				}
 				if (class79.anInt1229 != 0)
 					class32.method1077(i_14_, -1, class79.aBoolean1248, i_13_, i_7_, i_10_);
 			} else if (i_6_ == 1) {
 				Class37 class37 = Class86.method1418(i_8_, i_10_, i_7_);
 				if (class37 != null) {
-					class133_15_ = class37.aClass133_638;
-					class133 = class37.aClass133_642;
+					sceneGraphNode_15_ = class37.aSceneGraphNode_638;
+					sceneGraphNode = class37.aSceneGraphNode_642;
 				}
 			} else if (i_6_ != 2) {
 				if (i_6_ == 3) {
 					Class4 class4 = JunkTex.method649(i_8_, i_10_, i_7_);
 					if (class4 != null)
-						class133 = class4.aClass133_124;
+						sceneGraphNode = class4.aSceneGraphNode_124;
 					if (class79.anInt1229 == 1)
 						class32.method1069(i_9_ ^ ~0x40004, i_7_, i_10_);
 				}
 			} else {
 				Class40 class40 = Class36.method1098(i_8_, i_10_, i_7_);
 				if (class40 != null)
-					class133 = class40.aClass133_679;
+					sceneGraphNode = class40.aSceneGraphNode_679;
 				if (class79.anInt1229 != 0 && class79.anInt1227 + i_10_ < 104 && class79.anInt1227 + i_7_ < 104
 						&& class79.anInt1245 + i_10_ < 104 && i_7_ + class79.anInt1245 < 104)
 					class32.method1068(class79.aBoolean1248, i_13_, (byte) -93, class79.anInt1245, class79.anInt1227,
@@ -117,49 +116,49 @@ public class Class146 {
 			}
 			if (class79.aBoolean1253) {
 				if (i_14_ == 2) {
-					if (!(class133 instanceof Class133_Sub4))
+					if (!(sceneGraphNode instanceof SceneGraphNode_AnimatedLocation))
 						Class68.method1305(i_10_, 4 + i_13_, 0, class79, i_14_, 0, i_7_, i, (byte) 93);
 					else
-						((Class133_Sub4) class133).method1836(true);
-					if (!(class133_15_ instanceof Class133_Sub4))
+						((SceneGraphNode_AnimatedLocation) sceneGraphNode).method1836(true);
+					if (!(sceneGraphNode_15_ instanceof SceneGraphNode_AnimatedLocation))
 						Class68.method1305(i_10_, i_13_ + 1 & 0x3, 0, class79, i_14_, 0, i_7_, i, (byte) 94);
 					else
-						((Class133_Sub4) class133_15_).method1836(true);
+						((SceneGraphNode_AnimatedLocation) sceneGraphNode_15_).method1836(true);
 				} else if (i_14_ != 5) {
 					if (i_14_ != 6) {
 						if (i_14_ == 7) {
-							if (!(class133 instanceof Class133_Sub4))
+							if (!(sceneGraphNode instanceof SceneGraphNode_AnimatedLocation))
 								Class68.method1305(i_10_, (i_13_ + 2 & 0x3) + 4, 0, class79, 4, 0, i_7_, i, (byte) 115);
 							else
-								((Class133_Sub4) class133).method1836(true);
+								((SceneGraphNode_AnimatedLocation) sceneGraphNode).method1836(true);
 						} else if (i_14_ == 8) {
-							if (!(class133 instanceof Class133_Sub4))
+							if (!(sceneGraphNode instanceof SceneGraphNode_AnimatedLocation))
 								Class68.method1305(i_10_, i_13_ + 4, ((Static2.anIntArray3859[i_13_]) * 8),
 										class79, 4, (Static2.anIntArray1893[i_13_]) * 8, i_7_, i, (byte) 107);
 							else
-								((Class133_Sub4) class133).method1836(true);
-							if (class133_15_ instanceof Class133_Sub4)
-								((Class133_Sub4) class133_15_).method1836(true);
+								((SceneGraphNode_AnimatedLocation) sceneGraphNode).method1836(true);
+							if (sceneGraphNode_15_ instanceof SceneGraphNode_AnimatedLocation)
+								((SceneGraphNode_AnimatedLocation) sceneGraphNode_15_).method1836(true);
 							else
 								Class68.method1305(i_10_, (i_13_ + 2 & 0x3) + 4,
 										(Static2.anIntArray3859[i_13_] * 8), class79, 4,
 										Static2.anIntArray1893[i_13_] * 8, i_7_, i, (byte) 125);
 						} else if (i_14_ == 11) {
-							if (class133 instanceof Class133_Sub4)
-								((Class133_Sub4) class133).method1836(true);
+							if (sceneGraphNode instanceof SceneGraphNode_AnimatedLocation)
+								((SceneGraphNode_AnimatedLocation) sceneGraphNode).method1836(true);
 							else
 								Class68.method1305(i_10_, 4 + i_13_, 0, class79, 10, 0, i_7_, i, (byte) 110);
-						} else if (class133 instanceof Class133_Sub4)
-							((Class133_Sub4) class133).method1836(true);
+						} else if (sceneGraphNode instanceof SceneGraphNode_AnimatedLocation)
+							((SceneGraphNode_AnimatedLocation) sceneGraphNode).method1836(true);
 						else
 							Class68.method1305(i_10_, i_13_, 0, class79, i_14_, 0, i_7_, i, (byte) 86);
-					} else if (!(class133 instanceof Class133_Sub4))
+					} else if (!(sceneGraphNode instanceof SceneGraphNode_AnimatedLocation))
 						Class68.method1305(i_10_, i_13_ + 4, (Static2.anIntArray3859[i_13_]) * 8, class79, 4,
 								Static2.anIntArray1893[i_13_] * 8, i_7_, i, (byte) 107);
 					else
-						((Class133_Sub4) class133).method1836(true);
-				} else if (class133 instanceof Class133_Sub4)
-					((Class133_Sub4) class133).method1836(true);
+						((SceneGraphNode_AnimatedLocation) sceneGraphNode).method1836(true);
+				} else if (sceneGraphNode instanceof SceneGraphNode_AnimatedLocation)
+					((SceneGraphNode_AnimatedLocation) sceneGraphNode).method1836(true);
 				else
 					Class68.method1305(i_10_, i_13_, Static2.anIntArray212[i_13_] * 8, class79, 4,
 							Static2.anIntArray3074[i_13_] * 8, i_7_, i, (byte) 100);

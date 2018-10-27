@@ -9,8 +9,7 @@ import com.jagex.rt4.AbstractSprite_Sub1_Sub1;
 
 public class Class56 {
 	public static int[] anIntArray913;
-	public static Class124 aClass124_914 = Class124.method263(1178,
-			"Please wait )2 attempting to reestablish)3");
+	public static Class124 aClass124_914 = Class124.method263("Please wait )2 attempting to reestablish)3");
 	public static int[] anIntArray917;
 	public static int anInt918;
 	public static Class124[] aClass124Array919;
@@ -60,7 +59,7 @@ public class Class56 {
 							for (int i_11_ = 0; JunkTex.anIntArray2858.length > i_11_; i_11_++) {
 								if (JunkTex.anIntArray2858[i_11_] == i_10_ && is[i_11_] != null) {
 									bool_5_ = true;
-									Class133_Sub3.method1833(bool, i_2_ * 8, i_7_, is[i_11_], i_1_, i_3_ * 8,
+									SceneGraphNode_GroundObject.method1833(bool, i_2_ * 8, i_7_, is[i_11_], i_1_, i_3_ * 8,
 											(byte) -123, i_6_, (i_8_ & 0x7) * 8, (i_9_ & 0x7) * 8,
 											Class14_Sub21.aClass32Array3100);
 									break;

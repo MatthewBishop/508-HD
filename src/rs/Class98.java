@@ -11,8 +11,7 @@ public class Class98 {
 	public int[] anIntArray1658;
 	public static Huffman aClass5_1659;
 	public static int[] occludersMinX;
-	public static Class124 aClass124_1661 = (Class124.method263(1178,
-			"; Expires=Thu)1 01)2Jan)21970 00:00:00 GMT; Max)2Age=0"));
+	public static Class124 aClass124_1661 = (Class124.method263("; Expires=Thu)1 01)2Jan)21970 00:00:00 GMT; Max)2Age=0"));
 	public Class14_Sub2_Sub21 aClass14_Sub2_Sub21_1662;
 	public int anInt1663;
 	public static long[] aLongArray1665 = new long[100];
@@ -20,7 +19,7 @@ public class Class98 {
 	public static byte[][] spriteAlphas;
 	public static AbstractSprite[] aClass14_Sub2_Sub19Array1669;
 	public static int anInt1671;
-	public static Class124 aClass124_1673 = Class124.method263(1178, "3D)2Softwarebibliothek gestartet)3");
+	public static Class124 aClass124_1673 = Class124.method263("3D)2Softwarebibliothek gestartet)3");
 
 	public static void method1492(int i, byte i_0_) {
 		if (i_0_ >= -43)
@@ -43,7 +42,7 @@ public class Class98 {
 			if (class124.method1717(i ^ ~0x28, Static2.aClass124Array2938[i_1_]))
 				return true;
 		}
-		if (class124.method1717(40, (Class14_Sub3.aClass133_Sub1_Sub1_2748.aClass124_4922)))
+		if (class124.method1717(40, (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.aClass124_4922)))
 			return true;
 		boolean bool = false;
 		return bool;

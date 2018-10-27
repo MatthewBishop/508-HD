@@ -17,174 +17,177 @@ import rs.Class14_Sub29;
 import rs.SDRaster;
 import rs.JunkTex;
 
+/*
+ * Class14_Sub29 = GroundTile
+ */
 public class HDTile extends Linkable {
-	public static ByteBuffer aByteBuffer3192;
-	public static ByteBuffer aByteBuffer3200;
-	public static Buffer aClass14_Sub10_3186;
-	public static Buffer aClass14_Sub10_3189;
+	public static ByteBuffer edgeElementBuffer;
+	public static ByteBuffer elementBuffer;
+	public static Buffer elementStream;
+	public static Buffer edgeElementStream;
 	public static void method923() {
-		aClass14_Sub10_3186 = null;
-		aClass14_Sub10_3189 = null;
-		aByteBuffer3200 = null;
-		aByteBuffer3192 = null;
+		elementStream = null;
+		edgeElementStream = null;
+		elementBuffer = null;
+		edgeElementBuffer = null;
 	}
 
-	public boolean aBoolean3201;
-	public boolean aBoolean3209;
-	public boolean[] aBooleanArray3194;
-	public ByteBuffer aByteBuffer3206;
-	public VertexBuffer aClass29_3182;
-	public HashTable aClass55_3195;
-	public float aFloat3211;
-	public float[] aFloatArray3185;
-	public float[] aFloatArray3188;
-	public float[] aFloatArray3193;
-	public float[] aFloatArray3198;
-	public int anInt3180 = 0;
-	public int anInt3181;
-	public int anInt3187 = 0;
-	public int anInt3190;
-	public int anInt3202;
-	public int anInt3204;
-	public int anInt3208;
-	public int anInt3210;
-	public int[] anIntArray3183;
-	public int[] anIntArray3191;
-	public int[] anIntArray3196;
-	public int[] anIntArray3197;
-	public int[] anIntArray3199;
-	public int[] anIntArray3205;
-	public int[] anIntArray3207;
-	public int[][] anIntArrayArray3184;
+	public boolean hasEdges;
+	public boolean useWTexcoord;
+	public boolean[] writeTriangleToEdgeStream;
+	public ByteBuffer vertexDataBuffer;
+	public VertexBuffer vertexVBO;
+	public HashTable vertexIDBuffer;
+	public float textureSize;
+	public float[] normalZ;
+	public float[] texCoordW;
+	public float[] normalY;
+	public float[] normalX;
+	public int maxTriangles = 0;
+	public int maxVertices;
+	public int triangleCount = 0;
+	public int renderSettings;
+	public int vertexCount;
+	public int texture;
+	public int indexCount;
+	public int edgeIndexCount;
+	public int[] vertexY;
+	public int[] vertexZ;
+	public int[] triangleTileHL;
+	public int[] vertexX;
+	public int[] triangleTileX;
+	public int[] triangleTileZ;
+	public int[] vertexColour;
+	public int[][] triangleIndices;
 
-	public int[][] anIntArrayArray3203;
+	public int[][] edgeTriangleIndices;
 
-	public HDTile(int i, float f, boolean bool, boolean bool_15_, int i_16_) {
-		anInt3181 = 0;
-		anInt3208 = 0;
-		anInt3202 = 0;
-		anInt3210 = 0;
-		anInt3204 = i;
-		aFloat3211 = f;
-		aBoolean3201 = bool;
-		aBoolean3209 = bool_15_;
-		anInt3190 = i_16_;
+	public HDTile(int _texture, float texCoordDivider, boolean _hasEdges, boolean _useWTexCoord, int i_16_) {
+		maxVertices = 0;
+		indexCount = 0;
+		vertexCount = 0;
+		edgeIndexCount = 0;
+		texture = _texture;
+		textureSize = texCoordDivider;
+		hasEdges = _hasEdges;
+		useWTexcoord = _useWTexCoord;
+		renderSettings = i_16_;
 	}
 
-	public int method920(int i, int i_0_, int i_1_, int[] is, int[] is_2_, boolean bool) {
-		if (aBoolean3201) {
-			anIntArrayArray3203[anInt3187] = is_2_;
-			aBooleanArray3194[anInt3187] = bool;
-			if (is_2_ != null)
-				anInt3210 += is_2_.length;
-			if (bool)
-				anInt3210 += (is.length - 2) * 3;
+	public int addTriangle(int heightLevel, int tileX, int tileZ, int[] triIndices, int[] edgeIndices, boolean writeTriToEdgeStream) {
+		if (hasEdges) {
+			edgeTriangleIndices[triangleCount] = edgeIndices;
+			writeTriangleToEdgeStream[triangleCount] = writeTriToEdgeStream;
+			if (edgeIndices != null)
+				edgeIndexCount += edgeIndices.length;
+			if (writeTriToEdgeStream)
+				edgeIndexCount += (triIndices.length - 2) * 3;
 			else
-				anInt3208 += (is.length - 2) * 3;
+				indexCount += (triIndices.length - 2) * 3;
 		} else
-			anInt3208 += (is.length - 2) * 3;
-		anIntArray3196[anInt3187] = i;
-		anIntArray3199[anInt3187] = i_0_;
-		anIntArray3205[anInt3187] = i_1_;
-		anIntArrayArray3184[anInt3187] = is;
-		return anInt3187++;
+			indexCount += (triIndices.length - 2) * 3;
+		triangleTileHL[triangleCount] = heightLevel;
+		triangleTileX[triangleCount] = tileX;
+		triangleTileZ[triangleCount] = tileZ;
+		triangleIndices[triangleCount] = triIndices;
+		return triangleCount++;
 	}
 
-	public int method921(int i, int i_3_, int i_4_, float f, float f_5_, float f_6_, int i_7_, float f_8_) {
+	public int addVertex(int v_x, int v_y, int v_z, float n_x, float n_y, float n_z, int color, float t_w) {
 		long l = 0L;
-		if ((i & 0x7f) == 0 || (i_4_ & 0x7f) == 0) {
-			l = (long) (i + (i_4_ << 16)) + ((long) i_7_ << 32);
-			IntegerNode class14_sub1 = (IntegerNode) aClass55_3195.get(l);
-			if (class14_sub1 != null) {
-				if (i_3_ < anIntArray3183[class14_sub1.value])
-					anIntArray3183[class14_sub1.value] = i_3_;
-				return class14_sub1.value;
+		if ((v_x & 0x7f) == 0 || (v_z & 0x7f) == 0) {
+			l = (long) (v_x + (v_z << 16)) + ((long) color << 32);
+			IntegerNode integerNode = (IntegerNode) vertexIDBuffer.get(l);
+			if (integerNode != null) {
+				if (v_y < vertexY[integerNode.value])
+					vertexY[integerNode.value] = v_y;
+				return integerNode.value;
 			}
 		}
-		anIntArray3197[anInt3202] = i;
-		anIntArray3183[anInt3202] = i_3_;
-		anIntArray3191[anInt3202] = i_4_;
-		if (aBoolean3209)
-			aFloatArray3188[anInt3202] = f_8_;
-		aFloatArray3198[anInt3202] = f;
-		aFloatArray3193[anInt3202] = f_5_;
-		aFloatArray3185[anInt3202] = f_6_;
-		anIntArray3207[anInt3202] = i_7_;
+		vertexX[vertexCount] = v_x;
+		vertexY[vertexCount] = v_y;
+		vertexZ[vertexCount] = v_z;
+		if (useWTexcoord)
+			texCoordW[vertexCount] = t_w;
+		normalX[vertexCount] = n_x;
+		normalY[vertexCount] = n_y;
+		normalZ[vertexCount] = n_z;
+		vertexColour[vertexCount] = color;
 		if (l != 0L)
-			aClass55_3195.put(l, new IntegerNode(anInt3202));
-		return anInt3202++;
+			vertexIDBuffer.put(l, new IntegerNode(vertexCount));
+		return vertexCount++;
 	}
 
-	public void method922(Class14_Sub29[][][] class14_sub29s, float f, boolean bool) {
-		if (aClass14_Sub10_3186 == null || aClass14_Sub10_3186.payload.length < anInt3208 * 4)
-			aClass14_Sub10_3186 = new Buffer(anInt3208 * 4);
+	public void render(Class14_Sub29[][][] class14_sub29s, float heightOffset, boolean noTextures) {
+		if (elementStream == null || elementStream.payload.length < indexCount * 4)
+			elementStream = new Buffer(indexCount * 4);
 		else
-			aClass14_Sub10_3186.position = 0;
-		if (aClass14_Sub10_3189 == null || aClass14_Sub10_3189.payload.length < anInt3210 * 4)
-			aClass14_Sub10_3189 = new Buffer(anInt3210 * 4);
+			elementStream.position = 0;
+		if (edgeElementStream == null || edgeElementStream.payload.length < edgeIndexCount * 4)
+			edgeElementStream = new Buffer(edgeIndexCount * 4);
 		else
-			aClass14_Sub10_3189.position = 0;
+			edgeElementStream.position = 0;
 		if (RT4GL.byte_order_bigendian) {
-			for (int i = 0; i < anInt3187; i++) {
-				Class14_Sub29 class14_sub29 = (class14_sub29s[anIntArray3196[i]][anIntArray3199[i]][anIntArray3205[i]]);
+			for (int i = 0; i < triangleCount; i++) {
+				Class14_Sub29 class14_sub29 = (class14_sub29s[triangleTileHL[i]][triangleTileX[i]][triangleTileZ[i]]);
 				if (class14_sub29 != null && class14_sub29.aBoolean3235) {
-					int[] is = anIntArrayArray3184[i];
+					int[] indices = triangleIndices[i];
 					Buffer class14_sub10;
-					if (aBoolean3201) {
-						int[] is_9_ = anIntArrayArray3203[i];
+					if (hasEdges) {
+						int[] is_9_ = edgeTriangleIndices[i];
 						if (is_9_ != null) {
 							for (int i_10_ = 0; i_10_ < is_9_.length; i_10_++)
-								aClass14_Sub10_3189.writeInt(is_9_[i_10_], 110);
+								edgeElementStream.writeInt(is_9_[i_10_], 110);
 						}
-						class14_sub10 = (aBooleanArray3194[i] ? aClass14_Sub10_3189 : aClass14_Sub10_3186);
+						class14_sub10 = (writeTriangleToEdgeStream[i] ? edgeElementStream : elementStream);
 					} else
-						class14_sub10 = aClass14_Sub10_3186;
-					for (int i_11_ = 1; i_11_ < is.length - 1; i_11_++) {
-						class14_sub10.writeInt(is[0], 121);
-						class14_sub10.writeInt(is[i_11_], 103);
-						class14_sub10.writeInt(is[i_11_ + 1], 111);
+						class14_sub10 = elementStream;
+					for (int i_11_ = 1; i_11_ < indices.length - 1; i_11_++) {
+						class14_sub10.writeInt(indices[0], 121);
+						class14_sub10.writeInt(indices[i_11_], 103);
+						class14_sub10.writeInt(indices[i_11_ + 1], 111);
 					}
 				}
 			}
 		} else {
-			for (int i = 0; i < anInt3187; i++) {
-				Class14_Sub29 class14_sub29 = (class14_sub29s[anIntArray3196[i]][anIntArray3199[i]][anIntArray3205[i]]);
+			for (int i = 0; i < triangleCount; i++) {
+				Class14_Sub29 class14_sub29 = (class14_sub29s[triangleTileHL[i]][triangleTileX[i]][triangleTileZ[i]]);
 				if (class14_sub29 != null && class14_sub29.aBoolean3235) {
-					int[] is = anIntArrayArray3184[i];
+					int[] indices = triangleIndices[i];
 					Buffer class14_sub10;
-					if (aBoolean3201) {
-						int[] is_12_ = anIntArrayArray3203[i];
+					if (hasEdges) {
+						int[] is_12_ = edgeTriangleIndices[i];
 						if (is_12_ != null) {
 							for (int i_13_ = 0; i_13_ < is_12_.length; i_13_++)
-								aClass14_Sub10_3189.writeIntLE(-73, is_12_[i_13_]);
+								edgeElementStream.writeIntLE(is_12_[i_13_]);
 						}
-						class14_sub10 = (aBooleanArray3194[i] ? aClass14_Sub10_3189 : aClass14_Sub10_3186);
+						class14_sub10 = (writeTriangleToEdgeStream[i] ? edgeElementStream : elementStream);
 					} else
-						class14_sub10 = aClass14_Sub10_3186;
-					for (int i_14_ = 1; i_14_ < is.length - 1; i_14_++) {
-						class14_sub10.writeIntLE(-117, is[0]);
-						class14_sub10.writeIntLE(-94, is[i_14_]);
-						class14_sub10.writeIntLE(-85, is[i_14_ + 1]);
+						class14_sub10 = elementStream;
+					for (int i_14_ = 1; i_14_ < indices.length - 1; i_14_++) {
+						class14_sub10.writeIntLE(indices[0]);
+						class14_sub10.writeIntLE(indices[i_14_]);
+						class14_sub10.writeIntLE(indices[i_14_ + 1]);
 					}
 				}
 			}
 		}
-		if (aClass14_Sub10_3186.position != 0 || aClass14_Sub10_3189.position != 0) {
+		if (elementStream.position != 0 || edgeElementStream.position != 0) {
 			GL gl = RT4GL.gl;
-			if (anInt3204 == -1 || bool) {
+			if (texture == -1 || noTextures) {
 				RT4GL.bindTexture2D(-1);
 				RT4.method1778(0, 0);
 			} else
-				SDRaster.anInterface3_117.method16(anInt3204);
-			int i = aBoolean3209 ? 40 : 36;
-			if (aClass29_3182 != null) {
-				aClass29_3182.bindArray();
+				SDRaster.anInterface3_117.method16(texture);
+			int i = useWTexcoord ? 40 : 36;
+			if (vertexVBO != null) {
+				vertexVBO.bindArray();
 				gl.glVertexPointer(3, 5126, i, 0L);
 				gl.glColorPointer(4, 5121, i, 12L);
 				if (RT4.useLighting)
 					gl.glNormalPointer(5126, i, 16L);
 				gl.glTexCoordPointer(2, 5126, i, 28L);
-				if (aBoolean3209) {
+				if (useWTexcoord) {
 					gl.glClientActiveTexture(WaterShader.getActiveTexture());
 					gl.glTexCoordPointer(1, 5126, i, 36L);
 					gl.glClientActiveTexture(33984);
@@ -192,119 +195,119 @@ public class HDTile extends Linkable {
 			} else {
 				if (RT4GL.has_vbo)
 					gl.glBindBufferARB(34962, 0);
-				aByteBuffer3206.position(0);
-				gl.glVertexPointer(3, 5126, i, aByteBuffer3206);
-				aByteBuffer3206.position(12);
-				gl.glColorPointer(4, 5121, i, aByteBuffer3206);
+				vertexDataBuffer.position(0);
+				gl.glVertexPointer(3, 5126, i, vertexDataBuffer);
+				vertexDataBuffer.position(12);
+				gl.glColorPointer(4, 5121, i, vertexDataBuffer);
 				if (RT4.useLighting) {
-					aByteBuffer3206.position(16);
-					gl.glNormalPointer(5126, i, aByteBuffer3206);
+					vertexDataBuffer.position(16);
+					gl.glNormalPointer(5126, i, vertexDataBuffer);
 				}
-				aByteBuffer3206.position(28);
-				gl.glTexCoordPointer(2, 5126, i, aByteBuffer3206);
-				if (aBoolean3209) {
+				vertexDataBuffer.position(28);
+				gl.glTexCoordPointer(2, 5126, i, vertexDataBuffer);
+				if (useWTexcoord) {
 					gl.glClientActiveTexture(WaterShader.getActiveTexture());
-					aByteBuffer3206.position(36);
-					gl.glTexCoordPointer(1, 5126, i, aByteBuffer3206);
+					vertexDataBuffer.position(36);
+					gl.glTexCoordPointer(1, 5126, i, vertexDataBuffer);
 					gl.glClientActiveTexture(33984);
 				}
 			}
 			if (RT4GL.has_vbo)
 				gl.glBindBufferARB(34963, 0);
-			if (aClass14_Sub10_3186.position != 0) {
-				if (aByteBuffer3200 == null || (aByteBuffer3200.capacity() < aClass14_Sub10_3186.position))
-					aByteBuffer3200 = ByteBuffer.allocateDirect(aClass14_Sub10_3186.position)
+			if (elementStream.position != 0) {
+				if (elementBuffer == null || (elementBuffer.capacity() < elementStream.position))
+					elementBuffer = ByteBuffer.allocateDirect(elementStream.position)
 							.order(ByteOrder.nativeOrder());
 				else
-					aByteBuffer3200.clear();
-				aByteBuffer3200.put(aClass14_Sub10_3186.payload, 0, aClass14_Sub10_3186.position);
-				aByteBuffer3200.flip();
-				RT4GL.setupSomeCustomProjectionStub(f);
-				gl.glDrawElements(4, aClass14_Sub10_3186.position / 4, 5125, aByteBuffer3200);
+					elementBuffer.clear();
+				elementBuffer.put(elementStream.payload, 0, elementStream.position);
+				elementBuffer.flip();
+				RT4GL.setupSomeCustomProjectionStub(heightOffset);
+				gl.glDrawElements(4, elementStream.position / 4, 5125, elementBuffer);
 			}
-			if (aClass14_Sub10_3189.position != 0) {
-				if (aByteBuffer3192 == null || (aByteBuffer3192.capacity() < aClass14_Sub10_3189.position))
-					aByteBuffer3192 = ByteBuffer.allocateDirect(aClass14_Sub10_3189.position)
+			if (edgeElementStream.position != 0) {
+				if (edgeElementBuffer == null || (edgeElementBuffer.capacity() < edgeElementStream.position))
+					edgeElementBuffer = ByteBuffer.allocateDirect(edgeElementStream.position)
 							.order(ByteOrder.nativeOrder());
 				else
-					aByteBuffer3192.clear();
-				aByteBuffer3192.put(aClass14_Sub10_3189.payload, 0, aClass14_Sub10_3189.position);
-				aByteBuffer3192.flip();
-				RT4GL.setupSomeCustomProjectionStub(f - 100.0F);
+					edgeElementBuffer.clear();
+				edgeElementBuffer.put(edgeElementStream.payload, 0, edgeElementStream.position);
+				edgeElementBuffer.flip();
+				RT4GL.setupSomeCustomProjectionStub(heightOffset - 100.0F);
 				RT4GL.method1646();
-				gl.glDrawElements(4, aClass14_Sub10_3189.position / 4, 5125, aByteBuffer3192);
+				gl.glDrawElements(4, edgeElementStream.position / 4, 5125, edgeElementBuffer);
 				RT4GL.enableDepthBufferWriting();
 			}
 		}
 	}
 
-	public void method924() {
-		anIntArray3197 = new int[anInt3181];
-		anIntArray3183 = new int[anInt3181];
-		anIntArray3191 = new int[anInt3181];
-		if (aBoolean3209)
-			aFloatArray3188 = new float[anInt3181];
-		anIntArray3207 = new int[anInt3181];
-		aFloatArray3198 = new float[anInt3181];
-		aFloatArray3193 = new float[anInt3181];
-		aFloatArray3185 = new float[anInt3181];
-		anIntArray3199 = new int[anInt3180];
-		anIntArray3205 = new int[anInt3180];
-		anIntArray3196 = new int[anInt3180];
-		anIntArrayArray3184 = new int[anInt3180][];
-		aClass55_3195 = new HashTable(JunkTex.method653(anInt3181));
-		if (aBoolean3201) {
-			anIntArrayArray3203 = new int[anInt3180][];
-			aBooleanArray3194 = new boolean[anInt3180];
+	public void initialize() {
+		vertexX = new int[maxVertices];
+		vertexY = new int[maxVertices];
+		vertexZ = new int[maxVertices];
+		if (useWTexcoord)
+			texCoordW = new float[maxVertices];
+		vertexColour = new int[maxVertices];
+		normalX = new float[maxVertices];
+		normalY = new float[maxVertices];
+		normalZ = new float[maxVertices];
+		triangleTileX = new int[maxTriangles];
+		triangleTileZ = new int[maxTriangles];
+		triangleTileHL = new int[maxTriangles];
+		triangleIndices = new int[maxTriangles][];
+		vertexIDBuffer = new HashTable(JunkTex.method653(maxVertices));
+		if (hasEdges) {
+			edgeTriangleIndices = new int[maxTriangles][];
+			writeTriangleToEdgeStream = new boolean[maxTriangles];
 		}
 	}
 
-	public void method925() {
-		Buffer class14_sub10 = new Buffer((aBoolean3209 ? 40 : 36) * anInt3202);
-		for (int i = 0; i < anInt3202; i++) {
+	public void generateVertexData() {
+		Buffer class14_sub10 = new Buffer((useWTexcoord ? 40 : 36) * vertexCount);
+		for (int i = 0; i < vertexCount; i++) {
 			if (RT4GL.byte_order_bigendian) {
-				class14_sub10.writeFloat((float) anIntArray3197[i]);
-				class14_sub10.writeFloat((float) anIntArray3183[i]);
-				class14_sub10.writeFloat((float) anIntArray3191[i]);
-				class14_sub10.writeInt(anIntArray3207[i], 103);
-				class14_sub10.writeFloat(aFloatArray3198[i]);
-				class14_sub10.writeFloat(aFloatArray3193[i]);
-				class14_sub10.writeFloat(aFloatArray3185[i]);
-				class14_sub10.writeFloat((float) anIntArray3197[i] / aFloat3211);
-				class14_sub10.writeFloat((float) anIntArray3191[i] / aFloat3211);
-				if (aBoolean3209)
-					class14_sub10.writeFloat(aFloatArray3188[i]);
+				class14_sub10.writeFloat((float) vertexX[i]);
+				class14_sub10.writeFloat((float) vertexY[i]);
+				class14_sub10.writeFloat((float) vertexZ[i]);
+				class14_sub10.writeInt(vertexColour[i], 103);
+				class14_sub10.writeFloat(normalX[i]);
+				class14_sub10.writeFloat(normalY[i]);
+				class14_sub10.writeFloat(normalZ[i]);
+				class14_sub10.writeFloat((float) vertexX[i] / textureSize);
+				class14_sub10.writeFloat((float) vertexZ[i] / textureSize);
+				if (useWTexcoord)
+					class14_sub10.writeFloat(texCoordW[i]);
 			} else {
-				class14_sub10.writeFloatLE((float) anIntArray3197[i]);
-				class14_sub10.writeFloatLE((float) anIntArray3183[i]);
-				class14_sub10.writeFloatLE((float) anIntArray3191[i]);
-				class14_sub10.writeInt(anIntArray3207[i], 119);
-				class14_sub10.writeFloatLE(aFloatArray3198[i]);
-				class14_sub10.writeFloatLE(aFloatArray3193[i]);
-				class14_sub10.writeFloatLE(aFloatArray3185[i]);
-				class14_sub10.writeFloatLE((float) anIntArray3197[i] / aFloat3211);
-				class14_sub10.writeFloatLE((float) anIntArray3191[i] / aFloat3211);
-				if (aBoolean3209)
-					class14_sub10.writeFloatLE(aFloatArray3188[i]);
+				class14_sub10.writeFloatLE((float) vertexX[i]);
+				class14_sub10.writeFloatLE((float) vertexY[i]);
+				class14_sub10.writeFloatLE((float) vertexZ[i]);
+				class14_sub10.writeInt(vertexColour[i], 119);
+				class14_sub10.writeFloatLE(normalX[i]);
+				class14_sub10.writeFloatLE(normalY[i]);
+				class14_sub10.writeFloatLE(normalZ[i]);
+				class14_sub10.writeFloatLE((float) vertexX[i] / textureSize);
+				class14_sub10.writeFloatLE((float) vertexZ[i] / textureSize);
+				if (useWTexcoord)
+					class14_sub10.writeFloatLE(texCoordW[i]);
 			}
 		}
 		if (RT4GL.has_vbo) {
 			ByteBuffer bytebuffer = ByteBuffer.wrap(class14_sub10.payload, 0, class14_sub10.position);
-			aClass29_3182 = new VertexBuffer();
-			aClass29_3182._setArrayData(bytebuffer);
+			vertexVBO = new VertexBuffer();
+			vertexVBO._setArrayData(bytebuffer);
 		} else {
-			aByteBuffer3206 = ByteBuffer.allocateDirect(class14_sub10.position).order(ByteOrder.nativeOrder());
-			aByteBuffer3206.put(class14_sub10.payload, 0, class14_sub10.position);
-			aByteBuffer3206.flip();
+			vertexDataBuffer = ByteBuffer.allocateDirect(class14_sub10.position).order(ByteOrder.nativeOrder());
+			vertexDataBuffer.put(class14_sub10.payload, 0, class14_sub10.position);
+			vertexDataBuffer.flip();
 		}
-		anIntArray3197 = null;
-		anIntArray3183 = null;
-		anIntArray3191 = null;
-		anIntArray3207 = null;
-		aFloatArray3198 = null;
-		aFloatArray3193 = null;
-		aFloatArray3185 = null;
-		aClass55_3195 = null;
-		aFloatArray3188 = null;
+		vertexX = null;
+		vertexY = null;
+		vertexZ = null;
+		vertexColour = null;
+		normalX = null;
+		normalY = null;
+		normalZ = null;
+		vertexIDBuffer = null;
+		texCoordW = null;
 	}
 }

@@ -11,11 +11,11 @@ import com.jagex.rt4.HDTile;
 public class Class14_Sub11 extends Linkable {
 	public Class124 aClass124_2940;
 	public static Class124 aClass124_2941;
-	public static Class124 aClass124_2942 = Class124.method263(1178, "0(U");
+	public static Class124 aClass124_2942 = Class124.method263("0(U");
 	public static Class124 aClass124_2943;
 	public static SoftCache aClass52_2946;
 	public static int[] anIntArray2948 = new int[128];
-	public static Class124 aClass124_2949 = Class124.method263(1178, "shake:");
+	public static Class124 aClass124_2949 = Class124.method263("shake:");
 	public static int spriteTrimWidth;
 
 	static {
@@ -25,7 +25,7 @@ public class Class14_Sub11 extends Linkable {
 	}
 
 	public static void method851(int i, int i_0_) {
-		Class133_Sub1_Sub1.aClass52_4926.method1208(i_0_);
+		SceneGraphNode_GameEntity_Sub1.aClass52_4926.method1208(i_0_);
 		JunkTex.aClass52_2075.method1208(i_0_);
 		Class70.aClass52_1077.method1208(i_0_);
 		if (i != 1)
@@ -41,7 +41,7 @@ public class Class14_Sub11 extends Linkable {
 			boolean bool = true;
 			return bool;
 		}
-		boolean bool = Class133_Sub5.aClass14_Sub9_Sub1_3625.method721((byte) 109);
+		boolean bool = SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method721((byte) 109);
 		return bool;
 	}
 
@@ -49,7 +49,7 @@ public class Class14_Sub11 extends Linkable {
 			int i_4_) {
 		if (i != 32)
 			aClass124_2949 = null;
-		if (!Class133_Sub5.aBoolean3628 && JunkTex.anInt4729 < 500) {
+		if (!SceneGraphNode_SpotAnimation.aBoolean3628 && JunkTex.anInt4729 < 500) {
 			Class112.aClass124Array1875[JunkTex.anInt4729] = class124;
 			JunkTex.aClass124Array2459[(JunkTex.anInt4729)] = class124_2_;
 			Class14_Sub29.aShortArray3262[JunkTex.anInt4729] = i_3_;

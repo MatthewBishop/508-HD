@@ -147,12 +147,12 @@ public class Shadow {
 					class14_sub10_13_.writeInt(i_15_ + 1 + i_14_ * 9, 101);
 					class14_sub10_13_.writeInt(i_15_ + 1 + (i_14_ + 1) * 9, 106);
 				} else {
-					class14_sub10_13_.writeIntLE(-47, i_15_ + (i_14_ + 1) * 9);
-					class14_sub10_13_.writeIntLE(-76, i_15_ + i_14_ * 9);
-					class14_sub10_13_.writeIntLE(-69, i_15_ + 1 + i_14_ * 9);
-					class14_sub10_13_.writeIntLE(-21, i_15_ + (i_14_ + 1) * 9);
-					class14_sub10_13_.writeIntLE(-27, i_15_ + 1 + i_14_ * 9);
-					class14_sub10_13_.writeIntLE(-32, i_15_ + 1 + (i_14_ + 1) * 9);
+					class14_sub10_13_.writeIntLE(i_15_ + (i_14_ + 1) * 9);
+					class14_sub10_13_.writeIntLE(i_15_ + i_14_ * 9);
+					class14_sub10_13_.writeIntLE(i_15_ + 1 + i_14_ * 9);
+					class14_sub10_13_.writeIntLE(i_15_ + (i_14_ + 1) * 9);
+					class14_sub10_13_.writeIntLE(i_15_ + 1 + i_14_ * 9);
+					class14_sub10_13_.writeIntLE(i_15_ + 1 + (i_14_ + 1) * 9);
 				}
 			}
 		}

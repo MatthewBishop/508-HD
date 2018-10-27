@@ -13,7 +13,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 	public static Class124 aClass124_4767;
 	public static Class124 aClass124_4770;
 	public static Class124 aClass124_4773;
-	public static Class124 aClass124_4790 = Class124.method263(1178, "Free world");
+	public static Class124 aClass124_4790 = Class124.method263("Free world");
 	public static Class124 aClass124_4794;
 	public static Class124 aClass124_4808;
 	public static Class124 aClass124_4810;
@@ -25,16 +25,16 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 	static {
 		aClass124_4770 = aClass124_4790;
 		anIntArray4804 = new int[] { 1, 0, 0, 0, 1, 0, 2, 1, 1, 1, 0 };
-		aClass124_4794 = Class124.method263(1178, "Hidden");
-		aClass124_4810 = Class124.method263(1178, "Loaded interfaces");
-		aClass124_4767 = Class124.method263(1178, "Loaded input handler");
+		aClass124_4794 = Class124.method263("Hidden");
+		aClass124_4810 = Class124.method263("Loaded interfaces");
+		aClass124_4767 = Class124.method263("Loaded input handler");
 		aClass124_4762 = aClass124_4810;
 		aClass124_4808 = aClass124_4794;
 
-		aClass124_4814 = Class124.method263(1178, "settings=");
+		aClass124_4814 = Class124.method263("settings=");
 		aClass124_4773 = aClass124_4767;
 		aClass124_4829 = null;
-		aClass124_4831 = Class124.method263(1178, "");
+		aClass124_4831 = Class124.method263("");
 		aClass124_4761 = aClass124_4831;
 	}
 	public static void method700(int i, int i_24_, int i_25_) {

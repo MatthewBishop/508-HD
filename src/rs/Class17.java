@@ -7,10 +7,10 @@ import com.jagex.io.Buffer;
 
 public class Class17 {
 	public static Class124 aClass124_398;
-	public static Class124 aClass124_399 = Class124.method263(1178, "Checking for updates )2 ");
+	public static Class124 aClass124_399 = Class124.method263("Checking for updates )2 ");
 	public static int[] anIntArray400;
 	public static int[] spriteWidths;
-	public static Class124 aClass124_403 = Class124.method263(1178, "compass");
+	public static Class124 aClass124_403 = Class124.method263("compass");
 	public static Class124 aClass124_405;
 	public static Class124 aClass124_408;
 	public static long aLong410;
@@ -18,7 +18,7 @@ public class Class17 {
 	static {
 		anIntArray400 = new int[1000];
 		aClass124_405 = aClass124_399;
-		aClass124_398 = Class124.method263(1178, "<col=ffffff>");
+		aClass124_398 = Class124.method263("<col=ffffff>");
 		aClass124_408 = null;
 		aLong410 = 0L;
 	}
@@ -53,7 +53,7 @@ public class Class17 {
 				i_1_ = 2047;
 			else
 				i_1_ = Static2.anIntArray351[i_0_];
-			Class133_Sub1_Sub1 class133_sub1_sub1 = JunkTex.aClass133_Sub1_Sub1Array4474[i_1_];
+			SceneGraphNode_GameEntity_Sub1 class133_sub1_sub1 = JunkTex.aSceneGraphNode_GameEntity_Sub1Array4474[i_1_];
 			if (class133_sub1_sub1 != null)
 				JunkTex.method637(class133_sub1_sub1, class133_sub1_sub1.anInt3493, -116);
 		}

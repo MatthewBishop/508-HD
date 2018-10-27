@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.applet.ErrorReporting;
 import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.HDTile;
@@ -27,8 +28,8 @@ public class Class14_Sub21 extends Linkable {
 	public Class94 aClass94_3116;
 
 	static {
-		aClass124_3099 = Class124.method263(1178, "<img=0>");
-		aClass124_3104 = Class124.method263(1178, "(U");
+		aClass124_3099 = Class124.method263("<img=0>");
+		aClass124_3104 = Class124.method263("(U");
 		aClass32Array3100 = new Class32[4];
 	}
 
@@ -116,17 +117,17 @@ public class Class14_Sub21 extends Linkable {
 		if (i <= 108)
 			method893((byte) 29);
 		BrowserControlUtil.hide();
-		Static2.method1280(Static2.aCanvas819, (byte) 123);
-		Static2.method1356(false, Static2.aCanvas819);
+		Static2.method1280(ErrorReporting.aCanvas819, (byte) 123);
+		Static2.method1356(false, ErrorReporting.aCanvas819);
 		if (Class44.aClass129_726 != null)
-			Class44.aClass129_726.removeMouseWheelListener(Static2.aCanvas819);
+			Class44.aClass129_726.removeMouseWheelListener(ErrorReporting.aCanvas819);
 		JunkTex.method1329(0);
-		JunkTex.method572(Static2.aCanvas819, false);
-		Class56_Sub1.method1242(Static2.aCanvas819, 0);
+		JunkTex.method572(ErrorReporting.aCanvas819, false);
+		Class56_Sub1.method1242(ErrorReporting.aCanvas819, 0);
 		if (Class44.aClass129_726 != null)
-			Class44.aClass129_726.addMouseWheelListener(Static2.aCanvas819);
+			Class44.aClass129_726.addMouseWheelListener(ErrorReporting.aCanvas819);
 		Static2.method1276(-105);
-		RT4GL.createglcanvas(Static2.aCanvas819, Class135.anInt2189 * 2);
+		RT4GL.createglcanvas(ErrorReporting.aCanvas819, Class135.anInt2189 * 2);
 		Class14_Sub2_Sub12.method319(-31);
 		Class132.method1779(0);
 		Class132.aLong2169 = 0L;

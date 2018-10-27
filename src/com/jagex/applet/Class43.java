@@ -1,4 +1,4 @@
-package rs;
+package com.jagex.applet;
 
 import java.applet.Applet;
 import java.awt.EventQueue;

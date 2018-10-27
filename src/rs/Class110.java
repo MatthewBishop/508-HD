@@ -10,18 +10,18 @@ import com.jagex.rt4.Class148;
 public class Class110 {
 	public static Class148[] aClass148Array1848;
 	public static Class124 aClass124_1849;
-	public static Class124 aClass124_1850 = Class124.method263(1178, ")2");
+	public static Class124 aClass124_1850 = Class124.method263(")2");
 	public static BigInteger aBigInteger1852;
 	public static Class124 aClass124_1853;
 	public static int[] anIntArray1854;
 	public static Class124 aClass124_1855;
 
 	static {
-		aClass124_1849 = Class124.method263(1178, "Nehmen");
+		aClass124_1849 = Class124.method263("Nehmen");
 		aBigInteger1852 = (new BigInteger(
 				"9431484119947534773405476242098823416177206852045075556673005859802229236458585051597844837479119770056361726819094346360070592289857694387401749674169083"));
 		anIntArray1854 = new int[100];
-		aClass124_1855 = Class124.method263(1178, "Loading fonts )2 ");
+		aClass124_1855 = Class124.method263("Loading fonts )2 ");
 		aClass124_1853 = aClass124_1855;
 	}
 

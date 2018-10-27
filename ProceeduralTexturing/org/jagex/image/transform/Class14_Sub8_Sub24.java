@@ -80,7 +80,7 @@ public class Class14_Sub8_Sub24 extends Class14_Sub8 {
 						break while_102_;
 					}
 				} else {
-					anInt4485 = class14_sub10.method805(0);
+					anInt4485 = class14_sub10.method805();
 					break while_102_;
 				}
 				anInt4504 = (class14_sub10.method780() << 12) / 100;

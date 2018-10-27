@@ -18,10 +18,10 @@ public class Class113 {
 		JunkTex.method571(false);
 		for (int i = 0; JunkTex.anInt4255 > i; i++) {
 			int i_0_ = Class36.anIntArray626[i];
-			if (Class14_Sub2_Sub20.anInt4064 != (JunkTex.aClass133_Sub1_Sub1Array4474[i_0_].anInt3447)) {
-				if ((JunkTex.aClass133_Sub1_Sub1Array4474[i_0_].anInt4917) > 0)
-					JunkTex.method551((JunkTex.aClass133_Sub1_Sub1Array4474[i_0_]), -574);
-				JunkTex.aClass133_Sub1_Sub1Array4474[i_0_] = null;
+			if (Class14_Sub2_Sub20.anInt4064 != (JunkTex.aSceneGraphNode_GameEntity_Sub1Array4474[i_0_].anInt3447)) {
+				if ((JunkTex.aSceneGraphNode_GameEntity_Sub1Array4474[i_0_].anInt4917) > 0)
+					JunkTex.method551((JunkTex.aSceneGraphNode_GameEntity_Sub1Array4474[i_0_]), -574);
+				JunkTex.aSceneGraphNode_GameEntity_Sub1Array4474[i_0_] = null;
 			}
 		}
 		if (JunkTex.anInt4280 != JunkTex.aClass14_Sub10_Sub1_4734.position)
@@ -29,7 +29,7 @@ public class Class113 {
 					new StringBuilder("gpp1 pos:").append(JunkTex.aClass14_Sub10_Sub1_4734.position)
 							.append(" psize:").append(JunkTex.anInt4280).toString());
 		for (int i = 0; i < Static2.anInt2878; i++) {
-			if ((JunkTex.aClass133_Sub1_Sub1Array4474[Static2.anIntArray351[i]]) == null)
+			if ((JunkTex.aSceneGraphNode_GameEntity_Sub1Array4474[Static2.anIntArray351[i]]) == null)
 				throw new RuntimeException(new StringBuilder("gpp2 pos:").append(i).append(" size:")
 						.append(Static2.anInt2878).toString());
 		}
@@ -60,11 +60,11 @@ public class Class113 {
 						JunkTex.aClass120_854 = new Class120(Static2.aClass9_3945, Class44.aClass9_725);
 					}
 
-					if (Class133_Sub5.aClass14_Sub9_Sub1_3625.method706(22050, Class14_Sub9_Sub1.aClass14_Sub16_4780,
+					if (SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method706(22050, Class14_Sub9_Sub1.aClass14_Sub16_4780,
 							-67, Class59.aClass9_957, JunkTex.aClass120_854)) {
-						Class133_Sub5.aClass14_Sub9_Sub1_3625.method715(-22255);
-						Class133_Sub5.aClass14_Sub9_Sub1_3625.method710(-28225, JunkTex.anInt1132);
-						Class133_Sub5.aClass14_Sub9_Sub1_3625.method719(0, Class35.aBoolean593,
+						SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method715(-22255);
+						SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method710(-28225, JunkTex.anInt1132);
+						SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method719(0, Class35.aBoolean593,
 								Class14_Sub9_Sub1.aClass14_Sub16_4780);
 						Static2.aClass9_2696 = null;
 						Class14_Sub2_Sub11.anInt3889 = 0;
@@ -81,7 +81,7 @@ public class Class113 {
 
 			Exception var1 = new Exception();
 			var1.printStackTrace();
-			Class133_Sub5.aClass14_Sub9_Sub1_3625.method697(75);
+			SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method697(75);
 			JunkTex.aClass120_854 = null;
 			Class14_Sub2_Sub11.anInt3889 = 0;
 			Class14_Sub9_Sub1.aClass14_Sub16_4780 = null;
@@ -90,8 +90,8 @@ public class Class113 {
 		return false;
 	}
 	
-	public Class133 aClass133_1877;
-	public Class133 aClass133_1884;
+	public SceneGraphNode aSceneGraphNode_1877;
+	public SceneGraphNode aSceneGraphNode_1884;
 	public long aLong1887 = 0L;
 	public int anInt1878;
 	public int anInt1880;

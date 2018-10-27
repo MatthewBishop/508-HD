@@ -14,7 +14,7 @@ public abstract class Class108 {
 	public static Class9 aClass9_1817;
 	public static boolean[] aBooleanArray1819;
 	public static Class124 aClass124_1821;
-	public static Class124 aClass124_1822 = Class124.method263(1178, "Loaded sprites");
+	public static Class124 aClass124_1822 = Class124.method263("Loaded sprites");
 	public static Class124 aClass124_1823;
 	public static int anInt1824 = -1;
 	public static Class124 aClass124_1825;
@@ -23,12 +23,12 @@ public abstract class Class108 {
 
 	static {
 		aClass124_1814 = aClass124_1822;
-		aClass124_1823 = Class124.method263(1178, "wave2:");
+		aClass124_1823 = Class124.method263("wave2:");
 		aClass124_1821 = aClass124_1823;
 		aClass124_1815 = aClass124_1823;
-		aClass124_1826 = Class124.method263(1178, "FULL");
+		aClass124_1826 = Class124.method263("FULL");
 		aClass124_1825 = aClass124_1826;
-		aClass124_1828 = Class124.method263(1178, "Spielwelt erstellt)3");
+		aClass124_1828 = Class124.method263("Spielwelt erstellt)3");
 	}
 
 	public static void method1556(boolean bool) {

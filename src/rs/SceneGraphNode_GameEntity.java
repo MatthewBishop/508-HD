@@ -3,12 +3,16 @@
  */
 package rs;
 
+import com.jagex.applet.Applet_Sub1;
+import com.jagex.applet.Class31;
+import com.jagex.applet.Class43;
+import com.jagex.applet.ErrorReporting;
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9;
 import com.jagex.rt4.CardMemManager;
 import com.jagex.rt4.AbstractSprite;
 
-public abstract class Class133_Sub1 extends Class133 {
+public abstract class SceneGraphNode_GameEntity extends SceneGraphNode {
 	public int anInt3431;
 	public int anInt3432;
 	public int anInt3433;
@@ -67,7 +71,7 @@ public abstract class Class133_Sub1 extends Class133 {
 	public int anInt3498;
 	public int anInt3500;
 	public int anInt3501;
-	public static Class124 aClass124_3502 = Class124.method263(1178, "; version=1; path=)4; domain=");
+	public static Class124 aClass124_3502 = Class124.method263("; version=1; path=)4; domain=");
 	public int anInt3504;
 	public static AbstractSprite aClass14_Sub2_Sub19_3505;
 
@@ -186,9 +190,9 @@ public abstract class Class133_Sub1 extends Class133 {
 			if (class124.method1717(40, Class44.aClass124_728))
 				Static2.method1743(i + 27245, 25);
 			if (class124.method1717(i + 33, Class142.aClass124_2321))
-				Class133_Sub6.aBoolean3663 = true;
+				SceneGraphNode_Projectile.aBoolean3663 = true;
 			if (class124.method1717(40, Class109.aClass124_1839))
-				Class133_Sub6.aBoolean3663 = false;
+				SceneGraphNode_Projectile.aBoolean3663 = false;
 			if (class124.method1717(40, Static2.aClass124_2380)) {
 				for (int i_15_ = 0; i_15_ < 4; i_15_++) {
 					for (int i_16_ = 1; i_16_ < 103; i_16_++) {
@@ -210,10 +214,10 @@ public abstract class Class133_Sub1 extends Class133 {
 			if (class124.method1717(40, Class120.aClass124_2012))
 				JunkTex.aBoolean3392 = true;
 			if (class124.method1704(JunkTex.aClass124_4676, (byte) 58)) {
-				if (JunkTex.aFrame3962 != null)
+				if (ErrorReporting.aFrame3962 != null)
 					Class14_Sub2_Sub20.method428(124);
 				else
-					Class133_Sub6.method1854(1024, 768, 39);
+					SceneGraphNode_Projectile.method1854(1024, 768, 39);
 			}
 		}
 		if (i != 7)
@@ -294,7 +298,7 @@ public abstract class Class133_Sub1 extends Class133 {
 		if (i >= -68)
 			anInt3484 = 111;
 		anInt3437 = 0;
-		if (this == Class14_Sub3.aClass133_Sub1_Sub1_2748)
+		if (this == Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748)
 			Class14_Sub13.method858(-1);
 	}
 
@@ -309,7 +313,7 @@ public abstract class Class133_Sub1 extends Class133 {
 		}
 	}
 
-	public static void method1803(Class133 class133, int i, int i_38_, int i_39_, int i_40_, int i_41_) {
+	public static void method1803(SceneGraphNode sceneGraphNode, int i, int i_38_, int i_39_, int i_40_, int i_41_) {
 		boolean bool = true;
 		int i_42_ = i_38_;
 		int i_43_ = i_38_ + i_40_;
@@ -334,23 +338,23 @@ public abstract class Class133_Sub1 extends Class133 {
 													+ (Static2.tileHeights[i][i_38_ + 1][i_39_ + 1])) / 4);
 									Class113 class113 = class14_sub29.aClass113_3250;
 									if (class113 != null) {
-										if (class113.aClass133_1877.method1784())
-											class133.method1788(class113.aClass133_1877,
+										if (class113.aSceneGraphNode_1877.method1784())
+											sceneGraphNode.method1788(class113.aSceneGraphNode_1877,
 													((i_47_ - i_38_) * 128 + (1 - i_40_) * 64), i_49_,
 													((i_48_ - i_39_) * 128 + (1 - i_41_) * 64), bool);
-										if (class113.aClass133_1884 != null && class113.aClass133_1884.method1784())
-											class133.method1788(class113.aClass133_1884,
+										if (class113.aSceneGraphNode_1884 != null && class113.aSceneGraphNode_1884.method1784())
+											sceneGraphNode.method1788(class113.aSceneGraphNode_1884,
 													((i_47_ - i_38_) * 128 + (1 - i_40_) * 64), i_49_,
 													((i_48_ - i_39_) * 128 + (1 - i_41_) * 64), bool);
 									}
 									for (int i_50_ = 0; i_50_ < class14_sub29.anInt3242; i_50_++) {
 										Class40 class40 = (class14_sub29.aClass40Array3257[i_50_]);
-										if (class40 != null && class40.aClass133_679.method1784()
+										if (class40 != null && class40.aSceneGraphNode_679.method1784()
 												&& (i_47_ == class40.anInt668 || i_47_ == i_42_)
 												&& (i_48_ == class40.anInt678 || i_48_ == i_44_)) {
 											int i_51_ = (class40.anInt670 - class40.anInt668 + 1);
 											int i_52_ = (class40.anInt669 - class40.anInt678 + 1);
-											class133.method1788(class40.aClass133_679,
+											sceneGraphNode.method1788(class40.aSceneGraphNode_679,
 													(((class40.anInt668 - i_38_) * 128) + (i_51_ - i_40_) * 64), i_49_,
 													(((class40.anInt678 - i_39_) * 128) + (i_52_ - i_41_) * 64), bool);
 										}
@@ -375,7 +379,7 @@ public abstract class Class133_Sub1 extends Class133 {
 		return bool;
 	}
 
-	public Class133_Sub1() {
+	public SceneGraphNode_GameEntity() {
 		anInt3456 = -1;
 		anInt3459 = 0;
 		anInt3437 = 0;

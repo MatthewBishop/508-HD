@@ -12,7 +12,7 @@ public class Class14_Sub28 extends Linkable {
 	public byte[] aByteArray3213;
 	public static SoftCache aClass52_3217;
 	public int[] anIntArray3218;
-	public static Class124 aClass124_3219 = Class124.method263(1178, "Loading config )2 ");
+	public static Class124 aClass124_3219 = Class124.method263("Loading config )2 ");
 	public byte[] aByteArray3220;
 	public Class127[] aClass127Array3221;
 	public static int anInt3222 = 0;
@@ -28,7 +28,7 @@ public class Class14_Sub28 extends Linkable {
 	static {
 		anIntArray3225 = new int[] { 1, 2, 4, 8 };
 		aClass52_3217 = new SoftCache(4);
-		aClass124_3228 = Class124.method263(1178, "Please wait)3)3)3");
+		aClass124_3228 = Class124.method263("Please wait)3)3)3");
 		aClass94_3230 = null;
 		aClass124_3229 = aClass124_3228;
 	}
@@ -346,7 +346,7 @@ public class Class14_Sub28 extends Linkable {
 				i_62_ += 2;
 				int i_65_ = (i_63_ - i_59_) * i_60_ + (-i_59_ + i_63_) / 2;
 				for (int i_66_ = i_59_; i_66_ < i_63_; i_66_++) {
-					int i_67_ = Class14_Sub2_Sub3.method270(i_65_, 1, -i_59_ + i_63_);
+					int i_67_ = Class14_Sub2_Sub3.method270(i_65_, -i_59_ + i_63_);
 					aByteArray3213[i_66_] = (byte) (aByteArray3213[i_66_] * i_67_ + 32 >> 6);
 					i_65_ += i_64_ - i_60_;
 				}
@@ -380,7 +380,7 @@ public class Class14_Sub28 extends Linkable {
 				int i_76_ = is_30_[i_74_];
 				int i_77_ = (i_76_ - i_70_) * i_71_ + (-i_70_ + i_76_) / 2;
 				for (int i_78_ = i_70_; i_76_ > i_78_; i_78_++) {
-					int i_79_ = Class14_Sub2_Sub3.method270(i_77_, 1, i_76_ - i_70_);
+					int i_79_ = Class14_Sub2_Sub3.method270(i_77_, i_76_ - i_70_);
 					int i_80_ = (aByteArray3227[i_78_] & 0xff) + i_79_;
 					if (i_80_ < 0)
 						i_80_ = 0;

@@ -6,7 +6,7 @@ package com.jagex.cache.anim;
 import com.jagex.cache.loaders.AnimFrameLoader;
 import com.jagex.io.Buffer;
 
-import rs.Class133_Sub7;
+import rs.SceneGraphNode_AbstractModelRenderer;
 import rs.Class14_Sub4;
 
 public class Animation {
@@ -118,12 +118,12 @@ public class Animation {
 		}
 	}
 
-	public Class133_Sub7 method1167(int i, int i_0_, Class133_Sub7 class133_sub7) {
+	public SceneGraphNode_AbstractModelRenderer method1167(int i, int i_0_, SceneGraphNode_AbstractModelRenderer class133_sub7) {
 		int i_1_ = anIntArray768[i];
 		AnimFrameLoader class14_sub2_sub15 = Class14_Sub4.method457(3, i_1_ >> 16);
 		i_1_ &= i_0_;
 		if (class14_sub2_sub15 == null) {
-			Class133_Sub7 class133_sub7_2_ = class133_sub7.method1860(true, true);
+			SceneGraphNode_AbstractModelRenderer class133_sub7_2_ = class133_sub7.method1860(true, true);
 			return class133_sub7_2_;
 		}
 		AnimFrameLoader class14_sub2_sub15_3_ = null;
@@ -134,33 +134,33 @@ public class Animation {
 			i_4_ &= 0xffff;
 		}
 		if (class14_sub2_sub15_3_ == null || i_4_ == 65535) {
-			Class133_Sub7 class133_sub7_5_ = class133_sub7.method1860(!class14_sub2_sub15.method338(i_1_),
+			SceneGraphNode_AbstractModelRenderer class133_sub7_5_ = class133_sub7.method1860(!class14_sub2_sub15.method338(i_1_),
 					!aBoolean754);
 			class133_sub7_5_.method1857(class14_sub2_sub15, i_1_, aBoolean754);
-			Class133_Sub7 class133_sub7_6_ = class133_sub7_5_;
+			SceneGraphNode_AbstractModelRenderer class133_sub7_6_ = class133_sub7_5_;
 			return class133_sub7_6_;
 		}
-		Class133_Sub7 class133_sub7_7_ = class133_sub7.method1860(
+		SceneGraphNode_AbstractModelRenderer class133_sub7_7_ = class133_sub7.method1860(
 				(!class14_sub2_sub15.method338(i_1_) & !class14_sub2_sub15_3_.method338(i_4_)),
 				!aBoolean754);
 		class133_sub7_7_.method1857(class14_sub2_sub15, i_1_, aBoolean754);
 		class133_sub7_7_.method1857(class14_sub2_sub15_3_, i_4_, aBoolean754);
-		Class133_Sub7 class133_sub7_8_ = class133_sub7_7_;
+		SceneGraphNode_AbstractModelRenderer class133_sub7_8_ = class133_sub7_7_;
 		return class133_sub7_8_;
 	}
 
-	public Class133_Sub7 method1168(byte i, int i_9_, Class133_Sub7 class133_sub7) {
+	public SceneGraphNode_AbstractModelRenderer method1168(byte i, int i_9_, SceneGraphNode_AbstractModelRenderer class133_sub7) {
 		i_9_ = anIntArray768[i_9_];
 		AnimFrameLoader class14_sub2_sub15 = Class14_Sub4.method457(3, i_9_ >> 48);
 		i_9_ &= 0xffff;
 		if (class14_sub2_sub15 == null) {
-			Class133_Sub7 class133_sub7_10_ = class133_sub7.method1860(true, true);
+			SceneGraphNode_AbstractModelRenderer class133_sub7_10_ = class133_sub7.method1860(true, true);
 			return class133_sub7_10_;
 		}
-		Class133_Sub7 class133_sub7_11_ = class133_sub7.method1860(!class14_sub2_sub15.method338(i_9_),
+		SceneGraphNode_AbstractModelRenderer class133_sub7_11_ = class133_sub7.method1860(!class14_sub2_sub15.method338(i_9_),
 				!aBoolean754);
 		class133_sub7_11_.method1857(class14_sub2_sub15, i_9_, aBoolean754);
-		Class133_Sub7 class133_sub7_12_ = class133_sub7_11_;
+		SceneGraphNode_AbstractModelRenderer class133_sub7_12_ = class133_sub7_11_;
 		return class133_sub7_12_;
 	}
 
@@ -179,33 +179,33 @@ public class Animation {
 		}
 	}
 
-	public Class133_Sub7 method1173(int i, int i_30_, Class133_Sub7 class133_sub7) {
+	public SceneGraphNode_AbstractModelRenderer method1173(int i, int i_30_, SceneGraphNode_AbstractModelRenderer class133_sub7) {
 		i = anIntArray768[i];
 		AnimFrameLoader class14_sub2_sub15 = Class14_Sub4.method457(3, i >> 48);
 		i &= i_30_;
 		if (class14_sub2_sub15 == null) {
-			Class133_Sub7 class133_sub7_31_ = class133_sub7.method1870(true, true);
+			SceneGraphNode_AbstractModelRenderer class133_sub7_31_ = class133_sub7.method1870(true, true);
 			return class133_sub7_31_;
 		}
-		Class133_Sub7 class133_sub7_32_ = class133_sub7.method1870(!class14_sub2_sub15.method338(i),
+		SceneGraphNode_AbstractModelRenderer class133_sub7_32_ = class133_sub7.method1870(!class14_sub2_sub15.method338(i),
 				!aBoolean754);
 		class133_sub7_32_.method1857(class14_sub2_sub15, i, aBoolean754);
-		Class133_Sub7 class133_sub7_33_ = class133_sub7_32_;
+		SceneGraphNode_AbstractModelRenderer class133_sub7_33_ = class133_sub7_32_;
 		return class133_sub7_33_;
 	}
 
-	public Class133_Sub7 method1177(byte i, int i_76_, int i_77_, Class133_Sub7 class133_sub7) {
+	public SceneGraphNode_AbstractModelRenderer method1177(byte i, int i_76_, int i_77_, SceneGraphNode_AbstractModelRenderer class133_sub7) {
 		i_77_ = anIntArray768[i_77_];
 		AnimFrameLoader class14_sub2_sub15 = Class14_Sub4.method457(3, i_77_ >> 16);
 		i_77_ &= 0xffff;
 		if (class14_sub2_sub15 == null) {
-			Class133_Sub7 class133_sub7_78_ = class133_sub7.method1860(true, true);
+			SceneGraphNode_AbstractModelRenderer class133_sub7_78_ = class133_sub7.method1860(true, true);
 			return class133_sub7_78_;
 		}
 		i_76_ &= 0x3;
 		if (i > -20)
 			walkingPrecedence = -117;
-		Class133_Sub7 class133_sub7_79_ = class133_sub7.method1860(!class14_sub2_sub15.method338(i_77_),
+		SceneGraphNode_AbstractModelRenderer class133_sub7_79_ = class133_sub7.method1860(!class14_sub2_sub15.method338(i_77_),
 				!aBoolean754);
 		if (i_76_ != 1) {
 			if (i_76_ == 2)
@@ -223,16 +223,16 @@ public class Animation {
 				class133_sub7_79_.method1872();
 		} else
 			class133_sub7_79_.method1871();
-		Class133_Sub7 class133_sub7_80_ = class133_sub7_79_;
+		SceneGraphNode_AbstractModelRenderer class133_sub7_80_ = class133_sub7_79_;
 		return class133_sub7_80_;
 	}
 
-	public Class133_Sub7 method1178(int i, byte i_81_, int i_82_, Class133_Sub7 class133_sub7, Animation class46_83_) {
+	public SceneGraphNode_AbstractModelRenderer method1178(int i, byte i_81_, int i_82_, SceneGraphNode_AbstractModelRenderer class133_sub7, Animation class46_83_) {
 		i_82_ = anIntArray768[i_82_];
 		AnimFrameLoader class14_sub2_sub15 = Class14_Sub4.method457(i_81_ - 43, i_82_ >> 16);
 		i_82_ &= 0xffff;
 		if (class14_sub2_sub15 == null) {
-			Class133_Sub7 class133_sub7_84_ = class46_83_.method1168((byte) 123, i, class133_sub7);
+			SceneGraphNode_AbstractModelRenderer class133_sub7_84_ = class46_83_.method1168((byte) 123, i, class133_sub7);
 			return class133_sub7_84_;
 		}
 		if (i_81_ != 46)
@@ -241,18 +241,18 @@ public class Animation {
 		AnimFrameLoader class14_sub2_sub15_85_ = Class14_Sub4.method457(3, i >> 48);
 		i &= 0xffff;
 		if (class14_sub2_sub15_85_ == null) {
-			Class133_Sub7 class133_sub7_86_ = class133_sub7.method1860(!class14_sub2_sub15.method338(i_82_),
+			SceneGraphNode_AbstractModelRenderer class133_sub7_86_ = class133_sub7.method1860(!class14_sub2_sub15.method338(i_82_),
 					!aBoolean754);
 			class133_sub7_86_.method1857(class14_sub2_sub15, i_82_, aBoolean754);
-			Class133_Sub7 class133_sub7_87_ = class133_sub7_86_;
+			SceneGraphNode_AbstractModelRenderer class133_sub7_87_ = class133_sub7_86_;
 			return class133_sub7_87_;
 		}
-		Class133_Sub7 class133_sub7_88_ = (class133_sub7.method1860(
+		SceneGraphNode_AbstractModelRenderer class133_sub7_88_ = (class133_sub7.method1860(
 				(!class14_sub2_sub15.method338(i_82_) & !class14_sub2_sub15_85_.method338(i)),
 				!class46_83_.aBoolean754 & !aBoolean754));
 		class133_sub7_88_.method1873(class14_sub2_sub15, i_82_, class14_sub2_sub15_85_, i, interleaveOrder,
 				class46_83_.aBoolean754 | aBoolean754);
-		Class133_Sub7 class133_sub7_89_ = class133_sub7_88_;
+		SceneGraphNode_AbstractModelRenderer class133_sub7_89_ = class133_sub7_88_;
 		return class133_sub7_89_;
 	}
 }

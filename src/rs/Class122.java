@@ -12,8 +12,8 @@ public class Class122 {
 	public static int anInt2060;
 
 	static {
-		aClass124_2053 = Class124.method263(1178, "<br>(X");
-		aClass124_2058 = Class124.method263(1178, "Musik)2Engine vorbereitet)3");
+		aClass124_2053 = Class124.method263("<br>(X");
+		aClass124_2058 = Class124.method263("Musik)2Engine vorbereitet)3");
 		anInt2054 = 0;
 		anInt2060 = (int) (Math.random() * 33.0) - 16;
 	}
@@ -36,7 +36,7 @@ public class Class122 {
 	public static void method1660(int i, int i_1_) {
 		Class45.method1160(0);
 		JunkTex.method240(256);
-		int i_2_ = Class133.method1780((byte) 111, i_1_).anInt587;
+		int i_2_ = SceneGraphNode.method1780((byte) 111, i_1_).anInt587;
 		if (i_2_ != 0) {
 			int i_3_ = JunkTex.anIntArray4275[i_1_];
 			if (i_2_ == 6)

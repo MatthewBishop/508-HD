@@ -194,8 +194,8 @@ public class Class94 {
 		aBoolean1455 = true;
 		anInt1489 = class14_sub10.readUByte();
 		anInt1498 = class14_sub10.readUShort();
-		anInt1561 = class14_sub10.method805(0);
-		anInt1609 = class14_sub10.method805(0);
+		anInt1561 = class14_sub10.method805();
+		anInt1609 = class14_sub10.method805();
 		anInt1485 = class14_sub10.readUShort();
 		anInt1488 = class14_sub10.readUShort();
 		aByte1509 = class14_sub10.method780();
@@ -230,8 +230,8 @@ public class Class94 {
 			anInt1550 = class14_sub10.readUShort();
 			if (anInt1550 == 65535)
 				anInt1550 = -1;
-			anInt1607 = class14_sub10.method805(0);
-			anInt1574 = class14_sub10.method805(0);
+			anInt1607 = class14_sub10.method805();
+			anInt1574 = class14_sub10.method805();
 			anInt1465 = class14_sub10.readUShort();
 			anInt1578 = class14_sub10.readUShort();
 			anInt1516 = class14_sub10.readUShort();
@@ -391,8 +391,8 @@ public class Class94 {
 		anInt1489 = class14_sub10.readUByte();
 		anInt1572 = class14_sub10.readUByte();
 		anInt1498 = class14_sub10.readUShort();
-		anInt1561 = class14_sub10.method805(0);
-		anInt1609 = class14_sub10.method805(0);
+		anInt1561 = class14_sub10.method805();
+		anInt1609 = class14_sub10.method805();
 		anInt1485 = class14_sub10.readUShort();
 		anInt1488 = class14_sub10.readUShort();
 		aByte1496 = (byte) 0;
@@ -465,8 +465,8 @@ public class Class94 {
 			for (int i_32_ = 0; i_32_ < 20; i_32_++) {
 				int i_33_ = class14_sub10.readUByte();
 				if (i_33_ == 1) {
-					anIntArray1559[i_32_] = class14_sub10.method805(0);
-					anIntArray1510[i_32_] = class14_sub10.method805(0);
+					anIntArray1559[i_32_] = class14_sub10.method805();
+					anIntArray1510[i_32_] = class14_sub10.method805();
 					anIntArray1560[i_32_] = class14_sub10.getInt((byte) -102);
 				} else
 					anIntArray1560[i_32_] = -1;
@@ -536,8 +536,8 @@ public class Class94 {
 				anInt1588 = -1;
 			aBoolean1471 = class14_sub10.readUByte() == 1;
 			anInt1567 = class14_sub10.getInt((byte) -107);
-			anInt1454 = class14_sub10.method805(0);
-			anInt1613 = class14_sub10.method805(0);
+			anInt1454 = class14_sub10.method805();
+			anInt1613 = class14_sub10.method805();
 			int i_35_ = class14_sub10.readUByte();
 			aClass124Array1479 = new Class124[5];
 			if (i_35_ == 1)
@@ -691,7 +691,7 @@ public class Class94 {
 		return class14_sub2_sub19_55_;
 	}
 
-	public Class133_Sub7 method1480(Class102 class102, int i, boolean bool, Animation animation, int i_56_) {
+	public SceneGraphNode_AbstractModelRenderer method1480(Class102 class102, int i, boolean bool, Animation animation, int i_56_) {
 		aBoolean1554 = false;
 		int i_57_;
 		int i_58_;
@@ -703,20 +703,20 @@ public class Class94 {
 			i_58_ = anInt1476;
 		}
 		if (i_57_ == 0) {
-			Class133_Sub7 class133_sub7 = null;
+			SceneGraphNode_AbstractModelRenderer class133_sub7 = null;
 			return class133_sub7;
 		}
 		if (i_57_ == 1 && i_58_ == -1) {
-			Class133_Sub7 class133_sub7 = null;
+			SceneGraphNode_AbstractModelRenderer class133_sub7 = null;
 			return class133_sub7;
 		}
 		if (i_57_ == 1) {
-			Class133_Sub7 class133_sub7 = ((Class133_Sub7) (JunkTex.aClass52_4588.get(i_58_ + (i_57_ << 48))));
+			SceneGraphNode_AbstractModelRenderer class133_sub7 = ((SceneGraphNode_AbstractModelRenderer) (JunkTex.aClass52_4588.get(i_58_ + (i_57_ << 48))));
 			if (class133_sub7 == null) {
-				Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(JunkTex.aClass9_4486, i_58_, 0);
+				SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(JunkTex.aClass9_4486, i_58_, 0);
 				if (class133_sub2 == null) {
 					aBoolean1554 = true;
-					Class133_Sub7 class133_sub7_59_ = null;
+					SceneGraphNode_AbstractModelRenderer class133_sub7_59_ = null;
 					return class133_sub7_59_;
 				}
 				class133_sub7 = class133_sub2.method1827(64, 768, -50, -10, -50);
@@ -727,63 +727,63 @@ public class Class94 {
 			return class133_sub7;
 		}
 		if (i == (i_57_ ^ 0xffffffff)) {
-			Class133_Sub7 class133_sub7 = Static2.method1744(i_58_, i ^ ~0xa8).method224((byte) -118, animation, i_56_);
+			SceneGraphNode_AbstractModelRenderer class133_sub7 = Static2.method1744(i_58_, i ^ ~0xa8).method224((byte) -118, animation, i_56_);
 			if (class133_sub7 == null) {
 				aBoolean1554 = true;
-				Class133_Sub7 class133_sub7_60_ = null;
+				SceneGraphNode_AbstractModelRenderer class133_sub7_60_ = null;
 				return class133_sub7_60_;
 			}
-			Class133_Sub7 class133_sub7_61_ = class133_sub7;
+			SceneGraphNode_AbstractModelRenderer class133_sub7_61_ = class133_sub7;
 			return class133_sub7_61_;
 		}
 		if (i_57_ == 3) {
 			if (class102 == null) {
-				Class133_Sub7 class133_sub7 = null;
+				SceneGraphNode_AbstractModelRenderer class133_sub7 = null;
 				return class133_sub7;
 			}
-			Class133_Sub7 class133_sub7 = class102.method1521(animation, 1073741823, i_56_);
+			SceneGraphNode_AbstractModelRenderer class133_sub7 = class102.method1521(animation, 1073741823, i_56_);
 			if (class133_sub7 == null) {
 				aBoolean1554 = true;
-				Class133_Sub7 class133_sub7_62_ = null;
+				SceneGraphNode_AbstractModelRenderer class133_sub7_62_ = null;
 				return class133_sub7_62_;
 			}
-			Class133_Sub7 class133_sub7_63_ = class133_sub7;
+			SceneGraphNode_AbstractModelRenderer class133_sub7_63_ = class133_sub7;
 			return class133_sub7_63_;
 		}
 		if (i_57_ == 4) {
 			Class142 class142 = JunkTex.method605(98, i_58_);
-			Class133_Sub7 class133_sub7 = class142.method1974(animation, i_56_, 0, 10);
+			SceneGraphNode_AbstractModelRenderer class133_sub7 = class142.method1974(animation, i_56_, 0, 10);
 			if (class133_sub7 == null) {
 				aBoolean1554 = true;
-				Class133_Sub7 class133_sub7_64_ = null;
+				SceneGraphNode_AbstractModelRenderer class133_sub7_64_ = null;
 				return class133_sub7_64_;
 			}
-			Class133_Sub7 class133_sub7_65_ = class133_sub7;
+			SceneGraphNode_AbstractModelRenderer class133_sub7_65_ = class133_sub7;
 			return class133_sub7_65_;
 		}
 		if (i_57_ == 6) {
-			Class133_Sub7 class133_sub7 = Static2.method1744(i_58_, 170).method209(0, i_56_, animation, null, -67);
+			SceneGraphNode_AbstractModelRenderer class133_sub7 = Static2.method1744(i_58_, 170).method209(0, i_56_, animation, null, -67);
 			if (class133_sub7 == null) {
 				aBoolean1554 = true;
-				Class133_Sub7 class133_sub7_66_ = null;
+				SceneGraphNode_AbstractModelRenderer class133_sub7_66_ = null;
 				return class133_sub7_66_;
 			}
-			Class133_Sub7 class133_sub7_67_ = class133_sub7;
+			SceneGraphNode_AbstractModelRenderer class133_sub7_67_ = class133_sub7;
 			return class133_sub7_67_;
 		}
 		if (i_57_ == 7) {
 			int i_68_ = anInt1550 >>> 48;
 			int i_69_ = anInt1550 & 0xffff;
-			Class133_Sub7 class133_sub7 = class102.method1524(i_68_, i_56_, i_69_, animation, i + 129);
+			SceneGraphNode_AbstractModelRenderer class133_sub7 = class102.method1524(i_68_, i_56_, i_69_, animation, i + 129);
 			if (class133_sub7 == null) {
 				aBoolean1554 = true;
-				Class133_Sub7 class133_sub7_70_ = null;
+				SceneGraphNode_AbstractModelRenderer class133_sub7_70_ = null;
 				return class133_sub7_70_;
 			}
-			Class133_Sub7 class133_sub7_71_ = class133_sub7;
+			SceneGraphNode_AbstractModelRenderer class133_sub7_71_ = class133_sub7;
 			return class133_sub7_71_;
 		}
-		Class133_Sub7 class133_sub7 = null;
+		SceneGraphNode_AbstractModelRenderer class133_sub7 = null;
 		return class133_sub7;
 	}
 

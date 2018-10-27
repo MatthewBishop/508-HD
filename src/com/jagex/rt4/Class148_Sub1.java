@@ -3,7 +3,7 @@
  */
 package com.jagex.rt4;
 
-import rs.Class92;
+import rs.SD2DRaster;
 
 public class Class148_Sub1 extends Class148 {
 	private static void method2002(int[] is, byte[] is_0_, int[] is_1_, int i, int i_2_, int i_3_, int i_4_, int i_5_,
@@ -108,76 +108,76 @@ public class Class148_Sub1 extends Class148 {
 	public void method1999(int i, int i_24_, int i_25_) {
 		i += anInt2375;
 		i_24_ += anInt2374;
-		int i_26_ = i + i_24_ * Class92.anInt1432;
+		int i_26_ = i + i_24_ * SD2DRaster.anInt1432;
 		int i_27_ = 0;
 		int i_28_ = height;
 		int i_29_ = width;
-		int i_30_ = Class92.anInt1432 - i_29_;
+		int i_30_ = SD2DRaster.anInt1432 - i_29_;
 		int i_31_ = 0;
-		if (i_24_ < Class92.anInt1438) {
-			int i_32_ = Class92.anInt1438 - i_24_;
+		if (i_24_ < SD2DRaster.anInt1438) {
+			int i_32_ = SD2DRaster.anInt1438 - i_24_;
 			i_28_ -= i_32_;
-			i_24_ = Class92.anInt1438;
+			i_24_ = SD2DRaster.anInt1438;
 			i_27_ += i_32_ * i_29_;
-			i_26_ += i_32_ * Class92.anInt1432;
+			i_26_ += i_32_ * SD2DRaster.anInt1432;
 		}
-		if (i_24_ + i_28_ > Class92.anInt1436)
-			i_28_ -= i_24_ + i_28_ - Class92.anInt1436;
-		if (i < Class92.anInt1433) {
-			int i_33_ = Class92.anInt1433 - i;
+		if (i_24_ + i_28_ > SD2DRaster.anInt1436)
+			i_28_ -= i_24_ + i_28_ - SD2DRaster.anInt1436;
+		if (i < SD2DRaster.anInt1433) {
+			int i_33_ = SD2DRaster.anInt1433 - i;
 			i_29_ -= i_33_;
-			i = Class92.anInt1433;
+			i = SD2DRaster.anInt1433;
 			i_27_ += i_33_;
 			i_26_ += i_33_;
 			i_31_ += i_33_;
 			i_30_ += i_33_;
 		}
-		if (i + i_29_ > Class92.anInt1434) {
-			int i_34_ = i + i_29_ - Class92.anInt1434;
+		if (i + i_29_ > SD2DRaster.anInt1434) {
+			int i_34_ = i + i_29_ - SD2DRaster.anInt1434;
 			i_29_ -= i_34_;
 			i_31_ += i_34_;
 			i_30_ += i_34_;
 		}
 		if (i_29_ > 0 && i_28_ > 0)
-			method2008(Class92.anIntArray1437, paletteIndicators, anIntArray3688, i_27_, i_26_, i_29_, i_28_, i_30_, i_31_,
+			method2008(SD2DRaster.anIntArray1437, paletteIndicators, anIntArray3688, i_27_, i_26_, i_29_, i_28_, i_30_, i_31_,
 					i_25_);
 	}
 
 	public void method2001(int i, int i_80_) {
 		i += anInt2375;
 		i_80_ += anInt2374;
-		int i_81_ = i + i_80_ * Class92.anInt1432;
+		int i_81_ = i + i_80_ * SD2DRaster.anInt1432;
 		int i_82_ = 0;
 		int i_83_ = height;
 		int i_84_ = width;
-		int i_85_ = Class92.anInt1432 - i_84_;
+		int i_85_ = SD2DRaster.anInt1432 - i_84_;
 		int i_86_ = 0;
-		if (i_80_ < Class92.anInt1438) {
-			int i_87_ = Class92.anInt1438 - i_80_;
+		if (i_80_ < SD2DRaster.anInt1438) {
+			int i_87_ = SD2DRaster.anInt1438 - i_80_;
 			i_83_ -= i_87_;
-			i_80_ = Class92.anInt1438;
+			i_80_ = SD2DRaster.anInt1438;
 			i_82_ += i_87_ * i_84_;
-			i_81_ += i_87_ * Class92.anInt1432;
+			i_81_ += i_87_ * SD2DRaster.anInt1432;
 		}
-		if (i_80_ + i_83_ > Class92.anInt1436)
-			i_83_ -= i_80_ + i_83_ - Class92.anInt1436;
-		if (i < Class92.anInt1433) {
-			int i_88_ = Class92.anInt1433 - i;
+		if (i_80_ + i_83_ > SD2DRaster.anInt1436)
+			i_83_ -= i_80_ + i_83_ - SD2DRaster.anInt1436;
+		if (i < SD2DRaster.anInt1433) {
+			int i_88_ = SD2DRaster.anInt1433 - i;
 			i_84_ -= i_88_;
-			i = Class92.anInt1433;
+			i = SD2DRaster.anInt1433;
 			i_82_ += i_88_;
 			i_81_ += i_88_;
 			i_86_ += i_88_;
 			i_85_ += i_88_;
 		}
-		if (i + i_84_ > Class92.anInt1434) {
-			int i_89_ = i + i_84_ - Class92.anInt1434;
+		if (i + i_84_ > SD2DRaster.anInt1434) {
+			int i_89_ = i + i_84_ - SD2DRaster.anInt1434;
 			i_84_ -= i_89_;
 			i_86_ += i_89_;
 			i_85_ += i_89_;
 		}
 		if (i_84_ > 0 && i_83_ > 0)
-			method2005(Class92.anIntArray1437, paletteIndicators, anIntArray3688, 0, i_82_, i_81_, i_84_, i_83_, i_85_,
+			method2005(SD2DRaster.anIntArray1437, paletteIndicators, anIntArray3688, 0, i_82_, i_81_, i_84_, i_83_, i_85_,
 					i_86_);
 	}
 
@@ -247,29 +247,29 @@ public class Class148_Sub1 extends Class148 {
 			i_48_ = ((i_50_ << 16) - i_52_ + i_56_ - 1) / i_56_;
 		if (i_51_ < i_55_)
 			i_49_ = ((i_51_ << 16) - i_53_ + i_57_ - 1) / i_57_;
-		int i_60_ = i + i_47_ * Class92.anInt1432;
-		int i_61_ = Class92.anInt1432 - i_48_;
-		if (i_47_ + i_49_ > Class92.anInt1436)
-			i_49_ -= i_47_ + i_49_ - Class92.anInt1436;
-		if (i_47_ < Class92.anInt1438) {
-			int i_62_ = Class92.anInt1438 - i_47_;
+		int i_60_ = i + i_47_ * SD2DRaster.anInt1432;
+		int i_61_ = SD2DRaster.anInt1432 - i_48_;
+		if (i_47_ + i_49_ > SD2DRaster.anInt1436)
+			i_49_ -= i_47_ + i_49_ - SD2DRaster.anInt1436;
+		if (i_47_ < SD2DRaster.anInt1438) {
+			int i_62_ = SD2DRaster.anInt1438 - i_47_;
 			i_49_ -= i_62_;
-			i_60_ += i_62_ * Class92.anInt1432;
+			i_60_ += i_62_ * SD2DRaster.anInt1432;
 			i_53_ += i_57_ * i_62_;
 		}
-		if (i + i_48_ > Class92.anInt1434) {
-			int i_63_ = i + i_48_ - Class92.anInt1434;
+		if (i + i_48_ > SD2DRaster.anInt1434) {
+			int i_63_ = i + i_48_ - SD2DRaster.anInt1434;
 			i_48_ -= i_63_;
 			i_61_ += i_63_;
 		}
-		if (i < Class92.anInt1433) {
-			int i_64_ = Class92.anInt1433 - i;
+		if (i < SD2DRaster.anInt1433) {
+			int i_64_ = SD2DRaster.anInt1433 - i;
 			i_48_ -= i_64_;
 			i_60_ += i_64_;
 			i_52_ += i_56_ * i_64_;
 			i_61_ += i_64_;
 		}
-		method2002(Class92.anIntArray1437, paletteIndicators, anIntArray3688, i_52_, i_53_, i_60_, i_61_, i_48_, i_49_,
+		method2002(SD2DRaster.anIntArray1437, paletteIndicators, anIntArray3688, i_52_, i_53_, i_60_, i_61_, i_48_, i_49_,
 				i_56_, i_57_, i_50_);
 	}
 

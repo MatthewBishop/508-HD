@@ -10,12 +10,12 @@ public class Class44 {
 	public static Class129 aClass129_726;
 	public static Class124 aClass124_728;
 	public static Class124 aClass124_729;
-	public static Class124 aClass124_730 = Class124.method263(1178, "Walk here");
-	public static Class124 aClass124_732 = Class124.method263(1178, "sl_arrows");
+	public static Class124 aClass124_730 = Class124.method263("Walk here");
+	public static Class124 aClass124_732 = Class124.method263("sl_arrows");
 
 	static {
 		aClass124_729 = aClass124_730;
-		aClass124_728 = Class124.method263(1178, "::rebuild");
+		aClass124_728 = Class124.method263("::rebuild");
 	}
 
 	public static void method1154(int i) {

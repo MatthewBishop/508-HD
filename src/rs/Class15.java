@@ -9,7 +9,7 @@ public class Class15 {
 	public static Class124 aClass124_373;
 	public static int anInt376;
 	public static int anInt380 = 0;
-	public static Class124 aClass124_381 = Class124.method263(1178, "cyan:");
+	public static Class124 aClass124_381 = Class124.method263("cyan:");
 	public static Class9 aClass9_382;
 	public static Class124 aClass124_383;
 	public static Class9 aClass9_384;
@@ -47,7 +47,7 @@ public class Class15 {
 	}
 
 	public static void method946(byte i) {
-		Class133_Sub1_Sub1.aClass52_4926.clear();
+		SceneGraphNode_GameEntity_Sub1.aClass52_4926.clear();
 		JunkTex.aClass52_2075.clear();
 		Class70.aClass52_1077.clear();
 		if (i != -2)

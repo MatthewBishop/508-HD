@@ -79,7 +79,7 @@ public class Class139 {
 						JunkTex.anIntArray3119[i_3_] = (Class14_Sub13.aClass9_Sub1_2958
 								.method146(
 										(JunkTex.method515((new Class124[] {
-												Class133_Sub1_Sub1.aClass124_4943, Class83.method1407(94, i_9_),
+												SceneGraphNode_GameEntity_Sub1.aClass124_4943, Class83.method1407(94, i_9_),
 												Class111.aClass124_1866, Class83.method1407(47, i_10_) }), (byte) -39))));
 					}
 					i_3_++;
@@ -109,7 +109,7 @@ public class Class139 {
 			for (int i_20_ = 0; i_20_ < i_19_; i_20_++) {
 				for (int i_21_ = 0; i_21_ < 4; i_21_++)
 					JunkTex.anIntArrayArray3391[i_20_][i_21_] = JunkTex.aClass14_Sub10_Sub1_4734
-							.method831(128);
+							.method831();
 			}
 			int i_22_ = JunkTex.aClass14_Sub10_Sub1_4734.method836((byte) -19);
 			int i_23_ = JunkTex.aClass14_Sub10_Sub1_4734.method836((byte) 126);
@@ -159,7 +159,7 @@ public class Class139 {
 												(byte) -88))));
 								JunkTex.anIntArray3119[i_19_] = (Class14_Sub13.aClass9_Sub1_2958.method146(
 										(JunkTex.method515((new Class124[] {
-												Class133_Sub1_Sub1.aClass124_4943, Class83.method1407(13, i_32_),
+												SceneGraphNode_GameEntity_Sub1.aClass124_4943, Class83.method1407(13, i_32_),
 												Class111.aClass124_1866, Class83.method1407(55, i_33_) }), (byte) -6))));
 								i_19_++;
 							}
@@ -183,7 +183,7 @@ public class Class139 {
 		if (class14_sub29.aClass4_3237 != null && class14_sub29.aClass4_3237.aLong132 == l)
 			return true;
 		for (int i_37_ = 0; i_37_ < class14_sub29.anInt3242; i_37_++) {
-			if (class14_sub29.aClass40Array3257[i_37_].aLong677 == l)
+			if (class14_sub29.aClass40Array3257[i_37_].bitPacked == l)
 				return true;
 		}
 		return false;
@@ -256,7 +256,7 @@ public class Class139 {
 					Class75.aClass148Array1184[3].method2001(i_46_ + 15, Static2.anInt2573 + 4);
 				else
 					Class75.aClass148Array1184[1].method2001(i_46_ + 15, Static2.anInt2573 + 4);
-				class14_sub2_sub16.method364(Class133.aClass124_2183, i_46_ + 32, Static2.anInt2573 + 17, 16777215,
+				class14_sub2_sub16.method364(SceneGraphNode.aClass124_2183, i_46_ + 32, Static2.anInt2573 + 17, 16777215,
 						-1);
 				int i_47_ = i_43_ + 360 + JunkTex.anInt4266;
 				if (Static2.anIntArray1086[0] != 2 || Class45.anIntArray737[0] != 0)
@@ -313,7 +313,7 @@ public class Class139 {
 				int i_59_ = i_57_;
 				for (int i_60_ = 0; i_60_ < JunkTex.anInt1129; i_60_++) {
 					boolean bool = true;
-					Class45 class45 = Class133_Sub1.aClass45Array3435[i_60_];
+					Class45 class45 = SceneGraphNode_GameEntity.aClass45Array3435[i_60_];
 					Class124 class124 = Class83.method1407(81, class45.anInt752);
 					if (class45.anInt752 != -1) {
 						if (class45.anInt752 > 1980) {

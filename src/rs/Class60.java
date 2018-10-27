@@ -38,9 +38,9 @@ public class Class60 {
 			}
 			aLongArray967[i] = l;
 		}
-		aClass124_982 = Class124.method263(1178, " loggt sich aus)3");
+		aClass124_982 = Class124.method263(" loggt sich aus)3");
 		aBoolean983 = true;
-		aClass124_985 = Class124.method263(1178, "Card:");
+		aClass124_985 = Class124.method263("Card:");
 	}
 
 	public static void method1264(int i) {
@@ -142,12 +142,12 @@ public class Class60 {
 			method1269((byte) 23);
 	}
 
-	public Class133_Sub7 method1267(int i, int i_21_) {
-		Class133_Sub7 class133_sub7 = ((Class133_Sub7) Static2.aClass52_4053.get(anInt962));
+	public SceneGraphNode_AbstractModelRenderer method1267(int i, int i_21_) {
+		SceneGraphNode_AbstractModelRenderer class133_sub7 = ((SceneGraphNode_AbstractModelRenderer) Static2.aClass52_4053.get(anInt962));
 		if (class133_sub7 == null) {
-			Class133_Sub2 class133_sub2 = Class133_Sub2.method1824(JunkTex.aClass9_2711, anInt977, 0);
+			SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(JunkTex.aClass9_2711, anInt977, 0);
 			if (class133_sub2 == null) {
-				Class133_Sub7 class133_sub7_22_ = null;
+				SceneGraphNode_AbstractModelRenderer class133_sub7_22_ = null;
 				return class133_sub7_22_;
 			}
 			if (aShortArray981 != null) {
@@ -161,7 +161,7 @@ public class Class60 {
 			class133_sub7 = class133_sub2.method1827(anInt973 + 64, anInt969 + 850, -30, -50, -30);
 			Static2.aClass52_4053.put(class133_sub7, anInt962);
 		}
-		Class133_Sub7 class133_sub7_25_;
+		SceneGraphNode_AbstractModelRenderer class133_sub7_25_;
 		if (anInt966 != -1 && i_21_ != -1)
 			class133_sub7_25_ = JunkTex.method1129(anInt966, -125).method1173(i_21_, 65535, class133_sub7);
 		else

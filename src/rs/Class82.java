@@ -6,11 +6,11 @@ package rs;
 public class Class82 {
 	public static Class124 aClass124_1329;
 	public static int anInt1330;
-	public static Class124 aClass124_1333 = Class124.method263(1178, "um");
+	public static Class124 aClass124_1333 = Class124.method263("um");
 	public static int anInt1334;
 
 	static {
-		aClass124_1329 = Class124.method263(1178, "Freie Welt");
+		aClass124_1329 = Class124.method263("Freie Welt");
 	}
 
 	public static void method1404(byte i) {

@@ -1,7 +1,7 @@
 /* Interface4 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-package rs;
+package com.jagex.applet;
 
 import java.awt.Component;
 

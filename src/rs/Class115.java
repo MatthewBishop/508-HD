@@ -3,12 +3,14 @@ package rs;
 import java.io.IOException;
 import java.net.Socket;
 
+import com.jagex.applet.ErrorReporting;
+
 public class Class115 {
 
-	public static Class124 aClass124_1906 = Class124.method263(1178, "<col=ffffff> )4 ");
-	public static Class124 aClass124_1908 = Class124.method263(1178, "hint_mapedge");
+	public static Class124 aClass124_1906 = Class124.method263("<col=ffffff> )4 ");
+	public static Class124 aClass124_1908 = Class124.method263("hint_mapedge");
 	public static int anInt1909;
-	public static Class124 aClass124_1910 = Class124.method263(1178, "leuchten2:");
+	public static Class124 aClass124_1910 = Class124.method263("leuchten2:");
 	public int anInt1911;
 	public static int anInt1912;
 	public int anInt1913;
@@ -16,11 +18,11 @@ public class Class115 {
 	public long aLong1915;
 	public static int[] anIntArray1916 = new int[] { 1, 4 };
 	public static int[] anIntArray1917;
-	public Class133 aClass133_1919;
-	public Class133 aClass133_1921;
-	public static Class124 aClass124_1924 = Class124.method263(1178, "Gegenstand f-Ur Mitglieder");
+	public SceneGraphNode aSceneGraphNode_1919;
+	public SceneGraphNode aSceneGraphNode_1921;
+	public static Class124 aClass124_1924 = Class124.method263("Gegenstand f-Ur Mitglieder");
 	public int anInt1925;
-	public Class133 aClass133_1926;
+	public SceneGraphNode aSceneGraphNode_1926;
 	public static void method1588(byte var0) {
 		aClass124_1908 = null;
 		anIntArray1917 = null;
@@ -84,7 +86,7 @@ public class Class115 {
 				label139: {
 					try {
 						if (~Class56.anInt918 == var0) {
-							JunkTex.aClass31_4454 = JunkTex.signlink.method1153(0,
+							JunkTex.aClass31_4454 = ErrorReporting.signlink.method1153(0,
 									JunkTex.aString4605, Class131.anInt2164);
 							Class56.anInt918 = 2;
 						}
@@ -106,7 +108,7 @@ public class Class115 {
 
 					try {
 						Class14_Sub15.aClass36_2990 = new Class36((Socket) JunkTex.aClass31_4454.anObject530,
-								JunkTex.signlink);
+								ErrorReporting.signlink);
 						JunkTex.aClass31_4454 = null;
 						Class14_Sub15.aClass36_2990.method1100(0, 3, JunkTex.aClass14_Sub10_Sub1_891.position,
 								JunkTex.aClass14_Sub10_Sub1_891.payload);

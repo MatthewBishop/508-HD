@@ -6,7 +6,7 @@ package rs;
 import com.jagex.io.js5.Class9_Sub1;
 
 public class Class28 {
-	public static Class124 aClass124_510 = Class124.method263(1178, "Loaded config");
+	public static Class124 aClass124_510 = Class124.method263("Loaded config");
 	public static short aShort511;
 	public static byte[][][] aByteArrayArrayArray512;
 	public static Class9_Sub1 aClass9_Sub1_513;

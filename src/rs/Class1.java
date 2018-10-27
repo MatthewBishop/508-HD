@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.applet.ErrorReporting;
 import com.jagex.link.Deque;
 
 public class Class1 {
@@ -20,9 +21,8 @@ public class Class1 {
 			anIntArray69[i_0_] = i - 1;
 			i += i;
 		}
-		aClass124_71 = (Class124.method263(1178,
-				"Ihre Freunde)2Liste ist voll(Q Maximale Eintr-=ge: Mitglieder 200)4freie Spieler 100"));
-		aClass124_72 = Class124.method263(1178, "Mem:");
+		aClass124_71 = (Class124.method263("Ihre Freunde)2Liste ist voll(Q Maximale Eintr-=ge: Mitglieder 200)4freie Spieler 100"));
+		aClass124_72 = Class124.method263("Mem:");
 		aClass2_70 = new Deque();
 		anInt73 = 0;
 		aBoolean74 = false;
@@ -35,28 +35,28 @@ public class Class1 {
 					Class14_Sub29 class14_sub29 = (JunkTex.aClass14_Sub29ArrayArrayArray3368[i_3_][i_4_][i_5_]);
 					if (class14_sub29 != null) {
 						Class113 class113 = class14_sub29.aClass113_3250;
-						if (class113 != null && class113.aClass133_1877.method1784()) {
-							Class133_Sub1.method1803(class113.aClass133_1877, i_3_, i_4_, i_5_, 1, 1);
-							if (class113.aClass133_1884 != null && class113.aClass133_1884.method1784()) {
-								Class133_Sub1.method1803((class113.aClass133_1884), i_3_, i_4_, i_5_, 1, 1);
-								class113.aClass133_1877.method1788(class113.aClass133_1884, 0, 0, 0, false);
-								class113.aClass133_1884 = class113.aClass133_1884.method1791(i, i_1_, i_2_);
+						if (class113 != null && class113.aSceneGraphNode_1877.method1784()) {
+							SceneGraphNode_GameEntity.method1803(class113.aSceneGraphNode_1877, i_3_, i_4_, i_5_, 1, 1);
+							if (class113.aSceneGraphNode_1884 != null && class113.aSceneGraphNode_1884.method1784()) {
+								SceneGraphNode_GameEntity.method1803((class113.aSceneGraphNode_1884), i_3_, i_4_, i_5_, 1, 1);
+								class113.aSceneGraphNode_1877.method1788(class113.aSceneGraphNode_1884, 0, 0, 0, false);
+								class113.aSceneGraphNode_1884 = class113.aSceneGraphNode_1884.method1791(i, i_1_, i_2_);
 							}
-							class113.aClass133_1877 = class113.aClass133_1877.method1791(i, i_1_, i_2_);
+							class113.aSceneGraphNode_1877 = class113.aSceneGraphNode_1877.method1791(i, i_1_, i_2_);
 						}
 						for (int i_6_ = 0; i_6_ < class14_sub29.anInt3242; i_6_++) {
 							Class40 class40 = class14_sub29.aClass40Array3257[i_6_];
-							if (class40 != null && class40.aClass133_679.method1784()) {
-								Class133_Sub1.method1803(class40.aClass133_679, i_3_, i_4_, i_5_,
+							if (class40 != null && class40.aSceneGraphNode_679.method1784()) {
+								SceneGraphNode_GameEntity.method1803(class40.aSceneGraphNode_679, i_3_, i_4_, i_5_,
 										class40.anInt670 - class40.anInt668 + 1,
 										class40.anInt669 - class40.anInt678 + 1);
-								class40.aClass133_679 = class40.aClass133_679.method1791(i, i_1_, i_2_);
+								class40.aSceneGraphNode_679 = class40.aSceneGraphNode_679.method1791(i, i_1_, i_2_);
 							}
 						}
 						Class4 class4 = class14_sub29.aClass4_3237;
-						if (class4 != null && class4.aClass133_124.method1784()) {
-							Class75.method1339(class4.aClass133_124, i_3_, i_4_, i_5_);
-							class4.aClass133_124 = class4.aClass133_124.method1791(i, i_1_, i_2_);
+						if (class4 != null && class4.aSceneGraphNode_124.method1784()) {
+							Class75.method1339(class4.aSceneGraphNode_124, i_3_, i_4_, i_5_);
+							class4.aSceneGraphNode_124 = class4.aSceneGraphNode_124.method1791(i, i_1_, i_2_);
 						}
 					}
 				}
@@ -75,7 +75,7 @@ public class Class1 {
 	}
 
 	public static int method73(byte i) {
-		if (JunkTex.aFrame3962 != null) {
+		if (ErrorReporting.aFrame3962 != null) {
 			int i_8_ = 2;
 			return i_8_;
 		}

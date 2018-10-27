@@ -59,7 +59,7 @@ public class LightRenderer {
 				arrayStream.writeFloatLE((float) vertexZ[i]);
 			}
 			for (int i = 0; i < triangleCount; i++)
-				elementStream.writeIntLE(-99, triIndex[i]);
+				elementStream.writeIntLE(triIndex[i]);
 		}
 		if (RT4GL.has_vbo) {
 			arrayVBO = new VertexBuffer();

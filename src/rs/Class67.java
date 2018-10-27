@@ -52,10 +52,10 @@ public class Class67 {
 			for (Class14_Sub2_Sub4 class14_sub2_sub4_11_ = (Class14_Sub2_Sub4) deque.getFront(); class14_sub2_sub4_11_ != null; class14_sub2_sub4_11_ = (Class14_Sub2_Sub4) deque
 							.getNext()) {
 				Class142 class142 = JunkTex.method605(63,
-						(class14_sub2_sub4_11_.aClass133_Sub3_3789.anInt3557));
+						(class14_sub2_sub4_11_.aSceneGraphNode_GroundObject_3789.anInt3557));
 				int i_12_ = class142.anInt2288;
 				if (class142.anInt2309 == 1)
-					i_12_ *= (class14_sub2_sub4_11_.aClass133_Sub3_3789.anInt3558 + 1);
+					i_12_ *= (class14_sub2_sub4_11_.aSceneGraphNode_GroundObject_3789.anInt3558 + 1);
 				if (i_10_ < i_12_) {
 					i_10_ = i_12_;
 					class14_sub2_sub4 = class14_sub2_sub4_11_;
@@ -64,16 +64,16 @@ public class Class67 {
 			if (class14_sub2_sub4 == null)
 				Class135.method1928(Class14_Sub2_Sub3.gameLevel, i_9_, i);
 			else {
-				Class133_Sub3 class133_sub3 = null;
+				SceneGraphNode_GroundObject class133_sub3 = null;
 				if (i_8_ != 9210)
 					anInt1059 = -106;
 				deque.pushFront(class14_sub2_sub4);
-				Class133_Sub3 class133_sub3_13_ = null;
+				SceneGraphNode_GroundObject class133_sub3_13_ = null;
 				for (Class14_Sub2_Sub4 class14_sub2_sub4_14_ = (Class14_Sub2_Sub4) deque
 						.getFront(); class14_sub2_sub4_14_ != null; class14_sub2_sub4_14_ = (Class14_Sub2_Sub4) deque
 								.getNext()) {
-					Class133_Sub3 class133_sub3_15_ = class14_sub2_sub4_14_.aClass133_Sub3_3789;
-					if (class14_sub2_sub4.aClass133_Sub3_3789.anInt3557 != class133_sub3_15_.anInt3557) {
+					SceneGraphNode_GroundObject class133_sub3_15_ = class14_sub2_sub4_14_.aSceneGraphNode_GroundObject_3789;
+					if (class14_sub2_sub4.aSceneGraphNode_GroundObject_3789.anInt3557 != class133_sub3_15_.anInt3557) {
 						if (class133_sub3 == null)
 							class133_sub3 = class133_sub3_15_;
 						if ((class133_sub3.anInt3557 != class133_sub3_15_.anInt3557) && class133_sub3_13_ == null)
@@ -83,7 +83,7 @@ public class Class67 {
 				long l = (i << 39) + (i_9_ + 1610612736);
 				Canvas_Sub2.method61(Class14_Sub2_Sub3.gameLevel, i_9_, i,
 						JunkTex.method1017(i_9_ * 128 + 64, (Class14_Sub2_Sub3.gameLevel), (byte) -119, i * 128 + 64),
-						class14_sub2_sub4.aClass133_Sub3_3789, l, class133_sub3, class133_sub3_13_);
+						class14_sub2_sub4.aSceneGraphNode_GroundObject_3789, l, class133_sub3, class133_sub3_13_);
 			}
 		}
 	}

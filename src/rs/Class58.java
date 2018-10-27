@@ -14,8 +14,8 @@ import com.jagex.sound.Track;
 
 public class Class58 {
 	public static int anInt937;
-	public static Class124 aClass124_939 = Class124.method263(1178, "red:");
-	public static Class124 aClass124_941 = Class124.method263(1178, "::errortest");
+	public static Class124 aClass124_939 = Class124.method263("red:");
+	public static Class124 aClass124_941 = Class124.method263("::errortest");
 	public static Class124 aClass124_942 = aClass124_939;
 	public static Class124 aClass124_943;
 	public static Class76[] aClass76Array944 = new Class76[27];

@@ -7,7 +7,7 @@ import com.jagex.cache.anim.AnimFrame;
 import com.jagex.cache.anim.AnimFrameBase;
 import com.jagex.cache.loaders.AnimFrameLoader;
 
-public class ModelSD extends Class133_Sub7 {
+public class ModelSD extends SceneGraphNode_AbstractModelRenderer {
 	public short minY;
 	public int anInt4955 = 0;
 	public int[] triangleVertexB;
@@ -88,7 +88,7 @@ public class ModelSD extends Class133_Sub7 {
 	}
 
 	@Override
-	public Class133_Sub7 method1870(boolean bool, boolean bool_0_) {
+	public SceneGraphNode_AbstractModelRenderer method1870(boolean bool, boolean bool_0_) {
 		if (!bool && aByteArray4991.length < triangleCount)
 			aByteArray4991 = new byte[triangleCount + 100];
 		return method1886(bool, aClass133_Sub7_Sub1_4985, aByteArray4991);
@@ -632,13 +632,13 @@ public class ModelSD extends Class133_Sub7 {
 	}
 
 	@Override
-	public int getMinY() {
+	public int getMinYorMaxYCheckTHIS() {
 		if (!boundsCalculated)
 			calculateBounds();
 		return minY;
 	}
 
-	public static int method1880(int i, int i_143_) {
+	public static int blendColours(int i, int i_143_) {
 		i_143_ = i_143_ * (i & 0x7f) >> 7;
 		if (i_143_ < 2)
 			i_143_ = 2;
@@ -695,7 +695,7 @@ public class ModelSD extends Class133_Sub7 {
 	}
 
 	@Override
-	public Class133_Sub7 method1860(boolean bool, boolean bool_147_) {
+	public SceneGraphNode_AbstractModelRenderer method1860(boolean bool, boolean bool_147_) {
 		if (!bool && aByteArray4986.length < triangleCount)
 			aByteArray4986 = new byte[triangleCount + 100];
 		return method1886(bool, aClass133_Sub7_Sub1_4975, aByteArray4986);
@@ -1220,7 +1220,7 @@ public class ModelSD extends Class133_Sub7 {
 		boundsCalculated = false;
 	}
 
-	public Class133_Sub7 method1886(boolean bool, ModelSD modelsd_266_, byte[] is) {
+	public SceneGraphNode_AbstractModelRenderer method1886(boolean bool, ModelSD modelsd_266_, byte[] is) {
 		modelsd_266_.anInt4955 = anInt4955;
 		modelsd_266_.triangleCount = triangleCount;
 		modelsd_266_.anInt4966 = anInt4966;
@@ -1311,7 +1311,7 @@ public class ModelSD extends Class133_Sub7 {
 		triangleCount = 0;
 	}
 
-	public ModelSD(Class133_Sub2 class133_sub2, int i, int i_281_, int i_282_, int i_283_, int i_284_) {
+	public ModelSD(SceneGraphNode_Model class133_sub2, int i, int i_281_, int i_282_, int i_283_, int i_284_) {
 		anInt4966 = 0;
 		triangleCount = 0;
 		class133_sub2.method1826();
@@ -1410,7 +1410,7 @@ public class ModelSD extends Class133_Sub7 {
 					int i_299_ = i
 							+ ((i_282_ * class89.anInt1414 + i_283_ * class89.anInt1404 + i_284_ * class89.anInt1406)
 									/ (i_286_ * class89.anInt1410));
-					anIntArray4957[i_294_] = method1880(i_298_, i_299_);
+					anIntArray4957[i_294_] = blendColours(i_298_, i_299_);
 					if (class133_sub2.aClass89Array3515 != null
 							&& (class133_sub2.aClass89Array3515[triangleVertexB[i_294_]]) != null)
 						class89 = (class133_sub2.aClass89Array3515[triangleVertexB[i_294_]]);
@@ -1418,7 +1418,7 @@ public class ModelSD extends Class133_Sub7 {
 						class89 = (class133_sub2.aClass89Array3552[triangleVertexB[i_294_]]);
 					i_299_ = i + ((i_282_ * class89.anInt1414 + i_283_ * class89.anInt1404 + i_284_ * class89.anInt1406)
 							/ (i_286_ * class89.anInt1410));
-					anIntArray4978[i_294_] = method1880(i_298_, i_299_);
+					anIntArray4978[i_294_] = blendColours(i_298_, i_299_);
 					if (class133_sub2.aClass89Array3515 != null
 							&& (class133_sub2.aClass89Array3515[triangleVertexC[i_294_]]) != null)
 						class89 = (class133_sub2.aClass89Array3515[triangleVertexC[i_294_]]);
@@ -1426,13 +1426,13 @@ public class ModelSD extends Class133_Sub7 {
 						class89 = (class133_sub2.aClass89Array3552[triangleVertexC[i_294_]]);
 					i_299_ = i + ((i_282_ * class89.anInt1414 + i_283_ * class89.anInt1404 + i_284_ * class89.anInt1406)
 							/ (i_286_ * class89.anInt1410));
-					triangleInfo[i_294_] = method1880(i_298_, i_299_);
+					triangleInfo[i_294_] = blendColours(i_298_, i_299_);
 				} else if (i_295_ == 1) {
 					Class138 class138 = class133_sub2.aClass138Array3536[i_294_];
 					int i_300_ = i
 							+ ((i_282_ * class138.anInt2208 + i_283_ * class138.anInt2217 + i_284_ * class138.anInt2209)
 									/ (i_286_ + i_286_ / 2));
-					anIntArray4957[i_294_] = method1880((class133_sub2.aShortArray3533[i_294_] & 0xffff), i_300_);
+					anIntArray4957[i_294_] = blendColours((class133_sub2.aShortArray3533[i_294_] & 0xffff), i_300_);
 					triangleInfo[i_294_] = -1;
 				} else if (i_295_ == 3) {
 					anIntArray4957[i_294_] = 128;

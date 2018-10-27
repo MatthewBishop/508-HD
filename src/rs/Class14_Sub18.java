@@ -3,13 +3,13 @@
  */
 package rs;
 
-import com.jagex.io.Buffer;
+import com.jagex.applet.Class31;
+import com.jagex.applet.Class43;
 import com.jagex.link.Linkable;
 import com.jagex.util.Util;
 
 public class Class14_Sub18 extends Linkable {
 	public int anInt3035;
-	public static Buffer aClass14_Sub10_3036;
 	public int anInt3037;
 	public int anInt3038;
 	public int anInt3039;
@@ -35,7 +35,7 @@ public class Class14_Sub18 extends Linkable {
 	public static int anInt3064;
 
 	static {
-		aClass14_Sub10_3036 = new Buffer(8);
+		
 		anInt3061 = 3353893;
 		anInt3064 = 0;
 	}
@@ -49,11 +49,6 @@ public class Class14_Sub18 extends Linkable {
 		linkable_0_.next.previous = linkable_0_;
 		if (i != -17344)
 			anInt3064 = -8;
-	}
-
-	public static void method883(int i) {
-		if (i == 1)
-			aClass14_Sub10_3036 = null;
 	}
 
 	public static Class88[] method884(int i, Class43 class43) {
@@ -98,14 +93,14 @@ public class Class14_Sub18 extends Linkable {
 	public static void method886(byte i) {
 		if (JunkTex.aClass94_4446 == null && Class67.aClass94_1060 == null) {
 			int i_4_ = Class7_Sub3_Sub1.anInt3714;
-			if (Class133_Sub5.aBoolean3628) {
+			if (SceneGraphNode_SpotAnimation.aBoolean3628) {
 				if (i_4_ != 1) {
 					int i_5_ = JunkTex.anInt4640;
 					int i_6_ = Static2.anInt1804;
 					if (JunkTex.anInt500 - 10 > i_5_ || i_5_ > JunkTex.anInt500 - (-Class14_Sub14.anInt2984 - 10)
 							|| i_6_ < Class14_Sub2_Sub8.anInt3832 - 10
 							|| (JunkTex.anInt4550 + (Class14_Sub2_Sub8.anInt3832 + 10)) < i_6_) {
-						Class133_Sub5.aBoolean3628 = false;
+						SceneGraphNode_SpotAnimation.aBoolean3628 = false;
 						Class14_Sub13.method862(125, Class14_Sub14.anInt2984, JunkTex.anInt4550,
 								Class14_Sub2_Sub8.anInt3832, JunkTex.anInt500);
 					}
@@ -124,7 +119,7 @@ public class Class14_Sub18 extends Linkable {
 					}
 					if (i_12_ != -1)
 						JunkTex.method552(i ^ ~0x65, i_12_);
-					Class133_Sub5.aBoolean3628 = false;
+					SceneGraphNode_SpotAnimation.aBoolean3628 = false;
 					Class14_Sub13.method862(125, Class14_Sub14.anInt2984, JunkTex.anInt4550,
 							Class14_Sub2_Sub8.anInt3832, JunkTex.anInt500);
 				}
@@ -145,7 +140,7 @@ public class Class14_Sub18 extends Linkable {
 								Class103.method1531((JunkTex.aClass94_4446));
 							JunkTex.aClass94_4446 = JunkTex.method1233(i_16_, 21803);
 							Class111.anInt1865 = Class139.anInt2230;
-							Class133_Sub1_Sub1.anInt4936 = JunkTex.anInt3367;
+							SceneGraphNode_GameEntity_Sub1.anInt4936 = JunkTex.anInt3367;
 							Class122.anInt2054 = i_17_;
 							Class103.method1531((JunkTex.aClass94_4446));
 							return;

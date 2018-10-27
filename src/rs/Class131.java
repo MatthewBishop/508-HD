@@ -7,9 +7,7 @@ import com.jagex.rt4.HDTile;
 
 public class Class131 {
 	public static Class124 aClass124_2153;
-	public static volatile boolean aBoolean2154;
-	public static Class124 aClass124_2156 = (Class124.method263(1178,
-			"Ihre Ignorieren)2Liste ist voll)1 Sie k-Onnen nur 100 Spieler darauf eintragen)3"));
+	public static Class124 aClass124_2156 = (Class124.method263("Ihre Ignorieren)2Liste ist voll)1 Sie k-Onnen nur 100 Spieler darauf eintragen)3"));
 	public static int anInt2159;
 	public static Class14_Sub2_Sub16_Sub1 aClass14_Sub2_Sub16_Sub1_2160;
 	public static Class124 aClass124_2161;
@@ -18,11 +16,10 @@ public class Class131 {
 	public static int anInt2164;
 
 	static {
-		aClass124_2153 = (Class124.method263(1178, " steht bereits auf Ihrer Freunde)2Liste(Q"));
-		aBoolean2154 = true;
-		aClass124_2163 = (Class124.method263(1178,
-				"Sie k-Onnen sich selbst nicht selbst auf Ihre Ignorieren)2Liste setzen(Q"));
-		aClass124_2161 = Class124.method263(1178, "loc");
+		aClass124_2153 = (Class124.method263(" steht bereits auf Ihrer Freunde)2Liste(Q"));
+		
+		aClass124_2163 = (Class124.method263("Sie k-Onnen sich selbst nicht selbst auf Ihre Ignorieren)2Liste setzen(Q"));
+		aClass124_2161 = Class124.method263("loc");
 	}
 
 	public static void method1772(boolean bool, int i, byte i_0_, int i_1_) {
@@ -43,30 +40,30 @@ public class Class131 {
 	public static void method1774(int[] is, int i, int i_6_, int i_7_, int i_8_, boolean bool, int i_9_,
 			boolean bool_10_, int i_11_, int i_12_, int i_13_) {
 		int i_14_ = i_7_;
-		if (i_14_ < Class92.anInt1434) {
+		if (i_14_ < SD2DRaster.anInt1434) {
 			int i_15_ = i_9_ + i_7_;
-			if (i_14_ < Class92.anInt1433)
-				i_14_ = Class92.anInt1433;
-			if (Class92.anInt1433 < i_15_) {
+			if (i_14_ < SD2DRaster.anInt1433)
+				i_14_ = SD2DRaster.anInt1433;
+			if (SD2DRaster.anInt1433 < i_15_) {
 				int i_16_ = i_12_;
-				if (Class92.anInt1434 < i_15_)
-					i_15_ = Class92.anInt1434;
-				if (i_16_ < Class92.anInt1436) {
-					if (i_16_ < Class92.anInt1438)
-						i_16_ = Class92.anInt1438;
+				if (SD2DRaster.anInt1434 < i_15_)
+					i_15_ = SD2DRaster.anInt1434;
+				if (i_16_ < SD2DRaster.anInt1436) {
+					if (i_16_ < SD2DRaster.anInt1438)
+						i_16_ = SD2DRaster.anInt1438;
 					int i_17_ = i_13_ + i_12_;
-					if (Class92.anInt1438 < i_17_) {
+					if (SD2DRaster.anInt1438 < i_17_) {
 						if (i_8_ == 9) {
 							i = i + 1 & 0x3;
 							i_8_ = 1;
 						}
-						if (i_17_ > Class92.anInt1436)
-							i_17_ = Class92.anInt1436;
-						int i_18_ = i_16_ * Class92.anInt1432 + i_14_;
+						if (i_17_ > SD2DRaster.anInt1436)
+							i_17_ = SD2DRaster.anInt1436;
+						int i_18_ = i_16_ * SD2DRaster.anInt1432 + i_14_;
 						i_17_ -= i_12_;
 						if (bool_10_)
 							aClass124_2163 = null;
-						int i_19_ = -i_15_ + Class92.anInt1432 + i_14_;
+						int i_19_ = -i_15_ + SD2DRaster.anInt1432 + i_14_;
 						if (i_8_ == 10) {
 							i = i + 3 & 0x3;
 							i_8_ = 1;

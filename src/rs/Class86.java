@@ -9,7 +9,7 @@ import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.IntegerNode;
 
 public class Class86 {
-	public Class133 aClass133_1379;
+	public SceneGraphNode aSceneGraphNode_1379;
 	public static byte[][][] aByteArrayArrayArray1383;
 	public static Class124 aClass124_1384;
 	public static volatile int anInt1385 = 0;
@@ -17,7 +17,7 @@ public class Class86 {
 	public static int anInt1389 = 0;
 
 	static {
-		aClass124_1384 = Class124.method263(1178, "Verbindung abgebrochen)3");
+		aClass124_1384 = Class124.method263("Verbindung abgebrochen)3");
 	}
 
 	public static Class37 method1418(int i, int i_0_, int i_1_) {

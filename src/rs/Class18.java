@@ -7,13 +7,13 @@ public class Class18 {
 	public static int anInt411;
 	public int[][] anIntArrayArray413;
 	public int anInt414;
-	public static Class124 aClass124_415 = Class124.method263(1178, "unzap");
+	public static Class124 aClass124_415 = Class124.method263("unzap");
 	public static Class124 aClass124_418;
 	public int anInt419;
 
 	static {
 		anInt411 = 0;
-		aClass124_418 = Class124.method263(1178, "Cabbage");
+		aClass124_418 = Class124.method263("Cabbage");
 	}
 
 	public byte[] method961(boolean bool, byte[] is) {

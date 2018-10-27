@@ -5,7 +5,7 @@ package rs;
 
 import com.jagex.cache.loaders.AnimFrameLoader;
 
-public abstract class Class133_Sub7 extends Class133 {
+public abstract class SceneGraphNode_AbstractModelRenderer extends SceneGraphNode {
 	public boolean haveActions = false;
 
 	public abstract void method1855(int i, int i_0_, int i_1_);
@@ -18,7 +18,7 @@ public abstract class Class133_Sub7 extends Class133 {
 
 	public abstract void method1859(AnimFrameLoader class14_sub2_sub15, int i);
 
-	public abstract Class133_Sub7 method1860(boolean bool, boolean bool_2_);
+	public abstract SceneGraphNode_AbstractModelRenderer method1860(boolean bool, boolean bool_2_);
 
 	public abstract void method1861(int i);
 
@@ -85,9 +85,9 @@ public abstract class Class133_Sub7 extends Class133 {
 	public abstract void method1869(int i, int i_41_, int i_42_);
 
 	@Override
-	public abstract int getMinY();
+	public abstract int getMinYorMaxYCheckTHIS();
 
-	public abstract Class133_Sub7 method1870(boolean bool, boolean bool_43_);
+	public abstract SceneGraphNode_AbstractModelRenderer method1870(boolean bool, boolean bool_43_);
 
 	public abstract void method1871();
 

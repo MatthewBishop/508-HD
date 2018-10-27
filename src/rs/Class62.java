@@ -13,8 +13,8 @@ public class Class62 {
 	public static SoftCache aClass52_991 = new SoftCache(30);
 	public static int[] anIntArray992;
 	public static Class9 aClass9_993;
-	public static Class124 aClass124_994 = Class124.method263(1178, ":");
-	public static Class124 aClass124_995 = Class124.method263(1178, "k");
+	public static Class124 aClass124_994 = Class124.method263(":");
+	public static Class124 aClass124_995 = Class124.method263("k");
 
 	public static void method1274(int i) {
 		aClass52_991 = null;

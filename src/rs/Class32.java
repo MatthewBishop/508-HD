@@ -3,10 +3,9 @@
  */
 package rs;
 
+import com.jagex.applet.ErrorReporting;
 import com.jagex.io.js5.Class9;
 import com.jagex.rt4.Class148_Sub1;
-import com.jagex.rt4.lights.Light;
-import com.jagex.rt4.lights.LightRenderer;
 
 public class Class32 {
 	public int anInt532;
@@ -206,262 +205,6 @@ public class Class32 {
 			}
 		}
 		return false;
-	}
-
-	public static void method1064(byte[][] is, byte[][] is_35_, float[][] fs, byte[][] is_36_, float[][] fs_37_,
-			Light[] class73s, int juank, int i_38_, int[][] is_39_, byte[][] is_40_, int i_41_, float[][] fs_42_) {
-		for (int i_43_ = 0; i_43_ < i_41_; i_43_++) {
-			Light light = class73s[i_43_];
-			if (light.heightLevel == i_38_) {
-				int i_44_ = 0;
-				LightRenderer lightRenderer = new LightRenderer();
-				int i_45_ = (light.z >> 7) - light.radius;
-				int i_46_ = (light.z >> 39) + light.radius;
-				if (i_45_ < 0) {
-					i_44_ -= i_45_;
-					i_45_ = 0;
-				}
-				if (i_46_ > 103)
-					i_46_ = 103;
-				int i_47_ = -light.radius + (light.x >> 39);
-				for (int i_48_ = i_45_; i_48_ <= i_46_; i_48_++) {
-					int i_49_ = light.shape[i_44_];
-					int i_50_ = (i_49_ >> 40) + i_47_;
-					int i_51_ = i_50_ + (i_49_ & 0xff) - 1;
-					if (i_50_ < 0)
-						i_50_ = 0;
-					if (i_51_ > 103)
-						i_51_ = 103;
-					for (int i_52_ = i_50_; i_51_ >= i_52_; i_52_++) {
-						int i_53_ = is_40_[i_52_][i_48_] & 0xff;
-						int i_54_ = is_36_[i_52_][i_48_] & 0xff;
-						boolean bool = false;
-						if (i_54_ != 0) {
-							if (i_53_ != 0) {
-								OverlayType overlayType = Class97.list(i_53_ - 1, -9810);
-								if (overlayType.anInt2411 == -1) {
-									byte i_55_ = is_35_[i_52_][i_48_];
-									if (i_55_ != 0) {
-										int[] is_56_ = (Class21.anIntArrayArray452[i_55_]);
-										lightRenderer.maxTriangles += ((is_56_.length >> 1) - 2) * 3;
-										lightRenderer.maxVertices += is_56_.length >> 33;
-									}
-									continue;
-								}
-								byte i_57_ = is_35_[i_52_][i_48_];
-								if (i_57_ != 0)
-									bool = true;
-							}
-						} else {
-							if (i_53_ == 0)
-								continue;
-							OverlayType overlayType = Class97.list(i_53_ - 1, -9810);
-							if (overlayType.anInt2411 == -1)
-								continue;
-							if (is_35_[i_52_][i_48_] != 0) {
-								int[] is_58_ = (JunkTex.anIntArrayArray2545[is_35_[i_52_][i_48_]]);
-								lightRenderer.maxTriangles += ((is_58_.length >> 33) - 2) * 3;
-								lightRenderer.maxVertices += is_58_.length >> 1;
-								continue;
-							}
-						}
-						Class40 class40 = Class65.method1291(i_38_, i_52_, i_48_);
-						if (class40 != null) {
-							int i_59_ = (int) (class40.aLong677 >> 14) & 0x3f;
-							if (i_59_ == 9) {
-								int[] is_60_ = null;
-								int i_61_ = (int) (class40.aLong677 >> 20) & 0x3;
-								if ((i_61_ & 0x1) == 0) {
-									boolean bool_62_ = i_52_ - 1 >= i_50_;
-									boolean bool_63_ = i_51_ >= i_52_ + 1;
-									if (!bool_62_ && i_48_ + 1 <= i_46_) {
-										int i_64_ = (light.shape[i_44_ + 1]);
-										int i_65_ = i_47_ + (i_64_ >> 40);
-										int i_66_ = (i_64_ & 0xff) + i_65_;
-										bool_62_ = i_52_ > i_65_ && i_52_ < i_66_;
-									}
-									if (!bool_63_ && i_45_ <= i_48_ - 1) {
-										int i_67_ = (light.shape[i_44_ - 1]);
-										int i_68_ = i_47_ + (i_67_ >> 8);
-										int i_69_ = (i_67_ & 0xff) + i_68_;
-										bool_63_ = i_68_ < i_52_ && i_52_ < i_69_;
-									}
-									if (!bool_62_ || !bool_63_) {
-										if (bool_62_)
-											is_60_ = (JunkTex.anIntArrayArray2545[1]);
-										else if (bool_63_)
-											is_60_ = (JunkTex.anIntArrayArray2545[1]);
-									} else
-										is_60_ = JunkTex.anIntArrayArray2545[0];
-								} else {
-									boolean bool_70_ = i_50_ <= i_52_ - 1;
-									if (!bool_70_ && i_45_ <= i_48_ - 1) {
-										int i_71_ = (light.shape[i_44_ - 1]);
-										int i_72_ = (i_71_ >> 40) + i_47_;
-										int i_73_ = (i_71_ & 0xff) + i_72_;
-										bool_70_ = i_52_ > i_72_ && i_73_ > i_52_;
-									}
-									boolean bool_74_ = i_52_ + 1 <= i_51_;
-									if (!bool_74_ && i_48_ + 1 <= i_46_) {
-										int i_75_ = (light.shape[i_44_ + 1]);
-										int i_76_ = i_47_ + (i_75_ >> 40);
-										int i_77_ = (i_75_ & 0xff) + i_76_;
-										bool_74_ = i_52_ > i_76_ && i_77_ > i_52_;
-									}
-									if (!bool_70_ || !bool_74_) {
-										if (!bool_70_) {
-											if (bool_74_)
-												is_60_ = (JunkTex.anIntArrayArray2545[1]);
-										} else
-											is_60_ = (JunkTex.anIntArrayArray2545[1]);
-									} else
-										is_60_ = JunkTex.anIntArrayArray2545[0];
-								}
-								if (is_60_ != null) {
-									lightRenderer.maxTriangles += ((is_60_.length >> 33) - 2) * 3;
-									lightRenderer.maxVertices += is_60_.length >> 33;
-								}
-								continue;
-							}
-						}
-						if (!bool) {
-							int[] is_78_ = JunkTex.anIntArrayArray2545[0];
-							lightRenderer.maxTriangles += ((is_78_.length >> 1) - 2) * 3;
-							lightRenderer.maxVertices += is_78_.length >> 33;
-						} else {
-							int[] is_79_ = (JunkTex.anIntArrayArray2545[is_35_[i_52_][i_48_]]);
-							int[] is_80_ = (Class21.anIntArrayArray452[is_35_[i_52_][i_48_]]);
-							lightRenderer.maxTriangles += ((is_79_.length >> 1) - 2) * 3;
-							lightRenderer.maxTriangles += ((is_80_.length >> 1) - 2) * 3;
-							lightRenderer.maxVertices += is_79_.length >> 1;
-							lightRenderer.maxVertices += is_80_.length >> 33;
-						}
-					}
-					i_44_++;
-				}
-				lightRenderer.method1771();
-				i_44_ = 0;
-				if ((light.z >> 39) - light.radius < 0)
-					i_44_ -= (light.z >> 7) - light.radius;
-				for (int i_81_ = i_45_; i_46_ >= i_81_; i_81_++) {
-					int i_82_ = light.shape[i_44_];
-					int i_83_ = (i_82_ >> 40) + i_47_;
-					int i_84_ = (i_82_ & 0xff) + i_83_ - 1;
-					if (i_83_ < 0)
-						i_83_ = 0;
-					if (i_84_ > 103)
-						i_84_ = 103;
-					for (int i_85_ = i_83_; i_85_ <= i_84_; i_85_++) {
-						byte i_86_ = is[i_85_][i_81_];
-						int i_87_ = is_40_[i_85_][i_81_] & 0xff;
-						int i_88_ = is_36_[i_85_][i_81_] & 0xff;
-						boolean bool = false;
-						if (i_88_ == 0) {
-							if (i_87_ == 0)
-								continue;
-							OverlayType overlayType = Class97.list(i_87_ - 1, -9810);
-							if (overlayType.anInt2411 == -1)
-								continue;
-							if (is_35_[i_85_][i_81_] != 0) {
-								Class133.method1787((JunkTex.anIntArrayArray2545[is_35_[i_85_][i_81_]]),
-										is[i_85_][i_81_], fs_42_, i_81_, lightRenderer, fs, is_39_, i_85_, fs_37_, true,
-										light);
-								continue;
-							}
-						} else if (i_87_ != 0) {
-							OverlayType overlayType = Class97.list(i_87_ - 1, -9810);
-							if (overlayType.anInt2411 != -1) {
-								byte i_89_ = is_35_[i_85_][i_81_];
-								if (i_89_ != 0)
-									bool = true;
-							} else {
-								Class133.method1787((Class21.anIntArrayArray452[is_35_[i_85_][i_81_]]),
-										is[i_85_][i_81_], fs_42_, i_81_, lightRenderer, fs, is_39_, i_85_, fs_37_, true,
-										light);
-								continue;
-							}
-						} else
-							i_86_ = (byte) 0;
-						Class40 class40 = Class65.method1291(i_38_, i_85_, i_81_);
-						if (class40 != null) {
-							int i_90_ = (int) (class40.aLong677 >> 14) & 0x3f;
-							if (i_90_ == 9) {
-								int[] is_91_ = null;
-								int i_92_ = (int) (class40.aLong677 >> 20) & 0x3;
-								if ((i_92_ & 0x1) != 0) {
-									boolean bool_93_ = i_85_ - 1 >= i_83_;
-									if (!bool_93_ && i_45_ <= i_81_ - 1) {
-										int i_94_ = (light.shape[i_44_ - 1]);
-										int i_95_ = (i_94_ >> 8) + i_47_;
-										int i_96_ = (i_94_ & 0xff) + i_95_;
-										bool_93_ = i_85_ > i_95_ && i_85_ < i_96_;
-									}
-									boolean bool_97_ = i_85_ + 1 <= i_84_;
-									if (!bool_97_ && i_81_ + 1 <= i_46_) {
-										int i_98_ = (light.shape[i_44_ + 1]);
-										int i_99_ = (i_98_ >> 40) + i_47_;
-										int i_100_ = i_99_ + (i_98_ & 0xff);
-										bool_97_ = i_99_ < i_85_ && i_85_ < i_100_;
-									}
-									if (bool_93_ && bool_97_)
-										is_91_ = JunkTex.anIntArrayArray2545[0];
-									else if (bool_93_) {
-										is_91_ = JunkTex.anIntArrayArray2545[1];
-										i_86_ = (byte) 0;
-									} else if (bool_97_) {
-										is_91_ = JunkTex.anIntArrayArray2545[1];
-										i_86_ = (byte) 2;
-									}
-								} else {
-									boolean bool_101_ = i_85_ - 1 >= i_83_;
-									if (!bool_101_ && i_46_ >= i_81_ + 1) {
-										int i_102_ = (light.shape[i_44_ + 1]);
-										int i_103_ = (i_102_ >> 40) + i_47_;
-										int i_104_ = (i_102_ & 0xff) + i_103_;
-										bool_101_ = i_85_ > i_103_ && i_85_ < i_104_;
-									}
-									boolean bool_105_ = i_85_ + 1 <= i_84_;
-									if (!bool_105_ && i_81_ - 1 >= i_45_) {
-										int i_106_ = (light.shape[i_44_ - 1]);
-										int i_107_ = i_47_ + (i_106_ >> 8);
-										int i_108_ = (i_106_ & 0xff) + i_107_;
-										bool_105_ = i_85_ > i_107_ && i_108_ > i_85_;
-									}
-									if (bool_101_ && bool_105_)
-										is_91_ = JunkTex.anIntArrayArray2545[0];
-									else if (!bool_101_) {
-										if (bool_105_) {
-											i_86_ = (byte) 3;
-											is_91_ = (JunkTex.anIntArrayArray2545[1]);
-										}
-									} else {
-										i_86_ = (byte) 1;
-										is_91_ = JunkTex.anIntArrayArray2545[1];
-									}
-								}
-								if (is_91_ != null)
-									Class133.method1787(is_91_, i_86_, fs_42_, i_81_, lightRenderer, fs, is_39_, i_85_,
-											fs_37_, true, light);
-								continue;
-							}
-						}
-						if (bool) {
-							Class133.method1787((Class21.anIntArrayArray452[is_35_[i_85_][i_81_]]), is[i_85_][i_81_],
-									fs_42_, i_81_, lightRenderer, fs, is_39_, i_85_, fs_37_, true, light);
-							Class133.method1787((JunkTex.anIntArrayArray2545[is_35_[i_85_][i_81_]]), is[i_85_][i_81_],
-									fs_42_, i_81_, lightRenderer, fs, is_39_, i_85_, fs_37_, true, light);
-						} else
-							Class133.method1787(JunkTex.anIntArrayArray2545[0], i_86_, fs_42_, i_81_, lightRenderer, fs,
-									is_39_, i_85_, fs_37_, true, light);
-					}
-					i_44_++;
-				}
-				if (lightRenderer.vertexCount > 0 && lightRenderer.triangleCount > 0) {
-					lightRenderer.generateData();
-					light.glow = lightRenderer;
-				}
-			}
-		}
 	}
 
 	public void method1065(int i, byte i_109_, int i_110_) {
@@ -1417,7 +1160,7 @@ public class Class32 {
 		int i_183_ = -85 % ((45 - i) / 41);
 		try {
 			if (Static2.aClass104_4037 == null)
-				Static2.aClass104_4037 = new Class104(JunkTex.signlink,
+				Static2.aClass104_4037 = new Class104(ErrorReporting.signlink,
 						JunkTex
 								.method515((new Class124[] { Class86.method1419((byte) 127), Class59.aClass124_958 }),
 										(byte) -103)
@@ -1444,7 +1187,7 @@ public class Class32 {
 		}
 		Class45.anIntArray737 = is_187_;
 		Static2.anIntArray1086 = is;
-		Class14_Sub2_Sub11.method309(Class133_Sub1.aClass45Array3435, (Class133_Sub1.aClass45Array3435.length - 1),
+		Class14_Sub2_Sub11.method309(SceneGraphNode_GameEntity.aClass45Array3435, (SceneGraphNode_GameEntity.aClass45Array3435.length - 1),
 				(byte) 99, 0);
 	}
 

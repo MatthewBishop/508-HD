@@ -49,8 +49,8 @@ public class SDRaster {
 
 	public static void method90(int i, int i_0_) {
 		int i_1_ = anIntArray113[0];
-		int i_2_ = i_1_ / Class92.anInt1432;
-		int i_3_ = i_1_ - i_2_ * Class92.anInt1432;
+		int i_2_ = i_1_ / SD2DRaster.anInt1432;
+		int i_3_ = i_1_ - i_2_ * SD2DRaster.anInt1432;
 		anInt118 = i - i_3_;
 		anInt110 = i_0_ - i_2_;
 		JunkTex.viewportLeft = -anInt118;
@@ -831,7 +831,7 @@ public class SDRaster {
 	}
 
 	public static void method97() {
-		method101(Class92.anInt1433, Class92.anInt1438, Class92.anInt1434, Class92.anInt1436);
+		method101(SD2DRaster.anInt1433, SD2DRaster.anInt1438, SD2DRaster.anInt1434, SD2DRaster.anInt1436);
 	}
 
 	public static void method98(int i, int i_69_, int i_70_, int i_71_, int i_72_, int i_73_, int i_74_, int i_75_,
@@ -909,23 +909,23 @@ public class SDRaster {
 								i_69_ -= i;
 								i = anIntArray113[i];
 								while (--i_69_ >= 0) {
-									method96(Class92.anIntArray1437, is, 0, 0, i, i_73_ >> 16, i_71_ >> 16, i_74_,
+									method96(SD2DRaster.anIntArray1437, is, 0, 0, i, i_73_ >> 16, i_71_ >> 16, i_74_,
 											i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 									i_73_ += i_96_;
 									i_71_ += i_94_;
 									i_74_ += i_99_;
-									i += Class92.anInt1432;
+									i += SD2DRaster.anInt1432;
 									i_100_ += i_102_;
 									i_103_ += i_105_;
 									i_106_ += i_108_;
 								}
 								while (--i_70_ >= 0) {
-									method96(Class92.anIntArray1437, is, 0, 0, i, i_73_ >> 16, i_72_ >> 16, i_74_,
+									method96(SD2DRaster.anIntArray1437, is, 0, 0, i, i_73_ >> 16, i_72_ >> 16, i_74_,
 											i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 									i_73_ += i_96_;
 									i_72_ += i_95_;
 									i_74_ += i_99_;
-									i += Class92.anInt1432;
+									i += SD2DRaster.anInt1432;
 									i_100_ += i_102_;
 									i_103_ += i_105_;
 									i_106_ += i_108_;
@@ -935,23 +935,23 @@ public class SDRaster {
 								i_69_ -= i;
 								i = anIntArray113[i];
 								while (--i_69_ >= 0) {
-									method96(Class92.anIntArray1437, is, 0, 0, i, i_71_ >> 16, i_73_ >> 16, i_74_,
+									method96(SD2DRaster.anIntArray1437, is, 0, 0, i, i_71_ >> 16, i_73_ >> 16, i_74_,
 											i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 									i_73_ += i_96_;
 									i_71_ += i_94_;
 									i_74_ += i_99_;
-									i += Class92.anInt1432;
+									i += SD2DRaster.anInt1432;
 									i_100_ += i_102_;
 									i_103_ += i_105_;
 									i_106_ += i_108_;
 								}
 								while (--i_70_ >= 0) {
-									method96(Class92.anIntArray1437, is, 0, 0, i, i_72_ >> 16, i_73_ >> 16, i_74_,
+									method96(SD2DRaster.anIntArray1437, is, 0, 0, i, i_72_ >> 16, i_73_ >> 16, i_74_,
 											i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 									i_73_ += i_96_;
 									i_72_ += i_95_;
 									i_74_ += i_99_;
-									i += Class92.anInt1432;
+									i += SD2DRaster.anInt1432;
 									i_100_ += i_102_;
 									i_103_ += i_105_;
 									i_106_ += i_108_;
@@ -979,23 +979,23 @@ public class SDRaster {
 								i_70_ -= i;
 								i = anIntArray113[i];
 								while (--i_70_ >= 0) {
-									method96(Class92.anIntArray1437, is, 0, 0, i, i_72_ >> 16, i_71_ >> 16, i_74_,
+									method96(SD2DRaster.anIntArray1437, is, 0, 0, i, i_72_ >> 16, i_71_ >> 16, i_74_,
 											i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 									i_72_ += i_96_;
 									i_71_ += i_94_;
 									i_74_ += i_99_;
-									i += Class92.anInt1432;
+									i += SD2DRaster.anInt1432;
 									i_100_ += i_102_;
 									i_103_ += i_105_;
 									i_106_ += i_108_;
 								}
 								while (--i_69_ >= 0) {
-									method96(Class92.anIntArray1437, is, 0, 0, i, i_73_ >> 16, i_71_ >> 16, i_74_,
+									method96(SD2DRaster.anIntArray1437, is, 0, 0, i, i_73_ >> 16, i_71_ >> 16, i_74_,
 											i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 									i_73_ += i_95_;
 									i_71_ += i_94_;
 									i_74_ += i_99_;
-									i += Class92.anInt1432;
+									i += SD2DRaster.anInt1432;
 									i_100_ += i_102_;
 									i_103_ += i_105_;
 									i_106_ += i_108_;
@@ -1005,23 +1005,23 @@ public class SDRaster {
 								i_70_ -= i;
 								i = anIntArray113[i];
 								while (--i_70_ >= 0) {
-									method96(Class92.anIntArray1437, is, 0, 0, i, i_71_ >> 16, i_72_ >> 16, i_74_,
+									method96(SD2DRaster.anIntArray1437, is, 0, 0, i, i_71_ >> 16, i_72_ >> 16, i_74_,
 											i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 									i_72_ += i_96_;
 									i_71_ += i_94_;
 									i_74_ += i_99_;
-									i += Class92.anInt1432;
+									i += SD2DRaster.anInt1432;
 									i_100_ += i_102_;
 									i_103_ += i_105_;
 									i_106_ += i_108_;
 								}
 								while (--i_69_ >= 0) {
-									method96(Class92.anIntArray1437, is, 0, 0, i, i_71_ >> 16, i_73_ >> 16, i_74_,
+									method96(SD2DRaster.anIntArray1437, is, 0, 0, i, i_71_ >> 16, i_73_ >> 16, i_74_,
 											i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 									i_73_ += i_95_;
 									i_71_ += i_94_;
 									i_74_ += i_99_;
-									i += Class92.anInt1432;
+									i += SD2DRaster.anInt1432;
 									i_100_ += i_102_;
 									i_103_ += i_105_;
 									i_106_ += i_108_;
@@ -1058,23 +1058,23 @@ public class SDRaster {
 								i_70_ -= i_69_;
 								i_69_ = anIntArray113[i_69_];
 								while (--i_70_ >= 0) {
-									method96(Class92.anIntArray1437, is, 0, 0, i_69_, i_71_ >> 16, i_72_ >> 16, i_75_,
+									method96(SD2DRaster.anIntArray1437, is, 0, 0, i_69_, i_71_ >> 16, i_72_ >> 16, i_75_,
 											i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 									i_71_ += i_94_;
 									i_72_ += i_95_;
 									i_75_ += i_99_;
-									i_69_ += Class92.anInt1432;
+									i_69_ += SD2DRaster.anInt1432;
 									i_100_ += i_102_;
 									i_103_ += i_105_;
 									i_106_ += i_108_;
 								}
 								while (--i >= 0) {
-									method96(Class92.anIntArray1437, is, 0, 0, i_69_, i_71_ >> 16, i_73_ >> 16, i_75_,
+									method96(SD2DRaster.anIntArray1437, is, 0, 0, i_69_, i_71_ >> 16, i_73_ >> 16, i_75_,
 											i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 									i_71_ += i_94_;
 									i_73_ += i_96_;
 									i_75_ += i_99_;
-									i_69_ += Class92.anInt1432;
+									i_69_ += SD2DRaster.anInt1432;
 									i_100_ += i_102_;
 									i_103_ += i_105_;
 									i_106_ += i_108_;
@@ -1084,23 +1084,23 @@ public class SDRaster {
 								i_70_ -= i_69_;
 								i_69_ = anIntArray113[i_69_];
 								while (--i_70_ >= 0) {
-									method96(Class92.anIntArray1437, is, 0, 0, i_69_, i_72_ >> 16, i_71_ >> 16, i_75_,
+									method96(SD2DRaster.anIntArray1437, is, 0, 0, i_69_, i_72_ >> 16, i_71_ >> 16, i_75_,
 											i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 									i_71_ += i_94_;
 									i_72_ += i_95_;
 									i_75_ += i_99_;
-									i_69_ += Class92.anInt1432;
+									i_69_ += SD2DRaster.anInt1432;
 									i_100_ += i_102_;
 									i_103_ += i_105_;
 									i_106_ += i_108_;
 								}
 								while (--i >= 0) {
-									method96(Class92.anIntArray1437, is, 0, 0, i_69_, i_73_ >> 16, i_71_ >> 16, i_75_,
+									method96(SD2DRaster.anIntArray1437, is, 0, 0, i_69_, i_73_ >> 16, i_71_ >> 16, i_75_,
 											i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 									i_71_ += i_94_;
 									i_73_ += i_96_;
 									i_75_ += i_99_;
-									i_69_ += Class92.anInt1432;
+									i_69_ += SD2DRaster.anInt1432;
 									i_100_ += i_102_;
 									i_103_ += i_105_;
 									i_106_ += i_108_;
@@ -1128,23 +1128,23 @@ public class SDRaster {
 								i -= i_69_;
 								i_69_ = anIntArray113[i_69_];
 								while (--i >= 0) {
-									method96(Class92.anIntArray1437, is, 0, 0, i_69_, i_73_ >> 16, i_72_ >> 16, i_75_,
+									method96(SD2DRaster.anIntArray1437, is, 0, 0, i_69_, i_73_ >> 16, i_72_ >> 16, i_75_,
 											i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 									i_73_ += i_94_;
 									i_72_ += i_95_;
 									i_75_ += i_99_;
-									i_69_ += Class92.anInt1432;
+									i_69_ += SD2DRaster.anInt1432;
 									i_100_ += i_102_;
 									i_103_ += i_105_;
 									i_106_ += i_108_;
 								}
 								while (--i_70_ >= 0) {
-									method96(Class92.anIntArray1437, is, 0, 0, i_69_, i_71_ >> 16, i_72_ >> 16, i_75_,
+									method96(SD2DRaster.anIntArray1437, is, 0, 0, i_69_, i_71_ >> 16, i_72_ >> 16, i_75_,
 											i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 									i_71_ += i_96_;
 									i_72_ += i_95_;
 									i_75_ += i_99_;
-									i_69_ += Class92.anInt1432;
+									i_69_ += SD2DRaster.anInt1432;
 									i_100_ += i_102_;
 									i_103_ += i_105_;
 									i_106_ += i_108_;
@@ -1154,23 +1154,23 @@ public class SDRaster {
 								i -= i_69_;
 								i_69_ = anIntArray113[i_69_];
 								while (--i >= 0) {
-									method96(Class92.anIntArray1437, is, 0, 0, i_69_, i_72_ >> 16, i_73_ >> 16, i_75_,
+									method96(SD2DRaster.anIntArray1437, is, 0, 0, i_69_, i_72_ >> 16, i_73_ >> 16, i_75_,
 											i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 									i_73_ += i_94_;
 									i_72_ += i_95_;
 									i_75_ += i_99_;
-									i_69_ += Class92.anInt1432;
+									i_69_ += SD2DRaster.anInt1432;
 									i_100_ += i_102_;
 									i_103_ += i_105_;
 									i_106_ += i_108_;
 								}
 								while (--i_70_ >= 0) {
-									method96(Class92.anIntArray1437, is, 0, 0, i_69_, i_72_ >> 16, i_71_ >> 16, i_75_,
+									method96(SD2DRaster.anIntArray1437, is, 0, 0, i_69_, i_72_ >> 16, i_71_ >> 16, i_75_,
 											i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 									i_71_ += i_96_;
 									i_72_ += i_95_;
 									i_75_ += i_99_;
-									i_69_ += Class92.anInt1432;
+									i_69_ += SD2DRaster.anInt1432;
 									i_100_ += i_102_;
 									i_103_ += i_105_;
 									i_106_ += i_108_;
@@ -1206,23 +1206,23 @@ public class SDRaster {
 							i -= i_70_;
 							i_70_ = anIntArray113[i_70_];
 							while (--i >= 0) {
-								method96(Class92.anIntArray1437, is, 0, 0, i_70_, i_72_ >> 16, i_73_ >> 16, i_76_,
+								method96(SD2DRaster.anIntArray1437, is, 0, 0, i_70_, i_72_ >> 16, i_73_ >> 16, i_76_,
 										i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 								i_72_ += i_95_;
 								i_73_ += i_96_;
 								i_76_ += i_99_;
-								i_70_ += Class92.anInt1432;
+								i_70_ += SD2DRaster.anInt1432;
 								i_100_ += i_102_;
 								i_103_ += i_105_;
 								i_106_ += i_108_;
 							}
 							while (--i_69_ >= 0) {
-								method96(Class92.anIntArray1437, is, 0, 0, i_70_, i_72_ >> 16, i_71_ >> 16, i_76_,
+								method96(SD2DRaster.anIntArray1437, is, 0, 0, i_70_, i_72_ >> 16, i_71_ >> 16, i_76_,
 										i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 								i_72_ += i_95_;
 								i_71_ += i_94_;
 								i_76_ += i_99_;
-								i_70_ += Class92.anInt1432;
+								i_70_ += SD2DRaster.anInt1432;
 								i_100_ += i_102_;
 								i_103_ += i_105_;
 								i_106_ += i_108_;
@@ -1232,23 +1232,23 @@ public class SDRaster {
 							i -= i_70_;
 							i_70_ = anIntArray113[i_70_];
 							while (--i >= 0) {
-								method96(Class92.anIntArray1437, is, 0, 0, i_70_, i_73_ >> 16, i_72_ >> 16, i_76_,
+								method96(SD2DRaster.anIntArray1437, is, 0, 0, i_70_, i_73_ >> 16, i_72_ >> 16, i_76_,
 										i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 								i_72_ += i_95_;
 								i_73_ += i_96_;
 								i_76_ += i_99_;
-								i_70_ += Class92.anInt1432;
+								i_70_ += SD2DRaster.anInt1432;
 								i_100_ += i_102_;
 								i_103_ += i_105_;
 								i_106_ += i_108_;
 							}
 							while (--i_69_ >= 0) {
-								method96(Class92.anIntArray1437, is, 0, 0, i_70_, i_71_ >> 16, i_72_ >> 16, i_76_,
+								method96(SD2DRaster.anIntArray1437, is, 0, 0, i_70_, i_71_ >> 16, i_72_ >> 16, i_76_,
 										i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 								i_72_ += i_95_;
 								i_71_ += i_94_;
 								i_76_ += i_99_;
-								i_70_ += Class92.anInt1432;
+								i_70_ += SD2DRaster.anInt1432;
 								i_100_ += i_102_;
 								i_103_ += i_105_;
 								i_106_ += i_108_;
@@ -1276,23 +1276,23 @@ public class SDRaster {
 							i_69_ -= i_70_;
 							i_70_ = anIntArray113[i_70_];
 							while (--i_69_ >= 0) {
-								method96(Class92.anIntArray1437, is, 0, 0, i_70_, i_71_ >> 16, i_73_ >> 16, i_76_,
+								method96(SD2DRaster.anIntArray1437, is, 0, 0, i_70_, i_71_ >> 16, i_73_ >> 16, i_76_,
 										i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 								i_71_ += i_95_;
 								i_73_ += i_96_;
 								i_76_ += i_99_;
-								i_70_ += Class92.anInt1432;
+								i_70_ += SD2DRaster.anInt1432;
 								i_100_ += i_102_;
 								i_103_ += i_105_;
 								i_106_ += i_108_;
 							}
 							while (--i >= 0) {
-								method96(Class92.anIntArray1437, is, 0, 0, i_70_, i_72_ >> 16, i_73_ >> 16, i_76_,
+								method96(SD2DRaster.anIntArray1437, is, 0, 0, i_70_, i_72_ >> 16, i_73_ >> 16, i_76_,
 										i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 								i_72_ += i_94_;
 								i_73_ += i_96_;
 								i_76_ += i_99_;
-								i_70_ += Class92.anInt1432;
+								i_70_ += SD2DRaster.anInt1432;
 								i_100_ += i_102_;
 								i_103_ += i_105_;
 								i_106_ += i_108_;
@@ -1302,23 +1302,23 @@ public class SDRaster {
 							i_69_ -= i_70_;
 							i_70_ = anIntArray113[i_70_];
 							while (--i_69_ >= 0) {
-								method96(Class92.anIntArray1437, is, 0, 0, i_70_, i_73_ >> 16, i_71_ >> 16, i_76_,
+								method96(SD2DRaster.anIntArray1437, is, 0, 0, i_70_, i_73_ >> 16, i_71_ >> 16, i_76_,
 										i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 								i_71_ += i_95_;
 								i_73_ += i_96_;
 								i_76_ += i_99_;
-								i_70_ += Class92.anInt1432;
+								i_70_ += SD2DRaster.anInt1432;
 								i_100_ += i_102_;
 								i_103_ += i_105_;
 								i_106_ += i_108_;
 							}
 							while (--i >= 0) {
-								method96(Class92.anIntArray1437, is, 0, 0, i_70_, i_73_ >> 16, i_72_ >> 16, i_76_,
+								method96(SD2DRaster.anIntArray1437, is, 0, 0, i_70_, i_73_ >> 16, i_72_ >> 16, i_76_,
 										i_98_, i_100_, i_103_, i_106_, i_101_, i_104_, i_107_);
 								i_72_ += i_94_;
 								i_73_ += i_96_;
 								i_76_ += i_99_;
-								i_70_ += Class92.anInt1432;
+								i_70_ += SD2DRaster.anInt1432;
 								i_100_ += i_102_;
 								i_103_ += i_105_;
 								i_106_ += i_108_;
@@ -1361,10 +1361,10 @@ public class SDRaster {
 		method102();
 		if (anIntArray113.length < anInt106)
 			anIntArray113 = new int[JunkTex.method653(anInt106)];
-		int i_122_ = i_119_ * Class92.anInt1432 + i;
+		int i_122_ = i_119_ * SD2DRaster.anInt1432 + i;
 		for (int i_123_ = 0; i_123_ < anInt106; i_123_++) {
 			anIntArray113[i_123_] = i_122_;
-			i_122_ += Class92.anInt1432;
+			i_122_ += SD2DRaster.anInt1432;
 		}
 	}
 
@@ -1434,36 +1434,36 @@ public class SDRaster {
 							i_124_ -= i;
 							i = anIntArray113[i];
 							while (--i_124_ >= 0) {
-								method105(Class92.anIntArray1437, i, 0, 0, i_128_ >> 16, i_126_ >> 16, i_129_, i_142_);
+								method105(SD2DRaster.anIntArray1437, i, 0, 0, i_128_ >> 16, i_126_ >> 16, i_129_, i_142_);
 								i_128_ += i_140_;
 								i_126_ += i_139_;
 								i_129_ += i_143_;
-								i += Class92.anInt1432;
+								i += SD2DRaster.anInt1432;
 							}
 							while (--i_125_ >= 0) {
-								method105(Class92.anIntArray1437, i, 0, 0, i_128_ >> 16, i_127_ >> 16, i_129_, i_142_);
+								method105(SD2DRaster.anIntArray1437, i, 0, 0, i_128_ >> 16, i_127_ >> 16, i_129_, i_142_);
 								i_128_ += i_140_;
 								i_127_ += i_138_;
 								i_129_ += i_143_;
-								i += Class92.anInt1432;
+								i += SD2DRaster.anInt1432;
 							}
 						} else {
 							i_125_ -= i_124_;
 							i_124_ -= i;
 							i = anIntArray113[i];
 							while (--i_124_ >= 0) {
-								method105(Class92.anIntArray1437, i, 0, 0, i_126_ >> 16, i_128_ >> 16, i_129_, i_142_);
+								method105(SD2DRaster.anIntArray1437, i, 0, 0, i_126_ >> 16, i_128_ >> 16, i_129_, i_142_);
 								i_128_ += i_140_;
 								i_126_ += i_139_;
 								i_129_ += i_143_;
-								i += Class92.anInt1432;
+								i += SD2DRaster.anInt1432;
 							}
 							while (--i_125_ >= 0) {
-								method105(Class92.anIntArray1437, i, 0, 0, i_127_ >> 16, i_128_ >> 16, i_129_, i_142_);
+								method105(SD2DRaster.anIntArray1437, i, 0, 0, i_127_ >> 16, i_128_ >> 16, i_129_, i_142_);
 								i_128_ += i_140_;
 								i_127_ += i_138_;
 								i_129_ += i_143_;
-								i += Class92.anInt1432;
+								i += SD2DRaster.anInt1432;
 							}
 						}
 					} else {
@@ -1484,36 +1484,36 @@ public class SDRaster {
 							i_125_ -= i;
 							i = anIntArray113[i];
 							while (--i_125_ >= 0) {
-								method105(Class92.anIntArray1437, i, 0, 0, i_127_ >> 16, i_126_ >> 16, i_129_, i_142_);
+								method105(SD2DRaster.anIntArray1437, i, 0, 0, i_127_ >> 16, i_126_ >> 16, i_129_, i_142_);
 								i_127_ += i_140_;
 								i_126_ += i_139_;
 								i_129_ += i_143_;
-								i += Class92.anInt1432;
+								i += SD2DRaster.anInt1432;
 							}
 							while (--i_124_ >= 0) {
-								method105(Class92.anIntArray1437, i, 0, 0, i_128_ >> 16, i_126_ >> 16, i_129_, i_142_);
+								method105(SD2DRaster.anIntArray1437, i, 0, 0, i_128_ >> 16, i_126_ >> 16, i_129_, i_142_);
 								i_128_ += i_138_;
 								i_126_ += i_139_;
 								i_129_ += i_143_;
-								i += Class92.anInt1432;
+								i += SD2DRaster.anInt1432;
 							}
 						} else {
 							i_124_ -= i_125_;
 							i_125_ -= i;
 							i = anIntArray113[i];
 							while (--i_125_ >= 0) {
-								method105(Class92.anIntArray1437, i, 0, 0, i_126_ >> 16, i_127_ >> 16, i_129_, i_142_);
+								method105(SD2DRaster.anIntArray1437, i, 0, 0, i_126_ >> 16, i_127_ >> 16, i_129_, i_142_);
 								i_127_ += i_140_;
 								i_126_ += i_139_;
 								i_129_ += i_143_;
-								i += Class92.anInt1432;
+								i += SD2DRaster.anInt1432;
 							}
 							while (--i_124_ >= 0) {
-								method105(Class92.anIntArray1437, i, 0, 0, i_126_ >> 16, i_128_ >> 16, i_129_, i_142_);
+								method105(SD2DRaster.anIntArray1437, i, 0, 0, i_126_ >> 16, i_128_ >> 16, i_129_, i_142_);
 								i_128_ += i_138_;
 								i_126_ += i_139_;
 								i_129_ += i_143_;
-								i += Class92.anInt1432;
+								i += SD2DRaster.anInt1432;
 							}
 						}
 					}
@@ -1543,40 +1543,40 @@ public class SDRaster {
 							i_125_ -= i_124_;
 							i_124_ = anIntArray113[i_124_];
 							while (--i_125_ >= 0) {
-								method105(Class92.anIntArray1437, i_124_, 0, 0, i_126_ >> 16, i_127_ >> 16, i_130_,
+								method105(SD2DRaster.anIntArray1437, i_124_, 0, 0, i_126_ >> 16, i_127_ >> 16, i_130_,
 										i_142_);
 								i_126_ += i_139_;
 								i_127_ += i_138_;
 								i_130_ += i_143_;
-								i_124_ += Class92.anInt1432;
+								i_124_ += SD2DRaster.anInt1432;
 							}
 							while (--i >= 0) {
-								method105(Class92.anIntArray1437, i_124_, 0, 0, i_126_ >> 16, i_128_ >> 16, i_130_,
+								method105(SD2DRaster.anIntArray1437, i_124_, 0, 0, i_126_ >> 16, i_128_ >> 16, i_130_,
 										i_142_);
 								i_126_ += i_139_;
 								i_128_ += i_140_;
 								i_130_ += i_143_;
-								i_124_ += Class92.anInt1432;
+								i_124_ += SD2DRaster.anInt1432;
 							}
 						} else {
 							i -= i_125_;
 							i_125_ -= i_124_;
 							i_124_ = anIntArray113[i_124_];
 							while (--i_125_ >= 0) {
-								method105(Class92.anIntArray1437, i_124_, 0, 0, i_127_ >> 16, i_126_ >> 16, i_130_,
+								method105(SD2DRaster.anIntArray1437, i_124_, 0, 0, i_127_ >> 16, i_126_ >> 16, i_130_,
 										i_142_);
 								i_126_ += i_139_;
 								i_127_ += i_138_;
 								i_130_ += i_143_;
-								i_124_ += Class92.anInt1432;
+								i_124_ += SD2DRaster.anInt1432;
 							}
 							while (--i >= 0) {
-								method105(Class92.anIntArray1437, i_124_, 0, 0, i_128_ >> 16, i_126_ >> 16, i_130_,
+								method105(SD2DRaster.anIntArray1437, i_124_, 0, 0, i_128_ >> 16, i_126_ >> 16, i_130_,
 										i_142_);
 								i_126_ += i_139_;
 								i_128_ += i_140_;
 								i_130_ += i_143_;
-								i_124_ += Class92.anInt1432;
+								i_124_ += SD2DRaster.anInt1432;
 							}
 						}
 					} else {
@@ -1597,40 +1597,40 @@ public class SDRaster {
 							i -= i_124_;
 							i_124_ = anIntArray113[i_124_];
 							while (--i >= 0) {
-								method105(Class92.anIntArray1437, i_124_, 0, 0, i_128_ >> 16, i_127_ >> 16, i_130_,
+								method105(SD2DRaster.anIntArray1437, i_124_, 0, 0, i_128_ >> 16, i_127_ >> 16, i_130_,
 										i_142_);
 								i_128_ += i_139_;
 								i_127_ += i_138_;
 								i_130_ += i_143_;
-								i_124_ += Class92.anInt1432;
+								i_124_ += SD2DRaster.anInt1432;
 							}
 							while (--i_125_ >= 0) {
-								method105(Class92.anIntArray1437, i_124_, 0, 0, i_126_ >> 16, i_127_ >> 16, i_130_,
+								method105(SD2DRaster.anIntArray1437, i_124_, 0, 0, i_126_ >> 16, i_127_ >> 16, i_130_,
 										i_142_);
 								i_126_ += i_140_;
 								i_127_ += i_138_;
 								i_130_ += i_143_;
-								i_124_ += Class92.anInt1432;
+								i_124_ += SD2DRaster.anInt1432;
 							}
 						} else {
 							i_125_ -= i;
 							i -= i_124_;
 							i_124_ = anIntArray113[i_124_];
 							while (--i >= 0) {
-								method105(Class92.anIntArray1437, i_124_, 0, 0, i_127_ >> 16, i_128_ >> 16, i_130_,
+								method105(SD2DRaster.anIntArray1437, i_124_, 0, 0, i_127_ >> 16, i_128_ >> 16, i_130_,
 										i_142_);
 								i_128_ += i_139_;
 								i_127_ += i_138_;
 								i_130_ += i_143_;
-								i_124_ += Class92.anInt1432;
+								i_124_ += SD2DRaster.anInt1432;
 							}
 							while (--i_125_ >= 0) {
-								method105(Class92.anIntArray1437, i_124_, 0, 0, i_127_ >> 16, i_126_ >> 16, i_130_,
+								method105(SD2DRaster.anIntArray1437, i_124_, 0, 0, i_127_ >> 16, i_126_ >> 16, i_130_,
 										i_142_);
 								i_126_ += i_140_;
 								i_127_ += i_138_;
 								i_130_ += i_143_;
-								i_124_ += Class92.anInt1432;
+								i_124_ += SD2DRaster.anInt1432;
 							}
 						}
 					}
@@ -1659,36 +1659,36 @@ public class SDRaster {
 						i -= i_125_;
 						i_125_ = anIntArray113[i_125_];
 						while (--i >= 0) {
-							method105(Class92.anIntArray1437, i_125_, 0, 0, i_127_ >> 16, i_128_ >> 16, i_131_, i_142_);
+							method105(SD2DRaster.anIntArray1437, i_125_, 0, 0, i_127_ >> 16, i_128_ >> 16, i_131_, i_142_);
 							i_127_ += i_138_;
 							i_128_ += i_140_;
 							i_131_ += i_143_;
-							i_125_ += Class92.anInt1432;
+							i_125_ += SD2DRaster.anInt1432;
 						}
 						while (--i_124_ >= 0) {
-							method105(Class92.anIntArray1437, i_125_, 0, 0, i_127_ >> 16, i_126_ >> 16, i_131_, i_142_);
+							method105(SD2DRaster.anIntArray1437, i_125_, 0, 0, i_127_ >> 16, i_126_ >> 16, i_131_, i_142_);
 							i_127_ += i_138_;
 							i_126_ += i_139_;
 							i_131_ += i_143_;
-							i_125_ += Class92.anInt1432;
+							i_125_ += SD2DRaster.anInt1432;
 						}
 					} else {
 						i_124_ -= i;
 						i -= i_125_;
 						i_125_ = anIntArray113[i_125_];
 						while (--i >= 0) {
-							method105(Class92.anIntArray1437, i_125_, 0, 0, i_128_ >> 16, i_127_ >> 16, i_131_, i_142_);
+							method105(SD2DRaster.anIntArray1437, i_125_, 0, 0, i_128_ >> 16, i_127_ >> 16, i_131_, i_142_);
 							i_127_ += i_138_;
 							i_128_ += i_140_;
 							i_131_ += i_143_;
-							i_125_ += Class92.anInt1432;
+							i_125_ += SD2DRaster.anInt1432;
 						}
 						while (--i_124_ >= 0) {
-							method105(Class92.anIntArray1437, i_125_, 0, 0, i_126_ >> 16, i_127_ >> 16, i_131_, i_142_);
+							method105(SD2DRaster.anIntArray1437, i_125_, 0, 0, i_126_ >> 16, i_127_ >> 16, i_131_, i_142_);
 							i_127_ += i_138_;
 							i_126_ += i_139_;
 							i_131_ += i_143_;
-							i_125_ += Class92.anInt1432;
+							i_125_ += SD2DRaster.anInt1432;
 						}
 					}
 				} else {
@@ -1709,36 +1709,36 @@ public class SDRaster {
 						i_124_ -= i_125_;
 						i_125_ = anIntArray113[i_125_];
 						while (--i_124_ >= 0) {
-							method105(Class92.anIntArray1437, i_125_, 0, 0, i_126_ >> 16, i_128_ >> 16, i_131_, i_142_);
+							method105(SD2DRaster.anIntArray1437, i_125_, 0, 0, i_126_ >> 16, i_128_ >> 16, i_131_, i_142_);
 							i_126_ += i_138_;
 							i_128_ += i_140_;
 							i_131_ += i_143_;
-							i_125_ += Class92.anInt1432;
+							i_125_ += SD2DRaster.anInt1432;
 						}
 						while (--i >= 0) {
-							method105(Class92.anIntArray1437, i_125_, 0, 0, i_127_ >> 16, i_128_ >> 16, i_131_, i_142_);
+							method105(SD2DRaster.anIntArray1437, i_125_, 0, 0, i_127_ >> 16, i_128_ >> 16, i_131_, i_142_);
 							i_127_ += i_139_;
 							i_128_ += i_140_;
 							i_131_ += i_143_;
-							i_125_ += Class92.anInt1432;
+							i_125_ += SD2DRaster.anInt1432;
 						}
 					} else {
 						i -= i_124_;
 						i_124_ -= i_125_;
 						i_125_ = anIntArray113[i_125_];
 						while (--i_124_ >= 0) {
-							method105(Class92.anIntArray1437, i_125_, 0, 0, i_128_ >> 16, i_126_ >> 16, i_131_, i_142_);
+							method105(SD2DRaster.anIntArray1437, i_125_, 0, 0, i_128_ >> 16, i_126_ >> 16, i_131_, i_142_);
 							i_126_ += i_138_;
 							i_128_ += i_140_;
 							i_131_ += i_143_;
-							i_125_ += Class92.anInt1432;
+							i_125_ += SD2DRaster.anInt1432;
 						}
 						while (--i >= 0) {
-							method105(Class92.anIntArray1437, i_125_, 0, 0, i_128_ >> 16, i_127_ >> 16, i_131_, i_142_);
+							method105(SD2DRaster.anIntArray1437, i_125_, 0, 0, i_128_ >> 16, i_127_ >> 16, i_131_, i_142_);
 							i_127_ += i_139_;
 							i_128_ += i_140_;
 							i_131_ += i_143_;
-							i_125_ += Class92.anInt1432;
+							i_125_ += SD2DRaster.anInt1432;
 						}
 					}
 				}
@@ -1880,32 +1880,32 @@ public class SDRaster {
 						i_157_ -= i;
 						i = anIntArray113[i];
 						while (--i_157_ >= 0) {
-							method92(Class92.anIntArray1437, i, i_162_, 0, i_161_ >> 16, i_159_ >> 16);
+							method92(SD2DRaster.anIntArray1437, i, i_162_, 0, i_161_ >> 16, i_159_ >> 16);
 							i_161_ += i_165_;
 							i_159_ += i_163_;
-							i += Class92.anInt1432;
+							i += SD2DRaster.anInt1432;
 						}
 						while (--i_158_ >= 0) {
-							method92(Class92.anIntArray1437, i, i_162_, 0, i_161_ >> 16, i_160_ >> 16);
+							method92(SD2DRaster.anIntArray1437, i, i_162_, 0, i_161_ >> 16, i_160_ >> 16);
 							i_161_ += i_165_;
 							i_160_ += i_164_;
-							i += Class92.anInt1432;
+							i += SD2DRaster.anInt1432;
 						}
 					} else {
 						i_158_ -= i_157_;
 						i_157_ -= i;
 						i = anIntArray113[i];
 						while (--i_157_ >= 0) {
-							method92(Class92.anIntArray1437, i, i_162_, 0, i_159_ >> 16, i_161_ >> 16);
+							method92(SD2DRaster.anIntArray1437, i, i_162_, 0, i_159_ >> 16, i_161_ >> 16);
 							i_161_ += i_165_;
 							i_159_ += i_163_;
-							i += Class92.anInt1432;
+							i += SD2DRaster.anInt1432;
 						}
 						while (--i_158_ >= 0) {
-							method92(Class92.anIntArray1437, i, i_162_, 0, i_160_ >> 16, i_161_ >> 16);
+							method92(SD2DRaster.anIntArray1437, i, i_162_, 0, i_160_ >> 16, i_161_ >> 16);
 							i_161_ += i_165_;
 							i_160_ += i_164_;
-							i += Class92.anInt1432;
+							i += SD2DRaster.anInt1432;
 						}
 					}
 				} else {
@@ -1925,32 +1925,32 @@ public class SDRaster {
 						i_158_ -= i;
 						i = anIntArray113[i];
 						while (--i_158_ >= 0) {
-							method92(Class92.anIntArray1437, i, i_162_, 0, i_160_ >> 16, i_159_ >> 16);
+							method92(SD2DRaster.anIntArray1437, i, i_162_, 0, i_160_ >> 16, i_159_ >> 16);
 							i_160_ += i_165_;
 							i_159_ += i_163_;
-							i += Class92.anInt1432;
+							i += SD2DRaster.anInt1432;
 						}
 						while (--i_157_ >= 0) {
-							method92(Class92.anIntArray1437, i, i_162_, 0, i_161_ >> 16, i_159_ >> 16);
+							method92(SD2DRaster.anIntArray1437, i, i_162_, 0, i_161_ >> 16, i_159_ >> 16);
 							i_161_ += i_164_;
 							i_159_ += i_163_;
-							i += Class92.anInt1432;
+							i += SD2DRaster.anInt1432;
 						}
 					} else {
 						i_157_ -= i_158_;
 						i_158_ -= i;
 						i = anIntArray113[i];
 						while (--i_158_ >= 0) {
-							method92(Class92.anIntArray1437, i, i_162_, 0, i_159_ >> 16, i_160_ >> 16);
+							method92(SD2DRaster.anIntArray1437, i, i_162_, 0, i_159_ >> 16, i_160_ >> 16);
 							i_160_ += i_165_;
 							i_159_ += i_163_;
-							i += Class92.anInt1432;
+							i += SD2DRaster.anInt1432;
 						}
 						while (--i_157_ >= 0) {
-							method92(Class92.anIntArray1437, i, i_162_, 0, i_159_ >> 16, i_161_ >> 16);
+							method92(SD2DRaster.anIntArray1437, i, i_162_, 0, i_159_ >> 16, i_161_ >> 16);
 							i_161_ += i_164_;
 							i_159_ += i_163_;
-							i += Class92.anInt1432;
+							i += SD2DRaster.anInt1432;
 						}
 					}
 				}
@@ -1978,32 +1978,32 @@ public class SDRaster {
 						i_158_ -= i_157_;
 						i_157_ = anIntArray113[i_157_];
 						while (--i_158_ >= 0) {
-							method92(Class92.anIntArray1437, i_157_, i_162_, 0, i_159_ >> 16, i_160_ >> 16);
+							method92(SD2DRaster.anIntArray1437, i_157_, i_162_, 0, i_159_ >> 16, i_160_ >> 16);
 							i_159_ += i_163_;
 							i_160_ += i_164_;
-							i_157_ += Class92.anInt1432;
+							i_157_ += SD2DRaster.anInt1432;
 						}
 						while (--i >= 0) {
-							method92(Class92.anIntArray1437, i_157_, i_162_, 0, i_159_ >> 16, i_161_ >> 16);
+							method92(SD2DRaster.anIntArray1437, i_157_, i_162_, 0, i_159_ >> 16, i_161_ >> 16);
 							i_159_ += i_163_;
 							i_161_ += i_165_;
-							i_157_ += Class92.anInt1432;
+							i_157_ += SD2DRaster.anInt1432;
 						}
 					} else {
 						i -= i_158_;
 						i_158_ -= i_157_;
 						i_157_ = anIntArray113[i_157_];
 						while (--i_158_ >= 0) {
-							method92(Class92.anIntArray1437, i_157_, i_162_, 0, i_160_ >> 16, i_159_ >> 16);
+							method92(SD2DRaster.anIntArray1437, i_157_, i_162_, 0, i_160_ >> 16, i_159_ >> 16);
 							i_159_ += i_163_;
 							i_160_ += i_164_;
-							i_157_ += Class92.anInt1432;
+							i_157_ += SD2DRaster.anInt1432;
 						}
 						while (--i >= 0) {
-							method92(Class92.anIntArray1437, i_157_, i_162_, 0, i_161_ >> 16, i_159_ >> 16);
+							method92(SD2DRaster.anIntArray1437, i_157_, i_162_, 0, i_161_ >> 16, i_159_ >> 16);
 							i_159_ += i_163_;
 							i_161_ += i_165_;
-							i_157_ += Class92.anInt1432;
+							i_157_ += SD2DRaster.anInt1432;
 						}
 					}
 				} else {
@@ -2023,32 +2023,32 @@ public class SDRaster {
 						i -= i_157_;
 						i_157_ = anIntArray113[i_157_];
 						while (--i >= 0) {
-							method92(Class92.anIntArray1437, i_157_, i_162_, 0, i_161_ >> 16, i_160_ >> 16);
+							method92(SD2DRaster.anIntArray1437, i_157_, i_162_, 0, i_161_ >> 16, i_160_ >> 16);
 							i_161_ += i_163_;
 							i_160_ += i_164_;
-							i_157_ += Class92.anInt1432;
+							i_157_ += SD2DRaster.anInt1432;
 						}
 						while (--i_158_ >= 0) {
-							method92(Class92.anIntArray1437, i_157_, i_162_, 0, i_159_ >> 16, i_160_ >> 16);
+							method92(SD2DRaster.anIntArray1437, i_157_, i_162_, 0, i_159_ >> 16, i_160_ >> 16);
 							i_159_ += i_165_;
 							i_160_ += i_164_;
-							i_157_ += Class92.anInt1432;
+							i_157_ += SD2DRaster.anInt1432;
 						}
 					} else {
 						i_158_ -= i;
 						i -= i_157_;
 						i_157_ = anIntArray113[i_157_];
 						while (--i >= 0) {
-							method92(Class92.anIntArray1437, i_157_, i_162_, 0, i_160_ >> 16, i_161_ >> 16);
+							method92(SD2DRaster.anIntArray1437, i_157_, i_162_, 0, i_160_ >> 16, i_161_ >> 16);
 							i_161_ += i_163_;
 							i_160_ += i_164_;
-							i_157_ += Class92.anInt1432;
+							i_157_ += SD2DRaster.anInt1432;
 						}
 						while (--i_158_ >= 0) {
-							method92(Class92.anIntArray1437, i_157_, i_162_, 0, i_160_ >> 16, i_159_ >> 16);
+							method92(SD2DRaster.anIntArray1437, i_157_, i_162_, 0, i_160_ >> 16, i_159_ >> 16);
 							i_159_ += i_165_;
 							i_160_ += i_164_;
-							i_157_ += Class92.anInt1432;
+							i_157_ += SD2DRaster.anInt1432;
 						}
 					}
 				}
@@ -2075,32 +2075,32 @@ public class SDRaster {
 					i -= i_158_;
 					i_158_ = anIntArray113[i_158_];
 					while (--i >= 0) {
-						method92(Class92.anIntArray1437, i_158_, i_162_, 0, i_160_ >> 16, i_161_ >> 16);
+						method92(SD2DRaster.anIntArray1437, i_158_, i_162_, 0, i_160_ >> 16, i_161_ >> 16);
 						i_160_ += i_164_;
 						i_161_ += i_165_;
-						i_158_ += Class92.anInt1432;
+						i_158_ += SD2DRaster.anInt1432;
 					}
 					while (--i_157_ >= 0) {
-						method92(Class92.anIntArray1437, i_158_, i_162_, 0, i_160_ >> 16, i_159_ >> 16);
+						method92(SD2DRaster.anIntArray1437, i_158_, i_162_, 0, i_160_ >> 16, i_159_ >> 16);
 						i_160_ += i_164_;
 						i_159_ += i_163_;
-						i_158_ += Class92.anInt1432;
+						i_158_ += SD2DRaster.anInt1432;
 					}
 				} else {
 					i_157_ -= i;
 					i -= i_158_;
 					i_158_ = anIntArray113[i_158_];
 					while (--i >= 0) {
-						method92(Class92.anIntArray1437, i_158_, i_162_, 0, i_161_ >> 16, i_160_ >> 16);
+						method92(SD2DRaster.anIntArray1437, i_158_, i_162_, 0, i_161_ >> 16, i_160_ >> 16);
 						i_160_ += i_164_;
 						i_161_ += i_165_;
-						i_158_ += Class92.anInt1432;
+						i_158_ += SD2DRaster.anInt1432;
 					}
 					while (--i_157_ >= 0) {
-						method92(Class92.anIntArray1437, i_158_, i_162_, 0, i_159_ >> 16, i_160_ >> 16);
+						method92(SD2DRaster.anIntArray1437, i_158_, i_162_, 0, i_159_ >> 16, i_160_ >> 16);
 						i_160_ += i_164_;
 						i_159_ += i_163_;
-						i_158_ += Class92.anInt1432;
+						i_158_ += SD2DRaster.anInt1432;
 					}
 				}
 			} else {
@@ -2120,32 +2120,32 @@ public class SDRaster {
 					i_157_ -= i_158_;
 					i_158_ = anIntArray113[i_158_];
 					while (--i_157_ >= 0) {
-						method92(Class92.anIntArray1437, i_158_, i_162_, 0, i_159_ >> 16, i_161_ >> 16);
+						method92(SD2DRaster.anIntArray1437, i_158_, i_162_, 0, i_159_ >> 16, i_161_ >> 16);
 						i_159_ += i_164_;
 						i_161_ += i_165_;
-						i_158_ += Class92.anInt1432;
+						i_158_ += SD2DRaster.anInt1432;
 					}
 					while (--i >= 0) {
-						method92(Class92.anIntArray1437, i_158_, i_162_, 0, i_160_ >> 16, i_161_ >> 16);
+						method92(SD2DRaster.anIntArray1437, i_158_, i_162_, 0, i_160_ >> 16, i_161_ >> 16);
 						i_160_ += i_163_;
 						i_161_ += i_165_;
-						i_158_ += Class92.anInt1432;
+						i_158_ += SD2DRaster.anInt1432;
 					}
 				} else {
 					i -= i_157_;
 					i_157_ -= i_158_;
 					i_158_ = anIntArray113[i_158_];
 					while (--i_157_ >= 0) {
-						method92(Class92.anIntArray1437, i_158_, i_162_, 0, i_161_ >> 16, i_159_ >> 16);
+						method92(SD2DRaster.anIntArray1437, i_158_, i_162_, 0, i_161_ >> 16, i_159_ >> 16);
 						i_159_ += i_164_;
 						i_161_ += i_165_;
-						i_158_ += Class92.anInt1432;
+						i_158_ += SD2DRaster.anInt1432;
 					}
 					while (--i >= 0) {
-						method92(Class92.anIntArray1437, i_158_, i_162_, 0, i_161_ >> 16, i_160_ >> 16);
+						method92(SD2DRaster.anIntArray1437, i_158_, i_162_, 0, i_161_ >> 16, i_160_ >> 16);
 						i_160_ += i_163_;
 						i_161_ += i_165_;
-						i_158_ += Class92.anInt1432;
+						i_158_ += SD2DRaster.anInt1432;
 					}
 				}
 			}

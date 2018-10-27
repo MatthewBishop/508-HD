@@ -11,6 +11,8 @@ import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.image.PixelGrabber;
 
+import com.jagex.applet.ErrorReporting;
+
 public class Class87 {
 	public boolean aBoolean1390 = false;
 	public int anInt1391 = 0;
@@ -78,45 +80,45 @@ public class Class87 {
 		int i_21_ = is[i + 3];
 		int i_22_ = is[i + 4];
 		int i_23_ = is[i] * 16384 + is[i + 1] * 128 + is[i + 2];
-		int i_24_ = i_19_ + i_20_ * Class92.anInt1432;
-		int i_25_ = Class92.anInt1432 - i_21_;
+		int i_24_ = i_19_ + i_20_ * SD2DRaster.anInt1432;
+		int i_25_ = SD2DRaster.anInt1432 - i_21_;
 		int i_26_ = 0;
-		if (i_20_ < Class92.anInt1438) {
-			int i_27_ = Class92.anInt1438 - i_20_;
+		if (i_20_ < SD2DRaster.anInt1438) {
+			int i_27_ = SD2DRaster.anInt1438 - i_20_;
 			i_22_ -= i_27_;
-			i_20_ = Class92.anInt1438;
+			i_20_ = SD2DRaster.anInt1438;
 			i_23_ += i_27_ * i_21_;
-			i_24_ += i_27_ * Class92.anInt1432;
+			i_24_ += i_27_ * SD2DRaster.anInt1432;
 		}
-		if (i_20_ + i_22_ >= Class92.anInt1436)
-			i_22_ -= i_20_ + i_22_ - Class92.anInt1436 + 1;
-		if (i_19_ < Class92.anInt1433) {
-			int i_28_ = Class92.anInt1433 - i_19_;
+		if (i_20_ + i_22_ >= SD2DRaster.anInt1436)
+			i_22_ -= i_20_ + i_22_ - SD2DRaster.anInt1436 + 1;
+		if (i_19_ < SD2DRaster.anInt1433) {
+			int i_28_ = SD2DRaster.anInt1433 - i_19_;
 			i_21_ -= i_28_;
-			i_19_ = Class92.anInt1433;
+			i_19_ = SD2DRaster.anInt1433;
 			i_23_ += i_28_;
 			i_24_ += i_28_;
 			i_26_ += i_28_;
 			i_25_ += i_28_;
 		}
-		if (i_19_ + i_21_ >= Class92.anInt1434) {
-			int i_29_ = i_19_ + i_21_ - Class92.anInt1434 + 1;
+		if (i_19_ + i_21_ >= SD2DRaster.anInt1434) {
+			int i_29_ = i_19_ + i_21_ - SD2DRaster.anInt1434 + 1;
 			i_21_ -= i_29_;
 			i_26_ += i_29_;
 			i_25_ += i_29_;
 		}
 		if (i_21_ > 0 && i_22_ > 0) {
 			if (aBoolean1390)
-				method1426(Class92.anIntArray1437, is, i_18_, i_23_, i_24_, i_21_, i_22_, i_25_, i_26_);
+				method1426(SD2DRaster.anIntArray1437, is, i_18_, i_23_, i_24_, i_21_, i_22_, i_25_, i_26_);
 			else
-				method1430(Class92.anIntArray1437, is, i_18_, i_23_, i_24_, i_21_, i_22_, i_25_, i_26_);
+				method1430(SD2DRaster.anIntArray1437, is, i_18_, i_23_, i_24_, i_21_, i_22_, i_25_, i_26_);
 		}
 	}
 
 	public void method1429(Class124 class124, int i, int i_30_, int i_31_, boolean bool) {
 		int i_32_ = method1431(class124) / 2;
 		int i_33_ = method1425();
-		if (i - i_32_ <= Class92.anInt1434 && i + i_32_ >= Class92.anInt1433 && i_30_ - i_33_ <= Class92.anInt1436
+		if (i - i_32_ <= SD2DRaster.anInt1434 && i + i_32_ >= SD2DRaster.anInt1433 && i_30_ - i_33_ <= SD2DRaster.anInt1436
 				&& i_30_ >= 0)
 			method1427(class124, i - i_32_, i_30_, i_31_, bool);
 	}
@@ -191,7 +193,7 @@ public class Class87 {
 		int i_48_ = fontmetrics.getMaxAscent();
 		int i_49_ = fontmetrics.getMaxAscent() + fontmetrics.getMaxDescent();
 		int i_50_ = fontmetrics.getHeight();
-		Image image = Static2.aCanvas819.createImage(i_46_, i_49_);
+		Image image = ErrorReporting.aCanvas819.createImage(i_46_, i_49_);
 		Graphics graphics = image.getGraphics();
 		graphics.setColor(Color.black);
 		graphics.fillRect(0, 0, i_46_, i_49_);

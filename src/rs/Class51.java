@@ -8,7 +8,6 @@ import com.jagex.io.js5.Class9;
 
 public class Class51 {
 	public static int anInt828;
-	public static int anInt829 = 0;
 	public static int anInt830;
 	public static int anInt831;
 	public int anInt832;
@@ -21,7 +20,7 @@ public class Class51 {
 
 	static {
 		anInt828 = 10;
-		aClass124_841 = Class124.method263(1178, "Weiter");
+		aClass124_841 = Class124.method263("Weiter");
 		anInt839 = 0;
 		anInt830 = (int) (Math.random() * 17.0) - 8;
 		anInt831 = 0;

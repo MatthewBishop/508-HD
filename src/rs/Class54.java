@@ -6,13 +6,12 @@ package rs;
 import com.jagex.io.js5.Class9;
 
 public class Class54 {
-	public static volatile boolean aBoolean877 = false;
 	public static boolean aBoolean879 = true;
 	public static int anInt880;
 	public static boolean aBoolean881 = false;
-	public static Class124 aClass124_883 = Class124.method263(1178, ")3google)3com");
+	public static Class124 aClass124_883 = Class124.method263(")3google)3com");
 	public static Class9 aClass9_885;
-	public static Class124 aClass124_886 = Class124.method263(1178, " )2> ");
+	public static Class124 aClass124_886 = Class124.method263(" )2> ");
 	public static int anInt887 = 0;
 	public static Class87 aClass87_888;
 
@@ -55,11 +54,11 @@ public class Class54 {
 				class124 = (JunkTex.method515((new Class124[] { class124, Class115.aClass124_1906,
 						Class83.method1407(81, (JunkTex.anInt4729 - 2)),
 						Static2.aClass124_3948 }), (byte) -83));
-			int i_2_ = (Class133_Sub3.aClass14_Sub2_Sub16_3567.method350(class124, i + 4, i_1_ + 15, 16777215, 0,
+			int i_2_ = (SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567.method350(class124, i + 4, i_1_ + 15, 16777215, 0,
 					Class104.aRandom1732, Class32.anInt563));
 			if (i_0_ > -44)
 				method1220(-54, true, false, -79);
-			Class14_Sub13.method862(124, i_2_ + Class133_Sub3.aClass14_Sub2_Sub16_3567.method361(class124), 15, i_1_,
+			Class14_Sub13.method862(124, i_2_ + SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567.method361(class124), 15, i_1_,
 					i + 4);
 		}
 	}
@@ -107,11 +106,9 @@ public class Class54 {
 		return class124_10_;
 	}
 
-	public static void method1221(int i, boolean bool, int i_11_) {
-		if (!bool)
-			method1220(-109, false, false, -28);
+	public static void method1221(int i, int i_11_) {
 		for (int i_12_ = 0; Class131.anInt2159 > i_12_; i_12_++) {
-			OverlayType overlayType = Class97.list(i_12_, -9810);
+			OverlayType overlayType = OverlayType.list(i_12_);
 			if (overlayType != null) {
 				int i_13_ = overlayType.anInt2414;
 				if (i_13_ >= 0 && !SDRaster.anInterface3_117.method13(i_13_))

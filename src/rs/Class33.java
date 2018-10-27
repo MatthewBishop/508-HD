@@ -10,7 +10,7 @@ import com.jagex.link.HashTable;
 public class Class33 {
 	public static int[][] anIntArrayArray575 = new int[104][104];
 	public static int anInt577;
-	public static Class124 aClass124_578 = Class124.method263(1178, "");
+	public static Class124 aClass124_578 = Class124.method263("");
 	public static Class9 aClass9_579;
 	public static short[] aShortArray580;
 	public static Deque aClass2_583;

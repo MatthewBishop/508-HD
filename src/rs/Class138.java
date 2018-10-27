@@ -4,24 +4,20 @@
 package rs;
 
 import java.awt.Frame;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringReader;
-import java.io.StringWriter;
 
+import com.jagex.applet.Class31;
+import com.jagex.applet.Class43;
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9_Sub1;
-import com.jagex.util.RuntimeException_Sub1;
 import com.jagex.util.Util;
 
 public class Class138 {
-	public static Class124 aClass124_2207 = Class124.method263(1178, "(U3");
+	public static Class124 aClass124_2207 = Class124.method263("(U3");
 	public int anInt2208;
 	public int anInt2209;
 	public static int anInt2210;
 	public static int anInt2214;
-	public static Class124 aClass124_2215 = Class124.method263(1178, "Angreifen");
+	public static Class124 aClass124_2215 = Class124.method263("Angreifen");
 	public int anInt2217;
 	public static Class124 aClass124_2218;
 	public static Class124 aClass124_2219;
@@ -35,8 +31,8 @@ public class Class138 {
 		anInt2210 = 0;
 		anInt2214 = -1;
 		
-		aClass124_2227 = Class124.method263(1178, "Ausw-=hlen");
-		aClass124_2218 = Class124.method263(1178, "Please remove ");
+		aClass124_2227 = Class124.method263("Ausw-=hlen");
+		aClass124_2218 = Class124.method263("Please remove ");
 		anIntArray2224 = new int[128];
 		aClass124_2219 = aClass124_2218;
 		aClass124_2226 = aClass124_2218;
@@ -50,11 +46,11 @@ public class Class138 {
 		JunkTex.method615(300);
 		for (int i = 0; i < JunkTex.anInt4255; i++) {
 			int i_0_ = Class36.anIntArray626[i];
-			if (Class14_Sub2_Sub20.anInt4064 != Class14_Sub4.aClass133_Sub1_Sub2Array2785[i_0_].anInt3447) {
-				if (Class14_Sub4.aClass133_Sub1_Sub2Array2785[i_0_].aClass12_4949.method212((byte) -128))
-					Class37.method1112((Class14_Sub4.aClass133_Sub1_Sub2Array2785[i_0_]), (byte) -26);
-				Class14_Sub4.aClass133_Sub1_Sub2Array2785[i_0_].aClass12_4949 = null;
-				Class14_Sub4.aClass133_Sub1_Sub2Array2785[i_0_] = null;
+			if (Class14_Sub2_Sub20.anInt4064 != Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[i_0_].anInt3447) {
+				if (Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[i_0_].aClass12_4949.method212((byte) -128))
+					Class37.method1112((Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[i_0_]), (byte) -26);
+				Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[i_0_].aClass12_4949 = null;
+				Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[i_0_] = null;
 			}
 		}
 		if (JunkTex.aClass14_Sub10_Sub1_4734.position != JunkTex.anInt4280)
@@ -62,7 +58,7 @@ public class Class138 {
 					new StringBuilder("gnp1 pos:").append(JunkTex.aClass14_Sub10_Sub1_4734.position)
 							.append(" psize:").append(JunkTex.anInt4280).toString());
 		for (int i = 0; JunkTex.anInt4306 > i; i++) {
-			if ((Class14_Sub4.aClass133_Sub1_Sub2Array2785[JunkTex.anIntArray3965[i]]) == null)
+			if ((Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[JunkTex.anIntArray3965[i]]) == null)
 				throw new RuntimeException(new StringBuilder("gnp2 pos:").append(i).append(" size:")
 						.append(JunkTex.anInt4306).toString());
 		}
@@ -126,51 +122,6 @@ public class Class138 {
 			Static2.aClass75_2588.method1341(i ^ ~0xfb);
 		if (JunkTex.aClass75_4682 != null)
 			JunkTex.aClass75_4682.method1341(-50);
-	}
-
-	public static String method1947(int i, Throwable throwable) throws IOException {
-		String string;
-		if (!(throwable instanceof RuntimeException_Sub1))
-			string = "";
-		else {
-			RuntimeException_Sub1 runtimeexception_sub1 = (RuntimeException_Sub1) throwable;
-			throwable = runtimeexception_sub1.aThrowable2461;
-			string = new StringBuilder(runtimeexception_sub1.aString2457).append(" | ").toString();
-		}
-		StringWriter stringwriter = new StringWriter();
-		PrintWriter printwriter = new PrintWriter(stringwriter);
-		throwable.printStackTrace(printwriter);
-		printwriter.close();
-		String string_15_ = stringwriter.toString();
-		if (i != 41)
-			method1948(-37);
-		BufferedReader bufferedreader = new BufferedReader(new StringReader(string_15_));
-		String string_16_ = bufferedreader.readLine();
-		for (;;) {
-			String string_17_ = bufferedreader.readLine();
-			if (string_17_ == null)
-				break;
-			int i_18_ = string_17_.indexOf('(');
-			int i_19_ = string_17_.indexOf(')', i_18_ + 1);
-			if (i_18_ >= 0 && i_19_ >= 0) {
-				String string_20_ = string_17_.substring(i_18_ + 1, i_19_);
-				int i_21_ = string_20_.indexOf(".java:");
-				if (i_21_ >= 0) {
-					string_20_ = new StringBuilder(string_20_.substring(0, i_21_))
-							.append(string_20_.substring(i_21_ + 5)).toString();
-					string = new StringBuilder(string).append(string_20_).append(' ').toString();
-					continue;
-				}
-				string_17_ = string_17_.substring(0, i_18_);
-			}
-			string_17_ = string_17_.trim();
-			string_17_ = string_17_.substring(string_17_.lastIndexOf(' ') + 1);
-			string_17_ = string_17_.substring(string_17_.lastIndexOf('\t') + 1);
-			string = new StringBuilder(string).append(string_17_).append(' ').toString();
-		}
-		string = new StringBuilder(string).append("| ").append(string_16_).toString();
-		String string_22_ = string;
-		return string_22_;
 	}
 
 	public static void method1948(int i) {

@@ -10,12 +10,12 @@ public class ShadowManager {
 	public static Class148_Sub1 shadowMapImage;
 	public static int chunkCountX;
 	public static int chunkCountZ;
-	public static Class148_Sub1[] aClass148_Sub1Array2431;
+	public static Class148_Sub1[] floorshadowSprites;
 
 	public static void method2026(Class148_Sub1 class148_sub1, int i, int i_0_, int i_1_) {
 		if (class148_sub1 != null) {
-			int i_2_ = i - (i_0_ * AtmosphericEffects.anInt934 >> 8) >> 3;
-			int i_3_ = i_1_ - (i_0_ * AtmosphericEffects.anInt928 >> 8) >> 3;
+			int i_2_ = i - (i_0_ * AtmosphericEffects.lightX >> 8) >> 3;
+			int i_3_ = i_1_ - (i_0_ * AtmosphericEffects.lightZ >> 8) >> 3;
 			method2028(class148_sub1, shadowMapImage, i_2_ + 1, i_3_ + 1);
 		}
 	}
@@ -92,8 +92,8 @@ public class ShadowManager {
 
 	public static void method2030(Class148_Sub1 class148_sub1, int i, int i_26_, int i_27_) {
 		if (class148_sub1 != null) {
-			int i_28_ = i - (i_26_ * AtmosphericEffects.anInt934 >> 8) >> 3;
-			int i_29_ = i_27_ - (i_26_ * AtmosphericEffects.anInt928 >> 8) >> 3;
+			int i_28_ = i - (i_26_ * AtmosphericEffects.lightX >> 8) >> 3;
+			int i_29_ = i_27_ - (i_26_ * AtmosphericEffects.lightZ >> 8) >> 3;
 			method2035(class148_sub1, shadowMapImage, i_28_ + 1, i_29_ + 1);
 		}
 	}
@@ -138,8 +138,8 @@ public class ShadowManager {
 	public static boolean method2032(Class148_Sub1 class148_sub1, int i, int i_41_, int i_42_) {
 		if (class148_sub1 == null)
 			return false;
-		int i_43_ = i - (i_41_ * AtmosphericEffects.anInt934 >> 8) >> 3;
-		int i_44_ = i_42_ - (i_41_ * AtmosphericEffects.anInt928 >> 8) >> 3;
+		int i_43_ = i - (i_41_ * AtmosphericEffects.lightX >> 8) >> 3;
+		int i_44_ = i_42_ - (i_41_ * AtmosphericEffects.lightZ >> 8) >> 3;
 		return method2031(class148_sub1, shadowMapImage, i_43_ + 1, i_44_ + 1);
 	}
 
@@ -327,7 +327,7 @@ public class ShadowManager {
 
 	public static void method2040() {
 		shadowMapImage = null;
-		aClass148_Sub1Array2431 = null;
+		floorshadowSprites = null;
 		shadows = null;
 	}
 
@@ -355,12 +355,12 @@ public class ShadowManager {
 			int i_126_ = i_120_ << 7;
 			int i_127_ = i_122_ + i_123_ + i_124_ + i_125_ >> 2;
 			int i_128_ = i_121_ << 7;
-			int i_129_ = i_126_ - (i_127_ * AtmosphericEffects.anInt934 >> 8) >> 3;
-			int i_130_ = i_128_ - (i_127_ * AtmosphericEffects.anInt928 >> 8) >> 3;
+			int i_129_ = i_126_ - (i_127_ * AtmosphericEffects.lightX >> 8) >> 3;
+			int i_130_ = i_128_ - (i_127_ * AtmosphericEffects.lightZ >> 8) >> 3;
 			if (i == 0 || i == 1 || !bool && !bool_119_)
-				method2028(aClass148_Sub1Array2431[1], shadowMapImage, i_129_ + 1, i_130_ + 1);
+				method2028(floorshadowSprites[1], shadowMapImage, i_129_ + 1, i_130_ + 1);
 			else
-				method2037(aClass148_Sub1Array2431[i], shadowMapImage, i_129_ + 1, i_130_ + 1, i_118_, bool);
+				method2037(floorshadowSprites[i], shadowMapImage, i_129_ + 1, i_130_ + 1, i_118_, bool);
 		}
 	}
 }

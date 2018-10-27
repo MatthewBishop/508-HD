@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.applet.Applet_Sub1;
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9;
 import com.jagex.link.Cacheable;
@@ -18,13 +19,12 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 	public int[] anIntArray4082;
 	public static Class124 aClass124_4083;
 	public static int anInt4084;
-	public static int anInt4086;
 	public static int anInt4088;
 
 	static {
 		anIntArray4077 = new int[] { 2, 0, 0, 2, 0, 0, 0, 4, 4 };
 		anIntArray4078 = new int[4096];
-		aClass124_4070 = Class124.method263(1178, "skill)2");
+		aClass124_4070 = Class124.method263("skill)2");
 		aClass124_4083 = aClass124_4070;
 	}
 
@@ -161,7 +161,7 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 				class124.method1675((byte) -127, aClass124Array4080[i_23_]);
 				class124.method1675((byte) -128,
 						(Static2.method1766(anIntArrayArray4075[i_23_], anIntArray4073[i_23_], (byte) 124,
-								class14_sub10.method837((Class153.anIntArray2453[(anIntArray4073[i_23_])]), -115))));
+								class14_sub10.method837((Class153.anIntArray2453[(anIntArray4073[i_23_])])))));
 			}
 		}
 		class124.method1675((byte) -128, aClass124Array4080[aClass124Array4080.length - 1]);
@@ -191,8 +191,6 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 	public static void method445(Class94 class94, int i, boolean bool) {
 		int i_27_ = class94.anInt1544 == 0 ? class94.anInt1518 : class94.anInt1544;
 		int i_28_ = class94.anInt1605 != 0 ? class94.anInt1605 : class94.anInt1545;
-		if (i != 18559)
-			anInt4086 = -91;
 		JunkTex.method340((Class1.aClass94ArrayArray75[class94.anInt1548 >> 16]), bool, class94.anInt1548,
 				i_27_, (byte) -73, i_28_);
 		if (class94.aClass94Array1486 != null)

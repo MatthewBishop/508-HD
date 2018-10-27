@@ -3,20 +3,16 @@
  */
 package rs;
 
-import com.jagex.util.Timer;
-
 public class Class48 {
 	public static Class124 aClass124_797;
 	public static int anInt798 = -1;
-	public static Class124 aClass124_799 = Class124.method263(1178, "level)2");
+	public static Class124 aClass124_799 = Class124.method263("level)2");
 	public static Class124 aClass124_801;
-	public static long aLong802;
 	public static Class87 aClass87_803;
-	public static Timer timer;
 	public static Class87 aClass87_805;
 	static {
 		aClass124_797 = aClass124_799;
-		aClass124_801 = Class124.method263(1178, "<col=ffb000>");
+		aClass124_801 = Class124.method263("<col=ffb000>");
 	}
 
 	public static void method1191(byte i) {
@@ -64,7 +60,6 @@ public class Class48 {
 		aClass124_801 = null;
 		aClass124_797 = null;
 		aClass124_799 = null;
-		timer = null;
 		if (i != 50)
 			aClass124_797 = null;
 	}

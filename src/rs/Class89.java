@@ -19,7 +19,7 @@ public class Class89 {
 	public static boolean aBoolean1416 = false;
 
 	static {
-		aClass124_1408 = Class124.method263(1178, "Hierhin gehen");
+		aClass124_1408 = Class124.method263("Hierhin gehen");
 		anInt1413 = 2;
 	}
 
@@ -62,7 +62,7 @@ public class Class89 {
 			if (!bool)
 				method1441(-111L, false);
 			JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(42);
-			JunkTex.aClass14_Sub10_Sub1_891.method817(l, 110);
+			JunkTex.aClass14_Sub10_Sub1_891.method817(l);
 		}
 	}
 

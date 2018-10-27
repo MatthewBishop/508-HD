@@ -17,11 +17,10 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 	public HashTable aClass55_3829;
 	public static Image anImage3830;
 	public static int anInt3832;
-	public static int anInt3833 = 0;
 	public static int[] anIntArray3834 = { 160, 192, 80, 96, 0, 144, 80, 48, 160 };
 	public static AbstractSprite_Sub1_Sub2 aClass14_Sub2_Sub19_Sub1_Sub2_3836;
 	public static short aShort3839;
-	public static Class124 aClass124_3842 = Class124.method263(1178, "Loaded wordpack");
+	public static Class124 aClass124_3842 = Class124.method263("Loaded wordpack");
 	public static int anInt3843;
 	public int anInt3845;
 	public static int[][] anIntArrayArray3846;
@@ -30,7 +29,7 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 	public static Class9 aClass9_3850;
 	public int anInt3851;
 	public static Class124 aClass124_3852;
-	public static int anInt3853;
+	public static int cameraZ;
 	public HashTable aClass55_3854;
 	public int anInt3855;
 
@@ -189,7 +188,7 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 
 	public boolean method300(Class124 class124, byte i) {
 		if (i >= -87)
-			anInt3853 = -32;
+			cameraZ = -32;
 		if (aClass55_3829 == null) {
 			boolean bool = false;
 			return bool;

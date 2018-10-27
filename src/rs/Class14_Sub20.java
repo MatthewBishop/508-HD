@@ -15,7 +15,6 @@ public class Class14_Sub20 extends Linkable {
 	public static Class124 aClass124_3089;
 	public static int anInt3090;
 	public static Class40[] aClass40Array3093;
-	public static int anInt3094;
 	public static int anInt3095;
 	public static Class124 aClass124_3096;
 	public static byte[][] aByteArrayArray3097;
@@ -23,11 +22,11 @@ public class Class14_Sub20 extends Linkable {
 	
 	static {
 		anInt3087 = 0;
-		aClass124_3088 = Class124.method263(1178, "Fertigkeit)2");
+		aClass124_3088 = Class124.method263("Fertigkeit)2");
 		anInt3090 = 0;
-		aClass124_3089 = Class124.method263(1178, "lila:");
+		aClass124_3089 = Class124.method263("lila:");
 		aClass40Array3093 = new Class40[5000];
-		aClass124_3096 = Class124.method263(1178, " loggt sich ein)3");
+		aClass124_3096 = Class124.method263(" loggt sich ein)3");
 	}
 
 	public static void method892(int i) {

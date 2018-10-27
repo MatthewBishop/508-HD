@@ -7,11 +7,11 @@ import com.jagex.rt4.HDTile;
 
 public class Class66 {
 	public int anInt1035;
-	public static Class124 aClass124_1037 = Class124.method263(1178, ":clan:");
+	public static Class124 aClass124_1037 = Class124.method263(":clan:");
 	public int anInt1038;
 	public static int anInt1039 = -1;
 	public int anInt1041;
-	public static Class124 aClass124_1042 = Class124.method263(1178, "Mem:");
+	public static Class124 aClass124_1042 = Class124.method263("Mem:");
 	public int anInt1043 = -1;
 	public int anInt1044;
 	public static int anInt1045;
@@ -59,7 +59,7 @@ public class Class66 {
 				if (class12.anInt295 != 0)
 					class124 = (JunkTex.method515(
 							(new Class124[] { class124,
-									Class153.method2047(1, (Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt4937),
+									Class153.method2047(1, (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt4937),
 											class12.anInt295),
 									JunkTex.aClass124_4360, Class48.aClass124_797,
 									Class83.method1407(76, class12.anInt295), JunkTex.aClass124_4552 }),
@@ -98,7 +98,7 @@ public class Class66 {
 										&& (class124s[i_35_].method1717(40, Class118.aClass124_1973))) {
 									short i_36_ = 0;
 									short i_37_ = 0;
-									if ((Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt4937) < class12.anInt295)
+									if ((Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt4937) < class12.anInt295)
 										i_36_ = (short) 2000;
 									if (i_35_ == 0)
 										i_37_ = (short) 2;

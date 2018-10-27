@@ -13,6 +13,10 @@ import java.util.GregorianCalendar;
 
 import org.jagex.image.transform.TexStatic;
 
+import com.jagex.applet.Applet_Sub1;
+import com.jagex.applet.Class31;
+import com.jagex.applet.Class43;
+import com.jagex.applet.ErrorReporting;
 import com.jagex.cache.anim.AnimFrame;
 import com.jagex.cache.fs.BZip2Decompressor;
 import com.jagex.io.Buffer;
@@ -34,6 +38,7 @@ import com.jagex.rt4.RT4;
 import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.Shadow;
 import com.jagex.rt4.ShadowManager;
+import com.jagex.rt4.Terrain;
 import com.jagex.rt4.lights.LightManager;
 import com.jagex.rt4.shader.WaterMovementShader;
 import com.jagex.rt4.shader.LavaShader;
@@ -48,8 +53,8 @@ import com.jagex.util.Util;
 public class client extends Applet_Sub1 {
 	public static Class124 aClass124_2625;
 	public static Class124 aClass124_2631;
-	public static Class124 aClass124_2636 = Class124.method263(1178, "Loading )2 please wait)3");
-	public static Class124 aClass124_2637 = Class124.method263(1178, "Loaded textures");
+	public static Class124 aClass124_2636 = Class124.method263("Loading )2 please wait)3");
+	public static Class124 aClass124_2637 = Class124.method263("Loaded textures");
 	public static Class124 aClass124_2639;
 	public static int[] anIntArray2644;
 	public static Class124[] aClass124Array2645;
@@ -57,7 +62,7 @@ public class client extends Applet_Sub1 {
 	public static boolean aBoolean2650;
 
 	static {
-		aClass124_2625 = Class124.method263(1178, "Lade Wordpack )2 ");
+		aClass124_2625 = Class124.method263("Lade Wordpack )2 ");
 		aClass124_2639 = aClass124_2636;
 		aClass124Array2645 = new Class124[100];
 		anInt2648 = 0;
@@ -67,24 +72,24 @@ public class client extends Applet_Sub1 {
 
 	public void method43(int var1) {
 		try {
-			if (Static2.anInt465 >= 4) {
+			if (SFSS.anInt465 >= 4) {
 				this.method28("js5crc", -1);
 				JunkTex.gameState = 1000;
 			} else {
-				if (Class51.anInt829 >= 4) {
+				if (SFSS.anInt829 >= 4) {
 					if (JunkTex.gameState == 0 || JunkTex.gameState == 5) {
 						this.method28("js5io", -1);
 						JunkTex.gameState = 1000;
 						return;
 					}
 
-					Class51.anInt829 = 3;
+					SFSS.anInt829 = 3;
 					JunkTex.anInt1314 = 3000;
 				}
 
 				if (JunkTex.anInt1314-- <= 0) {
 					if (JunkTex.anInt2721 == 0) {
-						JunkTex.aClass31_1328 = JunkTex.signlink.method1153(0,
+						JunkTex.aClass31_1328 = ErrorReporting.signlink.method1153(0,
 								JunkTex.aString4605, Class131.anInt2164);
 						++JunkTex.anInt2721;
 					}
@@ -101,12 +106,12 @@ public class client extends Applet_Sub1 {
 					}
 
 					if (JunkTex.anInt2721 == 2) {
-						Class133_Sub1_Sub1.aClass36_4939 = new Class36((Socket) JunkTex.aClass31_1328.anObject530,
-								JunkTex.signlink);
+						SceneGraphNode_GameEntity_Sub1.aClass36_4939 = new Class36((Socket) JunkTex.aClass31_1328.anObject530,
+								ErrorReporting.signlink);
 						Buffer var2 = new Buffer(5);
 						var2.writeByte(15);
 						var2.writeInt(508, 112);
-						Class133_Sub1_Sub1.aClass36_4939.method1100(0, 3, 5, var2.payload);
+						SceneGraphNode_GameEntity_Sub1.aClass36_4939.method1100(0, 3, 5, var2.payload);
 						++JunkTex.anInt2721;
 						Class12.aLong282 = TimeUtil.getTime();
 					}
@@ -117,14 +122,14 @@ public class client extends Applet_Sub1 {
 
 					if (JunkTex.anInt2721 == 3) {
 						if (JunkTex.gameState != 0 && JunkTex.gameState != 5
-								&& Class133_Sub1_Sub1.aClass36_4939.method1104(24249) <= 0) {
+								&& SceneGraphNode_GameEntity_Sub1.aClass36_4939.method1104(24249) <= 0) {
 							if (30000L < TimeUtil.getTime() + -Class12.aLong282) {
 								this.method54(-2, (byte) -120);
 								return;
 							}
 						} else {
 							try {
-								int var5 = Class133_Sub1_Sub1.aClass36_4939.method1107((byte) 30);
+								int var5 = SceneGraphNode_GameEntity_Sub1.aClass36_4939.method1107((byte) 30);
 								if (var5 != 0) {
 									this.method54(var5, (byte) -122);
 									return;
@@ -141,10 +146,10 @@ public class client extends Applet_Sub1 {
 					if (JunkTex.anInt2721 == 4) {
 						boolean var6 = JunkTex.gameState == 5 || JunkTex.gameState == 10
 								|| JunkTex.gameState == 28;
-						SFSS.method1783(Class133_Sub1_Sub1.aClass36_4939, !var6);
+						SFSS.method1783(SceneGraphNode_GameEntity_Sub1.aClass36_4939, !var6);
 						JunkTex.aClass31_1328 = null;
 						JunkTex.errorCount = 0;
-						Class133_Sub1_Sub1.aClass36_4939 = null;
+						SceneGraphNode_GameEntity_Sub1.aClass36_4939 = null;
 						JunkTex.anInt2721 = 0;
 					}
 				}
@@ -163,7 +168,7 @@ public class client extends Applet_Sub1 {
 				if (bool && Class14_Sub7.aBoolean2827 && JunkTex.aClass75_4682 != null)
 					JunkTex.aClass75_4682.method1344(true);
 				if (JunkTex.gameState == 30 || JunkTex.gameState == 10) {
-					if (Class54.aBoolean877)
+					if (ErrorReporting.aBoolean877)
 						Class14_Sub21.method897(120);
 					else if (Class132.aLong2169 != 0L && (Class132.aLong2169 < TimeUtil.getTime()))
 						Class14_Sub21.method897(122);
@@ -172,34 +177,34 @@ public class client extends Applet_Sub1 {
 						&& Class14_Sub15.aClass36_2990 != null
 						&& (JunkTex.gameState == 30 || JunkTex.gameState == 25))
 					Class88.method1436((byte) -125);
-				if (JunkTex.aFrame3962 == null) {
+				if (ErrorReporting.aFrame3962 == null) {
 					Container container;
-					if (JunkTex.aFrame3962 == null) {
-						if (Class14_Sub14.aFrame2986 == null)
-							container = JunkTex.signlink.applet;
+					if (ErrorReporting.aFrame3962 == null) {
+						if (ErrorReporting.aFrame2986 == null)
+							container = ErrorReporting.signlink.applet;
 						else
-							container = Class14_Sub14.aFrame2986;
+							container = ErrorReporting.aFrame2986;
 					} else
-						container = JunkTex.aFrame3962;
+						container = ErrorReporting.aFrame3962;
 					int i_9_ = container.getSize().width;
 					int i_10_ = container.getSize().height;
-					if (container == Class14_Sub14.aFrame2986) {
-						Insets insets = Class14_Sub14.aFrame2986.getInsets();
+					if (container == ErrorReporting.aFrame2986) {
+						Insets insets = ErrorReporting.aFrame2986.getInsets();
 						i_9_ -= insets.right + insets.left;
 						i_10_ -= insets.top + insets.bottom;
 					}
-					if (JunkTex.anInt4622 != i_9_ || Class14_Sub2_Sub21.anInt4086 != i_10_)
+					if (Applet_Sub1.anInt4622 != i_9_ || Applet_Sub1.anInt4086 != i_10_)
 						JunkTex.method643(500, (byte) -93);
 				}
-				if (JunkTex.aFrame3962 != null && !Class83.aBoolean1342
+				if (ErrorReporting.aFrame3962 != null && !Applet_Sub1.aBoolean1342
 						&& (JunkTex.gameState == 30 || JunkTex.gameState == 10))
 					Class14_Sub2_Sub20.method428(i - 7);
 				if (i != 1)
 					method43(-81);
 				boolean bool_11_ = false;
-				if (Class141.aBoolean2244) {
+				if (Applet_Sub1.aBoolean2244) {
 					bool_11_ = true;
-					Class141.aBoolean2244 = false;
+					Applet_Sub1.aBoolean2244 = false;
 				}
 				if (bool_11_)
 					Class132.method1779(0);
@@ -207,7 +212,7 @@ public class client extends Applet_Sub1 {
 					JunkTex.aBooleanArray4698[i_12_] = true;
 				if (JunkTex.gameState != 0) {
 					if (JunkTex.gameState == 5)
-						JunkTex.method623(false, Class133_Sub3.aClass14_Sub2_Sub16_3567);
+						JunkTex.method623(false, SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567);
 					else if (JunkTex.gameState != 10) {
 						if (JunkTex.gameState != 25 && JunkTex.gameState != 28) {
 							if (JunkTex.gameState != 30) {
@@ -253,7 +258,7 @@ public class client extends Applet_Sub1 {
 				} else if ((JunkTex.gameState == 30 || JunkTex.gameState == 10)
 						&& Class124.anInt2494 == 0 && !bool_11_) {
 					try {
-						Graphics graphics = Static2.aCanvas819.getGraphics();
+						Graphics graphics = ErrorReporting.aCanvas819.getGraphics();
 						for (int i_16_ = 0; Class14_Sub17.anInt3012 > i_16_; i_16_++) {
 							if (Class7_Sub2_Sub1.aBooleanArray3703[i_16_]) {
 								Class122.aClass108_2059.method1560(Class74.anIntArray1135[i_16_], (byte) -128,
@@ -263,21 +268,21 @@ public class client extends Applet_Sub1 {
 							}
 						}
 					} catch (Exception exception) {
-						Static2.aCanvas819.repaint();
+						ErrorReporting.aCanvas819.repaint();
 					}
 				} else if (JunkTex.gameState != 0) {
 					try {
-						Graphics graphics = Static2.aCanvas819.getGraphics();
+						Graphics graphics = ErrorReporting.aCanvas819.getGraphics();
 						Class122.aClass108_2059.method1558(0, (byte) 29, graphics, 0);
 						for (int i_17_ = 0; i_17_ < Class14_Sub17.anInt3012; i_17_++)
 							Class7_Sub2_Sub1.aBooleanArray3703[i_17_] = false;
 					} catch (Exception exception) {
-						Static2.aCanvas819.repaint();
+						ErrorReporting.aCanvas819.repaint();
 					}
 				}
 				if (Class65.aBoolean1026)
 					JunkTex.method621((byte) -55);
-				BrowserControlUtil.update(Static2.aCanvas819, Class14_Sub13.anInt2964);
+				BrowserControlUtil.update(ErrorReporting.aCanvas819, Class14_Sub13.anInt2964);
 			}
 		} catch (Throwable throwable) {
 			throw Util.error(throwable,
@@ -331,7 +336,7 @@ public class client extends Applet_Sub1 {
 			}
 		}
 		if (class94.anInt1572 == 3)
-			Class14_Sub11.method853(32, Class133_Sub5.aClass124_3610, class94.anInt1548,
+			Class14_Sub11.method853(32, SceneGraphNode_SpotAnimation.aClass124_3610, class94.anInt1548,
 					JunkTex.aClass124_4244, (short) 7, 0L, 0);
 		if (class94.anInt1572 == 4)
 			Class14_Sub11.method853(i + 32, class94.aClass124_1556, class94.anInt1548, JunkTex.aClass124_4244,
@@ -402,7 +407,7 @@ public class client extends Applet_Sub1 {
 											}
 										}
 									}
-									if (JunkTex.method1396(-124, method46(class94)))
+									if (client.method1396(method46(class94)))
 										Class14_Sub11.method853(32, Class40.aClass124_665, class94.anInt1548,
 												(JunkTex.method515((new Class124[] {
 														(JunkTex.aClass124_4101), class142.aClass124_2296 }),
@@ -645,14 +650,14 @@ public class client extends Applet_Sub1 {
 						Class131.method1772(JunkTex.aBoolean4528, 2, (byte) 29, 22050);
 						JunkTex.aClass14_Sub9_Sub1_2071 = new Class14_Sub9_Sub1();
 						JunkTex.aClass14_Sub9_Sub1_2071.method702(0, 9, 128);
-						JunkTex.aClass75_4682 = JunkTex.method235(22050, 68, JunkTex.signlink, Static2.aCanvas819, 0);
+						JunkTex.aClass75_4682 = JunkTex.method235(22050, 68, ErrorReporting.signlink, ErrorReporting.aCanvas819, 0);
 						JunkTex.aClass75_4682.method1352(JunkTex.aClass14_Sub9_Sub1_2071, false);
 
 						
 						Class88.method1438(JunkTex.aClass14_Sub9_Sub1_2071, Static2.aClass9_Sub1_5085,
 								false, Class47.aClass9_Sub1_790, Static2.aClass9_Sub1_2901);
-						Static2.aClass75_2588 = JunkTex.method235(2048, 97, JunkTex.signlink,
-								Static2.aCanvas819, 1);
+						Static2.aClass75_2588 = JunkTex.method235(2048, 97, ErrorReporting.signlink,
+								ErrorReporting.aCanvas819, 1);
 						Class33.aClass14_Sub9_Sub2_585 = new Class14_Sub9_Sub2();
 						Static2.aClass75_2588.method1352(Class33.aClass14_Sub9_Sub2_585, false);
 						SceneCluster.aClass18_1362 = new Class18(22050, Class115.anInt1909);
@@ -692,7 +697,7 @@ public class client extends Applet_Sub1 {
 						var13 = 80 / ((21 - var1) / 38);
 						if (Class62.anInt988 == 65) {
 							for (var3 = 0; var3 < 6; ++var3) {
-								Class31 var14 = JunkTex.signlink.method1142(this.getClass(), 10);
+								Class31 var14 = ErrorReporting.signlink.method1142(this.getClass(), 10);
 
 								while (var14.anInt529 == 0) {
 									Util.accuratesleep(100L);
@@ -711,7 +716,7 @@ public class client extends Applet_Sub1 {
 								Util.accuratesleep(1000L);
 							}
 
-							var3 = RT4GL.createglcanvas(Static2.aCanvas819, Class135.anInt2189 * 2);
+							var3 = RT4GL.createglcanvas(ErrorReporting.aCanvas819, Class135.anInt2189 * 2);
 							if (var3 != 0) {
 								String var15 = RT4GL.vendor;
 								String var7 = "unknown";
@@ -781,7 +786,7 @@ public class client extends Applet_Sub1 {
 							} else {
 								Class86.method1424(-256, Class138.aClass9_Sub1_2222);
 								Class32.method1072(Class138.aClass9_Sub1_2222, (byte) -104);
-								Class133_Sub1.method1793(Class138.aClass9_Sub1_2222, 14555);
+								SceneGraphNode_GameEntity.method1793(Class138.aClass9_Sub1_2222, 14555);
 								JunkTex.method581(Class138.aClass9_Sub1_2222, false,
 										JunkTex.aClass9_Sub1_4739);
 								Class7_Sub3_Sub1.method138(false, Class89.aClass9_Sub1_1407,
@@ -803,7 +808,7 @@ public class client extends Applet_Sub1 {
 										Class14_Sub17.aClass9_Sub1_3021, (byte) -97);
 								Class132.method1777((byte) -57, Class138.aClass9_Sub1_2222);
 								Class45.method1164(Static2.aClass9_Sub1_369, 35);
-								Applet_Sub1.method31(Class28.aClass9_Sub1_513, (byte) -4, new Class38(),
+								Static2.method31(Class28.aClass9_Sub1_513, (byte) -4, new Class38(),
 										Class14_Sub21.aClass9_Sub1_3111);
 								Class14_Sub30.method939(Class14_Sub21.aClass9_Sub1_3111, Class28.aClass9_Sub1_513, 16);
 								Class14_Sub9_Sub1.aClass124_4761 = Class28.aClass124_514;
@@ -812,7 +817,7 @@ public class client extends Applet_Sub1 {
 								Class62.anInt988 = 80;
 							}
 						} else if (Class62.anInt988 == 80) {
-							var3 = Class133_Sub1_Sub1.method1805(31673, Class14_Sub3.aClass9_Sub1_2750);
+							var3 = SceneGraphNode_GameEntity_Sub1.method1805(31673, Class14_Sub3.aClass9_Sub1_2750);
 							var13 = Class84.method1412((byte) -125);
 							if (var3 < var13) {
 								Class14_Sub9_Sub1.aClass124_4761 = JunkTex.method515(new Class124[] {
@@ -866,7 +871,7 @@ public class client extends Applet_Sub1 {
 							Class62.anInt988 = 110;
 						} else if (Class62.anInt988 == 110) {
 							Class14_Sub2_Sub11.aClass100_3878 = new MouseCapturer();
-							JunkTex.signlink.method1143(10, Class14_Sub2_Sub11.aClass100_3878, 0);
+							ErrorReporting.signlink.method1143(10, Class14_Sub2_Sub11.aClass100_3878, 0);
 							Class14_Sub9_Sub1.aClass124_4761 = Class14_Sub9_Sub1.aClass124_4773;
 							Class51.anInt828 = 75;
 							Class62.anInt988 = 120;
@@ -919,9 +924,9 @@ public class client extends Applet_Sub1 {
 										Class14_Sub21.aClass124_3104 }, (byte) -50);
 								Class51.anInt828 = 85;
 							} else {
-								JunkTex.method471(Class133_Sub1_Sub1.aClass148_Sub1Array4938,
+								JunkTex.method471(SceneGraphNode_GameEntity_Sub1.aClass148_Sub1Array4938,
 										Class32.aClass148_Sub1Array540, Class97.aClass148_Sub1Array1651,
-										Class133.aClass14_Sub2_Sub19_Sub1Array2186, Class7_Sub1.aClass9_Sub1_2657, 90,
+										SceneGraphNode.aClass14_Sub2_Sub19_Sub1Array2186, Class7_Sub1.aClass9_Sub1_2657, 90,
 										Class14_Sub29.aClass148_Sub1Array3265);
 								Class14_Sub9_Sub1.aClass124_4761 = Class14_Sub9_Sub1.aClass124_4762;
 								Class62.anInt988 = 140;
@@ -955,27 +960,27 @@ public class client extends Applet_Sub1 {
 				return;
 			}
 
-			int var1 = Class133_Sub5.aClass14_Sub9_Sub1_3625.method727(0);
-			if (var1 > 0 && Class133_Sub5.aClass14_Sub9_Sub1_3625.method721((byte) 111)) {
+			int var1 = SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method727(0);
+			if (var1 > 0 && SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method721((byte) 111)) {
 				var1 -= Class14_Sub15.anInt2989;
 				if (var1 < 0) {
 					var1 = 0;
 				}
 
-				Class133_Sub5.aClass14_Sub9_Sub1_3625.method710(-28225, var1);
+				SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method710(-28225, var1);
 				return;
 			}
 		} catch (Exception var3) {
 			var3.printStackTrace();
-			Class133_Sub5.aClass14_Sub9_Sub1_3625.method697(116 - 43);
+			SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method697(116 - 43);
 			Class14_Sub9_Sub1.aClass14_Sub16_4780 = null;
 			Class14_Sub2_Sub11.anInt3889 = 0;
 			Static2.aClass9_2696 = null;
 			JunkTex.aClass120_854 = null;
 			return;
 		}
-		Class133_Sub5.aClass14_Sub9_Sub1_3625.method697(76);
-		Class133_Sub5.aClass14_Sub9_Sub1_3625.method716((byte) -43);
+		SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method697(76);
+		SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method716((byte) -43);
 		Class14_Sub9_Sub1.aClass14_Sub16_4780 = null;
 		JunkTex.aClass120_854 = null;
 		if (Static2.aClass9_2696 == null) {
@@ -1003,6 +1008,7 @@ public class client extends Applet_Sub1 {
 		Class14_Sub2_Sub5.method284(12800);
 		Class146.method1995(-103);
 		Applet_Sub1.method39(true);
+		ErrorReporting.destroy();
 		RT4GL.method1654();
 		Static2.method1502(-17808);
 		Class108.method1556(false);
@@ -1014,13 +1020,13 @@ public class client extends Applet_Sub1 {
 		Static2.method1364(53);
 		Static2.method1585(false);
 		JunkTex.method1206((byte) -89);
-		Class133_Sub1_Sub2.method1811(-1);
+		SceneGraphNode_GameEntity_Sub2.method1811(-1);
 		Static2.method846((byte) 0);
 		JunkTex.method89(i - 31);
 		Class32.method1067(i + 10795);
 		Class94.method1470(-56);
 		Class88.method1437(false);
-		Class133_Sub1_Sub1.method1806(i + 86);
+		SceneGraphNode_GameEntity_Sub1.method1806(i + 86);
 		JunkTex.method1236((byte) -128);
 		Static2.method1764(i ^ ~0x73);
 		Class14_Sub23.method902(-7741);
@@ -1031,7 +1037,7 @@ public class client extends Applet_Sub1 {
 		Class18.method962((byte) -118);
 		Class102.method1525(123);
 		Static2.method1175(i - 153);
-		Class133_Sub1.method1797(79);
+		SceneGraphNode_GameEntity.method1797(79);
 		Class14_Sub29.method930((byte) -34);
 		Class14_Sub14.method869((byte) 92);
 		Class12.method211((byte) -83);
@@ -1051,7 +1057,7 @@ public class client extends Applet_Sub1 {
 		AtmosphericEffects.dispose();
 		Class22.method988((byte) -108);
 		Static2.method150(3);
-		Class133_Sub2.method1828();
+		SceneGraphNode_Model.method1828();
 		Class86.method1421((byte) 2);
 		ModelHD.method1909();
 		Class142.method1969(true);
@@ -1072,7 +1078,7 @@ public class client extends Applet_Sub1 {
 		HDTile.method923();
 		Class40.method1127(0);
 		SceneCluster.method1416(2);
-		Class133.method1785((byte) -78);
+		SceneGraphNode.method1785((byte) -78);
 		Class37.method1110(i ^ i);
 		Class4.method108((byte) 127);
 		Class115.method1588((byte) 102);
@@ -1083,7 +1089,7 @@ public class client extends Applet_Sub1 {
 		JunkTex.method970(5);
 		Static2.method1925();
 		SDRaster.method106();
-		Class92.method1463();
+		SD2DRaster.method1463();
 		Static2.method258(1869706832);
 		Static2.method334(-121);
 		LightManager.destroy();
@@ -1103,7 +1109,6 @@ public class client extends Applet_Sub1 {
 		Canvas_Sub2.method65((byte) -7);
 		Class58.method1258(1);
 		Static2.method302((byte) 118);
-		Class14_Sub18.method883(1);
 		Class27.method1034();
 		Class14_Sub9_Sub3.method736(i - 31);
 		Class14_Sub28.method926((byte) 27);
@@ -1146,17 +1151,17 @@ public class client extends Applet_Sub1 {
 		Class62.method1274(124);
 		Class96.method1487(false);
 		Class123.method1661(-19);
-		Class133_Sub6.method1852(112);
-		Class133_Sub5.method1846(false);
+		SceneGraphNode_Projectile.method1852(112);
+		SceneGraphNode_SpotAnimation.method1846(false);
 		TexStatic.kill();
 		JunkTex.method239(false);
-		Class133_Sub3.method1831((byte) -44);
-		Class133_Sub4.method1837(0);
+		SceneGraphNode_GroundObject.method1831((byte) -44);
+		SceneGraphNode_AnimatedLocation.method1837(0);
 		Class128.method1756(true);
 		Class14_Sub30.method942(8);
 		Class82.method1404((byte) -69);
 		Class14_Sub4.method455(i ^ ~0x6a);
-		Canvas_Sub1.method60(5027);
+		Static2.method60(5027);
 		Class17.method959(-1);
 		Static2.method1509(0);
 		Class138.method1948(i + 69);
@@ -1181,12 +1186,12 @@ public class client extends Applet_Sub1 {
 		JunkTex.method476((byte) -65);
 		Class152.method2043(119);
 		JunkTex.method1014((byte) 116);
-		JunkTex.method1484(i ^ 0x1d);
 		JunkTex.method2017((byte) -115);
 		Class119.kill();
 		LavaShader.method1271();
 		WaterMovementShader.method1090();
 		JunkTex.method967(-20514);
+		Terrain.destroy();
 		Class14_Sub11.method856((byte) 8);
 		Class68.method1306(-84);
 		Class132.method1776(true);
@@ -1317,13 +1322,13 @@ public class client extends Applet_Sub1 {
 					}
 					if (JunkTex.gameState == 0) {
 						method47((byte) 119);
-						JunkTex.method531((byte) -112);
+						ErrorReporting.method531((byte) -112);
 					} else if (JunkTex.gameState != 5) {
 						if (JunkTex.gameState == 25 || JunkTex.gameState == 28)
 							JunkTex.method329(true);
 					} else {
 						method47((byte) 122);
-						JunkTex.method531((byte) -112);
+						ErrorReporting.method531((byte) -112);
 					}
 					if (JunkTex.gameState == 10) {
 						method53((byte) 102);
@@ -1367,12 +1372,12 @@ public class client extends Applet_Sub1 {
 	public void method38(boolean bool) {
 		RT4GL.destroyGL();
 		BrowserControlUtil.destroy();
-		if (JunkTex.aFrame3962 != null) {
-			Class14_Sub2_Sub4.method278(JunkTex.signlink, JunkTex.aFrame3962, -119);
-			JunkTex.aFrame3962 = null;
+		if (ErrorReporting.aFrame3962 != null) {
+			Class14_Sub2_Sub4.method278(ErrorReporting.signlink, ErrorReporting.aFrame3962, -119);
+			ErrorReporting.aFrame3962 = null;
 		}
-		if (JunkTex.signlink != null)
-			JunkTex.signlink.method1151(this.getClass(), false);
+		if (ErrorReporting.signlink != null)
+			ErrorReporting.signlink.method1151(this.getClass(), false);
 		if (Class14_Sub2_Sub11.aClass100_3878 != null)
 			Class14_Sub2_Sub11.aClass100_3878.running = false;
 		Class14_Sub2_Sub11.aClass100_3878 = null;
@@ -1380,10 +1385,10 @@ public class client extends Applet_Sub1 {
 			Class14_Sub15.aClass36_2990.method1101((byte) -115);
 			Class14_Sub15.aClass36_2990 = null;
 		}
-		Static2.method1280(Static2.aCanvas819, (byte) 127);
-		Static2.method1356(false, Static2.aCanvas819);
+		Static2.method1280(ErrorReporting.aCanvas819, (byte) 127);
+		Static2.method1356(false, ErrorReporting.aCanvas819);
 		if (Class44.aClass129_726 != null)
-			Class44.aClass129_726.removeMouseWheelListener(Static2.aCanvas819);
+			Class44.aClass129_726.removeMouseWheelListener(ErrorReporting.aCanvas819);
 		JunkTex.method494((byte) -94);
 		JunkTex.method676(-96);
 		Class44.aClass129_726 = null;
@@ -1391,7 +1396,7 @@ public class client extends Applet_Sub1 {
 			JunkTex.aClass75_4682.method1345(25065);
 		if (Static2.aClass75_2588 != null)
 			Static2.aClass75_2588.method1345(25065);
-		Class14_Sub14.method866(bool);
+		SFSS.method866(bool);
 		SFSS.method669();
 		try {
 			if (JunkTex.aClass76_4098 != null)
@@ -1422,12 +1427,12 @@ public class client extends Applet_Sub1 {
 				}
 				Class51.anInt839++;
 				if (Class14_Sub2_Sub12.anInt3912 != -1)
-					Class12.method218(-30776, Class14_Sub20.anInt3094, 0, 0, Class14_Sub2_Sub12.anInt3912, 0, 0,
-							Class83.anInt1340);
+					Class12.method218(-30776, Applet_Sub1.anInt3094, 0, 0, Class14_Sub2_Sub12.anInt3912, 0, 0,
+							Applet_Sub1.anInt1340);
 				JunkTex.anInt4478++;
 				int i_75_ = 19137023;
 				while_122_: for (int i_76_ = 0; i_76_ < 32768; i_76_++) {
-					Class133_Sub1_Sub2 class133_sub1_sub2 = Class14_Sub4.aClass133_Sub1_Sub2Array2785[i_76_];
+					SceneGraphNode_GameEntity_Sub2 class133_sub1_sub2 = Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[i_76_];
 					if (class133_sub1_sub2 != null) {
 						byte i_77_ = class133_sub1_sub2.aClass12_4949.aByte290;
 						if ((i_77_ & 0x2) > 0 && class133_sub1_sub2.anInt3498 == 0 && 10.0 > Math.random() * 1000.0) {
@@ -1493,7 +1498,7 @@ public class client extends Applet_Sub1 {
 								|| (class94_82_.aClass94Array1486[class94.anInt1478]) != class94)
 							continue;
 					}
-					Class133_Sub3.method1830(class14_sub21, -1976917689);
+					SceneGraphNode_GroundObject.method1830(class14_sub21, -1976917689);
 				}
 				for (;;) {
 					Class14_Sub21 class14_sub21 = ((Class14_Sub21) Class14_Sub15.aClass2_2988.popFront());
@@ -1507,7 +1512,7 @@ public class client extends Applet_Sub1 {
 								|| class94 != (class94_83_.aClass94Array1486[class94.anInt1478]))
 							continue;
 					}
-					Class133_Sub3.method1830(class14_sub21, -1976917689);
+					SceneGraphNode_GroundObject.method1830(class14_sub21, -1976917689);
 				}
 				for (;;) {
 					Class14_Sub21 class14_sub21 = (Class14_Sub21) Class1.aClass2_70.popFront();
@@ -1521,7 +1526,7 @@ public class client extends Applet_Sub1 {
 								|| (class94_84_.aClass94Array1486[class94.anInt1478]) != class94)
 							continue;
 					}
-					Class133_Sub3.method1830(class14_sub21, i ^ ~0x75d55ede);
+					SceneGraphNode_GroundObject.method1830(class14_sub21, i ^ ~0x75d55ede);
 				}
 				if (Class67.aClass94_1060 != null)
 					Class7_Sub1.method122(false);
@@ -1539,7 +1544,7 @@ public class client extends Applet_Sub1 {
 			Class131.anInt2164 = Class84.anInt1346;
 		else
 			Class131.anInt2164 = Static2.anInt3348;
-		Class133_Sub1_Sub1.aClass36_4939 = null;
+		SceneGraphNode_GameEntity_Sub1.aClass36_4939 = null;
 		JunkTex.errorCount++;
 		if (JunkTex.errorCount < 2 || i != 7 && i != 9) {
 			if (JunkTex.errorCount < 2 || i != 6) {
@@ -1622,9 +1627,9 @@ public class client extends Applet_Sub1 {
 			Class14_Sub9_Sub1.aClass124_4829 = JunkTex.aClass124_4244;
 			client var_client = new client();
 			var_client.method32(27, 508, 503, 765, "runescape", Class111.anInt1859 + 32, (byte) 124);
-			Class14_Sub14.aFrame2986.setLocation(40, 40);
+			ErrorReporting.aFrame2986.setLocation(40, 40);
 		} catch (Exception exception) {
-			Class14_Sub9_Sub3.method738(null, exception, 95);
+			ErrorReporting.method738(null, exception, 95);
 		}
 	}
 
@@ -1708,7 +1713,7 @@ public class client extends Applet_Sub1 {
 							}
 						}
 						if (bool_102_)
-							Class133_Sub5.method1843(-46, Class139.anInt2230 - i_94_, class94,
+							SceneGraphNode_SpotAnimation.method1843(-46, Class139.anInt2230 - i_94_, class94,
 									JunkTex.anInt3367 - i_93_);
 						if (Class67.aClass94_1060 != null && Class67.aClass94_1060 != class94 && bool
 								&& JunkTex.method521((byte) 77, method46(class94)))
@@ -1728,7 +1733,7 @@ public class client extends Applet_Sub1 {
 								Class1.aClass2_70.pushBack(class14_sub21);
 							}
 							if (Class67.aClass94_1060 != null || JunkTex.aClass94_4446 != null
-									|| Class133_Sub5.aBoolean3628
+									|| SceneGraphNode_SpotAnimation.aBoolean3628
 									|| (class94.anInt1498 != 1400 && Static2.aBoolean2736)) {
 								bool_102_ = false;
 								bool_101_ = false;
@@ -1755,7 +1760,7 @@ public class client extends Applet_Sub1 {
 											int i_107_ = (int) (((Class139.anInt2230) - i_94_
 													- ((class94.anInt1545) / 2)) * 2.0 / (Class90.aFloat1426));
 											int i_108_ = Class37.anInt644 + i_106_;
-											int i_109_ = (Class133_Sub6.anInt3659 + i_107_);
+											int i_109_ = (SceneGraphNode_Projectile.anInt3659 + i_107_);
 											int i_110_ = i_108_ + Class65.anInt1034;
 											int i_111_ = (JunkTex.anInt4332 - 1 - i_109_ + Class35.anInt603);
 											Class7_Sub2.method125(i_110_, i_111_, 63, 0);
@@ -1765,7 +1770,7 @@ public class client extends Applet_Sub1 {
 											JunkTex.anInt4132 = JunkTex.anInt4640;
 											Canvas_Sub2.anInt63 = Static2.anInt1804;
 											Class36.anInt631 = Class37.anInt644;
-											Class33.anInt586 = Class133_Sub6.anInt3659;
+											Class33.anInt586 = SceneGraphNode_Projectile.anInt3659;
 										}
 									} else if (bool_101_ && Static2.aBoolean2736) {
 										Class44.method1155(-1,
@@ -1940,15 +1945,15 @@ public class client extends Applet_Sub1 {
 								}
 								class94.anInt1593 = Class22.anInt461;
 							}
-							if (class94.anObjectArray1608 != null && (Class133_Sub5.anInt3612 > class94.anInt1494)) {
+							if (class94.anObjectArray1608 != null && (SceneGraphNode_SpotAnimation.anInt3612 > class94.anInt1494)) {
 								if (class94.anIntArray1470 == null
-										|| (Class133_Sub5.anInt3612 - class94.anInt1494) > 32) {
+										|| (SceneGraphNode_SpotAnimation.anInt3612 - class94.anInt1494) > 32) {
 									Class14_Sub21 class14_sub21 = new Class14_Sub21();
 									class14_sub21.aClass94_3116 = class94;
 									class14_sub21.anObjectArray3115 = class94.anObjectArray1608;
 									Class1.aClass2_70.pushBack(class14_sub21);
 								} else {
-									while_126_: for (int i_121_ = class94.anInt1494; i_121_ < Class133_Sub5.anInt3612; i_121_++) {
+									while_126_: for (int i_121_ = class94.anInt1494; i_121_ < SceneGraphNode_SpotAnimation.anInt3612; i_121_++) {
 										int i_122_ = (Class14_Sub4.anIntArray2786[i_121_ & 0x1f]);
 										for (int i_123_ = 0; (i_123_ < class94.anIntArray1470.length); i_123_++) {
 											if (class94.anIntArray1470[i_123_] == i_122_) {
@@ -1961,7 +1966,7 @@ public class client extends Applet_Sub1 {
 										}
 									}
 								}
-								class94.anInt1494 = Class133_Sub5.anInt3612;
+								class94.anInt1494 = SceneGraphNode_SpotAnimation.anInt3612;
 							}
 							if (class94.anObjectArray1504 != null && Canvas_Sub2.anInt54 > class94.anInt1553) {
 								if (class94.anIntArray1539 == null || (Canvas_Sub2.anInt54 - class94.anInt1553 > 32)) {
@@ -2036,7 +2041,7 @@ public class client extends Applet_Sub1 {
 						}
 					}
 					if (!class94.aBoolean1455 && Class67.aClass94_1060 == null
-							&& JunkTex.aClass94_4446 == null && !Class133_Sub5.aBoolean3628) {
+							&& JunkTex.aClass94_4446 == null && !SceneGraphNode_SpotAnimation.aBoolean3628) {
 						if ((class94.anInt1563 >= 0 || class94.anInt1493 != 0) && JunkTex.anInt4640 >= i_95_
 								&& Static2.anInt1804 >= i_96_ && JunkTex.anInt4640 < i_97_
 								&& Static2.anInt1804 < i_98_) {
@@ -2115,7 +2120,7 @@ public class client extends Applet_Sub1 {
 					} catch (UnsupportedEncodingException unsupportedencodingexception) {
 						is = string_131_.getBytes();
 					}
-					Class124 class124 = Static2.method231((byte) 98, is.length, is, 0);
+					Class124 class124 = Class124.method231(is.length, is, 0);
 					boolean bool = Class58.method1257(class124, 28883);
 					if (bool)
 						Static2.aClass124_138 = class124;
@@ -2133,7 +2138,7 @@ public class client extends Applet_Sub1 {
 		if (Class111.anInt1859 != 0) {
 			/* empty */
 		}
-		Class14_Sub14.method865(JunkTex.signlink, JunkTex.aBoolean4721, -2);
+		Class14_Sub14.method865(ErrorReporting.signlink, JunkTex.aBoolean4721, -2);
 		Static2.anInt3348 = Class7.anInt182 != 0 ? Class120.anInt2005 + 50000 : 443;
 		Class33.aShortArray580 = JunkTex.aShortArray2717 = JunkTex.aShortArray4747 = Class7_Sub1.aShortArray2663 = new short[256];
 		if (Static2.anInt3749 == 1) {
@@ -2147,32 +2152,32 @@ public class client extends Applet_Sub1 {
 			JunkTex.aShortArrayArray4496 = Static2.aShortArrayArray1001;
 			Class53.aShortArray866 = Class12.aShortArray320;
 			Static2.aShortArray471 = Class7.aShortArray183;
-			JunkTex.aShortArrayArray98 = Canvas_Sub1.aShortArrayArray50;
+			JunkTex.aShortArrayArray98 = Static2.aShortArrayArray50;
 		}
 		Class84.anInt1346 = Class7.anInt182 != 0 ? 40000 + Class120.anInt2005 : 43594;
 		Class131.anInt2164 = Class84.anInt1346;
 		Canvas_Sub2.method66(false);
-		JunkTex.method572(Static2.aCanvas819, false);
-		Class56_Sub1.method1242(Static2.aCanvas819, i ^ 0xffffffff);
+		JunkTex.method572(ErrorReporting.aCanvas819, false);
+		Class56_Sub1.method1242(ErrorReporting.aCanvas819, i ^ 0xffffffff);
 		Class44.aClass129_726 = Class12.method222(-18108);
 		if (Class44.aClass129_726 != null)
-			Class44.aClass129_726.addMouseWheelListener(Static2.aCanvas819);
+			Class44.aClass129_726.addMouseWheelListener(ErrorReporting.aCanvas819);
 		JunkTex.anInt4128 = Static2.anInt708;
 		try {
-			if (JunkTex.signlink.aClass30_720 != null) {
-				JunkTex.aClass76_4098 = new Class76((JunkTex.signlink.aClass30_720), 5200, 0);
+			if (ErrorReporting.signlink.aClass30_720 != null) {
+				JunkTex.aClass76_4098 = new Class76((ErrorReporting.signlink.aClass30_720), 5200, 0);
 				for (int i_132_ = 0; i_132_ < 27; i_132_++)
 					Class58.aClass76Array944[i_132_] = new Class76(
-							(JunkTex.signlink.aClass30Array711[i_132_]), 6000, 0);
-				JunkTex.aClass76_4569 = new Class76((JunkTex.signlink.aClass30_722), 6000,
+							(ErrorReporting.signlink.aClass30Array711[i_132_]), 6000, 0);
+				JunkTex.aClass76_4569 = new Class76((ErrorReporting.signlink.aClass30_722), 6000,
 						0);
 				Class14_Sub23.aClass114_3126 = new Class114(255, JunkTex.aClass76_4098,
 						JunkTex.aClass76_4569, 500000);
-				JunkTex.aClass76_4022 = new Class76((JunkTex.signlink.aClass30_716), 24, 0);
-				JunkTex.signlink.aClass30Array711 = null;
-				JunkTex.signlink.aClass30_716 = null;
-				JunkTex.signlink.aClass30_722 = null;
-				JunkTex.signlink.aClass30_720 = null;
+				JunkTex.aClass76_4022 = new Class76((ErrorReporting.signlink.aClass30_716), 24, 0);
+				ErrorReporting.signlink.aClass30Array711 = null;
+				ErrorReporting.signlink.aClass30_716 = null;
+				ErrorReporting.signlink.aClass30_722 = null;
+				ErrorReporting.signlink.aClass30_720 = null;
 			}
 		} catch (IOException ioexception) {
 			JunkTex.aClass76_4022 = null;
@@ -2181,7 +2186,7 @@ public class client extends Applet_Sub1 {
 			JunkTex.aClass76_4569 = null;
 		}
 		if ((Class7.anInt182 ^ 0xffffffff) != i)
-			Class133_Sub6.aBoolean3663 = true;
+			SceneGraphNode_Projectile.aBoolean3663 = true;
 		JunkTex.aClass124_5099 = Class53.aClass124_869;
 	}
 
@@ -2191,6 +2196,11 @@ public class client extends Applet_Sub1 {
 		boolean bool = SFSS.method1386();
 		if (!bool)
 			method43(-123);
+	}
+
+	public static boolean method1396(int i_1_) {
+		boolean bool = (i_1_ >> 31 & 0x1) != 0;
+		return bool;
 	}
 
 	public static Class94 method57(Class94 class94) {

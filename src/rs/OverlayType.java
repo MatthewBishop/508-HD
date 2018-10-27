@@ -19,14 +19,14 @@ public class OverlayType {
 	public int anInt2414;
 	public int anInt2416;
 	public static AbstractSprite[] aClass14_Sub2_Sub19Array2417;
-	public static Class124 aClass124_2418 = Class124.method263(1178, "<col=ffffff>");
+	public static Class124 aClass124_2418 = Class124.method263("<col=ffffff>");
 	public static int[][][] underWaterTileHeightMap;
 	public static int anInt2420;
 	public static AtmosphericChunk[][] aClass71ArrayArray2421 = new AtmosphericChunk[13][13];
 	public static int[] anIntArray2422;
 	public static int anInt2423;
 	public int anInt2424;
-	public static Class124 aClass124_2425 = Class124.method263(1178, "sch-Utteln:");
+	public static Class124 aClass124_2425 = Class124.method263("sch-Utteln:");
 	public int anInt2426;
 
 	public static Class14_Sub2_Sub5 method2020(int i, boolean bool, int i_0_) {
@@ -52,7 +52,7 @@ public class OverlayType {
 		aClass52_2406 = null;
 	}
 
-	public static void method2022(int i, int i_2_, int i_3_, Class133_Sub1 class133_sub1, int i_4_, int i_5_,
+	public static void method2022(int i, int i_2_, int i_3_, SceneGraphNode_GameEntity class133_sub1, int i_4_, int i_5_,
 			int i_6_) {
 		if (i_3_ == -1)
 			Class53.method1213(i, i_2_, class133_sub1.anInt3495, i_5_, i_6_, i_4_, (byte) 126, class133_sub1.anInt3436);
@@ -121,6 +121,21 @@ public class OverlayType {
 			} else
 				anInt2411 = JunkTex.method82(class14_sub10.method829(-126), -116);
 		}
+	}
+
+	public static OverlayType list(int i) {
+		OverlayType overlayType = (OverlayType) Static2.aClass52_3942.get(i);
+		if (overlayType != null) {
+			OverlayType class150_1_ = overlayType;
+			return class150_1_;
+		}
+		byte[] is = Static2.aClass9_372.method163(i, 4);
+		OverlayType class150_3_ = new OverlayType();
+		if (is != null)
+			class150_3_.method2024(i, 0, new Buffer(is));
+		Static2.aClass52_3942.put(class150_3_, i);
+		OverlayType class150_4_ = class150_3_;
+		return class150_4_;
 	}
 
 	public OverlayType() {

@@ -10,7 +10,7 @@ public class Class7_Sub1 extends Class7 {
 	public static Class9 aClass9_2652;
 	public static int anInt2653 = -1;
 	public static int anInt2655;
-	public static Class124 aClass124_2656 = Class124.method263(1178, "");
+	public static Class124 aClass124_2656 = Class124.method263("");
 	public static Class9_Sub1 aClass9_Sub1_2657;
 	public static int anInt2659;
 	public static Class124 aClass124_2660;
@@ -21,7 +21,7 @@ public class Class7_Sub1 extends Class7 {
 	static {
 		anInt2655 = 0;
 		aShortArray2663 = new short[256];
-		aClass124_2660 = Class124.method263(1178, "rot:");
+		aClass124_2660 = Class124.method263("rot:");
 	}
 
 	public static Class124 method121(int i, int i_0_) {
@@ -68,7 +68,7 @@ public class Class7_Sub1 extends Class7 {
 				class14_sub21.anObjectArray3115 = Class67.aClass94_1060.anObjectArray1581;
 				class14_sub21.anInt3106 = i_7_;
 				class14_sub21.aClass94_3116 = Class67.aClass94_1060;
-				Class133_Sub3.method1830(class14_sub21, -1976917689);
+				SceneGraphNode_GroundObject.method1830(class14_sub21, -1976917689);
 			}
 			if (JunkTex.anInt4599 == 0) {
 				if (JunkTex.aBoolean4188) {
@@ -79,7 +79,7 @@ public class Class7_Sub1 extends Class7 {
 						class14_sub21.aClass94_3105 = Static2.aClass94_3070;
 						class14_sub21.anObjectArray3115 = Class67.aClass94_1060.anObjectArray1475;
 						class14_sub21.anInt3114 = i_8_;
-						Class133_Sub3.method1830(class14_sub21, -1976917689);
+						SceneGraphNode_GroundObject.method1830(class14_sub21, -1976917689);
 					}
 					if (Static2.aClass94_3070 != null && client.method57(Class67.aClass94_1060) != null) {
 						JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(179);

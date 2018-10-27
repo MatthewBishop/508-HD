@@ -1,10 +1,8 @@
 package com.jagex.io.js5;
 
+import com.jagex.applet.ErrorReporting;
 import com.jagex.link.Deque;
 import com.jagex.util.Util;
-
-import rs.Class14_Sub9_Sub3;
-import rs.JunkTex;
 
 public class Class24 implements Runnable {
 
@@ -29,7 +27,7 @@ public class Class24 implements Runnable {
 								var1 = SFSS.aClass2_4404;
 								var13 = SFSS.aClass2_4404;
 								synchronized (var13) {
-									JunkTex.aClass2_99.pushBack(var3);
+									SFSS.aClass2_99.pushBack(var3);
 								}
 							}
 						} else {
@@ -42,12 +40,12 @@ public class Class24 implements Runnable {
 							}
 						}
 
-						var12 = JunkTex.anObject4417;
-						var4 = JunkTex.anObject4417;
+						var12 = SFSS.anObject4417;
+						var4 = SFSS.anObject4417;
 						synchronized (var4) {
 							if (SFSS.anInt2223 <= 1) {
 								SFSS.anInt2223 = 0;
-								JunkTex.anObject4417.notifyAll();
+								SFSS.anObject4417.notifyAll();
 								return;
 							}
 
@@ -55,12 +53,12 @@ public class Class24 implements Runnable {
 						}
 					} else {
 						Util.accuratesleep(100L);
-						var12 = JunkTex.anObject4417;
-						var4 = JunkTex.anObject4417;
+						var12 = SFSS.anObject4417;
+						var4 = SFSS.anObject4417;
 						synchronized (var4) {
 							if (SFSS.anInt2223 <= 1) {
 								SFSS.anInt2223 = 0;
-								JunkTex.anObject4417.notifyAll();
+								SFSS.anObject4417.notifyAll();
 								return;
 							}
 
@@ -69,7 +67,7 @@ public class Class24 implements Runnable {
 					}
 				}
 			} catch (Exception var10) {
-				Class14_Sub9_Sub3.method738((String) null, var10, 95);
+				ErrorReporting.method738((String) null, var10, 95);
 			}
 		} catch (RuntimeException var11) {
 			throw Util.error(var11, "ck.run()");

@@ -9,7 +9,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 
-import com.jagex.io.Buffer;
+import com.jagex.applet.Applet_Sub1;
 import com.jagex.link.Deque;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.util.TimeUtil;
@@ -27,29 +27,10 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 	public static Class94 aClass94_1657;
 
 	static {
-		aClass124_1637 = Class124.method263(1178, " is already on your friend list)3");
+		aClass124_1637 = Class124.method263(" is already on your friend list)3");
 		anInt1652 = 2;
 		aClass124_1640 = aClass124_1637;
 		aClass2_1647 = new Deque();
-	}
-
-	public static OverlayType list(int i, int i_0_) {
-		OverlayType overlayType = (OverlayType) Static2.aClass52_3942.get(i);
-		if (overlayType != null) {
-			OverlayType class150_1_ = overlayType;
-			return class150_1_;
-		}
-		if (i_0_ != -9810) {
-			OverlayType class150_2_ = null;
-			return class150_2_;
-		}
-		byte[] is = Static2.aClass9_372.method163(i, 4);
-		OverlayType class150_3_ = new OverlayType();
-		if (is != null)
-			class150_3_.method2024(i, 0, new Buffer(is));
-		Static2.aClass52_3942.put(class150_3_, i);
-		OverlayType class150_4_ = class150_3_;
-		return class150_4_;
 	}
 
 	public void mouseClicked(MouseEvent mouseevent) {

@@ -7,6 +7,8 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 
+import com.jagex.applet.Applet_Sub1;
+import com.jagex.applet.ErrorReporting;
 import com.jagex.io.js5.Class9_Sub1;
 import com.jagex.rt4.Class148_Sub1;
 
@@ -18,20 +20,20 @@ public class Class22 {
 
 	public static void method984(int i, int i_0_, boolean bool, Color color, Class124 class124) {
 		try {
-			Graphics graphics = Static2.aCanvas819.getGraphics();
+			Graphics graphics = ErrorReporting.aCanvas819.getGraphics();
 			if (Class123.aFont2063 == null) {
 				Class123.aFont2063 = new Font("Helvetica", 1, 13);
-				Static2.aFontMetrics3081 = Static2.aCanvas819.getFontMetrics(Class123.aFont2063);
+				Static2.aFontMetrics3081 = ErrorReporting.aCanvas819.getFontMetrics(Class123.aFont2063);
 			}
 			if (bool) {
 				graphics.setColor(Color.black);
-				graphics.fillRect(0, 0, Class83.anInt1340, Class14_Sub20.anInt3094);
+				graphics.fillRect(0, 0, Applet_Sub1.anInt1340, Applet_Sub1.anInt3094);
 			}
 			if (color == null)
 				color = new Color(140, 17, 17);
 			try {
 				if (Class14_Sub2_Sub8.anImage3830 == null)
-					Class14_Sub2_Sub8.anImage3830 = Static2.aCanvas819.createImage(304, 34);
+					Class14_Sub2_Sub8.anImage3830 = ErrorReporting.aCanvas819.createImage(304, 34);
 				Graphics graphics_1_ = Class14_Sub2_Sub8.anImage3830.getGraphics();
 				graphics_1_.setColor(color);
 				graphics_1_.drawRect(0, 0, 303, 33);
@@ -46,11 +48,11 @@ public class Class22 {
 				class124.method1713(false,
 						(-class124.method1695((Static2.aFontMetrics3081), (byte) -94) + 304) / 2, 22,
 						graphics_1_);
-				graphics.drawImage(Class14_Sub2_Sub8.anImage3830, Class83.anInt1340 / 2 - 152,
-						Class14_Sub20.anInt3094 / 2 - 18, null);
+				graphics.drawImage(Class14_Sub2_Sub8.anImage3830, Applet_Sub1.anInt1340 / 2 - 152,
+						Applet_Sub1.anInt3094 / 2 - 18, null);
 			} catch (Exception exception) {
-				int i_2_ = Class83.anInt1340 / 2 - 152;
-				int i_3_ = Class14_Sub20.anInt3094 / 2 - 18;
+				int i_2_ = Applet_Sub1.anInt1340 / 2 - 152;
+				int i_3_ = Applet_Sub1.anInt3094 / 2 - 18;
 				graphics.setColor(color);
 				graphics.drawRect(i_2_, i_3_, 303, 33);
 				graphics.fillRect(i_2_ + 2, i_3_ + 2, i * 3, 30);
@@ -67,12 +69,12 @@ public class Class22 {
 				graphics.setFont(Class123.aFont2063);
 				graphics.setColor(Color.white);
 				JunkTex.aClass124_5099.method1713(false,
-						(Class83.anInt1340 / 2 - (JunkTex.aClass124_5099
+						(Applet_Sub1.anInt1340 / 2 - (JunkTex.aClass124_5099
 								.method1695(Static2.aFontMetrics3081, (byte) -106)) / 2),
-						Class14_Sub20.anInt3094 / 2 - 26, graphics);
+						Applet_Sub1.anInt3094 / 2 - 26, graphics);
 			}
 		} catch (Exception exception) {
-			Static2.aCanvas819.repaint();
+			ErrorReporting.aCanvas819.repaint();
 		}
 	}
 

@@ -3,14 +3,9 @@
  */
 package rs;
 
-import java.io.DataInputStream;
-import java.net.URL;
-
 import com.jagex.link.Deque;
-import com.jagex.util.Util;
 
 public class Class14_Sub9_Sub3 extends Class14_Sub9 {
-	public static int anInt4843;
 	public static Class124 aClass124_4844;
 	public static volatile int anInt4848 = -1;
 	public static int anInt4849;
@@ -21,9 +16,8 @@ public class Class14_Sub9_Sub3 extends Class14_Sub9 {
 	public Class14_Sub9_Sub2 aClass14_Sub9_Sub2_4859 = new Class14_Sub9_Sub2();
 
 	static {
-		anInt4843 = 0;
 		anIntArray4851 = new int[2000];
-		aClass124_4844 = Class124.method263(1178, "details");
+		aClass124_4844 = Class124.method263("details");
 	}
 
 	@Override
@@ -129,57 +123,6 @@ public class Class14_Sub9_Sub3 extends Class14_Sub9 {
 			class14_sub18.anInt3044 += i_7_ * i;
 		}
 		class14_sub18.aClass14_Sub9_Sub4_3051.method687(is, i_3_, i);
-	}
-
-	public static void method738(String string, Throwable throwable, int i) {
-		while_352_: do {
-			while_351_: do {
-				String string_11_;
-				while_350_: do {
-					do {
-						try {
-							string_11_ = "";
-							if (throwable != null)
-								string_11_ = Class138.method1947(41, throwable);
-							if (string != null) {
-								if (throwable != null)
-									string_11_ = new StringBuilder(string_11_).append(" | ").toString();
-								string_11_ = new StringBuilder(string_11_).append(string).toString();
-							}
-							System.out.println(new StringBuilder("Error: ").append(string_11_).toString());
-							string_11_ = string_11_.replace(':', '.');
-							string_11_ = string_11_.replace('@', '_');
-							string_11_ = string_11_.replace('&', '_');
-							string_11_ = string_11_.replace('#', (char) i);
-							if (Static2.aClass43_358.applet == null)
-								break;
-						} catch (Exception exception) {
-							break while_351_;
-						}
-						break while_350_;
-					} while (false);
-					return;
-				} while (false);
-				try {
-					Class31 class31 = (Static2.aClass43_358.method1147((byte) -119, new URL(
-							Static2.aClass43_358.applet.getCodeBase(),
-							new StringBuilder("clienterror.ws?c=").append(JunkTex.anInt4614).append("&u=")
-									.append(Class48.aLong802).append("&v1=").append(Class43.java_vendor).append("&v2=")
-									.append(Class43.java_version).append("&e=").append(string_11_).toString())));
-					while (class31.anInt529 == 0)
-						Util.accuratesleep(1L);
-					if (class31.anInt529 == 1) {
-						DataInputStream datainputstream = (DataInputStream) class31.anObject530;
-						datainputstream.read();
-						datainputstream.close();
-					}
-				} catch (Exception exception) {
-					break;
-				}
-				break while_352_;
-			} while (false);
-			Throwable throwable_12_ = new Throwable();
-		} while (false);
 	}
 
 	@Override

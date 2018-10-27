@@ -6,12 +6,12 @@ package rs;
 import com.jagex.cache.anim.Animation;
 import com.jagex.rt4.RT4GL;
 
-public class Class133_Sub1_Sub2 extends Class133_Sub1 {
+public class SceneGraphNode_GameEntity_Sub2 extends SceneGraphNode_GameEntity {
 	public static int[] anIntArray4944 = new int[2000];
 	public static Class14_Sub23[] aClass14_Sub23Array4945;
-	public static Class124 aClass124_4948 = Class124.method263(1178, "scrollen:");
+	public static Class124 aClass124_4948 = Class124.method263("scrollen:");
 	public Class12 aClass12_4949;
-	public static Class124 aClass124_4950 = Class124.method263(1178, "weiss:");
+	public static Class124 aClass124_4950 = Class124.method263("weiss:");
 	public static long[] aLongArray4951 = new long[200];
 
 	public static void method1811(int i) {
@@ -25,7 +25,7 @@ public class Class133_Sub1_Sub2 extends Class133_Sub1 {
 	}
 
 	@Override
-	public int getMinY() {
+	public int getMinYorMaxYCheckTHIS() {
 		int i = anInt3449;
 		return i;
 	}
@@ -48,14 +48,14 @@ public class Class133_Sub1_Sub2 extends Class133_Sub1 {
 			Animation animation = (anInt3445 == -1 || anInt3467 != 0 ? null : JunkTex.method1129(anInt3445, 32));
 			Animation class46_7_ = (anInt3452 == -1 || anInt3452 == anInt3433 && animation != null ? null
 					: JunkTex.method1129(anInt3452, -39));
-			Class133_Sub7 class133_sub7 = aClass12_4949.method209(anInt3483, anInt3501, animation, class46_7_, -55);
+			SceneGraphNode_AbstractModelRenderer class133_sub7 = aClass12_4949.method209(anInt3483, anInt3501, animation, class46_7_, -55);
 			if (class133_sub7 != null) {
-				anInt3449 = class133_sub7.getMinY();
+				anInt3449 = class133_sub7.getMinYorMaxYCheckTHIS();
 				Class12 class12 = aClass12_4949;
 				if (class12.anIntArray329 != null)
 					class12 = class12.method217((byte) -18);
 				if (JunkTex.aBoolean4518 && class12.aBoolean330) {
-					Class133_Sub7 class133_sub7_8_ = (Static2.method1359(-10345, anInt3495,
+					SceneGraphNode_AbstractModelRenderer class133_sub7_8_ = (Static2.method1359(-10345, anInt3495,
 							class46_7_ == null ? animation : class46_7_, class133_sub7, aClass12_4949.aShort313,
 							aClass12_4949.aByte321, anInt3500, aClass12_4949.aByte331, aClass12_4949.aShort285, i,
 							anInt3436, class46_7_ != null ? anInt3483 : anInt3501, aClass12_4949.anInt334,
@@ -121,7 +121,7 @@ public class Class133_Sub1_Sub2 extends Class133_Sub1 {
 					if (i_12_ != 0)
 						class133_sub7.method1855(0, i_12_, 0);
 				}
-				Class133_Sub7 class133_sub7_41_ = null;
+				SceneGraphNode_AbstractModelRenderer class133_sub7_41_ = null;
 				if (anInt3487 != -1 && anInt3470 != -1) {
 					Class60 class60 = Class127.method1749(anInt3487, (byte) 73);
 					class133_sub7_41_ = class60.method1267(0, anInt3470);

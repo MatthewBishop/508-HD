@@ -1,7 +1,7 @@
 /* Display - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-package rs;
+package com.jagex.applet;
 
 import java.awt.DisplayMode;
 import java.awt.Frame;

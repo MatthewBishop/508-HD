@@ -7,9 +7,9 @@ import com.jagex.cache.anim.Animation;
 import com.jagex.link.Cacheable;
 
 public class Class14_Sub2_Sub10 extends Cacheable {
-	public static Class124 aClass124_3867 = Class124.method263(1178, " zuerst von Ihrer Ignorieren)2Liste(Q");
+	public static Class124 aClass124_3867 = Class124.method263(" zuerst von Ihrer Ignorieren)2Liste(Q");
 	public static int anInt3868 = -1;
-	public Class133_Sub6 aClass133_Sub6_3870;
+	public SceneGraphNode_Projectile aSceneGraphNode_Projectile_3870;
 	public static short[][] aShortArrayArray3871 = {
 			{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -68,7 +68,7 @@ public class Class14_Sub2_Sub10 extends Cacheable {
 			anInt3868 = -46;
 	}
 
-	public static void method307(int i, Class133_Sub1 class133_sub1) {
+	public static void method307(int i, SceneGraphNode_GameEntity class133_sub1) {
 		if (i >= -25)
 			method306(80);
 		class133_sub1.anInt3452 = class133_sub1.anInt3433;
@@ -132,8 +132,8 @@ public class Class14_Sub2_Sub10 extends Cacheable {
 				if (i_6_ == -1)
 					i_6_ = class133_sub1.anInt3457;
 				class133_sub1.anInt3452 = i_6_;
-				if (class133_sub1 instanceof Class133_Sub1_Sub2)
-					bool = (((Class133_Sub1_Sub2) class133_sub1).aClass12_4949.aBoolean287);
+				if (class133_sub1 instanceof SceneGraphNode_GameEntity_Sub2)
+					bool = (((SceneGraphNode_GameEntity_Sub2) class133_sub1).aClass12_4949.aBoolean287);
 				if (bool) {
 					if (class133_sub1.anInt3469 != class133_sub1.anInt3461 && class133_sub1.anInt3453 == -1
 							&& class133_sub1.anInt3492 != 0)
@@ -189,7 +189,7 @@ public class Class14_Sub2_Sub10 extends Cacheable {
 		}
 	}
 
-	public Class14_Sub2_Sub10(Class133_Sub6 class133_sub6) {
-		aClass133_Sub6_3870 = class133_sub6;
+	public Class14_Sub2_Sub10(SceneGraphNode_Projectile class133_sub6) {
+		aSceneGraphNode_Projectile_3870 = class133_sub6;
 	}
 }

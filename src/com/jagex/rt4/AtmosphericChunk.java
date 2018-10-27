@@ -57,9 +57,9 @@ public class AtmosphericChunk {
 		}
 
 		if ((var2 & 16) != 0) {
-			this.lightX = var1.method805(0);
-			this.lightY = var1.method805(0);
-			this.lightZ = var1.method805(0);
+			this.lightX = var1.method805();
+			this.lightY = var1.method805();
+			this.lightZ = var1.method805();
 		} else {
 			this.lightY = -60;
 			this.lightZ = -50;

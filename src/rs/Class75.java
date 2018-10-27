@@ -17,12 +17,12 @@ public class Class75 {
 	public static Cache aClass20_1147;
 	public int[] anIntArray1150;
 	public static int anInt1151;
-	public static Class124 aClass124_1152 = Class124.method263(1178, "leuchten1:");
+	public static Class124 aClass124_1152 = Class124.method263("leuchten1:");
 	public Class14_Sub9 aClass14_Sub9_1154;
 	public int anInt1158 = 32;
 	public long aLong1160 = TimeUtil.getTime();
 	public static int anInt1163;
-	public static Class124 aClass124_1165 = Class124.method263(1178, "Bitte warten Sie)3)3)3");
+	public static Class124 aClass124_1165 = Class124.method263("Bitte warten Sie)3)3)3");
 	public static Class9_Sub1 idx0;
 	public boolean aBoolean1169 = true;
 	public int anInt1170;
@@ -43,7 +43,7 @@ public class Class75 {
 	static {
 		anInt1163 = -1;
 		aClass20_1147 = new Cache(64);
-		aClass124_1183 = Class124.method263(1178, "Loading sprites )2 ");
+		aClass124_1183 = Class124.method263("Loading sprites )2 ");
 		aClass124_1182 = aClass124_1183;
 	}
 
@@ -77,30 +77,30 @@ public class Class75 {
 			anInt1174 = -99;
 	}
 
-	public static void method1339(Class133 class133, int i, int i_3_, int i_4_) {
+	public static void method1339(SceneGraphNode sceneGraphNode, int i, int i_3_, int i_4_) {
 		if (i_3_ < Static2.anInt3338) {
 			Class14_Sub29 class14_sub29 = (JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_3_ + 1][i_4_]);
 			if (class14_sub29 != null && class14_sub29.aClass4_3237 != null
-					&& class14_sub29.aClass4_3237.aClass133_124.method1784())
-				class133.method1788(class14_sub29.aClass4_3237.aClass133_124, 128, 0, 0, true);
+					&& class14_sub29.aClass4_3237.aSceneGraphNode_124.method1784())
+				sceneGraphNode.method1788(class14_sub29.aClass4_3237.aSceneGraphNode_124, 128, 0, 0, true);
 		}
 		if (i_4_ < Static2.anInt3338) {
 			Class14_Sub29 class14_sub29 = (JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_3_][i_4_ + 1]);
 			if (class14_sub29 != null && class14_sub29.aClass4_3237 != null
-					&& class14_sub29.aClass4_3237.aClass133_124.method1784())
-				class133.method1788(class14_sub29.aClass4_3237.aClass133_124, 0, 0, 128, true);
+					&& class14_sub29.aClass4_3237.aSceneGraphNode_124.method1784())
+				sceneGraphNode.method1788(class14_sub29.aClass4_3237.aSceneGraphNode_124, 0, 0, 128, true);
 		}
 		if (i_3_ < Static2.anInt3338 && i_4_ < JunkTex.anInt4337) {
 			Class14_Sub29 class14_sub29 = (JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_3_ + 1][i_4_ + 1]);
 			if (class14_sub29 != null && class14_sub29.aClass4_3237 != null
-					&& class14_sub29.aClass4_3237.aClass133_124.method1784())
-				class133.method1788(class14_sub29.aClass4_3237.aClass133_124, 128, 0, 128, true);
+					&& class14_sub29.aClass4_3237.aSceneGraphNode_124.method1784())
+				sceneGraphNode.method1788(class14_sub29.aClass4_3237.aSceneGraphNode_124, 128, 0, 128, true);
 		}
 		if (i_3_ < Static2.anInt3338 && i_4_ > 0) {
 			Class14_Sub29 class14_sub29 = (JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_3_ + 1][i_4_ - 1]);
 			if (class14_sub29 != null && class14_sub29.aClass4_3237 != null
-					&& class14_sub29.aClass4_3237.aClass133_124.method1784())
-				class133.method1788(class14_sub29.aClass4_3237.aClass133_124, 128, 0, -128, true);
+					&& class14_sub29.aClass4_3237.aSceneGraphNode_124.method1784())
+				sceneGraphNode.method1788(class14_sub29.aClass4_3237.aSceneGraphNode_124, 128, 0, -128, true);
 		}
 	}
 
@@ -111,20 +111,20 @@ public class Class75 {
 				if (is != null) {
 					Buffer class14_sub10 = new Buffer(is);
 					JunkTex.anInt1129 = class14_sub10.readUShort();
-					Class133_Sub1.aClass45Array3435 = new Class45[JunkTex.anInt1129];
+					SceneGraphNode_GameEntity.aClass45Array3435 = new Class45[JunkTex.anInt1129];
 					for (int i_5_ = 0; JunkTex.anInt1129 > i_5_; i_5_++) {
-						Class45 class45 = (Class133_Sub1.aClass45Array3435[i_5_] = new Class45());
+						Class45 class45 = (SceneGraphNode_GameEntity.aClass45Array3435[i_5_] = new Class45());
 						int i_6_ = class14_sub10.readUShort();
 						class45.aBoolean749 = (i_6_ & 0x8000) != 0;
 						class45.anInt744 = i_6_ & 0x7fff;
 						class45.aClass124_741 = class14_sub10.method797();
-						class45.anInt752 = class14_sub10.method805(0);
+						class45.anInt752 = class14_sub10.method805();
 						class45.anInt742 = i_5_;
 						int i_7_ = class14_sub10.readUShort();
 						class45.anInt745 = Class47.method1182(i_7_, -1);
 					}
-					Class14_Sub2_Sub11.method309(Class133_Sub1.aClass45Array3435,
-							Class133_Sub1.aClass45Array3435.length - 1, (byte) 127, 0);
+					Class14_Sub2_Sub11.method309(SceneGraphNode_GameEntity.aClass45Array3435,
+							SceneGraphNode_GameEntity.aClass45Array3435.length - 1, (byte) 127, 0);
 					Static2.aClass104_4037 = null;
 				}
 			} catch (Exception exception) {

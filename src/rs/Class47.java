@@ -6,8 +6,6 @@ package rs;
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.Class9;
 import com.jagex.io.js5.Class9_Sub1;
-import com.jagex.link.HashTable;
-import com.jagex.rt4.HDTile;
 
 public class Class47 {
 	public static Class94 aClass94_784;
@@ -18,8 +16,8 @@ public class Class47 {
 	public static int anInt796;
 
 	static {
-		aClass124_787 = Class124.method263(1178, "Sprites geladen)3");
-		aClass124_793 = Class124.method263(1178, " <col=ffffff>");
+		aClass124_787 = Class124.method263("Sprites geladen)3");
+		aClass124_793 = Class124.method263(" <col=ffffff>");
 		anInt796 = -1;
 	}
 
@@ -187,10 +185,10 @@ public class Class47 {
 		return i_28_;
 	}
 
-	public static void method1183(byte i, Class133_Sub1 class133_sub1) {
+	public static void method1183(byte i, SceneGraphNode_GameEntity class133_sub1) {
 		if (class133_sub1.anInt3492 != 0) {
 			if (class133_sub1.anInt3453 != -1 && class133_sub1.anInt3453 < 32768) {
-				Class133_Sub1_Sub2 class133_sub1_sub2 = (Class14_Sub4.aClass133_Sub1_Sub2Array2785[class133_sub1.anInt3453]);
+				SceneGraphNode_GameEntity_Sub2 class133_sub1_sub2 = (Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[class133_sub1.anInt3453]);
 				if (class133_sub1_sub2 != null) {
 					int i_29_ = (class133_sub1.anInt3495 - class133_sub1_sub2.anInt3495);
 					int i_30_ = (-class133_sub1_sub2.anInt3436 + class133_sub1.anInt3436);
@@ -202,7 +200,7 @@ public class Class47 {
 				int i_31_ = class133_sub1.anInt3453 - 32768;
 				if (Class14_Sub2_Sub10.anInt3868 == i_31_)
 					i_31_ = 2047;
-				Class133_Sub1_Sub1 class133_sub1_sub1 = JunkTex.aClass133_Sub1_Sub1Array4474[i_31_];
+				SceneGraphNode_GameEntity_Sub1 class133_sub1_sub1 = JunkTex.aSceneGraphNode_GameEntity_Sub1Array4474[i_31_];
 				if (class133_sub1_sub1 != null) {
 					int i_32_ = (class133_sub1.anInt3495 - class133_sub1_sub1.anInt3495);
 					int i_33_ = (-class133_sub1_sub1.anInt3436 + class133_sub1.anInt3436);
@@ -213,7 +211,7 @@ public class Class47 {
 			if ((class133_sub1.anInt3504 != 0 || class133_sub1.anInt3480 != 0)
 					&& (class133_sub1.anInt3498 == 0 || class133_sub1.anInt3437 > 0)) {
 				int i_34_ = (class133_sub1.anInt3495 - 64 - (-(class133_sub1.anInt3493 * 64)
-						+ (-Class133_Sub6.anInt3676 - Class133_Sub6.anInt3676 + class133_sub1.anInt3504) * 64));
+						+ (-SceneGraphNode_Projectile.anInt3676 - SceneGraphNode_Projectile.anInt3676 + class133_sub1.anInt3504) * 64));
 				int i_35_ = (-((-Class58.anInt947 + (class133_sub1.anInt3480 - Class58.anInt947)) * 64)
 						+ class133_sub1.anInt3436 - 64 + class133_sub1.anInt3493 * 64);
 				if (i_34_ != 0 || i_35_ != 0)
@@ -317,200 +315,9 @@ public class Class47 {
 
 	public static void method1188(int i, int i_42_) {
 		if (i_42_ == Class14_Sub2_Sub11.anInt3889)
-			Class133_Sub5.aClass14_Sub9_Sub1_3625.method710(i_42_ - 28225, i);
+			SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method710(i_42_ - 28225, i);
 		else
 			JunkTex.anInt1132 = i;
-	}
-
-	public static HDTile[] method1189(float[][] fs, int[][] is, int[][] is_43_, float[][] fs_44_, byte i,
-			byte[][][] is_45_, int i_46_, int[][] is_47_, byte[][] is_48_, byte[][] is_49_, byte[][] is_50_,
-			int[][] is_51_, byte[][] is_52_, float[][] fs_53_, int[][] is_54_) {
-		int[][] is_55_ = new int[105][105];
-		for (int i_56_ = 1; i_56_ <= 103; i_56_++) {
-			for (int i_57_ = 1; i_57_ <= 103; i_57_++) {
-				int i_58_ = is_49_[i_56_][i_57_];
-				if (i_58_ == 0)
-					i_58_ = is_49_[i_56_ - 1][i_57_];
-				if (i_58_ == 0)
-					i_58_ = is_49_[i_56_][i_57_ - 1];
-				if (i_58_ == 0)
-					i_58_ = is_49_[i_56_ - 1][i_57_ - 1];
-				if (i_58_ != 0) {
-					Class65 class65 = Static2.method335(-65, (i_58_ & 0xff) - 1);
-					is_55_[i_56_][i_57_] = (class65.anInt1030 + 1 << 16) + class65.anInt1019;
-				}
-			}
-		}
-		HashTable hashTable = new HashTable(128);
-		for (int i_59_ = 1; i_59_ <= 102; i_59_++) {
-			for (int i_60_ = 1; i_60_ <= 102; i_60_++) {
-				if (is_49_[i_59_][i_60_] != 0) {
-					int[] is_61_;
-					if (is_50_[i_59_][i_60_] != 0) {
-						is_61_ = Class21.anIntArrayArray452[is_52_[i_59_][i_60_]];
-						if (is_61_.length == 0)
-							continue;
-					} else
-						is_61_ = JunkTex.anIntArrayArray2545[0];
-					int i_62_ = is_55_[i_59_][i_60_];
-					int i_63_ = is_55_[i_59_ + 1][i_60_];
-					int i_64_ = 0;
-					if (is_51_ != null)
-						i_64_ = is_51_[i_59_][i_60_] & 0xffffff;
-					int i_65_ = is_55_[i_59_ + 1][i_60_ + 1];
-					long l = (long) i_63_ << 32 | i_64_;
-					long l_66_ = (long) i_62_ << 32 | i_64_;
-					long l_67_ = i_64_ | (long) i_65_ << 32;
-					int i_68_ = is_55_[i_59_][i_60_ + 1];
-					long l_69_ = i_64_ | (long) i_68_ << 32;
-					int i_70_ = is_61_.length / 2;
-					HDTile class14_sub27 = ((HDTile) hashTable.get(l_66_));
-					if (class14_sub27 == null) {
-						class14_sub27 = new HDTile((i_62_ >> 16) - 1, i_62_ & 0xffff, false,
-								is_43_ != null, i_64_);
-						hashTable.put(l_66_, class14_sub27);
-					}
-					class14_sub27.anInt3180++;
-					class14_sub27.anInt3181 += i_70_;
-					if (l_66_ != l) {
-						class14_sub27 = (HDTile) hashTable.get(l);
-						if (class14_sub27 == null) {
-							class14_sub27 = new HDTile((i_63_ >> 48) - 1, i_63_ & 0xffff, false,
-									is_43_ != null, i_64_);
-							hashTable.put(l, class14_sub27);
-						}
-						class14_sub27.anInt3180++;
-						class14_sub27.anInt3181 += i_70_;
-					}
-					if (l_67_ != l_66_ && l_67_ != l) {
-						class14_sub27 = (HDTile) hashTable.get(l_67_);
-						if (class14_sub27 == null) {
-							class14_sub27 = new HDTile((i_65_ >> 48) - 1, i_65_ & 0xffff, false,
-									is_43_ != null, i_64_);
-							hashTable.put(l_67_, class14_sub27);
-						}
-						class14_sub27.anInt3180++;
-						class14_sub27.anInt3181 += i_70_;
-					}
-					if (l_69_ != l_66_ && l != l_69_ && l_69_ != l_67_) {
-						class14_sub27 = (HDTile) hashTable.get(l_69_);
-						if (class14_sub27 == null) {
-							class14_sub27 = new HDTile((i_68_ >> 48) - 1, i_68_ & 0xffff, false,
-									is_43_ != null, i_64_);
-							hashTable.put(l_69_, class14_sub27);
-						}
-						class14_sub27.anInt3181 += i_70_;
-						class14_sub27.anInt3180++;
-					}
-				}
-			}
-		}
-		for (HDTile class14_sub27 = (HDTile) hashTable.getFirst(); class14_sub27 != null; class14_sub27 = (HDTile) hashTable.getNext())
-			class14_sub27.method924();
-		if (i > -69)
-			aClass94_784 = null;
-		for (int i_71_ = 1; i_71_ <= 102; i_71_++) {
-			for (int i_72_ = 1; i_72_ <= 102; i_72_++) {
-				if (is_49_[i_71_][i_72_] != 0) {
-					int i_73_;
-					if ((is_45_[i_46_][i_71_][i_72_] & 0x8) == 0) {
-						if ((is_45_[1][i_71_][i_72_] & 0x2) != 2 || i_46_ <= 0)
-							i_73_ = i_46_;
-						else
-							i_73_ = i_46_ - 1;
-					} else
-						i_73_ = 0;
-					int i_74_ = 0;
-					int i_75_ = 128;
-					if (is_51_ != null) {
-						i_75_ = is_51_[i_71_][i_72_] >>> 56 << 35;
-						i_74_ = is_51_[i_71_][i_72_] & 0xffffff;
-					}
-					boolean[] bools = null;
-					int[] is_76_;
-					byte i_77_;
-					if (is_50_[i_71_][i_72_] != 0) {
-						i_77_ = is_48_[i_71_][i_72_];
-						is_76_ = Class21.anIntArrayArray452[is_52_[i_71_][i_72_]];
-						bools = (Class14_Sub25.aBooleanArrayArray3170[is_52_[i_71_][i_72_]]);
-						if (is_76_.length == 0)
-							continue;
-					} else {
-						is_76_ = JunkTex.anIntArrayArray2545[0];
-						i_77_ = (byte) 0;
-					}
-					int i_78_ = is_55_[i_71_][i_72_];
-					int i_79_ = is_55_[i_71_ + 1][i_72_];
-					int i_80_ = is_55_[i_71_ + 1][i_72_ + 1];
-					long l = i_74_ | (long) i_78_ << 32;
-					int i_81_ = is_55_[i_71_][i_72_ + 1];
-					long l_82_ = (long) i_79_ << 32 | i_74_;
-					long l_83_ = i_74_ | (long) i_80_ << 32;
-					long l_84_ = (long) i_81_ << 32 | i_74_;
-					int i_85_ = is_47_[i_71_][i_72_];
-					int i_86_ = is_47_[i_71_ + 1][i_72_];
-					int i_87_ = is_47_[i_71_][i_72_ + 1];
-					int i_88_ = is_47_[i_71_ + 1][i_72_ + 1];
-					int i_89_ = is[i_71_][i_72_];
-					int i_90_ = is[i_71_ + 1][i_72_];
-					int i_91_ = is[i_71_ + 1][i_72_ + 1];
-					int i_92_ = is[i_71_][i_72_ + 1];
-					int i_93_ = (i_80_ >> 48) - 1;
-					int i_94_ = (i_78_ >> 16) - 1;
-					int i_95_ = (i_79_ >> 48) - 1;
-					int i_96_ = (i_81_ >> 48) - 1;
-					HDTile class14_sub27 = (HDTile) hashTable.get(l);
-					JunkTex.method665(is_43_, fs, (byte) 116, i_72_,
-							Class141.method1961(i_90_, (byte) 127, i_94_, i_86_), i_73_,
-							Class141.method1961(i_91_, (byte) 108, i_94_, i_88_), fs_44_, i_78_ <= i_79_,
-							Class141.method1961(i_92_, (byte) 123, i_94_, i_87_), bools, i_77_, class14_sub27, i_75_,
-							Class141.method1961(i_89_, (byte) 110, i_94_, i_85_), i_71_, i_78_ <= i_78_, i_81_ >= i_78_,
-							i_80_ >= i_78_, is_54_, is_76_, fs_53_);
-					if (l_82_ != l) {
-						class14_sub27 = (HDTile) hashTable.get(l_82_);
-						JunkTex.method665(is_43_, fs, (byte) 105, i_72_,
-								Class141.method1961(i_90_, (byte) 120, i_95_, i_86_), i_73_,
-								Class141.method1961(i_91_, (byte) 114, i_95_, i_88_), fs_44_, i_79_ >= i_79_,
-								Class141.method1961(i_92_, (byte) 112, i_95_, i_87_), bools, i_77_, class14_sub27,
-								i_75_, Class141.method1961(i_89_, (byte) 127, i_95_, i_85_), i_71_, i_78_ >= i_79_,
-								i_79_ <= i_81_, i_79_ <= i_80_, is_54_, is_76_, fs_53_);
-					}
-					if (l != l_83_ && l_82_ != l_83_) {
-						class14_sub27 = (HDTile) hashTable.get(l_83_);
-						JunkTex.method665(is_43_, fs, (byte) -44, i_72_,
-								Class141.method1961(i_90_, (byte) 123, i_93_, i_86_), i_73_,
-								Class141.method1961(i_91_, (byte) 113, i_93_, i_88_), fs_44_, i_79_ >= i_80_,
-								Class141.method1961(i_92_, (byte) 110, i_93_, i_87_), bools, i_77_, class14_sub27,
-								i_75_, Class141.method1961(i_89_, (byte) 113, i_93_, i_85_), i_71_, i_80_ <= i_78_,
-								i_81_ >= i_80_, i_80_ <= i_80_, is_54_, is_76_, fs_53_);
-					}
-					if (l_84_ != l && l_84_ != l_82_ && l_84_ != l_83_) {
-						class14_sub27 = (HDTile) hashTable.get(l_84_);
-						JunkTex.method665(is_43_, fs, (byte) 104, i_72_,
-								Class141.method1961(i_90_, (byte) 106, i_96_, i_86_), i_73_,
-								Class141.method1961(i_91_, (byte) 106, i_96_, i_88_), fs_44_, i_79_ >= i_81_,
-								Class141.method1961(i_92_, (byte) 118, i_96_, i_87_), bools, i_77_, class14_sub27,
-								i_75_, Class141.method1961(i_89_, (byte) 121, i_96_, i_85_), i_71_, i_81_ <= i_78_,
-								i_81_ >= i_81_, i_80_ >= i_81_, is_54_, is_76_, fs_53_);
-					}
-				}
-			}
-		}
-		for (HDTile class14_sub27 = (HDTile) hashTable.getFirst(); class14_sub27 != null; class14_sub27 = (HDTile) hashTable.getNext()) {
-			if (class14_sub27.anInt3202 == 0)
-				class14_sub27.unlink();
-			else
-				class14_sub27.method925();
-		}
-		int i_97_ = hashTable.size();
-		HDTile[] class14_sub27s = new HDTile[i_97_];
-		hashTable.toArray(class14_sub27s);
-		long[] ls = new long[i_97_];
-		for (int i_98_ = 0; i_98_ < i_97_; i_98_++)
-			ls[i_98_] = class14_sub27s[i_98_].key;
-		Static2.method1506(class14_sub27s, ls, true);
-		HDTile[] class14_sub27s_99_ = class14_sub27s;
-		return class14_sub27s_99_;
 	}
 
 	public static boolean method1190(int i, int i_100_, int i_101_, int i_102_, int i_103_, boolean bool, int i_104_,
@@ -751,7 +558,7 @@ public class Class47 {
 			i_137_ = Class33.anIntArrayArray575[i_114_][i_111_];
 		}
 		if (i_115_ > 0) {
-			Class133.method1782(-20179, i_115_, i_101_);
+			SceneGraphNode.method1782(-20179, i_115_, i_101_);
 			boolean bool_138_ = true;
 			return bool_138_;
 		}

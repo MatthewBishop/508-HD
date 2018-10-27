@@ -10,13 +10,13 @@ public class AtmosphericEffects {
 	public static float[] light1Position = new float[4];
 	public static float ambientModelModifier;
 	public static float[] light0Position;
-	public static int anInt928;
+	public static int lightZ;
 	public static int defaultFogColour;
 	public static float light2Modifier;
 	public static int lightModelColour = -1;
 	public static float light1Modifier;
 	public static float[] fogColourComponents;
-	public static int anInt934;
+	public static int lightX;
 	public static int defaultSunColour;
 	public static int fogColour;
 
@@ -53,21 +53,21 @@ public class AtmosphericEffects {
 		return ambientModelModifier;
 	}
 
-	public static void setLightModel(int i, float f, float f_0_, float f_1_) {
-		if (lightModelColour != i || ambientModelModifier != f || light1Modifier != f_0_ || light2Modifier != f_1_) {
-			lightModelColour = i;
-			ambientModelModifier = f;
-			light1Modifier = f_0_;
-			light2Modifier = f_1_;
+	public static void setLightModel(int color, float _ambientModelModifier, float _light1Modifier, float _light2Modifier) {
+		if (lightModelColour != color || ambientModelModifier != _ambientModelModifier || light1Modifier != _light1Modifier || light2Modifier != _light2Modifier) {
+			lightModelColour = color;
+			ambientModelModifier = _ambientModelModifier;
+			light1Modifier = _light1Modifier;
+			light2Modifier = _light2Modifier;
 			GL gl = RT4GL.gl;
-			float f_2_ = (float) (i >> 16 & 0xff) / 255.0F;
-			float f_3_ = (float) (i >> 8 & 0xff) / 255.0F;
-			float f_4_ = (float) (i & 0xff) / 255.0F;
-			float[] fs = { f * f_2_, f * f_3_, f * f_4_, 1.0F };
+			float r = (float) (color >> 16 & 0xff) / 255.0F;
+			float g = (float) (color >> 8 & 0xff) / 255.0F;
+			float b = (float) (color & 0xff) / 255.0F;
+			float[] fs = { _ambientModelModifier * r, _ambientModelModifier * g, _ambientModelModifier * b, 1.0F };
 			gl.glLightModelfv(2899, fs, 0);
-			float[] fs_5_ = { f_0_ * f_2_, f_0_ * f_3_, f_0_ * f_4_, 1.0F };
+			float[] fs_5_ = { _light1Modifier * r, _light1Modifier * g, _light1Modifier * b, 1.0F };
 			gl.glLightfv(16384, 4609, fs_5_, 0);
-			float[] fs_6_ = { -f_1_ * f_2_, -f_1_ * f_3_, -f_1_ * f_4_, 1.0F };
+			float[] fs_6_ = { -_light2Modifier * r, -_light2Modifier * g, -_light2Modifier * b, 1.0F };
 			gl.glLightfv(16385, 4609, fs_6_, 0);
 		}
 	}
@@ -76,24 +76,24 @@ public class AtmosphericEffects {
 		return light1Modifier;
 	}
 
-	public static void setFogProperties(int i, int i_7_) {
-		if (fogColour != i || fogDistanceModifier != i_7_) {
-			fogColour = i;
-			fogDistanceModifier = i_7_;
+	public static void setFogProperties(int fog_color_rgb, int fog_length) {
+		if (fogColour != fog_color_rgb || fogDistanceModifier != fog_length) {
+			fogColour = fog_color_rgb;
+			fogDistanceModifier = fog_length;
 			GL gl = RT4GL.gl;
 			int i_8_ = 50;
-			int i_9_ = 3584;
-			fogColourComponents[0] = (float) (i >> 16 & 0xff) / 255.0F;
-			fogColourComponents[1] = (float) (i >> 8 & 0xff) / 255.0F;
-			fogColourComponents[2] = (float) (i & 0xff) / 255.0F;
+			int fogEnd = 3584;
+			fogColourComponents[0] = (float) (fog_color_rgb >> 16 & 0xff) / 255.0F;
+			fogColourComponents[1] = (float) (fog_color_rgb >> 8 & 0xff) / 255.0F;
+			fogColourComponents[2] = (float) (fog_color_rgb & 0xff) / 255.0F;
 			gl.glFogi(2917, 9729);
 			gl.glFogf(2914, 0.95F);
 			gl.glHint(3156, 4353);
-			int i_10_ = i_9_ - 512 - i_7_;
-			if (i_10_ < i_8_)
-				i_10_ = i_8_;
-			gl.glFogf(2915, (float) i_10_);
-			gl.glFogf(2916, (float) (i_9_ - 256));
+			int fogStart = fogEnd - 512 - fog_length;
+			if (fogStart < i_8_)
+				fogStart = i_8_;
+			gl.glFogf(2915, (float) fogStart);
+			gl.glFogf(2916, (float) (fogEnd - 256));
 			gl.glFogfv(2918, fogColourComponents, 0);
 		}
 	}
@@ -102,16 +102,16 @@ public class AtmosphericEffects {
 		return lightModelColour;
 	}
 
-	public static void setSunPosition(float f, float f_11_, float f_12_) {
-		if (light0Position[0] != f || light0Position[1] != f_11_ || light0Position[2] != f_12_) {
-			light0Position[0] = f;
-			light0Position[1] = f_11_;
-			light0Position[2] = f_12_;
-			light1Position[0] = -f;
-			light1Position[1] = -f_11_;
-			light1Position[2] = -f_12_;
-			anInt934 = (int) (f * 256.0F / f_11_);
-			anInt928 = (int) (f_12_ * 256.0F / f_11_);
+	public static void setSunPosition(float light_x, float light_y, float light_z) {
+		if (light0Position[0] != light_x || light0Position[1] != light_y || light0Position[2] != light_z) {
+			light0Position[0] = light_x;
+			light0Position[1] = light_y;
+			light0Position[2] = light_z;
+			light1Position[0] = -light_x;
+			light1Position[1] = -light_y;
+			light1Position[2] = -light_z;
+			lightX = (int) (light_x * 256.0F / light_y);
+			lightZ = (int) (light_z * 256.0F / light_y);
 		}
 	}
 

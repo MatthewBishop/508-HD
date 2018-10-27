@@ -13,8 +13,8 @@ public class Class14_Sub15 extends Linkable {
 	public static Class36 aClass36_2990;
 	public int anInt2991;
 	public boolean aBoolean2992 = false;
-	public static Class124 aClass124_2993 = Class124.method263(1178, "<img=0>");
-	public static Class124 aClass124_2995 = Class124.method263(1178, "cookiehost");
+	public static Class124 aClass124_2993 = Class124.method263("<img=0>");
+	public static Class124 aClass124_2995 = Class124.method263("cookiehost");
 	public static int actionsLen = 0;
 	public int anInt2999;
 
@@ -30,7 +30,7 @@ public class Class14_Sub15 extends Linkable {
 		Class84.aClass14_Sub2_Sub16_1344 = Static2.method888(-110, JunkTex.anInt4367, class9_0_, 0,
 				class9);
 		if (i <= -83)
-			Class133_Sub3.aClass14_Sub2_Sub16_3567 = Static2.method888(-108, JunkTex.anInt4102,
+			SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567 = Static2.method888(-108, JunkTex.anInt4102,
 					class9_0_, 0, class9);
 	}
 

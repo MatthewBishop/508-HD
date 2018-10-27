@@ -3,10 +3,11 @@
  */
 package rs;
 
-import java.awt.Frame;
 import java.io.IOException;
-import java.util.zip.CRC32;
 
+import com.jagex.applet.Class31;
+import com.jagex.applet.Class43;
+import com.jagex.applet.ErrorReporting;
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.FileOnDisk;
 import com.jagex.link.Linkable;
@@ -29,7 +30,6 @@ public class Class14_Sub14 extends Linkable {
 	public int anInt2980 = 0;
 	public int anInt2981;
 	public static SoftCache aClass52_2982 = new SoftCache(64);
-	public static CRC32 aCRC32_2983 = new CRC32();
 	public static int anInt2984;
 	public static int[] anIntArray2985 = { 0, 3, 0, 0, 0, 0, 6, 0, 2, 0, 5, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 0,
 			5, 0, 0, 0, 15, 4, 0, 0, 0, 0, 10, 0, 2, 0, 0, 4, 6, 4, 0, 0, 0, 0, -1, 0, 10, 7, 0, 0, 0, 0, 24, 0, 3, 0,
@@ -39,7 +39,6 @@ public class Class14_Sub14 extends Linkable {
 			0, 0, 0, 0, 0, 0, 0, 0, -2, 1, 4, -2, 8, 0, -1, 2, -1, -2, 0, 0, 0, 0, 6, 0, 3, 0, 0, 0, 2, -1, 0, 6, 0, 7,
 			2, 0, 0, 0, 0, 3, 0, 0, 0, -1, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, -2, 6, -1, 4, 0, 0, -2, 12, 0, 0, 1, 9, 0, -1,
 			0, 0, 5, 0, -1, 0, 0, 0, 0, 3, -2, 0, 0, 0, 0, 6, 4, 5, 6, 2, 0, 5, -1, 0, 0, -2 };
-	public static Frame aFrame2986;
 	public static Class14_Sub29[][][] aClass14_Sub29ArrayArrayArray2987;
 
 	public static void method865(Class43 class43, boolean safemode, int i) {
@@ -119,11 +118,6 @@ public class Class14_Sub14 extends Linkable {
 			method869((byte) -91);
 	}
 
-	public static void method866(boolean bool) {
-		if (bool && Class4.aClass36_134 != null)
-			Class4.aClass36_134.method1101((byte) 110);
-	}
-
 	public static void method867(byte i, Class124 class124, int i_2_) {
 		JunkTex.aClass14_Sub10_Sub1_891.writeOpcode(111);
 		JunkTex.aClass14_Sub10_Sub1_891.writeByte(i_2_);
@@ -132,10 +126,10 @@ public class Class14_Sub14 extends Linkable {
 	}
 
 	public static void method868(int i) {
-		int i_3_ = (Class133_Sub6.anInt3676 + (Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3495 >> 7));
+		int i_3_ = (SceneGraphNode_Projectile.anInt3676 + (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495 >> 7));
 		JunkTex.anInt4754 = 0;
 		int i_4_ = -6 % ((-28 - i) / 50);
-		int i_5_ = (Class58.anInt947 + (Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3436 >> 7));
+		int i_5_ = (Class58.anInt947 + (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436 >> 7));
 		if (i_3_ >= 3053 && i_3_ <= 3156 && i_5_ >= 3056 && i_5_ <= 3136)
 			JunkTex.anInt4754 = 1;
 		if (i_3_ >= 3072 && i_3_ <= 3118 && i_5_ >= 9492 && i_5_ <= 9535)
@@ -147,22 +141,20 @@ public class Class14_Sub14 extends Linkable {
 	public static void method869(byte i) {
 		int i_6_ = 47 / ((-11 - i) / 46);
 		anIntArray2985 = null;
-		aCRC32_2983 = null;
 		aClass52_2982 = null;
-		aFrame2986 = null;
 		aClass14_Sub29ArrayArrayArray2987 = null;
 	}
 
 	public static void method870(int i, Class124 class124) {
 		Class14_Sub9_Sub1.aClass124_4829 = class124;
-		if (JunkTex.signlink.applet != null) {
+		if (ErrorReporting.signlink.applet != null) {
 			try {
 				Class124 class124_7_ = (Class14_Sub2_Sub11.aClass124_3892
-						.method1703(JunkTex.signlink.applet, (byte) -106));
+						.method1703(ErrorReporting.signlink.applet, (byte) -106));
 				Class124 class124_8_ = (Class14_Sub15.aClass124_2995
-						.method1703(JunkTex.signlink.applet, (byte) -33));
+						.method1703(ErrorReporting.signlink.applet, (byte) -33));
 				Class124 class124_9_ = (JunkTex.method515((new Class124[] { class124_7_,
-						Class14_Sub9_Sub1.aClass124_4814, class124, Class133_Sub1.aClass124_3502, class124_8_ }),
+						Class14_Sub9_Sub1.aClass124_4814, class124, SceneGraphNode_GameEntity.aClass124_3502, class124_8_ }),
 						(byte) -120));
 				if (class124.length(i - 6346) == 0)
 					class124_9_ = JunkTex
@@ -178,12 +170,10 @@ public class Class14_Sub14 extends Linkable {
 				JunkTex
 						.method515(new Class124[] { JunkTex.aClass124_691, class124_9_, Static2.aClass124_2730 },
 								(byte) -34)
-						.method1669(27664, JunkTex.signlink.applet);
+						.method1669(27664, ErrorReporting.signlink.applet);
 			} catch (Throwable throwable) {
 				/* empty */
 			}
-			if (i != 6346)
-				aFrame2986 = null;
 		}
 	}
 

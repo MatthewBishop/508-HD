@@ -74,11 +74,11 @@ public class Class14_Sub8_Sub12 extends Class14_Sub8 {
 								anInt4289 = class14_sub10.readUByte();
 								break while_94_;
 							} while (false);
-							anInt4297 = class14_sub10.method805(0);
+							anInt4297 = class14_sub10.method805();
 							if (anInt4297 < 0) {
 								aShortArray4288 = new short[anInt4289];
 								for (i_25_ = 0; anInt4289 > i_25_; i_25_++)
-									aShortArray4288[i_25_] = (short) (class14_sub10.method805(0));
+									aShortArray4288[i_25_] = (short) (class14_sub10.method805());
 							}
 							break while_94_;
 						} while (false);

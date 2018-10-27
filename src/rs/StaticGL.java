@@ -24,11 +24,11 @@ public class StaticGL {
 		RT4GL.method1646();
 		for (int i = 0; i < Class14_Sub30.aClass14_Sub27ArrayArray3273[0].length; i++) {
 			HDTile class14_sub27 = Class14_Sub30.aClass14_Sub27ArrayArray3273[0][i];
-			if (class14_sub27.anInt3204 >= 0
-					&& (SDRaster.anInterface3_117.method12(class14_sub27.anInt3204) == 4)) {
-				gl.glColor4fv(RT4.getRBGAValue(class14_sub27.anInt3190), 0);
-				float f = 201.5F - (class14_sub27.aBoolean3201 ? 1.0F : 0.5F);
-				class14_sub27.method922((JunkTex.aClass14_Sub29ArrayArrayArray3368), f, true);
+			if (class14_sub27.texture >= 0
+					&& (SDRaster.anInterface3_117.method12(class14_sub27.texture) == 4)) {
+				gl.glColor4fv(RT4.getRBGAValue(class14_sub27.renderSettings), 0);
+				float f = 201.5F - (class14_sub27.hasEdges ? 1.0F : 0.5F);
+				class14_sub27.render((JunkTex.aClass14_Sub29ArrayArrayArray3368), f, true);
 			}
 		}
 		gl.glEnableClientState(32886);
@@ -61,29 +61,29 @@ public class StaticGL {
 							if (i_30_ >= i_25_ && i_30_ <= i_26_ && i_31_ >= i_27_ && i_31_ <= i_28_) {
 								if (class14_sub29.aClass113_3250 != null) {
 									Class113 class113 = class14_sub29.aClass113_3250;
-									class113.aClass133_1877.method1790(class113.anInt1886, class113.anInt1886,
+									class113.aSceneGraphNode_1877.method1790(class113.anInt1886, class113.anInt1886,
 											class113.anInt1878, class113.anInt1878, 124);
-									if (class113.aClass133_1884 != null)
-										class113.aClass133_1884.method1790(class113.anInt1886, class113.anInt1886,
+									if (class113.aSceneGraphNode_1884 != null)
+										class113.aSceneGraphNode_1884.method1790(class113.anInt1886, class113.anInt1886,
 												class113.anInt1878, class113.anInt1878, -123);
 								}
 								if (class14_sub29.aClass37_3255 != null) {
 									Class37 class37 = class14_sub29.aClass37_3255;
-									class37.aClass133_642.method1790(class37.anInt633, class37.anInt633,
+									class37.aSceneGraphNode_642.method1790(class37.anInt633, class37.anInt633,
 											class37.anInt653, class37.anInt653, -1);
-									if (class37.aClass133_638 != null)
-										class37.aClass133_638.method1790(class37.anInt633, class37.anInt633,
+									if (class37.aSceneGraphNode_638 != null)
+										class37.aSceneGraphNode_638.method1790(class37.anInt633, class37.anInt633,
 												class37.anInt653, class37.anInt653, -119);
 								}
 								if (class14_sub29.aClass4_3237 != null) {
 									Class4 class4 = class14_sub29.aClass4_3237;
-									class4.aClass133_124.method1790(class4.anInt122, class4.anInt122, class4.anInt136,
+									class4.aSceneGraphNode_124.method1790(class4.anInt122, class4.anInt122, class4.anInt136,
 											class4.anInt136, -123);
 								}
 								if (class14_sub29.aClass40Array3257 != null) {
 									for (int i_32_ = 0; i_32_ < class14_sub29.anInt3242; i_32_++) {
 										Class40 class40 = (class14_sub29.aClass40Array3257[i_32_]);
-										class40.aClass133_679.method1790(class40.anInt678, class40.anInt669,
+										class40.aSceneGraphNode_679.method1790(class40.anInt678, class40.anInt669,
 												class40.anInt670, class40.anInt668, 69);
 									}
 								}
@@ -114,25 +114,25 @@ public class StaticGL {
 			JunkTex.anInt4675 = -1;
 			for (int i_33_ = 0; i_33_ < (JunkTex.aClass14_Sub27ArrayArray2464[0]).length; i_33_++) {
 				HDTile class14_sub27 = (JunkTex.aClass14_Sub27ArrayArray2464[0][i_33_]);
-				float f = 251.5F - (class14_sub27.aBoolean3201 ? 1.0F : 0.5F);
-				if (class14_sub27.anInt3190 != Class7_Sub1.anInt2653) {
-					Class7_Sub1.anInt2653 = class14_sub27.anInt3190;
-					RT4.method1304(class14_sub27.anInt3190);
+				float f = 251.5F - (class14_sub27.hasEdges ? 1.0F : 0.5F);
+				if (class14_sub27.renderSettings != Class7_Sub1.anInt2653) {
+					Class7_Sub1.anInt2653 = class14_sub27.renderSettings;
+					RT4.method1304(class14_sub27.renderSettings);
 					AtmosphericEffects.setFogColour(RT4.method1590(false));
 				}
-				class14_sub27.method922((JunkTex.aClass14_Sub29ArrayArrayArray3368), f, false);
+				class14_sub27.render((JunkTex.aClass14_Sub29ArrayArrayArray3368), f, false);
 			}
 			WaterShader.disableTexCoordArray();
 		} else {
 			for (int i_34_ = Class14_Sub23.anInt3134; i_34_ < Class83.anInt1338; i_34_++) {
 				for (int i_35_ = 0; i_35_ < (JunkTex.aClass14_Sub27ArrayArray2464[i_34_]).length; i_35_++) {
 					HDTile class14_sub27 = (JunkTex.aClass14_Sub27ArrayArray2464[i_34_][i_35_]);
-					float f = (201.5F - i_34_ * 50.0F - (class14_sub27.aBoolean3201 ? 1.0F : 0.5F));
-					if (class14_sub27.anInt3204 != -1
-							&& SDRaster.anInterface3_117.method12(class14_sub27.anInt3204) == 4
+					float f = (201.5F - i_34_ * 50.0F - (class14_sub27.hasEdges ? 1.0F : 0.5F));
+					if (class14_sub27.texture != -1
+							&& SDRaster.anInterface3_117.method12(class14_sub27.texture) == 4
 							&& RT4.aBoolean374)
-						RT4.method1304(class14_sub27.anInt3190);
-					class14_sub27.method922(JunkTex.aClass14_Sub29ArrayArrayArray3368, f, false);
+						RT4.method1304(class14_sub27.renderSettings);
+					class14_sub27.render(JunkTex.aClass14_Sub29ArrayArrayArray3368, f, false);
 				}
 				if (i_34_ == 0 && Class89.anInt1413 > 0) {
 					RT4GL.setupSomeCustomProjectionStub(101.5F);

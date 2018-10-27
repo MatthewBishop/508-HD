@@ -3,7 +3,7 @@
  */
 package rs;
 
-public class Class92 {
+public class SD2DRaster {
 	public static int anInt1432;
 	public static int anInt1433;
 	public static int anInt1434;

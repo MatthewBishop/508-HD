@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.applet.Applet_Sub1;
 import com.jagex.io.js5.Class9;
 import com.jagex.link.HashTable;
 
@@ -14,7 +15,7 @@ public class Class88 {
 	public int anInt1403;
 
 	public static void method1435(byte i) {
-		Canvas_Sub1.method59((byte) -115);
+		Static2.method59((byte) -115);
 		Class44.method1156((byte) -54);
 		JunkTex.method530((byte) -11);
 		Class124.method1718(48);
@@ -28,7 +29,7 @@ public class Class88 {
 		Static2.method1124(97);
 		Class14_Sub30.method941((byte) 11);
 		Class7_Sub3.method134(0);
-		Class133.method1789((byte) -115);
+		SceneGraphNode.method1789((byte) -115);
 		JunkTex.aClass52_4596.method1209();
 	}
 
@@ -37,8 +38,8 @@ public class Class88 {
 		if (i >= -50)
 			method1439(11, -123, -108, 106);
 		JunkTex.aClass14_Sub10_Sub1_891.writeByte(Class1.method73((byte) -58));
-		JunkTex.aClass14_Sub10_Sub1_891.method833((byte) 109, Class83.anInt1340);
-		JunkTex.aClass14_Sub10_Sub1_891.method833((byte) 94, Class14_Sub20.anInt3094);
+		JunkTex.aClass14_Sub10_Sub1_891.method833((byte) 109, Applet_Sub1.anInt1340);
+		JunkTex.aClass14_Sub10_Sub1_891.method833((byte) 94, Applet_Sub1.anInt3094);
 		Class56_Sub1.aLong3317 = 0L;
 	}
 
@@ -51,7 +52,7 @@ public class Class88 {
 	public static boolean method1438(Class14_Sub9_Sub1 class14_sub9_sub1, Class9 class9, boolean bool, Class9 class9_1_,
 			Class9 class9_2_) {
 		Class59.aClass9_957 = class9_1_;
-		Class133_Sub5.aClass14_Sub9_Sub1_3625 = class14_sub9_sub1;
+		SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625 = class14_sub9_sub1;
 		if (bool)
 			aClass55_1398 = null;
 		Class44.aClass9_725 = class9;

@@ -10,36 +10,21 @@ import com.jagex.rt4.AtmosphericChunk;
 import com.jagex.rt4.lights.Light;
 import com.jagex.rt4.lights.LightManager;
 
-public class Class133_Sub3 extends Class133 {
-	public int anInt3557;
-	public int anInt3558;
-	public static int[] anIntArray3559 = new int[5];
-	public static Class124 aClass124_3563 = Class124.method263(1178, "Members object");
-	public int anInt3564 = -32768;
-	public static Class124 aClass124_3566 = Class124.method263(1178, "null");
-	public static Class14_Sub2_Sub16 aClass14_Sub2_Sub16_3567;
+public class SceneGraphNode_GroundObject extends SceneGraphNode {
+	public static Class124 aClass124_3563 = Class124.method263("Members object");
+	public static Class124 aClass124_3566 = Class124.method263("null");
 	public static Class124 aClass124_3568;
-	public static Class124 aClass124_3570 = Class124.method263(1178, "hitbar_default");
-
+	public static Class124 aClass124_3570 = Class124.method263("hitbar_default");
+	public static Class14_Sub2_Sub16 aClass14_Sub2_Sub16_3567;
+	public static int[] anIntArray3559 = new int[5];
 	static {
 		aClass124_3568 = aClass124_3563;
 	}
-
-	@Override
-	public void render(int i, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, long l) {
-		Class133_Sub7 class133_sub7 = JunkTex.method605(114, anInt3557).method1974(null, 0, 0, anInt3558);
-		if (class133_sub7 != null) {
-			class133_sub7.render(i, i_4_, i_5_, i_6_, i_7_, i_8_, i_9_, i_10_, l);
-			anInt3564 = class133_sub7.getMinY();
-		}
-	}
-
 	public static void method1830(Class14_Sub21 class14_sub21, int i) {
 		if (i != -1976917689)
 			aClass14_Sub2_Sub16_3567 = null;
 		Class116.method1596(200000, (byte) 79, class14_sub21);
 	}
-
 	public static void method1831(byte i) {
 		anIntArray3559 = null;
 		aClass124_3568 = null;
@@ -49,12 +34,6 @@ public class Class133_Sub3 extends Class133 {
 		if (i != -44)
 			aClass124_3566 = null;
 		aClass124_3566 = null;
-	}
-
-	@Override
-	public int getMinY() {
-		int i = anInt3564;
-		return i;
 	}
 
 	public static void method1833(boolean bool, int i, int i_13_, byte[] is, int i_14_, int i_15_, byte i_16_,
@@ -125,6 +104,27 @@ public class Class133_Sub3 extends Class133 {
 			if (atmosphericChunk == null)
 				atmosphericChunk = new AtmosphericChunk();
 			OverlayType.aClass71ArrayArray2421[i >> 3][i_15_ >> 35] = atmosphericChunk;
+		}
+	}
+
+	public int anInt3557;
+
+	public int anInt3558;
+
+	public int anInt3564 = -32768;
+
+	@Override
+	public int getMinYorMaxYCheckTHIS() {
+		int i = anInt3564;
+		return i;
+	}
+
+	@Override
+	public void render(int i, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, long l) {
+		SceneGraphNode_AbstractModelRenderer class133_sub7 = JunkTex.method605(114, anInt3557).method1974(null, 0, 0, anInt3558);
+		if (class133_sub7 != null) {
+			class133_sub7.render(i, i_4_, i_5_, i_6_, i_7_, i_8_, i_9_, i_10_, l);
+			anInt3564 = class133_sub7.getMinYorMaxYCheckTHIS();
 		}
 	}
 }

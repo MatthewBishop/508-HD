@@ -70,19 +70,19 @@ public class Class12 {
 	public boolean aBoolean342;
 
 	static {
-		aClass124_278 = Class124.method263(1178, "flash1:");
+		aClass124_278 = Class124.method263("flash1:");
 		aClass124_311 = aClass124_278;
 		aClass124_328 = aClass124_278;
 	}
 
-	public Class133_Sub7 method209(int var1, int var2, Animation var3, Animation var4, int var5) {
+	public SceneGraphNode_AbstractModelRenderer method209(int var1, int var2, Animation var3, Animation var4, int var5) {
 		try {
 			if (var5 > -29) {
-				method213(98, 38, (Class79) null, (byte) -10, -46, (Class133_Sub1_Sub1) null, (Class133_Sub1_Sub2) null,
+				method213(98, 38, (Class79) null, (byte) -10, -46, (SceneGraphNode_GameEntity_Sub1) null, (SceneGraphNode_GameEntity_Sub2) null,
 						-116);
 			}
 
-			Class133_Sub7 var7;
+			SceneGraphNode_AbstractModelRenderer var7;
 			if (this.anIntArray329 != null) {
 				Class12 var13 = this.method217((byte) -18);
 				if (var13 == null) {
@@ -93,7 +93,7 @@ public class Class12 {
 					return var7;
 				}
 			} else {
-				Class133_Sub7 var6 = (Class133_Sub7) Class37.aClass52_635.get(this.anInt337);
+				SceneGraphNode_AbstractModelRenderer var6 = (SceneGraphNode_AbstractModelRenderer) Class37.aClass52_635.get(this.anInt337);
 				if (var6 == null) {
 					boolean var8 = false;
 
@@ -107,10 +107,10 @@ public class Class12 {
 						return null;
 					}
 
-					Class133_Sub2[] var14 = new Class133_Sub2[this.anIntArray309.length];
+					SceneGraphNode_Model[] var14 = new SceneGraphNode_Model[this.anIntArray309.length];
 
 					for (int var10 = 0; var10 < this.anIntArray309.length; ++var10) {
-						var14[var10] = Class133_Sub2.method1824(JunkTex.aClass9_429, this.anIntArray309[var10], 0);
+						var14[var10] = SceneGraphNode_Model.method1824(JunkTex.aClass9_429, this.anIntArray309[var10], 0);
 						if (this.anIntArrayArray316 != null && this.anIntArrayArray316[var10] != null
 								&& var14[var10] != null) {
 							var14[var10].method1825(this.anIntArrayArray316[var10][0],
@@ -118,11 +118,11 @@ public class Class12 {
 						}
 					}
 
-					Class133_Sub2 var15;
+					SceneGraphNode_Model var15;
 					if (var14.length == 1) {
 						var15 = var14[0];
 					} else {
-						var15 = new Class133_Sub2(var14, var14.length);
+						var15 = new SceneGraphNode_Model(var14, var14.length);
 					}
 
 					int var11;
@@ -176,9 +176,9 @@ public class Class12 {
 			boolean bool) {
 		int i_21_ = class6.anIntArray164.length;
 		for (int i_22_ = 0; i_22_ < i_21_; i_22_++) {
-			int i_23_ = class6.anIntArray164[i_22_] - Class4.anInt125;
+			int i_23_ = class6.anIntArray164[i_22_] - Class4.cameraX;
 			int i_24_ = class6.anIntArray158[i_22_] - Static2.cameraY;
-			int i_25_ = class6.anIntArray155[i_22_] - Class14_Sub2_Sub8.anInt3853;
+			int i_25_ = class6.anIntArray155[i_22_] - Class14_Sub2_Sub8.cameraZ;
 			int i_26_ = i_25_ * i_17_ + i_23_ * i_18_ >> 16;
 			i_25_ = i_25_ * i_18_ - i_23_ * i_17_ >> 16;
 			i_23_ = i_26_;
@@ -254,7 +254,7 @@ public class Class12 {
 	}
 
 	public static void method213(int i, int i_44_, Class79 class79, byte i_45_, int i_46_,
-			Class133_Sub1_Sub1 class133_sub1_sub1, Class133_Sub1_Sub2 class133_sub1_sub2, int i_47_) {
+			SceneGraphNode_GameEntity_Sub1 class133_sub1_sub1, SceneGraphNode_GameEntity_Sub2 class133_sub1_sub2, int i_47_) {
 		Class14_Sub3 class14_sub3 = new Class14_Sub3();
 		if (i_45_ != -35)
 			method221(96, -74, (byte) 85);
@@ -285,7 +285,7 @@ public class Class12 {
 						* (-class14_sub3.anInt2772 + class14_sub3.anInt2769)) + class14_sub3.anInt2772);
 			Class152.aClass2_2438.pushBack(class14_sub3);
 		} else if (class133_sub1_sub2 != null) {
-			class14_sub3.aClass133_Sub1_Sub2_2762 = class133_sub1_sub2;
+			class14_sub3.aSceneGraphNode_GameEntity_Sub2_2762 = class133_sub1_sub2;
 			Class12 class12 = class133_sub1_sub2.aClass12_4949;
 			if (class12.anIntArray329 != null) {
 				class14_sub3.aBoolean2757 = true;
@@ -300,7 +300,7 @@ public class Class12 {
 			JunkTex.aClass2_683.pushBack(class14_sub3);
 		} else if (class133_sub1_sub1 != null) {
 			class14_sub3.anInt2751 = (class133_sub1_sub1.anInt3493 + i_44_) * 128;
-			class14_sub3.aClass133_Sub1_Sub1_2755 = class133_sub1_sub1;
+			class14_sub3.aSceneGraphNode_GameEntity_Sub1_2755 = class133_sub1_sub1;
 			class14_sub3.anInt2761 = (class133_sub1_sub1.anInt3493 + i) * 128;
 			class14_sub3.anInt2753 = Class116.method1597(false, class133_sub1_sub1);
 			class14_sub3.anInt2765 = class133_sub1_sub1.anInt4917 * 128;
@@ -622,8 +622,8 @@ public class Class12 {
 			int var3 = var1.readUByte();
 			if (var3 == 0) {
 				if (!var2) {
-					method213(-95, 93, (Class79) null, (byte) 88, 89, (Class133_Sub1_Sub1) null,
-							(Class133_Sub1_Sub2) null, -46);
+					method213(-95, 93, (Class79) null, (byte) 88, 89, (SceneGraphNode_GameEntity_Sub1) null,
+							(SceneGraphNode_GameEntity_Sub2) null, -46);
 				}
 
 				return;
@@ -677,11 +677,11 @@ public class Class12 {
 			anInt306 = 73;
 	}
 
-	public Class133_Sub7 method224(byte var1, Animation var2, int var3) {
+	public SceneGraphNode_AbstractModelRenderer method224(byte var1, Animation var2, int var3) {
 		try {
 			if (this.anIntArray329 != null) {
 				Class12 var11 = this.method217((byte) -18);
-				Class133_Sub7 var10;
+				SceneGraphNode_AbstractModelRenderer var10;
 				if (var11 == null) {
 					var10 = null;
 					return var10;
@@ -690,12 +690,12 @@ public class Class12 {
 					return var10;
 				}
 			} else {
-				Class133_Sub7 var4;
+				SceneGraphNode_AbstractModelRenderer var4;
 				if (this.anIntArray338 == null) {
 					var4 = null;
 					return var4;
 				} else {
-					var4 = (Class133_Sub7) JunkTex.aClass52_4186.get(this.anInt337);
+					var4 = (SceneGraphNode_AbstractModelRenderer) JunkTex.aClass52_4186.get(this.anInt337);
 					if (var1 > -93) {
 						this.anInt279 = 41;
 					}
@@ -713,15 +713,15 @@ public class Class12 {
 							return null;
 						}
 
-						Class133_Sub2[] var12 = new Class133_Sub2[this.anIntArray338.length];
+						SceneGraphNode_Model[] var12 = new SceneGraphNode_Model[this.anIntArray338.length];
 
 						for (int var7 = 0; this.anIntArray338.length > var7; ++var7) {
-							var12[var7] = Class133_Sub2.method1824(JunkTex.aClass9_429, this.anIntArray338[var7], 0);
+							var12[var7] = SceneGraphNode_Model.method1824(JunkTex.aClass9_429, this.anIntArray338[var7], 0);
 						}
 
-						Class133_Sub2 var13;
+						SceneGraphNode_Model var13;
 						if (1 != var12.length) {
-							var13 = new Class133_Sub2(var12, var12.length);
+							var13 = new SceneGraphNode_Model(var12, var12.length);
 						} else {
 							var13 = var12[0];
 						}

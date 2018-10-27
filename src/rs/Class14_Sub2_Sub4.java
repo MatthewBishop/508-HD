@@ -5,22 +5,24 @@ package rs;
 
 import java.awt.Frame;
 
+import com.jagex.applet.Class31;
+import com.jagex.applet.Class43;
 import com.jagex.io.js5.SFSS;
 import com.jagex.link.Cacheable;
 import com.jagex.util.Util;
 
 public class Class14_Sub2_Sub4 extends Cacheable {
-	public Class133_Sub3 aClass133_Sub3_3789;
+	public SceneGraphNode_GroundObject aSceneGraphNode_GroundObject_3789;
 	public static int[] anIntArray3791;
 	public static Class124 aClass124_3793;
-	public static Class124 aClass124_3795 = Class124.method263(1178, "sl_flags");
+	public static Class124 aClass124_3795 = Class124.method263("sl_flags");
 	static {
-		aClass124_3793 = Class124.method263(1178, " zuerst von Ihrer Freunde)2Liste(Q");
+		aClass124_3793 = Class124.method263(" zuerst von Ihrer Freunde)2Liste(Q");
 		anIntArray3791 = new int[] { 2, 2, 4, 0, 1, 8, 0, 0, 0, 0, 2 };
 	}
 
-	public Class14_Sub2_Sub4(Class133_Sub3 class133_sub3) {
-		aClass133_Sub3_3789 = class133_sub3;
+	public Class14_Sub2_Sub4(SceneGraphNode_GroundObject class133_sub3) {
+		aSceneGraphNode_GroundObject_3789 = class133_sub3;
 	}
 
 	public static void method278(Class43 class43, Frame frame, int i) {

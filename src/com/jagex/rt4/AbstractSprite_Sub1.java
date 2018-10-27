@@ -3,7 +3,7 @@
  */
 package com.jagex.rt4;
 
-import rs.Class92;
+import rs.SD2DRaster;
 
 public class AbstractSprite_Sub1 extends AbstractSprite {
 	public int[] pixels;
@@ -32,29 +32,29 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 				i_1_ = ((i_3_ << 16) - i_5_ + i_9_ - 1) / i_9_;
 			if (i_4_ < i_8_)
 				i_2_ = ((i_4_ << 16) - i_6_ + i_10_ - 1) / i_10_;
-			int i_13_ = i + i_0_ * Class92.anInt1432;
-			int i_14_ = Class92.anInt1432 - i_1_;
-			if (i_0_ + i_2_ > Class92.anInt1436)
-				i_2_ -= i_0_ + i_2_ - Class92.anInt1436;
-			if (i_0_ < Class92.anInt1438) {
-				int i_15_ = Class92.anInt1438 - i_0_;
+			int i_13_ = i + i_0_ * SD2DRaster.anInt1432;
+			int i_14_ = SD2DRaster.anInt1432 - i_1_;
+			if (i_0_ + i_2_ > SD2DRaster.anInt1436)
+				i_2_ -= i_0_ + i_2_ - SD2DRaster.anInt1436;
+			if (i_0_ < SD2DRaster.anInt1438) {
+				int i_15_ = SD2DRaster.anInt1438 - i_0_;
 				i_2_ -= i_15_;
-				i_13_ += i_15_ * Class92.anInt1432;
+				i_13_ += i_15_ * SD2DRaster.anInt1432;
 				i_6_ += i_10_ * i_15_;
 			}
-			if (i + i_1_ > Class92.anInt1434) {
-				int i_16_ = i + i_1_ - Class92.anInt1434;
+			if (i + i_1_ > SD2DRaster.anInt1434) {
+				int i_16_ = i + i_1_ - SD2DRaster.anInt1434;
 				i_1_ -= i_16_;
 				i_14_ += i_16_;
 			}
-			if (i < Class92.anInt1433) {
-				int i_17_ = Class92.anInt1433 - i;
+			if (i < SD2DRaster.anInt1433) {
+				int i_17_ = SD2DRaster.anInt1433 - i;
 				i_1_ -= i_17_;
 				i_13_ += i_17_;
 				i_5_ += i_9_ * i_17_;
 				i_14_ += i_17_;
 			}
-			method414(Class92.anIntArray1437, pixels, 0, i_5_, i_6_, i_13_, i_14_, i_1_, i_2_, i_9_, i_10_,
+			method414(SD2DRaster.anIntArray1437, pixels, 0, i_5_, i_6_, i_13_, i_14_, i_1_, i_2_, i_9_, i_10_,
 					i_3_);
 		}
 	}
@@ -62,38 +62,38 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 	public void drawReg(int i, int i_18_) {
 		i += offsetX;
 		i_18_ += offsetY;
-		int i_19_ = i + i_18_ * Class92.anInt1432;
+		int i_19_ = i + i_18_ * SD2DRaster.anInt1432;
 		int i_20_ = 0;
 		int i_21_ = height;
 		int i_22_ = width;
-		int i_23_ = Class92.anInt1432 - i_22_;
+		int i_23_ = SD2DRaster.anInt1432 - i_22_;
 		int i_24_ = 0;
-		if (i_18_ < Class92.anInt1438) {
-			int i_25_ = Class92.anInt1438 - i_18_;
+		if (i_18_ < SD2DRaster.anInt1438) {
+			int i_25_ = SD2DRaster.anInt1438 - i_18_;
 			i_21_ -= i_25_;
-			i_18_ = Class92.anInt1438;
+			i_18_ = SD2DRaster.anInt1438;
 			i_20_ += i_25_ * i_22_;
-			i_19_ += i_25_ * Class92.anInt1432;
+			i_19_ += i_25_ * SD2DRaster.anInt1432;
 		}
-		if (i_18_ + i_21_ > Class92.anInt1436)
-			i_21_ -= i_18_ + i_21_ - Class92.anInt1436;
-		if (i < Class92.anInt1433) {
-			int i_26_ = Class92.anInt1433 - i;
+		if (i_18_ + i_21_ > SD2DRaster.anInt1436)
+			i_21_ -= i_18_ + i_21_ - SD2DRaster.anInt1436;
+		if (i < SD2DRaster.anInt1433) {
+			int i_26_ = SD2DRaster.anInt1433 - i;
 			i_22_ -= i_26_;
-			i = Class92.anInt1433;
+			i = SD2DRaster.anInt1433;
 			i_20_ += i_26_;
 			i_19_ += i_26_;
 			i_24_ += i_26_;
 			i_23_ += i_26_;
 		}
-		if (i + i_22_ > Class92.anInt1434) {
-			int i_27_ = i + i_22_ - Class92.anInt1434;
+		if (i + i_22_ > SD2DRaster.anInt1434) {
+			int i_27_ = i + i_22_ - SD2DRaster.anInt1434;
 			i_22_ -= i_27_;
 			i_24_ += i_27_;
 			i_23_ += i_27_;
 		}
 		if (i_22_ > 0 && i_21_ > 0)
-			method401(Class92.anIntArray1437, pixels, 0, i_20_, i_19_, i_22_, i_21_, i_23_, i_24_);
+			method401(SD2DRaster.anIntArray1437, pixels, 0, i_20_, i_19_, i_22_, i_21_, i_23_, i_24_);
 	}
 
 	public static void method401(int[] is, int[] is_28_, int i, int i_29_, int i_30_, int i_31_, int i_32_, int i_33_,
@@ -159,29 +159,29 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 				i_40_ = ((i_43_ << 16) - i_45_ + i_49_ - 1) / i_49_;
 			if (i_44_ < i_48_)
 				i_41_ = ((i_44_ << 16) - i_46_ + i_50_ - 1) / i_50_;
-			int i_53_ = i + i_39_ * Class92.anInt1432;
-			int i_54_ = Class92.anInt1432 - i_40_;
-			if (i_39_ + i_41_ > Class92.anInt1436)
-				i_41_ -= i_39_ + i_41_ - Class92.anInt1436;
-			if (i_39_ < Class92.anInt1438) {
-				int i_55_ = Class92.anInt1438 - i_39_;
+			int i_53_ = i + i_39_ * SD2DRaster.anInt1432;
+			int i_54_ = SD2DRaster.anInt1432 - i_40_;
+			if (i_39_ + i_41_ > SD2DRaster.anInt1436)
+				i_41_ -= i_39_ + i_41_ - SD2DRaster.anInt1436;
+			if (i_39_ < SD2DRaster.anInt1438) {
+				int i_55_ = SD2DRaster.anInt1438 - i_39_;
 				i_41_ -= i_55_;
-				i_53_ += i_55_ * Class92.anInt1432;
+				i_53_ += i_55_ * SD2DRaster.anInt1432;
 				i_46_ += i_50_ * i_55_;
 			}
-			if (i + i_40_ > Class92.anInt1434) {
-				int i_56_ = i + i_40_ - Class92.anInt1434;
+			if (i + i_40_ > SD2DRaster.anInt1434) {
+				int i_56_ = i + i_40_ - SD2DRaster.anInt1434;
 				i_40_ -= i_56_;
 				i_54_ += i_56_;
 			}
-			if (i < Class92.anInt1433) {
-				int i_57_ = Class92.anInt1433 - i;
+			if (i < SD2DRaster.anInt1433) {
+				int i_57_ = SD2DRaster.anInt1433 - i;
 				i_40_ -= i_57_;
 				i_53_ += i_57_;
 				i_45_ += i_49_ * i_57_;
 				i_54_ += i_57_;
 			}
-			method409(Class92.anIntArray1437, pixels, 0, i_45_, i_46_, i_53_, i_54_, i_40_, i_41_, i_49_, i_50_,
+			method409(SD2DRaster.anIntArray1437, pixels, 0, i_45_, i_46_, i_53_, i_54_, i_40_, i_41_, i_49_, i_50_,
 					i_43_, i_42_);
 		}
 	}
@@ -254,38 +254,38 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 	public void drawSpriteTransparency(int i, int i_81_, int i_82_) {
 		i += offsetX;
 		i_81_ += offsetY;
-		int i_83_ = i + i_81_ * Class92.anInt1432;
+		int i_83_ = i + i_81_ * SD2DRaster.anInt1432;
 		int i_84_ = 0;
 		int i_85_ = height;
 		int i_86_ = width;
-		int i_87_ = Class92.anInt1432 - i_86_;
+		int i_87_ = SD2DRaster.anInt1432 - i_86_;
 		int i_88_ = 0;
-		if (i_81_ < Class92.anInt1438) {
-			int i_89_ = Class92.anInt1438 - i_81_;
+		if (i_81_ < SD2DRaster.anInt1438) {
+			int i_89_ = SD2DRaster.anInt1438 - i_81_;
 			i_85_ -= i_89_;
-			i_81_ = Class92.anInt1438;
+			i_81_ = SD2DRaster.anInt1438;
 			i_84_ += i_89_ * i_86_;
-			i_83_ += i_89_ * Class92.anInt1432;
+			i_83_ += i_89_ * SD2DRaster.anInt1432;
 		}
-		if (i_81_ + i_85_ > Class92.anInt1436)
-			i_85_ -= i_81_ + i_85_ - Class92.anInt1436;
-		if (i < Class92.anInt1433) {
-			int i_90_ = Class92.anInt1433 - i;
+		if (i_81_ + i_85_ > SD2DRaster.anInt1436)
+			i_85_ -= i_81_ + i_85_ - SD2DRaster.anInt1436;
+		if (i < SD2DRaster.anInt1433) {
+			int i_90_ = SD2DRaster.anInt1433 - i;
 			i_86_ -= i_90_;
-			i = Class92.anInt1433;
+			i = SD2DRaster.anInt1433;
 			i_84_ += i_90_;
 			i_83_ += i_90_;
 			i_88_ += i_90_;
 			i_87_ += i_90_;
 		}
-		if (i + i_86_ > Class92.anInt1434) {
-			int i_91_ = i + i_86_ - Class92.anInt1434;
+		if (i + i_86_ > SD2DRaster.anInt1434) {
+			int i_91_ = i + i_86_ - SD2DRaster.anInt1434;
 			i_86_ -= i_91_;
 			i_88_ += i_91_;
 			i_87_ += i_91_;
 		}
 		if (i_86_ > 0 && i_85_ > 0)
-			method407(Class92.anIntArray1437, pixels, 0, i_84_, i_83_, i_86_, i_85_, i_87_, i_88_, i_82_);
+			method407(SD2DRaster.anIntArray1437, pixels, 0, i_84_, i_83_, i_86_, i_85_, i_87_, i_88_, i_82_);
 	}
 
 	public static void method405(int[] is, int[] is_92_, int i, int i_93_, int i_94_, int i_95_, int i_96_, int i_97_) {
@@ -396,38 +396,38 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 	public void method390(int i, int i_141_) {
 		i += offsetX;
 		i_141_ += offsetY;
-		int i_142_ = i + i_141_ * Class92.anInt1432;
+		int i_142_ = i + i_141_ * SD2DRaster.anInt1432;
 		int i_143_ = 0;
 		int i_144_ = height;
 		int i_145_ = width;
-		int i_146_ = Class92.anInt1432 - i_145_;
+		int i_146_ = SD2DRaster.anInt1432 - i_145_;
 		int i_147_ = 0;
-		if (i_141_ < Class92.anInt1438) {
-			int i_148_ = Class92.anInt1438 - i_141_;
+		if (i_141_ < SD2DRaster.anInt1438) {
+			int i_148_ = SD2DRaster.anInt1438 - i_141_;
 			i_144_ -= i_148_;
-			i_141_ = Class92.anInt1438;
+			i_141_ = SD2DRaster.anInt1438;
 			i_143_ += i_148_ * i_145_;
-			i_142_ += i_148_ * Class92.anInt1432;
+			i_142_ += i_148_ * SD2DRaster.anInt1432;
 		}
-		if (i_141_ + i_144_ > Class92.anInt1436)
-			i_144_ -= i_141_ + i_144_ - Class92.anInt1436;
-		if (i < Class92.anInt1433) {
-			int i_149_ = Class92.anInt1433 - i;
+		if (i_141_ + i_144_ > SD2DRaster.anInt1436)
+			i_144_ -= i_141_ + i_144_ - SD2DRaster.anInt1436;
+		if (i < SD2DRaster.anInt1433) {
+			int i_149_ = SD2DRaster.anInt1433 - i;
 			i_145_ -= i_149_;
-			i = Class92.anInt1433;
+			i = SD2DRaster.anInt1433;
 			i_143_ += i_149_;
 			i_142_ += i_149_;
 			i_147_ += i_149_;
 			i_146_ += i_149_;
 		}
-		if (i + i_145_ > Class92.anInt1434) {
-			int i_150_ = i + i_145_ - Class92.anInt1434;
+		if (i + i_145_ > SD2DRaster.anInt1434) {
+			int i_150_ = i + i_145_ - SD2DRaster.anInt1434;
 			i_145_ -= i_150_;
 			i_147_ += i_150_;
 			i_146_ += i_150_;
 		}
 		if (i_145_ > 0 && i_144_ > 0)
-			method405(Class92.anIntArray1437, pixels, i_143_, i_142_, i_145_, i_144_, i_146_, i_147_);
+			method405(SD2DRaster.anIntArray1437, pixels, i_143_, i_142_, i_145_, i_144_, i_146_, i_147_);
 	}
 
 	public void method411(int i) {
@@ -524,19 +524,19 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 			i_173_ = i_173_ + 15 >> 4;
 			i_174_ >>= 4;
 			i_175_ = i_175_ + 15 >> 4;
-			if (i_172_ < Class92.anInt1433)
-				i_172_ = Class92.anInt1433;
-			if (i_173_ > Class92.anInt1434)
-				i_173_ = Class92.anInt1434;
-			if (i_174_ < Class92.anInt1438)
-				i_174_ = Class92.anInt1438;
-			if (i_175_ > Class92.anInt1436)
-				i_175_ = Class92.anInt1436;
+			if (i_172_ < SD2DRaster.anInt1433)
+				i_172_ = SD2DRaster.anInt1433;
+			if (i_173_ > SD2DRaster.anInt1434)
+				i_173_ = SD2DRaster.anInt1434;
+			if (i_174_ < SD2DRaster.anInt1438)
+				i_174_ = SD2DRaster.anInt1438;
+			if (i_175_ > SD2DRaster.anInt1436)
+				i_175_ = SD2DRaster.anInt1436;
 			i_173_ = i_172_ - i_173_;
 			if (i_173_ < 0) {
 				i_175_ = i_174_ - i_175_;
 				if (i_175_ < 0) {
-					int i_176_ = i_174_ * Class92.anInt1432 + i_172_;
+					int i_176_ = i_174_ * SD2DRaster.anInt1432 + i_172_;
 					double d_177_ = 1.6777216E7 / (double) i_161_;
 					int i_178_ = (int) Math.floor(Math.sin(d) * d_177_ + 0.5);
 					int i_179_ = (int) Math.floor(Math.cos(d) * d_177_ + 0.5);
@@ -557,13 +557,13 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 									for (/**/; i_188_ < 0; i_188_++) {
 										int i_189_ = (pixels[((i_187_ >> 12) * width + (i_186_ >> 12))]);
 										if (i_189_ != 0)
-											Class92.anIntArray1437[i_185_++] = i_189_;
+											SD2DRaster.anIntArray1437[i_185_++] = i_189_;
 										else
 											i_185_++;
 									}
 								}
 								i_184_++;
-								i_176_ += Class92.anInt1432;
+								i_176_ += SD2DRaster.anInt1432;
 							}
 						} else if (i_178_ < 0) {
 							int i_190_ = i_175_;
@@ -585,7 +585,7 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 									for (/**/; i_194_ < 0; i_194_++) {
 										int i_196_ = (pixels[((i_193_ >> 12) * width + (i_192_ >> 12))]);
 										if (i_196_ != 0)
-											Class92.anIntArray1437[i_191_++] = i_196_;
+											SD2DRaster.anIntArray1437[i_191_++] = i_196_;
 										else
 											i_191_++;
 										i_193_ += i_178_;
@@ -593,7 +593,7 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 								}
 								i_190_++;
 								i_182_ -= i_178_;
-								i_176_ += Class92.anInt1432;
+								i_176_ += SD2DRaster.anInt1432;
 							}
 						} else {
 							int i_197_ = i_175_;
@@ -615,7 +615,7 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 									for (/**/; i_201_ < 0; i_201_++) {
 										int i_204_ = (pixels[((i_200_ >> 12) * width + (i_199_ >> 12))]);
 										if (i_204_ != 0)
-											Class92.anIntArray1437[i_198_++] = i_204_;
+											SD2DRaster.anIntArray1437[i_198_++] = i_204_;
 										else
 											i_198_++;
 										i_200_ += i_178_;
@@ -623,7 +623,7 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 								}
 								i_197_++;
 								i_182_ -= i_178_;
-								i_176_ += Class92.anInt1432;
+								i_176_ += SD2DRaster.anInt1432;
 							}
 						}
 					} else if (i_179_ < 0) {
@@ -647,7 +647,7 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 									for (/**/; i_209_ < 0; i_209_++) {
 										int i_211_ = (pixels[((i_208_ >> 12) * width + (i_207_ >> 12))]);
 										if (i_211_ != 0)
-											Class92.anIntArray1437[i_206_++] = i_211_;
+											SD2DRaster.anIntArray1437[i_206_++] = i_211_;
 										else
 											i_206_++;
 										i_207_ += i_179_;
@@ -655,7 +655,7 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 								}
 								i_205_++;
 								i_183_ += i_179_;
-								i_176_ += Class92.anInt1432;
+								i_176_ += SD2DRaster.anInt1432;
 							}
 						} else if (i_178_ < 0) {
 							int i_212_ = i_175_;
@@ -686,7 +686,7 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 								for (/**/; i_216_ < 0; i_216_++) {
 									int i_218_ = (pixels[((i_215_ >> 12) * width + (i_214_ >> 12))]);
 									if (i_218_ != 0)
-										Class92.anIntArray1437[i_213_++] = i_218_;
+										SD2DRaster.anIntArray1437[i_213_++] = i_218_;
 									else
 										i_213_++;
 									i_214_ += i_179_;
@@ -695,7 +695,7 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 								i_212_++;
 								i_182_ -= i_178_;
 								i_183_ += i_179_;
-								i_176_ += Class92.anInt1432;
+								i_176_ += SD2DRaster.anInt1432;
 							}
 						} else {
 							int i_219_ = i_175_;
@@ -726,7 +726,7 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 								for (/**/; i_223_ < 0; i_223_++) {
 									int i_225_ = (pixels[((i_222_ >> 12) * width + (i_221_ >> 12))]);
 									if (i_225_ != 0)
-										Class92.anIntArray1437[i_220_++] = i_225_;
+										SD2DRaster.anIntArray1437[i_220_++] = i_225_;
 									else
 										i_220_++;
 									i_221_ += i_179_;
@@ -735,7 +735,7 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 								i_219_++;
 								i_182_ -= i_178_;
 								i_183_ += i_179_;
-								i_176_ += Class92.anInt1432;
+								i_176_ += SD2DRaster.anInt1432;
 							}
 						}
 					} else if (i_178_ == 0) {
@@ -758,7 +758,7 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 								for (/**/; i_230_ < 0; i_230_++) {
 									int i_233_ = (pixels[((i_229_ >> 12) * width + (i_228_ >> 12))]);
 									if (i_233_ != 0)
-										Class92.anIntArray1437[i_227_++] = i_233_;
+										SD2DRaster.anIntArray1437[i_227_++] = i_233_;
 									else
 										i_227_++;
 									i_228_ += i_179_;
@@ -766,7 +766,7 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 							}
 							i_226_++;
 							i_183_ += i_179_;
-							i_176_ += Class92.anInt1432;
+							i_176_ += SD2DRaster.anInt1432;
 						}
 					} else if (i_178_ < 0) {
 						int i_234_ = i_175_;
@@ -797,7 +797,7 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 							for (/**/; i_238_ < 0; i_238_++) {
 								int i_241_ = (pixels[(i_237_ >> 12) * width + (i_236_ >> 12)]);
 								if (i_241_ != 0)
-									Class92.anIntArray1437[i_235_++] = i_241_;
+									SD2DRaster.anIntArray1437[i_235_++] = i_241_;
 								else
 									i_235_++;
 								i_236_ += i_179_;
@@ -806,7 +806,7 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 							i_234_++;
 							i_182_ -= i_178_;
 							i_183_ += i_179_;
-							i_176_ += Class92.anInt1432;
+							i_176_ += SD2DRaster.anInt1432;
 						}
 					} else {
 						int i_242_ = i_175_;
@@ -837,7 +837,7 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 							for (/**/; i_246_ < 0; i_246_++) {
 								int i_249_ = (pixels[(i_245_ >> 12) * width + (i_244_ >> 12)]);
 								if (i_249_ != 0)
-									Class92.anIntArray1437[i_243_++] = i_249_;
+									SD2DRaster.anIntArray1437[i_243_++] = i_249_;
 								else
 									i_243_++;
 								i_244_ += i_179_;
@@ -846,7 +846,7 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 							i_242_++;
 							i_182_ -= i_178_;
 							i_183_ += i_179_;
-							i_176_ += Class92.anInt1432;
+							i_176_ += SD2DRaster.anInt1432;
 						}
 					}
 				}
@@ -855,7 +855,7 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 	}
 
 	public void method413() {
-		Class92.method1455(pixels, width, height);
+		SD2DRaster.method1455(pixels, width, height);
 	}
 
 	public static void method414(int[] is, int[] is_250_, int i, int i_251_, int i_252_, int i_253_, int i_254_,
@@ -900,38 +900,38 @@ public class AbstractSprite_Sub1 extends AbstractSprite {
 		else {
 			i += offsetX;
 			i_270_ += offsetY;
-			int i_273_ = i + i_270_ * Class92.anInt1432;
+			int i_273_ = i + i_270_ * SD2DRaster.anInt1432;
 			int i_274_ = 0;
 			int i_275_ = height;
 			int i_276_ = width;
-			int i_277_ = Class92.anInt1432 - i_276_;
+			int i_277_ = SD2DRaster.anInt1432 - i_276_;
 			int i_278_ = 0;
-			if (i_270_ < Class92.anInt1438) {
-				int i_279_ = Class92.anInt1438 - i_270_;
+			if (i_270_ < SD2DRaster.anInt1438) {
+				int i_279_ = SD2DRaster.anInt1438 - i_270_;
 				i_275_ -= i_279_;
-				i_270_ = Class92.anInt1438;
+				i_270_ = SD2DRaster.anInt1438;
 				i_274_ += i_279_ * i_276_;
-				i_273_ += i_279_ * Class92.anInt1432;
+				i_273_ += i_279_ * SD2DRaster.anInt1432;
 			}
-			if (i_270_ + i_275_ > Class92.anInt1436)
-				i_275_ -= i_270_ + i_275_ - Class92.anInt1436;
-			if (i < Class92.anInt1433) {
-				int i_280_ = Class92.anInt1433 - i;
+			if (i_270_ + i_275_ > SD2DRaster.anInt1436)
+				i_275_ -= i_270_ + i_275_ - SD2DRaster.anInt1436;
+			if (i < SD2DRaster.anInt1433) {
+				int i_280_ = SD2DRaster.anInt1433 - i;
 				i_276_ -= i_280_;
-				i = Class92.anInt1433;
+				i = SD2DRaster.anInt1433;
 				i_274_ += i_280_;
 				i_273_ += i_280_;
 				i_278_ += i_280_;
 				i_277_ += i_280_;
 			}
-			if (i + i_276_ > Class92.anInt1434) {
-				int i_281_ = i + i_276_ - Class92.anInt1434;
+			if (i + i_276_ > SD2DRaster.anInt1434) {
+				int i_281_ = i + i_276_ - SD2DRaster.anInt1434;
 				i_276_ -= i_281_;
 				i_278_ += i_281_;
 				i_277_ += i_281_;
 			}
 			if (i_276_ > 0 && i_275_ > 0)
-				method403(Class92.anIntArray1437, pixels, 0, i_274_, i_273_, i_276_, i_275_, i_277_, i_278_,
+				method403(SD2DRaster.anIntArray1437, pixels, 0, i_274_, i_273_, i_276_, i_275_, i_277_, i_278_,
 						i_271_, i_272_);
 		}
 	}

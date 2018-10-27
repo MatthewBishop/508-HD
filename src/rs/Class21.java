@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.applet.ErrorReporting;
 import com.jagex.io.Buffer;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.util.ArrayUtils;
@@ -17,12 +18,6 @@ public class Class21 {
 	public int[] anIntArray447 = { -1, -1, -1, -1, -1 };
 	public boolean aBoolean449 = false;
 	public short[] aShortArray450;
-	public static int[][] anIntArrayArray452 = { new int[0], { 128, 0, 128, 128, 0, 128 },
-			{ 0, 0, 128, 0, 128, 128, 64, 128 }, { 0, 128, 0, 0, 128, 0, 64, 128 }, { 0, 0, 64, 128, 0, 128 },
-			{ 128, 128, 64, 128, 128, 0 }, { 64, 0, 128, 0, 128, 128, 64, 128 },
-			{ 128, 0, 128, 128, 0, 128, 0, 64, 64, 0 }, { 0, 0, 64, 0, 0, 64 },
-			{ 0, 0, 128, 0, 128, 128, 64, 96, 32, 64 }, { 0, 128, 0, 0, 32, 64, 64, 96, 128, 128 },
-			{ 0, 128, 0, 0, 32, 32, 96, 32, 128, 0, 128, 128 } };
 	public short[] aShortArray453;
 	public short[] aShortArray455;
 	public int[] anIntArray457;
@@ -78,17 +73,17 @@ public class Class21 {
 			aBoolean449 = true;
 	}
 
-	public Class133_Sub2 method977(byte i) {
-		Class133_Sub2[] class133_sub2s = new Class133_Sub2[5];
+	public SceneGraphNode_Model method977(byte i) {
+		SceneGraphNode_Model[] class133_sub2s = new SceneGraphNode_Model[5];
 		int i_9_ = 0;
 		for (int i_10_ = 0; i_10_ < 5; i_10_++) {
 			if (anIntArray447[i_10_] != -1)
-				class133_sub2s[i_9_++] = Class133_Sub2.method1824(Class14_Sub2_Sub8.aClass9_3848, anIntArray447[i_10_],
+				class133_sub2s[i_9_++] = SceneGraphNode_Model.method1824(Class14_Sub2_Sub8.aClass9_3848, anIntArray447[i_10_],
 						0);
 		}
 		if (i != 61)
 			method977((byte) 61);
-		Class133_Sub2 class133_sub2 = new Class133_Sub2(class133_sub2s, i_9_);
+		SceneGraphNode_Model class133_sub2 = new SceneGraphNode_Model(class133_sub2s, i_9_);
 		if (aShortArray445 != null) {
 			for (int i_11_ = 0; i_11_ < aShortArray445.length; i_11_++)
 				class133_sub2.method1813(aShortArray445[i_11_], aShortArray450[i_11_]);
@@ -97,14 +92,14 @@ public class Class21 {
 			for (int i_12_ = 0; aShortArray453.length > i_12_; i_12_++)
 				class133_sub2.method1819(aShortArray453[i_12_], aShortArray455[i_12_]);
 		}
-		Class133_Sub2 class133_sub2_13_ = class133_sub2;
+		SceneGraphNode_Model class133_sub2_13_ = class133_sub2;
 		return class133_sub2_13_;
 	}
 
 	public static Class88[] method978(int i) {
 		int i_14_ = 63 / ((0 - i) / 39);
 		if (Static2.aClass88Array1211 == null) {
-			Class88[] class88s = Class14_Sub18.method884(-3189, JunkTex.signlink);
+			Class88[] class88s = Class14_Sub18.method884(-3189, ErrorReporting.signlink);
 			Class88[] class88s_15_ = new Class88[class88s.length];
 			int i_16_ = 0;
 			while_56_: for (int i_17_ = 0; i_17_ < class88s.length; i_17_++) {
@@ -140,7 +135,6 @@ public class Class21 {
 		aClass52_444 = null;
 		aClass36_441 = null;
 		occludersY = null;
-		anIntArrayArray452 = null;
 		anIntArray442 = null;
 		int i_21_ = -8 / ((-18 - i) / 38);
 	}
@@ -156,23 +150,23 @@ public class Class21 {
 			anInt446 = 124;
 	}
 
-	public Class133_Sub2 method981(byte i) {
+	public SceneGraphNode_Model method981(byte i) {
 		if (anIntArray457 == null) {
-			Class133_Sub2 class133_sub2 = null;
+			SceneGraphNode_Model class133_sub2 = null;
 			return class133_sub2;
 		}
-		Class133_Sub2[] class133_sub2s = new Class133_Sub2[anIntArray457.length];
+		SceneGraphNode_Model[] class133_sub2s = new SceneGraphNode_Model[anIntArray457.length];
 		for (int i_23_ = 0; anIntArray457.length > i_23_; i_23_++)
-			class133_sub2s[i_23_] = Class133_Sub2.method1824(Class14_Sub2_Sub8.aClass9_3848, anIntArray457[i_23_], 0);
+			class133_sub2s[i_23_] = SceneGraphNode_Model.method1824(Class14_Sub2_Sub8.aClass9_3848, anIntArray457[i_23_], 0);
 		if (i != -47) {
-			Class133_Sub2 class133_sub2 = null;
+			SceneGraphNode_Model class133_sub2 = null;
 			return class133_sub2;
 		}
-		Class133_Sub2 class133_sub2;
+		SceneGraphNode_Model class133_sub2;
 		if (class133_sub2s.length == 1)
 			class133_sub2 = class133_sub2s[0];
 		else
-			class133_sub2 = new Class133_Sub2(class133_sub2s, class133_sub2s.length);
+			class133_sub2 = new SceneGraphNode_Model(class133_sub2s, class133_sub2s.length);
 		if (aShortArray445 != null) {
 			for (int i_24_ = 0; aShortArray445.length > i_24_; i_24_++)
 				class133_sub2.method1813(aShortArray445[i_24_], aShortArray450[i_24_]);
@@ -181,7 +175,7 @@ public class Class21 {
 			for (int i_25_ = 0; aShortArray453.length > i_25_; i_25_++)
 				class133_sub2.method1819(aShortArray453[i_25_], aShortArray455[i_25_]);
 		}
-		Class133_Sub2 class133_sub2_26_ = class133_sub2;
+		SceneGraphNode_Model class133_sub2_26_ = class133_sub2;
 		return class133_sub2_26_;
 	}
 

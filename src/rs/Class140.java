@@ -4,7 +4,7 @@
 package rs;
 
 public class Class140 {
-	public static Class124 aClass124_2234 = Class124.method263(1178, "");
+	public static Class124 aClass124_2234 = Class124.method263("");
 	public static int anInt2238;
 
 	public static void method1956(byte i) {
@@ -65,16 +65,16 @@ public class Class140 {
 			class94.anInt1543 = 5;
 			class94.anInt1550 = -1;
 		} else if (i_0_ == 328) {
-			if (Class14_Sub3.aClass133_Sub1_Sub1_2748.aClass124_4922 == null)
+			if (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.aClass124_4922 == null)
 				class94.anInt1550 = 0;
 			else {
 				class94.anInt1465 = 150;
 				class94.anInt1578 = (int) (Math.sin(Class14_Sub2_Sub20.anInt4064 / 40.0) * 256.0) & 0x7ff;
 				class94.anInt1543 = 5;
-				class94.anInt1550 = ((int) Class14_Sub3.aClass133_Sub1_Sub1_2748.aClass124_4922
+				class94.anInt1550 = ((int) Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.aClass124_4922
 						.method1692(i + 29163) << 11) + 2047;
-				class94.anInt1598 = Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3452;
-				class94.anInt1610 = Class14_Sub3.aClass133_Sub1_Sub1_2748.anInt3483;
+				class94.anInt1598 = Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3452;
+				class94.anInt1610 = Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3483;
 			}
 		}
 	}

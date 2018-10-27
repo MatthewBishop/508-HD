@@ -5,7 +5,7 @@ package com.jagex.map;
 
 import rs.Class102;
 import rs.Class104;
-import rs.Class133_Sub6;
+import rs.SceneGraphNode_Projectile;
 import rs.Class142;
 import rs.Class14_Sub2_Sub8;
 import rs.Class21;
@@ -43,7 +43,7 @@ public class Scenegraph {
 	}
 
 	public static void method1503() {
-		Class133_Sub6.activeOccluderCount = 0;
+		SceneGraphNode_Projectile.activeOccluderCount = 0;
 		while_175_: 
 		for (int i = 0; i < clusterCount; i++) {
 			SceneCluster scenecluster = clusters[i];
@@ -81,7 +81,7 @@ public class Scenegraph {
 						bool = true;
 					} while (false);
 					if (bool) {
-						int i_10_ = Class4.anInt125 - scenecluster.minX;
+						int i_10_ = Class4.cameraX - scenecluster.minX;
 						if (i_10_ > 32)
 							scenecluster.testDirection = 1;
 						else {
@@ -90,11 +90,11 @@ public class Scenegraph {
 							scenecluster.testDirection = 2;
 							i_10_ = -i_10_;
 						}
-						scenecluster.minNormalZ = (scenecluster.minZ - Class14_Sub2_Sub8.anInt3853 << 8) / i_10_;
-						scenecluster.maxNormalZ = (scenecluster.maxZ - Class14_Sub2_Sub8.anInt3853 << 8) / i_10_;
+						scenecluster.minNormalZ = (scenecluster.minZ - Class14_Sub2_Sub8.cameraZ << 8) / i_10_;
+						scenecluster.maxNormalZ = (scenecluster.maxZ - Class14_Sub2_Sub8.cameraZ << 8) / i_10_;
 						scenecluster.minNormalY = ((scenecluster.minY - Static2.cameraY << 8) / i_10_);
 						scenecluster.maxNormalY = ((scenecluster.maxY - Static2.cameraY << 8) / i_10_);
-						activeOccluders[Class133_Sub6.activeOccluderCount++] = scenecluster;
+						activeOccluders[SceneGraphNode_Projectile.activeOccluderCount++] = scenecluster;
 					}
 				}
 			} else if (scenecluster.type == 2) {
@@ -115,7 +115,7 @@ public class Scenegraph {
 						bool = true;
 					} while (false);
 					if (bool) {
-						int i_14_ = Class14_Sub2_Sub8.anInt3853 - scenecluster.minZ;
+						int i_14_ = Class14_Sub2_Sub8.cameraZ - scenecluster.minZ;
 						if (i_14_ > 32)
 							scenecluster.testDirection = 3;
 						else {
@@ -124,11 +124,11 @@ public class Scenegraph {
 							scenecluster.testDirection = 4;
 							i_14_ = -i_14_;
 						}
-						scenecluster.minNormalX = ((scenecluster.minX - Class4.anInt125 << 8) / i_14_);
-						scenecluster.maxNormalX = ((scenecluster.maxX - Class4.anInt125 << 8) / i_14_);
+						scenecluster.minNormalX = ((scenecluster.minX - Class4.cameraX << 8) / i_14_);
+						scenecluster.maxNormalX = ((scenecluster.maxX - Class4.cameraX << 8) / i_14_);
 						scenecluster.minNormalY = ((scenecluster.minY - Static2.cameraY << 8) / i_14_);
 						scenecluster.maxNormalY = ((scenecluster.maxY - Static2.cameraY << 8) / i_14_);
-						activeOccluders[Class133_Sub6.activeOccluderCount++] = scenecluster;
+						activeOccluders[SceneGraphNode_Projectile.activeOccluderCount++] = scenecluster;
 					}
 				}
 			} else if (scenecluster.type == 4) {
@@ -158,11 +158,11 @@ public class Scenegraph {
 						}
 						if (bool) {
 							scenecluster.testDirection = 5;
-							scenecluster.minNormalX = ((scenecluster.minX - Class4.anInt125 << 8) / i_15_);
-							scenecluster.maxNormalX = ((scenecluster.maxX - Class4.anInt125 << 8) / i_15_);
-							scenecluster.minNormalZ = ((scenecluster.minZ - Class14_Sub2_Sub8.anInt3853) << 8) / i_15_;
-							scenecluster.maxNormalZ = ((scenecluster.maxZ - Class14_Sub2_Sub8.anInt3853) << 8) / i_15_;
-							activeOccluders[Class133_Sub6.activeOccluderCount++] = scenecluster;
+							scenecluster.minNormalX = ((scenecluster.minX - Class4.cameraX << 8) / i_15_);
+							scenecluster.maxNormalX = ((scenecluster.maxX - Class4.cameraX << 8) / i_15_);
+							scenecluster.minNormalZ = ((scenecluster.minZ - Class14_Sub2_Sub8.cameraZ) << 8) / i_15_;
+							scenecluster.maxNormalZ = ((scenecluster.maxZ - Class14_Sub2_Sub8.cameraZ) << 8) / i_15_;
+							activeOccluders[SceneGraphNode_Projectile.activeOccluderCount++] = scenecluster;
 						}
 					}
 				}
@@ -171,7 +171,7 @@ public class Scenegraph {
 	}
 
 	public static boolean method1310(int i, int i_22_, int i_23_) {
-		for (int i_24_ = 0; i_24_ < Class133_Sub6.activeOccluderCount; i_24_++) {
+		for (int i_24_ = 0; i_24_ < SceneGraphNode_Projectile.activeOccluderCount; i_24_++) {
 			SceneCluster scenecluster = activeOccluders[i_24_];
 			if (scenecluster.testDirection == 1) {
 				int i_25_ = scenecluster.minX - i;
@@ -275,7 +275,7 @@ public class Scenegraph {
 		int i_20_ = i_17_ - 238;
 		if (i_14_ < 16) {
 			if (i_14_ == 1) {
-				if (i_15_ > Class4.anInt125) {
+				if (i_15_ > Class4.cameraX) {
 					if (!method1310(i_15_, i_17_, i_16_))
 						return false;
 					if (!method1310(i_15_, i_17_, i_16_ + 128))
@@ -294,7 +294,7 @@ public class Scenegraph {
 				return true;
 			}
 			if (i_14_ == 2) {
-				if (i_16_ < Class14_Sub2_Sub8.anInt3853) {
+				if (i_16_ < Class14_Sub2_Sub8.cameraZ) {
 					if (!method1310(i_15_, i_17_, i_16_ + 128))
 						return false;
 					if (!method1310(i_15_ + 128, i_17_, i_16_ + 128))
@@ -313,7 +313,7 @@ public class Scenegraph {
 				return true;
 			}
 			if (i_14_ == 4) {
-				if (i_15_ < Class4.anInt125) {
+				if (i_15_ < Class4.cameraX) {
 					if (!method1310(i_15_ + 128, i_17_, i_16_))
 						return false;
 					if (!method1310(i_15_ + 128, i_17_, i_16_ + 128))
@@ -332,7 +332,7 @@ public class Scenegraph {
 				return true;
 			}
 			if (i_14_ == 8) {
-				if (i_16_ > Class14_Sub2_Sub8.anInt3853) {
+				if (i_16_ > Class14_Sub2_Sub8.cameraZ) {
 					if (!method1310(i_15_, i_17_, i_16_))
 						return false;
 					if (!method1310(i_15_ + 128, i_17_, i_16_))
