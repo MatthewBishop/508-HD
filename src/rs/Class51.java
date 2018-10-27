@@ -4,14 +4,14 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 
 public class Class51 {
 	public static int anInt828;
 	public static int anInt830;
 	public static int anInt831;
 	public int anInt832;
-	public static Class9 aClass9_833;
+	public static FileSystem aFileSystem_833;
 	public int anInt834;
 	public static int[] anIntArray835;
 	public static int anInt839;
@@ -46,7 +46,7 @@ public class Class51 {
 	}
 
 	public static void method1200(int i) {
-		aClass9_833 = null;
+		aFileSystem_833 = null;
 		aClass124_841 = null;
 		anIntArray835 = null;
 	}

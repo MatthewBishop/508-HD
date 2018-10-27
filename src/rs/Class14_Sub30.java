@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.HDTile;
@@ -39,11 +39,11 @@ public class Class14_Sub30 extends Linkable {
 		return bool;
 	}
 
-	public static void method939(Class9 class9, Class9 class9_1_, int i) {
-		Class54.aClass9_885 = class9;
+	public static void method939(FileSystem fileSystem, FileSystem fileSystem_1_, int i) {
+		Class54.aFileSystem_885 = fileSystem;
 		if (i != 16)
 			aClass124_3281 = null;
-		Class62.aClass9_993 = class9_1_;
+		Class62.aFileSystem_993 = fileSystem_1_;
 	}
 
 	public Class14_Sub30() {
@@ -124,10 +124,10 @@ public class Class14_Sub30 extends Linkable {
 	}
 
 	public static void method941(byte i) {
-		OverlayType.aClass52_2406.method1209();
-		JunkTex.aClass52_4588.method1209();
+		OverlayType.aClass52_2406.clearSoftReference();
+		JunkTex.aClass52_4588.clearSoftReference();
 		if (i == 11)
-			Class83.aClass52_1339.method1209();
+			Class83.aClass52_1339.clearSoftReference();
 	}
 
 	public static void method942(int i) {

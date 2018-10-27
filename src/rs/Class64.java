@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.io.js5.CacheFileWorker;
 
 public class Class64 {
 	public static Class124 aClass124_1009;
@@ -11,7 +11,7 @@ public class Class64 {
 	public static Class124 aClass124_1011;
 	public static int anInt1012;
 	public static long aLong1014;
-	public static Class9_Sub1 aClass9_Sub1_1015;
+	public static CacheFileWorker aCacheFileWorker_1015;
 	public static int[] anIntArray1016;
 	public static Class124 aClass124_1017;
 
@@ -54,7 +54,7 @@ public class Class64 {
 	}
 
 	public static void method1287(int i) {
-		aClass9_Sub1_1015 = null;
+		aCacheFileWorker_1015 = null;
 		aClass124_1010 = null;
 		anIntArray1016 = null;
 		aClass124_1017 = null;

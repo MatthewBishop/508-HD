@@ -24,10 +24,10 @@ public class Class96 {
 	}
 
 	public static void method1488(int i) {
-		Class14_Sub14.aClass52_2982.method1209();
+		Class14_Sub14.aClass52_2982.clearSoftReference();
 		if (i == 2) {
-			Class37.aClass52_635.method1209();
-			JunkTex.aClass52_4186.method1209();
+			Class37.aClass52_635.clearSoftReference();
+			JunkTex.aClass52_4186.clearSoftReference();
 		}
 	}
 }

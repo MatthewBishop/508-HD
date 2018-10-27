@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.applet.Applet_Sub1;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 
 public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 	public static Class124 aClass124_3706 = Class124.method263("Hidden)2");
@@ -65,11 +65,11 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 		aClass124_3710 = null;
 	}
 
-	public static void method138(boolean bool, Class9 class9, Class9 class9_10_, boolean bool_11_) {
+	public static void method138(boolean bool, FileSystem fileSystem, FileSystem fileSystem_10_, boolean bool_11_) {
 		JunkTex.aBoolean3375 = bool_11_;
 		if (!bool) {
-			Class15.aClass9_382 = class9;
-			Static2.aClass9_2923 = class9_10_;
+			Class15.aFileSystem_382 = fileSystem;
+			Static2.aFileSystem_2923 = fileSystem_10_;
 		}
 	}
 

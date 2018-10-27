@@ -1188,7 +1188,7 @@ public class ModelHD extends SceneGraphNode_AbstractModelRenderer {
 	@Override
 	public void method1857(AnimFrameLoader class14_sub2_sub15, int i, boolean bool) {
 		if (vertexGroups != null && i != -1) {
-			AnimFrame animframe = class14_sub2_sub15.aClass143Array3951[i];
+			AnimFrame animframe = class14_sub2_sub15.frames[i];
 			AnimFrameBase animframebase = animframe.base;
 			for (int i_306_ = 0; i_306_ < anInt5033; i_306_++) {
 				vertexX[i_306_] <<= 4;
@@ -1232,7 +1232,7 @@ public class ModelHD extends SceneGraphNode_AbstractModelRenderer {
 	@Override
 	public void method1859(AnimFrameLoader class14_sub2_sub15, int i) {
 		if (vertexGroups != null && i != -1) {
-			AnimFrame animframe = class14_sub2_sub15.aClass143Array3951[i];
+			AnimFrame animframe = class14_sub2_sub15.frames[i];
 			AnimFrameBase animframebase = animframe.base;
 			centroidX = 0;
 			centroidY = 0;
@@ -1361,8 +1361,8 @@ public class ModelHD extends SceneGraphNode_AbstractModelRenderer {
 			if (is == null || i_333_ == -1)
 				method1857(class14_sub2_sub15, i, bool);
 			else {
-				AnimFrame animframe = class14_sub2_sub15.aClass143Array3951[i];
-				AnimFrame animframe_334_ = class14_sub2_sub15_332_.aClass143Array3951[i_333_];
+				AnimFrame animframe = class14_sub2_sub15.frames[i];
+				AnimFrame animframe_334_ = class14_sub2_sub15_332_.frames[i_333_];
 				AnimFrameBase animframebase = animframe.base;
 				for (int i_335_ = 0; i_335_ < anInt5033; i_335_++) {
 					vertexX[i_335_] <<= 4;

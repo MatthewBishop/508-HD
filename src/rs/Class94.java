@@ -178,8 +178,8 @@ public class Class94 {
 			return class14_sub2_sub16_0_;
 		}
 		int i_1_ = 103 % ((-15 - i) / 47);
-		Class14_Sub2_Sub16 class14_sub2_sub16_2_ = Static2.method888(-113, anInt1588, Class51.aClass9_833, 0,
-				Static2.aClass9_2598);
+		Class14_Sub2_Sub16 class14_sub2_sub16_2_ = Static2.method888(-113, anInt1588, Class51.aFileSystem_833, 0,
+				Static2.aFileSystem_2598);
 		if (class14_sub2_sub16_2_ != null) {
 			class14_sub2_sub16_2_.method352(class148s, null);
 			Class83.aClass52_1339.put(class14_sub2_sub16_2_, anInt1588);
@@ -356,7 +356,7 @@ public class Class94 {
 			boolean bool = true;
 			return bool;
 		}
-		Class148_Sub1 class148_sub1 = Class127.method1752(i, Static2.aClass9_2598, true, anInt1487);
+		Class148_Sub1 class148_sub1 = Class127.method1752(i, Static2.aFileSystem_2598, true, anInt1487);
 		if (class148_sub1 == null) {
 			boolean bool = false;
 			return bool;
@@ -618,9 +618,9 @@ public class Class94 {
 		}
 		AbstractSprite_Sub1 class14_sub2_sub19_sub1;
 		if (aBoolean1577)
-			class14_sub2_sub19_sub1 = Class137.method1943(0, Static2.aClass9_2598, i_41_, (byte) 99);
+			class14_sub2_sub19_sub1 = Class137.method1943(0, Static2.aFileSystem_2598, i_41_, (byte) 99);
 		else
-			class14_sub2_sub19_sub1 = JunkTex.method485(i + 29, Static2.aClass9_2598, i_41_, 0);
+			class14_sub2_sub19_sub1 = JunkTex.method485(i + 29, Static2.aFileSystem_2598, i_41_, 0);
 		if (class14_sub2_sub19_sub1 == null) {
 			aBoolean1554 = true;
 			class14_sub2_sub19 = null;
@@ -682,7 +682,7 @@ public class Class94 {
 			AbstractSprite class14_sub2_sub19_54_ = class14_sub2_sub19;
 			return class14_sub2_sub19_54_;
 		}
-		class14_sub2_sub19 = Class58.method1259(-110, Static2.aClass9_2598, 0, i_52_);
+		class14_sub2_sub19 = Class58.method1259(-110, Static2.aFileSystem_2598, 0, i_52_);
 		if (class14_sub2_sub19 == null)
 			aBoolean1554 = true;
 		else
@@ -713,7 +713,7 @@ public class Class94 {
 		if (i_57_ == 1) {
 			SceneGraphNode_AbstractModelRenderer class133_sub7 = ((SceneGraphNode_AbstractModelRenderer) (JunkTex.aClass52_4588.get(i_58_ + (i_57_ << 48))));
 			if (class133_sub7 == null) {
-				SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(JunkTex.aClass9_4486, i_58_, 0);
+				SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(JunkTex.aFileSystem_4486, i_58_, 0);
 				if (class133_sub2 == null) {
 					aBoolean1554 = true;
 					SceneGraphNode_AbstractModelRenderer class133_sub7_59_ = null;

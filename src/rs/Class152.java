@@ -5,7 +5,7 @@ package rs;
 
 import java.math.BigInteger;
 
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.link.Deque;
 
 public class Class152 {
@@ -26,8 +26,8 @@ public class Class152 {
 		}
 	}
 
-	public static void method2044(Class9 class9, byte i) {
-		class9.method146(Static2.aClass124_1192);
+	public static void method2044(FileSystem fileSystem, byte i) {
+		fileSystem.method146(Static2.aClass124_1192);
 		if (i >= -123)
 			method2043(77);
 	}

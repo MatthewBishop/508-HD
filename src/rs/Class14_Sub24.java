@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.link.Linkable;
 
 public class Class14_Sub24 extends Linkable {
@@ -188,9 +188,9 @@ public class Class14_Sub24 extends Linkable {
 		return i;
 	}
 
-	public static boolean method909(Class9 class9) {
+	public static boolean method909(FileSystem fileSystem) {
 		if (!aBoolean3155) {
-			byte[] is = class9.method163(0, 0);
+			byte[] is = fileSystem.method163(0, 0);
 			if (is == null)
 				return false;
 			method905(is);
@@ -199,12 +199,12 @@ public class Class14_Sub24 extends Linkable {
 		return true;
 	}
 
-	public static Class14_Sub24 method910(Class9 class9, int i, int i_33_) {
-		if (!method909(class9)) {
-			class9.method158(i_33_, i);
+	public static Class14_Sub24 method910(FileSystem fileSystem, int i, int i_33_) {
+		if (!method909(fileSystem)) {
+			fileSystem.method158(i_33_, i);
 			return null;
 		}
-		byte[] is = class9.method163(i_33_, i);
+		byte[] is = fileSystem.method163(i_33_, i);
 		if (is == null)
 			return null;
 		return new Class14_Sub24(is);

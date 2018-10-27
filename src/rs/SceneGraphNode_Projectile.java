@@ -5,6 +5,7 @@ package rs;
 
 import com.jagex.applet.ErrorReporting;
 import com.jagex.cache.anim.Animation;
+import com.jagex.cache.anim.AnimLoader;
 import com.jagex.rt4.AbstractSprite;
 import com.jagex.rt4.RT4GL;
 import com.jagex.util.BrowserControlUtil;
@@ -142,7 +143,7 @@ public class SceneGraphNode_Projectile extends SceneGraphNode {
 		anInt3667 = i_28_;
 		int i_29_ = Class127.method1749(anInt3652, (byte) 66).anInt966;
 		if (i_29_ != -1)
-			aClass46_3638 = JunkTex.method1129(i_29_, -124);
+			aClass46_3638 = AnimLoader.method1129(i_29_);
 		else
 			aClass46_3638 = null;
 	}

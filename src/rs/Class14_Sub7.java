@@ -124,7 +124,7 @@ public class Class14_Sub7 extends Linkable {
 						AbstractSprite[] class14_sub2_sub19s = ((AbstractSprite[]) (JunkTex.aClass52_4596
 								.get((class133_sub1_sub2.aClass12_4949.anInt281))));
 						if (class14_sub2_sub19s == null) {
-							class14_sub2_sub19s = (JunkTex.method1733((byte) 23, Class14_Sub3.aClass9_Sub1_2750,
+							class14_sub2_sub19s = (JunkTex.method1733((byte) 23, Class14_Sub3.aCacheFileWorker_2750,
 									0, (class133_sub1_sub2.aClass12_4949.anInt281)));
 							if (class14_sub2_sub19s != null)
 								JunkTex.aClass52_4596.put(class14_sub2_sub19s, (class133_sub1_sub2.aClass12_4949.anInt281));

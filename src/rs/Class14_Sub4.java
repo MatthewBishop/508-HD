@@ -3,7 +3,6 @@
  */
 package rs;
 
-import com.jagex.cache.loaders.AnimFrameLoader;
 import com.jagex.link.Deque;
 import com.jagex.link.Linkable;
 import com.jagex.map.Scenegraph;
@@ -682,23 +681,6 @@ public class Class14_Sub4 extends Linkable {
 		}
 		boolean bool_75_ = true;
 		return bool_75_;
-	}
-
-	public static AnimFrameLoader method457(int i, int i_76_) {
-		AnimFrameLoader class14_sub2_sub15 = ((AnimFrameLoader) Class14_Sub2_Sub12.aClass52_3894
-				.get(i_76_));
-		if (class14_sub2_sub15 != null) {
-			AnimFrameLoader class14_sub2_sub15_77_ = class14_sub2_sub15;
-			return class14_sub2_sub15_77_;
-		}
-		class14_sub2_sub15 = AnimFrameLoader.method933(SceneGraphNode_GameEntity_Sub1.aClass9_4935, JunkTex.aClass9_3427, i_76_,
-				(byte) -101, false);
-		if (i != 3)
-			method459(null, 52);
-		if (class14_sub2_sub15 != null)
-			Class14_Sub2_Sub12.aClass52_3894.put(class14_sub2_sub15, i_76_);
-		AnimFrameLoader class14_sub2_sub15_78_ = class14_sub2_sub15;
-		return class14_sub2_sub15_78_;
 	}
 
 	public static Class113 method458(int i, int i_79_, int i_80_) {

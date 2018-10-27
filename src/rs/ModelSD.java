@@ -151,8 +151,8 @@ public class ModelSD extends SceneGraphNode_AbstractModelRenderer {
 			if (is == null || i_14_ == -1)
 				method1857(class14_sub2_sub15, i, bool);
 			else {
-				AnimFrame animframe = class14_sub2_sub15.aClass143Array3951[i];
-				AnimFrame animframe_15_ = class14_sub2_sub15_13_.aClass143Array3951[i_14_];
+				AnimFrame animframe = class14_sub2_sub15.frames[i];
+				AnimFrame animframe_15_ = class14_sub2_sub15_13_.frames[i_14_];
 				AnimFrameBase animframebase = animframe.base;
 				anInt5003 = 0;
 				anInt4998 = 0;
@@ -601,7 +601,7 @@ public class ModelSD extends SceneGraphNode_AbstractModelRenderer {
 	@Override
 	public void method1857(AnimFrameLoader class14_sub2_sub15, int i, boolean bool) {
 		if (anIntArrayArray4959 != null && i != -1) {
-			AnimFrame animframe = class14_sub2_sub15.aClass143Array3951[i];
+			AnimFrame animframe = class14_sub2_sub15.frames[i];
 			AnimFrameBase animframebase = animframe.base;
 			anInt5003 = 0;
 			anInt4998 = 0;
@@ -676,7 +676,7 @@ public class ModelSD extends SceneGraphNode_AbstractModelRenderer {
 	@Override
 	public void method1859(AnimFrameLoader class14_sub2_sub15, int i) {
 		if (anIntArrayArray4959 != null && i != -1) {
-			AnimFrame animframe = class14_sub2_sub15.aClass143Array3951[i];
+			AnimFrame animframe = class14_sub2_sub15.frames[i];
 			AnimFrameBase animframebase = animframe.base;
 			anInt5003 = 0;
 			anInt4998 = 0;

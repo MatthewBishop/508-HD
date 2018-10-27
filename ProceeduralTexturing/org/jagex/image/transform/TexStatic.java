@@ -8,7 +8,7 @@ import org.jagex.image.transform.util.ProceduralTexture;
 import org.jagex.image.transform.util.TriChromaticImageBuffer;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.link.Cache;
 import com.jagex.util.RandomUtil;
 import com.jagex.util.TextureDefInterface;
@@ -93,7 +93,7 @@ public class TexStatic {
 		TexStatic.EMPTY_TRI_CACHE = null;
 		EMPTY_MONO_CACHE = null;
 		Class14_Sub8_Sub18.kill();
-		aClass9_2671 = null;
+		aFileSystem_2671 = null;
 	}
 
 	public static int[] anIntArray3623;
@@ -268,7 +268,7 @@ public class TexStatic {
 
 	public static TextureDefInterface anInterface3_2960;
 
-	public static Class9 aClass9_2671;
+	public static FileSystem aFileSystem_2671;
 	
 	public static int[][] prepareLavaShader(int i, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, float f,
 			boolean bool) {

@@ -18,12 +18,13 @@ import com.jagex.applet.Class31;
 import com.jagex.applet.Class43;
 import com.jagex.applet.ErrorReporting;
 import com.jagex.cache.anim.AnimFrame;
+import com.jagex.cache.anim.AnimLoader;
 import com.jagex.cache.fs.BZip2Decompressor;
 import com.jagex.io.Buffer;
 import com.jagex.io.PacketBuffer;
-import com.jagex.io.js5.Class114;
-import com.jagex.io.js5.Class76;
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.io.js5.CacheFile;
+import com.jagex.io.js5.SeekableFile;
+import com.jagex.io.js5.CacheFileWorker;
 import com.jagex.io.js5.SFSS;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.map.SceneCluster;
@@ -569,31 +570,31 @@ public class client extends Applet_Sub1 {
 				} else if (Class62.anInt988 == 30) {
 					Class75.idx0 = method51(true, 0, (byte) 10, true, false);
 					Class109.idx1 = method51(true, 1, (byte) -111, true, false);
-					Class138.aClass9_Sub1_2222 = method51(false, 2, (byte) -102, true, true);
-					Class14_Sub17.aClass9_Sub1_3021 = method51(true, 3, (byte) 98, true, false);
-					Static2.aClass9_Sub1_2901 = method51(true, 4, (byte) -121, true, false);
-					Class14_Sub13.aClass9_Sub1_2958 = method51(true, 5, (byte) 20, true, true);
-					JunkTex.aClass9_Sub1_3374 = method51(true, 6, (byte) -127, false, true);
-					JunkTex.aClass9_Sub1_4739 = method51(true, 7, (byte) 61, true, false);
-					Class14_Sub3.aClass9_Sub1_2750 = method51(true, 8, (byte) -104, true, false);
-					Class98.aClass9_Sub1_1666 = method51(true, 9, (byte) 119, true, false);
-					JunkTex.aClass9_Sub1_4323 = method51(true, 10, (byte) -84, true, false);
-					JunkTex.aClass9_Sub1_4603 = method51(true, 11, (byte) 76, true, false);
-					JunkTex.aClass9_Sub1_4521 = method51(true, 12, (byte) 9, true, false);
-					Class64.aClass9_Sub1_1015 = method51(true, 13, (byte) 69, true, false);
-					Static2.aClass9_Sub1_5085 = method51(true, 14, (byte) -89, false, false);
-					Class47.aClass9_Sub1_790 = method51(true, 15, (byte) 58, true, false);
-					Class89.aClass9_Sub1_1407 = method51(true, 16, (byte) -117, true, false);
-					Static2.aClass9_Sub1_369 = method51(true, 17, (byte) -78, true, false);
-					Class102.aClass9_Sub1_1712 = method51(true, 18, (byte) -76, true, false);
-					Class127.aClass9_Sub1_2111 = method51(true, 19, (byte) -83, true, false);
-					Class22.aClass9_Sub1_459 = method51(true, 20, (byte) 126, true, false);
-					Static2.aClass9_Sub1_1690 = method51(true, 21, (byte) -99, true, false);
-					JunkTex.aClass9_Sub1_2848 = method51(true, 22, (byte) 22, true, false);
-					Class7_Sub1.aClass9_Sub1_2657 = method51(true, 23, (byte) -127, true, true);
-					Class14_Sub21.aClass9_Sub1_3111 = method51(true, 24, (byte) -128, true, false);
-					Class28.aClass9_Sub1_513 = method51(true, 25, (byte) 73, true, false);
-					Class14_Sub2_Sub7.aClass9_Sub1_3824 = method51(true, 26, (byte) -85, true, true);
+					Class138.aCacheFileWorker_2222 = method51(false, 2, (byte) -102, true, true);
+					Class14_Sub17.aCacheFileWorker_3021 = method51(true, 3, (byte) 98, true, false);
+					Static2.aCacheFileWorker_2901 = method51(true, 4, (byte) -121, true, false);
+					Class14_Sub13.aCacheFileWorker_2958 = method51(true, 5, (byte) 20, true, true);
+					JunkTex.aCacheFileWorker_3374 = method51(true, 6, (byte) -127, false, true);
+					JunkTex.aCacheFileWorker_4739 = method51(true, 7, (byte) 61, true, false);
+					Class14_Sub3.aCacheFileWorker_2750 = method51(true, 8, (byte) -104, true, false);
+					Class98.aCacheFileWorker_1666 = method51(true, 9, (byte) 119, true, false);
+					JunkTex.aCacheFileWorker_4323 = method51(true, 10, (byte) -84, true, false);
+					JunkTex.aCacheFileWorker_4603 = method51(true, 11, (byte) 76, true, false);
+					JunkTex.aCacheFileWorker_4521 = method51(true, 12, (byte) 9, true, false);
+					Class64.aCacheFileWorker_1015 = method51(true, 13, (byte) 69, true, false);
+					Static2.aCacheFileWorker_5085 = method51(true, 14, (byte) -89, false, false);
+					Class47.aCacheFileWorker_790 = method51(true, 15, (byte) 58, true, false);
+					Class89.aCacheFileWorker_1407 = method51(true, 16, (byte) -117, true, false);
+					Static2.aCacheFileWorker_369 = method51(true, 17, (byte) -78, true, false);
+					Class102.aCacheFileWorker_1712 = method51(true, 18, (byte) -76, true, false);
+					Class127.aCacheFileWorker_2111 = method51(true, 19, (byte) -83, true, false);
+					Class22.aCacheFileWorker_459 = method51(true, 20, (byte) 126, true, false);
+					Static2.aCacheFileWorker_1690 = method51(true, 21, (byte) -99, true, false);
+					JunkTex.aCacheFileWorker_2848 = method51(true, 22, (byte) 22, true, false);
+					Class7_Sub1.aCacheFileWorker_2657 = method51(true, 23, (byte) -127, true, true);
+					Class14_Sub21.aCacheFileWorker_3111 = method51(true, 24, (byte) -128, true, false);
+					Class28.aCacheFileWorker_513 = method51(true, 25, (byte) 73, true, false);
+					Class14_Sub2_Sub7.aCacheFileWorker_3824 = method51(true, 26, (byte) -85, true, true);
 					Class51.anInt828 = 15;
 					Class62.anInt988 = 40;
 					Class14_Sub9_Sub1.aClass124_4761 = Static2.aClass124_1693;
@@ -603,31 +604,31 @@ public class client extends Applet_Sub1 {
 						var6 = 0;
 						var13 = var6 + Class75.idx0.method186((byte) 91) * 4 / 100;
 						var13 += Class109.idx1.method186((byte) 65) * 4 / 100;
-						var13 += Class138.aClass9_Sub1_2222.method186((byte) 119) * 1 / 100;
-						var13 += Class14_Sub17.aClass9_Sub1_3021.method186((byte) 75) * 2 / 100;
-						var13 += Static2.aClass9_Sub1_2901.method186((byte) 61) * 6 / 100;
-						var13 += Class14_Sub13.aClass9_Sub1_2958.method186((byte) 93) * 4 / 100;
-						var13 += JunkTex.aClass9_Sub1_3374.method186((byte) 103) * 2 / 100;
-						var13 += JunkTex.aClass9_Sub1_4739.method186((byte) 106) * 50 / 100;
-						var13 += Class14_Sub3.aClass9_Sub1_2750.method186((byte) 100) * 2 / 100;
-						var13 += Class98.aClass9_Sub1_1666.method186((byte) 99) * 2 / 100;
-						var13 += JunkTex.aClass9_Sub1_4323.method186((byte) 76) * 2 / 100;
-						var13 += JunkTex.aClass9_Sub1_4603.method186((byte) 108) * 2 / 100;
-						var13 += JunkTex.aClass9_Sub1_4521.method186((byte) 72) * 2 / 100;
-						var13 += Class64.aClass9_Sub1_1015.method186((byte) 113) * 2 / 100;
-						var13 += Static2.aClass9_Sub1_5085.method186((byte) 85) * 2 / 100;
-						var13 += Class47.aClass9_Sub1_790.method186((byte) 111) * 2 / 100;
-						var13 += Class89.aClass9_Sub1_1407.method186((byte) 104) * 1 / 100;
-						var13 += Static2.aClass9_Sub1_369.method186((byte) 104) * 1 / 100;
-						var13 += Class102.aClass9_Sub1_1712.method186((byte) 68) * 1 / 100;
-						var13 += Class127.aClass9_Sub1_2111.method186((byte) 109) * 1 / 100;
-						var13 += Class22.aClass9_Sub1_459.method186((byte) 96) * 1 / 100;
-						var13 += Static2.aClass9_Sub1_1690.method186((byte) 97) * 1 / 100;
-						var13 += JunkTex.aClass9_Sub1_2848.method186((byte) 90) * 1 / 100;
-						var13 += Class7_Sub1.aClass9_Sub1_2657.method186((byte) 95) * 1 / 100;
-						var13 += Class14_Sub21.aClass9_Sub1_3111.method186((byte) 120) * 1 / 100;
-						var13 += Class28.aClass9_Sub1_513.method186((byte) 119) * 1 / 100;
-						var13 += Class14_Sub2_Sub7.aClass9_Sub1_3824.method186((byte) 81) * 1 / 100;
+						var13 += Class138.aCacheFileWorker_2222.method186((byte) 119) * 1 / 100;
+						var13 += Class14_Sub17.aCacheFileWorker_3021.method186((byte) 75) * 2 / 100;
+						var13 += Static2.aCacheFileWorker_2901.method186((byte) 61) * 6 / 100;
+						var13 += Class14_Sub13.aCacheFileWorker_2958.method186((byte) 93) * 4 / 100;
+						var13 += JunkTex.aCacheFileWorker_3374.method186((byte) 103) * 2 / 100;
+						var13 += JunkTex.aCacheFileWorker_4739.method186((byte) 106) * 50 / 100;
+						var13 += Class14_Sub3.aCacheFileWorker_2750.method186((byte) 100) * 2 / 100;
+						var13 += Class98.aCacheFileWorker_1666.method186((byte) 99) * 2 / 100;
+						var13 += JunkTex.aCacheFileWorker_4323.method186((byte) 76) * 2 / 100;
+						var13 += JunkTex.aCacheFileWorker_4603.method186((byte) 108) * 2 / 100;
+						var13 += JunkTex.aCacheFileWorker_4521.method186((byte) 72) * 2 / 100;
+						var13 += Class64.aCacheFileWorker_1015.method186((byte) 113) * 2 / 100;
+						var13 += Static2.aCacheFileWorker_5085.method186((byte) 85) * 2 / 100;
+						var13 += Class47.aCacheFileWorker_790.method186((byte) 111) * 2 / 100;
+						var13 += Class89.aCacheFileWorker_1407.method186((byte) 104) * 1 / 100;
+						var13 += Static2.aCacheFileWorker_369.method186((byte) 104) * 1 / 100;
+						var13 += Class102.aCacheFileWorker_1712.method186((byte) 68) * 1 / 100;
+						var13 += Class127.aCacheFileWorker_2111.method186((byte) 109) * 1 / 100;
+						var13 += Class22.aCacheFileWorker_459.method186((byte) 96) * 1 / 100;
+						var13 += Static2.aCacheFileWorker_1690.method186((byte) 97) * 1 / 100;
+						var13 += JunkTex.aCacheFileWorker_2848.method186((byte) 90) * 1 / 100;
+						var13 += Class7_Sub1.aCacheFileWorker_2657.method186((byte) 95) * 1 / 100;
+						var13 += Class14_Sub21.aCacheFileWorker_3111.method186((byte) 120) * 1 / 100;
+						var13 += Class28.aCacheFileWorker_513.method186((byte) 119) * 1 / 100;
+						var13 += Class14_Sub2_Sub7.aCacheFileWorker_3824.method186((byte) 81) * 1 / 100;
 						if (var13 != 100) {
 							if (var13 != 0) {
 								Class14_Sub9_Sub1.aClass124_4761 = JunkTex.method515(
@@ -640,10 +641,10 @@ public class client extends Applet_Sub1 {
 						} else {
 							Class14_Sub9_Sub1.aClass124_4761 = JunkTex.aClass124_4453;
 							Class51.anInt828 = 20;
-							JunkTex.method1222(Class14_Sub3.aClass9_Sub1_2750, (byte) 89);
-							Class14_Sub2_Sub21.method444(-30451, Class14_Sub3.aClass9_Sub1_2750);
-							Class152.method2044(Class14_Sub3.aClass9_Sub1_2750, (byte) -126);
-							JunkTex.method376((byte) 111, Class14_Sub3.aClass9_Sub1_2750);
+							JunkTex.method1222(Class14_Sub3.aCacheFileWorker_2750, (byte) 89);
+							Class14_Sub2_Sub21.method444(-30451, Class14_Sub3.aCacheFileWorker_2750);
+							Class152.method2044(Class14_Sub3.aCacheFileWorker_2750, (byte) -126);
+							JunkTex.method376((byte) 111, Class14_Sub3.aCacheFileWorker_2750);
 							Class62.anInt988 = 45;
 						}
 					} else if (Class62.anInt988 == 45) {
@@ -654,19 +655,19 @@ public class client extends Applet_Sub1 {
 						JunkTex.aClass75_4682.method1352(JunkTex.aClass14_Sub9_Sub1_2071, false);
 
 						
-						Class88.method1438(JunkTex.aClass14_Sub9_Sub1_2071, Static2.aClass9_Sub1_5085,
-								false, Class47.aClass9_Sub1_790, Static2.aClass9_Sub1_2901);
+						Class88.method1438(JunkTex.aClass14_Sub9_Sub1_2071, Static2.aCacheFileWorker_5085,
+								false, Class47.aCacheFileWorker_790, Static2.aCacheFileWorker_2901);
 						Static2.aClass75_2588 = JunkTex.method235(2048, 97, ErrorReporting.signlink,
 								ErrorReporting.aCanvas819, 1);
 						Class33.aClass14_Sub9_Sub2_585 = new Class14_Sub9_Sub2();
 						Static2.aClass75_2588.method1352(Class33.aClass14_Sub9_Sub2_585, false);
 						SceneCluster.aClass18_1362 = new Class18(22050, Class115.anInt1909);
-						JunkTex.anInt97 = JunkTex.aClass9_Sub1_3374.method146(JunkTex.aClass124_2084);
+						JunkTex.anInt97 = JunkTex.aCacheFileWorker_3374.method146(JunkTex.aClass124_2084);
 						Class14_Sub9_Sub1.aClass124_4761 = Class4.aClass124_131;
 						Class51.anInt828 = 30;
 						Class62.anInt988 = 50;
 					} else if (Class62.anInt988 == 50) {
-						var13 = Class47.method1185(Class64.aClass9_Sub1_1015, true, Class14_Sub3.aClass9_Sub1_2750);
+						var13 = Class47.method1185(Class64.aCacheFileWorker_1015, true, Class14_Sub3.aCacheFileWorker_2750);
 						var3 = Static2.method1357(-21193);
 						if (var13 < var3) {
 							Class14_Sub9_Sub1.aClass124_4761 = JunkTex.method515(
@@ -680,7 +681,7 @@ public class client extends Applet_Sub1 {
 							Class62.anInt988 = 60;
 						}
 					} else if (Class62.anInt988 == 60) {
-						var13 = JunkTex.method550(Class14_Sub3.aClass9_Sub1_2750, (byte) 61);
+						var13 = JunkTex.method550(Class14_Sub3.aCacheFileWorker_2750, (byte) 61);
 						var3 = Class115.method1589((byte) -91);
 						if (var13 < var3) {
 							Class14_Sub9_Sub1.aClass124_4761 = JunkTex.method515(
@@ -748,7 +749,7 @@ public class client extends Applet_Sub1 {
 								JunkTex.gameState = 1000;
 							} else {
 								ShadowManager.method2029(104, 104);
-								Class14_Sub15.method871(Class14_Sub3.aClass9_Sub1_2750, Class64.aClass9_Sub1_1015,
+								Class14_Sub15.method871(Class14_Sub3.aCacheFileWorker_2750, Class64.aCacheFileWorker_1015,
 										-102);
 								Class51.anInt828 = 45;
 								Class14_Sub9_Sub1.aClass124_4761 = Class123.aClass124_2068;
@@ -756,27 +757,27 @@ public class client extends Applet_Sub1 {
 								Class62.anInt988 = 70;
 							}
 						} else if (Class62.anInt988 == 70) {
-							Class138.aClass9_Sub1_2222.method170();
+							Class138.aCacheFileWorker_2222.method170();
 							var6 = 0;
-							var3 = var6 + Class138.aClass9_Sub1_2222.method173(100);
-							Class89.aClass9_Sub1_1407.method170();
-							var3 += Class89.aClass9_Sub1_1407.method173(100);
-							Static2.aClass9_Sub1_369.method170();
-							var3 += Static2.aClass9_Sub1_369.method173(100);
-							Class102.aClass9_Sub1_1712.method170();
-							var3 += Class102.aClass9_Sub1_1712.method173(100);
-							Class127.aClass9_Sub1_2111.method170();
-							var3 += Class127.aClass9_Sub1_2111.method173(100);
-							Class22.aClass9_Sub1_459.method170();
-							var3 += Class22.aClass9_Sub1_459.method173(100);
-							Static2.aClass9_Sub1_1690.method170();
-							var3 += Static2.aClass9_Sub1_1690.method173(100);
-							JunkTex.aClass9_Sub1_2848.method170();
-							var3 += JunkTex.aClass9_Sub1_2848.method173(100);
-							Class14_Sub21.aClass9_Sub1_3111.method170();
-							var3 += Class14_Sub21.aClass9_Sub1_3111.method173(100);
-							Class28.aClass9_Sub1_513.method170();
-							var3 += Class28.aClass9_Sub1_513.method173(100);
+							var3 = var6 + Class138.aCacheFileWorker_2222.method173(100);
+							Class89.aCacheFileWorker_1407.method170();
+							var3 += Class89.aCacheFileWorker_1407.method173(100);
+							Static2.aCacheFileWorker_369.method170();
+							var3 += Static2.aCacheFileWorker_369.method173(100);
+							Class102.aCacheFileWorker_1712.method170();
+							var3 += Class102.aCacheFileWorker_1712.method173(100);
+							Class127.aCacheFileWorker_2111.method170();
+							var3 += Class127.aCacheFileWorker_2111.method173(100);
+							Class22.aCacheFileWorker_459.method170();
+							var3 += Class22.aCacheFileWorker_459.method173(100);
+							Static2.aCacheFileWorker_1690.method170();
+							var3 += Static2.aCacheFileWorker_1690.method173(100);
+							JunkTex.aCacheFileWorker_2848.method170();
+							var3 += JunkTex.aCacheFileWorker_2848.method173(100);
+							Class14_Sub21.aCacheFileWorker_3111.method170();
+							var3 += Class14_Sub21.aCacheFileWorker_3111.method173(100);
+							Class28.aCacheFileWorker_513.method170();
+							var3 += Class28.aCacheFileWorker_513.method173(100);
 							if (var3 < 1000) {
 								Class14_Sub9_Sub1.aClass124_4761 = JunkTex.method515(
 										new Class124[] { Class14_Sub28.aClass124_3226,
@@ -784,40 +785,40 @@ public class client extends Applet_Sub1 {
 										(byte) -57);
 								Class51.anInt828 = 50;
 							} else {
-								Class86.method1424(-256, Class138.aClass9_Sub1_2222);
-								Class32.method1072(Class138.aClass9_Sub1_2222, (byte) -104);
-								SceneGraphNode_GameEntity.method1793(Class138.aClass9_Sub1_2222, 14555);
-								JunkTex.method581(Class138.aClass9_Sub1_2222, false,
-										JunkTex.aClass9_Sub1_4739);
-								Class7_Sub3_Sub1.method138(false, Class89.aClass9_Sub1_1407,
-										JunkTex.aClass9_Sub1_4739, Class132.aBoolean2170);
-								Static2.method891(Class102.aClass9_Sub1_1712, -127,
-										JunkTex.aClass9_Sub1_4739);
-								Class123.method1664(Class127.aClass9_Sub1_2111, Class132.aBoolean2170,
+								Class86.method1424(-256, Class138.aCacheFileWorker_2222);
+								Class32.method1072(Class138.aCacheFileWorker_2222, (byte) -104);
+								SceneGraphNode_GameEntity.method1793(Class138.aCacheFileWorker_2222, 14555);
+								JunkTex.method581(Class138.aCacheFileWorker_2222, false,
+										JunkTex.aCacheFileWorker_4739);
+								Class7_Sub3_Sub1.method138(false, Class89.aCacheFileWorker_1407,
+										JunkTex.aCacheFileWorker_4739, Class132.aBoolean2170);
+								Static2.method891(Class102.aCacheFileWorker_1712, -127,
+										JunkTex.aCacheFileWorker_4739);
+								Class123.method1664(Class127.aCacheFileWorker_2111, Class132.aBoolean2170,
 										Class131.aClass14_Sub2_Sub16_Sub1_2160, (byte) -26,
-										JunkTex.aClass9_Sub1_4739);
-								Class14_Sub29.method934(Class138.aClass9_Sub1_2222, 54);
-								Static2.method2000(Class75.idx0, Class22.aClass9_Sub1_459, (byte) -86,
+										JunkTex.aCacheFileWorker_4739);
+								Class14_Sub29.method934(Class138.aCacheFileWorker_2222, 54);
+								AnimLoader.method2000(Class75.idx0, Class22.aCacheFileWorker_459, (byte) -86,
 										Class109.idx1);
-								Class108.method1561(Static2.aClass9_Sub1_1690, (byte) 127,
-										JunkTex.aClass9_Sub1_4739);
-								JunkTex.method234(JunkTex.aClass9_Sub1_2848, (byte) -77);
-								JunkTex.method1018((byte) -68, Class138.aClass9_Sub1_2222);
-								Static2.method305(Class64.aClass9_Sub1_1015,
-										JunkTex.aClass9_Sub1_4739, Class14_Sub3.aClass9_Sub1_2750,
-										Class14_Sub17.aClass9_Sub1_3021, (byte) -97);
-								Class132.method1777((byte) -57, Class138.aClass9_Sub1_2222);
-								Class45.method1164(Static2.aClass9_Sub1_369, 35);
-								Static2.method31(Class28.aClass9_Sub1_513, (byte) -4, new Class38(),
-										Class14_Sub21.aClass9_Sub1_3111);
-								Class14_Sub30.method939(Class14_Sub21.aClass9_Sub1_3111, Class28.aClass9_Sub1_513, 16);
+								Class108.method1561(Static2.aCacheFileWorker_1690, (byte) 127,
+										JunkTex.aCacheFileWorker_4739);
+								JunkTex.method234(JunkTex.aCacheFileWorker_2848, (byte) -77);
+								JunkTex.method1018((byte) -68, Class138.aCacheFileWorker_2222);
+								Static2.method305(Class64.aCacheFileWorker_1015,
+										JunkTex.aCacheFileWorker_4739, Class14_Sub3.aCacheFileWorker_2750,
+										Class14_Sub17.aCacheFileWorker_3021, (byte) -97);
+								Class132.method1777((byte) -57, Class138.aCacheFileWorker_2222);
+								Class45.method1164(Static2.aCacheFileWorker_369, 35);
+								Static2.method31(Class28.aCacheFileWorker_513, (byte) -4, new Class38(),
+										Class14_Sub21.aCacheFileWorker_3111);
+								Class14_Sub30.method939(Class14_Sub21.aCacheFileWorker_3111, Class28.aCacheFileWorker_513, 16);
 								Class14_Sub9_Sub1.aClass124_4761 = Class28.aClass124_514;
 								Class51.anInt828 = 50;
 								JunkTex.method583(-111);
 								Class62.anInt988 = 80;
 							}
 						} else if (Class62.anInt988 == 80) {
-							var3 = SceneGraphNode_GameEntity_Sub1.method1805(31673, Class14_Sub3.aClass9_Sub1_2750);
+							var3 = SceneGraphNode_GameEntity_Sub1.method1805(31673, Class14_Sub3.aCacheFileWorker_2750);
 							var13 = Class84.method1412((byte) -125);
 							if (var3 < var13) {
 								Class14_Sub9_Sub1.aClass124_4761 = JunkTex.method515(new Class124[] {
@@ -825,22 +826,22 @@ public class client extends Applet_Sub1 {
 										Class14_Sub21.aClass124_3104 }, (byte) -45);
 								Class51.anInt828 = 60;
 							} else {
-								JunkTex.method85(Class14_Sub3.aClass9_Sub1_2750, true);
+								JunkTex.method85(Class14_Sub3.aCacheFileWorker_2750, true);
 								Class14_Sub9_Sub1.aClass124_4761 = Class108.aClass124_1814;
 								Class62.anInt988 = 90;
 								Class51.anInt828 = 60;
 							}
 						} else if (Class62.anInt988 == 90) {
-							if (!Class14_Sub2_Sub7.aClass9_Sub1_3824.method170()) {
+							if (!Class14_Sub2_Sub7.aCacheFileWorker_3824.method170()) {
 								Class14_Sub9_Sub1.aClass124_4761 = JunkTex
 										.method515(new Class124[] { Class14_Sub2_Sub12.aClass124_3910,
 												Class83.method1407(43,
-														Class14_Sub2_Sub7.aClass9_Sub1_3824.method173(100)),
+														Class14_Sub2_Sub7.aCacheFileWorker_3824.method173(100)),
 										Class14_Sub21.aClass124_3104 }, (byte) -32);
 								Class51.anInt828 = 70;
 							} else {
-								Class134 var16 = new Class134(Class98.aClass9_Sub1_1666,
-										Class14_Sub2_Sub7.aClass9_Sub1_3824, Class14_Sub3.aClass9_Sub1_2750, 200,
+								Class134 var16 = new Class134(Class98.aCacheFileWorker_1666,
+										Class14_Sub2_Sub7.aCacheFileWorker_3824, Class14_Sub3.aCacheFileWorker_2750, 200,
 										!JunkTex.aBoolean3397);
 								SDRaster.method93(var16);
 								if (!RT4.useLighting) {
@@ -876,14 +877,14 @@ public class client extends Applet_Sub1 {
 							Class51.anInt828 = 75;
 							Class62.anInt988 = 120;
 						} else if (Class62.anInt988 == 120) {
-							if (!JunkTex.aClass9_Sub1_4323.method159(JunkTex.aClass124_4244,
+							if (!JunkTex.aCacheFileWorker_4323.method159(JunkTex.aClass124_4244,
 									Static2.aClass124_4891)) {
 								Class14_Sub9_Sub1.aClass124_4761 = JunkTex.method515(new Class124[] {
 										JunkTex.aClass124_2456, Class14_Sub11.aClass124_2942 },
 										(byte) -59);
 								Class51.anInt828 = 80;
 							} else {
-								Huffman var17 = new Huffman(JunkTex.aClass9_Sub1_4323.method167(
+								Huffman var17 = new Huffman(JunkTex.aCacheFileWorker_4323.method167(
 										Static2.aClass124_4891, JunkTex.aClass124_4244));
 								Class139.method1955(-83, var17);
 								Class51.anInt828 = 80;
@@ -891,56 +892,56 @@ public class client extends Applet_Sub1 {
 								Class62.anInt988 = 130;
 							}
 						} else if (Class62.anInt988 == 130) {
-							if (!Class14_Sub17.aClass9_Sub1_3021.method170()) {
+							if (!Class14_Sub17.aCacheFileWorker_3021.method170()) {
 								Class14_Sub9_Sub1.aClass124_4761 = JunkTex
 										.method515(new Class124[] { Class14_Sub17.aClass124_3033,
 												Class83.method1407(67,
-														Class14_Sub17.aClass9_Sub1_3021.method173(100) * 3 / 4),
+														Class14_Sub17.aCacheFileWorker_3021.method173(100) * 3 / 4),
 										Class14_Sub21.aClass124_3104 }, (byte) -64);
 								Class51.anInt828 = 85;
-							} else if (!JunkTex.aClass9_Sub1_4521.method170()) {
+							} else if (!JunkTex.aCacheFileWorker_4521.method170()) {
 								Class14_Sub9_Sub1.aClass124_4761 = JunkTex
 										.method515(
 												new Class124[] { Class14_Sub17.aClass124_3033,
 														Class83.method1407(71,
-																75 + JunkTex.aClass9_Sub1_4521.method173(100)
+																75 + JunkTex.aCacheFileWorker_4521.method173(100)
 																		/ 10),
 														Class14_Sub21.aClass124_3104 },
 												(byte) -11);
 								Class51.anInt828 = 85;
-							} else if (!Class64.aClass9_Sub1_1015.method170()) {
+							} else if (!Class64.aCacheFileWorker_1015.method170()) {
 								Class14_Sub9_Sub1.aClass124_4761 = JunkTex
 										.method515(new Class124[] { Class14_Sub17.aClass124_3033,
 												Class83.method1407(85,
-														Class64.aClass9_Sub1_1015.method173(100) / 20 + 85),
+														Class64.aCacheFileWorker_1015.method173(100) / 20 + 85),
 										Class14_Sub21.aClass124_3104 }, (byte) -8);
 								Class51.anInt828 = 85;
-							} else if (!Class7_Sub1.aClass9_Sub1_2657.method160(Class14_Sub9_Sub3.aClass124_4844)) {
+							} else if (!Class7_Sub1.aCacheFileWorker_2657.method160(Class14_Sub9_Sub3.aClass124_4844)) {
 								Class14_Sub9_Sub1.aClass124_4761 = JunkTex.method515(new Class124[] {
 										Class14_Sub17.aClass124_3033,
 										Class83.method1407(28,
-												Class7_Sub1.aClass9_Sub1_2657
+												Class7_Sub1.aCacheFileWorker_2657
 														.method151(Class14_Sub9_Sub3.aClass124_4844) / 10 + 90),
 										Class14_Sub21.aClass124_3104 }, (byte) -50);
 								Class51.anInt828 = 85;
 							} else {
 								JunkTex.method471(SceneGraphNode_GameEntity_Sub1.aClass148_Sub1Array4938,
 										Class32.aClass148_Sub1Array540, Class97.aClass148_Sub1Array1651,
-										SceneGraphNode.aClass14_Sub2_Sub19_Sub1Array2186, Class7_Sub1.aClass9_Sub1_2657, 90,
+										SceneGraphNode.aClass14_Sub2_Sub19_Sub1Array2186, Class7_Sub1.aCacheFileWorker_2657, 90,
 										Class14_Sub29.aClass148_Sub1Array3265);
 								Class14_Sub9_Sub1.aClass124_4761 = Class14_Sub9_Sub1.aClass124_4762;
 								Class62.anInt988 = 140;
 								Class51.anInt828 = 100;
 							}
 						} else if (Class62.anInt988 == 140) {
-							JunkTex.anInt4187 = Class14_Sub17.aClass9_Sub1_3021
+							JunkTex.anInt4187 = Class14_Sub17.aCacheFileWorker_3021
 									.method146(JunkTex.aClass124_4445);
-							Class14_Sub13.aClass9_Sub1_2958.method175(true, false);
-							JunkTex.aClass9_Sub1_3374.method175(true, true);
-							Class14_Sub3.aClass9_Sub1_2750.method175(true, true);
-							Class64.aClass9_Sub1_1015.method175(true, true);
-							JunkTex.aClass9_Sub1_4323.method175(true, true);
-							Class14_Sub17.aClass9_Sub1_3021.method175(true, true);
+							Class14_Sub13.aCacheFileWorker_2958.method175(true, false);
+							JunkTex.aCacheFileWorker_3374.method175(true, true);
+							Class14_Sub3.aCacheFileWorker_2750.method175(true, true);
+							Class64.aCacheFileWorker_1015.method175(true, true);
+							JunkTex.aCacheFileWorker_4323.method175(true, true);
+							Class14_Sub17.aCacheFileWorker_3021.method175(true, true);
 							Class65.aBoolean1026 = true;
 							Class109.method1568((byte) -55);
 						}
@@ -975,7 +976,7 @@ public class client extends Applet_Sub1 {
 			SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method697(116 - 43);
 			Class14_Sub9_Sub1.aClass14_Sub16_4780 = null;
 			Class14_Sub2_Sub11.anInt3889 = 0;
-			Static2.aClass9_2696 = null;
+			Static2.aFileSystem_2696 = null;
 			JunkTex.aClass120_854 = null;
 			return;
 		}
@@ -983,7 +984,7 @@ public class client extends Applet_Sub1 {
 		SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method716((byte) -43);
 		Class14_Sub9_Sub1.aClass14_Sub16_4780 = null;
 		JunkTex.aClass120_854 = null;
-		if (Static2.aClass9_2696 == null) {
+		if (Static2.aFileSystem_2696 == null) {
 			Class14_Sub2_Sub11.anInt3889 = 0;
 		} else {
 			Class14_Sub2_Sub11.anInt3889 = 2;
@@ -1146,6 +1147,7 @@ public class client extends Applet_Sub1 {
 		Class14_Sub3.method453(-24);
 		Class70.method1312(0);
 		Class14_Sub2_Sub12.method320((byte) -48);
+		AnimLoader.kill();
 		Class74.method1334((byte) -127);
 		Synthesizer.dispose();
 		Class62.method1274(124);
@@ -1288,12 +1290,12 @@ public class client extends Applet_Sub1 {
 		return string_70_;
 	}
 
-	public static Class9_Sub1 method51(boolean bool, int i, byte i_71_, boolean bool_72_, boolean bool_73_) {
-		Class114 class114 = null;
+	public static CacheFileWorker method51(boolean bool, int i, byte i_71_, boolean bool_72_, boolean bool_73_) {
+		CacheFile cacheFile = null;
 		int i_74_ = -104 / ((-31 - i_71_) / 40);
-		if (JunkTex.aClass76_4098 != null)
-			class114 = new Class114(i, JunkTex.aClass76_4098, Class58.aClass76Array944[i], 1000000);
-		Class9_Sub1 class9_sub1 = new Class9_Sub1(class114, Class14_Sub23.aClass114_3126, i, bool_73_, bool, bool_72_);
+		if (JunkTex.aSeekableFile_4098 != null)
+			cacheFile = new CacheFile(i, JunkTex.aSeekableFile_4098, Class58.aSeekableFileArray944[i], 1000000);
+		CacheFileWorker class9_sub1 = new CacheFileWorker(cacheFile, Class14_Sub23.aCacheFile_3126, i, bool_73_, bool, bool_72_);
 		return class9_sub1;
 	}
 
@@ -1399,18 +1401,18 @@ public class client extends Applet_Sub1 {
 		SFSS.method866(bool);
 		SFSS.method669();
 		try {
-			if (JunkTex.aClass76_4098 != null)
-				JunkTex.aClass76_4098.method1358(-1473276056);
-			if (Class58.aClass76Array944 != null) {
-				for (int i = 0; Class58.aClass76Array944.length > i; i++) {
-					if (Class58.aClass76Array944[i] != null)
-						Class58.aClass76Array944[i].method1358(-1473276056);
+			if (JunkTex.aSeekableFile_4098 != null)
+				JunkTex.aSeekableFile_4098.method1358(-1473276056);
+			if (Class58.aSeekableFileArray944 != null) {
+				for (int i = 0; Class58.aSeekableFileArray944.length > i; i++) {
+					if (Class58.aSeekableFileArray944[i] != null)
+						Class58.aSeekableFileArray944[i].method1358(-1473276056);
 				}
 			}
-			if (JunkTex.aClass76_4569 != null)
-				JunkTex.aClass76_4569.method1358(-1473276056);
-			if (JunkTex.aClass76_4022 != null)
-				JunkTex.aClass76_4022.method1358(-1473276056);
+			if (JunkTex.aSeekableFile_4569 != null)
+				JunkTex.aSeekableFile_4569.method1358(-1473276056);
+			if (JunkTex.aSeekableFile_4022 != null)
+				JunkTex.aSeekableFile_4022.method1358(-1473276056);
 		} catch (IOException ioexception) {
 			/* empty */
 		}
@@ -2165,25 +2167,25 @@ public class client extends Applet_Sub1 {
 		JunkTex.anInt4128 = Static2.anInt708;
 		try {
 			if (ErrorReporting.signlink.aClass30_720 != null) {
-				JunkTex.aClass76_4098 = new Class76((ErrorReporting.signlink.aClass30_720), 5200, 0);
+				JunkTex.aSeekableFile_4098 = new SeekableFile((ErrorReporting.signlink.aClass30_720), 5200, 0);
 				for (int i_132_ = 0; i_132_ < 27; i_132_++)
-					Class58.aClass76Array944[i_132_] = new Class76(
+					Class58.aSeekableFileArray944[i_132_] = new SeekableFile(
 							(ErrorReporting.signlink.aClass30Array711[i_132_]), 6000, 0);
-				JunkTex.aClass76_4569 = new Class76((ErrorReporting.signlink.aClass30_722), 6000,
+				JunkTex.aSeekableFile_4569 = new SeekableFile((ErrorReporting.signlink.aClass30_722), 6000,
 						0);
-				Class14_Sub23.aClass114_3126 = new Class114(255, JunkTex.aClass76_4098,
-						JunkTex.aClass76_4569, 500000);
-				JunkTex.aClass76_4022 = new Class76((ErrorReporting.signlink.aClass30_716), 24, 0);
+				Class14_Sub23.aCacheFile_3126 = new CacheFile(255, JunkTex.aSeekableFile_4098,
+						JunkTex.aSeekableFile_4569, 500000);
+				JunkTex.aSeekableFile_4022 = new SeekableFile((ErrorReporting.signlink.aClass30_716), 24, 0);
 				ErrorReporting.signlink.aClass30Array711 = null;
 				ErrorReporting.signlink.aClass30_716 = null;
 				ErrorReporting.signlink.aClass30_722 = null;
 				ErrorReporting.signlink.aClass30_720 = null;
 			}
 		} catch (IOException ioexception) {
-			JunkTex.aClass76_4022 = null;
-			JunkTex.aClass76_4098 = null;
-			Class14_Sub23.aClass114_3126 = null;
-			JunkTex.aClass76_4569 = null;
+			JunkTex.aSeekableFile_4022 = null;
+			JunkTex.aSeekableFile_4098 = null;
+			Class14_Sub23.aCacheFile_3126 = null;
+			JunkTex.aSeekableFile_4569 = null;
 		}
 		if ((Class7.anInt182 ^ 0xffffffff) != i)
 			SceneGraphNode_Projectile.aBoolean3663 = true;

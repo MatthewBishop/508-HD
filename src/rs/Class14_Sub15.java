@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.link.Deque;
 import com.jagex.link.Linkable;
 
@@ -22,16 +22,16 @@ public class Class14_Sub15 extends Linkable {
 		aClass2_2988 = new Deque();
 	}
 
-	public static void method871(Class9 class9, Class9 class9_0_, int i) {
-		Class56_Sub1.aClass14_Sub2_Sub16_3320 = Static2.method888(-107, Class14_Sub2_Sub21.anInt4088, class9_0_,
-				0, class9);
-		Class131.aClass14_Sub2_Sub16_Sub1_2160 = Class146.method1991(0, class9, class9_0_, -13824,
+	public static void method871(FileSystem fileSystem, FileSystem fileSystem_0_, int i) {
+		Class56_Sub1.aClass14_Sub2_Sub16_3320 = Static2.method888(-107, Class14_Sub2_Sub21.anInt4088, fileSystem_0_,
+				0, fileSystem);
+		Class131.aClass14_Sub2_Sub16_Sub1_2160 = Class146.method1991(0, fileSystem, fileSystem_0_, -13824,
 				Class14_Sub2_Sub21.anInt4088);
-		Class84.aClass14_Sub2_Sub16_1344 = Static2.method888(-110, JunkTex.anInt4367, class9_0_, 0,
-				class9);
+		Class84.aClass14_Sub2_Sub16_1344 = Static2.method888(-110, JunkTex.anInt4367, fileSystem_0_, 0,
+				fileSystem);
 		if (i <= -83)
 			SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567 = Static2.method888(-108, JunkTex.anInt4102,
-					class9_0_, 0, class9);
+					fileSystem_0_, 0, fileSystem);
 	}
 
 	public static void method872(byte i) {

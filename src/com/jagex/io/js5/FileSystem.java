@@ -10,11 +10,11 @@ import com.jagex.util.ArrayUtils;
 
 import rs.Class124;
 
-public abstract class Class9 {
+public abstract class FileSystem {
 	public boolean aBoolean220;
 	public boolean aBoolean244;
-	public Class63 aClass63_219;
-	public Class63[] aClass63Array213;
+	public LookupTable aLookupTable_219;
+	public LookupTable[] aLookupTableArray213;
 	public int anInt211;
 	public int anInt242;
 	public int[] anIntArray194;
@@ -34,7 +34,7 @@ public abstract class Class9 {
 	public static boolean aBoolean4245 = false;
 	public static boolean aBoolean3499 = false;
 
-	public Class9(boolean bool, boolean bool_107_) {
+	public FileSystem(boolean bool, boolean bool_107_) {
 		aBoolean244 = bool_107_;
 		aBoolean220 = bool;
 	}
@@ -54,7 +54,7 @@ public abstract class Class9 {
 
 	public int method146(Class124 class124) {
 		class124 = class124.method1716((byte) 63);
-		int i_0_ = aClass63_219.method1283(-9, class124.method1709(86));
+		int i_0_ = aLookupTable_219.lookupIdentifier(class124.method1709(86));
 		if (!method153(i_0_)) {
 			int i_1_ = -1;
 			return i_1_;
@@ -94,7 +94,7 @@ public abstract class Class9 {
 				anIntArray197[i_8_] = -1;
 			for (int i_9_ = 0; i_9_ < anInt211; i_9_++)
 				anIntArray197[anIntArray223[i_9_]] = class14_sub10.getInt((byte) -121);
-			aClass63_219 = new Class63(anIntArray197);
+			aLookupTable_219 = new LookupTable(anIntArray197);
 		}
 		for (int i_10_ = 0; i_10_ < anInt211; i_10_++)
 			anIntArray202[anIntArray223[i_10_]] = class14_sub10.getInt((byte) -108);
@@ -118,7 +118,7 @@ public abstract class Class9 {
 				anIntArrayArray218[i_14_] = null;
 		}
 		if (i_4_ != 0) {
-			aClass63Array213 = new Class63[i_6_ + 1];
+			aLookupTableArray213 = new LookupTable[i_6_ + 1];
 			anIntArrayArray198 = new int[i_6_ + 1][];
 			for (int i_19_ = 0; anInt211 > i_19_; i_19_++) {
 				int i_20_ = anIntArray223[i_19_];
@@ -134,14 +134,14 @@ public abstract class Class9 {
 						i_24_ = i_23_;
 					anIntArrayArray198[i_20_][i_24_] = class14_sub10.getInt((byte) -116);
 				}
-				aClass63Array213[i_20_] = new Class63(anIntArrayArray198[i_20_]);
+				aLookupTableArray213[i_20_] = new LookupTable(anIntArrayArray198[i_20_]);
 			}
 		}
 	}
 
 	public boolean method148(int i, int i_25_, int i_26_) {
 		if (i_26_ < (i_25_ ^ 0xffffffff) || i < 0 || i_25_ >= anIntArray208.length || i >= anIntArray208[i_25_]) {
-			if (Class9.aBoolean3499)
+			if (FileSystem.aBoolean3499)
 				throw new IllegalArgumentException(
 						new StringBuilder(String.valueOf(i_25_)).append(",").append(i).toString());
 			boolean bool = false;
@@ -167,7 +167,7 @@ public abstract class Class9 {
 				}
 			}
 		}
-		byte[] is_31_ = Class9.method1282(anObjectArrayArray237[i_28_][i_27_], false);
+		byte[] is_31_ = FileSystem.method1282(anObjectArrayArray237[i_28_][i_27_], false);
 		if (aBoolean244) {
 			anObjectArrayArray237[i_28_][i_27_] = null;
 			if (anIntArray208[i_28_] == 1)
@@ -179,7 +179,7 @@ public abstract class Class9 {
 
 	public int method151(Class124 class124) {
 		class124 = class124.method1716((byte) 63);
-		int i_33_ = aClass63_219.method1283(-9, class124.method1709(108));
+		int i_33_ = aLookupTable_219.lookupIdentifier(class124.method1709(108));
 		int i_34_ = getCompletion(i_33_);
 		return i_34_;
 	}
@@ -191,7 +191,7 @@ public abstract class Class9 {
 
 	public boolean method153(int i) {
 		if (i < 0 || anIntArray208.length <= i || anIntArray208[i] == 0) {
-			if (!Class9.aBoolean3499) {
+			if (!FileSystem.aBoolean3499) {
 				boolean bool = false;
 				return bool;
 			}
@@ -237,9 +237,9 @@ public abstract class Class9 {
 		}
 		byte[] is_46_;
 		if (is == null || is[0] == 0 && is[1] == 0 && is[2] == 0 && is[3] == 0)
-			is_46_ = Class9.method1282(anObjectArray192[i_39_], false);
+			is_46_ = FileSystem.method1282(anObjectArray192[i_39_], false);
 		else {
-			is_46_ = Class9.method1282(anObjectArray192[i_39_], true);
+			is_46_ = FileSystem.method1282(anObjectArray192[i_39_], true);
 			Buffer class14_sub10 = new Buffer(is_46_);
 			class14_sub10.method799(is, class14_sub10.payload.length, 14802, 5);
 		}
@@ -283,7 +283,7 @@ public abstract class Class9 {
 				else
 					i_61_ = i_60_;
 				if (!aBoolean244)
-					objects[i_61_] = Class9.wrapBuffer(false, is_54_[i_60_]);
+					objects[i_61_] = FileSystem.wrapBuffer(false, is_54_[i_60_]);
 				else
 					objects[i_61_] = is_54_[i_60_];
 			}
@@ -296,7 +296,7 @@ public abstract class Class9 {
 			if (aBoolean244)
 				objects[i_62_] = is_47_;
 			else
-				objects[i_62_] = Class9.wrapBuffer(false, is_47_);
+				objects[i_62_] = FileSystem.wrapBuffer(false, is_47_);
 		}
 		boolean bool_63_ = true;
 		return bool_63_;
@@ -318,7 +318,7 @@ public abstract class Class9 {
 				}
 			}
 		}
-		byte[] is = Class9.method1282(anObjectArrayArray237[i_64_][i], false);
+		byte[] is = FileSystem.method1282(anObjectArrayArray237[i_64_][i], false);
 		byte[] is_66_ = is;
 		return is_66_;
 	}
@@ -348,19 +348,19 @@ public abstract class Class9 {
 	public boolean method159(Class124 class124, Class124 class124_70_) {
 		class124_70_ = class124_70_.method1716((byte) 63);
 		class124 = class124.method1716((byte) 63);
-		int i_71_ = aClass63_219.method1283(4 - 13, class124_70_.method1709(49));
+		int i_71_ = aLookupTable_219.lookupIdentifier(class124_70_.method1709(49));
 		if (!method153(i_71_)) {
 			boolean bool = false;
 			return bool;
 		}
-		int i_72_ = aClass63Array213[i_71_].method1283(-9, class124.method1709(93));
+		int i_72_ = aLookupTableArray213[i_71_].lookupIdentifier(class124.method1709(93));
 		boolean bool = method158(i_72_, i_71_);
 		return bool;
 	}
 
 	public boolean method160(Class124 class124) {
 		class124 = class124.method1716((byte) 63);
-		int i_73_ = aClass63_219.method1283(-9, class124.method1709(111));
+		int i_73_ = aLookupTable_219.lookupIdentifier(class124.method1709(111));
 		boolean bool = method161(i_73_);
 		return bool;
 	}
@@ -385,7 +385,7 @@ public abstract class Class9 {
 
 	public void method162(Class124 class124) {
 		class124 = class124.method1716((byte) 63);
-		int i_75_ = aClass63_219.method1283(-9, class124.method1709(57));
+		int i_75_ = aLookupTable_219.lookupIdentifier(class124.method1709(57));
 		method174(i_75_);
 	}
 
@@ -416,7 +416,7 @@ public abstract class Class9 {
 
 	public boolean method166(Class124 class124) {
 		class124 = class124.method1716((byte) 63);
-		int i_83_ = aClass63_219.method1283(-9, class124.method1709(108));
+		int i_83_ = aLookupTable_219.lookupIdentifier(class124.method1709(108));
 		if (i_83_ < 0) {
 			boolean bool = false;
 			return bool;
@@ -428,12 +428,12 @@ public abstract class Class9 {
 	public byte[] method167(Class124 class124, Class124 class124_84_) {
 		class124 = class124.method1716((byte) 63);
 		class124_84_ = class124_84_.method1716((byte) 63);
-		int i_86_ = aClass63_219.method1283(-9, class124.method1709(99));
+		int i_86_ = aLookupTable_219.lookupIdentifier(class124.method1709(99));
 		if (!method153(i_86_)) {
 			byte[] is = null;
 			return is;
 		}
-		int i_85_ = aClass63Array213[i_86_].method1283(-9, class124_84_.method1709(74));
+		int i_85_ = aLookupTableArray213[i_86_].lookupIdentifier(class124_84_.method1709(74));
 		byte[] is = method163(i_85_, i_86_);
 		return is;
 	}
@@ -498,12 +498,12 @@ public abstract class Class9 {
 
 	public void method175(boolean bool, boolean bool_99_) {
 		if (bool_99_) {
-			aClass63_219 = null;
+			aLookupTable_219 = null;
 			anIntArray197 = null;
 		}
 		if (bool) {
 			anIntArrayArray198 = null;
-			aClass63Array213 = null;
+			aLookupTableArray213 = null;
 		}
 	}
 
@@ -539,32 +539,26 @@ public abstract class Class9 {
 		return is_3_;
 	}
 
-	public static Object wrapBuffer(boolean bool, byte[] is) {
+	public static Object wrapBuffer(boolean booll, byte[] is) {
 		if (is == null) {
-			Object object = null;
-			return object;
+			return null;
 		}
 		do {
-			if (136 < is.length && !Class9.aBoolean4245) {
+			if (136 < is.length && !FileSystem.aBoolean4245) {
 				DataWrapper class126;
 				try {
 					DataWrapper class126_1_ = ((DataWrapper) Class.forName(StringConstants.DATA_WRAPPER).newInstance());
-					class126_1_.method1740(is, 101);
+					class126_1_.put(is);
 					class126 = class126_1_;
 				} catch (Throwable throwable) {
 					Throwable throwable_2_ = new Throwable();
-					Class9.aBoolean4245 = true;
+					FileSystem.aBoolean4245 = true;
 					break;
 				}
 				return class126;
 			}
 		} while (false);
-		if (bool) {
-			byte[] is_3_ = Class9.method616(is);
-			return is_3_;
-		}
-		byte[] is_4_ = is;
-		return is_4_;
+		return is;
 	}
 
 	public static byte[] method1282(Object object, boolean bool) {
@@ -578,12 +572,12 @@ public abstract class Class9 {
 				byte[] is_7_ = is;
 				return is_7_;
 			}
-			byte[] is_8_ = Class9.method616(is);
+			byte[] is_8_ = FileSystem.method616(is);
 			return is_8_;
 		}
 		if (object instanceof DataWrapper) {
 			DataWrapper class126 = (DataWrapper) object;
-			byte[] is = class126.method1745((byte) -45);
+			byte[] is = class126.get();
 			return is;
 		}
 		throw new IllegalArgumentException();

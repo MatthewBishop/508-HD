@@ -3,20 +3,20 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.link.HashTable;
 import com.jagex.sound.Track;
 
 public class Class120 {
 	public static Class124 aClass124_2001 = Class124.method263("welle:");
 	public static int[] anIntArray2002;
-	public Class9 aClass9_2003;
+	public FileSystem aFileSystem_2003;
 	public HashTable aClass55_2004 = new HashTable(256);
 	public static int anInt2005;
 	public static int anInt2007 = -1;
 	public static int[] z_max_occluders;
 	public static int[] anIntArray2009;
-	public Class9 aClass9_2010;
+	public FileSystem aFileSystem_2010;
 	public static Class124 aClass124_2012;
 	public static int anInt2014;
 	public HashTable aClass55_2015 = new HashTable(256);
@@ -73,7 +73,7 @@ public class Class120 {
 			Class14_Sub12_Sub1 class14_sub12_sub1_10_ = null;
 			return class14_sub12_sub1_10_;
 		}
-		Track track = Track.method1451(aClass9_2010, i, i_7_);
+		Track track = Track.method1451(aFileSystem_2010, i, i_7_);
 		if (track == null) {
 			class14_sub12_sub1 = null;
 			return class14_sub12_sub1;
@@ -101,7 +101,7 @@ public class Class120 {
 		}
 		Class14_Sub24 class14_sub24 = (Class14_Sub24) aClass55_2004.get(l);
 		if (class14_sub24 == null) {
-			class14_sub24 = Class14_Sub24.method910(aClass9_2003, i, i_13_);
+			class14_sub24 = Class14_Sub24.method910(aFileSystem_2003, i, i_13_);
 			if (class14_sub24 == null) {
 				Class14_Sub12_Sub1 class14_sub12_sub1_17_ = null;
 				return class14_sub12_sub1_17_;
@@ -122,11 +122,11 @@ public class Class120 {
 	}
 
 	public Class14_Sub12_Sub1 method1618(int[] is, byte i, int i_19_) {
-		if (aClass9_2003.method155() == 1) {
+		if (aFileSystem_2003.method155() == 1) {
 			Class14_Sub12_Sub1 class14_sub12_sub1 = method1617(0, 7711, is, i_19_);
 			return class14_sub12_sub1;
 		}
-		if (aClass9_2003.method177(i_19_) == 1) {
+		if (aFileSystem_2003.method177(i_19_) == 1) {
 			Class14_Sub12_Sub1 class14_sub12_sub1 = method1617(i_19_, 7711, is, 0);
 			return class14_sub12_sub1;
 		}
@@ -136,11 +136,11 @@ public class Class120 {
 	}
 
 	public Class14_Sub12_Sub1 method1619(int[] is, int i, int i_20_) {
-		if (aClass9_2010.method155() == 1) {
+		if (aFileSystem_2010.method155() == 1) {
 			Class14_Sub12_Sub1 class14_sub12_sub1 = method1616(0, i_20_, is, true);
 			return class14_sub12_sub1;
 		}
-		if (aClass9_2010.method177(i_20_) == 1) {
+		if (aFileSystem_2010.method177(i_20_) == 1) {
 			Class14_Sub12_Sub1 class14_sub12_sub1 = method1616(i_20_, 0, is, true);
 			return class14_sub12_sub1;
 		}
@@ -149,8 +149,8 @@ public class Class120 {
 		throw new RuntimeException();
 	}
 
-	public Class120(Class9 class9, Class9 class9_21_) {
-		aClass9_2003 = class9_21_;
-		aClass9_2010 = class9;
+	public Class120(FileSystem fileSystem, FileSystem fileSystem_21_) {
+		aFileSystem_2003 = fileSystem_21_;
+		aFileSystem_2010 = fileSystem;
 	}
 }

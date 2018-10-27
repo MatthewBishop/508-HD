@@ -3,13 +3,13 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 
 public class Class59 {
 	public static Class124 aClass124_953;
 	public static boolean aBoolean954 = false;
 	public static Class124 aClass124_956;
-	public static Class9 aClass9_957;
+	public static FileSystem aFileSystem_957;
 	public static Class124 aClass124_958;
 	static {
 		aClass124_953 = Class124.method263("k");
@@ -211,7 +211,7 @@ public class Class59 {
 	public static void method1261(byte i) {
 		if (i == 16) {
 			aClass124_958 = null;
-			aClass9_957 = null;
+			aFileSystem_957 = null;
 			aClass124_953 = null;
 			aClass124_956 = null;
 		}

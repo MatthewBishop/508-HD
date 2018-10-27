@@ -526,7 +526,7 @@ public class Class116 {
 																	int i_49_ = (Class79.anIntArray1305[i_3_]);
 																	int i_50_ = (Class79.anIntArray1305[(i_3_ + 1)]);
 																	Class79.anIntArray1305[i_3_++] = (Class14_Sub29
-																			.method931(i_50_, (i_1_ + 3879), i_49_));
+																			.method931(i_50_, i_49_));
 																} else if (i_6_ == 3303) {
 																	i_3_ -= 2;
 																	int i_51_ = (Class79.anIntArray1305[i_3_]);
@@ -581,7 +581,7 @@ public class Class116 {
 																			+ 32768);
 																	int i_66_ = (Class79.anIntArray1305[(i_3_ + 1)]);
 																	Class79.anIntArray1305[i_3_++] = (Class14_Sub29
-																			.method931(i_66_, 3958, i_65_));
+																			.method931(i_66_, i_65_));
 																} else if (i_6_ == 3315) {
 																	i_3_ -= 2;
 																	int i_67_ = ((Class79.anIntArray1305[i_3_])
@@ -2501,7 +2501,7 @@ public class Class116 {
 																								Class33.method1087(1936,
 																										0, false,
 																										JunkTex.anInt2856,
-																										JunkTex.aClass9_Sub1_3374,
+																										JunkTex.aCacheFileWorker_3374,
 																										i_186_);
 																								Class14_Sub7.aBoolean2827 = false;
 																							}
@@ -2820,7 +2820,7 @@ public class Class116 {
 																		Class124 class124 = JunkTex.aClass124Array5101[--i_4_];
 																		int i_224_ = Class79.anIntArray1305[i_3_];
 																		int i_225_ = Class79.anIntArray1305[i_3_ + 1];
-																		byte[] is_226_ = Class64.aClass9_Sub1_1015
+																		byte[] is_226_ = Class64.aCacheFileWorker_1015
 																				.method163(0, i_225_);
 																		Class14_Sub2_Sub16_Sub1 class14_sub2_sub16_sub1 = new Class14_Sub2_Sub16_Sub1(
 																				is_226_);
@@ -2833,7 +2833,7 @@ public class Class116 {
 																		Class124 class124 = JunkTex.aClass124Array5101[--i_4_];
 																		int i_227_ = Class79.anIntArray1305[i_3_];
 																		int i_228_ = Class79.anIntArray1305[i_3_ + 1];
-																		byte[] is_229_ = Class64.aClass9_Sub1_1015
+																		byte[] is_229_ = Class64.aCacheFileWorker_1015
 																				.method163(0, i_228_);
 																		Class14_Sub2_Sub16_Sub1 class14_sub2_sub16_sub1 = new Class14_Sub2_Sub16_Sub1(
 																				is_229_);
@@ -3734,13 +3734,6 @@ public class Class116 {
 			i = class133_sub1_sub1.anInt4932;
 		int i_332_ = i;
 		return i_332_;
-	}
-
-	public static void method1598(int i) {
-		if (i <= 46)
-			anInt1929 = -62;
-		Class21.aClass52_444.method1209();
-		Class14_Sub2_Sub12.aClass52_3894.method1209();
 	}
 
 	public static void method1599(int i) {

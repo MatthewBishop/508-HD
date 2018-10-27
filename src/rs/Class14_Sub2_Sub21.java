@@ -5,7 +5,7 @@ package rs;
 
 import com.jagex.applet.Applet_Sub1;
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.link.Cacheable;
 
 public class Class14_Sub2_Sub21 extends Cacheable {
@@ -181,11 +181,11 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 		}
 	}
 
-	public static void method444(int i, Class9 class9) {
-		JunkTex.anInt4509 = class9.method146(JunkTex.aClass124_1105);
+	public static void method444(int i, FileSystem fileSystem) {
+		JunkTex.anInt4509 = fileSystem.method146(JunkTex.aClass124_1105);
 		if (i != -30451)
 			method444(69, null);
-		JunkTex.anInt4594 = class9.method146(JunkTex.aClass124_422);
+		JunkTex.anInt4594 = fileSystem.method146(JunkTex.aClass124_422);
 	}
 
 	public static void method445(Class94 class94, int i, boolean bool) {

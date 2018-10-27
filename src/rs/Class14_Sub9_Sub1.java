@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.link.HashTable;
 import com.jagex.util.TimeUtil;
 
@@ -414,7 +414,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 		class14_sub18.aClass14_Sub9_Sub4_3051.method778(i_35_);
 	}
 
-	public synchronized boolean method706(int i, Class14_Sub16 class14_sub16, int i_37_, Class9 class9,
+	public synchronized boolean method706(int i, Class14_Sub16 class14_sub16, int i_37_, FileSystem fileSystem,
 			Class120 class120) {
 		int i_38_ = 91 / ((24 - i_37_) / 62);
 		class14_sub16.method877();
@@ -427,7 +427,7 @@ public class Class14_Sub9_Sub1 extends Class14_Sub9 {
 			int i_39_ = (int) class14_sub17.key;
 			Class14_Sub28 class14_sub28 = ((Class14_Sub28) aClass55_4781.get(i_39_));
 			if (class14_sub28 == null) {
-				class14_sub28 = Class14_Sub2_Sub5.method285(i_39_, class9, (byte) 98);
+				class14_sub28 = Class14_Sub2_Sub5.method285(i_39_, fileSystem, (byte) 98);
 				if (class14_sub28 == null) {
 					bool = false;
 					continue;

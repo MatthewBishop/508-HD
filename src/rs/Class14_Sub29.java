@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.cache.loaders.AnimFrameLoader;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.link.Deque;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.Class148_Sub1;
@@ -46,7 +46,7 @@ public class Class14_Sub29 extends Linkable {
 			throw Util.error(throwable, new StringBuilder("ve.D(").append(i).append(')').toString());
 		}
 	}
-	public static int method931(int var0, int var1, int var2) {
+	public static int method931(int var0, int var2) {
 		try {
 			byte var3 = 0;
 			Class14_Sub25 var4 = (Class14_Sub25) Class132.aClass55_2167.get(var2);
@@ -55,10 +55,6 @@ public class Class14_Sub29 extends Linkable {
 			} else {
 				var3 = 0;
 				if (var0 >= 0 && var4.anIntArray3177.length > var0) {
-					if (var1 != 3958) {
-						method936(-33);
-					}
-
 					int var5 = var4.anIntArray3177[var0];
 					return var5;
 				} else {
@@ -66,7 +62,7 @@ public class Class14_Sub29 extends Linkable {
 				}
 			}
 		} catch (Throwable var6) {
-			throw Util.error(var6, "ve.G(" + var0 + ',' + var1 + ',' + var2 + ')');
+			throw Util.error(var6, "ve.G(" + var0 + ',' + var2 + ')');
 		}
 	}
 	public static int method932(int i, int i_17_) {
@@ -75,8 +71,8 @@ public class Class14_Sub29 extends Linkable {
 		int i_18_ = i >>> 40;
 		return i_18_;
 	}
-	public static void method934(Class9 class9, int i) {
-		JunkTex.aClass9_4371 = class9;
+	public static void method934(FileSystem fileSystem, int i) {
+		JunkTex.aFileSystem_4371 = fileSystem;
 	}
 	public static void method935(int i, boolean bool) {
 		Class7_Sub2.anInt2676 = 99;
@@ -100,8 +96,6 @@ public class Class14_Sub29 extends Linkable {
 		JunkTex.overlays = new byte[i_27_][104][104];
 	}
 	public static void method936(int i) {
-		if (i != 99)
-			AnimFrameLoader.method933(null, null, 6, (byte) -22, false);
 		Class40.aClass2_664 = new Deque();
 	}
 	public boolean aBoolean3235;

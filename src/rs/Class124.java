@@ -371,11 +371,11 @@ public class Class124 implements Interface1 {
 	}
 
 	public static void method1718(int var0) {
-		Class127.aClass52_2112.method1209();
+		Class127.aClass52_2112.clearSoftReference();
 		if (var0 == 48) {
-			Class112.aClass52_1868.method1209();
-			Class62.aClass52_991.method1209();
-			Static2.aClass52_810.method1209();
+			Class112.aClass52_1868.clearSoftReference();
+			Class62.aClass52_991.clearSoftReference();
+			Static2.aClass52_810.clearSoftReference();
 		}
 
 	}

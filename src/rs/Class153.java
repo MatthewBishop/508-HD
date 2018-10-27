@@ -96,7 +96,7 @@ public class Class153 {
 
 	public static void method2049(int i, int i_6_, int i_7_) {
 		if (i_7_ != (Class14_Sub23.anInt3135 ^ 0xffffffff) && i != -1) {
-			Class33.method1087(1936, 0, false, i, JunkTex.aClass9_Sub1_4603, Class14_Sub23.anInt3135);
+			Class33.method1087(1936, 0, false, i, JunkTex.aCacheFileWorker_4603, Class14_Sub23.anInt3135);
 			Class14_Sub7.aBoolean2827 = true;
 		}
 	}

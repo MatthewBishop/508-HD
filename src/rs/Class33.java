@@ -3,7 +3,8 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9;
+import com.jagex.cache.anim.AnimLoader;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.link.Deque;
 import com.jagex.link.HashTable;
 
@@ -11,7 +12,6 @@ public class Class33 {
 	public static int[][] anIntArrayArray575 = new int[104][104];
 	public static int anInt577;
 	public static Class124 aClass124_578 = Class124.method263("");
-	public static Class9 aClass9_579;
 	public static short[] aShortArray580;
 	public static Deque aClass2_583;
 	public static boolean aBoolean584 = true;
@@ -64,7 +64,6 @@ public class Class33 {
 		aClass14_Sub9_Sub2_585 = null;
 		anIntArrayArray575 = null;
 		aClass124_578 = null;
-		aClass9_579 = null;
 	}
 
 	public static Class14_Sub2_Sub16 method1086(byte[] is, int i) {
@@ -82,7 +81,7 @@ public class Class33 {
 		return class14_sub2_sub16_sub2_9_;
 	}
 
-	public static void method1087(int i, int i_10_, boolean bool, int i_11_, Class9 class9, int i_12_) {
+	public static void method1087(int i, int i_10_, boolean bool, int i_11_, FileSystem fileSystem, int i_12_) {
 		JunkTex.anInt3930 = i_10_;
 		if (i != 1936)
 			anIntArrayArray575 = null;
@@ -90,7 +89,7 @@ public class Class33 {
 		JunkTex.anInt1132 = i_12_;
 		Class35.aBoolean593 = bool;
 		Class14_Sub15.anInt2989 = 10000;
-		Static2.aClass9_2696 = class9;
+		Static2.aFileSystem_2696 = fileSystem;
 		Class38.anInt2624 = i_11_;
 	}
 

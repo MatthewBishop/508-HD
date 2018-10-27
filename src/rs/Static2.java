@@ -21,11 +21,12 @@ import java.net.Socket;
 import com.jagex.applet.Applet_Sub1;
 import com.jagex.applet.ErrorReporting;
 import com.jagex.cache.anim.Animation;
+import com.jagex.cache.anim.AnimLoader;
 import com.jagex.cache.loaders.AnimFrameLoader;
 import com.jagex.io.Buffer;
 import com.jagex.io.PacketBuffer;
-import com.jagex.io.js5.Class9;
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.io.js5.FileSystem;
+import com.jagex.io.js5.CacheFileWorker;
 import com.jagex.io.js5.SFSS;
 import com.jagex.link.Cache;
 import com.jagex.link.Deque;
@@ -57,9 +58,9 @@ public class Static2 {
 	public static byte[][] aByteArrayArray362;
 	public static Class124 aClass124_360;
 	public static Class124 aClass124_364;
-	public static Class9 aClass9_367;
-	public static Class9 aClass9_372;
-	public static Class9_Sub1 aClass9_Sub1_369;
+	public static FileSystem aFileSystem_367;
+	public static FileSystem aFileSystem_372;
+	public static CacheFileWorker aCacheFileWorker_369;
 	public static int anInt356;
 	public static int anInt359;
 	public static int anInt365;
@@ -116,13 +117,13 @@ public class Static2 {
 	}
 
 	public static void method232(int i) {
-		aClass9_367 = null;
+		aFileSystem_367 = null;
 		aByteArrayArray362 = null;
 		aClass124_364 = null;
 		aShortArray357 = null;
 		aClass124_360 = null;
-		aClass9_Sub1_369 = null;
-		aClass9_372 = null;
+		aCacheFileWorker_369 = null;
+		aFileSystem_372 = null;
 		if (i != -21518)
 			method230(null, -53);
 		anIntArray351 = null;
@@ -258,12 +259,12 @@ public class Static2 {
 	}
 
 	public static void method815(int i) {
-		Static2.aClass9_2923 = null;
+		Static2.aFileSystem_2923 = null;
 		Static2.aClass124Array2938 = null;
 		aClass124_2887 = null;
-		Static2.aClass9_Sub1_2901 = null;
+		Static2.aCacheFileWorker_2901 = null;
 		if (i != 0)
-			Static2.aClass9_Sub1_2901 = null;
+			Static2.aCacheFileWorker_2901 = null;
 		aClass124_2872 = null;
 		aClass124_2905 = null;
 		Static2.aClass124_2869 = null;
@@ -277,8 +278,8 @@ public class Static2 {
 	public static boolean aBoolean2870 = false;
 	public static Class124 aClass124_2869 = Class124.method263("overlay");
 	public static Class124[] aClass124Array2938 = new Class124[200];
-	public static Class9 aClass9_2923;
-	public static Class9_Sub1 aClass9_Sub1_2901;
+	public static FileSystem aFileSystem_2923;
+	public static CacheFileWorker aCacheFileWorker_2901;
 	public static int anInt2878 = 0;
 	public static Class124 aClass124_4887 = Class124.method263("Loading)3)3)3");
 	public static Class124 aClass124_4891 = Class124.method263("huffman");
@@ -508,7 +509,7 @@ public class Static2 {
 	}
 
 	public static void method334(int i) {
-		Static2.aClass9_3945 = null;
+		Static2.aFileSystem_3945 = null;
 		Static2.aClass124_3946 = null;
 		if (i > -96)
 			Static2.aClass124_3948 = null;
@@ -545,7 +546,7 @@ public class Static2 {
 
 	public static int[] anIntArray3949 = new int[50];
 	public static int anInt3947;
-	public static Class9 aClass9_3945;
+	public static FileSystem aFileSystem_3945;
 	public static SoftCache aClass52_3942 = new SoftCache(64);
 	public static Class124 aClass124_3948 = Static2.aClass124_3946;
 	public static Class124 aClass124_3946 = Class124.method263(" more options");
@@ -784,14 +785,6 @@ public class Static2 {
 		return Class18.aClass124_418;
 	}
 
-	public static void method2000(Class9 class9, Class9 class9_4_, byte i, Class9 class9_5_) {
-		if (i >= -1)
-			aClass124_2382 = null;
-		Class33.aClass9_579 = class9_4_;
-		JunkTex.aClass9_3427 = class9;
-		SceneGraphNode_GameEntity_Sub1.aClass9_4935 = class9_5_;
-	}
-
 	public static void method259(boolean bool, int i) {
 		if (i == 11988) {
 			Class138.method1946(139);
@@ -1002,7 +995,7 @@ public class Static2 {
 		Static2.aClass20_5081 = null;
 		if (i != 2)
 			Static2.method385((byte) 121, null);
-		Static2.aClass9_Sub1_5085 = null;
+		Static2.aCacheFileWorker_5085 = null;
 	}
 
 	public static void method384(boolean bool, int i) {
@@ -1037,16 +1030,16 @@ public class Static2 {
 		}
 	}
 
-	public static void method385(byte i, Class9 class9) {
+	public static void method385(byte i, FileSystem fileSystem) {
 		if (!Class14_Sub2_Sub5.aBoolean3803 && i == 67) {
 			Class25.method995();
-			Class14_Sub2_Sub7.aClass14_Sub2_Sub19_3826 = Class7.method117(class9, JunkTex.anInt4509,
+			Class14_Sub2_Sub7.aClass14_Sub2_Sub19_3826 = Class7.method117(fileSystem, JunkTex.anInt4509,
 					(byte) -100);
 			int i_3_ = Applet_Sub1.anInt3094;
 			int i_4_ = i_3_ * 956 / 503;
 			Class14_Sub2_Sub7.aClass14_Sub2_Sub19_3826.method389((-i_4_ + Applet_Sub1.anInt1340) / 2, 0, i_4_, i_3_);
 			SceneGraphNode_GameEntity_Sub1.aClass148_4915 = JunkTex.method622(JunkTex.anInt4594, i - 67,
-					class9);
+					fileSystem);
 			SceneGraphNode_GameEntity_Sub1.aClass148_4915
 					.method2001((Applet_Sub1.anInt1340 / 2 - (SceneGraphNode_GameEntity_Sub1.aClass148_4915.width) / 2), 18);
 			Class14_Sub2_Sub5.aBoolean3803 = true;
@@ -1063,7 +1056,7 @@ public class Static2 {
 	}
 
 	public static int anInt5087;
-	public static Class9_Sub1 aClass9_Sub1_5085;
+	public static CacheFileWorker aCacheFileWorker_5085;
 	public static Cache aClass20_5081 = new Cache(64);
 	public static Class124 aClass124_5084 = Class124.method263("<)4col>");
 	public static Class124 aClass124_5083 = Class124.method263("settings");
@@ -1099,11 +1092,11 @@ public class Static2 {
 		byte[] is = new byte[24];
 		if (i != -108)
 			Static2.method1119(-6);
-		if (JunkTex.aClass76_4022 != null) {
+		if (JunkTex.aSeekableFile_4022 != null) {
 			try {
 				int i_11_ = 0;
-				JunkTex.aClass76_4022.method1361(i ^ ~0x6b, 0L);
-				JunkTex.aClass76_4022.method1366((byte) -33, is);
+				JunkTex.aSeekableFile_4022.method1361(i ^ ~0x6b, 0L);
+				JunkTex.aSeekableFile_4022.method1366((byte) -33, is);
 				for (/**/; i_11_ < 24 && is[i_11_] == 0; i_11_++) {
 					/* empty */
 				}
@@ -1118,9 +1111,9 @@ public class Static2 {
 	}
 
 	public static void method1124(int i) {
-		Class36.aClass52_621.method1209();
+		Class36.aClass52_621.clearSoftReference();
 		if (i > 95)
-			Class70.aClass52_1079.method1209();
+			Class70.aClass52_1079.clearSoftReference();
 	}
 
 	public static byte[] method1121(byte[] is, int i) {
@@ -1501,7 +1494,7 @@ public class Static2 {
 			Class14_Sub2_Sub8 class14_sub2_sub8_1_ = class14_sub2_sub8;
 			return class14_sub2_sub8_1_;
 		}
-		byte[] is = (Class14_Sub2_Sub5.aClass9_3817.method163(Class7.method118((byte) 68, i_0_),
+		byte[] is = (Class14_Sub2_Sub5.aFileSystem_3817.method163(Class7.method118((byte) 68, i_0_),
 				Static2.method890(i_0_, 2)));
 		Class14_Sub2_Sub8 class14_sub2_sub8_2_ = new Class14_Sub2_Sub8();
 		if (is != null)
@@ -1706,7 +1699,7 @@ public class Static2 {
 		Static2.aClass124_1693 = null;
 		Static2.aClass124_1683 = null;
 		Static2.aClass124_1698 = null;
-		Static2.aClass9_Sub1_1690 = null;
+		Static2.aCacheFileWorker_1690 = null;
 		Static2.aClass124_1694 = null;
 		Static2.aClass124_1689 = null;
 		Static2.aClass124_1682 = null;
@@ -1782,7 +1775,7 @@ public class Static2 {
 	public static Class124 aClass124_1689 = Class124.method263("Schrifts-=tze geladen)3");
 	public static Class124 aClass124_1694 = Class124.method263("Connecting to update server");
 	public static Class124 aClass124_1698 = Class124.method263("scroll:");
-	public static Class9_Sub1 aClass9_Sub1_1690;
+	public static CacheFileWorker aCacheFileWorker_1690;
 	public static int anInt1681 = -1;
 	public static int anInt1691 = 127;
 	public static int anInt1685 = 0;
@@ -1928,33 +1921,33 @@ public class Static2 {
 						Static2.aBoolean214 = true;
 						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class75.idx0.anInt242, var0 ^ 86);
 						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class109.idx1.anInt242, 95);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class138.aClass9_Sub1_2222.anInt242, 96);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class14_Sub17.aClass9_Sub1_3021.anInt242, var0 ^ 73);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(aClass9_Sub1_2901.anInt242, 66);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class14_Sub13.aClass9_Sub1_2958.anInt242, var0 + 75);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(JunkTex.aClass9_Sub1_3374.anInt242, 98);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(JunkTex.aClass9_Sub1_4739.anInt242, 65);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class14_Sub3.aClass9_Sub1_2750.anInt242, 76);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class98.aClass9_Sub1_1666.anInt242, 122);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(JunkTex.aClass9_Sub1_4323.anInt242, 82);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(JunkTex.aClass9_Sub1_4603.anInt242,
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class138.aCacheFileWorker_2222.anInt242, 96);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class14_Sub17.aCacheFileWorker_3021.anInt242, var0 ^ 73);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(aCacheFileWorker_2901.anInt242, 66);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class14_Sub13.aCacheFileWorker_2958.anInt242, var0 + 75);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(JunkTex.aCacheFileWorker_3374.anInt242, 98);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(JunkTex.aCacheFileWorker_4739.anInt242, 65);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class14_Sub3.aCacheFileWorker_2750.anInt242, 76);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class98.aCacheFileWorker_1666.anInt242, 122);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(JunkTex.aCacheFileWorker_4323.anInt242, 82);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(JunkTex.aCacheFileWorker_4603.anInt242,
 								var0 ^ 96);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(JunkTex.aClass9_Sub1_4521.anInt242, 99);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class64.aClass9_Sub1_1015.anInt242, var0 ^ 118);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(aClass9_Sub1_5085.anInt242,
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(JunkTex.aCacheFileWorker_4521.anInt242, 99);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class64.aCacheFileWorker_1015.anInt242, var0 ^ 118);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(aCacheFileWorker_5085.anInt242,
 								var0 + 109);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class47.aClass9_Sub1_790.anInt242, var0 ^ 89);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class89.aClass9_Sub1_1407.anInt242, 118);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(aClass9_Sub1_369.anInt242, 127);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class102.aClass9_Sub1_1712.anInt242, 90);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class127.aClass9_Sub1_2111.anInt242, 101);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class22.aClass9_Sub1_459.anInt242, 65);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(aClass9_Sub1_1690.anInt242, 112);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(JunkTex.aClass9_Sub1_2848.anInt242, 106);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class7_Sub1.aClass9_Sub1_2657.anInt242, 97);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class14_Sub21.aClass9_Sub1_3111.anInt242, 85);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class28.aClass9_Sub1_513.anInt242, 97);
-						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class14_Sub2_Sub7.aClass9_Sub1_3824.anInt242, 105);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class47.aCacheFileWorker_790.anInt242, var0 ^ 89);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class89.aCacheFileWorker_1407.anInt242, 118);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(aCacheFileWorker_369.anInt242, 127);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class102.aCacheFileWorker_1712.anInt242, 90);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class127.aCacheFileWorker_2111.anInt242, 101);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class22.aCacheFileWorker_459.anInt242, 65);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(aCacheFileWorker_1690.anInt242, 112);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(JunkTex.aCacheFileWorker_2848.anInt242, 106);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class7_Sub1.aCacheFileWorker_2657.anInt242, 97);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class14_Sub21.aCacheFileWorker_3111.anInt242, 85);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class28.aCacheFileWorker_513.anInt242, 97);
+						Class70.aClass14_Sub10_Sub1_1080.writeInt(Class14_Sub2_Sub7.aCacheFileWorker_3824.anInt242, 105);
 						Class70.aClass14_Sub10_Sub1_1080.method807(JunkTex.aClass14_Sub10_Sub1_891.position,
 								JunkTex.aClass14_Sub10_Sub1_891.payload, 0);
 						Class14_Sub15.aClass36_2990.method1100(0, 3, Class70.aClass14_Sub10_Sub1_1080.position,
@@ -2180,7 +2173,7 @@ public class Static2 {
 
 	public static void method1316(boolean var0) {
 		Static2.aClass124_1099 = null;
-		Static2.aClass9_1084 = null;
+		Static2.aFileSystem_1084 = null;
 		Static2.anIntArray1086 = null;
 		if (!var0) {
 			Static2.cameraTileX = 105;
@@ -2220,7 +2213,7 @@ public class Static2 {
 			} else {
 				Track var10 = Class137.aClass91Array2197[var1];
 				if (var10 == null) {
-					var10 = Track.method1451(aClass9_Sub1_2901, Class153.anIntArray2454[var1], 0);
+					var10 = Track.method1451(aCacheFileWorker_2901, Class153.anIntArray2454[var1], 0);
 					if (var10 == null) {
 						continue;
 					}
@@ -2278,7 +2271,7 @@ public class Static2 {
 	
 		if (Class14_Sub7.aBoolean2827 && !Class14_Sub11.method852(14326)) {
 			if (Class14_Sub23.anInt3135 != 0 && JunkTex.anInt2856 != -1) {
-				Class33.method1087(1936, 0, false, JunkTex.anInt2856, JunkTex.aClass9_Sub1_3374,
+				Class33.method1087(1936, 0, false, JunkTex.anInt2856, JunkTex.aCacheFileWorker_3374,
 						Class14_Sub23.anInt3135);
 			}
 	
@@ -2294,7 +2287,7 @@ public class Static2 {
 
 	public static int cameraTileX;
 	public static Class124 aClass124_1099 = Class124.method263("_labels");
-	public static Class9 aClass9_1084;
+	public static FileSystem aFileSystem_1084;
 	public static int anInt1085 = 0;
 	public static int[] anIntArray1086 = new int[] { 0, 1, 2, 3 };
 	public static int anInt708 = 1;
@@ -2404,11 +2397,11 @@ public class Static2 {
 
 	public static BigInteger aBigInteger2704 = (new BigInteger(
 	"7162900525229798032761816791230527296329313291232324290237849263501208207972894053929065636522363163621000728841182238772712427862772219676577293600221789"));
-	public static Class9 aClass9_2696;
+	public static FileSystem aFileSystem_2696;
 	public static int anInt2688;
 	public static void method181(int i) {
 		aBigInteger2704 = null;
-		aClass9_2696 = null;
+		aFileSystem_2696 = null;
 		if (i != 97)
 			aBigInteger2704 = null;
 	}
@@ -2633,7 +2626,7 @@ public class Static2 {
 		Static2.aClass75_2588 = null;
 		Static2.anIntArray2590 = null;
 		Static2.aClass124_2575 = null;
-		Static2.aClass9_2598 = null;
+		Static2.aFileSystem_2598 = null;
 	}
 
 	public static int[] anIntArray2590;
@@ -2642,12 +2635,12 @@ public class Static2 {
 	public static Class124 aClass124_2575 = Class124.method263("::cardmem");
 	public static Class124 aClass124_2599 = Class124.method263("(U5");
 	public static Class75 aClass75_2588;
-	public static Class9 aClass9_2598;
+	public static FileSystem aFileSystem_2598;
 	public static int anInt2572;
 	public static int anInt2573;
 	public static void method1197(int i, boolean bool) {
 		if (i != -1 && Class108.aBooleanArray1819[i]) {
-			Class83.aClass9_1335.method168(i);
+			Class83.aFileSystem_1335.method168(i);
 			if (Class1.aClass94ArrayArray75[i] != null) {
 				boolean bool_16_ = true;
 				for (int i_17_ = 0; i_17_ < Class1.aClass94ArrayArray75[i].length; i_17_++) {
@@ -2797,8 +2790,8 @@ public class Static2 {
 		Static2.aClass124_1941 = Static2.aClass124_1945;
 	}
 
-	public static Class148[] method1747(int i, int i_10_, int i_11_, Class9 class9) {
-		if (!Static3.method1564(i, i_10_, class9)) {
+	public static Class148[] method1747(int i, int i_10_, int i_11_, FileSystem fileSystem) {
+		if (!Static3.method1564(i, i_10_, fileSystem)) {
 			Class148[] class148s = null;
 			return class148s;
 		}
@@ -2822,7 +2815,7 @@ public class Static2 {
 		}
 		if (i_6_ != 170)
 			Static2.anIntArray2094 = null;
-		byte[] is = (Class108.aClass9_1817.method163(JunkTex.method1229(i, 122),
+		byte[] is = (Class108.aFileSystem_1817.method163(JunkTex.method1229(i, 122),
 				Class153.method2045(i, i_6_ ^ ~0x63e7ad2)));
 		Class12 class12_8_ = new Class12();
 		class12_8_.anInt337 = i;
@@ -2854,7 +2847,7 @@ public class Static2 {
 				Class69.method1311((byte) 118);
 			}
 			if (i_4_ == 5)
-				method385((byte) 67, Class14_Sub3.aClass9_Sub1_2750);
+				method385((byte) 67, Class14_Sub3.aCacheFileWorker_2750);
 			else
 				JunkTex.method86(-123);
 			boolean bool = i_4_ == 5 || i_4_ == 10 || i_4_ == 28;
@@ -2870,7 +2863,7 @@ public class Static2 {
 					JunkTex.anInt2856 = JunkTex.anInt97;
 					if (Class14_Sub23.anInt3135 != 0)
 						JunkTex.method636(JunkTex.anInt97, 2, i - 1746, 255, false,
-								(JunkTex.aClass9_Sub1_3374), 0);
+								(JunkTex.aCacheFileWorker_3374), 0);
 					else
 						Class69.method1308(2, (byte) -115);
 					SFSS.method449(false, i ^ 0x6a70);
@@ -2887,11 +2880,11 @@ public class Static2 {
 			boolean bool = true;
 			return bool;
 		}
-		if (!Class83.aClass9_1335.method161(i_0_)) {
+		if (!Class83.aFileSystem_1335.method161(i_0_)) {
 			boolean bool = false;
 			return bool;
 		}
-		int i_1_ = Class83.aClass9_1335.method177(i_0_);
+		int i_1_ = Class83.aFileSystem_1335.method177(i_0_);
 		if (i_1_ == 0) {
 			Class108.aBooleanArray1819[i_0_] = true;
 			boolean bool = true;
@@ -2902,7 +2895,7 @@ public class Static2 {
 			Class1.aClass94ArrayArray75[i_0_] = new Class94[i_1_];
 		for (int i_3_ = 0; i_3_ < i_1_; i_3_++) {
 			if (Class1.aClass94ArrayArray75[i_0_][i_3_] == null) {
-				byte[] is = Class83.aClass9_1335.method163(i_3_, i_0_);
+				byte[] is = Class83.aFileSystem_1335.method163(i_3_, i_0_);
 				if (is != null) {
 					Class1.aClass94ArrayArray75[i_0_][i_3_] = new Class94();
 					Class1.aClass94ArrayArray75[i_0_][i_3_].anInt1548 = i_3_ + (i_0_ << 16);
@@ -3135,7 +3128,7 @@ public class Static2 {
 		AnimFrameLoader class14_sub2_sub15 = null;
 		if (animation != null) {
 			i_15_ = animation.anIntArray768[i_15_];
-			class14_sub2_sub15 = Class14_Sub4.method457(3, i_15_ >> 16);
+			class14_sub2_sub15 = AnimLoader.method457(i_15_ >> 16);
 			i_15_ &= 0xffff;
 		}
 		if (class14_sub2_sub15 != null) {
@@ -3182,14 +3175,14 @@ public class Static2 {
 		aByteArrayArrayArray3864 = null;
 	}
 
-	public static void method305(Class9 class9, Class9 class9_5_, Class9 class9_6_, Class9 class9_7_, byte i) {
-		aClass9_2598 = class9_6_;
-		Class83.aClass9_1335 = class9_7_;
+	public static void method305(FileSystem fileSystem, FileSystem fileSystem_5_, FileSystem fileSystem_6_, FileSystem fileSystem_7_, byte i) {
+		aFileSystem_2598 = fileSystem_6_;
+		Class83.aFileSystem_1335 = fileSystem_7_;
 		if (i <= -48) {
-			JunkTex.aClass9_4486 = class9_5_;
-			Class51.aClass9_833 = class9;
-			Class1.aClass94ArrayArray75 = new Class94[Class83.aClass9_1335.method155()][];
-			Class108.aBooleanArray1819 = new boolean[Class83.aClass9_1335.method155()];
+			JunkTex.aFileSystem_4486 = fileSystem_5_;
+			Class51.aFileSystem_833 = fileSystem;
+			Class1.aClass94ArrayArray75 = new Class94[Class83.aFileSystem_1335.method155()][];
+			Class108.aBooleanArray1819 = new boolean[Class83.aFileSystem_1335.method155()];
 		}
 	}
 
@@ -3252,7 +3245,7 @@ public class Static2 {
 	}
 
 	public static void method991(byte var0) {
-		aClass52_2370.method1209();
+		aClass52_2370.clearSoftReference();
 		if (var0 != -2) {
 			Static2.aClass124_474 = null;
 		}
@@ -3263,9 +3256,9 @@ public class Static2 {
 	public static short[] aShortArray471;
 	public static Class124 aClass124_470 = Class124.method263("mapfunction");
 	public static int[] anIntArray467 = new int[32];
-	public static void method891(Class9 class9, int i, Class9 class9_9_) {
-		Class108.aClass9_1817 = class9;
-		JunkTex.aClass9_429 = class9_9_;
+	public static void method891(FileSystem fileSystem, int i, FileSystem fileSystem_9_) {
+		Class108.aFileSystem_1817 = fileSystem;
+		JunkTex.aFileSystem_429 = fileSystem_9_;
 		int i_10_ = -9 / ((i + 52) / 63);
 	}
 
@@ -3292,14 +3285,14 @@ public class Static2 {
 		return class14_sub2_sub5_6_;
 	}
 
-	public static Class14_Sub2_Sub16 method888(int i, int i_0_, Class9 class9, int i_1_, Class9 class9_2_) {
-		if (!Static3.method1564(i_1_, i_0_, class9_2_)) {
+	public static Class14_Sub2_Sub16 method888(int i, int i_0_, FileSystem fileSystem, int i_1_, FileSystem fileSystem_2_) {
+		if (!Static3.method1564(i_1_, i_0_, fileSystem_2_)) {
 			Class14_Sub2_Sub16 class14_sub2_sub16 = null;
 			return class14_sub2_sub16;
 		}
 		if (i >= -101)
 			Static2.method887((byte) 72);
-		Class14_Sub2_Sub16 class14_sub2_sub16 = Class33.method1086(class9.method163(i_1_, i_0_), 24);
+		Class14_Sub2_Sub16 class14_sub2_sub16 = Class33.method1086(fileSystem.method163(i_1_, i_0_), 24);
 		return class14_sub2_sub16;
 	}
 
@@ -3368,11 +3361,11 @@ public class Static2 {
 	public static Class124 aClass124_2134 = Class124.method263("Type");
 	public static int anInt2133;
 	public static int anInt2131 = 0;
-	public static void method31(Class9 class9, byte i, Interface5 interface5, Class9 class9_19_) {
-		JunkTex.aClass9_4384 = class9;
+	public static void method31(FileSystem fileSystem, byte i, Interface5 interface5, FileSystem fileSystem_19_) {
+		JunkTex.aFileSystem_4384 = fileSystem;
 		if (i != -4)
 			method31(null, (byte) 11, null, null);
-		Class14_Sub2_Sub8.aClass9_3850 = class9_19_;
+		Class14_Sub2_Sub8.aFileSystem_3850 = fileSystem_19_;
 		Static2.anInterface5_48 = interface5;
 	}
 
@@ -3401,7 +3394,7 @@ public class Static2 {
 	}
 
 	public static void method59(byte i) {
-		aClass52_3942.method1209();
+		aClass52_3942.clearSoftReference();
 	}
 
 	public static void method60(int i) {

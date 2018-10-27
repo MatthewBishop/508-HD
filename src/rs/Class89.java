@@ -3,13 +3,13 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.io.js5.CacheFileWorker;
 
 public class Class89 {
 	public int anInt1404;
 	public static int[][][] anIntArrayArrayArray1405 = new int[2][][];
 	public int anInt1406;
-	public static Class9_Sub1 aClass9_Sub1_1407;
+	public static CacheFileWorker aCacheFileWorker_1407;
 	public static Class124 aClass124_1408;
 	public static boolean aBoolean1409 = false;
 	public int anInt1410;
@@ -82,6 +82,6 @@ public class Class89 {
 		if (i <= 81)
 			aBoolean1409 = false;
 		anIntArrayArrayArray1405 = null;
-		aClass9_Sub1_1407 = null;
+		aCacheFileWorker_1407 = null;
 	}
 }

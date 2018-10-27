@@ -67,7 +67,7 @@ public class Class37 {
 			Canvas_Sub2.anInt60 = 0;
 			JunkTex.anInt3411 = 0;
 			Static2.anInt2890 = 0;
-			Class14_Sub29.method936(i - 12728);
+			Class14_Sub29.method936(12827 - 12728);
 			Class62.anInt990 = 0;
 			SceneGraphNode_AnimatedLocation.anInt3579 = -1;
 			JunkTex.anInt4114 = -1;

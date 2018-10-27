@@ -3,16 +3,16 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 
 public class Class15 {
 	public static Class124 aClass124_373;
 	public static int anInt376;
 	public static int anInt380 = 0;
 	public static Class124 aClass124_381 = Class124.method263("cyan:");
-	public static Class9 aClass9_382;
+	public static FileSystem aFileSystem_382;
 	public static Class124 aClass124_383;
-	public static Class9 aClass9_384;
+	public static FileSystem aFileSystem_384;
 	public static byte[][][] overlayOrientations;
 
 	static {
@@ -38,8 +38,8 @@ public class Class15 {
 	public static void method945(int i) {
 		aClass124_383 = null;
 		aClass124_381 = null;
-		aClass9_384 = null;
-		aClass9_382 = null;
+		aFileSystem_384 = null;
+		aFileSystem_382 = null;
 		aClass124_373 = null;
 		overlayOrientations = null;
 		if (i != 0)

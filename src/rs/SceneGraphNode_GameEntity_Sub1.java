@@ -4,8 +4,9 @@
 package rs;
 
 import com.jagex.cache.anim.Animation;
+import com.jagex.cache.anim.AnimLoader;
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.map.SceneCluster;
 import com.jagex.rt4.Class148;
@@ -37,7 +38,6 @@ public class SceneGraphNode_GameEntity_Sub1 extends SceneGraphNode_GameEntity {
 	public int anInt4932;
 	public SceneGraphNode_AbstractModelRenderer aSceneGraphNode_AbstractModelRenderer_4933;
 	public int anInt4934;
-	public static Class9 aClass9_4935;
 	public static int anInt4936 = 0;
 	public int anInt4937;
 	public static Class148_Sub1[] aClass148_Sub1Array4938;
@@ -47,41 +47,41 @@ public class SceneGraphNode_GameEntity_Sub1 extends SceneGraphNode_GameEntity {
 	public static Class124 aClass124_4942 = Class124.method263("blaugr-Un:");
 	public static Class124 aClass124_4943 = Class124.method263("ul");
 
-	public static int method1805(int i, Class9 class9) {
+	public static int method1805(int i, FileSystem fileSystem) {
 		int i_0_ = 0;
 		if (i != 31673)
 			method1805(-105, null);
-		if (class9.method171(Class7_Sub3.anInt2681))
+		if (fileSystem.method171(Class7_Sub3.anInt2681))
 			i_0_++;
-		if (class9.method171(JunkTex.anInt2389))
+		if (fileSystem.method171(JunkTex.anInt2389))
 			i_0_++;
-		if (class9.method171(Class36.anInt629))
+		if (fileSystem.method171(Class36.anInt629))
 			i_0_++;
-		if (class9.method171(Class14_Sub2_Sub3.anInt3787))
+		if (fileSystem.method171(Class14_Sub2_Sub3.anInt3787))
 			i_0_++;
-		if (class9.method171(Class153.anInt2450))
+		if (fileSystem.method171(Class153.anInt2450))
 			i_0_++;
-		if (class9.method171(SceneGraphNode_AnimatedLocation.anInt3584))
+		if (fileSystem.method171(SceneGraphNode_AnimatedLocation.anInt3584))
 			i_0_++;
-		if (class9.method171(Static2.anInt5087))
+		if (fileSystem.method171(Static2.anInt5087))
 			i_0_++;
-		if (class9.method171(SceneCluster.anInt1369))
+		if (fileSystem.method171(SceneCluster.anInt1369))
 			i_0_++;
-		if (class9.method171(Class38.anInt2618))
+		if (fileSystem.method171(Class38.anInt2618))
 			i_0_++;
-		if (class9.method171(Class58.anInt937))
+		if (fileSystem.method171(Class58.anInt937))
 			i_0_++;
-		if (class9.method171(Class111.anInt1857))
+		if (fileSystem.method171(Class111.anInt1857))
 			i_0_++;
-		if (class9.method171(JunkTex.anInt4735))
+		if (fileSystem.method171(JunkTex.anInt4735))
 			i_0_++;
-		if (class9.method171(Class82.anInt1334))
+		if (fileSystem.method171(Class82.anInt1334))
 			i_0_++;
-		if (class9.method171(Static2.anInt2688))
+		if (fileSystem.method171(Static2.anInt2688))
 			i_0_++;
-		if (class9.method171(JunkTex.anInt2720))
+		if (fileSystem.method171(JunkTex.anInt2720))
 			i_0_++;
-		if (class9.method171(JunkTex.anInt4310))
+		if (fileSystem.method171(JunkTex.anInt4310))
 			i_0_++;
 		int i_1_ = i_0_;
 		return i_1_;
@@ -94,7 +94,6 @@ public class SceneGraphNode_GameEntity_Sub1 extends SceneGraphNode_GameEntity {
 		aClass124_4942 = null;
 		aClass36_4939 = null;
 		aClass148_4915 = null;
-		aClass9_4935 = null;
 		if (i < 112)
 			aClass124_4943 = null;
 	}
@@ -114,9 +113,9 @@ public class SceneGraphNode_GameEntity_Sub1 extends SceneGraphNode_GameEntity {
 	@Override
 	public void render(int i, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, long l) {
 		if (aClass102_4941 != null) {
-			Animation animation = (anInt3445 != -1 && anInt3467 == 0 ? JunkTex.method1129(anInt3445, 25) : null);
+			Animation animation = (anInt3445 != -1 && anInt3467 == 0 ? AnimLoader.method1129(anInt3445) : null);
 			Animation class46_9_ = (anInt3452 != -1 && !aBoolean4921 && (anInt3452 != anInt3433 || animation == null)
-					? JunkTex.method1129(anInt3452, -126) : null);
+					? AnimLoader.method1129(anInt3452) : null);
 			SceneGraphNode_AbstractModelRenderer class133_sub7 = aClass102_4941.method1516(class46_9_, anInt3483, -13, anInt3501, animation);
 			if (class133_sub7 != null) {
 				anInt3449 = class133_sub7.getMinYorMaxYCheckTHIS();

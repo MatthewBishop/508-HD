@@ -9,11 +9,11 @@ import java.awt.Graphics;
 
 import com.jagex.applet.Applet_Sub1;
 import com.jagex.applet.ErrorReporting;
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.io.js5.CacheFileWorker;
 import com.jagex.rt4.Class148_Sub1;
 
 public class Class22 {
-	public static Class9_Sub1 aClass9_Sub1_459;
+	public static CacheFileWorker aCacheFileWorker_459;
 	public static int anInt460;
 	public static int anInt461 = 0;
 	public static Class98 aClass98_464;
@@ -130,7 +130,7 @@ public class Class22 {
 	}
 
 	public static void method988(byte i) {
-		aClass9_Sub1_459 = null;
+		aCacheFileWorker_459 = null;
 		aClass98_464 = null;
 		int i_28_ = -50 % ((-31 - i) / 33);
 	}

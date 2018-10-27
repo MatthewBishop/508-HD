@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.IntegerNode;
 
@@ -86,8 +86,8 @@ public class Class86 {
 		return class98_7_;
 	}
 
-	public static void method1424(int i, Class9 class9) {
+	public static void method1424(int i, FileSystem fileSystem) {
 		if (i == -256)
-			Static2.aClass9_367 = class9;
+			Static2.aFileSystem_367 = fileSystem;
 	}
 }

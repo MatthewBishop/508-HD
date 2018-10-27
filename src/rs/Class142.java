@@ -94,11 +94,11 @@ public class Class142 {
 		if (i >= -54)
 			method1979(114, null, (byte) -25);
 		boolean bool_4_ = true;
-		if (!JunkTex.aClass9_4193.method158(0, i_0_))
+		if (!JunkTex.aFileSystem_4193.method158(0, i_0_))
 			bool_4_ = false;
-		if (i_1_ != -1 && !JunkTex.aClass9_4193.method158(0, i_1_))
+		if (i_1_ != -1 && !JunkTex.aFileSystem_4193.method158(0, i_1_))
 			bool_4_ = false;
-		if (i_2_ != -1 && !JunkTex.aClass9_4193.method158(0, i_2_))
+		if (i_2_ != -1 && !JunkTex.aFileSystem_4193.method158(0, i_2_))
 			bool_4_ = false;
 		boolean bool_5_ = bool_4_;
 		return bool_5_;
@@ -117,14 +117,14 @@ public class Class142 {
 			SceneGraphNode_Model class133_sub2 = null;
 			return class133_sub2;
 		}
-		SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(JunkTex.aClass9_4193, i_7_, 0);
+		SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(JunkTex.aFileSystem_4193, i_7_, 0);
 		if (i_6_ != -1) {
-			SceneGraphNode_Model class133_sub2_9_ = SceneGraphNode_Model.method1824(JunkTex.aClass9_4193, i_6_, 0);
+			SceneGraphNode_Model class133_sub2_9_ = SceneGraphNode_Model.method1824(JunkTex.aFileSystem_4193, i_6_, 0);
 			if (i_8_ == -1) {
 				SceneGraphNode_Model[] class133_sub2s = { class133_sub2, class133_sub2_9_ };
 				class133_sub2 = new SceneGraphNode_Model(class133_sub2s, 2);
 			} else {
-				SceneGraphNode_Model class133_sub2_10_ = SceneGraphNode_Model.method1824(JunkTex.aClass9_4193, i_8_, 0);
+				SceneGraphNode_Model class133_sub2_10_ = SceneGraphNode_Model.method1824(JunkTex.aFileSystem_4193, i_8_, 0);
 				SceneGraphNode_Model[] class133_sub2s = { class133_sub2, class133_sub2_9_, class133_sub2_10_ };
 				class133_sub2 = new SceneGraphNode_Model(class133_sub2s, 3);
 			}
@@ -472,9 +472,9 @@ public class Class142 {
 			SceneGraphNode_Model class133_sub2 = null;
 			return class133_sub2;
 		}
-		SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(JunkTex.aClass9_4193, i_38_, 0);
+		SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(JunkTex.aFileSystem_4193, i_38_, 0);
 		if (i_37_ != -1) {
-			SceneGraphNode_Model class133_sub2_39_ = SceneGraphNode_Model.method1824(JunkTex.aClass9_4193, i_37_, 0);
+			SceneGraphNode_Model class133_sub2_39_ = SceneGraphNode_Model.method1824(JunkTex.aFileSystem_4193, i_37_, 0);
 			SceneGraphNode_Model[] class133_sub2s = { class133_sub2, class133_sub2_39_ };
 			class133_sub2 = new SceneGraphNode_Model(class133_sub2s, 2);
 		}
@@ -508,7 +508,7 @@ public class Class142 {
 		}
 		SceneGraphNode_AbstractModelRenderer class133_sub7 = ((SceneGraphNode_AbstractModelRenderer) JunkTex.aClass52_2075.get(anInt2276));
 		if (class133_sub7 == null) {
-			SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(JunkTex.aClass9_4193, anInt2311, 0);
+			SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(JunkTex.aFileSystem_4193, anInt2311, 0);
 			if (class133_sub2 == null) {
 				SceneGraphNode_AbstractModelRenderer class133_sub7_47_ = null;
 				return class133_sub7_47_;
@@ -550,9 +550,9 @@ public class Class142 {
 			return bool_52_;
 		}
 		boolean bool_53_ = true;
-		if (!JunkTex.aClass9_4193.method158(0, i_50_))
+		if (!JunkTex.aFileSystem_4193.method158(0, i_50_))
 			bool_53_ = false;
-		if (i_51_ != -1 && !JunkTex.aClass9_4193.method158(0, i_51_))
+		if (i_51_ != -1 && !JunkTex.aFileSystem_4193.method158(0, i_51_))
 			bool_53_ = false;
 		boolean bool_54_ = bool_53_;
 		return bool_54_;
@@ -583,7 +583,7 @@ public class Class142 {
 	}
 
 	public ModelSD method1978(int i) {
-		SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(JunkTex.aClass9_4193, anInt2311, i);
+		SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(JunkTex.aFileSystem_4193, anInt2311, i);
 		if (class133_sub2 == null) {
 			ModelSD modelsd = null;
 			return modelsd;

@@ -3,14 +3,14 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.io.js5.CacheFileWorker;
 import com.jagex.link.Cacheable;
 import com.jagex.rt4.AbstractSprite;
 
 public class Class14_Sub2_Sub7 extends Cacheable {
 	public static Class124 aClass124_3821;
 	public SceneGraphNode_SpotAnimation aSceneGraphNode_SpotAnimation_3822;
-	public static Class9_Sub1 aClass9_Sub1_3824;
+	public static CacheFileWorker aCacheFileWorker_3824;
 	public static int[] anIntArray3825 = new int[2048];
 	public static AbstractSprite aClass14_Sub2_Sub19_3826;
 
@@ -24,7 +24,7 @@ public class Class14_Sub2_Sub7 extends Cacheable {
 		aClass14_Sub2_Sub19_3826 = null;
 		aClass124_3821 = null;
 		anIntArray3825 = null;
-		aClass9_Sub1_3824 = null;
+		aCacheFileWorker_3824 = null;
 	}
 
 	public static void method289(byte i, int i_0_, int[] is, Object[] objects, int i_1_) {

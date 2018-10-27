@@ -26,7 +26,7 @@ public class Class69 {
 		if (i_0_ > -7)
 			method1311((byte) -37);
 		Class14_Sub15.anInt2989 = i;
-		Static2.aClass9_2696 = null;
+		Static2.aFileSystem_2696 = null;
 	}
 
 	public static void method1309(int i) {

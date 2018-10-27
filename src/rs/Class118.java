@@ -185,7 +185,7 @@ public class Class118 {
 			Class14_Sub2_Sub12 class14_sub2_sub12_17_ = class14_sub2_sub12;
 			return class14_sub2_sub12_17_;
 		}
-		byte[] is = JunkTex.aClass9_Sub1_4521.method163(0, i);
+		byte[] is = JunkTex.aCacheFileWorker_4521.method163(0, i);
 		if (is == null) {
 			class14_sub2_sub12 = null;
 			return class14_sub2_sub12;
@@ -312,24 +312,24 @@ public class Class118 {
 			for (int i_40_ = (i_35_ - 6) / 8; (i_35_ + 6) / 8 >= i_40_; i_40_++) {
 				int i_41_ = (i_39_ << 8) + i_40_;
 				JunkTex.anIntArray2858[i_38_] = i_41_;
-				Class62.anIntArray992[i_38_] = (Class14_Sub13.aClass9_Sub1_2958
+				Class62.anIntArray992[i_38_] = (Class14_Sub13.aCacheFileWorker_2958
 						.method146(
 								(JunkTex.method515(
 										new Class124[] { Class35.aClass124_601, Class83.method1407(i + 13887, i_39_),
 												Class111.aClass124_1866, Class83.method1407(53, i_40_) },
 										(byte) -127))));
-				OverlayType.anIntArray2422[i_38_] = (Class14_Sub13.aClass9_Sub1_2958
+				OverlayType.anIntArray2422[i_38_] = (Class14_Sub13.aCacheFileWorker_2958
 						.method146(
 								(JunkTex
 										.method515(
 												new Class124[] { Class111.aClass124_1863, Class83.method1407(18, i_39_),
 														Class111.aClass124_1866, Class83.method1407(39, i_40_) },
 												(byte) -50))));
-				Static2.anIntArray2590[i_38_] = (Class14_Sub13.aClass9_Sub1_2958
+				Static2.anIntArray2590[i_38_] = (Class14_Sub13.aCacheFileWorker_2958
 						.method146((JunkTex.method515((new Class124[] {
 								Static2.aClass124_5079, Class83.method1407(115, i_39_),
 								Class111.aClass124_1866, Class83.method1407(i + 13934, i_40_) }), (byte) -59))));
-				JunkTex.anIntArray3955[i_38_] = (Class14_Sub13.aClass9_Sub1_2958
+				JunkTex.anIntArray3955[i_38_] = (Class14_Sub13.aCacheFileWorker_2958
 						.method146(
 								(JunkTex
 										.method515(
@@ -337,7 +337,7 @@ public class Class118 {
 														Class111.aClass124_1866, Class83.method1407(82, i_40_) },
 												(byte) -44))
 								));
-				JunkTex.anIntArray3119[i_38_] = (Class14_Sub13.aClass9_Sub1_2958
+				JunkTex.anIntArray3119[i_38_] = (Class14_Sub13.aCacheFileWorker_2958
 						.method146((JunkTex.method515(new Class124[] { SceneGraphNode_GameEntity_Sub1.aClass124_4943,
 								Class83.method1407(i + 13886, i_39_), Class111.aClass124_1866,
 								Class83.method1407(13, i_40_) }, (byte) -128))));

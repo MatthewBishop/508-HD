@@ -66,6 +66,6 @@ public class Class7_Sub3 extends Class7 {
 	}
 
 	public static void method134(int i) {
-		Class14_Sub28.aClass52_3217.method1209();
+		Class14_Sub28.aClass52_3217.clearSoftReference();
 	}
 }

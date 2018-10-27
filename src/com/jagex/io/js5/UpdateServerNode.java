@@ -5,12 +5,12 @@ package com.jagex.io.js5;
 
 import com.jagex.link.Linkable;
 
-public class Class14_Sub19 extends Linkable {
-	public byte[] aByteArray3069;
+public class UpdateServerNode extends Linkable {
+	public byte[] data;
 
-	public Class114 aClass114_3077;
+	public CacheFile cache;
 
-	public Class9_Sub1 aClass9_Sub1_3076;
+	public CacheFileWorker worker;
 
 	public int anInt3067;
 }

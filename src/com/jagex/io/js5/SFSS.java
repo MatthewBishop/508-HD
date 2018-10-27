@@ -17,18 +17,18 @@ public class SFSS {
 	public static void method1832(int i, byte i_11_, int i_12_) {
 		if (i_11_ == -73) {
 			long l = i + (i_12_ << 48);
-			Class14_Sub2_Sub9 class14_sub2_sub9 = ((Class14_Sub2_Sub9) SFSS.aClass55_3698.get(l));
+			BufferedRequest class14_sub2_sub9 = ((BufferedRequest) SFSS.aClass55_3698.get(l));
 			if (class14_sub2_sub9 != null)
 				SFSS.aClass81_4716.pushFront(class14_sub2_sub9);
 		}
 	}
 
-	public static void method71(Class114 class114, int i, byte i_7_, byte[] is) {
-		Class14_Sub19 class14_sub19 = new Class14_Sub19();
+	public static void method71(CacheFile cacheFile, int i, byte i_7_, byte[] is) {
+		UpdateServerNode class14_sub19 = new UpdateServerNode();
 		class14_sub19.key = i;
 		class14_sub19.anInt3067 = 0;
-		class14_sub19.aClass114_3077 = class114;
-		class14_sub19.aByteArray3069 = is;
+		class14_sub19.cache = cacheFile;
+		class14_sub19.data = is;
 		Deque deque = SFSS.aClass2_4404;
 		synchronized (deque) {
 			SFSS.aClass2_4404.pushBack(class14_sub19);
@@ -42,10 +42,10 @@ public class SFSS {
 		SFSS.aClass81_4716 = null;
 		SFSS.aClass55_3698 = null;
 		SFSS.aClass2_4404 = null;
-		aClass14_Sub2_Sub9_4354 = null;
+		aBufferedRequest_4354 = null;
 		SFSS.aClass14_Sub10_989 = null;
 		SFSS.aClass14_Sub10_3796 = null;
-		SFSS.aClass9_Sub1Array2253 = null;
+		SFSS.aCacheFileWorkerArray2253 = null;
 		aClass55_4112 = null;
 		aCRC32_2983 = null;
 		SFSS.aClass55_4227 = null;
@@ -60,39 +60,39 @@ public class SFSS {
 
 	public static int method1829(int i, int i_1_) {
 		long l = i_1_ + (i << 16);
-		if (SFSS.aClass14_Sub2_Sub9_4354 == null || l != SFSS.aClass14_Sub2_Sub9_4354.key) {
+		if (SFSS.aBufferedRequest_4354 == null || l != SFSS.aBufferedRequest_4354.key) {
 			int i_2_ = 0;
 			return i_2_;
 		}
-		int i_3_ = ((SFSS.aClass14_Sub10_989.position * 99 / (-SFSS.aClass14_Sub2_Sub9_4354.aByte3862
+		int i_3_ = ((SFSS.aClass14_Sub10_989.position * 99 / (-SFSS.aBufferedRequest_4354.padding
 				+ SFSS.aClass14_Sub10_989.payload.length)) + 1);
 		return i_3_;
 	}
 
-	public static void method1277(int i, Class9_Sub1 class9_sub1, int i_1_, Class114 class114) {
+	public static void method1277(int i, CacheFileWorker class9_sub1, int i_1_, CacheFile cacheFile) {
 		byte[] is = null;
 		Deque deque = SFSS.aClass2_4404;
 		synchronized (deque) {
-			Class14_Sub19 class14_sub19 = (Class14_Sub19) SFSS.aClass2_4404.getFront();
+			UpdateServerNode class14_sub19 = (UpdateServerNode) SFSS.aClass2_4404.getFront();
 			while (class14_sub19 != null) {
-				if (i_1_ != class14_sub19.key || class14_sub19.aClass114_3077 != class114
+				if (i_1_ != class14_sub19.key || class14_sub19.cache != cacheFile
 						|| class14_sub19.anInt3067 != 0)
-					class14_sub19 = ((Class14_Sub19) SFSS.aClass2_4404.getNext());
+					class14_sub19 = ((UpdateServerNode) SFSS.aClass2_4404.getNext());
 				else {
-					is = class14_sub19.aByteArray3069;
+					is = class14_sub19.data;
 					break;
 				}
 			}
 		}
 		if (is != null)
-			class9_sub1.method182(class114, i_1_, is, true, (byte) 55);
+			class9_sub1.method182(cacheFile, i_1_, is, true, (byte) 55);
 		else {
-			is = class114.method1582(124, i_1_);
-			class9_sub1.method182(class114, i_1_, is, true, (byte) 55);
+			is = cacheFile.method1582(124, i_1_);
+			class9_sub1.method182(cacheFile, i_1_, is, true, (byte) 55);
 		}
 	}
 
-	public static void method969(int i, Class9_Sub1 class9_sub1, byte i_0_) {
+	public static void method969(int i, CacheFileWorker class9_sub1, byte i_0_) {
 		if (SFSS.aClass14_Sub10_3796 != null) {
 			SFSS.aClass14_Sub10_3796.position = i * 8 + 5;
 			int i_1_ = SFSS.aClass14_Sub10_3796.getInt((byte) -126);
@@ -101,19 +101,19 @@ public class SFSS {
 		} else {
 			SFSS.method633((byte) 0, 115, null, 255, true, 0, 255);
 			if (-71 < -27)
-				SFSS.aClass9_Sub1Array2253[i] = class9_sub1;
+				SFSS.aCacheFileWorkerArray2253[i] = class9_sub1;
 		}
 	}
 
-	public static void method633(byte i, int i_0_, Class9_Sub1 class9_sub1, int i_1_, boolean bool, int i_2_,
+	public static void method633(byte i, int i_0_, CacheFileWorker class9_sub1, int i_1_, boolean bool, int i_2_,
 			int i_3_) {
 		long l = i_3_ + (i_1_ << 16);
 		if (i_0_ >= 98) {
-			Class14_Sub2_Sub9 class14_sub2_sub9 = ((Class14_Sub2_Sub9) SFSS.aClass55_1092.get(l));
+			BufferedRequest class14_sub2_sub9 = ((BufferedRequest) SFSS.aClass55_1092.get(l));
 			if (class14_sub2_sub9 == null) {
-				class14_sub2_sub9 = (Class14_Sub2_Sub9) SFSS.aClass55_4112.get(l);
+				class14_sub2_sub9 = (BufferedRequest) SFSS.aClass55_4112.get(l);
 				if (class14_sub2_sub9 == null) {
-					class14_sub2_sub9 = (Class14_Sub2_Sub9) SFSS.aClass55_3698.get(l);
+					class14_sub2_sub9 = (BufferedRequest) SFSS.aClass55_3698.get(l);
 					if (class14_sub2_sub9 != null) {
 						if (bool) {
 							class14_sub2_sub9.unlinkCacheable();
@@ -123,14 +123,14 @@ public class SFSS {
 						}
 					} else {
 						if (!bool) {
-							class14_sub2_sub9 = ((Class14_Sub2_Sub9) SFSS.aClass55_4227.get(l));
+							class14_sub2_sub9 = ((BufferedRequest) SFSS.aClass55_4227.get(l));
 							if (class14_sub2_sub9 != null)
 								return;
 						}
-						class14_sub2_sub9 = new Class14_Sub2_Sub9();
-						class14_sub2_sub9.aClass9_Sub1_3857 = class9_sub1;
-						class14_sub2_sub9.aByte3862 = i;
-						class14_sub2_sub9.anInt3865 = i_2_;
+						class14_sub2_sub9 = new BufferedRequest();
+						class14_sub2_sub9.worker = class9_sub1;
+						class14_sub2_sub9.padding = i;
+						class14_sub2_sub9.blockPosition = i_2_;
 						if (!bool) {
 							SFSS.aClass81_4716.push(class14_sub2_sub9);
 							SFSS.aClass55_3698.put(l, class14_sub2_sub9);
@@ -145,12 +145,12 @@ public class SFSS {
 		}
 	}
 
-	public static void method2018(Class9_Sub1 class9_sub1, int i, Class114 class114) {
-		Class14_Sub19 class14_sub19 = new Class14_Sub19();
+	public static void method2018(CacheFileWorker class9_sub1, int i, CacheFile cacheFile) {
+		UpdateServerNode class14_sub19 = new UpdateServerNode();
 		class14_sub19.key = i;
-		class14_sub19.aClass114_3077 = class114;
+		class14_sub19.cache = cacheFile;
 		class14_sub19.anInt3067 = 1;
-		class14_sub19.aClass9_Sub1_3076 = class9_sub1;
+		class14_sub19.worker = class9_sub1;
 		Deque deque = SFSS.aClass2_4404;
 		synchronized (deque) {
 			SFSS.aClass2_4404.pushBack(class14_sub19);
@@ -173,10 +173,10 @@ public class SFSS {
 		SFSS.method449(bool, 4);
 		SFSS.aClass14_Sub10_989 = null;
 		SFSS.aClass14_Sub10_3036.position = 0;
-		SFSS.aClass14_Sub2_Sub9_4354 = null;
+		SFSS.aBufferedRequest_4354 = null;
 		SFSS.anInt3769 = 0;
 		for (;;) {
-			Class14_Sub2_Sub9 class14_sub2_sub9 = ((Class14_Sub2_Sub9) SFSS.aClass55_4112
+			BufferedRequest class14_sub2_sub9 = ((BufferedRequest) SFSS.aClass55_4112
 					.getFirst());
 			if (class14_sub2_sub9 == null)
 				break;
@@ -185,7 +185,7 @@ public class SFSS {
 			SFSS.anInt4612++;
 		}
 		for (;;) {
-			Class14_Sub2_Sub9 class14_sub2_sub9 = ((Class14_Sub2_Sub9) SFSS.aClass55_4227
+			BufferedRequest class14_sub2_sub9 = ((BufferedRequest) SFSS.aClass55_4227
 					.getFirst());
 			if (class14_sub2_sub9 == null)
 				break;
@@ -239,7 +239,7 @@ public class SFSS {
 				while (SFSS.anInt3833 < 20) {
 					if (SFSS.anInt4612 <= 0)
 						break;
-					Class14_Sub2_Sub9 class14_sub2_sub9 = ((Class14_Sub2_Sub9) SFSS.aClass55_1092
+					BufferedRequest class14_sub2_sub9 = ((BufferedRequest) SFSS.aClass55_1092
 							.getFirst());
 					Buffer class14_sub10 = new Buffer(4);
 					class14_sub10.writeByte(1);
@@ -250,7 +250,7 @@ public class SFSS {
 					SFSS.anInt4612--;
 				}
 				for (/**/; SFSS.anInt1355 < 20 && SFSS.anInt998 > 0; SFSS.anInt998--) {
-					Class14_Sub2_Sub9 class14_sub2_sub9 = (Class14_Sub2_Sub9) SFSS.aClass81_4716
+					BufferedRequest class14_sub2_sub9 = (BufferedRequest) SFSS.aClass81_4716
 							.peek();
 					Buffer class14_sub10 = new Buffer(4);
 					class14_sub10.writeByte(0);
@@ -282,12 +282,12 @@ public class SFSS {
 					break;
 				int i_71_ = 0;
 				SFSS.anInt853 = 0;
-				if (SFSS.aClass14_Sub2_Sub9_4354 == null)
+				if (SFSS.aBufferedRequest_4354 == null)
 					i_71_ = 8;
 				else if (SFSS.anInt3769 == 0)
 					i_71_ = 1;
 				if (i_71_ <= 0) {
-					i_68_ = (-(SFSS.aClass14_Sub2_Sub9_4354.aByte3862)
+					i_68_ = (-(SFSS.aBufferedRequest_4354.padding)
 							+ SFSS.aClass14_Sub10_989.payload.length);
 					int i_72_ = 512 - SFSS.anInt3769;
 					if (i_72_ > -SFSS.aClass14_Sub10_989.position + i_68_)
@@ -313,11 +313,11 @@ public class SFSS {
 							break;
 						SFSS.anInt3769 = 0;
 					} else {
-						if (16711935L != (SFSS.aClass14_Sub2_Sub9_4354.key)) {
+						if (16711935L != (SFSS.aBufferedRequest_4354.key)) {
 							SFSS.aCRC32_2983.reset();
 							SFSS.aCRC32_2983.update(SFSS.aClass14_Sub10_989.payload, 0, i_68_);
 							int i_74_ = (int) SFSS.aCRC32_2983.getValue();
-							if ((SFSS.aClass14_Sub2_Sub9_4354.anInt3865) != i_74_) {
+							if ((SFSS.aBufferedRequest_4354.blockPosition) != i_74_) {
 								try {
 									SFSS.aClass36_134.method1101((byte) -44);
 								} catch (Exception exception) {
@@ -330,15 +330,15 @@ public class SFSS {
 							}
 							SFSS.anInt829 = 0;
 							SFSS.anInt465 = 0;
-							SFSS.aClass14_Sub2_Sub9_4354.aClass9_Sub1_3857.method183(
-									(int) ((SFSS.aClass14_Sub2_Sub9_4354.key) & 0xffffL),
+							SFSS.aBufferedRequest_4354.worker.method183(
+									(int) ((SFSS.aBufferedRequest_4354.key) & 0xffffL),
 									SFSS.aClass14_Sub10_989.payload,
-									16711680L == ((SFSS.aClass14_Sub2_Sub9_4354.key) & 0xff0000L),
+									16711680L == ((SFSS.aBufferedRequest_4354.key) & 0xff0000L),
 									(byte) -128, SFSS.aBoolean1707);
 						} else {
 							SFSS.aClass14_Sub10_3796 = SFSS.aClass14_Sub10_989;
 							for (int i_75_ = 0; i_75_ < 256; i_75_++) {
-								Class9_Sub1 class9_sub1 = SFSS.aClass9_Sub1Array2253[i_75_];
+								CacheFileWorker class9_sub1 = SFSS.aCacheFileWorkerArray2253[i_75_];
 								if (class9_sub1 != null) {
 									SFSS.aClass14_Sub10_3796.position = i_75_ * 8 + 5;
 									int i_76_ = SFSS.aClass14_Sub10_3796.getInt((byte) -110);
@@ -347,14 +347,14 @@ public class SFSS {
 								}
 							}
 						}
-						SFSS.aClass14_Sub2_Sub9_4354.unlink();
+						SFSS.aBufferedRequest_4354.unlink();
 						SFSS.aClass14_Sub10_989 = null;
 						SFSS.anInt3769 = 0;
 						if (!SFSS.aBoolean1707)
 							SFSS.anInt1355--;
 						else
 							SFSS.anInt3833--;
-						SFSS.aClass14_Sub2_Sub9_4354 = null;
+						SFSS.aBufferedRequest_4354 = null;
 					}
 				} else {
 					i_68_ = i_71_ - SFSS.aClass14_Sub10_3036.position;
@@ -375,18 +375,18 @@ public class SFSS {
 					SFSS.aClass14_Sub10_3036.position += i_68_;
 					if (SFSS.aClass14_Sub10_3036.position < i_71_)
 						break;
-					if (SFSS.aClass14_Sub2_Sub9_4354 == null) {
+					if (SFSS.aBufferedRequest_4354 == null) {
 						SFSS.aClass14_Sub10_3036.position = 0;
 						int i_79_ = SFSS.aClass14_Sub10_3036.readUByte();
 						int i_80_ = SFSS.aClass14_Sub10_3036.readUShort();
 						int i_81_ = SFSS.aClass14_Sub10_3036.readUByte();
 						long l_82_ = (i_79_ << 16) + i_80_;
 						int i_83_ = SFSS.aClass14_Sub10_3036.getInt((byte) -96);
-						Class14_Sub2_Sub9 class14_sub2_sub9 = ((Class14_Sub2_Sub9) SFSS.aClass55_4112
+						BufferedRequest class14_sub2_sub9 = ((BufferedRequest) SFSS.aClass55_4112
 								.get(l_82_));
 						SFSS.aBoolean1707 = true;
 						if (class14_sub2_sub9 == null) {
-							class14_sub2_sub9 = ((Class14_Sub2_Sub9) SFSS.aClass55_4227.get(l_82_));
+							class14_sub2_sub9 = ((BufferedRequest) SFSS.aClass55_4227.get(l_82_));
 							SFSS.aBoolean1707 = false;
 						}
 						try {
@@ -395,17 +395,17 @@ public class SFSS {
 						} catch (IOException ioexception) {
 							break;
 						}
-						SFSS.aClass14_Sub2_Sub9_4354 = class14_sub2_sub9;
+						SFSS.aBufferedRequest_4354 = class14_sub2_sub9;
 						int i_84_ = i_81_ == 0 ? 5 : 9;
 						SFSS.aClass14_Sub10_989 = new Buffer(
-								(SFSS.aClass14_Sub2_Sub9_4354.aByte3862) + i_83_ + i_84_);
+								(SFSS.aBufferedRequest_4354.padding) + i_83_ + i_84_);
 						SFSS.aClass14_Sub10_989.writeByte(i_81_);
 						SFSS.aClass14_Sub10_989.writeInt(i_83_, 0 + 74);
 						SFSS.aClass14_Sub10_3036.position = 0;
 						SFSS.anInt3769 = 8;
 					} else if (SFSS.anInt3769 == 0) {
 						if (SFSS.aClass14_Sub10_3036.payload[0] != -1)
-							SFSS.aClass14_Sub2_Sub9_4354 = null;
+							SFSS.aBufferedRequest_4354 = null;
 						else {
 							SFSS.anInt3769 = 1;
 							SFSS.aClass14_Sub10_3036.position = 0;
@@ -433,7 +433,7 @@ public class SFSS {
 		Object object = SFSS.anObject4417;
 		synchronized (object) {
 			if (SFSS.anInt2223 == 0)
-				ErrorReporting.signlink.method1143(5, new Class24(), 0);
+				ErrorReporting.signlink.method1143(5, new UpdateServerThread(), 0);
 			SFSS.anInt2223 = 600;
 		}
 	}
@@ -442,22 +442,22 @@ public class SFSS {
 		int i_11_ = 52 % ((-23 - i) / 47);
 		for (;;) {
 			Deque deque = SFSS.aClass2_4404;
-			Class14_Sub19 class14_sub19;
+			UpdateServerNode class14_sub19;
 			synchronized (deque) {
-				class14_sub19 = (Class14_Sub19) SFSS.aClass2_99.popFront();
+				class14_sub19 = (UpdateServerNode) SFSS.aClass2_99.popFront();
 			}
 			if (class14_sub19 == null)
 				break;
-			class14_sub19.aClass9_Sub1_3076.method182(class14_sub19.aClass114_3077, (int) class14_sub19.key,
-					class14_sub19.aByteArray3069, false, (byte) 55);
+			class14_sub19.worker.method182(class14_sub19.cache, (int) class14_sub19.key,
+					class14_sub19.data, false, (byte) 55);
 		}
 	}
 
 	public static Deque aClass2_4404 = new Deque();
-	public static Class14_Sub2_Sub9 aClass14_Sub2_Sub9_4354;
+	public static BufferedRequest aBufferedRequest_4354;
 	public static Buffer aClass14_Sub10_989;
 	public static Buffer aClass14_Sub10_3796;
-	public static Class9_Sub1[] aClass9_Sub1Array2253 = new Class9_Sub1[256];
+	public static CacheFileWorker[] aCacheFileWorkerArray2253 = new CacheFileWorker[256];
 
 	public static void method669() {
 		synchronized (SFSS.anObject4417) {

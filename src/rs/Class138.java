@@ -8,7 +8,7 @@ import java.awt.Frame;
 import com.jagex.applet.Class31;
 import com.jagex.applet.Class43;
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.io.js5.CacheFileWorker;
 import com.jagex.util.Util;
 
 public class Class138 {
@@ -22,7 +22,7 @@ public class Class138 {
 	public static Class124 aClass124_2218;
 	public static Class124 aClass124_2219;
 	public static float aFloat2220;
-	public static Class9_Sub1 aClass9_Sub1_2222;
+	public static CacheFileWorker aCacheFileWorker_2222;
 	public static int[] anIntArray2224;
 	public static Class124 aClass124_2226;
 	public static Class124 aClass124_2227;
@@ -134,7 +134,7 @@ public class Class138 {
 			method1950(-26, 122, 124, 44, null, 84);
 		aClass124_2226 = null;
 		anIntArray2224 = null;
-		aClass9_Sub1_2222 = null;
+		aCacheFileWorker_2222 = null;
 	}
 
 	public static Frame method1950(int i, int i_28_, int i_29_, int i_30_, Class43 class43, int i_31_) {

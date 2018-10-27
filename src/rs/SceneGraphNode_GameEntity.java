@@ -7,8 +7,9 @@ import com.jagex.applet.Applet_Sub1;
 import com.jagex.applet.Class31;
 import com.jagex.applet.Class43;
 import com.jagex.applet.ErrorReporting;
+import com.jagex.cache.anim.AnimLoader;
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.rt4.CardMemManager;
 import com.jagex.rt4.AbstractSprite;
 
@@ -75,9 +76,9 @@ public abstract class SceneGraphNode_GameEntity extends SceneGraphNode {
 	public int anInt3504;
 	public static AbstractSprite aClass14_Sub2_Sub19_3505;
 
-	public static void method1793(Class9 class9, int i) {
+	public static void method1793(FileSystem fileSystem, int i) {
 		if (i == 14555)
-			Class14_Sub17.aClass9_3034 = class9;
+			Class14_Sub17.aFileSystem_3034 = fileSystem;
 	}
 
 	public void method1794(boolean bool) {
@@ -234,7 +235,7 @@ public abstract class SceneGraphNode_GameEntity extends SceneGraphNode {
 			i_19_++;
 			i_20_--;
 		}
-		if (anInt3445 != -1 && JunkTex.method1129(anInt3445, 105).walkingPrecedence == 1)
+		if (anInt3445 != -1 && AnimLoader.method1129(anInt3445).walkingPrecedence == 1)
 			anInt3445 = -1;
 		int i_21_ = -122 % ((i - 18) / 56);
 		if (anInt3498 < 9)
@@ -270,7 +271,7 @@ public abstract class SceneGraphNode_GameEntity extends SceneGraphNode {
 	}
 
 	public void method1800(byte i, int i_23_, boolean bool, int i_24_) {
-		if (anInt3445 != -1 && JunkTex.method1129(anInt3445, -128).walkingPrecedence == 1)
+		if (anInt3445 != -1 && AnimLoader.method1129(anInt3445).walkingPrecedence == 1)
 			anInt3445 = -1;
 		if (!bool) {
 			int i_25_ = i_24_ - anIntArray3476[0];

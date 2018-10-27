@@ -4,14 +4,14 @@
 package com.jagex.sound;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 
 import rs.Class14_Sub12_Sub1;
 
 public class Track {
 	
-	public static Track method1451(Class9 class9, int i, int i_11_) {
-		byte[] is = class9.method163(i_11_, i);
+	public static Track method1451(FileSystem fileSystem, int i, int i_11_) {
+		byte[] is = fileSystem.method163(i_11_, i);
 		if (is == null)
 			return null;
 		return new Track(new Buffer(is));

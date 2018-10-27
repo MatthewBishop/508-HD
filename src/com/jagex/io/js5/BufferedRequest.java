@@ -5,10 +5,10 @@ package com.jagex.io.js5;
 
 import com.jagex.link.Cacheable;
 
-public class Class14_Sub2_Sub9 extends Cacheable {
-	public byte aByte3862;
+public class BufferedRequest extends Cacheable {
+	public byte padding;
 
-	public Class9_Sub1 aClass9_Sub1_3857;
+	public CacheFileWorker worker;
 
-	public int anInt3865;
+	public int blockPosition;
 }

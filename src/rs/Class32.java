@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.applet.ErrorReporting;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.rt4.Class148_Sub1;
 
 public class Class32 {
@@ -438,9 +438,9 @@ public class Class32 {
 		}
 	}
 
-	public static void method1072(Class9 class9, byte i) {
-		Static2.aClass9_372 = class9;
-		Class131.anInt2159 = Static2.aClass9_372.method177(4);
+	public static void method1072(FileSystem fileSystem, byte i) {
+		Static2.aFileSystem_372 = fileSystem;
+		Class131.anInt2159 = Static2.aFileSystem_372.method177(4);
 		if (i >= -14)
 			method1074(-76, -127);
 	}

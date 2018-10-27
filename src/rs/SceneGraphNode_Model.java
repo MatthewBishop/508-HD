@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 
 public class SceneGraphNode_Model extends SceneGraphNode {
 	public short aShort3506;
@@ -822,8 +822,8 @@ public class SceneGraphNode_Model extends SceneGraphNode {
 		}
 	}
 
-	public static SceneGraphNode_Model method1824(Class9 class9, int i, int i_184_) {
-		byte[] is = class9.method163(i_184_, i);
+	public static SceneGraphNode_Model method1824(FileSystem fileSystem, int i, int i_184_) {
+		byte[] is = fileSystem.method163(i_184_, i);
 		if (is == null)
 			return null;
 		return new SceneGraphNode_Model(is);

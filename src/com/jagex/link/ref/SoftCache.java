@@ -105,7 +105,7 @@ public class SoftCache {
 		}
 	}
 
-	public void method1209() {
+	public void clearSoftReference() {
 		ReferenceWrapper class14_sub2_sub18 = (ReferenceWrapper) history.peek();
 		for (/**/; class14_sub2_sub18 != null; class14_sub2_sub18 = (ReferenceWrapper) history
 				.getNext()) {

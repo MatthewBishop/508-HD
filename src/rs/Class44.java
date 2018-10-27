@@ -3,10 +3,10 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 
 public class Class44 {
-	public static Class9 aClass9_725;
+	public static FileSystem aFileSystem_725;
 	public static Class129 aClass129_726;
 	public static Class124 aClass124_728;
 	public static Class124 aClass124_729;
@@ -35,12 +35,12 @@ public class Class44 {
 
 	public static void method1156(byte i) {
 		if (i < -48)
-			Class139.aClass52_2229.method1209();
+			Class139.aClass52_2229.clearSoftReference();
 	}
 
 	public static void method1157(byte i) {
 		aClass124_730 = null;
-		aClass9_725 = null;
+		aFileSystem_725 = null;
 		aClass124_729 = null;
 		aClass124_732 = null;
 		if (i == 95) {

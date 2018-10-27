@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.cache.anim.Animation;
+import com.jagex.cache.anim.AnimLoader;
 import com.jagex.rt4.RT4GL;
 
 public class SceneGraphNode_GameEntity_Sub2 extends SceneGraphNode_GameEntity {
@@ -45,9 +46,9 @@ public class SceneGraphNode_GameEntity_Sub2 extends SceneGraphNode_GameEntity {
 	@Override
 	public void render(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, long l) {
 		if (aClass12_4949 != null) {
-			Animation animation = (anInt3445 == -1 || anInt3467 != 0 ? null : JunkTex.method1129(anInt3445, 32));
+			Animation animation = (anInt3445 == -1 || anInt3467 != 0 ? null : AnimLoader.method1129(anInt3445));
 			Animation class46_7_ = (anInt3452 == -1 || anInt3452 == anInt3433 && animation != null ? null
-					: JunkTex.method1129(anInt3452, -39));
+					: AnimLoader.method1129(anInt3452));
 			SceneGraphNode_AbstractModelRenderer class133_sub7 = aClass12_4949.method209(anInt3483, anInt3501, animation, class46_7_, -55);
 			if (class133_sub7 != null) {
 				anInt3449 = class133_sub7.getMinYorMaxYCheckTHIS();

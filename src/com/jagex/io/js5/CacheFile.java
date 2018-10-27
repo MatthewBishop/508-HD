@@ -5,22 +5,22 @@ import java.io.IOException;
 
 import com.jagex.util.Util;
 
-public class Class114 {
+public class CacheFile {
 
-	public Class76 aClass76_1901 = null;
+	public SeekableFile aSeekableFile_1901 = null;
 
-	public Class76 aClass76_1905 = null;
+	public SeekableFile aSeekableFile_1905 = null;
 
 	public int anInt1897 = '\ufde8';
 
 	public int anInt1898;
 
-	public Class114(int var1, Class76 var2, Class76 var3, int var4) {
+	public CacheFile(int var1, SeekableFile var2, SeekableFile var3, int var4) {
 		try {
 			this.anInt1897 = var4;
 			this.anInt1898 = var1;
-			this.aClass76_1905 = var3;
-			this.aClass76_1901 = var2;
+			this.aSeekableFile_1905 = var3;
+			this.aSeekableFile_1901 = var2;
 		} catch (RuntimeException var6) {
 			throw Util.error(var6, "rl.<init>(" + var1 + ',' + (var2 != null ? "{...}" : "null") + ','
 					+ (var3 != null ? "{...}" : "null") + ',' + var4 + ')');
@@ -31,14 +31,14 @@ public class Class114 {
 		Object var3 = null;
 
 		try {
-			Class76 var4 = this.aClass76_1901;
-			Class76 var5 = this.aClass76_1901;
+			SeekableFile var4 = this.aSeekableFile_1901;
+			SeekableFile var5 = this.aSeekableFile_1901;
 			synchronized (var5) {
 				byte[] var10000;
 				label235: {
 					try {
 						try {
-							if (this.aClass76_1905.method1360() >= var2 * 6 + 6) {
+							if (this.aSeekableFile_1905.method1360() >= var2 * 6 + 6) {
 								break label235;
 							}
 
@@ -61,8 +61,8 @@ public class Class114 {
 					label192: {
 						try {
 							try {
-								this.aClass76_1905.method1361(0, var2 * 6);
-								this.aClass76_1905.method1368(false, SFSS.aByteArray5102, 0, 6);
+								this.aSeekableFile_1905.method1361(0, var2 * 6);
+								this.aSeekableFile_1905.method1368(false, SFSS.aByteArray5102, 0, 6);
 								var6 = (SFSS.aByteArray5102[1] << 8 & '\uff00')
 										+ (SFSS.aByteArray5102[0] << 48 & 16711680)
 										+ (SFSS.aByteArray5102[2] & 255);
@@ -86,7 +86,7 @@ public class Class114 {
 					}
 
 					try {
-						if (var7 <= 0 || var7 > this.aClass76_1901.method1360() / 520L) {
+						if (var7 <= 0 || var7 > this.aSeekableFile_1901.method1360() / 520L) {
 							var3 = null;
 							return (byte[]) var3;
 						}
@@ -100,7 +100,7 @@ public class Class114 {
 					try {
 						var8 = 0;
 						if (var1 <= 122) {
-							this.aClass76_1901 = null;
+							this.aSeekableFile_1901 = null;
 						}
 
 						var9 = new byte[var6];
@@ -120,13 +120,13 @@ public class Class114 {
 						int var14;
 						try {
 							try {
-								this.aClass76_1901.method1361(0, var7 * 520);
+								this.aSeekableFile_1901.method1361(0, var7 * 520);
 								var11 = -var8 + var6;
 								if (var11 > 512) {
 									var11 = 512;
 								}
 
-								this.aClass76_1901.method1368(false, SFSS.aByteArray5102, 0,
+								this.aSeekableFile_1901.method1368(false, SFSS.aByteArray5102, 0,
 										var11 + 8);
 								var12 = (SFSS.aByteArray5102[2] << 40 & '\uff00')
 										+ (SFSS.aByteArray5102[3] & 255);
@@ -149,7 +149,7 @@ public class Class114 {
 						}
 
 						try {
-							if (var14 < 0 || this.aClass76_1901.method1360() / 520L < var14) {
+							if (var14 < 0 || this.aSeekableFile_1901.method1360() / 520L < var14) {
 								var3 = null;
 								var10000 = (byte[]) var3;
 								return var10000;
@@ -190,8 +190,8 @@ public class Class114 {
 		boolean var5 = this.method1584(var4, true, var1, var2);
 
 		try {
-			Class76 var6 = this.aClass76_1901;
-			Class76 var7 = this.aClass76_1901;
+			SeekableFile var6 = this.aSeekableFile_1901;
+			SeekableFile var7 = this.aSeekableFile_1901;
 			synchronized (var7) {
 				try {
 					if (~var4 > var3 || this.anInt1897 < var4) {
@@ -230,8 +230,8 @@ public class Class114 {
 		boolean var6 = false;
 
 		try {
-			Class76 var7 = this.aClass76_1901;
-			Class76 var8 = this.aClass76_1901;
+			SeekableFile var7 = this.aSeekableFile_1901;
+			SeekableFile var8 = this.aSeekableFile_1901;
 			synchronized (var8) {
 				label211: {
 					int var9;
@@ -241,14 +241,14 @@ public class Class114 {
 							try {
 								try {
 									if (!var2) {
-										var9 = (int) ((this.aClass76_1901.method1360() + 519L) / 520L);
+										var9 = (int) ((this.aSeekableFile_1901.method1360() + 519L) / 520L);
 										if (var9 == 0) {
 											var9 = 1;
 										}
 										break label225;
 									}
 
-									if (var3 * 6 + 6 > this.aClass76_1905.method1360()) {
+									if (var3 * 6 + 6 > this.aSeekableFile_1905.method1360()) {
 										var6 = false;
 										var10000 = var6;
 										return var10000;
@@ -266,12 +266,12 @@ public class Class114 {
 
 						try {
 							try {
-								this.aClass76_1905.method1361(0, var3 * 6);
-								this.aClass76_1905.method1368(false, SFSS.aByteArray5102, 0, 6);
+								this.aSeekableFile_1905.method1361(0, var3 * 6);
+								this.aSeekableFile_1905.method1368(false, SFSS.aByteArray5102, 0, 6);
 								var9 = (SFSS.aByteArray5102[5] & 255)
 										+ ((SFSS.aByteArray5102[3] & 255) << 16)
 										+ ((SFSS.aByteArray5102[4] & 255) << 8);
-								if (var9 > 0 && var9 <= this.aClass76_1901.method1360() / 520L) {
+								if (var9 > 0 && var9 <= this.aSeekableFile_1901.method1360() / 520L) {
 									break label225;
 								}
 
@@ -296,8 +296,8 @@ public class Class114 {
 							SFSS.aByteArray5102[2] = (byte) var1;
 							SFSS.aByteArray5102[0] = (byte) (var1 >> 16);
 							SFSS.aByteArray5102[5] = (byte) var9;
-							this.aClass76_1905.method1361(0, var3 * 6);
-							this.aClass76_1905.method1362(0, 6, (byte) 94, SFSS.aByteArray5102);
+							this.aSeekableFile_1905.method1361(0, var3 * 6);
+							this.aSeekableFile_1905.method1362(0, 6, (byte) 94, SFSS.aByteArray5102);
 							var10 = 0;
 							var11 = 0;
 						} catch (IOException var22) {
@@ -314,10 +314,10 @@ public class Class114 {
 								int var14;
 								if (var2) {
 									label214: {
-										this.aClass76_1901.method1361(0, var9 * 520);
+										this.aSeekableFile_1901.method1361(0, var9 * 520);
 
 										try {
-											this.aClass76_1901.method1368(false, SFSS.aByteArray5102,
+											this.aSeekableFile_1901.method1368(false, SFSS.aByteArray5102,
 													0, 8);
 										} catch (EOFException var21) {
 											break label171;
@@ -333,7 +333,7 @@ public class Class114 {
 										int var15 = SFSS.aByteArray5102[7] & 255;
 										if (var3 == var14 && var11 == var13 && var15 == this.anInt1898) {
 											try {
-												if (var12 >= 0 && this.aClass76_1901.method1360()
+												if (var12 >= 0 && this.aSeekableFile_1901.method1360()
 														/ 520L >= var12) {
 													break label214;
 												}
@@ -355,7 +355,7 @@ public class Class114 {
 									try {
 										if (var12 == 0) {
 											var2 = false;
-											var12 = (int) ((this.aClass76_1901.method1360() + 519L) / 520L);
+											var12 = (int) ((this.aSeekableFile_1901.method1360() + 519L) / 520L);
 											if (var12 == 0) {
 												++var12;
 											}
@@ -383,11 +383,11 @@ public class Class114 {
 										SFSS.aByteArray5102[4] = (byte) (var12 >> 16);
 										++var11;
 										SFSS.aByteArray5102[6] = (byte) var12;
-										this.aClass76_1901.method1361(0, var9 * 520);
-										this.aClass76_1901.method1362(0, 8, (byte) 45,
+										this.aSeekableFile_1901.method1361(0, var9 * 520);
+										this.aSeekableFile_1901.method1362(0, 8, (byte) 45,
 												SFSS.aByteArray5102);
 										var9 = var12;
-										this.aClass76_1901.method1362(var10, var14, (byte) 92, var4);
+										this.aSeekableFile_1901.method1362(var10, var14, (byte) 92, var4);
 										var10 += var14;
 										continue;
 									} catch (IOException var19) {

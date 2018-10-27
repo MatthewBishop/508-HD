@@ -48,10 +48,6 @@ public class Class36 implements Runnable {
 		}
 
 	}
-	public static int method1103(byte var0, int var1) {
-		int var2 = var1 & 127;
-		return var2;
-	}
 	public static boolean method1105(byte var0, int var1) {
 		boolean var2 = (var1 >> 21 & 1) != 0;
 		return var2;

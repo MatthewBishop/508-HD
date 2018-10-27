@@ -7,7 +7,6 @@ import com.jagex.cache.loaders.AnimFrameLoader;
 import com.jagex.io.Buffer;
 
 import rs.SceneGraphNode_AbstractModelRenderer;
-import rs.Class14_Sub4;
 
 public class Animation {
 	public boolean aBoolean754;
@@ -120,7 +119,7 @@ public class Animation {
 
 	public SceneGraphNode_AbstractModelRenderer method1167(int i, int i_0_, SceneGraphNode_AbstractModelRenderer class133_sub7) {
 		int i_1_ = anIntArray768[i];
-		AnimFrameLoader class14_sub2_sub15 = Class14_Sub4.method457(3, i_1_ >> 16);
+		AnimFrameLoader class14_sub2_sub15 = AnimLoader.method457(i_1_ >> 16);
 		i_1_ &= i_0_;
 		if (class14_sub2_sub15 == null) {
 			SceneGraphNode_AbstractModelRenderer class133_sub7_2_ = class133_sub7.method1860(true, true);
@@ -130,7 +129,7 @@ public class Animation {
 		int i_4_ = 0;
 		if (anIntArray775 != null && anIntArray775.length > i) {
 			i_4_ = anIntArray775[i];
-			class14_sub2_sub15_3_ = Class14_Sub4.method457(i_0_ - 65532, i_4_ >> 48);
+			class14_sub2_sub15_3_ = AnimLoader.method457(i_4_ >> 48);
 			i_4_ &= 0xffff;
 		}
 		if (class14_sub2_sub15_3_ == null || i_4_ == 65535) {
@@ -151,7 +150,7 @@ public class Animation {
 
 	public SceneGraphNode_AbstractModelRenderer method1168(byte i, int i_9_, SceneGraphNode_AbstractModelRenderer class133_sub7) {
 		i_9_ = anIntArray768[i_9_];
-		AnimFrameLoader class14_sub2_sub15 = Class14_Sub4.method457(3, i_9_ >> 48);
+		AnimFrameLoader class14_sub2_sub15 = AnimLoader.method457(i_9_ >> 48);
 		i_9_ &= 0xffff;
 		if (class14_sub2_sub15 == null) {
 			SceneGraphNode_AbstractModelRenderer class133_sub7_10_ = class133_sub7.method1860(true, true);
@@ -181,7 +180,7 @@ public class Animation {
 
 	public SceneGraphNode_AbstractModelRenderer method1173(int i, int i_30_, SceneGraphNode_AbstractModelRenderer class133_sub7) {
 		i = anIntArray768[i];
-		AnimFrameLoader class14_sub2_sub15 = Class14_Sub4.method457(3, i >> 48);
+		AnimFrameLoader class14_sub2_sub15 = AnimLoader.method457(i >> 48);
 		i &= i_30_;
 		if (class14_sub2_sub15 == null) {
 			SceneGraphNode_AbstractModelRenderer class133_sub7_31_ = class133_sub7.method1870(true, true);
@@ -196,7 +195,7 @@ public class Animation {
 
 	public SceneGraphNode_AbstractModelRenderer method1177(byte i, int i_76_, int i_77_, SceneGraphNode_AbstractModelRenderer class133_sub7) {
 		i_77_ = anIntArray768[i_77_];
-		AnimFrameLoader class14_sub2_sub15 = Class14_Sub4.method457(3, i_77_ >> 16);
+		AnimFrameLoader class14_sub2_sub15 = AnimLoader.method457(i_77_ >> 16);
 		i_77_ &= 0xffff;
 		if (class14_sub2_sub15 == null) {
 			SceneGraphNode_AbstractModelRenderer class133_sub7_78_ = class133_sub7.method1860(true, true);
@@ -229,7 +228,7 @@ public class Animation {
 
 	public SceneGraphNode_AbstractModelRenderer method1178(int i, byte i_81_, int i_82_, SceneGraphNode_AbstractModelRenderer class133_sub7, Animation class46_83_) {
 		i_82_ = anIntArray768[i_82_];
-		AnimFrameLoader class14_sub2_sub15 = Class14_Sub4.method457(i_81_ - 43, i_82_ >> 16);
+		AnimFrameLoader class14_sub2_sub15 = AnimLoader.method457(i_82_ >> 16);
 		i_82_ &= 0xffff;
 		if (class14_sub2_sub15 == null) {
 			SceneGraphNode_AbstractModelRenderer class133_sub7_84_ = class46_83_.method1168((byte) 123, i, class133_sub7);
@@ -238,7 +237,7 @@ public class Animation {
 		if (i_81_ != 46)
 			method1178(21, (byte) -18, 81, null, null);
 		i = class46_83_.anIntArray768[i];
-		AnimFrameLoader class14_sub2_sub15_85_ = Class14_Sub4.method457(3, i >> 48);
+		AnimFrameLoader class14_sub2_sub15_85_ = AnimLoader.method457(i >> 48);
 		i &= 0xffff;
 		if (class14_sub2_sub15_85_ == null) {
 			SceneGraphNode_AbstractModelRenderer class133_sub7_86_ = class133_sub7.method1860(!class14_sub2_sub15.method338(i_82_),

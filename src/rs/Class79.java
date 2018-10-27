@@ -144,7 +144,7 @@ public class Class79 {
 			if (modelhd == null) {
 				SceneGraphNode_Model class133_sub2 = null;
 				for (int i_13_ = 0; i_10_ > i_13_; i_13_++) {
-					class133_sub2 = SceneGraphNode_Model.method1824(Static2.aClass9_2923,
+					class133_sub2 = SceneGraphNode_Model.method1824(Static2.aFileSystem_2923,
 							(anIntArray1260[i_13_] & 0xffff), 0);
 					if (class133_sub2 == null)
 						return null;
@@ -171,7 +171,7 @@ public class Class79 {
 				i_16_ += 65536;
 			modelhd = (ModelHD) Class112.aClass52_1868.get(i_16_);
 			if (modelhd == null) {
-				SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(Static2.aClass9_2923, i_16_ & 0xffff, 0);
+				SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(Static2.aFileSystem_2923, i_16_ & 0xffff, 0);
 				if (class133_sub2 == null) {
 					ModelHD modelhd_17_ = null;
 					return modelhd_17_;
@@ -228,7 +228,7 @@ public class Class79 {
 			Class79 class79_25_ = class79;
 			return class79_25_;
 		}
-		byte[] is = Class15.aClass9_382.method163(JunkTex.method492(11604, i_24_),
+		byte[] is = Class15.aFileSystem_382.method163(JunkTex.method492(11604, i_24_),
 				Class14_Sub29.method932(i_24_, 21661));
 		Class79 class79_26_ = new Class79();
 		class79_26_.anInt1257 = i_24_;
@@ -264,7 +264,7 @@ public class Class79 {
 		}
 		boolean bool = true;
 		for (int i_29_ = 0; i_29_ < anIntArray1260.length; i_29_++)
-			bool &= Static2.aClass9_2923.method158(0, (anIntArray1260[i_29_] & 0xffff));
+			bool &= Static2.aFileSystem_2923.method158(0, (anIntArray1260[i_29_] & 0xffff));
 		if (i <= 29)
 			aBoolean1302 = false;
 		boolean bool_30_ = bool;
@@ -292,7 +292,7 @@ public class Class79 {
 		if (anIntArray1256 != null) {
 			for (int i_32_ = 0; i_32_ < anIntArray1256.length; i_32_++) {
 				if (i_31_ == anIntArray1256[i_32_])
-					return (Static2.aClass9_2923.method158(0, anIntArray1260[i_32_] & 0xffff));
+					return (Static2.aFileSystem_2923.method158(0, anIntArray1260[i_32_] & 0xffff));
 			}
 			return true;
 		}
@@ -306,7 +306,7 @@ public class Class79 {
 		}
 		boolean bool = true;
 		for (int i_33_ = 0; anIntArray1260.length > i_33_; i_33_++)
-			bool &= Static2.aClass9_2923.method158(0, (anIntArray1260[i_33_] & 0xffff));
+			bool &= Static2.aFileSystem_2923.method158(0, (anIntArray1260[i_33_] & 0xffff));
 		boolean bool_34_ = bool;
 		return bool_34_;
 	}

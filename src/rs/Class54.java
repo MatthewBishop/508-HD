@@ -3,14 +3,14 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 
 public class Class54 {
 	public static boolean aBoolean879 = true;
 	public static int anInt880;
 	public static boolean aBoolean881 = false;
 	public static Class124 aClass124_883 = Class124.method263(")3google)3com");
-	public static Class9 aClass9_885;
+	public static FileSystem aFileSystem_885;
 	public static Class124 aClass124_886 = Class124.method263(" )2> ");
 	public static int anInt887 = 0;
 	public static Class87 aClass87_888;
@@ -68,7 +68,7 @@ public class Class54 {
 		aClass87_888 = null;
 		aClass124_883 = null;
 		if (i > 38)
-			aClass9_885 = null;
+			aFileSystem_885 = null;
 	}
 
 	public static Class124 method1220(int i, boolean bool, boolean bool_3_, int i_4_) {

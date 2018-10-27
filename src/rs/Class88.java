@@ -4,7 +4,8 @@
 package rs;
 
 import com.jagex.applet.Applet_Sub1;
-import com.jagex.io.js5.Class9;
+import com.jagex.cache.anim.AnimLoader;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.link.HashTable;
 
 public class Class88 {
@@ -21,7 +22,7 @@ public class Class88 {
 		Class124.method1718(48);
 		Class96.method1488(2);
 		JunkTex.method544((byte) 124);
-		Class116.method1598(58);
+		AnimLoader.method1598(58);
 		JunkTex.method560(-12501);
 		Class90.method1443(2);
 		int i_0_ = -49 / ((90 - i) / 36);
@@ -30,7 +31,7 @@ public class Class88 {
 		Class14_Sub30.method941((byte) 11);
 		Class7_Sub3.method134(0);
 		SceneGraphNode.method1789((byte) -115);
-		JunkTex.aClass52_4596.method1209();
+		JunkTex.aClass52_4596.clearSoftReference();
 	}
 
 	public static void method1436(byte i) {
@@ -49,14 +50,14 @@ public class Class88 {
 		aClass55_1398 = null;
 	}
 
-	public static boolean method1438(Class14_Sub9_Sub1 class14_sub9_sub1, Class9 class9, boolean bool, Class9 class9_1_,
-			Class9 class9_2_) {
-		Class59.aClass9_957 = class9_1_;
+	public static boolean method1438(Class14_Sub9_Sub1 class14_sub9_sub1, FileSystem fileSystem, boolean bool, FileSystem fileSystem_1_,
+			FileSystem fileSystem_2_) {
+		Class59.aFileSystem_957 = fileSystem_1_;
 		SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625 = class14_sub9_sub1;
 		if (bool)
 			aClass55_1398 = null;
-		Class44.aClass9_725 = class9;
-		Static2.aClass9_3945 = class9_2_;
+		Class44.aFileSystem_725 = fileSystem;
+		Static2.aFileSystem_3945 = fileSystem_2_;
 		boolean bool_3_ = true;
 		return bool_3_;
 	}

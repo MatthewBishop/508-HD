@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.applet.ErrorReporting;
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.io.js5.CacheFileWorker;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.HDTile;
 import com.jagex.rt4.RT4GL;
@@ -21,7 +21,7 @@ public class Class14_Sub21 extends Linkable {
 	public int anInt3106;
 	public int anInt3108;
 	public boolean aBoolean3109;
-	public static Class9_Sub1 aClass9_Sub1_3111;
+	public static CacheFileWorker aCacheFileWorker_3111;
 	public int anInt3113;
 	public int anInt3114;
 	public Object[] anObjectArray3115;
@@ -35,7 +35,7 @@ public class Class14_Sub21 extends Linkable {
 
 	public static void method893(byte i) {
 		int i_0_ = -5 % ((i - 57) / 37);
-		aClass9_Sub1_3111 = null;
+		aCacheFileWorker_3111 = null;
 		aClass124_3104 = null;
 		aClass32Array3100 = null;
 		aClass124_3099 = null;
@@ -58,7 +58,7 @@ public class Class14_Sub21 extends Linkable {
 		} else
 			class94.anInt1518 = class94.anInt1485 * i_1_ >> 46;
 		if (i != 1)
-			aClass9_Sub1_3111 = null;
+			aCacheFileWorker_3111 = null;
 		int i_4_ = class94.anInt1545;
 		if (class94.aByte1536 == 0)
 			class94.anInt1545 = class94.anInt1488;
@@ -101,15 +101,6 @@ public class Class14_Sub21 extends Linkable {
 
 	public static void setHDTiles(int i, HDTile[] class14_sub27s) {
 		JunkTex.aClass14_Sub27ArrayArray2464[i] = class14_sub27s;
-	}
-
-	public static int method896(int i, int i_5_) {
-		if (i > -96) {
-			int i_6_ = 123;
-			return i_6_;
-		}
-		int i_7_ = i_5_ >>> 7;
-		return i_7_;
 	}
 
 	public static void method897(int i) {

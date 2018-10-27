@@ -4,8 +4,8 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.io.js5.FileSystem;
+import com.jagex.io.js5.CacheFileWorker;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.Class148_Sub1;
 
@@ -20,7 +20,7 @@ public class Class127 {
 	public int anInt2106;
 	public int anInt2108;
 	public byte[] aByteArray2109;
-	public static Class9_Sub1 aClass9_Sub1_2111;
+	public static CacheFileWorker aCacheFileWorker_2111;
 	public static SoftCache aClass52_2112 = new SoftCache(64);
 	public static Class124 aClass124_2113;
 	public static Class94 aClass94_2114 = null;
@@ -63,7 +63,7 @@ public class Class127 {
 			Class60 class60_10_ = class60;
 			return class60_10_;
 		}
-		byte[] is = (JunkTex.aClass9_4338.method163(Class79.method1378(i, 5823),
+		byte[] is = (JunkTex.aFileSystem_4338.method163(Class79.method1378(i, 5823),
 				Class131.method1773(i, (byte) -124)));
 		Class60 class60_11_ = new Class60();
 		class60_11_.anInt962 = i;
@@ -88,10 +88,10 @@ public class Class127 {
 
 
 
-	public static Class148_Sub1 method1752(int i, Class9 class9, boolean bool, int i_32_) {
+	public static Class148_Sub1 method1752(int i, FileSystem fileSystem, boolean bool, int i_32_) {
 		if (!bool)
 			method1750(null, (byte) 88);
-		if (!Static3.method1564(i, i_32_, class9)) {
+		if (!Static3.method1564(i, i_32_, fileSystem)) {
 			Class148_Sub1 class148_sub1 = null;
 			return class148_sub1;
 		}
@@ -106,7 +106,7 @@ public class Class127 {
 			method1748(-93, 123, -15, 22, null, null, 82, 104, 38, -95, 79L);
 		aClass124_2117 = null;
 		aClass124_2113 = null;
-		aClass9_Sub1_2111 = null;
+		aCacheFileWorker_2111 = null;
 		aClass124_2116 = null;
 	}
 

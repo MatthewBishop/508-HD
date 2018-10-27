@@ -6,7 +6,7 @@ package rs;
 import java.awt.Component;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.io.js5.CacheFileWorker;
 import com.jagex.link.Cache;
 import com.jagex.rt4.Class148;
 import com.jagex.util.ArrayUtils;
@@ -23,7 +23,7 @@ public class Class75 {
 	public long aLong1160 = TimeUtil.getTime();
 	public static int anInt1163;
 	public static Class124 aClass124_1165 = Class124.method263("Bitte warten Sie)3)3)3");
-	public static Class9_Sub1 idx0;
+	public static CacheFileWorker idx0;
 	public boolean aBoolean1169 = true;
 	public int anInt1170;
 	public int anInt1171;

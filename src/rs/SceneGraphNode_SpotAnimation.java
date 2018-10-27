@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.cache.anim.Animation;
+import com.jagex.cache.anim.AnimLoader;
 import com.jagex.rt4.AbstractSprite;
 
 public class SceneGraphNode_SpotAnimation extends SceneGraphNode {
@@ -70,7 +71,7 @@ public class SceneGraphNode_SpotAnimation extends SceneGraphNode {
 		int i_19_ = Class127.method1749(anInt3605, (byte) 45).anInt966;
 		if (i_19_ != -1) {
 			finishedAnimating = false;
-			aClass46_3611 = JunkTex.method1129(i_19_, -120);
+			aClass46_3611 = AnimLoader.method1129(i_19_);
 		} else
 			finishedAnimating = true;
 	}

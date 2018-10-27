@@ -3,12 +3,12 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.io.js5.CacheFileWorker;
 import com.jagex.link.Linkable;
 
 public class Class14_Sub13 extends Linkable {
 	public static Class124 aClass124_2955 = Class124.method263("Fallen lassen");
-	public static Class9_Sub1 aClass9_Sub1_2958;
+	public static CacheFileWorker aCacheFileWorker_2958;
 	public long aLong2963;
 	public static int anInt2964 = 0;
 
@@ -33,7 +33,7 @@ public class Class14_Sub13 extends Linkable {
 	}
 
 	public static void method863() {
-		aClass9_Sub1_2958 = null;
+		aCacheFileWorker_2958 = null;
 		aClass124_2955 = null;
 	}
 

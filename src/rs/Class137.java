@@ -5,7 +5,8 @@ package rs;
 
 import com.jagex.applet.Applet_Sub1;
 import com.jagex.cache.anim.Animation;
-import com.jagex.io.js5.Class9;
+import com.jagex.cache.anim.AnimLoader;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.rt4.CardMemManager;
 import com.jagex.rt4.AbstractSprite;
 import com.jagex.rt4.AbstractSprite_Sub1;
@@ -570,7 +571,7 @@ public class Class137 {
 										Class142 class142 = (JunkTex.method605(83, class94.anInt1532));
 										if (class142 != null) {
 											class142 = (class142.method1970(class94.anInt1495, false));
-											Animation animation = (i_60_ != -1 ? JunkTex.method1129(i_60_, -125) : null);
+											Animation animation = (i_60_ != -1 ? AnimLoader.method1129(i_60_) : null);
 											class133_sub7 = (class142.method1974(animation, class94.anInt1610, 0, 1));
 											if (class133_sub7 == null)
 												Class103.method1531(class94);
@@ -579,7 +580,7 @@ public class Class137 {
 										}
 									} else if (class94.anInt1543 != 5) {
 										if (i_60_ != -1) {
-											Animation animation = JunkTex.method1129(i_60_, -123);
+											Animation animation = AnimLoader.method1129(i_60_);
 											class133_sub7 = (class94.method1480(
 													(Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.aClass102_4941), -3, bool,
 													animation, class94.anInt1610));
@@ -597,7 +598,7 @@ public class Class137 {
 										if (i_62_ == Class14_Sub2_Sub10.anInt3868)
 											i_62_ = 2047;
 										SceneGraphNode_GameEntity_Sub1 class133_sub1_sub1 = (JunkTex.aSceneGraphNode_GameEntity_Sub1Array4474[i_62_]);
-										Animation animation = (i_60_ == -1 ? null : JunkTex.method1129(i_60_, -21));
+										Animation animation = (i_60_ == -1 ? null : AnimLoader.method1129(i_60_));
 										if (class133_sub1_sub1 != null && ((int) class133_sub1_sub1.aClass124_4922
 												.method1692(0) << 43 == (class94.anInt1550 & ~0x7ff)))
 											class133_sub7 = (class133_sub1_sub1.aClass102_4941.method1516(null, 0, -13,
@@ -782,8 +783,8 @@ public class Class137 {
 		}
 	}
 
-	public static AbstractSprite_Sub1 method1943(int i, Class9 class9, int i_88_, byte i_89_) {
-		if (!Static3.method1564(i, i_88_, class9)) {
+	public static AbstractSprite_Sub1 method1943(int i, FileSystem fileSystem, int i_88_, byte i_89_) {
+		if (!Static3.method1564(i, i_88_, fileSystem)) {
 			AbstractSprite_Sub1 class14_sub2_sub19_sub1 = null;
 			return class14_sub2_sub19_sub1;
 		}

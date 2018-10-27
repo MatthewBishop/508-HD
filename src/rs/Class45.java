@@ -5,7 +5,7 @@ package rs;
 
 import com.jagex.applet.ErrorReporting;
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 
 public class Class45 {
 	public static Class124 aClass124_738 = Class124.method263("AUS");
@@ -41,11 +41,11 @@ public class Class45 {
 	public static void method1161(int i) {
 		if (Class7_Sub1.aClass14_Sub2_Sub5_2665 != null) {
 			if (JunkTex.anInt4616 < 10) {
-				if (!(JunkTex.aClass9_4570.method160(Class7_Sub1.aClass14_Sub2_Sub5_2665.aClass124_3804))
-						|| !(JunkTex.aClass9_4570.method160((JunkTex.method515(new Class124[] {
+				if (!(JunkTex.aFileSystem_4570.method160(Class7_Sub1.aClass14_Sub2_Sub5_2665.aClass124_3804))
+						|| !(JunkTex.aFileSystem_4570.method160((JunkTex.method515(new Class124[] {
 								(Class7_Sub1.aClass14_Sub2_Sub5_2665.aClass124_3804), Static2.aClass124_1099 },
 								(byte) -79))))) {
-					JunkTex.anInt4616 = (Class7_Sub1.aClass9_Sub1_2657
+					JunkTex.anInt4616 = (Class7_Sub1.aCacheFileWorker_2657
 							.method151(Class7_Sub1.aClass14_Sub2_Sub5_2665.aClass124_3804)) / 10;
 					return;
 				}
@@ -93,7 +93,7 @@ public class Class45 {
 				JunkTex.anInt4616 = 20;
 			} else if (JunkTex.anInt4616 == 20) {
 				Static2.method1176(false,
-						new Buffer(JunkTex.aClass9_4570.method167(
+						new Buffer(JunkTex.aFileSystem_4570.method167(
 								(Class7_Sub1.aClass14_Sub2_Sub5_2665.aClass124_3804),
 								(JunkTex.aClass124_3956))));
 				JunkTex.anInt4616 = 30;
@@ -101,20 +101,20 @@ public class Class45 {
 				ErrorReporting.method531((byte) -112);
 			} else if (JunkTex.anInt4616 == 30) {
 				Static2.method241(11075,
-						new Buffer(JunkTex.aClass9_4570.method167(
+						new Buffer(JunkTex.aFileSystem_4570.method167(
 								(Class7_Sub1.aClass14_Sub2_Sub5_2665.aClass124_3804), (Static2.aClass124_2869))));
 				JunkTex.anInt4616 = 40;
 				ErrorReporting.method531((byte) -112);
 			} else if (JunkTex.anInt4616 == 40) {
 				Class138.method1945((byte) -102,
-						new Buffer(JunkTex.aClass9_4570.method167(
+						new Buffer(JunkTex.aFileSystem_4570.method167(
 								(Class7_Sub1.aClass14_Sub2_Sub5_2665.aClass124_3804), JunkTex.aClass124_4574)));
 				JunkTex.anInt4616 = 50;
 				ErrorReporting.method531((byte) -112);
 			} else if (JunkTex.anInt4616 == 50) {
 				JunkTex
 						.method601(-113,
-								new Buffer(JunkTex.aClass9_4570.method167(
+								new Buffer(JunkTex.aFileSystem_4570.method167(
 										(Class7_Sub1.aClass14_Sub2_Sub5_2665.aClass124_3804), Class131.aClass124_2161)));
 				JunkTex.anInt4616 = 60;
 				Static2.method259(true, i ^ 0x2ee8);
@@ -123,7 +123,7 @@ public class Class45 {
 				Class152.aClass146_2435 = (JunkTex.method507(true,
 						(JunkTex.method515(new Class124[] {
 								(Class7_Sub1.aClass14_Sub2_Sub5_2665.aClass124_3804), Static2.aClass124_1099 },
-						(byte) -30)), JunkTex.aClass9_4570));
+						(byte) -30)), JunkTex.aFileSystem_4570));
 				JunkTex.anInt4616 = 70;
 				ErrorReporting.method531((byte) -112);
 			} else if (JunkTex.anInt4616 == 70) {
@@ -336,8 +336,8 @@ public class Class45 {
 			}
 		}
 	}
-	public static void method1164(Class9 class9, int i) {
-		Class14_Sub2_Sub5.aClass9_3817 = class9;
+	public static void method1164(FileSystem fileSystem, int i) {
+		Class14_Sub2_Sub5.aFileSystem_3817 = fileSystem;
 		if (i <= 31)
 			aClass124_738 = null;
 	}

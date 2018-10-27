@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.cache.anim.AnimLoader;
 import com.jagex.io.Buffer;
 import com.jagex.rt4.IntegerNode;
 
@@ -145,7 +146,7 @@ public class Class60 {
 	public SceneGraphNode_AbstractModelRenderer method1267(int i, int i_21_) {
 		SceneGraphNode_AbstractModelRenderer class133_sub7 = ((SceneGraphNode_AbstractModelRenderer) Static2.aClass52_4053.get(anInt962));
 		if (class133_sub7 == null) {
-			SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(JunkTex.aClass9_2711, anInt977, 0);
+			SceneGraphNode_Model class133_sub2 = SceneGraphNode_Model.method1824(JunkTex.aFileSystem_2711, anInt977, 0);
 			if (class133_sub2 == null) {
 				SceneGraphNode_AbstractModelRenderer class133_sub7_22_ = null;
 				return class133_sub7_22_;
@@ -163,7 +164,7 @@ public class Class60 {
 		}
 		SceneGraphNode_AbstractModelRenderer class133_sub7_25_;
 		if (anInt966 != -1 && i_21_ != -1)
-			class133_sub7_25_ = JunkTex.method1129(anInt966, -125).method1173(i_21_, 65535, class133_sub7);
+			class133_sub7_25_ = AnimLoader.method1129(anInt966).method1173(i_21_, 65535, class133_sub7);
 		else
 			class133_sub7_25_ = class133_sub7.method1870(true, true);
 		if (anInt963 != 128 || anInt965 != 128)

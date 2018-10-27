@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.io.js5.CacheFileWorker;
 import com.jagex.rt4.AbstractSprite;
 import com.jagex.rt4.AbstractSprite_Sub1;
 
@@ -13,7 +13,7 @@ public class Class109 {
 	public int anInt1830;
 	public static Class124 aClass124_1831 = Class124.method263("null");
 	public int anInt1833;
-	public static Class9_Sub1 idx1;
+	public static CacheFileWorker idx1;
 	public static AbstractSprite_Sub1[] aClass14_Sub2_Sub19_Sub1Array1835;
 	public static Class124 aClass124_1836 = Class124.method263(")3)3)3");
 	public byte aByte1838;

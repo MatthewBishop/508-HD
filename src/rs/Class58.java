@@ -6,8 +6,8 @@ package rs;
 import java.security.MessageDigest;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class76;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.SeekableFile;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.map.SceneCluster;
 import com.jagex.rt4.AbstractSprite;
 import com.jagex.sound.Track;
@@ -18,7 +18,7 @@ public class Class58 {
 	public static Class124 aClass124_941 = Class124.method263("::errortest");
 	public static Class124 aClass124_942 = aClass124_939;
 	public static Class124 aClass124_943;
-	public static Class76[] aClass76Array944 = new Class76[27];
+	public static SeekableFile[] aSeekableFileArray944 = new SeekableFile[27];
 	public static int anInt947;
 	public static int viewportTop;
 	public static int anInt949;
@@ -60,7 +60,7 @@ public class Class58 {
 				int i_5_ = (Static2.anInt1691 * (-i_4_ + class14_sub3.anInt2765) / class14_sub3.anInt2765);
 				if (class14_sub3.aClass14_Sub9_Sub4_2775 == null) {
 					if (class14_sub3.anInt2753 >= 0) {
-						Track track = Track.method1451((Static2.aClass9_Sub1_2901), class14_sub3.anInt2753,
+						Track track = Track.method1451((Static2.aCacheFileWorker_2901), class14_sub3.anInt2753,
 								0);
 						if (track != null) {
 							Class14_Sub12_Sub1 class14_sub12_sub1 = track.method1449()
@@ -80,7 +80,7 @@ public class Class58 {
 						class14_sub3.aClass14_Sub9_Sub4_2760 = null;
 				} else if (class14_sub3.anIntArray2746 != null && (class14_sub3.anInt2773 -= i) <= 0) {
 					int i_6_ = (int) (class14_sub3.anIntArray2746.length * Math.random());
-					Track track = Track.method1451(Static2.aClass9_Sub1_2901,
+					Track track = Track.method1451(Static2.aCacheFileWorker_2901,
 							class14_sub3.anIntArray2746[i_6_], 0);
 					if (track != null) {
 						Class14_Sub12_Sub1 class14_sub12_sub1 = track.method1449()
@@ -201,17 +201,17 @@ public class Class58 {
 		aClass124_941 = null;
 		aClass124_942 = null;
 		aClass124_939 = null;
-		aClass76Array944 = null;
+		aSeekableFileArray944 = null;
 		aClass124_943 = null;
 		aBooleanArray950 = null;
 		if (i != 1)
 			viewportTop = 118;
 	}
 
-	public static AbstractSprite method1259(int i, Class9 class9, int i_22_, int i_23_) {
+	public static AbstractSprite method1259(int i, FileSystem fileSystem, int i_22_, int i_23_) {
 		if (i >= -80)
 			method1257(null, -79);
-		if (!Static3.method1564(i_22_, i_23_, class9)) {
+		if (!Static3.method1564(i_22_, i_23_, fileSystem)) {
 			AbstractSprite class14_sub2_sub19 = null;
 			return class14_sub2_sub19;
 		}

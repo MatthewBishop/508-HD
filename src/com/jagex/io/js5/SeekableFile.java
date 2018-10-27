@@ -10,7 +10,7 @@ import java.io.IOException;
 import com.jagex.util.ArrayUtils;
 import com.jagex.util.Util;
 
-public class Class76 {
+public class SeekableFile {
 	
 	public byte[] aByteArray1186;
 	public byte[] aByteArray1208;
@@ -29,7 +29,7 @@ public class Class76 {
 
 	public int anInt1214 = 0;
 
-	public Class76(FileOnDisk fileOnDisk, int i, int i_74_) throws IOException {
+	public SeekableFile(FileOnDisk fileOnDisk, int i, int i_74_) throws IOException {
 		aClass30_1202 = fileOnDisk;
 		aLong1198 = aLong1188 = fileOnDisk.method1061((byte) -68);
 		aLong1187 = 0L;

@@ -3,15 +3,15 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9;
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.io.js5.FileSystem;
+import com.jagex.io.js5.CacheFileWorker;
 
 public class Class7_Sub1 extends Class7 {
-	public static Class9 aClass9_2652;
+	public static FileSystem aFileSystem_2652;
 	public static int anInt2653 = -1;
 	public static int anInt2655;
 	public static Class124 aClass124_2656 = Class124.method263("");
-	public static Class9_Sub1 aClass9_Sub1_2657;
+	public static CacheFileWorker aCacheFileWorker_2657;
 	public static int anInt2659;
 	public static Class124 aClass124_2660;
 
@@ -101,8 +101,8 @@ public class Class7_Sub1 extends Class7 {
 
 	public static void method123(byte i) {
 		aClass14_Sub2_Sub5_2665 = null;
-		aClass9_2652 = null;
-		aClass9_Sub1_2657 = null;
+		aFileSystem_2652 = null;
+		aCacheFileWorker_2657 = null;
 		aClass124_2656 = null;
 		aShortArray2663 = null;
 		aClass124_2660 = null;

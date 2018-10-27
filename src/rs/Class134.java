@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.link.Cache;
 import com.jagex.rt4.Class14_Sub2_Sub1;
 import com.jagex.rt4.Class14_Sub2_Sub14;
@@ -25,20 +25,20 @@ public class Class134 implements TextureDefInterface {
 	public byte[] aByteArray2608;
 	public Cache aClass20_2585;
 	public Cache aClass20_2595;
-	public Class9 aClass9_2580;
-	public Class9 aClass9_2587;
+	public FileSystem aFileSystem_2580;
+	public FileSystem aFileSystem_2587;
 	public int anInt2582 = 50;
 
 	public short[] textureColors;
 
-	public Class134(Class9 class9, Class9 class9_24_, Class9 class9_25_, int i, boolean bool) {
-		aClass9_2580 = class9;
-		aClass9_2587 = class9_25_;
+	public Class134(FileSystem fileSystem, FileSystem fileSystem_24_, FileSystem fileSystem_25_, int i, boolean bool) {
+		aFileSystem_2580 = fileSystem;
+		aFileSystem_2587 = fileSystem_25_;
 		aBoolean2581 = bool;
 		anInt2582 = i;
 		aClass20_2595 = new Cache(anInt2582);
 		aClass20_2585 = new Cache(anInt2582);
-		Buffer class14_sub10 = new Buffer(class9_24_.method163(0, 0));
+		Buffer class14_sub10 = new Buffer(fileSystem_24_.method163(0, 0));
 		int amountMaterials = class14_sub10.readUShort();
 		aByteArray2602 = new byte[amountMaterials];
 		aBooleanArray2600 = new boolean[amountMaterials];
@@ -96,7 +96,7 @@ public class Class134 implements TextureDefInterface {
 			boolean bool = false;
 			return bool;
 		}
-		boolean bool = class14_sub2_sub1.method254(aClass9_2587, 255, this);
+		boolean bool = class14_sub2_sub1.method254(aFileSystem_2587, 255, this);
 		return bool;
 	}
 
@@ -106,7 +106,7 @@ public class Class134 implements TextureDefInterface {
 			return null;
 		}
 		class14_sub2_sub1.aBoolean3746 = true;
-		int[] is = class14_sub2_sub1.method255(this, f, -1, aClass9_2587, (aBoolean2581 || aBooleanArray2604[i]));
+		int[] is = class14_sub2_sub1.method255(this, f, -1, aFileSystem_2587, (aBoolean2581 || aBooleanArray2604[i]));
 		return is;
 	}
 
@@ -134,7 +134,7 @@ public class Class134 implements TextureDefInterface {
 		RT4.method1778(aByteArray2608[i] & 0xff, aByteArray2602[i] & 0xff);
 		Class14_Sub2_Sub1 class14_sub2_sub1 = method1926(i);
 		if (class14_sub2_sub1 != null)
-			bool = class14_sub2_sub1.method252(this, (aBoolean2581 || aBooleanArray2604[i]), 110, aClass9_2587);
+			bool = class14_sub2_sub1.method252(this, (aBoolean2581 || aBooleanArray2604[i]), 110, aFileSystem_2587);
 		if (!bool) {
 			Class14_Sub2_Sub14 class14_sub2_sub14 = method1923(i);
 			class14_sub2_sub14.method337(true);
@@ -147,7 +147,7 @@ public class Class134 implements TextureDefInterface {
 			int[] is = null;
 			return is;
 		}
-		int[] is = class14_sub2_sub1.method257(aClass9_2587, (aBoolean2581 || aBooleanArray2604[i_15_]), this);
+		int[] is = class14_sub2_sub1.method257(aFileSystem_2587, (aBoolean2581 || aBooleanArray2604[i_15_]), this);
 		return is;
 	}
 
@@ -185,7 +185,7 @@ public class Class134 implements TextureDefInterface {
 			Class14_Sub2_Sub1 class14_sub2_sub1_16_ = class14_sub2_sub1;
 			return class14_sub2_sub1_16_;
 		}
-		byte[] is = aClass9_2580.method163(0, i);
+		byte[] is = aFileSystem_2580.method163(0, i);
 		if (is == null) {
 			class14_sub2_sub1 = null;
 			return class14_sub2_sub1;

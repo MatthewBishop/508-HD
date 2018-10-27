@@ -4,14 +4,14 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.io.js5.FileSystem;
+import com.jagex.io.js5.CacheFileWorker;
 
 public class Class47 {
 	public static Class94 aClass94_784;
 	public static Class124 aClass124_787;
 	public static boolean aBoolean788 = true;
-	public static Class9_Sub1 aClass9_Sub1_790;
+	public static CacheFileWorker aCacheFileWorker_790;
 	public static Class124 aClass124_793;
 	public static int anInt796;
 
@@ -180,7 +180,7 @@ public class Class47 {
 			return i_27_;
 		} while (false);
 		if (i_5_ != -1)
-			aClass9_Sub1_790 = null;
+			aCacheFileWorker_790 = null;
 		int i_28_ = 0;
 		return i_28_;
 	}
@@ -266,21 +266,21 @@ public class Class47 {
 		Class131.aClass14_Sub27ArrayArray2162 = null;
 	}
 
-	public static int method1185(Class9 class9, boolean bool, Class9 class9_37_) {
+	public static int method1185(FileSystem fileSystem, boolean bool, FileSystem fileSystem_37_) {
 		int i = 0;
-		if (class9_37_.method171(Class14_Sub2_Sub21.anInt4088))
+		if (fileSystem_37_.method171(Class14_Sub2_Sub21.anInt4088))
 			i++;
-		if (class9_37_.method171(JunkTex.anInt4367))
+		if (fileSystem_37_.method171(JunkTex.anInt4367))
 			i++;
-		if (class9_37_.method171(JunkTex.anInt4102))
+		if (fileSystem_37_.method171(JunkTex.anInt4102))
 			i++;
 		if (!bool)
 			anInt796 = -113;
-		if (class9.method171(Class14_Sub2_Sub21.anInt4088))
+		if (fileSystem.method171(Class14_Sub2_Sub21.anInt4088))
 			i++;
-		if (class9.method171(JunkTex.anInt4367))
+		if (fileSystem.method171(JunkTex.anInt4367))
 			i++;
-		if (class9.method171(JunkTex.anInt4102))
+		if (fileSystem.method171(JunkTex.anInt4102))
 			i++;
 		int i_38_ = i;
 		return i_38_;
@@ -289,7 +289,7 @@ public class Class47 {
 	public static void method1186(int i) {
 		aClass124_787 = null;
 		aClass124_793 = null;
-		aClass9_Sub1_790 = null;
+		aCacheFileWorker_790 = null;
 		if (i == -192)
 			aClass94_784 = null;
 	}
@@ -304,7 +304,7 @@ public class Class47 {
 			Class51 class51_39_ = class51;
 			return class51_39_;
 		}
-		byte[] is = Class7_Sub1.aClass9_2652.method163(Class14_Sub15.method873(1023, i), Canvas_Sub2.method68(i, -1));
+		byte[] is = Class7_Sub1.aFileSystem_2652.method163(Class14_Sub15.method873(1023, i), Canvas_Sub2.method68(i, -1));
 		Class51 class51_40_ = new Class51();
 		if (is != null)
 			class51_40_.method1198(new Buffer(is), 36);

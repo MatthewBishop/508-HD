@@ -4,15 +4,14 @@
 package rs;
 
 import com.jagex.applet.ErrorReporting;
+import com.jagex.cache.anim.AnimLoader;
 import com.jagex.io.Buffer;
-import com.jagex.link.ref.SoftCache;
 import com.jagex.util.ArrayUtils;
 
 public class Class21 {
 	public static int[] occludersY;
 	public static Class36 aClass36_441;
 	public static int[] anIntArray442;
-	public static SoftCache aClass52_444 = new SoftCache(64);
 	public short[] aShortArray445;
 	public int anInt446 = -1;
 	public int[] anIntArray447 = { -1, -1, -1, -1, -1 };
@@ -78,7 +77,7 @@ public class Class21 {
 		int i_9_ = 0;
 		for (int i_10_ = 0; i_10_ < 5; i_10_++) {
 			if (anIntArray447[i_10_] != -1)
-				class133_sub2s[i_9_++] = SceneGraphNode_Model.method1824(Class14_Sub2_Sub8.aClass9_3848, anIntArray447[i_10_],
+				class133_sub2s[i_9_++] = SceneGraphNode_Model.method1824(Class14_Sub2_Sub8.aFileSystem_3848, anIntArray447[i_10_],
 						0);
 		}
 		if (i != 61)
@@ -132,7 +131,6 @@ public class Class21 {
 	}
 
 	public static void method979(int i) {
-		aClass52_444 = null;
 		aClass36_441 = null;
 		occludersY = null;
 		anIntArray442 = null;
@@ -157,7 +155,7 @@ public class Class21 {
 		}
 		SceneGraphNode_Model[] class133_sub2s = new SceneGraphNode_Model[anIntArray457.length];
 		for (int i_23_ = 0; anIntArray457.length > i_23_; i_23_++)
-			class133_sub2s[i_23_] = SceneGraphNode_Model.method1824(Class14_Sub2_Sub8.aClass9_3848, anIntArray457[i_23_], 0);
+			class133_sub2s[i_23_] = SceneGraphNode_Model.method1824(Class14_Sub2_Sub8.aFileSystem_3848, anIntArray457[i_23_], 0);
 		if (i != -47) {
 			SceneGraphNode_Model class133_sub2 = null;
 			return class133_sub2;
@@ -184,11 +182,9 @@ public class Class21 {
 			boolean bool_27_ = true;
 			return bool_27_;
 		}
-		if (bool)
-			aClass52_444 = null;
 		boolean bool_28_ = true;
 		for (int i = 0; i < anIntArray457.length; i++) {
-			if (!Class14_Sub2_Sub8.aClass9_3848.method158(0, anIntArray457[i]))
+			if (!Class14_Sub2_Sub8.aFileSystem_3848.method158(0, anIntArray457[i]))
 				bool_28_ = false;
 		}
 		boolean bool_29_ = bool_28_;
@@ -198,7 +194,7 @@ public class Class21 {
 	public boolean method983(boolean bool) {
 		boolean bool_30_ = true;
 		for (int i = 0; i < 5; i++) {
-			if (anIntArray447[i] != -1 && !Class14_Sub2_Sub8.aClass9_3848.method158(0, anIntArray447[i]))
+			if (anIntArray447[i] != -1 && !Class14_Sub2_Sub8.aFileSystem_3848.method158(0, anIntArray447[i]))
 				bool_30_ = false;
 		}
 		if (bool)

@@ -5,7 +5,7 @@ package rs;
 
 import java.awt.Font;
 
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.rt4.Class25;
 
 public class Class123 {
@@ -57,15 +57,15 @@ public class Class123 {
 				JunkTex.anInt500);
 	}
 
-	public static void method1664(Class9 class9, boolean bool, Class14_Sub2_Sub16_Sub1 class14_sub2_sub16_sub1, byte i,
-			Class9 class9_11_) {
+	public static void method1664(FileSystem fileSystem, boolean bool, Class14_Sub2_Sub16_Sub1 class14_sub2_sub16_sub1, byte i,
+			FileSystem fileSystem_11_) {
 		Class14_Sub3.aBoolean2752 = bool;
-		Class15.aClass9_384 = class9;
+		Class15.aFileSystem_384 = fileSystem;
 		if (i >= -12)
 			method1662(87, null, 24);
-		JunkTex.aClass9_4193 = class9_11_;
-		int i_12_ = Class15.aClass9_384.method155() - 1;
-		Class108.anInt1816 = Class15.aClass9_384.method177(i_12_) + i_12_ * 256;
+		JunkTex.aFileSystem_4193 = fileSystem_11_;
+		int i_12_ = Class15.aFileSystem_384.method155() - 1;
+		Class108.anInt1816 = Class15.aFileSystem_384.method177(i_12_) + i_12_ * 256;
 		Class4.aClass14_Sub2_Sub16_Sub1_137 = class14_sub2_sub16_sub1;
 	}
 }

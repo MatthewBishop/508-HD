@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.AtmosphericEffects;
 
@@ -12,7 +12,7 @@ public class Class62 {
 	public static int anInt990 = 0;
 	public static SoftCache aClass52_991 = new SoftCache(30);
 	public static int[] anIntArray992;
-	public static Class9 aClass9_993;
+	public static FileSystem aFileSystem_993;
 	public static Class124 aClass124_994 = Class124.method263(":");
 	public static Class124 aClass124_995 = Class124.method263("k");
 
@@ -22,7 +22,7 @@ public class Class62 {
 		anIntArray992 = null;
 		aClass124_995 = null;
 		if (i > 33) {
-			aClass9_993 = null;
+			aFileSystem_993 = null;
 		}
 	}
 

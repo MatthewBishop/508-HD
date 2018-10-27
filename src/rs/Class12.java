@@ -6,7 +6,7 @@ package rs;
 import com.jagex.StringConstants;
 import com.jagex.cache.anim.Animation;
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.IntegerNode;
@@ -60,7 +60,7 @@ public class Class12 {
 	public int[] anIntArray329;
 	public boolean aBoolean330;
 	public byte aByte331;
-	public static Class9 aClass9_332;
+	public static FileSystem aFileSystem_332;
 	public byte[] aByteArray333;
 	public int anInt334;
 	public int anInt335;
@@ -98,7 +98,7 @@ public class Class12 {
 					boolean var8 = false;
 
 					for (int var9 = 0; var9 < this.anIntArray309.length; ++var9) {
-						if (!JunkTex.aClass9_429.method158(0, this.anIntArray309[var9])) {
+						if (!JunkTex.aFileSystem_429.method158(0, this.anIntArray309[var9])) {
 							var8 = true;
 						}
 					}
@@ -110,7 +110,7 @@ public class Class12 {
 					SceneGraphNode_Model[] var14 = new SceneGraphNode_Model[this.anIntArray309.length];
 
 					for (int var10 = 0; var10 < this.anIntArray309.length; ++var10) {
-						var14[var10] = SceneGraphNode_Model.method1824(JunkTex.aClass9_429, this.anIntArray309[var10], 0);
+						var14[var10] = SceneGraphNode_Model.method1824(JunkTex.aFileSystem_429, this.anIntArray309[var10], 0);
 						if (this.anIntArrayArray316 != null && this.anIntArrayArray316[var10] != null
 								&& var14[var10] != null) {
 							var14[var10].method1825(this.anIntArrayArray316[var10][0],
@@ -222,7 +222,7 @@ public class Class12 {
 		aShortArray320 = null;
 		aClass124_278 = null;
 		aClass124_328 = null;
-		aClass9_332 = null;
+		aFileSystem_332 = null;
 		spritePaletteIndicators = null;
 		aClass124_311 = null;
 	}
@@ -704,7 +704,7 @@ public class Class12 {
 						boolean var5 = false;
 
 						for (int var6 = 0; this.anIntArray338.length > var6; ++var6) {
-							if (!JunkTex.aClass9_429.method158(0, this.anIntArray338[var6])) {
+							if (!JunkTex.aFileSystem_429.method158(0, this.anIntArray338[var6])) {
 								var5 = true;
 							}
 						}
@@ -716,7 +716,7 @@ public class Class12 {
 						SceneGraphNode_Model[] var12 = new SceneGraphNode_Model[this.anIntArray338.length];
 
 						for (int var7 = 0; this.anIntArray338.length > var7; ++var7) {
-							var12[var7] = SceneGraphNode_Model.method1824(JunkTex.aClass9_429, this.anIntArray338[var7], 0);
+							var12[var7] = SceneGraphNode_Model.method1824(JunkTex.aFileSystem_429, this.anIntArray338[var7], 0);
 						}
 
 						SceneGraphNode_Model var13;

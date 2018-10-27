@@ -3,7 +3,8 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.cache.anim.AnimLoader;
+import com.jagex.io.js5.CacheFileWorker;
 import com.jagex.link.Linkable;
 
 public class Class14_Sub3 extends Linkable {
@@ -11,7 +12,7 @@ public class Class14_Sub3 extends Linkable {
 	public int[] anIntArray2746;
 	public Class79 aClass79_2747;
 	public static SceneGraphNode_GameEntity_Sub1 aSceneGraphNode_GameEntity_Sub1_2748;
-	public static Class9_Sub1 aClass9_Sub1_2750;
+	public static CacheFileWorker aCacheFileWorker_2750;
 	public int anInt2751;
 	public static boolean aBoolean2752;
 	public int anInt2753;
@@ -44,7 +45,7 @@ public class Class14_Sub3 extends Linkable {
 		Class60.method1264(i + 115);
 		JunkTex.method501((byte) 61);
 		Class15.method946((byte) -2);
-		JunkTex.method1133((byte) -30);
+		AnimLoader.resetSequence();
 		JunkTex.method1025(25192);
 		Class7_Sub2_Sub1.method130((byte) 110);
 		Class65.method1289(true);
@@ -55,15 +56,15 @@ public class Class14_Sub3 extends Linkable {
 		Class14_Sub2_Sub5.aClass20_3815.clear();
 		Class75.idx0.method152(-118);
 		Class109.idx1.method152(-123);
-		Class14_Sub17.aClass9_Sub1_3021.method152(i ^ ~0x6b);
-		Static2.aClass9_Sub1_2901.method152(-107);
-		Class14_Sub13.aClass9_Sub1_2958.method152(-112);
-		JunkTex.aClass9_Sub1_3374.method152(-124);
-		JunkTex.aClass9_Sub1_4739.method152(-116);
-		aClass9_Sub1_2750.method152(-105);
-		JunkTex.aClass9_Sub1_4323.method152(-106);
-		JunkTex.aClass9_Sub1_4603.method152(-125);
-		JunkTex.aClass9_Sub1_4521.method152(-122);
+		Class14_Sub17.aCacheFileWorker_3021.method152(i ^ ~0x6b);
+		Static2.aCacheFileWorker_2901.method152(-107);
+		Class14_Sub13.aCacheFileWorker_2958.method152(-112);
+		JunkTex.aCacheFileWorker_3374.method152(-124);
+		JunkTex.aCacheFileWorker_4739.method152(-116);
+		aCacheFileWorker_2750.method152(-105);
+		JunkTex.aCacheFileWorker_4323.method152(-106);
+		JunkTex.aCacheFileWorker_4603.method152(-125);
+		JunkTex.aCacheFileWorker_4521.method152(-122);
 		JunkTex.aClass52_4596.clear();
 	}
 
@@ -110,7 +111,7 @@ public class Class14_Sub3 extends Linkable {
 
 	public static void method453(int i) {
 		int i_12_ = 115 / ((i - 41) / 63);
-		aClass9_Sub1_2750 = null;
+		aCacheFileWorker_2750 = null;
 		aSceneGraphNode_GameEntity_Sub1_2748 = null;
 	}
 }

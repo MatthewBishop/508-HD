@@ -10,7 +10,7 @@ import java.awt.Insets;
 
 import com.jagex.applet.Applet_Sub1;
 import com.jagex.applet.ErrorReporting;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.link.HashTable;
 import com.jagex.rt4.RT4;
 
@@ -35,9 +35,9 @@ public class Class132 {
 		aClass87_2171 = null;
 	}
 
-	public static void method1777(byte i, Class9 class9) {
+	public static void method1777(byte i, FileSystem fileSystem) {
 		if (i == -57)
-			Static2.aClass9_1084 = class9;
+			Static2.aFileSystem_1084 = fileSystem;
 	}
 
 	public static void method1779(int i) {

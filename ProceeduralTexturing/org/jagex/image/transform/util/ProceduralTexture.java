@@ -8,7 +8,7 @@ import org.jagex.image.transform.Class14_Sub8_Sub23;
 import org.jagex.image.transform.TexStatic;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.util.TextureDefInterface;
 
 public class ProceduralTexture {
@@ -94,9 +94,9 @@ public class ProceduralTexture {
 		aClass14_Sub8_1813 = aClass14_Sub8Array1798[class14_sub10.readUByte()];
 	}
 
-	public boolean method1548(TextureDefInterface interface3, Class9 class9) {
+	public boolean method1548(TextureDefInterface interface3, FileSystem fileSystem) {
 		for (int i_10_ = 0; anIntArray1810.length > i_10_; i_10_++) {
-			if (!class9.method171(anIntArray1810[i_10_]))
+			if (!fileSystem.method171(anIntArray1810[i_10_]))
 				return false;
 		}
 		for (int i_11_ = 0; anIntArray1805.length > i_11_; i_11_++) {
@@ -106,10 +106,10 @@ public class ProceduralTexture {
 		return true;
 	}
 
-	public int[] method1553(int i, boolean bool, boolean bool_17_, Class9 class9, double d, int i_18_, TextureDefInterface interface3) {
+	public int[] method1553(int i, boolean bool, boolean bool_17_, FileSystem fileSystem, double d, int i_18_, TextureDefInterface interface3) {
 		method898(d);
 		TexStatic.anInterface3_2960 = interface3;
-		TexStatic.aClass9_2671 = class9;
+		TexStatic.aFileSystem_2671 = fileSystem;
 		TexStatic.method1117(0, i_18_, i);
 		for (int i_19_ = 0; i_19_ < aClass14_Sub8Array1798.length; i_19_++)
 			aClass14_Sub8Array1798[i_19_].method473(i_18_, i);
@@ -175,11 +175,11 @@ public class ProceduralTexture {
 	}
 
 	public byte[] method1555(int i, TextureDefInterface interface3, double d, boolean bool, int i_36_, byte i_37_,
-			Class9 class9) {
+			FileSystem fileSystem) {
 		method898(d);
 		byte[] is = new byte[i_36_ * (i * 4)];
 		TexStatic.anInterface3_2960 = interface3;
-		TexStatic.aClass9_2671 = class9;
+		TexStatic.aFileSystem_2671 = fileSystem;
 		if (i_37_ > -33) {
 			byte[] is_38_ = null;
 			return is_38_;

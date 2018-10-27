@@ -3,13 +3,12 @@
  */
 package rs;
 
+import com.jagex.cache.anim.AnimLoader;
 import com.jagex.link.Cacheable;
 import com.jagex.link.HashTable;
-import com.jagex.link.ref.SoftCache;
 import com.jagex.rt4.ShadowManager;
 
 public class Class14_Sub2_Sub12 extends Cacheable {
-	public static SoftCache aClass52_3894;
 	public static Class124 aClass124_3895 = Class124.method263("blinken2:");
 	public int anInt3896;
 	public static Class124 aClass124_3897 = Class124.method263("Loading textures )2 ");
@@ -30,7 +29,7 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 	public static int[] spriteYOffsets;
 
 	static {
-		aClass52_3894 = new SoftCache(100);
+		
 		anInt3912 = -1;
 		
 		anIntArray3916 = new int[25];
@@ -71,8 +70,8 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 
 	public static void method319(int i) {
 		ShadowManager.method2029(104, 104);
-		Class14_Sub15.method871(Class14_Sub3.aClass9_Sub1_2750, Class64.aClass9_Sub1_1015, -125);
-		JunkTex.method85(Class14_Sub3.aClass9_Sub1_2750, true);
+		Class14_Sub15.method871(Class14_Sub3.aCacheFileWorker_2750, Class64.aCacheFileWorker_1015, -125);
+		JunkTex.method85(Class14_Sub3.aCacheFileWorker_2750, true);
 		if (JunkTex.gameState == 10)
 			Static2.method1743(27252, 28);
 		if ((JunkTex.gameState ^ 0xffffffff) == i)
@@ -89,7 +88,6 @@ public class Class14_Sub2_Sub12 extends Cacheable {
 		aClass124_3910 = null;
 		if (i != -48)
 			aClass124_3897 = null;
-		aClass52_3894 = null;
 		spriteYOffsets = null;
 	}
 

@@ -4,6 +4,7 @@
 package rs;
 
 import com.jagex.cache.anim.Animation;
+import com.jagex.cache.anim.AnimLoader;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.ShadowManager;
 
@@ -134,7 +135,7 @@ public class SceneGraphNode_AnimatedLocation extends SceneGraphNode {
 			}
 		}
 		if (i_42_ != -1) {
-			aClass46_3597 = JunkTex.method1129(i_42_, -123);
+			aClass46_3597 = AnimLoader.method1129(i_42_);
 			anInt3577 = 0;
 			anInt3575 = Class14_Sub2_Sub20.anInt4064 - 1;
 			if (aClass46_3597.anInt753 == 0 && sceneGraphNode != null && sceneGraphNode instanceof SceneGraphNode_AnimatedLocation) {

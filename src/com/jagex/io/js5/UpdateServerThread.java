@@ -4,7 +4,7 @@ import com.jagex.applet.ErrorReporting;
 import com.jagex.link.Deque;
 import com.jagex.util.Util;
 
-public class Class24 implements Runnable {
+public class UpdateServerThread implements Runnable {
 
 	public void run() {
 		try {
@@ -12,9 +12,9 @@ public class Class24 implements Runnable {
 				while (true) {
 					Deque var1 = SFSS.aClass2_4404;
 					Deque var2 = SFSS.aClass2_4404;
-					Class14_Sub19 var3;
+					UpdateServerNode var3;
 					synchronized (var2) {
-						var3 = (Class14_Sub19) SFSS.aClass2_4404.getFront();
+						var3 = (UpdateServerNode) SFSS.aClass2_4404.getFront();
 					}
 
 					Object var4;
@@ -23,7 +23,7 @@ public class Class24 implements Runnable {
 						Deque var13;
 						if (var3.anInt3067 != 0) {
 							if (var3.anInt3067 == 1) {
-								var3.aByteArray3069 = var3.aClass114_3077.method1582(124, (int) var3.key);
+								var3.data = var3.cache.method1582(124, (int) var3.key);
 								var1 = SFSS.aClass2_4404;
 								var13 = SFSS.aClass2_4404;
 								synchronized (var13) {
@@ -31,8 +31,8 @@ public class Class24 implements Runnable {
 								}
 							}
 						} else {
-							var3.aClass114_3077.method1583((int) var3.key, var3.aByteArray3069, -1,
-									var3.aByteArray3069.length);
+							var3.cache.method1583((int) var3.key, var3.data, -1,
+									var3.data.length);
 							var1 = SFSS.aClass2_4404;
 							var13 = SFSS.aClass2_4404;
 							synchronized (var13) {

@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.rt4.AbstractSprite;
 
 public class Class7 {
@@ -48,8 +48,8 @@ public class Class7 {
 		return i_3_;
 	}
 
-	public static AbstractSprite method117(Class9 class9, int i, byte i_4_) {
-		if (!Static3.decodedSprites(class9, i, (byte) 126)) {
+	public static AbstractSprite method117(FileSystem fileSystem, int i, byte i_4_) {
+		if (!Static3.decodedSprites(fileSystem, i, (byte) 126)) {
 			AbstractSprite class14_sub2_sub19 = null;
 			return class14_sub2_sub19;
 		}

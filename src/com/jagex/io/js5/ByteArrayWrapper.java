@@ -6,25 +6,20 @@ package com.jagex.io.js5;
 import java.nio.ByteBuffer;
 
 public class ByteArrayWrapper extends DataWrapper {
-	public ByteBuffer aByteBuffer3429;
+	private ByteBuffer buffer;
 
 	@Override
-	public void method1740(byte[] is, int i) {
-		aByteBuffer3429 = ByteBuffer.allocateDirect(is.length);
-		aByteBuffer3429.position(0);
-		aByteBuffer3429.put(is);
-		if (i <= 91)
-			method1740(null, 121);
+	public void put(byte[] is) {
+		buffer = ByteBuffer.allocateDirect(is.length);
+		buffer.position(0);
+		buffer.put(is);
 	}
 
 	@Override
-	public byte[] method1745(byte i) {
-		byte[] is = new byte[aByteBuffer3429.capacity()];
-		if (i != -45)
-			method1740(null, -47);
-		aByteBuffer3429.position(0);
-		aByteBuffer3429.get(is);
-		byte[] is_0_ = is;
-		return is_0_;
+	public byte[] get() {
+		byte[] is = new byte[buffer.capacity()];
+		buffer.position(0);
+		buffer.get(is);
+		return is;
 	}
 }

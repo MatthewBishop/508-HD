@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.rt4.AbstractSprite;
 
 public class Class38 implements Interface5 {
@@ -34,8 +34,8 @@ public class Class38 implements Interface5 {
 		return class124;
 	}
 
-	public static AbstractSprite[] method1115(boolean bool, Class9 class9, int i, int i_39_) {
-		if (!Static3.method1564(i, i_39_, class9)) {
+	public static AbstractSprite[] method1115(boolean bool, FileSystem fileSystem, int i, int i_39_) {
+		if (!Static3.method1564(i, i_39_, fileSystem)) {
 			AbstractSprite[] class14_sub2_sub19s = null;
 			return class14_sub2_sub19s;
 		}

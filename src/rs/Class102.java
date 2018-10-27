@@ -5,7 +5,7 @@ package rs;
 
 import com.jagex.cache.anim.Animation;
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.io.js5.CacheFileWorker;
 import com.jagex.util.Util;
 
 public class Class102 {
@@ -13,7 +13,7 @@ public class Class102 {
 	public static int anInt1709;
 	public static Class124 aClass124_1710 = Class124.method263("Stufe)2");
 	public boolean aBoolean1711;
-	public static Class9_Sub1 aClass9_Sub1_1712;
+	public static CacheFileWorker aCacheFileWorker_1712;
 	public long aLong1713;
 	public int[] anIntArray1715;
 	public static int anInt1717;
@@ -326,7 +326,7 @@ public class Class102 {
 	}
 
 	public static void method1525(int i) {
-		aClass9_Sub1_1712 = null;
+		aCacheFileWorker_1712 = null;
 		aClass124_1710 = null;
 	}
 
@@ -341,7 +341,7 @@ public class Class102 {
 			if (var2 != null) {
 				return var2;
 			} else {
-				byte[] var3 = JunkTex.aClass9_2792.method163(var0, 3);
+				byte[] var3 = JunkTex.aFileSystem_2792.method163(var0, 3);
 				Class21 var4 = new Class21();
 				if (var3 != null) {
 					var4.method980(-29502, new Buffer(var3));

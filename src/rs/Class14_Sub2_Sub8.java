@@ -6,7 +6,7 @@ package rs;
 import java.awt.Image;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.link.Cacheable;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
@@ -25,8 +25,8 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 	public int anInt3845;
 	public static int[][] anIntArrayArray3846;
 	public Class124 aClass124_3847 = Class109.aClass124_1831;
-	public static Class9 aClass9_3848;
-	public static Class9 aClass9_3850;
+	public static FileSystem aFileSystem_3848;
+	public static FileSystem aFileSystem_3850;
 	public int anInt3851;
 	public static Class124 aClass124_3852;
 	public static int cameraZ;
@@ -52,8 +52,8 @@ public class Class14_Sub2_Sub8 extends Cacheable {
 		aClass124_3842 = null;
 		anIntArrayArray3846 = null;
 		anIntArray3834 = null;
-		aClass9_3850 = null;
-		aClass9_3848 = null;
+		aFileSystem_3850 = null;
+		aFileSystem_3848 = null;
 		if (i != -78)
 			aClass124_3842 = null;
 		aClass14_Sub2_Sub19_Sub1_Sub2_3836 = null;

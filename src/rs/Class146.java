@@ -6,7 +6,7 @@ package rs;
 import java.util.Calendar;
 import java.util.TimeZone;
 
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.rt4.Class148_Sub1;
 
 public class Class146 {
@@ -33,15 +33,15 @@ public class Class146 {
 		return bool;
 	}
 
-	public static Class14_Sub2_Sub16_Sub1 method1991(int i, Class9 class9, Class9 class9_1_, int i_2_, int i_3_) {
-		if (!Static3.method1564(i, i_3_, class9)) {
+	public static Class14_Sub2_Sub16_Sub1 method1991(int i, FileSystem fileSystem, FileSystem fileSystem_1_, int i_2_, int i_3_) {
+		if (!Static3.method1564(i, i_3_, fileSystem)) {
 			Class14_Sub2_Sub16_Sub1 class14_sub2_sub16_sub1 = null;
 			return class14_sub2_sub16_sub1;
 		}
 		if (i_2_ != -13824)
 			anInt2357 = 59;
 		Class14_Sub2_Sub16_Sub1 class14_sub2_sub16_sub1 = Static2.method336(4,
-				class9_1_.method163(i, i_3_));
+				fileSystem_1_.method163(i, i_3_));
 		return class14_sub2_sub16_sub1;
 	}
 

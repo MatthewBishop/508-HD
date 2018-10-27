@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.io.js5.CacheFileWorker;
 import com.jagex.rt4.AbstractSprite;
 import com.jagex.util.Huffman;
 
@@ -15,7 +15,7 @@ public class Class98 {
 	public Class14_Sub2_Sub21 aClass14_Sub2_Sub21_1662;
 	public int anInt1663;
 	public static long[] aLongArray1665 = new long[100];
-	public static Class9_Sub1 aClass9_Sub1_1666;
+	public static CacheFileWorker aCacheFileWorker_1666;
 	public static byte[][] spriteAlphas;
 	public static AbstractSprite[] aClass14_Sub2_Sub19Array1669;
 	public static int anInt1671;
@@ -28,7 +28,7 @@ public class Class98 {
 			JunkTex.method569(-80);
 		else if (i != -1 && (JunkTex.anInt2856 != i || !Class14_Sub11.method852(14326))
 				&& Class14_Sub23.anInt3135 != 0 && !Class14_Sub7.aBoolean2827)
-			JunkTex.method636(i, 2, 25506, Class14_Sub23.anInt3135, false, JunkTex.aClass9_Sub1_3374,
+			JunkTex.method636(i, 2, 25506, Class14_Sub23.anInt3135, false, JunkTex.aCacheFileWorker_3374,
 					0);
 		JunkTex.anInt2856 = i;
 	}
@@ -51,7 +51,7 @@ public class Class98 {
 	public static void method1495(int i) {
 		if (i < 112)
 			aClass124_1673 = null;
-		aClass9_Sub1_1666 = null;
+		aCacheFileWorker_1666 = null;
 		aLongArray1665 = null;
 		aClass124_1673 = null;
 		occludersMinX = null;

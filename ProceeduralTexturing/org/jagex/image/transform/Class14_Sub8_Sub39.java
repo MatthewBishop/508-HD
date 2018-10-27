@@ -6,7 +6,7 @@ package org.jagex.image.transform;
 import org.jagex.image.transform.util.AccessoryMethods;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.rt4.AbstractSprite_Sub1;
 
 import rs.JunkTex;
@@ -77,7 +77,7 @@ public class Class14_Sub8_Sub39 extends Class14_Sub8 {
 			return true;
 		}
 		if (anInt4752 >= 0) {
-			AbstractSprite_Sub1 class14_sub2_sub19_sub1 = Class14_Sub8_Sub39.constructLDSprite(TexStatic.aClass9_2671, 0,
+			AbstractSprite_Sub1 class14_sub2_sub19_sub1 = Class14_Sub8_Sub39.constructLDSprite(TexStatic.aFileSystem_2671, 0,
 					anInt4752);
 			class14_sub2_sub19_sub1.method404();
 			this.width = class14_sub2_sub19_sub1.width;
@@ -90,8 +90,8 @@ public class Class14_Sub8_Sub39 extends Class14_Sub8 {
 		return bool_18_;
 	}
 
-	public static AbstractSprite_Sub1 constructLDSprite(Class9 class9, int i, int i_6_) {
-		if (!Static3.decodedSprites(class9, i_6_, (byte) 67)) {
+	public static AbstractSprite_Sub1 constructLDSprite(FileSystem fileSystem, int i, int i_6_) {
+		if (!Static3.decodedSprites(fileSystem, i_6_, (byte) 67)) {
 			return null;
 		}
 		return JunkTex.constructLDSprite((byte) -123);

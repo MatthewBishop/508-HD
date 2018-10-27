@@ -44,7 +44,7 @@ public class Class113 {
 					}
 
 					if (Class14_Sub9_Sub1.aClass14_Sub16_4780 == null) {
-						Class14_Sub9_Sub1.aClass14_Sub16_4780 = Class14_Sub16.method875(Static2.aClass9_2696,
+						Class14_Sub9_Sub1.aClass14_Sub16_4780 = Class14_Sub16.method875(Static2.aFileSystem_2696,
 								Class38.anInt2624, JunkTex.anInt3930);
 						if (Class14_Sub9_Sub1.aClass14_Sub16_4780 == null) {
 							var5 = false;
@@ -57,16 +57,16 @@ public class Class113 {
 
 				try {
 					if (JunkTex.aClass120_854 == null) {
-						JunkTex.aClass120_854 = new Class120(Static2.aClass9_3945, Class44.aClass9_725);
+						JunkTex.aClass120_854 = new Class120(Static2.aFileSystem_3945, Class44.aFileSystem_725);
 					}
 
 					if (SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method706(22050, Class14_Sub9_Sub1.aClass14_Sub16_4780,
-							-67, Class59.aClass9_957, JunkTex.aClass120_854)) {
+							-67, Class59.aFileSystem_957, JunkTex.aClass120_854)) {
 						SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method715(-22255);
 						SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method710(-28225, JunkTex.anInt1132);
 						SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method719(0, Class35.aBoolean593,
 								Class14_Sub9_Sub1.aClass14_Sub16_4780);
-						Static2.aClass9_2696 = null;
+						Static2.aFileSystem_2696 = null;
 						Class14_Sub2_Sub11.anInt3889 = 0;
 						JunkTex.aClass120_854 = null;
 						Class14_Sub9_Sub1.aClass14_Sub16_4780 = null;
@@ -85,7 +85,7 @@ public class Class113 {
 			JunkTex.aClass120_854 = null;
 			Class14_Sub2_Sub11.anInt3889 = 0;
 			Class14_Sub9_Sub1.aClass14_Sub16_4780 = null;
-			Static2.aClass9_2696 = null;
+			Static2.aFileSystem_2696 = null;
 		}
 		return false;
 	}

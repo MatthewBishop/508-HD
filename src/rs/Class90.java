@@ -6,7 +6,7 @@ package rs;
 import com.jagex.applet.Class43;
 import com.jagex.applet.ErrorReporting;
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.rt4.AbstractSprite_Sub1;
 import com.jagex.util.Util;
 
@@ -21,7 +21,7 @@ public class Class90 implements Runnable {
 	public volatile boolean aBoolean1428 = false;
 
 	public static void method1443(int i) {
-		JunkTex.aClass52_4240.method1209();
+		JunkTex.aClass52_4240.clearSoftReference();
 		if (i != 2)
 			method1445(95);
 	}
@@ -91,7 +91,7 @@ public class Class90 implements Runnable {
 		aBoolean1419 = false;
 	}
 
-	public static AbstractSprite_Sub1[] method1446(int var0, Class9 var1, int var2, int var3) {
+	public static AbstractSprite_Sub1[] method1446(int var0, FileSystem var1, int var2, int var3) {
 		try {
 			AbstractSprite_Sub1[] var4;
 			if (!Static3.method1564(var3, var0, var1)) {

@@ -3,8 +3,8 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class9;
-import com.jagex.io.js5.Class9_Sub1;
+import com.jagex.io.js5.FileSystem;
+import com.jagex.io.js5.CacheFileWorker;
 import com.jagex.link.Cache;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.AbstractSprite_Sub1;
@@ -24,7 +24,7 @@ public class Class14_Sub17 extends Linkable {
 	public static Cache aClass20_3018;
 	public static Class124 aClass124_3019;
 	public static int anInt3020;
-	public static Class9_Sub1 aClass9_Sub1_3021;
+	public static CacheFileWorker aCacheFileWorker_3021;
 	public static Class124 aClass124_3022;
 	public static float aFloat3023;
 	public static Class124 aClass124_3024;
@@ -36,7 +36,7 @@ public class Class14_Sub17 extends Linkable {
 	public static Class124 aClass124_3031;
 	public static int anInt3032;
 	public static Class124 aClass124_3033;
-	public static Class9 aClass9_3034;
+	public static FileSystem aFileSystem_3034;
 
 	static {
 		aClass124_3015 = Class124.method263("Aug");
@@ -88,7 +88,7 @@ public class Class14_Sub17 extends Linkable {
 		aClass124_3024 = null;
 		aClass20_3018 = null;
 		aClass124_3010 = null;
-		aClass9_3034 = null;
+		aFileSystem_3034 = null;
 		aClass124_3026 = null;
 		aClass124_3009 = null;
 		aClass124_3027 = null;
@@ -105,7 +105,7 @@ public class Class14_Sub17 extends Linkable {
 		aClass124_3006 = null;
 		aClass124_3016 = null;
 		aClass124_3015 = null;
-		aClass9_Sub1_3021 = null;
+		aCacheFileWorker_3021 = null;
 	}
 
 	public Class14_Sub17(byte[] is) {

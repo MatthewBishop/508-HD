@@ -4,7 +4,7 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
 
@@ -12,8 +12,8 @@ public class Class14_Sub16 extends Linkable {
 	public byte[] aByteArray3002;
 	public HashTable aClass55_3003;
 
-	public static Class14_Sub16 method875(Class9 class9, int i, int i_0_) {
-		byte[] is = class9.method163(i_0_, i);
+	public static Class14_Sub16 method875(FileSystem fileSystem, int i, int i_0_) {
+		byte[] is = fileSystem.method163(i_0_, i);
 		if (is == null)
 			return null;
 		return new Class14_Sub16(new Buffer(is));

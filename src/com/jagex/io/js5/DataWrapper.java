@@ -4,7 +4,7 @@
 package com.jagex.io.js5;
 
 public abstract class DataWrapper {
-	public abstract void method1740(byte[] is, int i);
+	public abstract void put(byte[] is);
 
-	public abstract byte[] method1745(byte i);
+	public abstract byte[] get();
 }

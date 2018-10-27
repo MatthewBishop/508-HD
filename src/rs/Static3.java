@@ -1,12 +1,12 @@
 package rs;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 
 public class Static3 {
 
-	public static boolean decodedSprites(Class9 class9, int i, byte i_3_) {
-		byte[] is = class9.getFileSmart(i);
+	public static boolean decodedSprites(FileSystem fileSystem, int i, byte i_3_) {
+		byte[] is = fileSystem.getFileSmart(i);
 		if (is == null) {
 			boolean bool = false;
 			return bool;
@@ -20,8 +20,8 @@ public class Static3 {
 		return bool;
 	}
 
-	public static boolean method1564(int i_3_, int i_4_, Class9 class9) {
-		byte[] is = class9.method163(i_3_, i_4_);
+	public static boolean method1564(int i_3_, int i_4_, FileSystem fileSystem) {
+		byte[] is = fileSystem.method163(i_3_, i_4_);
 		if (is == null) {
 			boolean bool = false;
 			return bool;

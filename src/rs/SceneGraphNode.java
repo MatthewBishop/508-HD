@@ -23,7 +23,7 @@ public abstract class SceneGraphNode {
 			Class35 class35_1_ = class35;
 			return class35_1_;
 		}
-		byte[] is = Class12.aClass9_332.method163(i_0_, 16);
+		byte[] is = Class12.aFileSystem_332.method163(i_0_, 16);
 		Class35 class35_2_ = new Class35();
 		if (is != null)
 			class35_2_.method1094((byte) 102, new Buffer(is));
@@ -76,7 +76,7 @@ public abstract class SceneGraphNode {
 	}
 
 	public static void method1789(byte i) {
-		Class14_Sub11.aClass52_2946.method1209();
+		Class14_Sub11.aClass52_2946.clearSoftReference();
 	}
 
 	public abstract int getMinYorMaxYCheckTHIS();

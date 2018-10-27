@@ -5,13 +5,13 @@ package rs;
 
 import java.awt.Graphics;
 
-import com.jagex.io.js5.Class9;
+import com.jagex.io.js5.FileSystem;
 
 public abstract class Class108 {
 	public static Class124 aClass124_1814;
 	public static Class124 aClass124_1815;
 	public static int anInt1816;
-	public static Class9 aClass9_1817;
+	public static FileSystem aFileSystem_1817;
 	public static boolean[] aBooleanArray1819;
 	public static Class124 aClass124_1821;
 	public static Class124 aClass124_1822 = Class124.method263("Loaded sprites");
@@ -33,7 +33,7 @@ public abstract class Class108 {
 
 	public static void method1556(boolean bool) {
 		aClass124_1822 = null;
-		aClass9_1817 = null;
+		aFileSystem_1817 = null;
 		aClass124_1821 = null;
 		aClass124_1814 = null;
 		aClass124_1823 = null;
@@ -57,10 +57,10 @@ public abstract class Class108 {
 
 	public abstract void method1560(int i, byte i_37_, int i_38_, int i_39_, Graphics graphics, int i_40_);
 
-	public static void method1561(Class9 class9, byte i, Class9 class9_41_) {
+	public static void method1561(FileSystem fileSystem, byte i, FileSystem fileSystem_41_) {
 		if (i >= 22) {
-			JunkTex.aClass9_4338 = class9;
-			JunkTex.aClass9_2711 = class9_41_;
+			JunkTex.aFileSystem_4338 = fileSystem;
+			JunkTex.aFileSystem_2711 = fileSystem_41_;
 		}
 	}
 

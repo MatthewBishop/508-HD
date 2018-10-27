@@ -129,7 +129,7 @@ public class OverlayType {
 			OverlayType class150_1_ = overlayType;
 			return class150_1_;
 		}
-		byte[] is = Static2.aClass9_372.method163(i, 4);
+		byte[] is = Static2.aFileSystem_372.method163(i, 4);
 		OverlayType class150_3_ = new OverlayType();
 		if (is != null)
 			class150_3_.method2024(i, 0, new Buffer(is));

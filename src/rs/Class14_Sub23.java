@@ -3,11 +3,11 @@
  */
 package rs;
 
-import com.jagex.io.js5.Class114;
+import com.jagex.io.js5.CacheFile;
 import com.jagex.link.Linkable;
 
 public class Class14_Sub23 extends Linkable {
-	public static Class114 aClass114_3126;
+	public static CacheFile aCacheFile_3126;
 	public Class124 aClass124_3127;
 	public int anInt3128;
 	public static Class124 aClass124_3130 = Class124.method263("W-=hlen Sie eine Welt");
@@ -22,7 +22,7 @@ public class Class14_Sub23 extends Linkable {
 
 	public static void method902(int i) {
 		aClass124_3130 = null;
-		aClass114_3126 = null;
+		aCacheFile_3126 = null;
 		if (i != -7741)
 			method903((byte) -66);
 	}
