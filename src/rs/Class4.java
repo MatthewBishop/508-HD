@@ -8,7 +8,6 @@ import com.jagex.link.Deque;
 public class Class4 {
 	public int anInt121;
 	public int anInt122;
-	public static int anInt123;
 	public SceneGraphNode aSceneGraphNode_124;
 	public static int cameraX;
 	public static Class124 aClass124_126;
@@ -22,7 +21,7 @@ public class Class4 {
 	public static Class14_Sub2_Sub16_Sub1 aClass14_Sub2_Sub16_Sub1_137;
 
 	static {
-		anInt123 = 0;
+		
 		aClass124_129 = null;
 		aClass124_126 = Class124.method263("Prepared sound engine");
 		aClass124_131 = aClass124_126;
@@ -36,11 +35,5 @@ public class Class4 {
 		aClass2_127 = null;
 		aClass124_129 = null;
 		aClass14_Sub2_Sub16_Sub1_137 = null;
-	}
-
-	public static void method109(int i, int i_0_) {
-		Class139.aClass52_2229.method1208(i_0_);
-		if (i != 16)
-			method109(1, 105);
 	}
 }

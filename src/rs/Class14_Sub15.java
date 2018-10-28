@@ -9,7 +9,6 @@ import com.jagex.link.Linkable;
 
 public class Class14_Sub15 extends Linkable {
 	public static Deque aClass2_2988;
-	public static int anInt2989;
 	public static Class36 aClass36_2990;
 	public int anInt2991;
 	public boolean aBoolean2992 = false;
@@ -23,7 +22,7 @@ public class Class14_Sub15 extends Linkable {
 	}
 
 	public static void method871(FileSystem fileSystem, FileSystem fileSystem_0_, int i) {
-		Class56_Sub1.aClass14_Sub2_Sub16_3320 = Static2.method888(-107, Class14_Sub2_Sub21.anInt4088, fileSystem_0_,
+		Static2.aClass14_Sub2_Sub16_3320 = Static2.method888(-107, Class14_Sub2_Sub21.anInt4088, fileSystem_0_,
 				0, fileSystem);
 		Class131.aClass14_Sub2_Sub16_Sub1_2160 = Class146.method1991(0, fileSystem, fileSystem_0_, -13824,
 				Class14_Sub2_Sub21.anInt4088);
@@ -40,13 +39,6 @@ public class Class14_Sub15 extends Linkable {
 		int i_1_ = -85 % ((i + 6) / 61);
 		aClass2_2988 = null;
 		aClass124_2993 = null;
-	}
-
-	public static int method873(int i, int i_2_) {
-		if (i != 1023)
-			method872((byte) -113);
-		int i_3_ = i_2_ & 0x3ff;
-		return i_3_;
 	}
 
 	public static boolean method874(byte i, Class94 class94) {

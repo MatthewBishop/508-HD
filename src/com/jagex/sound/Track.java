@@ -6,8 +6,6 @@ package com.jagex.sound;
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.FileSystem;
 
-import rs.Class14_Sub12_Sub1;
-
 public class Track {
 	
 	public static Track method1451(FileSystem fileSystem, int i, int i_11_) {

@@ -1,13 +1,13 @@
 package com.jagex.rt4;
 
+import com.jagex.cache.loaders.UnderlayType;
+import com.jagex.cache.loaders.OverlayType;
 import com.jagex.link.HashTable;
 import com.jagex.rt4.lights.Light;
 import com.jagex.rt4.lights.LightRenderer;
 
 import rs.Class40;
-import rs.Class65;
 import rs.ModelSD;
-import rs.OverlayType;
 import rs.SDRaster;
 
 public class Terrain {
@@ -911,8 +911,8 @@ public class Terrain {
 				if (underlay == 0)
 					underlay = underlays[tileX - 1][tileY - 1];
 				if (underlay != 0) {
-					Class65 class65 = Class65.list((underlay & 0xff) - 1);
-					textureBases[tileX][tileY] = (class65.anInt1030 + 1 << 16) + class65.anInt1019;
+					UnderlayType underlayType = UnderlayType.list((underlay & 0xff) - 1);
+					textureBases[tileX][tileY] = (underlayType.textureId + 1 << 16) + underlayType.textureSize;
 				}
 			}
 		}
@@ -1158,7 +1158,7 @@ public class Terrain {
 								continue;
 							}
 						}
-						Class40 class40 = Class65.method1291(i_38_, i_52_, i_48_);
+						Class40 class40 = Class40.method1291(i_38_, i_52_, i_48_);
 						if (class40 != null) {
 							int i_59_ = (int) (class40.bitPacked >> 14) & 0x3f;
 							if (i_59_ == 9) {
@@ -1275,7 +1275,7 @@ public class Terrain {
 							}
 						} else
 							i_86_ = (byte) 0;
-						Class40 class40 = Class65.method1291(i_38_, i_85_, i_81_);
+						Class40 class40 = Class40.method1291(i_38_, i_85_, i_81_);
 						if (class40 != null) {
 							int i_90_ = (int) (class40.bitPacked >> 14) & 0x3f;
 							if (i_90_ == 9) {

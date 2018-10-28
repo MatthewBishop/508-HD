@@ -42,7 +42,7 @@ public class Class14_Sub8_Sub7 extends Class14_Sub8 {
 	public void decode(int i, Buffer class14_sub10) {
 		int i_107_ = i;
 		if (i_107_ == 0)
-			method513(class14_sub10.method829(76));
+			method513(class14_sub10.readMedium(76));
 	}
 
 	private void method513(int i) {

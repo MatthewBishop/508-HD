@@ -43,7 +43,7 @@ public class Static3 {
 		JunkTex.spriteHasAlpha = new boolean[Class32.spriteAmount];
 		Class17.spriteWidths = new int[Class32.spriteAmount];
 		class14_sub10.position = is.length - (Class32.spriteAmount * 8 + 7);
-		Class14_Sub11.spriteTrimWidth = class14_sub10.readUShort();
+		Static2.spriteTrimWidth = class14_sub10.readUShort();
 		Class14_Sub30.spriteTrimHeight = class14_sub10.readUShort();
 		int i_43_ = (class14_sub10.readUByte() & 0xff) + 1;
 		for (int i_44_ = 0; i_44_ < Class32.spriteAmount; i_44_++)
@@ -58,7 +58,7 @@ public class Static3 {
 		class14_sub10.position = -(Class32.spriteAmount * 8) + is.length - (7 + (i_43_ - 1) * 3);
 		JunkTex.spritePalette = new int[i_43_];
 		for (i_46_ = 1; i_46_ < i_43_; i_46_++) {
-			JunkTex.spritePalette[i_46_] = class14_sub10.method829(144 - 30);
+			JunkTex.spritePalette[i_46_] = class14_sub10.readMedium(144 - 30);
 			if (JunkTex.spritePalette[i_46_] == 0)
 				JunkTex.spritePalette[i_46_] = 1;
 		}

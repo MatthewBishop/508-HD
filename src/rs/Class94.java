@@ -5,166 +5,265 @@ package rs;
 
 import com.jagex.cache.anim.Animation;
 import com.jagex.io.Buffer;
-import com.jagex.rt4.Class148;
-import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.AbstractSprite;
 import com.jagex.rt4.AbstractSprite_Sub1;
 import com.jagex.rt4.AbstractSprite_Sub1_Sub1;
 import com.jagex.rt4.AbstractSprite_Sub2;
 import com.jagex.rt4.AbstractSprite_Sub2_Sub1;
+import com.jagex.rt4.Class148;
+import com.jagex.rt4.Class148_Sub1;
 
 public class Class94 {
-	public int[] anIntArray1452;
-	public int anInt1454;
+	public static boolean aBoolean1554 = false;
+	
 	public boolean aBoolean1455;
-	public Object[] anObjectArray1456;
-	public Object[] anObjectArray1457;
-	public Object[] anObjectArray1458;
+	public boolean aBoolean1462;
+	public boolean aBoolean1471;
+	public boolean aBoolean1472;
+	public boolean aBoolean1497;
+	public boolean aBoolean1503;
+	public boolean aBoolean1507;
+	public boolean aBoolean1511;
+	public boolean aBoolean1520;
+	public boolean aBoolean1537;
+	public boolean aBoolean1564;
+	public boolean aBoolean1575;
+	public boolean aBoolean1577;
+	public boolean aBoolean1584;
+	public boolean aBoolean1599;
+	public boolean aBoolean1606;
+	public boolean aBoolean1612;
+	public byte aByte1496;
+	public byte aByte1502;
+	public byte aByte1509;
+	public byte aByte1536;
+	public byte[] aByteArray1491;
+	public Class124 aClass124_1483;
+	public Class124 aClass124_1499;
+	public Class124 aClass124_1508;
+	public Class124 aClass124_1552;
+	public Class124 aClass124_1556;
+	public Class124 aClass124_1589;
+	public Class124[] aClass124Array1479;
+	public Class124[] aClass124Array1573;
+	public Class94 aClass94_1492;
+	public Class94[] aClass94Array1486;
+	public int anInt1454;
 	public int anInt1459;
 	public int anInt1460 = 0;
-	public Object[] anObjectArray1461;
-	public boolean aBoolean1462;
-	public Object[] anObjectArray1463;
 	public int anInt1464;
 	public int anInt1465;
 	public int anInt1467 = 1;
-	public Object[] anObjectArray1468;
-	public static Class94 aClass94_1469;
-	public int[] anIntArray1470;
-	public boolean aBoolean1471;
-	public boolean aBoolean1472;
-	public Object[] anObjectArray1473;
 	public int anInt1474;
-	public Object[] anObjectArray1475;
 	public int anInt1476;
 	public int anInt1478;
-	public Class124[] aClass124Array1479;
 	public int anInt1481;
 	public int anInt1482;
-	public Class124 aClass124_1483;
-	public Object[] anObjectArray1484;
 	public int anInt1485;
-	public Class94[] aClass94Array1486;
 	public int anInt1487;
 	public int anInt1488;
 	public int anInt1489;
 	public int anInt1490;
-	public byte[] aByteArray1491;
-	public Class94 aClass94_1492;
 	public int anInt1493;
 	public int anInt1494;
 	public int anInt1495;
-	public byte aByte1496;
-	public boolean aBoolean1497;
 	public int anInt1498;
-	public Class124 aClass124_1499;
-	public Object[] anObjectArray1500;
-	public byte aByte1502;
-	public boolean aBoolean1503;
-	public Object[] anObjectArray1504;
 	public int anInt1505;
 	public int anInt1506;
-	public boolean aBoolean1507;
-	public Class124 aClass124_1508;
-	public byte aByte1509;
-	public int[] anIntArray1510;
-	public boolean aBoolean1511;
 	public int anInt1513;
 	public int anInt1514;
 	public int anInt1515;
 	public int anInt1516;
-	public Object[] anObjectArray1517;
 	public int anInt1518;
-	public Object[] anObjectArray1519;
-	public boolean aBoolean1520;
 	public int anInt1521;
-	public int[] anIntArray1522;
 	public int anInt1523;
-	public Object[] anObjectArray1524;
 	public int anInt1525;
-	public Object[] anObjectArray1526;
-	public int[] anIntArray1527;
-	public short aShort1528;
-	public Object[] anObjectArray1529;
 	public int anInt1530;
-	public int[] anIntArray1531;
 	public int anInt1532;
 	public int anInt1533;
 	public int anInt1534;
-	public Object[] anObjectArray1535;
-	public byte aByte1536;
-	public boolean aBoolean1537;
 	public int anInt1538;
-	public int[] anIntArray1539;
 	public int anInt1540;
-	public int[] anIntArray1542;
 	public int anInt1543;
 	public int anInt1544;
 	public int anInt1545;
-	public int[] anIntArray1546;
 	public int anInt1547;
 	public int anInt1548;
 	public int anInt1549;
 	public int anInt1550;
-	public Class124 aClass124_1552;
 	public int anInt1553;
-	public static boolean aBoolean1554 = false;
-	public Object[] anObjectArray1555;
-	public Class124 aClass124_1556;
-	public int[] anIntArray1557;
-	public int[] anIntArray1559;
-	public int[] anIntArray1560;
 	public int anInt1561;
-	public Object[] anObjectArray1562;
 	public int anInt1563;
-	public boolean aBoolean1564;
 	public int anInt1565;
-	public int[] anIntArray1566;
 	public int anInt1567;
 	public int anInt1568;
 	public int anInt1570;
 	public int anInt1571;
 	public int anInt1572;
-	public Class124[] aClass124Array1573;
 	public int anInt1574;
-	public boolean aBoolean1575;
-	public Object[] anObjectArray1576;
-	public boolean aBoolean1577;
 	public int anInt1578;
 	public int anInt1579;
 	public int anInt1580;
-	public Object[] anObjectArray1581;
 	public int anInt1583;
-	public boolean aBoolean1584;
-	public Object[] anObjectArray1585;
-	public int[][] anIntArrayArray1586;
 	public int anInt1587;
 	public int anInt1588;
-	public Class124 aClass124_1589;
 	public int anInt1590;
-	public Object[] anObjectArray1591;
-	public Object[] anObjectArray1592;
 	public int anInt1593;
-	public Object[] anObjectArray1594;
-	public Object[] anObjectArray1596;
 	public int anInt1597;
 	public int anInt1598;
-	public boolean aBoolean1599;
-	public Object[] anObjectArray1600;
-	public Object[] anObjectArray1601;
-	public short aShort1602;
 	public int anInt1603;
-	public Object[] anObjectArray1604;
 	public int anInt1605;
-	public boolean aBoolean1606;
 	public int anInt1607;
-	public Object[] anObjectArray1608;
 	public int anInt1609;
 	public int anInt1610;
 	public int anInt1611;
-	public boolean aBoolean1612;
 	public int anInt1613;
+	public int[] anIntArray1452;
+	public int[] anIntArray1470;
+	public int[] anIntArray1510;
+	public int[] anIntArray1522;
+	public int[] anIntArray1527;
+	public int[] anIntArray1531;
+	public int[] anIntArray1539;
+	public int[] anIntArray1542;
+	public int[] anIntArray1546;
+	public int[] anIntArray1557;
+	public int[] anIntArray1559;
+	public int[] anIntArray1560;
+	public int[] anIntArray1566;
 	public int[] anIntArray1614;
+	public int[][] anIntArrayArray1586;
+	public Object[] anObjectArray1456;
+	public Object[] anObjectArray1457;
+	public Object[] anObjectArray1458;
+	public Object[] anObjectArray1461;
+	public Object[] anObjectArray1463;
+	public Object[] anObjectArray1468;
+	public Object[] anObjectArray1473;
+	public Object[] anObjectArray1475;
+	public Object[] anObjectArray1484;
+	public Object[] anObjectArray1500;
+	public Object[] anObjectArray1504;
+	public Object[] anObjectArray1517;
+	public Object[] anObjectArray1519;
+	public Object[] anObjectArray1524;
+	public Object[] anObjectArray1526;
+	public Object[] anObjectArray1529;
+	public Object[] anObjectArray1535;
+	public Object[] anObjectArray1555;
+	public Object[] anObjectArray1562;
+	public Object[] anObjectArray1576;
+	public Object[] anObjectArray1581;
+	public Object[] anObjectArray1585;
+	public Object[] anObjectArray1591;
+	public Object[] anObjectArray1592;
+	public Object[] anObjectArray1594;
+	public Object[] anObjectArray1596;
+	public Object[] anObjectArray1600;
+	public Object[] anObjectArray1601;
+	public Object[] anObjectArray1604;
+	public Object[] anObjectArray1608;
+	public short aShort1528;
+
+	public short aShort1602;
+
+	public Class94() {
+		aBoolean1455 = false;
+		anInt1476 = -1;
+		aBoolean1497 = false;
+		anInt1485 = 0;
+		anInt1488 = 0;
+		aClass124_1499 = Class33.aClass124_578;
+		anInt1478 = -1;
+		anInt1474 = 0;
+		anInt1490 = 0;
+		anInt1482 = 0;
+		anInt1454 = 0;
+		anInt1513 = 100;
+		aClass124_1483 = Class33.aClass124_578;
+		anInt1506 = 1;
+		anInt1493 = 0;
+		aByte1509 = (byte) 0;
+		anInt1538 = 0;
+		aBoolean1503 = false;
+		aByte1496 = (byte) 0;
+		aBoolean1520 = false;
+		anInt1544 = 0;
+		anInt1534 = 0;
+		anInt1518 = 0;
+		aByte1536 = (byte) 0;
+		aClass94_1492 = null;
+		anInt1545 = 0;
+		aClass124_1508 = Class33.aClass124_578;
+		anInt1523 = 0;
+		anInt1515 = -1;
+		anInt1516 = 0;
+		anInt1459 = 0;
+		anInt1565 = 0;
+		anInt1498 = 0;
+		anInt1530 = 1;
+		anInt1553 = 0;
+		anInt1532 = -1;
+		anInt1547 = 0;
+		aBoolean1537 = false;
+		anInt1549 = 0;
+		aBoolean1507 = false;
+		aByte1502 = (byte) 0;
+		aBoolean1471 = false;
+		anInt1550 = -1;
+		anInt1514 = 0;
+		anInt1543 = 1;
+		aShort1528 = (short) 3000;
+		anInt1533 = -1;
+		aBoolean1577 = false;
+		aBoolean1564 = false;
+		anInt1579 = 0;
+		anInt1494 = 0;
+		anInt1578 = 0;
+		anInt1561 = 0;
+		anInt1583 = 0;
+		anInt1465 = 0;
+		anInt1571 = 0;
+		anInt1495 = 0;
+		anInt1481 = -1;
+		anInt1590 = 0;
+		anInt1487 = -1;
+		anInt1567 = 0;
+		aClass124_1589 = Class33.aClass124_578;
+		anInt1598 = -1;
+		aClass124_1552 = Class33.aClass124_578;
+		anInt1540 = -1;
+		aBoolean1599 = false;
+		anInt1563 = -1;
+		anInt1525 = 0;
+		anInt1572 = 0;
+		anInt1568 = -1;
+		anInt1464 = 1;
+		anInt1548 = -1;
+		anInt1570 = 0;
+		anInt1574 = 0;
+		anInt1580 = 0;
+		anInt1597 = 0;
+		aBoolean1575 = true;
+		aShort1602 = (short) 0;
+		aBoolean1462 = false;
+		anInt1588 = -1;
+		anInt1505 = 0;
+		aClass124_1556 = JunkTex.aClass124_4264;
+		aBoolean1606 = false;
+		anInt1603 = 0;
+		anInt1611 = 0;
+		anInt1607 = 0;
+		aBoolean1584 = false;
+		anInt1593 = 0;
+		anInt1605 = 0;
+		anInt1609 = 0;
+		anInt1610 = 0;
+		anInt1587 = -1;
+		anInt1521 = 0;
+		aBoolean1511 = false;
+		anInt1613 = 0;
+	}
 
 	public Class14_Sub2_Sub16 method1468(byte i, Class148[] class148s) {
 		aBoolean1554 = false;
@@ -178,7 +277,7 @@ public class Class94 {
 			return class14_sub2_sub16_0_;
 		}
 		int i_1_ = 103 % ((-15 - i) / 47);
-		Class14_Sub2_Sub16 class14_sub2_sub16_2_ = Static2.method888(-113, anInt1588, Class51.aFileSystem_833, 0,
+		Class14_Sub2_Sub16 class14_sub2_sub16_2_ = Static2.method888(-113, anInt1588, Static2.aFileSystem_833, 0,
 				Static2.aFileSystem_2598);
 		if (class14_sub2_sub16_2_ != null) {
 			class14_sub2_sub16_2_.method352(class148s, null);
@@ -252,7 +351,7 @@ public class Class94 {
 			anInt1588 = class14_sub10.readUShort();
 			if (anInt1588 == 65535)
 				anInt1588 = -1;
-			aClass124_1499 = class14_sub10.method797();
+			aClass124_1499 = class14_sub10.getJagexString();
 			anInt1460 = class14_sub10.readUByte();
 			anInt1571 = class14_sub10.readUByte();
 			anInt1538 = class14_sub10.readUByte();
@@ -269,24 +368,24 @@ public class Class94 {
 			anInt1567 = class14_sub10.getInt((byte) -93);
 			aBoolean1537 = class14_sub10.readUByte() == 1;
 		}
-		anInt1565 = class14_sub10.method829(41);
+		anInt1565 = class14_sub10.readMedium(41);
 		int i_5_ = class14_sub10.readUByte();
 		if (i_5_ > 0) {
 			aByteArray1491 = new byte[i_5_];
 			for (int i_6_ = 0; i_6_ < i_5_; i_6_++)
 				aByteArray1491[i_6_] = class14_sub10.method780();
 		}
-		aClass124_1508 = class14_sub10.method797();
+		aClass124_1508 = class14_sub10.getJagexString();
 		int i_7_ = class14_sub10.readUByte();
 		if (i_7_ > 0) {
 			aClass124Array1573 = new Class124[i_7_];
 			for (int i_8_ = 0; i_7_ > i_8_; i_8_++)
-				aClass124Array1573[i_8_] = class14_sub10.method797();
+				aClass124Array1573[i_8_] = class14_sub10.getJagexString();
 		}
 		anInt1580 = class14_sub10.readUByte();
 		anInt1549 = class14_sub10.readUByte();
 		aBoolean1507 = class14_sub10.readUByte() == 1;
-		aClass124_1589 = class14_sub10.method797();
+		aClass124_1589 = class14_sub10.getJagexString();
 		anObjectArray1529 = method1471(0, class14_sub10);
 		anObjectArray1600 = method1471(0, class14_sub10);
 		anObjectArray1576 = method1471(0, class14_sub10);
@@ -316,11 +415,6 @@ public class Class94 {
 		anIntArray1546 = method1475((byte) 84, class14_sub10);
 	}
 
-	public static void method1470(int i) {
-		int i_9_ = 50 % ((i - 40) / 51);
-		aClass94_1469 = null;
-	}
-
 	public Object[] method1471(int i, Buffer class14_sub10) {
 		int i_10_ = class14_sub10.readUByte();
 		if (i_10_ == 0) {
@@ -333,7 +427,7 @@ public class Class94 {
 			if (i_12_ == 0)
 				objects[i_11_] = new Integer(class14_sub10.getInt((byte) -117));
 			else if (i_12_ == 1)
-				objects[i_11_] = class14_sub10.method797();
+				objects[i_11_] = class14_sub10.getJagexString();
 		}
 		aBoolean1564 = true;
 		Object[] objects_13_ = objects;
@@ -356,7 +450,7 @@ public class Class94 {
 			boolean bool = true;
 			return bool;
 		}
-		Class148_Sub1 class148_sub1 = Class127.method1752(i, Static2.aFileSystem_2598, true, anInt1487);
+		Class148_Sub1 class148_sub1 = Static2.method1752(i, Static2.aFileSystem_2598, true, anInt1487);
 		if (class148_sub1 == null) {
 			boolean bool = false;
 			return bool;
@@ -473,7 +567,7 @@ public class Class94 {
 			}
 			aClass124Array1479 = new Class124[5];
 			for (int i_34_ = 0; i_34_ < 5; i_34_++) {
-				Class124 class124 = class14_sub10.method797();
+				Class124 class124 = class14_sub10.getJagexString();
 				if (class124.length(0) > 0) {
 					aClass124Array1479[i_34_] = class124;
 					anInt1565 |= 1 << i_34_ + 23;
@@ -492,8 +586,8 @@ public class Class94 {
 			aBoolean1471 = class14_sub10.readUByte() == 1;
 		}
 		if (anInt1489 == 4) {
-			aClass124_1499 = class14_sub10.method797();
-			aClass124_1552 = class14_sub10.method797();
+			aClass124_1499 = class14_sub10.getJagexString();
+			aClass124_1552 = class14_sub10.getJagexString();
 		}
 		if (anInt1489 == 1 || anInt1489 == 3 || anInt1489 == 4)
 			anInt1567 = class14_sub10.getInt((byte) -125);
@@ -543,7 +637,7 @@ public class Class94 {
 			if (i_35_ == 1)
 				anInt1565 |= 0x40000000;
 			for (int i_36_ = 0; i_36_ < 5; i_36_++) {
-				Class124 class124 = class14_sub10.method797();
+				Class124 class124 = class14_sub10.getJagexString();
 				if (class124.length(0) > 0) {
 					aClass124Array1479[i_36_] = class124;
 					anInt1565 |= 1 << i_36_ + 23;
@@ -551,15 +645,15 @@ public class Class94 {
 			}
 		}
 		if (anInt1489 == 8)
-			aClass124_1499 = class14_sub10.method797();
+			aClass124_1499 = class14_sub10.getJagexString();
 		if (anInt1572 == 2 || anInt1489 == 2) {
-			aClass124_1589 = class14_sub10.method797();
-			aClass124_1483 = class14_sub10.method797();
+			aClass124_1589 = class14_sub10.getJagexString();
+			aClass124_1483 = class14_sub10.getJagexString();
 			int i_37_ = class14_sub10.readUShort() & 0x3f;
 			anInt1565 |= i_37_ << 11;
 		}
 		if (anInt1572 == 1 || anInt1572 == 4 || anInt1572 == 5 || anInt1572 == 6) {
-			aClass124_1556 = class14_sub10.method797();
+			aClass124_1556 = class14_sub10.getJagexString();
 			if (aClass124_1556.length(0) == 0) {
 				if (anInt1572 == 1)
 					aClass124_1556 = JunkTex.aClass124_4264;
@@ -611,7 +705,7 @@ public class Class94 {
 		}
 		long l = (((aBoolean1612 ? 1L : 0L) << 39) + i_41_ - (-((aBoolean1577 ? 1L : 0L) << 35)
 				- ((long) anInt1597 << 36) + -((aBoolean1472 ? 1L : 0L) << 38) + -((long) anInt1570 << 40)));
-		AbstractSprite class14_sub2_sub19 = ((AbstractSprite) OverlayType.aClass52_2406.get(l));
+		AbstractSprite class14_sub2_sub19 = ((AbstractSprite) Static2.aClass52_2406.get(l));
 		if (class14_sub2_sub19 != null) {
 			AbstractSprite class14_sub2_sub19_42_ = class14_sub2_sub19;
 			return class14_sub2_sub19_42_;
@@ -643,7 +737,7 @@ public class Class94 {
 			class14_sub2_sub19_sub2 = new AbstractSprite_Sub2_Sub1(class14_sub2_sub19_sub1);
 		else
 			class14_sub2_sub19_sub2 = new AbstractSprite_Sub2(class14_sub2_sub19_sub1);
-		OverlayType.aClass52_2406.put(class14_sub2_sub19_sub2, l);
+		Static2.aClass52_2406.put(class14_sub2_sub19_sub2, l);
 		AbstractSprite_Sub2 class14_sub2_sub19_sub2_43_ = class14_sub2_sub19_sub2;
 		return class14_sub2_sub19_sub2_43_;
 	}
@@ -673,7 +767,7 @@ public class Class94 {
 			AbstractSprite class14_sub2_sub19 = null;
 			return class14_sub2_sub19;
 		}
-		AbstractSprite class14_sub2_sub19 = ((AbstractSprite) OverlayType.aClass52_2406.get(i_52_));
+		AbstractSprite class14_sub2_sub19 = ((AbstractSprite) Static2.aClass52_2406.get(i_52_));
 		if (i < 30) {
 			AbstractSprite class14_sub2_sub19_53_ = null;
 			return class14_sub2_sub19_53_;
@@ -686,7 +780,7 @@ public class Class94 {
 		if (class14_sub2_sub19 == null)
 			aBoolean1554 = true;
 		else
-			OverlayType.aClass52_2406.put(class14_sub2_sub19, i_52_);
+			Static2.aClass52_2406.put(class14_sub2_sub19, i_52_);
 		AbstractSprite class14_sub2_sub19_55_ = class14_sub2_sub19;
 		return class14_sub2_sub19_55_;
 	}
@@ -719,7 +813,7 @@ public class Class94 {
 					SceneGraphNode_AbstractModelRenderer class133_sub7_59_ = null;
 					return class133_sub7_59_;
 				}
-				class133_sub7 = class133_sub2.method1827(64, 768, -50, -10, -50);
+				class133_sub7 = class133_sub2.toRenderer(64, 768, -50, -10, -50);
 				JunkTex.aClass52_4588.put(class133_sub7, (i_57_ << 48) + i_58_);
 			}
 			if (animation != null)
@@ -762,7 +856,7 @@ public class Class94 {
 			return class133_sub7_65_;
 		}
 		if (i_57_ == 6) {
-			SceneGraphNode_AbstractModelRenderer class133_sub7 = Static2.method1744(i_58_, 170).method209(0, i_56_, animation, null, -67);
+			SceneGraphNode_AbstractModelRenderer class133_sub7 = Static2.method1744(i_58_, 170).method209(0, i_56_, animation, null);
 			if (class133_sub7 == null) {
 				aBoolean1554 = true;
 				SceneGraphNode_AbstractModelRenderer class133_sub7_66_ = null;
@@ -785,103 +879,5 @@ public class Class94 {
 		}
 		SceneGraphNode_AbstractModelRenderer class133_sub7 = null;
 		return class133_sub7;
-	}
-
-	public Class94() {
-		aBoolean1455 = false;
-		anInt1476 = -1;
-		aBoolean1497 = false;
-		anInt1485 = 0;
-		anInt1488 = 0;
-		aClass124_1499 = Class33.aClass124_578;
-		anInt1478 = -1;
-		anInt1474 = 0;
-		anInt1490 = 0;
-		anInt1482 = 0;
-		anInt1454 = 0;
-		anInt1513 = 100;
-		aClass124_1483 = Class33.aClass124_578;
-		anInt1506 = 1;
-		anInt1493 = 0;
-		aByte1509 = (byte) 0;
-		anInt1538 = 0;
-		aBoolean1503 = false;
-		aByte1496 = (byte) 0;
-		aBoolean1520 = false;
-		anInt1544 = 0;
-		anInt1534 = 0;
-		anInt1518 = 0;
-		aByte1536 = (byte) 0;
-		aClass94_1492 = null;
-		anInt1545 = 0;
-		aClass124_1508 = Class33.aClass124_578;
-		anInt1523 = 0;
-		anInt1515 = -1;
-		anInt1516 = 0;
-		anInt1459 = 0;
-		anInt1565 = 0;
-		anInt1498 = 0;
-		anInt1530 = 1;
-		anInt1553 = 0;
-		anInt1532 = -1;
-		anInt1547 = 0;
-		aBoolean1537 = false;
-		anInt1549 = 0;
-		aBoolean1507 = false;
-		aByte1502 = (byte) 0;
-		aBoolean1471 = false;
-		anInt1550 = -1;
-		anInt1514 = 0;
-		anInt1543 = 1;
-		aShort1528 = (short) 3000;
-		anInt1533 = -1;
-		aBoolean1577 = false;
-		aBoolean1564 = false;
-		anInt1579 = 0;
-		anInt1494 = 0;
-		anInt1578 = 0;
-		anInt1561 = 0;
-		anInt1583 = 0;
-		anInt1465 = 0;
-		anInt1571 = 0;
-		anInt1495 = 0;
-		anInt1481 = -1;
-		anInt1590 = 0;
-		anInt1487 = -1;
-		anInt1567 = 0;
-		aClass124_1589 = Class33.aClass124_578;
-		anInt1598 = -1;
-		aClass124_1552 = Class33.aClass124_578;
-		anInt1540 = -1;
-		aBoolean1599 = false;
-		anInt1563 = -1;
-		anInt1525 = 0;
-		anInt1572 = 0;
-		anInt1568 = -1;
-		anInt1464 = 1;
-		anInt1548 = -1;
-		anInt1570 = 0;
-		anInt1574 = 0;
-		anInt1580 = 0;
-		anInt1597 = 0;
-		aBoolean1575 = true;
-		aShort1602 = (short) 0;
-		aBoolean1462 = false;
-		anInt1588 = -1;
-		anInt1505 = 0;
-		aClass124_1556 = JunkTex.aClass124_4264;
-		aBoolean1606 = false;
-		anInt1603 = 0;
-		anInt1611 = 0;
-		anInt1607 = 0;
-		aBoolean1584 = false;
-		anInt1593 = 0;
-		anInt1605 = 0;
-		anInt1609 = 0;
-		anInt1610 = 0;
-		anInt1587 = -1;
-		anInt1521 = 0;
-		aBoolean1511 = false;
-		anInt1613 = 0;
 	}
 }

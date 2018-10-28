@@ -124,10 +124,10 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 			if (class133_sub1_sub2.anInt3492 == 0)
 				class133_sub1_sub2.anInt3461 = 0;
 			class133_sub1_sub2.anInt3471 = class133_sub1_sub2.aClass12_4949.anInt286;
-			class133_sub1_sub2.method1800((byte) -79, i_14_ + (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anIntArray3443[0]),
-					i_17_ == 1, (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anIntArray3476[0]) + i_15_);
-			if (class133_sub1_sub2.aClass12_4949.method212((byte) -128))
-				Class12.method213(class133_sub1_sub2.anIntArray3476[0], class133_sub1_sub2.anIntArray3443[0], null,
+			class133_sub1_sub2.method1800((byte) -79, i_14_ + (Static2.aSceneGraphNode_GameEntity_Sub1_2748.anIntArray3443[0]),
+					i_17_ == 1, (Static2.aSceneGraphNode_GameEntity_Sub1_2748.anIntArray3476[0]) + i_15_);
+			if (class133_sub1_sub2.aClass12_4949.method212())
+				StaticMusic.method213(class133_sub1_sub2.anIntArray3476[0], class133_sub1_sub2.anIntArray3443[0], null,
 						(byte) -35, Class14_Sub2_Sub3.gameLevel, null, class133_sub1_sub2, 0);
 		}
 		JunkTex.aClass14_Sub10_Sub1_4734.disableBitAccess();
@@ -159,7 +159,7 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 					int i_18_ = -class133_sub6.anInt3669 - 1;
 					SceneGraphNode_GameEntity_Sub1 class133_sub1_sub1;
 					if (i_18_ == Class14_Sub2_Sub10.anInt3868)
-						class133_sub1_sub1 = Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748;
+						class133_sub1_sub1 = Static2.aSceneGraphNode_GameEntity_Sub1_2748;
 					else
 						class133_sub1_sub1 = (JunkTex.aSceneGraphNode_GameEntity_Sub1Array4474[i_18_]);
 					if (class133_sub1_sub1 != null && class133_sub1_sub1.anInt3495 >= 0
@@ -170,7 +170,7 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 								(JunkTex.method1017(class133_sub1_sub1.anInt3495, class133_sub6.anInt3655, (byte) 21,
 										class133_sub1_sub1.anInt3436) - class133_sub6.anInt3667));
 				}
-				class133_sub6.method1851(-95, Class51.anInt839);
+				class133_sub6.method1851(-95, Static2.anInt839);
 				JunkTex.method519(Class14_Sub2_Sub3.gameLevel, (int) class133_sub6.aDouble3678,
 						(int) class133_sub6.aDouble3646, (int) class133_sub6.aDouble3633, 60, class133_sub6,
 						class133_sub6.anInt3665, -1L, false);
@@ -220,15 +220,6 @@ public abstract class Canvas_Sub2 extends Canvas implements FocusListener {
 				}
 			}
 		}
-	}
-
-	public static int method68(int i, int i_50_) {
-		if (i_50_ != -1) {
-			int i_51_ = -123;
-			return i_51_;
-		}
-		int i_52_ = i >>> 10;
-		return i_52_;
 	}
 
 	public static int method69(int i, int i_53_) {

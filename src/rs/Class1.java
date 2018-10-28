@@ -55,7 +55,7 @@ public class Class1 {
 						}
 						Class4 class4 = class14_sub29.aClass4_3237;
 						if (class4 != null && class4.aSceneGraphNode_124.method1784()) {
-							Class75.method1339(class4.aSceneGraphNode_124, i_3_, i_4_, i_5_);
+							Static2.method1339(class4.aSceneGraphNode_124, i_3_, i_4_, i_5_);
 							class4.aSceneGraphNode_124 = class4.aSceneGraphNode_124.method1791(i, i_1_, i_2_);
 						}
 					}

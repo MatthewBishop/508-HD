@@ -8,6 +8,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import com.jagex.StringConstants;
+import com.jagex.cache.loaders.OverlayType;
 import com.jagex.link.HashTable;
 import com.jagex.util.ArrayUtils;
 import com.jagex.util.Util;
@@ -95,7 +96,7 @@ public class Class124 implements Interface1 {
 								} else if ((var9 + var13 & 4) != (var24 + var1 & 4)) {
 									var32 = 4936552;
 								} else {
-									var32 = Class56.anIntArray917[Class4.anInt123 + 1];
+									var32 = Static2.anIntArray917[OverlayType.anInt123 + 1];
 								}
 
 								if (var28 < 0 || var28 > var45.length - 1) {
@@ -112,8 +113,8 @@ public class Class124 implements Interface1 {
 								var32 = 1;
 							}
 
-							int var33 = var20[var28] == null ? 0 : Class56.anIntArray917[var20[var28][var31] & 255];
-							int var34 = var21[var28] != null ? Class56.anIntArray917[var21[var28][var31] & 255] : 0;
+							int var33 = var20[var28] == null ? 0 : Static2.anIntArray917[var20[var28][var31] & 255];
+							int var34 = var21[var28] != null ? Static2.anIntArray917[var21[var28][var31] & 255] : 0;
 							int var36;
 							if (var33 == 0 && var34 == 0) {
 								SD2DRaster.method1454(var14, var25, var16, var27, var32);
@@ -241,7 +242,7 @@ public class Class124 implements Interface1 {
 							if ((var1 + var18 & 4) != (var13 + var9 & 4)) {
 								var40 = 4936552;
 							} else {
-								var40 = Class56.anIntArray917[Class4.anInt123 + 1];
+								var40 = Static2.anIntArray917[OverlayType.anInt123 + 1];
 							}
 						} else {
 							var40 = Class7_Sub1.aClass14_Sub2_Sub5_2665.anInt3802;
@@ -335,16 +336,16 @@ public class Class124 implements Interface1 {
 	public static boolean method1714(int var0, int var1, int var2, int var3, int var4) {
 		int var5 = var3 * JunkTex.anInt2719 + var0 * Class37.anInt643 >> 16;
 		int var6 = var3 * Class37.anInt643 - var0 * JunkTex.anInt2719 >> 16;
-		int var7 = var1 * OverlayType.anInt2420 + var6 * Class7_Sub3_Sub1.anInt3718 >> 16;
-		int var8 = var1 * Class7_Sub3_Sub1.anInt3718 - var6 * OverlayType.anInt2420 >> 16;
+		int var7 = var1 * Static2.anInt2420 + var6 * Class7_Sub3_Sub1.anInt3718 >> 16;
+		int var8 = var1 * Class7_Sub3_Sub1.anInt3718 - var6 * Static2.anInt2420 >> 16;
 		if (var7 < 1) {
 			var7 = 1;
 		}
 
 		int var9 = (var5 << 9) / var7;
 		int var10 = (var8 << 9) / var7;
-		int var11 = var2 * OverlayType.anInt2420 + var6 * Class7_Sub3_Sub1.anInt3718 >> 16;
-		int var12 = var2 * Class7_Sub3_Sub1.anInt3718 - var6 * OverlayType.anInt2420 >> 16;
+		int var11 = var2 * Static2.anInt2420 + var6 * Class7_Sub3_Sub1.anInt3718 >> 16;
+		int var12 = var2 * Class7_Sub3_Sub1.anInt3718 - var6 * Static2.anInt2420 >> 16;
 		if (var11 < 1) {
 			var11 = 1;
 		}
@@ -371,7 +372,7 @@ public class Class124 implements Interface1 {
 	}
 
 	public static void method1718(int var0) {
-		Class127.aClass52_2112.clearSoftReference();
+		Static2.aClass52_2112.clearSoftReference();
 		if (var0 == 48) {
 			Class112.aClass52_1868.clearSoftReference();
 			Class62.aClass52_991.clearSoftReference();
@@ -400,7 +401,7 @@ public class Class124 implements Interface1 {
 	@Override
 	public boolean equals(Object var1) {
 		if (var1 instanceof Class124) {
-			boolean var2 = this.method1704((Class124) var1, (byte) 95);
+			boolean var2 = this.method1704((Class124) var1);
 			return var2;
 		} else {
 			throw new IllegalArgumentException();
@@ -647,7 +648,7 @@ public class Class124 implements Interface1 {
 				var3 = 101;
 			}
 
-			if (Class14_Sub30.method938(var3, 18024)) {
+			if (Class124.method938(var3)) {
 				++var7;
 			} else {
 				--var6;
@@ -668,7 +669,7 @@ public class Class124 implements Interface1 {
 				var4 = 101;
 			}
 
-			if (!Class14_Sub30.method938(var4, 18024)) {
+			if (!Class124.method938(var4)) {
 				--var8;
 			} else {
 				++var5;
@@ -842,13 +843,9 @@ public class Class124 implements Interface1 {
 		return var4;
 	}
 
-	public long method1680(int var1) {
+	public long method1680() {
 		long var2 = 0L;
 		int var4 = 0;
-		if (var1 <= 15) {
-			this.method1688(76);
-		}
-
 		while (var4 < this.anInt2507) {
 			var2 = (this.aByteArray2495[var4] & 255) + (var2 << 5) + -var2;
 			++var4;
@@ -971,10 +968,6 @@ public class Class124 implements Interface1 {
 
 	public Class124 method1688(int var1) {
 		Class124 var2 = Static2.method1174(this.method1692(0), (byte) 78);
-		if (var1 != 15) {
-			this.aBoolean2532 = false;
-		}
-
 		if (var2 == null) {
 			Class124 var3 = Static2.aClass124_42;
 			return var3;
@@ -1209,7 +1202,7 @@ public class Class124 implements Interface1 {
 		}
 	}
 
-	public boolean method1704(Class124 var1, byte var2) {
+	public boolean method1704(Class124 var1) {
 		boolean var3;
 		if (var1 == null) {
 			var3 = false;
@@ -1243,10 +1236,6 @@ public class Class124 implements Interface1 {
 				if (this.aByteArray2495[var4] != var1.aByteArray2495[var4]) {
 					return false;
 				}
-			}
-
-			if (var2 <= 40) {
-				aClass124_2497 = null;
 			}
 
 			return true;
@@ -1434,7 +1423,7 @@ public class Class124 implements Interface1 {
 								this.method1706(52, 61, (byte[]) null);
 							}
 
-							var3 = this.method1680(105);
+							var3 = this.method1680();
 
 							try {
 								if (Static2.aClass55_2733 == null) {
@@ -1455,7 +1444,7 @@ public class Class124 implements Interface1 {
 								break label73;
 							}
 
-							if (this.method1704(var5.aClass124_3270, (byte) 56)) {
+							if (this.method1704(var5.aClass124_3270)) {
 								Class124 var13 = var5.aClass124_3270;
 								return var13;
 							}
@@ -1595,6 +1584,11 @@ public class Class124 implements Interface1 {
 		throw new RuntimeException();
 	}
 	
+	public static boolean method938(int i) {
+		boolean bool = i == 198 || i == 230 || i == 156 || i == 140 || i == 223;
+		return bool;
+	}
+
 	public static Class124 method231(int i_2_, byte[] is, int i_3_) {
 		Class124 class124 = new Class124();
 		class124.anInt2507 = 0;

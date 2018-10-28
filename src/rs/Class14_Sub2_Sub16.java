@@ -250,31 +250,31 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 		try {
 			if (class124.method1690(aClass124_3979, 33))
 				anInt4007 = class124.method1696(4, 15).method1671(255, 16);
-			else if (class124.method1704(aClass124_3998, (byte) 93))
+			else if (class124.method1704(aClass124_3998))
 				anInt4007 = anInt4005;
 			else if (class124.method1690(aClass124_4000, 33))
 				anInt4003 = class124.method1696(6, 15).stringToBase10(126);
-			else if (class124.method1704(aClass124_3974, (byte) 105))
+			else if (class124.method1704(aClass124_3974))
 				anInt4003 = anInt4001;
 			else if (class124.method1690(aClass124_3976, 33))
 				anInt4010 = class124.method1696(4, 15).method1671(255, 16);
-			else if (class124.method1704(aClass124_3987, (byte) 112))
+			else if (class124.method1704(aClass124_3987))
 				anInt4010 = 8388608;
-			else if (class124.method1704(aClass124_3984, (byte) 121))
+			else if (class124.method1704(aClass124_3984))
 				anInt4010 = -1;
 			else if (class124.method1690(aClass124_3983, 33))
 				anInt4009 = class124.method1696(2, 15).method1671(255, 16);
-			else if (class124.method1704(aClass124_3994, (byte) 93))
+			else if (class124.method1704(aClass124_3994))
 				anInt4009 = 0;
-			else if (class124.method1704(aClass124_3972, (byte) 69))
+			else if (class124.method1704(aClass124_3972))
 				anInt4009 = -1;
 			else if (class124.method1690(aClass124_3981, 33))
 				anInt4002 = class124.method1696(5, 15).method1671(255, 16);
-			else if (class124.method1704(aClass124_3970, (byte) 64))
+			else if (class124.method1704(aClass124_3970))
 				anInt4002 = 0;
-			else if (class124.method1704(aClass124_3973, (byte) 97))
+			else if (class124.method1704(aClass124_3973))
 				anInt4002 = anInt4004;
-			else if (class124.method1704(aClass124_3988, (byte) 115))
+			else if (class124.method1704(aClass124_3988))
 				method346(anInt4005, anInt4004, anInt4001);
 		} catch (Exception exception) {
 			/* empty */
@@ -330,7 +330,7 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 					aClass124_3975.method1686((byte) -5, 60);
 					aClass124_3975.method1675((byte) -128, class124_39_);
 					aClass124_3975.method1686((byte) -5, 62);
-					if (class124_39_.method1704(aClass124_3988, (byte) 97)) {
+					if (class124_39_.method1704(aClass124_3988)) {
 						if (class124s[i_35_] != null) {
 							class124s[i_35_].method1699(0, (byte) 75);
 							class124s[i_35_] = (class124s[i_35_].method1668(aClass124_3975,
@@ -343,42 +343,42 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 						i = 0;
 						i_30_ = -1;
 						i_34_ = -1;
-					} else if (class124_39_.method1704(aClass124_3995, (byte) 96)) {
+					} else if (class124_39_.method1704(aClass124_3995)) {
 						i += method342(60);
 						if (aByteArray3980 != null && i_34_ != -1)
 							i += aByteArray3980[(i_34_ << 8) + 60];
 						i_34_ = 60;
-					} else if (class124_39_.method1704(aClass124_3982, (byte) 69)) {
+					} else if (class124_39_.method1704(aClass124_3982)) {
 						i += method342(62);
 						if (aByteArray3980 != null && i_34_ != -1)
 							i += aByteArray3980[(i_34_ << 8) + 62];
 						i_34_ = 62;
-					} else if (class124_39_.method1704(aClass124_3986, (byte) 99)) {
+					} else if (class124_39_.method1704(aClass124_3986)) {
 						i += method342(160);
 						if (aByteArray3980 != null && i_34_ != -1)
 							i += aByteArray3980[(i_34_ << 8) + 160];
 						i_34_ = 160;
-					} else if (class124_39_.method1704(aClass124_3967, (byte) 63)) {
+					} else if (class124_39_.method1704(aClass124_3967)) {
 						i += method342(173);
 						if (aByteArray3980 != null && i_34_ != -1)
 							i += aByteArray3980[(i_34_ << 8) + 173];
 						i_34_ = 173;
-					} else if (class124_39_.method1704(aClass124_3977, (byte) 64)) {
+					} else if (class124_39_.method1704(aClass124_3977)) {
 						i += method342(215);
 						if (aByteArray3980 != null && i_34_ != -1)
 							i += aByteArray3980[(i_34_ << 8) + 215];
 						i_34_ = 215;
-					} else if (class124_39_.method1704(aClass124_3985, (byte) 51)) {
+					} else if (class124_39_.method1704(aClass124_3985)) {
 						i += method342(128);
 						if (aByteArray3980 != null && i_34_ != -1)
 							i += aByteArray3980[(i_34_ << 8) + 128];
 						i_34_ = 128;
-					} else if (class124_39_.method1704(aClass124_3997, (byte) 76)) {
+					} else if (class124_39_.method1704(aClass124_3997)) {
 						i += method342(169);
 						if (aByteArray3980 != null && i_34_ != -1)
 							i += aByteArray3980[(i_34_ << 8) + 169];
 						i_34_ = 169;
-					} else if (class124_39_.method1704(aClass124_3990, (byte) 120)) {
+					} else if (class124_39_.method1704(aClass124_3990)) {
 						i += method342(174);
 						if (aByteArray3980 != null && i_34_ != -1)
 							i += aByteArray3980[(i_34_ << 8) + 174];
@@ -478,21 +478,21 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 				if (i_53_ == 62 && i_49_ != -1) {
 					Class124 class124_54_ = class124.substring(i_49_ + 1, i_52_, (byte) -104);
 					i_49_ = -1;
-					if (class124_54_.method1704(aClass124_3995, (byte) 90))
+					if (class124_54_.method1704(aClass124_3995))
 						i_53_ = 60;
-					else if (class124_54_.method1704(aClass124_3982, (byte) 116))
+					else if (class124_54_.method1704(aClass124_3982))
 						i_53_ = 62;
-					else if (class124_54_.method1704(aClass124_3986, (byte) 78))
+					else if (class124_54_.method1704(aClass124_3986))
 						i_53_ = 160;
-					else if (class124_54_.method1704(aClass124_3967, (byte) 127))
+					else if (class124_54_.method1704(aClass124_3967))
 						i_53_ = 173;
-					else if (class124_54_.method1704(aClass124_3977, (byte) 80))
+					else if (class124_54_.method1704(aClass124_3977))
 						i_53_ = 215;
-					else if (class124_54_.method1704(aClass124_3985, (byte) 111))
+					else if (class124_54_.method1704(aClass124_3985))
 						i_53_ = 128;
-					else if (class124_54_.method1704(aClass124_3997, (byte) 74))
+					else if (class124_54_.method1704(aClass124_3997))
 						i_53_ = 169;
-					else if (class124_54_.method1704(aClass124_3990, (byte) 114))
+					else if (class124_54_.method1704(aClass124_3990))
 						i_53_ = 174;
 					else {
 						if (class124_54_.method1690(aClass124_3992, 33)) {
@@ -585,21 +585,21 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 				if (i_68_ == 62 && i_65_ != -1) {
 					Class124 class124_69_ = class124.substring(i_65_ + 1, i_67_, (byte) -104);
 					i_65_ = -1;
-					if (class124_69_.method1704(aClass124_3995, (byte) 64))
+					if (class124_69_.method1704(aClass124_3995))
 						i_68_ = 60;
-					else if (class124_69_.method1704(aClass124_3982, (byte) 115))
+					else if (class124_69_.method1704(aClass124_3982))
 						i_68_ = 62;
-					else if (class124_69_.method1704(aClass124_3986, (byte) 104))
+					else if (class124_69_.method1704(aClass124_3986))
 						i_68_ = 160;
-					else if (class124_69_.method1704(aClass124_3967, (byte) 85))
+					else if (class124_69_.method1704(aClass124_3967))
 						i_68_ = 173;
-					else if (class124_69_.method1704(aClass124_3977, (byte) 51))
+					else if (class124_69_.method1704(aClass124_3977))
 						i_68_ = 215;
-					else if (class124_69_.method1704(aClass124_3985, (byte) 44))
+					else if (class124_69_.method1704(aClass124_3985))
 						i_68_ = 128;
-					else if (class124_69_.method1704(aClass124_3997, (byte) 113))
+					else if (class124_69_.method1704(aClass124_3997))
 						i_68_ = 169;
-					else if (class124_69_.method1704(aClass124_3990, (byte) 85))
+					else if (class124_69_.method1704(aClass124_3990))
 						i_68_ = 174;
 					else {
 						if (class124_69_.method1690(aClass124_3992, 33)) {
@@ -741,21 +741,21 @@ public abstract class Class14_Sub2_Sub16 extends Cacheable {
 				if (i_107_ == 62 && i != -1) {
 					Class124 class124_108_ = class124.substring(i + 1, i_106_, (byte) -104);
 					i = -1;
-					if (class124_108_.method1704(aClass124_3995, (byte) 89))
+					if (class124_108_.method1704(aClass124_3995))
 						i_107_ = 60;
-					else if (class124_108_.method1704(aClass124_3982, (byte) 127))
+					else if (class124_108_.method1704(aClass124_3982))
 						i_107_ = 62;
-					else if (class124_108_.method1704(aClass124_3986, (byte) 69))
+					else if (class124_108_.method1704(aClass124_3986))
 						i_107_ = 160;
-					else if (class124_108_.method1704(aClass124_3967, (byte) 66))
+					else if (class124_108_.method1704(aClass124_3967))
 						i_107_ = 173;
-					else if (class124_108_.method1704(aClass124_3977, (byte) 68))
+					else if (class124_108_.method1704(aClass124_3977))
 						i_107_ = 215;
-					else if (class124_108_.method1704(aClass124_3985, (byte) 125))
+					else if (class124_108_.method1704(aClass124_3985))
 						i_107_ = 128;
-					else if (class124_108_.method1704(aClass124_3997, (byte) 95))
+					else if (class124_108_.method1704(aClass124_3997))
 						i_107_ = 169;
-					else if (class124_108_.method1704(aClass124_3990, (byte) 124))
+					else if (class124_108_.method1704(aClass124_3990))
 						i_107_ = 174;
 					else {
 						if (class124_108_.method1690(aClass124_3992, 33)) {

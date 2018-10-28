@@ -18,27 +18,27 @@ public class Class14_Sub8_Sub18 extends Class14_Sub8 {
 		Class125_Sub3 class125_sub3 = new Class125_Sub3(class14_sub10.method805(), class14_sub10.method805(),
 				class14_sub10.method805(), class14_sub10.method805(), class14_sub10.method805(),
 				class14_sub10.method805(), class14_sub10.method805(), class14_sub10.method805(),
-				class14_sub10.method829(-119), class14_sub10.readUByte());
+				class14_sub10.readMedium(-119), class14_sub10.readUByte());
 		return class125_sub3;
 	}
 	
 	private static Class125_Sub1 method1214(Buffer class14_sub10) {
 		Class125_Sub1 class125_sub1 = new Class125_Sub1(class14_sub10.method805(), class14_sub10.method805(),
-				class14_sub10.method805(), class14_sub10.method805(), class14_sub10.method829(115),
-				class14_sub10.method829(100), class14_sub10.readUByte());
+				class14_sub10.method805(), class14_sub10.method805(), class14_sub10.readMedium(115),
+				class14_sub10.readMedium(100), class14_sub10.readUByte());
 		return class125_sub1;
 	}
 	
 	private static Class125_Sub4 method523(Buffer class14_sub10) {
 		Class125_Sub4 class125_sub4 = new Class125_Sub4(class14_sub10.method805(), class14_sub10.method805(),
-				class14_sub10.method805(), class14_sub10.method805(), class14_sub10.method829(46),
-				class14_sub10.method829(-119), class14_sub10.readUByte());
+				class14_sub10.method805(), class14_sub10.method805(), class14_sub10.readMedium(46),
+				class14_sub10.readMedium(-119), class14_sub10.readUByte());
 		return class125_sub4;
 	}
 	
 	private static Class125_Sub2 method1762(Buffer class14_sub10) {
 		Class125_Sub2 class125_sub2 = new Class125_Sub2(class14_sub10.method805(), class14_sub10.method805(),
-				class14_sub10.method805(), class14_sub10.method805(), class14_sub10.method829(47),
+				class14_sub10.method805(), class14_sub10.method805(), class14_sub10.readMedium(47),
 				class14_sub10.readUByte());
 		return class125_sub2;
 	}

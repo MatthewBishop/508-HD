@@ -9,7 +9,6 @@ public class Class115 {
 
 	public static Class124 aClass124_1906 = Class124.method263("<col=ffffff> )4 ");
 	public static Class124 aClass124_1908 = Class124.method263("hint_mapedge");
-	public static int anInt1909;
 	public static Class124 aClass124_1910 = Class124.method263("leuchten2:");
 	public int anInt1911;
 	public static int anInt1912;
@@ -53,11 +52,11 @@ public class Class115 {
 			aClass124_1906 = null;
 		}
 
-		Class14_Sub28.aClass52_3217.clear();
+		Static2.aClass52_3217.clear();
 	}
 
 	public static void method1593(int var0) {
-		if (Class56.anInt918 != 0) {
+		if (Static2.anInt918 != 0) {
 			if (++JunkTex.anInt4686 > 2000) {
 				if (Class14_Sub15.aClass36_2990 != null) {
 					Class14_Sub15.aClass36_2990.method1101((byte) 120);
@@ -66,11 +65,11 @@ public class Class115 {
 
 				if (Static2.anInt2136 >= 1) {
 					Static2.anInt2734 = -5;
-					Class56.anInt918 = 0;
+					Static2.anInt918 = 0;
 					return;
 				}
 
-				Class56.anInt918 = 1;
+				Static2.anInt918 = 1;
 				if (Class84.anInt1346 == Class131.anInt2164) {
 					Class131.anInt2164 = Static2.anInt3348;
 				} else {
@@ -85,13 +84,13 @@ public class Class115 {
 				int var2;
 				label139: {
 					try {
-						if (~Class56.anInt918 == var0) {
+						if (~Static2.anInt918 == var0) {
 							JunkTex.aClass31_4454 = ErrorReporting.signlink.method1153(0,
 									JunkTex.aString4605, Class131.anInt2164);
-							Class56.anInt918 = 2;
+							Static2.anInt918 = 2;
 						}
 
-						if (Class56.anInt918 != 2) {
+						if (Static2.anInt918 != 2) {
 							break label139;
 						}
 
@@ -113,31 +112,31 @@ public class Class115 {
 						Class14_Sub15.aClass36_2990.method1100(0, 3, JunkTex.aClass14_Sub10_Sub1_891.position,
 								JunkTex.aClass14_Sub10_Sub1_891.payload);
 						if (JunkTex.aClass75_4682 != null) {
-							JunkTex.aClass75_4682.method1338(var0 ^ -255);
+							JunkTex.aClass75_4682.method1338();
 						}
 
 						if (Static2.aClass75_2588 != null) {
-							Static2.aClass75_2588.method1338(255);
+							Static2.aClass75_2588.method1338();
 						}
 
 						var2 = Class14_Sub15.aClass36_2990.method1107((byte) 30);
 						if (JunkTex.aClass75_4682 != null) {
-							JunkTex.aClass75_4682.method1338(255);
+							JunkTex.aClass75_4682.method1338();
 						}
 
 						if (Static2.aClass75_2588 != null) {
-							Static2.aClass75_2588.method1338(255);
+							Static2.aClass75_2588.method1338();
 						}
 
 						if (var2 != 21) {
 							Static2.anInt2734 = var2;
-							Class56.anInt918 = 0;
+							Static2.anInt918 = 0;
 							Class14_Sub15.aClass36_2990.method1101((byte) 119);
 							Class14_Sub15.aClass36_2990 = null;
 							return;
 						}
 
-						Class56.anInt918 = 3;
+						Static2.anInt918 = 3;
 					} catch (IOException var7) {
 						break label147;
 					}
@@ -145,7 +144,7 @@ public class Class115 {
 
 				label126: {
 					try {
-						if (Class56.anInt918 != 3) {
+						if (Static2.anInt918 != 3) {
 							break label126;
 						}
 
@@ -159,13 +158,13 @@ public class Class115 {
 					try {
 						JunkTex.aClass124Array4549 = new Class124[Class14_Sub15.aClass36_2990
 								.method1107((byte) 30)];
-						Class56.anInt918 = 4;
+						Static2.anInt918 = 4;
 					} catch (IOException var5) {
 						break label147;
 					}
 				}
 
-				if (Class56.anInt918 != 4) {
+				if (Static2.anInt918 != 4) {
 					return;
 				}
 
@@ -186,7 +185,7 @@ public class Class115 {
 						}
 
 						Static2.anInt2734 = 21;
-						Class56.anInt918 = 0;
+						Static2.anInt918 = 0;
 						Class14_Sub15.aClass36_2990.method1101((byte) 116);
 						Class14_Sub15.aClass36_2990 = null;
 						return;
@@ -206,7 +205,7 @@ public class Class115 {
 
 			if (Static2.anInt2136 >= 1) {
 				Static2.anInt2734 = -4;
-				Class56.anInt918 = 0;
+				Static2.anInt918 = 0;
 			} else {
 				++Static2.anInt2136;
 				if (Class84.anInt1346 == Class131.anInt2164) {
@@ -215,7 +214,7 @@ public class Class115 {
 					Class131.anInt2164 = Class84.anInt1346;
 				}
 
-				Class56.anInt918 = 1;
+				Static2.anInt918 = 1;
 				JunkTex.anInt4686 = 0;
 			}
 		}

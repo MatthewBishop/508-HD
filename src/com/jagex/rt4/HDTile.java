@@ -12,10 +12,10 @@ import com.jagex.io.Buffer;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.shader.WaterShader;
+import com.jagex.sound.wip.DuplicateMethods;
 
 import rs.Class14_Sub29;
 import rs.SDRaster;
-import rs.JunkTex;
 
 /*
  * Class14_Sub29 = GroundTile
@@ -255,7 +255,7 @@ public class HDTile extends Linkable {
 		triangleTileZ = new int[maxTriangles];
 		triangleTileHL = new int[maxTriangles];
 		triangleIndices = new int[maxTriangles][];
-		vertexIDBuffer = new HashTable(JunkTex.method653(maxVertices));
+		vertexIDBuffer = new HashTable(DuplicateMethods.getFarestBitValue(maxVertices));
 		if (hasEdges) {
 			edgeTriangleIndices = new int[maxTriangles][];
 			writeTriangleToEdgeStream = new boolean[maxTriangles];

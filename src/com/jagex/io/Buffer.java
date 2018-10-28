@@ -16,7 +16,7 @@ public class Buffer extends Linkable {
 		payload[position++] = (byte) 0;
 	}
 
-	public Class124 method797() {
+	public Class124 getJagexString() {
 		int i_24_ = position;
 		while (payload[position++] != 0) {
 			/* empty */
@@ -30,7 +30,7 @@ public class Buffer extends Linkable {
 			position++;
 			return null;
 		}
-		Class124 class124 = method797();
+		Class124 class124 = getJagexString();
 		return class124;
 	}
 	
@@ -452,7 +452,7 @@ public class Buffer extends Linkable {
 		return i_76_;
 	}
 
-	public int method829(int i) {
+	public int readMedium(int i) {
 		position += 3;
 		int i_77_ = 85 / ((-49 - i) / 58);
 		int i_78_ = ((payload[position - 1] & 0xff)

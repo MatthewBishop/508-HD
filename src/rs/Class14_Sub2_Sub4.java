@@ -7,7 +7,6 @@ import java.awt.Frame;
 
 import com.jagex.applet.Class31;
 import com.jagex.applet.Class43;
-import com.jagex.io.js5.SFSS;
 import com.jagex.link.Cacheable;
 import com.jagex.util.Util;
 

@@ -107,7 +107,7 @@ public class Class14_Sub8_Sub20 extends Class14_Sub8 {
 				anInt4423 = class14_sub10.readUShort();
 				break while_100_;
 			} while (false);
-			int i_23_ = class14_sub10.method829(24777 ^ 0x609d);
+			int i_23_ = class14_sub10.readMedium(24777 ^ 0x609d);
 			anIntArray4415[2] = AccessoryMethods.method617(i_23_ >> 12, 0); 
 			anIntArray4415[0] = AccessoryMethods.method617(267386880, i_23_ << 36); 
 			anIntArray4415[1] = AccessoryMethods.method617(i_23_ >> 4, 4080); 

@@ -47,8 +47,8 @@ public class Class138 {
 		for (int i = 0; i < JunkTex.anInt4255; i++) {
 			int i_0_ = Class36.anIntArray626[i];
 			if (Class14_Sub2_Sub20.anInt4064 != Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[i_0_].anInt3447) {
-				if (Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[i_0_].aClass12_4949.method212((byte) -128))
-					Class37.method1112((Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[i_0_]), (byte) -26);
+				if (Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[i_0_].aClass12_4949.method212())
+					StaticMusic.method1112((Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[i_0_]), (byte) -26);
 				Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[i_0_].aClass12_4949 = null;
 				Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[i_0_] = null;
 			}
@@ -79,8 +79,8 @@ public class Class138 {
 				}
 				int i_3_ = class14_sub10.readUByte();
 				int i_4_ = class14_sub10.readUByte();
-				int i_5_ = -Class65.anInt1034 + i_3_ * 64;
-				int i_6_ = (-(i_4_ * 64) + Class35.anInt603 + (JunkTex.anInt4332 - 1));
+				int i_5_ = -Static2.anInt1034 + i_3_ * 64;
+				int i_6_ = (-(i_4_ * 64) + Static2.anInt603 + (JunkTex.anInt4332 - 1));
 				if (i_5_ >= 0 && i_6_ - 63 >= 0 && i_5_ + 63 < Static2.anInt3856
 						&& i_6_ < JunkTex.anInt4332) {
 					int i_7_ = i_5_ >> 38;
@@ -119,9 +119,9 @@ public class Class138 {
 		if (i != 139)
 			aClass124_2227 = null;
 		if (Static2.aClass75_2588 != null)
-			Static2.aClass75_2588.method1341(i ^ ~0xfb);
+			Static2.aClass75_2588.method1341();
 		if (JunkTex.aClass75_4682 != null)
-			JunkTex.aClass75_4682.method1341(-50);
+			JunkTex.aClass75_4682.method1341();
 	}
 
 	public static void method1948(int i) {
@@ -143,7 +143,7 @@ public class Class138 {
 			return frame;
 		}
 		if (i_31_ == 0) {
-			Class88[] class88s = Class14_Sub18.method884(-3189, class43);
+			Class88[] class88s = Static2.method884(-3189, class43);
 			if (class88s == null) {
 				Frame frame = null;
 				return frame;

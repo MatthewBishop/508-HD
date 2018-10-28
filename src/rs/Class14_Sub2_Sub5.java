@@ -3,7 +3,7 @@
  */
 package rs;
 
-import com.jagex.io.js5.FileSystem;
+import com.jagex.cache.wip.EnumType;
 import com.jagex.link.Cache;
 import com.jagex.link.Cacheable;
 import com.jagex.link.Deque;
@@ -24,8 +24,6 @@ public class Class14_Sub2_Sub5 extends Cacheable {
 	public static Class124 aClass124_3814 = Class124.method263("(Y<)4col>");
 	public static Cache aClass20_3815 = new Cache(128);
 	public static byte[][][] aByteArrayArrayArray3816;
-	public static FileSystem aFileSystem_3817;
-	
 	public void method281(int i) {
 		anInt3797 = i;
 		anInt3810 = 0;
@@ -51,26 +49,11 @@ public class Class14_Sub2_Sub5 extends Cacheable {
 	}
 
 	public static void method284(int i) {
-		aFileSystem_3817 = null;
 		aClass20_3815 = null;
 		aByteArrayArrayArray3816 = null;
 		aClass124_3814 = null;
 		if (i != 12800)
 			method284(41);
-	}
-
-	public static Class14_Sub28 method285(int i, FileSystem fileSystem, byte i_8_) {
-		if (i_8_ <= 51) {
-			Class14_Sub28 class14_sub28 = null;
-			return class14_sub28;
-		}
-		byte[] is = fileSystem.getFileSmart(i);
-		if (is == null) {
-			Class14_Sub28 class14_sub28 = null;
-			return class14_sub28;
-		}
-		Class14_Sub28 class14_sub28 = new Class14_Sub28(is);
-		return class14_sub28;
 	}
 
 	public boolean method286(int i, int i_9_, int i_10_) {

@@ -3,8 +3,8 @@
  */
 package rs;
 
-import com.jagex.cache.anim.Animation;
 import com.jagex.cache.anim.AnimLoader;
+import com.jagex.cache.anim.Animation;
 import com.jagex.io.js5.FileSystem;
 import com.jagex.link.ref.SoftCache;
 
@@ -31,7 +31,7 @@ public class Class83 {
 				class133_sub1_sub1.anInt3501 = 0;
 				class133_sub1_sub1.anInt3482 = 0;
 				JunkTex.method509(class133_sub1_sub1.anInt3495, class133_sub1_sub1.anInt3501, 59,
-						((Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748) == class133_sub1_sub1), animation,
+						((Static2.aSceneGraphNode_GameEntity_Sub1_2748) == class133_sub1_sub1), animation,
 						class133_sub1_sub1.anInt3436);
 			}
 			if (i_2_ == 2)
@@ -45,7 +45,7 @@ public class Class83 {
 			class133_sub1_sub1.anInt3445 = i_1_;
 			if (class133_sub1_sub1.anInt3445 != -1)
 				JunkTex.method509(class133_sub1_sub1.anInt3495, class133_sub1_sub1.anInt3501, -115,
-						(class133_sub1_sub1 == Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748),
+						(class133_sub1_sub1 == Static2.aSceneGraphNode_GameEntity_Sub1_2748),
 						AnimLoader.method1129(class133_sub1_sub1.anInt3445), class133_sub1_sub1.anInt3436);
 		}
 	}

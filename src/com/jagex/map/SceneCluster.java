@@ -3,19 +3,16 @@
  */
 package com.jagex.map;
 
-import rs.Class118;
+import com.jagex.sound.Class18;
+
 import rs.Class124;
 import rs.Class138;
 import rs.Class140;
-import rs.Class14_Sub17;
-import rs.Class14_Sub2_Sub12;
-import rs.Class14_Sub3;
-import rs.Class18;
 import rs.Class33;
-import rs.Class59;
 import rs.Class7_Sub1;
 import rs.Class94;
 import rs.JunkTex;
+import rs.Static2;
 
 public class SceneCluster {
 	public static Class124 aClass124_1365 = Class124.method263("hint_headicons");
@@ -49,7 +46,7 @@ public class SceneCluster {
 				Class138.anInt2210 += (-Class138.anInt2210 - 12) / 2;
 		} else
 			Class138.anInt2210 += (-Class138.anInt2210 + 12) / 2;
-		int i_0_ = (Class7_Sub1.anInt2655 + Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495);
+		int i_0_ = (Class7_Sub1.anInt2655 + Static2.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495);
 		if (JunkTex.aBooleanArray4581[96])
 			JunkTex.anInt4382 += (-JunkTex.anInt4382 - 24) / 2;
 		else if (!JunkTex.aBooleanArray4581[97])
@@ -58,7 +55,7 @@ public class SceneCluster {
 			JunkTex.anInt4382 += (24 - JunkTex.anInt4382) / 2;
 		JunkTex.anInt102 += Class138.anInt2210 / 2;
 		JunkTex.anInt4408 += JunkTex.anInt4382 / i;
-		int i_1_ = (JunkTex.anInt4520 + Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436);
+		int i_1_ = (JunkTex.anInt4520 + Static2.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436);
 		if (-i_0_ + Class140.anInt2238 < -500 || -i_0_ + Class140.anInt2238 > 500 || JunkTex.anInt905 - i_1_ < -500
 				|| -i_1_ + JunkTex.anInt905 > 500) {
 			Class140.anInt2238 = i_0_;

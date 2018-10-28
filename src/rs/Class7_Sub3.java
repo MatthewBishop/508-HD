@@ -3,12 +3,11 @@
  */
 package rs;
 
+import com.jagex.cache.wip.Class14_Sub2_Sub11;
 import com.jagex.io.Buffer;
-import com.jagex.link.Cache;
 import com.jagex.rt4.RT4;
 
 public class Class7_Sub3 extends Class7 {
-	public static Cache aClass20_2680 = new Cache(64);
 	public static int anInt2681;
 	public static int anInt2682;
 	public static int anInt2683 = 50;
@@ -47,9 +46,9 @@ public class Class7_Sub3 extends Class7 {
 		int i_1_ = -35 / ((i + 6) / 48);
 		class14_sub10.writeByte(Class135.anInt2189);
 		class14_sub10.writeByte(!JunkTex.aBoolean4528 ? 0 : 1);
-		class14_sub10.writeByte(Class14_Sub29.anInt3266);
-		class14_sub10.writeByte(Class14_Sub23.anInt3135);
-		class14_sub10.writeByte(Static2.anInt1691);
+		class14_sub10.writeByte(StaticMusic.anInt3266);
+		class14_sub10.writeByte(StaticMusic.anInt3135);
+		class14_sub10.writeByte(StaticMusic.anInt1691);
 		class14_sub10.method833((byte) 123, Class54.anInt887);
 		class14_sub10.method833((byte) 103, Static2.anInt2725);
 		class14_sub10.writeByte(JunkTex.aBoolean845 ? 1 : 0);
@@ -62,10 +61,9 @@ public class Class7_Sub3 extends Class7 {
 		actions = null;
 		if (!bool)
 			method131(28, -126);
-		aClass20_2680 = null;
 	}
 
 	public static void method134(int i) {
-		Class14_Sub28.aClass52_3217.clearSoftReference();
+		Static2.aClass52_3217.clearSoftReference();
 	}
 }

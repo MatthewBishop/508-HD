@@ -9,7 +9,7 @@ import javax.media.opengl.GL;
 
 import org.lwjgl.opengl.GL11;
 
-import rs.JunkTex;
+import com.jagex.sound.wip.DuplicateMethods;
 
 public class Class148_Sub2 extends Class148 {
 	public int anInt3690;
@@ -95,8 +95,8 @@ public class Class148_Sub2 extends Class148 {
 	}
 
 	public void method2013(byte[] is, int[] is_4_) {
-		anInt3696 = JunkTex.method653(width);
-		anInt3693 = JunkTex.method653(height);
+		anInt3696 = DuplicateMethods.getFarestBitValue(width);
+		anInt3693 = DuplicateMethods.getFarestBitValue(height);
 		byte[] is_5_ = new byte[anInt3696 * anInt3693 * 4];
 		int i = 0;
 		int i_6_ = 0;

@@ -12,8 +12,7 @@ import com.jagex.link.HashTable;
 import com.jagex.rt4.IntegerNode;
 import com.jagex.rt4.RT4GL;
 import com.jagex.rt4.VertexBuffer;
-
-import rs.JunkTex;
+import com.jagex.sound.wip.DuplicateMethods;
 
 public class LightRenderer {
 	public byte[] vertexGreen;
@@ -167,6 +166,6 @@ public class LightRenderer {
 		vertexRed = new byte[maxVertices];
 		vertexGreen = new byte[maxVertices];
 		vertexBlue = new byte[maxVertices];
-		vertexList = new HashTable(JunkTex.method653(maxVertices));
+		vertexList = new HashTable(DuplicateMethods.getFarestBitValue(maxVertices));
 	}
 }

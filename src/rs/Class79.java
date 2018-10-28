@@ -5,100 +5,33 @@ package rs;
 
 import com.jagex.cache.anim.Animation;
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.SFSS;
 import com.jagex.link.Deque;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
-import com.jagex.rt4.Class148_Sub1;
-import com.jagex.rt4.IntegerNode;
 import com.jagex.rt4.AbstractSprite;
 import com.jagex.rt4.AbstractSprite_Sub2;
+import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.Class25;
+import com.jagex.rt4.IntegerNode;
 
 public class Class79 {
-	public int anInt1226;
-	public int anInt1227;
-	public boolean aBoolean1228 = false;
-	public int anInt1229 = 2;
-	public short[] aShortArray1231;
-	public int anInt1233;
-	public short[] aShortArray1235;
-	public int anInt1238;
-	public int anInt1239;
-	public static int anInt1240;
-	public boolean aBoolean1241;
-	public int anInt1242;
-	public int anInt1243;
-	public int anInt1244;
-	public int anInt1245;
-	public int anInt1246;
-	public static short[][][] aShortArrayArrayArray1247;
-	public boolean aBoolean1248;
-	public int anInt1250;
-	public int anInt1251 = -1;
-	public int anInt1252;
-	public boolean aBoolean1253;
-	public int anInt1254;
 	public static Class124 aClass124_1255;
-	public int[] anIntArray1256;
-	public int anInt1257;
-	public boolean aBoolean1258;
-	public boolean aBoolean1259;
-	public int[] anIntArray1260;
-	public static Class146 aClass146_1261;
-	public int anInt1262;
-	public short[] aShortArray1263;
-	public boolean aBoolean1264;
 	public static Class124 aClass124_1265 = Class124.method263("(Z");
-	public HashTable aClass55_1266;
-	public static Deque aClass2_1268;
-	public boolean aBoolean1270;
-	public int anInt1271;
-	public boolean aBoolean1272;
-	public int anInt1274;
-	public int[] anIntArray1276;
-	public int anInt1278;
-	public int anInt1279;
-	public int anInt1281;
-	public Class124[] aClass124Array1282;
-	public boolean aBoolean1283;
-	public byte aByte1286;
-	public int[] anIntArray1287;
-	public int anInt1289;
-	public Class124 aClass124_1290;
-	public short[] aShortArray1291;
-	public int anInt1292;
-	public int anInt1294;
-	public boolean aBoolean1296;
-	public byte[] aByteArray1297;
 	public static Class124 aClass124_1298;
-	public boolean aBoolean1299;
-	public boolean aBoolean1301;
-	public boolean aBoolean1302;
-	public short aShort1304;
-	public static int[] anIntArray1305;
 	public static Class124 aClass124_1306;
-
+	public static Class146 aClass146_1261;
+	public static Deque aClass2_1268;
+	public static int anInt1240 = 0;
+	public static int[] anIntArray1305;
+	public static short[][][] aShortArrayArrayArray1247;
 	static {
-		anInt1240 = 0;
+		
 		aClass124_1298 = Class124.method263("Discard");
 		aClass124_1255 = aClass124_1298;
 		aClass2_1268 = new Deque();
 		anIntArray1305 = new int[1000];
 		aClass124_1306 = Class124.method263("event_opbase");
 	}
-
-	public void method1374(int i, Buffer class14_sub10) {
-		if (i != -31564)
-			anInt1262 = 32;
-		for (;;) {
-			int i_0_ = class14_sub10.readUByte();
-			if (i_0_ == 0)
-				break;
-			method1389(i_0_, class14_sub10);
-		}
-	}
-
 	public static void method1375(int i, Class94 class94, int i_1_, int i_2_, int i_3_) {
 		Class25.method999(i_2_, i, i_2_ + class94.anInt1518, i + class94.anInt1545);
 		if (i_3_ == 2) {
@@ -113,6 +46,197 @@ public class Class79 {
 					class14_sub2_sub19.drawReg(i_2_, i);
 			}
 			Class7_Sub2_Sub1.aBooleanArray3703[i_1_] = true;
+		}
+	}
+	public static Class79 method1377(byte i, int i_24_) {
+		Class79 class79 = ((Class79) Static2.aClass52_2112.get(i_24_));
+		if (class79 != null) {
+			Class79 class79_25_ = class79;
+			return class79_25_;
+		}
+		byte[] is = Class15.aFileSystem_382.method163(JunkTex.method492(11604, i_24_),
+				Class14_Sub29.method932(i_24_, 21661));
+		Class79 class79_26_ = new Class79();
+		class79_26_.anInt1257 = i_24_;
+		if (is != null)
+			class79_26_.method1374(i - 31458, new Buffer(is));
+		class79_26_.method1385(80);
+		if (class79_26_.aBoolean1302) {
+			class79_26_.aBoolean1248 = false;
+			class79_26_.anInt1229 = 0;
+		}
+		if (!JunkTex.aBoolean3375 && class79_26_.aBoolean1259)
+			class79_26_.aClass124Array1282 = null;
+		Static2.aClass52_2112.put(class79_26_, i_24_);
+		if (i != -106) {
+			class79 = null;
+			return class79;
+		}
+		class79 = class79_26_;
+		return class79;
+	}
+	public static void method1380(boolean bool) {
+		anIntArray1305 = null;
+		aClass124_1265 = null;
+		aClass124_1306 = null;
+		aClass124_1255 = null;
+		if (bool) {
+			aClass124_1298 = null;
+			aShortArrayArrayArray1247 = null;
+			aClass146_1261 = null;
+			aClass2_1268 = null;
+		}
+	}
+	public static int method1382(int ia, int i_35_) {
+		int i_36_ = i_35_ & 0x3f;
+		int i_37_ = i_35_ >> 38 & 0x3;
+		if (i_36_ == 18) {
+			if (i_37_ == 0) {
+				int i_38_ = 1;
+				return i_38_;
+			}
+			if (i_37_ == 1) {
+				int i_39_ = 2;
+				return i_39_;
+			}
+			if (i_37_ == 2) {
+				int i_40_ = 4;
+				return i_40_;
+			}
+			if (i_37_ == 3) {
+				int i_41_ = 8;
+				return i_41_;
+			}
+		} else if (i_36_ == 19 || i_36_ == 21) {
+			if (i_37_ == 0) {
+				int i_42_ = 16;
+				return i_42_;
+			}
+			if (i_37_ == 1) {
+				int i_43_ = 32;
+				return i_43_;
+			}
+			if (i_37_ == 2) {
+				int i_44_ = 64;
+				return i_44_;
+			}
+			if (i_37_ == 3) {
+				int i_45_ = 128;
+				return i_45_;
+			}
+		}
+		i_36_ = 0;
+		return i_36_;
+	}
+	public boolean aBoolean1228 = false;
+	public boolean aBoolean1241;
+	public boolean aBoolean1248;
+	public boolean aBoolean1253;
+	public boolean aBoolean1258;
+	public boolean aBoolean1259;
+	public boolean aBoolean1264;
+	public boolean aBoolean1270;
+	public boolean aBoolean1272;
+	public boolean aBoolean1283;
+	public boolean aBoolean1296;
+	public boolean aBoolean1299;
+	public boolean aBoolean1301;
+	public boolean aBoolean1302;
+	public byte aByte1286;
+	public byte[] aByteArray1297;
+	public Class124 aClass124_1290;
+	public Class124[] aClass124Array1282;
+	public HashTable aClass55_1266;
+	public int anInt1226;
+	public int anInt1227;
+	public int anInt1229 = 2;
+	public int anInt1233;
+	public int anInt1238;
+	public int anInt1239;
+	public int anInt1242;
+	public int anInt1243;
+	public int anInt1244;
+	public int anInt1245;
+	public int anInt1246;
+	public int anInt1250;
+	public int anInt1251 = -1;
+	public int anInt1252;
+	public int anInt1254;
+	public int anInt1257;
+	public int anInt1262;
+	public int anInt1271;
+	public int anInt1274;
+	public int anInt1278;
+	public int anInt1279;
+	public int anInt1281;
+	public int anInt1289;
+	public int anInt1292;
+	public int anInt1294;
+	public int[] anIntArray1256;
+	public int[] anIntArray1260;
+	public int[] anIntArray1276;
+	public int[] anIntArray1287;
+
+	public short aShort1304;
+
+	public short[] aShortArray1231;
+
+	public short[] aShortArray1235;
+
+	public short[] aShortArray1263;
+
+	public short[] aShortArray1291;
+
+	public Class79() {
+		anInt1227 = 1;
+		anInt1254 = 0;
+		aBoolean1272 = false;
+		anInt1239 = 128;
+		anInt1244 = 0;
+		aBoolean1258 = true;
+		anInt1226 = 0;
+		anInt1238 = 0;
+		anInt1245 = 1;
+		anInt1233 = 0;
+		anInt1252 = 128;
+		anInt1246 = 16;
+		anInt1274 = 0;
+		anInt1281 = -1;
+		aBoolean1283 = false;
+		anInt1243 = -1;
+		aByte1286 = (byte) 0;
+		aClass124_1290 = JunkTex.aClass124_3420;
+		aBoolean1270 = false;
+		aBoolean1253 = true;
+		aClass124Array1282 = new Class124[5];
+		anInt1292 = 128;
+		aBoolean1241 = false;
+		anInt1294 = -1;
+		anInt1242 = -1;
+		aBoolean1264 = false;
+		anInt1289 = 0;
+		aBoolean1296 = true;
+		anInt1262 = -1;
+		anInt1279 = 0;
+		aBoolean1301 = false;
+		aBoolean1248 = true;
+		aBoolean1259 = false;
+		aBoolean1302 = false;
+		aBoolean1299 = false;
+		anInt1271 = 0;
+		anInt1250 = -1;
+		aShort1304 = (short) -1;
+		anInt1278 = -1;
+	}
+
+	public void method1374(int i, Buffer class14_sub10) {
+		if (i != -31564)
+			anInt1262 = 32;
+		for (;;) {
+			int i_0_ = class14_sub10.readUByte();
+			if (i_0_ == 0)
+				break;
+			method1389(i_0_, class14_sub10);
 		}
 	}
 
@@ -222,41 +346,6 @@ public class Class79 {
 		return modelhd_21_;
 	}
 
-	public static Class79 method1377(byte i, int i_24_) {
-		Class79 class79 = ((Class79) Class127.aClass52_2112.get(i_24_));
-		if (class79 != null) {
-			Class79 class79_25_ = class79;
-			return class79_25_;
-		}
-		byte[] is = Class15.aFileSystem_382.method163(JunkTex.method492(11604, i_24_),
-				Class14_Sub29.method932(i_24_, 21661));
-		Class79 class79_26_ = new Class79();
-		class79_26_.anInt1257 = i_24_;
-		if (is != null)
-			class79_26_.method1374(i - 31458, new Buffer(is));
-		class79_26_.method1385(80);
-		if (class79_26_.aBoolean1302) {
-			class79_26_.aBoolean1248 = false;
-			class79_26_.anInt1229 = 0;
-		}
-		if (!JunkTex.aBoolean3375 && class79_26_.aBoolean1259)
-			class79_26_.aClass124Array1282 = null;
-		Class127.aClass52_2112.put(class79_26_, i_24_);
-		if (i != -106) {
-			class79 = null;
-			return class79;
-		}
-		class79 = class79_26_;
-		return class79;
-	}
-
-	public static int method1378(int i, int i_27_) {
-		if (i_27_ != 5823)
-			aClass124_1306 = null;
-		int i_28_ = i & 0xff;
-		return i_28_;
-	}
-
 	public boolean method1379(int i) {
 		if (anIntArray1260 == null) {
 			boolean bool = true;
@@ -269,19 +358,6 @@ public class Class79 {
 			aBoolean1302 = false;
 		boolean bool_30_ = bool;
 		return bool_30_;
-	}
-
-	public static void method1380(boolean bool) {
-		anIntArray1305 = null;
-		aClass124_1265 = null;
-		aClass124_1306 = null;
-		aClass124_1255 = null;
-		if (bool) {
-			aClass124_1298 = null;
-			aShortArrayArrayArray1247 = null;
-			aClass146_1261 = null;
-			aClass2_1268 = null;
-		}
 	}
 
 	public boolean method1381(byte i, int i_31_) {
@@ -309,48 +385,6 @@ public class Class79 {
 			bool &= Static2.aFileSystem_2923.method158(0, (anIntArray1260[i_33_] & 0xffff));
 		boolean bool_34_ = bool;
 		return bool_34_;
-	}
-
-	public static int method1382(int ia, int i_35_) {
-		int i_36_ = i_35_ & 0x3f;
-		int i_37_ = i_35_ >> 38 & 0x3;
-		if (i_36_ == 18) {
-			if (i_37_ == 0) {
-				int i_38_ = 1;
-				return i_38_;
-			}
-			if (i_37_ == 1) {
-				int i_39_ = 2;
-				return i_39_;
-			}
-			if (i_37_ == 2) {
-				int i_40_ = 4;
-				return i_40_;
-			}
-			if (i_37_ == 3) {
-				int i_41_ = 8;
-				return i_41_;
-			}
-		} else if (i_36_ == 19 || i_36_ == 21) {
-			if (i_37_ == 0) {
-				int i_42_ = 16;
-				return i_42_;
-			}
-			if (i_37_ == 1) {
-				int i_43_ = 32;
-				return i_43_;
-			}
-			if (i_37_ == 2) {
-				int i_44_ = 64;
-				return i_44_;
-			}
-			if (i_37_ == 3) {
-				int i_45_ = 128;
-				return i_45_;
-			}
-		}
-		i_36_ = 0;
-		return i_36_;
 	}
 
 	public Class86 method1383(int i, int i_46_, int[][] is, int[][] is_47_, boolean bool, int i_48_, boolean bool_49_,
@@ -461,8 +495,6 @@ public class Class79 {
 		}
 		if (anInt1242 == -1)
 			anInt1242 = anInt1229 != 0 ? 1 : 0;
-		if (i < 18)
-			method1392(-64);
 	}
 
 	public int method1388(int i, int i_91_, int i_92_) {
@@ -606,7 +638,7 @@ public class Class79 {
 																																			boolean bool = class14_sub10
 																																					.readUByte() == 1;
 																																			int i_107_ = class14_sub10
-																																					.method829(
+																																					.readMedium(
 																																							35 - 147);
 																																			Linkable linkable;
 																																			if (!bool)
@@ -617,7 +649,7 @@ public class Class79 {
 																																			else
 																																				linkable = new Class14_Sub30(
 																																						class14_sub10
-																																								.method797());
+																																								.getJagexString());
 																																			aClass55_1266
 																																					.put(
 																																							i_107_,
@@ -717,9 +749,9 @@ public class Class79 {
 													}
 												}
 											} else {
-												aClass124Array1282[i - 30] = class14_sub10.method797();
+												aClass124Array1282[i - 30] = class14_sub10.getJagexString();
 												if (aClass124Array1282[i - 30].method1717(40,
-														(Class14_Sub9_Sub1.aClass124_4808)))
+														(Static2.aClass124_4808)))
 													aClass124Array1282[i - 30] = null;
 											}
 										} else
@@ -744,7 +776,7 @@ public class Class79 {
 			} else
 				anInt1245 = class14_sub10.readUByte();
 		} else
-			aClass124_1290 = class14_sub10.method797();
+			aClass124_1290 = class14_sub10.getJagexString();
 	}
 
 	public Class124 method1390(byte i, int i_115_, Class124 class124) {
@@ -791,8 +823,6 @@ public class Class79 {
 			return bool;
 		}
 		int i_125_ = 0;
-		if (i >= -122)
-			method1378(-101, 15);
 		for (/**/; i_125_ < anIntArray1276.length; i_125_++) {
 			if (anIntArray1276[i_125_] != -1) {
 				Class79 class79_126_ = method1377((byte) -106, anIntArray1276[i_125_]);
@@ -801,47 +831,5 @@ public class Class79 {
 			}
 		}
 		return false;
-	}
-
-	public Class79() {
-		anInt1227 = 1;
-		anInt1254 = 0;
-		aBoolean1272 = false;
-		anInt1239 = 128;
-		anInt1244 = 0;
-		aBoolean1258 = true;
-		anInt1226 = 0;
-		anInt1238 = 0;
-		anInt1245 = 1;
-		anInt1233 = 0;
-		anInt1252 = 128;
-		anInt1246 = 16;
-		anInt1274 = 0;
-		anInt1281 = -1;
-		aBoolean1283 = false;
-		anInt1243 = -1;
-		aByte1286 = (byte) 0;
-		aClass124_1290 = JunkTex.aClass124_3420;
-		aBoolean1270 = false;
-		aBoolean1253 = true;
-		aClass124Array1282 = new Class124[5];
-		anInt1292 = 128;
-		aBoolean1241 = false;
-		anInt1294 = -1;
-		anInt1242 = -1;
-		aBoolean1264 = false;
-		anInt1289 = 0;
-		aBoolean1296 = true;
-		anInt1262 = -1;
-		anInt1279 = 0;
-		aBoolean1301 = false;
-		aBoolean1248 = true;
-		aBoolean1259 = false;
-		aBoolean1302 = false;
-		aBoolean1299 = false;
-		anInt1271 = 0;
-		anInt1250 = -1;
-		aShort1304 = (short) -1;
-		anInt1278 = -1;
 	}
 }

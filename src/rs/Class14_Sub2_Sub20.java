@@ -56,7 +56,7 @@ public class Class14_Sub2_Sub20 extends Cacheable {
 		for (Class14_Sub2_Sub5 class14_sub2_sub5 = (Class14_Sub2_Sub5) Class97.aClass2_1647
 				.getFront(); class14_sub2_sub5 != null; class14_sub2_sub5 = (Class14_Sub2_Sub5) Class97.aClass2_1647
 						.getNext()) {
-			if (class14_sub2_sub5.aClass124_3804.method1704(class124, (byte) 67))
+			if (class14_sub2_sub5.aClass124_3804.method1704(class124))
 				return class14_sub2_sub5;
 		}
 		return null;

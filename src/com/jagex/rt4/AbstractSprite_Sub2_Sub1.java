@@ -7,7 +7,7 @@ import java.nio.ByteBuffer;
 
 import javax.media.opengl.GL;
 
-import rs.JunkTex;
+import com.jagex.sound.wip.DuplicateMethods;
 
 public class AbstractSprite_Sub2_Sub1 extends AbstractSprite_Sub2 {
 	public AbstractSprite_Sub2_Sub1(AbstractSprite_Sub1 class14_sub2_sub19_sub1) {
@@ -20,8 +20,8 @@ public class AbstractSprite_Sub2_Sub1 extends AbstractSprite_Sub2 {
 
 	@Override
 	public void draw(int[] texels) {
-		width_ = JunkTex.method653(width);
-		height_ = JunkTex.method653(height);
+		width_ = DuplicateMethods.getFarestBitValue(width);
+		height_ = DuplicateMethods.getFarestBitValue(height);
 		byte[] pix = new byte[width_ * height_ * 4];
 		int pntr = 0;
 		int cntr = 0;

@@ -42,7 +42,7 @@ public class Class66 {
 		Static2.anInt3338 = i_27_;
 		JunkTex.anInt4337 = i_28_;
 		JunkTex.anIntArrayArrayArray2724 = new int[i][i_27_ + 1][i_28_ + 1];
-		Class56.method1240();
+		Static2.method1240();
 		JunkTex.cameraDistance = i_29_;
 		Class53.visibilityMap = (new boolean[JunkTex.cameraDistance + JunkTex.cameraDistance + 1][JunkTex.cameraDistance
 				+ JunkTex.cameraDistance + 1]);
@@ -59,12 +59,12 @@ public class Class66 {
 				if (class12.anInt295 != 0)
 					class124 = (JunkTex.method515(
 							(new Class124[] { class124,
-									Class153.method2047(1, (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt4937),
+									Class153.method2047(1, (Static2.aSceneGraphNode_GameEntity_Sub1_2748.anInt4937),
 											class12.anInt295),
 									JunkTex.aClass124_4360, Class48.aClass124_797,
 									Class83.method1407(76, class12.anInt295), JunkTex.aClass124_4552 }),
 							(byte) -28));
-				if (Class51.anInt831 != 1) {
+				if (Static2.anInt831 != 1) {
 					if (!Class14_Sub4.aBoolean2784) {
 						Class124[] class124s = class12.aClass124Array291;
 						if (Static2.aBoolean814)
@@ -84,7 +84,7 @@ public class Class66 {
 										i_34_ = (short) 14;
 									if (i_33_ == 4)
 										i_34_ = (short) 50;
-									Class14_Sub11
+									Static2
 											.method853(32, class124s[i_33_], i,
 													(JunkTex.method515(new Class124[] {
 															(JunkTex.aClass124_4694), class124 },
@@ -98,7 +98,7 @@ public class Class66 {
 										&& (class124s[i_35_].method1717(40, Class118.aClass124_1973))) {
 									short i_36_ = 0;
 									short i_37_ = 0;
-									if ((Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt4937) < class12.anInt295)
+									if ((Static2.aSceneGraphNode_GameEntity_Sub1_2748.anInt4937) < class12.anInt295)
 										i_36_ = (short) 2000;
 									if (i_35_ == 0)
 										i_37_ = (short) 2;
@@ -112,7 +112,7 @@ public class Class66 {
 										i_37_ = (short) 50;
 									if (i_37_ != 0)
 										i_37_ += i_36_;
-									Class14_Sub11
+									Static2
 											.method853(32, class124s[i_35_], i,
 													(JunkTex.method515(new Class124[] {
 															(JunkTex.aClass124_4694), class124 },
@@ -120,17 +120,17 @@ public class Class66 {
 								}
 							}
 						}
-						Class14_Sub11.method853(32, JunkTex.aClass124_2802, i,
+						Static2.method853(32, JunkTex.aClass124_2802, i,
 								JunkTex.method515(
 										(new Class124[] { (JunkTex.aClass124_4694), class124 }), (byte) -96),
 								(short) 1002, i_31_, i_30_);
 					} else if ((JunkTex.anInt101 & 0x2) == 2)
-						Class14_Sub11.method853(32, JunkTex.aClass124_2082, i,
+						Static2.method853(32, JunkTex.aClass124_2082, i,
 								JunkTex.method515((new Class124[] { (Class17.aClass124_408),
 										(Static2.aClass124_3724), class124 }), (byte) -83),
 								(short) 34, i_31_, i_30_);
 				} else
-					Class14_Sub11.method853(32, Class40.aClass124_665, i,
+					Static2.method853(32, Class40.aClass124_665, i,
 							(JunkTex.method515((new Class124[] { JunkTex.aClass124_2809,
 									(Static2.aClass124_3724), class124 }), (byte) -123)),
 							(short) 30, i_31_, i_30_);

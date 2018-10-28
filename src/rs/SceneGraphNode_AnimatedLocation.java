@@ -3,8 +3,8 @@
  */
 package rs;
 
-import com.jagex.cache.anim.Animation;
 import com.jagex.cache.anim.AnimLoader;
+import com.jagex.cache.anim.Animation;
 import com.jagex.rt4.Class148_Sub1;
 import com.jagex.rt4.ShadowManager;
 
@@ -49,10 +49,10 @@ public class SceneGraphNode_AnimatedLocation extends SceneGraphNode {
 			method1835(-14);
 	}
 	public static void method1839(SceneGraphNode_GameEntity_Sub1 class133_sub1_sub1, byte i) {
-		Class14_Sub3 class14_sub3 = ((Class14_Sub3) Class88.aClass55_1398
+		Class14_Sub3 class14_sub3 = ((Class14_Sub3) StaticMusic.aClass55_1398
 				.get(class133_sub1_sub1.aClass124_4922.method1692(0)));
 		if (class14_sub3 == null)
-			Class12.method213(class133_sub1_sub1.anIntArray3476[0], class133_sub1_sub1.anIntArray3443[0], null,
+			StaticMusic.method213(class133_sub1_sub1.anIntArray3476[0], class133_sub1_sub1.anIntArray3443[0], null,
 					(byte) -35, Class14_Sub2_Sub3.gameLevel, class133_sub1_sub1, null, 0);
 		else
 			class14_sub3.method452(18631);
@@ -61,7 +61,7 @@ public class SceneGraphNode_AnimatedLocation extends SceneGraphNode {
 	}
 	public static void method1840(byte i) {
 		Class14_Sub29.aClass148_Sub1Array3265 = null;
-		OverlayType.aClass14_Sub2_Sub19Array2417 = null;
+		Static2.aClass14_Sub2_Sub19Array2417 = null;
 		JunkTex.aClass14_Sub2_Sub19Array4385 = null;
 		Static2.aClass14_Sub2_Sub19Array1191 = null;
 		Static2.aClass148Array1777 = null;
@@ -69,11 +69,11 @@ public class SceneGraphNode_AnimatedLocation extends SceneGraphNode {
 		JunkTex.aClass14_Sub2_Sub19Array4366 = null;
 		JunkTex.aClass14_Sub2_Sub19Array3958 = null;
 		SceneGraphNode_GameEntity_Sub1.aClass148_Sub1Array4938 = null;
-		Class35.aClass14_Sub2_Sub19Array596 = null;
+		Static2.aClass14_Sub2_Sub19Array596 = null;
 		JunkTex.aClass14_Sub2_Sub19_2384 = null;
 		SceneGraphNode_SpotAnimation.aClass14_Sub2_Sub19Array3609 = null;
 		Class32.aClass148_Sub1Array540 = null;
-		Class56_Sub1.aClass14_Sub2_Sub16_3320 = null;
+		Static2.aClass14_Sub2_Sub16_3320 = null;
 		int i_22_ = -41 / ((-14 - i) / 62);
 		Class131.aClass14_Sub2_Sub16_Sub1_2160 = null;
 		JunkTex.aClass14_Sub2_Sub19_4508 = null;
@@ -178,8 +178,6 @@ public class SceneGraphNode_AnimatedLocation extends SceneGraphNode {
 			ShadowManager.method2030(aClass148_Sub1_3580, anInt3593, anInt3574, anInt3592);
 		aClass148_Sub1_3580 = null;
 		anInt3586 = -1;
-		if (!bool)
-			render(-39, 15, -6, -54, 91, 28, -127, 121, -126L);
 		anInt3573 = -1;
 	}
 
@@ -269,8 +267,6 @@ public class SceneGraphNode_AnimatedLocation extends SceneGraphNode {
 	}
 
 	public void method1842(int i, int i_44_, byte i_45_) {
-		if (i_45_ != -112)
-			method1839(null, (byte) -124);
 		if (aClass46_3597 != null) {
 			int i_46_ = Class14_Sub2_Sub20.anInt4064 - anInt3575;
 			if (i_46_ > 100 && aClass46_3597.loopOffset > 0) {

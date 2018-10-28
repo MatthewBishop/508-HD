@@ -3,11 +3,9 @@
  */
 package rs;
 
-import com.jagex.io.js5.FileSystem;
 import com.jagex.io.js5.CacheFileWorker;
 
 public class Class7_Sub1 extends Class7 {
-	public static FileSystem aFileSystem_2652;
 	public static int anInt2653 = -1;
 	public static int anInt2655;
 	public static Class124 aClass124_2656 = Class124.method263("");
@@ -28,7 +26,6 @@ public class Class7_Sub1 extends Class7 {
 		Class124 class124 = new Class124();
 		class124.aByteArray2495 = new byte[i];
 		class124.anInt2507 = 0;
-		int i_1_ = 72 / ((i_0_ + 74) / 34);
 		Class124 class124_2_ = class124;
 		return class124_2_;
 	}
@@ -55,7 +52,7 @@ public class Class7_Sub1 extends Class7 {
 			int i_4_ = -Class47.anInt796 + i;
 			if (Class67.aClass94_1060.anInt1518 + i_3_ > JunkTex.aClass94_420.anInt1518 + Class108.anInt1824)
 				i_3_ = (-Class67.aClass94_1060.anInt1518 + (JunkTex.aClass94_420.anInt1518 + Class108.anInt1824));
-			int i_5_ = -Class35.anInt602 + i_3_;
+			int i_5_ = -Static2.anInt602 + i_3_;
 			int i_6_ = Class67.aClass94_1060.anInt1580;
 			if (Class67.aClass94_1060.anInt1549 < JunkTex.anInt3419
 					&& (i_6_ < i_5_ || i_5_ < -i_6_ || i_4_ > i_6_ || i_4_ < -i_6_))
@@ -88,7 +85,7 @@ public class Class7_Sub1 extends Class7 {
 						JunkTex.aClass14_Sub10_Sub1_891.method833((byte) 117, Class67.aClass94_1060.anInt1478);
 						JunkTex.aClass14_Sub10_Sub1_891.method838(-1676904088, Static2.aClass94_3070.anInt1478);
 					}
-				} else if ((Class103.anInt1730 != 1 && !Class127.method1754(128, (JunkTex.anInt4729) - 1))
+				} else if ((Class103.anInt1730 != 1 && !Static2.method1754(128, (JunkTex.anInt4729) - 1))
 						|| JunkTex.anInt4729 <= 2) {
 					if (JunkTex.anInt4729 > 0)
 						Static2.method1551(-23473);
@@ -101,7 +98,6 @@ public class Class7_Sub1 extends Class7 {
 
 	public static void method123(byte i) {
 		aClass14_Sub2_Sub5_2665 = null;
-		aFileSystem_2652 = null;
 		aCacheFileWorker_2657 = null;
 		aClass124_2656 = null;
 		aShortArray2663 = null;

@@ -3,20 +3,18 @@
  */
 package rs;
 
+import com.jagex.cache.wip.EnumType;
 import com.jagex.io.js5.FileSystem;
 import com.jagex.rt4.AbstractSprite;
 
 public class Class38 implements Interface5 {
 	public static int anInt2616 = 0;
-	public static int anInt2617;
 	public static int anInt2618;
 	public static int mouseOffFromCenterY = 0;
-	public static int anInt2624;
-
 	public Class124 method24(long l, int i, int[] is, boolean bool) {
 		if (i == 0) {
-			Class14_Sub2_Sub8 class14_sub2_sub8 = Static2.method1507(-8475, is[0]);
-			Class124 class124 = class14_sub2_sub8.method295(-68, (int) l);
+			EnumType class14_sub2_sub8 = EnumType.method1507(is[0]);
+			Class124 class124 = class14_sub2_sub8.getStringParamValue((int) l);
 			return class124;
 		}
 		if (i == 1 || i == 10) {
@@ -27,7 +25,7 @@ public class Class38 implements Interface5 {
 		if (!bool)
 			anInt2618 = 100;
 		if (i == 6 || i == 7) {
-			Class124 class124 = Static2.method1507(-8475, is[0]).method295(-76, (int) l);
+			Class124 class124 = EnumType.method1507(is[0]).getStringParamValue((int) l);
 			return class124;
 		}
 		Class124 class124 = null;
@@ -39,26 +37,22 @@ public class Class38 implements Interface5 {
 			AbstractSprite[] class14_sub2_sub19s = null;
 			return class14_sub2_sub19s;
 		}
-		if (bool)
-			method1116(-87, true);
 		AbstractSprite[] class14_sub2_sub19s = JunkTex.method535(!bool);
 		return class14_sub2_sub19s;
 	}
 
-	public static void method1116(int i, boolean bool) {
-		if ((Static2.anInt1085 == Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495 >> 7)
-				&& (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436 >> 39 == JunkTex.anInt4335))
+	public static void method1116(boolean bool) {
+		if ((Static2.anInt1085 == Static2.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495 >> 7)
+				&& (Static2.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436 >> 39 == JunkTex.anInt4335))
 			Static2.anInt1085 = 0;
 		int i_40_ = Static2.anInt2878;
-		if (i != 1)
-			anInt2624 = -52;
 		if (bool)
 			i_40_ = 1;
 		for (int i_41_ = 0; i_41_ < i_40_; i_41_++) {
 			long l;
 			SceneGraphNode_GameEntity_Sub1 class133_sub1_sub1;
 			if (bool) {
-				class133_sub1_sub1 = Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748;
+				class133_sub1_sub1 = Static2.aSceneGraphNode_GameEntity_Sub1_2748;
 				l = 8791798054912L;
 			} else {
 				l = (long) Static2.anIntArray351[i_41_] << 32;
@@ -77,9 +71,9 @@ public class Class38 implements Interface5 {
 							|| (Class14_Sub2_Sub20.anInt4064 >= class133_sub1_sub1.anInt4910)) {
 						if (class133_sub1_sub1.anInt3493 == 1 && (class133_sub1_sub1.anInt3495 & 0x7f) == 64
 								&& (class133_sub1_sub1.anInt3436 & 0x7f) == 64) {
-							if ((Class14_Sub2_Sub8.anIntArrayArray3846[i_42_][i_43_]) == Class42.anInt699)
+							if ((Static2.anIntArrayArray3846[i_42_][i_43_]) == Class42.anInt699)
 								continue;
-							Class14_Sub2_Sub8.anIntArrayArray3846[i_42_][i_43_] = Class42.anInt699;
+							Static2.anIntArrayArray3846[i_42_][i_43_] = Class42.anInt699;
 						}
 						class133_sub1_sub1.anInt3500 = JunkTex.method1017(class133_sub1_sub1.anInt3495,
 								Class14_Sub2_Sub3.gameLevel, (byte) 85, class133_sub1_sub1.anInt3436);
@@ -112,7 +106,7 @@ public class Class38 implements Interface5 {
 				JunkTex.aFloat2854 = 8.0F;
 		} else
 			JunkTex.aFloat2854 = 4.0F;
-		Class14_Sub18.anInt3050 = -1;
-		Class14_Sub18.anInt3050 = i_48_;
+		Static2.anInt3050 = -1;
+		Static2.anInt3050 = i_48_;
 	}
 }

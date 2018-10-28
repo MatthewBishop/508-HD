@@ -3,13 +3,10 @@
  */
 package rs;
 
-import com.jagex.io.js5.FileSystem;
-
 public class Class59 {
 	public static Class124 aClass124_953;
 	public static boolean aBoolean954 = false;
 	public static Class124 aClass124_956;
-	public static FileSystem aFileSystem_957;
 	public static Class124 aClass124_958;
 	static {
 		aClass124_953 = Class124.method263("k");
@@ -211,7 +208,6 @@ public class Class59 {
 	public static void method1261(byte i) {
 		if (i == 16) {
 			aClass124_958 = null;
-			aFileSystem_957 = null;
 			aClass124_953 = null;
 			aClass124_956 = null;
 		}
@@ -226,15 +222,15 @@ public class Class59 {
 				Class14_Sub2_Sub7.anIntArray3825[Class64.anInt1012++] = 2047;
 			else if (i == 1) {
 				int i_28_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 3);
-				Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.method1799(false, (byte) 127, i_28_);
+				Static2.aSceneGraphNode_GameEntity_Sub1_2748.method1799(false, (byte) 127, i_28_);
 				int i_29_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 1);
 				if (i_29_ == 1)
 					Class14_Sub2_Sub7.anIntArray3825[Class64.anInt1012++] = 2047;
 			} else if (i == 2) {
 				int i_30_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 3);
-				Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.method1799(true, (byte) 100, i_30_);
+				Static2.aSceneGraphNode_GameEntity_Sub1_2748.method1799(true, (byte) 100, i_30_);
 				int i_31_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 3);
-				Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.method1799(true, (byte) 123, i_31_);
+				Static2.aSceneGraphNode_GameEntity_Sub1_2748.method1799(true, (byte) 123, i_31_);
 				int i_32_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 1);
 				if (i_32_ == 1)
 					Class14_Sub2_Sub7.anIntArray3825[Class64.anInt1012++] = 2047;
@@ -246,14 +242,12 @@ public class Class59 {
 				if (i_35_ == 1)
 					Class14_Sub2_Sub7.anIntArray3825[Class64.anInt1012++] = 2047;
 				int i_36_ = JunkTex.aClass14_Sub10_Sub1_4734.readBits(0, 7);
-				Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.method1800((byte) -87, i_36_, i_34_ == 1, i_33_);
+				Static2.aSceneGraphNode_GameEntity_Sub1_2748.method1800((byte) -87, i_36_, i_34_ == 1, i_33_);
 			}
 		}
 	}
 
 	public static void method1263(byte i) {
-		if (i != -66)
-			method1261((byte) -34);
 		if (Class142.anInt2315 == 5)
 			Class142.anInt2315 = 6;
 	}

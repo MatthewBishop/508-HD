@@ -3,8 +3,6 @@
  */
 package rs;
 
-import com.jagex.io.js5.SFSS;
-
 public class Class7_Sub2_Sub1 extends Class7_Sub2 {
 	public static boolean aBoolean3699 = false;
 	public static boolean[] aBooleanArray3703 = new boolean[100];
@@ -33,9 +31,5 @@ public class Class7_Sub2_Sub1 extends Class7_Sub2 {
 
 	public static void method129(int i) {
 		aBooleanArray3703 = null;
-	}
-
-	public static void method130(byte i) {
-		JunkTex.aClass52_4240.clear();
 	}
 }

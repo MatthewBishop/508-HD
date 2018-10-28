@@ -27,9 +27,9 @@ public class Class17 {
 		Class141 class141 = JunkTex.aClass141_4239;
 		synchronized (class141) {
 			Class86.anInt1385++;
-			Class14_Sub9_Sub3.anInt4850 = JunkTex.anInt4436;
-			if (Class120.anInt2014 >= 0) {
-				while (Class120.anInt2014 != JunkTex.anInt4146) {
+			Static2.anInt4850 = JunkTex.anInt4436;
+			if (Static2.anInt2014 >= 0) {
+				while (Static2.anInt2014 != JunkTex.anInt4146) {
 					int i = (JunkTex.anIntArray4139[JunkTex.anInt4146]);
 					JunkTex.anInt4146 = JunkTex.anInt4146 + 1 & 0x7f;
 					if (i < 0)
@@ -40,7 +40,7 @@ public class Class17 {
 			} else {
 				for (int i = 0; i < 112; i++)
 					JunkTex.aBooleanArray4581[i] = false;
-				Class120.anInt2014 = JunkTex.anInt4146;
+				Static2.anInt2014 = JunkTex.anInt4146;
 			}
 			JunkTex.anInt4436 = Class7_Sub3.anInt2682;
 		}
@@ -91,7 +91,7 @@ public class Class17 {
 	}
 
 	public static Class14_Sub2_Sub20 method960(int i, int i_7_) {
-		Class14_Sub2_Sub20 class14_sub2_sub20 = ((Class14_Sub2_Sub20) Class14_Sub17.aClass20_3018.get(i_7_));
+		Class14_Sub2_Sub20 class14_sub2_sub20 = ((Class14_Sub2_Sub20) Static2.aClass20_3018.get(i_7_));
 		if (class14_sub2_sub20 != null) {
 			Class14_Sub2_Sub20 class14_sub2_sub20_8_ = class14_sub2_sub20;
 			return class14_sub2_sub20_8_;
@@ -102,7 +102,7 @@ public class Class17 {
 		Class14_Sub2_Sub20 class14_sub2_sub20_9_ = new Class14_Sub2_Sub20();
 		if (is != null)
 			class14_sub2_sub20_9_.method429(96, new Buffer(is));
-		Class14_Sub17.aClass20_3018.put(class14_sub2_sub20_9_, i_7_);
+		Static2.aClass20_3018.put(class14_sub2_sub20_9_, i_7_);
 		Class14_Sub2_Sub20 class14_sub2_sub20_10_ = class14_sub2_sub20_9_;
 		return class14_sub2_sub20_10_;
 	}

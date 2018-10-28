@@ -9,9 +9,8 @@ import com.jagex.applet.Class43;
 import com.jagex.applet.ErrorReporting;
 import com.jagex.cache.anim.AnimLoader;
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.FileSystem;
-import com.jagex.rt4.CardMemManager;
 import com.jagex.rt4.AbstractSprite;
+import com.jagex.rt4.CardMemManager;
 
 public abstract class SceneGraphNode_GameEntity extends SceneGraphNode {
 	public int anInt3431;
@@ -76,11 +75,6 @@ public abstract class SceneGraphNode_GameEntity extends SceneGraphNode {
 	public int anInt3504;
 	public static AbstractSprite aClass14_Sub2_Sub19_3505;
 
-	public static void method1793(FileSystem fileSystem, int i) {
-		if (i == 14555)
-			Class14_Sub17.aFileSystem_3034 = fileSystem;
-	}
-
 	public void method1794(boolean bool) {
 		if (!bool) {
 			anInt3477 = 0;
@@ -113,22 +107,22 @@ public abstract class SceneGraphNode_GameEntity extends SceneGraphNode {
 			try {
 				int i_4_ = class14_sub10.readUByte();
 				if (i_4_ == 0 || i_4_ == 1 || i_4_ == 2) {
-					String string = new String(class14_sub10.method797().method1681(86));
+					String string = new String(class14_sub10.getJagexString().method1681(86));
 					int i_5_ = 0;
-					String string_6_ = new String(class14_sub10.method797().method1681(-126));
+					String string_6_ = new String(class14_sub10.getJagexString().method1681(-126));
 					if (i_4_ == 1)
 						i_5_ = class14_sub10.getInt((byte) -107);
 					class14_sub7.anIntArray2825[i_3_] = i_4_;
 					class14_sub7.anIntArray2819[i_3_] = i_5_;
 					class14_sub7.aClass31Array2828[i_3_] = class43.method1140(123,
-							Class14_Sub9_Sub1.method711(string, 45), string_6_);
+							Static2.method711(string, 45), string_6_);
 				} else if (i_4_ == 3 || i_4_ == 4) {
-					String string = new String(class14_sub10.method797().method1681(-114));
-					String string_7_ = new String(class14_sub10.method797().method1681(i + 91));
+					String string = new String(class14_sub10.getJagexString().method1681(-114));
+					String string_7_ = new String(class14_sub10.getJagexString().method1681(i + 91));
 					int i_8_ = class14_sub10.readUByte();
 					String[] strings = new String[i_8_];
 					for (int i_9_ = 0; i_8_ > i_9_; i_9_++)
-						strings[i_9_] = new String(class14_sub10.method797().method1681(33));
+						strings[i_9_] = new String(class14_sub10.getJagexString().method1681(33));
 					byte[][] is = new byte[i_8_][];
 					if (i_4_ == 3) {
 						for (int i_10_ = 0; i_8_ > i_10_; i_10_++) {
@@ -140,9 +134,9 @@ public abstract class SceneGraphNode_GameEntity extends SceneGraphNode {
 					class14_sub7.anIntArray2825[i_3_] = i_4_;
 					Class[] var_classes = new Class[i_8_];
 					for (int i_12_ = 0; i_8_ > i_12_; i_12_++)
-						var_classes[i_12_] = (Class14_Sub9_Sub1.method711(strings[i_12_], Canvas_Sub2.method69(i, 58)));
+						var_classes[i_12_] = (Static2.method711(strings[i_12_], Canvas_Sub2.method69(i, 58)));
 					class14_sub7.aClass31Array2824[i_3_] = class43.method1149(string_7_, var_classes,
-							Class14_Sub9_Sub1.method711(string, 100), -109);
+							Static2.method711(string, 100), -109);
 					class14_sub7.aByteArrayArrayArray2823[i_3_] = is;
 				}
 			} catch (ClassNotFoundException classnotfoundexception) {
@@ -172,7 +166,7 @@ public abstract class SceneGraphNode_GameEntity extends SceneGraphNode {
 
 	public static void method1798(Class124 class124, byte i) {
 		if (Class152.anInt2439 >= 2) {
-			if (class124.method1717(40, Class90.aClass124_1425)) {
+			if (class124.method1717(40, Static2.aClass124_1425)) {
 				Class88.method1435((byte) 126);
 				for (int i_13_ = 0; i_13_ < 10; i_13_++)
 					System.gc();
@@ -189,7 +183,7 @@ public abstract class SceneGraphNode_GameEntity extends SceneGraphNode {
 			if (class124.method1717(40, Static2.aClass124_661))
 				Static2.method1508((byte) 90);
 			if (class124.method1717(40, Class44.aClass124_728))
-				Static2.method1743(i + 27245, 25);
+				Static2.method1743(25);
 			if (class124.method1717(i + 33, Class142.aClass124_2321))
 				SceneGraphNode_Projectile.aBoolean3663 = true;
 			if (class124.method1717(40, Class109.aClass124_1839))
@@ -212,9 +206,9 @@ public abstract class SceneGraphNode_GameEntity extends SceneGraphNode {
 						(new Class124[] { Static2.aClass124_474, Class83.method1407(108, (Class124.anInt2494)) }),
 						(byte) -53)), false, null, 0);
 			}
-			if (class124.method1717(40, Class120.aClass124_2012))
+			if (class124.method1717(40, Static2.aClass124_2012))
 				JunkTex.aBoolean3392 = true;
-			if (class124.method1704(JunkTex.aClass124_4676, (byte) 58)) {
+			if (class124.method1704(JunkTex.aClass124_4676)) {
 				if (ErrorReporting.aFrame3962 != null)
 					Class14_Sub2_Sub20.method428(124);
 				else
@@ -299,7 +293,7 @@ public abstract class SceneGraphNode_GameEntity extends SceneGraphNode {
 		if (i >= -68)
 			anInt3484 = 111;
 		anInt3437 = 0;
-		if (this == Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748)
+		if (this == Static2.aSceneGraphNode_GameEntity_Sub1_2748)
 			Class14_Sub13.method858(-1);
 	}
 

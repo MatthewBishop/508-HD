@@ -56,7 +56,7 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 		if (Class67.aClass97_1055 != null) {
 			JunkTex.anInt4602 = 0;
 			JunkTex.anInt4724 = mouseevent.getX();
-			Class14_Sub9_Sub3.anInt4848 = mouseevent.getY();
+			Static2.anInt4848 = mouseevent.getY();
 		}
 	}
 
@@ -64,7 +64,7 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 		if (Class67.aClass97_1055 != null) {
 			JunkTex.anInt4602 = 0;
 			JunkTex.anInt4724 = mouseevent.getX();
-			Class14_Sub9_Sub3.anInt4848 = mouseevent.getY();
+			Static2.anInt4848 = mouseevent.getY();
 		}
 	}
 
@@ -86,7 +86,7 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 		if (Class67.aClass97_1055 != null) {
 			JunkTex.anInt4602 = 0;
 			JunkTex.anInt4724 = -1;
-			Class14_Sub9_Sub3.anInt4848 = -1;
+			Static2.anInt4848 = -1;
 		}
 	}
 
@@ -144,10 +144,10 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 				Class118.anInt1976 = mouseevent.getY();
 				Applet_Sub1.aLong6 = TimeUtil.getTime();
 				if (mouseevent.isMetaDown()) {
-					Class127.anInt2105 = 2;
+					Static2.anInt2105 = 2;
 					Class14_Sub4.anInt2790 = 2;
 				} else {
-					Class127.anInt2105 = 1;
+					Static2.anInt2105 = 1;
 					Class14_Sub4.anInt2790 = 1;
 				}
 				int i = mouseevent.getModifiers();
@@ -163,7 +163,7 @@ public class Class97 implements MouseListener, MouseMotionListener, FocusListene
 		if (Class67.aClass97_1055 != null) {
 			JunkTex.anInt4602 = 0;
 			JunkTex.anInt4724 = mouseevent.getX();
-			Class14_Sub9_Sub3.anInt4848 = mouseevent.getY();
+			Static2.anInt4848 = mouseevent.getY();
 		}
 	}
 }

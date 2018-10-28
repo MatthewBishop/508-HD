@@ -9,8 +9,8 @@ import javax.media.opengl.GL;
 
 import org.lwjgl.opengl.GL11;
 
-import com.jagex.rt4.CardMemManager;
 import com.jagex.rt4.AbstractSprite_Sub2;
+import com.jagex.rt4.CardMemManager;
 import com.jagex.rt4.Class25;
 import com.jagex.rt4.RT4GL;
 

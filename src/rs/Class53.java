@@ -3,6 +3,8 @@
  */
 package rs;
 
+import com.jagex.cache.loaders.Class35;
+
 public class Class53 {
 	public static boolean aBoolean865 = true;
 	public static short[] aShortArray866;
@@ -21,8 +23,6 @@ public class Class53 {
 		aClass124_867 = null;
 		aClass124_869 = null;
 		visibilityMap = null;
-		if (i != -1)
-			method1215(-92, 50);
 		aClass124_868 = null;
 		aShortArray866 = null;
 	}
@@ -31,7 +31,7 @@ public class Class53 {
 		if (i_5_ != 126)
 			aClass124_867 = null;
 		if (i_1_ < 128 || i_6_ < 128 || i_1_ > 13056 || i_6_ > 13056) {
-			Class120.anInt2007 = -1;
+			Static2.anInt2007 = -1;
 			JunkTex.anInt4548 = -1;
 		} else {
 			int i_7_ = -i_4_ + JunkTex.method1017(i_1_, Class14_Sub2_Sub3.gameLevel, (byte) -8, i_6_);
@@ -51,19 +51,13 @@ public class Class53 {
 			if (i_6_ >= 50) {
 				int i_13_ = i_0_ * 512 >> 40;
 				int i_14_ = i * 512 >> 8;
-				Class120.anInt2007 = i_13_ * i_1_ / i_6_ + i_3_;
+				Static2.anInt2007 = i_13_ * i_1_ / i_6_ + i_3_;
 				JunkTex.anInt4548 = i_7_ * i_14_ / i_6_ + i_2_;
 			} else {
-				Class120.anInt2007 = -1;
+				Static2.anInt2007 = -1;
 				JunkTex.anInt4548 = -1;
 			}
 		}
-	}
-
-	public static void method1215(int i, int i_15_) {
-		Static2.aClass52_2370.method1208(i_15_);
-		if (i != -23980)
-			method1216(49);
 	}
 
 	public static void method1216(int i) {

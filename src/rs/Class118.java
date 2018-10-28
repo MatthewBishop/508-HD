@@ -52,11 +52,11 @@ public class Class118 {
 				class133_sub1_sub1.anInt3453 = -1;
 		}
 		if ((i_0_ & 0x4) != 0) {
-			class133_sub1_sub1.aClass124_3462 = JunkTex.aClass14_Sub10_Sub1_4734.method797();
+			class133_sub1_sub1.aClass124_3462 = JunkTex.aClass14_Sub10_Sub1_4734.getJagexString();
 			if (class133_sub1_sub1.aClass124_3462.method1710(0, 0) == 126) {
 				class133_sub1_sub1.aClass124_3462 = class133_sub1_sub1.aClass124_3462.method1696(1, 15);
 				Class15.method943(class133_sub1_sub1.aClass124_3462, false, class133_sub1_sub1.method1808(true), 2);
-			} else if (class133_sub1_sub1 == Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748)
+			} else if (class133_sub1_sub1 == Static2.aSceneGraphNode_GameEntity_Sub1_2748)
 				Class15.method943(class133_sub1_sub1.aClass124_3462, false, class133_sub1_sub1.method1808(true), 2);
 			class133_sub1_sub1.anInt3439 = 0;
 			class133_sub1_sub1.anInt3466 = 0;
@@ -114,7 +114,7 @@ public class Class118 {
 								Static2.aClass14_Sub10_3068));
 					} else
 						class124 = (Class14_Sub2_Sub16.method368(
-								Class75.method1337(Static2.aClass14_Sub10_3068, 32767).method1677(i ^ 0x1)));
+								Static2.method1337(Static2.aClass14_Sub10_3068, 32767).method1677(i ^ 0x1)));
 					class133_sub1_sub1.aClass124_3462 = class124.method1684((byte) 9);
 					class133_sub1_sub1.anInt3473 = 150;
 					class133_sub1_sub1.anInt3439 = i_5_ & 0xff;
@@ -224,7 +224,7 @@ public class Class118 {
 		while (class14_sub10.position < i_20_) {
 			int i_28_ = class14_sub10.readUShort();
 			if (i_28_ == 3)
-				class14_sub2_sub12_18_.aClass124Array3899[i_27_] = class14_sub10.method797();
+				class14_sub2_sub12_18_.aClass124Array3899[i_27_] = class14_sub10.getJagexString();
 			else if (i_28_ >= 100 || i_28_ == 21 || i_28_ == 38 || i_28_ == 39)
 				class14_sub2_sub12_18_.anIntArray3900[i_27_] = class14_sub10.readUByte();
 			else
@@ -303,7 +303,7 @@ public class Class118 {
 		JunkTex.anIntArray3955 = new int[i_38_];
 		Static2.anIntArray2590 = new int[i_38_];
 		Static2.aByteArrayArray139 = new byte[i_38_][];
-		OverlayType.anIntArray2422 = new int[i_38_];
+		Static2.anIntArray2422 = new int[i_38_];
 		JunkTex.aByteArrayArray4556 = new byte[i_38_][];
 		if (i != -13873)
 			method1606(4, 80);
@@ -315,10 +315,10 @@ public class Class118 {
 				Class62.anIntArray992[i_38_] = (Class14_Sub13.aCacheFileWorker_2958
 						.method146(
 								(JunkTex.method515(
-										new Class124[] { Class35.aClass124_601, Class83.method1407(i + 13887, i_39_),
+										new Class124[] { Static2.aClass124_601, Class83.method1407(i + 13887, i_39_),
 												Class111.aClass124_1866, Class83.method1407(53, i_40_) },
 										(byte) -127))));
-				OverlayType.anIntArray2422[i_38_] = (Class14_Sub13.aCacheFileWorker_2958
+				Static2.anIntArray2422[i_38_] = (Class14_Sub13.aCacheFileWorker_2958
 						.method146(
 								(JunkTex
 										.method515(
@@ -343,7 +343,7 @@ public class Class118 {
 								Class83.method1407(13, i_40_) }, (byte) -128))));
 				if (Static2.anIntArray2590[i_38_] == -1) {
 					Class62.anIntArray992[i_38_] = -1;
-					OverlayType.anIntArray2422[i_38_] = -1;
+					Static2.anIntArray2422[i_38_] = -1;
 					JunkTex.anIntArray3955[i_38_] = -1;
 					JunkTex.anIntArray3119[i_38_] = -1;
 				}

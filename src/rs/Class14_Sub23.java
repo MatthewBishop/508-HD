@@ -14,8 +14,6 @@ public class Class14_Sub23 extends Linkable {
 	public byte aByte3131;
 	public Class124 aClass124_3132;
 	public static int anInt3134;
-	public static int anInt3135 = 255;
-
 	static {
 		anInt3134 = 0;
 	}

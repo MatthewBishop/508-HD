@@ -3,8 +3,9 @@
  */
 package rs;
 
-import com.jagex.cache.anim.Animation;
 import com.jagex.cache.anim.AnimLoader;
+import com.jagex.cache.anim.Animation;
+import com.jagex.cache.loaders.SpotAnimType;
 import com.jagex.rt4.RT4GL;
 
 public class SceneGraphNode_GameEntity_Sub2 extends SceneGraphNode_GameEntity {
@@ -49,7 +50,7 @@ public class SceneGraphNode_GameEntity_Sub2 extends SceneGraphNode_GameEntity {
 			Animation animation = (anInt3445 == -1 || anInt3467 != 0 ? null : AnimLoader.method1129(anInt3445));
 			Animation class46_7_ = (anInt3452 == -1 || anInt3452 == anInt3433 && animation != null ? null
 					: AnimLoader.method1129(anInt3452));
-			SceneGraphNode_AbstractModelRenderer class133_sub7 = aClass12_4949.method209(anInt3483, anInt3501, animation, class46_7_, -55);
+			SceneGraphNode_AbstractModelRenderer class133_sub7 = aClass12_4949.method209(anInt3483, anInt3501, animation, class46_7_);
 			if (class133_sub7 != null) {
 				anInt3449 = class133_sub7.getMinYorMaxYCheckTHIS();
 				Class12 class12 = aClass12_4949;
@@ -124,11 +125,11 @@ public class SceneGraphNode_GameEntity_Sub2 extends SceneGraphNode_GameEntity {
 				}
 				SceneGraphNode_AbstractModelRenderer class133_sub7_41_ = null;
 				if (anInt3487 != -1 && anInt3470 != -1) {
-					Class60 class60 = Class127.method1749(anInt3487, (byte) 73);
-					class133_sub7_41_ = class60.method1267(0, anInt3470);
+					SpotAnimType spotAnimType = SpotAnimType.list(anInt3487);
+					class133_sub7_41_ = spotAnimType.constructModel(anInt3470);
 					if (class133_sub7_41_ != null) {
 						class133_sub7_41_.method1855(0, -anInt3475, 0);
-						if (class60.aBoolean978) {
+						if (spotAnimType.aBoolean978) {
 							if (i_10_ != 0)
 								class133_sub7_41_.method1861(i_10_);
 							if (i_11_ != 0)

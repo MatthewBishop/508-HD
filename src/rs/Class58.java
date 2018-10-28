@@ -6,11 +6,9 @@ package rs;
 import java.security.MessageDigest;
 
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.SeekableFile;
 import com.jagex.io.js5.FileSystem;
-import com.jagex.map.SceneCluster;
+import com.jagex.io.js5.SeekableFile;
 import com.jagex.rt4.AbstractSprite;
-import com.jagex.sound.Track;
 
 public class Class58 {
 	public static int anInt937;
@@ -28,74 +26,6 @@ public class Class58 {
 		aClass124_943 = aClass124_939;
 		anInt949 = 0;
 		aBooleanArray950 = new boolean[200];
-	}
-
-	public static void method1255(int i, Class14_Sub3 class14_sub3, int i_0_, int i_1_, int i_2_, int i_3_) {
-		if (class14_sub3.anInt2753 != -1 || class14_sub3.anIntArray2746 != null) {
-			int i_4_ = 0;
-			if (i_2_ != -31083)
-				method1255(-118, null, 96, 63, 22, -74);
-			if (i_3_ > class14_sub3.anInt2761)
-				i_4_ += -class14_sub3.anInt2761 + i_3_;
-			else if (i_3_ < class14_sub3.anInt2774)
-				i_4_ += -i_3_ + class14_sub3.anInt2774;
-			if (i_1_ > class14_sub3.anInt2751)
-				i_4_ += -class14_sub3.anInt2751 + i_1_;
-			else if (class14_sub3.anInt2767 > i_1_)
-				i_4_ += class14_sub3.anInt2767 - i_1_;
-			if (class14_sub3.anInt2765 == 0 || class14_sub3.anInt2765 < i_4_ - 64 || Static2.anInt1691 == 0
-					|| class14_sub3.anInt2763 != i_0_) {
-				if (class14_sub3.aClass14_Sub9_Sub4_2775 != null) {
-					Class33.aClass14_Sub9_Sub2_585.method730(class14_sub3.aClass14_Sub9_Sub4_2775);
-					class14_sub3.aClass14_Sub9_Sub4_2775 = null;
-				}
-				if (class14_sub3.aClass14_Sub9_Sub4_2760 != null) {
-					Class33.aClass14_Sub9_Sub2_585.method730(class14_sub3.aClass14_Sub9_Sub4_2760);
-					class14_sub3.aClass14_Sub9_Sub4_2760 = null;
-				}
-			} else {
-				i_4_ -= 64;
-				if (i_4_ < 0)
-					i_4_ = 0;
-				int i_5_ = (Static2.anInt1691 * (-i_4_ + class14_sub3.anInt2765) / class14_sub3.anInt2765);
-				if (class14_sub3.aClass14_Sub9_Sub4_2775 == null) {
-					if (class14_sub3.anInt2753 >= 0) {
-						Track track = Track.method1451((Static2.aCacheFileWorker_2901), class14_sub3.anInt2753,
-								0);
-						if (track != null) {
-							Class14_Sub12_Sub1 class14_sub12_sub1 = track.method1449()
-									.method857(SceneCluster.aClass18_1362);
-							Class14_Sub9_Sub4 class14_sub9_sub4 = (Class14_Sub9_Sub4.method775(class14_sub12_sub1, 100,
-									i_5_));
-							class14_sub9_sub4.method765(-1);
-							Class33.aClass14_Sub9_Sub2_585.method735(class14_sub9_sub4);
-							class14_sub3.aClass14_Sub9_Sub4_2775 = class14_sub9_sub4;
-						}
-					}
-				} else
-					class14_sub3.aClass14_Sub9_Sub4_2775.method768(i_5_);
-				if (class14_sub3.aClass14_Sub9_Sub4_2760 != null) {
-					class14_sub3.aClass14_Sub9_Sub4_2760.method768(i_5_);
-					if (!class14_sub3.aClass14_Sub9_Sub4_2760.previousNotNull((byte) -109))
-						class14_sub3.aClass14_Sub9_Sub4_2760 = null;
-				} else if (class14_sub3.anIntArray2746 != null && (class14_sub3.anInt2773 -= i) <= 0) {
-					int i_6_ = (int) (class14_sub3.anIntArray2746.length * Math.random());
-					Track track = Track.method1451(Static2.aCacheFileWorker_2901,
-							class14_sub3.anIntArray2746[i_6_], 0);
-					if (track != null) {
-						Class14_Sub12_Sub1 class14_sub12_sub1 = track.method1449()
-								.method857(SceneCluster.aClass18_1362);
-						Class14_Sub9_Sub4 class14_sub9_sub4 = Class14_Sub9_Sub4.method775(class14_sub12_sub1, 100,
-								i_5_);
-						class14_sub9_sub4.method765(0);
-						Class33.aClass14_Sub9_Sub2_585.method735(class14_sub9_sub4);
-						class14_sub3.aClass14_Sub9_Sub4_2760 = class14_sub9_sub4;
-						class14_sub3.anInt2773 = (int) ((class14_sub3.anInt2769 - class14_sub3.anInt2772)
-								* Math.random()) + class14_sub3.anInt2772;
-					}
-				}
-			}
-		}
 	}
 
 	public static Class124 method1256(int i, boolean bool, long l, int i_7_) {

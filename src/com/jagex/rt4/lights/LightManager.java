@@ -10,9 +10,9 @@ import com.jagex.rt4.RT4;
 import com.jagex.rt4.RT4GL;
 
 import rs.Class14_Sub29;
-import rs.Class14_Sub9_Sub3;
 import rs.Class7_Sub1;
 import rs.JunkTex;
+import rs.Static2;
 
 public class LightManager {
 	public static Light[] lights = new Light[255];
@@ -219,9 +219,9 @@ public class LightManager {
 					int tile_y_End = (light.z >> 7) + light.radius;
 					if (tile_y_End >= JunkTex.anInt4526)
 						tile_y_End = JunkTex.anInt4526 - 1;
-					if (tile_y_Begin < Class14_Sub9_Sub3.anInt4849) {
-						shape_ptr += Class14_Sub9_Sub3.anInt4849 - tile_y_Begin;
-						tile_y_Begin = Class14_Sub9_Sub3.anInt4849;
+					if (tile_y_Begin < Static2.anInt4849) {
+						shape_ptr += Static2.anInt4849 - tile_y_Begin;
+						tile_y_Begin = Static2.anInt4849;
 					}
 					while_77_: for (int tile_y_C = tile_y_Begin; tile_y_C <= tile_y_End; tile_y_C++) {
 						int widthPtr = light.shape[shape_ptr++];

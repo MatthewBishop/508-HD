@@ -12,8 +12,6 @@ public class Class153 {
 	public static Calendar aCalendar2449 = Calendar.getInstance();
 	public static int anInt2450;
 	public static int[] anIntArray2453 = { 2, 2, 4, 2, 1, 8, 4, 1, 4, 4, 2 };
-	public static int[] anIntArray2454 = new int[50];
-
 	public static int method2045(int i, int i_0_) {
 		if (i_0_ != -104757881) {
 			int i_1_ = 51;
@@ -32,7 +30,7 @@ public class Class153 {
 			SceneGraphNode_SpotAnimation class133_sub5 = class14_sub2_sub7.aSceneGraphNode_SpotAnimation_3822;
 			if (class133_sub5.anInt3620 == Class14_Sub2_Sub3.gameLevel && !class133_sub5.finishedAnimating) {
 				if (Class14_Sub2_Sub20.anInt4064 >= class133_sub5.anInt3616) {
-					class133_sub5.method1845((byte) 94, Class51.anInt839);
+					class133_sub5.method1845((byte) 94, Static2.anInt839);
 					if (class133_sub5.finishedAnimating)
 						class14_sub2_sub7.unlink();
 					else
@@ -89,15 +87,15 @@ public class Class153 {
 	public static void method2048(int i) {
 		anIntArray2453 = null;
 		if (i == 2) {
-			anIntArray2454 = null;
+
 			aCalendar2449 = null;
 		}
 	}
 
 	public static void method2049(int i, int i_6_, int i_7_) {
-		if (i_7_ != (Class14_Sub23.anInt3135 ^ 0xffffffff) && i != -1) {
-			Class33.method1087(1936, 0, false, i, JunkTex.aCacheFileWorker_4603, Class14_Sub23.anInt3135);
-			Class14_Sub7.aBoolean2827 = true;
+		if (i_7_ != (StaticMusic.anInt3135 ^ 0xffffffff) && i != -1) {
+			StaticMusic.method1087(0, false, i, JunkTex.aCacheFileWorker_4603, StaticMusic.anInt3135);
+			StaticMusic.aBoolean2827 = true;
 		}
 	}
 

@@ -90,7 +90,7 @@ public class Class14_Sub21 extends Linkable {
 			}
 		}
 		if (class94.anInt1498 == 1337)
-			Class127.aClass94_2114 = class94;
+			Static2.aClass94_2114 = class94;
 		if (bool && class94.anObjectArray1604 != null && (class94.anInt1518 != i_3_ || i_4_ != class94.anInt1545)) {
 			Class14_Sub21 class14_sub21 = new Class14_Sub21();
 			class14_sub21.aClass94_3116 = class94;
@@ -110,13 +110,13 @@ public class Class14_Sub21 extends Linkable {
 		BrowserControlUtil.hide();
 		Static2.method1280(ErrorReporting.aCanvas819, (byte) 123);
 		Static2.method1356(false, ErrorReporting.aCanvas819);
-		if (Class44.aClass129_726 != null)
-			Class44.aClass129_726.removeMouseWheelListener(ErrorReporting.aCanvas819);
+		if (Class44.aAbstractMouseWheelHandler_726 != null)
+			Class44.aAbstractMouseWheelHandler_726.removeListener(ErrorReporting.aCanvas819);
 		JunkTex.method1329(0);
 		JunkTex.method572(ErrorReporting.aCanvas819, false);
-		Class56_Sub1.method1242(ErrorReporting.aCanvas819, 0);
-		if (Class44.aClass129_726 != null)
-			Class44.aClass129_726.addMouseWheelListener(ErrorReporting.aCanvas819);
+		Static2.method1242(ErrorReporting.aCanvas819);
+		if (Class44.aAbstractMouseWheelHandler_726 != null)
+			Class44.aAbstractMouseWheelHandler_726.addListener(ErrorReporting.aCanvas819);
 		Static2.method1276(-105);
 		RT4GL.createglcanvas(ErrorReporting.aCanvas819, Class135.anInt2189 * 2);
 		Class14_Sub2_Sub12.method319(-31);

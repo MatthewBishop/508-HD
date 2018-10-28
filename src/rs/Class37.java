@@ -24,7 +24,7 @@ public class Class37 {
 	public int anInt653;
 
 	public static void method1108(byte i) {
-		Class75.aClass148Array1184 = null;
+		Static2.aClass148Array1184 = null;
 		JunkTex.aClass148Array4473 = null;
 		JunkTex.aClass148Array4580 = null;
 		JunkTex.aClass14_Sub2_Sub19Array4595 = null;
@@ -35,7 +35,7 @@ public class Class37 {
 	public static void method1109(int i) {
 		JunkTex.aLong95 = 0L;
 		Class54.aBoolean879 = true;
-		Class14_Sub2_Sub11.aClass100_3878.capturedCoordinateCount = 0;
+		Static2.aClass100_3878.capturedCoordinateCount = 0;
 		Applet_Sub1.aBoolean1342 = true;
 		JunkTex.anInt4166 = 0;
 		JunkTex.anInt3928 = 0;
@@ -43,19 +43,19 @@ public class Class37 {
 		JunkTex.anInt4427 = 0;
 		JunkTex.anInt4350 = 0;
 		JunkTex.anInt3923 = 0;
-		Class14_Sub2_Sub8.anInt3843 = 0;
+		Static2.anInt3843 = 0;
 		JunkTex.anInt3954 = 0;
 		Class32.anInt571 = 0;
 		if (i == 12827) {
 			Static2.anInt1791 = 0;
 			Static2.anInt2884 = 0;
-			Class56_Sub1.anInt3322 = 0;
+			Static2.anInt3322 = 0;
 			Class124.anInt2483 = 0;
 			Static2.anInt370 = 0;
 			Static2.anInt359 = 0;
 			Class66.anInt1045 = 0;
 			Canvas_Sub2.anInt55 = 0;
-			Class14_Sub3.anInt2771 = 0;
+			Static2.anInt2771 = 0;
 			Class14_Sub2_Sub2.anInt3754 = 0;
 			Class54.anInt880 = 0;
 			JunkTex.anInt3921 = 0;
@@ -88,9 +88,9 @@ public class Class37 {
 			JunkTex.anInt4335 = 0;
 			Class53.anInt874 = 0;
 			Class14_Sub4.aBoolean2784 = false;
-			Class51.anInt831 = 0;
+			Static2.anInt831 = 0;
 			Class7_Sub1.anInt2655 = (int) (Math.random() * 100.0) - 50;
-			JunkTex.anInt96 = 0;
+			StaticMusic.anInt96 = 0;
 			Class32.anInt551 = (int) (Math.random() * 30.0) - 20;
 			JunkTex.anInt4408 = (int) (Math.random() * 20.0) - 10 & 0x7ff;
 			JunkTex.anInt4520 = (int) (Math.random() * 110.0) - 55;
@@ -106,7 +106,7 @@ public class Class37 {
 			}
 			for (int i_3_ = 0; i_3_ < 32768; i_3_++)
 				Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[i_3_] = null;
-			Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748 = JunkTex.aSceneGraphNode_GameEntity_Sub1Array4474[2047] = new SceneGraphNode_GameEntity_Sub1();
+			Static2.aSceneGraphNode_GameEntity_Sub1_2748 = JunkTex.aSceneGraphNode_GameEntity_Sub1Array4474[2047] = new SceneGraphNode_GameEntity_Sub1();
 			Class4.aClass2_127.clear();
 			Class79.aClass2_1268.clear();
 			for (int i_4_ = 0; i_4_ < 4; i_4_++) {
@@ -144,7 +144,7 @@ public class Class37 {
 			JunkTex.aClass94_3388 = null;
 			Class14_Sub2_Sub20.aClass102_4055.method1522(null, -1, false, new int[5], -113);
 			for (int i_8_ = 0; i_8_ < 8; i_8_++) {
-				Class56.aClass124Array919[i_8_] = null;
+				Static2.aClass124Array919[i_8_] = null;
 				JunkTex.aBooleanArray4271[i_8_] = false;
 			}
 			Class33.method1088((byte) 127);
@@ -158,7 +158,7 @@ public class Class37 {
 				JunkTex.aClass109Array4195[i_10_] = new Class109();
 			for (int i_11_ = 0; i_11_ < 25; i_11_++) {
 				JunkTex.anIntArray4444[i_11_] = 0;
-				Class56.anIntArray913[i_11_] = 0;
+				Static2.anIntArray913[i_11_] = 0;
 				Class14_Sub2_Sub12.anIntArray3916[i_11_] = 0;
 			}
 			Class14_Sub13.method858(-1);
@@ -175,22 +175,6 @@ public class Class37 {
 		if (i != 0)
 			anInt643 = 69;
 		aClass52_635 = null;
-	}
-
-	public static void method1112(SceneGraphNode_GameEntity_Sub2 class133_sub1_sub2, byte i) {
-		for (Class14_Sub3 class14_sub3 = (Class14_Sub3) JunkTex.aClass2_683
-				.getFront(); class14_sub3 != null; class14_sub3 = (Class14_Sub3) JunkTex.aClass2_683.getNext()) {
-			if (class14_sub3.aSceneGraphNode_GameEntity_Sub2_2762 == class133_sub1_sub2) {
-				if (class14_sub3.aClass14_Sub9_Sub4_2775 != null) {
-					Class33.aClass14_Sub9_Sub2_585.method730(class14_sub3.aClass14_Sub9_Sub4_2775);
-					class14_sub3.aClass14_Sub9_Sub4_2775 = null;
-				}
-				class14_sub3.unlink();
-				return;
-			}
-		}
-		if (i != -26)
-			method1110(116);
 	}
 
 	public static int method1113(int i, int i_14_, byte i_15_, int i_16_) {

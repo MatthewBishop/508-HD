@@ -5,6 +5,7 @@ package rs;
 
 import java.math.BigInteger;
 
+import com.jagex.cache.loaders.VarBit;
 import com.jagex.rt4.Class148;
 
 public class Class110 {
@@ -28,15 +29,15 @@ public class Class110 {
 	public static void method1574(int i, int i_0_, int i_1_) {
 		if (i <= 46)
 			method1575(false);
-		Class51 class51 = Class47.method1187(i_1_, true);
-		int i_2_ = class51.anInt842;
-		int i_3_ = class51.anInt832;
-		int i_4_ = class51.anInt834;
+		VarBit varBit = VarBit.list(i_1_);
+		int i_2_ = varBit.anInt842;
+		int i_3_ = varBit.anInt832;
+		int i_4_ = varBit.anInt834;
 		int i_5_ = Class1.anIntArray69[-i_3_ + i_4_];
 		if (i_0_ < 0 || i_0_ > i_5_)
 			i_0_ = 0;
 		i_5_ <<= i_3_;
-		Class14_Sub9_Sub1.method700(i_2_, -127,
+		Static2.method700(i_2_, -127,
 				(i_0_ << i_3_ & i_5_ | ((i_5_ ^ 0xffffffff) & (JunkTex.anIntArray4275[i_2_]))));
 	}
 

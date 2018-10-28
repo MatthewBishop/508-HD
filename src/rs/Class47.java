@@ -3,9 +3,8 @@
  */
 package rs;
 
-import com.jagex.io.Buffer;
-import com.jagex.io.js5.FileSystem;
 import com.jagex.io.js5.CacheFileWorker;
+import com.jagex.io.js5.FileSystem;
 
 public class Class47 {
 	public static Class94 aClass94_784;
@@ -26,17 +25,6 @@ public class Class47 {
 		if (class14_sub29 == null || class14_sub29.aClass4_3237 == null)
 			return null;
 		return class14_sub29.aClass4_3237;
-	}
-
-	public static void method1181(int i, int i_2_, int i_3_, byte i_4_) {
-		if (Class14_Sub29.anInt3266 != 0 && i != 0 && JunkTex.anInt96 < 50 && i_2_ != -1) {
-			Class153.anIntArray2454[JunkTex.anInt96] = i_2_;
-			Static2.anIntArray4052[JunkTex.anInt96] = i;
-			Static2.anIntArray3949[JunkTex.anInt96] = i_3_;
-			Class137.aClass91Array2197[JunkTex.anInt96] = null;
-			Class116.anIntArray1928[JunkTex.anInt96] = 0;
-			JunkTex.anInt96++;
-		}
 	}
 
 	public static int method1182(int i, int i_5_) {
@@ -262,7 +250,7 @@ public class Class47 {
 	public static void method1184() {
 		Class40.aClass14_Sub29ArrayArrayArray674 = null;
 		JunkTex.anIntArrayArray2799 = null;
-		OverlayType.underWaterTileHeightMap = null;
+		Static2.underWaterTileHeightMap = null;
 		Class131.aClass14_Sub27ArrayArray2162 = null;
 	}
 
@@ -292,32 +280,6 @@ public class Class47 {
 		aCacheFileWorker_790 = null;
 		if (i == -192)
 			aClass94_784 = null;
-	}
-
-	public static Class51 method1187(int i, boolean bool) {
-		if (!bool) {
-			Class51 class51 = null;
-			return class51;
-		}
-		Class51 class51 = (Class51) JunkTex.aClass52_4240.get(i);
-		if (class51 != null) {
-			Class51 class51_39_ = class51;
-			return class51_39_;
-		}
-		byte[] is = Class7_Sub1.aFileSystem_2652.method163(Class14_Sub15.method873(1023, i), Canvas_Sub2.method68(i, -1));
-		Class51 class51_40_ = new Class51();
-		if (is != null)
-			class51_40_.method1198(new Buffer(is), 36);
-		JunkTex.aClass52_4240.put(class51_40_, i);
-		Class51 class51_41_ = class51_40_;
-		return class51_41_;
-	}
-
-	public static void method1188(int i, int i_42_) {
-		if (i_42_ == Class14_Sub2_Sub11.anInt3889)
-			SceneGraphNode_SpotAnimation.aClass14_Sub9_Sub1_3625.method710(i_42_ - 28225, i);
-		else
-			JunkTex.anInt1132 = i;
 	}
 
 	public static boolean method1190(int i, int i_100_, int i_101_, int i_102_, int i_103_, boolean bool, int i_104_,

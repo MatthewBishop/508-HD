@@ -3,8 +3,9 @@
  */
 package rs;
 
-import com.jagex.cache.anim.Animation;
 import com.jagex.cache.anim.AnimLoader;
+import com.jagex.cache.anim.Animation;
+import com.jagex.cache.loaders.SpotAnimType;
 import com.jagex.rt4.AbstractSprite;
 
 public class SceneGraphNode_SpotAnimation extends SceneGraphNode {
@@ -12,7 +13,6 @@ public class SceneGraphNode_SpotAnimation extends SceneGraphNode {
 	public static Class124 aClass124_3607;
 	public static Class124 aClass124_3610;
 	public static AbstractSprite[] aClass14_Sub2_Sub19Array3609;
-	public static Class14_Sub9_Sub1 aClass14_Sub9_Sub1_3625;
 	public static int anInt3612 = 0;
 	static {
 		aClass124_3607 = Class124.method263("Close");
@@ -30,11 +30,6 @@ public class SceneGraphNode_SpotAnimation extends SceneGraphNode {
 			Canvas_Sub2.anInt63 = i_0_;
 		}
 	}
-	public static void method1844(int i) {
-		Static2.aClass52_3942.clear();
-		if (i != -32768)
-			method1843(-36, 86, null, -1);
-	}
 	public static void method1846(boolean bool) {
 		if (bool)
 			aClass14_Sub2_Sub19Array3609 = null;
@@ -42,7 +37,6 @@ public class SceneGraphNode_SpotAnimation extends SceneGraphNode {
 		aClass124_3610 = null;
 		
 		aClass124_3607 = null;
-		aClass14_Sub9_Sub1_3625 = null;
 	}
 	public boolean finishedAnimating = false;
 	public Animation aClass46_3611;
@@ -68,7 +62,7 @@ public class SceneGraphNode_SpotAnimation extends SceneGraphNode {
 		anInt3631 = i_15_;
 		anInt3605 = i;
 		anInt3629 = i_16_;
-		int i_19_ = Class127.method1749(anInt3605, (byte) 45).anInt966;
+		int i_19_ = SpotAnimType.list(anInt3605).animationId;
 		if (i_19_ != -1) {
 			finishedAnimating = false;
 			aClass46_3611 = AnimLoader.method1129(i_19_);
@@ -98,14 +92,12 @@ public class SceneGraphNode_SpotAnimation extends SceneGraphNode {
 	}
 
 	public SceneGraphNode_AbstractModelRenderer method1847(int i) {
-		if (i <= 4)
-			aClass14_Sub9_Sub1_3625 = null;
-		Class60 class60 = Class127.method1749(anInt3605, (byte) -109);
+		SpotAnimType spotAnimType = SpotAnimType.list(anInt3605);
 		SceneGraphNode_AbstractModelRenderer class133_sub7;
 		if (finishedAnimating)
-			class133_sub7 = class60.method1267(0, -1);
+			class133_sub7 = spotAnimType.constructModel(-1);
 		else
-			class133_sub7 = class60.method1267(0, anInt3613);
+			class133_sub7 = spotAnimType.constructModel(anInt3613);
 		if (class133_sub7 == null) {
 			SceneGraphNode_AbstractModelRenderer class133_sub7_4_ = null;
 			return class133_sub7_4_;

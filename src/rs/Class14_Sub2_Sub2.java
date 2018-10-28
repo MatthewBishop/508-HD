@@ -12,7 +12,6 @@ public class Class14_Sub2_Sub2 extends Cacheable {
 	public static int anInt3758 = 0;
 	public Class124 aClass124_3760;
 	public static Class148_Sub1[] aClass148_Sub1Array3762;
-	public static boolean aBoolean3763;
 	public int anInt3764;
 	public int anInt3766;
 
@@ -20,7 +19,7 @@ public class Class14_Sub2_Sub2 extends Cacheable {
 		if (i != 1) {
 			if (i != 2) {
 				if (i == 5)
-					aClass124_3760 = class14_sub10.method797();
+					aClass124_3760 = class14_sub10.getJagexString();
 			} else
 				anInt3766 = class14_sub10.getInt((byte) -91);
 		} else
@@ -40,8 +39,6 @@ public class Class14_Sub2_Sub2 extends Cacheable {
 
 	public static void method262(byte i) {
 		aClass148_Sub1Array3762 = null;
-		if (i != 111)
-			aBoolean3763 = true;
 	}
 
 	public static void method264(Buffer class14_sub10, boolean bool) {

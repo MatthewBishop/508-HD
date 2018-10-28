@@ -9,7 +9,7 @@ import javax.media.opengl.GL;
 
 import org.lwjgl.opengl.GL11;
 
-import rs.JunkTex;
+import com.jagex.sound.wip.DuplicateMethods;
 
 public class AbstractSprite_Sub2 extends AbstractSprite {
 	public int texture = -1;
@@ -431,8 +431,8 @@ public class AbstractSprite_Sub2 extends AbstractSprite {
 	}
 
 	public void draw(int[] texels) {
-		width_ = JunkTex.method653(width);
-		height_ = JunkTex.method653(height);
+		width_ = DuplicateMethods.getFarestBitValue(width);
+		height_ = DuplicateMethods.getFarestBitValue(height);
 		byte[] pix = new byte[width_ * height_ * 4];
 		int pntr = 0;
 		int cntr = 0;

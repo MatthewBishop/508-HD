@@ -4,22 +4,20 @@
 package rs;
 
 import com.jagex.applet.Applet_Sub1;
-import com.jagex.cache.anim.Animation;
 import com.jagex.cache.anim.AnimLoader;
+import com.jagex.cache.anim.Animation;
 import com.jagex.io.js5.FileSystem;
-import com.jagex.rt4.CardMemManager;
 import com.jagex.rt4.AbstractSprite;
 import com.jagex.rt4.AbstractSprite_Sub1;
 import com.jagex.rt4.AbstractSprite_Sub2;
+import com.jagex.rt4.CardMemManager;
 import com.jagex.rt4.Class25;
 import com.jagex.rt4.RT4;
 import com.jagex.rt4.RT4GL;
-import com.jagex.sound.Track;
 import com.jagex.util.RandomUtil;
 
 public class Class137 {
 	public static Class124 aClass124_2195;
-	public static Track[] aClass91Array2197 = new Track[50];
 	public static Class124 aClass124_2200;
 	public static Class124 aClass124_2201;
 	public static Class124 aClass124_2202;
@@ -48,42 +46,6 @@ public class Class137 {
 		anIntArray2205 = null;
 		aClass124_2195 = null;
 		aClass124_2202 = null;
-		aClass91Array2197 = null;
-	}
-
-	public static void method1941(boolean bool, byte i) {
-		Class14_Sub3 class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.getFront();
-		if (i != -84)
-			aClass124_2206 = null;
-		for (/**/; class14_sub3 != null; class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.getNext()) {
-			if (class14_sub3.aClass14_Sub9_Sub4_2775 != null) {
-				Class33.aClass14_Sub9_Sub2_585.method730(class14_sub3.aClass14_Sub9_Sub4_2775);
-				class14_sub3.aClass14_Sub9_Sub4_2775 = null;
-			}
-			if (class14_sub3.aClass14_Sub9_Sub4_2760 != null) {
-				Class33.aClass14_Sub9_Sub2_585.method730(class14_sub3.aClass14_Sub9_Sub4_2760);
-				class14_sub3.aClass14_Sub9_Sub4_2760 = null;
-			}
-			class14_sub3.unlink();
-		}
-		if (bool) {
-			for (class14_sub3 = (Class14_Sub3) JunkTex.aClass2_683.getFront(); class14_sub3 != null; class14_sub3 = (Class14_Sub3) JunkTex.aClass2_683.getNext()) {
-				if (class14_sub3.aClass14_Sub9_Sub4_2775 != null) {
-					Class33.aClass14_Sub9_Sub2_585.method730(class14_sub3.aClass14_Sub9_Sub4_2775);
-					class14_sub3.aClass14_Sub9_Sub4_2775 = null;
-				}
-				class14_sub3.unlink();
-			}
-			for (class14_sub3 = ((Class14_Sub3) Class88.aClass55_1398
-					.getFirst()); class14_sub3 != null; class14_sub3 = (Class14_Sub3) Class88.aClass55_1398
-							.getNext()) {
-				if (class14_sub3.aClass14_Sub9_Sub4_2775 != null) {
-					Class33.aClass14_Sub9_Sub2_585.method730(class14_sub3.aClass14_Sub9_Sub4_2775);
-					class14_sub3.aClass14_Sub9_Sub4_2775 = null;
-				}
-				class14_sub3.unlink();
-			}
-		}
 	}
 
 	public static void method1942(int i, int i_8_, int i_9_, int i_10_, Class94[] class94s, int i_11_, int i_12_,
@@ -97,11 +59,11 @@ public class Class137 {
 					&& (i_10_ == class94.anInt1540 || (i_10_ == -1412584499 && Class67.aClass94_1060 == class94))) {
 				int i_17_;
 				if (i == -1) {
-					Static2.anIntArray215[Class14_Sub17.anInt3012] = i_12_ + class94.anInt1523;
-					Class74.anIntArray1135[Class14_Sub17.anInt3012] = i_15_ + class94.anInt1583;
-					Class110.anIntArray1854[Class14_Sub17.anInt3012] = class94.anInt1518;
-					anIntArray2205[Class14_Sub17.anInt3012] = class94.anInt1545;
-					i_17_ = Class14_Sub17.anInt3012++;
+					Static2.anIntArray215[Static2.anInt3012] = i_12_ + class94.anInt1523;
+					Class74.anIntArray1135[Static2.anInt3012] = i_15_ + class94.anInt1583;
+					Class110.anIntArray1854[Static2.anInt3012] = class94.anInt1518;
+					anIntArray2205[Static2.anInt3012] = class94.anInt1545;
+					i_17_ = Static2.anInt3012++;
 				} else
 					i_17_ = i;
 				class94.anInt1481 = Class14_Sub2_Sub20.anInt4064;
@@ -119,7 +81,7 @@ public class Class137 {
 						if (i_10_ != -1412584499 && !class94.aBoolean1507) {
 							JunkTex.anInt4295 = i_15_;
 							JunkTex.anInt4379 = i_12_;
-							Class60.aClass94Array980 = class94s;
+							Static2.aClass94Array980 = class94s;
 							continue;
 						}
 						if (JunkTex.aBoolean4188 && Class59.aBoolean954) {
@@ -166,7 +128,7 @@ public class Class137 {
 						if (class94.anInt1498 != 0) {
 							if (class94.anInt1498 == 1337 || class94.anInt1498 == 1403) {
 								Class138.anInt2214 = i_18_;
-								Class127.aClass94_2114 = class94;
+								Static2.aClass94_2114 = class94;
 								JunkTex.anInt4503 = i_19_;
 								Static2.method399(i_18_, i_19_, class94.anInt1498 == 1403, true,
 										class94.anInt1518, class94.anInt1545);
@@ -206,7 +168,7 @@ public class Class137 {
 							if (class94.anInt1498 == 1404) {
 								Class139.method1954(SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567, class94.anInt1545,
 										class94.anInt1518, i_19_, 126, i_18_, class94,
-										Class56_Sub1.aClass14_Sub2_Sub16_3320);
+										Static2.aClass14_Sub2_Sub16_3320);
 								JunkTex.aBooleanArray4698[i_17_] = true;
 								Class7_Sub2_Sub1.aBooleanArray3703[i_17_] = true;
 								continue;
@@ -239,7 +201,7 @@ public class Class137 {
 									if (i_33_ > 65536)
 										i_32_ = 16711680;
 									Class84.aClass14_Sub2_Sub16_1344.method348((JunkTex.method515(
-											(new Class124[] { Class60.aClass124_985,
+											(new Class124[] { Static2.aClass124_985,
 													Class83.method1407(i_14_ + 18, i_33_), Class59.aClass124_953 }),
 											(byte) -57)), i_30_, i_29_, i_32_, -1);
 									i_29_ += 15;
@@ -329,7 +291,7 @@ public class Class137 {
 														|| (((JunkTex.aClass94_4446) == class94)
 																&& (i_34_ == (Class122.anInt2054)))) {
 													AbstractSprite class14_sub2_sub19;
-													if (Class51.anInt831 == 1 && ((JunkTex.anInt2853) == i_34_)
+													if (Static2.anInt831 == 1 && ((JunkTex.anInt2853) == i_34_)
 															&& ((JunkTex.anInt3960) == (class94.anInt1548)))
 														class14_sub2_sub19 = (Class109.method1565(2,
 																(class94.anIntArray1542[i_34_]), (class94.aBoolean1575),
@@ -363,9 +325,9 @@ public class Class137 {
 															if ((i_38_ + i_41_ < i_45_)
 																	&& ((class94_43_.anInt1547) > 0)) {
 																int i_46_ = ((-i_41_ + (i_45_ - i_38_))
-																		* (Class51.anInt839) / 3);
-																if (((Class51.anInt839) * 10) < i_46_)
-																	i_46_ = ((Class51.anInt839) * 10);
+																		* (Static2.anInt839) / 3);
+																if (((Static2.anInt839) * 10) < i_46_)
+																	i_46_ = ((Static2.anInt839) * 10);
 																if ((class94_43_.anInt1547) < i_46_)
 																	i_46_ = (class94_43_.anInt1547);
 																Class111.anInt1865 += i_46_;
@@ -376,9 +338,9 @@ public class Class137 {
 																	&& ((-(class94_43_.anInt1545)
 																			+ (class94_43_.anInt1605)) > (class94_43_.anInt1547))) {
 																int i_47_ = ((-i_44_ + (i_41_ + 32) + i_38_)
-																		* (Class51.anInt839) / 3);
-																if (((Class51.anInt839) * 10) < i_47_)
-																	i_47_ = ((Class51.anInt839) * 10);
+																		* (Static2.anInt839) / 3);
+																if (((Static2.anInt839) * 10) < i_47_)
+																	i_47_ = ((Static2.anInt839) * 10);
 																if (i_47_ > ((class94_43_.anInt1605)
 																		- (class94_43_.anInt1545)
 																		- (class94_43_.anInt1547)))
@@ -390,7 +352,7 @@ public class Class137 {
 																Class103.method1531(class94_43_);
 															}
 														}
-													} else if (((Class94.aClass94_1469) != class94)
+													} else if (((Static2.aClass94_1469) != class94)
 															|| ((JunkTex.anInt4314) != i_34_))
 														class14_sub2_sub19.drawReg(i_37_, i_38_);
 													else
@@ -459,7 +421,7 @@ public class Class137 {
 										}
 										if (JunkTex.aClass94_3388 == class94) {
 											i_49_ = class94.anInt1567;
-											class124 = Class14_Sub28.aClass124_3229;
+											class124 = Static2.aClass124_3229;
 										}
 										if (!class94.aBoolean1455)
 											class124 = (JunkTex.method557(94, class124, class94));
@@ -582,13 +544,13 @@ public class Class137 {
 										if (i_60_ != -1) {
 											Animation animation = AnimLoader.method1129(i_60_);
 											class133_sub7 = (class94.method1480(
-													(Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.aClass102_4941), -3, bool,
+													(Static2.aSceneGraphNode_GameEntity_Sub1_2748.aClass102_4941), -3, bool,
 													animation, class94.anInt1610));
 											if (class133_sub7 == null && Class94.aBoolean1554)
 												Class103.method1531(class94);
 										} else {
 											class133_sub7 = (class94.method1480(
-													(Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.aClass102_4941),
+													(Static2.aSceneGraphNode_GameEntity_Sub1_2748.aClass102_4941),
 													i_14_ ^ ~0x5f, bool, null, -1));
 											if (class133_sub7 == null && Class94.aBoolean1554)
 												Class103.method1531(class94);
@@ -630,7 +592,7 @@ public class Class137 {
 										RT4GL.applyLightingSetting();
 										RT4GL.setDepthTestEnabled(true);
 										RT4GL.setFogEnabled(false);
-										Class35.method1093(-75);
+										Static2.method1093(-75);
 										if (Class89.aBoolean1409) {
 											Class25.method994();
 											RT4GL.clearDepthBuffer();
@@ -790,7 +752,7 @@ public class Class137 {
 		}
 		if (i_89_ < 35)
 			RT4.rotateX = -18;
-		AbstractSprite_Sub1 class14_sub2_sub19_sub1 = Class56.constructLDSpriteAlpha(0);
+		AbstractSprite_Sub1 class14_sub2_sub19_sub1 = Static2.constructLDSpriteAlpha(0);
 		return class14_sub2_sub19_sub1;
 	}
 }

@@ -3,6 +3,8 @@
  */
 package com.jagex.map;
 
+import com.jagex.cache.loaders.UnderlayType;
+import com.jagex.cache.loaders.OverlayType;
 import com.jagex.io.Buffer;
 import com.jagex.rt4.AtmosphericEffects;
 import com.jagex.rt4.HDTile;
@@ -20,20 +22,16 @@ import rs.Class14_Sub21;
 import rs.Class14_Sub2_Sub21;
 import rs.Class14_Sub2_Sub3;
 import rs.Class15;
-import rs.OverlayType;
-import rs.Class21;
 import rs.Class22;
 import rs.Class28;
-import rs.SDRaster;
 import rs.Class32;
 import rs.Class37;
-import rs.Class51;
-import rs.Class65;
 import rs.Class66;
 import rs.Class7_Sub2;
 import rs.Class7_Sub3_Sub1;
 import rs.Class97;
 import rs.JunkTex;
+import rs.SDRaster;
 import rs.Static2;
 
 public class MapRegion {
@@ -110,12 +108,12 @@ public class MapRegion {
 					}
 				}
 			}
-			Class51.anInt830 += (int) (Math.random() * 5.0) - 2;
-			if (Class51.anInt830 < -8)
-				Class51.anInt830 = -8;
+			Static2.anInt830 += (int) (Math.random() * 5.0) - 2;
+			if (Static2.anInt830 < -8)
+				Static2.anInt830 = -8;
 			JunkTex.anInt4527 += (int) (Math.random() * 5.0) - 2;
-			if (Class51.anInt830 > 8)
-				Class51.anInt830 = 8;
+			if (Static2.anInt830 > 8)
+				Static2.anInt830 = 8;
 			if (JunkTex.anInt4527 < -16)
 				JunkTex.anInt4527 = -16;
 			if (JunkTex.anInt4527 > 16)
@@ -129,7 +127,7 @@ public class MapRegion {
 			i_11_ = 1;
 		int[][] is = new int[104][104];
 		int[][] is_12_ = new int[104][104];
-		int i_13_ = Class51.anInt830 >> 2 << 10;
+		int i_13_ = Static2.anInt830 >> 2 << 10;
 		for (int i_14_ = 0; i_14_ < i_11_; i_14_++) {
 			byte[][] is_15_ = Static2.aByteArrayArrayArray3354[i_14_];
 			if (!RT4.useLighting) {
@@ -170,7 +168,7 @@ public class MapRegion {
 			for (int i_35_ = 0; i_35_ < 104; i_35_++) {
 				Class115.anIntArray1917[i_35_] = 0;
 				Class14_Sub2_Sub3.anIntArray3773[i_35_] = 0;
-				Class21.anIntArray442[i_35_] = 0;
+				Static2.anIntArray442[i_35_] = 0;
 				Static2.anIntArray4023[i_35_] = 0;
 				JunkTex.anIntArray4020[i_35_] = 0;
 			}
@@ -180,11 +178,11 @@ public class MapRegion {
 					if (i_38_ < 104) {
 						int i_39_ = Class97.underlays[i_14_][i_38_][i_37_] & 0xff;
 						if (i_39_ > 0) {
-							Class65 class65 = Class65.list(i_39_ - 1);
-							Class115.anIntArray1917[i_37_] += class65.anInt1022;
-							Class14_Sub2_Sub3.anIntArray3773[i_37_] += class65.anInt1028;
-							Class21.anIntArray442[i_37_] += class65.anInt1023;
-							Static2.anIntArray4023[i_37_] += class65.anInt1027;
+							UnderlayType underlayType = UnderlayType.list(i_39_ - 1);
+							Class115.anIntArray1917[i_37_] += underlayType.weightedHue;
+							Class14_Sub2_Sub3.anIntArray3773[i_37_] += underlayType.saturation;
+							Static2.anIntArray442[i_37_] += underlayType.luminance;
+							Static2.anIntArray4023[i_37_] += underlayType.chroma;
 							JunkTex.anIntArray4020[i_37_]++;
 						}
 					}
@@ -192,11 +190,11 @@ public class MapRegion {
 					if (i_40_ >= 0) {
 						int i_41_ = Class97.underlays[i_14_][i_40_][i_37_] & 0xff;
 						if (i_41_ > 0) {
-							Class65 class65 = Class65.list(i_41_ - 1);
-							Class115.anIntArray1917[i_37_] -= class65.anInt1022;
-							Class14_Sub2_Sub3.anIntArray3773[i_37_] -= class65.anInt1028;
-							Class21.anIntArray442[i_37_] -= class65.anInt1023;
-							Static2.anIntArray4023[i_37_] -= class65.anInt1027;
+							UnderlayType underlayType = UnderlayType.list(i_41_ - 1);
+							Class115.anIntArray1917[i_37_] -= underlayType.weightedHue;
+							Class14_Sub2_Sub3.anIntArray3773[i_37_] -= underlayType.saturation;
+							Static2.anIntArray442[i_37_] -= underlayType.luminance;
+							Static2.anIntArray4023[i_37_] -= underlayType.chroma;
 							JunkTex.anIntArray4020[i_37_]--;
 						}
 					}
@@ -212,14 +210,14 @@ public class MapRegion {
 						int i_49_ = i_47_ + 5;
 						if (i_49_ < 104) {
 							i_45_ += JunkTex.anIntArray4020[i_49_];
-							i_44_ += Class21.anIntArray442[i_49_];
+							i_44_ += Static2.anIntArray442[i_49_];
 							i_42_ += Class115.anIntArray1917[i_49_];
 							i_43_ += Class14_Sub2_Sub3.anIntArray3773[i_49_];
 							i_46_ += Static2.anIntArray4023[i_49_];
 						}
 						if (i_48_ >= 0) {
 							i_42_ -= Class115.anIntArray1917[i_48_];
-							i_44_ -= Class21.anIntArray442[i_48_];
+							i_44_ -= Static2.anIntArray442[i_48_];
 							i_45_ -= JunkTex.anIntArray4020[i_48_];
 							i_43_ -= Class14_Sub2_Sub3.anIntArray3773[i_48_];
 							i_46_ -= Static2.anIntArray4023[i_48_];
@@ -234,7 +232,7 @@ public class MapRegion {
 				for (int i_51_ = 1; i_51_ < 103; i_51_++) {
 					if (bool || Class128.method1755(130068615) || (JunkTex.tileFlags[0][i_50_][i_51_] & 0x2) != 0
 							|| ((JunkTex.tileFlags[i_14_][i_50_][i_51_] & 0x10) == 0
-									&& (OverlayType.method2023(i_51_, i_14_, i_50_, -10403) == Class142.anInt2295))) {
+									&& (Static2.method2023(i_51_, i_14_, i_50_) == Class142.anInt2295))) {
 						if (i_14_ < Class7_Sub2.anInt2676)
 							Class7_Sub2.anInt2676 = i_14_;
 						int i_52_ = Class97.underlays[i_14_][i_50_][i_51_] & 0xff;
@@ -280,7 +278,7 @@ public class MapRegion {
 										Class14_Sub2_Sub21.method441(i_64_, 127, i_60_),
 										Class14_Sub2_Sub21.method441(i_65_, 127, i_60_),
 										Class14_Sub2_Sub21.method441(i_66_, 127, i_60_), 0, 0, 0, 0, i_59_, 0);
-								if (i_14_ > 0 && i_60_ != -1 && (Class65.list(i_52_ - 1).aBoolean1020))
+								if (i_14_ > 0 && i_60_ != -1 && (UnderlayType.list(i_52_ - 1).showShadows))
 									ShadowManager.method2042(0, 0, true, false, i_50_, i_51_,
 											-(Static2.tileHeights[0][i_50_][i_51_]) + i_54_,
 											i_56_ - (Static2.tileHeights[0][i_50_ + 1][i_51_]),
@@ -379,7 +377,7 @@ public class MapRegion {
 										Class7_Sub3_Sub1.method135(false, i_66_, i_77_), i_59_, i_78_);
 								if (i_14_ > 0)
 									ShadowManager.method2042(i_70_, i_71_, i_77_ == -2 || !overlayType.aBoolean2407,
-											(i_60_ == -1 || !(Class65.list(i_52_ - 1).aBoolean1020)), i_50_,
+											(i_60_ == -1 || !(UnderlayType.list(i_52_ - 1).showShadows)), i_50_,
 											i_51_, i_54_ - (Static2.tileHeights[0][i_50_][i_51_]),
 											i_56_ - (Static2.tileHeights[0][i_50_ + 1][i_51_]),
 											i_55_ - (Static2.tileHeights[0][i_50_ + 1][i_51_ + 1]),

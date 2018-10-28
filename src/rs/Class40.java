@@ -43,4 +43,16 @@ public class Class40 {
 	public int anInt673;
 
 	public int anInt678;
+
+	public static Class40 method1291(int i, int i_5_, int i_6_) {
+		Class14_Sub29 class14_sub29 = JunkTex.aClass14_Sub29ArrayArrayArray3368[i][i_5_][i_6_];
+		if (class14_sub29 == null)
+			return null;
+		for (int i_7_ = 0; i_7_ < class14_sub29.anInt3242; i_7_++) {
+			Class40 class40 = class14_sub29.aClass40Array3257[i_7_];
+			if ((class40.bitPacked >> 29 & 0x3L) == 2L && class40.anInt668 == i_5_ && class40.anInt678 == i_6_)
+				return class40;
+		}
+		return null;
+	}
 }

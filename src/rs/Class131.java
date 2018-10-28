@@ -8,7 +8,6 @@ import com.jagex.rt4.HDTile;
 public class Class131 {
 	public static Class124 aClass124_2153;
 	public static Class124 aClass124_2156 = (Class124.method263("Ihre Ignorieren)2Liste ist voll)1 Sie k-Onnen nur 100 Spieler darauf eintragen)3"));
-	public static int anInt2159;
 	public static Class14_Sub2_Sub16_Sub1 aClass14_Sub2_Sub16_Sub1_2160;
 	public static Class124 aClass124_2161;
 	public static HDTile[][] aClass14_Sub27ArrayArray2162;
@@ -20,21 +19,6 @@ public class Class131 {
 		
 		aClass124_2163 = (Class124.method263("Sie k-Onnen sich selbst nicht selbst auf Ihre Ignorieren)2Liste setzen(Q"));
 		aClass124_2161 = Class124.method263("loc");
-	}
-
-	public static void method1772(boolean bool, int i, byte i_0_, int i_1_) {
-		int i_2_ = -121 / ((i_0_ + 68) / 43);
-		if (i_1_ < 8000 || i_1_ > 48000)
-			throw new IllegalArgumentException();
-		Class115.anInt1909 = i_1_;
-		Class14_Sub2_Sub2.aBoolean3763 = bool;
-		Static2.anInt1674 = i;
-	}
-
-	public static int method1773(int i, byte i_3_) {
-		int i_4_ = 30 / ((-73 - i_3_) / 49);
-		int i_5_ = i >>> 8;
-		return i_5_;
 	}
 
 	public static void method1774(int[] is, int i, int i_6_, int i_7_, int i_8_, boolean bool, int i_9_,

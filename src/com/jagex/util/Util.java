@@ -1,5 +1,7 @@
 package com.jagex.util;
 
+import com.jagex.StringConstants;
+
 public class Util {
 
 	public static void sleep(long l) {
@@ -34,6 +36,17 @@ public class Util {
 		}
 		RuntimeException_Sub1 runtimeexception_sub1_10_ = runtimeexception_sub1;
 		return runtimeexception_sub1_10_;
+	}
+
+	public static AbstractMouseWheelHandler createMouseWheelHandler() {
+		AbstractMouseWheelHandler abstractMouseWheelHandler;
+		try {
+			abstractMouseWheelHandler = (AbstractMouseWheelHandler) Class.forName(StringConstants.CLASS129_SUB1).newInstance();
+		} catch (Throwable throwable) {
+			AbstractMouseWheelHandler abstractMouseWheelHandler_132_ = null;
+			return abstractMouseWheelHandler_132_;
+		}
+		return abstractMouseWheelHandler;
 	}
 
 }

@@ -57,13 +57,6 @@ public abstract class Class108 {
 
 	public abstract void method1560(int i, byte i_37_, int i_38_, int i_39_, Graphics graphics, int i_40_);
 
-	public static void method1561(FileSystem fileSystem, byte i, FileSystem fileSystem_41_) {
-		if (i >= 22) {
-			JunkTex.aFileSystem_4338 = fileSystem;
-			JunkTex.aFileSystem_2711 = fileSystem_41_;
-		}
-	}
-
 	public static void method1562(int[] is, int i, int i_42_, int i_43_, int i_44_, int i_45_) {
 		Class14_Sub29 class14_sub29 = (JunkTex.aClass14_Sub29ArrayArrayArray3368[i_43_][i_44_][i_45_]);
 		if (class14_sub29 != null) {

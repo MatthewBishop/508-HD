@@ -49,7 +49,7 @@ public class StaticGL {
 		for (int i_29_ = Class14_Sub23.anInt3134; i_29_ < Class83.anInt1338; i_29_++) {
 			Class14_Sub29[][] class14_sub29s = JunkTex.aClass14_Sub29ArrayArrayArray3368[i_29_];
 			for (int i_30_ = Class7_Sub1.anInt2659; i_30_ < JunkTex.anInt4722; i_30_++) {
-				for (int i_31_ = Class14_Sub9_Sub3.anInt4849; i_31_ < JunkTex.anInt4526; i_31_++) {
+				for (int i_31_ = Static2.anInt4849; i_31_ < JunkTex.anInt4526; i_31_++) {
 					Class14_Sub29 class14_sub29 = class14_sub29s[i_30_][i_31_];
 					if (class14_sub29 != null) {
 						if (!(Class53.visibilityMap[i_30_ - Static2.cameraTileX + JunkTex.cameraDistance][(i_31_
@@ -101,7 +101,7 @@ public class StaticGL {
 				}
 			}
 		}
-		boolean bool = Static2.tileHeights == OverlayType.underWaterTileHeightMap;
+		boolean bool = Static2.tileHeights == Static2.underWaterTileHeightMap;
 		GL gl = RT4GL.gl;
 		gl.glPushMatrix();
 		gl.glTranslatef(-i, -i_19_, -i_20_);
@@ -154,7 +154,7 @@ public class StaticGL {
 						int i_41_ = Class102.cameraTileZ + i_40_;
 						int i_42_ = Class102.cameraTileZ - i_40_;
 						if (i_38_ >= Class7_Sub1.anInt2659) {
-							if (i_41_ >= Class14_Sub9_Sub3.anInt4849) {
+							if (i_41_ >= Static2.anInt4849) {
 								Class14_Sub29 class14_sub29 = class14_sub29s[i_38_][i_41_];
 								if (class14_sub29 != null && class14_sub29.aBoolean3235)
 									Class14_Sub4.method454(class14_sub29, true);
@@ -166,7 +166,7 @@ public class StaticGL {
 							}
 						}
 						if (i_39_ < JunkTex.anInt4722) {
-							if (i_41_ >= Class14_Sub9_Sub3.anInt4849) {
+							if (i_41_ >= Static2.anInt4849) {
 								Class14_Sub29 class14_sub29 = class14_sub29s[i_39_][i_41_];
 								if (class14_sub29 != null && class14_sub29.aBoolean3235)
 									Class14_Sub4.method454(class14_sub29, true);
@@ -196,7 +196,7 @@ public class StaticGL {
 						int i_48_ = Class102.cameraTileZ + i_47_;
 						int i_49_ = Class102.cameraTileZ - i_47_;
 						if (i_45_ >= Class7_Sub1.anInt2659) {
-							if (i_48_ >= Class14_Sub9_Sub3.anInt4849) {
+							if (i_48_ >= Static2.anInt4849) {
 								Class14_Sub29 class14_sub29 = class14_sub29s[i_45_][i_48_];
 								if (class14_sub29 != null && class14_sub29.aBoolean3235)
 									Class14_Sub4.method454(class14_sub29, false);
@@ -208,7 +208,7 @@ public class StaticGL {
 							}
 						}
 						if (i_46_ < JunkTex.anInt4722) {
-							if (i_48_ >= Class14_Sub9_Sub3.anInt4849) {
+							if (i_48_ >= Static2.anInt4849) {
 								Class14_Sub29 class14_sub29 = class14_sub29s[i_46_][i_48_];
 								if (class14_sub29 != null && class14_sub29.aBoolean3235)
 									Class14_Sub4.method454(class14_sub29, false);

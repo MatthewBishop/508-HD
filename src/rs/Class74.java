@@ -20,9 +20,9 @@ public class Class74 {
 		aClass124_1142 = aClass124_1140;
 	}
 
-	public static void method1333(int i, byte i_0_, int i_1_) {
-		if (i_0_ == 46 && Static2.method1741((byte) 90, i))
-			JunkTex.method539(i_0_ - 2081454114, Class1.aClass94ArrayArray75[i], i_1_);
+	public static void method1333(int i, int i_1_) {
+		if (Static2.method1741((byte) 90, i))
+			JunkTex.method539(Class1.aClass94ArrayArray75[i], i_1_);
 	}
 
 	public static void method1334(byte i) {

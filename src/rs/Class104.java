@@ -10,6 +10,7 @@ import java.util.Random;
 
 import com.jagex.applet.Class31;
 import com.jagex.applet.Class43;
+import com.jagex.cache.loaders.VarBit;
 import com.jagex.io.Buffer;
 import com.jagex.util.TimeUtil;
 
@@ -40,14 +41,14 @@ public class Class104 {
 		return class124;
 	}
 	public static int method1534(int i, int i_4_) {
-		Class51 class51 = Class47.method1187(i, true);
-		int i_5_ = class51.anInt842;
+		VarBit varBit = VarBit.list(i);
+		int i_5_ = varBit.anInt842;
 		if (i_4_ < 77) {
 			int i_6_ = 63;
 			return i_6_;
 		}
-		int i_7_ = class51.anInt832;
-		int i_8_ = class51.anInt834;
+		int i_7_ = varBit.anInt832;
+		int i_8_ = varBit.anInt834;
 		int i_9_ = Class1.anIntArray69[i_8_ - i_7_];
 		int i_10_ = i_9_ & JunkTex.anIntArray4275[i_5_] >> i_7_;
 		return i_10_;

@@ -4,8 +4,8 @@
 package rs;
 
 import com.jagex.applet.ErrorReporting;
+import com.jagex.cache.loaders.OverlayType;
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.FileSystem;
 
 public class Class45 {
 	public static Class124 aClass124_738 = Class124.method263("AUS");
@@ -53,31 +53,31 @@ public class Class45 {
 				JunkTex.anInt4616 = 10;
 			}
 			if (JunkTex.anInt4616 == 10) {
-				Class65.anInt1034 = Class7_Sub1.aClass14_Sub2_Sub5_2665.anInt3797 >> 6 << 6;
-				Static2.anInt3856 = (-Class65.anInt1034
+				Static2.anInt1034 = Class7_Sub1.aClass14_Sub2_Sub5_2665.anInt3797 >> 6 << 6;
+				Static2.anInt3856 = (-Static2.anInt1034
 						+ (Class7_Sub1.aClass14_Sub2_Sub5_2665.anInt3810 >> 6 << 38) + 64);
-				int i_3_ = ((Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495 >> 7)
-						+ (SceneGraphNode_Projectile.anInt3676 - Class65.anInt1034));
-				JunkTex.aFloat2854 = Class90.aFloat1426 = 8.0F;
-				Class35.anInt603 = Class7_Sub1.aClass14_Sub2_Sub5_2665.anInt3806 >> 6 << 38;
+				int i_3_ = ((Static2.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495 >> 7)
+						+ (SceneGraphNode_Projectile.anInt3676 - Static2.anInt1034));
+				JunkTex.aFloat2854 = Static2.aFloat1426 = 8.0F;
+				Static2.anInt603 = Class7_Sub1.aClass14_Sub2_Sub5_2665.anInt3806 >> 6 << 38;
 				i_3_ += (int) (Math.random() * 10.0) - 5;
 				JunkTex.anInt4332 = (Class7_Sub1.aClass14_Sub2_Sub5_2665.anInt3805 >> 38 << 6)
-						+ (-Class35.anInt603 + 64);
-				int i_4_ = (Class35.anInt603 - Class58.anInt947 - (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436 >> 7)
+						+ (-Static2.anInt603 + 64);
+				int i_4_ = (Static2.anInt603 - Class58.anInt947 - (Static2.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436 >> 7)
 						+ (JunkTex.anInt4332 - 1));
 				i_4_ += (int) (Math.random() * 10.0) - 5;
 				if (i_3_ < 0 || i_3_ >= Static2.anInt3856 || i_4_ < 0
 						|| i_4_ >= JunkTex.anInt4332) {
-					SceneGraphNode_Projectile.anInt3659 = (Class35.anInt603 - ((Class7_Sub1.aClass14_Sub2_Sub5_2665.anInt3812 * 64)
+					SceneGraphNode_Projectile.anInt3659 = (Static2.anInt603 - ((Class7_Sub1.aClass14_Sub2_Sub5_2665.anInt3812 * 64)
 							- (JunkTex.anInt4332 - 1)));
-					Class37.anInt644 = (Class7_Sub1.aClass14_Sub2_Sub5_2665.anInt3813 * 64 - Class65.anInt1034);
+					Class37.anInt644 = (Class7_Sub1.aClass14_Sub2_Sub5_2665.anInt3813 * 64 - Static2.anInt1034);
 				} else {
 					Class37.anInt644 = i_3_;
 					SceneGraphNode_Projectile.anInt3659 = i_4_;
 				}
 				Static2.method1126((byte) -22);
 				int i_5_ = Static2.anInt3856 >> 6;
-				Class56.anIntArray917 = new int[Class131.anInt2159 + 1];
+				Static2.anIntArray917 = new int[OverlayType.anInt2159 + 1];
 				int i_6_ = JunkTex.anInt4332 >> 6;
 				JunkTex.aByteArrayArrayArray4257 = new byte[i_5_][i_6_][];
 				Static2.aByteArrayArrayArray3864 = new byte[i_5_][i_6_][];
@@ -88,7 +88,7 @@ public class Class45 {
 				Class86.aByteArrayArrayArray1383 = new byte[i_5_][i_6_][];
 				Class14_Sub25.anIntArrayArrayArray3174 = new int[i_5_][i_6_][];
 				Class79.aShortArrayArrayArray1247 = new short[i_5_][i_6_][];
-				int i_8_ = Class51.anInt830 >> 2 << 42;
+				int i_8_ = Static2.anInt830 >> 2 << 42;
 				Class54.method1221(i_7_, i_8_);
 				JunkTex.anInt4616 = 20;
 			} else if (JunkTex.anInt4616 == 20) {
@@ -127,7 +127,7 @@ public class Class45 {
 				JunkTex.anInt4616 = 70;
 				ErrorReporting.method531((byte) -112);
 			} else if (JunkTex.anInt4616 == 70) {
-				Class14_Sub17.aClass87_3004 = new Class87(11, true, ErrorReporting.aCanvas819);
+				Static2.aClass87_3004 = new Class87(11, true, ErrorReporting.aCanvas819);
 				JunkTex.anInt4616 = 73;
 				Static2.method259(true, 11988);
 				ErrorReporting.method531((byte) -112);
@@ -166,7 +166,7 @@ public class Class45 {
 				JunkTex.anInt4616 = 100;
 				Static2.method259(true, i ^ 0x2ee8);
 				ErrorReporting.method531((byte) -112);
-				Class14_Sub18.anInt3050 = -1;
+				Static2.anInt3050 = -1;
 				JunkTex.anInt427 = -1;
 				System.gc();
 			}
@@ -181,15 +181,15 @@ public class Class45 {
 			if (Class128.method1755(130068615))
 				Class142.anInt2295 = 0;
 			if (!bool)
-				Static2.method1743(27252, 25);
+				Static2.method1743(25);
 			else
-				Static2.method1743(27252, 28);
+				Static2.method1743(28);
 			Class84.method1411(true, client.aClass124_2639, true);
 			int i_14_ = Class58.anInt947;
 			int i_15_ = SceneGraphNode_Projectile.anInt3676;
 			SceneGraphNode_Projectile.anInt3676 = (i_9_ - 6) * 8;
 			Class58.anInt947 = i * 8 - 48;
-			Class70.aClass14_Sub2_Sub5_1078 = OverlayType.method2020(Static2.anInt2133 * 8, false, Static2.anInt818 * 8);
+			Class70.aClass14_Sub2_Sub5_1078 = Static2.method2020(Static2.anInt2133 * 8, false, Static2.anInt818 * 8);
 			int i_16_ = SceneGraphNode_Projectile.anInt3676 - i_15_;
 			int i_17_ = Class58.anInt947 - i_14_;
 			i_15_ = SceneGraphNode_Projectile.anInt3676;
@@ -242,7 +242,7 @@ public class Class45 {
 			Class14_Sub2_Sub3.gameLevel = i_10_;
 			if (i_12_ > -116)
 				method1163(false, -63);
-			Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.method1800((byte) -85, i_11_, false, i_13_);
+			Static2.aSceneGraphNode_GameEntity_Sub1_2748.method1800((byte) -85, i_11_, false, i_13_);
 			int i_25_ = 104;
 			int i_26_ = 0;
 			int i_27_ = 1;
@@ -289,7 +289,7 @@ public class Class45 {
 				Static2.anInt1948 -= i_16_;
 				Class123.anInt2062 -= i_16_;
 			}
-			JunkTex.anInt96 = 0;
+			StaticMusic.anInt96 = 0;
 			if (bool && (Math.abs(i_16_) > 104 || Math.abs(i_17_) > 104))
 				Class14_Sub13.method858(-1);
 			JunkTex.anInt4207 = -1;
@@ -336,11 +336,6 @@ public class Class45 {
 			}
 		}
 	}
-	public static void method1164(FileSystem fileSystem, int i) {
-		Class14_Sub2_Sub5.aFileSystem_3817 = fileSystem;
-		if (i <= 31)
-			aClass124_738 = null;
-	}
 	public static void method1165(byte i) {
 		anIntArray737 = null;
 		anIntArray743 = null;
@@ -365,7 +360,7 @@ public class Class45 {
 				int i_49_ = (-SceneGraphNode_Projectile.anInt3676 + (JunkTex.anIntArray2858[i_47_] >> 8) * 64);
 				int i_50_ = ((JunkTex.anIntArray2858[i_47_] & 0xff) * 64 - Class58.anInt947);
 				Class138.method1946(139);
-				Class90.method1447(i_50_, Class14_Sub21.aClass32Array3100, bool, is_48_, i_49_, -23935);
+				Static2.method1447(i_50_, Class14_Sub21.aClass32Array3100, bool, is_48_, i_49_, -23935);
 			}
 		}
 	}

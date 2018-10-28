@@ -3,8 +3,8 @@
  */
 package rs;
 
-import com.jagex.cache.anim.Animation;
 import com.jagex.cache.anim.AnimLoader;
+import com.jagex.cache.anim.Animation;
 import com.jagex.link.Cacheable;
 
 public class Class14_Sub2_Sub10 extends Cacheable {

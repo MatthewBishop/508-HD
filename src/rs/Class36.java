@@ -53,36 +53,36 @@ public class Class36 implements Runnable {
 		return var2;
 	}
 	public static void method1106(int var0) {
-		if (JunkTex.aFloat2854 > Class90.aFloat1426) {
-			Class90.aFloat1426 = (float) (Class90.aFloat1426 + Class90.aFloat1426 / 30.0D);
-			if (JunkTex.aFloat2854 < Class90.aFloat1426) {
-				Class90.aFloat1426 = JunkTex.aFloat2854;
+		if (JunkTex.aFloat2854 > Static2.aFloat1426) {
+			Static2.aFloat1426 = (float) (Static2.aFloat1426 + Static2.aFloat1426 / 30.0D);
+			if (JunkTex.aFloat2854 < Static2.aFloat1426) {
+				Static2.aFloat1426 = JunkTex.aFloat2854;
 			}
 
 			Static2.method1126((byte) -22);
-		} else if (JunkTex.aFloat2854 < Class90.aFloat1426) {
-			Class90.aFloat1426 = (float) (Class90.aFloat1426 - Class90.aFloat1426 / 30.0D);
-			if (Class90.aFloat1426 < JunkTex.aFloat2854) {
-				Class90.aFloat1426 = JunkTex.aFloat2854;
+		} else if (JunkTex.aFloat2854 < Static2.aFloat1426) {
+			Static2.aFloat1426 = (float) (Static2.aFloat1426 - Static2.aFloat1426 / 30.0D);
+			if (Static2.aFloat1426 < JunkTex.aFloat2854) {
+				Static2.aFloat1426 = JunkTex.aFloat2854;
 			}
 
 			Static2.method1126((byte) -22);
 		}
 
-		if (var0 != JunkTex.anInt427 && Class14_Sub18.anInt3050 != -1) {
+		if (var0 != JunkTex.anInt427 && Static2.anInt3050 != -1) {
 			int var1 = JunkTex.anInt427 - Class37.anInt644;
 			if (var1 < 2 || var1 > 2) {
 				var1 >>= 4;
 			}
 
-			int var2 = Class14_Sub18.anInt3050 - SceneGraphNode_Projectile.anInt3659;
+			int var2 = Static2.anInt3050 - SceneGraphNode_Projectile.anInt3659;
 			Class37.anInt644 += var1;
 			if (var2 < 2 || var2 > 2) {
 				var2 >>= 4;
 			}
 
 			if (var1 == 0 && var2 == 0) {
-				Class14_Sub18.anInt3050 = -1;
+				Static2.anInt3050 = -1;
 				JunkTex.anInt427 = -1;
 			}
 

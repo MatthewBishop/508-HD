@@ -26,7 +26,7 @@ public class Class70 {
 	public static void method1313(int i) {
 		if (Class14_Sub2_Sub12.anInt3912 != -1)
 			Static2.method250(Class14_Sub2_Sub12.anInt3912, false);
-		for (int i_0_ = 0; i_0_ < Class14_Sub17.anInt3012; i_0_++) {
+		for (int i_0_ = 0; i_0_ < Static2.anInt3012; i_0_++) {
 			if (JunkTex.aBooleanArray4698[i_0_])
 				Class7_Sub2_Sub1.aBooleanArray3703[i_0_] = true;
 			Class103.aBooleanArray1727[i_0_] = JunkTex.aBooleanArray4698[i_0_];
@@ -38,12 +38,12 @@ public class Class70 {
 		JunkTex.anInt4503 = -1;
 		Class89.aBoolean1409 = true;
 		if (Class14_Sub2_Sub12.anInt3912 != -1) {
-			Class14_Sub17.anInt3012 = 0;
+			Static2.anInt3012 = 0;
 			JunkTex.method594(Applet_Sub1.anInt3094, true, 0, Class14_Sub2_Sub12.anInt3912, -1, 0, 0,
 					Applet_Sub1.anInt1340, 0);
 		}
 		Class25.method994();
-		Class51.anInt839 = 0;
+		Static2.anInt839 = 0;
 		if (i != -11198)
 			method1312(82);
 	}

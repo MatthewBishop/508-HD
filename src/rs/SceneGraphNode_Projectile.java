@@ -4,8 +4,9 @@
 package rs;
 
 import com.jagex.applet.ErrorReporting;
-import com.jagex.cache.anim.Animation;
 import com.jagex.cache.anim.AnimLoader;
+import com.jagex.cache.anim.Animation;
+import com.jagex.cache.loaders.SpotAnimType;
 import com.jagex.rt4.AbstractSprite;
 import com.jagex.rt4.RT4GL;
 import com.jagex.util.BrowserControlUtil;
@@ -73,7 +74,7 @@ public class SceneGraphNode_Projectile extends SceneGraphNode {
 		aClass124_3636 = null;
 	}
 	public static void method1853(int i, int i_9_) {
-		OverlayType.aClass52_2406.method1208(i);
+		Static2.aClass52_2406.method1208(i);
 		JunkTex.aClass52_4588.method1208(i);
 		if (i_9_ != -32768)
 			method1854(-5, -101, 81);
@@ -141,7 +142,7 @@ public class SceneGraphNode_Projectile extends SceneGraphNode {
 		anInt3685 = i_22_;
 		anInt3683 = i_21_;
 		anInt3667 = i_28_;
-		int i_29_ = Class127.method1749(anInt3652, (byte) 66).anInt966;
+		int i_29_ = SpotAnimType.list(anInt3652).animationId;
 		if (i_29_ != -1)
 			aClass46_3638 = AnimLoader.method1129(i_29_);
 		else
@@ -175,10 +176,10 @@ public class SceneGraphNode_Projectile extends SceneGraphNode {
 	}
 
 	public SceneGraphNode_AbstractModelRenderer method1850(int i) {
-		Class60 class60 = Class127.method1749(anInt3652, (byte) 42);
+		SpotAnimType spotAnimType = SpotAnimType.list(anInt3652);
 		if (i >= -114)
 			method1853(73, -56);
-		SceneGraphNode_AbstractModelRenderer class133_sub7 = class60.method1267(0, anInt3641);
+		SceneGraphNode_AbstractModelRenderer class133_sub7 = spotAnimType.constructModel(anInt3641);
 		if (class133_sub7 == null) {
 			SceneGraphNode_AbstractModelRenderer class133_sub7_6_ = null;
 			return class133_sub7_6_;

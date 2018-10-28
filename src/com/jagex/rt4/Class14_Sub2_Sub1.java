@@ -16,12 +16,17 @@ import com.jagex.io.js5.FileSystem;
 import com.jagex.link.Cacheable;
 import com.jagex.util.TextureDefInterface;
 
-import rs.Class120;
 import rs.Class66;
 import rs.JunkTex;
 import rs.Static2;
 
 public class Class14_Sub2_Sub1 extends Cacheable {
+	
+	/*
+	 * TODO null this somewhere.
+	 */
+	public static int[] anIntArray2002;
+	
 	public boolean repeatTTexture;
 	public boolean aBoolean3730;
 	public boolean aBoolean3738;
@@ -153,8 +158,8 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 	public void method253(int i) {
 		if (anIntArray3745 != null) {
 			if (rotateY != 0 || rotateX != 0) {
-				if (Class120.anIntArray2002 == null || anIntArray3745.length > Class120.anIntArray2002.length)
-					Class120.anIntArray2002 = new int[anIntArray3745.length];
+				if (anIntArray2002 == null || anIntArray3745.length > anIntArray2002.length)
+					anIntArray2002 = new int[anIntArray3745.length];
 				int i_11_ = 4096 != anIntArray3745.length ? 128 : 64;
 				int i_12_ = anIntArray3745.length;
 				int i_13_ = i_11_ - 1;
@@ -166,12 +171,12 @@ public class Class14_Sub2_Sub1 extends Cacheable {
 					for (int i_19_ = 0; i_19_ < i_11_; i_19_++) {
 						int i_20_ = i_17_ + i_19_;
 						int i_21_ = i_18_ + (i_13_ & i_14_ + i_19_);
-						Class120.anIntArray2002[i_20_] = anIntArray3745[i_21_];
+						anIntArray2002[i_20_] = anIntArray3745[i_21_];
 					}
 				}
 				int[] is = anIntArray3745;
-				anIntArray3745 = Class120.anIntArray2002;
-				Class120.anIntArray2002 = is;
+				anIntArray3745 = anIntArray2002;
+				anIntArray2002 = is;
 			}
 		}
 	}

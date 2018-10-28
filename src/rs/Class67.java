@@ -98,7 +98,7 @@ public class Class67 {
 		}
 		for (int i_22_ = 0; i_22_ < i; i_22_++)
 			is_21_[i_22_] = (JunkTex.spritePalette[JunkTex.method617(is[i_22_], 255)]);
-		AbstractSprite_Sub2 class14_sub2_sub19_sub2 = new AbstractSprite_Sub2(Class14_Sub11.spriteTrimWidth,
+		AbstractSprite_Sub2 class14_sub2_sub19_sub2 = new AbstractSprite_Sub2(Static2.spriteTrimWidth,
 				Class14_Sub30.spriteTrimHeight, Class40.spriteXOffsets[0], Class14_Sub2_Sub12.spriteYOffsets[0],
 				Class17.spriteWidths[0], Static2.spriteHeights[0], is_21_);
 		Static2.method1761((byte) 12);

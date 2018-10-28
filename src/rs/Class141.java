@@ -8,24 +8,17 @@ import java.awt.event.FocusListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-import com.jagex.io.js5.SFSS;
-
 public class Class141 implements KeyListener, FocusListener {
 	public static Class94 aClass94_2239;
 	public static Class87 aClass87_2242;
 	public static int[] anIntArray2246 = new int[32];
-
-	public static void method1960(int i, int i_0_) {
-		Static2.aClass52_236.method1208(i);
-		Static2.aClass52_4053.method1208(i);
-	}
 
 	public void keyTyped(KeyEvent keyevent) {
 		if (JunkTex.aClass141_4239 != null) {
 			int i = JunkTex.method671(keyevent, 0);
 			if (i >= 0) {
 				int i_14_ = Class7_Sub3.anInt2682 + 1 & 0x7f;
-				if (Class14_Sub9_Sub3.anInt4850 != i_14_) {
+				if (Static2.anInt4850 != i_14_) {
 					Class138.anIntArray2224[Class7_Sub3.anInt2682] = -1;
 					Class36.anIntArray632[Class7_Sub3.anInt2682] = i;
 					Class7_Sub3.anInt2682 = i_14_;
@@ -37,7 +30,7 @@ public class Class141 implements KeyListener, FocusListener {
 
 	public synchronized void focusLost(FocusEvent focusevent) {
 		if (JunkTex.aClass141_4239 != null)
-			Class120.anInt2014 = -1;
+			Static2.anInt2014 = -1;
 	}
 
 	public static void method1962(boolean bool) {
@@ -56,15 +49,15 @@ public class Class141 implements KeyListener, FocusListener {
 					i = -1;
 			} else
 				i = -1;
-			if (Class120.anInt2014 >= 0 && i >= 0) {
-				JunkTex.anIntArray4139[Class120.anInt2014] = i;
-				Class120.anInt2014 = Class120.anInt2014 + 1 & 0x7f;
-				if (Class120.anInt2014 == JunkTex.anInt4146)
-					Class120.anInt2014 = -1;
+			if (Static2.anInt2014 >= 0 && i >= 0) {
+				JunkTex.anIntArray4139[Static2.anInt2014] = i;
+				Static2.anInt2014 = Static2.anInt2014 + 1 & 0x7f;
+				if (Static2.anInt2014 == JunkTex.anInt4146)
+					Static2.anInt2014 = -1;
 			}
 			if (i >= 0) {
 				int i_15_ = Class7_Sub3.anInt2682 + 1 & 0x7f;
-				if (i_15_ != Class14_Sub9_Sub3.anInt4850) {
+				if (i_15_ != Static2.anInt4850) {
 					Class138.anIntArray2224[Class7_Sub3.anInt2682] = i;
 					Class36.anIntArray632[Class7_Sub3.anInt2682] = -1;
 					Class7_Sub3.anInt2682 = i_15_;
@@ -88,11 +81,11 @@ public class Class141 implements KeyListener, FocusListener {
 				i = -1;
 			else
 				i = Canvas_Sub2.anIntArray62[i] & ~0x80;
-			if (Class120.anInt2014 >= 0 && i >= 0) {
-				JunkTex.anIntArray4139[Class120.anInt2014] = i ^ 0xffffffff;
-				Class120.anInt2014 = Class120.anInt2014 + 1 & 0x7f;
-				if (JunkTex.anInt4146 == Class120.anInt2014)
-					Class120.anInt2014 = -1;
+			if (Static2.anInt2014 >= 0 && i >= 0) {
+				JunkTex.anIntArray4139[Static2.anInt2014] = i ^ 0xffffffff;
+				Static2.anInt2014 = Static2.anInt2014 + 1 & 0x7f;
+				if (JunkTex.anInt4146 == Static2.anInt2014)
+					Static2.anInt2014 = -1;
 			}
 		}
 		keyevent.consume();

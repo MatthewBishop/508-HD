@@ -35,7 +35,7 @@ public class Class123 {
 		int i_1_ = JunkTex.anInt500;
 		int i_2_ = JunkTex.anInt4550;
 		int i_3_ = Class14_Sub14.anInt2984;
-		int i_4_ = Class14_Sub2_Sub8.anInt3832;
+		int i_4_ = Static2.anInt3832;
 		int i_5_ = 6116423;
 		Class25.method1004(i_1_, i_4_, i_3_, i_2_, i_5_);
 		Class25.method1004(i_1_ + 1, i_4_ + 1, i_3_ - 2, 16, 0);
@@ -53,13 +53,13 @@ public class Class123 {
 			SceneGraphNode_GroundObject.aClass14_Sub2_Sub16_3567.method364(Static2.method1170((byte) -99, i_8_), i_1_ + 3, i_9_,
 					i_10_, 0);
 		}
-		Static2.method1317(Class14_Sub2_Sub8.anInt3832, JunkTex.anInt4550, Class14_Sub14.anInt2984, 127,
+		Static2.method1317(Static2.anInt3832, JunkTex.anInt4550, Class14_Sub14.anInt2984, 127,
 				JunkTex.anInt500);
 	}
 
 	public static void method1664(FileSystem fileSystem, boolean bool, Class14_Sub2_Sub16_Sub1 class14_sub2_sub16_sub1, byte i,
 			FileSystem fileSystem_11_) {
-		Class14_Sub3.aBoolean2752 = bool;
+		Static2.aBoolean2752 = bool;
 		Class15.aFileSystem_384 = fileSystem;
 		if (i >= -12)
 			method1662(87, null, 24);

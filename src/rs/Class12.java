@@ -3,10 +3,9 @@
  */
 package rs;
 
-import com.jagex.StringConstants;
 import com.jagex.cache.anim.Animation;
+import com.jagex.cache.loaders.Class35;
 import com.jagex.io.Buffer;
-import com.jagex.io.js5.FileSystem;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.IntegerNode;
@@ -60,7 +59,6 @@ public class Class12 {
 	public int[] anIntArray329;
 	public boolean aBoolean330;
 	public byte aByte331;
-	public static FileSystem aFileSystem_332;
 	public byte[] aByteArray333;
 	public int anInt334;
 	public int anInt335;
@@ -75,13 +73,8 @@ public class Class12 {
 		aClass124_328 = aClass124_278;
 	}
 
-	public SceneGraphNode_AbstractModelRenderer method209(int var1, int var2, Animation var3, Animation var4, int var5) {
+	public SceneGraphNode_AbstractModelRenderer method209(int var1, int var2, Animation var3, Animation var4) {
 		try {
-			if (var5 > -29) {
-				method213(98, 38, (Class79) null, (byte) -10, -46, (SceneGraphNode_GameEntity_Sub1) null, (SceneGraphNode_GameEntity_Sub2) null,
-						-116);
-			}
-
 			SceneGraphNode_AbstractModelRenderer var7;
 			if (this.anIntArray329 != null) {
 				Class12 var13 = this.method217((byte) -18);
@@ -89,7 +82,7 @@ public class Class12 {
 					var7 = null;
 					return var7;
 				} else {
-					var7 = var13.method209(var1, var2, var3, var4, -30);
+					var7 = var13.method209(var1, var2, var3, var4);
 					return var7;
 				}
 			} else {
@@ -129,21 +122,21 @@ public class Class12 {
 					if (this.aShortArray319 != null) {
 						for (var11 = 0; var11 < this.aShortArray319.length; ++var11) {
 							if (this.aByteArray333 != null && var11 < this.aByteArray333.length) {
-								var15.method1813(this.aShortArray319[var11],
+								var15.recolor(this.aShortArray319[var11],
 										JunkTex.aShortArray4747[this.aByteArray333[var11] & 255]);
 							} else {
-								var15.method1813(this.aShortArray319[var11], this.aShortArray317[var11]);
+								var15.recolor(this.aShortArray319[var11], this.aShortArray317[var11]);
 							}
 						}
 					}
 
 					if (this.aShortArray314 != null) {
 						for (var11 = 0; var11 < this.aShortArray314.length; ++var11) {
-							var15.method1819(this.aShortArray314[var11], this.aShortArray305[var11]);
+							var15.retexture(this.aShortArray314[var11], this.aShortArray305[var11]);
 						}
 					}
 
-					var6 = var15.method1827(this.anInt275 + 64, this.anInt279 + 850, -30, -50, -30);
+					var6 = var15.toRenderer(this.anInt275 + 64, this.anInt279 + 850, -30, -50, -30);
 					((ModelHD) var6).method1895(false, false, false, true, false, false, true);
 					Class37.aClass52_635.put(var6, this.anInt337);
 				}
@@ -168,7 +161,7 @@ public class Class12 {
 			}
 		} catch (Throwable var12) {
 			throw Util.error(var12, "bi.D(" + var1 + ',' + var2 + ','
-					+ (var3 != null ? "{...}" : "null") + ',' + (var4 != null ? "{...}" : "null") + ',' + var5 + ')');
+					+ (var3 != null ? "{...}" : "null") + ',' + (var4 != null ? "{...}" : "null") + ')');
 		}
 	}
 
@@ -178,7 +171,7 @@ public class Class12 {
 		for (int i_22_ = 0; i_22_ < i_21_; i_22_++) {
 			int i_23_ = class6.anIntArray164[i_22_] - Class4.cameraX;
 			int i_24_ = class6.anIntArray158[i_22_] - Static2.cameraY;
-			int i_25_ = class6.anIntArray155[i_22_] - Class14_Sub2_Sub8.cameraZ;
+			int i_25_ = class6.anIntArray155[i_22_] - Static2.cameraZ;
 			int i_26_ = i_25_ * i_17_ + i_23_ * i_18_ >> 16;
 			i_25_ = i_25_ * i_18_ - i_23_ * i_17_ >> 16;
 			i_23_ = i_26_;
@@ -222,21 +215,16 @@ public class Class12 {
 		aShortArray320 = null;
 		aClass124_278 = null;
 		aClass124_328 = null;
-		aFileSystem_332 = null;
 		spritePaletteIndicators = null;
 		aClass124_311 = null;
 	}
 
-	public boolean method212(byte var1) {
+	public boolean method212() {
 		try {
 			if (this.anIntArray329 == null) {
 				boolean var5 = this.anInt289 != -1 || this.anInt301 != -1 || this.anInt292 != -1;
 				return var5;
 			} else {
-				if (var1 >= -118) {
-					this.method209(-80, -20, (Animation) null, (Animation) null, 21);
-				}
-
 				for (int var2 = 0; this.anIntArray329.length > var2; ++var2) {
 					if (this.anIntArray329[var2] != -1) {
 						Class12 var3 = Static2.method1744(this.anIntArray329[var2], 170);
@@ -249,62 +237,7 @@ public class Class12 {
 				return false;
 			}
 		} catch (Throwable var4) {
-			throw Util.error(var4, "bi.G(" + var1 + ')');
-		}
-	}
-
-	public static void method213(int i, int i_44_, Class79 class79, byte i_45_, int i_46_,
-			SceneGraphNode_GameEntity_Sub1 class133_sub1_sub1, SceneGraphNode_GameEntity_Sub2 class133_sub1_sub2, int i_47_) {
-		Class14_Sub3 class14_sub3 = new Class14_Sub3();
-		if (i_45_ != -35)
-			method221(96, -74, (byte) 85);
-		class14_sub3.anInt2767 = i_44_ * 128;
-		class14_sub3.anInt2763 = i_46_;
-		class14_sub3.anInt2774 = i * 128;
-		if (class79 != null) {
-			class14_sub3.anInt2772 = class79.anInt1289;
-			class14_sub3.aClass79_2747 = class79;
-			class14_sub3.anInt2765 = class79.anInt1271 * 128;
-			int i_48_ = class79.anInt1227;
-			class14_sub3.anInt2769 = class79.anInt1254;
-			class14_sub3.anInt2753 = class79.anInt1294;
-			class14_sub3.anIntArray2746 = class79.anIntArray1287;
-			int i_49_ = class79.anInt1245;
-			if (i_47_ == 1 || i_47_ == 3) {
-				i_48_ = class79.anInt1245;
-				i_49_ = class79.anInt1227;
-			}
-			class14_sub3.anInt2761 = (i_48_ + i) * 128;
-			class14_sub3.anInt2751 = (i_49_ + i_44_) * 128;
-			if (class79.anIntArray1276 != null) {
-				class14_sub3.aBoolean2757 = true;
-				class14_sub3.method452(18631);
-			}
-			if (class14_sub3.anIntArray2746 != null)
-				class14_sub3.anInt2773 = ((int) (Math.random()
-						* (-class14_sub3.anInt2772 + class14_sub3.anInt2769)) + class14_sub3.anInt2772);
-			Class152.aClass2_2438.pushBack(class14_sub3);
-		} else if (class133_sub1_sub2 != null) {
-			class14_sub3.aSceneGraphNode_GameEntity_Sub2_2762 = class133_sub1_sub2;
-			Class12 class12 = class133_sub1_sub2.aClass12_4949;
-			if (class12.anIntArray329 != null) {
-				class14_sub3.aBoolean2757 = true;
-				class12 = class12.method217((byte) -18);
-			}
-			if (class12 != null) {
-				class14_sub3.anInt2751 = (class12.anInt334 + i_44_) * 128;
-				class14_sub3.anInt2761 = (i + class12.anInt334) * 128;
-				class14_sub3.anInt2753 = Static2.method1500(class133_sub1_sub2, -1);
-				class14_sub3.anInt2765 = class12.anInt293 * 128;
-			}
-			JunkTex.aClass2_683.pushBack(class14_sub3);
-		} else if (class133_sub1_sub1 != null) {
-			class14_sub3.anInt2751 = (class133_sub1_sub1.anInt3493 + i_44_) * 128;
-			class14_sub3.aSceneGraphNode_GameEntity_Sub1_2755 = class133_sub1_sub1;
-			class14_sub3.anInt2761 = (class133_sub1_sub1.anInt3493 + i) * 128;
-			class14_sub3.anInt2753 = Class116.method1597(false, class133_sub1_sub1);
-			class14_sub3.anInt2765 = class133_sub1_sub1.anInt4917 * 128;
-			Class88.aClass55_1398.put(class133_sub1_sub1.aClass124_4922.method1692(0), class14_sub3);
+			throw Util.error(var4, "bi.G()");
 		}
 	}
 
@@ -466,11 +399,11 @@ public class Class12 {
 																		for (int i_83_ = 0; i_83_ < i_81_; i_83_++) {
 																			boolean bool = class14_sub10
 																					.readUByte() == 1;
-																			int i_84_ = class14_sub10.method829(-127);
+																			int i_84_ = class14_sub10.readMedium(-127);
 																			Linkable linkable;
 																			if (bool)
 																				linkable = new Class14_Sub30(
-																						class14_sub10.method797());
+																						class14_sub10.getJagexString());
 																			else
 																				linkable = new IntegerNode(
 																						class14_sub10.getInt(
@@ -506,9 +439,9 @@ public class Class12 {
 											}
 										}
 									} else {
-										aClass124Array291[i_70_ - 30] = class14_sub10.method797();
+										aClass124Array291[i_70_ - 30] = class14_sub10.getJagexString();
 										if (aClass124Array291[i_70_ - 30].method1717(40,
-												Class14_Sub9_Sub1.aClass124_4808))
+												Static2.aClass124_4808))
 											aClass124Array291[i_70_ - 30] = null;
 									}
 								} else
@@ -518,7 +451,7 @@ public class Class12 {
 						} else
 							anInt334 = class14_sub10.readUByte();
 					} else
-						aClass124_302 = class14_sub10.method797();
+						aClass124_302 = class14_sub10.getJagexString();
 				} else {
 					int i_89_ = class14_sub10.readUByte();
 					anIntArray309 = new int[i_89_];
@@ -622,7 +555,7 @@ public class Class12 {
 			int var3 = var1.readUByte();
 			if (var3 == 0) {
 				if (!var2) {
-					method213(-95, 93, (Class79) null, (byte) 88, 89, (SceneGraphNode_GameEntity_Sub1) null,
+					StaticMusic.method213(-95, 93, (Class79) null, (byte) 88, 89, (SceneGraphNode_GameEntity_Sub1) null,
 							(SceneGraphNode_GameEntity_Sub2) null, -46);
 				}
 
@@ -631,45 +564,6 @@ public class Class12 {
 
 			this.method216((byte) -105, var1, var3);
 		}
-	}
-
-	public static int method221(int var0, int var1, byte var2) {
-		try {
-			int var3;
-			for (var3 = 1; var0 > 1; var1 *= var1) {
-				if ((var0 & 1) != 0) {
-					var3 *= var1;
-				}
-
-				var0 >>= 1;
-			}
-
-			if (var2 != -96) {
-				spritePaletteIndicators = null;
-			}
-
-			if (var0 == 1) {
-				int var4 = var1 * var3;
-				return var4;
-			} else {
-				return var3;
-			}
-		} catch (Throwable var5) {
-			throw Util.error(var5, "bi.P(" + var0 + ',' + var1 + ',' + var2 + ')');
-		}
-	}
-
-	public static Class129 method222(int i) {
-		Class129 class129;
-		try {
-			if (i != -18108)
-				spritePaletteIndicators = null;
-			class129 = (Class129) Class.forName(StringConstants.CLASS129_SUB1).newInstance();
-		} catch (Throwable throwable) {
-			Class129 class129_132_ = null;
-			return class129_132_;
-		}
-		return class129;
 	}
 
 	public void method223(byte i) {
@@ -730,21 +624,21 @@ public class Class12 {
 						if (this.aShortArray319 != null) {
 							for (var8 = 0; this.aShortArray319.length > var8; ++var8) {
 								if (this.aByteArray333 != null && var8 < this.aByteArray333.length) {
-									var13.method1813(this.aShortArray319[var8],
+									var13.recolor(this.aShortArray319[var8],
 											JunkTex.aShortArray4747[this.aByteArray333[var8] & 255]);
 								} else {
-									var13.method1813(this.aShortArray319[var8], this.aShortArray317[var8]);
+									var13.recolor(this.aShortArray319[var8], this.aShortArray317[var8]);
 								}
 							}
 						}
 
 						if (this.aShortArray314 != null) {
 							for (var8 = 0; this.aShortArray314.length > var8; ++var8) {
-								var13.method1819(this.aShortArray314[var8], this.aShortArray305[var8]);
+								var13.retexture(this.aShortArray314[var8], this.aShortArray305[var8]);
 							}
 						}
 
-						var4 = var13.method1827(64, 768, -50, -10, -50);
+						var4 = var13.toRenderer(64, 768, -50, -10, -50);
 						JunkTex.aClass52_4186.put(var4, this.anInt337);
 					}
 

@@ -572,6 +572,7 @@ public class RT4GL {
 		gldrawable = null;
 		glcontext = null;
 		matrices = null;
+		Class14_Sub2_Sub1.anIntArray2002 = null;
 	}
 
 	public static void method1655() {

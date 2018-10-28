@@ -99,7 +99,7 @@ public class SceneGraphNode_Model extends SceneGraphNode {
 		}
 	}
 
-	public void method1813(short i, short i_9_) {
+	public void recolor(short i, short i_9_) {
 		for (int i_10_ = 0; i_10_ < anInt3547; i_10_++) {
 			if (aShortArray3533[i_10_] == i)
 				aShortArray3533[i_10_] = i_9_;
@@ -469,7 +469,7 @@ public class SceneGraphNode_Model extends SceneGraphNode {
 		}
 	}
 
-	public void method1819(short i, short i_100_) {
+	public void retexture(short i, short i_100_) {
 		if (aShortArray3528 != null) {
 			for (int i_101_ = 0; i_101_ < anInt3547; i_101_++) {
 				if (aShortArray3528[i_101_] == i)
@@ -831,7 +831,7 @@ public class SceneGraphNode_Model extends SceneGraphNode {
 
 	@Override
 	public SceneGraphNode method1791(int i, int i_185_, int i_186_) {
-		return method1827(aShort3539, aShort3525, i, i_185_, i_186_);
+		return toRenderer(aShort3539, aShort3525, i, i_185_, i_186_);
 	}
 
 	public void method1825(int i, int i_187_, int i_188_) {
@@ -905,7 +905,7 @@ public class SceneGraphNode_Model extends SceneGraphNode {
 		}
 	}
 
-	public SceneGraphNode_AbstractModelRenderer method1827(int i, int i_204_, int i_205_, int i_206_, int i_207_) {
+	public SceneGraphNode_AbstractModelRenderer toRenderer(int i, int i_204_, int i_205_, int i_206_, int i_207_) {
 		ModelHD modelhd = new ModelHD(this, i, i_204_, true);
 		modelhd.method1913();
 		return modelhd;

@@ -57,15 +57,6 @@ public class Class7 {
 		return class14_sub2_sub19;
 	}
 
-	public static int method118(byte i, int i_6_) {
-		if (i != 68) {
-			int i_7_ = -59;
-			return i_7_;
-		}
-		int i_8_ = i_6_ & 0xff;
-		return i_8_;
-	}
-
 	public static void method119(int i) {
 		aClass124Array178 = null;
 		aClass124_189 = null;

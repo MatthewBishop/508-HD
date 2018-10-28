@@ -39,28 +39,6 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 		return i_2_;
 	}
 
-	public static void method434(int i, int i_3_, Class79 class79, int i_4_, int i_5_) {
-		Class14_Sub3 class14_sub3 = (Class14_Sub3) Class152.aClass2_2438.getFront();
-		if (i_4_ != 128)
-			anIntArray4077 = null;
-		for (/**/; class14_sub3 != null; class14_sub3 = ((Class14_Sub3) Class152.aClass2_2438.getNext())) {
-			if (class14_sub3.anInt2763 == i_3_ && i * 128 == class14_sub3.anInt2774
-					&& i_5_ * 128 == class14_sub3.anInt2767
-					&& class14_sub3.aClass79_2747.anInt1257 == class79.anInt1257) {
-				if (class14_sub3.aClass14_Sub9_Sub4_2775 != null) {
-					Class33.aClass14_Sub9_Sub2_585.method730(class14_sub3.aClass14_Sub9_Sub4_2775);
-					class14_sub3.aClass14_Sub9_Sub4_2775 = null;
-				}
-				if (class14_sub3.aClass14_Sub9_Sub4_2760 != null) {
-					Class33.aClass14_Sub9_Sub2_585.method730(class14_sub3.aClass14_Sub9_Sub4_2760);
-					class14_sub3.aClass14_Sub9_Sub4_2760 = null;
-				}
-				class14_sub3.unlink();
-				break;
-			}
-		}
-	}
-
 	public int method435(int i, int i_6_, byte i_7_) {
 		int i_8_ = -76 / ((i_7_ + 7) / 52);
 		if (anIntArray4073 == null || i < 0 || i > anIntArray4073.length) {
@@ -129,13 +107,13 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 			JunkTex.anInt4602++;
 			JunkTex.anInt4599 = Class14_Sub4.anInt2790;
 			JunkTex.anInt4640 = JunkTex.anInt4724;
-			Static2.anInt1804 = Class14_Sub9_Sub3.anInt4848;
-			Class7_Sub3_Sub1.anInt3714 = Class127.anInt2105;
+			Static2.anInt1804 = Static2.anInt4848;
+			Class7_Sub3_Sub1.anInt3714 = Static2.anInt2105;
 			JunkTex.anInt3367 = Class111.anInt1860;
 			Class139.anInt2230 = Class118.anInt1976;
 			int i_17_ = -59 / ((-55 - i) / 58);
 			JunkTex.aLong2800 = Applet_Sub1.aLong6;
-			Class127.anInt2105 = 0;
+			Static2.anInt2105 = 0;
 		}
 	}
 
@@ -226,12 +204,12 @@ public class Class14_Sub2_Sub21 extends Cacheable {
 				for (int i_36_ = 0; i_35_ > i_36_; i_36_++) {
 					int i_37_ = class14_sub10.readUShort();
 					anIntArray4073[i_36_] = i_37_;
-					anIntArrayArray4075[i_36_] = new int[Class14_Sub9_Sub1.anIntArray4804[i_37_]];
-					for (int i_38_ = 0; Class14_Sub9_Sub1.anIntArray4804[i_37_] > i_38_; i_38_++)
+					anIntArrayArray4075[i_36_] = new int[Static2.anIntArray4804[i_37_]];
+					for (int i_38_ = 0; Static2.anIntArray4804[i_37_] > i_38_; i_38_++)
 						anIntArrayArray4075[i_36_][i_38_] = class14_sub10.readUShort();
 				}
 			}
 		} else
-			aClass124Array4080 = class14_sub10.method797().method1719(60, 123);
+			aClass124Array4080 = class14_sub10.getJagexString().method1719(60, 123);
 	}
 }

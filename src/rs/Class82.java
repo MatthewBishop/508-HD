@@ -21,7 +21,7 @@ public class Class82 {
 	}
 
 	public static Class124 method1405(byte i, Class94 class94, int i_0_) {
-		if (!Class14_Sub3.method448((byte) 124, i_0_, client.method46(class94)) && class94.anObjectArray1535 == null) {
+		if (!Static2.method448((byte) 124, i_0_, client.method46(class94)) && class94.anObjectArray1535 == null) {
 			Class124 class124 = null;
 			return class124;
 		}

@@ -21,18 +21,6 @@ public class Class98 {
 	public static int anInt1671;
 	public static Class124 aClass124_1673 = Class124.method263("3D)2Softwarebibliothek gestartet)3");
 
-	public static void method1492(int i, byte i_0_) {
-		if (i_0_ >= -43)
-			method1492(38, (byte) 76);
-		if (i == -1 && !Class14_Sub7.aBoolean2827)
-			JunkTex.method569(-80);
-		else if (i != -1 && (JunkTex.anInt2856 != i || !Class14_Sub11.method852(14326))
-				&& Class14_Sub23.anInt3135 != 0 && !Class14_Sub7.aBoolean2827)
-			JunkTex.method636(i, 2, 25506, Class14_Sub23.anInt3135, false, JunkTex.aCacheFileWorker_3374,
-					0);
-		JunkTex.anInt2856 = i;
-	}
-
 	public static boolean method1493(int i, Class124 class124) {
 		if (class124 == null) {
 			boolean bool = false;
@@ -42,7 +30,7 @@ public class Class98 {
 			if (class124.method1717(i ^ ~0x28, Static2.aClass124Array2938[i_1_]))
 				return true;
 		}
-		if (class124.method1717(40, (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.aClass124_4922)))
+		if (class124.method1717(40, (Static2.aSceneGraphNode_GameEntity_Sub1_2748.aClass124_4922)))
 			return true;
 		boolean bool = false;
 		return bool;

@@ -314,7 +314,7 @@ public class ModelSD extends SceneGraphNode_AbstractModelRenderer {
 									yawcos = SDRaster.cos[yaw];
 								}
 								boolean bool_73_ = false;
-								if (l > 0L && Class90.aBoolean1417 && i_60_ > 0) {
+								if (l > 0L && Static2.aBoolean1417 && i_60_ > 0) {
 									int i_74_;
 									int i_75_;
 									if (i_61_ > 0) {

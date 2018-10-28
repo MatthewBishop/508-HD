@@ -135,12 +135,12 @@ public class Class142 {
 			class133_sub2.method1825(anInt2258, anInt2290, anInt2324);
 		if (aShortArray2278 != null) {
 			for (int i_11_ = 0; aShortArray2278.length > i_11_; i_11_++)
-				class133_sub2.method1813(aShortArray2278[i_11_], aShortArray2269[i_11_]);
+				class133_sub2.recolor(aShortArray2278[i_11_], aShortArray2269[i_11_]);
 		}
 		int i_12_ = -32 / ((i + 53) / 62);
 		if (aShortArray2283 != null) {
 			for (int i_13_ = 0; i_13_ < aShortArray2283.length; i_13_++)
-				class133_sub2.method1819(aShortArray2283[i_13_], aShortArray2279[i_13_]);
+				class133_sub2.retexture(aShortArray2283[i_13_], aShortArray2279[i_13_]);
 		}
 		SceneGraphNode_Model class133_sub2_14_ = class133_sub2;
 		return class133_sub2_14_;
@@ -258,7 +258,7 @@ public class Class142 {
 		if (i == 1)
 			anInt2311 = class14_sub10.readUShort();
 		else if (i == 2)
-			aClass124_2296 = class14_sub10.method797();
+			aClass124_2296 = class14_sub10.getJagexString();
 		else if (i != 4) {
 			if (i == 5)
 				anInt2317 = class14_sub10.readUShort();
@@ -278,9 +278,9 @@ public class Class142 {
 								anInt2264 = class14_sub10.readUShort();
 							else if (i != 26) {
 								if (i >= 30 && i < 35) {
-									aClass124Array2263[i - 30] = class14_sub10.method797();
+									aClass124Array2263[i - 30] = class14_sub10.getJagexString();
 									if (aClass124Array2263[i - 30].method1717(i_24_ + 19983,
-											Class14_Sub9_Sub1.aClass124_4808))
+											Static2.aClass124_4808))
 										aClass124Array2263[i - 30] = null;
 								} else if (i < 35 || i >= 40) {
 									if (i != 40) {
@@ -362,13 +362,13 @@ public class Class142 {
 																										boolean bool = class14_sub10
 																												.readUByte() == 1;
 																										int i_32_ = class14_sub10
-																												.method829(
+																												.readMedium(
 																														71);
 																										Linkable linkable;
 																										if (bool)
 																											linkable = new Class14_Sub30(
 																													class14_sub10
-																															.method797());
+																															.getJagexString());
 																										else
 																											linkable = new IntegerNode(
 																													class14_sub10
@@ -434,7 +434,7 @@ public class Class142 {
 										}
 									}
 								} else
-									aClass124Array2304[i - 35] = class14_sub10.method797();
+									aClass124Array2304[i - 35] = class14_sub10.getJagexString();
 							} else
 								anInt2322 = class14_sub10.readUShort();
 						} else
@@ -480,11 +480,11 @@ public class Class142 {
 		}
 		if (aShortArray2278 != null) {
 			for (int i_40_ = 0; i_40_ < aShortArray2278.length; i_40_++)
-				class133_sub2.method1813(aShortArray2278[i_40_], aShortArray2269[i_40_]);
+				class133_sub2.recolor(aShortArray2278[i_40_], aShortArray2269[i_40_]);
 		}
 		if (aShortArray2283 != null) {
 			for (int i_41_ = 0; i_41_ < aShortArray2283.length; i_41_++)
-				class133_sub2.method1819(aShortArray2283[i_41_], aShortArray2279[i_41_]);
+				class133_sub2.retexture(aShortArray2283[i_41_], aShortArray2279[i_41_]);
 		}
 		SceneGraphNode_Model class133_sub2_42_ = class133_sub2;
 		return class133_sub2_42_;
@@ -516,17 +516,17 @@ public class Class142 {
 			if (aShortArray2278 != null) {
 				for (int i_48_ = 0; i_48_ < aShortArray2278.length; i_48_++) {
 					if (aByteArray2318 != null && i_48_ < aByteArray2318.length)
-						class133_sub2.method1813(aShortArray2278[i_48_],
+						class133_sub2.recolor(aShortArray2278[i_48_],
 								(Class7_Sub1.aShortArray2663[(aByteArray2318[i_48_] & 0xff)]));
 					else
-						class133_sub2.method1813(aShortArray2278[i_48_], aShortArray2269[i_48_]);
+						class133_sub2.recolor(aShortArray2278[i_48_], aShortArray2269[i_48_]);
 				}
 			}
 			if (aShortArray2283 != null) {
 				for (int i_49_ = 0; i_49_ < aShortArray2283.length; i_49_++)
-					class133_sub2.method1819(aShortArray2283[i_49_], aShortArray2279[i_49_]);
+					class133_sub2.retexture(aShortArray2283[i_49_], aShortArray2279[i_49_]);
 			}
-			class133_sub7 = class133_sub2.method1827(anInt2281 + 64, 768 + anInt2261, -50, -10, -50);
+			class133_sub7 = class133_sub2.toRenderer(anInt2281 + 64, 768 + anInt2261, -50, -10, -50);
 			if (anInt2328 != 128 || anInt2291 != 128 || anInt2327 != 128)
 				class133_sub7.method1869(anInt2328, anInt2291, anInt2327);
 			class133_sub7.haveActions = true;
@@ -562,7 +562,7 @@ public class Class142 {
 		AtmosphericChunk atmosphericChunk = new AtmosphericChunk();
 		for (int i_55_ = 0; i_55_ < 13; i_55_++) {
 			for (int i_57_ = 0; i_57_ < 13; i_57_++)
-				OverlayType.aClass71ArrayArray2421[i_55_][i_57_] = atmosphericChunk;
+				Static2.aClass71ArrayArray2421[i_55_][i_57_] = atmosphericChunk;
 		}
 	}
 
@@ -591,15 +591,15 @@ public class Class142 {
 		if (aShortArray2278 != null) {
 			for (int i_63_ = 0; i_63_ < aShortArray2278.length; i_63_++) {
 				if (aByteArray2318 != null && aByteArray2318.length > i_63_)
-					class133_sub2.method1813(aShortArray2278[i_63_],
+					class133_sub2.recolor(aShortArray2278[i_63_],
 							(Class7_Sub1.aShortArray2663[aByteArray2318[i_63_] & 0xff]));
 				else
-					class133_sub2.method1813(aShortArray2278[i_63_], aShortArray2269[i_63_]);
+					class133_sub2.recolor(aShortArray2278[i_63_], aShortArray2269[i_63_]);
 			}
 		}
 		if (aShortArray2283 != null) {
 			for (int i_64_ = 0; i_64_ < aShortArray2283.length; i_64_++)
-				class133_sub2.method1819(aShortArray2283[i_64_], aShortArray2279[i_64_]);
+				class133_sub2.retexture(aShortArray2283[i_64_], aShortArray2279[i_64_]);
 		}
 		ModelSD modelsd = class133_sub2.method1822(anInt2281 + 64, anInt2261 + 768, -50, -10, -50);
 		if (anInt2328 != 128 || anInt2291 != 128 || anInt2327 != 128)

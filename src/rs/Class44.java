@@ -3,11 +3,10 @@
  */
 package rs;
 
-import com.jagex.io.js5.FileSystem;
+import com.jagex.util.AbstractMouseWheelHandler;
 
 public class Class44 {
-	public static FileSystem aFileSystem_725;
-	public static Class129 aClass129_726;
+	public static AbstractMouseWheelHandler aAbstractMouseWheelHandler_726;
 	public static Class124 aClass124_728;
 	public static Class124 aClass124_729;
 	public static Class124 aClass124_730 = Class124.method263("Walk here");
@@ -29,22 +28,16 @@ public class Class44 {
 	public static void method1155(int i, int i_0_) {
 		JunkTex.anInt427 = i;
 		Class37.anInt644 = i_0_;
-		Class14_Sub18.anInt3050 = -1;
+		Static2.anInt3050 = -1;
 		Static2.method1126((byte) -22);
-	}
-
-	public static void method1156(byte i) {
-		if (i < -48)
-			Class139.aClass52_2229.clearSoftReference();
 	}
 
 	public static void method1157(byte i) {
 		aClass124_730 = null;
-		aFileSystem_725 = null;
 		aClass124_729 = null;
 		aClass124_732 = null;
 		if (i == 95) {
-			aClass129_726 = null;
+			aAbstractMouseWheelHandler_726 = null;
 			aClass124_728 = null;
 		}
 	}

@@ -92,7 +92,7 @@ public class Animation {
 									int i_22_ = class14_sub10.readUByte();
 									if (i_22_ > 0) {
 										anIntArrayArray776[i_21_] = new int[i_22_];
-										anIntArrayArray776[i_21_][0] = class14_sub10.method829(41);
+										anIntArrayArray776[i_21_][0] = class14_sub10.readMedium(41);
 										for (int i_23_ = 1; i_22_ > i_23_; i_23_++)
 											anIntArrayArray776[i_21_][i_23_] = class14_sub10.readUShort();
 									}

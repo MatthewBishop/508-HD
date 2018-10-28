@@ -76,12 +76,12 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 	public static void method140(Applet_Sub1 applet_sub1, int i) {
 		if (i != -29429)
 			method135(false, -38, 10);
-		Class75.method1340((byte) 78);
+		Static2.method1340((byte) 78);
 		if (Static2.aClass104_4037 == null) {
 			if (!JunkTex.aBoolean4357)
 				Class37.method1108((byte) 96);
 			else if (anInt3714 == 1) {
-				int i_19_ = OverlayType.anInt2423 / 5;
+				int i_19_ = Static2.anInt2423 / 5;
 				int i_20_ = i_19_ + (JunkTex.anInt4266 + 140);
 				if (i_20_ <= JunkTex.anInt3367 && JunkTex.anInt3367 <= i_20_ + 14
 						&& Static2.anInt2573 + 4 <= Class139.anInt2230
@@ -128,15 +128,15 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 											(new Class124[] { class45.aClass124_741, Class54.aClass124_883 }),
 											(byte) -78).method1681(-113);
 									JunkTex.aString4605 = new String(is, 0, is.length);
-									Class120.anInt2005 = class45.anInt744;
+									Static2.anInt2005 = class45.anInt744;
 									if (Class7.anInt182 != 0) {
-										Class84.anInt1346 = Class120.anInt2005 + 40000;
-										Static2.anInt3348 = Class120.anInt2005 + 50000;
+										Class84.anInt1346 = Static2.anInt2005 + 40000;
+										Static2.anInt3348 = Static2.anInt2005 + 50000;
 										Class131.anInt2164 = Class84.anInt1346;
 									}
-									if (Class14_Sub28.aClass94_3230 != null) {
-										Class14_Sub28.aClass94_3230.aBoolean1503 = true;
-										Class103.method1531((Class14_Sub28.aClass94_3230));
+									if (Static2.aClass94_3230 != null) {
+										Static2.aClass94_3230.aBoolean1503 = true;
+										Class103.method1531((Static2.aClass94_3230));
 									}
 								} else {
 									Class124 class124 = Static2.aClass124_4039;
@@ -149,8 +149,8 @@ public class Class7_Sub3_Sub1 extends Class7_Sub3 {
 											JunkTex.aClass124_3408, class45.aClass124_741, Class54.aClass124_883,
 											class124, Static2.aClass124_3065,
 											(Class83.method1407(20, JunkTex.language)), Static2.aClass124_755,
-											(Class83.method1407(28, (Class14_Sub2_Sub11.anInt3884))),
-											Class14_Sub17.aClass124_3014, Class83.method1407(71, 1),
+											(Class83.method1407(28, (Static2.anInt3884))),
+											Static2.aClass124_3014, Class83.method1407(71, 1),
 											(Static2.aClass124_4044),
 											(Class83.method1407(i + 29452, Class14_Sub2_Sub3.anInt3771)),
 											(Static2.aClass124_3861),

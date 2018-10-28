@@ -46,12 +46,12 @@ public class Class14_Sub14 extends Linkable {
 			JunkTex.anInt4190 = 3;
 			JunkTex.method495((byte) -47, false);
 			RT4.aBoolean374 = false;
-			Class14_Sub29.anInt3266 = 127;
+			StaticMusic.anInt3266 = 127;
 			Static2.aBoolean2372 = false;
 			Class33.aBoolean584 = false;
 			RT4.useLighting = false;
 			Class139.aBoolean2233 = false;
-			Static2.anInt1691 = 127;
+			StaticMusic.anInt1691 = 127;
 			JunkTex.aBoolean845 = false;
 			JunkTex.aBoolean4420 = false;
 			Static2.anInt2725 = 0;
@@ -63,18 +63,18 @@ public class Class14_Sub14 extends Linkable {
 			Class28.aBoolean516 = false;
 			Class135.anInt2189 = 0;
 			JunkTex.aBoolean3397 = false;
-			Class14_Sub23.anInt3135 = 255;
+			StaticMusic.anInt3135 = 255;
 			JunkTex.method595(class43);
 		} else {
 			JunkTex.anInt4190 = 3;
 			FileOnDisk fileOnDisk = null;
 			JunkTex.method495((byte) -47, true);
 			RT4.aBoolean374 = true;
-			Static2.anInt1691 = 127;
+			StaticMusic.anInt1691 = 127;
 			JunkTex.aBoolean4528 = true;
 			Class33.aBoolean584 = true;
-			Class14_Sub29.anInt3266 = 127;
-			Class14_Sub23.anInt3135 = 255;
+			StaticMusic.anInt3266 = 127;
+			StaticMusic.anInt3135 = 255;
 			Class28.aBoolean516 = true;
 			Class139.aBoolean2233 = true;
 			JunkTex.aBoolean4420 = true;
@@ -126,10 +126,10 @@ public class Class14_Sub14 extends Linkable {
 	}
 
 	public static void method868(int i) {
-		int i_3_ = (SceneGraphNode_Projectile.anInt3676 + (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495 >> 7));
+		int i_3_ = (SceneGraphNode_Projectile.anInt3676 + (Static2.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495 >> 7));
 		JunkTex.anInt4754 = 0;
 		int i_4_ = -6 % ((-28 - i) / 50);
-		int i_5_ = (Class58.anInt947 + (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436 >> 7));
+		int i_5_ = (Class58.anInt947 + (Static2.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436 >> 7));
 		if (i_3_ >= 3053 && i_3_ <= 3156 && i_5_ >= 3056 && i_5_ <= 3136)
 			JunkTex.anInt4754 = 1;
 		if (i_3_ >= 3072 && i_3_ <= 3118 && i_5_ >= 9492 && i_5_ <= 9535)
@@ -146,15 +146,15 @@ public class Class14_Sub14 extends Linkable {
 	}
 
 	public static void method870(int i, Class124 class124) {
-		Class14_Sub9_Sub1.aClass124_4829 = class124;
+		Static2.aClass124_4829 = class124;
 		if (ErrorReporting.signlink.applet != null) {
 			try {
-				Class124 class124_7_ = (Class14_Sub2_Sub11.aClass124_3892
+				Class124 class124_7_ = (Static2.aClass124_3892
 						.method1703(ErrorReporting.signlink.applet, (byte) -106));
 				Class124 class124_8_ = (Class14_Sub15.aClass124_2995
 						.method1703(ErrorReporting.signlink.applet, (byte) -33));
 				Class124 class124_9_ = (JunkTex.method515((new Class124[] { class124_7_,
-						Class14_Sub9_Sub1.aClass124_4814, class124, SceneGraphNode_GameEntity.aClass124_3502, class124_8_ }),
+						Static2.aClass124_4814, class124, SceneGraphNode_GameEntity.aClass124_3502, class124_8_ }),
 						(byte) -120));
 				if (class124.length(i - 6346) == 0)
 					class124_9_ = JunkTex

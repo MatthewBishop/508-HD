@@ -23,7 +23,7 @@ public class SceneGraphNode_GroundObject extends SceneGraphNode {
 	public static void method1830(Class14_Sub21 class14_sub21, int i) {
 		if (i != -1976917689)
 			aClass14_Sub2_Sub16_3567 = null;
-		Class116.method1596(200000, (byte) 79, class14_sub21);
+		Class116.method1596(200000, class14_sub21);
 	}
 	public static void method1831(byte i) {
 		anIntArray3559 = null;
@@ -103,7 +103,7 @@ public class SceneGraphNode_GroundObject extends SceneGraphNode {
 			}
 			if (atmosphericChunk == null)
 				atmosphericChunk = new AtmosphericChunk();
-			OverlayType.aClass71ArrayArray2421[i >> 3][i_15_ >> 35] = atmosphericChunk;
+			Static2.aClass71ArrayArray2421[i >> 3][i_15_ >> 35] = atmosphericChunk;
 		}
 	}
 

@@ -3,59 +3,27 @@
  */
 package rs;
 
-import com.jagex.io.js5.FileSystem;
 import com.jagex.link.HashTable;
 import com.jagex.link.Linkable;
 import com.jagex.rt4.HDTile;
 
 public class Class14_Sub30 extends Linkable {
-	public Class124 aClass124_3270;
-	public static int anInt3271;
-	public static HDTile[][] aClass14_Sub27ArrayArray3273;
-	public static Class124 aClass124_3274;
-	public static HashTable aClass55_3275;
-	public static Class124 aClass124_3278 = Class124.method263("wishes to trade with you)3");
-	public static int spriteTrimHeight;
-	public static Class124 aClass124_3281;
 	public static byte aByte3283;
 
-	static {
-		aClass124_3274 = aClass124_3278;
-		aClass124_3281 = Class124.method263("Mitglieder)2Welt");
-		aClass55_3275 = new HashTable(8);
-	}
-
-	public static void method937(int i, boolean bool) {
-		if (!bool)
-			Class14_Sub11.aClass52_2946.method1208(i);
-	}
-
-	public static boolean method938(int i, int i_0_) {
-		if (i_0_ != 18024) {
-			boolean bool = false;
-			return bool;
-		}
-		boolean bool = i == 198 || i == 230 || i == 156 || i == 140 || i == 223;
-		return bool;
-	}
-
-	public static void method939(FileSystem fileSystem, FileSystem fileSystem_1_, int i) {
-		Class54.aFileSystem_885 = fileSystem;
-		if (i != 16)
-			aClass124_3281 = null;
-		Class62.aFileSystem_993 = fileSystem_1_;
-	}
-
-	public Class14_Sub30() {
-		/* empty */
-	}
+	public static Class124 aClass124_3278 = Class124.method263("wishes to trade with you)3");
+	public static Class124 aClass124_3281 = Class124.method263("Mitglieder)2Welt");
+	public static Class124 aClass124_3274 = aClass124_3278;
+	public static HDTile[][] aClass14_Sub27ArrayArray3273;
+	public static HashTable aClass55_3275 = new HashTable(8);
+	public static int anInt3271;
+	public static int spriteTrimHeight;
 
 	public static void method940(Class153 class153, int i, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_,
 			boolean bool) {
 		int i_9_;
 		int i_8_ = i_9_ = (i_6_ << 7) - Class4.cameraX;
 		int i_11_;
-		int i_10_ = i_11_ = (i_7_ << 7) - Class14_Sub2_Sub8.cameraZ;
+		int i_10_ = i_11_ = (i_7_ << 7) - Static2.cameraZ;
 		int i_13_;
 		int i_12_ = i_13_ = i_8_ + 128;
 		int i_15_;
@@ -124,7 +92,7 @@ public class Class14_Sub30 extends Linkable {
 	}
 
 	public static void method941(byte i) {
-		OverlayType.aClass52_2406.clearSoftReference();
+		Static2.aClass52_2406.clearSoftReference();
 		JunkTex.aClass52_4588.clearSoftReference();
 		if (i == 11)
 			Class83.aClass52_1339.clearSoftReference();
@@ -138,6 +106,12 @@ public class Class14_Sub30 extends Linkable {
 			method940(null, -60, 80, -16, -90, -43, -65, -108, false);
 		aClass14_Sub27ArrayArray3273 = null;
 		aClass124_3278 = null;
+	}
+
+	public Class124 aClass124_3270;
+
+	public Class14_Sub30() {
+		/* empty */
 	}
 
 	public Class14_Sub30(Class124 class124) {

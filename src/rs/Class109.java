@@ -3,6 +3,7 @@
  */
 package rs;
 
+import com.jagex.cache.wip.EnumType;
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.CacheFileWorker;
 import com.jagex.rt4.AbstractSprite;
@@ -11,7 +12,6 @@ import com.jagex.rt4.AbstractSprite_Sub1;
 public class Class109 {
 	public int anInt1829;
 	public int anInt1830;
-	public static Class124 aClass124_1831 = Class124.method263("null");
 	public int anInt1833;
 	public static CacheFileWorker idx1;
 	public static AbstractSprite_Sub1[] aClass14_Sub2_Sub19_Sub1Array1835;
@@ -70,11 +70,11 @@ public class Class109 {
 	public static void method1568(byte i) {
 		Class14_Sub2_Sub12.anInt3912 = JunkTex.anInt4187;
 		JunkTex.method1032(false, -1291652884);
-		Class14_Sub2_Sub8.method297((byte) -36);
+		Static2.method297((byte) -36);
 		JunkTex.method1328(Class14_Sub2_Sub12.anInt3912, true);
-		Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748 = new SceneGraphNode_GameEntity_Sub1();
-		Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436 = 3000;
-		Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495 = 3000;
+		Static2.aSceneGraphNode_GameEntity_Sub1_2748 = new SceneGraphNode_GameEntity_Sub1();
+		Static2.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436 = 3000;
+		Static2.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495 = 3000;
 		if (Class89.anInt1415 == 2) {
 			SceneGraphNode_Projectile.anInt3676 = Class123.anInt2062 - 48;
 			JunkTex.anInt4741 = (Class123.anInt2062 * 128 - SceneGraphNode_Projectile.anInt3676 * 128 + 64);
@@ -88,7 +88,7 @@ public class Class109 {
 		if (i > -25)
 			aClass124_1836 = null;
 		Class118.method1608(-13873);
-		Static2.method1743(27252, 28);
+		Static2.method1743(28);
 	}
 
 	public static void method1569(int i, int i_23_) {
@@ -126,7 +126,6 @@ public class Class109 {
 		if (i != 0)
 			Static3.method1564(61, 81, null);
 		aClass14_Sub2_Sub19_Sub1Array1835 = null;
-		aClass124_1831 = null;
 		idx1 = null;
 		aClass124_1839 = null;
 	}

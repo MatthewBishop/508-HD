@@ -3,8 +3,9 @@
  */
 package rs;
 
-import com.jagex.cache.anim.Animation;
 import com.jagex.cache.anim.AnimLoader;
+import com.jagex.cache.anim.Animation;
+import com.jagex.cache.loaders.SpotAnimType;
 import com.jagex.io.Buffer;
 import com.jagex.io.js5.FileSystem;
 import com.jagex.link.ref.SoftCache;
@@ -132,7 +133,7 @@ public class SceneGraphNode_GameEntity_Sub1 extends SceneGraphNode_GameEntity {
 					RT4GL.enableDepthBufferWriting();
 					RT4GL.setupSomeCustomProjection(f, f_11_);
 				}
-				if (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748 == this) {
+				if (Static2.aSceneGraphNode_GameEntity_Sub1_2748 == this) {
 					for (int i_12_ = Static2.aClass66Array3721.length - 1; i_12_ >= 0; i_12_--) {
 						Class66 class66 = Static2.aClass66Array3721[i_12_];
 						if (class66 != null && class66.anInt1043 != -1) {
@@ -140,9 +141,9 @@ public class SceneGraphNode_GameEntity_Sub1 extends SceneGraphNode_GameEntity {
 									&& ((Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785).length > class66.anInt1049)) {
 								SceneGraphNode_GameEntity_Sub2 class133_sub1_sub2 = (Class14_Sub4.aSceneGraphNode_GameEntity_Sub2Array2785[class66.anInt1049]);
 								if (class133_sub1_sub2 != null) {
-									int i_13_ = (-((Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495) / 32)
+									int i_13_ = (-((Static2.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495) / 32)
 											+ (class133_sub1_sub2.anInt3495 / 32));
-									int i_14_ = (-((Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436) / 32)
+									int i_14_ = (-((Static2.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436) / 32)
 											+ (class133_sub1_sub2.anInt3436 / 32));
 									method1809(i_4_, i_2_, class133_sub7, class66.anInt1043, i, i_3_, i_8_, i_6_,
 											-14498, i_5_, i_13_, i_14_, i_7_);
@@ -150,9 +151,9 @@ public class SceneGraphNode_GameEntity_Sub1 extends SceneGraphNode_GameEntity {
 							}
 							if (class66.anInt1046 == 2) {
 								int i_15_ = ((-SceneGraphNode_Projectile.anInt3676 + class66.anInt1047) * 4
-										+ (-((Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495) / 32) + 2));
+										+ (-((Static2.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495) / 32) + 2));
 								int i_16_ = ((-Class58.anInt947 + class66.anInt1044) * 4
-										+ (-((Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436) / 32) + 2));
+										+ (-((Static2.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436) / 32) + 2));
 								method1809(i_4_, i_2_, class133_sub7, class66.anInt1043, i, i_3_, i_8_, i_6_, -14498,
 										i_5_, i_15_, i_16_, i_7_);
 							}
@@ -161,9 +162,9 @@ public class SceneGraphNode_GameEntity_Sub1 extends SceneGraphNode_GameEntity {
 								SceneGraphNode_GameEntity_Sub1 class133_sub1_sub1_17_ = (JunkTex.aSceneGraphNode_GameEntity_Sub1Array4474[class66.anInt1049]);
 								if (class133_sub1_sub1_17_ != null) {
 									int i_18_ = ((class133_sub1_sub1_17_.anInt3495 / 32)
-											- (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495) / 32);
+											- (Static2.aSceneGraphNode_GameEntity_Sub1_2748.anInt3495) / 32);
 									int i_19_ = ((class133_sub1_sub1_17_.anInt3436 / 32)
-											- (Class14_Sub3.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436) / 32);
+											- (Static2.aSceneGraphNode_GameEntity_Sub1_2748.anInt3436) / 32);
 									method1809(i_4_, i_2_, class133_sub7, class66.anInt1043, i, i_3_, i_8_, i_6_,
 											-14498, i_5_, i_18_, i_19_, i_7_);
 								}
@@ -222,11 +223,11 @@ public class SceneGraphNode_GameEntity_Sub1 extends SceneGraphNode_GameEntity {
 				}
 				SceneGraphNode_AbstractModelRenderer class133_sub7_51_ = null;
 				if (!aBoolean4921 && anInt3487 != -1 && anInt3470 != -1) {
-					Class60 class60 = Class127.method1749(anInt3487, (byte) -123);
-					class133_sub7_51_ = class60.method1267(0, anInt3470);
+					SpotAnimType spotAnimType = SpotAnimType.list(anInt3487);
+					class133_sub7_51_ = spotAnimType.constructModel(anInt3470);
 					if (class133_sub7_51_ != null) {
 						class133_sub7_51_.method1855(0, -anInt3475, 0);
-						if (class60.aBoolean978) {
+						if (spotAnimType.aBoolean978) {
 							if (i_21_ != 0)
 								class133_sub7_51_.method1861(i_21_);
 							if (i_20_ != 0)

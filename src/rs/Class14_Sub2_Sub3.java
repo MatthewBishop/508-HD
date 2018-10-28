@@ -43,16 +43,8 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 			method272(70, (byte) -7);
 	}
 
-	public static int method270(int i, int i_8_) {
-		int i_9_ = i >>> 63;
-		int i_10_ = (i_9_ + i) / i_8_ - i_9_;
-		return i_10_;
-	}
-
-
-
 	public static Class14_Sub2_Sub21 method272(int i, byte i_16_) {
-		Class14_Sub2_Sub21 class14_sub2_sub21 = (Class14_Sub2_Sub21) Class35.aClass20_599.get(i);
+		Class14_Sub2_Sub21 class14_sub2_sub21 = (Class14_Sub2_Sub21) Static2.aClass20_599.get(i);
 		if (class14_sub2_sub21 != null) {
 			Class14_Sub2_Sub21 class14_sub2_sub21_17_ = class14_sub2_sub21;
 			return class14_sub2_sub21_17_;
@@ -61,7 +53,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 		if (i >= 32768)
 			is = JunkTex.aFileSystem_4384.method163(i & 0x7fff, 1);
 		else
-			is = Class14_Sub2_Sub8.aFileSystem_3850.method163(i, 1);
+			is = Static2.aFileSystem_3850.method163(i, 1);
 		Class14_Sub2_Sub21 class14_sub2_sub21_18_ = new Class14_Sub2_Sub21();
 		if (is != null)
 			class14_sub2_sub21_18_.method437(new Buffer(is), 99);
@@ -71,7 +63,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 		}
 		if (i >= 32768)
 			class14_sub2_sub21_18_.method439(19712);
-		Class35.aClass20_599.put(class14_sub2_sub21_18_, i);
+		Static2.aClass20_599.put(class14_sub2_sub21_18_, i);
 		class14_sub2_sub21 = class14_sub2_sub21_18_;
 		return class14_sub2_sub21;
 	}
@@ -87,10 +79,10 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 			}
 			for (int i_22_ = 0; i_20_ > i_22_; i_22_++) {
 				boolean bool = class14_sub10.readUByte() == 1;
-				int i_23_ = class14_sub10.method829(-119);
+				int i_23_ = class14_sub10.readMedium(-119);
 				Linkable linkable;
 				if (bool)
-					linkable = new Class14_Sub30(class14_sub10.method797());
+					linkable = new Class14_Sub30(class14_sub10.getJagexString());
 				else
 					linkable = new IntegerNode(class14_sub10.getInt((byte) -112));
 				aClass55_3783.put(i_23_, linkable);
@@ -102,7 +94,7 @@ public class Class14_Sub2_Sub3 extends Cacheable {
 		for (Class14_Sub2_Sub5 class14_sub2_sub5 = (Class14_Sub2_Sub5) Class97.aClass2_1647
 				.getFront(); class14_sub2_sub5 != null; class14_sub2_sub5 = (Class14_Sub2_Sub5) Class97.aClass2_1647
 						.getNext()) {
-			if (class14_sub2_sub5.aClass124_3804.method1704(class124, (byte) 116)) {
+			if (class14_sub2_sub5.aClass124_3804.method1704(class124)) {
 				Class7_Sub1.aClass14_Sub2_Sub5_2665 = class14_sub2_sub5;
 				return;
 			}

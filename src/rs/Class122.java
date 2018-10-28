@@ -3,6 +3,8 @@
  */
 package rs;
 
+import com.jagex.cache.loaders.Class35;
+
 public class Class122 {
 	public static Class124 aClass124_2053;
 	public static int anInt2054;
@@ -35,12 +37,12 @@ public class Class122 {
 
 	public static void method1660(int i, int i_1_) {
 		Class45.method1160(0);
-		JunkTex.method240(256);
-		int i_2_ = SceneGraphNode.method1780((byte) 111, i_1_).anInt587;
+		StaticMusic.method240(256);
+		int i_2_ = Class35.list(i_1_).anInt587;
 		if (i_2_ != 0) {
 			int i_3_ = JunkTex.anIntArray4275[i_1_];
 			if (i_2_ == 6)
-				Class14_Sub28.anInt3222 = i_3_;
+				Static2.anInt3222 = i_3_;
 			if (i_2_ == 9)
 				Class14_Sub4.anInt2782 = i_3_;
 			if (i == 15237 && i_2_ == 5)

@@ -2,12 +2,12 @@ package com.jagex.rt4;
 
 import com.jagex.rt4.lights.Light;
 import com.jagex.rt4.shader.Class101;
-import com.jagex.rt4.shader.WaterfallShader;
 import com.jagex.rt4.shader.Class23;
-import com.jagex.rt4.shader.WaterMovementShader;
-import com.jagex.rt4.shader.WaterShader;
 import com.jagex.rt4.shader.LavaShader;
 import com.jagex.rt4.shader.ShaderInterface;
+import com.jagex.rt4.shader.WaterMovementShader;
+import com.jagex.rt4.shader.WaterShader;
+import com.jagex.rt4.shader.WaterfallShader;
 
 /**
  * r550 also has type7 and 8 shaders, while the type 8 uses the type 4 shader.

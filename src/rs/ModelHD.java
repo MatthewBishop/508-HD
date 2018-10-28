@@ -1023,7 +1023,7 @@ public class ModelHD extends SceneGraphNode_AbstractModelRenderer {
 										i_268_ = SDRaster.cos[yaw];
 									}
 									while_321_: do {
-										if (l > 0L && Class90.aBoolean1417 && i_260_ > 0) {
+										if (l > 0L && Static2.aBoolean1417 && i_260_ > 0) {
 											int i_269_;
 											int i_270_;
 											if (i_261_ > 0) {

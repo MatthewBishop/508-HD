@@ -3,14 +3,13 @@
  */
 package rs;
 
-import com.jagex.io.js5.FileSystem;
+import com.jagex.cache.loaders.OverlayType;
 
 public class Class54 {
 	public static boolean aBoolean879 = true;
 	public static int anInt880;
 	public static boolean aBoolean881 = false;
 	public static Class124 aClass124_883 = Class124.method263(")3google)3com");
-	public static FileSystem aFileSystem_885;
 	public static Class124 aClass124_886 = Class124.method263(" )2> ");
 	public static int anInt887 = 0;
 	public static Class87 aClass87_888;
@@ -35,9 +34,9 @@ public class Class54 {
 	}
 
 	public static void method1218(int i, int i_0_, int i_1_) {
-		if (JunkTex.anInt4729 >= 2 || Class51.anInt831 != 0 || Class14_Sub4.aBoolean2784) {
+		if (JunkTex.anInt4729 >= 2 || Static2.anInt831 != 0 || Class14_Sub4.aBoolean2784) {
 			Class124 class124;
-			if (Class51.anInt831 != 1 || JunkTex.anInt4729 >= 2) {
+			if (Static2.anInt831 != 1 || JunkTex.anInt4729 >= 2) {
 				if (!Class14_Sub4.aBoolean2784 || JunkTex.anInt4729 >= 2)
 					class124 = Static2.method1170((byte) -99, JunkTex.anInt4729 - 1);
 				else
@@ -67,8 +66,6 @@ public class Class54 {
 		aClass124_886 = null;
 		aClass87_888 = null;
 		aClass124_883 = null;
-		if (i > 38)
-			aFileSystem_885 = null;
 	}
 
 	public static Class124 method1220(int i, boolean bool, boolean bool_3_, int i_4_) {
@@ -107,7 +104,7 @@ public class Class54 {
 	}
 
 	public static void method1221(int i, int i_11_) {
-		for (int i_12_ = 0; Class131.anInt2159 > i_12_; i_12_++) {
+		for (int i_12_ = 0; OverlayType.anInt2159 > i_12_; i_12_++) {
 			OverlayType overlayType = OverlayType.list(i_12_);
 			if (overlayType != null) {
 				int i_13_ = overlayType.anInt2414;
@@ -139,7 +136,7 @@ public class Class54 {
 					int i_20_ = i_19_ + (i_11_ + i_18_ & 0xfc00) + (i_18_ & 0x380);
 					i_14_ = (SDRaster.anIntArray119[Class7_Sub3_Sub1.method135(false, 96, i_20_)]);
 				}
-				Class56.anIntArray917[i_12_ + 1] = i_14_;
+				Static2.anIntArray917[i_12_ + 1] = i_14_;
 			}
 		}
 	}

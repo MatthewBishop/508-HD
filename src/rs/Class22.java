@@ -32,9 +32,9 @@ public class Class22 {
 			if (color == null)
 				color = new Color(140, 17, 17);
 			try {
-				if (Class14_Sub2_Sub8.anImage3830 == null)
-					Class14_Sub2_Sub8.anImage3830 = ErrorReporting.aCanvas819.createImage(304, 34);
-				Graphics graphics_1_ = Class14_Sub2_Sub8.anImage3830.getGraphics();
+				if (Static2.anImage3830 == null)
+					Static2.anImage3830 = ErrorReporting.aCanvas819.createImage(304, 34);
+				Graphics graphics_1_ = Static2.anImage3830.getGraphics();
 				graphics_1_.setColor(color);
 				graphics_1_.drawRect(0, 0, 303, 33);
 				graphics_1_.fillRect(2, 2, i * 3, 30);
@@ -48,7 +48,7 @@ public class Class22 {
 				class124.method1713(false,
 						(-class124.method1695((Static2.aFontMetrics3081), (byte) -94) + 304) / 2, 22,
 						graphics_1_);
-				graphics.drawImage(Class14_Sub2_Sub8.anImage3830, Applet_Sub1.anInt1340 / 2 - 152,
+				graphics.drawImage(Static2.anImage3830, Applet_Sub1.anInt1340 / 2 - 152,
 						Applet_Sub1.anInt3094 / 2 - 18, null);
 			} catch (Exception exception) {
 				int i_2_ = Applet_Sub1.anInt1340 / 2 - 152;
@@ -83,7 +83,7 @@ public class Class22 {
 			Class148_Sub1 class148_sub1 = null;
 			return class148_sub1;
 		}
-		Class148_Sub1 class148_sub1 = new Class148_Sub1(Class14_Sub11.spriteTrimWidth, Class14_Sub30.spriteTrimHeight,
+		Class148_Sub1 class148_sub1 = new Class148_Sub1(Static2.spriteTrimWidth, Class14_Sub30.spriteTrimHeight,
 				Class40.spriteXOffsets[0], Class14_Sub2_Sub12.spriteYOffsets[0], Class17.spriteWidths[0],
 				Static2.spriteHeights[0], Class12.spritePaletteIndicators[0], JunkTex.spritePalette);
 		Static2.method1761((byte) 123);

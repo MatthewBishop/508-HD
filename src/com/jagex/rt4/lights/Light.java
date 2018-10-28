@@ -4,8 +4,8 @@ import org.jagex.image.transform.TexStatic;
 
 import com.jagex.io.Buffer;
 
-import rs.SDRaster;
 import rs.JunkTex;
+import rs.SDRaster;
 
 /**
  * Jagex, lighting system. It is notable that they later added additional lights.

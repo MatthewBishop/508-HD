@@ -4,7 +4,6 @@
 package rs;
 
 import com.jagex.applet.ErrorReporting;
-import com.jagex.io.js5.FileSystem;
 import com.jagex.rt4.Class148_Sub1;
 
 public class Class32 {
@@ -436,13 +435,6 @@ public class Class32 {
 				}
 			}
 		}
-	}
-
-	public static void method1072(FileSystem fileSystem, byte i) {
-		Static2.aFileSystem_372 = fileSystem;
-		Class131.anInt2159 = Static2.aFileSystem_372.method177(4);
-		if (i >= -14)
-			method1074(-76, -127);
 	}
 
 	public void method1073(int i, int i_137_, int i_138_, int i_139_, boolean bool, boolean bool_140_) {
@@ -1187,7 +1179,7 @@ public class Class32 {
 		}
 		Class45.anIntArray737 = is_187_;
 		Static2.anIntArray1086 = is;
-		Class14_Sub2_Sub11.method309(SceneGraphNode_GameEntity.aClass45Array3435, (SceneGraphNode_GameEntity.aClass45Array3435.length - 1),
+		Static2.method309(SceneGraphNode_GameEntity.aClass45Array3435, (SceneGraphNode_GameEntity.aClass45Array3435.length - 1),
 				(byte) 99, 0);
 	}
 

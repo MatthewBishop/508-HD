@@ -49,7 +49,7 @@ public class Class7_Sub2 extends Class7 {
 	}
 
 	public static void method127(int i) {
-		Class14_Sub11.aClass52_2946.clear();
+		Static2.aClass52_2946.clear();
 		if (i != 0)
 			method127(30);
 	}

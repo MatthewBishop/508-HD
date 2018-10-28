@@ -3,7 +3,6 @@
  */
 package rs;
 
-import com.jagex.cache.loaders.AnimFrameLoader;
 import com.jagex.io.js5.FileSystem;
 import com.jagex.link.Deque;
 import com.jagex.link.Linkable;
@@ -14,7 +13,6 @@ public class Class14_Sub29 extends Linkable {
 	public static Class124 aClass124_3263;
 	public static Class148_Sub1[] aClass148_Sub1Array3265;
 	public static int anInt3238;
-	public static int anInt3266;
 	public static int anInt3267;
 	public static int[] anIntArray3245 = new int[99];
 	public static int[] anIntArray3264;
@@ -30,7 +28,7 @@ public class Class14_Sub29 extends Linkable {
 		}
 		aShortArray3262 = new short[500];
 		anIntArray3264 = new int[5];
-		anInt3266 = 127;
+		
 		aClass124_3263 = Class124.method263("::");
 	}
 	public static void method930(byte i) {
@@ -76,7 +74,7 @@ public class Class14_Sub29 extends Linkable {
 	}
 	public static void method935(int i, boolean bool) {
 		Class7_Sub2.anInt2676 = 99;
-		Class21.anIntArray442 = new int[104];
+		Static2.anIntArray442 = new int[104];
 		Class115.anIntArray1917 = new int[104];
 		Static2.anIntArray4023 = new int[104];
 		JunkTex.anIntArray4020 = new int[104];

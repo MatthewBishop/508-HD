@@ -48,7 +48,7 @@ public class Class146 {
 	public static Class148_Sub1[] method1992(byte i) {
 		Class148_Sub1[] class148_sub1s = new Class148_Sub1[Class32.spriteAmount];
 		for (int i_4_ = 0; i_4_ < Class32.spriteAmount; i_4_++)
-			class148_sub1s[i_4_] = new Class148_Sub1(Class14_Sub11.spriteTrimWidth, Class14_Sub30.spriteTrimHeight,
+			class148_sub1s[i_4_] = new Class148_Sub1(Static2.spriteTrimWidth, Class14_Sub30.spriteTrimHeight,
 					Class40.spriteXOffsets[i_4_], Class14_Sub2_Sub12.spriteYOffsets[i_4_], Class17.spriteWidths[i_4_],
 					Static2.spriteHeights[i_4_], Class12.spritePaletteIndicators[i_4_], JunkTex.spritePalette);
 		Static2.method1761((byte) 103);
@@ -75,11 +75,9 @@ public class Class146 {
 		boolean bool_12_ = false;
 		int i_13_ = (int) l >> 52 & 0x3;
 		int i_14_ = (int) l >> 14 & 0x1f;
-		if (i_9_ != 4)
-			method1993(73, -127, 84, 72, 79, -102, null);
 		Class79 class79 = Class79.method1377((byte) -106, i_11_);
 		if (class79.method1392(-127))
-			Class14_Sub2_Sub21.method434(i_10_, i_8_, class79, i_9_ ^ 0x84, i_7_);
+			StaticMusic.method434(i_10_, i_8_, class79, i_7_);
 		if (l != 0L) {
 			SceneGraphNode sceneGraphNode = null;
 			SceneGraphNode sceneGraphNode_15_ = null;
@@ -167,14 +165,11 @@ public class Class146 {
 	}
 
 	public int method1994(int i, boolean bool) {
-		if (bool)
-			method1993(51, -3, 103, -52, 116, -107, null);
 		int i_16_ = aByteArray2355[i] & 0x3;
 		return i_16_;
 	}
 
 	public static void method1995(int i) {
-		int i_17_ = -15 % ((i + 32) / 54);
 		aCalendar2351 = null;
 	}
 

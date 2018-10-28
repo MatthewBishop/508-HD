@@ -3,8 +3,6 @@
  */
 package rs;
 
-import com.jagex.cache.anim.AnimLoader;
-import com.jagex.io.js5.FileSystem;
 import com.jagex.link.Deque;
 import com.jagex.link.HashTable;
 
@@ -15,7 +13,6 @@ public class Class33 {
 	public static short[] aShortArray580;
 	public static Deque aClass2_583;
 	public static boolean aBoolean584 = true;
-	public static Class14_Sub9_Sub2 aClass14_Sub9_Sub2_585;
 	public static int anInt586;
 
 	static {
@@ -61,7 +58,6 @@ public class Class33 {
 		if (i != 108956743)
 			method1084((byte) 52);
 		aClass2_583 = null;
-		aClass14_Sub9_Sub2_585 = null;
 		anIntArrayArray575 = null;
 		aClass124_578 = null;
 	}
@@ -79,18 +75,6 @@ public class Class33 {
 		Static2.method1761((byte) 5);
 		Class14_Sub2_Sub16_Sub2 class14_sub2_sub16_sub2_9_ = class14_sub2_sub16_sub2;
 		return class14_sub2_sub16_sub2_9_;
-	}
-
-	public static void method1087(int i, int i_10_, boolean bool, int i_11_, FileSystem fileSystem, int i_12_) {
-		JunkTex.anInt3930 = i_10_;
-		if (i != 1936)
-			anIntArrayArray575 = null;
-		Class14_Sub2_Sub11.anInt3889 = 1;
-		JunkTex.anInt1132 = i_12_;
-		Class35.aBoolean593 = bool;
-		Class14_Sub15.anInt2989 = 10000;
-		Static2.aFileSystem_2696 = fileSystem;
-		Class38.anInt2624 = i_11_;
 	}
 
 	public static void method1088(byte i) {

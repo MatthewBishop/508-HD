@@ -39,7 +39,7 @@ public class Class86 {
 				.method515(
 						(new Class124[] { Class142.aClass124_2271, class124, Static2.aClass124_1800,
 								Class83.method1407(102, JunkTex.language), JunkTex.aClass124_4341,
-								Class83.method1407(111, Class14_Sub2_Sub11.anInt3884), Class137.aClass124_2195 }),
+								Class83.method1407(111, Static2.anInt3884), Class137.aClass124_2195 }),
 						(byte) -24));
 		return class124_2_;
 	}

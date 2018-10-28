@@ -3,7 +3,6 @@
  */
 package rs;
 
-import com.jagex.io.Buffer;
 import com.jagex.rt4.AbstractSprite_Sub1;
 
 public abstract class SceneGraphNode {
@@ -14,23 +13,6 @@ public abstract class SceneGraphNode {
 	public static int[] anIntArray2176 = new int[100];
 	public static int[] anIntArray2179 = { 768, 1024, 1280, 512, 1536, 256, 0, 1792 };
 	public static Class124 aClass124_2183 = aClass124_2188;
-
-	public static Class35 method1780(byte i, int i_0_) {
-		Class35 class35 = ((Class35) Static2.aClass52_2370.get(i_0_));
-		if (i != 111)
-			method1785((byte) 101);
-		if (class35 != null) {
-			Class35 class35_1_ = class35;
-			return class35_1_;
-		}
-		byte[] is = Class12.aFileSystem_332.method163(i_0_, 16);
-		Class35 class35_2_ = new Class35();
-		if (is != null)
-			class35_2_.method1094((byte) 102, new Buffer(is));
-		Static2.aClass52_2370.put(class35_2_, i_0_);
-		Class35 class35_3_ = class35_2_;
-		return class35_3_;
-	}
 
 	public static void method1782(int i, int i_4_, int i_5_) {
 		int i_6_ = i_4_;
@@ -76,7 +58,7 @@ public abstract class SceneGraphNode {
 	}
 
 	public static void method1789(byte i) {
-		Class14_Sub11.aClass52_2946.clearSoftReference();
+		Static2.aClass52_2946.clearSoftReference();
 	}
 
 	public abstract int getMinYorMaxYCheckTHIS();
